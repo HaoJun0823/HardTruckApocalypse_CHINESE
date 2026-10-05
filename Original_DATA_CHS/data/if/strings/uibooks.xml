@@ -2,27 +2,27 @@
 <resource>
 	<string
 		id="r3_book_transformer"
-		value="Transformer’s uprising story." />
+		value="±äÐÎÕßÆðÒåµÄ¹ÊÊÂ" />
 
 	<string
 		id="r3_book_transformer_diz"
-		value="Trans was a curious boy and he was often punished for this. Once returning from a walk he was attracted by the shine of some metal object. It was a steel cylinder with holes and wires, an abomination for any Druid. But Trans picked it up hid it in his cell. He used to watch the reflections of his face on the cylinder’s surface and dream.| In the day of equinox Trans finally understood that the holes in the metal were ears and eyes and the wires – veins and muscles. Shocked by this revelation, for several days he wandered in the forest and came up with the idea that weak humans are just bad copies of their mechanical ancestors. And the heretic left druids in quest for the lost steel gods.| Many months passed until he finally found a cave, blocked by a pile of stones. Something made Trans remove several pieces of rock and soon he caught a glimpse of steel underneath the dirt. A metal hand shiny as ever waited for someone to dig it out.| For days the former druid worked alone on removing the obstruction, but then people began to gather around him inspired by his passionate labor. That’s when the Children of Iron were born." />
+		value="TransÊÇ¸öºÃÆæµÄÄÐº¢£¬Îª´Ë³£ÊÜ³Í·£¡£ÓÐÒ»´ÎÉ¢²½¹éÀ´£¬Ëû±»Ò»¼þ½ðÊôÎïÌåµÄ¹âÔóËùÎüÒý¡£ÄÇÊÇÒ»¸ö´ø¿×ºÍµçÏßµÄ¸ÖÖÆÔ²Í²¡ª¡ª¶ÔÈÎºÎµÂÂ³ÒÁ¶øÑÔ¶¼ÊÇ´óÄæ²»µÀÖ®Îï¡£µ«Trans°ÑËü¼ñÆðÀ´²ØÔÚ×Ô¼ºµÄÐ¡ÎÝÀï¡£Ëû³£³£ÄýÊÓÔ²Í²±íÃæÓ³³öµÄÃæÈÝ£¬ÏÝÈë»ÃÏë¡£|ÔÚ´º·ÖÄÇÌì£¬TransÖÕÓÚÃ÷°×ÁË¡ª¡ª½ðÊôÉÏµÄ¿×ÊÇ¶ú¶äºÍÑÛ¾¦£¬µçÏßÊÇÑª¹ÜºÍ¼¡Èâ¡£ÕâÒ»¶ÙÎòÁîËûÕð¾ª£¬ËûÔÚÉ­ÁÖÀïÓÎµ´ÁËÊýÈÕ£¬×îÖÕµÃ³ö½áÂÛ£ºåîÈõµÄÈËÀà²»¹ýÊÇ»úÐµ×æÏÈ×¾ÁÓµÄ·ÂÖÆÆ·¡£ÓÚÊÇÕâ¸öÒì¶ËÀë¿ªÁËµÂÂ³ÒÁ£¬È¥Ñ°ÕÒÊ§ÂäµÄ¸ÖÌúÖ®Éñ¡£|ÊýÔÂÖ®ºó£¬ËûÖÕÓÚÕÒµ½Ò»¸ö±»ËéÊ¯¶Â×¡µÄ¶´Ñ¨¡£Ä³ÖÖÁ¦Á¿ÇýÊ¹Trans°á¿ª¼¸¿éÑÒÊ¯£¬ºÜ¿ìËûÆ³¼ûÁËÄàÍÁÏÂµÄ¸ÖÌú¡£Ò»Ö»¹âÁÁÈç³õµÄ½ðÊôÊÖÕýµÈ×ÅÓÐÈË½«ËüÍÚ³ö¡£|ÕâÎ»Ç°µÂÂ³ÒÁ¶À×Ô»¨ÁËÊýÈÕÇåÀíÕÏ°­Îï£¬µ«½¥½¥µØ£¬ÈËÃÇ±»Ëû³äÂú¼¤ÇéµÄÀÍ¶¯Ëù¸ÐÕÙ£¬¿ªÊ¼¾Û¼¯ÔÚËûÉí±ß¡£ÌúÖ®×Ó±ãÓÉ´Ëµ®Éú¡£" />
 
 	<string
 		id="r3_book_Druids"
-		value="Druid’s origin" />
+		value="µÂÂ³ÒÁµÄÆðÔ´" />
 
 	<string
 		id="r3_book_Druids_diz"
-		value="A huge wave overwhelmed the whole earth and when 6 days later the water subsided, it left behind a changed world. Where the desert has been, there was grass. Where the bushes have been, woods appeared. Where the forests have been, giant trees, never seen before spread their branches. And the land became a paradise; people entered the rainforest and were happy to go united." />
+		value="ÌÏÌì¾ÞÀËÏ¯¾íÁËÕûÆ¬´óµØ¡£ÁùÌìºóºéË®ÍËÈ¥£¬ÁôÏÂÁËÒ»¸öÃæÄ¿È«·ÇµÄÊÀ½ç¡£É³Ä®Ö®´¦³¤³öÁËÇà²Ý£¬¹àÄ¾Ö®µØÉú³öÁËÊ÷ÁÖ£¬É­ÁÖÖ®ÖÐÔò°ÎÆðÁËÇ°ËùÎ´¼ûµÄ²ÎÌì¾ÞÊ÷¡£´óµØ³ÉÁËÀÖÔ°£¬ÈËÃÇ×ßÈëÓêÁÖ£¬ÐÀÈ»ºÏ¶øÎªÒ»¡£" />
 
 	<string
 		id="r4_book_Scarytail1"
-		value="Scary story" />
+		value="¿Ö²À¹ÊÊÂ" />
 
 	<string
 		id="r4_book_Scarytail1_diz"
-		value="People of one distant country forgot God and began worshipping the golden calf. They indulged in vices, while they neighbors were dying of hunger. The patience of the Heaven is immense, but has it limits. One day the voice was heard, calling people to repent, and no one answered the call. Then the heavens opened wide and the angels’ wrath fell upon the earth. The animals fled in fear, even the grass and trees turned red in awe. But people were blind to it.| Then God understood that people already punished themselves. They stopped hearing and seeing anything but themselves. And their lives are worse than any torments. So He called back the angels and never ever directed His eyes at this land.| Many years passed since then, but humans still wander the earth not knowing that their souls are dead. If you ever meet one of them, run for your life and pray for Him to save you from such terrible fate and give you a quick death." />
+		value="ÔÚÒ»¸öÒ£Ô¶µÄ¹ú¶È£¬ÈËÃÇÍü¼ÇÁËÉñ£¬¿ªÊ¼³ç°Ý½ðÇ®¡£ËûÃÇ³ÁÄçÓÚ×ï¶ñÖ®ÖÐ£¬¶øÁÚÈËÈ´ÔÚ¼¢¶öÖÐËÀÈ¥¡£ÉÏÌìµÄÄÍÐÄÊÇÎÞÏÞµÄ£¬µ«Ò²ÓÐ¾¡Í·¡£ÖÕÓÚÓÐÒ»Ìì£¬Ò»¸öÉùÒôÏìÆð£¬ºô»½ÈËÃÇâã»Ú£¬È´ÎÞÈËÓ¦´ð¡£ÓÚÊÇÌìÃÅ´ó¿ª£¬ÌìÊ¹µÄÅ­»ð½µÁÙ´óµØ¡£Ò°ÊÞ¾ª¿ÖÌÓ´Ü£¬Á¬²ÝÄ¾¶¼¾´Î·µØ·ººì¡£µ«ÈËÃÇ¶Ô´ËÊÓ¶ø²»¼û¡£|ÓÚÊÇÉñÃ÷°×ÁË¡ª¡ªÈËÃÇÒÑ¾­³Í·£ÁË×Ô¼º¡£ËûÃÇÖ»ÄÜÌý¼ûºÍ¿´¼û×Ô¼º£¬³ý´ËÖ®ÍâÊ²Ã´Ò²Ìý²»µ½¿´²»¼ûÁË¡£ÕâÑùµÄ»î×Å±ÈÈÎºÎ¿áÐÌ¶¼¸ü¿ÉÅÂ¡£ÓÚÊÇËûÕÙ»ØÁËÌìÊ¹£¬ÔÙÒ²²»½«Ä¿¹âÍ¶ÏòÕâÆ¬ÍÁµØ¡£|Ðí¶àÄê¹ýÈ¥ÁË£¬µ«ÈËÀàÈÔÔÚÊÀ¼äÓÎµ´£¬»ëÈ»²»Öª×Ô¼ºµÄÁé»êÔçÒÑËÀÈ¥¡£ÈôÄãÅ¼ÓöÕâÑùµÄÈË£¬¿ìÌÓÃü°É£¬²¢Æíµ»Éñ´ÓÕâ°ã¿ÉÅÂµÄÃüÔËÖÐÕü¾ÈÄã£¬´ÍÄãÒ»¸öÍ´¿ìµÄÁË½á¡£" />
 
 	<string
 		id="r3_book_1"
@@ -42,98 +42,98 @@
 
 	<string
 		id="r1_book_desert_death"
-		value="Desert of the Death" />
+		value="ËÀÍöÉ³Ä®" />
 
 	<string
 		id="r1_book_desert_death_diz"
-		value="In the far east, beyond the high mountains and spacious plains, lies an immense ocean of sand. Once there was the real sea, deep and blue and happy people lived on its shore. But the diamond of the underworld envied them and attacked this beautiful place with all their rage. The loud rumble came all over, the skies grew red and the hot wind began to blow. In several hours the earth was covered with cracks belching pillar of flame. Even the water began to boil, changed color and in several weeks, the sea war reduced to the mere lake. Soon all that left was a lifeless plane covered with a crust of drying mud.| Survivors of this terrible incident went east in quest for new home. None of them returned. Now the bottom of the sea is called the Desert of the Death." />
+		value="ÔÚÒ£Ô¶µÄ¶«·½£¬Ô½¹ý³çÉ½¾þÁëºÍ¹ãÙóÆ½Ô­£¬ÓÐÒ»Æ¬ÎÞÛóµÄÉ³º£¡£Ôø¾­ÄÇÀïÊÇÒ»Æ¬ÕæÕýµÄº£Ñó£¬Éîåä¶øÎµÀ¶£¬¿ìÀÖµÄÈËÃÇÔÚº£±õ°²¾Ó¡£µ«Ú¤½çµÄ×êÊ¯¼µ¶ÊËûÃÇ£¬ÒÔÈ«²¿µÄ¿ñÅ­Ï®»÷ÁËÕâÆ¬ÃÀÀöµÄÍÁµØ¡£ºäÃùÉùÏì³¹ËÄ·½£¬Ìì¿Õ±äµÃÍ¨ºì£¬×ÆÈÈµÄ·ç¿ªÊ¼ºôÐ¥¡£ÊýÐ¡Ê±Ö®ÄÚ£¬´óµØ²¼ÂúÁÑ·ì£¬»ðÖù´ÓÖÐÅçÓ¿¶ø³ö¡£Á¬Ë®¶¼¿ªÊ¼·ÐÌÚ¡¢±äÉ«£¬ÊýÖÜÖ®ºó£¬º£ÑóÎ®Ëõ³ÉÒ»¸öºþ²´¡£×îÖÕÖ»Ê£ÏÂÒ»Æ¬ËÀ¼ÅµÄÆ½Ô­£¬¸²¸Ç×Å¸ÉºÔÄà½¬µÄÓ²¿Ç¡£|Õâ³¡ºÆ½ÙµÄÐÒ´æÕßÏò¶«Ç¨áã£¬Ñ°ÕÒÐÂµÄ¼ÒÔ°¡£ÎÞÈËÉú»¹¡£Èç½ñÄÇÆ¬º£µ×±»³ÆÎªËÀÍöÉ³Ä®¡£" />
 
 	<string
 		id="r1_book_cold_winter"
-		value="Winter" />
+		value="¶¬Ìì" />
 
 	<string
 		id="r1_book_cold_winter_diz"
-		value="Every forty years the sky covers with the heavy dark clouds, so that the day starts looking like the gloomy twilight. But instead of rain, heavy white flakes begin to fall. In several hours they cover everything with a thick layer. The houses roofs collapse under its weight and high trees break like matches. Any person left outside at a day like this, freezes to death. This disaster is called “Snow”. |They say, somewhere in the far North lies the kingdom of the eternal cold. Huge piles of never melting “snow” raise high above the ground, black leafless trees bend under its weight. Not a blade of grass is seen, only hungry beasts prowl in the eternal quest for food.| Let us hope, that there is not such land in the world..." />
+		value="Ã¿¸ôËÄÊ®Äê£¬Ìì¿Õ¾Í»á±»ºñÖØµÄÎÚÔÆÕÚ±Î£¬°×ÖçÈçÍ¬Òõ³ÁµÄ»Æ»è¡£µ«ÂäÏÂµÄ²»ÊÇÓê£¬¶øÊÇ³ÁÖØµÄ°×É«Ñ©»¨¡£ÊýÐ¡Ê±Ö®ÄÚ£¬Ò»ÇÐ¶¼±»ºñºñµÄÑ©²ã¸²¸Ç¡£ÎÝ¶¥±»Ñ¹Ëú£¬´óÊ÷Ïñ»ð²ñÒ»ÑùÕÛ¶Ï¡£ÈÎºÎÔÚÕâÌìÁôÔÚ»§ÍâµÄÈË¶¼»á¶³ËÀ¡£Õâ³¡ÔÖÄÑ±»³ÆÎª"Ñ©"¡£|¾ÝËµÔÚÒ£Ô¶µÄ±±·½£¬ÓÐÒ»¸öÓÀºãº®ÀäµÄÍõ¹ú¡£ÓÀ²»ÈÚ»¯µÄ»ýÑ©¶Ñ»ýÈçÉ½£¬ºÚÉ«µÄÍºÊ÷ÔÚÖØÑ¹ÏÂÍäÑüÕÛÑü¡£´ç²Ý²»Éú£¬Ö»ÓÐ¼¢¶öµÄÒ°ÊÞÔÚÓÀºãµÄÃÙÊ³ÖÐÅÇ»²¡£|µ«Ô¸ÎÒÃÇµÄÊÀ½çÃ»ÓÐÕâÑùÒ»Æ¬ÍÁµØ¡­¡­" />
 
 	<string
 		id="r1_book_the_mask"
-		value="Masks" />
+		value="Ãæ¾ß" />
 
 	<string
 		id="r1_book_the_mask_diz"
-		value="Some people still ask why we are wearing masks. The answer is very simple: to live! The air of our world is poisoned so a single breath of it would kill the strongest person.| The catastrophe took lives of many, before the masks were invited. So of all the creatures formerly inhabiting our planet, only we, humans, managed to survive.| Now there are no fools who would take off the protective gear and inhale the deadly air. However there were some in the old days. Needless to say, they have all died." />
+		value="ÓÐÈË»¹ÔÚÎÊÎÒÃÇÎªÊ²Ã´Òª´÷Ãæ¾ß¡£´ð°¸ºÜ¼òµ¥£ºÎªÁË»îÏÂÈ¥£¡ÎÒÃÇÕâ¸öÊÀ½çµÄ¿ÕÆø³äÂú¶¾ËØ£¬ÎüÒ»¿Ú¾ÍÄÜÉ±ËÀ×îÇ¿×³µÄÈË¡£|ÔÚÃæ¾ß·¢Ã÷Ö®Ç°£¬ÔÖÄÑ¶áÈ¥ÁËÐí¶àÈËµÄÉúÃü¡£ËùÒÔÔø¾­¾Ó×¡ÔÚÎÒÃÇÐÇÇòÉÏµÄËùÓÐÉúÁéÖÐ£¬Ö»ÓÐÎÒÃÇÈËÀàÐÒ´æÁËÏÂÀ´¡£|Èç½ñÔÙÃ»ÓÐ´ÀÈË»áÕªÏÂ·À»¤×°±¸È¥ºôÎüÖÂÃü¿ÕÆøÁË¡£²»¹ý¹ÅÊ±ºòÈ·ÊµÓÐÒ»Ð©¡£²»ÓÃËµ£¬ËûÃÇÈ«ËÀÁË¡£" />
 
 	<string
 		id="r1_book_travel_kupchina1"
-		value="Adventures of the Sadiban vol.1" />
+		value="SadibanÀúÏÕ¼Ç ¾íÒ»" />
 
 	<string
 		id="r1_book_travel_kupchina1_diz"
-		value="The live of a successful merchant began to bore me, when a stranger came to my house and offered to sell me some treasure map. A week ago, I wouldn’t listen to him, but then was the right time to begin an adventure. I gladly paid for a mere piece of cloth with strange symbols inscribed on it. The stranger left, but I had a feeling that we will meet again.| I hired a team of adventurous guys, got prepared to the adventure and a month after the visit, we set off. It was a hard journey. In constant skirmishes with the local barbarians we have lost several men and one truck with supplies. At the 17th day we arrived to the place, marked on the map as a passageway. There was nothing but high mountains around, but my heart already trembled in anticipation of wonders, we would find beyond.| It was harder than I expected to cross the mountains. The tunnel, than we found at the designated location had collapsed, so we had to go search for the detour.| At some point we left our vehicles and began to walk. After six days of constant climbing and descending we finally arrived to the Librium, as the locals call it. These kind people found us and helped to recover. They were the only treasure we found at the distant land. " />
+		value="Ò»¸ö³É¹¦ÉÌÈËµÄÉú»î¿ªÊ¼ÈÃÎÒÑá¾ë¡£ÕâÊ±ÓÐ¸öÄ°ÉúÈËÀ´µ½ÎÒ¼Ò£¬ÒªÂô¸øÎÒÒ»ÕÅ²Ø±¦Í¼¡£ÒªÔÚÒ»ÖÜÇ°£¬ÎÒ²»»á´îÀíËû£¬µ«ÄÇÊ±ÕýÊÇ¿ªÊ¼Ã°ÏÕµÄÇ¡µ±Ê±»ú¡£ÎÒÐÀÈ»ÂòÏÂÁËÄÇ¿éÖ»ÓÐÆæ¹Ö·ûºÅµÄÆÆ²¼¡£Ä°ÉúÈË×ßÁË£¬µ«ÎÒÓÐÒ»ÖÖÔ¤¸Ð£¬ÎÒÃÇ»¹»áÔÙ¼û¡£|ÎÒ¹ÍÁËÒ»¶ÓÃ°ÏÕÕß£¬×öºÃÁË×¼±¸¡£ÔÚ°Ý·ÃÖ®ºóÒ»¸öÔÂ£¬ÎÒÃÇ³ö·¢ÁË¡£ÂÃÍ¾¼èÐÁ¡£ÔÚÓëµ±µØÂù×åµÄ³ÖÐø³åÍ»ÖÐ£¬ÎÒÃÇËðÊ§ÁË¼¸¸öÈËºÍÒ»Á¾²¹¸ø¿¨³µ¡£µÚÊ®ÆßÌì£¬ÎÒÃÇµ½´ïÁËµØÍ¼ÉÏ±ê×¢ÎªÍ¨µÀµÄµØ·½¡£ÖÜÎ§Ö»ÓÐ¸ßÉ½£¬µ«ÎÒµÄÐÄÒÑ¾­Òò¼´½«·¢ÏÖµÄÆæ¼£¶ø²ü¶¶¡£|·­Ô½É½Âö±ÈÎÒÏëÏóµÄ¸üÄÑ¡£Ö¸¶¨Î»ÖÃµÄËíµÀÒÑ¾­Ì®Ëú£¬ÎÒÃÇ²»µÃ²»ÈÆÂ·¡£|ÔÚÄ³¸öµØµãÎÒÃÇ·ÅÏÂÁË³µ¿ªÊ¼²½ÐÐ¡£¾­¹ýÁùÌì²»Í£µÄÉÏÆÂÏÂÆÂ£¬ÎÒÃÇÖÕÓÚµ½´ïÁËÀû²¼ÀïÄ·¡ª¡ªµ±µØÈËÊÇÕâÃ´½ÐµÄ¡£ÕâÐ©ÉÆÁ¼µÄÈËÕÒµ½ÁËÎÒÃÇ²¢°ïÖúÎÒÃÇ»Ö¸´¡£ËûÃÇ¾ÍÊÇÎÒÃÇÔÚÄÇÆ¬Ô¶·½ÍÁµØÉÏÕÒµ½µÄÎ¨Ò»±¦²Ø¡£" />
 
 	<string
 		id="r1_book_travel_kupchina2"
-		value="Adventures of the Sadiban vol.1" />
+		value="SadibanÀúÏÕ¼Ç ¾í¶þ" />
 
 	<string
 		id="r1_book_travel_kupchina2_diz"
-		value="Barely returning home, I started to thirst for adventures. One night when I was sitting at the terrace staring into the sky, I saw a fire wheel that slowly moved to the north in a cloud of sparks. I couldn’t resist the temptation to follow the miracle. Once again I began preparing for the voyage.  Accompanied by the survivors of the first travel and several new guys, I set off. Far in the north we found a new land and named it Vaterland after a fairy tale kingdom.|A part of my companions decided to stay. It was a fertile ground and a former crossroad of trade paths, or so it seemed. W said our goodbyes and continued to go farther north.| Soon the road was completely gone and the fire wheel appeared no more to guide me.  The morale of the expedition faded with every passing day. Finally, I ordered to turn back. This decision was greeted by happy yells of my team. Everybody was extremely tired.|Back in Vaterland we gladly discovered our former companions to build a decent town and we decided to stay with them. Now I almost forgot about the fire wheel. Or was it just a dream?.. " />
+		value="¸Õ»Øµ½¼Ò£¬ÎÒÓÖ¿ªÊ¼¿ÊÍûÃ°ÏÕ¡£Ò»ÌìÍíÉÏ£¬ÎÒ×øÔÚÂ¶Ì¨ÄýÊÓÌì¿Õ£¬¿´µ½Ò»¸ö»ðÂÖÔÚ»ð»¨ÔÆÖÐ»º»ºÏò±±ÒÆ¶¯¡£ÎÒÎÞ·¨¿¹¾Ü×·ËæÆæ¼£µÄÓÕ»ó¡£ÎÒÔÙ´Î¿ªÊ¼×¼±¸Ô¶Õ÷¡£ÔÚµÚÒ»´ÎÂÃÐÐµÄÐÒ´æÕßºÍ¼¸¸öÐÂ»ï°éµÄÅãÍ¬ÏÂ£¬ÎÒ³ö·¢ÁË¡£|ÔÚÒ£Ô¶µÄ±±·½£¬ÎÒÃÇ·¢ÏÖÁËÒ»Æ¬ÐÂ´óÂ½£¬ÒÔÍ¯»°ÖÐµÄÍõ¹úÃüÃûÎªÍßÌØÀ¼¡£|Ò»²¿·ÖÍ¬°é¾ö¶¨ÁôÏÂ¡£ÕâÀïÊÇÎÖÍÁ£¬ÔøÊÇÉÌµÀµÄÊ®×ÖÂ·¿Ú¡ª¡ªÖÁÉÙ¿´ÆðÀ´Èç´Ë¡£ÎÒÃÇµÀ±ðºó¼ÌÐøÏò±±ÐÐ½ø¡£|ºÜ¿ìÂ·ÍêÈ«ÏûÊ§ÁË£¬»ðÂÖÒ²²»ÔÙ³öÏÖÎªÎÒÖ¸Â·¡£Ì½ÏÕ¶ÓµÄÊ¿ÆøÒ»ÌìÌìÏûÍË¡£ÖÕÓÚ£¬ÎÒÏÂÁîÕÛ·µ¡£Õâ¸ö¾ö¶¨ÊÜµ½ÁË¶ÓÓÑÃÇµÄ»¶ºô¡£ËùÓÐÈË¶¼Æ£±¹²»¿°¡£|»Øµ½ÍßÌØÀ¼£¬ÎÒÃÇ¸ßÐËµØ·¢ÏÖÔø¾­µÄÍ¬°éÃÇ½¨ÆðÁËÒ»×ùÏñÑùµÄ³ÇÕò£¬ÎÒÃÇ¾ö¶¨ÁôÏÂ¡£Èç½ñÎÒ¼¸ºõÍüÁËÄÇ¸ö»ðÂÖ¡£»òÕßÄÇÖ»ÊÇÒ»¸öÃÎ£¿¡­¡­" />
 
 	<string
 		id="r1_book_kollizey_flyer1"
-		value="Colosseum ad vol.1" />
+		value="¾º¼¼³¡¹ã¸æ ¾íÒ»" />
 
 	<string
 		id="r1_book_kollizey_flyer1_diz"
-		value="The best warriors of the world will fight on the Colosseum’s arena. Ancient ruins will once more host the best entertainment for your pleasure! You can watch the mortal combat, feel the smell of burning rubber and hear the metal grinding, being at the safety of your seats. It's worth seeing!" />
+		value="ÊÀ½çÉÏ×îÇ¿µÄÕ½Ê¿½«ÔÚ¾º¼¼³¡ÖÐ²«É±¡£¹ÅÀÏµÄ·ÏÐæ½«ÔÙ´Î³ÊÏÖ×î¾«²ÊµÄÓéÀÖÊ¢Ñç£¡Äú¿ÉÒÔ¹Û¿´ÊâËÀ²«¶·£¬ÎÅµ½Ïð½ºÈ¼ÉÕµÄÆøÎ¶£¬Ìýµ½½ðÊôµÄÄ¦²ÁÉù£¬¶øÄú°²È»×øÔÚ°²È«µÄ×ùÎ»ÉÏ¡£¾ø¶ÔÖµµÃÒ»¿´£¡" />
 
 	<string
 		id="r1_book_kollizey_flyer2"
-		value="Colosseum ad vol.2" />
+		value="¾º¼¼³¡¹ã¸æ ¾í¶þ" />
 
 	<string
 		id="r1_book_kollizey_flyer2_diz"
-		value="Tired of digging the earth all day long? Factory labor brings you satisfaction no more? Hurry to the Colosseum! Only here you can fight for you life, feel the excitement of the crowd watching your battle. Many adversaries of different levels, valuable prizes, free repair! And of course the admiration of the fans!" />
+		value="Ñá¾ëÁËÕûÌìÍÚÍÁ£¿¹¤³§ÀÍ¶¯²»ÔÙ¸øÄãÂú×ã¸Ð£¿¿ìÀ´¾º¼¼³¡°É£¡Ö»ÓÐÔÚÕâÀïÄã¿ÉÒÔÎªÉú´æ¶øÕ½£¬¸ÐÊÜÈËÈº¹Û¿´ÄãÕ½¶·µÄÐË·Ü¡£²»Í¬µÈ¼¶µÄ¶ÔÊÖ£¬¹óÖØµÄ½±Æ·£¬Ãâ·ÑÐÞÀí£¡µ±È»»¹ÓÐ·ÛË¿µÄ³ç°Ý£¡" />
 
 	<string
 		id="r1_book_sng_flyer"
-		value="CIT brochure" />
+		value="¶ÀÁ¢³ÇÕòÁª°îÊÖ²á" />
 
 	<string
 		id="r1_book_sng_flyer_diz"
-		value="The homeland is in danger! Heartless invaders broke peace treaty and traitorously attacked our settlements. The mercenaries and bandits fight on their side. The enemy is strong but so are we! We fight for our motherland! We defend the ideals of democracy and the human rights! The victory will be ours! Join the army of the Commonwealth of Independent Towns now!" />
+		value="×æ¹ú´¦ÓÚÎ£ÏÕÖ®ÖÐ£¡ÎÞÇéµÄÈëÇÖÕßËº»ÙÁËºÍÆ½ÌõÔ¼£¬±³ÐÅÆúÒåµØÏ®»÷ÁËÎÒÃÇµÄ¾Û¾ÓµØ¡£¹ÍÓ¶±øºÍ·ËÍ½ÎªËûÃÇÂôÃü¡£µÐÈËºÜÇ¿´ó£¬µ«ÎÒÃÇÍ¬ÑùÇ¿´ó£¡ÎÒÃÇÎª×æ¹ú¶øÕ½£¡ÎÒÃÇº´ÎÀÃñÖ÷ÀíÏëºÍÈËÈ¨£¡Ê¤Àû½«ÊôÓÚÎÒÃÇ£¡Á¢¼´¼ÓÈë¶ÀÁ¢³ÇÕòÁª°îµÄ¾ü¶Ó£¡" />
 
 	<string
 		id="r1_book_true_ar"
-		value="The truth about the Crimson Dawn" />
+		value="ÐÉºìÖ®³¿µÄÕæÏà" />
 
 	<string
 		id="r1_book_true_ar_diz"
-		value="For years out peoples co-existed peacefully, traded, exchanged technologies. Bun nothing last long. After several years of drought, the famine started. We could only survive by refusing to help our neighbors. There were the hard times for all of us. Then a leader emerged by the name of Axel. He managed to save many people of the Argen and claimed himself the only ruler of the land. He formed the Crimson Dawn, military organization and now he plans to conquer the Librium with the help of his warriors and mercenaries. " />
+		value="¶àÄêÀ´ÎÒÃÇµÄÈËÃñºÍÆ½¹²´¦£¬Ã³Ò×ÍùÀ´£¬½»Á÷¼¼Êõ¡£µ«ºÃ¾°²»³¤¡£¾­¹ý¼¸ÄêµÄºµÔÖ£¬¼¢»Ä¿ªÊ¼ÁË¡£ÎÒÃÇÖ»ÓÐ¾Ü¾ø°ïÖúÁÚÈË²ÅÄÜ×Ô±£¡£ÄÇÊÇËùÓÐÈËµÄ¼èÄÑÊ±ÆÚ¡£ÕâÊ±Ò»Î»Ãû½ÐAxelµÄÁìÐä³öÏÖÁË¡£ËûÕü¾ÈÁËÐí¶à°¢¶û¸ùÈË£¬×Ô³ÆÊÇÕâÆ¬ÍÁµØÎ¨Ò»µÄÍ³ÖÎÕß¡£Ëû×é½¨ÁËÐÉºìÖ®³¿ÕâÒ»¾üÊÂ×éÖ¯£¬Èç½ñ¼Æ»®ÔÚËûµÄÕ½Ê¿ºÍ¹ÍÓ¶±øµÄ°ïÖúÏÂÕ÷·þÀû²¼ÀïÄ·¡£" />
 
 	<string
 		id="r1_book_ar_flyer"
-		value="Crimson Dawn brochure" />
+		value="ÐÉºìÖ®³¿ÊÖ²á" />
 
 	<string
 		id="r1_book_ar_flyer_diz"
-		value="Great Axel saved us in times of famine and he will lead us to the prosperity! However insidious northerners envy our happiness and plot against us! They took over fertile lands and the source of energy and refuse to cooperate! The negotiations were useless. All CIT wants is war! So we will show them how to fight! We shall overthrow their corrupted leaders and unite the free people under the banners of the Great Axel!" />
+		value="Î°´óµÄAxelÔÚ¼¢»ÄÖÐÕü¾ÈÁËÎÒÃÇ£¬Ëû½«ÒýÁìÎÒÃÇ×ßÏò·±ÈÙ£¡È»¶øÒõÏÕµÄ±±·½ÈË¼µ¶ÊÎÒÃÇµÄÐÒ¸££¬ÃÜÄ±¶Ô¸¶ÎÒÃÇ£¡ËûÃÇÕ¼¾ÝÁËÎÖÍÁºÍÄÜÔ´£¬¾Ü¾øºÏ×÷£¡Ì¸ÅÐºÁÎÞÓÃ´¦¡£¶ÀÁ¢³ÇÕòÁª°îÏëÒªµÄÖ»ÊÇÕ½Õù£¡ÄÇ¾ÍÈÃËûÃÇ¼ûÊ¶ÎÒÃÇµÄÕ½Á¦£¡ÎÒÃÇÒªÍÆ·­ËûÃÇ¸¯°ÜµÄÁìÐä£¬ÔÚÎ°´óµÄAxelµÄÆìÖÄÏÂÍÅ½á×ÔÓÉµÄÈËÃñ£¡" />
 
 	<string
 		id="r1_book_new_world"
-		value="The new man." />
+		value="ÐÂÈËÀà" />
 
 	<string
 		id="r1_book_new_world_diz"
-		value="I tried to analyze the reasons of the catastrophe and came to the conclusion, that it was an evolutionary leap, triggered by an unknown power. I dread to think, what we would have turned into, had we been prepared for that gift. Whoever gave us that power, has done it before time.
-The process of skin transformation under the mask was almost over, but the people needed a leap of faith to complete it. Yet they grew so attached to the new world and the fear of unknown was so strong, that they couldn’t let themselves go. People preferred to live and to die as children of the earth. Their numbers dwindled.|Those who remained were holding onto their former life, even though they had only a distant memory of what human life was like. It wasn’t easy to lead the life of a human, when you didn’t know what you were supposed to do. So, they tried to recreate towns and governments and engaged themselves in the most archaic activities – trade and war.|The more people realized their spiritual nature, the harder they tried to surround themselves with objects that reminded them of their former life. Hence their love for vehicles – the objects that are always with you and that let you be who you are. So, the truck becomes everything to the modern man. It’s his home, his identity and his weapon. The economy of the new world is based on truck production, service and refueling. The money is spent solely on the truck upgrades. The truck has become a fetish for the new man. All hopes and ambitions were now focused on the piece of metal on wheels... There remained some other emotions, of course, but these were in fact memories of emotions.|You should put an end to this imitation of life..." />
+		value="ÎÒÊÔÍ¼·ÖÎöÔÖÄÑµÄÔ­Òò£¬µÃ³ö½áÂÛ£ºÄÇÊÇÒ»´ÎÓÉÎ´ÖªÁ¦Á¿´¥·¢µÄ½ø»¯·ÉÔ¾¡£ÎÒ²»¸ÒÏëÏó£¬Èç¹ûÎÒÃÇ¶ÔÄÇ·ÝÀñÎïÓÐËù×¼±¸£¬»á±ä³ÉÊ²Ã´Ñù×Ó¡£ÎÞÂÛ´ÍÓèÎÒÃÇÄÇ·ÝÁ¦Á¿µÄÊÇË­£¬¶¼À´µÃÌ«ÔçÁË¡£
+Ãæ¾ßÏÂÆ¤·ôµÄ×ª±ä¹ý³Ì¼¸ºõÍê³ÉÁË£¬µ«ÈËÃÇÐèÒªÒ»¸öÐÅÑöµÄ·ÉÔ¾À´Íê³ÉËü¡£È»¶øËûÃÇÈç´ËÒÀÁµÐÂÊÀ½ç£¬¶ÔÎ´ÖªµÄ¿Ö¾åÈç´ËÇ¿ÁÒ£¬ÒÔÖÁÓÚÎÞ·¨·ÅÊÖ¡£ÈËÃÇÄþÔ¸×÷Îª´óµØµÄ×ÓÃñ¶øÉú£¬×÷Îª´óµØµÄ×ÓÃñ¶øËÀ¡£ËûÃÇµÄÈËÊý²»¶Ï¼õÉÙ¡£|ÐÒ´æÕß¹ÌÊØ×Å´ÓÇ°µÄÉú»î£¬¾¡¹ÜËûÃÇ¶ÔÈËÀàÉú»îÓ¦¸ÃÊÇÊ²Ã´ÑùÖ»ÓÐÄ£ºýµÄ¼ÇÒä¡£µ±Äã²»ÖªµÀ×Ô¼º¸Ã×öÊ²Ã´Ê±£¬¹ýÈËÀàµÄÉú»î²¢²»ÈÝÒ×¡£ÓÚÊÇËûÃÇÊÔÍ¼ÖØ½¨³ÇÕòºÍÕþ¸®£¬Í¶ÉíÓÚ×îÔ­Ê¼µÄ»î¶¯¡ª¡ªÃ³Ò×ºÍÕ½Õù¡£|ÈËÃÇÔ½ÊÇÒâÊ¶µ½×Ô¼ºµÄ¾«Éñ±¾ÖÊ£¬¾ÍÔ½Å¬Á¦ÓÃÁî×Ô¼ºÏëÆð¹ýÈ¥Éú»îµÄÎïÆ·À´°üÎ§×Ô¼º¡£Òò´ËËûÃÇ¶Ô³µÁ¾µÄÈÈ°®¡ª¡ªÄÇÊÇÊ¼ÖÕÅã°éÄã¡¢ÈÃÄã³ÉÎªÄã×Ô¼ºµÄ¶«Î÷¡£ÓÚÊÇ¿¨³µ³ÉÁËÏÖ´úÈËµÄÒ»ÇÐ¡£ËüÊÇËûµÄ¼Ò¡¢ËûµÄÉí·Ý¡¢ËûµÄÎäÆ÷¡£ÐÂÊÀ½çµÄ¾­¼Ã½¨Á¢ÔÚ¿¨³µÉú²ú¡¢·þÎñºÍ¼ÓÓÍÖ®ÉÏ¡£Ç®Ö»»¨ÔÚ¿¨³µÉý¼¶ÉÏ¡£¿¨³µ³ÉÁËÐÂÈËÀàµÄÍ¼ÌÚ¡£ËùÓÐµÄÏ£ÍûºÍÐÛÐÄ¶¼¾Û½¹ÔÚÕâ¸ö×°×ÅÂÖ×ÓµÄÌúÆ¤ÉÏ¡­¡­µ±È»»¹ÓÐÒ»Ð©±ðµÄÇé¸Ð£¬µ«Êµ¼ÊÉÏÄÇÖ»ÊÇ¶ÔÇé¸ÐµÄ»ØÒä¡£|ÄãÓ¦¸ÃÖÕ½áÕâÖÖ¶ÔÉú»îµÄÄ£·Â¡­¡­" />
 
 	<string
 		id="r1_book_mad_science"
-		value="Typescript of a scientific report." />
+		value="¿ÆÑ§±¨¸æÊÖ¸å" />
 
 	<string
 		id="r1_book_mad_science_diz"
-		value="Dear colleagues!|I would like to speak to you about the results of my research of several years. My story may be muddled at times, but I assure you that all of it is based on facts I received from reliable sources.|Many years ago there existed a Higher race, the Balance Keepers, who ruled the Universe, not as the most powerful race, but as the wisest and the most just one. But once they were threatened by a far greater force...|They hid their children in a distant planet and left their assistants Njeri to watch over them. Years passed by, but the parents never came back. All of them died in the battle with the Enemy. But Njeri kept their guard over the planet and its inhabitants as a tribute to their gone friends. Another reason that kept them going was the fact that they had chance to restore the balance in the Universe.|The process of becoming a Balance Keeper is rather complicated and includes several stages, for before you can possess unlimited powers, you should possess unlimited sense of responsibility. So, Keepers-to-be had to undergo the complete cycle of evolution: from the protozoan to spiritual beings. You can say, that a Keeper is the final stage of evolution of any life.|Planet Earth, which has become a home and a kindergarten for the descendants of the Keepers, thrived. Yet, the children without the adults forgot their mission and lead the life of ordinary humans. Few of them became prophets. Njeri could not help them there, for they couldn’t soar over the material world and become the creators. All they could do was watch the physical health of the children and follow the instructions, left by the Keepers, which said: wait for the set hour and help the children spread their wings when the time comes.|The Keepers had a weak spot, though. They could not complete the final transformation on their own. The final transformation required a certain information-energy field, which was normally created by the parents. If the parents were missing, the field could be emulated by a special device.|All Njeri’s ships were equipped with such devices so as not to miss the moment of transformation. At least one ship always had to stay in Earth’s orbit. |Where are you all going? I haven’t told you the most important thing yet! You just don’t believe me, do you?|The recording ends."/>
+		value="Ç×°®µÄÍ¬ÊÂÃÇ£¡|ÎÒÏëÏò¸÷Î»½²ÊöÎÒ¼¸ÄêÀ´µÄÑÐ¾¿³É¹û¡£ÎÒµÄÐðÊöÓÐÊ±¿ÉÄÜÏÔµÃ»ìÂÒ£¬µ«ÎÒÏòÄãÃÇ±£Ö¤£¬Ò»ÇÐ¶¼»ùÓÚÎÒ´Ó¿É¿¿À´Ô´»ñµÃµÄÊÂÊµ¡£|Ðí¶àÄêÇ°´æÔÚÒ»¸ö¸ßµÈÖÖ×å¡ª¡ªÆ½ºâÊØ»¤Õß£¬ËûÃÇÍ³ÖÎÓîÖæ£¬²¢·Ç×÷Îª×îÇ¿´óµÄÖÖ×å£¬¶øÊÇ×÷Îª×îî£ÖÇºÍ×î¹«ÕýµÄÖÖ×å¡£µ«ÓÐÒ»Ìì£¬ËûÃÇÊÜµ½ÁËÒ»¹É¸üÇ¿´óµÄÁ¦Á¿µÄÍþÐ²¡­¡­|ËûÃÇ½«º¢×ÓÃÇ²ØÔÚÒ»¸öÒ£Ô¶µÄÐÇÇòÉÏ£¬ÁôÏÂËûÃÇµÄÖúÊÖNjeriÕÕ¿´º¢×ÓÃÇ¡£Äê¸´Ò»Äê£¬¸¸Ä¸ÔÙÒ²Ã»ÓÐ»ØÀ´¡£ËûÃÇÈ«²¿ÔÚÓëµÐÈËµÄÕ½¶·ÖÐÎþÉüÁË¡£µ«Njeri³öÓÚ¶ÔÊÅÈ¥ÅóÓÑµÄ¾´Òâ£¬¼ÌÐøÊØ»¤×ÅÕâ¸öÐÇÇò¼°Æä¾ÓÃñ¡£ÁíÒ»¸öÇýÊ¹ËûÃÇ¼á³ÖÏÂÈ¥µÄÔ­ÒòÊÇ£ºËûÃÇÓÐ»ú»á»Ö¸´ÓîÖæµÄÆ½ºâ¡£|³ÉÎªÆ½ºâÊØ»¤ÕßµÄ¹ý³ÌÏàµ±¸´ÔÓ£¬°üÀ¨¼¸¸ö½×¶Î¡ª¡ªÒòÎªÔÚÓµÓÐÎÞÏÞÁ¦Á¿Ö®Ç°£¬Äã±ØÐëÓµÓÐÎÞÏÞµÄÔðÈÎ¸Ð¡£Òò´Ë×¼ÊØ»¤Õß±ØÐë¾­ÀúÍêÕûµÄ½ø»¯ÖÜÆÚ£º´Óµ¥Ï¸°ûÉúÎïµ½¾«Éñ´æÔÚ¡£¿ÉÒÔËµ£¬ÊØ»¤ÕßÊÇÈÎºÎÉúÃü½ø»¯µÄ×îÖÕ½×¶Î¡£|µØÇò³ÉÎªÁËÊØ»¤Õßºó´úÃÇµÄ¼ÒÔ°ºÍÓ×¶ùÔ°£¬·±ÈÙ·¢Õ¹¡£È»¶øÃ»ÓÐ³ÉÄêÈËÒýµ¼µÄº¢×ÓÃÇÍü¼ÇÁË×Ô¼ºµÄÊ¹Ãü£¬¹ý×ÅÆÕÍ¨ÈËµÄÉú»î¡£ÉÙÊýÈË³ÉÎªÁËÏÈÖª¡£NjeriÔÚ´ËÎÞ·¨°ïÖúËûÃÇ£¬ÒòÎªËûÃÇÎÞ·¨³¬Ô½ÎïÖÊÊÀ½ç³ÉÎª´´ÔìÕß¡£ËûÃÇÄÜ×öµÄÖ»ÊÇ¿´»¤º¢×ÓÃÇµÄÉíÌå½¡¿µ£¬²¢×ñÑ­ÊØ»¤ÕßÁôÏÂµÄÖ¸Ê¾£ºµÈ´ý¼È¶¨µÄÊ±¿Ì£¬ÔÚÊ±»úµ½À´Ê±°ïÖúº¢×ÓÃÇÕ¹³á¸ß·É¡£|È»¶øÊØ»¤ÕßÓÐÒ»¸öÈõµã¡£ËûÃÇÎÞ·¨×ÔÐÐÍê³É×îÖÕµÄ×ª±ä¡£×îÖÕ×ª±äÐèÒªÒ»ÖÖÌØ¶¨µÄÐÅÏ¢ÄÜÁ¿³¡£¬Í¨³£ÓÉ¸¸Ä¸´´Ôì¡£Èç¹û¸¸Ä¸²»ÔÚ£¬ÕâÖÖ³¡¿ÉÒÔÓÉÒ»ÖÖÌØÊâ×°ÖÃÀ´Ä£Äâ¡£|ËùÓÐNjeriµÄ·É´¬¶¼Åä±¸ÁËÕâÑùµÄ×°ÖÃ£¬ÒÔÃâ´í¹ý×ª±äµÄÊ±¿Ì¡£ÖÁÉÙÓÐÒ»ËÒ·É´¬±ØÐëÊ¼ÖÕÁôÔÚµØÇò¹ìµÀÉÏ¡£|ÄãÃÇ¶¼¼±×ÅÈ¥ÄÄ¶ù£¿ÎÒ»¹Ã»¸æËßÄãÃÇ×îÖØÒªµÄÊÂÇéÄØ£¡ÄãÃÇ¾ÍÊÇ²»ÏàÐÅÎÒ£¬¶Ô°É£¿|Â¼Òô½áÊø¡£" />
 </resource>
