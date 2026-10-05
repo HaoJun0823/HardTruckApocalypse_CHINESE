@@ -1,0 +1,18 @@
+English,Chinese,Category,Notes
+Quest,任务,核心,游戏任务系统 Quest %1s → 任务 %1s
+Merchandise,商品,经济,城镇交易货物
+Money,金币,经济,游戏货币单位
+Coins,金币,经济,Not enough coins → 金币不足
+Vehicle,车辆,核心,玩家驾驶的卡车统称
+Truck,卡车,核心,主角座驾
+Cabin,驾驶室,部件,卡车前部驾驶舱
+Body,车厢,部件,卡车货箱 Buy Body → 购买车厢
+Gadget,配件,部件,车辆改装件 Vehicle improvement → 车辆配件
+Weapon,武器,战斗,枪械统称
+Vehicles destroyed,摧毁车辆数,统计,战绩统计页
+Hit ratio,命中率,战斗,百分比命中统计
+Favorite weapon,最常用武器,统计,战绩统计页
+Dwellers,居民,世界,游戏内NPC居民
+Game time,游戏时间,统计,现实游玩时长
+Days lived within game,游戏内度过天数,统计,游戏世界天数
+Distance traveled,行驶里程,统计,单位公里
