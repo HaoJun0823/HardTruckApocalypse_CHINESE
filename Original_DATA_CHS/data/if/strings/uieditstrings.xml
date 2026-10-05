@@ -1,448 +1,448 @@
 <?xml version="1.0" encoding="windows-1251" standalone="yes" ?><!-- edited with XML Spy v4.2 U (http://www.xmlspy.com) by Morgoth (Targem) -->
-<resource><!--Default buttons--><!-- Общие в т.ч. вне игры -->
+<resource><!--Default buttons-->
 	<string
 		id="ok"
-		value="OK" />
+		value="И·¶Ё" />
 
 	<string
 		id="cancel"
-		value="Cancel" />
+		value="ИЎПы" />
 
 	<string
 		id="Cancel"
-		value="Cancel" />
+		value="ИЎПы" />
 
 	<string
 		id="yes"
-		value="Yes" />
+		value="КЗ" />
 
 	<string
 		id="no"
-		value="No" />
+		value="·с" />
 
 	<string
 		id="error"
-		value="Error" />
+		value="ґнОу" />
 
 	<string
 		id="save"
-		value="Save" />
+		value="±Јґж" />
 
 	<string
 		id="Default"
-		value="Default" />
+		value="Д¬ИП" />
 
 	<string
 		id="Close"
-		value="Close" />
+		value="№Ш±Х" />
 
 	<string
 		id="Control"
-		value="Control" />
+		value="їШЦЖ" />
 
 	<string
 		id="Exit"
-		value="Exit" />
+		value="НЛіц" />
 
 	<string
 		id="Delete"
-		value="Delete" />
+		value="Йѕіэ" />
 
 	<string
 		id="CloseWindow"
-		value="Close window" />
+		value="№Ш±Хґ°їЪ" />
 
 	<string
 		id="Date"
-		value="Date" />
+		value="ИХЖЪ" />
 
 	<string
 		id="SaveName"
-		value="Name" />
+		value="ГыіЖ" />
 
 	<string
 		id="SortByName"
-		value="Sort by name" />
+		value="°ґГыіЖЕЕРт" />
 
 	<string
 		id="SortByDate"
-		value="Sort by date" />
+		value="°ґИХЖЪЕЕРт" />
 
 	<string
 		id="ServiceSymbolsUsed"
-		value="The profile name must not contain |the following symbols:|@ff00ff00%s" />
+		value="µµ°ёГыІ»ДЬ°ьє¬|ТФПВ·ыєЕЈє|@ff00ff00%s" />
 
 	<string
 		id="quitGame"
-		value="Do you wish to leave the game?" />
+		value="И·ИПАлїЄУОП·Јї" />
 
 	<string
 		id="ChoseDifficultyLevel"
-		value="Choose difficulty level" />
-<!-- Главное меню -->
+		value="СЎФсДС¶И" />
+<!-- ЦчІЛµҐ -->
 	<string
 		id="New Game"
-		value="New Game" />
+		value="РВУОП·" />
 
 	<string
 		id="StartNetGame"
-		value="Start new game" />
+		value="їЄКјРВУОП·" />
 
 	<string
 		id="Credits"
-		value="Credits" />
+		value="ЦЖЧчЧй" />
 
 	<string
 		id="Load Game"
-		value="Load game" />
+		value="¶БИЎУОП·" />
 
 	<string
 		id="Options"
-		value="Options" />
+		value="СЎПо" />
 
 	<string
 		id="Quit to Windows"
-		value="Quit to Windows" />
+		value="НЛіцµЅWindows" />
 
 	<string
 		id="Profile"
-		value="Profile" />
+		value="µµ°ё" />
 
 	<string
 		id="ProfileDontChosen"
-		value="not set" />
+		value="ОґЙиЦГ" />
 
 	<string
 		id="Intro"
-		value="Intro" />
+		value="їЄіЎ¶Ї»­" />
 
 	<string
 		id="OpenSavesList"
-		value="Load previously saved game" />
+		value="¶БИЎТС±ЈґжµДУОП·" />
 
 	<string
 		id="ShowIntro"
-		value="Show Intro" />
+		value="ІҐ·ЕїЄіЎ¶Ї»­" />
 
 	<string
 		id="HandleGameOptions"
-		value="Change game settings" />
+		value="ёьёДУОП·ЙиЦГ" />
 
 	<string
 		id="ShowCredits"
-		value="Show developers list" />
-<!-- Окно загрузки -->
+		value="ПФКѕЦЖЧчИЛФ±ГыµҐ" />
+<!-- јУФШЅзГж -->
 	<string
 		id="load"
-		value="Load" />
+		value="¶БИЎ" />
 
 	<string
 		id="LoadGame"
-		value="Load saved game" />
+		value="¶БИЎґжµµ" />
 
 	<string
 		id="SavedGameLoading"
-		value="Loading game" />
-<!-- Профиль -->
+		value="ХэФЪ¶БИЎУОП·" />
+<!-- µµ°ё -->
 	<string
 		id="DeleteProfileWarning"
-		value="All saved games will be deleted. | Continue?" />
+		value="ЛщУРґжµµЅ«±»ЙѕіэЎЈ| КЗ·сјМРшЈї" />
 
 	<string
 		id="DefaultProfileName"
-		value="Player" />
+		value="НжјТ" />
 
 	<string
 		id="Create"
-		value="Create" />
+		value="ґґЅЁ" />
 
 	<string
 		id="CreateProfile"
-		value="Create new profile" />
+		value="ґґЅЁРВµµ°ё" />
 
 	<string
 		id="NewProfile"
-		value="New profile" />
+		value="РВµµ°ё" />
 
 	<string
 		id="ProfileExists"
-		value="A profile with that name already exists! | Enter another name." />
+		value="ёГГыіЖµДµµ°ёТСґжФЪЈЎ| ЗлКдИлЖдЛыГыіЖЎЈ" />
 
 	<string
 		id="EmptyProfileName"
-		value="Cannot create profile with no name" />
+		value="ОЮ·ЁґґЅЁОЮГыµµ°ё" />
 
 	<string
 		id="ProfileCreateError"
-		value="Profile creating error" />
+		value="ґґЅЁµµ°ёК§°Ь" />
 
 	<string
 		id="ProfileDeleteError"
-		value="Profile deleting error" />
+		value="Йѕіэµµ°ёК§°Ь" />
 
 	<string
 		id="Chose"
-		value="Select" />
+		value="СЎФс" />
 
 	<string
 		id="DeleteProfile"
-		value="Delete profile" />
+		value="Йѕіэµµ°ё" />
 
 	<string
 		id="ChoseProfile"
-		value="Set profile as current" />
+		value="ЙиОЄµ±З°µµ°ё" />
 
 	<string
 		id="CancelExit"
-		value="Close window and withdraw changes" />
+		value="№Ш±Хґ°їЪІў·ЕЖъёьёД" />
 
 	<string
 		id="ChangePlayerProfile"
-		value="Change profile" />
+		value="ёьёДµµ°ё" />
 
 	<string
 		id="ChangeProfile"
-		value="Change profile" />
+		value="ёьёДµµ°ё" />
 
 	<string
 		id="CurProfile"
-		value="Current profile" />
+		value="µ±З°µµ°ё" />
 
 	<string
 		id="InvalidProfileName"
-		value="Invalid profile name" />
-<!-- Текст сплэшей -->
+		value="ОЮР§µДµµ°ёГы" />
+<!-- јУФШЅш¶И -->
 	<string
 		id="Loading"
-		value="Loading" />
+		value="јУФШЦР" />
 
 	<string
 		id="LoadingDots"
-		value="LOADING..." />
+		value="јУФШЦРЎ­" />
 
 	<string
 		id="LoadWorld"
-		value="LOAD LEVEL" />
+		value="јУФШ№ШїЁ" />
 
 	<string
 		id="InitWorld"
-		value="LEVEL INITIALIZATION" />
+		value="№ШїЁіхКј»Ї" />
 
 	<string
 		id="MainMenuLoading"
-		value="Loading" />
+		value="јУФШЦР" />
 
 	<string
 		id="AnimatedModelsServer"
-		value="animated objects" />
+		value="¶Ї»­¶ФПу" />
 
 	<string
 		id="StaticModelsServer"
-		value="static objects" />
+		value="ѕІМ¬¶ФПу" />
 
 	<string
 		id="LightsServer"
-		value="light sources" />
+		value="№вФґ" />
 
 	<string
 		id="SpritesServer"
-		value="sprites" />
+		value="ѕ«Бй" />
 
 	<string
 		id="ParticlesServer"
-		value="particle systems" />
+		value="БЈЧУПµНі" />
 
 	<string
 		id="SoundsServer"
-		value="audio" />
+		value="ТфР§" />
 
 	<string
 		id="MusicServer"
-		value="music" />
-<!-- замените это на более благозвучное -->
+		value="ТфАЦ" />
+<!-- ЖдЛыЧУПµНі -->
 	<string
 		id="ProjectorsServer"
-		value="projectors" />
+		value="Н¶У°" />
 
 	<string
 		id="DecalsServer"
-		value="decals" />
+		value="Мщ»Ё" />
 
 	<string
 		id="Precaching"
-		value="Caching " />
-<!-- Окно настроек -->
+		value="»єґжЦР " />
+<!-- ЙиЦГГж°е -->
 	<string
 		id="Video"
-		value="Video" />
+		value="КУЖµ" />
 
 	<string
 		id="Sound"
-		value="Sound" />
+		value="ЙщТф" />
 
 	<string
 		id="Game"
-		value="Game" />
+		value="УОП·" />
 
 	<string
 		id="Video settings"
-		value="Video Setup" />
+		value="КУЖµЙиЦГ" />
 
 	<string
 		id="Far dist"
-		value="Sight Range" />
+		value="КУѕа" />
 
 	<string
 		id="Gamma"
-		value="Gamma" />
+		value="Щ¤Вн" />
 
 	<string
 		id="Resolution"
-		value="Resolution" />
+		value="·Ц±жВК" />
 
 	<string
 		id="GraphicQuality"
-		value="Graphics quality" />
+		value="»­ГжЦКБї" />
 
 	<string
 		id="Grass"
-		value="Grass" />
+		value="ІЭµШ" />
 
 	<string
 		id="TextureResolution"
-		value="Texture resolution" />
+		value="ОЖАн·Ц±жВК" />
 
 	<string
 		id="Antialiasing"
-		value="Antialiasing " />
+		value="ї№ѕвіЭ " />
 
 	<string
 		id="Filtration"
-		value="Filtering" />
+		value="№эВЛ" />
 
 	<string
 		id="BlumQuality"
-		value="Bloom quality" />
+		value="·є№вЦКБї" />
 
 	<string
 		id="WaterQuality"
-		value="Water quality" />
+		value="Л®ГжЦКБї" />
 
 	<string
 		id="Audio settings"
-		value="Audio Setup" />
+		value="ТфЖµЙиЦГ" />
 
 	<string
 		id="Fx vol"
-		value="Effects Volume" />
+		value="ТфР§ТфБї" />
 
 	<string
 		id="Music vol"
-		value="Music Volume" />
+		value="ТфАЦТфБї" />
 
 	<string
 		id="Speak vol"
-		value="Speech volume" />
+		value="УпТфТфБї" />
 
 	<string
 		id="Game settings"
-		value="Game settings" />
+		value="УОП·ЙиЦГ" />
 
 	<string
 		id="DialogPause"
-		value="Dialog Pause" />
+		value="¶Ф»°ФЭНЈ" />
 
 	<string
 		id="AutoHelp"
-		value="Automatic hints" />
+		value="ЧФ¶ЇМбКѕ" />
 
 	<string
 		id="MouseSensitivity"
-		value="Mouse sensitivity" />
+		value="Ку±кБйГф¶И" />
 
 	<string
 		id="MouseYAxisFlip"
-		value="Invert mouse Y-axis" />
+		value="·ґЧЄКу±кYЦб" />
 
 	<string
 		id="MouseXAxisFlip"
-		value="Invert mouse X-axis" />
+		value="·ґЧЄКу±кXЦб" />
 
 	<string
 		id="Keys"
-		value="Keys" />
+		value="°ґјь" />
 
 	<string
 		id="RestoreDef"
-		value="Restore default settings" />
+		value="»ЦёґД¬ИПЙиЦГ" />
 
 	<string
 		id="Apply"
-		value="Apply" />
+		value="У¦УГ" />
 
 	<string
 		id="Recommended"
-		value="Recommended" />
+		value="НЖјц" />
 
 	<string
 		id="None"
-		value="None" />
+		value="ОЮ" />
 
 	<string
 		id="Near"
-		value="Close" />
+		value="Ѕь" />
 
 	<string
 		id="Far"
-		value="Far" />
+		value="Ф¶" />
 
 	<string
 		id="LowQuality"
-		value="Low" />
+		value="µН" />
 
 	<string
 		id="MediumQuality"
-		value="Medium" />
+		value="ЦР" />
 
 	<string
 		id="HighQuality"
-		value="High" />
+		value="ёЯ" />
 
 	<string
 		id="CustomQuality"
-		value="Custom" />
+		value="ЧФ¶ЁТе" />
 
 	<string
 		id="MaxQuality"
-		value="Maximal" />
+		value="ЧоёЯ" />
 
 	<string
 		id="LowResolution"
-		value="Low" />
+		value="µН" />
 
 	<string
 		id="HighResolution"
-		value="High" />
+		value="ёЯ" />
 
 	<string
 		id="CustomResolution"
-		value="Custom" />
+		value="ЧФ¶ЁТе" />
 
 	<string
 		id="BilinearFiltration"
-		value="Bilinear" />
+		value="Л«ПЯРФ" />
 
 	<string
 		id="TrilinearFiltration"
-		value="Trilinear" />
+		value="ИэПЯРФ" />
 
 	<string
 		id="AnisotropFiltration"
-		value="Anisotropic " />
+		value="ёчПтТмРФ " />
 
 	<string
 		id="CustomFiltration"
-		value="Custom" />
+		value="ЧФ¶ЁТе" />
 
 	<string
 		id="Antialiasing_x2"
@@ -462,47 +462,47 @@
 
 	<string
 		id="CustomAntialiasing"
-		value="Custom" />
+		value="ЧФ¶ЁТе" />
 
 	<string
 		id="OptionsChanged"
-		value="The settings were changed. Do you want to save changes?" />
+		value="ЙиЦГТСёьёДЎЈКЗ·с±ЈґжЈї" />
 
 	<string
 		id="ShadowsQuality"
-		value="Shadow quality" />
+		value="ТхУ°ЦКБї" />
 
 	<string
 		id="NumBattleReplies"
-		value="Amount of battle remarks" />
+		value="ХЅ¶·УпТфЖµВК" />
 
 	<string
 		id="Control settings"
-		value="Control settings" />
+		value="їШЦЖЙиЦГ" />
 
 	<string
 		id="BindingsChanged"
-		value="Control keys were redefined. Do you want to save changes?" />
+		value="°ґјьТСЦШРВ¶ЁТеЎЈКЗ·с±ЈґжЈї" />
 
 	<string
 		id="GameDifficulty"
-		value="Game difficulty" />
+		value="УОП·ДС¶И" />
 
 	<string
 		id="EasyLevel"
-		value="Easy" />
+		value="јтµҐ" />
 
 	<string
 		id="MediumLevel"
-		value="Medium" />
+		value="ЦРµИ" />
 
 	<string
 		id="HardLevel"
-		value="Hard" />
+		value="А§ДС" />
 
 	<string
 		id="ImpossibleLevel"
-		value="Impossible" />
+		value="ј«ДС" />
 <!-- DemoSplashWnd -->
 	<string
 		id="Targem Link Tip"
@@ -526,5 +526,5 @@
 
 	<string
 		id="AutoSave"
-		value="Autosave" />
+		value="ЧФ¶Їґжµµ" />
 </resource>

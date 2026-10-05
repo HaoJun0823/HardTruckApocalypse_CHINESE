@@ -126,3 +126,34 @@ Camera rotation,旋转镜头,操作,
 Fire group,开火组,操作,武器组1-5
 Fire all groups,全部开火,操作,
 Reload weapon,装填武器,操作,
+Profile,档案,界面,玩家档案
+Credits,制作组,界面,制作人员
+Options,选项,界面,设置选项
+Intro,开场动画,界面,
+New Game,新游戏,界面,主菜单
+Game difficulty,游戏难度,界面,
+Easy,简单,难度,
+Medium,中等,难度,
+Hard,困难,难度,
+Impossible,极难,难度,
+Gamma,伽马,设置,
+Graphics quality,画面质量,设置,
+Antialiasing,抗锯齿,设置,
+Filtering,过滤,设置,
+Bloom quality,泛光质量,设置,
+Water quality,水面质量,设置,
+Mouse sensitivity,鼠标灵敏度,设置,
+Useless,无用,词缀,负面词缀
+Rusty,生锈,词缀,负面词缀
+Excellent,优秀,词缀,正面词缀
+Advanced,高级,词缀,正面词缀
+Slow,缓慢,词缀,武器词缀
+Assault,突击,词缀,武器词缀
+Rapid-firing,速射,词缀,武器词缀
+Weak,低劣,词缀,武器词缀
+Deadly,致命,词缀,武器词缀
+Destructive,破坏性,词缀,武器词缀
+Grouping angle,散布角,参数,射击散布
+Barrel,枪管,部件,武器枪管
+Cooling,冷却,部件,枪管冷却
+Sight,瞄准器,部件,武器瞄准
