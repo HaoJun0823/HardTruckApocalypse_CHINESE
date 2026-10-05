@@ -1,180 +1,180 @@
 <?xml version="1.0" encoding="windows-1251" standalone="yes" ?><!-- edited with XML Spy v4.2 U (http://www.xmlspy.com) by Morgoth (Targem) -->
-<resource><!--Default buttons--><!-- Названия -->
+<resource><!--Default buttons-->
 	<string
 		id="Belong_1100"
-		value="Player" />
+		value="НжјТ" />
 
 	<string
 		id="Belong_1100_abb"
-		value="Friend" />
+		value="УС·Ѕ" />
 
 	<string
 		id="Belong_1002"
-		value="Vagabonds" />
+		value="БчАЛХЯ" />
 
 	<string
 		id="Belong_1002_abb"
-		value="Vagabond" />
+		value="БчАЛХЯ" />
 
 	<string
 		id="Belong_1003"
-		value="Adventurers" />
+		value="Г°ПХХЯ" />
 
 	<string
 		id="Belong_1003_abb"
-		value="Adventurer" />
+		value="Г°ПХХЯ" />
 
 	<string
 		id="Belong_1004"
-		value="Explorers" />
+		value="МЅПХјТ" />
 
 	<string
 		id="Belong_1004_abb"
-		value="Explorer" />
+		value="МЅПХјТ" />
 
 	<string
 		id="Belong_1005"
-		value="Nomads" />
+		value="УОДБГс" />
 
 	<string
 		id="Belong_1005_abb"
-		value="Nomad" />
+		value="УОДБГс" />
 
 	<string
 		id="Belong_1006"
-		value="Bounty hunters" />
+		value="ЙНЅрБФИЛ" />
 
 	<string
 		id="Belong_1006_abb"
-		value="BH" />
+		value="ЙНЅрБФИЛ" />
 
 	<string
 		id="Belong_1007"
-		value="Doom bringers" />
+		value="Д©ИХК№ХЯ" />
 
 	<string
 		id="Belong_1007_abb"
-		value="DB" />
+		value="Д©ИХК№ХЯ" />
 
 	<string
 		id="Belong_1008"
-		value="Farmers’ union" />
+		value="Е©·тБЄГЛ" />
 
 	<string
 		id="Belong_1008_abb"
-		value="FU" />
+		value="Е©·тБЄГЛ" />
 
 	<string
 		id="Belong_1009"
-		value="Technicians" />
+		value="јјК¦" />
 
 	<string
 		id="Belong_1009_abb"
-		value="Techno" />
+		value="јјК¦" />
 
 	<string
 		id="Belong_1010"
-		value="North Path Traders" />
+		value="±±В·ЙМИЛ" />
 
 	<string
 		id="Belong_1010_abb"
-		value="NPT" />
+		value="±±В·ЙМИЛ" />
 
 	<string
 		id="Belong_1011"
-		value="Free Traders’ Alliance" />
+		value="ЧФУЙЙМИЛБЄГЛ" />
 
 	<string
 		id="Belong_1011_abb"
-		value="TA" />
+		value="ЧФУЙЙМИЛ" />
 
 	<string
 		id="Belong_1012"
-		value="Brigade" />
+		value="ВГНЕ" />
 
 	<string
 		id="Belong_1012_abb"
-		value="Brigade" />
+		value="ВГНЕ" />
 
 	<string
 		id="Belong_1013"
-		value="Felix’s gang" />
+		value="Felix°п" />
 
 	<string
 		id="Belong_1013_abb"
-		value="FG" />
+		value="Felix°п" />
 
 	<string
 		id="Belong_1014"
-		value="Fishermen" />
+		value="УжГс" />
 
 	<string
 		id="Belong_1014_abb"
-		value="Fisher" />
+		value="УжГс" />
 
 	<string
 		id="Belong_1015"
-		value="Crimson dawn" />
+		value="РЙємЦ®ії" />
 
 	<string
 		id="Belong_1015_abb"
-		value="CD" />
+		value="РЙємЦ®ії" />
 
 	<string
 		id="Belong_1016"
-		value="Commonwealth of Independent Towns" />
+		value="¶АБўіЗХтБЄ°о" />
 
 	<string
 		id="Belong_1016_abb"
-		value="CIT" />
+		value="¶АБўБЄ°о" />
 
 	<string
 		id="Belong_1017"
-		value="Church of Enlightenment" />
+		value="ЖфГЙЅМ»б" />
 
 	<string
 		id="Belong_1017_abb"
-		value="COE" />
+		value="ЖфГЙЅМ»б" />
 
 	<string
 		id="Belong_1018"
-		value="Boss' army" />
+		value="АПґуѕь¶У" />
 
 	<string
 		id="Belong_1018_abb"
-		value="Minion" />
+		value="КЦПВ" />
 
 	<string
 		id="Belong_1019"
-		value="Druids" />
+		value="µВВіТБ" />
 
 	<string
 		id="Belong_1019_abb"
-		value="Druid" />
+		value="µВВіТБ" />
 
 	<string
 		id="Belong_1020"
-		value="Children of Iron" />
+		value="МъЦ®ЧУ" />
 
 	<string
 		id="Belong_1020_abb"
-		value="IC" />
+		value="МъЦ®ЧУ" />
 
 	<string
 		id="Belong_1021"
-		value="Oracle’s disciples" />
+		value="ЙсЪНРЕНЅ" />
 
 	<string
 		id="Belong_1021_abb"
-		value="Disciple" />
+		value="РЕНЅ" />
 
 	<string
 		id="Belong_1022"
-		value="Steel Giants" />
+		value="ёЦМъѕЮИЛ" />
 
 	<string
 		id="Belong_1022_abb"
-		value="SG" />
+		value="ёЦМъѕЮИЛ" />
 
 	<string
 		id="Belong_1023"
@@ -194,11 +194,11 @@
 
 	<string
 		id="Belong_1025"
-		value="Al’faran" />
+		value="Al'Aran" />
 
 	<string
 		id="Belong_1025_abb"
-		value="Al’faran" />
+		value="Al'Aran" />
 
 	<string
 		id="Belong_1026"
@@ -210,27 +210,27 @@
 
 	<string
 		id="Belong_1027"
-		value="Militarists" />
+		value="ѕь№ъЦчТеХЯ" />
 
 	<string
 		id="Belong_1027_abb"
-		value="Militarists" />
+		value="ѕь№ъЦчТеХЯ" />
 
 	<string
 		id="Belong_1028"
-		value="Trappers" />
+		value="ПЭЪеБФИЛ" />
 
 	<string
 		id="Belong_1028_abb"
-		value="Trappers" />
+		value="ПЭЪеБФИЛ" />
 
 	<string
 		id="Belong_1029"
-		value="Bears" />
+		value="РЬ°п" />
 
 	<string
 		id="Belong_1029_abb"
-		value="Bears" />
+		value="РЬ°п" />
 
 	<string
 		id="Belong_1030"
@@ -242,11 +242,11 @@
 
 	<string
 		id="Belong_1040"
-		value="Rebels" />
+		value="ЕСѕь" />
 
 	<string
 		id="Belong_1040_abb"
-		value="Rebel" />
+		value="ЕСѕь" />
 
 	<string
 		id="Belong_1041"
@@ -254,7 +254,7 @@
 
 	<string
 		id="Belong_1041_abb"
-		value="CD" />
+		value="РЙємЦ®ії" />
 
 	<string
 		id="Belong_1042"
@@ -262,63 +262,63 @@
 
 	<string
 		id="Belong_1042_abb"
-		value="Explorer" />
+		value="МЅПХјТ" />
 
 	<string
 		id="Belong_1043"
-		value="Zeon town" />
+		value="ZeonХт" />
 
 	<string
 		id="Belong_1043_abb"
-		value="CD" />
+		value="РЙємЦ®ії" />
 
 	<string
 		id="Belong_1044"
-		value="Vagabonds" />
+		value="БчАЛХЯ" />
 
 	<string
 		id="Belong_1044_abb"
-		value="Vagabond" />
+		value="БчАЛХЯ" />
 
 	<string
 		id="Belong_1045"
-		value="North Path Traders" />
+		value="±±В·ЙМИЛ" />
 
 	<string
 		id="Belong_1045_abb"
-		value="NPT" />
+		value="±±В·ЙМИЛ" />
 
 	<string
 		id="Belong_1046"
-		value="Crimson dawn" />
+		value="РЙємЦ®ії" />
 
 	<string
 		id="Belong_1046_abb"
-		value="CD" />
+		value="РЙємЦ®ії" />
 
 	<string
 		id="Belong_1047"
-		value="North Path Traders" />
+		value="±±В·ЙМИЛ" />
 
 	<string
 		id="Belong_1047_abb"
-		value="NPT" />
+		value="±±В·ЙМИЛ" />
 
 	<string
 		id="Belong_1048"
-		value="Crimson dawn" />
+		value="РЙємЦ®ії" />
 
 	<string
 		id="Belong_1048_abb"
-		value="CD" />
+		value="РЙємЦ®ії" />
 
 	<string
 		id="Belong_1049"
-		value="Oracle’s disciples" />
+		value="ЙсЪНРЕНЅ" />
 
 	<string
 		id="Belong_1049_abb"
-		value="Disciple" />
+		value="РЕНЅ" />
 
 	<string
 		id="Belong_1050"
@@ -326,27 +326,27 @@
 
 	<string
 		id="Belong_1050_abb"
-		value="Vagabond" />
+		value="БчАЛХЯ" />
 
 	<string
 		id="Belong_1051"
-		value="Farmers’ union" />
+		value="Е©·тБЄГЛ" />
 
 	<string
 		id="Belong_1051_abb"
-		value="FU" />
+		value="Е©·тБЄГЛ" />
 
 	<string
 		id="Belong_1052"
-		value="Technicians" />
+		value="јјК¦" />
 
 	<string
 		id="Belong_1052_abb"
-		value="Techno" />
+		value="јјК¦" />
 
 	<string
 		id="Belong_1053"
-		value="Powerplant" />
+		value="·ўµзХѕ" />
 
 	<string
 		id="Belong_1053_abb"
@@ -354,281 +354,281 @@
 
 	<string
 		id="Belong_1054"
-		value="Commonwealth of Independent Towns" />
+		value="¶АБўіЗХтБЄ°о" />
 
 	<string
 		id="Belong_1054_abb"
-		value="CIT" />
+		value="¶АБўБЄ°о" />
 
 	<string
 		id="Belong_1060"
-		value="Desert dwellers" />
+		value="ЙіД®ѕУГс" />
 
 	<string
 		id="Belong_1060_abb"
-		value="DD" />
+		value="ЙіД®ѕУГс" />
 
 	<string
 		id="Belong_1061"
-		value="Scientist’s defenders" />
+		value="їЖС§јТµД»¤ОА" />
 
 	<string
 		id="Belong_1061_abb"
-		value="Defender" />
+		value="»¤ОА" />
 
 	<string
 		id="Belong_1062"
-		value="Madmen" />
+		value="їсИЛ" />
 
 	<string
 		id="Belong_1062_abb"
-		value="Madman" />
+		value="їсИЛ" />
 
 	<string
 		id="Belong_1063"
-		value="Lone brigands" />
+		value="¶АРРµБ·Л" />
 
 	<string
 		id="Belong_1063_abb"
-		value="Brigand" />
+		value="µБ·Л" />
 
 	<string
 		id="Belong_1064"
-		value="Uluk’s militia" />
+		value="UlukГс±ш" />
 
 	<string
 		id="Belong_1064_abb"
-		value="IC" />
+		value="МъЦ®ЧУ" />
 
 	<string
 		id="Belong_1065"
-		value="Evil bandits" />
+		value="Р°¶с·ЛНЅ" />
 
 	<string
 		id="Belong_1065_abb"
-		value="Bandit" />
+		value="·ЛНЅ" />
 
 	<string
 		id="Belong_1080"
-		value="Gas station" />
+		value="јУУНХѕ" />
 
 	<string
 		id="Belong_1080_abb"
-		value="Gas station" />
-<!-- Описания -->
+		value="јУУНХѕ" />
+<!-- ЕЙПµГиКц -->
 	<string
 		id="Belong_1002_diz"
-		value="Anyone may fall a victim to these raiders. They usually attack in small groups." />
+		value="ИОєОИЛ¶јїЙДЬіЙОЄХвР©ЅЩВУХЯµДБФОпЎЈЛыГЗНЁіЈТФРЎ№ЙНЕ»піц»чЎЈ" />
 
 	<string
 		id="Belong_1003_diz"
-		value="Traveling the world in search of adventures, as if life is not dangerous enough, they may easily become foes or allies, depending on the situation. " />
+		value="ЛыГЗВъКАЅзУОАъС°ХТГ°ПХЈ¬·В·рЙъ»о»№І»№»ОЈПХЎЈёщѕЭѕЦКЖІ»Н¬Ј¬ЛыГЗЛжК±їЙДЬіЙОЄµРИЛ»тГЛУСЎЈ" />
 
 	<string
 		id="Belong_1004_diz"
-		value="Nowadays their numbers grew thin. But if you met one of these noble guys, you may expect help in any situation." />
+		value="ИзЅсЛыГЗµДКэБїТСЛщКЈОЮјёЎЈµ«ИфУцµЅХвР©ёЯЙРµДИЛЈ¬ИОєОА§ѕіЦР¶јДЬЦёНыµГµЅ°пЦъЎЈ" />
 
 	<string
 		id="Belong_1005_diz"
-		value="Independent traders, eager to trade with anyone." />
+		value="¶АБўЙМИЛЈ¬ИИЦФУЪУлИОєОИЛЧцЙъТвЎЈ" />
 
 	<string
 		id="Belong_1006_diz"
-		value="Most dangerous warriors of the new world form this respectful faction. They fight for money but strictly honor their code." />
+		value="РВКАЅзЧоОЈПХµДХЅКїЧйіЙБЛХвТ»БоИЛѕґО·µДЕЙПµЎЈЛыГЗОЄЗ®¶шХЅЈ¬µ«СПёсЧсКШЧФјєµДРЕМхЎЈ" />
 
 	<string
 		id="Belong_1007_diz"
-		value="Hard times often give birth to the different sects, some of which are really dangerous." />
+		value="јиДСК±КАіЈґЯЙъёчЦЦЅМЕЙЈ¬ЖдЦРТ»Р©И·Кµ·ЗіЈОЈПХЎЈ" />
 
 	<string
 		id="Belong_1008_diz"
-		value="The farmers cultivate the land as their ancestors. Having nothing but their vegetables, they rarely get attacked by raiders.   " />
+		value="Е©·тГЗПсЧжПИТ»СщёыЦЦНБµШЎЈіэБЛКЯІЛТ»ОЮЛщУРЈ¬ЅЩВУХЯєЬЙЩП®»чЛыГЗЎЈ" />
 
 	<string
 		id="Belong_1009_diz"
-		value="Simple people dislike Technicians for their knowledge and cowardice. " />
+		value="ЖХНЁИЛТтОЄјјК¦ГЗµДЦЄК¶єНЗУЕі¶шСб¶сЛыГЗЎЈ" />
 
 	<string
 		id="Belong_1010_diz"
-		value="Honest traders that make money on the oil trade. Now they search new unexplored territories for rare merchandise." />
+		value="їїКЇУНГіТЧЧ¬З®µДіПКµЙМИЛЎЈИзЅсЛыГЗФЪС°ХТРВµДОґЦЄБмµШТФГЩµГПЎУРЙМЖ·ЎЈ" />
 
 	<string
 		id="Belong_1011_diz"
-		value="This faction is known for their relations with the bandits. Supposedly, they deal with stolen goods. " />
+		value="ХвТ»ЕЙПµТтУл·ЛНЅµД№ШПµ¶шОЕГыЎЈѕЭЛµЛыГЗЧЁГЕПъФЯЎЈ" />
 
 	<string
 		id="Belong_1012_diz"
-		value="One of the many local gangs, willing to take control over the Vaterland. They managed to get inside the ancient military base, which gave them unlimited access to all kinds of weapons." />
+		value="ЦЪ¶аµШ·Ѕ°пЕЙЦ®Т»Ј¬ТвНјїШЦЖНЯМШАјЎЈЛыГЗЙи·ЁЙшНёЅшБЛ№ЕАПµДѕьКВ»щµШЈ¬ґУ¶ш»сµГБЛИЎЦ®І»ѕЎµДёчАаОдЖчЎЈ" />
 
 	<string
 		id="Belong_1013_diz"
-		value="Racketeers that toll the whole Krai. It’s been that way for many years and seems to suit everybody." />
+		value="ПтХыёцїЛАіµШЗшКХ±Ј»¤·СµДЗГХ©ХЯЎЈ¶аДкАґТ»Ц±ИзґЛЈ¬ЛЖєхЛщУРИЛ¶јП°ТФОЄіЈЎЈ" />
 
 	<string
 		id="Belong_1014_diz"
-		value="No one knows what these people manage to fish from the lifeless waters of the ocean. But the fishers seem quite happy with their lives." />
+		value="Г»ИЛЦЄµАХвР©ИЛґУЛАјЕµДєЈСуЦРАМіцБЛКІГґЎЈµ«УжГсГЗЛЖєх¶ФЧФјєµДЙъ»оПаµ±ВъТвЎЈ" />
 
 	<string
 		id="Belong_1015_diz"
-		value="Inspired by the charismatic leader Axel, people of Argen are fighting with their neighbors. They also use the services of mercenaries of all kinds." />
+		value="ФЪчИБ¦·З·ІµДБмРдAxelµДёРХЩПВЈ¬°ў¶ыёщИЛУлБЪ°оЅ»ХЅЎЈЛыГЗ»№№НУ¶ёчЦЦ№НУ¶±шЎЈ" />
 
 	<string
 		id="Belong_1016_diz"
-		value="The sudden attack of loyal neighbors united the people of Librium. Now they are fiercely fighting for independence.  They prefer espionage and sabotage to open struggles. " />
+		value="ЦТіПБЪ°оµДН»И»Ѕш№ҐНЕЅбБЛАыІјАпД·µДИЛГсЎЈИзЅсЛыГЗОЄ¶АБў¶шФЎСЄ·ЬХЅЎЈУл№«їЄіеН»Па±ИЈ¬ЛыГЗёьЗгПтУЪјдµэєНЖЖ»µ»о¶ЇЎЈ" />
 
 	<string
 		id="Belong_1017_diz"
-		value="This mysterious organization has adepts all over the world." />
+		value="ХвёцЙсГШµДЧйЦЇФЪКАЅзёчµШ¶јУРРЕНЅЎЈ" />
 
 	<string
 		id="Belong_1018_diz"
-		value="The defenders of the local crime Boss." />
+		value="µ±µШ·ёЧпАПґуµД»¤ОАЎЈ" />
 
 	<string
 		id="Belong_1019_diz"
-		value="Children of the nature, who live according to the ancient cult laws." />
+		value="ЧФИ»Ц®ЧУЈ¬ЧсХХ№ЕАПЅМЕЙµД·ЁФтЙъ»оЎЈ" />
 
 	<string
 		id="Belong_1020_diz"
-		value="Ex druids, that left the faction to form their own sect of machine worshippers." />
+		value="З°µВВіТБЈ¬АлїЄЅМЕЙєуіЙБўБЛіз°Э»ъЖчµДРВЅМЕЙЎЈ" />
 
 	<string
 		id="Belong_1021_diz"
-		value="Small sect of the Oracle worshippers." />
+		value="РЕ·оЙсЪНµДРЎЅМЕЙЎЈ" />
 
 	<string
 		id="Belong_1022_diz"
-		value="The creations of hellfire able to crush stones and fell the tallest trees. Meeting with these abominations spells sure death. " />
+		value="µШУьЦ®»рµДФмОпЈ¬ДЬДлЛйКЇН·Ўў·Ґµ№ЧоёЯµДКчДѕЎЈФвУцХвР©№ЦОп±ШЛАОЮТЙЎЈ" />
 
 	<string
 		id="Belong_1023_diz"
-		value="Natives of Oasia, they are rebuilding their hometown after a long war, but for some reason they cannot succeed." />
+		value="°ВОчСЗµДФ­ЧЎГсЈ¬ѕ­АъВюі¤ХЅХщєуХэФЪЦШЅЁјТФ°Ј¬µ«І»ЦЄОЄєОКјЦХОЮ·ЁіЙ№¦ЎЈ" />
 
 	<string
 		id="Belong_1024_diz"
-		value="People, constantly suffering from the attacks of the desert raiders." />
+		value="і¤ЖЪФвКЬЙіД®ЅЩВУХЯП®»чЦ®їаµДИЛГЗЎЈ" />
 
 	<string
 		id="Belong_1025_diz"
-		value="The long war seems to be over but the attacks continue. There’s no peace in these lands." />
+		value="Вюі¤µДХЅХщЛЖєхТСѕ­ЅбКшЈ¬µ«П®»чИФФЪјМРшЎЈХвЖ¬НБµШУАОЮДюИХЎЈ" />
 
 	<string
 		id="Belong_1026_diz"
-		value="Also known as the Keepers of the Memory, the old people left towns and are hiding from everybody." />
+		value="УЦіЖ"јЗТдКШ»¤ХЯ"ЎЈХвР©АПИЛАлїЄБЛіЗХтЈ¬¶гЧЕЛщУРИЛЎЈ" />
 
 	<string
 		id="Belong_1027_diz"
-		value="Militarists" />
+		value="ѕь№ъЦчТеХЯ" />
 
 	<string
 		id="Belong_1028_diz"
-		value="Trappers" />
+		value="ПЭЪеБФИЛ" />
 
 	<string
 		id="Belong_1029_diz"
-		value="Bears" />
+		value="РЬ°п" />
 
 	<string
 		id="Belong_1030_diz"
-		value="Njeri, guests from outer space." />
+		value="NjeriЈ¬АґЧФНвМ«їХµДїНИЛЎЈ" />
 
 	<string
 		id="Belong_1040_diz"
-		value="People of Argen not content with Axel’s rule." />
+		value="¶ФAxelµДНіЦОІ»ВъµД°ў¶ыёщИЛЎЈ" />
 
 	<string
 		id="Belong_1041_diz"
-		value="The leader of the Crimson Dawn." />
+		value="РЙємЦ®іїµДБмРдЎЈ" />
 
 	<string
 		id="Belong_1042_diz"
-		value="Pretty girl that travels the world pursuing some goal of her own." />
+		value="Т»О»ЦЬУОКАЅзµДГААц№ГДпЈ¬Ч·С°ЧЕДіЦЦЧФјєµДДї±кЎЈ" />
 
 	<string
 		id="Belong_1043_diz"
-		value="Defenders of the secret town of Zeon." />
+		value="ГШГЬіЗХтZeonµДКШОАХЯЎЈ" />
 
 	<string
 		id="Belong_1044_diz"
-		value="Vagabonds" />
+		value="БчАЛХЯ" />
 
 	<string
 		id="Belong_1045_diz"
-		value="North Path Traders" />
+		value="±±В·ЙМИЛ" />
 
 	<string
 		id="Belong_1046_diz"
-		value="Crimson dawn" />
+		value="РЙємЦ®ії" />
 
 	<string
 		id="Belong_1047_diz"
-		value="North Path Traders" />
+		value="±±В·ЙМИЛ" />
 
 	<string
 		id="Belong_1048_diz"
-		value="Crimson dawn" />
+		value="РЙємЦ®ії" />
 
 	<string
 		id="Belong_1049_diz"
-		value="Oracle’s disciples" />
+		value="ЙсЪНРЕНЅ" />
 
 	<string
 		id="Belong_1050_diz"
-		value="Sinx. A strange fellow, who has no permanent residence." />
+		value="SinxЎЈТ»ёцГ»УР№М¶ЁѕУЛщµД№ЦИЛЎЈ" />
 
 	<string
 		id="Belong_1051_diz"
-		value="Farmers’ union" />
+		value="Е©·тБЄГЛ" />
 
 	<string
 		id="Belong_1052_diz"
-		value="Technicians" />
+		value="јјК¦" />
 
 	<string
 		id="Belong_1053_diz"
-		value="PowerStation" />
+		value="·ўµзХѕ" />
 
 	<string
 		id="Belong_1054_diz"
-		value="Commonwealth of Independent Towns" />
+		value="¶АБўіЗХтБЄ°о" />
 
 	<string
 		id="Belong_1060_diz"
-		value="They control most of the oil production of the region. " />
+		value="ЛыГЗїШЦЖЧЕёГµШЗшґуІї·ЦµДКЇУНЙъІъЎЈ" />
 
 	<string
 		id="Belong_1061_diz"
-		value="People, living deep in the desert and studying its mysteries." />
+		value="ѕУЧЎФЪЙіД®Йоґ¦µДИЛГЗЈ¬СРѕїЧЕЙіД®µД°ВГШЎЈ" />
 
 	<string
 		id="Belong_1062_diz"
-		value="A group of madmen haunts the desert. They only seek death to others or to themselves. " />
+		value="Т»ИєїсИЛіцГ»УЪЙіД®ЎЈЛыГЗЦ»ЗуЛыИЛ»тЧФјєТ»ЛАЎЈ" />
 
 	<string
 		id="Belong_1063_diz"
-		value="Tired from the crimes, these bandits found peace in the middle of the jungle." />
+		value="СбѕлБЛ·ёЧпµД·ЛНЅГЗЈ¬ФЪґФБЦЙоґ¦ХТµЅБЛ°ІДюЎЈ" />
 
 	<string
 		id="Belong_1064_diz"
-		value="Even among the Uluk’s people there still are loyal druids." />
+		value="јґ±гФЪUlukµДЧеИЛЦРЈ¬ТІИФУРЦТіПµДµВВіТБЎЈ" />
 
 	<string
 		id="Belong_1065_diz"
-		value="The gang that wages war with the traders. Probably, they are allied with the Fishermen." />
+		value="УлЙМИЛїЄХЅµД°пЕЙЎЈТІРнЛыГЗУлУжГсЅбГЛБЛЎЈ" />
 
 	<string
 		id="Belong_1080_diz"
-		value="Gas station" />
+		value="јУУНХѕ" />
 
 	<string
 		id="Belong_1081"
-		value="Bandit" />
+		value="·ЛНЅ" />
 
 	<string
 		id="Belong_1081_abb"
-		value="Bandit" />
+		value="·ЛНЅ" />
 
 	<string
 		id="Belong_1081_diz"
-		value="Bandit" />
+		value="·ЛНЅ" />
 </resource>
