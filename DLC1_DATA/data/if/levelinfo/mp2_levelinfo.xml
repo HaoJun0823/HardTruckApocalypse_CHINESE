@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<LevelInfoResource>
+	<LevelInfo
+		name="mp2"
+		file="data\maps\mp2.ssl"
+		fullName="Pearl Harbor Island"
+		diz0="A long time ago this island became the wreckage place for dozens of ships. It's unknown how it could have happened. May be in those ancient times ships sailed not only by sea but also flew over sea. Now their wrecks disgracefully rust in the endless water. But once a year the best warriors of the world come to the island of ancient glory to join the battle. As before the winner gets everything."
+		diz1=""
+		image0=""
+		image1=""
+		imageDescr="data\if\ico\MPMapDesc\desc_mp2.dds"
+		multiplayer="1"
+		splashes="data\if\ico\Splashes\Loading_mp2.dds"
+		musicBlocks="custom" />
+</LevelInfoResource>

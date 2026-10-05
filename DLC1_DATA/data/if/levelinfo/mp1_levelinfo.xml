@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<LevelInfoResource>
+	<LevelInfo
+		name="mp1"
+		file="data\maps\mp1.ssl"
+		fullName="Labyrinth of death"
+		diz0="In the hot jungle of Canada day and night serious battles for the treasures of ancient North Americans are in full swing. Sudden turns of wood roads and teleports the heritage of robots turn this relict forest into the labyrinth of death. You should have the reflexes of rattlesnakes and eyes on the back of your head to survive here."
+		diz1=""
+		image0=""
+		image1=""
+		imageDescr="data\if\ico\MPMapDesc\desc_mp1.dds"
+		multiplayer="1"
+		splashes="data\if\ico\Splashes\Loading_mp1.dds"
+		musicBlocks="custom" />
+</LevelInfoResource>

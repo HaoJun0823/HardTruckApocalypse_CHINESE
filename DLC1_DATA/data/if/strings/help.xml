@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<resource>
+	<string
+		id="HELP_ID_INVENTORY_title"
+		value="Equipment" />
+
+	<string
+		id="HELP_ID_INVENTORY"
+		value="In the left part of the window there are content of your vehicle body, weapon, upgrades and slots. | In the right side there is Land, where displayed items in nearby boxes and 3-D image of the active item (pointed by cursor) and button Pick up all. | You can drag weapon icons from the body or boxes in weapon slots and vice versa. If you drag weapon and goods from the slots of Goods window into Land window on the main game screen near the vehicle will appear boxes with items which player dragged into Land window." />
+
+	<string
+		id="HELP_ID_VEHICLE_CHARACTERISTICS_title"
+		value="Vehicle settings" />
+
+	<string
+		id="HELP_ID_VEHICLE_CHARACTERISTICS"
+		value="In the right part of the window you can see detailed characteristics of player's vehicle, 3-D view of the vehicle fully equipped, cabin and body properties. Buttons under the image switch info about vehicle, body, cabin, and weapon. In this window you can readjust weapon groups. | In the left part of the window there are content of your vehicle body, weapon, upgrades and slots. You can mount new devices on you truck and see how the properties will change." />
+
+	<string
+		id="HELP_ID_QUESTLOG_QUESTS_title"
+		value="Mission list" />
+
+	<string
+		id="HELP_ID_QUESTLOG_QUESTS"
+		value="In this menu you can find the list of all missions accepted and already completed. Missions can be filtered by map where located start or final mission point using scroll. Also you can switch modes to see all missions or only active. | Every mission has description where is written what should you do to accomplish it. Near the description can be shown button by clicking it you will see on the map and radar the mission landmark. | Mission can consist of several tasks which must be done to accomplish the mission successfully. They are situated below the mission description and every one points on the place on the map. | Special items button is also shown here." />
+
+	<string
+		id="HELP_ID_QUESTLOG_QUEST_ITEMS_title"
+		value="Special items" />
+
+	<string
+		id="HELP_ID_QUESTLOG_QUEST_ITEMS"
+		value="Click Special items buttons and you will see the list of items necessary to accomplish the mission in 3-D view." />
+
+	<string
+		id="HELP_ID_LOCAL_MAP_title"
+		value="Local map" />
+
+	<string
+		id="HELP_ID_LOCAL_MAP"
+		value="Map is a very important tool which helps you to navigate. You can find all important objects on it: cities, exit roads. | There are two map modes: info and trade. Switching between them is made by clicking the appropriate buttons in top-right corner of the window. | Left mouse click on the map object in info mode and you can see the text description. If you select the settlement in trade mode you can see last visit prices for all goods. The pricelist can be saved at for quick search (for example to look through the prices from another map)." />
+
+	<string
+		id="HELP_ID_GLOBAL_MAP_title"
+		value="Global map" />
+
+	<string
+		id="HELP_ID_GLOBAL_MAP"
+		value="On the global map you can see all regions the player has visited, transport routes and switch between already opened regions." />
+
+	<string
+		id="HELP_ID_HISTORY_title"
+		value="History" />
+
+	<string
+		id="HELP_ID_HISTORY"
+		value="This is the history of all remarkable events which happened with player." />
+
+	<string
+		id="HELP_ID_BOOKS_title"
+		value="Books (documents)" />
+
+	<string
+		id="HELP_ID_BOOKS"
+		value="In Books are stored different data sources, for example, old newspaper, magazine and books." />
+
+	<string
+		id="HELP_ID_RELATIONS_title"
+		value="Groups" />
+
+	<string
+		id="HELP_ID_RELATIONS"
+		value="The maintenance of friendly relations with different groups is essential element of survival in the world. In this part you can follow up who respects you and who dreams of killing you." />
+
+	<string
+		id="HELP_ID_STATS_title"
+		value="Statistics" />
+
+	<string
+		id="HELP_ID_STATS"
+		value="In statistics you always can find out the distance you have driven through, the number of enemies you have destroyed and amount of money you have earned and number of shots you have made." />
+
+	<string
+		id="HELP_ID_ENCYCLOPAEDIA_title"
+		value="Encyclopedia" />
+
+	<string
+		id="HELP_ID_ENCYCLOPAEDIA"
+		value="All experience gathered by player during the game is here whether it be description of opposite vehicle, weapon or group." />
+
+	<string
+		id="HELP_ID_SHOP_GUNS_title"
+		value="Shop/Weapon purchase" />
+
+	<string
+		id="HELP_ID_SHOP_GUNS"
+		value="Here you can buy guns and upgrade your vehicle and immediately put this entire staff in appropriate slots or in the body. | To buy something you should drag the item from the Shop window (right side of the screen) to the window of your vehicle body (left side) or to the slot. Also you can buy something by right muse click in the shop. In this case the selected item appears in the vehicle body and your money account decreases by item's price. | To sell something you should drag the icon from your vehicle body (left side) to the shop window (right side). Also you can use right mouse click to sell goods. | The price and properties of purchased item are displayed at the pop-up hints. If you don't have enough money to purchase the item or your truck is not equipped by appropriate slots this info appears at the item icon and at the pop-up hint." />
+
+	<string
+		id="HELP_ID_SHOP_GOODS_title"
+		value="Shop/Goods purchase" />
+
+	<string
+		id="HELP_ID_SHOP_GOODS"
+		value="If you select Goods purchase mode you see the goods list with quantity and purchase and sale costs. Not for sale goods in this city are grey. You can turn on special filter to see only for sale goods. | Goods prices change dynamically depending on your actions. When you sell goods in place of sale appears temporary market saturation. This goods fall in price for some time then the price increases by degrees. The reverse situation occurs when purchase goods. | The deals are in real time for every item. Goods in cities are of limited quantity. In length of time it restores. | Usually cities buy any goods but prices can differ a lot. That is why it makes sense before purchase expensive shipment of goods find out the trading routes. Sometimes in order to make profitable deal with rare goods you have to travel from one map to another. But mostly you can make rather profitable deal between several neighboring settlements." />
+
+	<string
+		id="HELP_ID_WORKSHOP_title"
+		value="Repair shop" />
+
+	<string
+		id="HELP_ID_WORKSHOP"
+		value="You enter the Repair shop. | Here you can repair, fuel your vehicle and upgrade the armor. Also you can change vehicle body or cabin. | If you have enough money you can buy here new vehicle. | In the left part there is info about your truck and in right there are Repair shop services." />
+
+	<string
+		id="HELP_ID_WORKSHOP_CABINS_title"
+		value="Cabin change" />
+
+	<string
+		id="HELP_ID_WORKSHOP_CABINS"
+		value="To change the vehicle cabin you should click Cabin change button and then select the cabin by mouse from the list. Herewith the truck 3d view and description will change. When you choose the needed cabin click Buy button on cabin icon. The purchase confirmation window opens." />
+
+	<string
+		id="HELP_ID_WORKSHOP_BASKETS_title"
+		value="Body change" />
+
+	<string
+		id="HELP_ID_WORKSHOP_BASKETS"
+		value="To change the vehicle body you should click Body change button and then select the body from the list. Herewith the truck view and description (in the left part of the screen) will change. When you choose the body click Buy button on the icon. The purchase confirmation window opens." />
+
+	<string
+		id="HELP_ID_WORKSHOP_VEHICLE_title"
+		value="Purchase of the new vehicle" />
+
+	<string
+		id="HELP_ID_WORKSHOP_VEHICLE"
+		value="To buy a new vehicle you should click Vehicle purchase button. In the window you can choose the any car you like from all available and change its color. Confirm your choice by clicking Select." />
+
+	<string
+		id="HELP_ID_WORKSHOP_SKIN_title"
+		value="Repaint" />
+
+	<string
+		id="HELP_ID_WORKSHOP_SKIN"
+		value="Choose colors and style you like and click button to repaint the vehicle" />
+
+	<string
+		id="HELP_ID_WORKSHOP_REFUEL_title"
+		value="Fueling" />
+
+	<string
+		id="HELP_ID_WORKSHOP_REFUEL"
+		value="Click Full fuel to fuel up the full tank. | If you want to control the amount of purchase fuel click Manual Fuel. Using slider bar select the appropriate amount of fuel and confirm the purchase." />
+
+	<string
+		id="HELP_ID_WORKSHOP_REPAIR_title"
+		value="Repair" />
+
+	<string
+		id="HELP_ID_WORKSHOP_REPAIR"
+		value="Click Repair all button to repair all details of vehicle (or for the rest money). Click Manual repair to repair separate part of the vehicle. You will see the repair list of all part and cost of repair. Click the needed part to repair it. | If you want to see the repair level of the part click fine tuning button on the name of this part. By slider bar adjust the level of repair and click the part name. | On the pop-up hints you will see the detailed information." />
+
+	<string
+		id="HELP_ID_WORKSHOP_RECHARGE_title"
+		value="Ammunition purchase " />
+
+	<string
+		id="HELP_ID_WORKSHOP_RECHARGE"
+		value="Only guns with limited ammunition are reloaded. This mostly concerns heavy cannons and missile launchers. | Click Full reload to reload all guns on the vehicle. | Click Manual reload to select the guns to be reloaded. You will see weapon list and all guns that can be reloaded. Click gun to reload it. | Click fine tuning to setup the number of shells or missiles. Using the slider bar adjust the number and confirm the purchase. | On the pop-up hints you will see the detailed information about reload" />
+
+	<string
+		id="HELP_ID_BUY_CABIN_title"
+		value="Conformation of cabin purchase" />
+
+	<string
+		id="HELP_ID_BUY_CABIN"
+		value="Purchase confirmation window opens and you should move all items from the slots of old cabin (left side) to the new cabin slots (right side). You can make it manually or use Move all button. You can also look at the number of weapon slots and other equipment of the new cabin and to find out the final cost of the deal. If you don't like anything click Cancel. If you are sure of the deal click Buy. | In this case all remained items in slots of the left half of the screen will be sold with the old cabin." />
+
+	<string
+		id="HELP_ID_BUY_BASKET_title"
+		value="Conformation of body purchase" />
+
+	<string
+		id="HELP_ID_BUY_BASKET"
+		value="Purchase confirmation window opens and you should move all items from the slots of old body (left side) to the new body slots (right side). You can make it manually or use Move all button. You can also look at the number of weapon slots and other equipment of the new body and to find out the final cost of the deal. If you don't like anything click Cancel. If you are sure of the deal click Buy. | In this case all remained items in slots of the left half of the screen will be sold with the old body." />
+
+	<string
+		id="HELP_ID_BUY_VEHICLE_title"
+		value="Conformation of new vehicle purchase" />
+
+	<string
+		id="HELP_ID_BUY_VEHICLE"
+		value="Purchase confirmation window opens and you should move all items from the slots of old truck (left side) to the new truck slots (right side). You can make it manually or use Move all button. You can also look at the number of weapon slots and other equipment of the new truck and to find out the final cost of the deal. If you don't like anything click Cancel. If you are sure of the deal click Buy. | In this case all remained items in slots of the left half of the screen will be sold with the old truck." />
+
+	<string
+		id="HELP_ID_TOWN_title"
+		value="City" />
+
+	<string
+		id="HELP_ID_TOWN"
+		value="Cities and villages in Ex Machina world are the centers of trade, science and most important life. Here you can repair and fuel your truck, replenish the weapon supplies, to talk to local residents. | Click button at the top of the screen and you will enter Bar, Shop or Repair shop." />
+
+	<string
+		id="HELP_ID_BAR_title"
+		value="Bar" />
+
+	<string
+		id="HELP_ID_BAR"
+		value="You will have to visit Bar often to receive and complete missions. | In the right side of the screen there are icons of all current visitors of Bar. Very often somebody from the visitors is ready to give you simple mission and pay for it. Click on the character icon to begin the dialogue." />
+
+	<string
+		id="HELP_ID_TALK_WITH_NPC_title"
+		value="Dialogue" />
+
+	<string
+		id="HELP_ID_TALK_WITH_NPC"
+		value="In this window you see the large character image his cues and your available answers. | You can choose answer using mouse or keyboard numbers. You can only close this window by selecting the appropriate cue of the dialogue." />
+
+	<string
+		id="HELP_ID_RADAR"
+		value="In the left upper corner there is Radar. You can see enemies on it (red points), your car (right in the middle), the direction of camera view (sector) and landmarks. The distance to the landmark is shown by figures on the right from radar (figure color corresponds the landmark color)." />
+
+	<string
+		id="HELP_ID_RADAR_title"
+		value="Radar" />
+
+	<string
+		id="HELP_ID_SPEEDOMETER"
+		value="Speedometer shows the actual truck speed in digital and analog form. When the reverse gear is turned on the figures become red." />
+
+	<string
+		id="HELP_ID_SPEEDOMETER_title"
+		value="Speedometer" />
+
+	<string
+		id="HELP_ID_HP"
+		value="Construction is the consistency status of your vehicle. If you don't look for its level you can die. When the construction level is critical red indicators shows it. You can repair in repair shops all over the world." />
+
+	<string
+		id="HELP_ID_HP_title"
+		value="Construction" />
+
+	<string
+		id="HELP_ID_FUEL"
+		value="Also keep an eye on fuel level otherwise you can turn out to be in difficult situation. With empty fuel tanks the vehicle moves very slowly using the backup batteries. When the fuel level is critical red indicators shows it. You can fuel your vehicle in repair shops all over the world." />
+
+	<string
+		id="HELP_ID_FUEL_title"
+		value="Fuel" />
+
+	<string
+		id="HELP_ID_DURABILITY"
+		value="In the upper part of the screen there is a layout view of truck body and cabin. Different colors show the Armor condition of these parts (green - perfect condition, red - heavy damages)." />
+
+	<string
+		id="HELP_ID_DURABILITY_title"
+		value="Armor" />
+
+	<string
+		id="HELP_ID_TIMER"
+		value="Timer appears if you mission is limited in time" />
+
+	<string
+		id="HELP_ID_TIMER_title"
+		value="Timer" />
+
+	<string
+		id="HELP_ID_WEAPON"
+		value="On the icon there are layout view of the weapon, its group number and also the ammunition in charger. After every shot the green bar which shows amount of ammunition in charger decreases. When the charger is empty the reload starts automatically and during it the shooting is impossible. You can reload at any moment (click R button for the default settings). During the reload the bar changes the color and gradually fills up." />
+
+	<string
+		id="HELP_ID_WEAPON_title"
+		value="Weapon" />
+
+	<string
+		id="HELP_ID_FADING_MESSAGES"
+		value="Different enemies cues and messages are shown in this field" />
+
+	<string
+		id="HELP_ID_FADING_MESSAGES_title"
+		value="Messages" />
+
+	<string
+		id="HELP_ID_IMPORTANT_FADING_MESSAGES"
+		value="Important messages about missions are shown here" />
+
+	<string
+		id="HELP_ID_IMPORTANT_FADING_MESSAGES_title"
+		value="Important messages" />
+
+	<string
+		id="HELP_ID_TARGET_INFO"
+		value="In the middle of the screen there is Sight. If sight catch the vehicle above the sight appears Vehicle name and Group which it belongs to. The title color reflects the vehicle relation to player: red means hostile, green - friendly. Green bar to the left from the sight shows enemy Construction, orange bar is Armor. Below the sight there is a distance to the enemy." />
+
+	<string
+		id="HELP_ID_TARGET_INFO_title"
+		value="Enemy info" />
+
+	<string
+		id="HELP_ID_TARGET_CAPTURE"
+		value="Even if one self-guided missile mounted on the truck the navigation on enemy starts automatically guidance system. When the red circle fills out the missile is guided." />
+
+	<string
+		id="HELP_ID_TARGET_CAPTURE_title"
+		value="Target lock-on" />
+
+	<string
+		id="HELP_ID_ACTION_ICONS"
+		value="When Cargo icon appears it means that you can pick up items in the box by pushing I key. When Signal icon appears it means that you are in the city boundaries and can enter inside by pushing H key." />
+
+	<string
+		id="HELP_ID_ACTION_ICONS_title"
+		value="Actions" />
+
+	<string
+		id="HELP_ID_HOW_TO_USE_MAIN_GAME_INTERFACE_HELP"
+		value="Point by mouse cursor on the element title to see information about it." />
+
+	<string
+		id="HELP_ID_HOW_TO_USE_MAIN_GAME_INTERFACE_HELP_title"
+		value="Interface screen." />
+</resource>

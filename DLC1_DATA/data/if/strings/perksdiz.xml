@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?><!-- edited with XML Spy v4.2 U (http://www.xmlspy.com) by Morgoth (Targem) -->
+<resource>
+	<string
+		id="adventurer"
+		value="Careless driver" />
+
+	<string
+		id="maniac"
+		value="Passed baptism by fire" />
+
+	<string
+		id="millionaire"
+		value="Capitalist" />
+
+	<string
+		id="lucky"
+		value="Sharpshooter" />
+
+	<string
+		id="butcher"
+		value="Butcher" />
+
+	<string
+		id="aggressor"
+		value="Aggressor" />
+
+	<string
+		id="rogue"
+		value="Trickster" />
+
+	<string
+		id="professional"
+		value="Member of the truck drivers union" />
+
+	<string
+		id="lawyer"
+		value="Sheriff" />
+
+	<string
+		id="smuggler"
+		value="Bribe taker" />
+
+	<string
+		id="adventurer_diz"
+		value="Every vagabond who has a truck with guns gets this perk." />
+
+	<string
+		id="maniac_diz"
+		value="Every fighter who has 100 kills gets this perk." />
+
+	<string
+		id="millionaire_diz"
+		value="A trader who earned $100000 gets this perk." />
+
+	<string
+		id="lucky_diz"
+		value="The most accurate marksmen get this perk for two critical shots in the enemy's car in a row." />
+
+	<string
+		id="butcher_diz"
+		value="The driver who rode over 10 civilians gets this perk." />
+
+	<string
+		id="aggressor_diz"
+		value="A man gets this perk for assaulting 5 trucks of friendly traders or vagabonds." />
+
+	<string
+		id="rogue_diz"
+		value="The perk is given to anyone who fails 5 tasks in city bars in a row." />
+
+	<string
+		id="professional_diz"
+		value="The perk is given to the drivers who completed 5 tasks in city bars in a row." />
+
+	<string
+		id="lawyer_diz"
+		value="Respectable citizens who help fight smuggling get this perk as a reward." />
+
+	<string
+		id="smuggler_diz"
+		value="Those who have deals with bandits and smugglers get this perk." />
+
+	<string
+		id="adventurer_-1_diz"
+		value="[-1] - In your trophies after the destruction of enemy vehicles money will appear more frequently than goods." />
+
+	<string
+		id="adventurer_0_diz"
+		value="[0]  - You can get job in city bars." />
+
+	<string
+		id="adventurer_1_diz"
+		value="[+1] - In your trophies after the destruction of enemy vehicles goods will appear more frequently than money." />
+
+	<string
+		id="lawyer_-3_diz"
+		value="[-3] - In the city repair shops you have an opportunity to buy device for weapon free of charge." />
+
+	<string
+		id="lawyer_0_diz"
+		value="[0]  - Less opportunity to stay without trophies after destruction of enemy vehicles." />
+
+	<string
+		id="lawyer_3_diz"
+		value="[+3]  - In the city repair shops you have an opportunity to buy device for vehicle free of charge." />
+
+	<string
+		id="lucky_-2_diz"
+		value="[-2] - Choice of devices for weapon in city repair shops is always wider than devices for vehicle." />
+
+	<string
+		id="lucky_0_diz"
+		value="[0]  - Stories about your ability and accuracy excited the hearts of village people." />
+
+	<string
+		id="lucky_2_diz"
+		value="[+2] - Choice of devices for vehicle in city repair shops is always wider than devices for weapon." />
+
+	<string
+		id="millionaire_0_diz"
+		value="[0]  - In the city repair shops you have an opportunity to buy goods free of charge." />
+
+	<string
+		id="professional_-3_diz"
+		value="[-3] - Weapon reload in city is cheaper. Vehicle fueling in the city is more expensive." />
+
+	<string
+		id="professional_0_diz"
+		value="[0]  - For the missions taken in city bars you get trade union bonus." />
+
+	<string
+		id="professional_3_diz"
+		value="[+3] - Vehicle fueling in the city is cheaper. Weapon reload in city is more expensive." />
+
+	<string
+		id="butcher_0_diz"
+		value="[0]  - In city shops list of goods for sale for you is limited." />
+
+	<string
+		id="aggressor_-2_diz"
+		value="[-2] - When you accidentally or specially ride down a wander man you'll find in his pocket a couple of coins." />
+
+	<string
+		id="aggressor_0_diz"
+		value="[0]  - Friendly truck drivers no more salute you by radio." />
+
+	<string
+		id="rogue_-1_diz"
+		value="[-1] - In city bars for you the mission list is limited and you are offered only war missions." />
+
+	<string
+		id="rogue_0_diz"
+		value="[0]  - Trade in city will bring you far more smaller profits." />
+
+	<string
+		id="rogue_1_diz"
+		value="[+1]  - In city bars for you the mission list is limited and you are offered only trade missions." />
+
+	<string
+		id="smuggler_-2_diz"
+		value="[-2] - In city repair shops you purchase only contraband weapons that is why spend less money." />
+
+	<string
+		id="smuggler_0_diz"
+		value="[0]  - In city bars you are frequently offered missions of dingy nature." />
+
+	<string
+		id="maniac_0_diz"
+		value="[0]  - Vehicle repair for you in the city is cheaper." />
+
+	<string
+		id="maniac_3_diz"
+		value="[+3] - In city and on fuel station you have opportunity to make repairs for free of charge." />
+</resource>

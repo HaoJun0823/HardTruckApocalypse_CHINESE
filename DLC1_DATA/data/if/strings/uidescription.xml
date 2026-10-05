@@ -1,0 +1,1147 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?><!-- edited with XML Spy v4.2 U (http://www.xmlspy.com) by Morgoth (Targem) -->
+<resource><!--Default buttons--><!-- Vehicles -->
+	<string
+		id="player_diz"
+		value="" />
+
+	<string
+		id="collectionbook1_diz"
+		value="Travel guide old booklet. || Edmonton is a wonderful city situated at the south of Canada. Picturesque outskirts make it real paradise for tourist. At the same time Edmonton is a capital of state, it is a big city with high level of life and vast opportunities for active people. | The majority of tourists arrive here by car because of the unique low fuel prices in this part of America. | There are numerous comfortable and convenience motels and campings at tourists' disposal." />
+
+	<string
+		id="collectionbook2_diz"
+		value="User manual for tank. | | ...To start the tank engine you should pull throttle gates and check that fuel come to the engine turn the ignition key through 90 degree to the left. The indicator at the dash panel and engine sound informs you that engine is working. Warning! The sound can be very loud... | ... Tank handling is carried out by steering levers. To turn right shift the left lever in forward position. Simultaneously push forward both levers for acceleration... | ... The current tank model is equipped with a feedback system. To stop the tank shift both steering levers backward that will block entry of fuel into the engine and the tank will stop. To make a quick stop you can use hill features...|... To improve the shooting accuracy we recommend that you use the parallax mexometer.| 1. Find target using the sight.| 2. Use verniers mounted on the sight frame to match the target double contour into one. | 3. In small window below the sight frame you can see figures this is the distance to the target..." />
+
+	<string
+		id="collectionbook3_diz"
+		value="Comics magazine. | Collection issue of American comics tells you about new adventures of invincible Hero in the Mask. Brave fighter with evil will save galactic princess Catherine from the hands of cyber-pirate Armor. Hero in the Mask must rescue the princess before the pirates 'milk' from her the secret of the Code of the Universe. | Hurry up to know more about new adventures of fearless Hero in the Mask." />
+
+	<string
+		id="collectionbook4_diz"
+		value="The Herald daily. | ... One more petition to the authorities to lift the secrecy grading from the information about UFO sounded in 1994 in the form of so-called  Roseville declaration. The reason of the declaration became the non-disclosure by the Government the fact of UFO crack-up near the city Roseville, state New Mexico in 1947. The petition contained request to declassify the materials about UFO research as well as request to stop pressure on the witnesses of crack-up and shift off from their the non-disclosure oath. But the Government declared the Roseville UFO landing fact the mass media provocation..." />
+
+	<string
+		id="collectionbook5_diz"
+		value="Driver car magazine. || ... The U.S. Senate on the regular session will view all sides of the question to impose the additional tax for sale of the European cars on the territory of America. Alongside with that trade union representatives take a strong stand. Bill Hoff, the representative of truck drivers trade union, said | 'Of course we are against this legislation! European truck such as Ural and Milk Tanker are far more secure than Americans truck and cheaper. Why should drivers overpay three times for the cars only because of patriotism? I, of course, love America but I prefer carry cargo on Belaz. That's it!'" />
+
+	<string
+		id="collectionbook6_diz"
+		value="Capitalist housekeepers magazine for women. | | ... What your car tells about you? TEST | I. Your car is painted in ... | 1. Metallic color - 0 point. | 2. Yellow color - 1 point. | 3. Pink color - 2 point. || II. Your car is decorated with ... | 1. Metal pins - 0 point. | 2. Toy on the rear-view mirror in the cabin - 1 point. | 3. Chiffons outside and inside the car - 2 point. | III. Is the radiator grill of your car washed clean? | 1. It is not necessary - 0 point. | 2. Of course! - 1 point. | 3. What is radiator? - 2 point. | | 0-1 points: | Look man this is a women's magazine. Give it back to your wife or girlfriend. | 2-3 points: | You are accurate, elegant and nice. You always look after yourself and your car. Your husband is as safe as houses. | 4-6 points: | You are the picture of true woman. You are perfection itself. Anyone who see your car at once understand that this car belongs to the representative of perfect half of the mankind. " />
+
+	<string
+		id="collectionbook7_diz"
+		value="Denry Dail Dairy. || ...December, 18, 2011 Where apocalypse has gone? Or Apocalypse of tomorrow? I can't choose. || December, 19, 2011 Today I succumbed to persuasion of Jane had dinner in the sushi-bar. Disgusting! They cook from the natural meat! How one can eat food that was alive sometime ago? I'm afraid I have to review my relations with Jane. || December, 23, 2011 The publisher deigned to answer me. They have sent me contract and suggested to change the title on Postapocalypse syndrome. I transported with rage! Having read such title the reader can decide that it is not the bestseller but medical formulary. I have written to the publisher all I think about it and tipped off that if they change the title I determine the contract. || December, 24, 2011 In the morning I have read the copy of contract once again. It turns out that yesterday I carelessly looked at my fee earnings. I wrote to the publisher that I like title about syndrome. || December, 26, 2011 The weekend was awful. I took Jane at the exhibition of modern art. Alas, it looks like that she is no bargain to me. She understands the modern art trends horse-and-buggy. She likes oil painting on canvas. Retarded creature. || December, 28, 2011 I have spent all morning looking through the pictures made last year at the rest in Canada in Edmonton. Little town. Fresh air. Quiet people. || December, 29, 2011 OK. Agreed. My next book will be about nice Edmonton. I have called Jane and gave her the last chance to stay with me. But she didn't want to jack up her job and go with me to Canada. It is worse for her. || December, 31, 2011 I have seen on one of the channels the report about UFO crack-up in some Arab state. It's absolutely not funny for New Year's joke. The scriptwriters on TV are so untalented! || January, 1, 2012 (cramp hand) something strange... Apocalypse (cramp hand) .. my plot! (cramp hand) ... text correspondence (cramp hand) ... as a prophecy ... I ..." />
+
+	<string
+		id="collectionbook8_diz"
+		value="'Do you think that your face is uninteresting? Surgeon from plastic surgery center just in several weeks will make you look like your favourite actor, singer or actress.' Such kind of advertisement recently has filled all TV channels and periodicals of America. But now thanks to the Faces and Masks Ltd Company you don't need suffer the painful operations in order to look like your idol. New face masks allow you to change your face as simple as to make the head-dress, make-up or tie. | 'Alive mask' fashion firmly enters our life. To go outside with an uncovered face becomes the top of immodesty. Many people don't take off masks even at home. And why not? They are comfortable, beautiful and moreover they protect you from smog, disease causing microbe and radiation. | In particular all-round usage of 'Alive masks' helped people in America as opposed to Europe absolutely not suffer from Cataclysm." />
+
+	<string
+		id="collectionbook9_diz"
+		value="Robot tale. | So came the turn of the younger son to watch over the field. He clayed himself as Bob the technician taught him and kept on waiting. Right at midnight clatter, crack, groaning sounded and three huge creatures appeared in the field. Their eyes were red, claws were chippy, they have wheels with deep tread and all covered with steel alloy. The monsters begin to take to pieces water sprinkling system, root up the rod posts and rumple potatoes. | Jim straightened and thought, 'if they notice me I rush away down the hill. Whatever drive gear the monsters have they won't risk chasing me over the flank'. But the monsters didn't notice Jim and he understood that Bob the technician was right and the monsters' temperature-sensing elements didn't work when a man is clayed. Jim came courageously to the metal creature and luted the air inlets of the first monster by magic cement that Bob the technician had given him. At the same moment monster smokes, sparks and fritzs. Two other monsters turned to Jim caught him and tore into fourty five pieces. | And all this because of although clay protects from temperature-sensing elements but video cameras in night mode see everything. But Jim forgot to ask Bob the technician about video cameras. The tag of the tale is that enemy military characteristics should be learned thoroughly. || Johnny and Mechanic monster. | Brave boy Johnny lived in a forest hamlet. He was a good and kind boy. People in the hamlet loved him. But once upon a time the big trouble came. TThe hamlet was attacked by evil Mechanic monster. Johnny at the time was in the forest. He heard noise and people's cry. When he came to the hamlet he saw a horrible scene - the Mechanic monster burnt houses and killed people. Johnny was a brave boy that is why he took a heavy stone and threw it into Mechanic monster. | In the morning there was not a whisper of the hamlet. Johnny boy was one of the first to die. | That is why be smarter than Johnny-boy and when you see a Mechanic monster skulk in woods. There's no other way for you to stay alive. " />
+
+	<string
+		id="collectionbook10_diz"
+		value="The first and only verse from Jacob. | About Black Kraz. | Listen attentively to the pulsation of the World. | One who able to hear will hear; the heard be aware that | the dash of Black Kraz is furious his power is the devil of the World's energy. His sides look like impenetrable darkness, the varnish blinking like sparkling stars which cut the deepness of the gloom. His exhaustion like black coat covers the whole sky and the air behind him twists in typhoons because the Black Kraz power is great. His marker lights like faraway flashing sheet lightning beyond the horizon of creation. The light of his headlights like ruthless star cuts the twilight of the world, lightens the battlefield. The roar of his engine deafens and the Universe quakes from the boom of his wheels. | Millions of roads stretch in each of the worlds and worlds are numerous. Be aware that under the bedding of dust on any road you find the tread trace of Black Kraz. The road appears from not-being under his wheels and there is no road out of his track. And you are proud of having discovered the new path, so be aware that you are only the second on this road. Gaze in front of you and you will see the tread trace of Black Kraz. And you will inbreathe the energy because there is power in his trace. And driving along the way of Black Kraz be aware that you return his energy into the world. Only the driver could handle the Road, be aware of it. " />
+
+	<string
+		id="Sml101_diz"
+		value="Only rookie or hopeless bandits use this light vehicle to attack the lone travellers." />
+
+	<string
+		id="Sml201_diz"
+		value="Racing car adapted for the needs of gravy lovers." />
+
+	<string
+		id="Sml301_diz"
+		value="Little more power and armor than in light cars but it's not enough to become the real danger in a face-to-face battle." />
+
+	<string
+		id="Sml401_diz"
+		value="When bandits gather into gangs they can cause problems even for the most heavyweaponed trucks." />
+
+	<string
+		id="sml1Cab01_diz"
+		value="Bedbug cabin." />
+
+	<string
+		id="sml2Cab01_diz"
+		value="Cockroach cabin." />
+
+	<string
+		id="sml3Cab01_diz"
+		value="Ant cabin." />
+
+	<string
+		id="sml4Cab01_diz"
+		value="Grasshopper cabin." />
+
+	<string
+		id="denscoutCab_diz"
+		value="Fox cabin. Modified cabin of the usual scout." />
+
+	<string
+		id="scoutCab01_diz"
+		value="Scout cabin." />
+
+	<string
+		id="scoutCab02_diz"
+		value="Scout cabin." />
+
+	<string
+		id="scoutCab03_diz"
+		value="Scout cabin." />
+
+	<string
+		id="Scout01_diz"
+		value="Light gun and high speed. This is nothing more to tell about this vehicle. But there is no point to underestimate it. Like piranhas this small vehicles attack the victim and most often this is the last thing that an unlucky driver sees in his life." />
+
+	<string
+		id="Fighter01_diz"
+		value="This unusual looking vehicle bears enough weapons to constitute danger itself. But taking into account that bandits rare attack one by one..." />
+
+	<string
+		id="Hunter01_diz"
+		value="Armored high speed vehicle. Model with missile launcher is more dangerous. " />
+
+	<string
+		id="Cruiser01_diz"
+		value="Military tractor adapted for the need of bandits possesses good capacity and armor. This allows using it like an obstacle to stop heavy transports. Two heavy guns can easily cope with guards." />
+
+	<string
+		id="Cruiser02_diz"
+		value="Military tractor adapted for the need of bandits possesses good capacity and armor. This allows using it like an obstacle to stop heavy transports. Two heavy guns can easily cope with guards." />
+
+	<string
+		id="Dozer01_diz"
+		value="Bandits are keen on this monster its armor can be compared only with tank. Most often it is used in deserts because it reminds to the local aborigines the camels." />
+
+	<string
+		id="DozerRace_diz"
+		value="Bandits are keen on this monster its armor can be compared only with tank. Most often it is used in deserts because it reminds to the local aborigines the camels." />
+
+	<string
+		id="Belaz01_diz"
+		value="The enormous capacity of this truck is a legend. There are dare-devils who became rich for only couple of trips. But far more people who couldn't deliver the cargo because of the thick armor." />
+
+	<string
+		id="Ural01_diz"
+		value="The leaders choose Ural for perfect balance capacity and weapon. This is the most fast speed vehicle from all heavy trucks it helps you survive in any battle." />
+
+	<string
+		id="Ural02_diz"
+		value="The leaders choose Ural for perfect balance capacity and weapon. This is the most fast speed vehicle from all heavy trucks it helps you survive in any battle." />
+
+	<string
+		id="Bug01_diz"
+		value="Only most careless or desperate merchants risk to travel on this vehicle. The single light gun and almost absence of armor only partly are compensated by high mobility." />
+
+	<string
+		id="Molokovoz01_diz"
+		value="This utility truck is loved by rich farmers and avaricious merchants for perfect value for money. But professional don't like it for insufficient security." />
+
+	<string
+		id="Molokovoz02_diz"
+		value="This utility truck is loved by rich farmers and avaricious merchants for perfect value for money. But professional don't like it for insufficient security." />
+
+	<string
+		id="Mirotvorec01_diz"
+		value="The best defence is offence. None other vehicle bears such arsenal like Peacemaker. Capacity is rather small but result is worth it." />
+
+	<string
+		id="Tank01_diz"
+		value="Tank is one of the most dangerous enemies you can meet in the world after disaster. Not everyone will take risks to engage with it and moreover not everyone will break off the fight alive." />
+
+	<string
+		id="CoolBelaz_diz"
+		value="The most cool Belaz you have ever seen." />
+
+	<string
+		id="mirotvorecTest_diz"
+		value="The invincible Peacemaker demonstrates new model of vehicle damages." />
+
+	<string
+		id="ScoutForSale_diz"
+		value="Light gun and high speed. This is nothing more to tell about this vehicle. But there is no point to underestimate it. Like piranhas this small vehicles attack the victim and most often this is the last thing that unlucky driver see in his life." />
+
+	<string
+		id="FighterForSale_diz"
+		value="This unusual looking vehicle bears enough weapons to constitute danger itself. But taking into account that bandits rare attack one by one..." />
+
+	<string
+		id="BelazForSale_diz"
+		value="The enormous capacity of this truck is a legend. There are dare-devils who became rich for only couple of trips. But far more people who couldn't deliver the cargo despite the thick armor." />
+
+	<string
+		id="UralForSale_diz"
+		value="The leaders choose Ural for perfect balance capacity and weapon. This is the most fast speed vehicle from all heavy trucks it helps you to survive in any battle." />
+
+	<string
+		id="BugForSale_diz"
+		value="Only most careless or desperate merchants risk to travel on this vehicle. The single light gun and almost absence of armor only partly are compensated by high mobility." />
+
+	<string
+		id="MolokovozForSale_diz"
+		value="This utility truck is loved by rich farmers and avaricious merchants for perfect value for money. But professional don't like it for insufficient security." />
+
+	<string
+		id="MirotvorecForSale_diz"
+		value="The best defence is offence. None other vehicle bears such arsenal like Peacemaker. Capacity is rather small but result is worth it." />
+<!-- Gadgets ______________________________________________-->
+	<string
+		id="cooling_system_guns_diz"
+		value="Water-cooling system won't allow your machine gun to overheat and speed up reload. | Gun reloading speedup +5%" />
+
+	<string
+		id="cooling_system_energy_diz"
+		value="Water-cooling system won't allow your laser to overheat and speed up reload. | Energy weapon reloading speedup +5%" />
+
+	<string
+		id="cooling_system_explosion_diz"
+		value="Water-cooling system won't allow your cannon to overheat and speed up reload. | Artillery reloading speedup +5%" />
+
+	<string
+		id="firing_rate_guns_diz"
+		value="Optimized gun mechanics. | Gun firing rate +5%" />
+
+	<string
+		id="firing_range_guns_diz"
+		value="Magnetic bullet accelerator. | Gun firing range +5%" />
+
+	<string
+		id="firing_rate_energy_diz"
+		value="Low resistance cable cut the waste of energy inevitable for any kind energetic weapon. | Energy weapon rate of fire +5%" />
+
+	<string
+		id="grouping_angle_guns_diz"
+		value="Scope sight | Gun accuracy +5%" />
+
+	<string
+		id="add_damage_guns_diz"
+		value="Delayed blowback bolt provides larger muzzle velocity. | Gun power damage +5%" />
+
+	<string
+		id="add_damage_energy_diz"
+		value="Mirror-silver light resonator increases the quantity of emitted energy.| Energy weapon power damage +5%" />
+
+	<string
+		id="add_damage_explosion_diz"
+		value="Magnetic catapult adds additional acceleration to your shells. | Artillery power damage +5%" />
+
+	<string
+		id="cooling_system_guns2_diz"
+		value="Air-cooling system won't allow your machine gun to overheat and speed up reload. | Gun reloading speedup +13%" />
+
+	<string
+		id="cooling_system_energy2_diz"
+		value="Air-cooling system won't allow your laser to overheat and speed up reload. | Energy weapon reloading speedup +13%" />
+
+	<string
+		id="cooling_system_explosion2_diz"
+		value="Air-cooling system won't allow your cannon to overheat and speed up reload. | Artillery reloading speedup +13%" />
+
+	<string
+		id="firing_rate_guns2_diz"
+		value="Electric trigger increases gun rate of fire.| Gun rate of fire +13%" />
+
+	<string
+		id="firing_rate_energy2_diz"
+		value="Superconductive cable substantially cut the waste of energy inevitable for any kind energetic weapon. | Energetic weapon rate of fire +13%" />
+
+	<string
+		id="grouping_angle_guns2_diz"
+		value="Scope sight with brighten optics and antiglare protection. | Gun accuracy +13%" />
+
+	<string
+		id="add_damage_guns2_diz"
+		value="Blowback bolt with double-slider coupling provides maximum muzzle velocity. | Gun power damage +13%" />
+
+	<string
+		id="add_damage_energy2_diz"
+		value="Crystal resonator practically doubles the quantity of emitted energy. | Energy weapon power damage +13%" />
+
+	<string
+		id="add_damage_explosion2_diz"
+		value="Magnetic catapult on the base of curling field generator adds maximum acceleration to your shells. | Artillery power damage +13%" />
+
+	<string
+		id="cooling_system_guns_and_firing_rate_guns_diz"
+		value="Gnomon system provides effective barrel cooling and fast gun reload. | Gun reload speed +7% | Gun rate of fire +7%" />
+
+	<string
+		id="cooling_system_energy_and_firing_rate_energy_diz"
+		value="Algor complex enhances rate of fire of any energy weapon and protects from overheat. | Energy weapon reload speed +7% | Energy weapon rate of fire +7%" />
+
+	<string
+		id="cooling_system_explosion_and_firing_rate_explosion_diz"
+		value="Samum system optimizes ammunition supply and preserves cannon barrel from overheat.| Artillery reload speed +7% | Artillery rate of fire +7%" />
+
+	<string
+		id="firing_rate_guns_and_add_damage_guns_diz"
+		value="Electromagnetic system 'Sfeno'.| Gun firing rate +7% | Gun damage +7%" />
+
+	<string
+		id="firing_rate_energy_and_add_damage_energy_diz"
+		value="Quasar magnetic-optical system increases energy potential and operating speed of your energy weapon. | Energy weapon rate of fire +5% | Energetic weapon power damage +13%" />
+
+	<string
+		id="firing_rate_explosion_and_add_damage_explosion_diz"
+		value="Firestorm electromechanical complex speeds up ammunition supply and adds additional acceleration to cannon-shot. | Artillery rate of fire +5% | Artillery power damage +13%" />
+
+	<string
+		id="add_damage_guns_and_grouping_angle_guns_diz"
+		value="'FireEye' system.| Gun damage +7% | Gun accuracy +7%" />
+
+	<string
+		id="add_damage_energy_and_firing_rate_energy_diz"
+		value="Doom-4 system notably changes operation speed and combat strength of your energy weapon. | Energy weapon rate of fire +7% | Energy weapon power damage +7%" />
+
+	<string
+		id="add_damage_explosion_firing_rate_explosion_diz"
+		value="David electromechanical complex provides quick ammunition supply to the cannon and high shell velocity. | Artillery rate of fire +7% | Artillery power damage +7%" />
+
+	<string
+		id="additional_fuel_tank_diz"
+		value="Common fuel can combined with carburetor in fact it is overload tank.| Fuel tank volume +3%" />
+
+	<string
+		id="additional_torque_diz"
+		value="Additional exhaust pipe. | Power +3%" />
+
+	<string
+		id="additional_durability_diz"
+		value="Rolled armored plates for cabin. | Armor +3%" />
+
+	<string
+		id="additional_stability_diz"
+		value="Steering booster allows you to driver without slightest effort. | Roadability +3%" />
+
+	<string
+		id="additional_fuel_tank2_diz"
+		value="Big fuel can combined with carburetor in fact it is overload tank.| Fuel tank volume +20%" />
+
+	<string
+		id="additional_torque2_diz"
+		value="Turbo-supercharge allows to supply more fuel into cylinders that increase the engine power. | Power +5%" />
+
+	<string
+		id="additional_durability2_diz"
+		value="Rolled armored plates with additional cementation. | Armor +5%" />
+
+	<string
+		id="add_speed_and_torque_diz"
+		value="Electronic injection system. | Speed +4% | Power +4%" />
+
+	<string
+		id="add_stability_and_speed_diz"
+		value="Sagitta system includes a powerful steering booster and improved gear set. | Roadability +4% | Speed +5%" />
+
+	<string
+		id="add_torque_and_stability_diz"
+		value="Albatross system consists of powerful steering booster and effective exhaust system. | Power +4% | Roadability +4%" />
+
+	<string
+		id="additional_fuel_tank2_add_damage_guns_diz"
+		value="Sato system is an excellent steering booster and as a present additional fuel tank. | Fuel tank volume +6% | Roadability +4%" />
+
+	<string
+		id="add_damage_energy_sub_damage_guns_diz"
+		value="Energy booster. | Energy weapon power damage +9% | Gun power damage -9%" />
+
+	<string
+		id="add_damage_guns_sub_damage_energy_diz"
+		value="Ammunition with plasma core. | Gun power damage +9% | Energy weapon power damage -9%" />
+
+	<string
+		id="add_damage_explosion_sub_damage_guns_diz"
+		value="Warheads with plastid. | Energy weapon power damage +9% | Gun power damage -9%" />
+
+	<string
+		id="add_fueltank_sub_maxspeed_diz"
+		value="Enlarged fuel tank. | Fuel tank volume +9% | Top speed -9%" />
+
+	<string
+		id="add_maxspeed_sub_fueltank_diz"
+		value="Sport chip occupies the part of fuel tank. | Top speed +9% | Fuel tank volume -9%" />
+<!-- New stuff-->
+	<string
+		id="add_damage_energy_sub_damage_guns2_diz"
+		value=" | Energy weapons power damage +15% | Gun power damage -15%" />
+
+	<string
+		id="add_damage_guns_sub_damage_energy2_diz"
+		value=" | Gun power damage +15% | Energy weapons power damage -15%" />
+
+	<string
+		id="add_damage_explosion_sub_damage_guns2_diz"
+		value=" | Artillery weapons power damage +15% | Gun power damage -15%" />
+
+	<string
+		id="add_armour_sub_max_speed_diz"
+		value=" | Armor +9% | Max speed -9%" />
+	<string
+		id="add_maxspeed_sub_armour_diz"
+		value=" | Max speed +9% | Armor -9%" />
+
+
+
+
+	<string
+		id="add_damage_energy_sub_damage_guns22_diz"
+		value=" | Energy weapons power damage +17% | Gun power damage -17%" />
+
+	<string
+		id="add_damage_guns_sub_damage_energy22_diz"
+		value=" | Gun power damage +17% | Energy weapons power damage -17%" />
+
+	<string
+		id="add_damage_explosion_sub_damage_guns22_diz"
+		value=" | Artillery weapons power damage +17% | Gun power damage -17%" />
+
+	<string
+		id="add_maxspeed_sub_armour2_diz"
+		value=" | Max speed +11% | Armor -11%" />
+
+	<string
+		id="add_fueltank_sub_maxspeed2_diz"
+		value=" | Fuel tank volume +11% | Max speed -11%" />
+
+	<string
+		id="add_maxspeed_sub_fueltank2_diz"
+		value=" | Max speed +11% | Fuel tank volume -11%" />
+
+	<string
+		id="add_armour_sub_max_speed2_diz"
+		value=" | Armor +11% | Max speed -11%" />
+
+	<string
+		id="add_damage_energy_sub_damage_guns23_diz"
+		value=" | Energy weapons power damage +19% | Gun power damage -19%" />
+	<string
+		id="add_damage_guns_sub_damage_energy23_diz"
+		value=" | Gun power damage +19% | Energy weapons power damage -19%" />
+
+	<string
+		id="add_damage_explosion_sub_damage_guns23_diz"
+		value=" | Artillery weapons power damage +19% | Gun power damage -19%" />
+
+	<string
+		id="add_maxspeed_sub_armour3_diz"
+		value=" | Max speed +13% | Armor -13%" />
+
+	<string
+		id="add_fueltank_sub_maxspeed3_diz"
+		value=" | Fuel tank volume +13% | Max speed -13%" />
+
+	<string
+		id="add_maxspeed_sub_fueltank3_diz"
+		value=" | Max speed +13% | Fuel tank volume -13%" />
+
+	<string
+		id="add_armour_sub_max_speed3_diz"
+		value=" | Armor +13% | Max speed -13%" />
+
+	<string
+		id="add_damage_energy_sub_damage_guns24_diz"
+		value=" | Energy weapons power damage +20% | Gun power damage -20%" />
+	<string
+		id="add_damage_guns_sub_damage_energy24_diz"
+		value=" | Gun power damage +20% | Energy weapons power damage -20%" />
+	<string
+		id="add_damage_explosion_sub_damage_guns24_diz"
+		value=" | Artillery weapons power damage +20% | Gun power damage -20%" />
+	<string
+		id="add_maxspeed_sub_armour4_diz"
+		value=" | Max speed +14% | Armor -14%" />
+
+	<string
+		id="add_fueltank_sub_maxspeed4_diz"
+		value=" | Fuel tank volume +14% | Max speed -14%" />
+
+	<string
+		id="add_maxspeed_sub_fueltank4_diz"
+		value=" | Max speed +14% | Fuel tank volume -14%" />
+
+	<string
+		id="add_armour_sub_max_speed4_diz"
+		value=" | Armor +14% | Max speed -14%" />
+<!-- Wares ______________________________________________-->
+	<string
+		id="info_stone_diz"
+		locForm="0"
+		value="The inscriptions on the stones tell the story of the long gone civilization." />
+
+	<string
+		id="wine_diz"
+		locForm="0"
+		value="The quality of barrels' content leaves much to be desired but in other villages you can't find it." />
+
+	<string
+		id="cannedfood_diz"
+		locForm="0"
+		value="Every driver should take dozen of tins with canned food for the journey. The only inconvenience is that you never know that in fact inside these tins." />
+
+	<string
+		id="potato_diz"
+		value="Potato is potato. There is nothing to add. It is the major source of living for all people." />
+
+	<string
+		id="scrap_metal_diz"
+		value="From the wreckage sometimes one may manage to make not bad details for the truck. The story runs that somebody has learnt how to remelt the rusty metal into ingots. You can use this commodity for small recovering of armor on your vehicle. Hold [Ctrl] and left mouse click on this commodity." />
+
+	<string
+		id="scrap_metal_use_diz"
+		value="@FF9B2828You can use the item to restore your truck armor by %1d (but not higer than the max) Hold [Ctrl] and click left mouse button on the item." />
+
+	<string
+		id="firewood_diz"
+		value="Wood was always used as heat source, firewood and cheap building material." />
+
+	<string
+		id="oil_diz"
+		value="The one who controls the oil controls the whole cargo traffic. That is why there are so many machinations around this valuable commodity." />
+
+	<string
+		id="gear_diz"
+		value="Change parts for the mechanisms no one mechanic can do without it." />
+
+	<string
+		id="bottle_diz"
+		value="Adornments from end-of-day glass bring good luck and attract money. The bigger glass piece is the more valuable the adornment." />
+
+	<string
+		id="fuel_diz"
+		value="High-octane fuel is very hard to find and it costs a lot. You can use this commodity to add some fuel into your vehicle. Hold [Ctrl] and left mouse click on this commodity." />
+
+	<string
+		id="fuel_use_diz"
+		value="@FF9B2828You can use the item to refuel your gas tank by %1d (but not higer than the max) Hold Ctrl and click left mouse button on the item." />
+
+	<string
+		id="fibreboard_diz"
+		value="Houses made from recycled wood are more robust and warmer than wattle houses and cottages." />
+
+	<string
+		id="machinery_diz"
+		value="Various loose parts for machinery repair. You can use this commodity for light repair of your vehicle structure. Hold [Ctrl] and left mouse click on this commodity." />
+
+	<string
+		id="machinery_use_diz"
+		value="@FF9B2828You can use the item to restore your truck structure by %1d (but not higer than the max) Hold [Ctrl] and click left mouse button on the item." />
+
+	<string
+		id="tobacco_diz"
+		value="It is unknown what were these stinking sticks used for but today it is vast spread ingredient for drugs." />
+
+	<string
+		id="book_diz"
+		value="Antique books. Today few people can read but those who can are ready to pay reasonably good money for wisdom of the centuries hidden among the yellowed pages." />
+
+	<string
+		id="electronics_diz"
+		value="The most advanced models of equipment need slim hi-tech stuff. One can hardly imagine what can happen when the electronics minefield run low." />
+
+	<string
+		id="electronics_use_diz"
+		value="@FF9B2828You can use the item to restore your truck armor by %1d (but not higer than the max) Hold [Ctrl] and click left mouse button on the item." />
+<!-- UnicWeapons ______________________________________________-->
+	<string
+		id="pktS01_diz"
+		value="Unique machine gun" />
+
+	<string
+		id="specterS01_diz"
+		value="Unique Spektr" />
+
+	<string
+		id="fagotS01_diz"
+		value="Unique Fagot" />
+
+	<string
+		id="flagS01_diz"
+		value="Unique Flag" />
+
+	<string
+		id="kpvtS01_diz"
+		value="Unique heavy machine gun" />
+
+	<string
+		id="elephantS01_diz"
+		value="Unique Slon" />
+
+	<string
+		id="octopusS01_diz"
+		value="Unique Sprut" />
+
+	<string
+		id="hammerS01_diz"
+		value="Unique Tor Hammer" />
+
+	<string
+		id="marsSideGunS_diz"
+		value="Unique Mars" />
+
+	<string
+		id="zeusSideGunS_diz"
+		value="Unique Zeus" />
+<!-- Weapons ______________________________________________-->
+	<string
+		id="thorn1_diz"
+		value="Thorns" />
+
+	<string
+		id="thorn2_diz"
+		value="Blades" />
+
+	<string
+		id="thorn3_diz"
+		value="Drill" />
+
+	<string
+		id="ElectroShockMed_diz"
+		value="Electric charge transmitted by this weapon on successful hit cut off the enemy engine his vehicle stops it he can't run away from you. " />
+
+	<string
+		id="FlameThrowerMed_diz"
+		value="Flame gun is perfect weapon to fight with numerous enemy groups at short range." />
+
+	<string
+		id="FlameThrowerGiant_diz"
+		value="It is not a simple flame gun it is weapon of mass destruction which can melt the enemy vehicle right before your eyes." />
+
+	<string
+		id="vulcan01_diz"
+		value="Multi-barrelled machine gun 5.56 caliber fires in enemy the storm of bullets. To tell the truth it has powerful blow-back it can even turn up small car." />
+
+	<string
+		id="hornet01_diz"
+		value="Machine gun 5.45 caliber this is first-degree automatic weapon, which can be mounted on the truck." />
+
+	<string
+		id="specter01_diz"
+		value="Coaxial machine gun 5.45 caliber. Two barrels and short reload time allows to fire almost continuously. " />
+
+	<string
+		id="pkt01_diz"
+		value="Machine gun 7.62 caliber.  With this weapon you can with no fear go to the not far away journey. " />
+
+	<string
+		id="kord01_diz"
+		value="Machine gun 12.7 caliber is a worthy weapon for fighter with bandits. " />
+
+	<string
+		id="vector01_diz"
+		value="Small caliber cannon is a good choice for rookie traveller." />
+
+	<string
+		id="maxim01_diz"
+		value="Small pulse laser despite small power burns through almost any armor." />
+
+	<string
+		id="rapier01_diz"
+		value="Long-range cannon caliber 23 mm is a serious weapon in skilful hands." />
+
+	<string
+		id="storm01_diz"
+		value="Shotgun inflicts heavy damage at short range." />
+
+	<string
+		id="fagot01_diz"
+		value="Plasma blast shot by this weapon fly slowly but on good hit can literally cinder the enemy." />
+
+	<string
+		id="kpvt01_diz"
+		value="Machine gun 14.5 caliber is a real monster broaches out thin armor like paper." />
+
+	<string
+		id="rainmetal01_diz"
+		value="Quick-firing cannon caliber 20 mm is a perfect choice for biped animal hunting." />
+
+	<string
+		id="octopus01_diz"
+		value="Quick-firing cannon caliber 23 mm is good for shooting at low-flying aircrafts. Because there is no even one aircraft in the modern world it was reequip for ground targets." />
+
+	<string
+		id="cyclops01_diz"
+		value="Long-range cannon caliber 37 mm is a powerful lethal weapon to destroy enemy on long-distance." />
+
+	<string
+		id="bumblebee01_diz"
+		value="Destruction of large territory at full speed it will serve the honest merchant in struggles with bandits' gang." />
+
+	<string
+		id="elephant01_diz"
+		value="Very worthy plasma gun. Anyway nobody from the enemies complains." />
+
+	<string
+		id="flag01_diz"
+		value="Heavy shotgun is a strong reason for enemies to keep away from your vehicle." />
+
+	<string
+		id="hurricane01_diz"
+		value="This missile launcher shots missiles with small blast but it shots plenty of them." />
+
+	<string
+		id="big_swingfire01_diz"
+		value="This missile launcher allows to straddle by one barrage several enemies at once." />
+
+	<string
+		id="rocketLauncher_diz"
+		value="Justify its name this launcher can cause real fire storm at the battle field." />
+
+	<string
+		id="hailSideGun_diz"
+		value="Use it in emergency situation for random destruction of enemies around the vehicle. For ground target only." />
+
+	<string
+		id="hammer01_diz"
+		value="Final argument in battle. Single hit is enough to vaporize the medium-sized truck." />
+
+	<string
+		id="odin01_diz"
+		value="This weapon meltdowns your enemy vehicle without any blast-furnace." />
+
+	<string
+		id="omega01_diz"
+		value="If enemy tries to fight not using skills but outnumbers you this cannon is just for you." />
+
+	<string
+		id="mrakSideGun_diz"
+		value="This missile hit leave enemy no chances even chance to be buried." />
+
+	<string
+		id="hunterSideGun_diz"
+		value="These missiles are defined by two words: swift and lethal. And enemy after acquaintance with them is defined by words: quiet and dead." />
+
+	<string
+		id="zeusSideGun_diz"
+		value="Lightning kills enemies' vehicles at close range." />
+
+	<string
+		id="marsSideGun_diz"
+		value="Destroy all vehicles to the left and right from your truck by barrage of bursting shells." />
+
+	<string
+		id="someTurboAccelerationPusher_diz"
+		value="Player's vehicle accelerates 1.5 times in 5 seconds." />
+
+	<string
+		id="engineOilPusher_diz"
+		value="This tool forces to switch for a while enemy's attention from battle on vehicle control." />
+
+	<string
+		id="nailsPusher_diz"
+		value="This tool helps your enemy get rid of the tires and you to get rid of the enemy. Punctured tires are a good way to immobilize your enemy for couple of seconds." />
+
+	<string
+		id="minePusher_diz"
+		value="Destroy enemy on a long range but not so much as one may wish." />
+
+	<string
+		id="minePusher_1_diz"
+		value="The bigger reservoir for active material and advanced cover make shells of this mine placing machine real dangerous." />
+
+	<string
+		id="minePusher_2_diz"
+		value="Built-in sensor and detonation control system allows this landmine to choose the optimal time and place for attack to inflict enemy maximum damage." />
+<!-- Cabins and baskets ______________________________________________-->
+	<string
+		id="bugCab01_diz"
+		value="The simplest Beetle cabin." />
+
+	<string
+		id="bugCab02_diz"
+		value="Slightly modified Beetle cabin." />
+
+	<string
+		id="bugCab03_diz"
+		value="Standart cabin highly modified." />
+
+	<string
+		id="molokovozCab01_diz"
+		value="Regular Milk tanker cabin. Unpretending and without weapon slots." />
+
+	<string
+		id="molokovozCab02_diz"
+		value="Upgraded model of standard cabin." />
+
+	<string
+		id="molokovozCab03_diz"
+		value="Upgraded cabin which has weapon slots and several awesome pins." />
+
+	<string
+		id="uralCab01_diz"
+		value="First level cabin for Ural." />
+
+	<string
+		id="uralCab02_diz"
+		value="Cabin modification for merchants. Price is low at the expense of light weapon." />
+
+	<string
+		id="uralCab03_diz"
+		value="Advanced modification for merchants. Serious cannon should be mounted." />
+
+	<string
+		id="uralCab04_diz"
+		value="Standard cabin for combat. Improved armor. Two weapon slots." />
+
+	<string
+		id="uralCab05_diz"
+		value="This cabin is most often modified. Armor, weapon, power, speed." />
+
+	<string
+		id="belazCab01_diz"
+		value="The cheapest and simplest Belaz cabin. There are slots for small cannon and some upgrades." />
+
+	<string
+		id="belazCab02_diz"
+		value="Good choice for Belaz drivers how keen on trade." />
+
+	<string
+		id="belazCab03_diz"
+		value="Perfect choice for merchants." />
+
+	<string
+		id="belazCab04_diz"
+		value="This cabin is made for merchants who care not only about engine power but security also." />
+
+	<string
+		id="belazCab05_diz"
+		value="This cabin combines excellent running characteristics and fine fire power." />
+
+	<string
+		id="mirotvorecCab01_diz"
+		value="First level cabin for Peacemaker. Even the simplest cabin has extraordinary running and combat characteristics." />
+
+	<string
+		id="mirotvorecCab02_diz"
+		value="Upgraded first level cabin. All base characteristics are improved." />
+
+	<string
+		id="mirotvorecCab03_diz"
+		value="On this cabin two big cannons can be mounted." />
+
+	<string
+		id="mirotvorecCab04_diz"
+		value="More speed, armor, power." />
+
+	<string
+		id="mirotvorecCab05_diz"
+		value="The highest level cabin for Peacemaker. On this perfect cabin can be mounted gigantic cannon and the only two things remain for enemies to wait for death or run away." />
+
+	<string
+		id="bugCargo01_diz"
+		value="The smallest and simplest body for Beetle." />
+
+	<string
+		id="bugCargo02_diz"
+		value="More cargo space. There is slot for special weapon." />
+
+	<string
+		id="bugCargo03_diz"
+		value="This body has both capacity for rookie merchant and armor for fighter." />
+
+	<string
+		id="molokovozCargo01_diz"
+		value="Large body and weapon slots this is not bad for first level model." />
+
+	<string
+		id="molokovozCargo02_diz"
+		value="Slightly improved first level body. More armor and special weapon slot." />
+
+	<string
+		id="molokovozCargo03_diz"
+		value="This is not simply modified first level model. Seriously upgraded armor and there is large cannon slot." />
+
+	<string
+		id="uralCargo01_diz"
+		value="Enough capacity for trade enough armor for combat." />
+
+	<string
+		id="uralCargo02_diz"
+		value="Not only special weapon but also side cannons can be mounted which are serious argument in battle with the most dangerous enemies." />
+
+	<string
+		id="uralCargo03_diz"
+		value="This body suggests less fire power but heavy armor." />
+
+	<string
+		id="uralCargo04_diz"
+		value="This body is designed for battles rather than trade. Gigantic cannon slot makes this body the perfect decision for shooters who don't have enough money to buy the most expensive model." />
+
+	<string
+		id="uralCargo05_diz"
+		value="This is the highest level body for Ural. It is designed for combat. Good fire power and impenetrable armor." />
+
+	<string
+		id="belazCargo01_diz"
+		value="This body both looks like a barrel and has good capacity." />
+
+	<string
+		id="belazCargo02_diz"
+		value="Meant for merchants. The purchase of this body is first step to achieve the dream of any truck driver. " />
+
+	<string
+		id="belazCargo03_diz"
+		value="Body with unique capacity and adopted for battles with death hunters." />
+
+	<string
+		id="belazCargo04_diz"
+		value="Meant for battle rather for trade. Gigantic cannon and impenetrable armor." />
+
+	<string
+		id="belazCargo05_diz"
+		value="Almost impenetrable body for trade and combat. Can stop any bandits. " />
+
+	<string
+		id="mirotvorecCargo01_diz"
+		value="First level body for Peacemaker. Heavy armor. Good capacity. Cannon slot." />
+
+	<string
+		id="mirotvorecCargo02_diz"
+		value="Even more armor. Special weapon and gigantic cannon slots. " />
+
+	<string
+		id="mirotvorecCargo03_diz"
+		value="The considerable weapon arsenal can be mounted on the vehicle so that majority of enemies don't want to fight with you." />
+
+	<string
+		id="mirotvorecCargo04_diz"
+		value="Almost perfect for battle one against army." />
+
+	<string
+		id="mirotvorecCargo05_diz"
+		value="Excellence of military technology. All that any war dog can dream of." />
+
+	<string
+		id="ArcadeScout01_diz"
+		value="Cross-country Scout. Meant for trips anywhere." />
+
+	<string
+		id="arcadescoutCab_diz"
+		value="Cross-county Scuot cabin." />
+
+	<string
+		id="hunterCab01_diz"
+		value="Hunter cabin." />
+
+	<string
+		id="hunterCab02_diz"
+		value="Modified Hunter cabin." />
+
+	<string
+		id="fighterCab01_diz"
+		value="Fighter cabin." />
+
+	<string
+		id="fighterCab02_diz"
+		value="Modified Fighter cabin." />
+
+	<string
+		id="cruiserCab01_diz"
+		value="Cruiser cabin." />
+
+	<string
+		id="cruiserCab02_diz"
+		value="Modified Cruiser cabin." />
+<!-- Gadgets ______________________________________________--><!-- QuestItems ___________________________________________-->
+	<string
+		id="quest_wanted_diz"
+		locForm="0"
+		value="In this village bandits killing is good paid for." />
+
+	<string
+		id="quest_baseball_bat_diz"
+		locForm="0"
+		value="Fungo is a strange wooden stick for unknown purposes. It is a talisman and main argument in hot dialogue." />
+
+	<string
+		id="quest_grand_prix_diz"
+		locForm="0"
+		value="Prize for the victory in races. If you have a close look you will see that under the slice rolled gold it is made of cardboard. " />
+
+	<string
+		id="quest_movie_reel_1_diz"
+		locForm="0"
+		value="Volume title Simple and funny stories about atomic bomb (for junior school) Documentary film. Production date 1964 year." />
+
+	<string
+		id="quest_movie_reel_2_diz"
+		locForm="0"
+		value="Volume title How I stop be afraid of nuclear threat and moved to Canada Feature film. Directed by Stanley Kibikrubik." />
+
+	<string
+		id="quest_robot_part_1_diz"
+		locForm="0"
+		value="Strange set of cameras, electronic chips and mechanisms." />
+
+	<string
+		id="quest_robot_part_2_diz"
+		locForm="0"
+		value="Detail for robot repair." />
+
+	<string
+		id="quest_robot_part_3_diz"
+		locForm="0"
+		value="Probably only mechanic knows how to use it." />
+
+	<string
+		id="quest_emissary_trophies_diz"
+		locForm="0"
+		value="This is all that left after fanatic stranger." />
+
+	<string
+		id="quest_airplane_part_diz"
+		locForm="0"
+		value="This engine doesn't want to get back on ferry." />
+
+	<string
+		id="quest_goldsellector_diz"
+		locForm="0"
+		value="This is an indispensable thing for any hunter for artifacts of former civilizations. Treasure detector starts beeping when the approximate location of ancient treasure is detected. When the sound turns into continuous beep you should open the vehicle body (I key on default) and pick up the artifact." />
+
+	<string
+		id="quest_drugs_diz"
+		locForm="0"
+		value="Such kind of packages promise a lot of danger and problems as well as good money." />
+
+	<string
+		id="quest_special_drugs_diz"
+		locForm="0"
+		value="I don't know what it is. But certainly not sugar." />
+
+	<string
+		id="quest_reach_diz"
+		locForm="0"
+		value="In this packages usually various trifles are carried and they are well paid for." />
+
+	<string
+		id="quest_forbidden_books_diz"
+		locForm="0"
+		value="Only book titles set the teeth on edge. I think there is no point to read them." />
+
+	<string
+		id="quest_monster_head_diz"
+		locForm="0"
+		value="I have passed through not simple battle to get this slug with wires. " />
+
+	<string
+		id="quest_magic_thing1_diz"
+		locForm="0"
+		value="I think that this strange artifact will serve Oracle turn." />
+
+	<string
+		id="quest_magic_thing2_diz"
+		locForm="0"
+		value="Oracle didn't specify what is required so this device is pretty enough." />
+
+	<string
+		id="quest_explosion_stone_diz"
+		locForm="0"
+		value="Druids said that this stone can tear down on the faithless the anger of Earth Mother. It looks like demolition explosive so I am better stay rather far off it when the conjuration takes force." />
+
+	<string
+		id="quest_repair_robot1_diz"
+		locForm="0"
+		value="The effect of this device must help Oracle to recall the memory." />
+
+	<string
+		id="quest_repair_robot2_diz"
+		locForm="0"
+		value="Connection of option modules will extend Oracle functionality. What this dictionary mean." />
+
+	<string
+		id="quest_repair_robot3_diz"
+		locForm="0"
+		value="Fine tuning is the closing stage of Oracle memory recall. This device must take effect." />
+
+	<string
+		id="quest_start_father_letter_diz"
+		locForm="0"
+		value="'Son if you read this letter that means I couldn't return and bring you up myself. I know that Peter excellent get through this task. I see you so young and full of energy and my heart bleeds. I blame myself for the fact that I was absent when you were growing. And this is my terrible punishment. But you should know that I couldn't act otherwise. I'm in front of the life-time task. Only after accomplishing it I can feel myself man again. If I fail ... it means that I'm not deserve to live. This letter is an excuse. Forgive me if you can. You are always in my heart.'" />
+
+	<string
+		id="quest_potato_diz"
+		locForm="0"
+		value="This cargo has to be carried in the neighboring town to make my first trade deal." />
+
+	<string
+		id="quest_medicine_box_diz"
+		locForm="0"
+		value="Medicine chest found on the ruins of ancient hospital." />
+
+	<string
+		id="quest_explosive_diz"
+		locForm="0"
+		value="Demolition explosive blast is powerful enough to break through several meter of concrete." />
+
+	<string
+		id="quest_wine_barrels_diz"
+		locForm="0"
+		value="Tier of wine produced in monastery." />
+
+	<string
+		id="quest_komp_splav_diz"
+		locForm="0"
+		value="Composite alloy which is necessary to produce the device which allows me to track the Desert of Death." />
+
+	<string
+		id="quest_shaman_head1_diz"
+		locForm="0"
+		value="This terrible item must be delivered to monastery." />
+
+	<string
+		id="quest_shaman_head2_diz"
+		locForm="0"
+		value="This terrible item must be delivered to monastery." />
+
+	<string
+		id="quest_old_digital_diz"
+		locForm="0"
+		value="Old dilapidated engine. And who will pay for this kind of junk. " />
+
+	<string
+		id="quest_art_masterpice_diz"
+		locForm="0"
+		value="Antique masterpiece for this thing a man who knows cast off pretty penny." />
+
+	<string
+		id="quest_mafia_narcotik_diz"
+		locForm="0"
+		value="Drugs occasionally stolen from bandit Boss." />
+
+	<string
+		id="quest_first_canistra_diz"
+		locForm="0"
+		value="Fuel can full of oil from the mine which had been free from bandit." />
+
+	<string
+		id="quest_disk_1_diz"
+		locForm="0"
+		value="Disk made of thin plastic. Surely this thing is worth much." />
+
+	<string
+		id="quest_disk_2_diz"
+		locForm="0"
+		value="This piece of plastic contains code to Iven Go diary. With both disks I can discover his destiny." />
+
+	<string
+		id="quest_key_for_submarine_diz"
+		locForm="0"
+		value="This dodgy device somehow concerned moving on the sea." />
+
+	<string
+		id="quest_key_for_tunnel_diz"
+		locForm="0"
+		value="Key to the tunnel which leads through the hills." />
+
+	<string
+		id="SmokeGun_diz"
+		locForm="0"
+		value="Smoke screen is a great way to hide from the enemy and his shots." />
+
+	<string
+		id="anti_missile_system_diz"
+		locForm="0"
+		value="Missile defence." />
+</resource>
