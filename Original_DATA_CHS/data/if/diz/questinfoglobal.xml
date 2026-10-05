@@ -2,8 +2,8 @@
 <QuestInfoResource>
 	<QuestInfo
 		questName="BuyKollizey_Quest"
-		briefDiz="Become the Colosseum’s joint owner"
-		fullDiz="Become the Colosseum’s joint owner."
+		briefDiz="³ÉÎª¾º¼¼³¡µÄºÏ»ïÈË"
+		fullDiz="³ÉÎª¾º¼¼³¡µÄºÏ»ïÈË¡£"
 		isMainQuest="0">
 		<Map
 			name="r1m2"
@@ -12,8 +12,8 @@
 
 	<QuestInfo
 		questName="Buyer_Quest1"
-		briefDiz="Deliver package to Sowth."
-		fullDiz="I should deliver this package to Sergo, my father's friend."
+		briefDiz="°Ñ°ü¹üËÍµ½Ë÷Ë¹¡£"
+		fullDiz="ÎÒÓ¦¸Ã°ÑÕâ¸ö°ü¹ü½»¸øÎÒ¸¸Ç×µÄÅóÓÑ Sergo¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m1"
@@ -22,8 +22,8 @@
 
 	<QuestInfo
 		questName="CombatInKollizey_Quest"
-		briefDiz="Demonstration"
-		fullDiz="Show everyone a real fight at the Colosseum."
+		briefDiz="±íÑÝÈü"
+		fullDiz="ÔÚ¾º¼¼³¡ÈÃ´ó¼Ò¼ûÊ¶Ò»³¡ÕæÕýµÄÕ½¶·¡£"
 		isMainQuest="0">
 		<Map
 			name="r1m2"
@@ -32,8 +32,8 @@
 
 	<QuestInfo
 		questName="DestroyRuins_Quest"
-		briefDiz="Rob archeologists"
-		fullDiz="Archeologists dig for something interesting... They have almost no defense. It is a perfect opportunity to earn some money."
+		briefDiz="ÇÀ½Ù¿¼¹ÅÑ§¼Ò"
+		fullDiz="¿¼¹ÅÑ§¼ÒÃÇÕýÔÚÍÚ¾òÊ²Ã´ÓÐÈ¤µÄ¶«Î÷¡­¡­ËûÃÇ¼¸ºõÃ»ÓÐ·À±¸¡£ÕâÊÇ×¬µãÇ®µÄºÃ»ú»á¡£"
 		isMainQuest="0">
 		<Map
 			name="r1m2"
@@ -42,101 +42,101 @@
 <!-- dynamic quests -->
 	<QuestInfo
 		questName="Dynamic_Convoy_0"
-		briefDiz="Accompany the caravan up to %2n"
-		fullDiz="The town %1n asks you to accompany the caravan up to %2n"
+		briefDiz="»¤ËÍÉÌ¶ÓÇ°Íù %2n"
+		fullDiz="%1n ÕòÇëÄã»¤ËÍÉÌ¶ÓÇ°Íù %2n"
 		isMainQuest="0" />
 
 	<QuestInfo
 		questName="Dynamic_Convoy_1"
-		briefDiz="Defend the transport"
-		fullDiz="An inhabitant of %1n asked me defend the transport on his way to %2n and offered to pay %3d."
+		briefDiz="±£ÎÀÔËÊä³µ"
+		fullDiz="%1n µÄÒ»¸ö¾ÓÃñÒªÎÒ»¤ËÍÔËÊä³µÇ°Íù %2n£¬²¢´ðÓ¦Ö§¸¶ %3d¡£"
 		isMainQuest="0" />
 
 	<QuestInfo
 		questName="Dynamic_Convoy_2"
-		briefDiz="Insure the transport safety"
-		fullDiz="%1n demands me to accompany the transport carrying an important cargo to %2n. If It will arrive safely, I will get %3d."
+		briefDiz="È·±£ÔËÊä³µ°²È«"
+		fullDiz="%1n ÒªÇóÎÒ»¤ËÍ×°ÔØÖØÒª»õÎïµÄÔËÊä³µÇ°Íù %2n¡£Èç¹û°²È«µÖ´ï£¬ÎÒ½«µÃµ½ %3d¡£"
 		isMainQuest="0" />
 
 	<QuestInfo
 		questName="Dynamic_Convoy_3"
-		briefDiz="Secure the transport to %2n"
-		fullDiz="The transport from %1n goes to %2n. Some bandits often ambush traders coming that way, so I agreed to protect them for a mere %3d."
+		briefDiz="»¤ËÍÔËÊä³µÇ°Íù %2n"
+		fullDiz="ÔËÊä³µ´Ó %1n ³ö·¢Ç°Íù %2n¡£Ò»Ð©·ËÍ½¾­³£ÔÚÄÇÌõÂ·ÉÏ·ü»÷ÉÌÈË£¬ËùÒÔÎÒ´ðÓ¦±£»¤ËûÃÇ£¬±¨³êÖ»ÊÇÇøÇø %3d¡£"
 		isMainQuest="0" />
 
 	<QuestInfo
 		questName="Dynamic_Destroy_0"
-		briefDiz="Destroy enemy"
-		fullDiz="The town %1n asks you to destroy the enemy for a reward."
-		requestForTalk="Hi, have you got any work for me to do?" />
+		briefDiz="ÏûÃðµÐÈË"
+		fullDiz="%1n ÕòÇëÄãÏûÃðµÐÈË£¬»áÓÐ±¨³ê¡£"
+		requestForTalk="ÄãºÃ£¬ÓÐÊ²Ã´»î¶ù½»¸øÎÒ¸ÉÂð£¿" />
 isMainQuest="0" />
 
 	<QuestInfo
 		questName="Dynamic_Destroy_1"
-		briefDiz="Neutralize the treat"
-		fullDiz="The citizens of %1n are often being attacked by the cunning brigand who always escapes punishment. I agreed to get rid of him for %3d."
-		requestForTalk="Ïðèâåò, íåò ëè ðàáîòåíêè äëÿ ìåíÿ?"
+		briefDiz="Ïû³ýÍþÐ²"
+		fullDiz="%1n µÄ¾ÓÃñ¾­³£Ôâµ½ÄÇ¸ö½Æ»«·ËÍ½µÄÏ®»÷£¬Ëû×ÜÊÇÌÓ±Ü³Í·£¡£ÎÒ´ðÓ¦³ýµôËû£¬±¨³ê %3d¡£"
+		requestForTalk="ÄãºÃ£¬ÓÐÊ²Ã´»î¶ù½»¸øÎÒ¸ÉÂð£¿"
 		isMainQuest="0" />
 
 	<QuestInfo
 		questName="Dynamic_Destroy_2"
-		briefDiz="Trace the aggressor"
-		fullDiz="I will get %3d, when I get rid of a villain that threatens %1n."
-		requestForTalk="Ïðèâåò, íåò ëè ðàáîòåíêè äëÿ ìåíÿ?"
+		briefDiz="×·×ÙÏ®»÷Õß"
+		fullDiz="³ýµôÍþÐ² %1n µÄ¶ñÍ½ºó£¬ÎÒ½«µÃµ½ %3d¡£"
+		requestForTalk="ÄãºÃ£¬ÓÐÊ²Ã´»î¶ù½»¸øÎÒ¸ÉÂð£¿"
 		isMainQuest="0" />
 
 	<QuestInfo
 		questName="Dynamic_Hunt_0"
-		briefDiz="The Hunt begins."
-		fullDiz="The town %1n will pay %3d coins for each enemy killed."
+		briefDiz="á÷ÁÔ¿ªÊ¼¡£"
+		fullDiz="%1n Õò»áÎªÃ¿ÏûÃðÒ»¸öµÐÈËÖ§¸¶ %3d ½ð±Ò¡£"
 		isMainQuest="0" />
 
 	<QuestInfo
 		questName="Dynamic_Hunt_1"
-		briefDiz="Teach bandits a lesson"
-		fullDiz="The local bandit must be cut down to size! The people of %1n will pay %3d for every killed enemy."
+		briefDiz="½ÌÑµ·ËÍ½"
+		fullDiz="¸ÃÈÃµ±µØµÄ·ËÍ½ÖªµÀÀ÷º¦ÁË£¡%1n µÄÈË»áÎªÃ¿ÏûÃðÒ»¸öµÐÈËÖ§¸¶ %3d¡£"
 		isMainQuest="0" />
 
 	<QuestInfo
 		questName="Dynamic_Hunt_2"
-		briefDiz="Clear the neighborhood "
-		fullDiz="The authorities of %1n began to fight for the safety of the trade routes I will be paid %3d for every villain slain."
+		briefDiz="ËàÇåÖÜ±ß"
+		fullDiz="%1n µ±¾Ö¿ªÊ¼ÎªÃ³Ò×Â·ÏßµÄ°²È«¶øÕ½£¬Ã¿ÏûÃðÒ»¸ö¶ñÍ½ÎÒ»áµÃµ½ %3d¡£"
 		isMainQuest="0" />
 
 	<QuestInfo
 		questName="Dynamic_Peace_0"
-		briefDiz="Lower the hostility with %2b."
-		fullDiz="You must pay %3d percents of your money for %2b to redeem your evil deeds."
+		briefDiz="½µµÍÓë %2b µÄµÐÒâ¡£"
+		fullDiz="Äã±ØÐëÏò %2b Ö§¸¶Äã½ðÇ®µÄ°Ù·ÖÖ® %3d À´Êê×ï¡£"
 		isMainQuest="0" />
 
 	<QuestInfo
 		questName="Dynamic_Reach_0"
-		briefDiz="Deliver package to %2n"
-		fullDiz="The town %1n asks you to deliver package to %2n"
-		requestForTalk="Hi, have you got any work for me to do?"
-		resuestForComplete="I brought a package from %1n." />
+		briefDiz="°Ñ°ü¹üËÍµ½ %2n"
+		fullDiz="%1n ÕòÇëÄã°Ñ°ü¹üËÍµ½ %2n"
+		requestForTalk="ÄãºÃ£¬ÓÐÊ²Ã´»î¶ù½»¸øÎÒ¸ÉÂð£¿"
+		resuestForComplete="ÎÒ°ÑÀ´×Ô %1n µÄ°ü¹üËÍµ½ÁË¡£" />
 isMainQuest="0" />
 
 	<QuestInfo
 		questName="Dynamic_Reach_1"
-		briefDiz="Deliver the packet to %2n"
-		fullDiz="I’ll get %3d, when I deliver the package to %2n. Somebody is waiting for it, but I am not going to hurry for such a small amount on money."
-		requestForTalk="Ïðèâåò, íåò ëè ðàáîòåíêè äëÿ ìåíÿ?"
-		resuestForComplete="ß ïðèâåç òåáå ïàêåò îò %1n."
+		briefDiz="°Ñ°ü¹üËÍµ½ %2n"
+		fullDiz="°Ñ°ü¹üËÍµ½ %2n ºó£¬ÎÒ»áµÃµ½ %3d¡£ÓÐÈËÔÚµÈËü£¬µ«ÕâÃ´µãÇ®ÎÒ¿É²»Ïë¸ÏÂ·¡£"
+		requestForTalk="ÄãºÃ£¬ÓÐÊ²Ã´»î¶ù½»¸øÎÒ¸ÉÂð£¿"
+		resuestForComplete="ÎÒ°ÑÀ´×Ô %1n µÄ°ü¹üËÍµ½ÁË¡£"
 		isMainQuest="0" />
 
 	<QuestInfo
 		questName="Dynamic_Reach_2"
-		briefDiz="Reach %2n"
-		fullDiz="Some crank from %1n will pay me %3d, if I go and say hello to his friend living in %2n."
-		requestForTalk="Ïðèâåò, íåò ëè ðàáîòåíêè äëÿ ìåíÿ?"
-		resuestForComplete="ß ïðèâåç òåáå ïàêåò îò %1n."
+		briefDiz="Ç°Íù %2n"
+		fullDiz="%1n µÄÒ»¸ö¹ÖÈËÔ¸Òâ¸¶ÎÒ %3d£¬ÒªÎÒÈ¥ÏòËû×¡ÔÚ %2n µÄÅóÓÑÎÊÉùºÃ¡£"
+		requestForTalk="ÄãºÃ£¬ÓÐÊ²Ã´»î¶ù½»¸øÎÒ¸ÉÂð£¿"
+		resuestForComplete="ÎÒ°ÑÀ´×Ô %1n µÄ°ü¹üËÍµ½ÁË¡£"
 		isMainQuest="0" />
 <!-- static quests -->
 	<QuestInfo
 		questName="EastTalkKollizey_Quest"
-		briefDiz="Inform Aeterna’s people"
-		fullDiz="Inform Aeterna’s people of the Colosseum"
+		briefDiz="Í¨Öª°£ÌØÄÉµÄÈË"
+		fullDiz="Í¨Öª°£ÌØÄÉµÄÈË¹ØÓÚ¾º¼¼³¡µÄÊÂ¡£"
 		isMainQuest="0">
 		<Map
 			name="r1m2"
@@ -145,8 +145,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="FindBen2_Quest"
-		briefDiz="Find Ben Throttle"
-		fullDiz="Now I know for sure that Ben is the man I need. The question is where to find him."
+		briefDiz="Ñ°ÕÒ Ben Throttle"
+		fullDiz="ÏÖÔÚÎÒÈ·ÐÅ Ben ¾ÍÊÇÎÒÒªÕÒµÄÈË¡£ÎÊÌâÊÇÈ¥ÄÄÀïÕÒËû¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m2" />
@@ -154,8 +154,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="FindBen_Quest"
-		briefDiz="Find Ben Throttle the Explorer "
-		fullDiz="My life is in ruins. To make it whole again I have to learn more about my real father. My only hope is Ben Throttle, whoever he is... "
+		briefDiz="Ñ°ÕÒÌ½ÏÕ¼Ò Ben Throttle"
+		fullDiz="ÎÒµÄÈËÉúÒÑ³É·ÏÐæ¡£ÒªÖØÐÂÆ´´ÕÍêÕû£¬ÎÒ±ØÐëÁË½âÎÒÇ×Éú¸¸Ç×µÄ¸ü¶àÊÂ¡£ÎÒÎ¨Ò»µÄÏ£Íû¾ÍÊÇ Ben Throttle£¬²»¹ÜËû¾¿¾¹ÊÇË­¡­¡­"
 		isMainQuest="1">
 		<Map
 			name="r1m1" />
@@ -166,20 +166,20 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="FindGomerA_Quest1"
-		briefDiz="Find Homer"
-		fullDiz="Probably, Homer may be found at the bar of one of the local settlements"
+		briefDiz="Ñ°ÕÒ Homer"
+		fullDiz="Ò²ÐíÄÜÔÚÄ³¸öµ±µØ¾ÛÂäµÄ¾Æ°ÉÀïÕÒµ½ Homer¡£"
 		isMainQuest="1" />
 
 	<QuestInfo
 		questName="FindGomerB_Quest1"
-		briefDiz="Find Homer"
-		fullDiz="Probably, Homer may be found at the bar of one of the local settlements"
+		briefDiz="Ñ°ÕÒ Homer"
+		fullDiz="Ò²ÐíÄÜÔÚÄ³¸öµ±µØ¾ÛÂäµÄ¾Æ°ÉÀïÕÒµ½ Homer¡£"
 		isMainQuest="1" />
 
 	<QuestInfo
 		questName="FreeExtremistLeader_Quest1"
-		briefDiz="Free the extremists’ leader"
-		fullDiz="The warehouse is occupied by the extremists. I must free their leader in order to get what I need. "
+		briefDiz="ÊÍ·Å¼«¶Ë·Ö×ÓµÄÊ×Áì"
+		fullDiz="²Ö¿â±»¼«¶Ë·Ö×ÓÕ¼ÁìÁË¡£ÎÒ±ØÐë¾È³öËûÃÇµÄÊ×Áì²ÅÄÜµÃµ½ÎÒÐèÒªµÄ¶«Î÷¡£"
 		isMainQuest="0">
 		<Map
 			name="r1m4" />
@@ -187,7 +187,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="FreeExtremistLeader_Quest2"
-		briefDiz="Find out in Olme where the leader is kept."
+		briefDiz="ÔÚ°Â¶ûÄ·´òÌýÊ×Áì±»¹ØÔÚÄÄÀï¡£"
 		isMainQuest="0">
 		<Map
 			name="r1m4"
@@ -196,7 +196,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="FreeExtremistLeader_Quest3"
-		briefDiz="Intercept the caravan"
+		briefDiz="À¹½ØÉÌ¶Ó"
 		isMainQuest="0">
 		<Map
 			name="r1m4"
@@ -205,7 +205,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="FreeExtremistLeader_Quest4"
-		briefDiz="Bring the leader to his people."
+		briefDiz="°ÑÊ×Áì´ø»ØËûµÄÈËÄÇÀï¡£"
 		isMainQuest="0">
 		<Map
 			name="r1m4"
@@ -214,8 +214,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="HelpRuins_Quest"
-		briefDiz="Help archeologists"
-		fullDiz="Local raiders hinder archeologists from digging. I have to get rid of them."
+		briefDiz="°ïÖú¿¼¹ÅÑ§¼Ò"
+		fullDiz="µ±µØµÄÂÓ¶áÕß·Á°­¿¼¹ÅÑ§¼ÒÍÚ¾ò¡£ÎÒ±ØÐë³ýµôËûÃÇ¡£"
 		isMainQuest="0">
 		<Map
 			name="r1m2"
@@ -224,8 +224,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="KillExtremist_Quest1"
-		briefDiz="Kill bandits occupying the warehouse. "
-		fullDiz="One way to get what I need is to destroy all that oppose me."
+		briefDiz="ÏûÃðÕ¼Áì²Ö¿âµÄ·ËÍ½¡£"
+		fullDiz="ÒªµÃµ½ÎÒÐèÒªµÄ¶«Î÷£¬Ò»¸ö°ì·¨¾ÍÊÇÏûÃðËùÓÐµ²ÎÒÂ·µÄÈË¡£"
 		isMainQuest="0">
 		<Map
 			name="r1m4"
@@ -234,8 +234,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="Kollizey_Quest"
-		briefDiz="Help to organize Colosseum's work"
-		fullDiz="Some businessman wants to reopen the Colosseum. I can help."
+		briefDiz="Ð­ÖúÖØ¿ª¾º¼¼³¡"
+		fullDiz="ÓÐ¸öÉÌÈËÏëÖØÐÂ¿ªÕÅ¾º¼¼³¡¡£ÎÒ¿ÉÒÔ°ïÒ»°Ñ¡£"
 		isMainQuest="0">
 		<Map
 			name="r1m2" />
@@ -243,8 +243,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="MidgardTalkKollizey_Quest"
-		briefDiz="Inform Midgard’s people"
-		fullDiz="Inform Midgard’s people of the Colosseum."
+		briefDiz="Í¨ÖªÃ×µÂ¼ÓµÂµÄÈË"
+		fullDiz="Í¨ÖªÃ×µÂ¼ÓµÂµÄÈË¹ØÓÚ¾º¼¼³¡µÄÊÂ¡£"
 		isMainQuest="0">
 		<Map
 			name="r1m2"
@@ -253,8 +253,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="PortoTalkKollizey_Quest"
-		briefDiz="Inform Porto’s people"
-		fullDiz="Inform Porto’s people of the Colosseum."
+		briefDiz="Í¨Öª²¨¶ûÍ¼µÄÈË"
+		fullDiz="Í¨Öª²¨¶ûÍ¼µÄÈË¹ØÓÚ¾º¼¼³¡µÄÊÂ¡£"
 		isMainQuest="0">
 		<Map
 			name="r1m2"
@@ -263,8 +263,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="ReturnToDirector2_Quest"
-		briefDiz="Return to Colosseum"
-		fullDiz="Return to Colosseum to get your reward."
+		briefDiz="·µ»Ø¾º¼¼³¡"
+		fullDiz="·µ»Ø¾º¼¼³¡ÁìÈ¡ÄãµÄ±¨³ê¡£"
 		isMainQuest="0">
 		<Map
 			name="r1m2"
@@ -273,8 +273,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="ReturnToDirector_Quest"
-		briefDiz="Return to Colosseum"
-		fullDiz="Return to Colosseum to get your reward."
+		briefDiz="·µ»Ø¾º¼¼³¡"
+		fullDiz="·µ»Ø¾º¼¼³¡ÁìÈ¡ÄãµÄ±¨³ê¡£"
 		isMainQuest="0">
 		<Map
 			name="r1m2"
@@ -283,8 +283,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="SeeSigns_Quest"
-		briefDiz="See the signs"
-		fullDiz="Find and examine the signs."
+		briefDiz="²é¿´±ê¼Ç"
+		fullDiz="ÕÒµ½²¢²é¿´ÄÇÐ©±ê¼Ç¡£"
 		isMainQuest="0">
 		<Map
 			name="r1m2"
@@ -293,8 +293,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="Signs_Quest"
-		briefDiz="Signs "
-		fullDiz="There are mysterious signs on the Kolkhoz' fields."
+		briefDiz="±ê¼Ç"
+		fullDiz="¼¯ÌåÅ©×¯µÄÌïµØÉÏ³öÏÖÁËÉñÃØµÄ±ê¼Ç¡£"
 		isMainQuest="0">
 		<Map
 			name="r1m2" />
@@ -302,7 +302,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="TRS_Quest2"
-		briefDiz="Go to the warehouse"
+		briefDiz="Ç°Íù²Ö¿â"
 		isMainQuest="0">
 		<Map
 			name="r1m4"
@@ -311,7 +311,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="TRS_Quest3a"
-		briefDiz="Kill the occupants"
+		briefDiz="ÏûÃðÕ¼ÁìÕß"
 		isMainQuest="0">
 		<Map
 			name="r1m4" />
@@ -319,7 +319,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="TRS_Quest3b"
-		briefDiz="Free the leader"
+		briefDiz="¾È³öÊ×Áì"
 		isMainQuest="0">
 		<Map
 			name="r1m4" />
@@ -327,7 +327,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="TRS_Quest4"
-		briefDiz="Inform about the warehouse mopping-up"
+		briefDiz="±¨¸æ²Ö¿âÇå½ËµÄÏûÏ¢"
 		isMainQuest="0">
 		<Map
 			name="r1m4"
@@ -336,8 +336,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="TalkProfessor_Quest"
-		briefDiz="Tell the scientists about the signs"
-		fullDiz="Tell the scientists of Midgard will find out what is happening here."
+		briefDiz="°Ñ±ê¼ÇµÄÊÂ¸æËß¿ÆÑ§¼Ò"
+		fullDiz="°ÑÕâÊÂ¸æËßÃ×µÂ¼ÓµÂµÄ¿ÆÑ§¼Ò£¬ËûÃÇ»á²éÇå³þÕâÀïµ½µ×·¢ÉúÁËÊ²Ã´¡£"
 		isMainQuest="0">
 		<Map
 			name="r1m2"
@@ -346,8 +346,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="TalkWithFather_Quest"
-		briefDiz="Return to father."
-		fullDiz="I made the first bargain in my life. Father will be happy to learn about it."
+		briefDiz="»Øµ½¸¸Ç×Éí±ß¡£"
+		fullDiz="ÎÒ×ö³ÉÁËÈËÉúÖÐµÚÒ»±ÊÉúÒâ¡£¸¸Ç×ÖªµÀÁËÒ»¶¨»áºÜ¸ßÐË¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m1"
@@ -356,8 +356,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="TraiderStorage_Quest1"
-		briefDiz="Free the warehouse from the bandits"
-		fullDiz="The warehouse id occupied by the bandits. I must find the way to drive them away."
+		briefDiz="´Ó·ËÍ½ÊÖÖÐ¶á»Ø²Ö¿â"
+		fullDiz="²Ö¿â±»·ËÍ½Õ¼ÁìÁË¡£ÎÒ±ØÐëÏë°ì·¨°ÑËûÃÇ¸Ï×ß¡£"
 		isMainQuest="0">
 		<Map
 			name="r1m4" />
@@ -365,8 +365,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="WhereSigns_Quest"
-		briefDiz="Investigate the Kolkhoz events"
-		fullDiz="Kolkhoz' farmers are scared and refuse to harvest."
+		briefDiz="µ÷²é¼¯ÌåÅ©×¯µÄÊÂ¼þ"
+		fullDiz="¼¯ÌåÅ©×¯µÄÅ©·òÃÇ±»ÏÅ»µÁË£¬²»¿ÏÈ¥ÊÕ¸î×¯¼Ú¡£"
 		isMainQuest="0">
 		<Map
 			name="r1m2"
@@ -375,8 +375,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="WorkGiver_Quest1"
-		briefDiz="Bring Rich farmer to the filling station."
-		fullDiz="Rich Farmer will reward me when I bring him to the filling station. "
+		briefDiz="°Ñ¸»Å©´øµ½¼ÓÓÍÕ¾¡£"
+		fullDiz="ÎÒ°Ñ¸»Å©´øµ½¼ÓÓÍÕ¾ºó£¬Ëû»á¸øÎÒ±¨³ê¡£"
 		isMainQuest="0">
 		<Map
 			name="r1m1"
@@ -385,8 +385,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_BarForTunel_Quest"
-		briefDiz="Go to the bar"
-		fullDiz="Someone at the Asgard’s bar must know the way to cross the mountains."
+		briefDiz="È¥¾Æ°É"
+		fullDiz="°¢Ë¹¼ÓµÂ¾Æ°ÉÀï×ÜÓÐÈËÖªµÀ·­Ô½ÈºÉ½µÄÂ·¡£"
 		isMainQuest="0">
 		<Map
 			name="r1m3"
@@ -395,7 +395,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_BarInGelvetcia_Quest"
-		briefDiz="Go to the bar and name the password."
+		briefDiz="È¥¾Æ°É²¢Ëµ³ö°µºÅ¡£"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -408,7 +408,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_BombInAsgard_Quest"
-		briefDiz="Buy some explosives at the Asgard."
+		briefDiz="ÔÚ°¢Ë¹¼ÓµÂÂòÐ©Õ¨Ò©¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m3"
@@ -417,7 +417,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_BombInShahts_Quest"
-		briefDiz="Buy some explosives at the miners’ village."
+		briefDiz="ÔÚ¿ó¹¤´åÂòÐ©Õ¨Ò©¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m3"
@@ -426,7 +426,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_BombShahtsAtakBandits_Quest"
-		briefDiz="Repel the bandit’s attack."
+		briefDiz="»÷ÍË·ËÍ½µÄÏ®»÷¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m3"
@@ -435,8 +435,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_CaravanFromTuzzToVillage_Quest"
-		briefDiz="Ensure the caravan’s safety."
-		fullDiz="This cargo must be delivered at all cost. My mission is to accompany it and make sure nothing happens to it."
+		briefDiz="È·±£ÉÌ¶ÓµÄ°²È«¡£"
+		fullDiz="ÕâÅú»õÎï±ØÐë²»Ï§Ò»ÇÐ´ú¼ÛËÍ´ï¡£ÎÒµÄÈÎÎñÊÇ»¤ËÍËü£¬È·±£ÍòÎÞÒ»Ê§¡£"
 		isMainQuest="1">
 		<Map
 			name="r2m1" />
@@ -444,7 +444,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_CaravanToMidgardBen_Quest"
-		briefDiz="Return to Midgard "
+		briefDiz="·µ»ØÃ×µÂ¼ÓµÂ"
 		isMainQuest="1">
 		<Map
 			name="r1m2"
@@ -453,7 +453,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_CaravanToPortoBen_Quest"
-		briefDiz="Defend the caravan"
+		briefDiz="±£ÎÀÉÌ¶Ó"
 		isMainQuest="1">
 		<Map
 			name="r1m2"
@@ -462,8 +462,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_DestroyBridge_Quest"
-		briefDiz="Place the charge"
-		fullDiz="I have the explosives. All I need is to place it at the right place. "
+		briefDiz="·ÅÖÃÕ¨Ò©"
+		fullDiz="Õ¨Ò©ÓÐÁË£¬ÎÒÖ»ÐèÒª°ÑËü·Åµ½ÕýÈ·µÄÎ»ÖÃ¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m3"
@@ -472,7 +472,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_DriveBanditFromOilMine_Quest"
-		briefDiz="Free the oil mine from the bandits. "
+		briefDiz="´Ó·ËÍ½ÊÖÖÐ¶á»ØÓÍÌï¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m3"
@@ -481,7 +481,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_FatherRoomInMinin_Quest"
-		briefDiz="Search the father’s home"
+		briefDiz="ËÑ²é¸¸Ç×µÄ¼Ò"
 		isMainQuest="1">
 		<Map
 			name="r1m2" />
@@ -493,8 +493,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_FindAksel_Quest"
-		briefDiz="Find Axel"
-		fullDiz="First I have to find a way to the Axels land. Then I’ll decide what to do with him! "
+		briefDiz="Ñ°ÕÒ Axel"
+		fullDiz="Ê×ÏÈÎÒµÃÕÒµ½Í¨Íù Axel µØÅÌµÄÂ·¡£È»ºóÔÙ¾ö¶¨ÔõÃ´¶Ô¸¶Ëû£¡"
 		isMainQuest="1">
 		<Map
 			name="r1m2" />
@@ -511,8 +511,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_FindBanditBaseOfOilMine_Quest"
-		briefDiz="Find and destroy bandits’ camp."
-		fullDiz="I got to follow this one to the base. I must not attack this car. "
+		briefDiz="ÕÒµ½²¢´Ý»Ù·ËÍ½µÄÓªµØ¡£"
+		fullDiz="ÎÒµÃ¸ú×ÅÕâÁ¾³µ»ØËüµÄÀÏ³²¡£¾ø²»ÄÜ¹¥»÷ÕâÁ¾³µ¡£"
 		isMainQuest="0">
 		<Map
 			name="r1m3"
@@ -521,7 +521,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_FindBenInEast_Quest"
-		briefDiz="Get to the Aeterna"
+		briefDiz="Ç°Íù°£ÌØÄÉ"
 		isMainQuest="1">
 		<Map
 			name="r1m1"
@@ -534,7 +534,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_FindBenInMidgard_Quest"
-		briefDiz="Ben was last seen in Midgard"
+		briefDiz="Ben ×îºó³öÏÖÔÚÃ×µÂ¼ÓµÂ"
 		isMainQuest="1">
 		<Map
 			name="r1m2"
@@ -543,7 +543,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_FindBenInSouth_Quest"
-		briefDiz="Ask around in Sowth"
+		briefDiz="ÔÚË÷Ë¹´òÌýÏûÏ¢"
 		isMainQuest="1">
 		<Map
 			name="r1m1"
@@ -555,7 +555,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_FindBenInStaruha_Quest"
-		briefDiz="Talk to the local witch"
+		briefDiz="ºÍµ±µØµÄÅ®Î×Ì¸Ì¸"
 		isMainQuest="1">
 		<Map
 			name="r1m1" />
@@ -567,8 +567,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_FindDoorInTunel_Quest"
-		briefDiz="Find the entrance to the tunnel."
-		fullDiz="Now that I know, where the entrance is, there should be no problem in crossing it. "
+		briefDiz="ÕÒµ½ËíµÀÈë¿Ú¡£"
+		fullDiz="¼ÈÈ»ÎÒÖªµÀÈë¿ÚÔÚÄÄÁË£¬´©¹ýËüÓ¦¸Ã²»³ÉÎÊÌâ¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m3"
@@ -577,7 +577,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_FindFelix_Quest"
-		briefDiz="Find Felix in Sowth."
+		briefDiz="ÔÚË÷Ë¹ÕÒµ½ Felix¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m1"
@@ -586,8 +586,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_FindHouseOfBen_Quest"
-		briefDiz="Meet Ben."
-		fullDiz="Soon I'll meet Ben Throttle and learn the truth of my origin."
+		briefDiz="ºÍ Ben ¼ûÃæ¡£"
+		fullDiz="ºÜ¿ìÎÒ¾ÍÄÜ¼ûµ½ Ben Throttle£¬ÁË½âÎÒµÄÉíÊÀÖ®ÃÕ¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m2"
@@ -596,8 +596,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_FindKeyInTunel_Quest"
-		briefDiz="Buy the key from the barman."
-		fullDiz="I am sure the barman knows that the gate is locked. He may even have the key to it."
+		briefDiz="Ïò¾Æ±£ÂòÔ¿³×¡£"
+		fullDiz="ÎÒ¸Ò¿Ï¶¨¾Æ±£ÖªµÀÄÇÉÈÃÅËøÁË¡£ËûÉõÖÁ¿ÉÄÜÓÐÔ¿³×¡£"
 		isMainQuest="0">
 		<Map
 			name="r1m3"
@@ -606,7 +606,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_FindLisaInBandit_Quest"
-		briefDiz="Save her from the raiders."
+		briefDiz="°ÑËý´ÓÂÓ¶áÕßÊÖÖÐ¾È³öÀ´¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m1" />
@@ -621,8 +621,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_FindLisaInBase_Quest"
-		briefDiz="Ask about Alice at the Area 51."
-		fullDiz="So Alice is connected with the bandits. Not that I am surprised, but still... "
+		briefDiz="ÔÚ51Çø´òÌý Alice µÄÏÂÂä¡£"
+		fullDiz="Ô­À´ Alice ºÍ·ËÍ½ÓÐÇ£Á¬¡£ÎÒÒ²²»ËãÒâÍâ£¬µ«»¹ÊÇ¡­¡­"
 		isMainQuest="1">
 		<Map
 			name="r1m3"
@@ -631,8 +631,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_FindLisaInGelvetcia_Quest"
-		briefDiz="Catch Alice in Helvetia."
-		fullDiz="Soon Alice will pay for all she has done! I know exactly where she is!"
+		briefDiz="ÔÚºÕ¶ûÎ¬µÙÑÇ×¥×¡ Alice¡£"
+		fullDiz="Alice ºÜ¿ì¾ÍÒªÎªËýµÄËù×÷ËùÎª¸¶³ö´ú¼Û£¡ÎÒÇå³þËýÔÚÄÄ£¡"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -641,7 +641,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_FindLisaInMidragd_Quest"
-		briefDiz="Find Alice in Midgard"
+		briefDiz="ÔÚÃ×µÂ¼ÓµÂÑ°ÕÒ Alice"
 		isMainQuest="1">
 		<Map
 			name="r1m1" />
@@ -657,7 +657,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_FindLisaInPesht_Quest"
-		briefDiz="Look for her in Pesht"
+		briefDiz="ÔÚÅåË¹ÌØÕÒËý"
 		isMainQuest="1">
 		<Map
 			name="r1m1"
@@ -673,7 +673,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_FindLisaInPorto_Quest"
-		briefDiz="Find Alice in Porto"
+		briefDiz="ÔÚ²¨¶ûÍ¼Ñ°ÕÒ Alice"
 		isMainQuest="1">
 		<Map
 			name="r1m1" />
@@ -688,8 +688,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_FindLisaOnSever_Quest"
-		briefDiz="Overtake Alice in the North"
-		fullDiz="Felix seems to be innocent of killing my father. My only trace is Alice. She is the witness of the crime."
+		briefDiz="ÔÚ±±·½×·ÉÏ Alice"
+		fullDiz="¿´À´ Felix Ã»ÓÐÉ±ÎÒ¸¸Ç×¡£ÎÒÎ¨Ò»µÄÏßË÷¾ÍÊÇ Alice¡£ËýÊÇ×ïÐÐµÄÄ¿»÷Õß¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m1" />
@@ -703,8 +703,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_FindOracul_Quest"
-		briefDiz="Find the Oracle"
-		fullDiz="The trace, left by my father leads to the distant land, where the all-knowing Oracle lives. "
+		briefDiz="Ñ°ÕÒÏÈÖª"
+		fullDiz="¸¸Ç×ÁôÏÂµÄÏßË÷Ö¸ÏòÒ»Æ¬Ò£Ô¶µÄÍÁµØ£¬ÄÇÀï×¡×ÅÎÞËù²»ÖªµÄÏÈÖª¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m2"
@@ -724,8 +724,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_FindRealFatherRoom_Quest"
-		briefDiz="Find the Father’s home."
-		fullDiz="My father may still be alive! I will find him no matter what.|Some traces may be found at his house in Minin."
+		briefDiz="ÕÒµ½¸¸Ç×µÄ¼Ò¡£"
+		fullDiz="¸¸Ç×¿ÉÄÜ»¹»î×Å£¡ÎÞÂÛÈçºÎÎÒ¶¼ÒªÕÒµ½Ëû¡£|Ò²ÐíÔÚËûµÄ·¿×ÓÀïÄÜÕÒµ½Ð©ÏßË÷£¬ÄÇ·¿×ÓÔÚÃ×Äþ¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m2" />
@@ -736,8 +736,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_FindVerbInAR_Quest"
-		briefDiz="Find CD’s recruiter in Marezzia."
-		fullDiz="The Crimson Dawn is enlisting new recruits. To become of them is a sure way get closer to Axel. "
+		briefDiz="ÔÚÂíÀ×ÆëÑÇÕÒµ½ÐÉºìÖ®³¿µÄÕÐÄ¼ÈË¡£"
+		fullDiz="ÐÉºìÖ®³¿ÕýÔÚÕÐÄ¼ÐÂ±ø¡£¼ÓÈëËûÃÇ¾ÍÄÜ½Ó½ü Axel¡£"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -750,8 +750,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_FindVerbInSNG_Quest"
-		briefDiz="Find CIT’s recruiter in Touse "
-		fullDiz="The Commonwealth of the Independent Towns needs help to fight with Axels’ forces. If I join them, we will crush the tyrant!"
+		briefDiz="ÔÚÍ¼Ë¹ÕÒµ½¶ÀÁ¢³ÇÕòÁª°îµÄÕÐÄ¼ÈË"
+		fullDiz="¶ÀÁ¢³ÇÕòÁª°îÐèÒªÈËÊÖÀ´¶Ô¿¹ Axel µÄ¾ü¶Ó¡£Ö»ÒªÎÒ¼ÓÈëËûÃÇ£¬¾ÍÄÜÒ»Æð·ÛËéÕâ¸ö±©¾ý£¡"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -760,8 +760,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_FindVrata_Quest"
-		briefDiz="Find the Sea Gate"
-		fullDiz="Somewhere in the far north the Sea Gate are located. The caravan from Minin will show me the way to that region. "
+		briefDiz="Ñ°ÕÒº£ÃÅ"
+		fullDiz="º£ÃÅ¾ÍÔÚÒ£Ô¶µÄ±±·½Ä³´¦¡£Ã×ÄþµÄÉÌ¶Ó»á¸øÎÒÖ¸Â·¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m3" />
@@ -772,8 +772,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_FindWorkersToOilMine_Quest"
-		briefDiz="Convince the Minin’s workers."
-		fullDiz="The oil mine workers are sitting in the Minin’s bar. I must convince them to return back to work. "
+		briefDiz="Ëµ·þÃ×ÄþµÄ¹¤ÈË¡£"
+		fullDiz="ÓÍÌïµÄ¹¤ÈËÕý×øÔÚÃ×ÄþµÄ¾Æ°ÉÀï¡£ÎÒ±ØÐëËµ·þËûÃÇ»ØÈ¥¸É»î¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m3"
@@ -782,8 +782,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_FindZasadaInTunel_Quest"
-		briefDiz="Find a place for the ambush."
-		fullDiz="Sooner or later, someone will use the tunnel. I will ambush him and get the key! "
+		briefDiz="ÕÒ¸öÂñ·üµÄµØ·½¡£"
+		fullDiz="³ÙÔç»áÓÐÈËÓÃÕâÌõËíµÀ¡£ÎÒ¾ÍÔÚÕâÀïÂñ·ü£¬ÇÀµ½Ô¿³×£¡"
 		isMainQuest="0">
 		<Map
 			name="r1m3"
@@ -792,7 +792,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_FirstVillage_Quest"
-		briefDiz="Follow the caravan to its destination."
+		briefDiz="¸ú×ÅÉÌ¶ÓÈ¥ËüµÄÄ¿µÄµØ¡£"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -801,8 +801,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_FreeTunel_Quest"
-		briefDiz="Set the tunnel free."
-		fullDiz="CD keeps receiving resources and manpower via the tunnel. Once captured, it will grant CIT the firm connection with the outside world.  And at the same time it will cut the enemy supplies flow. The tunnel’s guardians must die for the sake of high ideals.  "
+		briefDiz="½â·ÅËíµÀ¡£"
+		fullDiz="ÐÉºìÖ®³¿Í¨¹ýËíµÀÔ´Ô´²»¶ÏµØ»ñµÃ×ÊÔ´ºÍ±øÁ¦¡£Ò»µ©¶áÈ¡ËíµÀ£¬¶ÀÁ¢³ÇÕòÁª°î¾ÍÄÜÓëÍâ½ç½¨Á¢ÎÈ¹ÌµÄÁªÏµ£¬Í¬Ê±ÇÐ¶ÏµÐÈËµÄ²¹¸øÏß¡£ÎªÁË³ç¸ßµÄÀíÏë£¬ËíµÀµÄÊØÎÀÕß±ØÐëËÀ¡£"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -811,8 +811,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_FromTuzzToGelvetcia_Quest"
-		briefDiz="Go to Helvetia"
-		fullDiz="My actions did not go unnoticed. Soon I will meet with the high leaders of the CIT!"
+		briefDiz="Ç°ÍùºÕ¶ûÎ¬µÙÑÇ"
+		fullDiz="ÎÒµÄÐÐ¶¯Ã»ÓÐÌÓ¹ýÈËÃÇµÄÑÛ¾¦¡£ºÜ¿ìÎÒ¾ÍÄÜ¼ûµ½¶ÀÁ¢³ÇÕòÁª°îµÄ¸ß²ãÁË£¡"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -821,8 +821,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_GetAkselBandit_Quest"
-		briefDiz="Meet Axel"
-		fullDiz="The moment of truth is near. Soon I will meet Axel face to face! "
+		briefDiz="ºÍ Axel ¼ûÃæ"
+		fullDiz="ÕæÏà½ÒÏþµÄÊ±¿Ì¾ÍÒªµ½ÁË¡£ºÜ¿ìÎÒ¾ÍÄÜºÍ Axel Ãæ¶ÔÃæÁË£¡"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -835,7 +835,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_GetBigBoom_Quest"
-		briefDiz="Get powerful weapon in Zaimka"
+		briefDiz="ÔÚÔúÒÁÄ·¿¨Åªµ½Ç¿Á¦ÎäÆ÷"
 		isMainQuest="1">
 		<Map
 			name="r1m1"
@@ -844,8 +844,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_GetBomb_Quest"
-		briefDiz="Find some explosives."
-		fullDiz="I have to eliminate the threat of bandits’ attacks to go through Pest. The only way I can think of is to blow up the bridge leading to their base."
+		briefDiz="ÕÒÐ©Õ¨Ò©¡£"
+		fullDiz="ÎÒµÃÏû³ý·ËÍ½Ï®»÷µÄÍþÐ²£¬²ÅÄÜÍ¨¹ýÅåË¹ÌØ¡£ÎÒÎ¨Ò»ÄÜÏëµ½µÄ°ì·¨¾ÍÊÇÕ¨µôÍ¨ÍùËûÃÇ»ùµØµÄÇÅ¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m3" />
@@ -853,8 +853,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_GetHelpWorkersInMinin_Quest"
-		briefDiz="Set the oil mine free from the bandits"
-		fullDiz="I will need to restore the work of the oil mine, so that the people of Minin show me the way north."
+		briefDiz="´Ó·ËÍ½ÊÖÖÐ½â·ÅÓÍÌï"
+		fullDiz="ÎÒµÃÈÃÓÍÌï»Ö¸´Éú²ú£¬Ã×ÄþµÄÈË²Å»á¸øÎÒÖ¸±±·½µÄÂ·¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m3" />
@@ -862,8 +862,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_GetSupportOneOfTheBands1_Quest"
-		briefDiz="Enlist the support of a major faction."
-		fullDiz="It sounds like trouble. Alice is a girl of some local crime leader. It will be too hard to get her without support. It’s high time to find some powerful allies."
+		briefDiz="ÕùÈ¡Ò»¸ö´óÅÉÏµµÄÖ§³Ö¡£"
+		fullDiz="¿´À´Âé·³²»Ð¡¡£Alice ÊÇµ±µØÄ³¸ö·¸×ïÍ·Ä¿µÄÅ®ÈË¡£Ã»ÓÐ°ïÊÖºÜÄÑ°ÑËýÅªµ½ÊÖ¡£¸ÃÕÒÐ©Ç¿ÓÐÁ¦µÄÃËÓÑÁË¡£"
 		isMainQuest="1">
 		<Map
 			name="r2m1" />
@@ -874,8 +874,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_GetSupportOneOfTheBands2_Quest"
-		briefDiz="Enlist the support of a major faction."
-		fullDiz="It looks I won’t be able to get Axel all by myself. It’s high time to find some powerful allies."
+		briefDiz="ÕùÈ¡Ò»¸ö´óÅÉÏµµÄÖ§³Ö¡£"
+		fullDiz="¿´À´ÎÒµ¥Ç¹Æ¥Âí¶Ô¸¶²»ÁË Axel¡£¸ÃÕÒÐ©Ç¿ÓÐÁ¦µÄÃËÓÑÁË¡£"
 		isMainQuest="1">
 		<Map
 			name="r2m1" />
@@ -886,8 +886,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_GiveMoneyToBase_Quest"
-		briefDiz="Collect enough money to pay the fee"
-		fullDiz="The bandits agree to let me pass trough their land for 10000 coins. "
+		briefDiz="´Õ¹»½»¹ýÂ··ÑµÄÇ®"
+		fullDiz="·ËÍ½Í¬ÒâÈÃÎÒÍ¨¹ýËûÃÇµÄµØÅÌ£¬Ìõ¼þÊÇ 10000 ½ð±Ò¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m3"
@@ -896,8 +896,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_GiveProblemToBase_Quest"
-		briefDiz="Teach bandits a lesson."
-		fullDiz="Looks the only language the bandits understand is the sound of the gunshots! "
+		briefDiz="½ÌÑµ·ËÍ½¡£"
+		fullDiz="¿´À´·ËÍ½Î¨Ò»ÌýµÃ¶®µÄÓïÑÔ¾ÍÊÇÇ¹Éù£¡"
 		isMainQuest="1">
 		<Map
 			name="r1m3"
@@ -913,8 +913,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_HelpSideVillageSNG_Quest"
-		briefDiz="Protect the village."
-		fullDiz="The village is under attack! My vehicle is the closest to the battle location. I must help."
+		briefDiz="±£»¤´å×¯¡£"
+		fullDiz="´å×¯Ôâµ½Ï®»÷£¡ÎÒµÄ³µÀëÕ½³¡×î½ü¡£ÎÒ±ØÐë°ïÃ¦¡£"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -923,8 +923,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_IntrigaOfMerMinin_Quest"
-		briefDiz="Uncover the scheming."
-		fullDiz="I smell rat. I must make the miners work! And someone here lies to me!"
+		briefDiz="½Ò¿ªÒõÄ±¡£"
+		fullDiz="ÎÒ¾õµÃÓÐÃ¨Äå¡£ÎÒ±ØÐëÈÃ¿ó¹¤ÃÇ¸É»î£¡¶øÕâÀïÓÐÈËÔÚÆ­ÎÒ£¡"
 		isMainQuest="1">
 		<Map
 			name="r1m3" />
@@ -932,7 +932,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_KillFelix_Quest"
-		briefDiz="Kill Felix."
+		briefDiz="É±ËÀ Felix¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m1"
@@ -941,8 +941,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_Lisa_Quest"
-		briefDiz="Show local villages to Alice."
-		fullDiz="A pretty girl asked to accompany her. She has a look of a criminal on her, but who cares."
+		briefDiz="´ø Alice ¹ä¹äµ±µØµÄ´å×¯¡£"
+		fullDiz="Ò»¸öÆ¯ÁÁµÄ¹ÃÄïÒªÎÒÅãËý¡£Ëý¿´ÆðÀ´Ïñ¸ö·¸×ï·Ö×Ó£¬²»¹ýË­ÔÚºõÄØ¡£"
 		isMainQuest="0">
 		<Map
 			name="r1m1" />
@@ -950,7 +950,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_MeetLeaderGelvetcia_Quest"
-		briefDiz="Meet the rebels’ leader."
+		briefDiz="ºÍÅÑ¾üÁìÐä¼ûÃæ¡£"
 		isMainQuest="1">
 		<Map
 			name="r2m1" />
@@ -962,8 +962,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_MeetWithGelvetciaSopr_Quest"
-		briefDiz="Contact the rebels of Toskana."
-		fullDiz="I must meet the rebels of Toskana and learn all they have to tell. With any luck, they have information that will help us to defeat Axel."
+		briefDiz="ÁªÏµÍÐË¹¿¨ÄÉµÄÅÑ¾ü¡£"
+		fullDiz="ÎÒ±ØÐëÈ¥¼ûÍÐË¹¿¨ÄÉµÄÅÑ¾ü£¬´òÌ½ËûÃÇÕÆÎÕµÄÏûÏ¢¡£ÔËÆøºÃµÄ»°£¬ËûÃÇ»áÓÐÖúÓÚÎÒÃÇ»÷°Ü Axel µÄÇé±¨¡£"
 		isMainQuest="1">
 		<Map
 			name="r2m1" />
@@ -974,7 +974,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_MerIsThief_Quest"
-		briefDiz="Talk to Mayor"
+		briefDiz="ºÍÕò³¤Ì¸Ì¸"
 		isMainQuest="1">
 		<Map
 			name="r1m3"
@@ -983,8 +983,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_MoveCanistraToMinin_Quest"
-		briefDiz="Deliver the canister of oil to Minin."
-		fullDiz="This canister is a symbol of the fact that that the oil mines is working again. I must deliver it to the town."
+		briefDiz="°ÑÓÍÍ°ËÍµ½Ã×Äþ¡£"
+		fullDiz="ÕâÍ°ÓÍ±êÖ¾×ÅÓÍÌïÖØÐÂ¿ª¹¤ÁË¡£ÎÒ±ØÐë°ÑËüËÍµ½ÕòÉÏ¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m3"
@@ -993,8 +993,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_MoveFreelancersToOilMine_Quest"
-		briefDiz="Bring hired workers to the oil mine."
-		fullDiz="As soon as I bring these guys to the oil mine, they will begin to work. "
+		briefDiz="°Ñ¹ÍÀ´µÄ¹¤ÈË´øµ½ÓÍÌï¡£"
+		fullDiz="Ö»ÒªÎÒ°ÑÕâÐ©ÈË´øµ½ÓÍÌï£¬ËûÃÇ¾Í»á¿ªÊ¼¸É»î¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m3"
@@ -1003,8 +1003,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_MoveInParis_Quest"
-		briefDiz="Find the tunnel"
-		fullDiz="I must find the entrance to the undersea tunnel that leads to the Oracle's land."
+		briefDiz="ÕÒµ½ËíµÀ"
+		fullDiz="ÎÒ±ØÐëÕÒµ½Í¨ÍùÏÈÖªÖ®µØµÄº£µ×ËíµÀÈë¿Ú¡£"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -1013,8 +1013,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_MoveLeaderInGelvetcia_Quest"
-		briefDiz="Deliver the rebels’ leader to Helvetia."
-		fullDiz="I hope the information he has really worth all the sacrifices."
+		briefDiz="°ÑÅÑ¾üÁìÐäËÍµ½ºÕ¶ûÎ¬µÙÑÇ¡£"
+		fullDiz="Ï£ÍûËûÕÆÎÕµÄÇé±¨ÕæµÄÖµµÃ¸¶³öÕâÒ»ÇÐÎþÉü¡£"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -1027,7 +1027,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_MoveToMer_Quest"
-		briefDiz="Follow the mayor."
+		briefDiz="¸úÉÏÕò³¤¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m3"
@@ -1036,7 +1036,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_MoveToMinin_Quest"
-		briefDiz="Go to Minin."
+		briefDiz="Ç°ÍùÃ×Äþ¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m2" />
@@ -1048,7 +1048,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_MoveToPesht_Quest"
-		briefDiz="Ask road to Minin in Pest "
+		briefDiz="ÔÚÅåË¹ÌØ´òÌýÈ¥Ã×ÄþµÄÂ·"
 		isMainQuest="1">
 		<Map
 			name="r1m2"
@@ -1061,8 +1061,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_MoveWithGeneralToGelvetcia_Quest"
-		briefDiz="Deliver CD’s general to Helvetia."
-		fullDiz="That is the last piece of the puzzle. We will make the General tell us about Axel’s weak point."
+		briefDiz="°ÑÐÉºìÖ®³¿µÄ½«¾üËÍµ½ºÕ¶ûÎ¬µÙÑÇ¡£"
+		fullDiz="ÕâÊÇ×îºóÒ»¿éÆ´Í¼¡£ÎÒÃÇ»áÈÃ½«¾üËµ³ö Axel µÄÈõµã¡£"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -1071,8 +1071,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_MoveWorkersToOilMine_Quest"
-		briefDiz="Deliver workers to the oil mine."
-		fullDiz="Now the workers are masters of their own fate.  And they gladly agreed to go working on the oil mine. I wonder why?"
+		briefDiz="°Ñ¹¤ÈËËÍµ½ÓÍÌï¡£"
+		fullDiz="ÏÖÔÚ¹¤ÈËÃÇ×Ô¼º×öÖ÷ÁË¡£ËûÃÇÀÖÒâÈ¥ÓÍÌï¸É»î¡£ÎÒµ¹ÏëÖªµÀÎªÊ²Ã´£¿"
 		isMainQuest="1">
 		<Map
 			name="r1m3"
@@ -1081,8 +1081,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_OpenTunel_Quest"
-		briefDiz="Open the gate with key"
-		fullDiz="I have the key to the tunnel’s gate. I only have to open it."
+		briefDiz="ÓÃÔ¿³×´ò¿ª´óÃÅ"
+		fullDiz="ÎÒÓÐÁËËíµÀ´óÃÅµÄÔ¿³×¡£Ö»Òª´ò¿ªËü¾ÍÐÐÁË¡£"
 		isMainQuest="0">
 		<Map
 			name="r1m3"
@@ -1091,8 +1091,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_PatrulSideSNG_Quest"
-		briefDiz="Patrol the border."
-		fullDiz="My mission is to patrol the border in case the enemy appears."
+		briefDiz="Ñ²Âß±ß¾³¡£"
+		fullDiz="ÎÒµÄÈÎÎñÊÇÑ²Âß±ß¾³£¬ÒÔ·ÀµÐÈË³öÏÖ¡£"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -1101,8 +1101,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_PayWorkersMoney_Quest"
-		briefDiz="Hire workers."
-		fullDiz="Guess I should try to find workers somewhere else. "
+		briefDiz="¹ÍÓ¶¹¤ÈË¡£"
+		fullDiz="¿´À´ÎÒµÃµ½±ð´¦È¥ÕÒ¹¤ÈËÁË¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m3"
@@ -1111,8 +1111,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_PunishBandits_Quest"
-		briefDiz="Teach brigands a lesson"
-		fullDiz="The locals made up their minds to scare the raiders away. Maybe I should help them."
+		briefDiz="½ÌÑµ·ËÍ½"
+		fullDiz="µ±µØÈË¾öÐÄÏÅÅÜÂÓ¶áÕß¡£Ò²ÐíÎÒ¸Ã°ïËûÃÇÒ»°Ñ¡£"
 		isMainQuest="0">
 		<Map
 			name="r1m1"
@@ -1121,8 +1121,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_ReturnToBen_Quest"
-		briefDiz="Return to Ben."
-		fullDiz="That trail was cold. I hope Ben will come up with another plan. "
+		briefDiz="»Øµ½ Ben ÄÇÀï¡£"
+		fullDiz="ÄÇÌõÏßË÷¶ÏÁË¡£Ï£Íû Ben ÄÜÏë³ö±ðµÄ°ì·¨¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m2"
@@ -1135,7 +1135,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_ReturnToTuzzAfterCaravan_Quest"
-		briefDiz="Follow caravan to Touse."
+		briefDiz="¸ú×ÅÉÌ¶ÓÈ¥Í¼Ë¹¡£"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -1144,8 +1144,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_ReturnTuzzAfterTunel_Quest"
-		briefDiz="Return to Touse"
-		fullDiz="It’s time to return to Touse for a new assignment."
+		briefDiz="»Øµ½Í¼Ë¹"
+		fullDiz="¸Ã»ØÍ¼Ë¹½ÓÐÂÈÎÎñÁË¡£"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -1154,8 +1154,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_ReturnTuzz_Quest"
-		briefDiz="Return to Touse"
-		fullDiz="It’s time to return to Touse."
+		briefDiz="»Øµ½Í¼Ë¹"
+		fullDiz="¸Ã»ØÍ¼Ë¹ÁË¡£"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -1164,7 +1164,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_ReturntoMerOfMinin_Quest"
-		briefDiz="Report to the mayor"
+		briefDiz="ÏòÕò³¤±¨¸æ"
 		isMainQuest="1">
 		<Map
 			name="r1m3"
@@ -1173,8 +1173,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_RideAcrossBase_Quest"
-		briefDiz="Try to cross the chasm somewhere else."
-		fullDiz="I have to cross that chasm. There are two bridges. One is the town Pest, another one is at the bandits’ territory. "
+		briefDiz="ÊÔÊÔ´Ó±ð´¦´©¹ýÉî¹È¡£"
+		fullDiz="ÎÒ±ØÐë´©¹ýÄÇÌõÉî¹È¡£ÓÐÁ½×ùÇÅ£ºÒ»×ùÔÚÅåË¹ÌØÕò£¬ÁíÒ»×ùÔÚ·ËÍ½µÄµØÅÌ¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m3"
@@ -1183,7 +1183,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_SecondVillage_Quest"
-		briefDiz="Follow caravan to its destination."
+		briefDiz="¸ú×ÅÉÌ¶ÓÈ¥ËüµÄÄ¿µÄµØ¡£"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -1192,8 +1192,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_SerchCarTunel_Quest"
-		briefDiz="Follow the car."
-		fullDiz="If I follow that car to its destination, I will probably find an occasion to steal the key."
+		briefDiz="¸ú×ÅÄÇÁ¾³µ¡£"
+		fullDiz="Èç¹ûÎÒ¸ú×ÅÄÇÁ¾³µµ½ËüµÄÄ¿µÄµØ£¬´ó¸Å¾ÍÓÐ»ú»áÍµµ½Ô¿³×¡£"
 		isMainQuest="0">
 		<Map
 			name="r1m3"
@@ -1202,8 +1202,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_SinFather_Quest"
-		briefDiz="Avenge the father’s death"
-		fullDiz="Wherever the murderer is hiding, I’ll find and punish hum! "
+		briefDiz="Îª¸¸Ç×±¨³ð"
+		fullDiz="²»¹ÜÐ×ÊÖ²ØÔÚÄÄ£¬ÎÒ¶¼»áÕÒµ½Ëû²¢³Í·£Ëû£¡"
 		isMainQuest="1">
 		<Map
 			name="r1m1" />
@@ -1211,7 +1211,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_SkladMidgardBen_Quest"
-		briefDiz="Talk to the Midgard's Steward."
+		briefDiz="ºÍÃ×µÂ¼ÓµÂµÄ¹Ü¼ÒÌ¸Ì¸¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m2"
@@ -1220,8 +1220,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_TakeGeneralOfBandits_Quest"
-		briefDiz="Capture CD’s general."
-		fullDiz="Accompanied by several elite CIT’s warriors, I must capture Crimson Dawn’s general. "
+		briefDiz="»î×½ÐÉºìÖ®³¿µÄ½«¾ü¡£"
+		fullDiz="ÔÚ¼¸Ãû¶ÀÁ¢³ÇÕòÁª°î¾«ÈñÕ½Ê¿µÄÅãÍ¬ÏÂ£¬ÎÒ±ØÐë»î×½ÐÉºìÖ®³¿µÄ½«¾ü¡£"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -1230,8 +1230,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_TalkAboutAksel_Quest"
-		briefDiz="Ask about Axel."
-		fullDiz="I must ask the locals about Axel. Especially where I can find him."
+		briefDiz="´òÌý Axel µÄÏûÏ¢¡£"
+		fullDiz="ÎÒµÃÏòµ±µØÈË´òÌý Axel µÄÊÂ£¬ÓÈÆäÊÇÈ¥ÄÄÀïÄÜÕÒµ½Ëû¡£"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -1240,8 +1240,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_TalkAboutLisa_Quest"
-		briefDiz="Ask About Alice"
-		fullDiz="Everybody knows Alice. I only need to ask and I will find her."
+		briefDiz="´òÌý Alice µÄÏÂÂä"
+		fullDiz="ÈËÈË¶¼ÈÏÊ¶ Alice¡£ÎÒÖ»Òª´òÌý¾ÍÄÜÕÒµ½Ëý¡£"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -1250,8 +1250,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_TalkAboutVrataInMinin_Quest"
-		briefDiz="Find the Sea gate"
-		fullDiz="Someone in Minin can know about the Sea Gate."
+		briefDiz="Ñ°ÕÒº£ÃÅ"
+		fullDiz="Ã×Äþ»òÐíÓÐÈËÖªµÀº£ÃÅµÄÊÂ¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m2"
@@ -1264,7 +1264,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_TalkMerAboutOilMineAttack_Quest"
-		briefDiz="Talk to the mayor."
+		briefDiz="ºÍÕò³¤Ì¸Ì¸¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m3"
@@ -1273,7 +1273,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_TrueAboutMer_Quest"
-		briefDiz="Report the mayor crimes."
+		briefDiz="½Ò·¢Õò³¤µÄ×ïÐÐ¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m3"
@@ -1282,8 +1282,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_TunelInAsgard_Quest"
-		briefDiz="Ask in Asgard about the tunnel."
-		fullDiz="Someone there must know how and where one may cross mountains."
+		briefDiz="ÔÚ°¢Ë¹¼ÓµÂ´òÌýËíµÀµÄÊÂ¡£"
+		fullDiz="ÄÇÀï×ÜÓÐÈËÖªµÀÔõÑù¡¢ÔÚÄÄÀï¿ÉÒÔ·­Ô½ÈºÉ½¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m2"
@@ -1296,7 +1296,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_Village1_Quest"
-		briefDiz="Go to the first village"
+		briefDiz="È¥µÚÒ»¸ö´å×¯"
 		isMainQuest="0">
 		<Map
 			name="r1m1"
@@ -1305,7 +1305,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_Village2_Quest"
-		briefDiz="Go to the second village "
+		briefDiz="È¥µÚ¶þ¸ö´å×¯"
 		isMainQuest="0">
 		<Map
 			name="r1m1"
@@ -1314,7 +1314,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_Village3_Quest"
-		briefDiz="Go to the last village "
+		briefDiz="È¥×îºóÒ»¸ö´å×¯"
 		isMainQuest="0">
 		<Map
 			name="r1m1"
@@ -1323,8 +1323,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_WinLisaInBattle_Quest"
-		briefDiz="Win over Alice. "
-		fullDiz="She asked for it!"
+		briefDiz="Õ½Ê¤ Alice¡£"
+		fullDiz="Ëý×ÔÕÒµÄ£¡"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -1333,7 +1333,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="q_FH1"
-		briefDiz="Ask in the local settlements."
+		briefDiz="ÔÚµ±µØ¾ÛÂä´òÌýÏûÏ¢¡£"
 		isMainQuest="0">
 		<Map
 			name="r1m4" />
@@ -1341,7 +1341,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="q_FH2"
-		briefDiz="Return Philemon home. "
+		briefDiz="°Ñ Philemon ËÍ»Ø¼Ò¡£"
 		isMainQuest="0">
 		<Map
 			name="r1m4"
@@ -1350,13 +1350,13 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="q_FindHusbent"
-		briefDiz="Find the missing husband."
-		fullDiz="His name is Philemon. Please bring him back! I love him so much."
+		briefDiz="Ñ°ÕÒÊ§×ÙµÄÕÉ·ò¡£"
+		fullDiz="Ëû½Ð Philemon¡£Çë°ÑËû´ø»ØÀ´£¡ÎÒÌ«°®ËûÁË¡£"
 		isMainQuest="0" />
 
 	<QuestInfo
 		questName="q_PWS1"
-		briefDiz="Go to the field."
+		briefDiz="È¥ÄÇÆ¬Å©Ìï¡£"
 		isMainQuest="0" >
 		<Map
 			name="r3m1"
@@ -1369,7 +1369,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="q_PWS2"
-		briefDiz="Report the signs to Midgard "
+		briefDiz="°Ñ±ê¼ÇµÄÊÂ±¨¸æ¸øÃ×µÂ¼ÓµÂ"
 		isMainQuest="0" >
 		<Map
 			name="r1m2"
@@ -1401,14 +1401,14 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="q_PlaceWithSign"
-		briefDiz="Signs on the field."
-		fullDiz="The druid mentioned strange signs. Let’s take a closer look. "
+		briefDiz="Å©ÌïÉÏµÄ±ê¼Ç¡£"
+		fullDiz="µÂÂ³ÒÁÌáµ½ÁËÆæ¹ÖµÄ±ê¼Ç¡£È¥¿´¿´°É¡£"
 		isMainQuest="0" />
 
 	<QuestInfo
 		questName="q_VisitDruid"
-		briefDiz="Go to see the druid. "
-		fullDiz="The hermit druid is living alone far from friends. I should pay him a visit to say hello."
+		briefDiz="È¥°Ý·ÃµÂÂ³ÒÁ¡£"
+		fullDiz="ÄÇÎ»Òþ¾ÓµÄµÂÂ³ÒÁÔ¶ÀëÈËÈº¶À×ÔÉú»î¡£ÎÒ¸ÃÈ¥°Ý·ÃËû£¬ÎÊÉùºÃ¡£"
 		isMainQuest="0">
 		<Map
 			name="r3m1"
@@ -1421,8 +1421,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r1m1_Botanik_Quest"
-		briefDiz="Bring some medicine and some wood to the botanist"
-		fullDiz="I can buy some wood in the town, but I wonder, where may I find any medicine?"
+		briefDiz="¸øÖ²ÎïÑ§¼ÒËÍÐ©Ò©Æ·ºÍÄ¾²Ä"
+		fullDiz="ÎÒÄÜÔÚÕòÉÏÂòµ½Ä¾²Ä£¬µ«Ò©Æ·ÒªÈ¥ÄÄÀïÕÒÄØ£¿"
 		isMainQuest="0">
 		<Map
 			name="r1m1"
@@ -1431,8 +1431,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r1m1_FindBotanik_Quest"
-		briefDiz="Find the botanist"
-		fullDiz="Old soldier told something about the botanist. Probably I have to find him."
+		briefDiz="Ñ°ÕÒÖ²ÎïÑ§¼Ò"
+		fullDiz="Ò»¸öÀÏ±øÌáµ½ÁËÖ²ÎïÑ§¼Ò¡£Ò²ÐíÎÒµÃÈ¥ÕÒËû¡£"
 		isMainQuest="0">
 		<Map
 			name="r1m1"
@@ -1441,8 +1441,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r1m1_Hospital_Quest"
-		briefDiz="Find Ancient Hospital"
-		fullDiz="The hospital is the right place to look for medicine."
+		briefDiz="Ñ°ÕÒ¹Å´úÒ½Ôº"
+		fullDiz="Ò½ÔºÊÇÑ°ÕÒÒ©Æ·µÄºÃµØ·½¡£"
 		isMainQuest="0">
 		<Map
 			name="r1m1"
@@ -1451,8 +1451,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r1m2_FindHmirInMidgard"
-		briefDiz="Hurry to Midgard."
-		fullDiz="I must find the strange man at the Midgard."
+		briefDiz="¸ÏÍùÃ×µÂ¼ÓµÂ¡£"
+		fullDiz="ÎÒµÃÔÚÃ×µÂ¼ÓµÂÕÒµ½ÄÇ¸ö¹ÖÈË¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m2"
@@ -1461,7 +1461,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r1m2_Glagiators_Quest"
-		briefDiz="Win over the Gladiator."
+		briefDiz="Õ½Ê¤½Ç¶·Ê¿¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m2"
@@ -1487,7 +1487,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r1m2_MovemineralToMidgard_Quest"
-		briefDiz="Give materials and 15'000 coins to the master."
+		briefDiz="°Ñ²ÄÁÏºÍ 15000 ½ð±Ò½»¸øÊ¦¸µ¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m2"
@@ -1513,7 +1513,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r1m2_RedkiyMineral_Quest"
-		briefDiz="Ask about the rare alloy."
+		briefDiz="´òÌýÏ¡ÓÐºÏ½ðµÄÊÂ¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m2"
@@ -1539,8 +1539,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r1m2_TW_BanAboutAlien"
-		briefDiz="Talk to Ben about the aliens."
-		fullDiz="Ben knows a lot of stories about Ivan’s adventures. Hopefully one of these stories will show me the way."
+		briefDiz="ºÍ Ben Ì¸Ì¸ÍâÐÇÈËµÄÊÂ¡£"
+		fullDiz="Ben ÖªµÀºÜ¶à¹ØÓÚ Ivan Go Ã°ÏÕµÄ¹ÊÊÂ¡£Ï£ÍûÆäÖÐÄ³¸ö¹ÊÊÂÄÜ¸øÎÒÖ¸Â·¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m1"
@@ -1561,7 +1561,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r1m2_TalkAboutRedkiyMineral_Quest"
-		briefDiz="Go to Midgard."
+		briefDiz="Ç°ÍùÃ×µÂ¼ÓµÂ¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m2"
@@ -1589,8 +1589,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r1m3_ArchHelp"
-		briefDiz="Deliver the old man."
-		fullDiz="The old man asked to bring him to the ancient ruins. I think he is going to die there. Creepy. "
+		briefDiz="ËÍÕâÎ»ÀÏÈË¡£"
+		fullDiz="ÀÏÈËÒªÎÒ°ÑËûËÍµ½¹Å´úÒÅ¼£¡£ÎÒÏëËû´òËãËÀÔÚÄÇÀï¡£Õæ¹»ÒõÉ­µÄ¡£"
 		isMainQuest="0">
 		<Map
 			name="r1m3"
@@ -1599,8 +1599,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r1m3_BonnyAndKlideQuest"
-		briefDiz="Help Conny and Blyde."
-		fullDiz="A strange couple asked to bring them home. They offer a lot of money for such a simple task."
+		briefDiz="°ïÖú Conny ºÍ Blyde¡£"
+		fullDiz="Ò»¶ÔÆæ¹ÖµÄ·ò¸¾ÒªÎÒËÍËûÃÇ»Ø¼Ò¡£ÕâÃ´¼òµ¥µÄ»î¶ùËûÃÇÈ´¸øÁËÒ»´ó±ÊÇ®¡£"
 		isMainQuest="0">
 		<Map
 			name="r1m3"
@@ -1609,8 +1609,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r1m3_CrazyManQuest"
-		briefDiz="Find the Entertainment Center."
-		fullDiz="According to the boy’s advertisements, the Entertainment Center is just a paradise. Let’s check it out."
+		briefDiz="ÕÒµ½ÓéÀÖÖÐÐÄ¡£"
+		fullDiz="¾ÝÄÇÄÐº¢µÄ¹ã¸æËµ£¬ÓéÀÖÖÐÐÄ¼òÖ±¾ÍÊÇÌìÌÃ¡£È¥¿´¿´°É¡£"
 		isMainQuest="0">
 		<Map
 			name="r1m3"
@@ -1619,8 +1619,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r1m3_DestroyOracle"
-		briefDiz="Destroy the Oracle."
-		fullDiz="The Oracle is completely mad. He plans to destroy everything, starting with me. I cannot allow this to happen!"
+		briefDiz="ÏûÃðÏÈÖª¡£"
+		fullDiz="ÏÈÖª³¹µ×·èÁË¡£Ëû´òËã´Ý»ÙÒ»ÇÐ£¬´ÓÎÒÏÂÊÖ¡£ÎÒ¾ø²»ÄÜÈÃÕâÖÖÊÂ·¢Éú£¡"
 		isMainQuest="1">
 		<Map
 			name="r1m3" />
@@ -1628,8 +1628,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r1m3_DestroyRadiationSource"
-		briefDiz="Eliminate the jamming station."
-		fullDiz="Power station at the Seil is a source of powerful noise. It jams the Oracle’s signals and he cannot get control over the orbital weapon. "
+		briefDiz="´Ý»Ù¸ÉÈÅÕ¾¡£"
+		fullDiz="Èû¶ûµÄ·¢µçÕ¾ÊÇÇ¿´óµÄ¸ÉÈÅÔ´¡£Ëü¸ÉÈÅÁËÏÈÖªµÄÐÅºÅ£¬Ê¹ËûÎÞ·¨¿ØÖÆ¹ìµÀÎäÆ÷¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m3"
@@ -1642,8 +1642,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r1m3_FightWithThief"
-		briefDiz="Take the disk away from the thief."
-		fullDiz="That thief doesn’t know who he up against is yet. The disk will be mine."
+		briefDiz="´ÓÇÔÔôÊÖÖÐ¶á»Ø¹âÅÌ¡£"
+		fullDiz="ÄÇÇÔÔô»¹²»ÖªµÀËûµÄ¶ÔÊÖÊÇË­¡£¹âÅÌ»áÊÇÎÒµÄ¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m3"
@@ -1652,8 +1652,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r1m3_FindHmirinSever"
-		briefDiz="Find the way north."
-		fullDiz="I must find the way north. People of Minin know how to get there. "
+		briefDiz="ÕÒµ½±±ÉÏµÄÂ·¡£"
+		fullDiz="ÎÒ±ØÐëÕÒµ½±±ÉÏµÄÂ·¡£Ã×ÄþµÄÈËÖªµÀÔõÃ´×ß¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m2"
@@ -1666,8 +1666,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r1m3_FindManyWorkers_Quest"
-		briefDiz="Find somebody to work on the oil mine."
-		fullDiz="Liberating the oil mine was not enough to make it work. Now I must find somebody to work on it."
+		briefDiz="ÕÒÈËÈ¥ÓÍÌï¸É»î¡£"
+		fullDiz="¹â½â·ÅÓÍÌï»¹²»¹»ÈÃËüÔË×ªÆðÀ´¡£ÏÖÔÚÎÒ»¹µÃÕÒÈËÈ¥¸É»î¡£"
 		isMainQuest="0">
 		<Map
 			name="r1m3" />
@@ -1675,8 +1675,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r1m3_FindThiefFromFatherHouse"
-		briefDiz="Find the thief."
-		fullDiz="Everything is upside down at my father’s house. Somebody must have seen what had happened. I’ll ask in the Bar."
+		briefDiz="ÕÒµ½ÇÔÔô¡£"
+		fullDiz="¸¸Ç×¼ÒÀï±»·­µÃÂÒÆß°ËÔã¡£Ò»¶¨ÓÐÈË¿´µ½ÁË·¢ÉúÁËÊ²Ã´¡£ÎÒÈ¥¾Æ°ÉÎÊÎÊ¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m3"
@@ -1685,7 +1685,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r1m3_FindVrata_KnowPlace"
-		briefDiz="Find out the Gates whereabouts."
+		briefDiz="²éÇåº£ÃÅµÄÏÂÂä¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m3"
@@ -1697,8 +1697,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r1m3_LisaWithOberegAndDisk_Quest"
-		briefDiz="Find Alice in the Librium."
-		fullDiz="Alice has stolen the disks and left to the west. I must catch her at all costs!"
+		briefDiz="ÔÚÀû²¼ÀïÄ·ÕÒµ½ Alice¡£"
+		fullDiz="Alice ÍµÁË¹âÅÌÍùÎ÷È¥ÁË¡£ÎÒ±ØÐë²»Ï§Ò»ÇÐ´ú¼Û×¥×¡Ëý£¡"
 		isMainQuest="1">
 		<Map
 			name="r1m3" />
@@ -1712,8 +1712,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r1m3_MoveToOraculAfterThief"
-		briefDiz="Deliver second disk to the Oracle."
-		fullDiz="Using it the Oracle will decipher Ivan Go’s diary."
+		briefDiz="°ÑµÚ¶þÕÅ¹âÅÌ½»¸øÏÈÖª¡£"
+		fullDiz="ÏÈÖªÓÃËü¾ÍÄÜÆÆÒë Ivan Go µÄÈÕ¼Ç¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m3"
@@ -1734,8 +1734,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r1m3_OldTownOutsiderCar_Quest"
-		briefDiz="Catch the runner at the abandoned town."
-		fullDiz="The bandit is hiding somewhere at the abandoned town. The villagers will pay me if I kill him."
+		briefDiz="ÔÚ·ÏÆúµÄÐ¡Õò×·ÉÏÄÇ¸öÌÓÅÜÕß¡£"
+		fullDiz="ÄÇ·ËÍ½²ØÔÚ·ÏÆúµÄÐ¡ÕòÄ³´¦¡£Èç¹ûÎÒÉ±ÁËËû£¬´åÃñ»á¸¶Ç®¸øÎÒ¡£"
 		isMainQuest="0">
 		<Map
 			name="r1m3"
@@ -1744,8 +1744,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r1m3_TW_OralceAboutAlien"
-		briefDiz="Talk to the Oracle."
-		fullDiz="Only the Oracle may possess the weapon powerful enough to destroy the source of the contamination."
+		briefDiz="ºÍÏÈÖªÌ¸Ì¸¡£"
+		fullDiz="Ö»ÓÐÏÈÖª¿ÉÄÜÓµÓÐ×ãÒÔ´Ý»ÙÎÛÈ¾Ô´µÄÇ¿´óÎäÆ÷¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m1"
@@ -1766,8 +1766,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r1m3_TalkWithThiefFromFatherHouse"
-		briefDiz="Follow the Thief."
-		fullDiz="The thief have nowhere to go, but to the Area 51. I’ll get him there!"
+		briefDiz="¸ú×ÙÇÔÔô¡£"
+		fullDiz="ÇÔÔôÎÞ´¦¿ÉÈ¥£¬Ö»ÄÜÈ¥51Çø¡£ÎÒ»áÔÚÄÇÀï´þ×¡Ëû£¡"
 		isMainQuest="1">
 		<Map
 			name="r1m3"
@@ -1776,8 +1776,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r1m3_ToLisaToAsgard"
-		briefDiz="Catch Alice."
-		fullDiz="She left somewhere at the direction of Asgard."
+		briefDiz="×·ÉÏ Alice¡£"
+		fullDiz="Ëý³¯°¢Ë¹¼ÓµÂ·½Ïò×ßÁË¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m3"
@@ -1786,7 +1786,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r1m4_FindVrata_GotoToGate"
-		briefDiz="Get to the Gates"
+		briefDiz="Ç°Íùº£ÃÅ"
 		isMainQuest="1">
 		<Map
 			name="r1m4"
@@ -1795,8 +1795,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r1m4_OvercomeMirras"
-		briefDiz="Cross the swamp."
-		fullDiz="The way to the Sea Gate lays through the swamp. I must find the way to cross it."
+		briefDiz="´©¹ýÕÓÔó¡£"
+		fullDiz="Í¨Íùº£ÃÅµÄÂ·Òª¾­¹ýÕÓÔó¡£ÎÒ±ØÐëÕÒµ½´©¹ýËüµÄÂ·¡£"
 		isMainQuest="0">
 		<Map
 			name="r1m4"
@@ -1805,8 +1805,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r1m4_TalkWithOldTraderAboutSecondDisk"
-		briefDiz="Find the dealer"
-		fullDiz="Most certainly he has the second disk! "
+		briefDiz="ÕÒµ½ÄÇ¸öÉÌÈË"
+		fullDiz="ËûÒ»¶¨ÓÐµÚ¶þÕÅ¹âÅÌ£¡"
 		isMainQuest="1">
 		<Map
 			name="r1m3"
@@ -1819,8 +1819,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r2m1_ArtAntipod_Quest"
-		briefDiz="Talk to Virtuoso."
-		fullDiz="Someone stole a masterpiece from Aesthete. The only man who appreciates that kind of goods is Virtuoso."
+		briefDiz="ºÍ Virtuoso Ì¸Ì¸¡£"
+		fullDiz="ÓÐÈËÍµÁË Aesthete µÄ½Ü×÷¡£Î¨Ò»Ê¶»õµÄÈË¾ÍÊÇ Virtuoso¡£"
 		isMainQuest="0">
 		<Map
 			name="r2m1"
@@ -1829,8 +1829,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r2m1_ArtGulik_Quest"
-		briefDiz="Take the masterpiece from Trickster."
-		fullDiz="Someone by the name of Trickster is the organizer of this theft. I am to catch him and return the masterpiece to its owner."
+		briefDiz="´Ó Trickster ÊÖÀïÄÃ»Ø½Ü×÷¡£"
+		fullDiz="Ò»¸ö½Ð Trickster µÄÈËÊÇÕâÆðµÁÇÔµÄÄ»ºóÖ÷Ê¹¡£ÎÒµÃ×¥×¡Ëû£¬°Ñ½Ü×÷Îï¹éÔ­Ö÷¡£"
 		isMainQuest="0">
 		<Map
 			name="r2m1"
@@ -1839,8 +1839,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r2m1_ArtViva_Quest"
-		briefDiz="Return the masterpiece."
-		fullDiz="To get a reward, I must return the masterpiece to Aesthete. However, there may be someone else to offer a higher price."
+		briefDiz="¹é»¹½Ü×÷¡£"
+		fullDiz="ÒªÄÃµ½±¨³ê£¬ÎÒµÃ°Ñ½Ü×÷»¹¸ø Aesthete¡£²»¹ý£¬Ò²ÐíÓÐÈËÔ¸Òâ³ö¸ü¸ßµÄ¼Û¡£"
 		isMainQuest="0">
 		<Map
 			name="r2m1"
@@ -1849,8 +1849,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r2m1_DeployBloks"
-		briefDiz="Install the jamming device."
-		fullDiz="I am the only one who can stop the madness, happening with the world. I will install the device that will lower the level of contamination. This is my destiny."
+		briefDiz="°²×°¸ÉÈÅ×°ÖÃ¡£"
+		fullDiz="Ö»ÓÐÎÒÄÜ×èÖ¹Õâ³¡ÍÌÊÉÊÀ½çµÄ·è¿ñ¡£ÎÒÒª°²×°Õâ¸ö×°ÖÃÀ´½µµÍÎÛÈ¾³Ì¶È¡£ÕâÊÇÎÒµÄÊ¹Ãü¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m3"
@@ -1863,8 +1863,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r2m1_DestroyAlienShip"
-		briefDiz="Destroy evil invaders."
-		fullDiz="The alien ship was hiding here all the time. They killed many humans in quest for new territories. I must stop them! Hopefully, the destruction of this machine will allow the Oracle to take control over the orbital weapon."
+		briefDiz="ÏûÃðÐ°¶ñµÄÈëÇÖÕß¡£"
+		fullDiz="ÍâÐÇ·É´¬Ò»Ö±²ØÔÚÕâÀï¡£ËûÃÇÎªÁËÕù¶áÐÂÁìÍÁÉ±ÁËÎÞÊýÈËÀà¡£ÎÒ±ØÐë×èÖ¹ËûÃÇ£¡Ï£Íû´Ý»ÙÕâÌ¨»úÆ÷ÄÜÈÃÏÈÖªÖØÐÂÕÆ¿Ø¹ìµÀÎäÆ÷¡£"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -1873,8 +1873,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r2m1_KillGodFather_Quest"
-		briefDiz="Obliterate Mafia Boss."
-		fullDiz="The Boss may cause me a lot of trouble, after I had stolen his cargo. I must strike first. "
+		briefDiz="¸ÉµôºÚ°ïÀÏ´ó¡£"
+		fullDiz="ÎÒÍµÁËËûµÄ»õÎïºó£¬ÀÏ´ó¿ÉÄÜ¸øÎÒÈÇ´óÂé·³¡£ÎÒ±ØÐëÏÈÏÂÊÖÎªÇ¿¡£"
 		isMainQuest="0">
 		<Map
 			name="r2m1"
@@ -1883,7 +1883,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r2m1_KillNarcoticsCaravan_Quest"
-		briefDiz="Get the caravan’s cargo."
+		briefDiz="¶áÈ¡ÉÌ¶ÓµÄ»õÎï¡£"
 		isMainQuest="0">
 		<Map
 			name="r2m1"
@@ -1892,7 +1892,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r2m1_ReturnNarcotics_Quest"
-		briefDiz="Return to Trickster with the cargo."
+		briefDiz="´ø×Å»õÎï»Øµ½ Trickster ÄÇÀï¡£"
 		isMainQuest="0">
 		<Map
 			name="r2m1"
@@ -1901,8 +1901,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r2m1_TW_AlienInShip"
-		briefDiz="Talk to the aliens"
-		fullDiz="The aliens must know how to stop that horrible device. They are my last resort. "
+		briefDiz="ºÍÍâÐÇÈËÌ¸Ì¸"
+		fullDiz="ÍâÐÇÈËÒ»¶¨ÖªµÀÔõÃ´Í£Ö¹ÄÇ¿ÉÅÂµÄ×°ÖÃ¡£ËûÃÇÊÇÎÒ×îºóµÄÖ¸ÍûÁË¡£"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -1911,8 +1911,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r2m1_TW_SellsCivilian"
-		briefDiz="Talk to the Seil people. "
-		fullDiz="The trace leads to Seil. Somewhere around here the alien vessel was seen."
+		briefDiz="ºÍÈû¶ûµÄÈËÌ¸Ì¸¡£"
+		fullDiz="ÏßË÷Ö¸ÏòÈû¶û¡£ÓÐÈËÔÚÕâÀï¸½½ü¼û¹ýÄÇËÒÍâÐÇ·É´¬¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m2"
@@ -1929,8 +1929,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r2m1_TakeNarcotics_Quest"
-		briefDiz="Capture the cargo."
-		fullDiz="I learned that the caravan with the precious cargo will soon go south almost unguarded. It is a good chance."
+		briefDiz="¶áÈ¡»õÎï¡£"
+		fullDiz="ÎÒ´òÌýµ½Ò»Ö§×°ÔØ¹óÖØ»õÎïµÄÉÌ¶ÓºÜ¿ì¾ÍÒªÄÏÏÂ£¬¼¸ºõÃ»ÓÐ»¤ÎÀ¡£ÕâÊÇ¸öºÃ»ú»á¡£"
 		isMainQuest="0">
 		<Map
 			name="r2m1" />
@@ -1938,8 +1938,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r2m2_AferaARSNG"
-		briefDiz="Personate the rebel."
-		fullDiz="I must personate the rebel and misinform the CIT’s agent."
+		briefDiz="¼Ù°çÅÑ¾ü¡£"
+		fullDiz="ÎÒ±ØÐë¼Ù°çÅÑ¾ü£¬Ïò¶ÀÁ¢³ÇÕòÁª°îµÄÌØ¹¤´«µÝ¼ÙÇé±¨¡£"
 		isMainQuest="1">
 		<Map
 			name="r2m2"
@@ -1948,8 +1948,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r2m2_AfterAfera"
-		briefDiz="Report to Marezzia."
-		fullDiz="I have to return to Marezzia for a new assignment."
+		briefDiz="»ØÂíÀ×ÆëÑÇ±¨¸æ¡£"
+		fullDiz="ÎÒµÃ»ØÂíÀ×ÆëÑÇ½ÓÐÂÈÎÎñ¡£"
 		isMainQuest="1">
 		<Map
 			name="r2m2"
@@ -1958,8 +1958,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r2m2_DestroySNGKaravan"
-		briefDiz="Damage CIT baseline."
-		fullDiz="Now I must attack the caravan with CIT supplies. It will definitely lower the enemy morale."
+		briefDiz="´ò»÷¶ÀÁ¢³ÇÕòÁª°îµÄ²¹¸øÏß¡£"
+		fullDiz="ÏÖÔÚÎÒµÃÈ¥Ï®»÷¶ÀÁ¢³ÇÕòÁª°îµÄ²¹¸øÉÌ¶Ó¡£Õâ¿Ï¶¨ÄÜ´ò»÷µÐÈËµÄÊ¿Æø¡£"
 		isMainQuest="1">
 		<Map
 			name="r2m1" />
@@ -1970,8 +1970,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r2m2_FightFelix"
-		briefDiz="Win over Felix."
-		fullDiz="That old fox is about to break my cover! I cannot allow this."
+		briefDiz="Õ½Ê¤ Felix¡£"
+		fullDiz="ÕâÖ»ÀÏºüÀê¿ìÒªÊ¶ÆÆÎÒµÄÉí·ÝÁË£¡ÎÒ¾ø²»ÄÜÈÃÕâÖÖÊÂ·¢Éú¡£"
 		isMainQuest="1">
 		<Map
 			name="r2m2"
@@ -1980,8 +1980,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r2m2_FightLisaToMonastir"
-		briefDiz="Catch Alice."
-		fullDiz="Now that I know, where Alice is, I won’t let her go!"
+		briefDiz="×¥×¡ Alice¡£"
+		fullDiz="¼ÈÈ»ÎÒÖªµÀ Alice ÔÚÄÄ£¬¾Í¾ø²»»áÈÃËýÅÜÁË£¡"
 		isMainQuest="0">
 		<Map
 			name="r2m2"
@@ -1990,8 +1990,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r2m2_FightWithAxelInArena_Quest"
-		briefDiz="Fight Axel."
-		fullDiz="The time has come for me to fight with Axel on the arena. Man, I’ve been waiting for this moment for so long."
+		briefDiz="ºÍ Axel ¾ö¶·¡£"
+		fullDiz="ÔÚ¾º¼¼³¡ÉÏºÍ Axel Ò»½Ï¸ßÏÂµÄÊ±¿Ìµ½ÁË¡£ÀÏÌì£¬ÎÒµÈÕâÒ»¿ÌµÈÁËÌ«¾Ã¡£"
 		isMainQuest="1">
 		<Map
 			name="r2m2"
@@ -2008,8 +2008,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r2m2_FindLisAfterAxelAndFatherDie_Quest"
-		briefDiz="Catch Alice in Seil."
-		fullDiz="So, I was not the only one to be cheated by Alice. Axel is also looking for her. He pointed out her last location to me, somewhere near Seil. I wonder why she went there, she may easily be caught."
+		briefDiz="ÔÚÈû¶û×¥×¡ Alice¡£"
+		fullDiz="Ô­À´±» Alice ÆÛÆ­µÄ²»Ö¹ÎÒÒ»¸ö¡£Axel Ò²ÔÚÕÒËý¡£Ëû¸æËßÁËÎÒËý×îºóµÄ×Ù¼££¬ÔÚÈû¶û¸½½ü¡£Ææ¹ÖËýÔõÃ´»áÈ¥ÄÇÀï£¬ÄÇ²»ÊÇ×ÔÍ¶ÂÞÍøÂð¡£"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -2022,7 +2022,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r2m2_FindMrPresident"
-		briefDiz="Arrive at the meeting place."
+		briefDiz="µ½´ï»áÃæµØµã¡£"
 		isMainQuest="1">
 		<Map
 			name="r2m2"
@@ -2031,8 +2031,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r2m2_FindROMinCastle"
-		briefDiz="Go to the Monastery."
-		fullDiz="I need to deliver some wine from the monastery. But I think there’s mire in this assignment than that."
+		briefDiz="È¥ÐÞµÀÔº¡£"
+		fullDiz="ÎÒÐèÒª´ÓÐÞµÀÔºËÍÐ©ÆÏÌÑ¾Æ¹ýÈ¥¡£µ«ÎÒ¾õµÃÕâ¸ö²îÊÂÃ»ÄÇÃ´¼òµ¥¡£"
 		isMainQuest="1">
 		<Map
 			name="r2m2"
@@ -2041,7 +2041,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r2m2_FindSNGKaravan"
-		briefDiz="Attack the caravan."
+		briefDiz="Ï®»÷ÉÌ¶Ó¡£"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -2054,8 +2054,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r2m2_GiveBardakToEnemy"
-		briefDiz="Disorient the enemy."
-		fullDiz="If I destroy several CIT’s vehicles at random, it will make the enemy nervous. "
+		briefDiz="ÈÅÂÒµÐÈË¡£"
+		fullDiz="Èç¹ûÎÒËæ±ã´Ý»Ù¼¸Á¾¶ÀÁ¢³ÇÕòÁª°îµÄ³µÁ¾£¬¾ÍÄÜÈÃµÐÈËÉñ¾­½ô±Á¡£"
 		isMainQuest="1">
 		<Map
 			name="r2m2"
@@ -2064,8 +2064,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r2m2_GiveBardakToSideVillage"
-		briefDiz="Attack the village."
-		fullDiz="Now it’s time for more serious matters. Attacking the village is a sure way to enrage the enemy."
+		briefDiz="Ï®»÷´å×¯¡£"
+		fullDiz="ÏÖÔÚ¸Ã¸Éµã´óµÄÁË¡£Ï®»÷´å×¯¿Ï¶¨ÄÜ¼¤Å­µÐÈË¡£"
 		isMainQuest="1">
 		<Map
 			name="r2m2"
@@ -2074,8 +2074,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r2m2_GiveDisk2ToOrakul"
-		briefDiz="Deliver the second disk to the Oracle."
-		fullDiz="Finally, with the second disk at my disposal, I can go to Ignott and speak with the Oracle."
+		briefDiz="°ÑµÚ¶þÕÅ¹âÅÌ½»¸øÏÈÖª¡£"
+		fullDiz="ÖÕÓÚ£¬µÚ¶þÕÅ¹âÅÌµ½ÊÖÁË£¬ÎÒ¿ÉÒÔÈ¥ÒÁ¸ñÅµÌØºÍÏÈÖªÌ¸Ì¸ÁË¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m3" />
@@ -2101,7 +2101,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r2m2_Head1HunterQuest"
-		briefDiz="Kill the heretic."
+		briefDiz="É±ËÀÒì¶Ë¡£"
 		isMainQuest="0">
 		<Map
 			name="r2m2"
@@ -2110,7 +2110,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r2m2_Head2HunterQuest"
-		briefDiz="Kill the pagan."
+		briefDiz="É±ËÀÒì½ÌÍ½¡£"
 		isMainQuest="0">
 		<Map
 			name="r2m2"
@@ -2119,8 +2119,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r2m2_HeadsHunterQuest"
-		briefDiz="Prioress’ assignment."
-		fullDiz="The prioress has a mission for me. I must hunt down and kill the heretic and the pagan."
+		briefDiz="Å®ÐÞµÀÔº³¤µÄÈÎÎñ¡£"
+		fullDiz="Å®ÐÞµÀÔº³¤ÓÐÈÎÎñ½»¸øÎÒ¡£ÎÒ±ØÐëÁÔÉ±Òì¶ËºÍÒì½ÌÍ½¡£"
 		isMainQuest="0">
 		<Map
 			name="r2m2" />
@@ -2128,8 +2128,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r2m2_HelpAllSNGPeople"
-		briefDiz="Save the rebel’s leader"
-		fullDiz="Now I must save the rebel’s leader."
+		briefDiz="Óª¾ÈÅÑ¾üÁìÐä"
+		fullDiz="ÏÖÔÚÎÒµÃÈ¥¾È³öÅÑ¾üÁìÐä¡£"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -2142,8 +2142,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r2m2_KillMrPresidentAndOther"
-		briefDiz="Kill the CIT’s leaders."
-		fullDiz="I lured the CIT’s leaders into the trap. Now I must kill them all to end this war. And to get a reward from the hands of Axel."
+		briefDiz="É±ËÀ¶ÀÁ¢³ÇÕòÁª°îµÄÁìÐä¡£"
+		fullDiz="ÎÒ°Ñ¶ÀÁ¢³ÇÕòÁª°îµÄÁìÐäÓÕÈëÁËÈ¦Ì×¡£ÏÖÔÚÎÒµÃ°ÑËûÃÇÈ«¸ÉµôÀ´½áÊøÕâ³¡Õ½Õù¡£È»ºó´Ó Axel ÊÖÀïÁìÉÍ¡£"
 		isMainQuest="1">
 		<Map
 			name="r2m2"
@@ -2152,8 +2152,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r2m2_MoveToZeonToAlex"
-		briefDiz="Meet Axel."
-		fullDiz="It finally happened! I am a war hero now and soon I will meet Axel!"
+		briefDiz="ºÍ Axel ¼ûÃæ¡£"
+		fullDiz="ÖÕÓÚµÈµ½ÁË£¡ÎÒÏÖÔÚÊÇÕ½ÕùÓ¢ÐÛ£¬ºÜ¿ì¾ÍÄÜ¼ûµ½ Axel ÁË£¡"
 		isMainQuest="1">
 		<Map
 			name="r2m2"
@@ -2162,8 +2162,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r2m2_OldDvigatel1_Quest"
-		briefDiz="Deliver this piece of junk."
-		fullDiz="Delivering the cargo is an easy job. Not very exciting yet rewarding enough. "
+		briefDiz="ËÍÕâ¶ÑÆÆÍ­ÀÃÌú¡£"
+		fullDiz="ËÍ»õÊÇ¼þÇáËÉ»î¶ù¡£²»Ëã´Ì¼¤£¬µ«±¨³ê»¹²»´í¡£"
 		isMainQuest="0">
 		<Map
 			name="r2m2"
@@ -2172,8 +2172,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r2m2_OldDvigatel2_Quest"
-		briefDiz="Return the junk back to Marezzia."
-		fullDiz="It is starting to get interesting. I wonder how many times I am supposed to drag that old machinery back and forth."
+		briefDiz="°ÑÆÆÀÃËÍ»ØÂíÀ×ÆëÑÇ¡£"
+		fullDiz="ÊÂÇé¿ªÊ¼±äµÃÓÐÈ¤ÁË¡£²»ÖªµÀÎÒµÃ°ÑÕâ¶ÑÀÏ»úÆ÷À´»ØÍÏ¶àÉÙÌË¡£"
 		isMainQuest="0">
 		<Map
 			name="r2m2"
@@ -2182,7 +2182,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r2m2_ReturnHeadsQuest"
-		briefDiz="Return to the Cloister."
+		briefDiz="»Øµ½ÐÞµÀÔº¡£"
 		isMainQuest="0">
 		<Map
 			name="r2m2"
@@ -2191,8 +2191,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r2m2_ReturnToMarecciaFromCastle"
-		briefDiz="Return to the Marezzia"
-		fullDiz="Surely, a new assignment is waiting for me at the Marezzia."
+		briefDiz="»Øµ½ÂíÀ×ÆëÑÇ"
+		fullDiz="ÂíÀ×ÆëÑÇ¿Ï¶¨ÓÐÐÂÈÎÎñÔÚµÈÎÒ¡£"
 		isMainQuest="1">
 		<Map
 			name="r2m2"
@@ -2201,7 +2201,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r2m2_ReturnToMarecciaFromKaravanSNG"
-		briefDiz="Return to the Marezzia"
+		briefDiz="»Øµ½ÂíÀ×ÆëÑÇ"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -2214,7 +2214,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r2m2_ReturnToMarecciaFromMrPresident"
-		briefDiz="Report to Marezzia"
+		briefDiz="»ØÂíÀ×ÆëÑÇ±¨¸æ"
 		isMainQuest="1">
 		<Map
 			name="r2m2"
@@ -2223,8 +2223,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r2m2_ReturnToMarecciaFromVillage"
-		briefDiz="Return to the Marezzia"
-		fullDiz="Surely, a new assignment is waiting for me at the Marezzia. I wonder if I am getting any closer to Axel."
+		briefDiz="»Øµ½ÂíÀ×ÆëÑÇ"
+		fullDiz="ÂíÀ×ÆëÑÇ¿Ï¶¨ÓÐÐÂÈÎÎñÔÚµÈÎÒ¡£²»ÖªµÀÎÒÊÇ²»ÊÇÀë Axel Ô½À´Ô½½üÁË¡£"
 		isMainQuest="1">
 		<Map
 			name="r2m2"
@@ -2233,8 +2233,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r2m2_ToKillAllSNGPeople"
-		briefDiz="Destroy the rebel’s camp."
-		fullDiz="I am ordered to kill all the rebels. I doubt if I must... it is a really evil deed... "
+		briefDiz="´Ý»ÙÅÑ¾üÓªµØ¡£"
+		fullDiz="ÎÒ·îÃüÉ±¹âËùÓÐÅÑ¾ü¡£ÎÒ²»È·¶¨ÊÇ·ñ¸ÃÕâÃ´×ö¡­¡­ÕâÕæÊÇÌ«²ÐÈÌÁË¡­¡­"
 		isMainQuest="1">
 		<Map
 			name="r2m2"
@@ -2243,8 +2243,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r2m2_ToLisaToMonastir"
-		briefDiz="Ask in Cloister about Alice. "
-		fullDiz="I heard the Cloister nuns know more than they say. And if they are really hiding Alice, she won’t escape this time!"
+		briefDiz="ÔÚÐÞµÀÔº´òÌý Alice µÄÏÂÂä¡£"
+		fullDiz="ÎÒÌýËµÐÞµÀÔºµÄÐÞÅ®ÃÇÖªµÀµÄ±ÈËýÃÇËµµÄ¶à¡£Èç¹ûËýÃÇÕæµÄ²ØÁË Alice£¬Õâ´ÎËýÅÜ²»µôÁË£¡"
 		isMainQuest="1">
 		<Map
 			name="r2m2"
@@ -2253,8 +2253,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r2m2_Znaki2Midgard_Quest"
-		briefDiz="Tell in Midgard about the signs"
-		fullDiz="The scientists of Midgard will surely get interested in the mysterious traces that appeared on the field. With any luck I will be rewarded for telling them."
+		briefDiz="ÔÚÃ×µÂ¼ÓµÂ½²½²±ê¼ÇµÄÊÂ"
+		fullDiz="Ã×µÂ¼ÓµÂµÄ¿ÆÑ§¼ÒÃÇ¿Ï¶¨»á¶ÔÌïµØÉÏ³öÏÖµÄÉñÃØºÛ¼£¸ÐÐËÈ¤¡£ÔËÆøºÃµÄ»°ÎÒ»¹ÄÜÒòÎªÍ¨·ç±¨ÐÅµÃµ½½±ÉÍ¡£"
 		isMainQuest="0">
 		<Map
 			name="r1m2"
@@ -2275,8 +2275,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r2m2_Znaki2_Quest"
-		briefDiz="Take a look at the field."
-		fullDiz="I think it’s worth looking at the field. I wonder what scared people so much."
+		briefDiz="È¥¿´¿´ÄÇÆ¬Å©Ìï¡£"
+		fullDiz="ÎÒ¾õµÃÄÇÆ¬Å©ÌïÖµµÃÒ»¿´¡£²»ÖªµÀÊÇÊ²Ã´°ÑÈËÏÅ³ÉÄÇÑù¡£"
 		isMainQuest="0">
 		<Map
 			name="r2m2"
@@ -2285,8 +2285,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r3m1_ClearSanctuary"
-		briefDiz="Cleanse the sanctuary."
-		fullDiz="To earn the trust of the druids, I must cleanse their sanctuary from monsters. Weird, I always thought that the monsters don’t exist."
+		briefDiz="¾»»¯Ê¥Ëù¡£"
+		fullDiz="ÒªÓ®µÃµÂÂ³ÒÁµÄÐÅÈÎ£¬ÎÒ±ØÐëÇå³ýÊ¥ËùÀïµÄ¹ÖÎï¡£Ææ¹Ö£¬ÎÒÒ»Ö±ÒÔÎª¹ÖÎï²»´æÔÚ¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m4"
@@ -2302,7 +2302,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r3m1_ClearSanctuary_DestroyOut"
-		briefDiz="Block the monsters’ lair exit."
+		briefDiz="·âËÀ¹ÖÎï³²Ñ¨µÄ³ö¿Ú¡£"
 		isMainQuest="1">
 		<Map
 			name="r3m1"
@@ -2311,7 +2311,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r3m1_ClearSanctuary_KillMonster"
-		briefDiz="Destroy the monsters."
+		briefDiz="ÏûÃð¹ÖÎï¡£"
 		isMainQuest="1">
 		<Map
 			name="r3m1"
@@ -2320,7 +2320,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r3m1_ClearSanctuary_ReturnDruid"
-		briefDiz="Return to Seth."
+		briefDiz="»Øµ½ÈûË¹¡£"
 		isMainQuest="1">
 		<Map
 			name="r3m1"
@@ -2329,7 +2329,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r3m1_ClearSanctuary_ReturnDruid2"
-		briefDiz="Return to Seth."
+		briefDiz="»Øµ½ÈûË¹¡£"
 		isMainQuest="1">
 		<Map
 			name="r3m1"
@@ -2338,8 +2338,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r3m1_FindMoreNative"
-		briefDiz="Get in touch with peaceful indigenes."
-		fullDiz="The first people I met there were not friendly at all. I should look for someone more peaceful. "
+		briefDiz="ÁªÏµºÍÆ½µÄÍÁÖø¡£"
+		fullDiz="ÎÒÔÚÕâÀïÓöµ½µÄµÚÒ»ÅúÈË¿ÉÒ»µãÒ²²»ÓÑºÃ¡£µÃÕÒÐ©¸üºÍÉÆµÄÈË¡£"
 		isMainQuest="1">
 		<Map
 			name="r3m1" />
@@ -2347,8 +2347,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r3m1_FindNative"
-		briefDiz="Find the locals."
-		fullDiz="Someone here must know the Oracle whereabouts. The only question is where to find him or her."
+		briefDiz="Ñ°ÕÒµ±µØÈË¡£"
+		fullDiz="ÕâÀï×ÜÓÐÈËÖªµÀÏÈÖªµÄÏÂÂä¡£ÎÊÌâÊÇÈ¥ÄÄÀïÕÒµ½Ëû»òËý¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m4"
@@ -2360,8 +2360,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r3m1_FindNative_2"
-		briefDiz="Find the locals."
-		fullDiz="Someone here must know the Oracle whereabouts. The only question is where to find him or her."
+		briefDiz="Ñ°ÕÒµ±µØÈË¡£"
+		fullDiz="ÕâÀï×ÜÓÐÈËÖªµÀÏÈÖªµÄÏÂÂä¡£ÎÊÌâÊÇÈ¥ÄÄÀïÕÒµ½Ëû»òËý¡£"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -2373,8 +2373,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r3m1_GoToOracle"
-		briefDiz="Go to the Oracle."
-		fullDiz="I know the way to the Oracle now. Soon I’ll meet him."
+		briefDiz="È¥¼ûÏÈÖª¡£"
+		fullDiz="ÎÒÏÖÔÚÖªµÀÈ¥ÏÈÖªÄÇÀïµÄÂ·ÁË¡£ºÜ¿ì¾ÍÄÜ¼ûµ½Ëû¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m4"
@@ -2395,8 +2395,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r3m1_KnowAboutUluk"
-		briefDiz="Investigate Uluk’s events."
-		fullDiz="No news was heard from Uluk for some time now. I am to investigate, what had happened there. "
+		briefDiz="µ÷²éÎÚÂ¬¿ËµÄÊÂ¼þ¡£"
+		fullDiz="ÎÚÂ¬¿ËÒÑ¾­ÓÐÒ»Õó×ÓÃ»ÓÐÏûÏ¢ÁË¡£ÎÒµÃÈ¥µ÷²éÒ»ÏÂÄÇÀï³öÁËÊ²Ã´ÊÂ¡£"
 		isMainQuest="0">
 		<Map
 			name="r3m1" />
@@ -2404,7 +2404,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r3m1_KnowAboutUluk_GotoSet"
-		briefDiz="Report to the High Druid."
+		briefDiz="Ïò´óµÂÂ³ÒÁ±¨¸æ¡£"
 		isMainQuest="0">
 		<Map
 			name="r3m1"
@@ -2413,7 +2413,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r3m1_KnowAboutUluk_GotoUluk"
-		briefDiz="Go to Uluk "
+		briefDiz="È¥ÎÚÂ¬¿Ë"
 		isMainQuest="0">
 		<Map
 			name="r3m1"
@@ -2422,8 +2422,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r3m1_LureMainDriud"
-		briefDiz="Ensnare the High Druid."
-		fullDiz="The Children of Iron plan to overthrow the druids. So they need to get rid of their leader. I agreed to lure the High druid out of the Town in exchange for the Oracle whereabouts information."
+		briefDiz="ÓÕ³ö´óµÂÂ³ÒÁ¡£"
+		fullDiz="ÌúÖ®×Ó¼Æ»®ÍÆ·­µÂÂ³ÒÁ¡£ËûÃÇÐèÒª³ýµôÁìÐä¡£ÎÒ´ðÓ¦°Ñ´óµÂÂ³ÒÁÒý³ö³Ç£¬×÷Îª½»»»ËûÃÇ¸æËßÎÒÏÈÖªµÄÏÂÂä¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m4"
@@ -2439,7 +2439,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r3m1_LureMainDriud_Ambush"
-		briefDiz="Bring the Druid to the ambush."
+		briefDiz="°ÑµÂÂ³ÒÁÒýµ½Âñ·üµã¡£"
 		isMainQuest="1">
 		<Map
 			name="r3m1"
@@ -2448,7 +2448,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r3m1_LureMainDriud_Talk"
-		briefDiz="Talk to the High Druid."
+		briefDiz="ºÍ´óµÂÂ³ÒÁÌ¸Ì¸¡£"
 		isMainQuest="1">
 		<Map
 			name="r3m1"
@@ -2457,7 +2457,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r3m1_LureMainDriud_Uluk"
-		briefDiz="Go to Uluk."
+		briefDiz="È¥ÎÚÂ¬¿Ë¡£"
 		isMainQuest="1">
 		<Map
 			name="r3m1"
@@ -2466,8 +2466,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r3m1_RescueUlukCivil"
-		briefDiz="Save the druids of Uluk."
-		fullDiz="Not all the people of Uluk submitted to the faith of the Children of Iron. I have to help druids to escape. "
+		briefDiz="Õü¾ÈÎÚÂ¬¿ËµÄµÂÂ³ÒÁ¡£"
+		fullDiz="²¢·ÇËùÓÐÎÚÂ¬¿ËµÄÈË¶¼ÏòÌúÖ®×ÓÇü·þ¡£ÎÒµÃ°ïÖúµÂÂ³ÒÁÃÇÌÓÀë¡£"
 		isMainQuest="0">
 		<Map
 			name="r3m1" />
@@ -2475,7 +2475,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r3m1_RescueUlukCivil_GotoVillage"
-		briefDiz="Go to the hiding place."
+		briefDiz="Ç°Íù²ØÉí´¦¡£"
 		isMainQuest="0">
 		<Map
 			name="r3m1"
@@ -2484,7 +2484,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r3m1_RescueUlukCivil_RepelAttack"
-		briefDiz="Repel the attack."
+		briefDiz="»÷ÍËÏ®»÷¡£"
 		isMainQuest="0">
 		<Map
 			name="r3m1" />
@@ -2492,7 +2492,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r3m1_RescueUlukCivil_TakeToSet"
-		briefDiz="Accompany druids to Seth."
+		briefDiz="»¤ËÍµÂÂ³ÒÁÇ°ÍùÈûË¹¡£"
 		isMainQuest="0">
 		<Map
 			name="r3m1"
@@ -2501,8 +2501,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r3m1_TalkWithMainDruid"
-		briefDiz="Talk to the High Druid."
-		fullDiz="I was told that the High Druid, residing at Seth knows the Oracle whereabouts."
+		briefDiz="ºÍ´óµÂÂ³ÒÁÌ¸Ì¸¡£"
+		fullDiz="ÎÒÌýËµ×¡ÔÚÈûË¹µÄ´óµÂÂ³ÒÁÖªµÀÏÈÖªµÄÏÂÂä¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m4"
@@ -2519,8 +2519,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r3m2_FindInfoAboutFather"
-		briefDiz="Find information about the father."
-		fullDiz="Now that I have the two disks, I may finally learn the fate of my father. I hope the contents of the diary will lead me to him."
+		briefDiz="Ñ°ÕÒ¹ØÓÚ¸¸Ç×µÄÐÅÏ¢¡£"
+		fullDiz="ÏÖÔÚÎÒÓÐÁËÁ½ÕÅ¹âÅÌ£¬Ò²ÐíÖÕÓÚÄÜÅªÇå¸¸Ç×µÄÃüÔËÁË¡£Ï£ÍûÈÕ¼ÇÀïµÄÄÚÈÝÄÜ¸øÎÒÖ¸Â·¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m1"
@@ -2557,8 +2557,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r3m2_MonterHead"
-		briefDiz="Bring the monster’s head."
-		fullDiz="The Oracle Disciples will let me pass if the monster, living by the ruins, will be killed. As a proof, I must bring them its head. "
+		briefDiz="´ø»Ø¹ÖÎïµÄÍ·¡£"
+		fullDiz="Ö»ÒªÉ±ËÀ×¡ÔÚÒÅ¼£ÅÔµÄ¹ÖÎï£¬ÉñÚÍÐÅÍ½¾Í»á·ÅÎÒ¹ýÈ¥¡£×÷ÎªÖ¤Ã÷£¬ÎÒµÃ°ÑËüµÄÍ·´ø»ØÈ¥¡£"
 		isMainQuest="1">
 		<Map
 			name="r3m1"
@@ -2571,8 +2571,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r3m2_OracleMemory"
-		briefDiz="Help Oracle to regain memory."
-		fullDiz="The Oracle may help me, but first I must help him to regain memory. Then he will know how to read the disk I have."
+		briefDiz="°ïÖúÏÈÖª»Ö¸´¼ÇÒä¡£"
+		fullDiz="ÏÈÖªÄÜ°ïÎÒ£¬µ«ÎÒµÃÏÈ°ïËû»Ö¸´¼ÇÒä¡£È»ºóËû¾ÍÖªµÀÔõÃ´½â¶ÁÎÒÊÖÀïÕâÕÅ¹âÅÌÁË¡£"
 		isMainQuest="1">
 		<Map
 			name="r3m1"
@@ -2584,7 +2584,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r3m2_OracleMemory_1"
-		briefDiz="Deliver first repairer."
+		briefDiz="ËÍÈ¥µÚÒ»ÃûÐÞÀí¹¤¡£"
 		isMainQuest="1">
 		<Map
 			name="r3m1"
@@ -2597,7 +2597,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r3m2_OracleMemory_2"
-		briefDiz="Deliver second repairer."
+		briefDiz="ËÍÈ¥µÚ¶þÃûÐÞÀí¹¤¡£"
 		isMainQuest="1">
 		<Map
 			name="r3m1"
@@ -2610,7 +2610,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r3m2_OracleMemory_3"
-		briefDiz="Deliver third repairer."
+		briefDiz="ËÍÈ¥µÚÈýÃûÐÞÀí¹¤¡£"
 		isMainQuest="1">
 		<Map
 			name="r3m1"
@@ -2623,7 +2623,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r3m2_OracleMemory_Return"
-		briefDiz="Return to the Oracle."
+		briefDiz="»Øµ½ÏÈÖªÄÇÀï¡£"
 		isMainQuest="1">
 		<Map
 			name="r3m1"
@@ -2636,8 +2636,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r3m2_OvercomeOracleGuard"
-		briefDiz="Bypass the Oracle Disciples."
-		fullDiz="Some strange fellows are guarding the way to the Oracle. I must pass them by somehow."
+		briefDiz="Í¨¹ýÉñÚÍÐÅÍ½µÄ×èÀ¹¡£"
+		fullDiz="Ò»Ð©Ææ¹ÖµÄÈËÔÚ°ÑÊØÍ¨ÍùÏÈÖªµÄÂ·¡£ÎÒµÃÏë°ì·¨¹ýÈ¥¡£"
 		isMainQuest="1">
 		<Map
 			name="r3m1"
@@ -2650,8 +2650,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r3m2_ReadyToTravel"
-		briefDiz="Upgrade the truck to cross the desert."
-		fullDiz="My truck needs to be improved if want to cross the desert. I have the blueprints, now I need someone to do the job."
+		briefDiz="Éý¼¶¿¨³µÒÔ´©Ô½É³Ä®¡£"
+		fullDiz="Òª´©Ô½É³Ä®£¬ÎÒµÄ¿¨³µµÃ¸Ä½øÒ»ÏÂ¡£Í¼Ö½ÓÐÁË£¬ÏÖÔÚÐèÒªÓÐÈËÀ´×ö¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m2" />
@@ -2674,8 +2674,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r3m2_RevengeDestroyVillage"
-		briefDiz="Avenge the village destruction."
-		fullDiz="Now that I have the two disks, I can finally decipher Ivan Go’s diary. I hope its contents will help me to find out who has destroyed my village and how to find them!"
+		briefDiz="Îª´å×¯±»»Ù¸´³ð¡£"
+		fullDiz="ÏÖÔÚÎÒÓÐÁËÁ½ÕÅ¹âÅÌ£¬ÖÕÓÚÄÜÆÆÒë Ivan Go µÄÈÕ¼ÇÁË¡£Ï£ÍûÀïÃæµÄÄÚÈÝÄÜ°ïÎÒ²é³öÊÇË­´Ý»ÙÁËÎÒµÄ´å×¯£¬ÒÔ¼°ÔõÃ´ÕÒµ½ËûÃÇ£¡"
 		isMainQuest="1">
 		<Map
 			name="r1m1"
@@ -2708,8 +2708,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r3m2_RideToFatherRoomAfterOracul"
-		briefDiz="Return to the father’s house."
-		fullDiz="The second disk may be hidden at my father’s house. Probably, I haven’t noticed it first time."
+		briefDiz="»Øµ½¸¸Ç×µÄ¼Ò¡£"
+		fullDiz="µÚ¶þÕÅ¹âÅÌ¿ÉÄÜ²ØÔÚ¸¸Ç×¼ÒÀï¡£Ò²ÐíÉÏ´ÎÎÒÂ©µôÁË¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m3"
@@ -2738,8 +2738,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r3m2_TalkWithBenAboutCarAfterOracul"
-		briefDiz="Talk to Ben about the disk."
-		fullDiz="Ben Throttle, the famous Explorer may know where to find the second disk. "
+		briefDiz="ºÍ Ben Ì¸Ì¸¹âÅÌµÄÊÂ¡£"
+		fullDiz="ÖøÃûµÄÌ½ÏÕ¼Ò Ben Throttle Ò²ÐíÖªµÀµÚ¶þÕÅ¹âÅÌÔÚÄÄ¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m2"
@@ -2772,8 +2772,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r3m2_TalkWithLisa"
-		briefDiz="Talk to Alice"
-		fullDiz="The Oracle claims that Alice knows more than she says. Anyway I must return to her and ask about the second disk."
+		briefDiz="ºÍ Alice Ì¸Ì¸"
+		fullDiz="ÏÈÖªËµ Alice ÖªµÀµÄ±ÈËýËµ³öÀ´µÄ¶à¡£²»¹ÜÔõÑùÎÒµÃ»Øµ½ËýÄÇÀï£¬ÎÊÎÊµÚ¶þÕÅ¹âÅÌµÄÊÂ¡£"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -2790,8 +2790,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r3m2_TwoMagicThing"
-		briefDiz="Bring Oracle two artifacts."
-		fullDiz="The Oracle will only talk to me if I bring him any two artifacts from the Town of the Dead. "
+		briefDiz="¸øÏÈÖª´ø»ØÁ½¼þÉñÆ÷¡£"
+		fullDiz="Ö»ÓÐÎÒ´ÓËÀÕßÖ®³Ç´ø»ØÈÎÒâÁ½¼þÉñÆ÷£¬ÏÈÖª²Å¿ÏºÍÎÒËµ»°¡£"
 		isMainQuest="1">
 		<Map
 			name="r3m2" />
@@ -2799,7 +2799,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r3m2_TwoMagicThing_Factory"
-		briefDiz="Go to the Town of the Dead."
+		briefDiz="Ç°ÍùËÀÕßÖ®³Ç¡£"
 		isMainQuest="1">
 		<Map
 			name="r3m1"
@@ -2812,7 +2812,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r3m2_TwoMagicThing_FindThing"
-		briefDiz="Find first artifact."
+		briefDiz="ÕÒµ½µÚÒ»¼þÉñÆ÷¡£"
 		isMainQuest="1">
 		<Map
 			name="r3m1"
@@ -2824,7 +2824,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r3m2_TwoMagicThing_FindThing_2"
-		briefDiz="Find second artifact."
+		briefDiz="ÕÒµ½µÚ¶þ¼þÉñÆ÷¡£"
 		isMainQuest="1">
 		<Map
 			name="r3m1"
@@ -2836,7 +2836,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r3m2_TwoMagicThing_Return"
-		briefDiz="Return to the Oracle."
+		briefDiz="»Øµ½ÏÈÖªÄÇÀï¡£"
 		isMainQuest="1">
 		<Map
 			name="r3m1"
@@ -2849,7 +2849,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r4m1_FPR_MeetWithOldMan"
-		briefDiz="Meet the Bukhara's people."
+		briefDiz="ºÍ²¼¹þÀ­µÄÈË¼ûÃæ¡£"
 		isMainQuest="1">
 		<Map
 			name="r4m1"
@@ -2858,7 +2858,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r4m1_FRP_GotoKef"
-		briefDiz="Go to Kef."
+		briefDiz="È¥¿­·ò¡£"
 		isMainQuest="1">
 		<Map
 			name="r4m1"
@@ -2867,7 +2867,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r4m1_FRP_HelpKef"
-		briefDiz="Supply Kef with the oil. "
+		briefDiz="¸ø¿­·ò¹©ÓÍ¡£"
 		isMainQuest="0">
 		<Map
 			name="r4m1" />
@@ -2875,8 +2875,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r4m1_FindMilitaryBase"
-		briefDiz="Find bandits’ lair."
-		fullDiz="I only know the approximate location of the lair. But I will find it anyway."
+		briefDiz="ÕÒµ½·ËÍ½µÄ³²Ñ¨¡£"
+		fullDiz="ÎÒÖ»ÖªµÀ³²Ñ¨µÄ´ó¸ÅÎ»ÖÃ¡£µ«ÎÒÎÞÂÛÈçºÎ¶¼»áÕÒµ½Ëü¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m1"
@@ -2900,8 +2900,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r4m1_FindNative"
-		briefDiz="Get in touch with the locals."
-		fullDiz="First of all I must find someone to show me the way. I only hope people do live here..."
+		briefDiz="ºÍµ±µØÈËÈ¡µÃÁªÏµ¡£"
+		fullDiz="Ê×ÏÈÎÒµÃÕÒÈË¸øÎÒÖ¸Â·¡£Ö»Ï£ÍûÕâÀïÕæµÄÓÐÈË×¡¡­¡­"
 		isMainQuest="1">
 		<Map
 			name="r1m1"
@@ -2913,8 +2913,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r4m1_FindResponsiblePeople"
-		briefDiz="Find sane people."
-		fullDiz="Really strange people live here. I must find someone saner to have my questions answered. "
+		briefDiz="ÕÒµ½Ã÷°×ÈË¡£"
+		fullDiz="ÕâÀï×¡µÄÈËÕæ¹»Ææ¹ÖµÄ¡£ÎÒµÃÕÒ¸öÃ÷°×µãµÄÈËÀ´»Ø´ðÎÒµÄÎÊÌâ¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m1"
@@ -2926,8 +2926,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r4m1_GotoAivenGo"
-		briefDiz="Follow Ivan Go."
-		fullDiz="Ivan went this way. I only know the direction. But I will find him, of what has left of him..."
+		briefDiz="¸ú×Ù Ivan Go¡£"
+		fullDiz="Ivan ×ßÁËÕâÌõÂ·¡£ÎÒÖ»ÖªµÀ·½Ïò¡£µ«ÎÒ»áÕÒµ½ËûµÄ£¬»òÕßÕÒµ½ËûµÄÒÅº¡¡­¡­"
 		isMainQuest="1">
 		<Map
 			name="r1m1"
@@ -2951,7 +2951,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r4m1_KNO_BringOil"
-		briefDiz="Deliver oil to Kef."
+		briefDiz="°ÑÊ¯ÓÍËÍµ½¿­·ò¡£"
 		isMainQuest="1">
 		<Map
 			name="r4m1"
@@ -2960,7 +2960,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r4m1_KNO_FindSpecialist"
-		briefDiz="Catch up with the specialist."
+		briefDiz="×·ÉÏÄÇÎ»×¨¼Ò¡£"
 		isMainQuest="1">
 		<Map
 			name="r4m1"
@@ -2969,7 +2969,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r4m1_KNO_GotoOiler"
-		briefDiz="Go to the oil field."
+		briefDiz="È¥ÓÍÌï¡£"
 		isMainQuest="1">
 		<Map
 			name="r4m1"
@@ -2978,7 +2978,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r4m1_KNO_ReportToKef"
-		briefDiz="Report failure in Kef"
+		briefDiz="ÔÚ¿­·ò»ã±¨Ê§°Ü"
 		isMainQuest="1">
 		<Map
 			name="r4m1"
@@ -2987,8 +2987,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r4m1_Kef_NeedOil"
-		briefDiz="Kef needs oil."
-		fullDiz="People of Kef are short of oil. Without it, the machines won’t work and the vehicles will not be able to patrol and protect citizens."
+		briefDiz="¿­·òÐèÒªÊ¯ÓÍ¡£"
+		fullDiz="¿­·òµÄÈËÈ±ÉÙÊ¯ÓÍ¡£Ã»ÓÐÊ¯ÓÍ£¬»úÆ÷¾Í×ª²»ÆðÀ´£¬³µÁ¾Ò²ÎÞ·¨Ñ²Âß±£»¤¾ÓÃñ¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m1"
@@ -3000,12 +3000,12 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r4m1_RBC_DefendCountry"
-		briefDiz="Protect the village."
+		briefDiz="±£»¤´å×¯¡£"
 		isMainQuest="1" />
 
 	<QuestInfo
 		questName="r4m1_RBC_Evacuate"
-		briefDiz="Evacuate the villagers."
+		briefDiz="ÊèÉ¢´åÃñ¡£"
 		isMainQuest="1" >		
 		<Map
 			name="r4m1"
@@ -3014,7 +3014,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r4m1_RBC_GotoPort"
-		briefDiz="Find the port."
+		briefDiz="ÕÒµ½¸Û¿Ú¡£"
 		isMainQuest="1">
 		<Map
 			name="r4m1"
@@ -3023,8 +3023,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r4m1_RescueBuharsCivilian"
-		briefDiz="Save the Bukhara people."
-		fullDiz="I hope, when I help these people, they will tell me where I can find what I need. Moreover, I cannot let them die just like that! "
+		briefDiz="Õü¾È²¼¹þÀ­ÈË¡£"
+		fullDiz="ÎÒÏ£Íû°ïÁËÕâÐ©ÈËºó£¬ËûÃÇ»á¸æËßÎÒÈ¥ÄÄÀïÕÒÎÒÒªµÄ¶«Î÷¡£ÔÙËµ£¬ÎÒÒ²²»ÄÜÑÛÕöÕö¿´×ÅËûÃÇËÍÃü£¡"
 		isMainQuest="1">
 		<Map
 			name="r1m1"
@@ -3036,8 +3036,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r4m2_DestroyPlate"
-		briefDiz="Destroy the Source of contamination."
-		fullDiz="The alien ship is the source of contamination that almost wiped out the life on our planet. It must be destroyed for the sake of survivors."
+		briefDiz="´Ý»ÙÎÛÈ¾Ô´¡£"
+		fullDiz="ÍâÐÇ·É´¬¾ÍÊÇ²îµãÈÃµØÇòÉúÃüÃð¾øµÄÎÛÈ¾Ô´¡£ÎªÁËÐÒ´æÕß£¬±ØÐë´Ý»ÙËü¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m1" />
@@ -3072,8 +3072,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r4m2_FightWithCrazy"
-		briefDiz="Fight with the madmen."
-		fullDiz="The path is blocked by the military base full of aggressive people. Battle is the only way to go."
+		briefDiz="ºÍ·è×ÓÃÇÕ½¶·¡£"
+		fullDiz="µÀÂ·±»Ò»¸öÂúÊÇ±©Í½µÄ¾üÊÂ»ùµØ¶Â×¡ÁË¡£´òÒ»ÕÌÊÇÎ¨Ò»µÄ³öÂ·¡£"
 		isMainQuest="1">
 		<Map
 			name="r4m1"
@@ -3086,8 +3086,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r4m2_InvestigationPlate"
-		briefDiz="Examine the spacecraft."
-		fullDiz="The Scientist mentioned alien spacecraft. I have to go and see it with my own eyes!"
+		briefDiz="µ÷²éÄÇËÒ·É´¬¡£"
+		fullDiz="¿ÆÑ§¼ÒÌáµ½ÁËÍâÐÇ·É´¬¡£ÎÒµÃÇ×ÑÛÈ¥¿´¿´£¡"
 		isMainQuest="1">
 		<Map
 			name="r4m1"
@@ -3100,8 +3100,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r4m2_NeutralizePlate"
-		briefDiz="Neutralize the Source."
-		fullDiz="The alien ship is the source of contamination that almost wiped out the life on our planet. It must be stopped for the sake of the survivors. There must be a peaceful solution of this matter."
+		briefDiz="Ïû³ýÎÛÈ¾Ô´¡£"
+		fullDiz="ÍâÐÇ·É´¬¾ÍÊÇ²îµãÈÃµØÇòÉúÃüÃð¾øµÄÎÛÈ¾Ô´¡£ÎªÁËÐÒ´æÕß£¬±ØÐëÈÃËüÍ£ÏÂÀ´¡£Õâ¼þÊÂÒ»¶¨ÓÐºÍÆ½½â¾öµÄ°ì·¨¡£"
 		isMainQuest="1">
 		<Map
 			name="r1m1" />
@@ -3136,8 +3136,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r4m2_TalkWithScientific"
-		briefDiz="Talk to the Scientist."
-		fullDiz="These people saved my life. I think their leader wants something from me in return."
+		briefDiz="ºÍ¿ÆÑ§¼ÒÌ¸Ì¸¡£"
+		fullDiz="ÕâÐ©ÈË¾ÈÁËÎÒµÄÃü¡£ÎÒÏëËûÃÇµÄÁìÐäÏëÒªÎÒ×öµãÊ²Ã´×÷Îª»Ø±¨¡£"
 		isMainQuest="1">
 		<Map
 			name="r4m1"
