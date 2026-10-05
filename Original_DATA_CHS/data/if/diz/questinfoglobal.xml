@@ -1,0 +1,3150 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<QuestInfoResource>
+	<QuestInfo
+		questName="BuyKollizey_Quest"
+		briefDiz="Become the Colosseum’s joint owner"
+		fullDiz="Become the Colosseum’s joint owner."
+		isMainQuest="0">
+		<Map
+			name="r1m2"
+			targetObjName="TheTickets" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="Buyer_Quest1"
+		briefDiz="Deliver package to Sowth."
+		fullDiz="I should deliver this package to Sergo, my father's friend."
+		isMainQuest="1">
+		<Map
+			name="r1m1"
+			targetObjName="TheTown" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="CombatInKollizey_Quest"
+		briefDiz="Demonstration"
+		fullDiz="Show everyone a real fight at the Colosseum."
+		isMainQuest="0">
+		<Map
+			name="r1m2"
+			targetObjName="Kolizey_location" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="DestroyRuins_Quest"
+		briefDiz="Rob archeologists"
+		fullDiz="Archeologists dig for something interesting... They have almost no defense. It is a perfect opportunity to earn some money."
+		isMainQuest="0">
+		<Map
+			name="r1m2"
+			targetObjName="Ruins_location" />
+	</QuestInfo>
+<!-- dynamic quests -->
+	<QuestInfo
+		questName="Dynamic_Convoy_0"
+		briefDiz="Accompany the caravan up to %2n"
+		fullDiz="The town %1n asks you to accompany the caravan up to %2n"
+		isMainQuest="0" />
+
+	<QuestInfo
+		questName="Dynamic_Convoy_1"
+		briefDiz="Defend the transport"
+		fullDiz="An inhabitant of %1n asked me defend the transport on his way to %2n and offered to pay %3d."
+		isMainQuest="0" />
+
+	<QuestInfo
+		questName="Dynamic_Convoy_2"
+		briefDiz="Insure the transport safety"
+		fullDiz="%1n demands me to accompany the transport carrying an important cargo to %2n. If It will arrive safely, I will get %3d."
+		isMainQuest="0" />
+
+	<QuestInfo
+		questName="Dynamic_Convoy_3"
+		briefDiz="Secure the transport to %2n"
+		fullDiz="The transport from %1n goes to %2n. Some bandits often ambush traders coming that way, so I agreed to protect them for a mere %3d."
+		isMainQuest="0" />
+
+	<QuestInfo
+		questName="Dynamic_Destroy_0"
+		briefDiz="Destroy enemy"
+		fullDiz="The town %1n asks you to destroy the enemy for a reward."
+		requestForTalk="Hi, have you got any work for me to do?" />
+isMainQuest="0" />
+
+	<QuestInfo
+		questName="Dynamic_Destroy_1"
+		briefDiz="Neutralize the treat"
+		fullDiz="The citizens of %1n are often being attacked by the cunning brigand who always escapes punishment. I agreed to get rid of him for %3d."
+		requestForTalk="Привет, нет ли работенки для меня?"
+		isMainQuest="0" />
+
+	<QuestInfo
+		questName="Dynamic_Destroy_2"
+		briefDiz="Trace the aggressor"
+		fullDiz="I will get %3d, when I get rid of a villain that threatens %1n."
+		requestForTalk="Привет, нет ли работенки для меня?"
+		isMainQuest="0" />
+
+	<QuestInfo
+		questName="Dynamic_Hunt_0"
+		briefDiz="The Hunt begins."
+		fullDiz="The town %1n will pay %3d coins for each enemy killed."
+		isMainQuest="0" />
+
+	<QuestInfo
+		questName="Dynamic_Hunt_1"
+		briefDiz="Teach bandits a lesson"
+		fullDiz="The local bandit must be cut down to size! The people of %1n will pay %3d for every killed enemy."
+		isMainQuest="0" />
+
+	<QuestInfo
+		questName="Dynamic_Hunt_2"
+		briefDiz="Clear the neighborhood "
+		fullDiz="The authorities of %1n began to fight for the safety of the trade routes I will be paid %3d for every villain slain."
+		isMainQuest="0" />
+
+	<QuestInfo
+		questName="Dynamic_Peace_0"
+		briefDiz="Lower the hostility with %2b."
+		fullDiz="You must pay %3d percents of your money for %2b to redeem your evil deeds."
+		isMainQuest="0" />
+
+	<QuestInfo
+		questName="Dynamic_Reach_0"
+		briefDiz="Deliver package to %2n"
+		fullDiz="The town %1n asks you to deliver package to %2n"
+		requestForTalk="Hi, have you got any work for me to do?"
+		resuestForComplete="I brought a package from %1n." />
+isMainQuest="0" />
+
+	<QuestInfo
+		questName="Dynamic_Reach_1"
+		briefDiz="Deliver the packet to %2n"
+		fullDiz="I’ll get %3d, when I deliver the package to %2n. Somebody is waiting for it, but I am not going to hurry for such a small amount on money."
+		requestForTalk="Привет, нет ли работенки для меня?"
+		resuestForComplete="Я привез тебе пакет от %1n."
+		isMainQuest="0" />
+
+	<QuestInfo
+		questName="Dynamic_Reach_2"
+		briefDiz="Reach %2n"
+		fullDiz="Some crank from %1n will pay me %3d, if I go and say hello to his friend living in %2n."
+		requestForTalk="Привет, нет ли работенки для меня?"
+		resuestForComplete="Я привез тебе пакет от %1n."
+		isMainQuest="0" />
+<!-- static quests -->
+	<QuestInfo
+		questName="EastTalkKollizey_Quest"
+		briefDiz="Inform Aeterna’s people"
+		fullDiz="Inform Aeterna’s people of the Colosseum"
+		isMainQuest="0">
+		<Map
+			name="r1m2"
+			targetObjName="Esting" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="FindBen2_Quest"
+		briefDiz="Find Ben Throttle"
+		fullDiz="Now I know for sure that Ben is the man I need. The question is where to find him."
+		isMainQuest="1">
+		<Map
+			name="r1m2" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="FindBen_Quest"
+		briefDiz="Find Ben Throttle the Explorer "
+		fullDiz="My life is in ruins. To make it whole again I have to learn more about my real father. My only hope is Ben Throttle, whoever he is... "
+		isMainQuest="1">
+		<Map
+			name="r1m1" />
+
+		<Map
+			name="r1m2" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="FindGomerA_Quest1"
+		briefDiz="Find Homer"
+		fullDiz="Probably, Homer may be found at the bar of one of the local settlements"
+		isMainQuest="1" />
+
+	<QuestInfo
+		questName="FindGomerB_Quest1"
+		briefDiz="Find Homer"
+		fullDiz="Probably, Homer may be found at the bar of one of the local settlements"
+		isMainQuest="1" />
+
+	<QuestInfo
+		questName="FreeExtremistLeader_Quest1"
+		briefDiz="Free the extremists’ leader"
+		fullDiz="The warehouse is occupied by the extremists. I must free their leader in order to get what I need. "
+		isMainQuest="0">
+		<Map
+			name="r1m4" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="FreeExtremistLeader_Quest2"
+		briefDiz="Find out in Olme where the leader is kept."
+		isMainQuest="0">
+		<Map
+			name="r1m4"
+			targetObjName="TheOlme_enter" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="FreeExtremistLeader_Quest3"
+		briefDiz="Intercept the caravan"
+		isMainQuest="0">
+		<Map
+			name="r1m4"
+			coordinate="2348.362 249.000 2963.589" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="FreeExtremistLeader_Quest4"
+		briefDiz="Bring the leader to his people."
+		isMainQuest="0">
+		<Map
+			name="r1m4"
+			targetObjName="StorageVil_enter" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="HelpRuins_Quest"
+		briefDiz="Help archeologists"
+		fullDiz="Local raiders hinder archeologists from digging. I have to get rid of them."
+		isMainQuest="0">
+		<Map
+			name="r1m2"
+			targetObjName="Ruins_location" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="KillExtremist_Quest1"
+		briefDiz="Kill bandits occupying the warehouse. "
+		fullDiz="One way to get what I need is to destroy all that oppose me."
+		isMainQuest="0">
+		<Map
+			name="r1m4"
+			targetObjName="StorageVil_enter" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="Kollizey_Quest"
+		briefDiz="Help to organize Colosseum's work"
+		fullDiz="Some businessman wants to reopen the Colosseum. I can help."
+		isMainQuest="0">
+		<Map
+			name="r1m2" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="MidgardTalkKollizey_Quest"
+		briefDiz="Inform Midgard’s people"
+		fullDiz="Inform Midgard’s people of the Colosseum."
+		isMainQuest="0">
+		<Map
+			name="r1m2"
+			targetObjName="Midragd" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="PortoTalkKollizey_Quest"
+		briefDiz="Inform Porto’s people"
+		fullDiz="Inform Porto’s people of the Colosseum."
+		isMainQuest="0">
+		<Map
+			name="r1m2"
+			targetObjName="Porto" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="ReturnToDirector2_Quest"
+		briefDiz="Return to Colosseum"
+		fullDiz="Return to Colosseum to get your reward."
+		isMainQuest="0">
+		<Map
+			name="r1m2"
+			targetObjName="TheTickets" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="ReturnToDirector_Quest"
+		briefDiz="Return to Colosseum"
+		fullDiz="Return to Colosseum to get your reward."
+		isMainQuest="0">
+		<Map
+			name="r1m2"
+			targetObjName="TheTickets" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="SeeSigns_Quest"
+		briefDiz="See the signs"
+		fullDiz="Find and examine the signs."
+		isMainQuest="0">
+		<Map
+			name="r1m2"
+			targetObjName="Sign_location" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="Signs_Quest"
+		briefDiz="Signs "
+		fullDiz="There are mysterious signs on the Kolkhoz' fields."
+		isMainQuest="0">
+		<Map
+			name="r1m2" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="TRS_Quest2"
+		briefDiz="Go to the warehouse"
+		isMainQuest="0">
+		<Map
+			name="r1m4"
+			targetObjName="StorageVil_enter" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="TRS_Quest3a"
+		briefDiz="Kill the occupants"
+		isMainQuest="0">
+		<Map
+			name="r1m4" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="TRS_Quest3b"
+		briefDiz="Free the leader"
+		isMainQuest="0">
+		<Map
+			name="r1m4" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="TRS_Quest4"
+		briefDiz="Inform about the warehouse mopping-up"
+		isMainQuest="0">
+		<Map
+			name="r1m4"
+			targetObjName="TheOlme_enter" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="TalkProfessor_Quest"
+		briefDiz="Tell the scientists about the signs"
+		fullDiz="Tell the scientists of Midgard will find out what is happening here."
+		isMainQuest="0">
+		<Map
+			name="r1m2"
+			targetObjName="Midragd" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="TalkWithFather_Quest"
+		briefDiz="Return to father."
+		fullDiz="I made the first bargain in my life. Father will be happy to learn about it."
+		isMainQuest="1">
+		<Map
+			name="r1m1"
+			targetObjName="TheGloohoe" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="TraiderStorage_Quest1"
+		briefDiz="Free the warehouse from the bandits"
+		fullDiz="The warehouse id occupied by the bandits. I must find the way to drive them away."
+		isMainQuest="0">
+		<Map
+			name="r1m4" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="WhereSigns_Quest"
+		briefDiz="Investigate the Kolkhoz events"
+		fullDiz="Kolkhoz' farmers are scared and refuse to harvest."
+		isMainQuest="0">
+		<Map
+			name="r1m2"
+			targetObjName="TheSign" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="WorkGiver_Quest1"
+		briefDiz="Bring Rich farmer to the filling station."
+		fullDiz="Rich Farmer will reward me when I bring him to the filling station. "
+		isMainQuest="0">
+		<Map
+			name="r1m1"
+			targetObjName="TheOilVillageQ2" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_BarForTunel_Quest"
+		briefDiz="Go to the bar"
+		fullDiz="Someone at the Asgard’s bar must know the way to cross the mountains."
+		isMainQuest="0">
+		<Map
+			name="r1m3"
+			targetObjName="Asgard" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_BarInGelvetcia_Quest"
+		briefDiz="Go to the bar and name the password."
+		isMainQuest="1">
+		<Map
+			name="r2m1"
+			targetObjName="ToR2M2" />
+
+		<Map
+			name="r2m2"
+			targetObjName="Toskana" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_BombInAsgard_Quest"
+		briefDiz="Buy some explosives at the Asgard."
+		isMainQuest="1">
+		<Map
+			name="r1m3"
+			targetObjName="Asgard" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_BombInShahts_Quest"
+		briefDiz="Buy some explosives at the miners’ village."
+		isMainQuest="1">
+		<Map
+			name="r1m3"
+			targetObjName="TheShahts" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_BombShahtsAtakBandits_Quest"
+		briefDiz="Repel the bandit’s attack."
+		isMainQuest="1">
+		<Map
+			name="r1m3"
+			targetObjName="TheShahts" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_CaravanFromTuzzToVillage_Quest"
+		briefDiz="Ensure the caravan’s safety."
+		fullDiz="This cargo must be delivered at all cost. My mission is to accompany it and make sure nothing happens to it."
+		isMainQuest="1">
+		<Map
+			name="r2m1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_CaravanToMidgardBen_Quest"
+		briefDiz="Return to Midgard "
+		isMainQuest="1">
+		<Map
+			name="r1m2"
+			targetObjName="KARAVANMIDGARD_vehicle_0" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_CaravanToPortoBen_Quest"
+		briefDiz="Defend the caravan"
+		isMainQuest="1">
+		<Map
+			name="r1m2"
+			targetObjName="KARAVANPORTO_vehicle_0" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_DestroyBridge_Quest"
+		briefDiz="Place the charge"
+		fullDiz="I have the explosives. All I need is to place it at the right place. "
+		isMainQuest="1">
+		<Map
+			name="r1m3"
+			targetObjName="BaseGuardian_enter" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_DriveBanditFromOilMine_Quest"
+		briefDiz="Free the oil mine from the bandits. "
+		isMainQuest="1">
+		<Map
+			name="r1m3"
+			targetObjName="TheBanditOilMine" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_FatherRoomInMinin_Quest"
+		briefDiz="Search the father’s home"
+		isMainQuest="1">
+		<Map
+			name="r1m2" />
+
+		<Map
+			name="r1m3"
+			targetObjName="HouseLoc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_FindAksel_Quest"
+		briefDiz="Find Axel"
+		fullDiz="First I have to find a way to the Axels land. Then I’ll decide what to do with him! "
+		isMainQuest="1">
+		<Map
+			name="r1m2" />
+
+		<Map
+			name="r1m3" />
+
+		<Map
+			name="r2m1" />
+
+		<Map
+			name="r2m2" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_FindBanditBaseOfOilMine_Quest"
+		briefDiz="Find and destroy bandits’ camp."
+		fullDiz="I got to follow this one to the base. I must not attack this car. "
+		isMainQuest="0">
+		<Map
+			name="r1m3"
+			targetObjName="OilMineRuner_vehicle_0" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_FindBenInEast_Quest"
+		briefDiz="Get to the Aeterna"
+		isMainQuest="1">
+		<Map
+			name="r1m1"
+			targetObjName="ToR1M2" />
+
+		<Map
+			name="r1m2"
+			targetObjName="Esting" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_FindBenInMidgard_Quest"
+		briefDiz="Ben was last seen in Midgard"
+		isMainQuest="1">
+		<Map
+			name="r1m2"
+			targetObjName="Midragd" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_FindBenInSouth_Quest"
+		briefDiz="Ask around in Sowth"
+		isMainQuest="1">
+		<Map
+			name="r1m1"
+			targetObjName="TheTown" />
+
+		<Map
+			name="r1m2" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_FindBenInStaruha_Quest"
+		briefDiz="Talk to the local witch"
+		isMainQuest="1">
+		<Map
+			name="r1m1" />
+
+		<Map
+			name="r1m2"
+			targetObjName="TheArtefact" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_FindDoorInTunel_Quest"
+		briefDiz="Find the entrance to the tunnel."
+		fullDiz="Now that I know, where the entrance is, there should be no problem in crossing it. "
+		isMainQuest="1">
+		<Map
+			name="r1m3"
+			targetObjName="ToR2M1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_FindFelix_Quest"
+		briefDiz="Find Felix in Sowth."
+		isMainQuest="1">
+		<Map
+			name="r1m1"
+			targetObjName="TheTown" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_FindHouseOfBen_Quest"
+		briefDiz="Meet Ben."
+		fullDiz="Soon I'll meet Ben Throttle and learn the truth of my origin."
+		isMainQuest="1">
+		<Map
+			name="r1m2"
+			targetObjName="TheBen_House" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_FindKeyInTunel_Quest"
+		briefDiz="Buy the key from the barman."
+		fullDiz="I am sure the barman knows that the gate is locked. He may even have the key to it."
+		isMainQuest="0">
+		<Map
+			name="r1m3"
+			targetObjName="Asgard" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_FindLisaInBandit_Quest"
+		briefDiz="Save her from the raiders."
+		isMainQuest="1">
+		<Map
+			name="r1m1" />
+
+		<Map
+			name="r1m2"
+			targetObjName="LisaInBanditPlen" />
+
+		<Map
+			name="r1m3" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_FindLisaInBase_Quest"
+		briefDiz="Ask about Alice at the Area 51."
+		fullDiz="So Alice is connected with the bandits. Not that I am surprised, but still... "
+		isMainQuest="1">
+		<Map
+			name="r1m3"
+			targetObjName="TheBase" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_FindLisaInGelvetcia_Quest"
+		briefDiz="Catch Alice in Helvetia."
+		fullDiz="Soon Alice will pay for all she has done! I know exactly where she is!"
+		isMainQuest="1">
+		<Map
+			name="r2m1"
+			targetObjName="TheGelvetcia" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_FindLisaInMidragd_Quest"
+		briefDiz="Find Alice in Midgard"
+		isMainQuest="1">
+		<Map
+			name="r1m1" />
+
+		<Map
+			name="r1m2"
+			targetObjName="Midragd" />
+
+		<Map
+			name="r1m3"
+			targetObjName="ToR1M2" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_FindLisaInPesht_Quest"
+		briefDiz="Look for her in Pesht"
+		isMainQuest="1">
+		<Map
+			name="r1m1"
+			targetObjName="ToR1M3" />
+
+		<Map
+			name="r1m2" />
+
+		<Map
+			name="r1m3"
+			targetObjName="Pesht" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_FindLisaInPorto_Quest"
+		briefDiz="Find Alice in Porto"
+		isMainQuest="1">
+		<Map
+			name="r1m1" />
+
+		<Map
+			name="r1m2"
+			targetObjName="Porto" />
+
+		<Map
+			name="r1m3" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_FindLisaOnSever_Quest"
+		briefDiz="Overtake Alice in the North"
+		fullDiz="Felix seems to be innocent of killing my father. My only trace is Alice. She is the witness of the crime."
+		isMainQuest="1">
+		<Map
+			name="r1m1" />
+
+		<Map
+			name="r1m2" />
+
+		<Map
+			name="r1m3" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_FindOracul_Quest"
+		briefDiz="Find the Oracle"
+		fullDiz="The trace, left by my father leads to the distant land, where the all-knowing Oracle lives. "
+		isMainQuest="1">
+		<Map
+			name="r1m2"
+			targetObjName="ToR1M3" />
+
+		<Map
+			name="r1m3" />
+
+		<Map
+			name="r1m4"
+			targetObjName="ToR3M1" />
+
+		<Map
+			name="r2m1"
+			targetObjName="ToR3M1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_FindRealFatherRoom_Quest"
+		briefDiz="Find the Father’s home."
+		fullDiz="My father may still be alive! I will find him no matter what.|Some traces may be found at his house in Minin."
+		isMainQuest="1">
+		<Map
+			name="r1m2" />
+
+		<Map
+			name="r1m3" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_FindVerbInAR_Quest"
+		briefDiz="Find CD’s recruiter in Marezzia."
+		fullDiz="The Crimson Dawn is enlisting new recruits. To become of them is a sure way get closer to Axel. "
+		isMainQuest="1">
+		<Map
+			name="r2m1"
+			targetObjName="ToR2M2" />
+
+		<Map
+			name="r2m2"
+			targetObjName="Marezzia" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_FindVerbInSNG_Quest"
+		briefDiz="Find CIT’s recruiter in Touse "
+		fullDiz="The Commonwealth of the Independent Towns needs help to fight with Axels’ forces. If I join them, we will crush the tyrant!"
+		isMainQuest="1">
+		<Map
+			name="r2m1"
+			targetObjName="TheTuzz" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_FindVrata_Quest"
+		briefDiz="Find the Sea Gate"
+		fullDiz="Somewhere in the far north the Sea Gate are located. The caravan from Minin will show me the way to that region. "
+		isMainQuest="1">
+		<Map
+			name="r1m3" />
+
+		<Map
+			name="r1m4" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_FindWorkersToOilMine_Quest"
+		briefDiz="Convince the Minin’s workers."
+		fullDiz="The oil mine workers are sitting in the Minin’s bar. I must convince them to return back to work. "
+		isMainQuest="1">
+		<Map
+			name="r1m3"
+			targetObjName="Minin" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_FindZasadaInTunel_Quest"
+		briefDiz="Find a place for the ambush."
+		fullDiz="Sooner or later, someone will use the tunnel. I will ambush him and get the key! "
+		isMainQuest="0">
+		<Map
+			name="r1m3"
+			targetObjName="ZasadaLocQ" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_FirstVillage_Quest"
+		briefDiz="Follow the caravan to its destination."
+		isMainQuest="1">
+		<Map
+			name="r2m1"
+			targetObjName="KARAVANvvt_vehicle_0" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_FreeTunel_Quest"
+		briefDiz="Set the tunnel free."
+		fullDiz="CD keeps receiving resources and manpower via the tunnel. Once captured, it will grant CIT the firm connection with the outside world.  And at the same time it will cut the enemy supplies flow. The tunnel’s guardians must die for the sake of high ideals.  "
+		isMainQuest="1">
+		<Map
+			name="r2m1"
+			targetObjName="TunnelAttackLocation" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_FromTuzzToGelvetcia_Quest"
+		briefDiz="Go to Helvetia"
+		fullDiz="My actions did not go unnoticed. Soon I will meet with the high leaders of the CIT!"
+		isMainQuest="1">
+		<Map
+			name="r2m1"
+			targetObjName="TheGelvetcia" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_GetAkselBandit_Quest"
+		briefDiz="Meet Axel"
+		fullDiz="The moment of truth is near. Soon I will meet Axel face to face! "
+		isMainQuest="1">
+		<Map
+			name="r2m1"
+			targetObjName="ToR2M2small" />
+
+		<Map
+			name="r2m2"
+			targetObjName="Zeon" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_GetBigBoom_Quest"
+		briefDiz="Get powerful weapon in Zaimka"
+		isMainQuest="1">
+		<Map
+			name="r1m1"
+			targetObjName="TheOilVillage" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_GetBomb_Quest"
+		briefDiz="Find some explosives."
+		fullDiz="I have to eliminate the threat of bandits’ attacks to go through Pest. The only way I can think of is to blow up the bridge leading to their base."
+		isMainQuest="1">
+		<Map
+			name="r1m3" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_GetHelpWorkersInMinin_Quest"
+		briefDiz="Set the oil mine free from the bandits"
+		fullDiz="I will need to restore the work of the oil mine, so that the people of Minin show me the way north."
+		isMainQuest="1">
+		<Map
+			name="r1m3" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_GetSupportOneOfTheBands1_Quest"
+		briefDiz="Enlist the support of a major faction."
+		fullDiz="It sounds like trouble. Alice is a girl of some local crime leader. It will be too hard to get her without support. It’s high time to find some powerful allies."
+		isMainQuest="1">
+		<Map
+			name="r2m1" />
+
+		<Map
+			name="r2m2" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_GetSupportOneOfTheBands2_Quest"
+		briefDiz="Enlist the support of a major faction."
+		fullDiz="It looks I won’t be able to get Axel all by myself. It’s high time to find some powerful allies."
+		isMainQuest="1">
+		<Map
+			name="r2m1" />
+
+		<Map
+			name="r2m2" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_GiveMoneyToBase_Quest"
+		briefDiz="Collect enough money to pay the fee"
+		fullDiz="The bandits agree to let me pass trough their land for 10000 coins. "
+		isMainQuest="1">
+		<Map
+			name="r1m3"
+			targetObjName="BaseGuardian_enter" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_GiveProblemToBase_Quest"
+		briefDiz="Teach bandits a lesson."
+		fullDiz="Looks the only language the bandits understand is the sound of the gunshots! "
+		isMainQuest="1">
+		<Map
+			name="r1m3"
+			targetObjName="TheBase" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_Glagiators_Quest"
+		isMainQuest="0">
+		<Map
+			name="r1m2" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_HelpSideVillageSNG_Quest"
+		briefDiz="Protect the village."
+		fullDiz="The village is under attack! My vehicle is the closest to the battle location. I must help."
+		isMainQuest="1">
+		<Map
+			name="r2m1"
+			targetObjName="TheUnderAttaks" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_IntrigaOfMerMinin_Quest"
+		briefDiz="Uncover the scheming."
+		fullDiz="I smell rat. I must make the miners work! And someone here lies to me!"
+		isMainQuest="1">
+		<Map
+			name="r1m3" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_KillFelix_Quest"
+		briefDiz="Kill Felix."
+		isMainQuest="1">
+		<Map
+			name="r1m1"
+			targetObjName="FelixBaseLoc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_Lisa_Quest"
+		briefDiz="Show local villages to Alice."
+		fullDiz="A pretty girl asked to accompany her. She has a look of a criminal on her, but who cares."
+		isMainQuest="0">
+		<Map
+			name="r1m1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_MeetLeaderGelvetcia_Quest"
+		briefDiz="Meet the rebels’ leader."
+		isMainQuest="1">
+		<Map
+			name="r2m1" />
+
+		<Map
+			name="r2m2"
+			targetObjName="Lager" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_MeetWithGelvetciaSopr_Quest"
+		briefDiz="Contact the rebels of Toskana."
+		fullDiz="I must meet the rebels of Toskana and learn all they have to tell. With any luck, they have information that will help us to defeat Axel."
+		isMainQuest="1">
+		<Map
+			name="r2m1" />
+
+		<Map
+			name="r2m2" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_MerIsThief_Quest"
+		briefDiz="Talk to Mayor"
+		isMainQuest="1">
+		<Map
+			name="r1m3"
+			targetObjName="Minin" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_MoveCanistraToMinin_Quest"
+		briefDiz="Deliver the canister of oil to Minin."
+		fullDiz="This canister is a symbol of the fact that that the oil mines is working again. I must deliver it to the town."
+		isMainQuest="1">
+		<Map
+			name="r1m3"
+			targetObjName="Minin" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_MoveFreelancersToOilMine_Quest"
+		briefDiz="Bring hired workers to the oil mine."
+		fullDiz="As soon as I bring these guys to the oil mine, they will begin to work. "
+		isMainQuest="1">
+		<Map
+			name="r1m3"
+			targetObjName="TheBanditOilMine" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_MoveInParis_Quest"
+		briefDiz="Find the tunnel"
+		fullDiz="I must find the entrance to the undersea tunnel that leads to the Oracle's land."
+		isMainQuest="1">
+		<Map
+			name="r2m1"
+			targetObjName="ParisLocation" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_MoveLeaderInGelvetcia_Quest"
+		briefDiz="Deliver the rebels’ leader to Helvetia."
+		fullDiz="I hope the information he has really worth all the sacrifices."
+		isMainQuest="1">
+		<Map
+			name="r2m1"
+			targetObjName="TheGelvetcia" />
+
+		<Map
+			name="r2m2"
+			targetObjName="ToR2M1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_MoveToMer_Quest"
+		briefDiz="Follow the mayor."
+		isMainQuest="1">
+		<Map
+			name="r1m3"
+			targetObjName="MerCar_vehicle_0" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_MoveToMinin_Quest"
+		briefDiz="Go to Minin."
+		isMainQuest="1">
+		<Map
+			name="r1m2" />
+
+		<Map
+			name="r1m3"
+			targetObjName="Minin" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_MoveToPesht_Quest"
+		briefDiz="Ask road to Minin in Pest "
+		isMainQuest="1">
+		<Map
+			name="r1m2"
+			targetObjName="ToR1M3" />
+
+		<Map
+			name="r1m3"
+			targetObjName="Pesht" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_MoveWithGeneralToGelvetcia_Quest"
+		briefDiz="Deliver CD’s general to Helvetia."
+		fullDiz="That is the last piece of the puzzle. We will make the General tell us about Axel’s weak point."
+		isMainQuest="1">
+		<Map
+			name="r2m1"
+			targetObjName="TheGelvetcia" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_MoveWorkersToOilMine_Quest"
+		briefDiz="Deliver workers to the oil mine."
+		fullDiz="Now the workers are masters of their own fate.  And they gladly agreed to go working on the oil mine. I wonder why?"
+		isMainQuest="1">
+		<Map
+			name="r1m3"
+			targetObjName="TheBanditOilMine" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_OpenTunel_Quest"
+		briefDiz="Open the gate with key"
+		fullDiz="I have the key to the tunnel’s gate. I only have to open it."
+		isMainQuest="0">
+		<Map
+			name="r1m3"
+			targetObjName="ToR2M1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_PatrulSideSNG_Quest"
+		briefDiz="Patrol the border."
+		fullDiz="My mission is to patrol the border in case the enemy appears."
+		isMainQuest="1">
+		<Map
+			name="r2m1"
+			targetObjName="SideLine" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_PayWorkersMoney_Quest"
+		briefDiz="Hire workers."
+		fullDiz="Guess I should try to find workers somewhere else. "
+		isMainQuest="1">
+		<Map
+			name="r1m3"
+			targetObjName="TheVozleMinin" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_PunishBandits_Quest"
+		briefDiz="Teach brigands a lesson"
+		fullDiz="The locals made up their minds to scare the raiders away. Maybe I should help them."
+		isMainQuest="0">
+		<Map
+			name="r1m1"
+			targetObjName="RevolutionTimeEndLoc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_ReturnToBen_Quest"
+		briefDiz="Return to Ben."
+		fullDiz="That trail was cold. I hope Ben will come up with another plan. "
+		isMainQuest="1">
+		<Map
+			name="r1m2"
+			targetObjName="TheBen_House" />
+
+		<Map
+			name="r1m3"
+			targetObjName="ToR1M2" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_ReturnToTuzzAfterCaravan_Quest"
+		briefDiz="Follow caravan to Touse."
+		isMainQuest="1">
+		<Map
+			name="r2m1"
+			targetObjName="KARAVANvvt_vehicle_0" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_ReturnTuzzAfterTunel_Quest"
+		briefDiz="Return to Touse"
+		fullDiz="It’s time to return to Touse for a new assignment."
+		isMainQuest="1">
+		<Map
+			name="r2m1"
+			targetObjName="TheTuzz" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_ReturnTuzz_Quest"
+		briefDiz="Return to Touse"
+		fullDiz="It’s time to return to Touse."
+		isMainQuest="1">
+		<Map
+			name="r2m1"
+			targetObjName="TheTuzz" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_ReturntoMerOfMinin_Quest"
+		briefDiz="Report to the mayor"
+		isMainQuest="1">
+		<Map
+			name="r1m3"
+			targetObjName="Minin" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_RideAcrossBase_Quest"
+		briefDiz="Try to cross the chasm somewhere else."
+		fullDiz="I have to cross that chasm. There are two bridges. One is the town Pest, another one is at the bandits’ territory. "
+		isMainQuest="1">
+		<Map
+			name="r1m3"
+			targetObjName="BaseGuardian_enter" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_SecondVillage_Quest"
+		briefDiz="Follow caravan to its destination."
+		isMainQuest="1">
+		<Map
+			name="r2m1"
+			targetObjName="KARAVANvvt_vehicle_0" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_SerchCarTunel_Quest"
+		briefDiz="Follow the car."
+		fullDiz="If I follow that car to its destination, I will probably find an occasion to steal the key."
+		isMainQuest="0">
+		<Map
+			name="r1m3"
+			targetObjName="Pioneer_vehicle_0" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_SinFather_Quest"
+		briefDiz="Avenge the father’s death"
+		fullDiz="Wherever the murderer is hiding, I’ll find and punish hum! "
+		isMainQuest="1">
+		<Map
+			name="r1m1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_SkladMidgardBen_Quest"
+		briefDiz="Talk to the Midgard's Steward."
+		isMainQuest="1">
+		<Map
+			name="r1m2"
+			targetObjName="Midragd" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_TakeGeneralOfBandits_Quest"
+		briefDiz="Capture CD’s general."
+		fullDiz="Accompanied by several elite CIT’s warriors, I must capture Crimson Dawn’s general. "
+		isMainQuest="1">
+		<Map
+			name="r2m1"
+			targetObjName="BossARLocation" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_TalkAboutAksel_Quest"
+		briefDiz="Ask about Axel."
+		fullDiz="I must ask the locals about Axel. Especially where I can find him."
+		isMainQuest="1">
+		<Map
+			name="r2m1"
+			coordinate="6004.000 277.000 4372.000" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_TalkAboutLisa_Quest"
+		briefDiz="Ask About Alice"
+		fullDiz="Everybody knows Alice. I only need to ask and I will find her."
+		isMainQuest="1">
+		<Map
+			name="r2m1"
+			coordinate="6004.000 277.000 4372.000" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_TalkAboutVrataInMinin_Quest"
+		briefDiz="Find the Sea gate"
+		fullDiz="Someone in Minin can know about the Sea Gate."
+		isMainQuest="1">
+		<Map
+			name="r1m2"
+			targetObjName="ToR1M3" />
+
+		<Map
+			name="r1m3"
+			targetObjName="Minin" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_TalkMerAboutOilMineAttack_Quest"
+		briefDiz="Talk to the mayor."
+		isMainQuest="1">
+		<Map
+			name="r1m3"
+			targetObjName="Minin" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_TrueAboutMer_Quest"
+		briefDiz="Report the mayor crimes."
+		isMainQuest="1">
+		<Map
+			name="r1m3"
+			targetObjName="Minin" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_TunelInAsgard_Quest"
+		briefDiz="Ask in Asgard about the tunnel."
+		fullDiz="Someone there must know how and where one may cross mountains."
+		isMainQuest="1">
+		<Map
+			name="r1m2"
+			targetObjName="ToR1M3" />
+
+		<Map
+			name="r1m3"
+			targetObjName="Asgard" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_Village1_Quest"
+		briefDiz="Go to the first village"
+		isMainQuest="0">
+		<Map
+			name="r1m1"
+			targetObjName="TheOilVillage" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_Village2_Quest"
+		briefDiz="Go to the second village "
+		isMainQuest="0">
+		<Map
+			name="r1m1"
+			targetObjName="TheContraVillage" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_Village3_Quest"
+		briefDiz="Go to the last village "
+		isMainQuest="0">
+		<Map
+			name="r1m1"
+			targetObjName="TheFreedom" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="d_WinLisaInBattle_Quest"
+		briefDiz="Win over Alice. "
+		fullDiz="She asked for it!"
+		isMainQuest="1">
+		<Map
+			name="r2m1"
+			targetObjName="LisaFindLocation" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="q_FH1"
+		briefDiz="Ask in the local settlements."
+		isMainQuest="0">
+		<Map
+			name="r1m4" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="q_FH2"
+		briefDiz="Return Philemon home. "
+		isMainQuest="0">
+		<Map
+			name="r1m4"
+			targetObjName="FVPerch_enter" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="q_FindHusbent"
+		briefDiz="Find the missing husband."
+		fullDiz="His name is Philemon. Please bring him back! I love him so much."
+		isMainQuest="0" />
+
+	<QuestInfo
+		questName="q_PWS1"
+		briefDiz="Go to the field."
+		isMainQuest="0" >
+		<Map
+			name="r3m1"
+			targetObjName="ToR3M2" />
+
+		<Map
+			name="r3m2"
+			targetObjName="SignPlace_loc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="q_PWS2"
+		briefDiz="Report the signs to Midgard "
+		isMainQuest="0" >
+		<Map
+			name="r1m2"
+			targetObjName="Midragd" />
+
+		<Map
+			name="r1m3"
+			targetObjName="ToR1M2" />
+
+		<Map
+			name="r1m4"
+			targetObjName="ToR1M3" />
+
+		<Map
+			name="r2m1"
+			targetObjName="ToR1M3" />
+
+		<Map
+			name="r2m2"
+			targetObjName="ToR2M1" />
+
+		<Map
+			name="r3m1" />
+
+		<Map
+			name="r3m2"
+			targetObjName="ToR3M1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="q_PlaceWithSign"
+		briefDiz="Signs on the field."
+		fullDiz="The druid mentioned strange signs. Let’s take a closer look. "
+		isMainQuest="0" />
+
+	<QuestInfo
+		questName="q_VisitDruid"
+		briefDiz="Go to see the druid. "
+		fullDiz="The hermit druid is living alone far from friends. I should pay him a visit to say hello."
+		isMainQuest="0">
+		<Map
+			name="r3m1"
+			targetObjName="ToR3M2" />
+
+		<Map
+			name="r3m2"
+			targetObjName="AloneDruidBuilding" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r1m1_Botanik_Quest"
+		briefDiz="Bring some medicine and some wood to the botanist"
+		fullDiz="I can buy some wood in the town, but I wonder, where may I find any medicine?"
+		isMainQuest="0">
+		<Map
+			name="r1m1"
+			targetObjName="BotanicHouse" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r1m1_FindBotanik_Quest"
+		briefDiz="Find the botanist"
+		fullDiz="Old soldier told something about the botanist. Probably I have to find him."
+		isMainQuest="0">
+		<Map
+			name="r1m1"
+			targetObjName="BotanicHouse" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r1m1_Hospital_Quest"
+		briefDiz="Find Ancient Hospital"
+		fullDiz="The hospital is the right place to look for medicine."
+		isMainQuest="0">
+		<Map
+			name="r1m1"
+			targetObjName="Hospital_Loc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r1m2_FindHmirInMidgard"
+		briefDiz="Hurry to Midgard."
+		fullDiz="I must find the strange man at the Midgard."
+		isMainQuest="1">
+		<Map
+			name="r1m2"
+			targetObjName="Midragd" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r1m2_Glagiators_Quest"
+		briefDiz="Win over the Gladiator."
+		isMainQuest="1">
+		<Map
+			name="r1m2"
+			targetObjName="Kolizey_location" />
+
+		<Map
+			name="r1m3" />
+
+		<Map
+			name="r1m4"
+			targetObjName="ToR1M3" />
+
+		<Map
+			name="r2m1" />
+
+		<Map
+			name="r3m1" />
+
+		<Map
+			name="r3m2"
+			targetObjName="ToR3M1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r1m2_MovemineralToMidgard_Quest"
+		briefDiz="Give materials and 15'000 coins to the master."
+		isMainQuest="1">
+		<Map
+			name="r1m2"
+			targetObjName="Midragd" />
+
+		<Map
+			name="r1m3"
+			targetObjName="ToR1M3" />
+
+		<Map
+			name="r1m4" />
+
+		<Map
+			name="r2m1" />
+
+		<Map
+			name="r3m1" />
+
+		<Map
+			name="r3m2"
+			targetObjName="ToR3M1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r1m2_RedkiyMineral_Quest"
+		briefDiz="Ask about the rare alloy."
+		isMainQuest="1">
+		<Map
+			name="r1m2"
+			targetObjName="TheTickets" />
+
+		<Map
+			name="r1m3" />
+
+		<Map
+			name="r1m4"
+			targetObjName="ToR1M3" />
+
+		<Map
+			name="r2m1" />
+
+		<Map
+			name="r3m1" />
+
+		<Map
+			name="r3m2"
+			targetObjName="ToR3M1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r1m2_TW_BanAboutAlien"
+		briefDiz="Talk to Ben about the aliens."
+		fullDiz="Ben knows a lot of stories about Ivan’s adventures. Hopefully one of these stories will show me the way."
+		isMainQuest="1">
+		<Map
+			name="r1m1"
+			targetObjName="ToR1M2" />
+
+		<Map
+			name="r1m2"
+			targetObjName="TheBen_House" />
+
+		<Map
+			name="r4m1"
+			targetObjName="ToR1M1" />
+
+		<Map
+			name="r4m2"
+			targetObjName="ToR4M1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r1m2_TalkAboutRedkiyMineral_Quest"
+		briefDiz="Go to Midgard."
+		isMainQuest="1">
+		<Map
+			name="r1m2"
+			targetObjName="Midragd" />
+
+		<Map
+			name="r1m3"
+			targetObjName="ToR1M2" />
+
+		<Map
+			name="r1m4"
+			targetObjName="ToR1M3" />
+
+		<Map
+			name="r2m1"
+			targetObjName="ToR1M3" />
+
+		<Map
+			name="r3m1" />
+
+		<Map
+			name="r3m2"
+			targetObjName="ToR3M1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r1m3_ArchHelp"
+		briefDiz="Deliver the old man."
+		fullDiz="The old man asked to bring him to the ancient ruins. I think he is going to die there. Creepy. "
+		isMainQuest="0">
+		<Map
+			name="r1m3"
+			targetObjName="TheLibrary" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r1m3_BonnyAndKlideQuest"
+		briefDiz="Help Conny and Blyde."
+		fullDiz="A strange couple asked to bring them home. They offer a lot of money for such a simple task."
+		isMainQuest="0">
+		<Map
+			name="r1m3"
+			targetObjName="TheTrap" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r1m3_CrazyManQuest"
+		briefDiz="Find the Entertainment Center."
+		fullDiz="According to the boy’s advertisements, the Entertainment Center is just a paradise. Let’s check it out."
+		isMainQuest="0">
+		<Map
+			name="r1m3"
+			targetObjName="TheCircus" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r1m3_DestroyOracle"
+		briefDiz="Destroy the Oracle."
+		fullDiz="The Oracle is completely mad. He plans to destroy everything, starting with me. I cannot allow this to happen!"
+		isMainQuest="1">
+		<Map
+			name="r1m3" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r1m3_DestroyRadiationSource"
+		briefDiz="Eliminate the jamming station."
+		fullDiz="Power station at the Seil is a source of powerful noise. It jams the Oracle’s signals and he cannot get control over the orbital weapon. "
+		isMainQuest="1">
+		<Map
+			name="r1m3"
+			targetObjName="ToR2M1" />
+
+		<Map
+			name="r2m1"
+			targetObjName="TheSel" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r1m3_FightWithThief"
+		briefDiz="Take the disk away from the thief."
+		fullDiz="That thief doesn’t know who he up against is yet. The disk will be mine."
+		isMainQuest="1">
+		<Map
+			name="r1m3"
+			targetObjName="TheBase" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r1m3_FindHmirinSever"
+		briefDiz="Find the way north."
+		fullDiz="I must find the way north. People of Minin know how to get there. "
+		isMainQuest="1">
+		<Map
+			name="r1m2"
+			targetObjName="ToR1M3" />
+
+		<Map
+			name="r1m3"
+			targetObjName="Minin" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r1m3_FindManyWorkers_Quest"
+		briefDiz="Find somebody to work on the oil mine."
+		fullDiz="Liberating the oil mine was not enough to make it work. Now I must find somebody to work on it."
+		isMainQuest="0">
+		<Map
+			name="r1m3" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r1m3_FindThiefFromFatherHouse"
+		briefDiz="Find the thief."
+		fullDiz="Everything is upside down at my father’s house. Somebody must have seen what had happened. I’ll ask in the Bar."
+		isMainQuest="1">
+		<Map
+			name="r1m3"
+			targetObjName="Minin" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r1m3_FindVrata_KnowPlace"
+		briefDiz="Find out the Gates whereabouts."
+		isMainQuest="1">
+		<Map
+			name="r1m3"
+			targetObjName="ToR1M4" />
+
+		<Map
+			name="r1m4" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r1m3_LisaWithOberegAndDisk_Quest"
+		briefDiz="Find Alice in the Librium."
+		fullDiz="Alice has stolen the disks and left to the west. I must catch her at all costs!"
+		isMainQuest="1">
+		<Map
+			name="r1m3" />
+
+		<Map
+			name="r2m1" />
+
+		<Map
+			name="r2m2" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r1m3_MoveToOraculAfterThief"
+		briefDiz="Deliver second disk to the Oracle."
+		fullDiz="Using it the Oracle will decipher Ivan Go’s diary."
+		isMainQuest="1">
+		<Map
+			name="r1m3"
+			targetObjName="ToR1M4" />
+
+		<Map
+			name="r1m4"
+			targetObjName="ToR3M1" />
+
+		<Map
+			name="r3m1"
+			targetObjName="ToR3M2" />
+
+		<Map
+			name="r3m2"
+			targetObjName="Oracle_loc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r1m3_OldTownOutsiderCar_Quest"
+		briefDiz="Catch the runner at the abandoned town."
+		fullDiz="The bandit is hiding somewhere at the abandoned town. The villagers will pay me if I kill him."
+		isMainQuest="0">
+		<Map
+			name="r1m3"
+			targetObjName="OldTownOutsiderCar_vehicle_0" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r1m3_TW_OralceAboutAlien"
+		briefDiz="Talk to the Oracle."
+		fullDiz="Only the Oracle may possess the weapon powerful enough to destroy the source of the contamination."
+		isMainQuest="1">
+		<Map
+			name="r1m1"
+			targetObjName="ToR1M3" />
+
+		<Map
+			name="r1m3"
+			targetObjName="ToR1M4" />
+
+		<Map
+			name="r4m1"
+			targetObjName="ToR1M1" />
+
+		<Map
+			name="r4m2"
+			targetObjName="ToR4M1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r1m3_TalkWithThiefFromFatherHouse"
+		briefDiz="Follow the Thief."
+		fullDiz="The thief have nowhere to go, but to the Area 51. I’ll get him there!"
+		isMainQuest="1">
+		<Map
+			name="r1m3"
+			targetObjName="TheBase" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r1m3_ToLisaToAsgard"
+		briefDiz="Catch Alice."
+		fullDiz="She left somewhere at the direction of Asgard."
+		isMainQuest="1">
+		<Map
+			name="r1m3"
+			targetObjName="Asgard" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r1m4_FindVrata_GotoToGate"
+		briefDiz="Get to the Gates"
+		isMainQuest="1">
+		<Map
+			name="r1m4"
+			targetObjName="Port_loc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r1m4_OvercomeMirras"
+		briefDiz="Cross the swamp."
+		fullDiz="The way to the Sea Gate lays through the swamp. I must find the way to cross it."
+		isMainQuest="0">
+		<Map
+			name="r1m4"
+			targetObjName="MorassRoad_loc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r1m4_TalkWithOldTraderAboutSecondDisk"
+		briefDiz="Find the dealer"
+		fullDiz="Most certainly he has the second disk! "
+		isMainQuest="1">
+		<Map
+			name="r1m3"
+			targetObjName="ToR1M4" />
+
+		<Map
+			name="r1m4"
+			targetObjName="TheOlme_enter" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r2m1_ArtAntipod_Quest"
+		briefDiz="Talk to Virtuoso."
+		fullDiz="Someone stole a masterpiece from Aesthete. The only man who appreciates that kind of goods is Virtuoso."
+		isMainQuest="0">
+		<Map
+			name="r2m1"
+			targetObjName="TheDoubtful" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r2m1_ArtGulik_Quest"
+		briefDiz="Take the masterpiece from Trickster."
+		fullDiz="Someone by the name of Trickster is the organizer of this theft. I am to catch him and return the masterpiece to its owner."
+		isMainQuest="0">
+		<Map
+			name="r2m1"
+			targetObjName="GulikCar" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r2m1_ArtViva_Quest"
+		briefDiz="Return the masterpiece."
+		fullDiz="To get a reward, I must return the masterpiece to Aesthete. However, there may be someone else to offer a higher price."
+		isMainQuest="0">
+		<Map
+			name="r2m1"
+			targetObjName="TheSel" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r2m1_DeployBloks"
+		briefDiz="Install the jamming device."
+		fullDiz="I am the only one who can stop the madness, happening with the world. I will install the device that will lower the level of contamination. This is my destiny."
+		isMainQuest="1">
+		<Map
+			name="r1m3"
+			targetObjName="OraculEndLoc" />
+
+		<Map
+			name="r2m1"
+			targetObjName="ToR1M3" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r2m1_DestroyAlienShip"
+		briefDiz="Destroy evil invaders."
+		fullDiz="The alien ship was hiding here all the time. They killed many humans in quest for new territories. I must stop them! Hopefully, the destruction of this machine will allow the Oracle to take control over the orbital weapon."
+		isMainQuest="1">
+		<Map
+			name="r2m1"
+			targetObjName="ALIENSLoc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r2m1_KillGodFather_Quest"
+		briefDiz="Obliterate Mafia Boss."
+		fullDiz="The Boss may cause me a lot of trouble, after I had stolen his cargo. I must strike first. "
+		isMainQuest="0">
+		<Map
+			name="r2m1"
+			targetObjName="KINGPIN" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r2m1_KillNarcoticsCaravan_Quest"
+		briefDiz="Get the caravan’s cargo."
+		isMainQuest="0">
+		<Map
+			name="r2m1"
+			targetObjName="CaravanWithNarcotikCars_vehicle_0" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r2m1_ReturnNarcotics_Quest"
+		briefDiz="Return to Trickster with the cargo."
+		isMainQuest="0">
+		<Map
+			name="r2m1"
+			targetObjName="TheGelvetcia" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r2m1_TW_AlienInShip"
+		briefDiz="Talk to the aliens"
+		fullDiz="The aliens must know how to stop that horrible device. They are my last resort. "
+		isMainQuest="1">
+		<Map
+			name="r2m1"
+			targetObjName="ALIENSLoc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r2m1_TW_SellsCivilian"
+		briefDiz="Talk to the Seil people. "
+		fullDiz="The trace leads to Seil. Somewhere around here the alien vessel was seen."
+		isMainQuest="1">
+		<Map
+			name="r1m2"
+			targetObjName="ToR1M3" />
+
+		<Map
+			name="r1m3"
+			targetObjName="ToR2M1" />
+
+		<Map
+			name="r2m1"
+			targetObjName="TheSel" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r2m1_TakeNarcotics_Quest"
+		briefDiz="Capture the cargo."
+		fullDiz="I learned that the caravan with the precious cargo will soon go south almost unguarded. It is a good chance."
+		isMainQuest="0">
+		<Map
+			name="r2m1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r2m2_AferaARSNG"
+		briefDiz="Personate the rebel."
+		fullDiz="I must personate the rebel and misinform the CIT’s agent."
+		isMainQuest="1">
+		<Map
+			name="r2m2"
+			targetObjName="Toskana" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r2m2_AfterAfera"
+		briefDiz="Report to Marezzia."
+		fullDiz="I have to return to Marezzia for a new assignment."
+		isMainQuest="1">
+		<Map
+			name="r2m2"
+			targetObjName="Marezzia" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r2m2_DestroySNGKaravan"
+		briefDiz="Damage CIT baseline."
+		fullDiz="Now I must attack the caravan with CIT supplies. It will definitely lower the enemy morale."
+		isMainQuest="1">
+		<Map
+			name="r2m1" />
+
+		<Map
+			name="r2m2" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r2m2_FightFelix"
+		briefDiz="Win over Felix."
+		fullDiz="That old fox is about to break my cover! I cannot allow this."
+		isMainQuest="1">
+		<Map
+			name="r2m2"
+			targetObjName="Arena" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r2m2_FightLisaToMonastir"
+		briefDiz="Catch Alice."
+		fullDiz="Now that I know, where Alice is, I won’t let her go!"
+		isMainQuest="0">
+		<Map
+			name="r2m2"
+			targetObjName="LisaRunCar_vehicle_0" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r2m2_FightWithAxelInArena_Quest"
+		briefDiz="Fight Axel."
+		fullDiz="The time has come for me to fight with Axel on the arena. Man, I’ve been waiting for this moment for so long."
+		isMainQuest="1">
+		<Map
+			name="r2m2"
+			targetObjName="Arena" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r2m2_FightWithAxelInArena_Quest1"
+		isMainQuest="1">
+		<Map
+			name="r2m2"
+			coordinate="3318.000 280.000 1260.000" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r2m2_FindLisAfterAxelAndFatherDie_Quest"
+		briefDiz="Catch Alice in Seil."
+		fullDiz="So, I was not the only one to be cheated by Alice. Axel is also looking for her. He pointed out her last location to me, somewhere near Seil. I wonder why she went there, she may easily be caught."
+		isMainQuest="1">
+		<Map
+			name="r2m1"
+			targetObjName="TheSel" />
+
+		<Map
+			name="r2m2"
+			targetObjName="ToR2M1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r2m2_FindMrPresident"
+		briefDiz="Arrive at the meeting place."
+		isMainQuest="1">
+		<Map
+			name="r2m2"
+			coordinate="756.000 261.000 3286.000" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r2m2_FindROMinCastle"
+		briefDiz="Go to the Monastery."
+		fullDiz="I need to deliver some wine from the monastery. But I think there’s mire in this assignment than that."
+		isMainQuest="1">
+		<Map
+			name="r2m2"
+			targetObjName="Monastery" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r2m2_FindSNGKaravan"
+		briefDiz="Attack the caravan."
+		isMainQuest="1">
+		<Map
+			name="r2m1"
+			targetObjName="KaravanSNGTill_vehicle_0" />
+
+		<Map
+			name="r2m2"
+			targetObjName="ToR2M1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r2m2_GiveBardakToEnemy"
+		briefDiz="Disorient the enemy."
+		fullDiz="If I destroy several CIT’s vehicles at random, it will make the enemy nervous. "
+		isMainQuest="1">
+		<Map
+			name="r2m2"
+			targetObjName="SNGProviantRiders" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r2m2_GiveBardakToSideVillage"
+		briefDiz="Attack the village."
+		fullDiz="Now it’s time for more serious matters. Attacking the village is a sure way to enrage the enemy."
+		isMainQuest="1">
+		<Map
+			name="r2m2"
+			targetObjName="VillDesLoc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r2m2_GiveDisk2ToOrakul"
+		briefDiz="Deliver the second disk to the Oracle."
+		fullDiz="Finally, with the second disk at my disposal, I can go to Ignott and speak with the Oracle."
+		isMainQuest="1">
+		<Map
+			name="r1m3" />
+
+		<Map
+			name="r1m4" />
+
+		<Map
+			name="r2m1" />
+
+		<Map
+			name="r2m2"
+			targetObjName="ToR2M1" />
+
+		<Map
+			name="r3m1"
+			targetObjName="ToR3M2" />
+
+		<Map
+			name="r3m2"
+			targetObjName="Oracle_loc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r2m2_Head1HunterQuest"
+		briefDiz="Kill the heretic."
+		isMainQuest="0">
+		<Map
+			name="r2m2"
+			targetObjName="ShamanCar1_vehicle_0" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r2m2_Head2HunterQuest"
+		briefDiz="Kill the pagan."
+		isMainQuest="0">
+		<Map
+			name="r2m2"
+			targetObjName="ShamanCar2_vehicle_0" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r2m2_HeadsHunterQuest"
+		briefDiz="Prioress’ assignment."
+		fullDiz="The prioress has a mission for me. I must hunt down and kill the heretic and the pagan."
+		isMainQuest="0">
+		<Map
+			name="r2m2" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r2m2_HelpAllSNGPeople"
+		briefDiz="Save the rebel’s leader"
+		fullDiz="Now I must save the rebel’s leader."
+		isMainQuest="1">
+		<Map
+			name="r2m1"
+			targetObjName="TheGelvetcia" />
+
+		<Map
+			name="r2m2"
+			targetObjName="ToR2M1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r2m2_KillMrPresidentAndOther"
+		briefDiz="Kill the CIT’s leaders."
+		fullDiz="I lured the CIT’s leaders into the trap. Now I must kill them all to end this war. And to get a reward from the hands of Axel."
+		isMainQuest="1">
+		<Map
+			name="r2m2"
+			targetObjName="Leaders" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r2m2_MoveToZeonToAlex"
+		briefDiz="Meet Axel."
+		fullDiz="It finally happened! I am a war hero now and soon I will meet Axel!"
+		isMainQuest="1">
+		<Map
+			name="r2m2"
+			targetObjName="Zeon" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r2m2_OldDvigatel1_Quest"
+		briefDiz="Deliver this piece of junk."
+		fullDiz="Delivering the cargo is an easy job. Not very exciting yet rewarding enough. "
+		isMainQuest="0">
+		<Map
+			name="r2m2"
+			targetObjName="NewVillage" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r2m2_OldDvigatel2_Quest"
+		briefDiz="Return the junk back to Marezzia."
+		fullDiz="It is starting to get interesting. I wonder how many times I am supposed to drag that old machinery back and forth."
+		isMainQuest="0">
+		<Map
+			name="r2m2"
+			targetObjName="Marezzia" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r2m2_ReturnHeadsQuest"
+		briefDiz="Return to the Cloister."
+		isMainQuest="0">
+		<Map
+			name="r2m2"
+			targetObjName="Monastery" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r2m2_ReturnToMarecciaFromCastle"
+		briefDiz="Return to the Marezzia"
+		fullDiz="Surely, a new assignment is waiting for me at the Marezzia."
+		isMainQuest="1">
+		<Map
+			name="r2m2"
+			targetObjName="Marezzia" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r2m2_ReturnToMarecciaFromKaravanSNG"
+		briefDiz="Return to the Marezzia"
+		isMainQuest="1">
+		<Map
+			name="r2m1"
+			targetObjName="ToR2M2" />
+
+		<Map
+			name="r2m2"
+			targetObjName="Marezzia" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r2m2_ReturnToMarecciaFromMrPresident"
+		briefDiz="Report to Marezzia"
+		isMainQuest="1">
+		<Map
+			name="r2m2"
+			coordinate="1829.361 -1.916 3300.456" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r2m2_ReturnToMarecciaFromVillage"
+		briefDiz="Return to the Marezzia"
+		fullDiz="Surely, a new assignment is waiting for me at the Marezzia. I wonder if I am getting any closer to Axel."
+		isMainQuest="1">
+		<Map
+			name="r2m2"
+			targetObjName="Marezzia" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r2m2_ToKillAllSNGPeople"
+		briefDiz="Destroy the rebel’s camp."
+		fullDiz="I am ordered to kill all the rebels. I doubt if I must... it is a really evil deed... "
+		isMainQuest="1">
+		<Map
+			name="r2m2"
+			targetObjName="Lager" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r2m2_ToLisaToMonastir"
+		briefDiz="Ask in Cloister about Alice. "
+		fullDiz="I heard the Cloister nuns know more than they say. And if they are really hiding Alice, she won’t escape this time!"
+		isMainQuest="1">
+		<Map
+			name="r2m2"
+			targetObjName="Monastery" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r2m2_Znaki2Midgard_Quest"
+		briefDiz="Tell in Midgard about the signs"
+		fullDiz="The scientists of Midgard will surely get interested in the mysterious traces that appeared on the field. With any luck I will be rewarded for telling them."
+		isMainQuest="0">
+		<Map
+			name="r1m2"
+			targetObjName="Midragd" />
+
+		<Map
+			name="r1m3"
+			targetObjName="ToR1M2" />
+
+		<Map
+			name="r2m1"
+			targetObjName="ToR1M3" />
+
+		<Map
+			name="r2m2"
+			targetObjName="ToR2M1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r2m2_Znaki2_Quest"
+		briefDiz="Take a look at the field."
+		fullDiz="I think it’s worth looking at the field. I wonder what scared people so much."
+		isMainQuest="0">
+		<Map
+			name="r2m2"
+			targetObjName="ZnakiLoc2" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r3m1_ClearSanctuary"
+		briefDiz="Cleanse the sanctuary."
+		fullDiz="To earn the trust of the druids, I must cleanse their sanctuary from monsters. Weird, I always thought that the monsters don’t exist."
+		isMainQuest="1">
+		<Map
+			name="r1m4"
+			targetObjName="ToR3M1" />
+
+		<Map
+			name="r2m1"
+			targetObjName="ToR3M1" />
+
+		<Map
+			name="r3m1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r3m1_ClearSanctuary_DestroyOut"
+		briefDiz="Block the monsters’ lair exit."
+		isMainQuest="1">
+		<Map
+			name="r3m1"
+			targetObjName="ExitFromDung_loc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r3m1_ClearSanctuary_KillMonster"
+		briefDiz="Destroy the monsters."
+		isMainQuest="1">
+		<Map
+			name="r3m1"
+			targetObjName="NearStoneHendj_loc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r3m1_ClearSanctuary_ReturnDruid"
+		briefDiz="Return to Seth."
+		isMainQuest="1">
+		<Map
+			name="r3m1"
+			targetObjName="Set_enter" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r3m1_ClearSanctuary_ReturnDruid2"
+		briefDiz="Return to Seth."
+		isMainQuest="1">
+		<Map
+			name="r3m1"
+			targetObjName="Set_enter" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r3m1_FindMoreNative"
+		briefDiz="Get in touch with peaceful indigenes."
+		fullDiz="The first people I met there were not friendly at all. I should look for someone more peaceful. "
+		isMainQuest="1">
+		<Map
+			name="r3m1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r3m1_FindNative"
+		briefDiz="Find the locals."
+		fullDiz="Someone here must know the Oracle whereabouts. The only question is where to find him or her."
+		isMainQuest="1">
+		<Map
+			name="r1m4"
+			targetObjName="ToR3M1" />
+
+		<Map
+			name="r3m1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r3m1_FindNative_2"
+		briefDiz="Find the locals."
+		fullDiz="Someone here must know the Oracle whereabouts. The only question is where to find him or her."
+		isMainQuest="1">
+		<Map
+			name="r2m1"
+			targetObjName="ToR3M1" />
+
+		<Map
+			name="r3m1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r3m1_GoToOracle"
+		briefDiz="Go to the Oracle."
+		fullDiz="I know the way to the Oracle now. Soon I’ll meet him."
+		isMainQuest="1">
+		<Map
+			name="r1m4"
+			targetObjName="ToR3M1" />
+
+		<Map
+			name="r2m1"
+			targetObjName="ToR3M1" />
+
+		<Map
+			name="r3m1"
+			targetObjName="ToR3M2" />
+
+		<Map
+			name="r3m2"
+			targetObjName="Oracle_loc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r3m1_KnowAboutUluk"
+		briefDiz="Investigate Uluk’s events."
+		fullDiz="No news was heard from Uluk for some time now. I am to investigate, what had happened there. "
+		isMainQuest="0">
+		<Map
+			name="r3m1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r3m1_KnowAboutUluk_GotoSet"
+		briefDiz="Report to the High Druid."
+		isMainQuest="0">
+		<Map
+			name="r3m1"
+			targetObjName="TheSet" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r3m1_KnowAboutUluk_GotoUluk"
+		briefDiz="Go to Uluk "
+		isMainQuest="0">
+		<Map
+			name="r3m1"
+			targetObjName="TheUluk" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r3m1_LureMainDriud"
+		briefDiz="Ensnare the High Druid."
+		fullDiz="The Children of Iron plan to overthrow the druids. So they need to get rid of their leader. I agreed to lure the High druid out of the Town in exchange for the Oracle whereabouts information."
+		isMainQuest="1">
+		<Map
+			name="r1m4"
+			targetObjName="ToR3M1" />
+
+		<Map
+			name="r2m1"
+			targetObjName="ToR3M1" />
+
+		<Map
+			name="r3m1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r3m1_LureMainDriud_Ambush"
+		briefDiz="Bring the Druid to the ambush."
+		isMainQuest="1">
+		<Map
+			name="r3m1"
+			targetObjName="UlukAmush_loc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r3m1_LureMainDriud_Talk"
+		briefDiz="Talk to the High Druid."
+		isMainQuest="1">
+		<Map
+			name="r3m1"
+			targetObjName="TheSet" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r3m1_LureMainDriud_Uluk"
+		briefDiz="Go to Uluk."
+		isMainQuest="1">
+		<Map
+			name="r3m1"
+			targetObjName="TheUluk" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r3m1_RescueUlukCivil"
+		briefDiz="Save the druids of Uluk."
+		fullDiz="Not all the people of Uluk submitted to the faith of the Children of Iron. I have to help druids to escape. "
+		isMainQuest="0">
+		<Map
+			name="r3m1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r3m1_RescueUlukCivil_GotoVillage"
+		briefDiz="Go to the hiding place."
+		isMainQuest="0">
+		<Map
+			name="r3m1"
+			targetObjName="RescueCiv_loc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r3m1_RescueUlukCivil_RepelAttack"
+		briefDiz="Repel the attack."
+		isMainQuest="0">
+		<Map
+			name="r3m1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r3m1_RescueUlukCivil_TakeToSet"
+		briefDiz="Accompany druids to Seth."
+		isMainQuest="0">
+		<Map
+			name="r3m1"
+			targetObjName="TheSet" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r3m1_TalkWithMainDruid"
+		briefDiz="Talk to the High Druid."
+		fullDiz="I was told that the High Druid, residing at Seth knows the Oracle whereabouts."
+		isMainQuest="1">
+		<Map
+			name="r1m4"
+			targetObjName="ToR3M1" />
+
+		<Map
+			name="r2m1"
+			targetObjName="ToR3M1" />
+
+		<Map
+			name="r3m1"
+			targetObjName="TheSet" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r3m2_FindInfoAboutFather"
+		briefDiz="Find information about the father."
+		fullDiz="Now that I have the two disks, I may finally learn the fate of my father. I hope the contents of the diary will lead me to him."
+		isMainQuest="1">
+		<Map
+			name="r1m1"
+			targetObjName="ToR4M1" />
+
+		<Map
+			name="r1m2"
+			targetObjName="ToR1M1" />
+
+		<Map
+			name="r1m3"
+			targetObjName="ToR1M2" />
+
+		<Map
+			name="r1m4"
+			targetObjName="ToR1M3" />
+
+		<Map
+			name="r2m1"
+			targetObjName="ToR1M3" />
+
+		<Map
+			name="r2m2"
+			targetObjName="ToR2M1" />
+
+		<Map
+			name="r3m1"
+			targetObjName="ToR1M4" />
+
+		<Map
+			name="r3m2"
+			targetObjName="ToR3M1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r3m2_MonterHead"
+		briefDiz="Bring the monster’s head."
+		fullDiz="The Oracle Disciples will let me pass if the monster, living by the ruins, will be killed. As a proof, I must bring them its head. "
+		isMainQuest="1">
+		<Map
+			name="r3m1"
+			targetObjName="ToR3M2" />
+
+		<Map
+			name="r3m2"
+			targetObjName="Monster_loc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r3m2_OracleMemory"
+		briefDiz="Help Oracle to regain memory."
+		fullDiz="The Oracle may help me, but first I must help him to regain memory. Then he will know how to read the disk I have."
+		isMainQuest="1">
+		<Map
+			name="r3m1"
+			targetObjName="ToR3M2" />
+
+		<Map
+			name="r3m2" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r3m2_OracleMemory_1"
+		briefDiz="Deliver first repairer."
+		isMainQuest="1">
+		<Map
+			name="r3m1"
+			targetObjName="ToR3M2" />
+
+		<Map
+			name="r3m2"
+			targetObjName="VK1_loc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r3m2_OracleMemory_2"
+		briefDiz="Deliver second repairer."
+		isMainQuest="1">
+		<Map
+			name="r3m1"
+			targetObjName="ToR3M2" />
+
+		<Map
+			name="r3m2"
+			targetObjName="VK2_loc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r3m2_OracleMemory_3"
+		briefDiz="Deliver third repairer."
+		isMainQuest="1">
+		<Map
+			name="r3m1"
+			targetObjName="ToR3M2" />
+
+		<Map
+			name="r3m2"
+			targetObjName="VK3_loc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r3m2_OracleMemory_Return"
+		briefDiz="Return to the Oracle."
+		isMainQuest="1">
+		<Map
+			name="r3m1"
+			targetObjName="ToR3M2" />
+
+		<Map
+			name="r3m2"
+			targetObjName="Oracle_loc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r3m2_OvercomeOracleGuard"
+		briefDiz="Bypass the Oracle Disciples."
+		fullDiz="Some strange fellows are guarding the way to the Oracle. I must pass them by somehow."
+		isMainQuest="1">
+		<Map
+			name="r3m1"
+			targetObjName="ToR3M2" />
+
+		<Map
+			name="r3m2"
+			targetObjName="OracleDefenders_loc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r3m2_ReadyToTravel"
+		briefDiz="Upgrade the truck to cross the desert."
+		fullDiz="My truck needs to be improved if want to cross the desert. I have the blueprints, now I need someone to do the job."
+		isMainQuest="1">
+		<Map
+			name="r1m2" />
+
+		<Map
+			name="r1m3" />
+
+		<Map
+			name="r1m4" />
+
+		<Map
+			name="r2m1" />
+
+		<Map
+			name="r3m1" />
+
+		<Map
+			name="r3m2" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r3m2_RevengeDestroyVillage"
+		briefDiz="Avenge the village destruction."
+		fullDiz="Now that I have the two disks, I can finally decipher Ivan Go’s diary. I hope its contents will help me to find out who has destroyed my village and how to find them!"
+		isMainQuest="1">
+		<Map
+			name="r1m1"
+			targetObjName="ToR4M1" />
+
+		<Map
+			name="r1m2"
+			targetObjName="ToR1M1" />
+
+		<Map
+			name="r1m3"
+			targetObjName="ToR1M2" />
+
+		<Map
+			name="r1m4"
+			targetObjName="ToR1M3" />
+
+		<Map
+			name="r2m1"
+			targetObjName="ToR1M3" />
+
+		<Map
+			name="r3m1"
+			targetObjName="ToR2M1" />
+
+		<Map
+			name="r3m2"
+			targetObjName="ToR3M1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r3m2_RideToFatherRoomAfterOracul"
+		briefDiz="Return to the father’s house."
+		fullDiz="The second disk may be hidden at my father’s house. Probably, I haven’t noticed it first time."
+		isMainQuest="1">
+		<Map
+			name="r1m3"
+			targetObjName="HouseLoc" />
+
+		<Map
+			name="r1m4"
+			targetObjName="ToR1M3" />
+
+		<Map
+			name="r2m1"
+			targetObjName="ToR1M3" />
+
+		<Map
+			name="r2m2"
+			targetObjName="ToR2M1" />
+
+		<Map
+			name="r3m1"
+			targetObjName="ToR1M4" />
+
+		<Map
+			name="r3m2"
+			targetObjName="ToR3M1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r3m2_TalkWithBenAboutCarAfterOracul"
+		briefDiz="Talk to Ben about the disk."
+		fullDiz="Ben Throttle, the famous Explorer may know where to find the second disk. "
+		isMainQuest="1">
+		<Map
+			name="r1m2"
+			targetObjName="TheBen_House" />
+
+		<Map
+			name="r1m3"
+			targetObjName="ToR1M2" />
+
+		<Map
+			name="r1m4"
+			targetObjName="ToR1M3" />
+
+		<Map
+			name="r2m1"
+			targetObjName="ToR1M3" />
+
+		<Map
+			name="r2m2"
+			targetObjName="ToR2M1" />
+
+		<Map
+			name="r3m1"
+			targetObjName="ToR2M1" />
+
+		<Map
+			name="r3m2"
+			targetObjName="ToR3M1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r3m2_TalkWithLisa"
+		briefDiz="Talk to Alice"
+		fullDiz="The Oracle claims that Alice knows more than she says. Anyway I must return to her and ask about the second disk."
+		isMainQuest="1">
+		<Map
+			name="r2m1"
+			targetObjName="ToR3M1" />
+
+		<Map
+			name="r3m1"
+			targetObjName="TheRazboynik" />
+
+		<Map
+			name="r3m2"
+			targetObjName="ToR3M1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r3m2_TwoMagicThing"
+		briefDiz="Bring Oracle two artifacts."
+		fullDiz="The Oracle will only talk to me if I bring him any two artifacts from the Town of the Dead. "
+		isMainQuest="1">
+		<Map
+			name="r3m2" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r3m2_TwoMagicThing_Factory"
+		briefDiz="Go to the Town of the Dead."
+		isMainQuest="1">
+		<Map
+			name="r3m1"
+			targetObjName="ToR3M2" />
+
+		<Map
+			name="r3m2"
+			targetObjName="Factory_loc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r3m2_TwoMagicThing_FindThing"
+		briefDiz="Find first artifact."
+		isMainQuest="1">
+		<Map
+			name="r3m1"
+			targetObjName="ToR3M2" />
+
+		<Map
+			name="r3m2" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r3m2_TwoMagicThing_FindThing_2"
+		briefDiz="Find second artifact."
+		isMainQuest="1">
+		<Map
+			name="r3m1"
+			targetObjName="ToR3M2" />
+
+		<Map
+			name="r3m2" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r3m2_TwoMagicThing_Return"
+		briefDiz="Return to the Oracle."
+		isMainQuest="1">
+		<Map
+			name="r3m1"
+			targetObjName="ToR3M2" />
+
+		<Map
+			name="r3m2"
+			targetObjName="Oracle_loc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r4m1_FPR_MeetWithOldMan"
+		briefDiz="Meet the Bukhara's people."
+		isMainQuest="1">
+		<Map
+			name="r4m1"
+			targetObjName="Buhara_loc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r4m1_FRP_GotoKef"
+		briefDiz="Go to Kef."
+		isMainQuest="1">
+		<Map
+			name="r4m1"
+			targetObjName="TheKef" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r4m1_FRP_HelpKef"
+		briefDiz="Supply Kef with the oil. "
+		isMainQuest="0">
+		<Map
+			name="r4m1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r4m1_FindMilitaryBase"
+		briefDiz="Find bandits’ lair."
+		fullDiz="I only know the approximate location of the lair. But I will find it anyway."
+		isMainQuest="1">
+		<Map
+			name="r1m1"
+			targetObjName="ToR4M1" />
+
+		<Map
+			name="r1m2"
+			targetObjName="ToR1M1" />
+
+		<Map
+			name="r1m3"
+			targetObjName="ToR1M2" />
+
+		<Map
+			name="r4m1"
+			targetObjName="ToR4M2" />
+
+		<Map
+			name="r4m2" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r4m1_FindNative"
+		briefDiz="Get in touch with the locals."
+		fullDiz="First of all I must find someone to show me the way. I only hope people do live here..."
+		isMainQuest="1">
+		<Map
+			name="r1m1"
+			targetObjName="ToR4M1" />
+
+		<Map
+			name="r4m1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r4m1_FindResponsiblePeople"
+		briefDiz="Find sane people."
+		fullDiz="Really strange people live here. I must find someone saner to have my questions answered. "
+		isMainQuest="1">
+		<Map
+			name="r1m1"
+			targetObjName="ToR4M1" />
+
+		<Map
+			name="r4m1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r4m1_GotoAivenGo"
+		briefDiz="Follow Ivan Go."
+		fullDiz="Ivan went this way. I only know the direction. But I will find him, of what has left of him..."
+		isMainQuest="1">
+		<Map
+			name="r1m1"
+			targetObjName="ToR4M1" />
+
+		<Map
+			name="r1m2"
+			targetObjName="ToR1M2" />
+
+		<Map
+			name="r1m3"
+			targetObjName="ToR1M2" />
+
+		<Map
+			name="r4m1"
+			targetObjName="ToR4M2" />
+
+		<Map
+			name="r4m2" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r4m1_KNO_BringOil"
+		briefDiz="Deliver oil to Kef."
+		isMainQuest="1">
+		<Map
+			name="r4m1"
+			targetObjName="TheKef" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r4m1_KNO_FindSpecialist"
+		briefDiz="Catch up with the specialist."
+		isMainQuest="1">
+		<Map
+			name="r4m1"
+			targetObjName="LostEngineer_loc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r4m1_KNO_GotoOiler"
+		briefDiz="Go to the oil field."
+		isMainQuest="1">
+		<Map
+			name="r4m1"
+			targetObjName="Oil_loc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r4m1_KNO_ReportToKef"
+		briefDiz="Report failure in Kef"
+		isMainQuest="1">
+		<Map
+			name="r4m1"
+			targetObjName="TheKef" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r4m1_Kef_NeedOil"
+		briefDiz="Kef needs oil."
+		fullDiz="People of Kef are short of oil. Without it, the machines won’t work and the vehicles will not be able to patrol and protect citizens."
+		isMainQuest="1">
+		<Map
+			name="r1m1"
+			targetObjName="ToR4M1" />
+
+		<Map
+			name="r4m1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r4m1_RBC_DefendCountry"
+		briefDiz="Protect the village."
+		isMainQuest="1" />
+
+	<QuestInfo
+		questName="r4m1_RBC_Evacuate"
+		briefDiz="Evacuate the villagers."
+		isMainQuest="1" >		
+		<Map
+			name="r4m1"
+			targetObjName="Buharers_vehicle_0" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r4m1_RBC_GotoPort"
+		briefDiz="Find the port."
+		isMainQuest="1">
+		<Map
+			name="r4m1"
+			targetObjName="Port_loc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r4m1_RescueBuharsCivilian"
+		briefDiz="Save the Bukhara people."
+		fullDiz="I hope, when I help these people, they will tell me where I can find what I need. Moreover, I cannot let them die just like that! "
+		isMainQuest="1">
+		<Map
+			name="r1m1"
+			targetObjName="ToR4M1" />
+
+		<Map
+			name="r4m1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r4m2_DestroyPlate"
+		briefDiz="Destroy the Source of contamination."
+		fullDiz="The alien ship is the source of contamination that almost wiped out the life on our planet. It must be destroyed for the sake of survivors."
+		isMainQuest="1">
+		<Map
+			name="r1m1" />
+
+		<Map
+			name="r1m2" />
+
+		<Map
+			name="r1m3" />
+
+		<Map
+			name="r1m4" />
+
+		<Map
+			name="r2m1" />
+
+		<Map
+			name="r2m2" />
+
+		<Map
+			name="r3m1" />
+
+		<Map
+			name="r3m2" />
+
+		<Map
+			name="r4m1" />
+
+		<Map
+			name="r4m2" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r4m2_FightWithCrazy"
+		briefDiz="Fight with the madmen."
+		fullDiz="The path is blocked by the military base full of aggressive people. Battle is the only way to go."
+		isMainQuest="1">
+		<Map
+			name="r4m1"
+			targetObjName="ToR4M2" />
+
+		<Map
+			name="r4m2"
+			targetObjName="MilitaryBase_loc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r4m2_InvestigationPlate"
+		briefDiz="Examine the spacecraft."
+		fullDiz="The Scientist mentioned alien spacecraft. I have to go and see it with my own eyes!"
+		isMainQuest="1">
+		<Map
+			name="r4m1"
+			targetObjName="ToR4M2" />
+
+		<Map
+			name="r4m2"
+			targetObjName="PlateRadiation_loc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r4m2_NeutralizePlate"
+		briefDiz="Neutralize the Source."
+		fullDiz="The alien ship is the source of contamination that almost wiped out the life on our planet. It must be stopped for the sake of the survivors. There must be a peaceful solution of this matter."
+		isMainQuest="1">
+		<Map
+			name="r1m1" />
+
+		<Map
+			name="r1m2" />
+
+		<Map
+			name="r1m3" />
+
+		<Map
+			name="r1m4" />
+
+		<Map
+			name="r2m1" />
+
+		<Map
+			name="r2m2" />
+
+		<Map
+			name="r3m1" />
+
+		<Map
+			name="r3m2" />
+
+		<Map
+			name="r4m1" />
+
+		<Map
+			name="r4m2" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r4m2_TalkWithScientific"
+		briefDiz="Talk to the Scientist."
+		fullDiz="These people saved my life. I think their leader wants something from me in return."
+		isMainQuest="1">
+		<Map
+			name="r4m1"
+			targetObjName="ToR4M2" />
+
+		<Map
+			name="r4m2"
+			targetObjName="ScientiferVillage" />
+	</QuestInfo>
+</QuestInfoResource>

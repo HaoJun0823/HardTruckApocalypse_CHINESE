@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?><!-- edited with XML Spy v4.2 U (http://www.xmlspy.com) by Morgoth (Targem) -->
+<resource><!--Default buttons-->
+	<string
+		id="Belong_1100"
+		value="Player group" />
+
+	<string
+		id="Belong_1100_abb"
+		value="Ally" />
+
+	<string
+		id="Belong_1105"
+		value="Bandits" />
+
+	<string
+		id="Belong_1105_abb"
+		value="Bandit" />
+
+	<string
+		id="Belong_1105_diz"
+		value="There is nothing sacred for these vagrant bandits. They can attack any victim whether it be lone traveler or armed caravan." />
+
+	<string
+		id="Belong_1106"
+		value="Freelancers" />
+
+	<string
+		id="Belong_1106_abb"
+		value="Freelancer" />
+
+	<string
+		id="Belong_1106_diz"
+		value="This secret union includes the most dangerous fighters of the civilization. They fight for money and observe code of honor." />
+
+	<string
+		id="Belong_1107"
+		value="Adventurers" />
+
+	<string
+		id="Belong_1107_abb"
+		value="Adventurer" />
+
+	<string
+		id="Belong_1107_diz"
+		value="They drive all over the world and search for jollies as if life was not dangerous enough. During the sudden battle they can join either attackers or defenders." />
+
+	<string
+		id="Belong_1108"
+		value="Explorers" />
+
+	<string
+		id="Belong_1108_abb"
+		value="Explorer" />
+
+	<string
+		id="Belong_1108_diz"
+		value="In these latter days there are very little of them left but if you succeed to meet Explorer you can count on a cheerful conversation and help in any trouble." />
+
+	<string
+		id="Belong_1109"
+		value="Bureaucrats" />
+
+	<string
+		id="Belong_1109_abb"
+		value="Bureaucrat" />
+
+	<string
+		id="Belong_1109_diz"
+		value="Bureaucrats control the whole legal banditism, trade and gambling in the region. They inhere all evil that can only be imagined." />
+
+	<string
+		id="Belong_1110"
+		value="Grizzly" />
+
+	<string
+		id="Belong_1110_abb"
+		value="Grizzly" />
+
+	<string
+		id="Belong_1110_diz"
+		value="Small reservations of indigenous inhabitants of America. Tobacco trade and home-made souvenirs are their main forms of activities." />
+
+	<string
+		id="Belong_1111"
+		value="Merchants alliance" />
+
+	<string
+		id="Belong_1111_abb"
+		value="Merchants alliance" />
+
+	<string
+		id="Belong_1111_diz"
+		value="Foes call them Secret Alliance for some offences of the past and for relations with various gangs and freelancers. With reason is believed that Alliance fence and is not ashamed of smuggled goods trade." />
+
+	<string
+		id="Belong_1112"
+		value="World order" />
+
+	<string
+		id="Belong_1112_abb"
+		value="World order" />
+
+	<string
+		id="Belong_1112_diz"
+		value="Small but very ambitious group propelled by a good idea of civilization renaissance. Desire to reach the sacred goal is the only excuse of their not-always-legal actions." />
+
+	<string
+		id="Belong_1113"
+		value="Farmers" />
+
+	<string
+		id="Belong_1113_abb"
+		value="Farmer" />
+
+	<string
+		id="Belong_1113_diz"
+		value="Farmers work on the Earth as their ancestors in the past. Food is always required and as there is nothing more to take from them they peacefully live in the dangerous world." />
+
+	<string
+		id="Belong_1114"
+		value="Children of the Earth" />
+
+	<string
+		id="Belong_1114_abb"
+		value="Children of the Earth" />
+
+	<string
+		id="Belong_1114_diz"
+		value="The dwellers of the lost cities live in jungle of Le Canada. They have lost relations with the rest of the world not because of the Great River but because their interests is in the area of religious rather than material." />
+
+	<string
+		id="Belong_1115"
+		value="Fallen" />
+
+	<string
+		id="Belong_1115_abb"
+		value="Fallen" />
+
+	<string
+		id="Belong_1115_diz"
+		value="Mechanic monsters, known as robots, destroy the human settlements. That is why they are forced to live in small communities and constantly hide and tremble for their lives." />
+
+	<string
+		id="Belong_1116"
+		value="Lost" />
+
+	<string
+		id="Belong_1116_abb"
+		value="Lost" />
+
+	<string
+		id="Belong_1116_diz"
+		value="Group of people built a small village near the rusty flying machine. Their behavior is far more strange than that of most dwellers of La Canada jungle." />
+
+	<string
+		id="Belong_1117"
+		value="Technicians" />
+
+	<string
+		id="Belong_1117_abb"
+		value="Technicians" />
+
+	<string
+		id="Belong_1117_diz"
+		value="This community includes people who choose as a life goal to service the old factory and the mine near it." />
+
+	<string
+		id="Belong_1118"
+		value="Oracle's followers" />
+
+	<string
+		id="Belong_1118_abb"
+		value="Oracle's followers" />
+
+	<string
+		id="Belong_1118_diz"
+		value="They are senseless mechanic creatures. It is unknown how they appeared on the continent and what aims they are trying to reach. One thing is pretty clear - they bring death and destruction." />
+
+	<string
+		id="Belong_1150"
+		value="Children of the Earth" />
+
+	<string
+		id="Belong_1150_abb"
+		value="Children of the Earth" />
+
+	<string
+		id="Belong_1150_diz"
+		value="" />
+
+	<string
+		id="Belong_1151"
+		value="Bureaucrats" />
+
+	<string
+		id="Belong_1151_abb"
+		value="Bureaucrat" />
+
+	<string
+		id="Belong_1151_diz"
+		value="" />
+
+	<string
+		id="Belong_1152"
+		value="Bandits" />
+
+	<string
+		id="Belong_1152_abb"
+		value="Bandit" />
+
+	<string
+		id="Belong_1152_diz"
+		value="" />
+
+	<string
+		id="Belong_1153"
+		value="Fallen" />
+
+	<string
+		id="Belong_1153_abb"
+		value="Fallen" />
+
+	<string
+		id="Belong_1153_diz"
+		value="" />
+
+	<string
+		id="Belong_1190"
+		value="Adventurers" />
+
+	<string
+		id="Belong_1190_abb"
+		value="AD" />
+
+	<string
+		id="Belong_1190_diz"
+		value="They drive around the world seeking for adventures, as if life isn't dangerous enough as it is. In a fight they can join any side." />
+
+	<string
+		id="Belong_1191"
+		value="Adventurers" />
+
+	<string
+		id="Belong_1191_abb"
+		value="AD" />
+
+	<string
+		id="Belong_1191_diz"
+		value="They drive around the world seeking for adventures, as if life isn't dangerous enough as it is. In a fight they can join any side." />
+
+	<string
+		id="Belong_1192"
+		value="Bureaucrats" />
+
+	<string
+		id="Belong_1192_abb"
+		value="BRCRT" />
+
+	<string
+		id="Belong_1192_diz"
+		value="Bureaucrats controls all brigands, trade and gambling in the region. They have all imaginable vices. " />
+
+	<string
+		id="Belong_1193"
+		value="Bureaucrats" />
+
+	<string
+		id="Belong_1193_abb"
+		value="BRCRT" />
+
+	<string
+		id="Belong_1193_diz"
+		value="Bureaucrats controls all brigands, trade and gambling in the region. They have all imaginable vices. " />
+
+	<string
+		id="Belong_1194"
+		value="World Order" />
+
+	<string
+		id="Belong_1194_abb"
+		value="WO" />
+
+	<string
+		id="Belong_1194_diz"
+		value="A small, but ambitious band, that believes in the revival of civilization. Their determination to reach this goal is the only excuse for their not-always-legal actions. " />
+
+	<string
+		id="Belong_1195"
+		value="World Order" />
+
+	<string
+		id="Belong_1195_abb"
+		value="WO" />
+
+	<string
+		id="Belong_1195_diz"
+		value="A small, but ambitious band, that believes in the revival of civilization. Their determination to reach this goal is the only excuse for their not-always-legal actions. " />
+
+	<string
+		id="Belong_1196"
+		value="Grizly" />
+
+	<string
+		id="Belong_1196_abb"
+		value="Grizly" />
+
+	<string
+		id="Belong_1196_diz"
+		value="Reservations of the native Americans. Tobacco and handicraft trade is their only occupation." />
+</resource>

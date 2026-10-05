@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?><!-- edited with XML Spy v4.2 U (http://www.xmlspy.com) by Morgoth (Targem) -->
+<resource><!--Default buttons-->
+	<string
+		id="music_custom"
+		value="Custom music" />
+
+	<string
+		id="music_r5_1"
+		value="Blood melody" />
+
+	<string
+		id="music_r5_12"
+		value="Passion melody" />
+
+	<string
+		id="music_r5_2"
+		value="Liberty melody" />
+
+	<string
+		id="music_r5_22"
+		value="Wind melody" />
+
+	<string
+		id="music_r6_1"
+		value="Jungle melody" />
+
+	<string
+		id="music_r6_12"
+		value="Edmonton melody" />
+
+	<string
+		id="music_r6_2"
+		value="Oracle melody" />
+
+	<string
+		id="music_r6_22"
+		value="Emissary melody" />
+
+	<string
+		id="music_block0"
+		value="Kryai melody (bonus)" />
+
+	<string
+		id="music_block1"
+		value="Regina melody (bonus)" />
+
+	<string
+		id="music_r1_4"
+		value="Hell melody (bonus)" />
+
+	<string
+		id="music_r2_1"
+		value="Librium melody (bonus)" />
+
+	<string
+		id="music_r2_2"
+		value="Arzhan melody (bonus)" />
+
+	<string
+		id="music_r4_1"
+		value="Vahata melody (bonus)" />
+
+	<string
+		id="music_r4_2"
+		value="Zarmek melody (bonus)" />
+</resource>

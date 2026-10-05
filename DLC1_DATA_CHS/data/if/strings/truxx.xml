@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<resource>
+	<string
+		id="ScoutMul01"
+		value="Type of machine for multiplayer - Light. | Designed for bright and fast fights in single battles. Vehicles of this type have the smallest value of armor and construction. This car can use only Conventional weapon for fighting and Bonus weapon for embroilment of the enemy. || Scout is defined by top speed and mobility in this type." />
+
+	<string
+		id="BugMul01"
+		value="Type of machine for multiplayer - Light. | Designed for bright and fast fights in single battles. Vehicles of this type have the smallest value of armor and construction. This car can use only Conventional weapon for fighting and Bonus weapon for embroilment of the enemy. || Beetle is defined by the smallest speed in this type meanwhile the acceleration is the best." />
+
+	<string
+		id="MolokovozMul01"
+		value="Type of machine for multiplayer - Light. | Designed for bright and fast fights in single battles. Vehicles of this type have the smallest value of armor and construction. This car can use only Conventional weapon for fighting and Bonus weapon for embroilment of the enemy. || Milk tanker is defined by average performances in this type." />
+
+	<string
+		id="FighterMul01"
+		value="Type of machine for multiplayer - Medium. | Designed for universal battles as in team mode and in single combat. Vehicles of this type have average values of armor and construction. This car can use Conventional weapon for fighting, Additional weapon for receiving temporary fire power and Bonus weapon for embroilment of the enemy. || Fighter is defined by average performances in this type." />
+
+	<string
+		id="HunterMul01"
+		value="Type of machine for multiplayer - Medium. | Designed for universal battles as in team mode and in single combat. Vehicles of this type have average values of armor and construction. This car can use Conventional weapon for fighting, Additional weapon for receiving temporary fire power and Bonus weapon for embroilment of the enemy. || Hunter is defined by smallest speed in this type meanwhile the acceleration is the best." />
+
+	<string
+		id="UralMul01"
+		value="Type of machine for multiplayer - Medium. | Designed for universal battles as in team mode and in single combat. Vehicles of this type have average values of armor and construction. This car can use Conventional weapon for fighting, Additional weapon for receiving temporary fire power and Bonus weapon for embroilment of the enemy. || Ural is defined by top speed and mobility in this type." />
+
+	<string
+		id="BelazMul01"
+		value="Type of machine for multiplayer - Heavy. | Designed for continuous battles in team mode. Vehicles of this type have the highest value of armor and construction. This car can use Conventional weapon for fighting, Additional weapon for receiving temporary fire power and Bonus weapon for embroilment of the enemy. || Belaz is defined by average performances in this type." />
+
+	<string
+		id="CruiserMul01"
+		value="Type of machine for multiplayer - Heavy. | Designed for continuous battles in team mode. Vehicles of this type have the highest value of armor and construction. This car can use Conventional weapon for fighting, Additional weapon for receiving temporary fire power and Bonus weapon for embroilment of the enemy. || Cruiser is defined by smallest speed in this type meanwhile the acceleration is the best." />
+
+	<string
+		id="MirotvorecMul01"
+		value="Type of machine for multiplayer - Heavy. | Designed for continuous battles in team mode. Vehicles of this type have the highest value of armor and construction. This car can use Conventional weapon for fighting, Additional weapon for receiving temporary fire power and Bonus weapon for embroilment of the enemy. || Peacemaker is defined by top speed and mobility in this type." />
+
+	<string
+		id="ScoutMul01_name"
+		value="Scout" />
+
+	<string
+		id="FighterMul01_name"
+		value="Fighter" />
+
+	<string
+		id="HunterMul01_name"
+		value="Hunter" />
+
+	<string
+		id="CruiserMul01_name"
+		value="Cruiser" />
+
+	<string
+		id="BugMul01_name"
+		value="Van" />
+
+	<string
+		id="MolokovozMul01_name"
+		value="Milk tanker" />
+
+	<string
+		id="UralMul01_name"
+		value="Ural" />
+
+	<string
+		id="BelazMul01_name"
+		value="Belaz" />
+
+	<string
+		id="MirotvorecMul01_name"
+		value="Peacemaker" />
+</resource>

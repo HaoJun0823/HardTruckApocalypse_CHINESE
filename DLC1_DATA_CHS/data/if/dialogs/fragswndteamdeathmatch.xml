@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<Prefabs>
+	<Node
+		name="FragsWndTeamDeathmatch"
+		class="Wnd"
+		org="855.000 688.000 154.000 64.000"
+		style="768"
+		order="-1"
+		id="0"
+		caption=""
+		tip=""
+		backimage=""
+		paneName="PaneFrameK"
+		scrollPaneName="Scroll1"
+		paneFlags="7"
+		wrap="2"
+		format="1"
+		font="0"
+		clientEdges="0.000 0.000 0.000 0.000"
+		wndColor="00000000"
+		textColor="ffffffff"
+		textColorDisabled="ff7f7f7f">
+		<Animations />
+
+		<Node
+			name="wndIco"
+			class="ImageWnd"
+			org="0.000 0.000 64.000 64.000"
+			style="768"
+			order="-1"
+			id="0"
+			caption=""
+			tip=""
+			backimage=""
+			image="data\if\ico\FragsWnd\skull.tga"
+			paneName="defaultWnd"
+			scrollPaneName="Scroll1"
+			paneFlags="0"
+			wrap="2"
+			format="1"
+			font="0"
+			clientEdges="0.000 0.000 0.000 0.000"
+			wndColor="00000000"
+			textColor="ffffffff"
+			textColorDisabled="ff7f7f7f">
+			<Animations />
+		</Node>  
+
+		<Node
+			name="pbKills"
+			class="ProgressBarWnd"
+			org="47.000 19.000 99.000 16.000"
+			style="768"
+			order="6"
+			id="0"
+			caption=""
+			tip=""
+			backimage=""
+			paneName="defaultWnd"
+			scrollPaneName="Scroll1"
+			paneFlags="0"
+			wrap="2"
+			format="1"
+			font="0"
+			clientEdges="0.000 0.000 0.000 0.000"
+			wndColor="00000000"
+			textColor="ffffffff"
+			textColorDisabled="ff8f8f8f"
+			barColor="ff00ff00"
+			numOfSteps="1"
+			orientation="2"
+			barTexture="data\if\ico\FragsWnd\blood.tga"
+			textStyle="0"
+			textureStyle="0">
+			<Animations />
+		</Node>
+
+		<Node
+			name="wndKillsVal"
+			class="Wnd"
+			org="48.000 38.000 100.000 20.000"
+			style="768"
+			order="-1"
+			id="0"
+			caption=""
+			tip=""
+			backimage=""
+			paneName="PaneFrameK"
+			scrollPaneName="Scroll1"
+			paneFlags="7"
+			wrap="2"
+			format="1"
+			font="0"
+			clientEdges="0.000 0.000 0.000 0.000"
+			wndColor="80ffffff"
+			textColor="ffffcc44"
+			textColorDisabled="ff7f7f7f">
+			<Animations />
+		</Node>
+
+		<Node
+			name="wndKillsVal_0"
+			class="ImageWnd"
+			org="50.000 40.000 16.000 16.000"
+			style="768"
+			order="-1"
+			id="0"
+			caption=""
+			tip=""
+			backimage=""
+			paneName="defaultWnd"
+			scrollPaneName="Scroll1"
+			paneFlags="0"
+			wrap="2"
+			format="1"
+			font="0"
+			clientEdges="0.000 0.000 0.000 0.000"
+			wndColor="00000000"
+			textColor="ffffffff"
+			textColorDisabled="ff7f7f7f">
+			<Animations />
+		</Node>
+
+		<Node
+			name="wndKillsVal_1"
+			class="ImageWnd"
+			org="64.000 40.000 16.000 16.000"
+			style="768"
+			order="-1"
+			id="0"
+			caption=""
+			tip=""
+			backimage=""
+			paneName="defaultWnd"
+			scrollPaneName="Scroll1"
+			paneFlags="0"
+			wrap="2"
+			format="1"
+			font="0"
+			clientEdges="0.000 0.000 0.000 0.000"
+			wndColor="00000000"
+			textColor="ffffffff"
+			textColorDisabled="ff7f7f7f">
+			<Animations />
+		</Node>
+
+		<Node
+			name="wndKillsVal_2"
+			class="ImageWnd"
+			org="78.000 40.000 16.000 16.000"
+			style="768"
+			order="-1"
+			id="0"
+			caption=""
+			tip=""
+			backimage=""
+			paneName="defaultWnd"
+			scrollPaneName="Scroll1"
+			paneFlags="0"
+			wrap="2"
+			format="1"
+			font="0"
+			clientEdges="0.000 0.000 0.000 0.000"
+			wndColor="00000000"
+			textColor="ffffffff"
+			textColorDisabled="ff7f7f7f">
+			<Animations />
+		</Node> 
+
+		<Node
+			name="wndKillsVal_3"
+			class="ImageWnd"
+			org="90.000 40.000 16.000 16.000"
+			style="768"
+			order="-1"
+			id="0"
+			caption=""
+			tip=""
+			backimage=""
+			paneName="defaultWnd"
+			scrollPaneName="Scroll1"
+			paneFlags="0"
+			wrap="2"
+			format="1"
+			font="0"
+			clientEdges="0.000 0.000 0.000 0.000"
+			wndColor="00000000"
+			textColor="ffffffff"
+			textColorDisabled="ff7f7f7f">
+			<Animations />
+		</Node> 
+
+		<Node
+			name="wndKillsVal_4"
+			class="ImageWnd"
+			org="106.000 40.000 16.000 16.000"
+			style="768"
+			order="-1"
+			id="0"
+			caption=""
+			tip=""
+			backimage=""
+			paneName="defaultWnd"
+			scrollPaneName="Scroll1"
+			paneFlags="0"
+			wrap="2"
+			format="1"
+			font="0"
+			clientEdges="0.000 0.000 0.000 0.000"
+			wndColor="00000000"
+			textColor="ffffffff"
+			textColorDisabled="ff7f7f7f">
+			<Animations />
+		</Node> 
+
+		<Node
+			name="wndKillsVal_5"
+			class="ImageWnd"
+			org="120.000 40.000 16.000 16.000"
+			style="768"
+			order="-1"
+			id="0"
+			caption=""
+			tip=""
+			backimage=""
+			paneName="defaultWnd"
+			scrollPaneName="Scroll1"
+			paneFlags="0"
+			wrap="2"
+			format="1"
+			font="0"
+			clientEdges="0.000 0.000 0.000 0.000"
+			wndColor="00000000"
+			textColor="ffffffff"
+			textColorDisabled="ff7f7f7f">
+			<Animations />
+		</Node> 
+
+		<Node
+			name="wndKillsVal_6"
+			class="ImageWnd"
+			org="134.000 40.000 16.000 16.000"
+			style="768"
+			order="-1"
+			id="0"
+			caption=""
+			tip=""
+			backimage=""
+			paneName="defaultWnd"
+			scrollPaneName="Scroll1"
+			paneFlags="0"
+			wrap="2"
+			format="1"
+			font="0"
+			clientEdges="0.000 0.000 0.000 0.000"
+			wndColor="00000000"
+			textColor="ffffffff"
+			textColorDisabled="ff7f7f7f">
+			<Animations />
+		</Node> 
+
+	</Node>
+</Prefabs>

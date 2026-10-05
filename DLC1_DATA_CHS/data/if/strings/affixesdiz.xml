@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?><!-- edited with XML Spy v4.2 U (http://www.xmlspy.com) by Morgoth (Targem) -->
+<resource><!--Default buttons-->
+	<string
+		id="useless_cabin"
+		value="Useless" />
+
+	<string
+		id="useless_cabin_localizedform_0"
+		value="Useless" />
+
+	<string
+		id="useless_cabin_localizedform_1"
+		value="Useless" />
+
+	<string
+		id="useless_basket"
+		value="Useless" />
+
+	<string
+		id="useless_basket_localizedform_0"
+		value="Useless" />
+
+	<string
+		id="useless_basket_localizedform_1"
+		value="Useless" />
+
+	<string
+		id="useless_gun"
+		value="Useless" />
+
+	<string
+		id="useless_gun_localizedform_0"
+		value="Useless" />
+
+	<string
+		id="useless_gun_localizedform_1"
+		value="Useless" />
+
+	<string
+		id="rusty_cabin"
+		value="Rusty" />
+
+	<string
+		id="rusty_cabin_localizedform_0"
+		value="Rusty" />
+
+	<string
+		id="rusty_cabin_localizedform_1"
+		value="Rusty" />
+
+	<string
+		id="rusty_basket"
+		value="Rusty" />
+
+	<string
+		id="rusty_basket_localizedform_0"
+		value="Rusty" />
+
+	<string
+		id="rusty_basket_localizedform_1"
+		value="Rusty" />
+
+	<string
+		id="rusty_gun"
+		value="Rusty" />
+
+	<string
+		id="rusty_gun_localizedform_0"
+		value="Rusty" />
+
+	<string
+		id="rusty_gun_localizedform_1"
+		value="Rusty" />
+
+	<string
+		id="excellent_cabin"
+		value="Excellent" />
+
+	<string
+		id="excellent_cabin_localizedform_0"
+		value="Excellent" />
+
+	<string
+		id="excellent_cabin_localizedform_1"
+		value="Excellent" />
+
+	<string
+		id="excellent_basket"
+		value="Excellent" />
+
+	<string
+		id="excellent_basket_localizedform_0"
+		value="Excellent" />
+
+	<string
+		id="excellent_basket_localizedform_1"
+		value="Excellent" />
+
+	<string
+		id="excellent_gun"
+		value="Excellent" />
+
+	<string
+		id="excellent_gun_localizedform_0"
+		value="Excellent" />
+
+	<string
+		id="excellent_gun_localizedform_1"
+		value="Excellent" />
+
+	<string
+		id="advanced_cabin"
+		value="Advanced" />
+
+	<string
+		id="advanced_cabin_localizedform_0"
+		value="Advanced" />
+
+	<string
+		id="advanced_cabin_localizedform_1"
+		value="Advanced" />
+
+	<string
+		id="advanced_basket"
+		value="Advanced" />
+
+	<string
+		id="advanced_basket_localizedform_0"
+		value="Advanced" />
+
+	<string
+		id="advanced_basket_localizedform_1"
+		value="Advanced" />
+
+	<string
+		id="advanced_gun"
+		value="Advanced" />
+
+	<string
+		id="advanced_gun_localizedform_0"
+		value="Advanced" />
+
+	<string
+		id="advanced_gun_localizedform_1"
+		value="Advanced" />
+
+	<string
+		id="slow_gun"
+		value="Slow" />
+
+	<string
+		id="slow_gun_localizedform_0"
+		value="Slow" />
+
+	<string
+		id="slow_gun_localizedform_1"
+		value="Slow" />
+
+	<string
+		id="assault_gun"
+		value="Offensive" />
+
+	<string
+		id="assault_gun_localizedform_0"
+		value="Offensive" />
+
+	<string
+		id="assault_gun_localizedform_1"
+		value="Offensive" />
+
+	<string
+		id="rapid_firing_gun"
+		value="Rapid-firing" />
+
+	<string
+		id="rapid_firing_gun_localizedform_0"
+		value="Rapid-firing" />
+
+	<string
+		id="rapid_firing_gun_localizedform_1"
+		value="Rapid-firing" />
+
+	<string
+		id="weak_gun"
+		value="Weak" />
+
+	<string
+		id="weak_gun_localizedform_0"
+		value="Weak" />
+
+	<string
+		id="weak_gun_localizedform_1"
+		value="Weak" />
+
+	<string
+		id="deadly_gun"
+		value="Lethal" />
+
+	<string
+		id="deadly_gun_localizedform_0"
+		value="Lethal" />
+
+	<string
+		id="deadly_gun_localizedform_1"
+		value="Lethal" />
+
+	<string
+		id="destructive_gun"
+		value="Destructive" />
+
+	<string
+		id="destructive_gun_localizedform_0"
+		value="Destructive" />
+
+	<string
+		id="destructive_gun_localizedform_1"
+		value="Destructive" />
+
+	<string
+		id="with_truncated_barrel_gun"
+		value="With sawed-off barrel" />
+
+	<string
+		id="with_truncated_barrel_gun_localizedform_0"
+		value="With sawed-off barrel" />
+
+	<string
+		id="with_truncated_barrel_gun_localizedform_1"
+		value="With sawed-off barrel" />
+
+	<string
+		id="with_enlarged_barrel_gun"
+		value="With enlarged barrel" />
+
+	<string
+		id="with_enlarged_barrel_gun_localizedform_0"
+		value="With enlarged barrel" />
+
+	<string
+		id="with_enlarged_barrel_gun_localizedform_1"
+		value="With enlarged barrel" />
+
+	<string
+		id="with_long_barrel_gun"
+		value="With long barrel" />
+
+	<string
+		id="with_long_barrel_gun_localizedform_0"
+		value="With long barrel" />
+
+	<string
+		id="with_long_barrel_gun_localizedform_1"
+		value="With long barrel" />
+
+	<string
+		id="without_cooling_gun"
+		value="Uncooled" />
+
+	<string
+		id="without_cooling_gun_localizedform_0"
+		value="Uncooled" />
+
+	<string
+		id="without_cooling_gun_localizedform_1"
+		value="Uncooled" />
+
+	<string
+		id="with_water_cooling_gun"
+		value="Water-cooling" />
+
+	<string
+		id="with_water_cooling_gun_localizedform_0"
+		value="Water-cooling" />
+
+	<string
+		id="with_water_cooling_gun_localizedform_1"
+		value="Water-cooling" />
+
+	<string
+		id="with_nitro_cooling_gun"
+		value="Azote-cooling" />
+
+	<string
+		id="with_nitro_cooling_gun_localizedform_0"
+		value="Azote-cooling" />
+
+	<string
+		id="with_nitro_cooling_gun_localizedform_1"
+		value="Azote-cooling" />
+
+	<string
+		id="without_sight_gun"
+		value="Without sight" />
+
+	<string
+		id="without_sight_gun_localizedform_0"
+		value="Without sight" />
+
+	<string
+		id="without_sight_gun_localizedform_1"
+		value="Without sight" />
+
+	<string
+		id="with_laser_sight_gun"
+		value="With laser sight" />
+
+	<string
+		id="with_laser_sight_gun_localizedform_0"
+		value="With laser sight" />
+
+	<string
+		id="with_laser_sight_gun_localizedform_1"
+		value="With laser sight" />
+
+	<string
+		id="with_electric_gun_sight"
+		value="With electric navigation" />
+
+	<string
+		id="with_electric_sight_gun_localizedform_0"
+		value="With electric navigation" />
+
+	<string
+		id="with_electric_sight_gun_localizedform_1"
+		value="With electric navigation" />
+
+	<string
+		id="useless_cabin_diz"
+		value="Attached to cabin| Armor -10% -15% | Top speed -10% -15% | Power -10% -15% " />
+
+	<string
+		id="rusty_cabin_diz"
+		value="Attached to cabin| Armor -5% -7% | Top speed -5% -7% | Power -5% -7% " />
+
+	<string
+		id="excellent_cabin_diz"
+		value="Attached to cabin| Armor +5% +7% | Top speed +5% +7% | Power +5% +7% " />
+
+	<string
+		id="advanced_cabin_diz"
+		value="Attached to cabin| Armor +10% +15% | Top speed +10% +15% | Power +10% +15% " />
+
+	<string
+		id="useless_basket_diz"
+		value=" Attached to body| Armor -10% -15% " />
+
+	<string
+		id="rusty_basket_diz"
+		value=" Attached to body| Armor -5% -7% " />
+
+	<string
+		id="excellent_basket_diz"
+		value=" Attached to body| Armor +5% +7% " />
+
+	<string
+		id="advanced_basket_diz"
+		value=" Attached to body| Armor +10% +15% " />
+
+	<string
+		id="useless_gun_diz"
+		value="Attached to weapon| Strength -10% -15% | Damage -10% -15% | Accuracy -10% -15% " />
+
+	<string
+		id="rusty_gun_diz"
+		value="Attached to weapon| Strength -5% -7% | Damage -5% -7% | Accuracy -5% -7% " />
+
+	<string
+		id="excellent_gun_diz"
+		value="Attached to weapon| Strength +5% +7% | Damage +5% +7% | Accuracy +5% +7% " />
+
+	<string
+		id="advanced_gun_diz"
+		value="Attached to weapon| Strength +10% +15% | Damage +10% +15% | Accuracy +10% +15%" />
+
+	<string
+		id="slow_gun_diz"
+		value="Attached to weapon| Rate of fire -5% -7% " />
+
+	<string
+		id="assault_gun_diz"
+		value="Attached to weapon| Rate of fire +5% +7% " />
+
+	<string
+		id="rapid_firing_gun_diz"
+		value="Attached to weapon| Rate of fire +10% +15% " />
+
+	<string
+		id="weak_gun_diz"
+		value="Attached to weapon| Damage -5% -7% " />
+
+	<string
+		id="deadly_gun_diz"
+		value="Attached to weapon| Damage +5% +7% " />
+
+	<string
+		id="destructive_gun_diz"
+		value="Attached to weapon| Damage +10% +15% " />
+
+	<string
+		id="with_truncated_barrel_gun_diz"
+		value="Attached to weapon| Range of fire -5% -7% " />
+
+	<string
+		id="with_enlarged_barrel_gun_diz"
+		value="Attached to weapon| Range of fire +5% +7% " />
+
+	<string
+		id="with_long_barrel_gun_diz"
+		value="Attached to weapon| Range of fire +10% +15% " />
+
+	<string
+		id="without_cooling_gun_diz"
+		value="Attached to weapon| Reload time +5% +7% " />
+
+	<string
+		id="with_water_cooling_gun_diz"
+		value="Attached to weapon| Reload time -5% -7% " />
+
+	<string
+		id="with_nitro_cooling_gun_diz"
+		value="Attached to weapon| Reload time -10% -15% " />
+
+	<string
+		id="without_sight_gun_diz"
+		value="Attached to weapon| Accuracy -5% -7% | Price -20% -25%" />
+
+	<string
+		id="with_laser_sight_gun_diz"
+		value="Attached to weapon| Accuracy +5% +7% | Price +20% +25%" />
+
+	<string
+		id="with_electric_sight_gun_diz"
+		value="Attached to weapon| Accuracy +10% +15% | Price +30% +40%" />
+</resource>

@@ -1,0 +1,1030 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?><!-- edited with XML Spy v4.2 U (http://www.xmlspy.com) by Morgoth (Targem) -->
+<resource>
+	<string
+		id="Price"
+		value="Price" />
+
+	<string
+		id="BasePrice"
+		value="Average price" />
+
+	<string
+		id="Goods"
+		value="Goods" />
+
+	<string
+		id="Amount"
+		value="Number" />
+
+	<string
+		id="NotEnoughGold"
+		value="Not enough money" />
+
+	<string
+		id="NotEnoughSpace"
+		value="Not enough space in body" />
+
+	<string
+		id="Buy"
+		value="Buy" />
+
+	<string
+		id="Sell"
+		value="Sell" />
+
+	<string
+		id="NotSellable"
+		value="@ffff0000Unable to sell" />
+
+	<string
+		id="NotBuyable"
+		value="@ffff0000Unable to buy" />
+
+	<string
+		id="NotSelledByTown"
+		value="@ff904040not for sale in the city" />
+
+	<string
+		id="NotBuyedByTown"
+		value="@ff904040for for purchase in the city" />
+
+	<string
+		id="WareNotSelledByTown"
+		value="City doesn't sell commodity of this type" />
+
+	<string
+		id="WareNotBuyedByTown"
+		value="City doesn't buy commodity of this type" />
+
+	<string
+		id="MoveVehicleItemsFromPlayer"
+		value="Move upgrades, goods and weapon to the new vehicle" />
+
+	<string
+		id="MoveVehicleItemsToPlayer"
+		value="Move upgrades, goods and weapon to the old vehicle" />
+
+	<string
+		id="MoveCabinItemsFromPlayer"
+		value="Move upgrades and weapon to the new cabin" />
+
+	<string
+		id="MoveCabinItemsToPlayer"
+		value="Move upgrades and weapon to the old cabin" />
+
+	<string
+		id="MoveBasketItemsFromPlayer"
+		value="Move goods and weapon to the new body" />
+
+	<string
+		id="MoveBasketItemsToPlayer"
+		value="Move goods and weapon to the old body" />
+
+	<string
+		id="TotalPrice"
+		value="Total cost of deal" />
+
+	<string
+		id="NotCompatible"
+		value="Incompatible with current vehicle" />
+
+	<string
+		id="TooRich"
+		value="Not enough money to make the deal" />
+
+	<string
+		id="BuyPriceByTown"
+		value="City purchase price" />
+
+	<string
+		id="SellPriceByTown"
+		value="City sell price" />
+
+	<string
+		id="QuickSave"
+		value="Quick save" />
+
+	<string
+		id="AutoSave"
+		value="Autosave" />
+
+	<string
+		id="GameWasSaved"
+		value="Game saved: @fffed11b%1s" />
+
+	<string
+		id="GameWasLoaded"
+		value="Game load: @fffed11b%1s" />
+
+	<string
+		id="GameSaving"
+		value="Saving" />
+
+	<string
+		id="GameSaving..."
+		value="Saving..." />
+
+	<string
+		id="SaveGame"
+		value="Save game" />
+
+	<string
+		id="AddNavPoint"
+		value="Add landmark" />
+
+	<string
+		id="DeleteNavPoint"
+		value="Delete landmark" />
+
+	<string
+		id="ShotInMinute"
+		value="shots per minute" />
+
+	<string
+		id="Minute"
+		value="min" />
+
+	<string
+		id="Secunde"
+		value="sec" />
+
+	<string
+		id="Meter"
+		value="m" />
+
+	<string
+		id="KmInSec"
+		value="km/sec" />
+
+	<string
+		id="CurMax"
+		value="tec/max" />
+
+	<string
+		id="Km"
+		value="km" />
+
+	<string
+		id="m"
+		value="m" />
+
+	<string
+		id="percent"
+		value="%" />
+
+	<string
+		id="PlayerMoney"
+		value="Player's money" />
+
+	<string
+		id="Money"
+		value="Money" />
+
+	<string
+		id="QuestItems"
+		value="Special items" />
+
+	<string
+		id="Broken"
+		value="Disabled" />
+
+	<string
+		id="NoAmmo"
+		value="No ammunition" />
+
+	<string
+		id="WeaponGroups"
+		value="Weapon groups" />
+
+	<string
+		id="VehicleCharacteristics"
+		value="Vehicle characteristics" />
+
+	<string
+		id="CBCharacteristics"
+		value="Cabin and body characteristics" />
+
+	<string
+		id="NotInstalled"
+		value="Not mounted" />
+
+	<string
+		id="ExitCurGame"
+		value="Do you want to close current game?|Attention: all unsaved data will be lost." />
+
+	<string
+		id="Quit to Main Menu"
+		value="Exit to main menu" />
+
+	<string
+		id="Back"
+		value="Back" />
+
+	<string
+		id="ResumeGame"
+		value="Return to game" />
+
+	<string
+		id="GameOver"
+		value="Game is over" />
+
+	<string
+		id="Load Last Game"
+		value="Load last saved game" />
+
+	<string
+		id="Start Game From Begin"
+		value="Start game fron the beginning" />
+
+	<string
+		id="quitGameWithSaveWarn"
+		value="Exit the game?|Attention: all unsaved data will be lost." />
+
+	<string
+		id="SaveNameDemand"
+		value="Enter save game name" />
+
+	<string
+		id="SaveGameExists"
+		value="Do you want to overwrite the current save game?" />
+
+	<string
+		id="SaveGameDeleteWarning"
+		value="Selected game will be deleted. Continue?" />
+
+	<string
+		id="SavingCurrentGame"
+		value="Save current game" />
+
+	<string
+		id="DeleteGame"
+		value="Delete saved game" />
+
+	<string
+		id="Power"
+		value="Power" />
+
+	<string
+		id="EnginePower"
+		value="Engine power" />
+
+	<string
+		id="Torque"
+		value="Torsion torque" />
+
+	<string
+		id="Durability"
+		value="Strength" />
+
+	<string
+		id="Speed"
+		value="Speed" />
+
+	<string
+		id="MaxSpeed"
+		value="Top speed" />
+
+	<string
+		id="Weight"
+		value="Weight" />
+
+	<string
+		id="PNBB"
+		value="Collision damage" />
+
+	<string
+		id="PNBBtip"
+		value="Quantity of collision damage to the enemy" />
+
+	<string
+		id="Damage"
+		value="Damages" />
+
+	<string
+		id="FiringRate"
+		value="Rate of fire" />
+
+	<string
+		id="FiringRange"
+		value="Kill distance" />
+
+	<string
+		id="ThornForce"
+		value="Hit Force" />
+
+	<string
+		id="AccelerationTime"
+		value="Acceleration Time" />
+
+	<string
+		id="Armor"
+		value="Armor" />
+
+	<string
+		id="MaxArmor"
+		value="Max Armor" />
+
+	<string
+		id="Solidity"
+		value="Strength" />
+
+	<string
+		id="Resistance"
+		value="Resistance" />
+
+	<string
+		id="ShellPool"
+		value="Ammunition" />
+
+	<string
+		id="ChargeSize"
+		value="Number bullets in charger" />
+
+	<string
+		id="RechargingTime"
+		value="Reload time" />
+
+	<string
+		id="BasketCapacity"
+		value="Body capacity" />
+
+	<string
+		id="GADGET_COMMON"
+		value="Vehicle upgrade" />
+
+	<string
+		id="GADGET_WEAPON"
+		value="Weapon upgrade" />
+
+	<string
+		id="GADGET_ENGINE"
+		value="Engine upgrade" />
+
+	<string
+		id="GadgetType"
+		value="Device type" />
+
+	<string
+		id="Piercing"
+		value="penetrating" />
+
+	<string
+		id="Blast"
+		value="blast" />
+
+	<string
+		id="Energy"
+		value="energy" />
+
+	<string
+		id="Fuel"
+		value="Fuel" />
+
+	<string
+		id="Construction"
+		value="Construction" />
+
+	<string
+		id="MaxConstruction"
+		value="Max Construction" />
+
+	<string
+		id="PiercingResistance"
+		value="Resistance to the penetrating damages" />
+
+	<string
+		id="BlastResistance"
+		value="Resistance to the explosive damages" />
+
+	<string
+		id="EnergyResistance"
+		value="Resistance to the energy damages" />
+
+	<string
+		id="VehicleControl"
+		value="Roadability" />
+
+	<string
+		id="FuelTankCapacity"
+		value="Fuel tank volume" />
+
+	<string
+		id="Accuracy"
+		value="Accuracy" />
+
+	<string
+		id="CabinDurability"
+		value="Cabim armor" />
+
+	<string
+		id="BasketDurability"
+		value="Body armor" />
+
+	<string
+		id="GunType"
+		value="Weapon type" />
+
+	<string
+		id="MachineGun"
+		value="Machine gun" />
+
+	<string
+		id="Cannon"
+		value="Cannon" />
+
+	<string
+		id="ShotGun"
+		value="Shotgun" />
+
+	<string
+		id="Laser"
+		value="Laser device" />
+
+	<string
+		id="Plasma"
+		value="Plasma gun" />
+
+	<string
+		id="Rocket"
+		value="Missile launcher" />
+
+	<string
+		id="Artillery"
+		value="Mortar" />
+
+	<string
+		id="Thunderbolt"
+		value="Lightning  device" />
+
+	<string
+		id="Mine"
+		value="Mine placing machine" />
+
+	<string
+		id="Thorns"
+		value="Pins" />
+
+	<string
+		id="Nail"
+		value="Nails" />
+
+	<string
+		id="Turbo"
+		value="Booster" />
+
+	<string
+		id="Oil"
+		value="Oil" />
+
+	<string
+		id="Smoke"
+		value="Smoke cover" />
+
+	<string
+		id="FlamePlasma"
+		value="Flame gun" />
+
+	<string
+		id="ElectroPlasma"
+		value="Electric shock" />
+
+	<string
+		id="Weapon"
+		value="Weapon" />
+
+	<string
+		id="Gadgets"
+		value="Devices" />
+
+	<string
+		id="Vehicles"
+		value="Vehicles" />
+
+	<string
+		id="VehicleParts"
+		value="Vehicle parts" />
+
+	<string
+		id="Affixes"
+		value="Modifiers" />
+
+	<string
+		id="Clans"
+		value="Groups" />
+
+	<string
+		id="Cabin"
+		value="Cabin" />
+
+	<string
+		id="Basket"
+		value="Body" />
+
+	<string
+		id="Repairing"
+		value="Repair" />
+
+	<string
+		id="Refuelling"
+		value="Fuel station" />
+
+	<string
+		id="Recharging"
+		value="Weapon reload" />
+
+	<string
+		id="BuySkin"
+		value="Repaint" />
+
+	<string
+		id="NextSkin"
+		value="Next color style" />
+
+	<string
+		id="PrevSkin"
+		value="Previous color style" />
+
+	<string
+		id="SkinAlreadySet"
+		value="This color style is current" />
+
+	<string
+		id="Skinning"
+		value="Vehicle paint" />
+
+	<string
+		id="BuyCabin"
+		value="Buy cabin" />
+
+	<string
+		id="BuyBasket"
+		value="Buy body" />
+
+	<string
+		id="BuyVehicle"
+		value="Buy vehicle" />
+
+	<string
+		id="RefuelMax"
+		value="Max Fuel" />
+
+	<string
+		id="RepairMax"
+		value="Max Repair" />
+
+	<string
+		id="RechargeMax"
+		value="Max weapon reload" />
+
+	<string
+		id="NextVehicle"
+		value="Next vehicle" />
+
+	<string
+		id="PrevVehicle"
+		value="Previous vehicle" />
+
+	<string
+		id="NumUnitsToBuy"
+		value="Purchase number" />
+
+	<string
+		id="Refuel"
+		value="Fuel" />
+
+	<string
+		id="Repair"
+		value="Repair" />
+
+	<string
+		id="Recharge"
+		value="Relod" />
+
+	<string
+		id="ToAdvancedMode"
+		value="To enhanced mode" />
+
+	<string
+		id="ToSimpleMode"
+		value="To simple mode" />
+
+	<string
+		id="More"
+		value="More" />
+
+	<string
+		id="Less"
+		value="Less" />
+
+	<string
+		id="OneUnitPrice"
+		value="Price per piece" />
+
+	<string
+		id="NumUnitsToBuy"
+		value="Amount" />
+
+	<string
+		id="SummaryPrice"
+		value="Total cost" />
+
+	<string
+		id="RepairNotNeed"
+		value="Repair is not needed" />
+
+	<string
+		id="RepairUnavailable"
+		value="Not enough money to repair" />
+
+	<string
+		id="RepairPartial"
+		value="Partial repair" />
+
+	<string
+		id="RepairFull"
+		value="Full repair" />
+
+	<string
+		id="RefuelNotNeed"
+		value="Fueling is not required" />
+
+	<string
+		id="RefuelUnavailable"
+		value="Not enough money to fuel" />
+
+	<string
+		id="RefuelPartial"
+		value="Partial fueling" />
+
+	<string
+		id="RefuelFull"
+		value="Full fueling" />
+
+	<string
+		id="RechargeNotNeed"
+		value="Reload in noy necessary" />
+
+	<string
+		id="RechargeUnavailable"
+		value="Not enough money to reload" />
+
+	<string
+		id="RechargePartial"
+		value="Partial reload" />
+
+	<string
+		id="RechargeFull"
+		value="Full reload" />
+
+	<string
+		id="State"
+		value="Status" />
+
+	<string
+		id="LeftItemsInCabin"
+		value="Some upgrades and weapon left in the cabin. | All things will be sold with the cabin. | Continue?" />
+
+	<string
+		id="LeftItemsInBasket"
+		value="Some upgrades and weapon left in the body. | All things will be sold with the body. | Continue?" />
+
+	<string
+		id="LeftItemsInVehicle"
+		value="Some upgrades and weapon left in the vehicle. | All things will be sold with the vehicle. | Continue?" />
+
+	<string
+		id="BuyItemsCost"
+		value="Purchase items price" />
+
+	<string
+		id="SellItemsCost"
+		value="Sell items price" />
+
+	<string
+		id="Sum:"
+		value="Total:" />
+
+	<string
+		id="Select"
+		value="Select" />
+
+	<string
+		id="EnterVehicleTrade"
+		value="Enter vehicle purchase mode" />
+
+	<string
+		id="VehiclePrice"
+		value="Vehicle price" />
+
+	<string
+		id="ReturnToWorkshop"
+		value="Return to repair shop main menu" />
+
+	<string
+		id="Aero title"
+		value="Aerographics" />
+
+	<string
+		id="Paint title"
+		value="Paint" />
+
+	<string
+		id="Clearskins"
+		value="Reset" />
+
+	<string
+		id="Buy all skins"
+		value="Buy all for: " />
+
+	<string
+		id="Buy skins"
+		value="Buy for: " />
+
+	<string
+		id="GunsAndGadgets"
+		value="Weapon and upgrades" />
+
+	<string
+		id="ShowAllWares"
+		value="Show all goods" />
+
+	<string
+		id="ShowTownSelledWares"
+		value="Show goods sell by city" />
+
+	<string
+		id="NoWare"
+		value="Commodity not available" />
+
+	<string
+		id="All"
+		value="All" />
+
+	<string
+		id="NavPoint"
+		value="Landmark" />
+
+	<string
+		id="ToGlobalMap"
+		value="Switch to global map" />
+
+	<string
+		id="ToLocalMap"
+		value="Switch to Local map" />
+
+	<string
+		id="MapUnavailable"
+		value="Detailed local map is not avaliable now." />
+
+	<string
+		id="TradeMode"
+		value="Show pricelist" />
+
+	<string
+		id="InfoMode"
+		value="Show description" />
+
+	<string
+		id="SavePrices"
+		value="Add city to the saved prices list" />
+
+	<string
+		id="RemovePrices"
+		value="Delete city to the saved prices list" />
+
+	<string
+		id="ShowObjectNames"
+		value="Show objects names" />
+
+	<string
+		id="HideObjectNames"
+		value="Hide objects names" />
+
+	<string
+		id="Description"
+		value="Description" />
+
+	<string
+		id="Ruined"
+		value="@ff904040Destroyed" />
+
+	<string
+		id="KeySet"
+		value="Key sequence" />
+
+	<string
+		id="History"
+		value="History" />
+
+	<string
+		id="Books"
+		value="Books" />
+
+	<string
+		id="Encyclopaedia"
+		value="Encyclopedia" />
+
+	<string
+		id="Statistic"
+		value="Statictics" />
+
+	<string
+		id="Relations"
+		value="Relations" />
+
+	<string
+		id="EnemyRelation"
+		value="Hostile relations" />
+
+	<string
+		id="FriendlyRelation"
+		value="Friendly relations" />
+
+	<string
+		id="NeutralRelation"
+		value="Neutral relations" />
+
+	<string
+		id="Peace"
+		value="Peace" />
+
+	<string
+		id="War"
+		value="War" />
+
+	<string
+		id="PeaceAvailable"
+		value="It is possible to establish good relations with group | if talk to its representatives | in one of the cities" />
+
+	<string
+		id="ShowAllQuests"
+		value="Show all missions" />
+
+	<string
+		id="ShowNoncompletedQuests"
+		value="Show only uncompleted missions" />
+
+	<string
+		id="ShowQuestItems"
+		value="Show special items" />
+
+	<string
+		id="ShowQuests"
+		value="Show missions" />
+
+	<string
+		id="Quests"
+		value="Missions" />
+
+	<string
+		id="PickUpAll"
+		value="Pick up all" />
+
+	<string
+		id="TabBtn_Questlog"
+		value="Tasks" />
+
+	<string
+		id="TabBtn_Map"
+		value="Map" />
+
+	<string
+		id="TabBtn_Journal"
+		value="Log" />
+
+	<string
+		id="TabBtn_Inventory"
+		value="Body content" />
+
+	<string
+		id="TabBtn_Characteristic"
+		value="Venicle info" />
+
+	<string
+		id="DontShowAutoHelp"
+		value="Don't show automatic hints" />
+
+	<string
+		id="Radar"
+		value="Radar" />
+
+	<string
+		id="Speedometer"
+		value="Speedometer" />
+
+	<string
+		id="Timer"
+		value="Timer" />
+
+	<string
+		id="FadingMessages"
+		value="Messages" />
+
+	<string
+		id="ImportantFadingMessages"
+		value="Important messages" />
+
+	<string
+		id="TargetInfo"
+		value="Target info" />
+
+	<string
+		id="TargetCapture"
+		value="Target lock-on" />
+
+	<string
+		id="ActionIcons"
+		value="Actions" />
+
+	<string
+		id="TalkWithNpc"
+		value="Talk to character" />
+
+	<string
+		id="NetGameOverHeader"
+		value="Game over." />
+
+	<string
+		id="NetGameOverFooter"
+		value="Press ESC to retuen to main menu." />
+
+	<string
+		id="NumberSymbol"
+		value="#" />
+
+	<string
+		id="Color"
+		value="Color" />
+
+	<string
+		id="PlayerName"
+		value="Player name" />
+
+	<string
+		id="Kills"
+		value="Killed" />
+
+	<string
+		id="Deaths"
+		value="Deaths" />
+
+	<string
+		id="Ping"
+		value="Ping" />
+
+	<string
+		id="kills:"
+		value="Killed:@ffffcc00 " />
+
+	<string
+		id="TeamPlayerName"
+		value="Team name/player name" />
+
+	<string
+		id="TeamName"
+		value="Team name" />
+
+	<string
+		id="Players"
+		value="Players" />
+
+	<string
+		id="Functions text"
+		value="@ffffcc00[A] @ffffffffAuto   @ffffcc00[S] @ffffffffObserver   @ffffcc00[Tab] @ffffffffStatistics   @ffffcc00[X] @ffffffffTeam selection window" />
+
+	<string
+		id="Helper text"
+		value=" @ffccccccTeam and modes selection is made by pointed keys" />
+
+	<string
+		id="Charisma"
+		value="Grace" />
+
+	<string
+		id="AppliedPerks"
+		value="Perks" />
+
+	<string
+		id="CancelQuest"
+		value="Abort mission" />
+
+	<string
+		id="MainQuests"
+		value="Plot missions" />
+
+	<string
+		id="OptionalQuests"
+		value="Additional missions" />
+
+	<string
+		id="RestoreDefaultMusic"
+		value="Restore music changing on default" />
+
+	<string
+		id="ApplyAndReturnToMenu"
+		value="Apply changes and return to menu" />
+
+	<string
+		id="Bot"
+		value="Bot" />
+</resource>

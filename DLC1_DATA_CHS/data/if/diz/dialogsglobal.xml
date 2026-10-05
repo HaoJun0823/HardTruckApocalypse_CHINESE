@@ -1,0 +1,2674 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<DialogsResource>
+	<Reply
+		name="r6m2_SearchRobot_1_N01"
+		text="I need your help, friend."
+		role="NPC"
+		scriptCondition="QuestStatus('r6m2_WhereRobotGo')==Q_CANBEGIVEN"
+		nextReplies="Dlg_pl_000214" />
+
+	<Reply
+		name="Dlg_pl_000214"
+		text="Yes? And what am I to do? Who am I going to kill?"
+		role="PLAYER"
+		nextReplies="Dlg_npc_000215" />
+
+	<Reply
+		name="Dlg_npc_000215"
+		text="You don't need to kill anybody! Simply trace where these robots go."
+		role="NPC"
+		nextReplies="Dlg_pl_000216 Dlg_pl_000426" />
+
+	<Reply
+		name="Dlg_pl_000426"
+		text="You need it, so  trace them youself."
+		role="PLAYER"
+		scriptResult=" EndConversation()" />
+
+	<Reply
+		name="Dlg_pl_000216"
+		text="What in particular?"
+		role="PLAYER"
+		nextReplies="Dlg_npc_000217" />
+
+	<Reply
+		name="Dlg_npc_000217"
+		text="Those ones!"
+		role="NPC"
+		nextReplies="Dlg_pl_000218" />
+
+	<Reply
+		name="Dlg_pl_000218"
+		text="Ok, I see. Yeah. The fat is in the fire."
+		role="PLAYER"
+		scriptResult="TakeQuest('r6m2_WhereRobotGo'); EndConversation()" />
+
+	<Reply
+		name="r6m2_Gonka_1_N01"
+		text="We salute you, dear friend! Right now and right here! Super race! You have a unique chance to take part in it."
+		role="NPC"
+		scriptCondition="QuestStatus('r6m2_Gonka1')==Q_CANBEGIVEN"
+		nextReplies="Dlg_pl_000220" />
+
+	<Reply
+		name="Dlg_pl_000220"
+		text="What is the prize?"
+		role="PLAYER"
+		nextReplies="Dlg_npc_000221" />
+
+	<Reply
+		name="Dlg_npc_000221"
+		text="Due for participation is only hundred, but winnings - 1,000. Come on!"
+		role="NPC"
+		nextReplies="Dlg_pl_000222 Dlg_pl_000225 Dlg_pl_000226" />
+
+	<Reply
+		name="Dlg_pl_000226"
+		text="Races are for idlers but I have a world of troubles."
+		role="PLAYER"
+		scriptCondition="GetPlayerMoney()>1000"
+		scriptResult="EndConversation()" />
+
+	<Reply
+		name="Dlg_pl_000225"
+		text="I don't have so much money."
+		role="PLAYER"
+		scriptCondition="1000>GetPlayerMoney() "
+		scriptResult="EndConversation()" />
+
+	<Reply
+		name="Dlg_pl_000222"
+		text="Let's go!"
+		role="PLAYER"
+		scriptCondition="GetPlayerMoney()>1000"
+		nextReplies="Dlg_npc_000223" />
+
+	<Reply
+		name="Dlg_npc_000223"
+		text="Ready. Steady. Go!"
+		role="NPC"
+		nextReplies="Dlg_pl_000224" />
+
+	<Reply
+		name="Dlg_pl_000224"
+		text="Let's go!!!"
+		role="PLAYER"
+		scriptResult="AddPlayerMoney( -1000 );  TakeQuest('r6m2_Gonka1');  TActivate ('trCreateVehGonka');  EndConversation()" />
+
+	<Reply
+		name="r6m2_Gonka_2_N01"
+		text="Race is over. "
+		role="NPC"
+		scriptCondition="QuestStatus('r6m2_Gonka1')==Q_TAKEN"
+		nextReplies="Dlg_pl_000228" />
+
+	<Reply
+		name="Dlg_pl_000228"
+		text="Good! Prize is mine, isn't it?"
+		role="PLAYER"
+		nextReplies="Dlg_npc_000229 Dlg_npc_000231 Dlg_npc_000433" />
+
+	<Reply
+		name="Dlg_npc_000433"
+		text="Actually, if you read this text - means in game there was a mistake! You could win the program. Pleasant game!"
+		role="NPC"
+		scriptCondition="GetVar('Gonka').AsInt==0"
+		nextReplies="Dlg_pl_000434" />
+
+	<Reply
+		name="Dlg_pl_000434"
+		text="I have won the program!"
+		role="PLAYER"
+		scriptResult="FailQuest('r6m2_Gonka1'); EndConversation()" />
+
+	<Reply
+		name="Dlg_npc_000231"
+		text="Why do you think so? You have finished almost the last one!"
+		role="NPC"
+		scriptCondition="GetVar('Gonka').AsInt==2"
+		nextReplies="Dlg_pl_000232" />
+
+	<Reply
+		name="Dlg_pl_000232"
+		text="Shit!"
+		role="PLAYER"
+		scriptResult="FailQuest('r6m2_Gonka1'); EndConversation()" />
+
+	<Reply
+		name="Dlg_npc_000229"
+		text="Yes you have won it!"
+		role="NPC"
+		scriptCondition="GetVar('Gonka').AsInt==1"
+		nextReplies="Dlg_pl_000230" />
+
+	<Reply
+		name="Dlg_pl_000230"
+		text="Of course!"
+		role="PLAYER"
+		scriptResult="CompleteQuest('r6m2_Gonka1'); EndConversation()" />
+
+	<Reply
+		name="r6m2_BrokenCar_1_N01"
+		text="Help me, dear friend! "
+		role="NPC"
+		scriptCondition="QuestStatus('r6m2_HelpVoditel')==Q_CANBEGIVEN"
+		nextReplies="Dlg_pl_000234" />
+
+	<Reply
+		name="Dlg_pl_000234"
+		text="Why do you think I'm going to?"
+		role="PLAYER"
+		nextReplies="Dlg_npc_000235" />
+
+	<Reply
+		name="Dlg_npc_000235"
+		text="I feel it in my bones. My vehicle has broken. And I don't have spare parts to repair it."
+		role="NPC"
+		nextReplies="Dlg_pl_000236" />
+
+	<Reply
+		name="Dlg_pl_000236"
+		text="What thing has broken in particular? What spares do you need?"
+		role="PLAYER"
+		nextReplies="Dlg_npc_000237" />
+
+	<Reply
+		name="Dlg_npc_000237"
+		text="Ur, it's easier to say what hasn't broken. My steering wheel is all right. But everything other has broken. So I need all spares you can find. I will take everything you bring me."
+		role="NPC"
+		nextReplies="Dlg_pl_000238 Dlg_pl_000239 Dlg_pl_000427" />
+
+	<Reply
+		name="Dlg_pl_000427"
+		text="Yeah, I'm not going to give up everything to search for your spares!"
+		role="PLAYER"
+		scriptResult=" EndConversation()" />
+
+	<Reply
+		name="Dlg_pl_000239"
+		text="I have some. Will you take them?"
+		role="PLAYER"
+		scriptCondition="GetItemsAmount('machinery')>0 "
+		nextReplies="Dlg_npc_000240" />
+
+	<Reply
+		name="Dlg_npc_000240"
+		text="Of course, dear friend, I buy them! Here is your money."
+		role="NPC"
+		nextReplies="Dlg_pl_000241" />
+
+	<Reply
+		name="Dlg_pl_000241"
+		text="Excellent."
+		role="PLAYER"
+		scriptResult="RemovePlayerItem('machinery', GetItemsAmount('machinery')); CompleteQuest('r6m2_HelpVoditel'); EndConversation()" />
+
+	<Reply
+		name="Dlg_pl_000238"
+		text="Ok, stay here and don't go away. I will go to the village and return soon. Chop-chop."
+		role="PLAYER"
+		scriptResult="TakeQuest('r6m2_HelpVoditel'); EndConversation()" />
+
+	<Reply
+		name="r6m2_BrokenCar_2_N01"
+		text="Have you bring me the spares?"
+		role="NPC"
+		scriptCondition="QuestStatus('r6m2_HelpVoditel')==Q_TAKEN"
+		nextReplies="Dlg_pl_000243 Dlg_pl_000244" />
+
+	<Reply
+		name="Dlg_pl_000244"
+		text="Sorry, but I haven't brought you spares yet. I don't have time. But I will bring them, wait and everything will be ok."
+		role="PLAYER"
+		scriptResult="EndConversation()" />
+
+	<Reply
+		name="Dlg_pl_000243"
+		text="Here it is, take it."
+		role="PLAYER"
+		scriptCondition="GetItemsAmount('machinery')>0"
+		nextReplies="Dlg_npc_000245" />
+
+	<Reply
+		name="Dlg_npc_000245"
+		text="Thank you, dear freind. Here is your money."
+		role="NPC"
+		nextReplies="Dlg_pl_000246" />
+
+	<Reply
+		name="Dlg_pl_000246"
+		text="I'm at your disposal."
+		role="PLAYER"
+		scriptResult="RemovePlayerItem('machinery', GetItemsAmount('machinery')); CompleteQuest('r6m2_HelpVoditel'); EndConversation()" />
+
+	<Reply
+		name="r6m1_AvtostopMan_dialog1"
+		text="Will you give me a lift?"
+		role="NPC"
+		scriptCondition="GetCurNpc():GetSpokenCount() == 0"
+		nextReplies="Dlg_pl_000139" />
+
+	<Reply
+		name="Dlg_pl_000139"
+		text="Where?"
+		role="PLAYER"
+		nextReplies="Dlg_npc_000140" />
+
+	<Reply
+		name="Dlg_npc_000140"
+		text="To Otno."
+		role="NPC"
+		nextReplies="Dlg_pl_000141 Dlg_pl_000142" />
+
+	<Reply
+		name="Dlg_pl_000142"
+		text="No."
+		role="PLAYER"
+		scriptResult="GetCurNpc():SetSpokenCount( 1 );  EndConversation()" />
+
+	<Reply
+		name="Dlg_pl_000141"
+		text="Ok, I agree."
+		role="PLAYER"
+		scriptResult="GetCurNpc():SetSpokenCount( 1 );  TakeQuest('r6m1_opt_HelpAvtostopshik');  local r = GetEntityByName ('HumanAvtoSTOP');  if r then r:Remove() end;  EndConversation()" />
+
+	<Reply
+		name="r6m1_AvtostopMan_dialog2"
+		text="Nice ride."
+		role="NPC"
+		scriptCondition="IsQuestTaken('r6m1_opt_HelpAvtostopshik')  and  not(IsQuestComplete('r6m1_opt_HelpAvtostopshik'))"
+		nextReplies="Dlg_pl_000143" />
+
+	<Reply
+		name="Dlg_pl_000143"
+		text="Yes, not bad."
+		role="PLAYER"
+		nextReplies="Dlg_npc_000144" />
+
+	<Reply
+		name="Dlg_npc_000144"
+		text="Here is money."
+		role="NPC"
+		nextReplies="Dlg_pl_000145" />
+
+	<Reply
+		name="Dlg_pl_000145"
+		text="Excellent."
+		role="PLAYER"
+		scriptResult="CompleteQuest('r6m1_opt_HelpAvtostopshik');  EndConversation()" />
+
+	<Reply
+		name="r6m1_Onto_Signer_dialog1"
+		text="Something strange happened at the fields... We are afraid to go there, but in the city this situation has aroused public interest. Will you describe it for citizen?"
+		role="NPC"
+		scriptCondition="GetCurNpc():GetSpokenCount() == 0"
+		nextReplies="Dlg_pl_000147 Dlg_pl_000148" />
+
+	<Reply
+		name="Dlg_pl_000148"
+		text="No."
+		role="PLAYER"
+		scriptResult="EndConversation()" />
+
+	<Reply
+		name="Dlg_pl_000147"
+		text="Yes."
+		role="PLAYER"
+		scriptResult="GetCurNpc():SetSpokenCount( 1 );  TakeQuest('r6m1_opt_Signs');  TActivate ('triggerSeeSigns');  EndConversation()" />
+
+	<Reply
+		name="r6m1_TownMapleSheet_WorestScientist_dialog1"
+		text="Have you found out anything?"
+		role="NPC"
+		scriptCondition="IsQuestTaken('r6m1_opt_SignsDoklad')  and  not(IsQuestComplete('r6m1_opt_SignsDoklad'))"
+		nextReplies="Dlg_pl_000150" />
+
+	<Reply
+		name="Dlg_pl_000150"
+		text="I looked over your fields. Here you are, the notebook with full report, drawings and charts."
+		role="PLAYER"
+		nextReplies="Dlg_npc_000151" />
+
+	<Reply
+		name="Dlg_npc_000151"
+		text="Thank you. Take your reward for the huge risk which you have run through."
+		role="NPC"
+		nextReplies="Dlg_pl_000152" />
+
+	<Reply
+		name="Dlg_pl_000152"
+		text="Yes, it was a real danger and the money will compensate it."
+		role="PLAYER"
+		scriptResult="CompleteQuest('r6m1_opt_SignsDoklad');  EndConversation()" />
+
+	<Reply
+		name="r6m1_Real_Racer_dialog1"
+		text="Do you want to take part in races?"
+		role="NPC"
+		scriptCondition="GetCurNpc():GetSpokenCount() == 0"
+		nextReplies="Dlg_pl_000154" />
+
+	<Reply
+		name="Dlg_pl_000154"
+		text="Race?!"
+		role="PLAYER"
+		nextReplies="Dlg_npc_000155" />
+
+	<Reply
+		name="Dlg_npc_000155"
+		text="Yeah, race. Who will be the first to reach the city. Participant due - 5,000. The winnings is three times bigger."
+		role="NPC"
+		nextReplies="Dlg_pl_000156 Dlg_pl_000157" />
+
+	<Reply
+		name="Dlg_pl_000157"
+		text="It is not interesting for me."
+		role="PLAYER"
+		scriptResult=" EndConversation()" />
+
+	<Reply
+		name="Dlg_pl_000156"
+		text="Ok, I will take part."
+		role="PLAYER"
+		scriptCondition="GetPlayerMoney() >= 1000"
+		scriptResult="AddPlayerMoney( -1000 );  GetCurNpc():SetSpokenCount( 1 );  TakeQuest('r6m1_opt_StartRace');  TActivate ('triggerBigRace');  EndConversation()" />
+
+	<Reply
+		name="r6m1_Lost_Keyt_dialog1"
+		text="Good man, help me. I've lost my child."
+		role="NPC"
+		scriptCondition="GetCurNpc():GetSpokenCount() == 0"
+		nextReplies="Dlg_pl_000100" />
+
+	<Reply
+		name="Dlg_pl_000100"
+		text="It is not my business?"
+		role="PLAYER"
+		nextReplies="Dlg_npc_000109" />
+
+	<Reply
+		name="Dlg_npc_000109"
+		text="Everyone says so and nobody wants to help me, even my husband, Charles!"
+		role="NPC"
+		nextReplies="Dlg_pl_000110 Dlg_pl_000111" />
+
+	<Reply
+		name="Dlg_pl_000111"
+		text="Well even if the husband rejected to help, so I don't need to poke my nose in it."
+		role="PLAYER"
+		scriptResult=" EndConversation()" />
+
+	<Reply
+		name="Dlg_pl_000110"
+		text="Ok, I'll try to help."
+		role="PLAYER"
+		nextReplies="Dlg_npc_000135" />
+
+	<Reply
+		name="Dlg_npc_000135"
+		text="Thank you very much, good man!"
+		role="NPC"
+		nextReplies="Dlg_pl_000136" />
+
+	<Reply
+		name="Dlg_pl_000136"
+		text="Not at all. Let's see what I can do. At first I need to talk to your husband."
+		role="PLAYER"
+		scriptResult="GetCurNpc():SetSpokenCount( 1 );  TakeQuest('r6m1_opt_FindKids');  EndConversation()" />
+
+	<Reply
+		name="r6m1_Lost_Keyt_dialog2"
+		text="What has this unlucky fellow, Charles, told you?"
+		role="NPC"
+		scriptCondition="GetCurNpc():GetSpokenCount() == 2"
+		nextReplies="Dlg_pl_000107" />
+
+	<Reply
+		name="Dlg_pl_000107"
+		text="The behavior of your husband is rather strange. But he helped me understand one thing. How long ago did you see your child?"
+		role="PLAYER"
+		nextReplies="Dlg_npc_000120" />
+
+	<Reply
+		name="Dlg_npc_000120"
+		text="I don't know. This is hard to measure. I remember one thing he was only several months old and I hold him in my hands. He was so small and cute..."
+		role="NPC"
+		nextReplies="Dlg_pl_000125 Dlg_pl_000126" />
+
+	<Reply
+		name="Dlg_pl_000126"
+		text="Umph, are you sure that you had a child? May be there is no child at all?"
+		role="PLAYER"
+		nextReplies="Dlg_npc_000129" />
+
+	<Reply
+		name="Dlg_npc_000129"
+		text="What?!!! Are you going to tell me that I'm insane?!!! Go away!!!"
+		role="NPC"
+		nextReplies="Dlg_pl_000130" />
+
+	<Reply
+		name="Dlg_pl_000130"
+		text="What about money?.."
+		role="PLAYER"
+		scriptResult="GetCurNpc():SetSpokenCount( 10 );  FailQuest('r6m1_opt_FindKids');  EndConversation()" />
+
+	<Reply
+		name="Dlg_pl_000125"
+		text="Your husband told me the same thing. This is rather strange."
+		role="PLAYER"
+		nextReplies="Dlg_npc_000127" />
+
+	<Reply
+		name="Dlg_npc_000127"
+		text="Look, I didn't want to tell you but he addicted to some kind of stuff. You understand what I mean."
+		role="NPC"
+		nextReplies="Dlg_pl_000128" />
+
+	<Reply
+		name="Dlg_pl_000128"
+		text="Ok. I go and talk to him once again."
+		role="PLAYER"
+		scriptResult="GetCurNpc():SetSpokenCount( 3 );  EndConversation()" />
+
+	<Reply
+		name="r6m1_Lost_Keyt_dialog3"
+		text="Have you find out anything?"
+		role="NPC"
+		scriptCondition="GetCurNpc():GetSpokenCount() == 4"
+		nextReplies="Dlg_pl_000108" />
+
+	<Reply
+		name="Dlg_pl_000108"
+		text="Umph, it's hard to believe in, but listen to me. I'm just a vagrant and I have visited a lot of cities and villages. But I haven't seen children for the long time... I'm afraid that you will never find your child."
+		role="PLAYER"
+		nextReplies="Dlg_npc_000133" />
+
+	<Reply
+		name="Dlg_npc_000133"
+		text="O, poor me! Here is your money I don't need it now."
+		role="NPC"
+		nextReplies="Dlg_pl_000134" />
+
+	<Reply
+		name="Dlg_pl_000134"
+		text="Thank you but I need it."
+		role="PLAYER"
+		scriptResult="CompleteQuest('r6m1_opt_FindKids');  GetCurNpc():SetSpokenCount( 10 );  EndConversation()" />
+
+	<Reply
+		name="r6m1_Lost_Charli_dialog1"
+		text="Talk fast that you want I'm busy. I listen to wonderful music."
+		role="NPC"
+		scriptCondition="getObj('r6m1_Lost_Keyt'):GetSpokenCount() == 1"
+		nextReplies="Dlg_pl_000103" />
+
+	<Reply
+		name="Dlg_pl_000103"
+		text="Music?! I didn't near any music, moreover wonderful. I'd like to know about lost child, your wife worries about him. Where did he disappear?"
+		role="PLAYER"
+		nextReplies="Dlg_npc_000112" />
+
+	<Reply
+		name="Dlg_npc_000112"
+		text="The music is in my head and I can hear it. I'm listening to it. I don't know anything about the child. I remember one thing, he was only several months old and I hold him in my hands. He was so small and cute..."
+		role="NPC"
+		nextReplies="Dlg_pl_000113 Dlg_pl_000114" />
+
+	<Reply
+		name="Dlg_pl_000114"
+		text="You really need to go to see the doctor."
+		role="PLAYER"
+		nextReplies="Dlg_npc_000115" />
+
+	<Reply
+		name="Dlg_npc_000115"
+		text="I don't want to talk to you anymore."
+		role="NPC"
+		nextReplies="Dlg_pl_000116" />
+
+	<Reply
+		name="Dlg_pl_000116"
+		text="I can't tell that I have find out something useful."
+		role="PLAYER"
+		scriptResult="getObj('r6m1_Lost_Keyt'):SetSpokenCount( 10 );  FailQuest('r6m1_opt_FindKids');  EndConversation()" />
+
+	<Reply
+		name="Dlg_pl_000113"
+		text="Is this your last memoirs about him? How long ago was it?"
+		role="PLAYER"
+		nextReplies="Dlg_npc_000117" />
+
+	<Reply
+		name="Dlg_npc_000117"
+		text="I don't know, I haven't feel time for a long time. Time... Time has stopped in the forests. On my personal watch now is February, 18 6:35 am."
+		role="NPC"
+		nextReplies="Dlg_pl_000118 Dlg_pl_000119" />
+
+	<Reply
+		name="Dlg_pl_000119"
+		text="My watch shows the same."
+		role="PLAYER"
+		nextReplies="Dlg_npc_000123" />
+
+	<Reply
+		name="Dlg_npc_000123"
+		text="You lie, you don't have any watch. Go away. No, I better go."
+		role="NPC"
+		nextReplies="Dlg_pl_000124" />
+
+	<Reply
+		name="Dlg_pl_000124"
+		text="Yeah, tough luck, drill his carburetor."
+		role="PLAYER"
+		scriptResult="getObj('r6m1_Lost_Keyt'):SetSpokenCount( 10 );  FailQuest('r6m1_opt_FindKids');  EndConversation()" />
+
+	<Reply
+		name="Dlg_pl_000118"
+		text="Don't you think that your watch isn't working?"
+		role="PLAYER"
+		nextReplies="Dlg_npc_000121" />
+
+	<Reply
+		name="Dlg_npc_000121"
+		text="Of course, it doesn't work, when did you see working watch for the last time? We are talking here and at the same time many hours or may be days have passed. Don't you think about it?"
+		role="NPC"
+		nextReplies="Dlg_pl_000122" />
+
+	<Reply
+		name="Dlg_pl_000122"
+		text="Stay here and don't go away, I'll discuss it with Kate and go back."
+		role="PLAYER"
+		scriptResult="getObj('r6m1_Lost_Keyt'):SetSpokenCount( 2 );  EndConversation()" />
+
+	<Reply
+		name="r6m1_Lost_Charli_dialog2"
+		text="Haven't we met anywhere before?"
+		role="NPC"
+		scriptCondition="getObj('r6m1_Lost_Keyt'):GetSpokenCount() == 3"
+		nextReplies="Dlg_pl_000104" />
+
+	<Reply
+		name="Dlg_pl_000104"
+		text="I talked to him 15 minutes ago. What about drug addiction?"
+		role="PLAYER"
+		nextReplies="Dlg_npc_000131" />
+
+	<Reply
+		name="Dlg_npc_000131"
+		text="Drugs? Pipe dream mushrooms are not drugs... Ok, you've caught me. I'll tell you everything but on condition that you won't tell anybody about my mania. People from community won't understand me. Listen the feeling of time is very strange. According to my feelings I saw the child long ago. May be even some decades ago. But my wife don't want to listen to it."
+		role="NPC"
+		nextReplies="Dlg_pl_000132" />
+
+	<Reply
+		name="Dlg_pl_000132"
+		text="Aha! That is the truth. It will be interesting to Kate to know it."
+		role="PLAYER"
+		scriptResult="getObj('r6m1_Lost_Keyt'):SetSpokenCount( 4 );  EndConversation()" />
+
+	<Reply
+		name="r6m1_TownMapleSheet_WorestMan_dialog1"
+		text="Say..."
+		role="NPC"
+		scriptCondition="IsQuestTaken('r6m1_TalkWithWorestMen_Quest')    and    not(IsQuestComplete('r6m1_TalkWithWorestMen_Quest'))"
+		nextReplies="Dlg_pl_000048" />
+
+	<Reply
+		name="Dlg_pl_000048"
+		text="Good morning!"
+		role="PLAYER"
+		nextReplies="Dlg_npc_000049" />
+
+	<Reply
+		name="Dlg_npc_000049"
+		text="If this day is good for you it is good."
+		role="NPC"
+		nextReplies="Dlg_pl_000050" />
+
+	<Reply
+		name="Dlg_pl_000050"
+		text="Yes? May be. Do you know whom this flying vehicle belongs to?"
+		role="PLAYER"
+		nextReplies="Dlg_npc_000051" />
+
+	<Reply
+		name="Dlg_npc_000051"
+		text="There is no secret about it. This vehicle born to fly belongs to the tribe which lives in the Forest of Lost."
+		role="NPC"
+		nextReplies="Dlg_pl_000052" />
+
+	<Reply
+		name="Dlg_pl_000052"
+		text="How can I go to this forest?"
+		role="PLAYER"
+		nextReplies="Dlg_npc_000053" />
+
+	<Reply
+		name="Dlg_npc_000053"
+		text="Follow the road and it will lead you to it."
+		role="NPC"
+		nextReplies="Dlg_pl_000054" />
+
+	<Reply
+		name="Dlg_pl_000054"
+		text="What are you doing?! Areyou goofing on me?! I know that to go somewhere you need to go along the road. I ask you, what particular road?"
+		role="PLAYER"
+		nextReplies="Dlg_npc_000055" />
+
+	<Reply
+		name="Dlg_npc_000055"
+		text="But some places you can't reach along the road."
+		role="NPC"
+		nextReplies="Dlg_pl_000056" />
+
+	<Reply
+		name="Dlg_pl_000056"
+		text="Listen! Show me the way to this forest and that's all, ok?"
+		role="PLAYER"
+		nextReplies="Dlg_npc_000057" />
+
+	<Reply
+		name="Dlg_npc_000057"
+		text="I will show you the way but it is not the road you need."
+		role="NPC"
+		nextReplies="Dlg_pl_000058" />
+
+	<Reply
+		name="Dlg_pl_000058"
+		text="You just show me and all other things I can judge on my own?"
+		role="PLAYER"
+		scriptResult="CompleteQuest('r6m1_TalkWithWorestMen_Quest');  EndConversation()" />
+
+	<Reply
+		name="r6m1_TownMapleSheet_WorestMan_dialog0"
+		text="Do you realize the aim of your life? Where do you go and why? Who are you? And who am I? Stay here and we will try to answer these difficult questions together..."
+		role="NPC"
+		scriptCondition="not(IsQuestTaken('r6m1_TalkWithWorestMen_Quest'))  or  IsQuestComplete('r6m1_TalkWithWorestMen_Quest')"
+		nextReplies="Dlg_pl_000088" />
+
+	<Reply
+		name="Dlg_pl_000088"
+		text="Ok, everything is clear. I 'm off."
+		role="PLAYER"
+		scriptResult=" EndConversation()" />
+
+	<Reply
+		name="r6m1_Lodon_Worker_dialog01"
+		text="Robots expel us from the factory. Factory is our life. It's good we manage to find this mine."
+		role="NPC"
+		scriptCondition="not(IsQuestComplete('r6m1_KillBoss2_Quest'))"
+		nextReplies="Dlg_pl_000092" />
+
+	<Reply
+		name="Dlg_pl_000092"
+		text="And what do you mine?"
+		role="PLAYER"
+		nextReplies="Dlg_npc_000095" />
+
+	<Reply
+		name="Dlg_npc_000095"
+		text="Yah ....This... This is not important I'm not sorry about the factory so I don't want to talk to you."
+		role="NPC"
+		nextReplies="Dlg_pl_000096" />
+
+	<Reply
+		name="Dlg_pl_000096"
+		text="I won't disturb you."
+		role="PLAYER"
+		scriptResult=" EndConversation()" />
+
+	<Reply
+		name="r6m1_Lodon_Worker_dialog02"
+		text="Factory is free! And our life is not aimless again! The logjam blocked the road to the factory we have already cleared one thing is left to repair the factory main entrance."
+		role="NPC"
+		scriptCondition="IsQuestComplete('r6m1_KillBoss2_Quest')"
+		nextReplies="Dlg_pl_000094" />
+
+	<Reply
+		name="Dlg_pl_000094"
+		text="Ok, what do you mine?"
+		role="PLAYER"
+		nextReplies="Dlg_npc_000097" />
+
+	<Reply
+		name="Dlg_npc_000097"
+		text="I don't know! I came to this village not long ago."
+		role="NPC"
+		nextReplies="Dlg_pl_000098" />
+
+	<Reply
+		name="Dlg_pl_000098"
+		text="Ok, now everything is clear to me."
+		role="PLAYER"
+		scriptResult=" EndConversation()" />
+
+	<Reply
+		name="r6m1_Lost_LostMan_dialog1"
+		text="What thing have brought you to us, stranger?"
+		role="NPC"
+		scriptCondition="IsQuestTaken('r6m1_FindLOST_Quest')   and   not(IsQuestComplete('r6m1_FindLOST_Quest')) "
+		nextReplies="Dlg_pl_000059" />
+
+	<Reply
+		name="Dlg_pl_000059"
+		text="Great desire to embitter somebody's life."
+		role="PLAYER"
+		nextReplies="Dlg_npc_000060" />
+
+	<Reply
+		name="Dlg_npc_000060"
+		text="And why did you come to our tribe? We are peaceful dwellers."
+		role="NPC"
+		nextReplies="Dlg_pl_000061" />
+
+	<Reply
+		name="Dlg_pl_000061"
+		text="Why? Haven't you shot at me from your flying vehicle?"
+		role="PLAYER"
+		nextReplies="Dlg_npc_000067" />
+
+	<Reply
+		name="Dlg_npc_000067"
+		text="Sorry, stranger. But this is a mistake."
+		role="NPC"
+		nextReplies="Dlg_pl_000068" />
+
+	<Reply
+		name="Dlg_pl_000068"
+		text="You are going to say that you have shot at me accidentally?"
+		role="PLAYER"
+		nextReplies="Dlg_npc_000069" />
+
+	<Reply
+		name="Dlg_npc_000069"
+		text="No, the case is that we haven't shot at you at all. Our flying vehicle can't fly for a long time yet. Many generations of our tribe tried to repair it, but unsuccessfully. Now I think it is impossible."
+		role="NPC"
+		nextReplies="Dlg_pl_000070" />
+
+	<Reply
+		name="Dlg_pl_000070"
+		text="Yes? Why?"
+		role="PLAYER"
+		nextReplies="Dlg_npc_000071" />
+
+	<Reply
+		name="Dlg_npc_000071"
+		text="We don't have spares to make it fly in the sky again! Earlier we received the required parts from the Factory in the hills but when robots came everything was over."
+		role="NPC"
+		nextReplies="Dlg_pl_000072" />
+
+	<Reply
+		name="Dlg_pl_000072"
+		text="Robots?"
+		role="PLAYER"
+		nextReplies="Dlg_npc_000073" />
+
+	<Reply
+		name="Dlg_npc_000073"
+		text="These iron creatures destroy everything on the road. They are ruled by a man who has flying vehicle but it does not fly like ours."
+		role="NPC"
+		nextReplies="Dlg_pl_000074" />
+
+	<Reply
+		name="Dlg_pl_000074"
+		text="And does your vehicle fly?"
+		role="PLAYER"
+		nextReplies="Dlg_npc_000075" />
+
+	<Reply
+		name="Dlg_npc_000075"
+		text="No but it could. If we managed to get all the spares."
+		role="NPC"
+		nextReplies="Dlg_pl_000076" />
+
+	<Reply
+		name="Dlg_pl_000076"
+		text="Does the vehicle of the man who brings robot have loud noise and can hang in the air?"
+		role="PLAYER"
+		nextReplies="Dlg_npc_000077" />
+
+	<Reply
+		name="Dlg_npc_000077"
+		text="That's right."
+		role="NPC"
+		nextReplies="Dlg_pl_000078" />
+
+	<Reply
+		name="Dlg_pl_000078"
+		text="That's tough!! A vehicle like that shot at me. Do you know how can I find this flying vehicle? It can't fly forever it must be fueled somewhere from time to time."
+		role="PLAYER"
+		nextReplies="Dlg_npc_000079" />
+
+	<Reply
+		name="Dlg_npc_000079"
+		text="Maybe. Ask people from the Factory in the hills. Their lands were occupied by robots at first time. Maybe they can tell you about robots and their master more than we can."
+		role="NPC"
+		nextReplies="Dlg_pl_000080" />
+
+	<Reply
+		name="Dlg_pl_000080"
+		text="Ok."
+		role="PLAYER"
+		scriptResult="CompleteQuest('r6m1_FindLOST_Quest');  TActivate ('triggerWayToZavod');  EndConversation()" />
+
+	<Reply
+		name="r6m1_Lost_LostMan_dialog2"
+		text="We welcome you. Rumors come to us that we are obliged to you for the liquidation of terrible robots."
+		role="NPC"
+		scriptCondition="IsQuestTaken('r6m1_HSFindParts_Quest')   and   not(IsQuestComplete('r6m1_HSFindParts_Quest'))"
+		nextReplies="Dlg_pl_000062" />
+
+	<Reply
+		name="Dlg_pl_000062"
+		text="That's true."
+		role="PLAYER"
+		nextReplies="Dlg_npc_000063" />
+
+	<Reply
+		name="Dlg_npc_000063"
+		text="How can we acknowledge you?"
+		role="NPC"
+		nextReplies="Dlg_pl_000064" />
+
+	<Reply
+		name="Dlg_pl_000064"
+		text="There is one very easy way! I know that you have removed the engine from the ferry. Is that true?"
+		role="PLAYER"
+		nextReplies="Dlg_npc_000065" />
+
+	<Reply
+		name="Dlg_npc_000065"
+		text="That is it. It is in the shed with other spares. Unfortunately it hasn't suited us."
+		role="NPC"
+		nextReplies="Dlg_pl_000066" />
+
+	<Reply
+		name="Dlg_pl_000066"
+		text="Excellent! If it hasn't suited you maybe you give it to me?"
+		role="PLAYER"
+		nextReplies="Dlg_npc_000081" />
+
+	<Reply
+		name="Dlg_npc_000081"
+		text="Sorry, but it is impossible. Everything that can be useful for our relic vehicle must stay here. Maybe we wil exchange it for something else."
+		role="NPC"
+		nextReplies="Dlg_pl_000082" />
+
+	<Reply
+		name="Dlg_pl_000082"
+		text="I can pay for it? It can be easier for you to buy something for money."
+		role="PLAYER"
+		nextReplies="Dlg_npc_000083" />
+
+	<Reply
+		name="Dlg_npc_000083"
+		text="You words are not senseless but the price is high 100,000."
+		role="NPC"
+		nextReplies="Dlg_pl_000084 Dlg_pl_000085" />
+
+	<Reply
+		name="Dlg_pl_000085"
+		text="It is rather a high price for old engine but I'm short of time."
+		role="PLAYER"
+		scriptCondition="GetPlayerMoney() >= 100000"
+		scriptResult="AddPlayerMoney( -100000 );  CompleteQuest('r6m1_HSFindParts_Quest');  CompleteQuest('r6m1_HSBuyParts_Quest');  EndConversation()" />
+
+	<Reply
+		name="Dlg_pl_000084"
+		text="You are crazy, you can buy a new vehicle for that money!"
+		role="PLAYER"
+		scriptResult="CompleteQuest('r6m1_HSFindParts_Quest');  EndConversation()" />
+
+	<Reply
+		name="r6m1_Lost_LostMan_dialog3"
+		text="Have you found money?"
+		role="NPC"
+		scriptCondition="IsQuestTaken('r6m1_HSBuyParts_Quest')   and   not(IsQuestComplete('r6m1_HSBuyParts_Quest'))"
+		nextReplies="Dlg_pl_000084 Dlg_pl_000085" />
+
+	<Reply
+		name="r6m1_Lost_LostMan_dialog0"
+		text="Some strange feelings inside pull us to the sky. Nobody knows why? But the flying vehicle could have helped us to find answers. "
+		role="NPC"
+		scriptCondition="(not(IsQuestTaken('r6m1_FindLOST_Quest'))  or  IsQuestComplete('r6m1_FindLOST_Quest'))  and  (not(IsQuestTaken('r6m1_HSFindParts_Quest'))  or  IsQuestComplete('r6m1_HSFindParts_Quest'))  and  (not(IsQuestTaken('r6m1_HSBuyParts_Quest'))  or  IsQuestComplete('r6m1_HSBuyParts_Quest'))"
+		nextReplies="Dlg_pl_000090" />
+
+	<Reply
+		name="Dlg_pl_000090"
+		text="I suppressed such kind of feelings."
+		role="PLAYER"
+		scriptResult=" EndConversation()" />
+
+	<Reply
+		name="r5m2_OneEye_N01"
+		text="Who are you?"
+		role="NPC"
+		scriptCondition="QuestStatus('r5m2_MoveToOneEye_Quest') == Q_TAKEN  and  QuestStatus('r5m2_KillWantedBandit_Quest') == Q_COMPLETED"
+		nextReplies="r5m2_OneEye_N02" />
+
+	<Reply
+		name="r5m2_OneEye_N02"
+		text="Good morning. I am told that here heads of bandits are exchanged for money. How much will you give me for Ethan's head?"
+		role="PLAYER"
+		nextReplies="r5m2_OneEye_N03" />
+
+	<Reply
+		name="r5m2_OneEye_N03"
+		text="Don't you think I will pay you in advance?"
+		role="NPC"
+		nextReplies="r5m2_OneEye_N04" />
+
+	<Reply
+		name="r5m2_OneEye_N04"
+		text="Why in advance? I killed Ethan. You know, sand to his carburetor, he suggested that I give him all money and goods to leave me alive. "
+		role="PLAYER"
+		nextReplies="r5m2_OneEye_N05" />
+
+	<Reply
+		name="r5m2_OneEye_N05"
+		text="It's Ethan's style. What did you do?"
+		role="NPC"
+		nextReplies="r5m2_OneEye_N06" />
+
+	<Reply
+		name="r5m2_OneEye_N06"
+		text="We offend each over for some time. And then he burst with anger."
+		role="PLAYER"
+		nextReplies="r5m2_OneEye_N07" />
+
+	<Reply
+		name="r5m2_OneEye_N07"
+		text="Ok, I trust you. What's your name?"
+		role="NPC"
+		nextReplies="r5m2_OneEye_N08" />
+
+	<Reply
+		name="r5m2_OneEye_N08"
+		text="My name is Vargant."
+		role="PLAYER"
+		nextReplies="r5m2_OneEye_N09" />
+
+	<Reply
+		name="r5m2_OneEye_N09"
+		text="Don't you recognize me?"
+		role="NPC"
+		nextReplies="r5m2_OneEye_N10 Dlg_pl_000348" />
+
+	<Reply
+		name="Dlg_pl_000348"
+		text="No, do I have to?"
+		role="PLAYER"
+		nextReplies="Dlg_npc_000350" />
+
+	<Reply
+		name="Dlg_npc_000350"
+		text="You are very similar to my old friend I haven't seen him for ages. Looking at you I have decided that I can solve one of my problems."
+		role="NPC"
+		nextReplies="Dlg_pl_000351" />
+
+	<Reply
+		name="Dlg_pl_000351"
+		text="Strike me dead by accumulator spark! To solve problems is my job! There is only one question - money."
+		role="PLAYER"
+		nextReplies="r5m2_OneEye_N17" />
+
+	<Reply
+		name="r5m2_OneEye_N10"
+		text="Break down my gear set! Haven't we met before?"
+		role="PLAYER"
+		nextReplies="r5m2_OneEye_N11" />
+
+	<Reply
+		name="r5m2_OneEye_N11"
+		text="Aha. You call my one-eyed crock that time."
+		role="NPC"
+		nextReplies="r5m2_OneEye_N12" />
+
+	<Reply
+		name="r5m2_OneEye_N12"
+		text="One-eye! That's right! You heavily broke my truck at that time. What a meeting! Haven't seen you for ages! I regret that I have left you. But what about your dream of a small house on hill?"
+		role="PLAYER"
+		nextReplies="r5m2_OneEye_N13" />
+
+	<Reply
+		name="r5m2_OneEye_N13"
+		text="But I have already lived in the house on the hill. Why don't you like this one? It's great luck that we have met."
+		role="NPC"
+		nextReplies="r5m2_OneEye_N14" />
+
+	<Reply
+		name="r5m2_OneEye_N14"
+		text="Isn't this a cause to increase my reward?"
+		role="PLAYER"
+		nextReplies="r5m2_OneEye_N15" />
+
+	<Reply
+		name="r5m2_OneEye_N15"
+		text="No your reward will be as agreed before. But can you do one thing for me? Of course, there will be a reward."
+		role="NPC"
+		nextReplies="r5m2_OneEye_N16 Dlg_pl_000349" />
+
+	<Reply
+		name="Dlg_pl_000349"
+		text="I'm ready to help you for free."
+		role="PLAYER"
+		nextReplies="r5m2_OneEye_N17" />
+
+	<Reply
+		name="r5m2_OneEye_N16"
+		text="I can do anything for you! Especially for good payment."
+		role="PLAYER"
+		nextReplies="r5m2_OneEye_N17" />
+
+	<Reply
+		name="r5m2_OneEye_N17"
+		text="I hope you will be a success. Not long ago one thing was stolen from my treasury. To tell the truth I'm not angry about the stolen thing but the fact is that it was possible to do. I suspect treason from one of my captains. You will be appointed in the squad of this man and if you notice something suspicious let me know immediately."
+		role="NPC"
+		nextReplies="r5m2_OneEye_N18" />
+
+	<Reply
+		name="r5m2_OneEye_N18"
+		text="It is not going to be so hard as I have expected but not so easy! Ok, I'll do it."
+		role="PLAYER"
+		nextReplies="r5m2_OneEye_N19" />
+
+	<Reply
+		name="r5m2_OneEye_N19"
+		text="Thank you. Find Capitan Amerigo and tell him that you are appointed to his squad. Keep your eyes open."
+		role="NPC"
+		nextReplies="r5m2_OneEye_N20" />
+
+	<Reply
+		name="r5m2_OneEye_N20"
+		text="Sure!"
+		role="PLAYER"
+		scriptResult="CompleteQuest('r5m2_MoveToOneEye_Quest'); TActivate('trCreateAmerigoTeam'); EndConversation()" />
+
+	<Reply
+		name="r5m2_OneEye_2_N01"
+		text="You know, we are trying to live according to the rules, as we did before. Our aim is to revive forgotten rules and restore the lost civilization."
+		role="NPC"
+		scriptCondition="Q_CANBEGIVEN >= QuestStatus('r5m2_ReturnToOneeyeAfterM_Quest')  and  QuestStatus('r5m2_KillWantedBandit_Quest') == Q_COMPLETED"
+		nextReplies="r5m2_OneEye_2_N02" />
+
+	<Reply
+		name="r5m2_OneEye_2_N02"
+		text="That's clear. So, why did you act like others, you don't get embarrassed to take part in dirty business, do you?"
+		role="PLAYER"
+		nextReplies="r5m2_OneEye_2_N03" />
+
+	<Reply
+		name="r5m2_OneEye_2_N03"
+		text="Eh, it's hard to follow the right way. We also stray from the way sometimes. Stop, don't you have any other business?!"
+		role="NPC"
+		nextReplies="r5m2_OneEye_2_N04" />
+
+	<Reply
+		name="r5m2_OneEye_2_N04"
+		text="A... of course."
+		role="PLAYER"
+		scriptResult="EndConversation()" />
+
+	<Reply
+		name="r5m2_Starevchik_N01"
+		text="My respect, dear sir."
+		role="NPC"
+		scriptCondition="QuestStatus('r5m2_FHTalkWithAnticwar_Quest')==Q_TAKEN"
+		scriptResult="CompleteQuest('r5m2_FHTalkWithAnticwar_Quest')"
+		nextReplies="r5m2_Starevchik_N02" />
+
+	<Reply
+		name="r5m2_Starevchik_N02"
+		text="Are you Ragman?"
+		role="PLAYER"
+		nextReplies="r5m2_Starevchik_N03" />
+
+	<Reply
+		name="r5m2_Starevchik_N03"
+		text="Yes, that's me. Do you want to buy anything? Or maybe sell? Trust me, here my prices are the most real."
+		role="NPC"
+		nextReplies="r5m2_Starevchik_N04" />
+
+	<Reply
+		name="r5m2_Starevchik_N04"
+		text="At first tell me what is this thing needed for? Then we speak about the price."
+		role="PLAYER"
+		nextReplies="r5m2_Starevchik_N05" />
+
+	<Reply
+		name="r5m2_Starevchik_N05"
+		text="Where did you get such an artifact, dear sir?"
+		role="NPC"
+		nextReplies="r5m2_Starevchik_N06" />
+
+	<Reply
+		name="r5m2_Starevchik_N06"
+		text="To tell the truth I found it on the road."
+		role="PLAYER"
+		nextReplies="r5m2_Starevchik_N07" />
+
+	<Reply
+		name="r5m2_Starevchik_N07"
+		text="You say on the road, dear sir? It does not sound like the truth. Everything I found I remember to the last scratch. I found this box many years ago on the old ruins and sold it to the local governor. I heard that her treasury has been robbed recently! For the head of the robber 10,000 dollars were set. What would you tell me now, dear sir?"
+		role="NPC"
+		nextReplies="r5m2_Starevchik_N08" />
+
+	<Reply
+		name="r5m2_Starevchik_N08"
+		text="Don't you think it was me?"
+		role="PLAYER"
+		nextReplies="r5m2_Starevchik_N09" />
+
+	<Reply
+		name="r5m2_Starevchik_N09"
+		text="It doesn't need to think here. This thing was stolen and then here comes the stranger with it and tells me that he found it. But I won't tell anybody if you pay me, dear sir, 500 dollars."
+		role="NPC"
+		nextReplies="r5m2_Starevchik_N010a r5m2_Starevchik_N10b" />
+
+	<Reply
+		name="r5m2_Starevchik_N10b"
+		text="Maybe I should do something to make you silent forever?"
+		role="PLAYER"
+		nextReplies="r5m2_Starevchik_N11b" />
+
+	<Reply
+		name="r5m2_Starevchik_N11b"
+		text="I think that you are taking too much upon you, kid. Can you get a piece of me?"
+		role="NPC"
+		nextReplies="r5m2_Starevchik_N12b" />
+
+	<Reply
+		name="r5m2_Starevchik_N12b"
+		text="I'm going to cook the dietetic dish - Ragman stuffed with bullets in own juice."
+		role="PLAYER"
+		scriptResult="TActivate('trCreateStarievshik'); EndConversation()" />
+
+	<Reply
+		name="r5m2_Starevchik_N010a"
+		text="Ok, here is your money."
+		role="PLAYER"
+		scriptCondition="GetPlayerMoney()>=500"
+		nextReplies="r5m2_Starevchik_N011a" />
+
+	<Reply
+		name="r5m2_Starevchik_N011a"
+		text="It's nice to deal with you. You can find me anytime."
+		role="NPC"
+		nextReplies="r5m2_Starevchik_N012a" />
+
+	<Reply
+		name="r5m2_Starevchik_N012a"
+		text="I'll keep it in mind."
+		role="PLAYER"
+		scriptResult="AddPlayerMoney(-500); CompleteQuest('r5m2_FHDeleteSled_Quest'); EndConversation()" />
+
+	<Reply
+		name="r5m2_Pervomaika_Charli_N01"
+		text="How can I help you, sir?"
+		role="NPC"
+		scriptCondition="QuestStatus('r5m2_FHTalkWithCitizens_Quest')==Q_TAKEN"
+		nextReplies="r5m2_Pervomaika_Charli_N02" />
+
+	<Reply
+		name="r5m2_Pervomaika_Charli_N02"
+		text="Tell me, man... Do you have custom here between two drivers to fight to a finish? When I came here I stumbled upon traces of battle. Only wreckages have left after the vehicles."
+		role="PLAYER"
+		nextReplies="r5m2_Pervomaika_Charli_N03" />
+
+	<Reply
+		name="r5m2_Pervomaika_Charli_N03"
+		text="No, sir! People here are very peaceful. I don't know what to tell you."
+		role="NPC"
+		nextReplies="r5m2_Pervomaika_Charli_N04 Dlg_pl_000334" />
+
+	<Reply
+		name="Dlg_pl_000334"
+		text="Do you think a unique and very expensive thing can be the reason for the battle?"
+		role="PLAYER"
+		nextReplies="Dlg_npc_000335" />
+
+	<Reply
+		name="Dlg_npc_000335"
+		text="Who knows, sir? Maybe you are afraid that such things are not rare here? They happened not very often. But guards are in demand. You can ask any barman in any city."
+		role="NPC"
+		nextReplies="Dlg_pl_000336" />
+
+	<Reply
+		name="Dlg_pl_000336"
+		text="I'm not interested in guard work. I collect artifacts."
+		role="PLAYER"
+		nextReplies="Dlg_npc_000343" />
+
+	<Reply
+		name="Dlg_npc_000343"
+		text="I don't know what to tell you, sir. I'm not an expert in artifacts... I'm a potato expert. You'd better to talk to merchants. One of them has sold my potato combine recently."
+		role="NPC"
+		nextReplies="Dlg_pl_000344 Dlg_pl_000345" />
+
+	<Reply
+		name="Dlg_pl_000345"
+		text="Holy fuel! I don't care about your nut merchants!"
+		role="PLAYER"
+		nextReplies="Dlg_npc_000346" />
+
+	<Reply
+		name="Dlg_pl_000344"
+		text="I'm not interested in potato really."
+		role="PLAYER"
+		nextReplies="Dlg_npc_000346" />
+
+	<Reply
+		name="Dlg_npc_000346"
+		text="You have misunderstood me. We have here one vagrant merchant. We call him Ragman for fun. Instead of buying potato and timber he trades some old things. He yo-yos back and forth between cities and dumps. But from time to time one can buy a useful thing. So he is an expert in artifacts you'd better to talk to him. "
+		role="NPC"
+		nextReplies="Dlg_pl_000347" />
+
+	<Reply
+		name="Dlg_pl_000347"
+		text="Ragman? Ok, I'll try to find him."
+		role="PLAYER"
+		scriptResult="TActivate('trCreateWowHumans'); CompleteQuest('r5m2_FHTalkWithCitizens_Quest'); EndConversation()" />
+
+	<Reply
+		name="r5m2_Pervomaika_Charli_N04"
+		text="Between the wreckage I have found this box. I'd like to find out what is this."
+		role="PLAYER"
+		nextReplies="r5m2_Pervomaika_Charli_N05" />
+
+	<Reply
+		name="r5m2_Pervomaika_Charli_N05"
+		text="I'm afraid I can't help you,sir."
+		role="NPC"
+		nextReplies="r5m2_Pervomaika_Charli_N06 Dlg_pl_000337" />
+
+	<Reply
+		name="Dlg_pl_000337"
+		text="Maybe some money will refresh your memory?"
+		role="PLAYER"
+		nextReplies="Dlg_npc_000339" />
+
+	<Reply
+		name="Dlg_npc_000339"
+		text="Sir? You'd better repair your car at first! It's almost falling apart, dear. It right suits for the collection of Ragman. He collects all this ancient stuff. Maybe he will buy this jitney."
+		role="NPC"
+		nextReplies="Dlg_pl_000340" />
+
+	<Reply
+		name="Dlg_pl_000340"
+		text="Ancient stuff, it's interesting?  Where is his shop situated?"
+		role="PLAYER"
+		nextReplies="Dlg_npc_000341" />
+
+	<Reply
+		name="Dlg_npc_000341"
+		text="Ragman doesn't sit at one place. He yo-yos back and forth. Look for him around the city. If your shandrydan doesn't fall apart he can give you a good price. Take some money, sir, and repair it a little."
+		role="NPC"
+		nextReplies="Dlg_pl_000342" />
+
+	<Reply
+		name="Dlg_pl_000342"
+		text="You say Shandrydan, I see. Look at your own car!"
+		role="PLAYER"
+		scriptResult="TActivate('trCreateWowHumans'); CompleteQuest('r5m2_FHTalkWithCitizens_Quest'); AddPlayerMoney(100); EndConversation()" />
+
+	<Reply
+		name="r5m2_Pervomaika_Charli_N06"
+		text="Two guys killed each other because of this box and you can't even suppose what it can be?"
+		role="PLAYER"
+		nextReplies="r5m2_Pervomaika_Charli_N07" />
+
+	<Reply
+		name="r5m2_Pervomaika_Charli_N07"
+		text="I don't even know... Try to find Ragman. He is a vargant merchant he travels between the cities and trades ancient artifacts. Maybe he could help you."
+		role="NPC"
+		nextReplies="r5m2_Pervomaika_Charli_N08 Dlg_pl_000338" />
+
+	<Reply
+		name="Dlg_pl_000338"
+		text="Ok! Have a good time, country bumpkin, three cylinders in your throat."
+		role="PLAYER"
+		scriptResult="TActivate('trCreateWowHumans'); CompleteQuest('r5m2_FHTalkWithCitizens_Quest'); EndConversation()" />
+
+	<Reply
+		name="r5m2_Pervomaika_Charli_N08"
+		text="Thank you, old chap!"
+		role="PLAYER"
+		scriptResult="TActivate('trCreateWowHumans'); CompleteQuest('r5m2_FHTalkWithCitizens_Quest'); EndConversation()" />
+
+	<Reply
+		name="r5m2_Pervomaika_Charli_3_N01"
+		text="Oh, it is you, dear sir! Have you found Ragman?"
+		role="NPC"
+		scriptCondition="QuestStatus('r5m2_FHTalkWithAnticwar_Quest')==Q_COMPLETED"
+		nextReplies="r5m2_Pervomaika_Charli_2_N02a r5m2_Pervomaika_Charli_2_N02b" />
+
+	<Reply
+		name="r5m2_Pervomaika_Charli_2_N02b"
+		text="Your Ragman is a real speculator."
+		role="PLAYER"
+		scriptCondition="GetVar('StarievshikDie').AsInt~=1"
+		scriptResult="EndConversation()" />
+
+	<Reply
+		name="r5m2_Pervomaika_Charli_2_N02a"
+		text="Yes, I've found him. R.I.P."
+		role="PLAYER"
+		scriptCondition="GetVar('StarievshikDie').AsInt==1"
+		scriptResult="EndConversation()" />
+
+	<Reply
+		name="r5m2_Pervomaika_Charli_2_N01"
+		text="How is your searching, sir?"
+		role="NPC"
+		scriptCondition="QuestStatus('r5m2_FHTalkWithAnticwar_Quest')==Q_TAKEN"
+		nextReplies="r5m2_Pervomaika_Charli_2_N02" />
+
+	<Reply
+		name="r5m2_Pervomaika_Charli_2_N02"
+		text="Business is a bit groggy."
+		role="PLAYER"
+		nextReplies="r5m2_Pervomaika_Charli_2_N03" />
+
+	<Reply
+		name="r5m2_Pervomaika_Charli_2_N03"
+		text="In your eyes I see that you are far away from your aim?"
+		role="NPC"
+		nextReplies="r5m2_Pervomaika_Charli_2_N04" />
+
+	<Reply
+		name="r5m2_Pervomaika_Charli_2_N04"
+		text="Aha."
+		role="PLAYER"
+		scriptResult="EndConversation()" />
+
+	<Reply
+		name="r5m2_Plemannik_1_N01"
+		text="Listen, stranger, I have a profitable deal for you."
+		role="NPC"
+		scriptCondition="(QuestStatus('r5m2_KillUncle') == Q_CANBEGIVEN)  and  (not(QuestStatus('r5m2_KillUncle') == Q_TAKEN))  and  (GetVar('PlemmanikStat').AsInt == 0)"
+		nextReplies="r5m2_Plemannik_1_N02a r5m2_Plemannik_1_N02b" />
+
+	<Reply
+		name="r5m2_Plemannik_1_N02b"
+		text="I'm busy."
+		role="PLAYER"
+		scriptResult="TActivate('trPlemannikQuestTimer'); EndConversation()" />
+
+	<Reply
+		name="r5m2_Plemannik_1_N02a"
+		text="Whose fuel tank am I going to empty?"
+		role="PLAYER"
+		nextReplies="r5m2_Plemannik_1_N03a" />
+
+	<Reply
+		name="r5m2_Plemannik_1_N03a"
+		text="Everything is rather serious. I have an uncle he is a very prosperous man. He left our family to vegetate in the grip of poverty."
+		role="NPC"
+		nextReplies="r5m2_Plemannik_1_N04a" />
+
+	<Reply
+		name="r5m2_Plemannik_1_N04a"
+		text="That a pitiful story!"
+		role="PLAYER"
+		nextReplies="r5m2_Plemannik_1_N05a" />
+
+	<Reply
+		name="r5m2_Plemannik_1_N05a"
+		text="Help me get rid of this ruthless bloodsucker! I'll pay you, never fear."
+		role="NPC"
+		nextReplies="r5m2_Plemannik_1_N06aa r5m2_Plemannik_1_N06ab" />
+
+	<Reply
+		name="r5m2_Plemannik_1_N06ab"
+		text="You'd better go away. Look at him the povetry victim."
+		role="PLAYER"
+		scriptResult="TActivate('trPlemannikQuestTimer'); EndConversation()" />
+
+	<Reply
+		name="r5m2_Plemannik_1_N06aa"
+		text="Oh, you are a real villain, blow up your carburetor. My services are very expensive, keep it in mind."
+		role="PLAYER"
+		nextReplies="r5m2_Plemannik_1_N07aa" />
+
+	<Reply
+		name="r5m2_Plemannik_1_N07aa"
+		text="It is not the question of price, but be careful, my uncle has good guards."
+		role="NPC"
+		nextReplies="r5m2_Plemannik_1_N08aa" />
+
+	<Reply
+		name="r5m2_Plemannik_1_N08aa"
+		text="With such kind of relatives one may dawn upon it."
+		role="PLAYER"
+		scriptResult="TActivate('trCreateUncleDefenders'); TakeQuest('r5m2_KillUncle'); EndConversation()" />
+
+	<Reply
+		name="r5m2_Plemannik_2_N01"
+		text="Thank you for your help."
+		role="NPC"
+		scriptCondition="QuestStatus('r5m2_KillUncle')==Q_COMPLETED"
+		nextReplies="r5m2_Plemannik_2_N02" />
+
+	<Reply
+		name="r5m2_Plemannik_2_N02"
+		text="No problems."
+		role="PLAYER"
+		scriptResult="EndConversation()" />
+
+	<Reply
+		name="r5m2_Plemannik_3_N01"
+		text="I don't need anything. I've done everything without your help."
+		role="NPC"
+		scriptCondition="GetVar('PlemmanikStat').AsInt==1"
+		nextReplies="r5m2_Plemannik_3_N02" />
+
+	<Reply
+		name="r5m2_Plemannik_3_N02"
+		text="Thank you."
+		role="PLAYER"
+		scriptResult="EndConversation()" />
+
+	<Reply
+		name="r5m2_Plemannik_4_N01"
+		text="Whenever will you perform the task?"
+		role="NPC"
+		scriptCondition="QuestStatus('r5m2_KillUncle')==Q_TAKEN"
+		nextReplies="r5m2_Plemannik_4_N02" />
+
+	<Reply
+		name="r5m2_Plemannik_4_N02"
+		text="Don't worry, everything is under control."
+		role="PLAYER"
+		nextReplies="r5m2_Plemannik_4_N03" />
+
+	<Reply
+		name="r5m2_Plemannik_4_N03"
+		text="I cannot wait until my uncle go out of the world."
+		role="NPC"
+		nextReplies="r5m2_Plemannik_4_N04" />
+
+	<Reply
+		name="r5m2_Plemannik_4_N04"
+		text="Wait a little and everything is going to be ok."
+		role="PLAYER"
+		scriptResult="EndConversation()" />
+
+	<Reply
+		name="r5m2_Zamucheniy_1_N01"
+		text="Listen, I know you are a bandit killer. I see how famously you have griped the bandit ass on the road. Do you want to get money?"
+		role="NPC"
+		scriptCondition="QuestStatus('r5m2_KillBantits')==Q_CANBEGIVEN  and  QuestStatus('r5m2_KillWantedBandit_Quest')==Q_COMPLETED"
+		nextReplies="r5m2_Zamucheniy_1_N02" />
+
+	<Reply
+		name="r5m2_Zamucheniy_1_N02"
+		text="What's the problem?"
+		role="PLAYER"
+		nextReplies="r5m2_Zamucheniy_1_N03" />
+
+	<Reply
+		name="r5m2_Zamucheniy_1_N03"
+		text="The problem is my brother Maxwell. We are twins, understand? Since childhood he has been following me. Wherever I go in every mirror I can see him. I'm tired of it. Free me from his presence."
+		role="NPC"
+		nextReplies="r5m2_Zamucheniy_1_N04 r5m2_Zamucheniy_1_N05" />
+
+	<Reply
+		name="r5m2_Zamucheniy_1_N05"
+		text="No, not right now."
+		role="PLAYER"
+		scriptResult="EndConversation()" />
+
+	<Reply
+		name="r5m2_Zamucheniy_1_N04"
+		text="I hope you will regret it when I finish the mission."
+		role="PLAYER"
+		scriptResult="TakeQuest('r5m2_KillBantits'); TActivate('trCreateOptBandit'); EndConversation()" />
+
+	<Reply
+		name="r5m2_Klader_1_N01"
+		text="Do you want to hear one secret?"
+		role="NPC"
+		scriptCondition="QuestStatus('r5m2_FindKlad')==Q_CANBEGIVEN"
+		nextReplies="r5m2_Klader_1_N02" />
+
+	<Reply
+		name="r5m2_Klader_1_N02"
+		text="Yes, I like secrets."
+		role="PLAYER"
+		nextReplies="r5m2_Klader_1_N03" />
+
+	<Reply
+		name="r5m2_Klader_1_N03"
+		text="This secret costs 500 coins."
+		role="NPC"
+		nextReplies="r5m2_Klader_1_N04a r5m2_Klader_1_N04b r5m2_Klader_1_N04c" />
+
+	<Reply
+		name="r5m2_Klader_1_N04c"
+		text="I don't have money."
+		role="PLAYER"
+		scriptCondition="500>GetPlayerMoney()"
+		scriptResult="EndConversation()" />
+
+	<Reply
+		name="r5m2_Klader_1_N04b"
+		text="No, thanks."
+		role="PLAYER"
+		scriptCondition="GetPlayerMoney()>=500"
+		scriptResult="EndConversation()" />
+
+	<Reply
+		name="r5m2_Klader_1_N04a"
+		text="Go it!"
+		role="PLAYER"
+		scriptCondition="GetPlayerMoney()>=500"
+		nextReplies="r5m2_Klader_1_N05a" />
+
+	<Reply
+		name="r5m2_Klader_1_N05a"
+		text="Thank you. The secret is simple. On your map I'll mark one place where bandits have hidden the stolen goods. You can find it if you try your best. But don't ask me about my relations with the bandits."
+		role="NPC"
+		scriptResult="AddPlayerMoney(-500)"
+		nextReplies="r5m2_Klader_1_N06a Dlg_pl_000419" />
+
+	<Reply
+		name="Dlg_pl_000419"
+		text="I'm not interested."
+		role="PLAYER"
+		scriptResult="EndConversation()" />
+
+	<Reply
+		name="r5m2_Klader_1_N06a"
+		text="It is interesting to know that this treasure is only 100 coins. Ok, I'll go and see it."
+		role="PLAYER"
+		scriptResult="TakeQuest('r5m2_FindKlad'); EndConversation()" />
+
+	<Reply
+		name="r5m2_Shumaher_1_N01"
+		text="Hello, stranger. Do you want to take part in the races? Participation due - 100 coins."
+		role="NPC"
+		scriptCondition="QuestStatus('r5m2_MoveFirstToVillage') == Q_CANBEGIVEN"
+		nextReplies="r5m2_Shumaher_1_N02a r5m2_Shumaher_1_N02b r5m2_Shumaher_1_N02c" />
+
+	<Reply
+		name="r5m2_Shumaher_1_N02c"
+		text="I don't have time for this. Maybe another time."
+		role="PLAYER"
+		scriptCondition="GetPlayerMoney()>=100"
+		scriptResult="EndConversation()" />
+
+	<Reply
+		name="r5m2_Shumaher_1_N02b"
+		text="I don't have money."
+		role="PLAYER"
+		scriptCondition="100>GetPlayerMoney()"
+		scriptResult="EndConversation()" />
+
+	<Reply
+		name="r5m2_Shumaher_1_N02a"
+		text="Yeah... All right. What is the route?"
+		role="PLAYER"
+		scriptCondition="GetPlayerMoney()>=100"
+		nextReplies="r5m2_Shumaher_1_N03a" />
+
+	<Reply
+		name="r5m2_Shumaher_1_N03a"
+		text="Start is here. Finish is in a Mexico village. The winner gets everything."
+		role="NPC"
+		nextReplies="r5m2_Shumaher_1_N04a Dlg_pl_000428" />
+
+	<Reply
+		name="Dlg_pl_000428"
+		text="It's too far I won't go."
+		role="PLAYER"
+		scriptResult="EndConversation()" />
+
+	<Reply
+		name="r5m2_Shumaher_1_N04a"
+		text="Ok. When does the race start?"
+		role="PLAYER"
+		nextReplies="r5m2_Shumaher_1_N05a" />
+
+	<Reply
+		name="r5m2_Shumaher_1_N05a"
+		text="Time goes!"
+		role="NPC"
+		nextReplies="r5m2_Shumaher_1_N06a" />
+
+	<Reply
+		name="r5m2_Shumaher_1_N06a"
+		text="Go!!!"
+		role="PLAYER"
+		scriptResult="AddPlayerMoney(-100); TakeQuest('r5m2_MoveFirstToVillage'); EndConversation()" />
+
+	<Reply
+		name="r5m2_Shumaher_2_N01"
+		text="Here you are."
+		role="NPC"
+		scriptCondition="QuestStatus('r5m2_MoveFirstToVillage') == Q_TAKEN"
+		scriptResult="CompleteQuest('r5m2_MoveFirstToVillage')"
+		nextReplies="r5m2_Shumaher_2_N02" />
+
+	<Reply
+		name="r5m2_Shumaher_2_N02"
+		text="What is my place?"
+		role="PLAYER"
+		nextReplies="r5m2_Shumaher_2_N03a r5m2_Shumaher_2_N03b" />
+
+	<Reply
+		name="r5m2_Shumaher_2_N03b"
+		text="You have lost."
+		role="NPC"
+		scriptCondition="GetVar('GonkaPlace').AsInt>1"
+		nextReplies="r5m2_Shumaher_2_N04b" />
+
+	<Reply
+		name="r5m2_Shumaher_2_N04b"
+		text="Blow out my tires! It's a tough break! Okay, it was not my day."
+		role="PLAYER"
+		scriptResult="EndConversation()" />
+
+	<Reply
+		name="r5m2_Shumaher_2_N03a"
+		text="Firat place. The prize is yours."
+		role="NPC"
+		scriptCondition="GetVar('GonkaPlace').AsInt==1"
+		scriptResult="AddPlayerMoney(1000)"
+		nextReplies="r5m2_Shumaher_2_N04a" />
+
+	<Reply
+		name="r5m2_Shumaher_2_N04a"
+		text="Excellent!!!"
+		role="PLAYER"
+		scriptResult="EndConversation()" />
+
+	<Reply
+		name="r5m1_Aplle_Bar_Ralf_1_N01"
+		text="The stream of sun lights up my face for many years I haven't heard the birdsong. What thing have brought you to our lands, stranger?"
+		role="NPC"
+		scriptCondition="QuestStatus('r5m1_WTBWTalkWithAborigens_Quest')==Q_TAKEN"
+		nextReplies="r5m1_Aplle_Bar_Ralf_1_N02" />
+
+	<Reply
+		name="r5m1_Aplle_Bar_Ralf_1_N02"
+		text="Hello, chief! Have you heard anything about Edmonton?"
+		role="PLAYER"
+		nextReplies="r5m1_Aplle_Bar_Ralf_1_N03" />
+
+	<Reply
+		name="r5m1_Aplle_Bar_Ralf_1_N03"
+		text="Sagacious bird doesn't seek fortune in the outlands. I heard about this city."
+		role="NPC"
+		nextReplies="r5m1_Aplle_Bar_Ralf_1_N04" />
+
+	<Reply
+		name="r5m1_Aplle_Bar_Ralf_1_N04"
+		text="Do you know anybody who could help me? It will be good to find the map also."
+		role="PLAYER"
+		nextReplies="r5m1_Aplle_Bar_Ralf_1_N05" />
+
+	<Reply
+		name="r5m1_Aplle_Bar_Ralf_1_N05"
+		text="Not every map leads to the aim. Not far away from here lives one man called Wiseguy. There are rumors that he is an expert in maps but he doesn't tell anybody about it."
+		role="NPC"
+		nextReplies="r5m1_Aplle_Bar_Ralf_1_N06" />
+
+	<Reply
+		name="r5m1_Aplle_Bar_Ralf_1_N06"
+		text="Who is Wiseguy? Where I can find him?"
+		role="PLAYER"
+		nextReplies="r5m1_Aplle_Bar_Ralf_1_N07" />
+
+	<Reply
+		name="r5m1_Aplle_Bar_Ralf_1_N07"
+		text="Great power is hidden in the knowledge of the past. He lives not far away from here in the forsaken house. His real name is Jack Noval. "
+		role="NPC"
+		nextReplies="r5m1_Aplle_Bar_Ralf_1_N08" />
+
+	<Reply
+		name="r5m1_Aplle_Bar_Ralf_1_N08"
+		text="Thank you, buddy."
+		role="PLAYER"
+		scriptResult="CompleteQuest('r5m1_WTBWTalkWithAborigens_Quest') EndConversation()" />
+
+	<Reply
+		name="r5m1_Konneks_Gonchik_1_N01"
+		text="You guys, answer's a lemon, not even try it."
+		role="NPC"
+		scriptCondition="QuestStatus('r5m1_FirstQofSam_Quest')==Q_TAKEN"
+		nextReplies="r5m1_Konneks_Gonchik_1_N02" />
+
+	<Reply
+		name="r5m1_Konneks_Gonchik_1_N02"
+		text="Who do you mean?"
+		role="PLAYER"
+		nextReplies="r5m1_Konneks_Gonchik_1_N03" />
+
+	<Reply
+		name="r5m1_Konneks_Gonchik_1_N03"
+		text="You and Sam! Understand?!"
+		role="NPC"
+		nextReplies="r5m1_Konneks_Gonchik_1_N04" />
+
+	<Reply
+		name="r5m1_Konneks_Gonchik_1_N04"
+		text="Holy fuel! Why are you shouting?"
+		role="PLAYER"
+		nextReplies="r5m1_Konneks_Gonchik_1_N05" />
+
+	<Reply
+		name="r5m1_Konneks_Gonchik_1_N05"
+		text="This is the only way to talk to such guys as you are. Piss off!"
+		role="NPC"
+		nextReplies="r5m1_Konneks_Gonchik_1_N06" />
+
+	<Reply
+		name="r5m1_Konneks_Gonchik_1_N06"
+		text="I think you are nut a little. What should I tell Sam?"
+		role="PLAYER"
+		nextReplies="r5m1_Konneks_Gonchik_1_N07" />
+
+	<Reply
+		name="r5m1_Konneks_Gonchik_1_N07"
+		text="Tell him to put a big potato in the exhaust pipe!"
+		role="NPC"
+		nextReplies="r5m1_Konneks_Gonchik_1_N09" />
+
+	<Reply
+		name="r5m1_Konneks_Gonchik_1_N09"
+		text="As you want."
+		role="PLAYER"
+		scriptResult="CompleteQuest('r5m1_FirstQofSam_Quest');  EndConversation ()" />
+
+	<Reply
+		name="r5m1_LotteryMan_1_N01"
+		text="Hello. Do you want to play a card game for money?"
+		role="NPC"
+		nextReplies="r5m1_LotteryMan_1_N02a r5m1_LotteryMan_1_N02b" />
+
+	<Reply
+		name="r5m1_LotteryMan_1_N02b"
+		text="I'm not a player."
+		role="PLAYER"
+		scriptResult="EndConversation()" />
+
+	<Reply
+		name="r5m1_LotteryMan_1_N02a"
+		text="Ok."
+		role="PLAYER"
+		scriptCondition="GetPlayerMoney()>=50"
+		nextReplies="r5m1_LotteryMan_1_N03a" />
+
+	<Reply
+		name="r5m1_LotteryMan_1_N03a"
+		text="Make a bet before. If you win you will have three times bigger winning."
+		role="NPC"
+		nextReplies="r5m1_LotteryMan_1_N04a r5m1_LotteryMan_1_N04b r5m1_LotteryMan_1_N04c" />
+
+	<Reply
+		name="r5m1_LotteryMan_1_N04c"
+		text="450 dollars."
+		role="PLAYER"
+		scriptCondition="GetPlayerMoney()>=450"
+		scriptResult="AddPlayerMoney(-450);  SetVar('stavka',450)"
+		nextReplies="r5m1_LotteryMan_1_N05a" />
+
+	<Reply
+		name="r5m1_LotteryMan_1_N04b"
+		text="150 dollars."
+		role="PLAYER"
+		scriptCondition="GetPlayerMoney()>=150"
+		scriptResult="AddPlayerMoney(-150);  SetVar('stavka',150)"
+		nextReplies="r5m1_LotteryMan_1_N05a" />
+
+	<Reply
+		name="r5m1_LotteryMan_1_N04a"
+		text="50 dollars."
+		role="PLAYER"
+		scriptCondition="GetPlayerMoney()>=50"
+		scriptResult="AddPlayerMoney(-50);  SetVar('stavka',50)"
+		nextReplies="r5m1_LotteryMan_1_N05a" />
+
+	<Reply
+		name="r5m1_LotteryMan_1_N05a"
+		text="I have only four cards from the whole pack, so the rules are very simple. It's good that cards are of different suits. Ha-ha. I will pull one card for you. Your task is to guess what it is."
+		role="NPC"
+		scriptResult="SetVar('rndnum',random(4));  println(GetVar('rndnum').AsInt)"
+		nextReplies="r5m1_LotteryMan_1_N06a_1 r5m1_LotteryMan_1_N06a_2 r5m1_LotteryMan_1_N06a_3 r5m1_LotteryMan_1_N06a_4" />
+
+	<Reply
+		name="r5m1_LotteryMan_1_N06a_4"
+		text="Jack clubs."
+		role="PLAYER"
+		scriptResult="SetVar('plnum',4)"
+		nextReplies="r5m1_LotteryMan_1_N07aa r5m1_LotteryMan_1_N07ab" />
+
+	<Reply
+		name="r5m1_LotteryMan_1_N06a_3"
+		text="Six diamonds."
+		role="PLAYER"
+		scriptResult="SetVar('plnum',3)"
+		nextReplies="r5m1_LotteryMan_1_N07aa r5m1_LotteryMan_1_N07ab" />
+
+	<Reply
+		name="r5m1_LotteryMan_1_N06a_2"
+		text="Ace spade."
+		role="PLAYER"
+		scriptResult="SetVar('plnum',2)"
+		nextReplies="r5m1_LotteryMan_1_N07aa r5m1_LotteryMan_1_N07ab" />
+
+	<Reply
+		name="r5m1_LotteryMan_1_N06a_1"
+		text="Ten hearts."
+		role="PLAYER"
+		scriptResult="SetVar('plnum',1)"
+		nextReplies="r5m1_LotteryMan_1_N07aa r5m1_LotteryMan_1_N07ab" />
+
+	<Reply
+		name="r5m1_LotteryMan_1_N07ab"
+		text="You have missed! It was another card!"
+		role="NPC"
+		scriptCondition="GetVar('rndnum').AsInt~=GetVar('plnum').AsNum"
+		nextReplies="r5m1_LotteryMan_1_N08ab" />
+
+	<Reply
+		name="r5m1_LotteryMan_1_N08ab"
+		text="Eh, I feel it."
+		role="PLAYER"
+		scriptResult="EndConversation()" />
+
+	<Reply
+		name="r5m1_LotteryMan_1_N07aa"
+		text="Oh, strike me pink!! You are right! Here is your winning."
+		role="NPC"
+		scriptCondition="GetVar('rndnum').AsInt==GetVar('plnum').AsInt"
+		scriptResult="local stavka = GetVar('stavka').AsInt;  stavka = stavka * 3;  AddPlayerMoney(stavka);"
+		nextReplies="r5m1_LotteryMan_1_N08aa" />
+
+	<Reply
+		name="r5m1_LotteryMan_1_N08aa"
+		text="Thank you! I'm a lucky beggar."
+		role="PLAYER"
+		scriptResult="EndConversation()" />
+
+	<Reply
+		name="r5m1_TreasureMan_1_N01"
+		text="I welcome you, stranger. I see that you are strong and smart enough. Could you help me with diggings?"
+		role="NPC"
+		scriptCondition="QuestStatus('r5m1_FindTreasure') == Q_CANBEGIVEN"
+		nextReplies="r5m1_TreasureMan_1_N02 Dlg_pl_000422" />
+
+	<Reply
+		name="Dlg_pl_000422"
+		text="Holy fuel! No! I'm busy enough."
+		role="PLAYER"
+		scriptResult=" EndConversation()" />
+
+	<Reply
+		name="r5m1_TreasureMan_1_N02"
+		text="We'll see. Tell me in details what to do."
+		role="PLAYER"
+		nextReplies="r5m1_TreasureMan_1_N03" />
+
+	<Reply
+		name="r5m1_TreasureMan_1_N03"
+		text="There are a lot of treasures in these villages. One of them is Forbidden books. If you have luck and you will find them I'll make it worth while."
+		role="NPC"
+		nextReplies="r5m1_TreasureMan_1_N05 Dlg_pl_000423" />
+
+	<Reply
+		name="Dlg_pl_000423"
+		text="It looks suspicious. Look for another fool."
+		role="PLAYER"
+		scriptResult=" EndConversation()" />
+
+	<Reply
+		name="r5m1_TreasureMan_1_N05"
+		text="There is nothing difficult here."
+		role="PLAYER"
+		nextReplies="r5m1_TreasureMan_1_N06" />
+
+	<Reply
+		name="r5m1_TreasureMan_1_N06"
+		text="Many people dug to get this buried treasure. Any local resident will say you that it is somewhere near the pipes plexus. These pipes were explored through the length and breadth, and everything was in vain."
+		role="NPC"
+		nextReplies="r5m1_TreasureMan_1_N07" />
+
+	<Reply
+		name="r5m1_TreasureMan_1_N07"
+		text="We'll see maybe I have more luck."
+		role="PLAYER"
+		scriptResult="TakeQuest('r5m1_FindTreasure');  EndConversation()" />
+
+	<Reply
+		name="r5m1_TreasureMan_2_N01"
+		text="Excellent! These are the very same books! I hope you didn't read them otherwise... But wait - take it. You have honestly deserved the right to own this thing."
+		role="NPC"
+		scriptCondition="QuestStatus('r5m1_FT_Return') == Q_TAKEN"
+		nextReplies="r5m1_TreasureMan_2_N02" />
+
+	<Reply
+		name="r5m1_TreasureMan_2_N02"
+		text="Thank you, but what is this?"
+		role="PLAYER"
+		nextReplies="r5m1_TreasureMan_2_N03" />
+
+	<Reply
+		name="r5m1_TreasureMan_2_N03"
+		text="This is a treasure detector! For the common people it is just a toy but for the hunter for ancient treasures it's a unique thing."
+		role="NPC"
+		nextReplies="r5m1_TreasureMan_2_N04" />
+
+	<Reply
+		name="r5m1_TreasureMan_2_N04"
+		text="Excellent, blow out your tires."
+		role="PLAYER"
+		scriptResult="CompleteQuest('r5m1_FT_Return');  EndConversation()" />
+
+	<Reply
+		name="TheKonneks_Bar_Posilka_NPC_N01"
+		text="Hello, buddy. I've got a job for you."
+		role="NPC"
+		scriptCondition="QuestStatus('r5m1_Posilka') == Q_CANBEGIVEN"
+		nextReplies="Dlg_pl_000296" />
+
+	<Reply
+		name="Dlg_pl_000296"
+		text="Yeah, I listen."
+		role="PLAYER"
+		nextReplies="Dlg_npc_000297" />
+
+	<Reply
+		name="Dlg_npc_000297"
+		text="It needs to deliver package to Sam faster than our competitors. But keep in mind the winner gets everything."
+		role="NPC"
+		nextReplies="Dlg_pl_000298 Dlg_pl_000421" />
+
+	<Reply
+		name="Dlg_pl_000421"
+		text="It's not interesting."
+		role="PLAYER"
+		scriptResult=" EndConversation()" />
+
+	<Reply
+		name="Dlg_pl_000298"
+		text="No problems. Give me the package."
+		role="PLAYER"
+		scriptResult="TActivate('trStartPosilka');  TakeQuest('r5m1_Posilka');  EndConversation()" />
+
+	<Reply
+		name="r5m1_MisterEko_1_N01"
+		text="Hello. I have a safe business proposition for you."
+		role="NPC"
+		scriptCondition="QuestStatus('r5m1_Kontrabanda')==Q_CANBEGIVEN"
+		nextReplies="r5m1_MisterEko_1_N02 Dlg_pl_000424" />
+
+	<Reply
+		name="Dlg_pl_000424"
+		text="I think it is not safe enough."
+		role="PLAYER"
+		scriptResult=" EndConversation()" />
+
+	<Reply
+		name="r5m1_MisterEko_1_N02"
+		text="What is the reward?"
+		role="PLAYER"
+		nextReplies="r5m1_MisterEko_1_N03" />
+
+	<Reply
+		name="r5m1_MisterEko_1_N03"
+		text="It will be enough to buy new engine."
+		role="NPC"
+		nextReplies="r5m1_MisterEko_1_N04" />
+
+	<Reply
+		name="r5m1_MisterEko_1_N04"
+		text="Ok. What I should do?"
+		role="PLAYER"
+		nextReplies="r5m1_MisterEko_1_N05" />
+
+	<Reply
+		name="r5m1_MisterEko_1_N05"
+		text="It is a very easy job. You should deliver the package to my friend in Pelsyvansk."
+		role="NPC"
+		nextReplies="r5m1_MisterEko_1_N06 Dlg_pl_000425" />
+
+	<Reply
+		name="Dlg_pl_000425"
+		text="I'm not interested in so hanky-panky business."
+		role="PLAYER"
+		scriptResult=" EndConversation()" />
+
+	<Reply
+		name="r5m1_MisterEko_1_N06"
+		text="Ok, I'll do it. It is really an easy job."
+		role="PLAYER"
+		scriptResult="TakeQuest('r5m1_Kontrabanda');  FailQuest('r5m1_KK_Spy');  FailQuest('r5m1_KK_KillThem');  FailQuest('r5m1_KillKontrabondist');  EndConversation()" />
+
+	<Reply
+		name="r5m1_Bratello_1_N01"
+		text="Listen!"
+		role="NPC"
+		scriptCondition="QuestStatus('r5m1_K_FindBtotherMan')==Q_TAKEN"
+		nextReplies="r5m1_Bratello_1_N02" />
+
+	<Reply
+		name="r5m1_Bratello_1_N02"
+		text="One man here asks you to deliver the package."
+		role="PLAYER"
+		nextReplies="r5m1_Bratello_1_N03" />
+
+	<Reply
+		name="r5m1_Bratello_1_N03"
+		text="What package? I don't know anything about it."
+		role="NPC"
+		nextReplies="r5m1_Bratello_1_N04a r5m1_Bratello_1_N04b" />
+
+	<Reply
+		name="r5m1_Bratello_1_N04b"
+		text="Hey, buddy, if you are going to tell me that I'm wasting my time here I will be very disappointed. Do you understand?"
+		role="PLAYER"
+		nextReplies="r5m1_Bratello_1_N05b" />
+
+	<Reply
+		name="r5m1_Bratello_1_N05b"
+		text="You are a sharp fellow. I think we'll make deal. Tell me."
+		role="NPC"
+		nextReplies="r5m1_Bratello_1_N06b" />
+
+	<Reply
+		name="r5m1_Bratello_1_N06b"
+		text="What should I tell you? Mister Eco has told me that you give me cargo and tell where to deliver it."
+		role="PLAYER"
+		nextReplies="r5m1_Bratello_1_N07b" />
+
+	<Reply
+		name="r5m1_Bratello_1_N07b"
+		text="Yes, everything is correct. I will put it in your vehicle. Deliver it to Small Apple. Watch out!"
+		role="NPC"
+		nextReplies="r5m1_Bratello_1_N08b" />
+
+	<Reply
+		name="r5m1_Bratello_1_N08b"
+		text="Ok."
+		role="PLAYER"
+		scriptResult="CompleteQuest('r5m1_K_FindBtotherMan'); EndConversation()" />
+
+	<Reply
+		name="r5m1_Bratello_1_N04a"
+		text="What do you mean 'I don't know'? What the cock-and-bull stories are you telling me?"
+		role="PLAYER"
+		nextReplies="r5m1_Bratello_1_N05a" />
+
+	<Reply
+		name="r5m1_Bratello_1_N05a"
+		text="What do you mean? You are a storyteller, not me."
+		role="NPC"
+		nextReplies="r5m1_Bratello_1_N06a" />
+
+	<Reply
+		name="r5m1_Bratello_1_N06a"
+		text="I don't tell stories!!!"
+		role="PLAYER"
+		nextReplies="r5m1_Bratello_1_N07a" />
+
+	<Reply
+		name="r5m1_Bratello_1_N07a"
+		text="Hey, dude, you'd better go until something has happened."
+		role="NPC"
+		nextReplies="r5m1_Bratello_1_N08a" />
+
+	<Reply
+		name="r5m1_Bratello_1_N08a"
+		text="Wow, you are so terrifying, I'm so afraid!"
+		role="PLAYER"
+		scriptResult="FailQuest('r5m1_K_TravelLetter');  FailQuest('r5m1_K_FindBtotherMan');  EndConversation()" />
+
+	<Reply
+		name="r5m1_BuyerNarkota_1_N01"
+		text="What do you want?"
+		role="NPC"
+		scriptCondition="QuestStatus('r5m1_K_TravelLetter')==Q_TAKEN"
+		nextReplies="r5m1_BuyerNarkota_1_N02" />
+
+	<Reply
+		name="r5m1_BuyerNarkota_1_N02"
+		text="I've got a package for you."
+		role="PLAYER"
+		nextReplies="r5m1_BuyerNarkota_1_N03" />
+
+	<Reply
+		name="r5m1_BuyerNarkota_1_N03"
+		text="Why not by mail?"
+		role="NPC"
+		nextReplies="r5m1_BuyerNarkota_1_N04" />
+
+	<Reply
+		name="r5m1_BuyerNarkota_1_N04"
+		text="Because the mail hadn't worked for almost 200 years. Very urgent and important cargo."
+		role="PLAYER"
+		nextReplies="r5m1_BuyerNarkota_1_N05" />
+
+	<Reply
+		name="r5m1_BuyerNarkota_1_N05"
+		text="I hope there were no tails after you?! Ok, how much do I owe you for delivery?"
+		role="NPC"
+		nextReplies="r5m1_BuyerNarkota_1_N06" />
+
+	<Reply
+		name="r5m1_BuyerNarkota_1_N06"
+		text="As usual."
+		role="PLAYER"
+		nextReplies="r5m1_BuyerNarkota_1_N07" />
+
+	<Reply
+		name="r5m1_BuyerNarkota_1_N07"
+		text="Take it. Good luck."
+		role="NPC"
+		nextReplies="r5m1_BuyerNarkota_1_N08" />
+
+	<Reply
+		name="r5m1_BuyerNarkota_1_N08"
+		text="Bye."
+		role="PLAYER"
+		scriptResult="CompleteQuest('r5m1_K_TravelLetter');  EndConversation()" />
+
+	<Reply
+		name="r5m1_KillContra_1_N01"
+		text="I look for an honest man who can handle with weapon."
+		role="NPC"
+		scriptCondition="QuestStatus('r5m1_KillKontrabondist')==Q_CANBEGIVEN"
+		nextReplies="Dlg_pl_000329" />
+
+	<Reply
+		name="Dlg_pl_000329"
+		text="For what?"
+		role="PLAYER"
+		nextReplies="Dlg_npc_000330" />
+
+	<Reply
+		name="Dlg_npc_000330"
+		text="Can you free our settlement from one bandit smuggler?"
+		role="NPC"
+		nextReplies="Dlg_pl_000331" />
+
+	<Reply
+		name="Dlg_pl_000331"
+		text="For good payment, why not?"
+		role="PLAYER"
+		nextReplies="Dlg_npc_000332" />
+
+	<Reply
+		name="Dlg_npc_000332"
+		text="Excellent, we reckon on you."
+		role="NPC"
+		nextReplies="Dlg_pl_000333 Dlg_pl_000418" />
+
+	<Reply
+		name="Dlg_pl_000418"
+		text="Nevertheless, expect for somebody another better."
+		role="PLAYER"
+		scriptResult=" EndConversation()" />
+
+	<Reply
+		name="Dlg_pl_000333"
+		text="You'd better think over my payment. Wheteher he is a bandit or not but ammunition costs a lot."
+		role="PLAYER"
+		scriptResult=" TActivate ('trCreateKontr');  FailQuest('r5m1_K_TravelLetter');  FailQuest('r5m1_K_FindBtotherMan');  FailQuest('r5m1_Kontrabanda');  EndConversation()" />
+
+	<Reply
+		name="Sin_Joe_dlg"
+		text="I wish you a safe road, Traveller!"
+		role="NPC"
+		scriptCondition="QuestStatus('Sin_FedEx_qst')==Q_TAKEN"
+		scriptResult="CompleteQuest('Sin_FedEx_qst'); CompleteQuest('Sin_Arlekin_Find_qst'); TActivate('Arlekin_ctr')"
+		nextReplies="Dlg_pl_000353" />
+
+	<Reply
+		name="Dlg_pl_000353"
+		text="I've got a package for Joe. Know him?"
+		role="PLAYER"
+		nextReplies="Dlg_npc_000354" />
+
+	<Reply
+		name="Dlg_npc_000354"
+		text="Everyone knows old Joe. In fact, that's me."
+		role="NPC"
+		nextReplies="Dlg_pl_000355" />
+
+	<Reply
+		name="Dlg_pl_000355"
+		text="You've got to pay for the delivery."
+		role="PLAYER"
+		nextReplies="Dlg_npc_000356" />
+
+	<Reply
+		name="Dlg_npc_000356"
+		text="Joe always pays his bills. Here's your $500."
+		role="NPC"
+		scriptResult="AddPlayerMoney( 500 )"
+		nextReplies="Dlg_pl_000357" />
+
+	<Reply
+		name="Dlg_pl_000357"
+		text="Tell me, Joe, where can I find Harlequin?"
+		role="PLAYER"
+		nextReplies="Dlg_npc_000358" />
+
+	<Reply
+		name="Dlg_npc_000358"
+		text="Joe will tell you where to find him. This part of the town belongs to Dogs. Stop the car and you'll hear Harlequin's laughter."
+		role="NPC"
+		nextReplies="Dlg_pl_000359" />
+
+	<Reply
+		name="Dlg_pl_000359"
+		text="Thanks, Joe."
+		role="PLAYER"
+		scriptResult="EndConversation()" />
+
+	<Reply
+		name="Sin_Kitty_dlg"
+		text="Hello, cutey."
+		role="NPC"
+		scriptCondition="QuestStatus('Sin_Cat_Garfield_qst')==Q_TAKEN"
+		nextReplies="Dlg_pl_000361" />
+
+	<Reply
+		name="Dlg_pl_000361"
+		text="Is there a mechanic?"
+		role="PLAYER"
+		nextReplies="Dlg_npc_000362" />
+
+	<Reply
+		name="Dlg_npc_000362"
+		text="You can't refuel your truck here."
+		role="NPC"
+		nextReplies="Dlg_pl_000363" />
+
+	<Reply
+		name="Dlg_pl_000363"
+		text="Harlequin?"
+		role="PLAYER"
+		nextReplies="Dlg_npc_000364" />
+
+	<Reply
+		name="Dlg_npc_000364"
+		text="He used to be the right hand of Dog's Boss - Bulldog. No one here will help a Dogs' enemy. "
+		role="NPC"
+		nextReplies="Dlg_pl_000365" />
+
+	<Reply
+		name="Dlg_pl_000365"
+		text="There seems to be no other way, but to steal truck parts and petrol at night. "
+		role="PLAYER"
+		nextReplies="Dlg_npc_000366" />
+
+	<Reply
+		name="Dlg_npc_000366"
+		text="That or you can work for Garfield's Cats. If you work for Garfield, you'll have money and petrol. You can find Garfield at the Villa. Tell him, you are from Kitty. "
+		role="NPC"
+		nextReplies="Dlg_pl_000367" />
+
+	<Reply
+		name="Dlg_pl_000367"
+		text="Thanks."
+		role="PLAYER"
+		scriptResult="SetTolerance(1194,1100,RS_ENEMY) EndConversation()" />
+
+	<Reply
+		name="Sin_Garfield_dlg"
+		text="You're welcome. Don't worry about your truck. It will be washed and refueled. Feel at home.  "
+		role="NPC"
+		scriptCondition="QuestStatus('Sin_Cat_Garfield_qst')==Q_TAKEN"
+		scriptResult="CompleteQuest('Sin_Cat_Garfield_qst') SetTolerance(1194,1100,RS_NEUTRAL)"
+		nextReplies="Dlg_pl_000369" />
+
+	<Reply
+		name="Dlg_pl_000369"
+		text="Thank you, Sir. I came to talk about a job. Kitty said you're hiring people. "
+		role="PLAYER"
+		nextReplies="Dlg_npc_000370" />
+
+	<Reply
+		name="Dlg_npc_000370"
+		text="Yes, that's right. I've heard you are the one who killed Harlequin in a just combat. You must be really good, so I'm hiring you. "
+		role="NPC"
+		nextReplies="Dlg_pl_000371" />
+
+	<Reply
+		name="Dlg_pl_000371"
+		text="Thank you, Sir."
+		role="PLAYER"
+		nextReplies="Dlg_npc_000372" />
+
+	<Reply
+		name="Dlg_npc_000372"
+		text="I'll give you a task. A caravan delivers some cargo to the Dogs. We bribed some of the guards, but not all of them. You've got to get there and kill the Chief Guard. Good luck! "
+		role="NPC"
+		nextReplies="Dlg_pl_000373" />
+
+	<Reply
+		name="Dlg_pl_000373"
+		text="I'll do it, Sir."
+		role="PLAYER"
+		scriptResult="TActivate('Egoist_ctr'); EndConversation()" />
+
+	<Reply
+		name="Sin_Kitty2_dlg"
+		text="What do you want, Raider?"
+		role="NPC"
+		scriptCondition="QuestStatus('Sin_Cat_Kitty_qst')==Q_TAKEN"
+		scriptResult="CompleteQuest('Sin_Cat_Kitty_qst') SetTolerance(1192,1100,RS_NEUTRAL)"
+		nextReplies="Dlg_pl_000375" />
+
+	<Reply
+		name="Dlg_pl_000375"
+		text="What's up? What's going on?"
+		role="PLAYER"
+		nextReplies="Dlg_npc_000376" />
+
+	<Reply
+		name="Dlg_npc_000376"
+		text="That pig Egoist had a go at my truck after you left. The truck is a heap of junk now."
+		role="NPC"
+		nextReplies="Dlg_pl_000377" />
+
+	<Reply
+		name="Dlg_pl_000377"
+		text="He'll pay for each and every scratch. Where is he now?"
+		role="PLAYER"
+		nextReplies="Dlg_npc_000378" />
+
+	<Reply
+		name="Dlg_npc_000378"
+		text="He's gone to paint the town red to Saint-Rafael, over the bridge. Want to kill him?"
+		role="NPC"
+		nextReplies="Dlg_pl_000379" />
+
+	<Reply
+		name="Dlg_pl_000379"
+		text="I have a better idea."
+		role="PLAYER"
+		scriptResult="EndConversation()" />
+
+	<Reply
+		name="Sin_Bulldog_dlg"
+		text="Are you crazy? Why did you come?"
+		role="NPC"
+		scriptCondition="QuestStatus('Sin_Egoist_Trap_qst')==Q_TAKEN"
+		scriptResult="CompleteQuest('Sin_Egoist_Trap_qst')"
+		nextReplies="Dlg_pl_000381" />
+
+	<Reply
+		name="Dlg_pl_000381"
+		text="I don't like working for the Cats. I want to join your gang."
+		role="PLAYER"
+		nextReplies="Dlg_npc_000382" />
+
+	<Reply
+		name="Dlg_npc_000382"
+		text="Do you think it's all that simple? You've killed my best man."
+		role="NPC"
+		nextReplies="Dlg_pl_000383" />
+
+	<Reply
+		name="Dlg_pl_000383"
+		text="He wasn't the best if I killed him."
+		role="PLAYER"
+		nextReplies="Dlg_npc_000384" />
+
+	<Reply
+		name="Dlg_npc_000384"
+		text="Anyway, I need some proof of your loyalty. "
+		role="NPC"
+		nextReplies="Dlg_pl_000385" />
+
+	<Reply
+		name="Dlg_pl_000385"
+		text="I know where Egoist is now. He is in Saint-Rafael, with only a few guards. "
+		role="PLAYER"
+		nextReplies="Dlg_npc_000386" />
+
+	<Reply
+		name="Dlg_npc_000386"
+		text="Like hell he is! You want me to go there and end up in a trap? You're a fool if you think I'm buying it. "
+		role="NPC"
+		nextReplies="Dlg_pl_000387" />
+
+	<Reply
+		name="Dlg_pl_000387"
+		text="I'll go fetch him."
+		role="PLAYER"
+		scriptResult="EndConversation()" />
+
+	<Reply
+		name="Sin_Father_dlg"
+		text="Good to see you again, traveller."
+		role="NPC"
+		scriptCondition="QuestStatus('Sin_Egoist_Father_qst')==Q_TAKEN"
+		scriptResult="CompleteQuest('Sin_Egoist_Father_qst')"
+		nextReplies="Dlg_pl_000389" />
+
+	<Reply
+		name="Dlg_pl_000389"
+		text="I need help."
+		role="PLAYER"
+		nextReplies="Dlg_npc_000390" />
+
+	<Reply
+		name="Dlg_npc_000390"
+		text="You've come to the right place."
+		role="NPC"
+		nextReplies="Dlg_pl_000391" />
+
+	<Reply
+		name="Dlg_pl_000391"
+		text="I need to get over the ridge. "
+		role="PLAYER"
+		nextReplies="Dlg_npc_000392" />
+
+	<Reply
+		name="Dlg_npc_000392"
+		text="There is a tunnel that leads to the other side. Just show the mountain your respect and it'll let you pass."
+		role="NPC"
+		nextReplies="Dlg_pl_000393" />
+
+	<Reply
+		name="Dlg_pl_000393"
+		text="Is that all you can say?"
+		role="PLAYER"
+		nextReplies="Dlg_npc_000394" />
+
+	<Reply
+		name="Dlg_npc_000394"
+		text="That's more than enough."
+		role="NPC"
+		nextReplies="Dlg_pl_000395" />
+
+	<Reply
+		name="Dlg_pl_000395"
+		text="Thank you, Reverend."
+		role="PLAYER"
+		scriptResult="EndConversation()" />
+
+	<Reply
+		name="Sin_Egoist_dlg"
+		text="Please, don't kill me."
+		role="NPC"
+		scriptCondition="QuestStatus('Sin_Egoist_Take_qst')==Q_TAKEN"
+		scriptResult="CompleteQuest('Sin_Egoist_Take_qst'); TDeactivate('CustomOff_tr'); TActivate('CustomOn_tr')"
+		nextReplies="Dlg_pl_000397" />
+
+	<Reply
+		name="Dlg_pl_000397"
+		text="You are worth more alive. You'll come with me to Borne."
+		role="PLAYER"
+		nextReplies="Dlg_npc_000398" />
+
+	<Reply
+		name="Dlg_npc_000398"
+		text="Just let me live..."
+		role="NPC"
+		nextReplies="Dlg_pl_000399" />
+
+	<Reply
+		name="Dlg_pl_000399"
+		text="You've got to have the customs pass. Give it to me. "
+		role="PLAYER"
+		scriptResult="EndConversation()" />
+
+	<Reply
+		name="Sin_Bulldog2_dlg"
+		text="So, how is it going?"
+		role="NPC"
+		scriptCondition="QuestStatus('Sin_Egoist_Home_qst')==Q_TAKEN"
+		scriptResult="CompleteQuest('Sin_Egoist_Home_qst'); TActivate('Cross_ctr')"
+		nextReplies="Dlg_pl_000401" />
+
+	<Reply
+		name="Dlg_pl_000401"
+		text="He is tied, he is in the truck.."
+		role="PLAYER"
+		nextReplies="Dlg_npc_000402" />
+
+	<Reply
+		name="Dlg_npc_000402"
+		text="I arranged to meet the Cats at the crossroads. Bring him there. "
+		role="NPC"
+		nextReplies="Dlg_pl_000406" />
+
+	<Reply
+		name="Dlg_pl_000406"
+		text="Ok."
+		role="PLAYER"
+		scriptResult="EndConversation()" />
+
+	<Reply
+		name="Sin_Kitty3_dlg"
+		text="A-hey, keep off. I'll scratch your eyes out, toad."
+		role="NPC"
+		scriptCondition="QuestStatus('Sin_Cross_Kitty_qst')==Q_TAKEN"
+		scriptResult="TActivate ('OldFarm_Leave_tr'); CompleteQuest('Sin_Cross_Kitty_qst')"
+		nextReplies="Dlg_pl_000404" />
+
+	<Reply
+		name="Dlg_pl_000404"
+		text="Easy, easy. I came here to set you free."
+		role="PLAYER"
+		nextReplies="Dlg_npc_000405" />
+
+	<Reply
+		name="Dlg_npc_000405"
+		text="Thanks a lot!"
+		role="NPC"
+		nextReplies="Dlg_pl_000407" />
+
+	<Reply
+		name="Dlg_pl_000407"
+		text="You'd better go now. I'll wait for the Dogs."
+		role="PLAYER"
+		scriptResult="EndConversation()" />
+
+	<Reply
+		name="Sin_Joe2_dlg"
+		text="Is that you? Joe is grateful to you for saving his life."
+		role="NPC"
+		scriptCondition="QuestStatus('Sin_JoeSaving_qst')==Q_TAKEN"
+		scriptResult="CompleteQuest('Sin_JoeSaving_qst')"
+		nextReplies="Dlg_pl_000409" />
+
+	<Reply
+		name="Dlg_pl_000409"
+		text="I had to. I came here to kill Borne, but I couldn't find him. So, I'm leaving. I'll go say good bye to Reverend."
+		role="PLAYER"
+		scriptResult="EndConversation()"
+		nextReplies="Dlg_npc_000416" />
+
+	<Reply
+		name="Dlg_npc_000416"
+		text="Joe wishes you pure petrol!"
+		role="NPC"
+		nextReplies="Dlg_pl_000417" />
+
+	<Reply
+		name="Dlg_pl_000417"
+		text="Same to you, Joe!"
+		role="PLAYER"
+		scriptResult="EndConversation()" />
+
+	<Reply
+		name="Sin_Father2_dlg"
+		text="You've reached the end of the Road, Traveller."
+		role="NPC"
+		scriptCondition="QuestStatus('Sin_Final_Way_qst')==Q_TAKEN"
+		scriptResult="TActivate ('MapEnd') CompleteQuest('Sin_Final_Way_qst')"
+		nextReplies="Dlg_pl_000411" />
+
+	<Reply
+		name="Dlg_pl_000411"
+		text="What am I to do next, Reverend?"
+		role="PLAYER"
+		nextReplies="Dlg_npc_000412" />
+
+	<Reply
+		name="Dlg_npc_000412"
+		text="It's up to you to decide. Set your goal. Perhaps your enemy will show you the way, if your friend fails. "
+		role="NPC"
+		nextReplies="Dlg_pl_000413" />
+
+	<Reply
+		name="Dlg_pl_000413"
+		text="Do you know where to find him?"
+		role="PLAYER"
+		nextReplies="Dlg_npc_000414" />
+
+	<Reply
+		name="Dlg_npc_000414"
+		text="It will all end where it started."
+		role="NPC"
+		nextReplies="Dlg_pl_000415" />
+
+	<Reply
+		name="Dlg_pl_000415"
+		text="Thank you, Reverend."
+		role="PLAYER"
+		scriptResult="EndConversation()" />
+
+	<Reply
+		name="Sin_Bulldog3_dlg"
+		text="Good job! We wouldn't have made it without you."
+		role="NPC"
+		scriptCondition="QuestStatus('Sin_Cross_Kitty_qst')==Q_TAKEN"
+		nextReplies="Dlg_pl_000432" />
+
+	<Reply
+		name="Dlg_pl_000432"
+		text="I saw Kitty's truck in the battle. How is she?"
+		role="PLAYER"
+		nextReplies="Dlg_npc_000420" />
+
+	<Reply
+		name="Dlg_npc_000420"
+		text="Don't worry, she is allright. My men brought her to the old farm. The old Cat will have to pay for her freedom. In the meantime we'll be cutting pieces off her mask and sending them to him."
+		role="NPC"
+		nextReplies="Dlg_pl_000429" />
+
+	<Reply
+		name="Dlg_pl_000429"
+		text="I'd better check if your men are guarding her well. The Cats must be furious!"
+		role="PLAYER"
+		nextReplies="Dlg_npc_000430" />
+
+	<Reply
+		name="Dlg_npc_000430"
+		text="There's no harm in checking. Go and do it."
+		role="NPC"
+		nextReplies="Dlg_pl_000431" />
+
+	<Reply
+		name="Dlg_pl_000431"
+		text="Ok, Boss."
+		role="PLAYER"
+		scriptResult="EndConversation()" />
+</DialogsResource>

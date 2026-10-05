@@ -1,0 +1,2672 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?><!-- edited with XML Spy v4.2 U (http://www.xmlspy.com) by scorp (targem) -->
+<ModelNames>
+	<Item
+		id="collectionbook1"
+		locForm="0"
+		value="Travel guide old booklet" />
+
+	<Item
+		id="collectionbook2"
+		locForm="0"
+		value="Tank user's manual" />
+
+	<Item
+		id="collectionbook3"
+		locForm="0"
+		value="Comics magazine" />
+
+	<Item
+		id="collectionbook4"
+		locForm="0"
+		value="The Herald daily" />
+
+	<Item
+		id="collectionbook5"
+		locForm="0"
+		value="Driver car magazine" />
+
+	<Item
+		id="collectionbook6"
+		locForm="0"
+		value="Capitalist housekeepers magazine for women" />
+
+	<Item
+		id="collectionbook7"
+		locForm="0"
+		value="Denry Dail Dairy" />
+
+	<Item
+		id="collectionbook8"
+		locForm="0"
+		value="Page from the magazine" />
+
+	<Item
+		id="collectionbook9"
+		locForm="0"
+		value="Book of folk tales" />
+
+	<Item
+		id="collectionbook10"
+		locForm="0"
+		value="Driver's Bible" />
+
+	<Item
+		id="thorn1"
+		locForm="0"
+		value="Pins" />
+
+	<Item
+		id="thorn2"
+		locForm="0"
+		value="Blades" />
+
+	<Item
+		id="thorn3"
+		locForm="0"
+		value="Drills" />
+
+	<Item
+		id="cooling_system_guns"
+		locForm="0"
+		value="Gun water-cooling system" />
+
+	<Item
+		id="cooling_system_energy"
+		locForm="0"
+		value="Energy weapon water-cooling system" />
+
+	<Item
+		id="cooling_system_explosion"
+		locForm="0"
+		value="Artillery water-cooling system" />
+
+	<Item
+		id="firing_rate_guns"
+		locForm="0"
+		value="Optimized manual firing" />
+
+	<Item
+		id="firing_range_guns"
+		locForm="0"
+		value="Magnetic booster" />
+
+	<Item
+		id="firing_rate_energy"
+		locForm="0"
+		value="Low resistance cable" />
+
+	<Item
+		id="add_damage_guns"
+		locForm="0"
+		value="Delayed blowback bolt" />
+
+	<Item
+		id="add_damage_energy"
+		locForm="0"
+		value="Mirror-silver light resonator" />
+
+	<Item
+		id="add_damage_explosion"
+		locForm="0"
+		value="Magnetic catapult" />
+
+	<Item
+		id="grouping_angle_guns"
+		locForm="0"
+		value="Scope sight" />
+
+	<Item
+		id="cooling_system_guns2"
+		locForm="0"
+		value="Gun air-cooling system" />
+
+	<Item
+		id="cooling_system_energy2"
+		locForm="0"
+		value="Laser air-cooling system" />
+
+	<Item
+		id="cooling_system_explosion2"
+		locForm="0"
+		value="Artillery air-cooling system" />
+
+	<Item
+		id="firing_rate_guns2"
+		locForm="0"
+		value="Electric trigger" />
+
+	<Item
+		id="firing_rate_energy2"
+		locForm="0"
+		value="Superconductive cable" />
+
+	<Item
+		id="grouping_angle_guns2"
+		locForm="0"
+		value="Scope sight with brighten optics and antiglare protection" />
+
+	<Item
+		id="add_damage_guns2"
+		locForm="0"
+		value="Blowback bolt with double-slider" />
+
+	<Item
+		id="add_damage_energy2"
+		locForm="0"
+		value="Crystal resonator" />
+
+	<Item
+		id="add_damage_explosion2"
+		locForm="0"
+		value="Magnetic catapult on the base of curling field generator" />
+
+	<Item
+		id="cooling_system_guns_and_firing_rate_guns"
+		locForm="0"
+		value="Gnomon system" />
+
+	<Item
+		id="cooling_system_energy_and_firing_rate_energy"
+		locForm="0"
+		value="Algor complex" />
+
+	<Item
+		id="cooling_system_explosion_and_firing_rate_explosion"
+		locForm="0"
+		value="Samum system" />
+
+	<Item
+		id="firing_rate_guns_and_add_damage_guns"
+		locForm="0"
+		value="Spheno electromechanical complex" />
+
+	<Item
+		id="firing_rate_energy_and_add_damage_energy"
+		locForm="0"
+		value="Quasar magnetic-optical system" />
+
+	<Item
+		id="firing_rate_explosion_and_add_damage_explosion"
+		locForm="0"
+		value="Firestorm electromechanical complex" />
+
+	<Item
+		id="add_damage_guns_and_grouping_angle_guns"
+		locForm="0"
+		value="FireEye complex" />
+
+	<Item
+		id="add_damage_energy_and_firing_rate_energy"
+		locForm="0"
+		value="Doom-4 system" />
+
+	<Item
+		id="add_damage_explosion_firing_rate_explosion"
+		locForm="0"
+		value="David electromechanical complex" />
+
+	<Item
+		id="additional_fuel_tank"
+		locForm="0"
+		value="Common fuel can" />
+
+	<Item
+		id="additional_torque"
+		locForm="0"
+		value="Additional exhaust pipe" />
+
+	<Item
+		id="additional_durability"
+		locForm="0"
+		value="Rolled armored plates for cabin" />
+
+	<Item
+		id="additional_stability"
+		locForm="0"
+		value="Steering booster" />
+
+	<Item
+		id="additional_fuel_tank2"
+		locForm="0"
+		value="Big fuel can" />
+
+	<Item
+		id="additional_torque2"
+		locForm="0"
+		value="Turbo-supercharge" />
+
+	<Item
+		id="additional_durability2"
+		locForm="0"
+		value="Rolled armored plates with additional cementation" />
+
+	<Item
+		id="add_speed_and_torque"
+		locForm="0"
+		value="Electronic injection system" />
+
+	<Item
+		id="add_stability_and_speed"
+		locForm="0"
+		value="Sagitta system" />
+
+	<Item
+		id="add_torque_and_stability"
+		locForm="0"
+		value="Albatross system" />
+
+	<Item
+		id="additional_fuel_tank2_add_damage_guns"
+		locForm="0"
+		value="Sato system" />
+
+	<Item
+		id="add_damage_energy_sub_damage_guns"
+		locForm="0"
+		value="Energy booster" />
+
+	<Item
+		id="add_damage_guns_sub_damage_energy"
+		locForm="0"
+		value="Ammunition with plasma core" />
+
+	<Item
+		id="add_damage_explosion_sub_damage_guns"
+		locForm="0"
+		value="Warheads with plastid" />
+
+	<Item
+		id="add_fueltank_sub_maxspeed"
+		locForm="0"
+		value="Enlarged heavy fuel tank" />
+
+	<Item
+		id="add_maxspeed_sub_fueltank"
+		locForm="0"
+		value="Sport chip occupies the part of fuel tank" />
+
+	<Item
+		id="add_armour_sub_max_speed"
+		locForm="0"
+		value="Heavy titanic cover" />
+
+	<Item
+		id="add_maxspeed_sub_armour"
+		locForm="0"
+		value="Interface aerodynamic broaching" />
+
+	<Item
+		id="add_damage_energy_sub_damage_guns2"
+		locForm="0"
+		value="Energy redistributor" />
+
+	<Item
+		id="add_damage_guns_sub_damage_energy2"
+		locForm="0"
+		value="Ammunition with nuclear core" />
+
+	<Item
+		id="add_damage_explosion_sub_damage_guns2"
+		locForm="0"
+		value="Nuclear warheads" />
+
+	<Item
+		id="add_damage_energy_sub_damage_guns22"
+		locForm="0"
+		value="Double enegry redistributor" />
+
+	<Item
+		id="add_damage_guns_sub_damage_energy22"
+		locForm="0"
+		value="Ammunition with double nuclear core" />
+
+	<Item
+		id="add_damage_explosion_sub_damage_guns22"
+		locForm="0"
+		value="Nuclear warheads with electronic navigation" />
+
+	<Item
+		id="add_maxspeed_sub_armour2"
+		locForm="0"
+		value="Double aerodynamic broaching" />
+
+	<Item
+		id="add_fueltank_sub_maxspeed2"
+		locForm="0"
+		value="Double super-heavy fuel tank" />
+
+	<Item
+		id="add_maxspeed_sub_fueltank2"
+		locForm="0"
+		value="Double chip occupies the part of fuel tank" />
+
+	<Item
+		id="add_armour_sub_max_speed2"
+		locForm="0"
+		value="Double titanic cover" />
+
+	<Item
+		id="add_damage_energy_sub_damage_guns23"
+		locForm="0"
+		value="Triple energy redistributor" />
+
+	<Item
+		id="add_damage_guns_sub_damage_energy23"
+		locForm="0"
+		value="Ammunition with triple nuclear core" />
+
+	<Item
+		id="add_damage_explosion_sub_damage_guns23"
+		locForm="0"
+		value="Nuclear electronically targetable warhead" />
+
+	<Item
+		id="add_maxspeed_sub_armour3"
+		locForm="0"
+		value="Triple aerodynamic broaching" />
+
+	<Item
+		id="add_fueltank_sub_maxspeed3"
+		locForm="0"
+		value="Triple super-heavy fuel tank" />
+
+	<Item
+		id="add_maxspeed_sub_fueltank3"
+		locForm="0"
+		value="Triple chip occupies the part of fuel tank" />
+
+	<Item
+		id="add_armour_sub_max_speed3"
+		locForm="0"
+		value="Triple titanic cover" />
+
+	<Item
+		id="add_damage_energy_sub_damage_guns24"
+		locForm="0"
+		value="Quadra energy redistributor" />
+
+	<Item
+		id="add_damage_guns_sub_damage_energy24"
+		locForm="0"
+		value="Ammunition with quadra-nuclear core" />
+
+	<Item
+		id="add_damage_explosion_sub_damage_guns24"
+		locForm="0"
+		value="Nuclear warhead with double electronic navigation" />
+
+	<Item
+		id="add_maxspeed_sub_armour4"
+		locForm="0"
+		value="Quadra aerodynamic broaching" />
+
+	<Item
+		id="add_fueltank_sub_maxspeed4"
+		locForm="0"
+		value="Quadra fuel tank" />
+
+	<Item
+		id="add_maxspeed_sub_fueltank4"
+		locForm="0"
+		value="Quadra chip occupies the part of fuel tank" />
+
+	<Item
+		id="add_armour_sub_max_speed4"
+		locForm="0"
+		value="Quadra titanic cover" />
+
+	<Item
+		id="wine"
+		locForm="0"
+		value="Wine" />
+
+	<Item
+		id="cannedfood"
+		locForm="0"
+		value="Canned food" />
+
+	<Item
+		id="potato"
+		locForm="0"
+		value="Potato" />
+
+	<Item
+		id="scrap_metal"
+		locForm="0"
+		value="Metal scrap" />
+
+	<Item
+		id="firewood"
+		locForm="0"
+		value="Wood" />
+
+	<Item
+		id="info_stone"
+		locForm="0"
+		value="Runestone" />
+
+	<Item
+		id="oil"
+		locForm="0"
+		value="Oil" />
+
+	<Item
+		id="bottle"
+		locForm="0"
+		value="Bottle" />
+
+	<Item
+		id="fuel"
+		locForm="0"
+		value="Fuel" />
+
+	<Item
+		id="machinery"
+		locForm="0"
+		value="Spares" />
+
+	<Item
+		id="tobacco"
+		locForm="0"
+		value="Tobacco" />
+
+	<Item
+		id="book"
+		locForm="0"
+		value="Books" />
+
+	<Item
+		id="electronics"
+		locForm="0"
+		value="Electronics" />
+
+	<Item
+		id="quest_start_father_letter"
+		locForm="0"
+		value="Letter" />
+
+	<Item
+		id="quest_potato"
+		locForm="0"
+		value="Package" />
+
+	<Item
+		id="quest_medicine_box"
+		locForm="0"
+		value="Medicaments" />
+
+	<Item
+		id="quest_explosive"
+		locForm="0"
+		value="Demolition explosive" />
+
+	<Item
+		id="quest_wine_barrels"
+		locForm="0"
+		value="Barrels with wine" />
+
+	<Item
+		id="quest_komp_splav"
+		locForm="0"
+		value="Rare alloy" />
+
+	<Item
+		id="quest_shaman_head1"
+		locForm="0"
+		value="Head of sectary" />
+
+	<Item
+		id="quest_shaman_head2"
+		locForm="0"
+		value="Head of pagan" />
+
+	<Item
+		id="quest_old_digital"
+		locForm="0"
+		value="Old engine" />
+
+	<Item
+		id="quest_art_masterpice"
+		locForm="0"
+		value="Works of art" />
+
+	<Item
+		id="quest_mafia_narcotik"
+		locForm="0"
+		value="Drugs" />
+
+	<Item
+		id="quest_first_canistra"
+		locForm="0"
+		value="Can of oil" />
+
+	<Item
+		id="quest_disk_1"
+		locForm="0"
+		value="Disc" />
+
+	<Item
+		id="quest_disk_2"
+		locForm="0"
+		value="Second disk" />
+
+	<Item
+		id="quest_key_for_submarine"
+		locForm="0"
+		value="Naval gate key" />
+
+	<Item
+		id="quest_key_for_tunnel"
+		locForm="0"
+		value="Tunnel key" />
+
+	<Item
+		id="quest_repair_robot3"
+		locForm="0"
+		value="Robot tuner" />
+
+	<Item
+		id="quest_repair_robot1"
+		locForm="0"
+		value="Robotic assistant" />
+
+	<Item
+		id="quest_repair_robot2"
+		locForm="0"
+		value="Repair robot" />
+
+	<Item
+		id="quest_explosion_stone"
+		locForm="0"
+		value="Stone with runes" />
+
+	<Item
+		id="quest_magic_thing2"
+		locForm="0"
+		value="Broken device" />
+
+	<Item
+		id="quest_magic_thing1"
+		locForm="0"
+		value="Ancient artifact" />
+
+	<Item
+		id="quest_monster_head"
+		locForm="0"
+		value="Head of monster" />
+
+	<Item
+		id="quest_baseball_bat"
+		locForm="0"
+		value="Fungo" />
+
+	<Item
+		id="quest_grand_prix"
+		locForm="0"
+		value="Cup" />
+
+	<Item
+		id="quest_movie_reel_1"
+		locForm="0"
+		value="Ancient volume" />
+
+	<Item
+		id="quest_movie_reel_2"
+		locForm="0"
+		value="Picked volume" />
+
+	<Item
+		id="quest_robot_part_1"
+		locForm="0"
+		value="Optical system cameras" />
+
+	<Item
+		id="quest_robot_part_2"
+		locForm="0"
+		value="Accumulator" />
+
+	<Item
+		id="quest_robot_part_3"
+		locForm="0"
+		value="Flexible tubing for fluid system" />
+
+	<Item
+		id="quest_emissary_trophies"
+		locForm="0"
+		value="Trophies" />
+
+	<Item
+		id="quest_airplane_part"
+		locForm="0"
+		value="Engine" />
+
+	<Item
+		id="quest_goldsellector"
+		locForm="0"
+		value="Treasure detector" />
+
+	<Item
+		id="quest_drugs"
+		locForm="0"
+		value="Smuggled goods" />
+
+	<Item
+		id="quest_special_drugs"
+		locForm="0"
+		value="Smuggled goods" />
+
+	<Item
+		id="quest_reach"
+		locForm="0"
+		value="Package" />
+
+	<Item
+		id="quest_forbidden_books"
+		locForm="0"
+		value="Forbidden books" />
+
+	<Item
+		id="quest_wanted"
+		locForm="0"
+		value="WANTED!" />
+
+	<Item
+		id="someTurboAccelerationPusher"
+		locForm="0"
+		value="Turbo booster" />
+
+	<Item
+		id="Jumper"
+		locForm="0"
+		value="Jump cannon" />
+
+	<Item
+		id="engineOilPusher"
+		locForm="0"
+		value="Machine oil" />
+
+	<Item
+		id="nailsPusher"
+		locForm="0"
+		value="Pin" />
+
+	<Item
+		id="minePusher"
+		locForm="0"
+		value="Hedgehog-1" />
+
+	<Item
+		id="cyclops01"
+		locForm="0"
+		value="Cyclops" />
+
+	<Item
+		id="big_swingfire01"
+		locForm="0"
+		value="Swingfire" />
+
+	<Item
+		id="rocketLauncher"
+		locForm="0"
+		value="Dragon" />
+
+	<Item
+		id="storm01"
+		locForm="0"
+		value="Storm" />
+
+	<Item
+		id="dozerCab01"
+		locForm="0"
+		value="Trash" />
+
+	<Item
+		id="scoutCab01"
+		locForm="0"
+		value="Blitz" />
+
+	<Item
+		id="scoutCab02"
+		locForm="0"
+		value="Screw" />
+
+	<Item
+		id="scoutCab03"
+		locForm="0"
+		value="Surfer" />
+
+	<Item
+		id="fighterCab01"
+		locForm="0"
+		value="Pitbull" />
+
+	<Item
+		id="fighterCab02"
+		locForm="0"
+		value="Doberman" />
+
+	<Item
+		id="fighterCab03"
+		locForm="0"
+		value="Polis" />
+
+	<Item
+		id="molokovozCab01"
+		locForm="0"
+		value="Bolt" />
+
+	<Item
+		id="molokovozCab02"
+		locForm="0"
+		value="Whirl" />
+
+	<Item
+		id="molokovozCab03"
+		locForm="0"
+		value="Pin" />
+
+	<Item
+		id="molokovozCargo01"
+		locForm="0"
+		value="Tent" />
+
+	<Item
+		id="molokovozCargo02"
+		locForm="0"
+		value="Generator" />
+
+	<Item
+		id="molokovozCargo03"
+		locForm="0"
+		value="Box" />
+
+	<Item
+		id="belazCab01"
+		locForm="0"
+		value="Zod" />
+
+	<Item
+		id="belazCab02"
+		locForm="0"
+		value="Bolivar" />
+
+	<Item
+		id="belazCab03"
+		locForm="0"
+		value="Rock" />
+
+	<Item
+		id="belazCab04"
+		locForm="0"
+		value="Terminator" />
+
+	<Item
+		id="belazCab05"
+		locForm="0"
+		value="Shield" />
+
+	<Item
+		id="belazCargo01"
+		locForm="0"
+		value="Host" />
+
+	<Item
+		id="belazCargo02"
+		locForm="0"
+		value="Constructor" />
+
+	<Item
+		id="belazCargo03"
+		locForm="0"
+		value="Colossus" />
+
+	<Item
+		id="belazCargo04"
+		locForm="0"
+		value="Thunder" />
+
+	<Item
+		id="belazCargo05"
+		locForm="0"
+		value="Cylinder" />
+
+	<Item
+		id="bugCab01"
+		locForm="0"
+		value="Beetle" />
+
+	<Item
+		id="bugCab02"
+		locForm="0"
+		value="Drudge" />
+
+	<Item
+		id="bugCab03"
+		locForm="0"
+		value="Scorpio" />
+
+	<Item
+		id="bugCab04"
+		locForm="0"
+		value="Bee" />
+
+	<Item
+		id="bugCab05"
+		locForm="0"
+		value="Mantis" />
+
+	<Item
+		id="bugCargo01"
+		locForm="0"
+		value="Gas" />
+
+	<Item
+		id="bugCargo02"
+		locForm="0"
+		value="Cascade" />
+
+	<Item
+		id="bugCargo03"
+		locForm="0"
+		value="Truss" />
+
+	<Item
+		id="uralCab01"
+		locForm="0"
+		value="Chrome" />
+
+	<Item
+		id="uralCab02"
+		locForm="0"
+		value="Standard" />
+
+	<Item
+		id="uralCab03"
+		locForm="0"
+		value="Lord" />
+
+	<Item
+		id="uralCab04"
+		locForm="0"
+		value="Morion" />
+
+	<Item
+		id="uralCab05"
+		locForm="0"
+		value="Knight" />
+
+	<Item
+		id="uralCargo01"
+		locForm="0"
+		value="Cold" />
+
+	<Item
+		id="uralCargo02"
+		locForm="0"
+		value="Freight" />
+
+	<Item
+		id="uralCargo03"
+		locForm="0"
+		value="Cruiser" />
+
+	<Item
+		id="uralCargo04"
+		locForm="0"
+		value="Armor" />
+
+	<Item
+		id="uralCargo05"
+		locForm="0"
+		value="Tiger" />
+
+	<Item
+		id="FighterForSale"
+		locForm="0"
+		value="Fighter" />
+
+	<Item
+		id="ScoutForSale"
+		locForm="0"
+		value="Scout" />
+
+	<Item
+		id="BelazForSale"
+		locForm="0"
+		value="Belaz" />
+
+	<Item
+		id="UralForSale"
+		locForm="0"
+		value="Ural" />
+
+	<Item
+		id="BugForSale"
+		locForm="0"
+		value="Van" />
+
+	<Item
+		id="MolokovozForSale"
+		locForm="0"
+		value="Milk tanker" />
+
+	<Item
+		id="MolokovozCargo04"
+		locForm="0"
+		value="Bolt with trailer" />
+
+	<Item
+		id="mirotvorecCab01"
+		locForm="0"
+		value="Grain" />
+
+	<Item
+		id="mirotvorecCab02"
+		locForm="0"
+		value="Scull" />
+
+	<Item
+		id="mirotvorecCab03"
+		locForm="0"
+		value="Meteor" />
+
+	<Item
+		id="mirotvorecCab04"
+		locForm="0"
+		value="Damask" />
+
+	<Item
+		id="mirotvorecCab05"
+		locForm="0"
+		value="Phantom" />
+
+	<Item
+		id="mirotvorecCargo01"
+		locForm="0"
+		value="Tusk" />
+
+	<Item
+		id="mirotvorecCargo02"
+		locForm="0"
+		value="Centurion" />
+
+	<Item
+		id="mirotvorecCargo03"
+		locForm="0"
+		value="Maya" />
+
+	<Item
+		id="mirotvorecCargo04"
+		locForm="0"
+		value="Masamune" />
+
+	<Item
+		id="mirotvorecCargo05"
+		locForm="0"
+		value="Excalibur" />
+
+	<Item
+		id="MirotvorecForSale"
+		locForm="0"
+		value="Peacemaker" />
+
+	<Item
+		id="sml1Cab01"
+		locForm="1"
+		value="Bedbug cabin" />
+
+	<Item
+		id="sml2Cab01"
+		locForm="1"
+		value="Cockroach cabin" />
+
+	<Item
+		id="sml3Cab01"
+		locForm="1"
+		value="Ant cabin" />
+
+	<Item
+		id="sml4Cab01"
+		locForm="1"
+		value="Grasshopper cabin" />
+
+	<Item
+		id="denscoutCab"
+		locForm="1"
+		value="Fox cabin" />
+
+	<Item
+		id="tank01"
+		locForm="0"
+		value="Tank" />
+
+	<Item
+		id="tankCab01"
+		locForm="0"
+		value="Tower" />
+
+	<Item
+		id="tankCargo01"
+		locForm="0"
+		value="Body" />
+
+	<Item
+		id="robotplayer01Cab01"
+		locForm="0"
+		value="Central Processor" />
+
+	<Item
+		id="robot01Cab01"
+		locForm="0"
+		value="Central processor" />
+
+	<Item
+		id="robotCargo01"
+		locForm="0"
+		value="Accumulator" />
+
+	<Item
+		id="scoutCargo01"
+		locForm="1"
+		value="Cargo container" />
+
+	<Item
+		id="scoutCargo02"
+		locForm="1"
+		value="Cargo container" />
+
+	<Item
+		id="fighterCargo01"
+		locForm="1"
+		value="Cargo container" />
+
+	<Item
+		id="fighterCargo02"
+		locForm="1"
+		value="Cargo container" />
+
+	<Item
+		id="ElectroShockMed"
+		locForm="0"
+		value="Auto-Stop" />
+
+	<Item
+		id="FlameThrowerMed"
+		locForm="0"
+		value="Flame" />
+
+	<Item
+		id="FlameThrowerGiant"
+		locForm="0"
+		value="Cinder" />
+
+	<Item
+		id="robotgun01"
+		locForm="0"
+		value="Oracle eye, version 2.7" />
+
+	<Item
+		id="robotgun04small_01"
+		locForm="0"
+		value="Oracle eye, version 3.2" />
+
+	<Item
+		id="robotgun04small_02"
+		locForm="0"
+		value="Oracle eye, version 3.5" />
+
+	<Item
+		id="hornet01"
+		locForm="0"
+		value="Hornet" />
+
+	<Item
+		id="specter01"
+		locForm="0"
+		value="Spectrum" />
+
+	<Item
+		id="specterS01"
+		locForm="0"
+		value="Unique spectrum" />
+
+	<Item
+		id="pkt01"
+		locForm="0"
+		value="Machine gun" />
+
+	<Item
+		id="pktS01"
+		locForm="0"
+		value="Unique machine gun" />
+
+	<Item
+		id="kord01"
+		locForm="0"
+		value="Cord" />
+
+	<Item
+		id="vector01"
+		locForm="0"
+		value="Vector" />
+
+	<Item
+		id="vulcan01"
+		locForm="0"
+		value="Volcano" />
+
+	<Item
+		id="maxim01"
+		locForm="0"
+		value="Maxim" />
+
+	<Item
+		id="rapier01"
+		locForm="1"
+		value="Rapier" />
+
+	<Item
+		id="fagot01"
+		locForm="0"
+		value="Fagotto" />
+
+	<Item
+		id="fagotS01"
+		locForm="0"
+		value="Unique fagotto" />
+
+	<Item
+		id="kpvt01"
+		locForm="0"
+		value="Heavy machine gun" />
+
+	<Item
+		id="kpvtS01"
+		locForm="0"
+		value="Unique heavy machine gun" />
+
+	<Item
+		id="rainmetal01"
+		locForm="0"
+		value="Rainmetal" />
+
+	<Item
+		id="octopus01"
+		locForm="0"
+		value="Octopus" />
+
+	<Item
+		id="octopusS01"
+		locForm="0"
+		value="Unique octopus" />
+
+	<Item
+		id="elephant01"
+		locForm="0"
+		value="Elephant" />
+
+	<Item
+		id="elephantS01"
+		locForm="0"
+		value="Unique elephant" />
+
+	<Item
+		id="flag01"
+		locForm="0"
+		value="Flag" />
+
+	<Item
+		id="flagS01"
+		locForm="0"
+		value="Unique flag" />
+
+	<Item
+		id="hurricane01"
+		locForm="0"
+		value="Hurricane" />
+
+	<Item
+		id="hailSideGun"
+		locForm="0"
+		value="Hail" />
+
+	<Item
+		id="odin01"
+		locForm="0"
+		value="One" />
+
+	<Item
+		id="hammer01"
+		locForm="0"
+		value="Tor hammer" />
+
+	<Item
+		id="hammerS01"
+		locForm="0"
+		value="Unique tor hammer" />
+
+	<Item
+		id="bumblebee01"
+		locForm="0"
+		value="Humblebee" />
+
+	<Item
+		id="omega01"
+		locForm="1"
+		value="Omega" />
+
+	<Item
+		id="mrakSideGun"
+		locForm="0"
+		value="Gloom" />
+
+	<Item
+		id="hunterSideGun"
+		locForm="0"
+		value="Hunter" />
+
+	<Item
+		id="zeusSideGun"
+		locForm="0"
+		value="Zeus" />
+
+	<Item
+		id="zeusSideGunS"
+		locForm="0"
+		value="Unique Zeus" />
+
+	<Item
+		id="marsSideGun"
+		locForm="0"
+		value="Mars" />
+
+	<Item
+		id="marsSideGunS"
+		locForm="0"
+		value="Unique Mars" />
+
+	<Item
+		id="minePusher_1"
+		locForm="0"
+		value="Hedgehog-2" />
+
+	<Item
+		id="minePusher_2"
+		locForm="0"
+		value="Whirl" />
+
+	<Item
+		id="Sml301"
+		locForm="0"
+		value="Ant" />
+
+	<Item
+		id="Sml3"
+		locForm="0"
+		value="Ant" />
+
+	<Item
+		id="r1m1_sml01"
+		locForm="0"
+		value="Bedbug" />
+
+	<Item
+		id="r1m1_sml02"
+		locForm="0"
+		value="Cockroach" />
+
+	<Item
+		id="r1m1_sml03"
+		locForm="0"
+		value="Ant" />
+
+	<Item
+		id="r1m1_sml04"
+		locForm="0"
+		value="Grasshopper" />
+
+	<Item
+		id="r1m1_scout01"
+		locForm="0"
+		value="Scout" />
+
+	<Item
+		id="r1m1_scout02"
+		locForm="0"
+		value="Scout" />
+
+	<Item
+		id="r1m1_scout03"
+		locForm="0"
+		value="Scout" />
+
+	<Item
+		id="r1m1_molokovoz01"
+		locForm="0"
+		value="Milk tanker" />
+
+	<Item
+		id="r1m1_molokovoz02"
+		locForm="0"
+		value="Milk tanker" />
+
+	<Item
+		id="r1m1_molokovoz03"
+		locForm="0"
+		value="Milk tanker" />
+
+	<Item
+		id="r5m1_sumo01"
+		locForm="0"
+		value="Gladiator" />
+
+	<Item
+		id="r5m1_sumo02"
+		locForm="0"
+		value="Gladiator" />
+
+	<Item
+		id="r1m1_bug01"
+		locForm="0"
+		value="Van" />
+
+	<Item
+		id="r1m1_bug02"
+		locForm="0"
+		value="Van" />
+
+	<Item
+		id="r1m1_bug03"
+		locForm="0"
+		value="Van" />
+
+	<Item
+		id="r1m2_hunter02"
+		locForm="0"
+		value="Hunter" />
+
+	<Item
+		id="Scout01"
+		locForm="0"
+		value="Scout" />
+
+	<Item
+		id="Scout02"
+		locForm="0"
+		value="Scout" />
+
+	<Item
+		id="Scout03"
+		locForm="0"
+		value="Scout" />
+
+	<Item
+		id="Scout"
+		locForm="0"
+		value="Scout" />
+
+	<Item
+		id="ArcadeScout01"
+		locForm="0"
+		value="Scout GT" />
+
+	<Item
+		id="Fighter"
+		locForm="0"
+		value="Fighter" />
+
+	<Item
+		id="Fighter01"
+		locForm="0"
+		value="Fighter" />
+
+	<Item
+		id="Fighter02"
+		locForm="0"
+		value="Fighter" />
+
+	<Item
+		id="Hunter"
+		locForm="0"
+		value="Hunter" />
+
+	<Item
+		id="Hunter01"
+		locForm="0"
+		value="Hunter" />
+
+	<Item
+		id="HunterMech"
+		locForm="0"
+		value="Mechanic" />
+
+	<Item
+		id="Hunter02"
+		locForm="0"
+		value="Hunter" />
+
+	<Item
+		id="Cruiser"
+		locForm="0"
+		value="Cruiser" />
+
+	<Item
+		id="Cruiser01"
+		locForm="0"
+		value="Cruiser" />
+
+	<Item
+		id="CruiserTest02"
+		locForm="0"
+		value="Cruiser" />
+
+	<Item
+		id="Dozer"
+		locForm="0"
+		value="Bulldozer" />
+
+	<Item
+		id="Dozer01"
+		locForm="0"
+		value="Bulldozer" />
+
+	<Item
+		id="DozerRace"
+		locForm="0"
+		value="Bulldozer" />
+
+	<Item
+		id="DozerRace1"
+		locForm="0"
+		value="Bulldozer" />
+
+	<Item
+		id="DozerRace2"
+		locForm="0"
+		value="Bulldozer" />
+
+	<Item
+		id="DozerRace3"
+		locForm="0"
+		value="Bulldozer" />
+
+	<Item
+		id="Traktor01"
+		locForm="0"
+		value="Tractor" />
+
+	<Item
+		id="Tank01"
+		locForm="0"
+		value="Tank" />
+
+	<Item
+		id="Bug"
+		locForm="0"
+		value="Transport" />
+
+	<Item
+		id="Bug01"
+		locForm="0"
+		value="Van" />
+
+	<Item
+		id="Molokovoz"
+		locForm="0"
+		value="Milk tanker" />
+
+	<Item
+		id="Molokovoz01"
+		locForm="0"
+		value="Milk tanker" />
+
+	<Item
+		id="Molokovoz02"
+		locForm="0"
+		value="Milk tanker" />
+
+	<Item
+		id="Ural"
+		locForm="0"
+		value="Ural" />
+
+	<Item
+		id="Ural01"
+		locForm="0"
+		value="Ural" />
+
+	<Item
+		id="Belaz"
+		locForm="0"
+		value="Belaz" />
+
+	<Item
+		id="Belaz01"
+		locForm="0"
+		value="Belaz" />
+
+	<Item
+		id="CoolBelaz"
+		locForm="0"
+		value="Belaz" />
+
+	<Item
+		id="Mirotvorec"
+		locForm="0"
+		value="Peacemaker" />
+
+	<Item
+		id="Mirotvorec01"
+		locForm="0"
+		value="Peacemaker" />
+
+	<Item
+		id="ArcadeBelaz"
+		locForm="0"
+		value="Belaz Sprint" />
+
+	<Item
+		id="DemoBandit"
+		locForm="0"
+		value="Scout" />
+
+	<Item
+		id="LisaCar"
+		locForm="1"
+		value="Fox" />
+
+	<Item
+		id="DemoFighter1"
+		locForm="0"
+		value="Fighter" />
+
+	<Item
+		id="DemoHunter1"
+		locForm="0"
+		value="Hunter" />
+
+	<Item
+		id="DemoHunter2"
+		locForm="0"
+		value="Hunter" />
+
+	<Item
+		id="DemoBug1"
+		locForm="0"
+		value="Van" />
+
+	<Item
+		id="DemoBug2"
+		locForm="0"
+		value="Van" />
+
+	<Item
+		id="DemoBug3"
+		locForm="0"
+		value="Van" />
+
+	<Item
+		id="DemoMolokovoz1"
+		locForm="0"
+		value="Milk tanker" />
+
+	<Item
+		id="DemoMolokovoz2"
+		locForm="0"
+		value="Milk tanker" />
+
+	<Item
+		id="DemoMolokovoz3"
+		locForm="0"
+		value="Milk tanker" />
+
+	<Item
+		id="DemoUral1"
+		locForm="0"
+		value="Ural" />
+
+	<Item
+		id="DemoUral2"
+		locForm="0"
+		value="Ural" />
+
+	<Item
+		id="DemoUral3"
+		locForm="0"
+		value="Ural" />
+
+	<Item
+		id="DemoBelaz1"
+		locForm="0"
+		value="Belaz" />
+
+	<Item
+		id="DemoBelaz2"
+		locForm="0"
+		value="Belaz" />
+
+	<Item
+		id="DemoBelaz3"
+		locForm="0"
+		value="Belaz" />
+
+	<Item
+		id="DemoMirotvorec1"
+		locForm="0"
+		value="Peacemaker" />
+
+	<Item
+		id="DemoMirotvorec2"
+		locForm="0"
+		value="Peacemaker" />
+
+	<Item
+		id="DemoMirotvorec3"
+		locForm="0"
+		value="Peacemaker" />
+
+	<Item
+		id="Revolutioner1"
+		locForm="0"
+		value="Revolutionary" />
+
+	<Item
+		id="Revolutioner2"
+		locForm="0"
+		value="Revolutionary" />
+
+	<Item
+		id="BelazTest"
+		locForm="0"
+		value="Belaz" />
+
+	<Item
+		id="MolokovozTest"
+		locForm="0"
+		value="Milk tanker" />
+
+	<Item
+		id="Sml1"
+		locForm="0"
+		value="Bedbug" />
+
+	<Item
+		id="Sml2"
+		locForm="0"
+		value="Cockroach" />
+
+	<Item
+		id="Sml4"
+		locForm="0"
+		value="Grasshopper" />
+
+	<Item
+		id="Sml101"
+		locForm="0"
+		value="Bedbug" />
+
+	<Item
+		id="Sml201"
+		locForm="0"
+		value="Cockroach" />
+
+	<Item
+		id="Sml401"
+		locForm="0"
+		value="Grasshopper" />
+
+	<Item
+		id="mirotvorecTest"
+		locForm="0"
+		value="Peacemaker" />
+
+	<Item
+		id="mirotvorecTest1"
+		locForm="0"
+		value="Peacemaker" />
+
+	<Item
+		id="BugTest1"
+		locForm="0"
+		value="Van" />
+
+	<Item
+		id="BelazTest01"
+		locForm="0"
+		value="Belaz" />
+
+	<Item
+		id="BelazTest02"
+		locForm="0"
+		value="Belaz" />
+
+	<Item
+		id="BelazTest03"
+		locForm="0"
+		value="Belaz" />
+
+	<Item
+		id="BelazTest04"
+		locForm="0"
+		value="Belaz" />
+
+	<Item
+		id="BelazTest05"
+		locForm="0"
+		value="Belaz" />
+
+	<Item
+		id="BelazShot"
+		locForm="0"
+		value="Belaz" />
+
+	<Item
+		id="UralShot"
+		locForm="0"
+		value="Ural" />
+
+	<Item
+		id="MirotvorecShot"
+		locForm="0"
+		value="Peacemaker" />
+
+	<Item
+		id="Formula01"
+		locForm="0"
+		value="Turbo GT" />
+
+	<Item
+		id="FormulaCab"
+		locForm="0"
+		value="Bolide GT" />
+
+	<Item
+		id="r1m3_Fighter01"
+		locForm="0"
+		value="Fighter" />
+
+	<Item
+		id="r1m3_Fighter02"
+		locForm="0"
+		value="Fighter" />
+
+	<Item
+		id="r1m3_Sml101"
+		locForm="0"
+		value="Bedbug" />
+
+	<Item
+		id="r1m3_molokovoz03"
+		locForm="0"
+		value="Milk tanker" />
+
+	<Item
+		id="staticAutoGun01"
+		locForm="0"
+		value="Pillbox" />
+
+	<Item
+		id="staticAutoGun02"
+		locForm="0"
+		value="Pillbox" />
+
+	<Item
+		id="staticAutoGun03"
+		locForm="0"
+		value="Pillbox" />
+
+	<Item
+		id="staticAutoGun04"
+		locForm="0"
+		value="Pillbox" />
+
+	<Item
+		id="staticAutoGun05"
+		locForm="0"
+		value="Pillbox" />
+
+	<Item
+		id="staticAutoGun06"
+		locForm="0"
+		value="Pillbox" />
+
+	<Item
+		id="staticAutoGun07"
+		locForm="0"
+		value="Barricade" />
+
+	<Item
+		id="staticAutoGun08"
+		locForm="0"
+		value="Ambush" />
+
+	<Item
+		id="Dot01"
+		locForm="0"
+		value="Pillbox" />
+
+	<Item
+		id="druid_dot_01"
+		locForm="0"
+		value="Pillbox" />
+
+	<Item
+		id="druid_dot_02"
+		locForm="0"
+		value="Pillbox" />
+
+	<Item
+		id="oracle_generator"
+		locForm="0"
+		value="Generator" />
+
+	<Item
+		id="OracleDot1_hunterLauncher"
+		locForm="0"
+		value="Pillbox" />
+
+	<Item
+		id="OracleDot1_vulcan"
+		locForm="0"
+		value="Pillbox" />
+
+	<Item
+		id="OracleDot1_kpvt"
+		locForm="0"
+		value="Pillbox" />
+
+	<Item
+		id="OracleDot2_hunterLauncher"
+		locForm="0"
+		value="Pillbox" />
+
+	<Item
+		id="OracleDot2_vulcan"
+		locForm="0"
+		value="Pillbox" />
+
+	<Item
+		id="OracleDot_Generator"
+		locForm="0"
+		value="Generator" />
+
+	<Item
+		id="heavy_dot4_FLAGSHTOK"
+		locForm="0"
+		value="Flag" />
+
+	<Item
+		id="druid_dot2_FLAGSHTOK"
+		locForm="0"
+		value="Flag" />
+
+	<Item
+		id="sack_dot2_kord"
+		locForm="0"
+		value="Pillbox" />
+
+	<Item
+		id="heavy_dot4_flag01"
+		locForm="0"
+		value="Pillbox" />
+
+	<Item
+		id="heavy_dot4_big_kpvt_smallrad"
+		locForm="0"
+		value="Pillbox" />
+
+	<Item
+		id="heavy_dot4_big_kpvt"
+		locForm="0"
+		value="Pillbox" />
+
+	<Item
+		id="heavy_dot4_big_rainmetal"
+		locForm="0"
+		value="Pillbox" />
+
+	<Item
+		id="brick_dot1_vulcan"
+		locForm="0"
+		value="Pillbox" />
+
+	<Item
+		id="druid_dot2_omega01"
+		locForm="0"
+		value="Pillbox" />
+
+	<Item
+		id="druid_dot1_kord01"
+		locForm="0"
+		value="Pillbox" />
+
+	<Item
+		id="sack_dot2_omega"
+		locForm="0"
+		value="Pillbox" />
+
+	<Item
+		id="sack_dot2_omega"
+		locForm="0"
+		value="Pillbox" />
+
+	<Item
+		id="sack_dot2_flag"
+		locForm="0"
+		value="Pillbox" />
+
+	<Item
+		id="sack_dot1_hunterLauncher"
+		locForm="0"
+		value="Pillbox" />
+
+	<Item
+		id="sack_dot2_vulcan"
+		locForm="0"
+		value="Pillbox" />
+
+	<Item
+		id="sack_dot1_vulcan"
+		locForm="0"
+		value="Pillbox" />
+
+	<Item
+		id="heavy_dot4_big_hornet"
+		locForm="0"
+		value="Pillbox" />
+
+	<Item
+		id="heavy_dot4_big_vector"
+		locForm="0"
+		value="Pillbox" />
+
+	<Item
+		id="heavy_dot4_big_hurricane"
+		locForm="0"
+		value="Pillbox" />
+
+	<Item
+		id="heavy_dot4_big_hunterLauncher"
+		locForm="0"
+		value="Pillbox" />
+
+	<Item
+		id="heavy_dot4_big_swingfire"
+		locForm="0"
+		value="Pillbox" />
+
+	<Item
+		id="heavy_dot4_rapier"
+		locForm="0"
+		value="Pillbox" />
+
+	<Item
+		id="heavy_dot4_octopus"
+		locForm="0"
+		value="Pillbox" />
+
+	<Item
+		id="heavy_dot4_vulcan"
+		locForm="0"
+		value="Pillbox" />
+
+	<Item
+		id="heavy_dot3_rainmetal"
+		locForm="0"
+		value="Pillbox" />
+
+	<Item
+		id="heavy_dot3_vulcan"
+		locForm="0"
+		value="Pillbox" />
+
+	<Item
+		id="heavy_dot2_rainmetal"
+		locForm="0"
+		value="Pillbox" />
+
+	<Item
+		id="heavy_dot2_vector"
+		locForm="0"
+		value="Pillbox" />
+
+	<Item
+		id="heavy_dot2_vulcan"
+		locForm="0"
+		value="Pillbox" />
+
+	<Item
+		id="heavy_dot1_vulcan"
+		locForm="0"
+		value="Pillbox" />
+
+	<Item
+		id="brick_dot2_vulcan"
+		locForm="0"
+		value="Pillbox" />
+
+	<Item
+		id="PublicDemoBug01"
+		locForm="0"
+		value="Old man vehicle" />
+
+	<Item
+		id="PublicDemoSinks"
+		locForm="0"
+		value="Vagrant Sinks" />
+
+	<Item
+		id="PublicDemoBandit1"
+		locForm="0"
+		value="Killer" />
+
+	<Item
+		id="PublicDemoBandit2"
+		locForm="0"
+		value="Death hunter" />
+
+	<Item
+		id="PublicDemoFighter"
+		locForm="0"
+		value="Gang leader" />
+
+	<Item
+		id="PublicDemoIeriBand1"
+		locForm="0"
+		value="Defender Yeri" />
+
+	<Item
+		id="PublicDemoIeriBand2"
+		locForm="0"
+		value="Defender Yeri" />
+
+	<Item
+		id="PublicDemoIeriCar"
+		locForm="0"
+		value="Yeri" />
+
+	<Item
+		id="r1m2_CaravanBug01"
+		locForm="0"
+		value="Transport" />
+
+	<Item
+		id="r1m1_CaravanBug04"
+		locForm="0"
+		value="Transport" />
+
+	<Item
+		id="r1m2_CaravanBug02"
+		locForm="0"
+		value="Transport" />
+
+	<Item
+		id="r1m3_CaravanMolokovoz01"
+		locForm="0"
+		value="Transport" />
+
+	<Item
+		id="r1m3_CaravanMolokovoz02"
+		locForm="0"
+		value="Transport" />
+
+	<Item
+		id="r2m1_CaravanUral01"
+		locForm="0"
+		value="Transport" />
+
+	<Item
+		id="r1m3_CaravanGuardianSml401"
+		locForm="0"
+		value="Hunter" />
+
+	<Item
+		id="r2m1_CaravanGuardianSml401"
+		locForm="0"
+		value="Hunter" />
+
+	<Item
+		id="r2m1_CaravanGuardianScout201"
+		locForm="0"
+		value="Hunter" />
+
+	<Item
+		id="r2m2_CaravanGuardianScout301"
+		locForm="0"
+		value="Hunter" />
+
+	<Item
+		id="r1m1_CaravanGuardianSml201"
+		locForm="0"
+		value="Hunter" />
+
+	<Item
+		id="r1m1_CaravanGuardianSml101"
+		locForm="0"
+		value="Hunter" />
+
+	<Item
+		id="r1m2_CaravanGuardianSml301"
+		locForm="0"
+		value="Hunter" />
+
+	<Item
+		id="ScoutMenu"
+		locForm="0"
+		value="Scout" />
+
+	<Item
+		id="FighterMenu"
+		locForm="0"
+		value="Fighter" />
+
+	<Item
+		id="MolokovozMenu"
+		locForm="0"
+		value="Milk tanker" />
+
+	<Item
+		id="BelazMenu"
+		locForm="0"
+		value="Belaz" />
+
+	<Item
+		id="UralMenu"
+		locForm="0"
+		value="Ural" />
+
+	<Item
+		id="r2m2_CaravanUral01"
+		locForm="0"
+		value="Transport" />
+
+	<Item
+		id="r2m2_CaravanUral02"
+		locForm="0"
+		value="Transport" />
+
+	<Item
+		id="r2m1_CaravanUral02"
+		locForm="0"
+		value="Transport" />
+
+	<Item
+		id="r2m1_CaravanMolokovoz02"
+		locForm="0"
+		value="Transport" />
+
+	<Item
+		id="r2m1_CaravanMolokovoz01"
+		locForm="0"
+		value="Transport" />
+
+	<Item
+		id="r1m1_CaravanBug03"
+		locForm="0"
+		value="Transport" />
+
+	<Item
+		id="r1m1_CaravanBug02"
+		locForm="0"
+		value="Transport" />
+
+	<Item
+		id="r1m1_CaravanBug01"
+		locForm="0"
+		value="Transport" />
+
+	<Item
+		id="r2m2_ShamanHunter02"
+		locForm="0"
+		value="Sectary" />
+
+	<Item
+		id="r2m2_ShamanHunter01"
+		locForm="0"
+		value="Sectary" />
+
+	<Item
+		id="r2m2_Ural01"
+		locForm="0"
+		value="Ural" />
+
+	<Item
+		id="r2m2_scout01"
+		locForm="0"
+		value="Scout" />
+
+	<Item
+		id="r2m2_Hunter01"
+		locForm="0"
+		value="Hunter" />
+
+	<Item
+		id="r2m2_Fighter02"
+		locForm="0"
+		value="Fighter" />
+
+	<Item
+		id="r2m2_Fighter01"
+		locForm="0"
+		value="Fighter" />
+
+	<Item
+		id="r2m2_Molokovoz01"
+		locForm="0"
+		value="Milk tanker" />
+
+	<Item
+		id="r2m1_scout03"
+		locForm="0"
+		value="Scout" />
+
+	<Item
+		id="r2m1_scout02"
+		locForm="0"
+		value="Scout" />
+
+	<Item
+		id="r2m1_scout01"
+		locForm="0"
+		value="Scout" />
+
+	<Item
+		id="r2m1_Molokovoz01"
+		locForm="0"
+		value="Milk tanker" />
+
+	<Item
+		id="r2m1_Belaz01"
+		locForm="0"
+		value="Belaz" />
+
+	<Item
+		id="r2m1_Ural01"
+		locForm="0"
+		value="Ural" />
+
+	<Item
+		id="bossMetalArm"
+		locForm="0"
+		value="Robot-claw" />
+
+	<Item
+		id="boss02"
+		locForm="0"
+		value="Factory machine" />
+
+	<Item
+		id="boss03"
+		locForm="0"
+		value="Oracle emissary" />
+
+	<Item
+		id="boss04"
+		locForm="0"
+		value="Neri base" />
+
+	<Item
+		id="boss05"
+		locForm="0"
+		value="Sam's combine" />
+
+	<Item
+		id="FlagCar1"
+		locForm="0"
+		value="Fag-bearer" />
+
+	<Item
+		id="FlagCar2"
+		locForm="0"
+		value="Fag-bearer" />
+
+	<Item
+		id="FlagCar3"
+		locForm="0"
+		value="Fag-bearer" />
+
+	<Item
+		id="boss04drone"
+		locForm="0"
+		value="Dron" />
+
+	<Item
+		id="r2m1_HunterNarcBoss"
+		locForm="0"
+		value="Mafia boss" />
+
+	<Item
+		id="r2m1_HunterNarcCaravan"
+		locForm="0"
+		value="Courier" />
+
+	<Item
+		id="r2m1_FighterNarcCaravan"
+		locForm="0"
+		value="Courier" />
+
+	<Item
+		id="r2m1_Hunter02"
+		locForm="0"
+		value="Hunter" />
+
+	<Item
+		id="r2m1_Hunter01"
+		locForm="0"
+		value="Hunter" />
+
+	<Item
+		id="r2m1_FighterGulik"
+		locForm="0"
+		value="Swindler" />
+
+	<Item
+		id="r2m1_Fighter02"
+		locForm="0"
+		value="Fighter" />
+
+	<Item
+		id="r2m1_Fighter01"
+		locForm="0"
+		value="Fighter" />
+
+	<Item
+		id="r2m1_Bug1"
+		locForm="0"
+		value="Van" />
+
+	<Item
+		id="r1m3_molokovozInOldCity"
+		locForm="0"
+		value="Runaway" />
+
+	<Item
+		id="DemoShot1"
+		locForm="0"
+		value="Enemy" />
+
+	<Item
+		id="AxelVehicle"
+		locForm="0"
+		value="Axel" />
+
+	<Item
+		id="FelixVehicle2"
+		locForm="0"
+		value="Felix" />
+
+	<Item
+		id="FelixVehicle"
+		locForm="0"
+		value="Felix" />
+
+	<Item
+		id="CoolBelaz_2"
+		locForm="0"
+		value="Belaz" />
+
+	<Item
+		id="Ural00"
+		locForm="0"
+		value="Ural" />
+
+	<Item
+		id="Cruiser02"
+		locForm="0"
+		value="Cruiser" />
+
+	<Item
+		id="Fighter03"
+		locForm="0"
+		value="Fighter" />
+
+	<Item
+		id="r1m3_hunter02"
+		locForm="0"
+		value="Hunter" />
+
+	<Item
+		id="r1m2_bug04"
+		locForm="0"
+		value="Van" />
+
+	<Item
+		id="r1m3_MerScout"
+		locForm="0"
+		value="Mayor" />
+
+	<Item
+		id="NoDrop_Robot4SMALL"
+		locForm="0"
+		value="Robo-Scout" />
+
+	<Item
+		id="NoDrop_Robot4_2SMALL"
+		locForm="0"
+		value="Robo-Scout" />
+
+	<Item
+		id="NoDrop_Robot3BIG"
+		locForm="0"
+		value="Mobile Base" />
+
+	<Item
+		id="Robot04_SMALL"
+		locForm="0"
+		value="Robo-Scout" />
+
+	<Item
+		id="Robot4SMALL"
+		locForm="0"
+		value="Spy rectangular" />
+
+	<Item
+		id="Robot4_2SMALL"
+		locForm="0"
+		value="Spy rectangular" />
+
+	<Item
+		id="Robot03_Big"
+		locForm="0"
+		value="Mobile Base" />
+
+	<Item
+		id="Robot3BIG"
+		locForm="0"
+		value="Transportable base" />
+
+	<Item
+		id="Robot3_2BIG"
+		locForm="0"
+		value="Transportable base" />
+
+	<Item
+		id="RobotPlayer01"
+		locForm="0"
+		value="Robot made mechanic" />
+
+	<Item
+		id="Robot01"
+		locForm="0"
+		value="Military Robot" />
+
+	<Item
+		id="RobotBobot01"
+		locForm="0"
+		value="Fighting robot" />
+
+	<Item
+		id="NoDrop_RobotBobot01"
+		locForm="0"
+		value="Military Robot" />
+
+	<Item
+		id="Robot02"
+		locForm="0"
+		value="Worker" />
+
+	<Item
+		id="RobotBobot02"
+		locForm="0"
+		value="Blue-collar robot" />
+
+	<Item
+		id="RobotTron"
+		locForm="0"
+		value="Fighting robot" />
+
+	<Item
+		id="RobotMetatron"
+		locForm="0"
+		value="Fighting robot" />
+
+	<Item
+		id="hunterCab01"
+		locForm="0"
+		value="Hunter cabin" />
+
+	<Item
+		id="hunterCab02"
+		locForm="0"
+		value="Hunter cabin" />
+
+	<Item
+		id="hunterCab03"
+		locForm="0"
+		value="Hunter cabin" />
+
+	<Item
+		id="arcadescoutCab"
+		locForm="0"
+		value="Off-road scout cabin" />
+
+	<Item
+		id="fakeCargo"
+		locForm="0"
+		value="Body" />
+
+	<Item
+		id="cruiserCab01"
+		locForm="0"
+		value="Cruiser cabin" />
+
+	<Item
+		id="cruiserCab02"
+		locForm="0"
+		value="Cruiser cabin" />
+
+	<Item
+		id="cruiserCab03"
+		locForm="0"
+		value="Cruiser cabin" />
+
+	<Item
+		id="SmokeGun"
+		locForm="0"
+		value="Smoke cover" />
+
+	<Item
+		id="anti_missile_system"
+		locForm="0"
+		value="Missile defence" />
+
+	<Item
+		id="Bug"
+		locForm="0"
+		value="Transport" />
+
+	<Item
+		id="Bug_02"
+		locForm="0"
+		value="Transport" />
+
+	<Item
+		id="Ural02"
+		locForm="0"
+		value="Ural" />
+
+	<Item
+		id="Scout"
+		locForm="0"
+		value="Scout" />
+
+	<Item
+		id="Molokovoz"
+		locForm="0"
+		value="Milk tanker" />
+
+	<Item
+		id="Gladiator02"
+		locForm="0"
+		value="Gladiator" />
+
+	<Item
+		id="VeterCar01"
+		locForm="0"
+		value="Wind" />
+
+	<Item
+		id="Iten_car"
+		locForm="0"
+		value="Ethan" />
+
+	<Item
+		id="Star_car"
+		locForm="0"
+		value="Ragman" />
+
+	<Item
+		id="Patr_car"
+		locForm="0"
+		value="Patrol" />
+
+	<Item
+		id="Amerigo_car"
+		locForm="0"
+		value="Capitan Amerigo" />
+
+	<Item
+		id="ScoutMul01"
+		locForm="0"
+		value="Scout" />
+
+	<Item
+		id="FighterMul01"
+		locForm="0"
+		value="Fighter" />
+
+	<Item
+		id="HunterMul01"
+		locForm="0"
+		value="Hunter" />
+
+	<Item
+		id="CruiserMul01"
+		locForm="0"
+		value="Cruiser" />
+
+	<Item
+		id="BugMul01"
+		locForm="0"
+		value="Beetle" />
+
+	<Item
+		id="MolokovozMul01"
+		locForm="0"
+		value="Milk tanker" />
+
+	<Item
+		id="UralMul01"
+		locForm="0"
+		value="Ural" />
+
+	<Item
+		id="BelazMul01"
+		locForm="0"
+		value="Belaz" />
+
+	<Item
+		id="MirotvorecMul01"
+		locForm="0"
+		value="Peacemaker" />
+</ModelNames>

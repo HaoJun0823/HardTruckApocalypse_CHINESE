@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<LevelInfoResource>
+	<LevelInfo
+		name="mp4"
+		file="data\maps\mp4.ssl"
+		fullName="Sands of flame"
+		diz0="In the heart of the desert there is no place for weak people. The water from the ditch won't cool the red-hot engine and bullet won't stop the hot-tempered heart. The sun burns fiercer than the laser and the thirst of revenge speeds up the blood faster than the fuel pump drives fuel to the engine. Go ahead, born for the desert battles! The victory is waiting for you!"
+		diz1=""
+		image0=""
+		image1=""
+		imageDescr="data\if\ico\MPMapDesc\desc_mp4.dds"
+		multiplayer="1"
+		splashes="data\if\ico\Splashes\Loading_mp4.dds"
+		musicBlocks="custom" />
+</LevelInfoResource>

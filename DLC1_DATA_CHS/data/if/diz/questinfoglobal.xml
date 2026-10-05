@@ -1,0 +1,1548 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<QuestInfoResource>
+	<QuestInfo
+		questName="Dynamic_Convoy_0"
+		briefDiz="Escort vehicle to city %2n."
+		fullDiz="In the city %1n people asked to escort vehicle to city %2n for %3d."
+		isMainQuest="0" />
+
+	<QuestInfo
+		questName="Dynamic_Convoy_1"
+		briefDiz="Defend vehicle."
+		fullDiz="Citizen of town %1n asked me to defend his car during the road to city %2n and promised to pay %3d."
+		isMainQuest="0" />
+
+	<QuestInfo
+		questName="Dynamic_Convoy_2"
+		briefDiz="Safeguard security of transport."
+		fullDiz="It is necessary to convoy transport from human settlement %1n to the ciyu %2n. If everything is going to be allright I will get %3d."
+		isMainQuest="0" />
+
+	<QuestInfo
+		questName="Dynamic_Convoy_3"
+		briefDiz="Safeguard security."
+		fullDiz="Merchant from city %1n goes along trading route in settlement %2n. Lonely drivers are often attacked so I agree to protect him for modest reward %3d."
+		isMainQuest="0" />
+
+	<QuestInfo
+		questName="Dynamic_Destroy_0"
+		briefDiz="Kill bandit."
+		fullDiz="In city %1n I have agreed to kill enemy for reward %3d."
+		isMainQuest="0" />
+
+	<QuestInfo
+		questName="Dynamic_Destroy_1"
+		briefDiz="Neutralize bandit."
+		fullDiz="Dwellers from settlement %1n are frequently attacked by cunning bandit. I will help them to get rid of him for %3d."
+		isMainQuest="0" />
+
+	<QuestInfo
+		questName="Dynamic_Destroy_2"
+		briefDiz="Track down aggressor."
+		fullDiz="I will get %3d when I free city %1n from one scoundrel."
+		isMainQuest="0" />
+
+	<QuestInfo
+		questName="Dynamic_Destroy_3"
+		briefDiz="Catch and kill."
+		fullDiz="In city %3d one may get %1n for the head of one bandit."
+		isMainQuest="0" />
+
+	<QuestInfo
+		questName="Dynamic_Drugs_0"
+		briefDiz="Find people who wish to purchase the smuggled goods."
+		fullDiz="My car is full of smuggled goods. It needs to sell them in any city."
+		isMainQuest="0" />
+
+	<QuestInfo
+		questName="Dynamic_Drugs_1"
+		briefDiz="Sold illegal goods."
+		fullDiz="In local bar surely there is a man who are ready to purchase my illegal goods."
+		isMainQuest="0" />
+
+	<QuestInfo
+		questName="Dynamic_Drugs_2"
+		briefDiz="Get rid of smuggled goods."
+		fullDiz="Until nobody knows that I hid in my vehicle it needs to be sold to as soon as possible in any city."
+		isMainQuest="0" />
+
+	<QuestInfo
+		questName="Dynamic_Drugs_3"
+		briefDiz="Make illegal deal."
+		fullDiz="I need find city where I can sell goods with maximum profit."
+		isMainQuest="0" />
+
+	<QuestInfo
+		questName="Dynamic_Hunt_0"
+		briefDiz="Hunting season."
+		fullDiz="City %1n will pay me for evet one killed bandit in region %3d."
+		isMainQuest="0" />
+
+	<QuestInfo
+		questName="Dynamic_Hunt_1"
+		briefDiz="Teach bandit a lesson."
+		fullDiz="Bandits have lost any shame! It needs totaech them good lesson. The more especially that city %1n will pay you for every killed bandit in region %3d."
+		isMainQuest="0" />
+
+	<QuestInfo
+		questName="Dynamic_Hunt_2"
+		briefDiz="Mop-up operation."
+		fullDiz="Authority of city %1n cross swords for road security. As a main event there is Mop-up operation. Destruction of every enemy vehicle in pointed area will bring %3d."
+		isMainQuest="0" />
+
+	<QuestInfo
+		questName="Dynamic_Hunt_3"
+		briefDiz="Clear some area."
+		fullDiz="In city %1n seriously fight with crime. For every killed bandit in this area I will get %3d."
+		isMainQuest="0" />
+
+	<QuestInfo
+		questName="Dynamic_Peace_0"
+		briefDiz="Make peace with group %2b."
+		fullDiz="For moderate percent of my money group %2b are ready to make peace with me."
+		isMainQuest="0" />
+
+	<QuestInfo
+		questName="Dynamic_Reach_0"
+		briefDiz="Take pieces in settlement %2n."
+		fullDiz="City %1n ask me take some research pieces in settlement %2n. On arrival I will get %3d."
+		isMainQuest="0" />
+
+	<QuestInfo
+		questName="Dynamic_Reach_1"
+		briefDiz="Deliver package in settlement %2n."
+		fullDiz="I will get %3d when I deliver package %2n. They are waiting for it but for this kind of money I'm not going to be pressed for time."
+		isMainQuest="0" />
+
+	<QuestInfo
+		questName="Dynamic_Reach_2"
+		briefDiz="Reach city %2n."
+		fullDiz="One fellow from city %1n is ready to pay %3d if I send his's best to a friend who lives in settlement %2n."
+		isMainQuest="0" />
+
+	<QuestInfo
+		questName="Dynamic_Reach_3"
+		briefDiz="Deliver mail to %2n."
+		fullDiz="For reward %3d  I have to deliver mail with letters from %1n to settlement %2n."
+		isMainQuest="0" />
+
+	<QuestInfo
+		questName="Dynamic_Reach_Complete_0"
+		isMainQuest="0" />
+
+	<QuestInfo
+		questName="Dynamic_SellDrugs_0"
+		isMainQuest="0" />
+
+	<QuestInfo
+		questName="Dynamic_Treasure_0"
+		briefDiz="Find ancient artifact."
+		fullDiz="Near the reference point one may find valuable artifact. You can't accomplish this task without treasure detector."
+		isMainQuest="0" />
+
+	<QuestInfo
+		questName="Dynamic_Treasure_1"
+		briefDiz="Treasure searching."
+		fullDiz="Go by acquired information and landmark on the map. You can't accomplish this task without treasure detector."
+		isMainQuest="0" />
+
+	<QuestInfo
+		questName="Dynamic_Treasure_2"
+		briefDiz="Echo of former civilization."
+		fullDiz="A lot of valuables are left from ancient civilizations one need only follow the landmark. It's unlikely to accompish this mission without treasure detector."
+		isMainQuest="0" />
+
+	<QuestInfo
+		questName="Dynamic_Treasure_3"
+		briefDiz="Ancient hiding."
+		fullDiz="Reach the place marked on the map and make searching. You can't accomplish this task without treasure detector."
+		isMainQuest="0" />
+
+	<QuestInfo
+		questName="Sin_Arlekin_Band_qst"
+		briefDiz="Kill Harlequin's minions."
+		fullDiz="Harlequin sent out his curs. They have to be killed."
+		isMainQuest="1">
+		<Map
+			name="sin"
+			targetObjName="ABAnd" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="Sin_Arlekin_Find_qst"
+		briefDiz="Find Harlequin."
+		fullDiz="Harlequin came from Jericho. He's got to be eliminated."
+		isMainQuest="1" />
+
+	<QuestInfo
+		questName="Sin_Arlekin_Kill_qst"
+		briefDiz="Kill Harlequin."
+		fullDiz="Harlequin must die."
+		isMainQuest="1">
+		<Map
+			name="sin" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="Sin_Arlekin_qst"
+		briefDiz="Kill Harlequin."
+		fullDiz="Now I know who set at me those curs. He must die. You can find him in the east side of the city."
+		isMainQuest="1" />
+
+	<QuestInfo
+		questName="Sin_Cat_Caravan_qst"
+		briefDiz="Capture Caravan."
+		fullDiz="Garfield ordered to attack and capture the caravan."
+		isMainQuest="1">
+		<Map
+			name="sin"
+			targetObjName="Sin_Caravan_loc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="Sin_Cat_Garfield_qst"
+		briefDiz="Talk to Cats' Boss Garfield."
+		fullDiz="I need to talk to Cats' Boss Garfield and convince him to hire me."
+		isMainQuest="1">
+		<Map
+			name="sin"
+			targetObjName="Sin_CatHouse" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="Sin_Cat_Kitty_qst"
+		briefDiz="Report to Kitty about the caravan's capture."
+		fullDiz="The caravan is captured, I need to report to Kitty about it."
+		isMainQuest="1">
+		<Map
+			name="sin"
+			targetObjName="Sin_EastIerihon" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="Sin_Cat_qst"
+		briefDiz="Get a contract with Cats."
+		fullDiz="I need to work for the Cats' gang to get petrol and spare parts for the truck. "
+		isMainQuest="1" />
+
+	<QuestInfo
+		questName="Sin_Cross_Fight_qst"
+		briefDiz="Kill the Cats."
+		fullDiz="Cats are attacking. They must be killed."
+		isMainQuest="1">
+		<Map
+			name="sin"
+			targetObjName="Sin_Cross_loc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="Sin_Cross_Kitty_qst"
+		briefDiz="Save Kitty."
+		fullDiz="Kitty was captured and taken to the old farm. I need to kill the guards to set her free."
+		isMainQuest="1">
+		<Map
+			name="sin"
+			targetObjName="Sin_DogHouse" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="Sin_Cross_Talk_qst"
+		briefDiz="Reach the place of the negotiations. "
+		fullDiz="We agreed to meet at the old crossroads. I need to get there."
+		isMainQuest="1">
+		<Map
+			name="sin"
+			targetObjName="Sin_Cross_loc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="Sin_Cross_Wait_qst"
+		briefDiz="Wait for the Dogs."
+		fullDiz="Kitty left. I need to wait for the Dogs and put the blame on the Cats."
+		isMainQuest="1">
+		<Map
+			name="sin"
+			targetObjName="Sin_DogHouse" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="Sin_Cross_qst"
+		briefDiz="Wage the war."
+		fullDiz="Given a reason, the gangs will eliminate each other."
+		isMainQuest="1" />
+
+	<QuestInfo
+		questName="Sin_E_qst"
+		briefDiz="Tell Egoist a lesson."
+		isMainQuest="0" />
+
+	<QuestInfo
+		questName="Sin_Egoist_Father_qst"
+		briefDiz="Find the way over the ridge from the Reverend.."
+		fullDiz="The Reverend promised to show the Way. What if he meant the way over the ridge?"
+		isMainQuest="1">
+		<Map
+			name="sin"
+			targetObjName="Sin_Church" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="Sin_Egoist_Home_qst"
+		briefDiz="Take Egoist to Borne."
+		fullDiz="We have the Egoist. He needs to be taken back to Borne."
+		isMainQuest="1">
+		<Map
+			name="sin"
+			targetObjName="Sin_WestIerihon" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="Sin_Egoist_Take_qst"
+		briefDiz="Capture the Egoist."
+		fullDiz="The Egoist is in Saint-Rafael. I need to kill the guards to get to him."
+		isMainQuest="1">
+		<Map
+			name="sin"
+			targetObjName="Sin_SanRafael" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="Sin_Egoist_Trap_qst"
+		briefDiz="Talk to Borne."
+		fullDiz="The Dogs need Egoist. I should talk to him first."
+		isMainQuest="1">
+		<Map
+			name="sin"
+			targetObjName="Sin_WestIerihon" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="Sin_Egoist_Tunnel_qst"
+		briefDiz="Find the tunnel that leads to the other side of the mountain ridge. "
+		fullDiz="The Reverend explained how to use the tunnel."
+		isMainQuest="1">
+		<Map
+			name="sin"
+			targetObjName="ToTunnel" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="Sin_Egoist_Way_qst"
+		briefDiz="Find the road to Saint-Rafael."
+		fullDiz="The Egoist is in Saint-Rafael over the ridge. I need to get there."
+		isMainQuest="1">
+		<Map
+			name="sin"
+			targetObjName="ToCustom" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="Sin_Egoist_qst"
+		briefDiz="Take revenge on the Egoist."
+		fullDiz="Egoist attacked Kitty. He has to pay for it."
+		isMainQuest="1" />
+
+	<QuestInfo
+		questName="Sin_FedEx_qst"
+		briefDiz="Deliver cargo to barman Joe in Jericho."
+		fullDiz="I was given package for Joe. Joe will have to pay 500 coins."
+		isMainQuest="1">
+		<Map
+			name="sin"
+			targetObjName="Sin_WestIerihon" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="Sin_Final_Fight_qst"
+		briefDiz="Kill Borne."
+		fullDiz="This is my last meeting with Borne. Only one of us will survive it. "
+		isMainQuest="1">
+		<Map
+			name="sin"
+			targetObjName="Final_loc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="Sin_Final_Way_qst"
+		briefDiz="Say goodbye to the Reverend."
+		fullDiz="It's time to leave town. I need to say goodbye to the Reverend."
+		isMainQuest="1">
+		<Map
+			name="sin"
+			targetObjName="Sin_Church" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="Sin_Final_qst"
+		briefDiz="Kill left Dogs."
+		fullDiz="Last fight will be near the burnt house of Cats."
+		isMainQuest="1" />
+
+	<QuestInfo
+		questName="Sin_FirstFight_qst"
+		isMainQuest="0"
+		briefDiz="Kill the attackers."
+		fullDiz="I was attacked without reasons. Attackers must pay for it." />
+
+	<QuestInfo
+		questName="Sin_JoeSaving_qst"
+		briefDiz="Save barman Joe."
+		fullDiz="Dogs have seized Joe... You need to rescue him."
+		isMainQuest="1">
+		<Map
+			name="sin"
+			targetObjName="Sin_WestIerihon" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="Sin_Run_qst"
+		briefDiz="Escape from Dogs."
+		fullDiz="There is no weapon, but you must escape..."
+		isMainQuest="1">
+		<Map
+			name="sin"
+			targetObjName="Sin_Jump_loc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m1_BPOSKillThiefCar_Quest"
+		briefDiz="Punish Thief."
+		isMainQuest="1">
+		<Map
+			name="r5m1"
+			targetObjName="VorTeam_vehicle_0" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m1_BPOSKillUnknownCars_Quest"
+		briefDiz="Teach the guests a lesson of good manners."
+		isMainQuest="1">
+		<Map
+			name="r5m1"
+			targetObjName="PesledovateliTeam_vehicle_0" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m1_BPOSMoveToLoc_Quest"
+		briefDiz="Track down the guest actors."
+		isMainQuest="1">
+		<Map
+			name="r5m1"
+			targetObjName="NearVor_loc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m1_BPOSReturnToSam_Quest"
+		briefDiz="Return to Sam."
+		isMainQuest="1">
+		<Map
+			name="r5m1"
+			targetObjName="SemBase_loc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m1_BattleInArena_Quest"
+		briefDiz="Win the battle on arena."
+		fullDiz="Rules of this gladiator arena are easy: one who trespasses beyond the circle drawn on the ground will be killed. All I have to do is only to jab out enemy beyond the line."
+		isMainQuest="1">
+		<Map
+			name="r5m1"
+			targetObjName="SumoOponent" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m1_BigProblemOnSide_Quest"
+		briefDiz="Normalize the situation at the boundary."
+		fullDiz="When I solve the problem with guest actors I'll get absolute trust of Sam."
+		isMainQuest="1">
+		<Map
+			name="r5m1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m1_ETLCompleteSecretWay_Quest"
+		briefDiz="Go along the road and avoid traps."
+		isMainQuest="1">
+		<Map
+			name="r5m1"
+			targetObjName="EndTonnel_loc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m1_ETLFindSecretWay_Quest"
+		briefDiz="Find hidden road amid pipes."
+		isMainQuest="1">
+		<Map
+			name="r5m1"
+			targetObjName="StartTonnel_loc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m1_ETLFromSecretWayToLibrary_Quest"
+		briefDiz="Drive creepingly to the Library and pass the guards."
+		isMainQuest="1">
+		<Map
+			name="r5m1"
+			targetObjName="LibEnter_loc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m1_EnterToLibrary_Quest"
+		briefDiz="Leave the Library."
+		fullDiz="If Wiseguy said the truth, here must be maps I want. Just a little and I'll find road to Edmonton.  One thing is clear, the main road to the Library is closed for me."
+		isMainQuest="1">
+		<Map
+			name="r5m1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m1_FT_FindBook"
+		briefDiz="Explore territory."
+		isMainQuest="0">
+		<Map
+			name="r5m1"
+			targetObjName="Treasure_loc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m1_FT_Return"
+		briefDiz="It's time to return with books for reward."
+		isMainQuest="0">
+		<Map
+			name="r5m1"
+			targetObjName="TheApple" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m1_FastLeaveLibrary_Quest"
+		briefDiz="Run away from Library."
+		fullDiz="Now I know everything I need. It's time to leave until guards are not interested in me."
+		isMainQuest="1">
+		<Map
+			name="r5m1"
+			targetObjName="PlLock_loc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m1_FindTreasure"
+		briefDiz="Find ancient books."
+		fullDiz="In the ruins near the Library one may find a lot of interesting things."
+		isMainQuest="0">
+		<Map
+			name="r5m1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m1_FirstQofSam_Quest"
+		briefDiz="Accomplish first mission of Sam."
+		fullDiz="Here nobody knows about dreamy city of Edmonton which is situated directly past the bridge.  But in order to reach it I'll have to win Sam's confidence. So I'll have to make a fierce effort to deliver this message to his friend."
+		isMainQuest="1">
+		<Map
+			name="r5m1"
+			targetObjName="TheKonneks" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m1_KK_KillThem"
+		briefDiz="Kill smugglers."
+		isMainQuest="0">
+		<Map
+			name="r5m1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m1_KK_Spy"
+		briefDiz="Spy upon the suspicious vehicle."
+		isMainQuest="0">
+		<Map
+			name="r5m1"
+			targetObjName="KontrTeam" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m1_K_FindBtotherMan"
+		briefDiz="Talk to merchant."
+		isMainQuest="0">
+		<Map
+			name="r5m1"
+			targetObjName="ThePensilvansk" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m1_K_TravelLetter"
+		briefDiz="Sell goods."
+		isMainQuest="0">
+		<Map
+			name="r5m1"
+			targetObjName="TheApple" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m1_KillBoss4_Quest"
+		briefDiz="Kill Sam!!!"
+		fullDiz="Sam is dirty betrayer and coward it's time to free the world from him."
+		isMainQuest="1">
+		<Map
+			name="r5m1"
+			targetObjName="Boss5" />
+
+		<Map
+			name="r5m2"
+			targetObjName="ToR5M1" />
+
+		<Map
+			name="r6m1"
+			targetObjName="ToR6M2" />
+
+		<Map
+			name="r6m2"
+			targetObjName="ToR5M2" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m1_KillKontrabondist"
+		briefDiz="Bar the illegal deal."
+		fullDiz="It's necessary to stop contraband trade."
+		isMainQuest="0">
+		<Map
+			name="r5m1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m1_KillRobotsWithTank_Quest"
+		briefDiz="Stop robot attack."
+		fullDiz="Use the all weapons power of ancient you have to annihilate robots army before they destroyed all things around."
+		isMainQuest="1">
+		<Map
+			name="r5m1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m1_Kontrabanda"
+		briefDiz="Huddle illegal deal."
+		fullDiz="It seems that this mission is going to be as profitable as dangerous."
+		isMainQuest="0">
+		<Map
+			name="r5m1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m1_MoveToLibrary_Quest"
+		briefDiz="Find Library."
+		fullDiz="I hope that in this ruins there is even a little piece of useful information for me."
+		isMainQuest="1">
+		<Map
+			name="r5m1"
+			targetObjName="NearLibBridge_loc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m1_Posilka"
+		briefDiz="Deliver package."
+		fullDiz="It seems that the case here is not about the package. In this putrid and hazardous region it is the next game on which one may bet. So what I'm not used to arrive the last one."
+		isMainQuest="0">
+		<Map
+			name="r5m1"
+			targetObjName="TownBigHead_enter" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m1_RaceofSam_Quest"
+		briefDiz="Win the cup."
+		fullDiz="To win it you have to take at least the third place."
+		isMainQuest="1">
+		<Map
+			name="r5m1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m1_ReturnToSamWithMovies_Quest"
+		briefDiz="Bring films to Sam."
+		fullDiz="It's time to return. These films will demonstrate my success. Besides Sam can get the useful information."
+		isMainQuest="1">
+		<Map
+			name="r5m1"
+			targetObjName="SemBase_loc" />
+
+		<Map
+			name="r5m2"
+			targetObjName="ToR5M1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m1_SQSDestroyCar_Quest"
+		briefDiz="Put thick dot in this case."
+		isMainQuest="1">
+		<Map
+			name="r5m1"
+			targetObjName="FormulaEx" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m1_SQSMoveToPlace_Quest"
+		briefDiz="Get to his den."
+		isMainQuest="1">
+		<Map
+			name="r5m1"
+			targetObjName="NearFormulaVeh_loc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m1_SecondQofSam_Quest"
+		briefDiz="Eliminate the object."
+		fullDiz="It is not important what the reason of problems between Sam and this fellow I have to cope with is. I need to win confidence of my boss and as the saying is - the end justifies the means."
+		isMainQuest="1">
+		<Map
+			name="r5m1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m1_WTBWMoveToBookWormHouse_Quest"
+		briefDiz="Meet Wiseguy."
+		isMainQuest="1">
+		<Map
+			name="r5m1"
+			targetObjName="CleaverMan_loc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m1_WTBWTalkWithAborigens_Quest"
+		briefDiz="Talk to locals."
+		isMainQuest="1">
+		<Map
+			name="r5m1"
+			targetObjName="TheApple" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m1_WayToBookWorm_Quest"
+		briefDiz="Take view of the new place."
+		fullDiz="'...Edmonton city is known as one of the biggest trade centers of North America continent... there are more than 800 shops there... and very low fuel prices...' It was written so in the booklet I had. I want to live in this city! There one may make money faster than engine starts with good starter. Eh! Edmonton is the city of my dream! I hurry to you!!! The one thing which saddens my life is that there is no definite location where this city is situated. What road leads to it? For a long time I try to find it but in vain. I hope I can get some useful information in this region."
+		isMainQuest="1">
+		<Map
+			name="r5m1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m2_DestroyKrot_Quest"
+		briefDiz="Stir up a wasps' nest."
+		fullDiz="One-eyed asked to free her from bandits. I cann't offend by refusal old friend."
+		isMainQuest="1">
+		<Map
+			name="r5m1"
+			targetObjName="ToR5M2" />
+
+		<Map
+			name="r5m2"
+			targetObjName="SpawnVeter_loc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m2_FHDeleteSled_Quest"
+		briefDiz="Cover tracks."
+		isMainQuest="1">
+		<Map
+			name="r5m1"
+			targetObjName="ToR5M2" />
+
+		<Map
+			name="r5m2"
+			targetObjName="Starievshik" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m2_FHMoveMapTwo_Quest"
+		briefDiz="Start searchings in outlands."
+		isMainQuest="1">
+		<Map
+			name="r5m1"
+			targetObjName="ToR5M2" />
+
+		<Map
+			name="r5m2" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m2_FHTalkWithAnticwar_Quest"
+		briefDiz="Talk to Ragman."
+		isMainQuest="1">
+		<Map
+			name="r5m1"
+			targetObjName="ToR5M2" />
+
+		<Map
+			name="r5m2"
+			targetObjName="Starievshik_loc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m2_FHTalkWithCitizens_Quest"
+		briefDiz="Find out situation in local bar."
+		isMainQuest="1">
+		<Map
+			name="r5m1" />
+
+		<Map
+			name="r5m2"
+			targetObjName="r5m2_Pervomayka" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m2_FindHollywood_Quest"
+		briefDiz="Find the place where ancient volumes were stolen from."
+		fullDiz="These films contain exceptionally interesting information. It needs to find out where they were stolen from because some others may have left there."
+		isMainQuest="1">
+		<Map
+			name="r5m1" />
+
+		<Map
+			name="r5m2" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m2_FindKlad"
+		briefDiz="Explore pointed territory."
+		fullDiz="I don't believe that here there is nothing to be sold with profit."
+		isMainQuest="0">
+		<Map
+			name="r5m2"
+			targetObjName="FindSomething_loc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m2_GetAllMovies_Quest"
+		briefDiz="Take volumes."
+		fullDiz="One-eyed won't give at any price what belongs to her. I will have to use force."
+		isMainQuest="1">
+		<Map
+			name="r5m1"
+			targetObjName="ToR5M2" />
+
+		<Map
+			name="r5m2"
+			targetObjName="BattleWithCaravan_loc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m2_KIOKillKrotBand_Quest"
+		briefDiz="Get rid of bandits and betrayers."
+		isMainQuest="1">
+		<Map
+			name="r5m1"
+			targetObjName="ToR5M2" />
+
+		<Map
+			name="r5m2"
+			targetObjName="AmerigoTeam_2_vehicle_0" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m2_KIOMoveWithCaravan_Quest"
+		briefDiz="Inspect outskirts together with patrol."
+		isMainQuest="1">
+		<Map
+			name="r5m1"
+			targetObjName="ToR5M2" />
+
+		<Map
+			name="r5m2"
+			targetObjName="AmerigoTeam_vehicle_0" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m2_KillBantits"
+		briefDiz="Kill twin."
+		fullDiz="One twin is kind, the other is evil. But who is who?... I don't care. One more case one more reward."
+		isMainQuest="0">
+		<Map
+			name="r5m2"
+			targetObjName="OptBandTeam_vehicle_0" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m2_KillBoss1_Quest"
+		briefDiz="Win mechanical robot."
+		fullDiz="I have to do my best to get rid of this metal stuff."
+		isMainQuest="1">
+		<Map
+			name="r5m2"
+			targetObjName="boss1Arm1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m2_KillRobotsAtMayak_Quest"
+		briefDiz="Get rid of these robots."
+		fullDiz="Where do these robots come from? So evil-minded? They have to change the program."
+		isMainQuest="1">
+		<Map
+			name="r5m2"
+			targetObjName="SpawnRobot1_loc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m2_KillRobotsWithDot_Quest"
+		briefDiz="Counter the robots attack on city."
+		fullDiz="There are too many robots. Pillbox is equipped with more powerful weapons than my vehicle. I'll try to repulse an attack from there."
+		isMainQuest="1">
+		<Map
+			name="r5m2"
+			targetObjName="TheOneEyeBase" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m2_KillUncle"
+		briefDiz="Punish uncle."
+		fullDiz="I'm paid for settling family relations."
+		isMainQuest="0">
+		<Map
+			name="r5m2" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m2_KillUncle_Defenders"
+		briefDiz="Get rid of uncle guards."
+		isMainQuest="0">
+		<Map
+			name="r5m2"
+			targetObjName="UncleDefTeam3_vehicle_0" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m2_KillUncle_Main"
+		briefDiz="Kill uncle."
+		isMainQuest="0">
+		<Map
+			name="r5m2"
+			targetObjName="UncleTeam_vehicle_0" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m2_KillWantedBandit_Quest"
+		briefDiz="Teach stranger a lesson."
+		fullDiz="It seems that this man is a local bandit. I have some experience to cope with such men."
+		isMainQuest="1">
+		<Map
+			name="r5m1"
+			targetObjName="ToR5M2" />
+
+		<Map
+			name="r5m2"
+			targetObjName="Iten_vehicle_0" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m2_KrotInOneeye_Quest"
+		briefDiz="Uncover the betrayer."
+		fullDiz="There is a betrayer in One-eyed's gang. He makes clandestine dealings with local bandits and helps organize illegal machinations. I have to force him to make a mistake and draw the badger."
+		isMainQuest="1">
+		<Map
+			name="r5m1" />
+
+		<Map
+			name="r5m2" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m2_MoveFirstToVillage"
+		briefDiz="Arrive first to Mexico."
+		fullDiz="It is not just a race this is a contest that I must win."
+		isMainQuest="0">
+		<Map
+			name="r5m2"
+			targetObjName="r5m2_Mexico" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m2_MoveToMayak_Quest"
+		briefDiz="Follow Wind."
+		fullDiz="Wind is an old traveller. He knows where to go. The main thing is to keep pace."
+		isMainQuest="1">
+		<Map
+			name="r5m1"
+			targetObjName="ToR5M2" />
+
+		<Map
+			name="r5m2"
+			targetObjName="VeterTeam_vehicle_0" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m2_MoveToOneEye_Quest"
+		briefDiz="Meet with local governor."
+		fullDiz="I have to talk to the ruler of local lands. Maybe she has what I'm looking for."
+		isMainQuest="1">
+		<Map
+			name="r5m1"
+			targetObjName="ToR5M2" />
+
+		<Map
+			name="r5m2"
+			targetObjName="TheOneEyeBase" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m2_MoveToOneeyeCaravans_Quest"
+		briefDiz="Catch up One-eyed's caravan."
+		fullDiz="One-eyed's caravan can not go too faraway. I could catch up them if I hurry up."
+		isMainQuest="1">
+		<Map
+			name="r5m1"
+			targetObjName="ToR5M2" />
+
+		<Map
+			name="r5m2"
+			targetObjName="BattleWithCaravan_loc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m2_ReturnToOneeyeAfterM_Quest"
+		briefDiz="Help One-eyed."
+		fullDiz="One-eyed needs me urgently. I have to return and the sooner the better."
+		isMainQuest="1">
+		<Map
+			name="r5m1"
+			targetObjName="ToR5M2" />
+
+		<Map
+			name="r5m2"
+			targetObjName="TheOneEyeBase" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r5m2_StartMayak_Quest"
+		briefDiz="Turn on the lighthouse."
+		fullDiz="Lighthouse is found. One thing that has left is only to understand how to turn it on?"
+		isMainQuest="1">
+		<Map
+			name="r5m1"
+			targetObjName="ToR5M2" />
+
+		<Map
+			name="r5m2"
+			targetObjName="Mayak_loc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r6m1_DiscoveryFactory_Quest"
+		briefDiz="Explore factory."
+		fullDiz="Now when the road to the factory is found I can explore everything here."
+		isMainQuest="1">
+		<Map
+			name="r5m1"
+			targetObjName="ToR6M1" />
+
+		<Map
+			name="r5m2"
+			targetObjName="ToR5M1" />
+
+		<Map
+			name="r6m1"
+			targetObjName="Boss2" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r6m1_EscapeFromStones_Quest"
+		briefDiz="Pull through fallen stones."
+		fullDiz="These cobblestones can turn out to be more dangerous than howitzer. Bend the throttle with all your might!"
+		isMainQuest="1">
+		<Map
+			name="r6m1"
+			targetObjName="locEndRockRace" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r6m1_FFUseBomb_Quest"
+		briefDiz="Overcome the wall."
+		isMainQuest="1">
+		<Map
+			name="r5m1"
+			targetObjName="ToR6M1" />
+
+		<Map
+			name="r5m2"
+			targetObjName="ToR5M1" />
+
+		<Map
+			name="r6m1"
+			targetObjName="locBarrels1100" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r6m1_FFUseJump_Quest"
+		briefDiz="Find the way get to factory."
+		isMainQuest="1">
+		<Map
+			name="r5m1"
+			targetObjName="ToR6M1" />
+
+		<Map
+			name="r5m2"
+			targetObjName="ToR5M1" />
+
+		<Map
+			name="r6m1"
+			targetObjName="locFactory" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r6m1_FSPFindShaht_Quest"
+		briefDiz="Get to mines."
+		isMainQuest="1">
+		<Map
+			name="r5m1"
+			targetObjName="ToR6M1" />
+
+		<Map
+			name="r5m2"
+			targetObjName="ToR5M1" />
+
+		<Map
+			name="r6m1"
+			targetObjName="locTrapInForestShahts" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r6m1_FSPKillRobots_Quest"
+		briefDiz="Eliminate invaders robots."
+		isMainQuest="1">
+		<Map
+			name="r6m1"
+			targetObjName="locTrapInForestShahts" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r6m1_FindABombInJungle_Quest"
+		briefDiz="Find nuclear-weapons storage."
+		fullDiz="Finally road to Canada was opened for me. But the robots will run upon our heels if we don't stop them. So I have to help Sam to find the weapon of Ancient otherwise these damned metal sruff destroy Edmonton before I can find it."
+		isMainQuest="1">
+		<Map
+			name="r5m1"
+			targetObjName="ToR6M1" />
+
+		<Map
+			name="r5m2"
+			targetObjName="ToR5M1" />
+
+		<Map
+			name="r6m1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r6m1_FindBadSam_Quest"
+		briefDiz="Catch up Sam."
+		fullDiz="Sam has deceived me but I won't leave it this way. Not a single meanness should go unpunished."
+		isMainQuest="1">
+		<Map
+			name="r5m2"
+			targetObjName="ToR5M1" />
+
+		<Map
+			name="r6m1"
+			targetObjName="ToR5M1" />
+
+		<Map
+			name="r6m2"
+			targetObjName="ToR6M1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r6m1_FindFactory_Quest"
+		briefDiz="Explore territory and find factory."
+		fullDiz="When I destroy factory I will liquidate all robots in Canada."
+		isMainQuest="1">
+		<Map
+			name="r5m1" />
+
+		<Map
+			name="r5m2" />
+
+		<Map
+			name="r6m1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r6m1_FindLOST_Quest"
+		briefDiz="Find flying vehicle."
+		fullDiz="Coward cattle on flying vehicle try to kill me because I can't fire at him from the ground. But nothing serious sooner or later his machine must land and that time I will kill him."
+		isMainQuest="1">
+		<Map
+			name="r5m1"
+			targetObjName="ToR6M1" />
+
+		<Map
+			name="r5m2"
+			targetObjName="ToR5M1" />
+
+		<Map
+			name="r6m1"
+			targetObjName="r6m1_Lost" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r6m1_FindShahtPeoples_Quest"
+		briefDiz="Talk to mine workers."
+		fullDiz="Strange people inhabit these strange lands."
+		isMainQuest="1">
+		<Map
+			name="r5m1" />
+
+		<Map
+			name="r5m2" />
+
+		<Map
+			name="r6m1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r6m1_HSBuyParts_Quest"
+		briefDiz="Purchase spares for aircraft."
+		isMainQuest="1">
+		<Map
+			name="r6m1"
+			targetObjName="r6m1_Lost" />
+
+		<Map
+			name="r6m2"
+			targetObjName="ToR6M1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r6m1_HSFindParts_Quest"
+		briefDiz="Take spares for aircraft."
+		isMainQuest="1">
+		<Map
+			name="r6m1"
+			targetObjName="r6m1_Lost" />
+
+		<Map
+			name="r6m2"
+			targetObjName="ToR6M1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r6m1_HSReturn_Quest"
+		briefDiz="Return and repair ferry."
+		isMainQuest="1">
+		<Map
+			name="r6m1"
+			targetObjName="ToR6M2" />
+
+		<Map
+			name="r6m2"
+			targetObjName="PortToR5M2_loc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r6m1_HelpShip_Quest"
+		briefDiz="Repair ferry."
+		fullDiz="Now ferry is the only way to cross the river and catch up Sam."
+		isMainQuest="1">
+		<Map
+			name="r6m1" />
+
+		<Map
+			name="r6m2" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r6m1_KillBoss2_Quest"
+		briefDiz="Kill Mechanic monster."
+		fullDiz="I am in luck with these monsters. It is a pity I can't take trophies I even can't take jackets from them."
+		isMainQuest="1">
+		<Map
+			name="r6m1"
+			targetObjName="Boss2" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r6m1_TalkWithWorestMen_Quest"
+		briefDiz="Call on nearest settlement."
+		fullDiz="Absolutely strange place. It needs to capture prisoner for interrogation or to talk to locals."
+		isMainQuest="1">
+		<Map
+			name="r5m1"
+			targetObjName="ToR6M1" />
+
+		<Map
+			name="r5m2"
+			targetObjName="ToR5M1" />
+
+		<Map
+			name="r6m1"
+			targetObjName="TownMapleSheet13_enter" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r6m1_opt_FindKids"
+		briefDiz="Puzzle out situation with lost child."
+		fullDiz="Find in the country witnesss who know something about lost child."
+		isMainQuest="0">
+		<Map
+			name="r6m1"
+			targetObjName="r6m1_Lost_prototype4_enter" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r6m1_opt_HelpAvtostopshik"
+		briefDiz="Give traveller a lift to city."
+		fullDiz="Give traveller a ride to Otno. Not the most hard mission but it's more cheerful during the travell."
+		isMainQuest="0">
+		<Map
+			name="r6m1"
+			targetObjName="r6m1_Onto_prototype6_enter" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r6m1_opt_HelpOldCar"
+		briefDiz="Get parts."
+		fullDiz="Bring spares for broken vehicle"
+		isMainQuest="0">
+		<Map
+			name="r6m1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r6m1_opt_Signs"
+		briefDiz="There are strange signs at the fields."
+		fullDiz="People say that it is a wonderful event. It's worth seeing to tell about it in the bar with girls."
+		isMainQuest="0">
+		<Map
+			name="r6m1" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r6m1_opt_SignsDoklad"
+		briefDiz="Tell about it in town."
+		isMainQuest="0">
+		<Map
+			name="r6m1"
+			targetObjName="TownMapleSheet13_enter" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r6m1_opt_SignsSee"
+		briefDiz="Inspect field."
+		isMainQuest="0">
+		<Map
+			name="r6m1"
+			targetObjName="locSign" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r6m1_opt_StartRace"
+		briefDiz="Outstart rival."
+		fullDiz="I cannot allow this teddy boy outrides me on the road."
+		isMainQuest="0">
+		<Map
+			name="r6m1"
+			targetObjName="TownMapleSheet13_enter" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r6m2_AferaOfHero_Quest"
+		briefDiz="Cheat the security system."
+		fullDiz="It turns out that it's not enough to have figure of robot it also needs to imitate his behavior otherwise the security system of Base will destroy me."
+		isMainQuest="1">
+		<Map
+			name="r6m2"
+			targetObjName="NearLabirint_loc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r6m2_ContinueFindRobotsBase_Quest"
+		briefDiz="Continue to search for robots source."
+		fullDiz="Factory wasn't the major source of monsters and its destruction helped us a little. The number of robots will become smaller but they won't entirely disappear. We need search the center."
+		isMainQuest="1">
+		<Map
+			name="r6m1"
+			targetObjName="ToR6M2" />
+
+		<Map
+			name="r6m2" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r6m2_DestroyRobotsBase_Quest"
+		briefDiz="Deenergized the Base."
+		fullDiz="I will have only one attempt to destroy the Base. If I want to reach the goal I have to find Generator which powers the Base and blow it up."
+		isMainQuest="1">
+		<Map
+			name="r6m2"
+			targetObjName="Generator" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r6m2_Gonka1"
+		briefDiz="Outrun rival."
+		fullDiz="I always come to the finish line first, simply my rival doesn't know about it. I will demonstrate it."
+		isMainQuest="0">
+		<Map
+			name="r6m2"
+			targetObjName="r6m1_Gradofaks" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r6m2_HTMKillRobots_Quest"
+		briefDiz="Rescue stranger from robots."
+		isMainQuest="1">
+		<Map
+			name="r6m1"
+			targetObjName="ToR6M2" />
+
+		<Map
+			name="r6m2"
+			targetObjName="Mechanic_vehicle_0" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r6m2_HTMMoveToHouseMechanick_Quest"
+		briefDiz="Go with Mechanic to his home."
+		isMainQuest="1">
+		<Map
+			name="r6m1"
+			targetObjName="ToR6M2" />
+
+		<Map
+			name="r6m2"
+			targetObjName="MechanicHouse_loc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r6m2_HelpToMechanick_Quest"
+		briefDiz="Help stranger."
+		fullDiz="I don't know what is more high-toned to help stranger in deep water or to annihilate another group of robots? I will do both."
+		isMainQuest="1">
+		<Map
+			name="r6m1" />
+
+		<Map
+			name="r6m2" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r6m2_HelpVoditel"
+		briefDiz="Help in trouble."
+		fullDiz="I have found an excellent spares buyer. It seems that this luckless man is planing to put them all together and create a new vehicle instead of the crashed one. It's good for me - he will need a lot of spares."
+		isMainQuest="0">
+		<Map
+			name="r6m2"
+			targetObjName="BrokenVeh_loc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r6m2_KillBoss3_Quest"
+		briefDiz="Win the fight with Emissary."
+		fullDiz="Here is the flying machine which I have wished to destroy for so long. Now it's time to do it!"
+		isMainQuest="1">
+		<Map
+			name="r6m2"
+			targetObjName="EmissarFlyBoss" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r6m2_MRHPart1_Quest"
+		briefDiz="Get optical system cameras."
+		isMainQuest="1">
+		<Map
+			name="r6m1"
+			targetObjName="ToR6M2" />
+
+		<Map
+			name="r6m2"
+			targetObjName="RobotsP1Team_vehicle_0" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r6m2_MRHPart2_Quest"
+		briefDiz="Get accumulator for robot."
+		isMainQuest="1">
+		<Map
+			name="r6m1"
+			targetObjName="ToR6M2" />
+
+		<Map
+			name="r6m2"
+			targetObjName="RobotsP2Team_vehicle_0" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r6m2_MRHPart3_Quest"
+		briefDiz="Get flexible tubing for fluid system."
+		isMainQuest="1">
+		<Map
+			name="r6m1"
+			targetObjName="ToR6M2" />
+
+		<Map
+			name="r6m2"
+			targetObjName="RobotsP3Team_vehicle_0" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r6m2_MRHRetturnToMechanick_Quest"
+		briefDiz="Return parts to Mechanic."
+		isMainQuest="1">
+		<Map
+			name="r6m2"
+			targetObjName="MechanicHouse_loc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r6m2_MakeRoboHuman_Quest"
+		briefDiz="Repair robot."
+		fullDiz="Mechanic has a super plan how to destroy the Base of robots. He offers to find a way into their base camouflaging as one of them. The only thing is to get into working conditions the nonworking monster which he has."
+		isMainQuest="1">
+		<Map
+			name="r6m1" />
+
+		<Map
+			name="r6m2" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r6m2_MoveFromRobotBase_Quest"
+		briefDiz="Run away from the Base at full speed."
+		fullDiz="Generator is destroyed. All robots liquidated. It's time go away from here."
+		isMainQuest="1">
+		<Map
+			name="r6m2"
+			targetObjName="EnterToArena_loc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r6m2_SearchRobotsBase_Quest"
+		briefDiz="Find a way into Base of robots."
+		fullDiz="Now (in robot appearance) I can enter the robots' Base."
+		isMainQuest="1">
+		<Map
+			name="r6m2"
+			targetObjName="EnterToBase_loc" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r6m2_WhereRobotGo"
+		briefDiz="Study habits."
+		fullDiz="You need to know all about the enemy. For example it will be useful to find out where this robot hurries?"
+		isMainQuest="0">
+		<Map
+			name="r6m2" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r6m2_WhereRobotGo_DestroySvatilishe"
+		briefDiz="Destroy robots sanctuary."
+		isMainQuest="0">
+		<Map
+			name="r6m2"
+			targetObjName="RbSledTeam_vehicle_0" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="r6m2_WhereRobotGo_Prosledit"
+		briefDiz="Follow the robot."
+		isMainQuest="0">
+		<Map
+			name="r6m2"
+			targetObjName="RbSledTeam_vehicle_0" />
+	</QuestInfo>
+</QuestInfoResource>
