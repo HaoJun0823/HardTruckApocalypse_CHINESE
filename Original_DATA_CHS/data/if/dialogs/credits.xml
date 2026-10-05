@@ -8,7 +8,7 @@
 	<Pages>
 		<Page
 			id="1"
-			text="Game Design «Targem|Games»"
+			text="ÓÎÏ·Éè¼Æ "Targem Games""
 			modelName	= ""
 			modelSkin	= "0"
 			modelCfg	= "0"
@@ -17,7 +17,7 @@
 
 		<Page
 			id="2"
-			text="Inner producer|| Stanislav |«scorp» Skorb"
+			text="ÄÚ²¿ÖÆ×÷ÈË|| Stanislav "Scorp" Skorb"
 			modelName	= "r2_man"
 			modelSkin	= "0"
 			modelCfg	= "294"
@@ -26,7 +26,7 @@
 
 		<Page
 			id="3"
-			text="Technical director || Alexey Skriabin"
+			text="¼¼Êõ×Ü¼à || Alexey Skriabin"
 			modelName	= "r2_man"
 			modelSkin	= "0"
 			modelCfg	= "182"
@@ -35,7 +35,7 @@
 
 		<Page
 			id="4"
-			text="Project manager || Evgeniy |«Hrrr»  Khrunov"
+			text="ÏîÄ¿¾­Àí || Evgeniy "rrr" Khrunov"
 			modelName	= "r2_man"
 			modelSkin	= "2"
 			modelCfg	= "368"
@@ -44,7 +44,7 @@
 
 		<Page
 			id="5"
-			text="Writer|| Alexey |«Alex TG»  Tchestnikh"
+			text="±à¾ç|| Alexey "Alex TG" Tchestnikh"
 			modelName	= "r2_man"
 			modelSkin	= "0"
 			modelCfg	= "87"
@@ -53,7 +53,7 @@
 
 		<Page
 			id="6"
-			text="Lead programmer || Anton |«anger»  Savin"
+			text="Ê×Ï¯³ÌÐòÔ± || Anton "anger" Savin"
 			modelName	= "r2_man"
 			modelSkin	= "0"
 			modelCfg="20"
@@ -62,7 +62,7 @@
 
 		<Page
 			id="7"
-			text="Lead designer || Alexey |«Alex TG»  Tchestnikh"
+			text="Ê×Ï¯Éè¼ÆÊ¦ || Alexey "Alex TG" Tchestnikh"
 			modelName	= "r2_man"
 			modelSkin	= "0"
 			modelCfg	= "87"
@@ -71,7 +71,7 @@
 
 		<Page
 			id="8"
-			text="Lead Artist || Alexander |«Alex ML» Magrushin"
+			text="Ê×Ï¯ÃÀÊõ || Alexander "Alex ML" Magrushin"
 			modelName	= "r2_man"
 			modelSkin	= "2"
 			modelCfg	= "8"
@@ -80,7 +80,7 @@
 
 		<Page
 			id="9"
-			text="Designers || Denis «mif2000» Galanin| Sergey «JSinx» Udurminskiy| Alexey «Razaz» Anufriev| Stanislav |«scorp» Skorb| Boris «borg» Smirnov"
+			text="Éè¼ÆÊ¦ || Denis "mif2000" Galanin| Sergey "Sinx" Udurminskiy| Alexey "zazaz" Anufriev| Stanislav "Scorp" Skorb| Boris "gorg" Smirnov"
 			modelName	= "r3_man"
 			modelSkin	= "2"
 			modelCfg	= "1917"
@@ -89,7 +89,7 @@
 
 		<Page
 			id="10"
-			text="Programmers|| Elena «SoftKitty» Evdokimova| Ivan «Vano» Vlasov| Ilya «phosgen» Ruzakov | Maxim «Shadow» Sarmanov | Sergey «Ice Cat» Kluchkovsky| Igor «Goryh» Dyagterev"
+			text="³ÌÐòÔ±|| Elena "SoftKitty" Evdokimova| Ivan "Vano" Vlasov| Ilya "Chosgen" Ruzakov | Maxim "Shadow" Sarmanov | Sergey "Ice Cat" Kluchkovsky| Igor "Yoryh" Dyagterev"
 			modelName	= "r2_man"
 			modelSkin	= "1"
 			modelCfg	= "140"
@@ -98,7 +98,7 @@
 
 		<Page
 			id="11"
-			text="Artists|| Ivan Snigirev| Evgeny «Dzhin» Goltsov| Vladimir «Price» Seleznev| Stanislav «Staz» Cherva"
+			text="ÃÀÊõ|| Ivan Snigirev| Evgeny "Ezhin" Goltsov| Vladimir "Price" Seleznev| Stanislav "Staz" Cherva"
 			modelName	= "r3_man"
 			modelSkin	= "1"
 			modelCfg	= "1529"
@@ -107,7 +107,7 @@
 
 		<Page
 			id="12"
-			text="Artists|| Rustam «Rychi» Turey| Evgeny  Tokarev| Sergey «Sega» Mitryaev| Viktor «isymbosi» Koryakin| Roman Latynov"
+			text="ÃÀÊõ|| Rustam "Zychi" Turey| Evgeny  Tokarev| Sergey "Mega" Mitryaev| Viktor "Osymbosi" Koryakin| Roman Latynov"
 			modelName	= "r3_man"
 			modelSkin="1"
 			modelCfg="1529"
@@ -116,7 +116,7 @@
 
 		<Page
 			id="13"
-			text="Level designers|| Denis «mif2000» Galanin| Sergey «JSinx» Udurminskiy| Artem «solo» Solovev| Daniil «HiKiller» Kondratiev| Stanislav «Staz» Cherva"
+			text="¹Ø¿¨Éè¼ÆÊ¦|| Denis "mif2000" Galanin| Sergey "Sinx" Udurminskiy| Artem "Solo" Solovev| Daniil "DiKiller" Kondratiev| Stanislav "Staz" Cherva"
 			modelName	= "r3_man"
 			modelSkin	= "2"
 			modelCfg	= "1917"
@@ -125,7 +125,7 @@
 
 		<Page
 			id="14"
-			text="Interface designer|| Mikhail |«Rai» Matvienko||FX|| Alexey |«Hal» Lobanov"
+			text="½çÃæÉè¼ÆÊ¦|| Mikhail "Zai" Matvienko||ÌØÐ§|| Alexey "Dal" Lobanov"
 			modelName	= "r2_man"
 			modelSkin	= "2"
 			modelCfg	= "104"
@@ -134,7 +134,7 @@
 
 		<Page
 			id="15"
-			text="Sound director||Anton Popov|Ekaterina Shvemmer"
+			text="ÒôÐ§×Ü¼à||Anton Popov|Ekaterina Shvemmer"
 			modelName	= "r2_man"
 			modelSkin	= "1"
 			modelCfg	= "330"
@@ -143,7 +143,7 @@
 
 		<Page
 			id="16"
-			text="Quality assurance || Vyacheslav |«ls» Avdeev"
+			text="ÖÊÁ¿±£Ö¤ || Vyacheslav "Ls" Avdeev"
 			modelName	= "r2_man"
 			modelSkin	= "2"
 			modelCfg	= "84"
@@ -152,7 +152,7 @@
 
 		<Page
 			id="17"
-			text="PR-manager|| Svetlana |«Ñrystal» Tchestnikh"
+			text="¹«¹Ø¾­Àí|| Svetlana "Crystal" Tchestnikh"
 			modelName	= "r2_woman"
 			modelSkin	= "0"
 			modelCfg	= "20"
@@ -161,7 +161,7 @@
 
 		<Page
 			id="18"
-			text="The soundtrack includes tracks of the music contest winners: || Alexander Chekster|Boris Vedensky and  Alexander Treger| Mikhail Sidorov | Alexander Lisenkov|Paralaxeen|Igor Belousov"
+			text="Ô­Éù´ø°üº¬ÒôÀÖ±ÈÈü»ñÊ¤ÕßµÄÇúÄ¿£º || Alexander Chekster|Boris Vedensky and  Alexander Treger| Mikhail Sidorov | Alexander Lisenkov|Paralaxeen|Igor Belousov"
 			modelName	= "r2_man"
 			modelSkin	= "1"
 			modelCfg	= "132"
@@ -170,7 +170,7 @@
 
 		<Page
 			id="19"
-			text="Special thanks to: ||Constantine Sokharev - programming|Svyatoslav Patashnikov - management|Alexey Andruschenko – web design"
+			text="ÌØ±ð¸ÐÐ»£º ||Constantine Sokharev - programming|Svyatoslav Patashnikov - management|Alexey Andruschenko - web design"
 			modelName	= "r2_man"
 			modelSkin	= "2"
 			modelCfg	= "24"
@@ -179,7 +179,7 @@
 
 		<Page
 			id="20"
-			text="Publisher «Buka Entertainment»"
+			text="·¢ÐÐÉÌ "Buka Entertainment""
 			modelName	= "r2_man"
 			modelSkin	= "0"
 			modelCfg	= "0"
@@ -188,7 +188,7 @@
 
 		<Page
 			id="21"
-			text="Producer || Ivan Bunakov"
+			text="ÖÆ×÷ÈË || Ivan Bunakov"
 			modelName	= "r3_man"
 			modelSkin	= "1"
 			modelCfg	= "2812"
@@ -197,7 +197,7 @@
 
 		<Page
 			id="22"
-			text="Senior  executive producer||Ivan Moroz"
+			text="¸ß¼¶Ö´ÐÐÖÆ×÷ÈË||Ivan Moroz"
 			modelName	= "r2_man"
 			modelSkin	= "0"
 			modelCfg	= "198"
@@ -206,7 +206,7 @@
 
 		<Page
 			id="23"
-			text="Sales managers||Youriy Virich|Alexey Pisklukov"
+			text="ÏúÊÛ¾­Àí||Youriy Virich|Alexey Pisklukov"
 			modelName	= "r3_man"
 			modelSkin	= "2"
 			modelCfg	= "2298"
@@ -215,7 +215,7 @@
 
 		<Page
 			id="24"
-			text="Technical  expert || Kirill Bestemyanov"
+			text="¼¼Êõ×¨¼Ò || Kirill Bestemyanov"
 			modelName	= "r3_man"
 			modelSkin	= "0"
 			modelCfg	= "57"
@@ -224,7 +224,7 @@
 
 		<Page
 			id="25"
-			text="Sound  expert || Ruslan Dmitriev"
+			text="ÒôÐ§×¨¼Ò || Ruslan Dmitriev"
 			modelName	= "r3_man"
 			modelSkin	= "2"
 			modelCfg	= "1745"
@@ -233,7 +233,7 @@
 
 		<Page
 			id="26"
-			text="Cover designers ||Sanan Ushanov| Daniella Klimashevskaya"
+			text="·âÃæÉè¼Æ ||Sanan Ushanov| Daniella Klimashevskaya"
 			modelName	= "r2_woman"
 			modelSkin	= "2"
 			modelCfg	= "43"
@@ -242,7 +242,7 @@
 
 		<Page
 			id="27"
-			text="PR manager||Alexey Pastushenko."
+			text="¹«¹Ø¾­Àí||Alexey Pastushenko."
 			modelName	= "r3_man"
 			modelSkin	= "2"
 			modelCfg	= "765"
@@ -251,7 +251,7 @@
 
 		<Page
 			id="28"
-			text="PR manager’s assiatant||Oleg Morozov."
+			text="¹«¹Ø¾­ÀíÖúÀí||Oleg Morozov."
 			modelName	= "r3_man"
 			modelSkin	= "2"
 			modelCfg	= "456"
@@ -260,7 +260,7 @@
 
 		<Page
 			id="29"
-			text="Producer’s assistant|| Alexey Peshekhonov| Nikolay Safronov"
+			text="ÖÆ×÷ÈËÖúÀí|| Alexey Peshekhonov| Nikolay Safronov"
 			modelName	= "r3_man"
 			modelSkin	= "1"
 			modelCfg	= "761"
@@ -269,7 +269,7 @@
 
 		<Page
 			id="30"
-			text="New team manager||Nikolay Safronov"
+			text="ÐÂÍÅ¶Ó¾­Àí||Nikolay Safronov"
 			modelName	= "r3_man"
 			modelSkin	= "2"
 			modelCfg	= "635"
@@ -278,7 +278,7 @@
 
 		<Page
 			id="31"
-			text="Executive producer||Alexander Pak"
+			text="Ö´ÐÐÖÆ×÷ÈË||Alexander Pak"
 			modelName	= "r3_man"
 			modelSkin	= "0"
 			modelCfg	= "253"
@@ -287,7 +287,7 @@
 
 		<Page
 			id="32"
-			text="QA Supervisor||Evgeny Popov|Ivan Rid"
+			text="ÖÊÁ¿±£Ö¤Ö÷¹Ü||Evgeny Popov|Ivan Rid"
 			modelName	= "r3_man"
 			modelSkin	= "1"
 			modelCfg	= "379"
@@ -296,7 +296,7 @@
 
 		<Page
 			id="33"
-			text="QA team ||Anton Epishin|Dmitry Lesin|Alexander Poloshin |Evgeny Popov |Ivan Raynov| Ivan Rid |Alexey Chebotarev"
+			text="ÖÊÁ¿±£Ö¤ÍÅ¶Ó ||Anton Epishin|Dmitry Lesin|Alexander Poloshin |Evgeny Popov |Ivan Raynov| Ivan Rid |Alexey Chebotarev"
 			modelName	= "r3_man"
 			modelSkin	= "1"
 			modelCfg	= "456"
@@ -305,7 +305,7 @@
 
 		<Page
 			id="34"
-			text="External testing||Peter Beliaev|Alexey Bunak|Igor Dmitriev|Michael Matushov|Denis Sokolov"
+			text="Íâ²¿²âÊÔ||Peter Beliaev|Alexey Bunak|Igor Dmitriev|Michael Matushov|Denis Sokolov"
 			modelName	= "r3_man"
 			modelSkin	= "1"
 			modelCfg	= "0"
@@ -314,7 +314,7 @@
 
 		<Page
 			id="34_1"
-			text="External testing||Igor Peshekhontsev|Dmitry Chichikov|Alexey SHekhovtsev|Ilia Yusipov|Timur Yusipov"
+			text="Íâ²¿²âÊÔ||Igor Peshekhontsev|Dmitry Chichikov|Alexey SHekhovtsev|Ilia Yusipov|Timur Yusipov"
 			modelName	= "r3_man"
 			modelSkin	= "1"
 			modelCfg	= "0"
@@ -323,7 +323,7 @@
 
 		<Page
 			id="35"
-			text="Sales department ||Maxim Î. Alexeev| Maxim U.  Alexeev | Maxim A.  Alexeev |Natalia Ankundinova |Elena Antonova |Ilia Brovchenko |Pavel Grigoriev |Victoria Kiseleva|Alexander Kochetkov"
+			text="ÏúÊÛ²¿ ||Maxim N. Alexeev| Maxim U.  Alexeev | Maxim A.  Alexeev |Natalia Ankundinova |Elena Antonova |Ilia Brovchenko |Pavel Grigoriev |Victoria Kiseleva|Alexander Kochetkov"
 			modelName	= "r3_man"
 			modelSkin	= "0"
 			modelCfg	= "123"
@@ -332,7 +332,7 @@
 
 		<Page
 			id="36"
-			text="Sales department ||Andrey Osipov|Alexandr Petrinsky|Olga Polkovnikova|Larisa Savelieva |Evgeny Samsonov |Svetlana Samsonova |Valery Tikhvonski|Sergey Fedosof"
+			text="ÏúÊÛ²¿ ||Andrey Osipov|Alexandr Petrinsky|Olga Polkovnikova|Larisa Savelieva |Evgeny Samsonov |Svetlana Samsonova |Valery Tikhvonski|Sergey Fedosof"
 			modelName	= "r2_woman"
 			modelSkin	= "0"
 			modelCfg	= "4"
@@ -341,7 +341,7 @@
 
 		<Page
 			id="37"
-			text="Marketing||Tatiana Vasekina"
+			text="ÊÐ³¡||Tatiana Vasekina"
 			modelName	= "r2_woman"
 			modelSkin	= "2"
 			modelCfg	= "113"
@@ -350,7 +350,7 @@
 
 		<Page
 			id="38"
-			text="Community manager||Alexander Kovalev"
+			text="ÉçÇø¾­Àí||Alexander Kovalev"
 			modelName	= "r3_man"
 			modelSkin	= "2"
 			modelCfg	= "97"
@@ -359,7 +359,7 @@
 
 		<Page
 			id="39"
-			text="Experts’ council ||Vladimir Miniaev|Maxim N. Mikhalev |Ivan Moroz|Sergey Rudenko|Vitaly Kharitonenko"
+			text="×¨¼ÒÎ¯Ô±»á ||Vladimir Miniaev|Maxim N. Mikhalev |Ivan Moroz|Sergey Rudenko|Vitaly Kharitonenko"
 			modelName	= "r3_man"
 			modelSkin	= "0"
 			modelCfg	= "225"
@@ -368,7 +368,7 @@
 
 		<Page
 			id="40"
-			text="Juridical support ||Georgy Vitaliev"
+			text="·¨ÎñÖ§³Ö ||Georgy Vitaliev"
 			modelName	= "r3_man"
 			modelSkin	= "2"
 			modelCfg	= "369"
@@ -377,7 +377,7 @@
 
 		<Page
 			id="41"
-			text="Technical support||Evgeny Dmitriev"
+			text="¼¼ÊõÖ§³Ö||Evgeny Dmitriev"
 			modelName	= "r3_man"
 			modelSkin	= "1"
 			modelCfg	= "381"
@@ -386,7 +386,7 @@
 
 		<Page
 			id="42"
-			text="CEO|| Alexander Mikhailov"
+			text="Ê×Ï¯Ö´ÐÐ¹Ù|| Alexander Mikhailov"
 			modelName	= "r3_man"
 			modelSkin	= "1"
 			modelCfg	= "2300"
@@ -395,7 +395,7 @@
 
 		<Page
 			id="43"
-			text="CFO ||Marina Ravoon"
+			text="Ê×Ï¯²ÆÎñ¹Ù ||Marina Ravoon"
 			modelName	= "r2_woman"
 			modelSkin	= "2"
 			modelCfg	= "108"
@@ -404,7 +404,7 @@
 
 		<Page
 			id="44"
-			text="Marketing department’s head || Maxim N. Mikhalev"
+			text="ÊÐ³¡²¿Ö÷¹Ü || Maxim N. Mikhalev"
 			modelName	= "r3_man"
 			modelSkin	= "1"
 			modelCfg	= "635"
@@ -413,7 +413,7 @@
 
 		<Page
 			id="45"
-			text="Sales department’s head ||Tatiana Ustinova"
+			text="ÏúÊÛ²¿Ö÷¹Ü ||Tatiana Ustinova"
 			modelName	= "r2_woman"
 			modelSkin	= "0"
 			modelCfg	= "100"
@@ -422,7 +422,7 @@
 
 		<Page
 			id="46"
-			text="Development department’s head ||Ivan Bunalov"
+			text="¿ª·¢²¿Ö÷¹Ü ||Ivan Bunalov"
 			modelName	= "r3_man"
 			modelSkin	= "1"
 			modelCfg	= "2812"
@@ -431,7 +431,7 @@
 
 		<Page
 			id="47"
-			text="Special thanks:||Youlia Belova|Sergey Bobkov|Ilia Brovchenko|Dmitry Zakharov|Dmitry Kuleshov|Dmitry Lesin|Vladimir Miniaev |Ivan Moroz"
+			text="ÌØ±ð¸ÐÐ»£º||Youlia Belova|Sergey Bobkov|Ilia Brovchenko|Dmitry Zakharov|Dmitry Kuleshov|Dmitry Lesin|Vladimir Miniaev |Ivan Moroz"
 			modelName	= "r3_man"
 			modelSkin	= "2"
 			modelCfg	= "1745"
@@ -440,7 +440,7 @@
 
 		<Page
 			id="48"
-			text="Special thanks :||Marina Ravoon|Ivan Rid|Inna Sutsepina|Igor Ustinov|Irina Tsareva|Victoria Enns"
+			text="ÌØ±ð¸ÐÐ»£º||Marina Ravoon|Ivan Rid|Inna Sutsepina|Igor Ustinov|Irina Tsareva|Victoria Enns"
 			modelName	= "r3_man"
 			modelSkin	= "1"
 			modelCfg	= "57"
