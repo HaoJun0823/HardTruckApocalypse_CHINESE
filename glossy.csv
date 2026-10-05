@@ -109,3 +109,20 @@ Speedometer,速度表,界面,速度表面板
 Timer,计时器,界面,计时器面板
 Workshop,车间,界面,改装车间
 Description,描述,界面,物品描述
+Accelerate,加速,操作,油门
+Brake,刹车,操作,
+Handbrake,手刹,操作,
+Turn left,左转,操作,方向盘
+Turn right,右转,操作,方向盘
+Headlights,大灯,操作,车灯
+Quicksave,快速存档,操作,
+Quickload,快速读取,操作,
+Pause,暂停,操作,
+Bar,酒吧,界面,城镇内酒吧
+Help,帮助,界面,
+Run,奔跑,操作,步行模式
+Zoom camera,缩放镜头,操作,
+Camera rotation,旋转镜头,操作,
+Fire group,开火组,操作,武器组1-5
+Fire all groups,全部开火,操作,
+Reload weapon,装填武器,操作,

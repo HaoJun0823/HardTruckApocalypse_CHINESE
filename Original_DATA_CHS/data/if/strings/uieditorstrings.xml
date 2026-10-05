@@ -2,75 +2,75 @@
 <resource>
 	<string
 		id="ok"
-		value="Äàëüøå" />
+		value="È·¶¨" />
 
 	<string
 		id="cancel"
-		value="Îòìåíà" />
+		value="È¡Ïû" />
 
 	<string
 		id="yes"
-		value="Äà" />
+		value="ÊÇ" />
 
 	<string
 		id="no"
-		value="Íåò" />
+		value="·ñ" />
 
 	<string
 		id="error"
-		value="Îøèáêà" />
+		value="´íÎó" />
 
 	<string
 		id="sure"
-		value="Âû óâåðåíû?" />
+		value="È·ÈÏ£¿" />
 
 	<string
 		id="main"
-		value="Ãëàâíîå ìåíþ" />
+		value="Ö÷²Ëµ¥" />
 
 	<string
 		id="file"
-		value="Ôàéë..." />
+		value="ÎÄ¼þ..." />
 
 	<string
 		id="newdialog"
-		value="Ñîçäàòü äèàëîã" />
+		value="ÐÂ½¨¶Ô»°¿ò" />
 
 	<string
 		id="loaddlg"
-		value="Çàãðóçèòü äèàëîã" />
+		value="¼ÓÔØ¶Ô»°¿ò" />
 
 	<string
 		id="savedlg"
-		value="Çàïèñàòü äèàëîã" />
+		value="±£´æ¶Ô»°¿ò" />
 
 	<string
 		id="loadscheme"
-		value="Çàãðóçèòü ñõåìó" />
+		value="¼ÓÔØ·½°¸" />
 
 	<string
 		id="test"
-		value="Òåñò..." />
+		value="²âÊÔ..." />
 
 	<string
 		id="quit"
-		value="Âûõîä" />
+		value="ÍË³ö" />
 
 	<string
 		id="bg"
-		value="Ôîí..." />
+		value="±³¾°..." />
 
 	<string
 		id="bgload"
-		value="Çàãðóçèòü ôîí" />
+		value="¼ÓÔØ±³¾°" />
 
 	<string
 		id="bgyesno"
-		value="Ñ ôîíîì/Áåç ôîíà" />
+		value="ÓÐ±³¾°/ÎÞ±³¾°" />
 
 	<string
 		id="dim"
-		value="Ðàáî÷àÿ îáëàñòü" />
+		value="ÆÁÄ»·Ö±æÂÊ" />
 
 	<string
 		id="dim640x480"
@@ -86,213 +86,213 @@
 
 	<string
 		id="newdlgname"
-		value="Ââåäèòå èìÿ äèàëîãà" />
+		value="ÊäÈë¶Ô»°¿òÃû³Æ" />
 
 	<string
 		id="abouttoclose"
-		value="Âû óâåðåíû ÷òî õîòèòå âûéòè?" />
+		value="È·ÈÏÒª¹Ø±ÕÂð£¿" />
 
 	<string
 		id="loadtexture"
-		value="Çàãðóçèòü òåêñòóðó" />
+		value="¼ÓÔØÎÆÀí" />
 
 	<string
 		id="testenter"
-		value="Âîéòè â òåñòîâûé ðåæèì" />
+		value="½øÈë²âÊÔÄ£Ê½" />
 
 	<string
 		id="testexit"
-		value="Âûéòè èç òåñòîâîãî ðåæèìà" />
+		value="ÍË³ö²âÊÔÄ£Ê½" />
 
 	<string
 		id="flagnodraw"
-		value="Çàïðåòèòü îòðèñîâêó îêíà" />
+		value="ºöÂÔ²»¿É¼û¿Ø¼þ" />
 
 	<string
 		id="flaginside"
-		value="Îêíî íå ìîæåò âûéòè çà ïðåäåëû ðîäèòåëÿ" />
+		value="²»ÔÊÐí³¬³ö±ß½ç" />
 
 	<string
 		id="flagmovable"
-		value="Îêíî ìîæíî äâèãàòü" />
+		value="¿ÉÒÆ¶¯¿Ø¼þ" />
 
 	<string
 		id="flagresizable"
-		value="Ìîæíî èçìåíÿòü ðàçìåð îêíà" />
+		value="ÔÊÐí¸Ä±ä¿Ø¼þ´óÐ¡" />
 
 	<string
 		id="flagnoframe"
-		value="Îòêëþ÷èòü ðèñîâàíèå ðàìêè îêíà" />
+		value="ÒÆ³ý´°¿Ú¿ò¼Ü" />
 
 	<string
 		id="flagtransparent"
-		value="Îêíî ïåðåäàåò ñîáûòèÿ ðîäèòåëþ" />
+		value="ÔÊÐíÍ¸Ã÷ÑÕÉ«" />
 
 	<string
 		id="flagnumeric"
-		value="Ðàçðåøèòü òîëüêî öèôðû â ýäèòáîêñå" />
+		value="½öÔÊÐíÊý×ÖºÍÐ¡Êýµã" />
 
 	<string
 		id="flagvisible"
-		value="Îêíî âèäèìî" />
+		value="¿É¼û¿Ø¼þ" />
 
 	<string
 		id="flagcenterxy"
-		value="Òåêñò öåíòðèðóåòñÿ ïî îáîèì îñÿì" />
+		value="¾ÓÖÐ£¨°´Á½¸öÖá£©" />
 
 	<string
 		id="flagcenterx"
-		value="Òåêñò öåíòðèðóåòñÿ ïî îñè X" />
+		value="¾ÓÖÐ£¨°´ X Öá£©" />
 
 	<string
 		id="flagcentery"
-		value="Òåêñò öåíòðèðóåòñÿ ïî îñè Y" />
+		value="¾ÓÖÐ£¨°´ Y Öá£©" />
 
 	<string
 		id="flagcfocus"
-		value="Ïðè àêòèâàöèè ïåðåõâàòûòâåò ôîêóñ ââîäà" />
+		value="±£´æ½¹µã¿Ø¼þ" />
 
 	<string
 		id="flagactivatable"
-		value="Îêíî ìîæíî àêòèâèðîâàòü" />
+		value="¿É¼¤»î¿Ø¼þ" />
 
 	<string
 		id="flagareflect"
-		value="Îòðàæàåò àêòèâàöèþ ðîäèòåëþ" />
+		value="·´Éä»î¶¯¿Ø¼þ" />
 
 	<string
 		id="flagdisabled"
-		value="Îêíî íå ïðèíèìàåò ñîîáùåíèÿ" />
+		value="²»¿É½ÓÊÕ½¹µã" />
 
 	<string
 		id="flagdefault"
-		value="Êíîïêà ïî óìîë÷àíèþ" />
+		value="°´ÏÂÊ±¼¤»î" />
 
 	<string
 		id="flagshadow"
-		value="Îêíî îòáðàñûâàåò òåíü" />
+		value="ÔÊÐíÍ¶ÉäÒõÓ°" />
 
 	<string
 		id="flagempty"
-		value="Èñïîëüçîâàòü ñòèëü ïî óìîë÷àíèþ" />
+		value="Çå¿Õ°´ÏÂÊ±¼¤»î" />
 
 	<string
 		id="flagusedefault"
-		value="Èñïîëüçîâàòü ñòèëü ïî óìîë÷àíèþ" />
+		value="Çå¿Õ°´ÏÂÊ±¼¤»î" />
 
 	<string
 		id="flagmkreflect"
-		value="Îòðàæàåò ñîáûòèÿ îò Ì è Ê ðîäèòåëþ" />
+		value="·´Éä°´ÏÂºÍÊÍ·Å¿Ø¼þ" />
 
 	<string
 		id="flagid"
-		value="Íå ðèñîâàòü ôîí" />
+		value="²»¼¤»î±³¾°" />
 
 	<string
 		id="ctrlname"
-		value="Èìÿ îêíà" />
+		value="¿Ø¼þÃû" />
 
 	<string
 		id="ctrlid"
-		value="Èäåíòèôèêàòîð îêíà" />
+		value="¿Ø¼þ±êÊ¶·û" />
 
 	<string
 		id="ctrlcaption"
-		value="Çàãîëîâîê îêíà" />
+		value="¿Ø¼þ±êÌâ" />
 
 	<string
 		id="ctrlapplysizes"
-		value="Ïðèìåíèòü ðàçìåðû ê îêíó" />
+		value="Ó¦ÓÃ´óÐ¡ºÍÎ»ÖÃ" />
 
 	<string
 		id="ctrlwidth"
-		value="Øèðèíà îêíà" />
+		value="¿Ø¼þ¿í" />
 
 	<string
 		id="ctrlheight"
-		value="Âûñîòà îêíà" />
+		value="¿Ø¼þ¸ß" />
 
 	<string
 		id="ctrlapplyorigin"
-		value="Ïðèìåíèòü êîîðäèíàòû ê îêíó" />
+		value="Ó¦ÓÃÔ­µãÎ»ÖÃ" />
 
 	<string
 		id="ctrlleft"
-		value="Ëåâûé óãîë" />
+		value="×ó±ßÔµ" />
 
 	<string
 		id="ctrltop"
-		value="Âåðõíèé óãîë" />
+		value="¶¥±ßÔµ" />
 
 	<string
 		id="ctrlbg"
-		value="Çàãðóçèòü òåêñòóðó áàêãðàóíäà" />
+		value="¼ÓÔØ¿Ø¼þ±³¾°ÎÆÀí" />
 
 	<string
 		id="ctrltooltip"
-		value="Âñïëûâàþùàÿ ïîäñêàçêà" />
+		value="Êó±êÌáÊ¾ÎÄ±¾" />
 
 	<string
 		id="gridshow"
-		value="Ïîêàçàòü ñåòêó" />
+		value="ÏÔÊ¾Íø¸ñ" />
 
 	<string
 		id="gridsnap"
-		value="Ïðèâÿçêà ê ñåòêå" />
+		value="Îü¸½µ½Íø¸ñ" />
 
 	<string
 		id="gridstep"
-		value="Øàã ñåòêè" />
+		value="Íø¸ñ²½³¤" />
 
 	<string
 		id="activationorder"
-		value="Ïîêàçàòü ïîðÿäîê àêòèâàöèè" />
+		value="ÏÔÊ¾¼¤»îË³Ðò" />
 
 	<string
 		id="btnisimaged"
-		value="Êíîïêà ñ ðèñóíêîì èëè áåç" />
+		value="°´ÏÂºÍµ¯ÆðÁ½ÖÖ×´Ì¬" />
 
 	<string
 		id="btninsidetex"
-		value="Òåêñòóðà äëÿ êíîïêè ïîä ìûøüþ" />
+		value="Êó±êÒÆÈëÊ±ÎÆÀí" />
 
 	<string
 		id="btndowntex"
-		value="Òåêñòóðà äëÿ íàæàòîé êíîïêè" />
+		value="°´ÏÂÊ±ÎÆÀí" />
 
 	<string
 		id="btnregtex"
-		value="Òåêñòóðà äëÿ íåíàæàòîé êíîïêè" />
+		value="ÆÕÍ¨×´Ì¬ÎÆÀí" />
 
 	<string
 		id="btnisin"
-		value="Ìûøü íà êíîïêå" />
+		value="ÒÆÈëÀïÃæ" />
 
 	<string
 		id="btnisdown"
-		value="Êíîïêà íàæàòà" />
+		value="°´ÏÂ×´Ì¬" />
 
 	<string
 		id="framelist"
-		value="Ñïèñîê ðàìîê" />
+		value="Ãû³ÆÁÐ±í" />
 
 	<string
 		id="linehorz"
-		value="Ãîðèçîíòàëüíî" />
+		value="Ë®Æ½Ïß" />
 
 	<string
 		id="linevert"
-		value="Âåðòèêàëüíî" />
+		value="´¹Ö±Ïß" />
 
 	<string
 		id="drawBg"
-		value="Îòðèñîâêà ôîíà" />
+		value="»æÖÆ±³¾°" />
 
 	<string
 		id="drawCorners"
-		value="Îòðèñîâêà óãëîâ" />
+		value="»æÖÆ±ß½Ç" />
 
 	<string
 		id="drawBars"
-		value="Îòðèñîâêà ëèíèé" />
+		value="»æÖÆÌõ" />
 </resource>
