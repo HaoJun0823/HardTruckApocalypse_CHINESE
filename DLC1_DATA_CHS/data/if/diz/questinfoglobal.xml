@@ -2,128 +2,128 @@
 <QuestInfoResource>
 	<QuestInfo
 		questName="Dynamic_Convoy_0"
-		briefDiz="Escort vehicle to city %2n."
-		fullDiz="In the city %1n people asked to escort vehicle to city %2n for %3d."
+		briefDiz="护送车辆前往%2n城。"
+		fullDiz="%1n城里有人请我护送一辆车去%2n城，报酬%3d。"
 		isMainQuest="0" />
 
 	<QuestInfo
 		questName="Dynamic_Convoy_1"
-		briefDiz="Defend vehicle."
-		fullDiz="Citizen of town %1n asked me to defend his car during the road to city %2n and promised to pay %3d."
+		briefDiz="保护车辆。"
+		fullDiz="%1n镇的一位居民请我沿途保护他的车前往%2n城，答应付我%3d。"
 		isMainQuest="0" />
 
 	<QuestInfo
 		questName="Dynamic_Convoy_2"
-		briefDiz="Safeguard security of transport."
-		fullDiz="It is necessary to convoy transport from human settlement %1n to the ciyu %2n. If everything is going to be allright I will get %3d."
+		briefDiz="保障运输安全。"
+		fullDiz="需要护送一支运输队从%1n聚落前往%2n城。一切顺利的话，我能拿到%3d。"
 		isMainQuest="0" />
 
 	<QuestInfo
 		questName="Dynamic_Convoy_3"
-		briefDiz="Safeguard security."
-		fullDiz="Merchant from city %1n goes along trading route in settlement %2n. Lonely drivers are often attacked so I agree to protect him for modest reward %3d."
+		briefDiz="护卫安全。"
+		fullDiz="%1n城的商人要沿商路前往%2n聚落。落单的司机常遭袭击，于是我答应护送他，换取不算丰厚的报酬%3d。"
 		isMainQuest="0" />
 
 	<QuestInfo
 		questName="Dynamic_Destroy_0"
-		briefDiz="Kill bandit."
-		fullDiz="In city %1n I have agreed to kill enemy for reward %3d."
+		briefDiz="消灭土匪。"
+		fullDiz="在%1n城，我答应干掉一个敌人，换取报酬%3d。"
 		isMainQuest="0" />
 
 	<QuestInfo
 		questName="Dynamic_Destroy_1"
-		briefDiz="Neutralize bandit."
-		fullDiz="Dwellers from settlement %1n are frequently attacked by cunning bandit. I will help them to get rid of him for %3d."
+		briefDiz="铲除土匪。"
+		fullDiz="%1n聚落的居民经常遭到一个狡猾土匪的袭扰。我会帮他们除掉这个祸害，报酬%3d。"
 		isMainQuest="0" />
 
 	<QuestInfo
 		questName="Dynamic_Destroy_2"
-		briefDiz="Track down aggressor."
-		fullDiz="I will get %3d when I free city %1n from one scoundrel."
+		briefDiz="追捕恶徒。"
+		fullDiz="帮%1n城除掉一个恶棍后，我将得到%3d。"
 		isMainQuest="0" />
 
 	<QuestInfo
 		questName="Dynamic_Destroy_3"
-		briefDiz="Catch and kill."
-		fullDiz="In city %3d one may get %1n for the head of one bandit."
+		briefDiz="缉拿击杀。"
+		fullDiz="在%1n城，一颗土匪的人头能换%3d。"
 		isMainQuest="0" />
 
 	<QuestInfo
 		questName="Dynamic_Drugs_0"
-		briefDiz="Find people who wish to purchase the smuggled goods."
-		fullDiz="My car is full of smuggled goods. It needs to sell them in any city."
+		briefDiz="找到愿意收购走私货的买主。"
+		fullDiz="我车上装满了走私货。得随便找座城把它出手了。"
 		isMainQuest="0" />
 
 	<QuestInfo
 		questName="Dynamic_Drugs_1"
-		briefDiz="Sold illegal goods."
-		fullDiz="In local bar surely there is a man who are ready to purchase my illegal goods."
+		briefDiz="卖掉违禁货。"
+		fullDiz="当地酒吧里肯定有人乐意收购我的违禁货。"
 		isMainQuest="0" />
 
 	<QuestInfo
 		questName="Dynamic_Drugs_2"
-		briefDiz="Get rid of smuggled goods."
-		fullDiz="Until nobody knows that I hid in my vehicle it needs to be sold to as soon as possible in any city."
+		briefDiz="处理掉走私货。"
+		fullDiz="趁没人知道我车上藏了什么，得尽快随便找座城把货出手。"
 		isMainQuest="0" />
 
 	<QuestInfo
 		questName="Dynamic_Drugs_3"
-		briefDiz="Make illegal deal."
-		fullDiz="I need find city where I can sell goods with maximum profit."
+		briefDiz="完成黑市交易。"
+		fullDiz="我得找一座城，把货卖出最大的利润。"
 		isMainQuest="0" />
 
 	<QuestInfo
 		questName="Dynamic_Hunt_0"
-		briefDiz="Hunting season."
-		fullDiz="City %1n will pay me for evet one killed bandit in region %3d."
+		briefDiz="狩猎季。"
+		fullDiz="%1n城出赏金：在该地区每击杀一名土匪，我就能领%3d。"
 		isMainQuest="0" />
 
 	<QuestInfo
 		questName="Dynamic_Hunt_1"
-		briefDiz="Teach bandit a lesson."
-		fullDiz="Bandits have lost any shame! It needs totaech them good lesson. The more especially that city %1n will pay you for every killed bandit in region %3d."
+		briefDiz="教训土匪一顿。"
+		fullDiz="土匪已经无耻到了极点！得给他们点颜色瞧瞧。更何况%1n城还会为我在该地区每击杀一名土匪支付%3d。"
 		isMainQuest="0" />
 
 	<QuestInfo
 		questName="Dynamic_Hunt_2"
-		briefDiz="Mop-up operation."
-		fullDiz="Authority of city %1n cross swords for road security. As a main event there is Mop-up operation. Destruction of every enemy vehicle in pointed area will bring %3d."
+		briefDiz="肃清行动。"
+		fullDiz="%1n城当局为道路安全大动干戈，祭出的头号手段就是肃清行动。在指定区域内每摧毁一辆敌方车辆，可获得%3d。"
 		isMainQuest="0" />
 
 	<QuestInfo
 		questName="Dynamic_Hunt_3"
-		briefDiz="Clear some area."
-		fullDiz="In city %1n seriously fight with crime. For every killed bandit in this area I will get %3d."
+		briefDiz="清剿区域。"
+		fullDiz="%1n城正在严打犯罪。在该区域内每击杀一名土匪，我就能得到%3d。"
 		isMainQuest="0" />
 
 	<QuestInfo
 		questName="Dynamic_Peace_0"
-		briefDiz="Make peace with group %2b."
-		fullDiz="For moderate percent of my money group %2b are ready to make peace with me."
+		briefDiz="与%2b派系讲和。"
+		fullDiz="只要付出我财产中不大的一个百分比，%2b就肯跟我讲和。"
 		isMainQuest="0" />
 
 	<QuestInfo
 		questName="Dynamic_Reach_0"
-		briefDiz="Take pieces in settlement %2n."
-		fullDiz="City %1n ask me take some research pieces in settlement %2n. On arrival I will get %3d."
+		briefDiz="把零件送到%2n聚落。"
+		fullDiz="%1n城托我把一些研究资料和零件送到%2n聚落。到达后我将获得%3d。"
 		isMainQuest="0" />
 
 	<QuestInfo
 		questName="Dynamic_Reach_1"
-		briefDiz="Deliver package in settlement %2n."
-		fullDiz="I will get %3d when I deliver package %2n. They are waiting for it but for this kind of money I'm not going to be pressed for time."
+		briefDiz="把包裹送到%2n聚落。"
+		fullDiz="把包裹送到%2n后，我将获得%3d。收货的人正等着呢，不过看在这笔钱的份上，我不用赶得太急。"
 		isMainQuest="0" />
 
 	<QuestInfo
 		questName="Dynamic_Reach_2"
-		briefDiz="Reach city %2n."
-		fullDiz="One fellow from city %1n is ready to pay %3d if I send his's best to a friend who lives in settlement %2n."
+		briefDiz="前往%2n城。"
+		fullDiz="%1n城有个家伙愿意付%3d，让我替他把最好的东西捎给住在%2n聚落的朋友。"
 		isMainQuest="0" />
 
 	<QuestInfo
 		questName="Dynamic_Reach_3"
-		briefDiz="Deliver mail to %2n."
-		fullDiz="For reward %3d  I have to deliver mail with letters from %1n to settlement %2n."
+		briefDiz="把邮件送到%2n。"
+		fullDiz="为了%3d的报酬，我得把%1n发来的信件邮件送到%2n聚落。"
 		isMainQuest="0" />
 
 	<QuestInfo
@@ -136,32 +136,32 @@
 
 	<QuestInfo
 		questName="Dynamic_Treasure_0"
-		briefDiz="Find ancient artifact."
-		fullDiz="Near the reference point one may find valuable artifact. You can't accomplish this task without treasure detector."
+		briefDiz="寻找古代器物。"
+		fullDiz="参照点附近可能埋着值钱的古物。没有寻宝探测器，这活儿干不成。"
 		isMainQuest="0" />
 
 	<QuestInfo
 		questName="Dynamic_Treasure_1"
-		briefDiz="Treasure searching."
-		fullDiz="Go by acquired information and landmark on the map. You can't accomplish this task without treasure detector."
+		briefDiz="寻宝。"
+		fullDiz="按打听来的情报和地图上的地标前进。没有寻宝探测器，这活儿干不成。"
 		isMainQuest="0" />
 
 	<QuestInfo
 		questName="Dynamic_Treasure_2"
-		briefDiz="Echo of former civilization."
-		fullDiz="A lot of valuables are left from ancient civilizations one need only follow the landmark. It's unlikely to accompish this mission without treasure detector."
+		briefDiz="昔日文明的回响。"
+		fullDiz="古代文明留下了大量宝贝，只需循着地标去找。不过没有寻宝探测器，这任务八成完不成。"
 		isMainQuest="0" />
 
 	<QuestInfo
 		questName="Dynamic_Treasure_3"
-		briefDiz="Ancient hiding."
-		fullDiz="Reach the place marked on the map and make searching. You can't accomplish this task without treasure detector."
+		briefDiz="古人的窖藏。"
+		fullDiz="到地图上标记的地点进行搜寻。没有寻宝探测器，这活儿干不成。"
 		isMainQuest="0" />
 
 	<QuestInfo
 		questName="Sin_Arlekin_Band_qst"
-		briefDiz="Kill Harlequin's minions."
-		fullDiz="Harlequin sent out his curs. They have to be killed."
+		briefDiz="消灭Harlequin的手下。"
+		fullDiz="Harlequin放出了他那群走狗。必须宰了他们。"
 		isMainQuest="1">
 		<Map
 			name="sin"
@@ -170,14 +170,14 @@
 
 	<QuestInfo
 		questName="Sin_Arlekin_Find_qst"
-		briefDiz="Find Harlequin."
-		fullDiz="Harlequin came from Jericho. He's got to be eliminated."
+		briefDiz="找到Harlequin。"
+		fullDiz="Harlequin是从杰里科来的。必须除掉他。"
 		isMainQuest="1" />
 
 	<QuestInfo
 		questName="Sin_Arlekin_Kill_qst"
-		briefDiz="Kill Harlequin."
-		fullDiz="Harlequin must die."
+		briefDiz="杀死Harlequin。"
+		fullDiz="Harlequin必须死。"
 		isMainQuest="1">
 		<Map
 			name="sin" />
@@ -185,14 +185,14 @@
 
 	<QuestInfo
 		questName="Sin_Arlekin_qst"
-		briefDiz="Kill Harlequin."
-		fullDiz="Now I know who set at me those curs. He must die. You can find him in the east side of the city."
+		briefDiz="杀死Harlequin。"
+		fullDiz="现在我知道是谁放狗咬我了。他必须死。在城东能找到他。"
 		isMainQuest="1" />
 
 	<QuestInfo
 		questName="Sin_Cat_Caravan_qst"
-		briefDiz="Capture Caravan."
-		fullDiz="Garfield ordered to attack and capture the caravan."
+		briefDiz="劫下车队。"
+		fullDiz="Garfield下令袭击并劫下车队。"
 		isMainQuest="1">
 		<Map
 			name="sin"
@@ -201,8 +201,8 @@
 
 	<QuestInfo
 		questName="Sin_Cat_Garfield_qst"
-		briefDiz="Talk to Cats' Boss Garfield."
-		fullDiz="I need to talk to Cats' Boss Garfield and convince him to hire me."
+		briefDiz="去见猫帮老大Garfield。"
+		fullDiz="我得跟猫帮老大Garfield谈谈，说服他雇我。"
 		isMainQuest="1">
 		<Map
 			name="sin"
@@ -211,8 +211,8 @@
 
 	<QuestInfo
 		questName="Sin_Cat_Kitty_qst"
-		briefDiz="Report to Kitty about the caravan's capture."
-		fullDiz="The caravan is captured, I need to report to Kitty about it."
+		briefDiz="向Kitty汇报车队得手的消息。"
+		fullDiz="车队到手了，我得向Kitty汇报。"
 		isMainQuest="1">
 		<Map
 			name="sin"
@@ -221,14 +221,14 @@
 
 	<QuestInfo
 		questName="Sin_Cat_qst"
-		briefDiz="Get a contract with Cats."
-		fullDiz="I need to work for the Cats' gang to get petrol and spare parts for the truck. "
+		briefDiz="跟猫帮签下合同。"
+		fullDiz="我得给猫帮干活，好换来卡车的汽油和零配件。"
 		isMainQuest="1" />
 
 	<QuestInfo
 		questName="Sin_Cross_Fight_qst"
-		briefDiz="Kill the Cats."
-		fullDiz="Cats are attacking. They must be killed."
+		briefDiz="消灭猫帮。"
+		fullDiz="猫帮杀过来了。必须干掉他们。"
 		isMainQuest="1">
 		<Map
 			name="sin"
@@ -237,8 +237,8 @@
 
 	<QuestInfo
 		questName="Sin_Cross_Kitty_qst"
-		briefDiz="Save Kitty."
-		fullDiz="Kitty was captured and taken to the old farm. I need to kill the guards to set her free."
+		briefDiz="营救Kitty。"
+		fullDiz="Kitty被抓走关到了老农场。我得干掉守卫救她出来。"
 		isMainQuest="1">
 		<Map
 			name="sin"
@@ -247,8 +247,8 @@
 
 	<QuestInfo
 		questName="Sin_Cross_Talk_qst"
-		briefDiz="Reach the place of the negotiations. "
-		fullDiz="We agreed to meet at the old crossroads. I need to get there."
+		briefDiz="前往谈判地点。"
+		fullDiz="约好在老路口碰头。我得赶到那儿。"
 		isMainQuest="1">
 		<Map
 			name="sin"
@@ -257,8 +257,8 @@
 
 	<QuestInfo
 		questName="Sin_Cross_Wait_qst"
-		briefDiz="Wait for the Dogs."
-		fullDiz="Kitty left. I need to wait for the Dogs and put the blame on the Cats."
+		briefDiz="等候狗帮。"
+		fullDiz="Kitty走了。我得等狗帮到来，然后把这笔账栽到猫帮头上。"
 		isMainQuest="1">
 		<Map
 			name="sin"
@@ -267,19 +267,19 @@
 
 	<QuestInfo
 		questName="Sin_Cross_qst"
-		briefDiz="Wage the war."
-		fullDiz="Given a reason, the gangs will eliminate each other."
+		briefDiz="掀起帮派大战。"
+		fullDiz="只要给个由头，这两帮人就会自相残杀。"
 		isMainQuest="1" />
 
 	<QuestInfo
 		questName="Sin_E_qst"
-		briefDiz="Tell Egoist a lesson."
+		briefDiz="教训Egoist一顿。"
 		isMainQuest="0" />
 
 	<QuestInfo
 		questName="Sin_Egoist_Father_qst"
-		briefDiz="Find the way over the ridge from the Reverend.."
-		fullDiz="The Reverend promised to show the Way. What if he meant the way over the ridge?"
+		briefDiz="向牧师打听翻山越岭之路。"
+		fullDiz="牧师答应给我指点迷津。也许他说的就是翻山的路？"
 		isMainQuest="1">
 		<Map
 			name="sin"
@@ -288,8 +288,8 @@
 
 	<QuestInfo
 		questName="Sin_Egoist_Home_qst"
-		briefDiz="Take Egoist to Borne."
-		fullDiz="We have the Egoist. He needs to be taken back to Borne."
+		briefDiz="把Egoist押送给Borne。"
+		fullDiz="Egoist到手了。得把他押回去交给Borne。"
 		isMainQuest="1">
 		<Map
 			name="sin"
@@ -298,8 +298,8 @@
 
 	<QuestInfo
 		questName="Sin_Egoist_Take_qst"
-		briefDiz="Capture the Egoist."
-		fullDiz="The Egoist is in Saint-Rafael. I need to kill the guards to get to him."
+		briefDiz="活捉Egoist。"
+		fullDiz="Egoist在圣拉斐尔。我得干掉护卫才能抓到他。"
 		isMainQuest="1">
 		<Map
 			name="sin"
@@ -308,8 +308,8 @@
 
 	<QuestInfo
 		questName="Sin_Egoist_Trap_qst"
-		briefDiz="Talk to Borne."
-		fullDiz="The Dogs need Egoist. I should talk to him first."
+		briefDiz="跟Borne谈。"
+		fullDiz="狗帮需要Egoist。我该先跟Borne谈谈。"
 		isMainQuest="1">
 		<Map
 			name="sin"
@@ -318,8 +318,8 @@
 
 	<QuestInfo
 		questName="Sin_Egoist_Tunnel_qst"
-		briefDiz="Find the tunnel that leads to the other side of the mountain ridge. "
-		fullDiz="The Reverend explained how to use the tunnel."
+		briefDiz="找到通往山岭另一侧的隧道。"
+		fullDiz="牧师说明了如何使用这条隧道。"
 		isMainQuest="1">
 		<Map
 			name="sin"
@@ -328,8 +328,8 @@
 
 	<QuestInfo
 		questName="Sin_Egoist_Way_qst"
-		briefDiz="Find the road to Saint-Rafael."
-		fullDiz="The Egoist is in Saint-Rafael over the ridge. I need to get there."
+		briefDiz="找到通往圣拉斐尔的路。"
+		fullDiz="Egoist在山岭另一头的圣拉斐尔。我得赶过去。"
 		isMainQuest="1">
 		<Map
 			name="sin"
@@ -338,14 +338,14 @@
 
 	<QuestInfo
 		questName="Sin_Egoist_qst"
-		briefDiz="Take revenge on the Egoist."
-		fullDiz="Egoist attacked Kitty. He has to pay for it."
+		briefDiz="找Egoist报仇。"
+		fullDiz="Egoist袭击了Kitty。他必须付出代价。"
 		isMainQuest="1" />
 
 	<QuestInfo
 		questName="Sin_FedEx_qst"
-		briefDiz="Deliver cargo to barman Joe in Jericho."
-		fullDiz="I was given package for Joe. Joe will have to pay 500 coins."
+		briefDiz="把货物送到杰里科的酒保Joe手里。"
+		fullDiz="有人托我把包裹带给Joe。Joe得付500金币。"
 		isMainQuest="1">
 		<Map
 			name="sin"
@@ -354,8 +354,8 @@
 
 	<QuestInfo
 		questName="Sin_Final_Fight_qst"
-		briefDiz="Kill Borne."
-		fullDiz="This is my last meeting with Borne. Only one of us will survive it. "
+		briefDiz="杀死Borne。"
+		fullDiz="这是我跟Borne的最后一面。我们俩之间，只能活下来一个。"
 		isMainQuest="1">
 		<Map
 			name="sin"
@@ -364,8 +364,8 @@
 
 	<QuestInfo
 		questName="Sin_Final_Way_qst"
-		briefDiz="Say goodbye to the Reverend."
-		fullDiz="It's time to leave town. I need to say goodbye to the Reverend."
+		briefDiz="向牧师道别。"
+		fullDiz="该离开这座城了。我得跟牧师道个别。"
 		isMainQuest="1">
 		<Map
 			name="sin"
@@ -374,20 +374,20 @@
 
 	<QuestInfo
 		questName="Sin_Final_qst"
-		briefDiz="Kill left Dogs."
-		fullDiz="Last fight will be near the burnt house of Cats."
+		briefDiz="干掉残余的狗帮。"
+		fullDiz="最后一战将在猫帮的焦宅附近打响。"
 		isMainQuest="1" />
 
 	<QuestInfo
 		questName="Sin_FirstFight_qst"
 		isMainQuest="0"
-		briefDiz="Kill the attackers."
-		fullDiz="I was attacked without reasons. Attackers must pay for it." />
+		briefDiz="消灭袭击者。"
+		fullDiz="我无缘无故挨了打。袭击者必须付出代价。" />
 
 	<QuestInfo
 		questName="Sin_JoeSaving_qst"
-		briefDiz="Save barman Joe."
-		fullDiz="Dogs have seized Joe... You need to rescue him."
+		briefDiz="营救酒保Joe。"
+		fullDiz="狗帮把Joe抓走了……必须去救他。"
 		isMainQuest="1">
 		<Map
 			name="sin"
@@ -396,8 +396,8 @@
 
 	<QuestInfo
 		questName="Sin_Run_qst"
-		briefDiz="Escape from Dogs."
-		fullDiz="There is no weapon, but you must escape..."
+		briefDiz="摆脱狗帮。"
+		fullDiz="手无寸铁，但也必须逃出去……"
 		isMainQuest="1">
 		<Map
 			name="sin"
@@ -406,7 +406,7 @@
 
 	<QuestInfo
 		questName="r5m1_BPOSKillThiefCar_Quest"
-		briefDiz="Punish Thief."
+		briefDiz="惩办小偷。"
 		isMainQuest="1">
 		<Map
 			name="r5m1"
@@ -415,7 +415,7 @@
 
 	<QuestInfo
 		questName="r5m1_BPOSKillUnknownCars_Quest"
-		briefDiz="Teach the guests a lesson of good manners."
+		briefDiz="好好教训一下这些不速之客。"
 		isMainQuest="1">
 		<Map
 			name="r5m1"
@@ -424,7 +424,7 @@
 
 	<QuestInfo
 		questName="r5m1_BPOSMoveToLoc_Quest"
-		briefDiz="Track down the guest actors."
+		briefDiz="追查外来者的下落。"
 		isMainQuest="1">
 		<Map
 			name="r5m1"
@@ -433,7 +433,7 @@
 
 	<QuestInfo
 		questName="r5m1_BPOSReturnToSam_Quest"
-		briefDiz="Return to Sam."
+		briefDiz="回去向Sam复命。"
 		isMainQuest="1">
 		<Map
 			name="r5m1"
@@ -442,8 +442,8 @@
 
 	<QuestInfo
 		questName="r5m1_BattleInArena_Quest"
-		briefDiz="Win the battle on arena."
-		fullDiz="Rules of this gladiator arena are easy: one who trespasses beyond the circle drawn on the ground will be killed. All I have to do is only to jab out enemy beyond the line."
+		briefDiz="赢下竞技场之战。"
+		fullDiz="这座角斗场的规矩很简单：谁被顶出地上画的圈，谁就死。我要做的，就是把对手顶出那条线。"
 		isMainQuest="1">
 		<Map
 			name="r5m1"
@@ -452,8 +452,8 @@
 
 	<QuestInfo
 		questName="r5m1_BigProblemOnSide_Quest"
-		briefDiz="Normalize the situation at the boundary."
-		fullDiz="When I solve the problem with guest actors I'll get absolute trust of Sam."
+		briefDiz="摆平边境的事端。"
+		fullDiz="解决了外来者的问题，我就能赢得Sam的绝对信任。"
 		isMainQuest="1">
 		<Map
 			name="r5m1" />
@@ -461,7 +461,7 @@
 
 	<QuestInfo
 		questName="r5m1_ETLCompleteSecretWay_Quest"
-		briefDiz="Go along the road and avoid traps."
+		briefDiz="沿路行进，避开陷阱。"
 		isMainQuest="1">
 		<Map
 			name="r5m1"
@@ -470,7 +470,7 @@
 
 	<QuestInfo
 		questName="r5m1_ETLFindSecretWay_Quest"
-		briefDiz="Find hidden road amid pipes."
+		briefDiz="在管道丛中找到隐秘道路。"
 		isMainQuest="1">
 		<Map
 			name="r5m1"
@@ -479,7 +479,7 @@
 
 	<QuestInfo
 		questName="r5m1_ETLFromSecretWayToLibrary_Quest"
-		briefDiz="Drive creepingly to the Library and pass the guards."
+		briefDiz="悄悄摸到图书馆，躲过卫兵。"
 		isMainQuest="1">
 		<Map
 			name="r5m1"
@@ -488,8 +488,8 @@
 
 	<QuestInfo
 		questName="r5m1_EnterToLibrary_Quest"
-		briefDiz="Leave the Library."
-		fullDiz="If Wiseguy said the truth, here must be maps I want. Just a little and I'll find road to Edmonton.  One thing is clear, the main road to the Library is closed for me."
+		briefDiz="撤离图书馆。"
+		fullDiz="如果Wiseguy说的是真话，这里一定有我要的地图。就差一点点，我就能找到去埃德蒙顿的路了。有一点很清楚：通往图书馆的正门大道对我已经关死了。"
 		isMainQuest="1">
 		<Map
 			name="r5m1" />
@@ -497,7 +497,7 @@
 
 	<QuestInfo
 		questName="r5m1_FT_FindBook"
-		briefDiz="Explore territory."
+		briefDiz="探查这片区域。"
 		isMainQuest="0">
 		<Map
 			name="r5m1"
@@ -506,7 +506,7 @@
 
 	<QuestInfo
 		questName="r5m1_FT_Return"
-		briefDiz="It's time to return with books for reward."
+		briefDiz="该带着书回去领赏了。"
 		isMainQuest="0">
 		<Map
 			name="r5m1"
@@ -515,8 +515,8 @@
 
 	<QuestInfo
 		questName="r5m1_FastLeaveLibrary_Quest"
-		briefDiz="Run away from Library."
-		fullDiz="Now I know everything I need. It's time to leave until guards are not interested in me."
+		briefDiz="撤离图书馆。"
+		fullDiz="该弄到手的都弄到了。趁卫兵还没盯上我，赶紧走人。"
 		isMainQuest="1">
 		<Map
 			name="r5m1"
@@ -525,8 +525,8 @@
 
 	<QuestInfo
 		questName="r5m1_FindTreasure"
-		briefDiz="Find ancient books."
-		fullDiz="In the ruins near the Library one may find a lot of interesting things."
+		briefDiz="寻找古代书籍。"
+		fullDiz="图书馆附近的废墟里能翻到不少好东西。"
 		isMainQuest="0">
 		<Map
 			name="r5m1" />
@@ -534,8 +534,8 @@
 
 	<QuestInfo
 		questName="r5m1_FirstQofSam_Quest"
-		briefDiz="Accomplish first mission of Sam."
-		fullDiz="Here nobody knows about dreamy city of Edmonton which is situated directly past the bridge.  But in order to reach it I'll have to win Sam's confidence. So I'll have to make a fierce effort to deliver this message to his friend."
+		briefDiz="完成Sam的第一个任务。"
+		fullDiz="这里没人知道梦想之城埃德蒙顿，它就在桥的另一头。但要到那儿，我得先赢得Sam的信任。所以拼了命也得把这封信送到他朋友手上。"
 		isMainQuest="1">
 		<Map
 			name="r5m1"
@@ -544,7 +544,7 @@
 
 	<QuestInfo
 		questName="r5m1_KK_KillThem"
-		briefDiz="Kill smugglers."
+		briefDiz="干掉走私贩。"
 		isMainQuest="0">
 		<Map
 			name="r5m1" />
@@ -552,7 +552,7 @@
 
 	<QuestInfo
 		questName="r5m1_KK_Spy"
-		briefDiz="Spy upon the suspicious vehicle."
+		briefDiz="盯紧那辆形迹可疑的车辆。"
 		isMainQuest="0">
 		<Map
 			name="r5m1"
@@ -561,7 +561,7 @@
 
 	<QuestInfo
 		questName="r5m1_K_FindBtotherMan"
-		briefDiz="Talk to merchant."
+		briefDiz="去找那个商人。"
 		isMainQuest="0">
 		<Map
 			name="r5m1"
@@ -570,7 +570,7 @@
 
 	<QuestInfo
 		questName="r5m1_K_TravelLetter"
-		briefDiz="Sell goods."
+		briefDiz="出手货物。"
 		isMainQuest="0">
 		<Map
 			name="r5m1"
@@ -579,8 +579,8 @@
 
 	<QuestInfo
 		questName="r5m1_KillBoss4_Quest"
-		briefDiz="Kill Sam!!!"
-		fullDiz="Sam is dirty betrayer and coward it's time to free the world from him."
+		briefDiz="杀死Sam！！！"
+		fullDiz="Sam是个肮脏的叛徒加胆小鬼，是时候让这个世界摆脱他了。"
 		isMainQuest="1">
 		<Map
 			name="r5m1"
@@ -601,8 +601,8 @@
 
 	<QuestInfo
 		questName="r5m1_KillKontrabondist"
-		briefDiz="Bar the illegal deal."
-		fullDiz="It's necessary to stop contraband trade."
+		briefDiz="搅黄这笔非法交易。"
+		fullDiz="必须制止这场走私买卖。"
 		isMainQuest="0">
 		<Map
 			name="r5m1" />
@@ -610,8 +610,8 @@
 
 	<QuestInfo
 		questName="r5m1_KillRobotsWithTank_Quest"
-		briefDiz="Stop robot attack."
-		fullDiz="Use the all weapons power of ancient you have to annihilate robots army before they destroyed all things around."
+		briefDiz="挡住机器人的进攻。"
+		fullDiz="用尽手中远古坦克的全部火力，趁机器人还没把周围的一切夷为平地，先把它们全军歼灭。"
 		isMainQuest="1">
 		<Map
 			name="r5m1" />
@@ -619,8 +619,8 @@
 
 	<QuestInfo
 		questName="r5m1_Kontrabanda"
-		briefDiz="Huddle illegal deal."
-		fullDiz="It seems that this mission is going to be as profitable as dangerous."
+		briefDiz="促成这笔黑交易。"
+		fullDiz="看起来这趟活儿有多危险就有多赚。"
 		isMainQuest="0">
 		<Map
 			name="r5m1" />
@@ -628,8 +628,8 @@
 
 	<QuestInfo
 		questName="r5m1_MoveToLibrary_Quest"
-		briefDiz="Find Library."
-		fullDiz="I hope that in this ruins there is even a little piece of useful information for me."
+		briefDiz="找到图书馆。"
+		fullDiz="但愿这片废墟里还留着一点对我有用的信息。"
 		isMainQuest="1">
 		<Map
 			name="r5m1"
@@ -638,8 +638,8 @@
 
 	<QuestInfo
 		questName="r5m1_Posilka"
-		briefDiz="Deliver package."
-		fullDiz="It seems that the case here is not about the package. In this putrid and hazardous region it is the next game on which one may bet. So what I'm not used to arrive the last one."
+		briefDiz="递送包裹。"
+		fullDiz="这事看来不只是送个包裹那么简单。在这个腐朽又凶险的地方，这是又一场可以下注的赌局。那又怎样，我可不习惯落在最后。"
 		isMainQuest="0">
 		<Map
 			name="r5m1"
@@ -648,8 +648,8 @@
 
 	<QuestInfo
 		questName="r5m1_RaceofSam_Quest"
-		briefDiz="Win the cup."
-		fullDiz="To win it you have to take at least the third place."
+		briefDiz="捧回奖杯。"
+		fullDiz="想赢，至少得跑进前三。"
 		isMainQuest="1">
 		<Map
 			name="r5m1" />
@@ -657,8 +657,8 @@
 
 	<QuestInfo
 		questName="r5m1_ReturnToSamWithMovies_Quest"
-		briefDiz="Bring films to Sam."
-		fullDiz="It's time to return. These films will demonstrate my success. Besides Sam can get the useful information."
+		briefDiz="把胶卷带给Sam。"
+		fullDiz="该回去了。这些胶卷就是我的成绩单。另外，Sam也能从中搞到有用的情报。"
 		isMainQuest="1">
 		<Map
 			name="r5m1"
@@ -671,7 +671,7 @@
 
 	<QuestInfo
 		questName="r5m1_SQSDestroyCar_Quest"
-		briefDiz="Put thick dot in this case."
+		briefDiz="给这案子画上句号。"
 		isMainQuest="1">
 		<Map
 			name="r5m1"
@@ -680,7 +680,7 @@
 
 	<QuestInfo
 		questName="r5m1_SQSMoveToPlace_Quest"
-		briefDiz="Get to his den."
+		briefDiz="摸到他的老巢。"
 		isMainQuest="1">
 		<Map
 			name="r5m1"
@@ -689,8 +689,8 @@
 
 	<QuestInfo
 		questName="r5m1_SecondQofSam_Quest"
-		briefDiz="Eliminate the object."
-		fullDiz="It is not important what the reason of problems between Sam and this fellow I have to cope with is. I need to win confidence of my boss and as the saying is - the end justifies the means."
+		briefDiz="除掉目标。"
+		fullDiz="Sam跟这家伙之间有什么过节不重要，重要的是我必须拿下。我要赢得老大的信任——俗话说得好，为达目的，不择手段。"
 		isMainQuest="1">
 		<Map
 			name="r5m1" />
@@ -698,7 +698,7 @@
 
 	<QuestInfo
 		questName="r5m1_WTBWMoveToBookWormHouse_Quest"
-		briefDiz="Meet Wiseguy."
+		briefDiz="去见Wiseguy。"
 		isMainQuest="1">
 		<Map
 			name="r5m1"
@@ -707,7 +707,7 @@
 
 	<QuestInfo
 		questName="r5m1_WTBWTalkWithAborigens_Quest"
-		briefDiz="Talk to locals."
+		briefDiz="跟当地人打听打听。"
 		isMainQuest="1">
 		<Map
 			name="r5m1"
@@ -716,8 +716,8 @@
 
 	<QuestInfo
 		questName="r5m1_WayToBookWorm_Quest"
-		briefDiz="Take view of the new place."
-		fullDiz="'...Edmonton city is known as one of the biggest trade centers of North America continent... there are more than 800 shops there... and very low fuel prices...' It was written so in the booklet I had. I want to live in this city! There one may make money faster than engine starts with good starter. Eh! Edmonton is the city of my dream! I hurry to you!!! The one thing which saddens my life is that there is no definite location where this city is situated. What road leads to it? For a long time I try to find it but in vain. I hope I can get some useful information in this region."
+		briefDiz="见识一下新地方。"
+		fullDiz="'……埃德蒙顿是北美大陆最大的贸易中心之一……那里有八百多家商铺……油价还特别便宜……'我手里的小册子上是这么写的。我想住在这样的城市！在那儿挣钱，比好起动机打着的发动机还快。唉！埃德蒙顿，我的梦想之城！我这就来找你！！！唯一让我发愁的是，谁也说不准这城到底在哪儿，哪条路能通到那儿。我找了这么久，都是白费力气。但愿在这个地区能打听到点有用的消息。"
 		isMainQuest="1">
 		<Map
 			name="r5m1" />
@@ -725,8 +725,8 @@
 
 	<QuestInfo
 		questName="r5m2_DestroyKrot_Quest"
-		briefDiz="Stir up a wasps' nest."
-		fullDiz="One-eyed asked to free her from bandits. I cann't offend by refusal old friend."
+		briefDiz="捅一捅马蜂窝。"
+		fullDiz="One-eyed托我帮她除掉土匪。老朋友开口，我总不好回绝。"
 		isMainQuest="1">
 		<Map
 			name="r5m1"
@@ -739,7 +739,7 @@
 
 	<QuestInfo
 		questName="r5m2_FHDeleteSled_Quest"
-		briefDiz="Cover tracks."
+		briefDiz="抹掉痕迹。"
 		isMainQuest="1">
 		<Map
 			name="r5m1"
@@ -752,7 +752,7 @@
 
 	<QuestInfo
 		questName="r5m2_FHMoveMapTwo_Quest"
-		briefDiz="Start searchings in outlands."
+		briefDiz="在城外展开搜寻。"
 		isMainQuest="1">
 		<Map
 			name="r5m1"
@@ -764,7 +764,7 @@
 
 	<QuestInfo
 		questName="r5m2_FHTalkWithAnticwar_Quest"
-		briefDiz="Talk to Ragman."
+		briefDiz="去找Ragman谈谈。"
 		isMainQuest="1">
 		<Map
 			name="r5m1"
@@ -777,7 +777,7 @@
 
 	<QuestInfo
 		questName="r5m2_FHTalkWithCitizens_Quest"
-		briefDiz="Find out situation in local bar."
+		briefDiz="到当地酒吧摸摸情况。"
 		isMainQuest="1">
 		<Map
 			name="r5m1" />
@@ -789,8 +789,8 @@
 
 	<QuestInfo
 		questName="r5m2_FindHollywood_Quest"
-		briefDiz="Find the place where ancient volumes were stolen from."
-		fullDiz="These films contain exceptionally interesting information. It needs to find out where they were stolen from because some others may have left there."
+		briefDiz="查清古老胶卷失窃的来路。"
+		fullDiz="这些胶卷里的内容相当有意思。得查清它们是从哪儿偷来的，说不定那儿还剩下一些。"
 		isMainQuest="1">
 		<Map
 			name="r5m1" />
@@ -801,8 +801,8 @@
 
 	<QuestInfo
 		questName="r5m2_FindKlad"
-		briefDiz="Explore pointed territory."
-		fullDiz="I don't believe that here there is nothing to be sold with profit."
+		briefDiz="探查指定区域。"
+		fullDiz="我不信这儿就没有能赚一票的东西。"
 		isMainQuest="0">
 		<Map
 			name="r5m2"
@@ -811,8 +811,8 @@
 
 	<QuestInfo
 		questName="r5m2_GetAllMovies_Quest"
-		briefDiz="Take volumes."
-		fullDiz="One-eyed won't give at any price what belongs to her. I will have to use force."
+		briefDiz="夺回胶卷。"
+		fullDiz="One-eyed出什么价都不肯交出她的东西。看来只能动手硬抢。"
 		isMainQuest="1">
 		<Map
 			name="r5m1"
@@ -825,7 +825,7 @@
 
 	<QuestInfo
 		questName="r5m2_KIOKillKrotBand_Quest"
-		briefDiz="Get rid of bandits and betrayers."
+		briefDiz="铲除土匪和叛徒。"
 		isMainQuest="1">
 		<Map
 			name="r5m1"
@@ -838,7 +838,7 @@
 
 	<QuestInfo
 		questName="r5m2_KIOMoveWithCaravan_Quest"
-		briefDiz="Inspect outskirts together with patrol."
+		briefDiz="跟巡逻队一起巡查城郊。"
 		isMainQuest="1">
 		<Map
 			name="r5m1"
@@ -851,8 +851,8 @@
 
 	<QuestInfo
 		questName="r5m2_KillBantits"
-		briefDiz="Kill twin."
-		fullDiz="One twin is kind, the other is evil. But who is who?... I don't care. One more case one more reward."
+		briefDiz="干掉双胞胎。"
+		fullDiz="双胞胎里一个善一个恶。可哪个是哪个来着？……管他呢。多一桩活儿，多一笔赏金。"
 		isMainQuest="0">
 		<Map
 			name="r5m2"
@@ -861,8 +861,8 @@
 
 	<QuestInfo
 		questName="r5m2_KillBoss1_Quest"
-		briefDiz="Win mechanical robot."
-		fullDiz="I have to do my best to get rid of this metal stuff."
+		briefDiz="战胜机械机器人。"
+		fullDiz="我得拼尽全力，才能收拾掉这坨铁疙瘩。"
 		isMainQuest="1">
 		<Map
 			name="r5m2"
@@ -871,8 +871,8 @@
 
 	<QuestInfo
 		questName="r5m2_KillRobotsAtMayak_Quest"
-		briefDiz="Get rid of these robots."
-		fullDiz="Where do these robots come from? So evil-minded? They have to change the program."
+		briefDiz="消灭这些机器人。"
+		fullDiz="这些机器人是打哪儿冒出来的？这么穷凶极恶？得给他们改改程序了。"
 		isMainQuest="1">
 		<Map
 			name="r5m2"
@@ -881,8 +881,8 @@
 
 	<QuestInfo
 		questName="r5m2_KillRobotsWithDot_Quest"
-		briefDiz="Counter the robots attack on city."
-		fullDiz="There are too many robots. Pillbox is equipped with more powerful weapons than my vehicle. I'll try to repulse an attack from there."
+		briefDiz="挡住机器人对城市的进攻。"
+		fullDiz="机器人太多了。碉堡里装的火力比我的车猛，我就从那儿顶着打吧。"
 		isMainQuest="1">
 		<Map
 			name="r5m2"
@@ -891,8 +891,8 @@
 
 	<QuestInfo
 		questName="r5m2_KillUncle"
-		briefDiz="Punish uncle."
-		fullDiz="I'm paid for settling family relations."
+		briefDiz="惩办叔叔。"
+		fullDiz="有人出钱请我调解家庭纠纷。"
 		isMainQuest="0">
 		<Map
 			name="r5m2" />
@@ -900,7 +900,7 @@
 
 	<QuestInfo
 		questName="r5m2_KillUncle_Defenders"
-		briefDiz="Get rid of uncle guards."
+		briefDiz="除掉叔叔的护卫。"
 		isMainQuest="0">
 		<Map
 			name="r5m2"
@@ -909,7 +909,7 @@
 
 	<QuestInfo
 		questName="r5m2_KillUncle_Main"
-		briefDiz="Kill uncle."
+		briefDiz="干掉叔叔。"
 		isMainQuest="0">
 		<Map
 			name="r5m2"
@@ -918,8 +918,8 @@
 
 	<QuestInfo
 		questName="r5m2_KillWantedBandit_Quest"
-		briefDiz="Teach stranger a lesson."
-		fullDiz="It seems that this man is a local bandit. I have some experience to cope with such men."
+		briefDiz="教训教训那个外乡人。"
+		fullDiz="看样子这家伙就是本地那个土匪。这种人我见得多了，有办法对付。"
 		isMainQuest="1">
 		<Map
 			name="r5m1"
@@ -932,8 +932,8 @@
 
 	<QuestInfo
 		questName="r5m2_KrotInOneeye_Quest"
-		briefDiz="Uncover the betrayer."
-		fullDiz="There is a betrayer in One-eyed's gang. He makes clandestine dealings with local bandits and helps organize illegal machinations. I have to force him to make a mistake and draw the badger."
+		briefDiz="揪出内鬼。"
+		fullDiz="One-eyed帮里出了内鬼。他跟本地土匪暗通款曲，还帮着张罗各种非法勾当。我得逼他露出马脚，引蛇出洞。"
 		isMainQuest="1">
 		<Map
 			name="r5m1" />
@@ -944,8 +944,8 @@
 
 	<QuestInfo
 		questName="r5m2_MoveFirstToVillage"
-		briefDiz="Arrive first to Mexico."
-		fullDiz="It is not just a race this is a contest that I must win."
+		briefDiz="第一个冲到墨西哥村。"
+		fullDiz="这不只是一场比赛，这是一场我必须赢下的较量。"
 		isMainQuest="0">
 		<Map
 			name="r5m2"
@@ -954,8 +954,8 @@
 
 	<QuestInfo
 		questName="r5m2_MoveToMayak_Quest"
-		briefDiz="Follow Wind."
-		fullDiz="Wind is an old traveller. He knows where to go. The main thing is to keep pace."
+		briefDiz="跟上Wind。"
+		fullDiz="Wind是位跑惯了江湖的老旅行家，他知道路该怎么走。关键是我得跟得上。"
 		isMainQuest="1">
 		<Map
 			name="r5m1"
@@ -968,8 +968,8 @@
 
 	<QuestInfo
 		questName="r5m2_MoveToOneEye_Quest"
-		briefDiz="Meet with local governor."
-		fullDiz="I have to talk to the ruler of local lands. Maybe she has what I'm looking for."
+		briefDiz="去见当地总督。"
+		fullDiz="我得去见见这片土地的统治者。也许我要找的东西就在她手里。"
 		isMainQuest="1">
 		<Map
 			name="r5m1"
@@ -982,8 +982,8 @@
 
 	<QuestInfo
 		questName="r5m2_MoveToOneeyeCaravans_Quest"
-		briefDiz="Catch up One-eyed's caravan."
-		fullDiz="One-eyed's caravan can not go too faraway. I could catch up them if I hurry up."
+		briefDiz="追上One-eyed的车队。"
+		fullDiz="One-eyed的车队走不了太远。加把劲的话，我能追上他们。"
 		isMainQuest="1">
 		<Map
 			name="r5m1"
@@ -996,8 +996,8 @@
 
 	<QuestInfo
 		questName="r5m2_ReturnToOneeyeAfterM_Quest"
-		briefDiz="Help One-eyed."
-		fullDiz="One-eyed needs me urgently. I have to return and the sooner the better."
+		briefDiz="支援One-eyed。"
+		fullDiz="One-eyed急着找我。我得赶紧回去，越快越好。"
 		isMainQuest="1">
 		<Map
 			name="r5m1"
@@ -1010,8 +1010,8 @@
 
 	<QuestInfo
 		questName="r5m2_StartMayak_Quest"
-		briefDiz="Turn on the lighthouse."
-		fullDiz="Lighthouse is found. One thing that has left is only to understand how to turn it on?"
+		briefDiz="点亮灯塔。"
+		fullDiz="灯塔找到了。剩下的唯一问题就是：这玩意儿到底怎么点亮？"
 		isMainQuest="1">
 		<Map
 			name="r5m1"
@@ -1024,8 +1024,8 @@
 
 	<QuestInfo
 		questName="r6m1_DiscoveryFactory_Quest"
-		briefDiz="Explore factory."
-		fullDiz="Now when the road to the factory is found I can explore everything here."
+		briefDiz="探查工厂。"
+		fullDiz="通向工厂的路已经找到，现在可以把这里好好摸个遍了。"
 		isMainQuest="1">
 		<Map
 			name="r5m1"
@@ -1042,8 +1042,8 @@
 
 	<QuestInfo
 		questName="r6m1_EscapeFromStones_Quest"
-		briefDiz="Pull through fallen stones."
-		fullDiz="These cobblestones can turn out to be more dangerous than howitzer. Bend the throttle with all your might!"
+		briefDiz="冲过落石区。"
+		fullDiz="这些乱石滚下来，怕是比榴弹炮还要命。把油门踩到底，冲过去！"
 		isMainQuest="1">
 		<Map
 			name="r6m1"
@@ -1052,7 +1052,7 @@
 
 	<QuestInfo
 		questName="r6m1_FFUseBomb_Quest"
-		briefDiz="Overcome the wall."
+		briefDiz="炸开高墙。"
 		isMainQuest="1">
 		<Map
 			name="r5m1"
@@ -1069,7 +1069,7 @@
 
 	<QuestInfo
 		questName="r6m1_FFUseJump_Quest"
-		briefDiz="Find the way get to factory."
+		briefDiz="找到进工厂的路。"
 		isMainQuest="1">
 		<Map
 			name="r5m1"
@@ -1086,7 +1086,7 @@
 
 	<QuestInfo
 		questName="r6m1_FSPFindShaht_Quest"
-		briefDiz="Get to mines."
+		briefDiz="赶往矿井。"
 		isMainQuest="1">
 		<Map
 			name="r5m1"
@@ -1103,7 +1103,7 @@
 
 	<QuestInfo
 		questName="r6m1_FSPKillRobots_Quest"
-		briefDiz="Eliminate invaders robots."
+		briefDiz="歼灭入侵机器人。"
 		isMainQuest="1">
 		<Map
 			name="r6m1"
@@ -1112,8 +1112,8 @@
 
 	<QuestInfo
 		questName="r6m1_FindABombInJungle_Quest"
-		briefDiz="Find nuclear-weapons storage."
-		fullDiz="Finally road to Canada was opened for me. But the robots will run upon our heels if we don't stop them. So I have to help Sam to find the weapon of Ancient otherwise these damned metal sruff destroy Edmonton before I can find it."
+		briefDiz="找到核武库。"
+		fullDiz="通往加拿大的路总算向我敞开了。可要是不把机器人挡住，它们会一路追着我们跑。所以我得帮Sam找到远古武器，否则等我找到埃德蒙顿，这帮该死的铁疙瘩早把它拆成零件了。"
 		isMainQuest="1">
 		<Map
 			name="r5m1"
@@ -1129,8 +1129,8 @@
 
 	<QuestInfo
 		questName="r6m1_FindBadSam_Quest"
-		briefDiz="Catch up Sam."
-		fullDiz="Sam has deceived me but I won't leave it this way. Not a single meanness should go unpunished."
+		briefDiz="追上Sam。"
+		fullDiz="Sam骗了我，但这事儿不能就这么算了。坑我的人，一个都别想白坑。"
 		isMainQuest="1">
 		<Map
 			name="r5m2"
@@ -1147,8 +1147,8 @@
 
 	<QuestInfo
 		questName="r6m1_FindFactory_Quest"
-		briefDiz="Explore territory and find factory."
-		fullDiz="When I destroy factory I will liquidate all robots in Canada."
+		briefDiz="探查区域，找到工厂。"
+		fullDiz="只要端掉这座工厂，加拿大境内的机器人就算除干净了。"
 		isMainQuest="1">
 		<Map
 			name="r5m1" />
@@ -1162,8 +1162,8 @@
 
 	<QuestInfo
 		questName="r6m1_FindLOST_Quest"
-		briefDiz="Find flying vehicle."
-		fullDiz="Coward cattle on flying vehicle try to kill me because I can't fire at him from the ground. But nothing serious sooner or later his machine must land and that time I will kill him."
+		briefDiz="找到那辆飞行器。"
+		fullDiz="那货躲在飞行器里想弄死我，就因为我在地面上打不着他。不过没什么大不了的——他的铁鸟迟早得落地，到时候我就送他上路。"
 		isMainQuest="1">
 		<Map
 			name="r5m1"
@@ -1180,8 +1180,8 @@
 
 	<QuestInfo
 		questName="r6m1_FindShahtPeoples_Quest"
-		briefDiz="Talk to mine workers."
-		fullDiz="Strange people inhabit these strange lands."
+		briefDiz="去跟矿工聊聊。"
+		fullDiz="这地方古怪，住的人也古怪。"
 		isMainQuest="1">
 		<Map
 			name="r5m1" />
@@ -1195,7 +1195,7 @@
 
 	<QuestInfo
 		questName="r6m1_HSBuyParts_Quest"
-		briefDiz="Purchase spares for aircraft."
+		briefDiz="买下飞行器零件。"
 		isMainQuest="1">
 		<Map
 			name="r6m1"
@@ -1208,7 +1208,7 @@
 
 	<QuestInfo
 		questName="r6m1_HSFindParts_Quest"
-		briefDiz="Take spares for aircraft."
+		briefDiz="去取飞行器零件。"
 		isMainQuest="1">
 		<Map
 			name="r6m1"
@@ -1221,7 +1221,7 @@
 
 	<QuestInfo
 		questName="r6m1_HSReturn_Quest"
-		briefDiz="Return and repair ferry."
+		briefDiz="回去修渡船。"
 		isMainQuest="1">
 		<Map
 			name="r6m1"
@@ -1234,8 +1234,8 @@
 
 	<QuestInfo
 		questName="r6m1_HelpShip_Quest"
-		briefDiz="Repair ferry."
-		fullDiz="Now ferry is the only way to cross the river and catch up Sam."
+		briefDiz="修好渡船。"
+		fullDiz="如今这艘渡船是我过河去追Sam的唯一指望。"
 		isMainQuest="1">
 		<Map
 			name="r6m1" />
@@ -1246,8 +1246,8 @@
 
 	<QuestInfo
 		questName="r6m1_KillBoss2_Quest"
-		briefDiz="Kill Mechanic monster."
-		fullDiz="I am in luck with these monsters. It is a pity I can't take trophies I even can't take jackets from them."
+		briefDiz="干掉机械怪物。"
+		fullDiz="我这阵子专跟这些怪物打交道。可惜连件战利品都剥不下来，连他们身上那几件褂子都拿不走。"
 		isMainQuest="1">
 		<Map
 			name="r6m1"
@@ -1256,8 +1256,8 @@
 
 	<QuestInfo
 		questName="r6m1_TalkWithWorestMen_Quest"
-		briefDiz="Call on nearest settlement."
-		fullDiz="Absolutely strange place. It needs to capture prisoner for interrogation or to talk to locals."
+		briefDiz="去最近的聚落走一趟。"
+		fullDiz="这地方透着股邪门。要么抓个舌头回来审问，要么就得跟当地人搭话。"
 		isMainQuest="1">
 		<Map
 			name="r5m1"
@@ -1274,8 +1274,8 @@
 
 	<QuestInfo
 		questName="r6m1_opt_FindKids"
-		briefDiz="Puzzle out situation with lost child."
-		fullDiz="Find in the country witnesss who know something about lost child."
+		briefDiz="弄清走失孩子的事。"
+		fullDiz="在乡间找找知情人，看谁知道走失孩子的下落。"
 		isMainQuest="0">
 		<Map
 			name="r6m1"
@@ -1284,8 +1284,8 @@
 
 	<QuestInfo
 		questName="r6m1_opt_HelpAvtostopshik"
-		briefDiz="Give traveller a lift to city."
-		fullDiz="Give traveller a ride to Otno. Not the most hard mission but it's more cheerful during the travell."
+		briefDiz="捎旅行者一程进城。"
+		fullDiz="捎那位旅行者去奥特诺。算不上什么难事，路上有个人做伴也热闹些。"
 		isMainQuest="0">
 		<Map
 			name="r6m1"
@@ -1294,8 +1294,8 @@
 
 	<QuestInfo
 		questName="r6m1_opt_HelpOldCar"
-		briefDiz="Get parts."
-		fullDiz="Bring spares for broken vehicle"
+		briefDiz="搞到零件。"
+		fullDiz="给抛锚的车送零配件去。"
 		isMainQuest="0">
 		<Map
 			name="r6m1" />
@@ -1303,8 +1303,8 @@
 
 	<QuestInfo
 		questName="r6m1_opt_Signs"
-		briefDiz="There are strange signs at the fields."
-		fullDiz="People say that it is a wonderful event. It's worth seeing to tell about it in the bar with girls."
+		briefDiz="田里出现了奇怪的符号。"
+		fullDiz="人们都说是奇观。值得亲眼看一看，回头好在酒吧里讲给姑娘们听。"
 		isMainQuest="0">
 		<Map
 			name="r6m1" />
@@ -1312,7 +1312,7 @@
 
 	<QuestInfo
 		questName="r6m1_opt_SignsDoklad"
-		briefDiz="Tell about it in town."
+		briefDiz="回城给大家讲讲这件事。"
 		isMainQuest="0">
 		<Map
 			name="r6m1"
@@ -1321,7 +1321,7 @@
 
 	<QuestInfo
 		questName="r6m1_opt_SignsSee"
-		briefDiz="Inspect field."
+		briefDiz="查看麦田。"
 		isMainQuest="0">
 		<Map
 			name="r6m1"
@@ -1330,8 +1330,8 @@
 
 	<QuestInfo
 		questName="r6m1_opt_StartRace"
-		briefDiz="Outstart rival."
-		fullDiz="I cannot allow this teddy boy outrides me on the road."
+		briefDiz="起跑压过对手。"
+		fullDiz="岂能让这种小白脸在马路上抢到我前头去。"
 		isMainQuest="0">
 		<Map
 			name="r6m1"
@@ -1340,8 +1340,8 @@
 
 	<QuestInfo
 		questName="r6m2_AferaOfHero_Quest"
-		briefDiz="Cheat the security system."
-		fullDiz="It turns out that it's not enough to have figure of robot it also needs to imitate his behavior otherwise the security system of Base will destroy me."
+		briefDiz="骗过安保系统。"
+		fullDiz="看来光有机器人的壳子还不够，还得学它的做派，否则基地的安保系统会把我轰成渣。"
 		isMainQuest="1">
 		<Map
 			name="r6m2"
@@ -1350,8 +1350,8 @@
 
 	<QuestInfo
 		questName="r6m2_ContinueFindRobotsBase_Quest"
-		briefDiz="Continue to search for robots source."
-		fullDiz="Factory wasn't the major source of monsters and its destruction helped us a little. The number of robots will become smaller but they won't entirely disappear. We need search the center."
+		briefDiz="继续追查机器人的源头。"
+		fullDiz="那座工厂并不是怪物们的真正源头，炸了它也只是聊胜于无。机器人的数量会减少，但绝不会绝根。得找到它们的老巢。"
 		isMainQuest="1">
 		<Map
 			name="r6m1"
@@ -1363,8 +1363,8 @@
 
 	<QuestInfo
 		questName="r6m2_DestroyRobotsBase_Quest"
-		briefDiz="Deenergized the Base."
-		fullDiz="I will have only one attempt to destroy the Base. If I want to reach the goal I have to find Generator which powers the Base and blow it up."
+		briefDiz="给基地断电。"
+		fullDiz="摧毁基地的机会只有一次。要成功，就必须找到给基地供电的发电机，然后把它炸上天。"
 		isMainQuest="1">
 		<Map
 			name="r6m2"
@@ -1373,8 +1373,8 @@
 
 	<QuestInfo
 		questName="r6m2_Gonka1"
-		briefDiz="Outrun rival."
-		fullDiz="I always come to the finish line first, simply my rival doesn't know about it. I will demonstrate it."
+		briefDiz="甩掉对手。"
+		fullDiz="过终点线，我从来都是第一个——只不过对手还不知道罢了。我会证明给他看。"
 		isMainQuest="0">
 		<Map
 			name="r6m2"
@@ -1383,7 +1383,7 @@
 
 	<QuestInfo
 		questName="r6m2_HTMKillRobots_Quest"
-		briefDiz="Rescue stranger from robots."
+		briefDiz="把外乡人从机器人手里救出来。"
 		isMainQuest="1">
 		<Map
 			name="r6m1"
@@ -1396,7 +1396,7 @@
 
 	<QuestInfo
 		questName="r6m2_HTMMoveToHouseMechanick_Quest"
-		briefDiz="Go with Mechanic to his home."
+		briefDiz="送Mechanic回家。"
 		isMainQuest="1">
 		<Map
 			name="r6m1"
@@ -1409,8 +1409,8 @@
 
 	<QuestInfo
 		questName="r6m2_HelpToMechanick_Quest"
-		briefDiz="Help stranger."
-		fullDiz="I don't know what is more high-toned to help stranger in deep water or to annihilate another group of robots? I will do both."
+		briefDiz="帮助外乡人。"
+		fullDiz="说不准哪种更高尚：是搭救落难的外乡人，还是再歼灭一窝机器人？我全都要。"
 		isMainQuest="1">
 		<Map
 			name="r6m1" />
@@ -1421,8 +1421,8 @@
 
 	<QuestInfo
 		questName="r6m2_HelpVoditel"
-		briefDiz="Help in trouble."
-		fullDiz="I have found an excellent spares buyer. It seems that this luckless man is planing to put them all together and create a new vehicle instead of the crashed one. It's good for me - he will need a lot of spares."
+		briefDiz="救人于难。"
+		fullDiz="我找到了个买零配件的大主顾。看样子这倒霉蛋打算把零件攒到一块儿，拼辆新车来替代撞烂的那辆。这对我是好事——他的零件需求量大着呢。"
 		isMainQuest="0">
 		<Map
 			name="r6m2"
@@ -1431,8 +1431,8 @@
 
 	<QuestInfo
 		questName="r6m2_KillBoss3_Quest"
-		briefDiz="Win the fight with Emissary."
-		fullDiz="Here is the flying machine which I have wished to destroy for so long. Now it's time to do it!"
+		briefDiz="战胜神谕使者。"
+		fullDiz="这就是那台我早就想干掉的飞行机器。是时候动手了！"
 		isMainQuest="1">
 		<Map
 			name="r6m2"
@@ -1441,7 +1441,7 @@
 
 	<QuestInfo
 		questName="r6m2_MRHPart1_Quest"
-		briefDiz="Get optical system cameras."
+		briefDiz="搞到光学系统摄像机。"
 		isMainQuest="1">
 		<Map
 			name="r6m1"
@@ -1454,7 +1454,7 @@
 
 	<QuestInfo
 		questName="r6m2_MRHPart2_Quest"
-		briefDiz="Get accumulator for robot."
+		briefDiz="搞到机器人蓄电池。"
 		isMainQuest="1">
 		<Map
 			name="r6m1"
@@ -1467,7 +1467,7 @@
 
 	<QuestInfo
 		questName="r6m2_MRHPart3_Quest"
-		briefDiz="Get flexible tubing for fluid system."
+		briefDiz="搞到液冷系统软管。"
 		isMainQuest="1">
 		<Map
 			name="r6m1"
@@ -1480,7 +1480,7 @@
 
 	<QuestInfo
 		questName="r6m2_MRHRetturnToMechanick_Quest"
-		briefDiz="Return parts to Mechanic."
+		briefDiz="把零件还给Mechanic。"
 		isMainQuest="1">
 		<Map
 			name="r6m2"
@@ -1489,8 +1489,8 @@
 
 	<QuestInfo
 		questName="r6m2_MakeRoboHuman_Quest"
-		briefDiz="Repair robot."
-		fullDiz="Mechanic has a super plan how to destroy the Base of robots. He offers to find a way into their base camouflaging as one of them. The only thing is to get into working conditions the nonworking monster which he has."
+		briefDiz="修好机器人。"
+		fullDiz="Mechanic有个端掉机器人基地的妙计：伪装成它们的一员混进基地去。唯一的问题是，得先把他手里那台趴窝的怪物修到能转的程度。"
 		isMainQuest="1">
 		<Map
 			name="r6m1" />
@@ -1501,8 +1501,8 @@
 
 	<QuestInfo
 		questName="r6m2_MoveFromRobotBase_Quest"
-		briefDiz="Run away from the Base at full speed."
-		fullDiz="Generator is destroyed. All robots liquidated. It's time go away from here."
+		briefDiz="全速撤出基地。"
+		fullDiz="发电机炸了。机器人清完了。该撤离这地方了。"
 		isMainQuest="1">
 		<Map
 			name="r6m2"
@@ -1511,8 +1511,8 @@
 
 	<QuestInfo
 		questName="r6m2_SearchRobotsBase_Quest"
-		briefDiz="Find a way into Base of robots."
-		fullDiz="Now (in robot appearance) I can enter the robots' Base."
+		briefDiz="找到进入机器人基地的路。"
+		fullDiz="现在（顶着机器人的外壳）我能进机器人基地了。"
 		isMainQuest="1">
 		<Map
 			name="r6m2"
@@ -1521,8 +1521,8 @@
 
 	<QuestInfo
 		questName="r6m2_WhereRobotGo"
-		briefDiz="Study habits."
-		fullDiz="You need to know all about the enemy. For example it will be useful to find out where this robot hurries?"
+		briefDiz="摸清习性。"
+		fullDiz="知己知彼，百战不殆。比方说，查查这机器人急匆匆地赶去哪儿，说不定能派上用场。"
 		isMainQuest="0">
 		<Map
 			name="r6m2" />
@@ -1530,7 +1530,7 @@
 
 	<QuestInfo
 		questName="r6m2_WhereRobotGo_DestroySvatilishe"
-		briefDiz="Destroy robots sanctuary."
+		briefDiz="捣毁机器人圣地。"
 		isMainQuest="0">
 		<Map
 			name="r6m2"
@@ -1539,7 +1539,7 @@
 
 	<QuestInfo
 		questName="r6m2_WhereRobotGo_Prosledit"
-		briefDiz="Follow the robot."
+		briefDiz="跟踪机器人。"
 		isMainQuest="0">
 		<Map
 			name="r6m2"

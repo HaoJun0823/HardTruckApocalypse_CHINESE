@@ -2,342 +2,342 @@
 <DialogsResource><!--Root-->
 	<Reply
 		name="Dynamic00"
-		text="I welcome you, Vagrant."
+		text="欢迎你，流浪者。"
 		role="NPC"
 		scriptResult="ConversationWnd:ShowDynamicQuestsMenu()"
 		nextReplies="EndDlg2 Dlg_pl_000020" />
 
 	<Reply
 		name="Dlg_pl_000020"
-		text="I apologize, it seems as if I was mistaken."
+		text="抱歉，看来是我认错人了。"
 		role="PLAYER"
 		scriptCondition="GetCurNpc():HasNotTakenDynamicQuests()"
 		scriptResult="ConversationWnd:EndConversation()" />
 
 	<Reply
 		name="Dynamic00_plYes0"
-		text="Yes."
+		text="好。"
 		role="PLAYER"
 		scriptResult="ConversationWnd:GetCurrentDynamicQuest():Take(); ConversationWnd:EndConversation()" />
 
 	<Reply
 		name="Dynamic00_plNo0"
-		text="No."
+		text="不了。"
 		role="PLAYER"
 		scriptResult="ConversationWnd:EndConversation()" />
 
 	<Reply
 		name="Dynamic00_Destroy00"
-		text="I'm looking for a job, maybe you will find something for me?"
+		text="我在找活儿干，你这儿有什么能给我的吗？"
 		role="PLAYER"
 		nextReplies="Dynamic00_Destroy00_npc0" />
 
 	<Reply
 		name="Dynamic00_DestroyTimelimited00"
-		text="I'm looking for a job but not for long."
+		text="我想找份活儿干，不过只干一小阵子。"
 		role="PLAYER"
 		nextReplies="Dynamic00_Destroy00_npc0" />
 
 	<Reply
 		name="Dynamic00_Destroy00_npc0"
-		text="In the neighborhood a recidivist thief lives. Reward for his hand is - %3d. Will you take this mission?"
+		text="附近住着一个惯偷。要他人头，赏金%3d。这活儿你接吗？"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 
 	<Reply
 		name="Dynamic00_Destroy01"
-		text="What is about the work?"
+		text="有什么活儿吗？"
 		role="PLAYER"
 		nextReplies="Dynamic00_Destroy01_npc0" />
 
 	<Reply
 		name="Dynamic00_DestroyTimelimited01"
-		text="What's about part time job here?"
+		text="这儿有零活儿可干吗？"
 		role="PLAYER"
 		nextReplies="Dynamic00_Destroy01_npc0" />
 
 	<Reply
 		name="Dynamic00_Destroy01_npc0"
-		text="Somebody burns out our seeds and poisons water well.The most probably it is enemy spy. Kill him and you will get %3d. Do you agree?"
+		text="有人烧了我们的种子，还往水井里下毒。十有八九是敌人的奸细。干掉他，%3d就归你。干不干？"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 
 	<Reply
 		name="Dynamic00_Destroy02"
-		text="Do you have a job for me?"
+		text="有活儿交给我吗？"
 		role="PLAYER"
 		nextReplies="Dynamic00_Destroy02_npc0" />
 
 	<Reply
 		name="Dynamic00_DestroyTimelimited02"
-		text="Do you have some mission for me?"
+		text="有任务交给我吗？"
 		role="PLAYER"
 		nextReplies="Dynamic00_Destroy02_npc0" />
 
 	<Reply
 		name="Dynamic00_Destroy02_npc0"
-		text="In the outskirts drives one madman, he sets ambushes and frightens villagers. He is not dangerous but people complain. Kill him and you will get %3d. Will you help us?"
+		text="城郊有个疯子到处乱窜，专设埋伏吓唬村民。他算不上什么狠角色，可老百姓怨声载道。干掉他，%3d就归你。愿意帮忙吗？"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 
 	<Reply
 		name="Dynamic00_Reach00"
-		text="I would like to know about the job."
+		text="我想打听打听有什么活儿。"
 		role="PLAYER"
 		nextReplies="Dynamic00_Reach00_npc0" />
 
 	<Reply
 		name="Dynamic00_ReachTimelimited00"
-		text="I would like to find easy work for good money."
+		text="我想找份钱多活儿轻的差事。"
 		role="PLAYER"
 		nextReplies="Dynamic00_Reach00_npc0" />
 
 	<Reply
 		name="Dynamic00_Reach00_npc0"
-		text="It is necessary to take some research data and pieces to settlement %2n. You will be paid at the place. %3d is not bad money for this mission. Will you deliver this cargo?"
+		text="需要把一批研究资料和零件送到%2n聚落。货到付款。这趟活儿给%3d，报酬不算少。这趟货你接吗？"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 
 	<Reply
 		name="Dynamic00_Reach01"
-		text="I was said to be able to get a job here?"
+		text="听说在这儿能找到活儿干？"
 		role="PLAYER"
 		nextReplies="Dynamic00_Reach01_npc0" />
 
 	<Reply
 		name="Dynamic00_ReachTimelimited01"
-		text="An acute and fast man is said to be able to find a job here."
+		text="听说手脚麻利的人在这儿能找到活儿干。"
 		role="PLAYER"
 		nextReplies="Dynamic00_Reach01_npc0" />
 
 	<Reply
 		name="Dynamic00_Reach01_npc0"
-		text="We have a package for the settlemen %2n. Deliver it when you will go by this settlement. It is not an urgent case. You will be paid %3d. Can I reckon on you?"
+		text="我们有个包裹要送到%2n聚落。你顺路的时候捎过去就行，不急着要。送到付你%3d。能指望你吗？"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 
 	<Reply
 		name="Dynamic00_ReachComplete00"
-		text="Is it you whom I have to deliver this package?"
+		text="这包裹就是该交给你的吧？"
 		role="PLAYER"
 		nextReplies="Dynamic00_ReachComplete00_npc0" />
 
 	<Reply
 		name="Dynamic00_ReachComplete00_npc0"
-		text="Yes, here. Is everything in its place?"
+		text="对，就是这个。东西都齐了？"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 
 	<Reply
 		name="Dynamic00_Convoy00"
-		text="Maybe I can find some work here?"
+		text="这儿能找点活儿干吗？"
 		role="PLAYER"
 		nextReplies="Dynamic00_Convoy00_npc0" />
 
 	<Reply
 		name="Dynamic00_ConvoyTimelimited00"
-		text="I need money, so I can take any mission you give me."
+		text="我缺钱，什么活儿都接。"
 		role="PLAYER"
 		nextReplies="Dynamic00_Convoy00_npc0" />
 
 	<Reply
 		name="Dynamic00_Convoy00_npc0"
-		text="Ok. It is very dangerous to drive alone but one of my friends need go to %2n. Escort him and you will be paid %3d at arrival. Will you go?"
+		text="好吧。一个人赶路太危险，正好我有个朋友要去%2n。护送他一程，到了地方付你%3d。去吗？"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 
 	<Reply
 		name="Dynamic00_Convoy01"
-		text="Can you tell me anything about a job?"
+		text="有什么活儿能给我介绍介绍吗？"
 		role="PLAYER"
 		nextReplies="Dynamic00_Convoy01_npc0" />
 
 	<Reply
 		name="Dynamic00_ConvoyTimelimited01"
-		text="Can you tell me anything about part time missions?"
+		text="有什么零活儿能给我介绍介绍吗？"
 		role="PLAYER"
 		nextReplies="Dynamic00_Convoy01_npc0" />
 
 	<Reply
 		name="Dynamic00_Convoy01_npc0"
-		text="Here one man trades with the neighboring city and carries there commodity samples. Escort him to %2n and trace for the tailers. Oh, yeah! The reward is %3d. Are you ready to escort him?"
+		text="这儿有位老兄跟邻城做买卖，常要送样品过去。护送他去%2n，顺便盯紧身后的尾巴。哦对了！报酬是%3d。准备护送了吗？"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 
 	<Reply
 		name="EndDlg1"
-		text="I need money. What is heard about the job in this city?"
+		text="我缺钱。这城里有什么活儿的门路吗？"
 		role="PLAYER"
 		scriptResult="ConversationWnd:EndConversation()"
 		nextReplies="Dlg_npc_000017" />
 
 	<Reply
 		name="EndDlg2"
-		text="What's the news?"
+		text="有什么新鲜事儿吗？"
 		role="PLAYER"
 		scriptCondition="not GetCurNpc():HasNotTakenDynamicQuests()"
 		nextReplies="Dlg_npc_000017" />
 
 	<Reply
 		name="Dlg_npc_000017"
-		text="In general there is nothing new. Everything is quiet for many days."
+		text="总体上没什么新鲜的。这些天一直风平浪静。"
 		role="NPC"
 		nextReplies="Dlg_pl_000018" />
 
 	<Reply
 		name="Dlg_pl_000018"
-		text="Ok, see you next time."
+		text="行，回见。"
 		role="PLAYER"
 		scriptResult="ConversationWnd:EndConversation()" />
 
 	<Reply
 		name="Dynamic00_Peace00"
-		text="I have a problem, I have differences with with group %2bNNN"
+		text="我遇到麻烦了，我跟%2bNNN起了过节"
 		role="PLAYER"
 		nextReplies="Dynamic00_Peace00_npc0" />
 
 	<Reply
 		name="Dynamic00_Peace00_npc0"
-		text="I think you have tried a lot that %2b declared you its enemyNNN I have some friends and for %3d percent of your money I can talk to people from the city council. Do you have money about you?"
+		text="我看你把%2b惹毛了才被他们当成敌人NNN我有几个熟人，只要你肯出身上财产的百分之%3d，我就能去跟市政会的人打声招呼。你带钱了吗？"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 
 	<Reply
 		name="Dynamic00_Peace01"
-		text="I need help. %2b and I can't reach an agreement on one question and nowNNN"
+		text="我需要帮忙。我和%2b有个问题始终谈不拢，眼下NNN"
 		role="PLAYER"
 		nextReplies="Dynamic00_Peace01_npc0" />
 
 	<Reply
 		name="Dynamic00_Peace01_npc0"
-		text="I know that %2b don't want to deal with you. For a modest reward %3d percent of your money I can help you to acquire authority among them. Have you prepared the money?"
+		text="我知道%2b不想跟你打交道。只需一点小小的辛苦费——你财产的百分之%3d——我就能帮你在他们中间把威信立起来。钱备好了吗？"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 
 	<Reply
 		name="Dynamic00_Hunt00"
-		text="I think that somebody has offered a job here."
+		text="我看这儿该有活儿干。"
 		role="PLAYER"
 		nextReplies="Dynamic00_Hunt00_npc0" />
 
 	<Reply
 		name="Dynamic00_HuntTimelimited00"
-		text="I think, somebody has offered a soft job here?"
+		text="我看这儿有轻松的活儿干吧？"
 		role="PLAYER"
 		nextReplies="Dynamic00_Hunt00_npc0" />
 
 	<Reply
 		name="Dynamic00_Hunt00_npc0"
-		text="Hunting season for bandits is declared. Every destroyed vehicle will bring you %3d. All money will be given to you after the end of the season. Should I register you?"
+		text="土匪狩猎季开张了。每干掉一辆车奖励%3d。赏金等赛季结束一并结清。要给你登记吗？"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 
 	<Reply
 		name="Dynamic00_Hunt01"
-		text="I think in this big city there is some job for me?"
+		text="我看这么大的城，总该有我的活儿吧？"
 		role="PLAYER"
 		nextReplies="Dynamic00_Hunt01_npc0" />
 
 	<Reply
 		name="Dynamic00_HuntTimelimited01"
-		text="I think in this big city there is some profitable job for me?"
+		text="我看这么大的城，总该有赚头不错的活儿吧？"
 		role="PLAYER"
 		nextReplies="Dynamic00_Hunt01_npc0" />
 
 	<Reply
 		name="Dynamic00_Hunt01_npc0"
-		text="Bandits have lost all the shame! They invade our territory and come into our stocks. It need teach them a good lesson. Kill a couple of them to terrify them. Keep the time and you will get %3d for every one of them. Will you take risks?"
+		text="土匪简直无法无天了！他们闯进我们的地盘，还把手伸进我们的仓库。得好好教训他们一顿。杀几个立立威，杀鸡儆猴。注意抓紧时间，每干掉一个得%3d。敢接吗？"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 
 	<Reply
 		name="Dynamic00_Drugs00"
-		text="Maybe you have something... Do you understand what I mean?!"
+		text="你这儿是不是有点那个……你懂我什么意思吧？！"
 		role="PLAYER"
 		nextReplies="Dynamic00_Drugs00_npc0" />
 
 	<Reply
 		name="Dynamic00_Drugs00_npc0"
-		text="Ok, quiet. Here is a package. I think you have realized that they are smuggled goods of premium quality. It costs %3d, but you can sell it far more expensive... if you stay alive. Will you buy it?"
+		text="行，小点声。这有个包裹。我想你看得出来，这是上等货色的走私品。卖你%3d，不过你能转手卖出高得多的价……前提是你能活着。买吗？"
 		role="NPC"
 		nextReplies="Dynamic00_DrugsTake Dynamic00_DrugsNoMoney Dynamic00_plNo0" />
 
 	<Reply
 		name="Dynamic00_DrugsNoMoney"
-		text="Eh... Keep it for me I will return with the money."
+		text="呃……给我留着，我这就回去取钱。"
 		role="PLAYER"
 		scriptCondition="GetPlayerMoney() < ConversationWnd:GetCurrentDynamicQuest():GetReward()"
 		scriptResult="ConversationWnd:EndConversation()" />
 
 	<Reply
 		name="Dynamic00_DrugsTake"
-		text="Give it to me I'll find where to sell it."
+		text="给我吧，我知道上哪儿出手。"
 		role="PLAYER"
 		scriptCondition="GetPlayerMoney() >= ConversationWnd:GetCurrentDynamicQuest():GetReward()"
 		scriptResult="ConversationWnd:GetCurrentDynamicQuest():Take(); ConversationWnd:EndConversation()" />
 
 	<Reply
 		name="Dynamic00_SellDrugs00"
-		text="I would like to sell to some serious people one package."
+		text="我想把一个包裹卖给识货的人。"
 		role="PLAYER"
 		nextReplies="Dynamic00_SellDrugs00_npc0" />
 
 	<Reply
 		name="Dynamic00_SellDrugs00_npc0"
-		text="Keep quiet, you will attract superfluous attention. How much do you want for it?"
+		text="小点声，别招来不必要的注意。你想卖多少？"
 		role="NPC"
 		nextReplies="Dynamic00_SellDrugs00_1x Dynamic00_SellDrugs00_1.5x Dynamic00_SellDrugs00_2x" />
 
 	<Reply
 		name="Dynamic00_SellDrugs00_1x"
-		text="I sell it with no benefit for myself."
+		text="我原价出，不赚你一分。"
 		role="PLAYER"
 		scriptResult="ConversationWnd:GetCurrentDynamicQuest():SetRewardCoeff(1.0); ConversationWnd:GetCurrentDynamicQuest():Take()"
 		nextReplies="Dynamic00_SellDrugs00_try_yes Dynamic00_SellDrugs00_try_no" />
 
 	<Reply
 		name="Dynamic00_SellDrugs00_1.5x"
-		text="Maybe I can somehow make money on this deal."
+		text="这单生意，多少得让我赚一点吧。"
 		role="PLAYER"
 		scriptResult="ConversationWnd:GetCurrentDynamicQuest():SetRewardCoeff(1.5); ConversationWnd:GetCurrentDynamicQuest():Take()"
 		nextReplies="Dynamic00_SellDrugs00_try_yes Dynamic00_SellDrugs00_try_no" />
 
 	<Reply
 		name="Dynamic00_SellDrugs00_2x"
-		text="I sell it for dual price."
+		text="我卖双倍价。"
 		role="PLAYER"
 		scriptResult="ConversationWnd:GetCurrentDynamicQuest():SetRewardCoeff(2.0); ConversationWnd:GetCurrentDynamicQuest():Take()"
 		nextReplies="Dynamic00_SellDrugs00_try_yes Dynamic00_SellDrugs00_try_no" />
 
 	<Reply
 		name="Dynamic00_SellDrugs00_try_yes"
-		text="Ok, I'll take it! Here is your well-deserved %3d!"
+		text="行，我收了！这是你应得的%3d！"
 		role="NPC"
 		scriptCondition="not ConversationWnd:GetCurrentDynamicQuest():IsStatusFailed()"
 		nextReplies="Dynamic00_SellDrugs00_ok" />
 
 	<Reply
 		name="Dynamic00_SellDrugs00_try_no"
-		text="What?! How much do you want?! Listen to me, I will take it for no money! Say a word and I will tell the guards what you sell here. Get away from here."
+		text="什么？！你还敢要价？！听着，这货我要白拿！再多说一句，我就告诉卫兵你在这儿卖的什么玩意儿。滚远点。"
 		role="NPC"
 		scriptCondition="ConversationWnd:GetCurrentDynamicQuest():IsStatusFailed()"
 		nextReplies="Dynamic00_SellDrugs00_ok" />
 
 	<Reply
 		name="Dynamic00_SellDrugs00_ok"
-		text="Goodbye."
+		text="回见。"
 		role="PLAYER"
 		scriptResult="ConversationWnd:EndConversation()" />
 
 	<Reply
 		name="Dynamic00_Treasure00"
-		text="I'm only interested in different ancient artifacts hidden in this region."
+		text="我只对埋在这个地区的各种古物感兴趣。"
 		role="PLAYER"
 		nextReplies="Dynamic00_Treasure00_npc0" />
 
 	<Reply
 		name="Dynamic00_Treasure00_npc0"
-		text="I have some information for you. I don't need troubles I have business in the city. I don't have treasure detector in my vehicle. I think you need explore one place here. I can mark it on the map, if you want, of course."
+		text="我这儿有条消息卖给你。我不想惹麻烦，城里还有买卖要做。我车上也没装寻宝探测器。依我看，这附近有个地方值得探一探。我可以帮你在地图上标出来——当然，前提是你想要。"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 </DialogsResource>

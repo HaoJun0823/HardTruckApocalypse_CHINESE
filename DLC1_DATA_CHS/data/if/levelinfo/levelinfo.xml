@@ -15,7 +15,7 @@
 	<LevelInfo
 		name="r5m1"
 		file="data\maps\r5m1.ssl"
-		fullName="Sam's lands"
+		fullName="Sam之地"
 		diz0=""
 		diz1=""
 		north="0 0 1"
@@ -28,7 +28,7 @@
 	<LevelInfo
 		name="r5m2"
 		file="data\maps\r5m2.ssl"
-		fullName="Oil forests"
+		fullName="石油森林"
 		diz0=""
 		diz1=""
 		north="0 0 1"
@@ -41,7 +41,7 @@
 	<LevelInfo
 		name="r6m1"
 		file="data\maps\r6m1.ssl"
-		fullName="Living jungle"
+		fullName="活体丛林"
 		diz0=""
 		diz1=""
 		north="0 0 1"
@@ -54,7 +54,7 @@
 	<LevelInfo
 		name="r6m2"
 		file="data\maps\r6m2.ssl"
-		fullName="Mechanic jungle"
+		fullName="机械丛林"
 		diz0=""
 		diz1=""
 		north="0 0 1"
@@ -67,7 +67,7 @@
 	<LevelInfo
 		name="sin"
 		file="data\maps\sin.ssl"
-		fullName="Free land"
+		fullName="自由之地"
 		diz0=""
 		diz1=""
 		north="0 0 1"

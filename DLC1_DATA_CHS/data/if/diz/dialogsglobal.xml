@@ -2,1116 +2,1116 @@
 <DialogsResource>
 	<Reply
 		name="r6m2_SearchRobot_1_N01"
-		text="I need your help, friend."
+		text="我需要你搭把手，朋友。"
 		role="NPC"
 		scriptCondition="QuestStatus('r6m2_WhereRobotGo')==Q_CANBEGIVEN"
 		nextReplies="Dlg_pl_000214" />
 
 	<Reply
 		name="Dlg_pl_000214"
-		text="Yes? And what am I to do? Who am I going to kill?"
+		text="哦？那要我干什么？这回要宰谁？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000215" />
 
 	<Reply
 		name="Dlg_npc_000215"
-		text="You don't need to kill anybody! Simply trace where these robots go."
+		text="这回不用宰人！只需盯住这些机器人，看它们往哪儿去。"
 		role="NPC"
 		nextReplies="Dlg_pl_000216 Dlg_pl_000426" />
 
 	<Reply
 		name="Dlg_pl_000426"
-		text="You need it, so  trace them youself."
+		text="你需要的话，自己跟去。"
 		role="PLAYER"
 		scriptResult=" EndConversation()" />
 
 	<Reply
 		name="Dlg_pl_000216"
-		text="What in particular?"
+		text="具体点，什么事？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000217" />
 
 	<Reply
 		name="Dlg_npc_000217"
-		text="Those ones!"
+		text="就那些！"
 		role="NPC"
 		nextReplies="Dlg_pl_000218" />
 
 	<Reply
 		name="Dlg_pl_000218"
-		text="Ok, I see. Yeah. The fat is in the fire."
+		text="行，明白了。嗯，这下有热闹瞧了。"
 		role="PLAYER"
 		scriptResult="TakeQuest('r6m2_WhereRobotGo'); EndConversation()" />
 
 	<Reply
 		name="r6m2_Gonka_1_N01"
-		text="We salute you, dear friend! Right now and right here! Super race! You have a unique chance to take part in it."
+		text="向你致敬，亲爱的朋友！就在此时此地！超级赛车比赛！你有个千载难逢的机会参赛！"
 		role="NPC"
 		scriptCondition="QuestStatus('r6m2_Gonka1')==Q_CANBEGIVEN"
 		nextReplies="Dlg_pl_000220" />
 
 	<Reply
 		name="Dlg_pl_000220"
-		text="What is the prize?"
+		text="奖品是什么？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000221" />
 
 	<Reply
 		name="Dlg_npc_000221"
-		text="Due for participation is only hundred, but winnings - 1,000. Come on!"
+		text="参赛费只要一百，赢了就拿一千。来吧！"
 		role="NPC"
 		nextReplies="Dlg_pl_000222 Dlg_pl_000225 Dlg_pl_000226" />
 
 	<Reply
 		name="Dlg_pl_000226"
-		text="Races are for idlers but I have a world of troubles."
+		text="赛车是闲人才玩的，我可有一堆麻烦事要忙。"
 		role="PLAYER"
 		scriptCondition="GetPlayerMoney()>1000"
 		scriptResult="EndConversation()" />
 
 	<Reply
 		name="Dlg_pl_000225"
-		text="I don't have so much money."
+		text="我可没这么多钱。"
 		role="PLAYER"
 		scriptCondition="1000>GetPlayerMoney() "
 		scriptResult="EndConversation()" />
 
 	<Reply
 		name="Dlg_pl_000222"
-		text="Let's go!"
+		text="比就比！"
 		role="PLAYER"
 		scriptCondition="GetPlayerMoney()>1000"
 		nextReplies="Dlg_npc_000223" />
 
 	<Reply
 		name="Dlg_npc_000223"
-		text="Ready. Steady. Go!"
+		text="预备——开始！"
 		role="NPC"
 		nextReplies="Dlg_pl_000224" />
 
 	<Reply
 		name="Dlg_pl_000224"
-		text="Let's go!!!"
+		text="冲啊！！！"
 		role="PLAYER"
 		scriptResult="AddPlayerMoney( -1000 );  TakeQuest('r6m2_Gonka1');  TActivate ('trCreateVehGonka');  EndConversation()" />
 
 	<Reply
 		name="r6m2_Gonka_2_N01"
-		text="Race is over. "
+		text="比赛结束了。"
 		role="NPC"
 		scriptCondition="QuestStatus('r6m2_Gonka1')==Q_TAKEN"
 		nextReplies="Dlg_pl_000228" />
 
 	<Reply
 		name="Dlg_pl_000228"
-		text="Good! Prize is mine, isn't it?"
+		text="好！奖金归我了，对吧？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000229 Dlg_npc_000231 Dlg_npc_000433" />
 
 	<Reply
 		name="Dlg_npc_000433"
-		text="Actually, if you read this text - means in game there was a mistake! You could win the program. Pleasant game!"
+		text="其实，你要是看到这段话——说明游戏出了岔子！你居然能赢过程序。祝你玩得愉快！"
 		role="NPC"
 		scriptCondition="GetVar('Gonka').AsInt==0"
 		nextReplies="Dlg_pl_000434" />
 
 	<Reply
 		name="Dlg_pl_000434"
-		text="I have won the program!"
+		text="我赢了程序！"
 		role="PLAYER"
 		scriptResult="FailQuest('r6m2_Gonka1'); EndConversation()" />
 
 	<Reply
 		name="Dlg_npc_000231"
-		text="Why do you think so? You have finished almost the last one!"
+		text="你凭什么这么说？你差点就垫底了！"
 		role="NPC"
 		scriptCondition="GetVar('Gonka').AsInt==2"
 		nextReplies="Dlg_pl_000232" />
 
 	<Reply
 		name="Dlg_pl_000232"
-		text="Shit!"
+		text="该死！"
 		role="PLAYER"
 		scriptResult="FailQuest('r6m2_Gonka1'); EndConversation()" />
 
 	<Reply
 		name="Dlg_npc_000229"
-		text="Yes you have won it!"
+		text="没错，你赢了！"
 		role="NPC"
 		scriptCondition="GetVar('Gonka').AsInt==1"
 		nextReplies="Dlg_pl_000230" />
 
 	<Reply
 		name="Dlg_pl_000230"
-		text="Of course!"
+		text="那是自然！"
 		role="PLAYER"
 		scriptResult="CompleteQuest('r6m2_Gonka1'); EndConversation()" />
 
 	<Reply
 		name="r6m2_BrokenCar_1_N01"
-		text="Help me, dear friend! "
+		text="帮帮我，亲爱的朋友！"
 		role="NPC"
 		scriptCondition="QuestStatus('r6m2_HelpVoditel')==Q_CANBEGIVEN"
 		nextReplies="Dlg_pl_000234" />
 
 	<Reply
 		name="Dlg_pl_000234"
-		text="Why do you think I'm going to?"
+		text="凭什么觉得我会帮你？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000235" />
 
 	<Reply
 		name="Dlg_npc_000235"
-		text="I feel it in my bones. My vehicle has broken. And I don't have spare parts to repair it."
+		text="我骨头缝里就有这直觉。我的车抛锚了，手头又没零配件修。"
 		role="NPC"
 		nextReplies="Dlg_pl_000236" />
 
 	<Reply
 		name="Dlg_pl_000236"
-		text="What thing has broken in particular? What spares do you need?"
+		text="具体是什么坏了？你要什么配件？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000237" />
 
 	<Reply
 		name="Dlg_npc_000237"
-		text="Ur, it's easier to say what hasn't broken. My steering wheel is all right. But everything other has broken. So I need all spares you can find. I will take everything you bring me."
+		text="唉，说哪个没坏还快些。方向盘倒是好的，其他全趴窝了。所以你能找到什么配件我都要，拉来多少我收多少。"
 		role="NPC"
 		nextReplies="Dlg_pl_000238 Dlg_pl_000239 Dlg_pl_000427" />
 
 	<Reply
 		name="Dlg_pl_000427"
-		text="Yeah, I'm not going to give up everything to search for your spares!"
+		text="想得美，我才不会扔下一切满世界给你找配件呢！"
 		role="PLAYER"
 		scriptResult=" EndConversation()" />
 
 	<Reply
 		name="Dlg_pl_000239"
-		text="I have some. Will you take them?"
+		text="我这儿正好有些。收吗？"
 		role="PLAYER"
 		scriptCondition="GetItemsAmount('machinery')>0 "
 		nextReplies="Dlg_npc_000240" />
 
 	<Reply
 		name="Dlg_npc_000240"
-		text="Of course, dear friend, I buy them! Here is your money."
+		text="当然收，亲爱的朋友，我全买！钱给你。"
 		role="NPC"
 		nextReplies="Dlg_pl_000241" />
 
 	<Reply
 		name="Dlg_pl_000241"
-		text="Excellent."
+		text="好极了。"
 		role="PLAYER"
 		scriptResult="RemovePlayerItem('machinery', GetItemsAmount('machinery')); CompleteQuest('r6m2_HelpVoditel'); EndConversation()" />
 
 	<Reply
 		name="Dlg_pl_000238"
-		text="Ok, stay here and don't go away. I will go to the village and return soon. Chop-chop."
+		text="行，你待这儿别乱跑。我这就进村去取，马上回来。麻利点儿的。"
 		role="PLAYER"
 		scriptResult="TakeQuest('r6m2_HelpVoditel'); EndConversation()" />
 
 	<Reply
 		name="r6m2_BrokenCar_2_N01"
-		text="Have you bring me the spares?"
+		text="配件给我带来了吗？"
 		role="NPC"
 		scriptCondition="QuestStatus('r6m2_HelpVoditel')==Q_TAKEN"
 		nextReplies="Dlg_pl_000243 Dlg_pl_000244" />
 
 	<Reply
 		name="Dlg_pl_000244"
-		text="Sorry, but I haven't brought you spares yet. I don't have time. But I will bring them, wait and everything will be ok."
+		text="抱歉，配件还没给你弄到。我实在腾不出工夫。不过你等着，货肯定给你送到。"
 		role="PLAYER"
 		scriptResult="EndConversation()" />
 
 	<Reply
 		name="Dlg_pl_000243"
-		text="Here it is, take it."
+		text="喏，接着。"
 		role="PLAYER"
 		scriptCondition="GetItemsAmount('machinery')>0"
 		nextReplies="Dlg_npc_000245" />
 
 	<Reply
 		name="Dlg_npc_000245"
-		text="Thank you, dear freind. Here is your money."
+		text="多谢了，亲爱的朋友。钱给你。"
 		role="NPC"
 		nextReplies="Dlg_pl_000246" />
 
 	<Reply
 		name="Dlg_pl_000246"
-		text="I'm at your disposal."
+		text="随时效劳。"
 		role="PLAYER"
 		scriptResult="RemovePlayerItem('machinery', GetItemsAmount('machinery')); CompleteQuest('r6m2_HelpVoditel'); EndConversation()" />
 
 	<Reply
 		name="r6m1_AvtostopMan_dialog1"
-		text="Will you give me a lift?"
+		text="能捎我一程吗？"
 		role="NPC"
 		scriptCondition="GetCurNpc():GetSpokenCount() == 0"
 		nextReplies="Dlg_pl_000139" />
 
 	<Reply
 		name="Dlg_pl_000139"
-		text="Where?"
+		text="去哪儿？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000140" />
 
 	<Reply
 		name="Dlg_npc_000140"
-		text="To Otno."
+		text="去奥特诺。"
 		role="NPC"
 		nextReplies="Dlg_pl_000141 Dlg_pl_000142" />
 
 	<Reply
 		name="Dlg_pl_000142"
-		text="No."
+		text="不了。"
 		role="PLAYER"
 		scriptResult="GetCurNpc():SetSpokenCount( 1 );  EndConversation()" />
 
 	<Reply
 		name="Dlg_pl_000141"
-		text="Ok, I agree."
+		text="行，我答应你。"
 		role="PLAYER"
 		scriptResult="GetCurNpc():SetSpokenCount( 1 );  TakeQuest('r6m1_opt_HelpAvtostopshik');  local r = GetEntityByName ('HumanAvtoSTOP');  if r then r:Remove() end;  EndConversation()" />
 
 	<Reply
 		name="r6m1_AvtostopMan_dialog2"
-		text="Nice ride."
+		text="一路顺风。"
 		role="NPC"
 		scriptCondition="IsQuestTaken('r6m1_opt_HelpAvtostopshik')  and  not(IsQuestComplete('r6m1_opt_HelpAvtostopshik'))"
 		nextReplies="Dlg_pl_000143" />
 
 	<Reply
 		name="Dlg_pl_000143"
-		text="Yes, not bad."
+		text="嗯，还算不赖。"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000144" />
 
 	<Reply
 		name="Dlg_npc_000144"
-		text="Here is money."
+		text="钱给你。"
 		role="NPC"
 		nextReplies="Dlg_pl_000145" />
 
 	<Reply
 		name="Dlg_pl_000145"
-		text="Excellent."
+		text="好极了。"
 		role="PLAYER"
 		scriptResult="CompleteQuest('r6m1_opt_HelpAvtostopshik');  EndConversation()" />
 
 	<Reply
 		name="r6m1_Onto_Signer_dialog1"
-		text="Something strange happened at the fields... We are afraid to go there, but in the city this situation has aroused public interest. Will you describe it for citizen?"
+		text="田里出了怪事……我们不敢去看，城里人却对这事儿特别来劲。你能替大伙儿去看看怎么回事吗？"
 		role="NPC"
 		scriptCondition="GetCurNpc():GetSpokenCount() == 0"
 		nextReplies="Dlg_pl_000147 Dlg_pl_000148" />
 
 	<Reply
 		name="Dlg_pl_000148"
-		text="No."
+		text="不了。"
 		role="PLAYER"
 		scriptResult="EndConversation()" />
 
 	<Reply
 		name="Dlg_pl_000147"
-		text="Yes."
+		text="好。"
 		role="PLAYER"
 		scriptResult="GetCurNpc():SetSpokenCount( 1 );  TakeQuest('r6m1_opt_Signs');  TActivate ('triggerSeeSigns');  EndConversation()" />
 
 	<Reply
 		name="r6m1_TownMapleSheet_WorestScientist_dialog1"
-		text="Have you found out anything?"
+		text="打听到什么了吗？"
 		role="NPC"
 		scriptCondition="IsQuestTaken('r6m1_opt_SignsDoklad')  and  not(IsQuestComplete('r6m1_opt_SignsDoklad'))"
 		nextReplies="Dlg_pl_000150" />
 
 	<Reply
 		name="Dlg_pl_000150"
-		text="I looked over your fields. Here you are, the notebook with full report, drawings and charts."
+		text="我把你家田地看了一遍。给——笔记本里是完整的报告，附图和图表都在。"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000151" />
 
 	<Reply
 		name="Dlg_npc_000151"
-		text="Thank you. Take your reward for the huge risk which you have run through."
+		text="多谢。这是你冒着天大风险应得的报酬。"
 		role="NPC"
 		nextReplies="Dlg_pl_000152" />
 
 	<Reply
 		name="Dlg_pl_000152"
-		text="Yes, it was a real danger and the money will compensate it."
+		text="是啊，真够悬的，这钱算对得起那份风险。"
 		role="PLAYER"
 		scriptResult="CompleteQuest('r6m1_opt_SignsDoklad');  EndConversation()" />
 
 	<Reply
 		name="r6m1_Real_Racer_dialog1"
-		text="Do you want to take part in races?"
+		text="想参加赛车吗？"
 		role="NPC"
 		scriptCondition="GetCurNpc():GetSpokenCount() == 0"
 		nextReplies="Dlg_pl_000154" />
 
 	<Reply
 		name="Dlg_pl_000154"
-		text="Race?!"
+		text="赛车？！"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000155" />
 
 	<Reply
 		name="Dlg_npc_000155"
-		text="Yeah, race. Who will be the first to reach the city. Participant due - 5,000. The winnings is three times bigger."
+		text="对，赛车。看谁第一个开到城里。报名费五千，奖金三倍。"
 		role="NPC"
 		nextReplies="Dlg_pl_000156 Dlg_pl_000157" />
 
 	<Reply
 		name="Dlg_pl_000157"
-		text="It is not interesting for me."
+		text="我不感兴趣。"
 		role="PLAYER"
 		scriptResult=" EndConversation()" />
 
 	<Reply
 		name="Dlg_pl_000156"
-		text="Ok, I will take part."
+		text="行，我参加。"
 		role="PLAYER"
 		scriptCondition="GetPlayerMoney() >= 1000"
 		scriptResult="AddPlayerMoney( -1000 );  GetCurNpc():SetSpokenCount( 1 );  TakeQuest('r6m1_opt_StartRace');  TActivate ('triggerBigRace');  EndConversation()" />
 
 	<Reply
 		name="r6m1_Lost_Keyt_dialog1"
-		text="Good man, help me. I've lost my child."
+		text="好心人，帮帮我吧。我的孩子丢了。"
 		role="NPC"
 		scriptCondition="GetCurNpc():GetSpokenCount() == 0"
 		nextReplies="Dlg_pl_000100" />
 
 	<Reply
 		name="Dlg_pl_000100"
-		text="It is not my business?"
+		text="这跟我有什么关系？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000109" />
 
 	<Reply
 		name="Dlg_npc_000109"
-		text="Everyone says so and nobody wants to help me, even my husband, Charles!"
+		text="人人都这么说，谁也不肯帮我——连我丈夫Charles都不肯！"
 		role="NPC"
 		nextReplies="Dlg_pl_000110 Dlg_pl_000111" />
 
 	<Reply
 		name="Dlg_pl_000111"
-		text="Well even if the husband rejected to help, so I don't need to poke my nose in it."
+		text="连丈夫都不肯帮忙，那我就更没必要瞎掺和了。"
 		role="PLAYER"
 		scriptResult=" EndConversation()" />
 
 	<Reply
 		name="Dlg_pl_000110"
-		text="Ok, I'll try to help."
+		text="行吧，我帮你试试。"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000135" />
 
 	<Reply
 		name="Dlg_npc_000135"
-		text="Thank you very much, good man!"
+		text="太感谢了，大好人！"
 		role="NPC"
 		nextReplies="Dlg_pl_000136" />
 
 	<Reply
 		name="Dlg_pl_000136"
-		text="Not at all. Let's see what I can do. At first I need to talk to your husband."
+		text="不客气。让我看看能做点什么。首先我得跟你丈夫谈谈。"
 		role="PLAYER"
 		scriptResult="GetCurNpc():SetSpokenCount( 1 );  TakeQuest('r6m1_opt_FindKids');  EndConversation()" />
 
 	<Reply
 		name="r6m1_Lost_Keyt_dialog2"
-		text="What has this unlucky fellow, Charles, told you?"
+		text="那个倒霉蛋Charles跟你说什么了？"
 		role="NPC"
 		scriptCondition="GetCurNpc():GetSpokenCount() == 2"
 		nextReplies="Dlg_pl_000107" />
 
 	<Reply
 		name="Dlg_pl_000107"
-		text="The behavior of your husband is rather strange. But he helped me understand one thing. How long ago did you see your child?"
+		text="你丈夫的举动相当古怪。不过他倒帮我弄明白了一件事。你最后一次见到孩子是什么时候？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000120" />
 
 	<Reply
 		name="Dlg_npc_000120"
-		text="I don't know. This is hard to measure. I remember one thing he was only several months old and I hold him in my hands. He was so small and cute..."
+		text="我不知道，这很难说清。我只记得他才几个月大，我把他抱在怀里。他那么小，那么惹人疼……"
 		role="NPC"
 		nextReplies="Dlg_pl_000125 Dlg_pl_000126" />
 
 	<Reply
 		name="Dlg_pl_000126"
-		text="Umph, are you sure that you had a child? May be there is no child at all?"
+		text="嗯……你确定你有过孩子？说不定压根儿就没有孩子？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000129" />
 
 	<Reply
 		name="Dlg_npc_000129"
-		text="What?!!! Are you going to tell me that I'm insane?!!! Go away!!!"
+		text="什么？！！！你是想说我疯了吗？！！！滚出去！！！"
 		role="NPC"
 		nextReplies="Dlg_pl_000130" />
 
 	<Reply
 		name="Dlg_pl_000130"
-		text="What about money?.."
+		text="那赏金呢？……"
 		role="PLAYER"
 		scriptResult="GetCurNpc():SetSpokenCount( 10 );  FailQuest('r6m1_opt_FindKids');  EndConversation()" />
 
 	<Reply
 		name="Dlg_pl_000125"
-		text="Your husband told me the same thing. This is rather strange."
+		text="你丈夫也是这么说的。这可真够怪的。"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000127" />
 
 	<Reply
 		name="Dlg_npc_000127"
-		text="Look, I didn't want to tell you but he addicted to some kind of stuff. You understand what I mean."
+		text="听着，我本不想说，可他迷上了某种'东西'。你明白我什么意思。"
 		role="NPC"
 		nextReplies="Dlg_pl_000128" />
 
 	<Reply
 		name="Dlg_pl_000128"
-		text="Ok. I go and talk to him once again."
+		text="行。我再去跟他谈一次。"
 		role="PLAYER"
 		scriptResult="GetCurNpc():SetSpokenCount( 3 );  EndConversation()" />
 
 	<Reply
 		name="r6m1_Lost_Keyt_dialog3"
-		text="Have you find out anything?"
+		text="有眉目了吗？"
 		role="NPC"
 		scriptCondition="GetCurNpc():GetSpokenCount() == 4"
 		nextReplies="Dlg_pl_000108" />
 
 	<Reply
 		name="Dlg_pl_000108"
-		text="Umph, it's hard to believe in, but listen to me. I'm just a vagrant and I have visited a lot of cities and villages. But I haven't seen children for the long time... I'm afraid that you will never find your child."
+		text="唉，这话不好听，但你听我说。我就是个流浪汉，走过的城镇村落没有一百也有八十。可我这么久以来就没见过一个孩子……恐怕你永远也找不到你的孩子了。"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000133" />
 
 	<Reply
 		name="Dlg_npc_000133"
-		text="O, poor me! Here is your money I don't need it now."
+		text="唉，我命好苦！钱拿去吧，我现在用不着了。"
 		role="NPC"
 		nextReplies="Dlg_pl_000134" />
 
 	<Reply
 		name="Dlg_pl_000134"
-		text="Thank you but I need it."
+		text="多谢，不过这钱我要。"
 		role="PLAYER"
 		scriptResult="CompleteQuest('r6m1_opt_FindKids');  GetCurNpc():SetSpokenCount( 10 );  EndConversation()" />
 
 	<Reply
 		name="r6m1_Lost_Charli_dialog1"
-		text="Talk fast that you want I'm busy. I listen to wonderful music."
+		text="有话快说，我忙着呢。我正听美妙的音乐呢。"
 		role="NPC"
 		scriptCondition="getObj('r6m1_Lost_Keyt'):GetSpokenCount() == 1"
 		nextReplies="Dlg_pl_000103" />
 
 	<Reply
 		name="Dlg_pl_000103"
-		text="Music?! I didn't near any music, moreover wonderful. I'd like to know about lost child, your wife worries about him. Where did he disappear?"
+		text="音乐？！我怎么没听见什么音乐，还美妙的呢。我想问问丢孩子的事，你老婆正为这事着急呢。孩子上哪儿去了？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000112" />
 
 	<Reply
 		name="Dlg_npc_000112"
-		text="The music is in my head and I can hear it. I'm listening to it. I don't know anything about the child. I remember one thing, he was only several months old and I hold him in my hands. He was so small and cute..."
+		text="音乐在我脑子里，我听得见。我一直在听。孩子的事我一概不知。我只记得他才几个月大，我把他抱在怀里。他那么小，那么惹人疼……"
 		role="NPC"
 		nextReplies="Dlg_pl_000113 Dlg_pl_000114" />
 
 	<Reply
 		name="Dlg_pl_000114"
-		text="You really need to go to see the doctor."
+		text="你真该去看看大夫了。"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000115" />
 
 	<Reply
 		name="Dlg_npc_000115"
-		text="I don't want to talk to you anymore."
+		text="我不想跟你说话了。"
 		role="NPC"
 		nextReplies="Dlg_pl_000116" />
 
 	<Reply
 		name="Dlg_pl_000116"
-		text="I can't tell that I have find out something useful."
+		text="我也说不上打听出了什么有用的。"
 		role="PLAYER"
 		scriptResult="getObj('r6m1_Lost_Keyt'):SetSpokenCount( 10 );  FailQuest('r6m1_opt_FindKids');  EndConversation()" />
 
 	<Reply
 		name="Dlg_pl_000113"
-		text="Is this your last memoirs about him? How long ago was it?"
+		text="这就是你对他最后的记忆了？那是多久前的事？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000117" />
 
 	<Reply
 		name="Dlg_npc_000117"
-		text="I don't know, I haven't feel time for a long time. Time... Time has stopped in the forests. On my personal watch now is February, 18 6:35 am."
+		text="不知道，我很久没感受过时间了。时间……时间在森林里停住了。我那块怀表现在还停在2月18日早上6点35分。"
 		role="NPC"
 		nextReplies="Dlg_pl_000118 Dlg_pl_000119" />
 
 	<Reply
 		name="Dlg_pl_000119"
-		text="My watch shows the same."
+		text="我的表也是这个时间。"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000123" />
 
 	<Reply
 		name="Dlg_npc_000123"
-		text="You lie, you don't have any watch. Go away. No, I better go."
+		text="你撒谎，你根本没表。走开。不，还是我自己走吧。"
 		role="NPC"
 		nextReplies="Dlg_pl_000124" />
 
 	<Reply
 		name="Dlg_pl_000124"
-		text="Yeah, tough luck, drill his carburetor."
+		text="唉，真晦气，让他化油器堵死去吧。"
 		role="PLAYER"
 		scriptResult="getObj('r6m1_Lost_Keyt'):SetSpokenCount( 10 );  FailQuest('r6m1_opt_FindKids');  EndConversation()" />
 
 	<Reply
 		name="Dlg_pl_000118"
-		text="Don't you think that your watch isn't working?"
+		text="你有没有想过，是你的表不走了？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000121" />
 
 	<Reply
 		name="Dlg_npc_000121"
-		text="Of course, it doesn't work, when did you see working watch for the last time? We are talking here and at the same time many hours or may be days have passed. Don't you think about it?"
+		text="它当然不走了——你上回见到还走字儿的表是什么时候的事？咱们在这儿聊着，外头说不定已经过了好几个钟头，甚至好几天。你就没琢磨过这事儿？"
 		role="NPC"
 		nextReplies="Dlg_pl_000122" />
 
 	<Reply
 		name="Dlg_pl_000122"
-		text="Stay here and don't go away, I'll discuss it with Kate and go back."
+		text="你待在这儿别走，我去跟Kate商量一下再回来。"
 		role="PLAYER"
 		scriptResult="getObj('r6m1_Lost_Keyt'):SetSpokenCount( 2 );  EndConversation()" />
 
 	<Reply
 		name="r6m1_Lost_Charli_dialog2"
-		text="Haven't we met anywhere before?"
+		text="咱们是不是在哪儿见过？"
 		role="NPC"
 		scriptCondition="getObj('r6m1_Lost_Keyt'):GetSpokenCount() == 3"
 		nextReplies="Dlg_pl_000104" />
 
 	<Reply
 		name="Dlg_pl_000104"
-		text="I talked to him 15 minutes ago. What about drug addiction?"
+		text="我十五分钟前刚跟他说过话。那个'瘾'是怎么回事？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000131" />
 
 	<Reply
 		name="Dlg_npc_000131"
-		text="Drugs? Pipe dream mushrooms are not drugs... Ok, you've caught me. I'll tell you everything but on condition that you won't tell anybody about my mania. People from community won't understand me. Listen the feeling of time is very strange. According to my feelings I saw the child long ago. May be even some decades ago. But my wife don't want to listen to it."
+		text="毒品？'迷梦菇'可不算毒品……好吧，被你逮着了。我全招——但有个条件：不许把我这毛病告诉任何人。镇上的人不会理解我的。听着，时间这东西的感觉特别古怪。照我自己的感觉，我见到那孩子是很久以前的事了。说不定都过去好几十年了。可我老婆不肯听这些。"
 		role="NPC"
 		nextReplies="Dlg_pl_000132" />
 
 	<Reply
 		name="Dlg_pl_000132"
-		text="Aha! That is the truth. It will be interesting to Kate to know it."
+		text="啊哈！这才是实话。Kate听了肯定感兴趣。"
 		role="PLAYER"
 		scriptResult="getObj('r6m1_Lost_Keyt'):SetSpokenCount( 4 );  EndConversation()" />
 
 	<Reply
 		name="r6m1_TownMapleSheet_WorestMan_dialog1"
-		text="Say..."
+		text="那个……"
 		role="NPC"
 		scriptCondition="IsQuestTaken('r6m1_TalkWithWorestMen_Quest')    and    not(IsQuestComplete('r6m1_TalkWithWorestMen_Quest'))"
 		nextReplies="Dlg_pl_000048" />
 
 	<Reply
 		name="Dlg_pl_000048"
-		text="Good morning!"
+		text="早上好！"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000049" />
 
 	<Reply
 		name="Dlg_npc_000049"
-		text="If this day is good for you it is good."
+		text="你自己觉得这天好，它就是好的。"
 		role="NPC"
 		nextReplies="Dlg_pl_000050" />
 
 	<Reply
 		name="Dlg_pl_000050"
-		text="Yes? May be. Do you know whom this flying vehicle belongs to?"
+		text="是吗？也许吧。你知道那辆飞行器是谁的吗？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000051" />
 
 	<Reply
 		name="Dlg_npc_000051"
-		text="There is no secret about it. This vehicle born to fly belongs to the tribe which lives in the Forest of Lost."
+		text="这没什么好保密的。这辆生来就会飞的飞行器，属于住在迷失森林里的部落。"
 		role="NPC"
 		nextReplies="Dlg_pl_000052" />
 
 	<Reply
 		name="Dlg_pl_000052"
-		text="How can I go to this forest?"
+		text="我怎么才能去那片森林？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000053" />
 
 	<Reply
 		name="Dlg_npc_000053"
-		text="Follow the road and it will lead you to it."
+		text="沿着大路走，路自然会把你带过去。"
 		role="NPC"
 		nextReplies="Dlg_pl_000054" />
 
 	<Reply
 		name="Dlg_pl_000054"
-		text="What are you doing?! Areyou goofing on me?! I know that to go somewhere you need to go along the road. I ask you, what particular road?"
+		text="你搞什么？！拿我开涮呢？！我知道去哪儿都得沿着路走。我问你的是，具体走哪条路？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000055" />
 
 	<Reply
 		name="Dlg_npc_000055"
-		text="But some places you can't reach along the road."
+		text="可有些地方，光靠路是到不了的。"
 		role="NPC"
 		nextReplies="Dlg_pl_000056" />
 
 	<Reply
 		name="Dlg_pl_000056"
-		text="Listen! Show me the way to this forest and that's all, ok?"
+		text="行了！给我指个去森林的道儿，就这么简单，行不行？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000057" />
 
 	<Reply
 		name="Dlg_npc_000057"
-		text="I will show you the way but it is not the road you need."
+		text="我可以给你指路，但那可不是你想要的那种'路'。"
 		role="NPC"
 		nextReplies="Dlg_pl_000058" />
 
 	<Reply
 		name="Dlg_pl_000058"
-		text="You just show me and all other things I can judge on my own?"
+		text="你只管指，剩下的我自己会判断，行了吧？"
 		role="PLAYER"
 		scriptResult="CompleteQuest('r6m1_TalkWithWorestMen_Quest');  EndConversation()" />
 
 	<Reply
 		name="r6m1_TownMapleSheet_WorestMan_dialog0"
-		text="Do you realize the aim of your life? Where do you go and why? Who are you? And who am I? Stay here and we will try to answer these difficult questions together..."
+		text="你想明白你活着为了什么吗？你要去哪儿，又为什么去？你是谁？我又是谁？留下来吧，咱们一起琢磨琢磨这些难题……"
 		role="NPC"
 		scriptCondition="not(IsQuestTaken('r6m1_TalkWithWorestMen_Quest'))  or  IsQuestComplete('r6m1_TalkWithWorestMen_Quest')"
 		nextReplies="Dlg_pl_000088" />
 
 	<Reply
 		name="Dlg_pl_000088"
-		text="Ok, everything is clear. I 'm off."
+		text="行了，全明白了。我走了。"
 		role="PLAYER"
 		scriptResult=" EndConversation()" />
 
 	<Reply
 		name="r6m1_Lodon_Worker_dialog01"
-		text="Robots expel us from the factory. Factory is our life. It's good we manage to find this mine."
+		text="机器人把我们从工厂里赶了出来。工厂就是我们的命根子。好在还找到了这座矿井。"
 		role="NPC"
 		scriptCondition="not(IsQuestComplete('r6m1_KillBoss2_Quest'))"
 		nextReplies="Dlg_pl_000092" />
 
 	<Reply
 		name="Dlg_pl_000092"
-		text="And what do you mine?"
+		text="你们挖什么矿？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000095" />
 
 	<Reply
 		name="Dlg_npc_000095"
-		text="Yah ....This... This is not important I'm not sorry about the factory so I don't want to talk to you."
+		text="呃……这个……这不重要。工厂的事我心里已经不难受了，所以不想跟你多聊。"
 		role="NPC"
 		nextReplies="Dlg_pl_000096" />
 
 	<Reply
 		name="Dlg_pl_000096"
-		text="I won't disturb you."
+		text="那我不打扰了。"
 		role="PLAYER"
 		scriptResult=" EndConversation()" />
 
 	<Reply
 		name="r6m1_Lodon_Worker_dialog02"
-		text="Factory is free! And our life is not aimless again! The logjam blocked the road to the factory we have already cleared one thing is left to repair the factory main entrance."
+		text="工厂解放了！我们的日子又有奔头了！堵住工厂道路的烂木头已经清掉了，就剩把工厂大门修好这一件事了。"
 		role="NPC"
 		scriptCondition="IsQuestComplete('r6m1_KillBoss2_Quest')"
 		nextReplies="Dlg_pl_000094" />
 
 	<Reply
 		name="Dlg_pl_000094"
-		text="Ok, what do you mine?"
+		text="那你们挖什么矿？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000097" />
 
 	<Reply
 		name="Dlg_npc_000097"
-		text="I don't know! I came to this village not long ago."
+		text="不知道！我刚来这村子没多久。"
 		role="NPC"
 		nextReplies="Dlg_pl_000098" />
 
 	<Reply
 		name="Dlg_pl_000098"
-		text="Ok, now everything is clear to me."
+		text="行，现在我全明白了。"
 		role="PLAYER"
 		scriptResult=" EndConversation()" />
 
 	<Reply
 		name="r6m1_Lost_LostMan_dialog1"
-		text="What thing have brought you to us, stranger?"
+		text="什么风把你吹到我们这儿来了，外乡人？"
 		role="NPC"
 		scriptCondition="IsQuestTaken('r6m1_FindLOST_Quest')   and   not(IsQuestComplete('r6m1_FindLOST_Quest')) "
 		nextReplies="Dlg_pl_000059" />
 
 	<Reply
 		name="Dlg_pl_000059"
-		text="Great desire to embitter somebody's life."
+		text="一股想给人添堵的强烈愿望。"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000060" />
 
 	<Reply
 		name="Dlg_npc_000060"
-		text="And why did you come to our tribe? We are peaceful dwellers."
+		text="那你为什么上我们部落来？我们可是安分守己的居民。"
 		role="NPC"
 		nextReplies="Dlg_pl_000061" />
 
 	<Reply
 		name="Dlg_pl_000061"
-		text="Why? Haven't you shot at me from your flying vehicle?"
+		text="为什么？你们不是用那飞行器朝我开过火吗？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000067" />
 
 	<Reply
 		name="Dlg_npc_000067"
-		text="Sorry, stranger. But this is a mistake."
+		text="抱歉，外乡人。那是个误会。"
 		role="NPC"
 		nextReplies="Dlg_pl_000068" />
 
 	<Reply
 		name="Dlg_pl_000068"
-		text="You are going to say that you have shot at me accidentally?"
+		text="你是想说，你们是失手打着我的？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000069" />
 
 	<Reply
 		name="Dlg_npc_000069"
-		text="No, the case is that we haven't shot at you at all. Our flying vehicle can't fly for a long time yet. Many generations of our tribe tried to repair it, but unsuccessfully. Now I think it is impossible."
+		text="不是，关键是——我们压根儿就没朝你开过火。我们的飞行器早就飞不起来了。部落里好几代人都想修好它，都没成。我看啊，是修不好了。"
 		role="NPC"
 		nextReplies="Dlg_pl_000070" />
 
 	<Reply
 		name="Dlg_pl_000070"
-		text="Yes? Why?"
+		text="是吗？为什么修不好？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000071" />
 
 	<Reply
 		name="Dlg_npc_000071"
-		text="We don't have spares to make it fly in the sky again! Earlier we received the required parts from the Factory in the hills but when robots came everything was over."
+		text="我们没有能让它重新上天的零件！早先我们还能从山里的工厂弄到需要的部件，可机器人一来，就全完了。"
 		role="NPC"
 		nextReplies="Dlg_pl_000072" />
 
 	<Reply
 		name="Dlg_pl_000072"
-		text="Robots?"
+		text="机器人？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000073" />
 
 	<Reply
 		name="Dlg_npc_000073"
-		text="These iron creatures destroy everything on the road. They are ruled by a man who has flying vehicle but it does not fly like ours."
+		text="那些铁疙瘩见什么毁什么。领头的家伙也有辆飞行器——不过跟咱们这种飞法不一样。"
 		role="NPC"
 		nextReplies="Dlg_pl_000074" />
 
 	<Reply
 		name="Dlg_pl_000074"
-		text="And does your vehicle fly?"
+		text="那你们这辆能飞？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000075" />
 
 	<Reply
 		name="Dlg_npc_000075"
-		text="No but it could. If we managed to get all the spares."
+		text="现在不能，但它本来可以。只要我们能凑齐所有零件。"
 		role="NPC"
 		nextReplies="Dlg_pl_000076" />
 
 	<Reply
 		name="Dlg_pl_000076"
-		text="Does the vehicle of the man who brings robot have loud noise and can hang in the air?"
+		text="那个带机器人来的家伙，他的飞行器是不是噪声很大、能悬在半空中？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000077" />
 
 	<Reply
 		name="Dlg_npc_000077"
-		text="That's right."
+		text="正是。"
 		role="NPC"
 		nextReplies="Dlg_pl_000078" />
 
 	<Reply
 		name="Dlg_pl_000078"
-		text="That's tough!! A vehicle like that shot at me. Do you know how can I find this flying vehicle? It can't fly forever it must be fueled somewhere from time to time."
+		text="麻烦了！！就是那种飞行器朝我开的火。你知道我上哪儿能找到它吗？它总不能永远在天上飞，早晚得落地加油。"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000079" />
 
 	<Reply
 		name="Dlg_npc_000079"
-		text="Maybe. Ask people from the Factory in the hills. Their lands were occupied by robots at first time. Maybe they can tell you about robots and their master more than we can."
+		text="兴许吧。去问问山里工厂的人。他们的地盘是最先被机器人占的。关于机器人和它们主人的事，他们知道的兴许比我们多。"
 		role="NPC"
 		nextReplies="Dlg_pl_000080" />
 
 	<Reply
 		name="Dlg_pl_000080"
-		text="Ok."
+		text="好。"
 		role="PLAYER"
 		scriptResult="CompleteQuest('r6m1_FindLOST_Quest');  TActivate ('triggerWayToZavod');  EndConversation()" />
 
 	<Reply
 		name="r6m1_Lost_LostMan_dialog2"
-		text="We welcome you. Rumors come to us that we are obliged to you for the liquidation of terrible robots."
+		text="欢迎你。有传言说，多亏了你，那伙可恶的机器人才被清理干净。"
 		role="NPC"
 		scriptCondition="IsQuestTaken('r6m1_HSFindParts_Quest')   and   not(IsQuestComplete('r6m1_HSFindParts_Quest'))"
 		nextReplies="Dlg_pl_000062" />
 
 	<Reply
 		name="Dlg_pl_000062"
-		text="That's true."
+		text="没错，是我。"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000063" />
 
 	<Reply
 		name="Dlg_npc_000063"
-		text="How can we acknowledge you?"
+		text="我们该怎么报答你？"
 		role="NPC"
 		nextReplies="Dlg_pl_000064" />
 
 	<Reply
 		name="Dlg_pl_000064"
-		text="There is one very easy way! I know that you have removed the engine from the ferry. Is that true?"
+		text="有个特别简单的法子！我知道你们把渡船上的发动机拆下来了。是真的吗？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000065" />
 
 	<Reply
 		name="Dlg_npc_000065"
-		text="That is it. It is in the shed with other spares. Unfortunately it hasn't suited us."
+		text="是有这么回事。它和其他配件一起放在棚子里。可惜对我们没用。"
 		role="NPC"
 		nextReplies="Dlg_pl_000066" />
 
 	<Reply
 		name="Dlg_pl_000066"
-		text="Excellent! If it hasn't suited you maybe you give it to me?"
+		text="太好了！既然用不上，那不如把它让给我？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000081" />
 
 	<Reply
 		name="Dlg_npc_000081"
-		text="Sorry, but it is impossible. Everything that can be useful for our relic vehicle must stay here. Maybe we wil exchange it for something else."
+		text="抱歉，这不可能。凡是可能用得上我们圣物飞行器的东西，都得留在这儿。要不……我们可以拿它换点别的。"
 		role="NPC"
 		nextReplies="Dlg_pl_000082" />
 
 	<Reply
 		name="Dlg_pl_000082"
-		text="I can pay for it? It can be easier for you to buy something for money."
+		text="我出钱买行不行？拿着钱想买什么不是更方便？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000083" />
 
 	<Reply
 		name="Dlg_npc_000083"
-		text="You words are not senseless but the price is high 100,000."
+		text="你这话说得也在理，不过价钱可不小——十万。"
 		role="NPC"
 		nextReplies="Dlg_pl_000084 Dlg_pl_000085" />
 
 	<Reply
 		name="Dlg_pl_000085"
-		text="It is rather a high price for old engine but I'm short of time."
+		text="对一台旧发动机来说这价够黑的了，不过我赶时间。"
 		role="PLAYER"
 		scriptCondition="GetPlayerMoney() >= 100000"
 		scriptResult="AddPlayerMoney( -100000 );  CompleteQuest('r6m1_HSFindParts_Quest');  CompleteQuest('r6m1_HSBuyParts_Quest');  EndConversation()" />
 
 	<Reply
 		name="Dlg_pl_000084"
-		text="You are crazy, you can buy a new vehicle for that money!"
+		text="你疯了吧，这钱都够买辆新车了！"
 		role="PLAYER"
 		scriptResult="CompleteQuest('r6m1_HSFindParts_Quest');  EndConversation()" />
 
 	<Reply
 		name="r6m1_Lost_LostMan_dialog3"
-		text="Have you found money?"
+		text="钱凑够了吗？"
 		role="NPC"
 		scriptCondition="IsQuestTaken('r6m1_HSBuyParts_Quest')   and   not(IsQuestComplete('r6m1_HSBuyParts_Quest'))"
 		nextReplies="Dlg_pl_000084 Dlg_pl_000085" />
 
 	<Reply
 		name="r6m1_Lost_LostMan_dialog0"
-		text="Some strange feelings inside pull us to the sky. Nobody knows why? But the flying vehicle could have helped us to find answers. "
+		text="我们心里总有种说不清的感觉，拽着我们往天上去。谁也不知道为什么？可那辆飞行器本可以帮我们找到答案的。"
 		role="NPC"
 		scriptCondition="(not(IsQuestTaken('r6m1_FindLOST_Quest'))  or  IsQuestComplete('r6m1_FindLOST_Quest'))  and  (not(IsQuestTaken('r6m1_HSFindParts_Quest'))  or  IsQuestComplete('r6m1_HSFindParts_Quest'))  and  (not(IsQuestTaken('r6m1_HSBuyParts_Quest'))  or  IsQuestComplete('r6m1_HSBuyParts_Quest'))"
 		nextReplies="Dlg_pl_000090" />
 
 	<Reply
 		name="Dlg_pl_000090"
-		text="I suppressed such kind of feelings."
+		text="这种念头我早压下去了。"
 		role="PLAYER"
 		scriptResult=" EndConversation()" />
 
 	<Reply
 		name="r5m2_OneEye_N01"
-		text="Who are you?"
+		text="你是谁？"
 		role="NPC"
 		scriptCondition="QuestStatus('r5m2_MoveToOneEye_Quest') == Q_TAKEN  and  QuestStatus('r5m2_KillWantedBandit_Quest') == Q_COMPLETED"
 		nextReplies="r5m2_OneEye_N02" />
 
 	<Reply
 		name="r5m2_OneEye_N02"
-		text="Good morning. I am told that here heads of bandits are exchanged for money. How much will you give me for Ethan's head?"
+		text="早上好。听说这儿收土匪的人头换钱。Ethan的人头，你能给多少？"
 		role="PLAYER"
 		nextReplies="r5m2_OneEye_N03" />
 
 	<Reply
 		name="r5m2_OneEye_N03"
-		text="Don't you think I will pay you in advance?"
+		text="你该不会以为我会先付钱吧？"
 		role="NPC"
 		nextReplies="r5m2_OneEye_N04" />
 
 	<Reply
 		name="r5m2_OneEye_N04"
-		text="Why in advance? I killed Ethan. You know, sand to his carburetor, he suggested that I give him all money and goods to leave me alive. "
+		text="什么叫先付？Ethan已经死在我手上了。你知道的，往他化油器里灌了把沙子——他还想让我交出全部钱财货色，换他饶我一命呢。"
 		role="PLAYER"
 		nextReplies="r5m2_OneEye_N05" />
 
 	<Reply
 		name="r5m2_OneEye_N05"
-		text="It's Ethan's style. What did you do?"
+		text="这倒像Ethan的做派。那你怎么回的？"
 		role="NPC"
 		nextReplies="r5m2_OneEye_N06" />
 
 	<Reply
 		name="r5m2_OneEye_N06"
-		text="We offend each over for some time. And then he burst with anger."
+		text="我们互相问候了对方祖宗一阵子。然后他就气炸了。"
 		role="PLAYER"
 		nextReplies="r5m2_OneEye_N07" />
 
 	<Reply
 		name="r5m2_OneEye_N07"
-		text="Ok, I trust you. What's your name?"
+		text="行，我信了。你叫什么名字？"
 		role="NPC"
 		nextReplies="r5m2_OneEye_N08" />
 
 	<Reply
 		name="r5m2_OneEye_N08"
-		text="My name is Vargant."
+		text="我叫Vargant。"
 		role="PLAYER"
 		nextReplies="r5m2_OneEye_N09" />
 
 	<Reply
 		name="r5m2_OneEye_N09"
-		text="Don't you recognize me?"
+		text="认不出我了？"
 		role="NPC"
 		nextReplies="r5m2_OneEye_N10 Dlg_pl_000348" />
 
 	<Reply
 		name="Dlg_pl_000348"
-		text="No, do I have to?"
+		text="认不出，我有这个义务吗？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000350" />
 
 	<Reply
 		name="Dlg_npc_000350"
-		text="You are very similar to my old friend I haven't seen him for ages. Looking at you I have decided that I can solve one of my problems."
+		text="你跟我一位老朋友长得太像了，我都有多少年没见过他了。看着你，我打定主意——正好解决我一个难题。"
 		role="NPC"
 		nextReplies="Dlg_pl_000351" />
 
 	<Reply
 		name="Dlg_pl_000351"
-		text="Strike me dead by accumulator spark! To solve problems is my job! There is only one question - money."
+		text="让电瓶火花劈死我吧！解决麻烦就是我的老本行！只有一个问题——价钱。"
 		role="PLAYER"
 		nextReplies="r5m2_OneEye_N17" />
 
 	<Reply
 		name="r5m2_OneEye_N10"
-		text="Break down my gear set! Haven't we met before?"
+		text="拆了我的变速箱！咱们是不是见过？"
 		role="PLAYER"
 		nextReplies="r5m2_OneEye_N11" />
 
 	<Reply
 		name="r5m2_OneEye_N11"
-		text="Aha. You call my one-eyed crock that time."
+		text="啊哈。那会儿你还管我这'独眼破车'来着。"
 		role="NPC"
 		nextReplies="r5m2_OneEye_N12" />
 
 	<Reply
 		name="r5m2_OneEye_N12"
-		text="One-eye! That's right! You heavily broke my truck at that time. What a meeting! Haven't seen you for ages! I regret that I have left you. But what about your dream of a small house on hill?"
+		text="独眼！没错！那时候你还把我的卡车撞得够呛呢。这可真是缘分！多少年没见了！真后悔当初离开了你。话说，你那山间小屋的梦想怎么样了？"
 		role="PLAYER"
 		nextReplies="r5m2_OneEye_N13" />
 
 	<Reply
 		name="r5m2_OneEye_N13"
-		text="But I have already lived in the house on the hill. Why don't you like this one? It's great luck that we have met."
+		text="我现在就住在山坡上的房子里了。你不喜欢这栋吗？咱们能重逢，可是天大的运气。"
 		role="NPC"
 		nextReplies="r5m2_OneEye_N14" />
 
 	<Reply
 		name="r5m2_OneEye_N14"
-		text="Isn't this a cause to increase my reward?"
+		text="那这奖金是不是也该涨涨了？"
 		role="PLAYER"
 		nextReplies="r5m2_OneEye_N15" />
 
 	<Reply
 		name="r5m2_OneEye_N15"
-		text="No your reward will be as agreed before. But can you do one thing for me? Of course, there will be a reward."
+		text="不，赏金还是照原来说好的。不过，能再帮我办件事吗？当然，事成之后另有酬谢。"
 		role="NPC"
 		nextReplies="r5m2_OneEye_N16 Dlg_pl_000349" />
 
 	<Reply
 		name="Dlg_pl_000349"
-		text="I'm ready to help you for free."
+		text="我愿意免费帮你。"
 		role="PLAYER"
 		nextReplies="r5m2_OneEye_N17" />
 
 	<Reply
 		name="r5m2_OneEye_N16"
-		text="I can do anything for you! Especially for good payment."
+		text="为您我什么都干！尤其是报酬丰厚的时候。"
 		role="PLAYER"
 		nextReplies="r5m2_OneEye_N17" />
 
 	<Reply
 		name="r5m2_OneEye_N17"
-		text="I hope you will be a success. Not long ago one thing was stolen from my treasury. To tell the truth I'm not angry about the stolen thing but the fact is that it was possible to do. I suspect treason from one of my captains. You will be appointed in the squad of this man and if you notice something suspicious let me know immediately."
+		text="祝你马到成功。不久前，我的金库丢了一件东西。说实话，丢的东西本身我不心疼，可这事竟然能发生，这才是要命的。我怀疑是我的哪位队长起了二心。我会把你安插进此人的队伍，一旦发现可疑之处，立刻向我报告。"
 		role="NPC"
 		nextReplies="r5m2_OneEye_N18" />
 
 	<Reply
 		name="r5m2_OneEye_N18"
-		text="It is not going to be so hard as I have expected but not so easy! Ok, I'll do it."
+		text="这活儿没我想的那么难，但也没那么容易！行，我接了。"
 		role="PLAYER"
 		nextReplies="r5m2_OneEye_N19" />
 
 	<Reply
 		name="r5m2_OneEye_N19"
-		text="Thank you. Find Capitan Amerigo and tell him that you are appointed to his squad. Keep your eyes open."
+		text="多谢。去找Amerigo队长，告诉他你被编入了他的队伍。眼睛放亮些。"
 		role="NPC"
 		nextReplies="r5m2_OneEye_N20" />
 
 	<Reply
 		name="r5m2_OneEye_N20"
-		text="Sure!"
+		text="放心！"
 		role="PLAYER"
 		scriptResult="CompleteQuest('r5m2_MoveToOneEye_Quest'); TActivate('trCreateAmerigoTeam'); EndConversation()" />
 
 	<Reply
 		name="r5m2_OneEye_2_N01"
-		text="You know, we are trying to live according to the rules, as we did before. Our aim is to revive forgotten rules and restore the lost civilization."
+		text="你是知道的，我们一直努力按规矩过日子，就像从前那样。我们的目标是唤醒被遗忘的规矩，重建失落的文明。"
 		role="NPC"
 		scriptCondition="Q_CANBEGIVEN >= QuestStatus('r5m2_ReturnToOneeyeAfterM_Quest')  and  QuestStatus('r5m2_KillWantedBandit_Quest') == Q_COMPLETED"
 		nextReplies="r5m2_OneEye_2_N02" />
 
 	<Reply
 		name="r5m2_OneEye_2_N02"
-		text="That's clear. So, why did you act like others, you don't get embarrassed to take part in dirty business, do you?"
+		text="这我明白。那你们干的事怎么跟别人一个路数？干起脏活儿来，你们也不害臊，是吧？"
 		role="PLAYER"
 		nextReplies="r5m2_OneEye_2_N03" />
 
 	<Reply
 		name="r5m2_OneEye_2_N03"
-		text="Eh, it's hard to follow the right way. We also stray from the way sometimes. Stop, don't you have any other business?!"
+		text="唉，正道哪有那么好走。我们偶尔也会偏航。等等，你不是还有别的正事吗？！"
 		role="NPC"
 		nextReplies="r5m2_OneEye_2_N04" />
 
 	<Reply
 		name="r5m2_OneEye_2_N04"
-		text="A... of course."
+		text="啊……对，当然。"
 		role="PLAYER"
 		scriptResult="EndConversation()" />
 
 	<Reply
 		name="r5m2_Starevchik_N01"
-		text="My respect, dear sir."
+		text="向您致敬，尊敬的先生。"
 		role="NPC"
 		scriptCondition="QuestStatus('r5m2_FHTalkWithAnticwar_Quest')==Q_TAKEN"
 		scriptResult="CompleteQuest('r5m2_FHTalkWithAnticwar_Quest')"
@@ -1119,531 +1119,531 @@
 
 	<Reply
 		name="r5m2_Starevchik_N02"
-		text="Are you Ragman?"
+		text="你就是Ragman？"
 		role="PLAYER"
 		nextReplies="r5m2_Starevchik_N03" />
 
 	<Reply
 		name="r5m2_Starevchik_N03"
-		text="Yes, that's me. Do you want to buy anything? Or maybe sell? Trust me, here my prices are the most real."
+		text="正是在下。想买点什么？还是想卖？信我的，我这儿的价钱最实在。"
 		role="NPC"
 		nextReplies="r5m2_Starevchik_N04" />
 
 	<Reply
 		name="r5m2_Starevchik_N04"
-		text="At first tell me what is this thing needed for? Then we speak about the price."
+		text="先告诉我这玩意儿是干什么用的，然后咱们再谈价钱。"
 		role="PLAYER"
 		nextReplies="r5m2_Starevchik_N05" />
 
 	<Reply
 		name="r5m2_Starevchik_N05"
-		text="Where did you get such an artifact, dear sir?"
+		text="这么件古物，您是从哪儿弄来的，尊敬的先生？"
 		role="NPC"
 		nextReplies="r5m2_Starevchik_N06" />
 
 	<Reply
 		name="r5m2_Starevchik_N06"
-		text="To tell the truth I found it on the road."
+		text="实话实说，路上捡的。"
 		role="PLAYER"
 		nextReplies="r5m2_Starevchik_N07" />
 
 	<Reply
 		name="r5m2_Starevchik_N07"
-		text="You say on the road, dear sir? It does not sound like the truth. Everything I found I remember to the last scratch. I found this box many years ago on the old ruins and sold it to the local governor. I heard that her treasury has been robbed recently! For the head of the robber 10,000 dollars were set. What would you tell me now, dear sir?"
+		text="路上捡的，尊敬的先生？这可不大像实话。我捡过的每样东西，直到最后一道划痕我都记得清清楚楚。这个盒子是我多年前在老废墟里发现的，后来卖给了本地总督。听说她金库最近被抢了！抢匪的人头悬赏一万块。尊敬的先生，现在您还有什么要说的？"
 		role="NPC"
 		nextReplies="r5m2_Starevchik_N08" />
 
 	<Reply
 		name="r5m2_Starevchik_N08"
-		text="Don't you think it was me?"
+		text="你不会觉得是我干的吧？"
 		role="PLAYER"
 		nextReplies="r5m2_Starevchik_N09" />
 
 	<Reply
 		name="r5m2_Starevchik_N09"
-		text="It doesn't need to think here. This thing was stolen and then here comes the stranger with it and tells me that he found it. But I won't tell anybody if you pay me, dear sir, 500 dollars."
+		text="这用不着想。东西被偷了，然后一个外乡人拿着它上门，还说是捡的。不过嘛——只要您付我500块，尊敬的先生，我就当什么都没看见。"
 		role="NPC"
 		nextReplies="r5m2_Starevchik_N010a r5m2_Starevchik_N10b" />
 
 	<Reply
 		name="r5m2_Starevchik_N10b"
-		text="Maybe I should do something to make you silent forever?"
+		text="要不我干脆做点什么，让你永远闭嘴？"
 		role="PLAYER"
 		nextReplies="r5m2_Starevchik_N11b" />
 
 	<Reply
 		name="r5m2_Starevchik_N11b"
-		text="I think that you are taking too much upon you, kid. Can you get a piece of me?"
+		text="我看你有点自不量力啊，小子。就你，还想从我这儿讨到便宜？"
 		role="NPC"
 		nextReplies="r5m2_Starevchik_N12b" />
 
 	<Reply
 		name="r5m2_Starevchik_N12b"
-		text="I'm going to cook the dietetic dish - Ragman stuffed with bullets in own juice."
+		text="我正打算做道养生菜——原汤炖子弹填Ragman。"
 		role="PLAYER"
 		scriptResult="TActivate('trCreateStarievshik'); EndConversation()" />
 
 	<Reply
 		name="r5m2_Starevchik_N010a"
-		text="Ok, here is your money."
+		text="行，钱给你。"
 		role="PLAYER"
 		scriptCondition="GetPlayerMoney()>=500"
 		nextReplies="r5m2_Starevchik_N011a" />
 
 	<Reply
 		name="r5m2_Starevchik_N011a"
-		text="It's nice to deal with you. You can find me anytime."
+		text="跟您做生意真痛快。随时都能找到我。"
 		role="NPC"
 		nextReplies="r5m2_Starevchik_N012a" />
 
 	<Reply
 		name="r5m2_Starevchik_N012a"
-		text="I'll keep it in mind."
+		text="记住了。"
 		role="PLAYER"
 		scriptResult="AddPlayerMoney(-500); CompleteQuest('r5m2_FHDeleteSled_Quest'); EndConversation()" />
 
 	<Reply
 		name="r5m2_Pervomaika_Charli_N01"
-		text="How can I help you, sir?"
+		text="先生，有何吩咐？"
 		role="NPC"
 		scriptCondition="QuestStatus('r5m2_FHTalkWithCitizens_Quest')==Q_TAKEN"
 		nextReplies="r5m2_Pervomaika_Charli_N02" />
 
 	<Reply
 		name="r5m2_Pervomaika_Charli_N02"
-		text="Tell me, man... Do you have custom here between two drivers to fight to a finish? When I came here I stumbled upon traces of battle. Only wreckages have left after the vehicles."
+		text="跟我说说，老兄……你们这儿有没有两个司机非打到分出生死不可的规矩？我来的时候撞见了一处战斗的痕迹，车辆只剩下残骸了。"
 		role="PLAYER"
 		nextReplies="r5m2_Pervomaika_Charli_N03" />
 
 	<Reply
 		name="r5m2_Pervomaika_Charli_N03"
-		text="No, sir! People here are very peaceful. I don't know what to tell you."
+		text="没有的事，先生！这儿的人可安分了。我不知道该跟您说什么。"
 		role="NPC"
 		nextReplies="r5m2_Pervomaika_Charli_N04 Dlg_pl_000334" />
 
 	<Reply
 		name="Dlg_pl_000334"
-		text="Do you think a unique and very expensive thing can be the reason for the battle?"
+		text="你觉得一件独一无二又特别值钱的东西，会不会就是那场恶斗的起因？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000335" />
 
 	<Reply
 		name="Dlg_npc_000335"
-		text="Who knows, sir? Maybe you are afraid that such things are not rare here? They happened not very often. But guards are in demand. You can ask any barman in any city."
+		text="这谁知道呢，先生？您该不是担心这种事儿在这儿不算稀奇吧？其实很少发生。倒是护卫的活儿挺抢手。您随便去哪座城找个酒保打听打听。"
 		role="NPC"
 		nextReplies="Dlg_pl_000336" />
 
 	<Reply
 		name="Dlg_pl_000336"
-		text="I'm not interested in guard work. I collect artifacts."
+		text="我对当护卫没兴趣。我搞的是古物收藏。"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000343" />
 
 	<Reply
 		name="Dlg_npc_000343"
-		text="I don't know what to tell you, sir. I'm not an expert in artifacts... I'm a potato expert. You'd better to talk to merchants. One of them has sold my potato combine recently."
+		text="先生，这我就不知道说什么好了。古物我不在行……我是土豆专家。您还是去跟商人聊聊吧。前阵子就有个商人把我的土豆收割机买走了。"
 		role="NPC"
 		nextReplies="Dlg_pl_000344 Dlg_pl_000345" />
 
 	<Reply
 		name="Dlg_pl_000345"
-		text="Holy fuel! I don't care about your nut merchants!"
+		text="圣油啊！你那些神经病商人我才懒得理会！"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000346" />
 
 	<Reply
 		name="Dlg_pl_000344"
-		text="I'm not interested in potato really."
+		text="说实话，土豆我也不感兴趣。"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000346" />
 
 	<Reply
 		name="Dlg_npc_000346"
-		text="You have misunderstood me. We have here one vagrant merchant. We call him Ragman for fun. Instead of buying potato and timber he trades some old things. He yo-yos back and forth between cities and dumps. But from time to time one can buy a useful thing. So he is an expert in artifacts you'd better to talk to him. "
+		text="您误会我了。我们这儿有个跑江湖的商贩，大家顺口叫他Ragman。人家不收土豆不收木柴，专倒腾些老物件。他成天在城和垃圾场之间来回打转。不过时不时的，还真能淘到有用的东西。要说古物行家，您最好去找他聊。"
 		role="NPC"
 		nextReplies="Dlg_pl_000347" />
 
 	<Reply
 		name="Dlg_pl_000347"
-		text="Ragman? Ok, I'll try to find him."
+		text="Ragman？行，我去找找他。"
 		role="PLAYER"
 		scriptResult="TActivate('trCreateWowHumans'); CompleteQuest('r5m2_FHTalkWithCitizens_Quest'); EndConversation()" />
 
 	<Reply
 		name="r5m2_Pervomaika_Charli_N04"
-		text="Between the wreckage I have found this box. I'd like to find out what is this."
+		text="我在残骸堆里找到了这个盒子。我想弄清楚它到底是什么。"
 		role="PLAYER"
 		nextReplies="r5m2_Pervomaika_Charli_N05" />
 
 	<Reply
 		name="r5m2_Pervomaika_Charli_N05"
-		text="I'm afraid I can't help you,sir."
+		text="恐怕我帮不上忙，先生。"
 		role="NPC"
 		nextReplies="r5m2_Pervomaika_Charli_N06 Dlg_pl_000337" />
 
 	<Reply
 		name="Dlg_pl_000337"
-		text="Maybe some money will refresh your memory?"
+		text="要不这点钱能帮您把记忆捋清楚？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000339" />
 
 	<Reply
 		name="Dlg_npc_000339"
-		text="Sir? You'd better repair your car at first! It's almost falling apart, dear. It right suits for the collection of Ragman. He collects all this ancient stuff. Maybe he will buy this jitney."
+		text="先生？您还是先把您那辆车修修吧！都快散架了，亲爱的。这车正好够格进Ragman的收藏。他专收这类老古董，说不定会把这辆老爷车收了。"
 		role="NPC"
 		nextReplies="Dlg_pl_000340" />
 
 	<Reply
 		name="Dlg_pl_000340"
-		text="Ancient stuff, it's interesting?  Where is his shop situated?"
+		text="老古董，有意思……他那铺子开在哪儿？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000341" />
 
 	<Reply
 		name="Dlg_npc_000341"
-		text="Ragman doesn't sit at one place. He yo-yos back and forth. Look for him around the city. If your shandrydan doesn't fall apart he can give you a good price. Take some money, sir, and repair it a little."
+		text="Ragman从不在一个地方落脚，成天来来回回地跑。您在城四周找找吧。只要您那辆破车别半道散架，他兴许还能给您个不错的价。拿着这点钱，先生，把车稍微拾掇拾掇。"
 		role="NPC"
 		nextReplies="Dlg_pl_000342" />
 
 	<Reply
 		name="Dlg_pl_000342"
-		text="You say Shandrydan, I see. Look at your own car!"
+		text="你倒会说'破车'，也不看看你自己那辆！"
 		role="PLAYER"
 		scriptResult="TActivate('trCreateWowHumans'); CompleteQuest('r5m2_FHTalkWithCitizens_Quest'); AddPlayerMoney(100); EndConversation()" />
 
 	<Reply
 		name="r5m2_Pervomaika_Charli_N06"
-		text="Two guys killed each other because of this box and you can't even suppose what it can be?"
+		text="两个人为了这盒子把命都搭上了，你就连猜都猜不出它是什么？"
 		role="PLAYER"
 		nextReplies="r5m2_Pervomaika_Charli_N07" />
 
 	<Reply
 		name="r5m2_Pervomaika_Charli_N07"
-		text="I don't even know... Try to find Ragman. He is a vargant merchant he travels between the cities and trades ancient artifacts. Maybe he could help you."
+		text="我真是不知道……去找Ragman吧。他是个跑江湖的商贩，在城与城之间来回跑，倒腾古代器物。说不定他能帮上您。"
 		role="NPC"
 		nextReplies="r5m2_Pervomaika_Charli_N08 Dlg_pl_000338" />
 
 	<Reply
 		name="Dlg_pl_000338"
-		text="Ok! Have a good time, country bumpkin, three cylinders in your throat."
+		text="行！祝您愉快，土老帽——三个气缸卡您嗓子眼儿里！"
 		role="PLAYER"
 		scriptResult="TActivate('trCreateWowHumans'); CompleteQuest('r5m2_FHTalkWithCitizens_Quest'); EndConversation()" />
 
 	<Reply
 		name="r5m2_Pervomaika_Charli_N08"
-		text="Thank you, old chap!"
+		text="多谢，老伙计！"
 		role="PLAYER"
 		scriptResult="TActivate('trCreateWowHumans'); CompleteQuest('r5m2_FHTalkWithCitizens_Quest'); EndConversation()" />
 
 	<Reply
 		name="r5m2_Pervomaika_Charli_3_N01"
-		text="Oh, it is you, dear sir! Have you found Ragman?"
+		text="哦，是您啊，尊敬的先生！找到Ragman了吗？"
 		role="NPC"
 		scriptCondition="QuestStatus('r5m2_FHTalkWithAnticwar_Quest')==Q_COMPLETED"
 		nextReplies="r5m2_Pervomaika_Charli_2_N02a r5m2_Pervomaika_Charli_2_N02b" />
 
 	<Reply
 		name="r5m2_Pervomaika_Charli_2_N02b"
-		text="Your Ragman is a real speculator."
+		text="你那位Ragman可真是个奸商。"
 		role="PLAYER"
 		scriptCondition="GetVar('StarievshikDie').AsInt~=1"
 		scriptResult="EndConversation()" />
 
 	<Reply
 		name="r5m2_Pervomaika_Charli_2_N02a"
-		text="Yes, I've found him. R.I.P."
+		text="找到了。愿他安息。"
 		role="PLAYER"
 		scriptCondition="GetVar('StarievshikDie').AsInt==1"
 		scriptResult="EndConversation()" />
 
 	<Reply
 		name="r5m2_Pervomaika_Charli_2_N01"
-		text="How is your searching, sir?"
+		text="先生，事情办得如何？"
 		role="NPC"
 		scriptCondition="QuestStatus('r5m2_FHTalkWithAnticwar_Quest')==Q_TAKEN"
 		nextReplies="r5m2_Pervomaika_Charli_2_N02" />
 
 	<Reply
 		name="r5m2_Pervomaika_Charli_2_N02"
-		text="Business is a bit groggy."
+		text="事情嘛，有点不得劲。"
 		role="PLAYER"
 		nextReplies="r5m2_Pervomaika_Charli_2_N03" />
 
 	<Reply
 		name="r5m2_Pervomaika_Charli_2_N03"
-		text="In your eyes I see that you are far away from your aim?"
+		text="看您这眼神，离目标还远着呢吧？"
 		role="NPC"
 		nextReplies="r5m2_Pervomaika_Charli_2_N04" />
 
 	<Reply
 		name="r5m2_Pervomaika_Charli_2_N04"
-		text="Aha."
+		text="唉，可不是。"
 		role="PLAYER"
 		scriptResult="EndConversation()" />
 
 	<Reply
 		name="r5m2_Plemannik_1_N01"
-		text="Listen, stranger, I have a profitable deal for you."
+		text="听着，外乡人，我这儿有笔赚钱的买卖给你。"
 		role="NPC"
 		scriptCondition="(QuestStatus('r5m2_KillUncle') == Q_CANBEGIVEN)  and  (not(QuestStatus('r5m2_KillUncle') == Q_TAKEN))  and  (GetVar('PlemmanikStat').AsInt == 0)"
 		nextReplies="r5m2_Plemannik_1_N02a r5m2_Plemannik_1_N02b" />
 
 	<Reply
 		name="r5m2_Plemannik_1_N02b"
-		text="I'm busy."
+		text="我忙着呢。"
 		role="PLAYER"
 		scriptResult="TActivate('trPlemannikQuestTimer'); EndConversation()" />
 
 	<Reply
 		name="r5m2_Plemannik_1_N02a"
-		text="Whose fuel tank am I going to empty?"
+		text="这回要放干谁的油箱？"
 		role="PLAYER"
 		nextReplies="r5m2_Plemannik_1_N03a" />
 
 	<Reply
 		name="r5m2_Plemannik_1_N03a"
-		text="Everything is rather serious. I have an uncle he is a very prosperous man. He left our family to vegetate in the grip of poverty."
+		text="事情还挺正经的。我有个叔叔，家底非常殷实。他却扔下我们全家在穷坑里自生自灭。"
 		role="NPC"
 		nextReplies="r5m2_Plemannik_1_N04a" />
 
 	<Reply
 		name="r5m2_Plemannik_1_N04a"
-		text="That a pitiful story!"
+		text="真是个催人泪下的故事！"
 		role="PLAYER"
 		nextReplies="r5m2_Plemannik_1_N05a" />
 
 	<Reply
 		name="r5m2_Plemannik_1_N05a"
-		text="Help me get rid of this ruthless bloodsucker! I'll pay you, never fear."
+		text="帮我摆脱这个狠心的吸血鬼！我会付你钱，别怕。"
 		role="NPC"
 		nextReplies="r5m2_Plemannik_1_N06aa r5m2_Plemannik_1_N06ab" />
 
 	<Reply
 		name="r5m2_Plemannik_1_N06ab"
-		text="You'd better go away. Look at him the povetry victim."
+		text="你还是哪儿凉快哪儿待着去吧。瞧你，装得跟个穷苦受害者似的。"
 		role="PLAYER"
 		scriptResult="TActivate('trPlemannikQuestTimer'); EndConversation()" />
 
 	<Reply
 		name="r5m2_Plemannik_1_N06aa"
-		text="Oh, you are a real villain, blow up your carburetor. My services are very expensive, keep it in mind."
+		text="哟，你真是个狠角色，炸了你的化油器吧。我的收费可是很贵的，给我记住了。"
 		role="PLAYER"
 		nextReplies="r5m2_Plemannik_1_N07aa" />
 
 	<Reply
 		name="r5m2_Plemannik_1_N07aa"
-		text="It is not the question of price, but be careful, my uncle has good guards."
+		text="倒不是价钱的问题——不过你得当心，我叔叔的护卫可不是吃素的。"
 		role="NPC"
 		nextReplies="r5m2_Plemannik_1_N08aa" />
 
 	<Reply
 		name="r5m2_Plemannik_1_N08aa"
-		text="With such kind of relatives one may dawn upon it."
+		text="摊上这种亲戚，早晚能想通。"
 		role="PLAYER"
 		scriptResult="TActivate('trCreateUncleDefenders'); TakeQuest('r5m2_KillUncle'); EndConversation()" />
 
 	<Reply
 		name="r5m2_Plemannik_2_N01"
-		text="Thank you for your help."
+		text="多谢你帮了大忙。"
 		role="NPC"
 		scriptCondition="QuestStatus('r5m2_KillUncle')==Q_COMPLETED"
 		nextReplies="r5m2_Plemannik_2_N02" />
 
 	<Reply
 		name="r5m2_Plemannik_2_N02"
-		text="No problems."
+		text="小意思。"
 		role="PLAYER"
 		scriptResult="EndConversation()" />
 
 	<Reply
 		name="r5m2_Plemannik_3_N01"
-		text="I don't need anything. I've done everything without your help."
+		text="我什么都不需要了。没你帮忙，我自己也把事儿办完了。"
 		role="NPC"
 		scriptCondition="GetVar('PlemmanikStat').AsInt==1"
 		nextReplies="r5m2_Plemannik_3_N02" />
 
 	<Reply
 		name="r5m2_Plemannik_3_N02"
-		text="Thank you."
+		text="多谢。"
 		role="PLAYER"
 		scriptResult="EndConversation()" />
 
 	<Reply
 		name="r5m2_Plemannik_4_N01"
-		text="Whenever will you perform the task?"
+		text="你到底什么时候才把事办完？"
 		role="NPC"
 		scriptCondition="QuestStatus('r5m2_KillUncle')==Q_TAKEN"
 		nextReplies="r5m2_Plemannik_4_N02" />
 
 	<Reply
 		name="r5m2_Plemannik_4_N02"
-		text="Don't worry, everything is under control."
+		text="别担心，一切尽在掌握。"
 		role="PLAYER"
 		nextReplies="r5m2_Plemannik_4_N03" />
 
 	<Reply
 		name="r5m2_Plemannik_4_N03"
-		text="I cannot wait until my uncle go out of the world."
+		text="我巴不得我叔叔这会儿就已经不在这世上了。"
 		role="NPC"
 		nextReplies="r5m2_Plemannik_4_N04" />
 
 	<Reply
 		name="r5m2_Plemannik_4_N04"
-		text="Wait a little and everything is going to be ok."
+		text="再等等，很快就会办妥的。"
 		role="PLAYER"
 		scriptResult="EndConversation()" />
 
 	<Reply
 		name="r5m2_Zamucheniy_1_N01"
-		text="Listen, I know you are a bandit killer. I see how famously you have griped the bandit ass on the road. Do you want to get money?"
+		text="听着，我知道你是专杀土匪的狠人。路上的土匪让你拧着屁股教训得那叫一个惨。想赚点钱吗？"
 		role="NPC"
 		scriptCondition="QuestStatus('r5m2_KillBantits')==Q_CANBEGIVEN  and  QuestStatus('r5m2_KillWantedBandit_Quest')==Q_COMPLETED"
 		nextReplies="r5m2_Zamucheniy_1_N02" />
 
 	<Reply
 		name="r5m2_Zamucheniy_1_N02"
-		text="What's the problem?"
+		text="什么麻烦事？"
 		role="PLAYER"
 		nextReplies="r5m2_Zamucheniy_1_N03" />
 
 	<Reply
 		name="r5m2_Zamucheniy_1_N03"
-		text="The problem is my brother Maxwell. We are twins, understand? Since childhood he has been following me. Wherever I go in every mirror I can see him. I'm tired of it. Free me from his presence."
+		text="麻烦是我兄弟Maxwell。我们是双胞胎，懂吗？打小他就跟我形影不离。我走到哪儿，每面镜子里都能看见他。我受够了。帮我把他从我的世界里除掉。"
 		role="NPC"
 		nextReplies="r5m2_Zamucheniy_1_N04 r5m2_Zamucheniy_1_N05" />
 
 	<Reply
 		name="r5m2_Zamucheniy_1_N05"
-		text="No, not right now."
+		text="不，现在不行。"
 		role="PLAYER"
 		scriptResult="EndConversation()" />
 
 	<Reply
 		name="r5m2_Zamucheniy_1_N04"
-		text="I hope you will regret it when I finish the mission."
+		text="等我做完这单，希望你别后悔。"
 		role="PLAYER"
 		scriptResult="TakeQuest('r5m2_KillBantits'); TActivate('trCreateOptBandit'); EndConversation()" />
 
 	<Reply
 		name="r5m2_Klader_1_N01"
-		text="Do you want to hear one secret?"
+		text="想听个秘密吗？"
 		role="NPC"
 		scriptCondition="QuestStatus('r5m2_FindKlad')==Q_CANBEGIVEN"
 		nextReplies="r5m2_Klader_1_N02" />
 
 	<Reply
 		name="r5m2_Klader_1_N02"
-		text="Yes, I like secrets."
+		text="想，我最爱听秘密了。"
 		role="PLAYER"
 		nextReplies="r5m2_Klader_1_N03" />
 
 	<Reply
 		name="r5m2_Klader_1_N03"
-		text="This secret costs 500 coins."
+		text="这个秘密值500金币。"
 		role="NPC"
 		nextReplies="r5m2_Klader_1_N04a r5m2_Klader_1_N04b r5m2_Klader_1_N04c" />
 
 	<Reply
 		name="r5m2_Klader_1_N04c"
-		text="I don't have money."
+		text="我没钱。"
 		role="PLAYER"
 		scriptCondition="500>GetPlayerMoney()"
 		scriptResult="EndConversation()" />
 
 	<Reply
 		name="r5m2_Klader_1_N04b"
-		text="No, thanks."
+		text="不用了，谢谢。"
 		role="PLAYER"
 		scriptCondition="GetPlayerMoney()>=500"
 		scriptResult="EndConversation()" />
 
 	<Reply
 		name="r5m2_Klader_1_N04a"
-		text="Go it!"
+		text="成交！"
 		role="PLAYER"
 		scriptCondition="GetPlayerMoney()>=500"
 		nextReplies="r5m2_Klader_1_N05a" />
 
 	<Reply
 		name="r5m2_Klader_1_N05a"
-		text="Thank you. The secret is simple. On your map I'll mark one place where bandits have hidden the stolen goods. You can find it if you try your best. But don't ask me about my relations with the bandits."
+		text="多谢。秘密很简单。我会在你地图上标出一个地方——土匪把赃物藏在那儿。只要你肯下功夫，就能找到。不过，我跟那帮土匪的交情，你就别打听了。"
 		role="NPC"
 		scriptResult="AddPlayerMoney(-500)"
 		nextReplies="r5m2_Klader_1_N06a Dlg_pl_000419" />
 
 	<Reply
 		name="Dlg_pl_000419"
-		text="I'm not interested."
+		text="我没兴趣。"
 		role="PLAYER"
 		scriptResult="EndConversation()" />
 
 	<Reply
 		name="r5m2_Klader_1_N06a"
-		text="It is interesting to know that this treasure is only 100 coins. Ok, I'll go and see it."
+		text="这宝贝就值100金币？行吧，我倒要去瞧瞧。"
 		role="PLAYER"
 		scriptResult="TakeQuest('r5m2_FindKlad'); EndConversation()" />
 
 	<Reply
 		name="r5m2_Shumaher_1_N01"
-		text="Hello, stranger. Do you want to take part in the races? Participation due - 100 coins."
+		text="你好，外乡人。想参加赛车吗？报名费100金币。"
 		role="NPC"
 		scriptCondition="QuestStatus('r5m2_MoveFirstToVillage') == Q_CANBEGIVEN"
 		nextReplies="r5m2_Shumaher_1_N02a r5m2_Shumaher_1_N02b r5m2_Shumaher_1_N02c" />
 
 	<Reply
 		name="r5m2_Shumaher_1_N02c"
-		text="I don't have time for this. Maybe another time."
+		text="没这闲工夫。改天吧。"
 		role="PLAYER"
 		scriptCondition="GetPlayerMoney()>=100"
 		scriptResult="EndConversation()" />
 
 	<Reply
 		name="r5m2_Shumaher_1_N02b"
-		text="I don't have money."
+		text="我没钱。"
 		role="PLAYER"
 		scriptCondition="100>GetPlayerMoney()"
 		scriptResult="EndConversation()" />
 
 	<Reply
 		name="r5m2_Shumaher_1_N02a"
-		text="Yeah... All right. What is the route?"
+		text="嗯……行吧。赛程怎么走？"
 		role="PLAYER"
 		scriptCondition="GetPlayerMoney()>=100"
 		nextReplies="r5m2_Shumaher_1_N03a" />
 
 	<Reply
 		name="r5m2_Shumaher_1_N03a"
-		text="Start is here. Finish is in a Mexico village. The winner gets everything."
+		text="起点在这儿，终点在墨西哥村。赢家通吃。"
 		role="NPC"
 		nextReplies="r5m2_Shumaher_1_N04a Dlg_pl_000428" />
 
 	<Reply
 		name="Dlg_pl_000428"
-		text="It's too far I won't go."
+		text="太远了，我不去。"
 		role="PLAYER"
 		scriptResult="EndConversation()" />
 
 	<Reply
 		name="r5m2_Shumaher_1_N04a"
-		text="Ok. When does the race start?"
+		text="行。比赛什么时候开始？"
 		role="PLAYER"
 		nextReplies="r5m2_Shumaher_1_N05a" />
 
 	<Reply
 		name="r5m2_Shumaher_1_N05a"
-		text="Time goes!"
+		text="时间到，走你！"
 		role="NPC"
 		nextReplies="r5m2_Shumaher_1_N06a" />
 
 	<Reply
 		name="r5m2_Shumaher_1_N06a"
-		text="Go!!!"
+		text="冲！！！"
 		role="PLAYER"
 		scriptResult="AddPlayerMoney(-100); TakeQuest('r5m2_MoveFirstToVillage'); EndConversation()" />
 
 	<Reply
 		name="r5m2_Shumaher_2_N01"
-		text="Here you are."
+		text="你总算到了。"
 		role="NPC"
 		scriptCondition="QuestStatus('r5m2_MoveFirstToVillage') == Q_TAKEN"
 		scriptResult="CompleteQuest('r5m2_MoveFirstToVillage')"
@@ -1651,26 +1651,26 @@
 
 	<Reply
 		name="r5m2_Shumaher_2_N02"
-		text="What is my place?"
+		text="我拿了第几？"
 		role="PLAYER"
 		nextReplies="r5m2_Shumaher_2_N03a r5m2_Shumaher_2_N03b" />
 
 	<Reply
 		name="r5m2_Shumaher_2_N03b"
-		text="You have lost."
+		text="你输了。"
 		role="NPC"
 		scriptCondition="GetVar('GonkaPlace').AsInt>1"
 		nextReplies="r5m2_Shumaher_2_N04b" />
 
 	<Reply
 		name="r5m2_Shumaher_2_N04b"
-		text="Blow out my tires! It's a tough break! Okay, it was not my day."
+		text="爆我的轮胎！真倒霉！行吧，今天不算我的日子。"
 		role="PLAYER"
 		scriptResult="EndConversation()" />
 
 	<Reply
 		name="r5m2_Shumaher_2_N03a"
-		text="Firat place. The prize is yours."
+		text="第一名。奖金归你了。"
 		role="NPC"
 		scriptCondition="GetVar('GonkaPlace').AsInt==1"
 		scriptResult="AddPlayerMoney(1000)"
@@ -1678,136 +1678,136 @@
 
 	<Reply
 		name="r5m2_Shumaher_2_N04a"
-		text="Excellent!!!"
+		text="好极了！！！"
 		role="PLAYER"
 		scriptResult="EndConversation()" />
 
 	<Reply
 		name="r5m1_Aplle_Bar_Ralf_1_N01"
-		text="The stream of sun lights up my face for many years I haven't heard the birdsong. What thing have brought you to our lands, stranger?"
+		text="阳光洒在我脸上，多少年没听过鸟叫了。什么风把你吹到我们的地界来了，外乡人？"
 		role="NPC"
 		scriptCondition="QuestStatus('r5m1_WTBWTalkWithAborigens_Quest')==Q_TAKEN"
 		nextReplies="r5m1_Aplle_Bar_Ralf_1_N02" />
 
 	<Reply
 		name="r5m1_Aplle_Bar_Ralf_1_N02"
-		text="Hello, chief! Have you heard anything about Edmonton?"
+		text="你好，酋长！听说过埃德蒙顿吗？"
 		role="PLAYER"
 		nextReplies="r5m1_Aplle_Bar_Ralf_1_N03" />
 
 	<Reply
 		name="r5m1_Aplle_Bar_Ralf_1_N03"
-		text="Sagacious bird doesn't seek fortune in the outlands. I heard about this city."
+		text="聪明的鸟儿不会跑到蛮荒之地碰运气。这城我听说过。"
 		role="NPC"
 		nextReplies="r5m1_Aplle_Bar_Ralf_1_N04" />
 
 	<Reply
 		name="r5m1_Aplle_Bar_Ralf_1_N04"
-		text="Do you know anybody who could help me? It will be good to find the map also."
+		text="你知道有谁能帮我吗？最好还能搞到张地图。"
 		role="PLAYER"
 		nextReplies="r5m1_Aplle_Bar_Ralf_1_N05" />
 
 	<Reply
 		name="r5m1_Aplle_Bar_Ralf_1_N05"
-		text="Not every map leads to the aim. Not far away from here lives one man called Wiseguy. There are rumors that he is an expert in maps but he doesn't tell anybody about it."
+		text="不是每张地图都能通向你要去的地方。离这儿不远住着个人，人称Wiseguy。传言他是地图方面的行家，不过他自己死不承认。"
 		role="NPC"
 		nextReplies="r5m1_Aplle_Bar_Ralf_1_N06" />
 
 	<Reply
 		name="r5m1_Aplle_Bar_Ralf_1_N06"
-		text="Who is Wiseguy? Where I can find him?"
+		text="Wiseguy是谁？我上哪儿找他？"
 		role="PLAYER"
 		nextReplies="r5m1_Aplle_Bar_Ralf_1_N07" />
 
 	<Reply
 		name="r5m1_Aplle_Bar_Ralf_1_N07"
-		text="Great power is hidden in the knowledge of the past. He lives not far away from here in the forsaken house. His real name is Jack Noval. "
+		text="伟大的力量就藏在旧时的知识里。他住得离这儿不远，在一栋荒废的屋子里。他的真名叫Jack Noval。"
 		role="NPC"
 		nextReplies="r5m1_Aplle_Bar_Ralf_1_N08" />
 
 	<Reply
 		name="r5m1_Aplle_Bar_Ralf_1_N08"
-		text="Thank you, buddy."
+		text="多谢，老哥。"
 		role="PLAYER"
 		scriptResult="CompleteQuest('r5m1_WTBWTalkWithAborigens_Quest') EndConversation()" />
 
 	<Reply
 		name="r5m1_Konneks_Gonchik_1_N01"
-		text="You guys, answer's a lemon, not even try it."
+		text="你们这些家伙，答复就俩字——没门，想都别想。"
 		role="NPC"
 		scriptCondition="QuestStatus('r5m1_FirstQofSam_Quest')==Q_TAKEN"
 		nextReplies="r5m1_Konneks_Gonchik_1_N02" />
 
 	<Reply
 		name="r5m1_Konneks_Gonchik_1_N02"
-		text="Who do you mean?"
+		text="你指谁？"
 		role="PLAYER"
 		nextReplies="r5m1_Konneks_Gonchik_1_N03" />
 
 	<Reply
 		name="r5m1_Konneks_Gonchik_1_N03"
-		text="You and Sam! Understand?!"
+		text="你，还有Sam！明白吗？！"
 		role="NPC"
 		nextReplies="r5m1_Konneks_Gonchik_1_N04" />
 
 	<Reply
 		name="r5m1_Konneks_Gonchik_1_N04"
-		text="Holy fuel! Why are you shouting?"
+		text="圣油保佑！你嚷嚷什么？"
 		role="PLAYER"
 		nextReplies="r5m1_Konneks_Gonchik_1_N05" />
 
 	<Reply
 		name="r5m1_Konneks_Gonchik_1_N05"
-		text="This is the only way to talk to such guys as you are. Piss off!"
+		text="跟你们这种家伙说话，就得这副腔调。滚吧！"
 		role="NPC"
 		nextReplies="r5m1_Konneks_Gonchik_1_N06" />
 
 	<Reply
 		name="r5m1_Konneks_Gonchik_1_N06"
-		text="I think you are nut a little. What should I tell Sam?"
+		text="我看你脑子有点毛病。我该怎么跟Sam回话？"
 		role="PLAYER"
 		nextReplies="r5m1_Konneks_Gonchik_1_N07" />
 
 	<Reply
 		name="r5m1_Konneks_Gonchik_1_N07"
-		text="Tell him to put a big potato in the exhaust pipe!"
+		text="让他往自己排气管里塞个大土豆去吧！"
 		role="NPC"
 		nextReplies="r5m1_Konneks_Gonchik_1_N09" />
 
 	<Reply
 		name="r5m1_Konneks_Gonchik_1_N09"
-		text="As you want."
+		text="随你的便。"
 		role="PLAYER"
 		scriptResult="CompleteQuest('r5m1_FirstQofSam_Quest');  EndConversation ()" />
 
 	<Reply
 		name="r5m1_LotteryMan_1_N01"
-		text="Hello. Do you want to play a card game for money?"
+		text="你好。想玩两把带彩头的牌吗？"
 		role="NPC"
 		nextReplies="r5m1_LotteryMan_1_N02a r5m1_LotteryMan_1_N02b" />
 
 	<Reply
 		name="r5m1_LotteryMan_1_N02b"
-		text="I'm not a player."
+		text="我不赌钱。"
 		role="PLAYER"
 		scriptResult="EndConversation()" />
 
 	<Reply
 		name="r5m1_LotteryMan_1_N02a"
-		text="Ok."
+		text="好。"
 		role="PLAYER"
 		scriptCondition="GetPlayerMoney()>=50"
 		nextReplies="r5m1_LotteryMan_1_N03a" />
 
 	<Reply
 		name="r5m1_LotteryMan_1_N03a"
-		text="Make a bet before. If you win you will have three times bigger winning."
+		text="先下注。赢了，彩金翻三倍。"
 		role="NPC"
 		nextReplies="r5m1_LotteryMan_1_N04a r5m1_LotteryMan_1_N04b r5m1_LotteryMan_1_N04c" />
 
 	<Reply
 		name="r5m1_LotteryMan_1_N04c"
-		text="450 dollars."
+		text="450块。"
 		role="PLAYER"
 		scriptCondition="GetPlayerMoney()>=450"
 		scriptResult="AddPlayerMoney(-450);  SetVar('stavka',450)"
@@ -1815,7 +1815,7 @@
 
 	<Reply
 		name="r5m1_LotteryMan_1_N04b"
-		text="150 dollars."
+		text="150块。"
 		role="PLAYER"
 		scriptCondition="GetPlayerMoney()>=150"
 		scriptResult="AddPlayerMoney(-150);  SetVar('stavka',150)"
@@ -1823,7 +1823,7 @@
 
 	<Reply
 		name="r5m1_LotteryMan_1_N04a"
-		text="50 dollars."
+		text="50块。"
 		role="PLAYER"
 		scriptCondition="GetPlayerMoney()>=50"
 		scriptResult="AddPlayerMoney(-50);  SetVar('stavka',50)"
@@ -1831,55 +1831,55 @@
 
 	<Reply
 		name="r5m1_LotteryMan_1_N05a"
-		text="I have only four cards from the whole pack, so the rules are very simple. It's good that cards are of different suits. Ha-ha. I will pull one card for you. Your task is to guess what it is."
+		text="整副牌我就留了四张，所以规矩特别简单。妙就妙在这四张花色各不相同。哈哈。我从中抽一张，你的任务就是猜出它是哪张。"
 		role="NPC"
 		scriptResult="SetVar('rndnum',random(4));  println(GetVar('rndnum').AsInt)"
 		nextReplies="r5m1_LotteryMan_1_N06a_1 r5m1_LotteryMan_1_N06a_2 r5m1_LotteryMan_1_N06a_3 r5m1_LotteryMan_1_N06a_4" />
 
 	<Reply
 		name="r5m1_LotteryMan_1_N06a_4"
-		text="Jack clubs."
+		text="梅花J。"
 		role="PLAYER"
 		scriptResult="SetVar('plnum',4)"
 		nextReplies="r5m1_LotteryMan_1_N07aa r5m1_LotteryMan_1_N07ab" />
 
 	<Reply
 		name="r5m1_LotteryMan_1_N06a_3"
-		text="Six diamonds."
+		text="方块6。"
 		role="PLAYER"
 		scriptResult="SetVar('plnum',3)"
 		nextReplies="r5m1_LotteryMan_1_N07aa r5m1_LotteryMan_1_N07ab" />
 
 	<Reply
 		name="r5m1_LotteryMan_1_N06a_2"
-		text="Ace spade."
+		text="黑桃A。"
 		role="PLAYER"
 		scriptResult="SetVar('plnum',2)"
 		nextReplies="r5m1_LotteryMan_1_N07aa r5m1_LotteryMan_1_N07ab" />
 
 	<Reply
 		name="r5m1_LotteryMan_1_N06a_1"
-		text="Ten hearts."
+		text="红桃10。"
 		role="PLAYER"
 		scriptResult="SetVar('plnum',1)"
 		nextReplies="r5m1_LotteryMan_1_N07aa r5m1_LotteryMan_1_N07ab" />
 
 	<Reply
 		name="r5m1_LotteryMan_1_N07ab"
-		text="You have missed! It was another card!"
+		text="猜错了！不是这张！"
 		role="NPC"
 		scriptCondition="GetVar('rndnum').AsInt~=GetVar('plnum').AsNum"
 		nextReplies="r5m1_LotteryMan_1_N08ab" />
 
 	<Reply
 		name="r5m1_LotteryMan_1_N08ab"
-		text="Eh, I feel it."
+		text="唉，我有预感。"
 		role="PLAYER"
 		scriptResult="EndConversation()" />
 
 	<Reply
 		name="r5m1_LotteryMan_1_N07aa"
-		text="Oh, strike me pink!! You are right! Here is your winning."
+		text="哎呀，见鬼了！！你猜对了！彩金拿去。"
 		role="NPC"
 		scriptCondition="GetVar('rndnum').AsInt==GetVar('plnum').AsInt"
 		scriptResult="local stavka = GetVar('stavka').AsInt;  stavka = stavka * 3;  AddPlayerMoney(stavka);"
@@ -1887,338 +1887,338 @@
 
 	<Reply
 		name="r5m1_LotteryMan_1_N08aa"
-		text="Thank you! I'm a lucky beggar."
+		text="多谢！我真是走运。"
 		role="PLAYER"
 		scriptResult="EndConversation()" />
 
 	<Reply
 		name="r5m1_TreasureMan_1_N01"
-		text="I welcome you, stranger. I see that you are strong and smart enough. Could you help me with diggings?"
+		text="欢迎你，外乡人。看你身强力壮，脑子也灵光。能帮我挖点东西吗？"
 		role="NPC"
 		scriptCondition="QuestStatus('r5m1_FindTreasure') == Q_CANBEGIVEN"
 		nextReplies="r5m1_TreasureMan_1_N02 Dlg_pl_000422" />
 
 	<Reply
 		name="Dlg_pl_000422"
-		text="Holy fuel! No! I'm busy enough."
+		text="圣油保佑！不干！我忙得很。"
 		role="PLAYER"
 		scriptResult=" EndConversation()" />
 
 	<Reply
 		name="r5m1_TreasureMan_1_N02"
-		text="We'll see. Tell me in details what to do."
+		text="看看再说。把要做的事详细说说。"
 		role="PLAYER"
 		nextReplies="r5m1_TreasureMan_1_N03" />
 
 	<Reply
 		name="r5m1_TreasureMan_1_N03"
-		text="There are a lot of treasures in these villages. One of them is Forbidden books. If you have luck and you will find them I'll make it worth while."
+		text="这一带村子里埋着不少宝贝。其中一样是禁书。你要是走运能挖到，我绝不会亏待你。"
 		role="NPC"
 		nextReplies="r5m1_TreasureMan_1_N05 Dlg_pl_000423" />
 
 	<Reply
 		name="Dlg_pl_000423"
-		text="It looks suspicious. Look for another fool."
+		text="听着就可疑。你另请高明吧。"
 		role="PLAYER"
 		scriptResult=" EndConversation()" />
 
 	<Reply
 		name="r5m1_TreasureMan_1_N05"
-		text="There is nothing difficult here."
+		text="这有什么难的。"
 		role="PLAYER"
 		nextReplies="r5m1_TreasureMan_1_N06" />
 
 	<Reply
 		name="r5m1_TreasureMan_1_N06"
-		text="Many people dug to get this buried treasure. Any local resident will say you that it is somewhere near the pipes plexus. These pipes were explored through the length and breadth, and everything was in vain."
+		text="多少人挖过这批窖藏。随便哪个本地人都会告诉你，它就埋在管道交错的什么地方。这片管道里里外外都被翻了个遍，全都白忙活。"
 		role="NPC"
 		nextReplies="r5m1_TreasureMan_1_N07" />
 
 	<Reply
 		name="r5m1_TreasureMan_1_N07"
-		text="We'll see maybe I have more luck."
+		text="走着瞧吧，说不定我的运气更旺。"
 		role="PLAYER"
 		scriptResult="TakeQuest('r5m1_FindTreasure');  EndConversation()" />
 
 	<Reply
 		name="r5m1_TreasureMan_2_N01"
-		text="Excellent! These are the very same books! I hope you didn't read them otherwise... But wait - take it. You have honestly deserved the right to own this thing."
+		text="太好了！正是那几本书！但愿你没偷看——不然的话……等等，拿着吧。你凭本事挣来了拥有它的权利。"
 		role="NPC"
 		scriptCondition="QuestStatus('r5m1_FT_Return') == Q_TAKEN"
 		nextReplies="r5m1_TreasureMan_2_N02" />
 
 	<Reply
 		name="r5m1_TreasureMan_2_N02"
-		text="Thank you, but what is this?"
+		text="多谢，可这是什么玩意儿？"
 		role="PLAYER"
 		nextReplies="r5m1_TreasureMan_2_N03" />
 
 	<Reply
 		name="r5m1_TreasureMan_2_N03"
-		text="This is a treasure detector! For the common people it is just a toy but for the hunter for ancient treasures it's a unique thing."
+		text="这是寻宝探测器！在普通人手里它就是个玩具，但对寻宝猎人来说，这可是独一无二的宝贝。"
 		role="NPC"
 		nextReplies="r5m1_TreasureMan_2_N04" />
 
 	<Reply
 		name="r5m1_TreasureMan_2_N04"
-		text="Excellent, blow out your tires."
+		text="太好了，爆你的轮胎！"
 		role="PLAYER"
 		scriptResult="CompleteQuest('r5m1_FT_Return');  EndConversation()" />
 
 	<Reply
 		name="TheKonneks_Bar_Posilka_NPC_N01"
-		text="Hello, buddy. I've got a job for you."
+		text="你好，老弟。我这儿有份活儿给你。"
 		role="NPC"
 		scriptCondition="QuestStatus('r5m1_Posilka') == Q_CANBEGIVEN"
 		nextReplies="Dlg_pl_000296" />
 
 	<Reply
 		name="Dlg_pl_000296"
-		text="Yeah, I listen."
+		text="行，你说。"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000297" />
 
 	<Reply
 		name="Dlg_npc_000297"
-		text="It needs to deliver package to Sam faster than our competitors. But keep in mind the winner gets everything."
+		text="需要抢在对手前头，把包裹送到Sam手里。记住，赢家通吃。"
 		role="NPC"
 		nextReplies="Dlg_pl_000298 Dlg_pl_000421" />
 
 	<Reply
 		name="Dlg_pl_000421"
-		text="It's not interesting."
+		text="不感兴趣。"
 		role="PLAYER"
 		scriptResult=" EndConversation()" />
 
 	<Reply
 		name="Dlg_pl_000298"
-		text="No problems. Give me the package."
+		text="没问题。包裹拿来。"
 		role="PLAYER"
 		scriptResult="TActivate('trStartPosilka');  TakeQuest('r5m1_Posilka');  EndConversation()" />
 
 	<Reply
 		name="r5m1_MisterEko_1_N01"
-		text="Hello. I have a safe business proposition for you."
+		text="你好。我这儿有笔稳当的买卖想跟你做。"
 		role="NPC"
 		scriptCondition="QuestStatus('r5m1_Kontrabanda')==Q_CANBEGIVEN"
 		nextReplies="r5m1_MisterEko_1_N02 Dlg_pl_000424" />
 
 	<Reply
 		name="Dlg_pl_000424"
-		text="I think it is not safe enough."
+		text="我看没那么稳当。"
 		role="PLAYER"
 		scriptResult=" EndConversation()" />
 
 	<Reply
 		name="r5m1_MisterEko_1_N02"
-		text="What is the reward?"
+		text="报酬多少？"
 		role="PLAYER"
 		nextReplies="r5m1_MisterEko_1_N03" />
 
 	<Reply
 		name="r5m1_MisterEko_1_N03"
-		text="It will be enough to buy new engine."
+		text="够买一台新发动机的。"
 		role="NPC"
 		nextReplies="r5m1_MisterEko_1_N04" />
 
 	<Reply
 		name="r5m1_MisterEko_1_N04"
-		text="Ok. What I should do?"
+		text="行。要我做什么？"
 		role="PLAYER"
 		nextReplies="r5m1_MisterEko_1_N05" />
 
 	<Reply
 		name="r5m1_MisterEko_1_N05"
-		text="It is a very easy job. You should deliver the package to my friend in Pelsyvansk."
+		text="非常轻松的活儿。把包裹送到宾夕万斯克我朋友那儿就行。"
 		role="NPC"
 		nextReplies="r5m1_MisterEko_1_N06 Dlg_pl_000425" />
 
 	<Reply
 		name="Dlg_pl_000425"
-		text="I'm not interested in so hanky-panky business."
+		text="这种鬼鬼祟祟的买卖，我没兴趣。"
 		role="PLAYER"
 		scriptResult=" EndConversation()" />
 
 	<Reply
 		name="r5m1_MisterEko_1_N06"
-		text="Ok, I'll do it. It is really an easy job."
+		text="行，我接了。这活儿确实轻松。"
 		role="PLAYER"
 		scriptResult="TakeQuest('r5m1_Kontrabanda');  FailQuest('r5m1_KK_Spy');  FailQuest('r5m1_KK_KillThem');  FailQuest('r5m1_KillKontrabondist');  EndConversation()" />
 
 	<Reply
 		name="r5m1_Bratello_1_N01"
-		text="Listen!"
+		text="听着！"
 		role="NPC"
 		scriptCondition="QuestStatus('r5m1_K_FindBtotherMan')==Q_TAKEN"
 		nextReplies="r5m1_Bratello_1_N02" />
 
 	<Reply
 		name="r5m1_Bratello_1_N02"
-		text="One man here asks you to deliver the package."
+		text="这儿有位老兄托你把包裹送出去。"
 		role="PLAYER"
 		nextReplies="r5m1_Bratello_1_N03" />
 
 	<Reply
 		name="r5m1_Bratello_1_N03"
-		text="What package? I don't know anything about it."
+		text="什么包裹？我什么都不知道。"
 		role="NPC"
 		nextReplies="r5m1_Bratello_1_N04a r5m1_Bratello_1_N04b" />
 
 	<Reply
 		name="r5m1_Bratello_1_N04b"
-		text="Hey, buddy, if you are going to tell me that I'm wasting my time here I will be very disappointed. Do you understand?"
+		text="嘿，老兄，你要是想告诉我，我在这儿纯属浪费时间，那我会非常失望的。明白吗？"
 		role="PLAYER"
 		nextReplies="r5m1_Bratello_1_N05b" />
 
 	<Reply
 		name="r5m1_Bratello_1_N05b"
-		text="You are a sharp fellow. I think we'll make deal. Tell me."
+		text="你是个明白人。我看咱们能做成这单买卖。说吧。"
 		role="NPC"
 		nextReplies="r5m1_Bratello_1_N06b" />
 
 	<Reply
 		name="r5m1_Bratello_1_N06b"
-		text="What should I tell you? Mister Eco has told me that you give me cargo and tell where to deliver it."
+		text="我还说什么？Eco先生告诉我，你会把货给我，然后告诉我送到哪儿。"
 		role="PLAYER"
 		nextReplies="r5m1_Bratello_1_N07b" />
 
 	<Reply
 		name="r5m1_Bratello_1_N07b"
-		text="Yes, everything is correct. I will put it in your vehicle. Deliver it to Small Apple. Watch out!"
+		text="对，都没错。我把货装你车上。送到小苹果城去。路上当心！"
 		role="NPC"
 		nextReplies="r5m1_Bratello_1_N08b" />
 
 	<Reply
 		name="r5m1_Bratello_1_N08b"
-		text="Ok."
+		text="好。"
 		role="PLAYER"
 		scriptResult="CompleteQuest('r5m1_K_FindBtotherMan'); EndConversation()" />
 
 	<Reply
 		name="r5m1_Bratello_1_N04a"
-		text="What do you mean 'I don't know'? What the cock-and-bull stories are you telling me?"
+		text="'我不知道'是什么意思？你跟我编什么鬼话呢？"
 		role="PLAYER"
 		nextReplies="r5m1_Bratello_1_N05a" />
 
 	<Reply
 		name="r5m1_Bratello_1_N05a"
-		text="What do you mean? You are a storyteller, not me."
+		text="什么意思？编故事的是你，可不是我。"
 		role="NPC"
 		nextReplies="r5m1_Bratello_1_N06a" />
 
 	<Reply
 		name="r5m1_Bratello_1_N06a"
-		text="I don't tell stories!!!"
+		text="我没编故事！！！"
 		role="PLAYER"
 		nextReplies="r5m1_Bratello_1_N07a" />
 
 	<Reply
 		name="r5m1_Bratello_1_N07a"
-		text="Hey, dude, you'd better go until something has happened."
+		text="嘿，老兄，趁还没出事，你最好赶紧走。"
 		role="NPC"
 		nextReplies="r5m1_Bratello_1_N08a" />
 
 	<Reply
 		name="r5m1_Bratello_1_N08a"
-		text="Wow, you are so terrifying, I'm so afraid!"
+		text="哇，你可真吓人，我好怕怕哦！"
 		role="PLAYER"
 		scriptResult="FailQuest('r5m1_K_TravelLetter');  FailQuest('r5m1_K_FindBtotherMan');  EndConversation()" />
 
 	<Reply
 		name="r5m1_BuyerNarkota_1_N01"
-		text="What do you want?"
+		text="有什么事？"
 		role="NPC"
 		scriptCondition="QuestStatus('r5m1_K_TravelLetter')==Q_TAKEN"
 		nextReplies="r5m1_BuyerNarkota_1_N02" />
 
 	<Reply
 		name="r5m1_BuyerNarkota_1_N02"
-		text="I've got a package for you."
+		text="有个包裹要交给你。"
 		role="PLAYER"
 		nextReplies="r5m1_BuyerNarkota_1_N03" />
 
 	<Reply
 		name="r5m1_BuyerNarkota_1_N03"
-		text="Why not by mail?"
+		text="怎么不邮寄？"
 		role="NPC"
 		nextReplies="r5m1_BuyerNarkota_1_N04" />
 
 	<Reply
 		name="r5m1_BuyerNarkota_1_N04"
-		text="Because the mail hadn't worked for almost 200 years. Very urgent and important cargo."
+		text="因为邮政都快瘫了200年了。这可是十万火急的重要货。"
 		role="PLAYER"
 		nextReplies="r5m1_BuyerNarkota_1_N05" />
 
 	<Reply
 		name="r5m1_BuyerNarkota_1_N05"
-		text="I hope there were no tails after you?! Ok, how much do I owe you for delivery?"
+		text="希望没有尾巴跟着你吧？！行，运费我该付你多少？"
 		role="NPC"
 		nextReplies="r5m1_BuyerNarkota_1_N06" />
 
 	<Reply
 		name="r5m1_BuyerNarkota_1_N06"
-		text="As usual."
+		text="老规矩。"
 		role="PLAYER"
 		nextReplies="r5m1_BuyerNarkota_1_N07" />
 
 	<Reply
 		name="r5m1_BuyerNarkota_1_N07"
-		text="Take it. Good luck."
+		text="拿去吧。祝你好运。"
 		role="NPC"
 		nextReplies="r5m1_BuyerNarkota_1_N08" />
 
 	<Reply
 		name="r5m1_BuyerNarkota_1_N08"
-		text="Bye."
+		text="回见。"
 		role="PLAYER"
 		scriptResult="CompleteQuest('r5m1_K_TravelLetter');  EndConversation()" />
 
 	<Reply
 		name="r5m1_KillContra_1_N01"
-		text="I look for an honest man who can handle with weapon."
+		text="我在找一个会使枪的正派人。"
 		role="NPC"
 		scriptCondition="QuestStatus('r5m1_KillKontrabondist')==Q_CANBEGIVEN"
 		nextReplies="Dlg_pl_000329" />
 
 	<Reply
 		name="Dlg_pl_000329"
-		text="For what?"
+		text="干什么？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000330" />
 
 	<Reply
 		name="Dlg_npc_000330"
-		text="Can you free our settlement from one bandit smuggler?"
+		text="能帮我们的聚落除掉一个土匪走私犯吗？"
 		role="NPC"
 		nextReplies="Dlg_pl_000331" />
 
 	<Reply
 		name="Dlg_pl_000331"
-		text="For good payment, why not?"
+		text="报酬给足，为什么不行？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000332" />
 
 	<Reply
 		name="Dlg_npc_000332"
-		text="Excellent, we reckon on you."
+		text="太好了，就指望你了。"
 		role="NPC"
 		nextReplies="Dlg_pl_000333 Dlg_pl_000418" />
 
 	<Reply
 		name="Dlg_pl_000418"
-		text="Nevertheless, expect for somebody another better."
+		text="不过，你还是另请高明吧。"
 		role="PLAYER"
 		scriptResult=" EndConversation()" />
 
 	<Reply
 		name="Dlg_pl_000333"
-		text="You'd better think over my payment. Wheteher he is a bandit or not but ammunition costs a lot."
+		text="最好先把我的报酬定好。不管他是不是土匪，弹药可都是要钱的。"
 		role="PLAYER"
 		scriptResult=" TActivate ('trCreateKontr');  FailQuest('r5m1_K_TravelLetter');  FailQuest('r5m1_K_FindBtotherMan');  FailQuest('r5m1_Kontrabanda');  EndConversation()" />
 
 	<Reply
 		name="Sin_Joe_dlg"
-		text="I wish you a safe road, Traveller!"
+		text="祝你一路平安，旅行者！"
 		role="NPC"
 		scriptCondition="QuestStatus('Sin_FedEx_qst')==Q_TAKEN"
 		scriptResult="CompleteQuest('Sin_FedEx_qst'); CompleteQuest('Sin_Arlekin_Find_qst'); TActivate('Arlekin_ctr')"
@@ -2226,99 +2226,99 @@
 
 	<Reply
 		name="Dlg_pl_000353"
-		text="I've got a package for Joe. Know him?"
+		text="我这儿有个包裹要交给Joe。认识他吗？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000354" />
 
 	<Reply
 		name="Dlg_npc_000354"
-		text="Everyone knows old Joe. In fact, that's me."
+		text="老Joe谁不认识。巧了，正是在下。"
 		role="NPC"
 		nextReplies="Dlg_pl_000355" />
 
 	<Reply
 		name="Dlg_pl_000355"
-		text="You've got to pay for the delivery."
+		text="运费您得付。"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000356" />
 
 	<Reply
 		name="Dlg_npc_000356"
-		text="Joe always pays his bills. Here's your $500."
+		text="Joe的账从来不欠。这是你的500块。"
 		role="NPC"
 		scriptResult="AddPlayerMoney( 500 )"
 		nextReplies="Dlg_pl_000357" />
 
 	<Reply
 		name="Dlg_pl_000357"
-		text="Tell me, Joe, where can I find Harlequin?"
+		text="跟我说说，Joe，上哪儿能找到Harlequin？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000358" />
 
 	<Reply
 		name="Dlg_npc_000358"
-		text="Joe will tell you where to find him. This part of the town belongs to Dogs. Stop the car and you'll hear Harlequin's laughter."
+		text="Joe这就告诉你。城的这一片归狗帮。把车停下，你自然能听见Harlequin的笑声。"
 		role="NPC"
 		nextReplies="Dlg_pl_000359" />
 
 	<Reply
 		name="Dlg_pl_000359"
-		text="Thanks, Joe."
+		text="多谢，Joe。"
 		role="PLAYER"
 		scriptResult="EndConversation()" />
 
 	<Reply
 		name="Sin_Kitty_dlg"
-		text="Hello, cutey."
+		text="你好呀，小帅哥。"
 		role="NPC"
 		scriptCondition="QuestStatus('Sin_Cat_Garfield_qst')==Q_TAKEN"
 		nextReplies="Dlg_pl_000361" />
 
 	<Reply
 		name="Dlg_pl_000361"
-		text="Is there a mechanic?"
+		text="有机械师吗？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000362" />
 
 	<Reply
 		name="Dlg_npc_000362"
-		text="You can't refuel your truck here."
+		text="在这儿你的卡车可加不了油。"
 		role="NPC"
 		nextReplies="Dlg_pl_000363" />
 
 	<Reply
 		name="Dlg_pl_000363"
-		text="Harlequin?"
+		text="Harlequin？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000364" />
 
 	<Reply
 		name="Dlg_npc_000364"
-		text="He used to be the right hand of Dog's Boss - Bulldog. No one here will help a Dogs' enemy. "
+		text="他曾经是狗帮老大Bulldog的左右手。这儿没人会帮狗帮的敌人。"
 		role="NPC"
 		nextReplies="Dlg_pl_000365" />
 
 	<Reply
 		name="Dlg_pl_000365"
-		text="There seems to be no other way, but to steal truck parts and petrol at night. "
+		text="看来没别的辙了，只能夜里去偷卡车的零件和汽油。"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000366" />
 
 	<Reply
 		name="Dlg_npc_000366"
-		text="That or you can work for Garfield's Cats. If you work for Garfield, you'll have money and petrol. You can find Garfield at the Villa. Tell him, you are from Kitty. "
+		text="要么，你就去给Garfield的猫帮干活。给Garfield卖命，你就有钱有油。Garfield就在别墅里。告诉他，是Kitty介绍来的。"
 		role="NPC"
 		nextReplies="Dlg_pl_000367" />
 
 	<Reply
 		name="Dlg_pl_000367"
-		text="Thanks."
+		text="多谢。"
 		role="PLAYER"
 		scriptResult="SetTolerance(1194,1100,RS_ENEMY) EndConversation()" />
 
 	<Reply
 		name="Sin_Garfield_dlg"
-		text="You're welcome. Don't worry about your truck. It will be washed and refueled. Feel at home.  "
+		text="不客气。你的卡车别担心，会被洗得干干净净、油加得满满的。就当自己家，别拘束。"
 		role="NPC"
 		scriptCondition="QuestStatus('Sin_Cat_Garfield_qst')==Q_TAKEN"
 		scriptResult="CompleteQuest('Sin_Cat_Garfield_qst') SetTolerance(1194,1100,RS_NEUTRAL)"
@@ -2326,37 +2326,37 @@
 
 	<Reply
 		name="Dlg_pl_000369"
-		text="Thank you, Sir. I came to talk about a job. Kitty said you're hiring people. "
+		text="多谢，老板。我是来谈活儿的。Kitty说您这儿正招人。"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000370" />
 
 	<Reply
 		name="Dlg_npc_000370"
-		text="Yes, that's right. I've heard you are the one who killed Harlequin in a just combat. You must be really good, so I'm hiring you. "
+		text="没错。听说你就是在正面决斗中干掉Harlequin的那位。你的身手肯定没得说，我雇你了。"
 		role="NPC"
 		nextReplies="Dlg_pl_000371" />
 
 	<Reply
 		name="Dlg_pl_000371"
-		text="Thank you, Sir."
+		text="多谢，老板。"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000372" />
 
 	<Reply
 		name="Dlg_npc_000372"
-		text="I'll give you a task. A caravan delivers some cargo to the Dogs. We bribed some of the guards, but not all of them. You've got to get there and kill the Chief Guard. Good luck! "
+		text="给你派个活儿。有一支车队正给狗帮运货。护卫里我们买通了一些，但没全买通。你得赶过去，把护卫队长干掉。祝你好运！"
 		role="NPC"
 		nextReplies="Dlg_pl_000373" />
 
 	<Reply
 		name="Dlg_pl_000373"
-		text="I'll do it, Sir."
+		text="我这就去办，老板。"
 		role="PLAYER"
 		scriptResult="TActivate('Egoist_ctr'); EndConversation()" />
 
 	<Reply
 		name="Sin_Kitty2_dlg"
-		text="What do you want, Raider?"
+		text="有何贵干，袭击者？"
 		role="NPC"
 		scriptCondition="QuestStatus('Sin_Cat_Kitty_qst')==Q_TAKEN"
 		scriptResult="CompleteQuest('Sin_Cat_Kitty_qst') SetTolerance(1192,1100,RS_NEUTRAL)"
@@ -2364,37 +2364,37 @@
 
 	<Reply
 		name="Dlg_pl_000375"
-		text="What's up? What's going on?"
+		text="出什么事了？这是怎么了？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000376" />
 
 	<Reply
 		name="Dlg_npc_000376"
-		text="That pig Egoist had a go at my truck after you left. The truck is a heap of junk now."
+		text="你走之后，Egoist那头猪对老娘的卡车下了黑手。现在车成了一堆废铁。"
 		role="NPC"
 		nextReplies="Dlg_pl_000377" />
 
 	<Reply
 		name="Dlg_pl_000377"
-		text="He'll pay for each and every scratch. Where is he now?"
+		text="每一道刮痕他都得还账。他现在在哪儿？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000378" />
 
 	<Reply
 		name="Dlg_npc_000378"
-		text="He's gone to paint the town red to Saint-Rafael, over the bridge. Want to kill him?"
+		text="他过桥去圣拉斐尔撒野去了。想不想去宰了他？"
 		role="NPC"
 		nextReplies="Dlg_pl_000379" />
 
 	<Reply
 		name="Dlg_pl_000379"
-		text="I have a better idea."
+		text="我有个更好的主意。"
 		role="PLAYER"
 		scriptResult="EndConversation()" />
 
 	<Reply
 		name="Sin_Bulldog_dlg"
-		text="Are you crazy? Why did you come?"
+		text="你疯了吗？来这儿干什么？"
 		role="NPC"
 		scriptCondition="QuestStatus('Sin_Egoist_Trap_qst')==Q_TAKEN"
 		scriptResult="CompleteQuest('Sin_Egoist_Trap_qst')"
@@ -2402,49 +2402,49 @@
 
 	<Reply
 		name="Dlg_pl_000381"
-		text="I don't like working for the Cats. I want to join your gang."
+		text="我不想给猫帮卖命。我想入你这一伙。"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000382" />
 
 	<Reply
 		name="Dlg_npc_000382"
-		text="Do you think it's all that simple? You've killed my best man."
+		text="你以为就这么简单？你可杀了我最得力的人。"
 		role="NPC"
 		nextReplies="Dlg_pl_000383" />
 
 	<Reply
 		name="Dlg_pl_000383"
-		text="He wasn't the best if I killed him."
+		text="我要能杀了他，就说明他不是最强的。"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000384" />
 
 	<Reply
 		name="Dlg_npc_000384"
-		text="Anyway, I need some proof of your loyalty. "
+		text="不管怎么说，我得看到点你的投名状。"
 		role="NPC"
 		nextReplies="Dlg_pl_000385" />
 
 	<Reply
 		name="Dlg_pl_000385"
-		text="I know where Egoist is now. He is in Saint-Rafael, with only a few guards. "
+		text="我知道Egoist现在在哪儿。他在圣拉斐尔，身边就带几个护卫。"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000386" />
 
 	<Reply
 		name="Dlg_npc_000386"
-		text="Like hell he is! You want me to go there and end up in a trap? You're a fool if you think I'm buying it. "
+		text="鬼才信！你想让我过去自投罗网？你要觉得我会信，那你就太蠢了。"
 		role="NPC"
 		nextReplies="Dlg_pl_000387" />
 
 	<Reply
 		name="Dlg_pl_000387"
-		text="I'll go fetch him."
+		text="我去把他提来。"
 		role="PLAYER"
 		scriptResult="EndConversation()" />
 
 	<Reply
 		name="Sin_Father_dlg"
-		text="Good to see you again, traveller."
+		text="很高兴又见到你，旅行者。"
 		role="NPC"
 		scriptCondition="QuestStatus('Sin_Egoist_Father_qst')==Q_TAKEN"
 		scriptResult="CompleteQuest('Sin_Egoist_Father_qst')"
@@ -2452,49 +2452,49 @@
 
 	<Reply
 		name="Dlg_pl_000389"
-		text="I need help."
+		text="我需要帮助。"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000390" />
 
 	<Reply
 		name="Dlg_npc_000390"
-		text="You've come to the right place."
+		text="你可来对地方了。"
 		role="NPC"
 		nextReplies="Dlg_pl_000391" />
 
 	<Reply
 		name="Dlg_pl_000391"
-		text="I need to get over the ridge. "
+		text="我得翻过这道山岭。"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000392" />
 
 	<Reply
 		name="Dlg_npc_000392"
-		text="There is a tunnel that leads to the other side. Just show the mountain your respect and it'll let you pass."
+		text="有一条隧道通到山那头。只要对这座山心存敬意，它自会放你过去。"
 		role="NPC"
 		nextReplies="Dlg_pl_000393" />
 
 	<Reply
 		name="Dlg_pl_000393"
-		text="Is that all you can say?"
+		text="就这么多？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000394" />
 
 	<Reply
 		name="Dlg_npc_000394"
-		text="That's more than enough."
+		text="这已经足够了。"
 		role="NPC"
 		nextReplies="Dlg_pl_000395" />
 
 	<Reply
 		name="Dlg_pl_000395"
-		text="Thank you, Reverend."
+		text="多谢，牧师。"
 		role="PLAYER"
 		scriptResult="EndConversation()" />
 
 	<Reply
 		name="Sin_Egoist_dlg"
-		text="Please, don't kill me."
+		text="求你别杀我。"
 		role="NPC"
 		scriptCondition="QuestStatus('Sin_Egoist_Take_qst')==Q_TAKEN"
 		scriptResult="CompleteQuest('Sin_Egoist_Take_qst'); TDeactivate('CustomOff_tr'); TActivate('CustomOn_tr')"
@@ -2502,25 +2502,25 @@
 
 	<Reply
 		name="Dlg_pl_000397"
-		text="You are worth more alive. You'll come with me to Borne."
+		text="你活着更值钱。跟我去见Borne。"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000398" />
 
 	<Reply
 		name="Dlg_npc_000398"
-		text="Just let me live..."
+		text="只要留我一条命……"
 		role="NPC"
 		nextReplies="Dlg_pl_000399" />
 
 	<Reply
 		name="Dlg_pl_000399"
-		text="You've got to have the customs pass. Give it to me. "
+		text="你手里应该有通关证。交出来。"
 		role="PLAYER"
 		scriptResult="EndConversation()" />
 
 	<Reply
 		name="Sin_Bulldog2_dlg"
-		text="So, how is it going?"
+		text="事情办得怎么样了？"
 		role="NPC"
 		scriptCondition="QuestStatus('Sin_Egoist_Home_qst')==Q_TAKEN"
 		scriptResult="CompleteQuest('Sin_Egoist_Home_qst'); TActivate('Cross_ctr')"
@@ -2528,25 +2528,25 @@
 
 	<Reply
 		name="Dlg_pl_000401"
-		text="He is tied, he is in the truck.."
+		text="他捆结实了，就在卡车里。"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000402" />
 
 	<Reply
 		name="Dlg_npc_000402"
-		text="I arranged to meet the Cats at the crossroads. Bring him there. "
+		text="我跟猫帮约好在老路口见面。把人带到那儿去。"
 		role="NPC"
 		nextReplies="Dlg_pl_000406" />
 
 	<Reply
 		name="Dlg_pl_000406"
-		text="Ok."
+		text="好。"
 		role="PLAYER"
 		scriptResult="EndConversation()" />
 
 	<Reply
 		name="Sin_Kitty3_dlg"
-		text="A-hey, keep off. I'll scratch your eyes out, toad."
+		text="喂，离远点。信不信老娘把你眼珠子挠出来，癞蛤蟆。"
 		role="NPC"
 		scriptCondition="QuestStatus('Sin_Cross_Kitty_qst')==Q_TAKEN"
 		scriptResult="TActivate ('OldFarm_Leave_tr'); CompleteQuest('Sin_Cross_Kitty_qst')"
@@ -2554,25 +2554,25 @@
 
 	<Reply
 		name="Dlg_pl_000404"
-		text="Easy, easy. I came here to set you free."
+		text="别激动，别激动。我是来放你出去的。"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000405" />
 
 	<Reply
 		name="Dlg_npc_000405"
-		text="Thanks a lot!"
+		text="多谢！"
 		role="NPC"
 		nextReplies="Dlg_pl_000407" />
 
 	<Reply
 		name="Dlg_pl_000407"
-		text="You'd better go now. I'll wait for the Dogs."
+		text="你现在就走吧。我来等狗帮。"
 		role="PLAYER"
 		scriptResult="EndConversation()" />
 
 	<Reply
 		name="Sin_Joe2_dlg"
-		text="Is that you? Joe is grateful to you for saving his life."
+		text="是你吗？Joe多谢你救了他这条命。"
 		role="NPC"
 		scriptCondition="QuestStatus('Sin_JoeSaving_qst')==Q_TAKEN"
 		scriptResult="CompleteQuest('Sin_JoeSaving_qst')"
@@ -2580,26 +2580,26 @@
 
 	<Reply
 		name="Dlg_pl_000409"
-		text="I had to. I came here to kill Borne, but I couldn't find him. So, I'm leaving. I'll go say good bye to Reverend."
+		text="顺手而已。我本是来找Borne算账的，可惜没找着。所以我要走了。走之前去跟牧师道个别。"
 		role="PLAYER"
 		scriptResult="EndConversation()"
 		nextReplies="Dlg_npc_000416" />
 
 	<Reply
 		name="Dlg_npc_000416"
-		text="Joe wishes you pure petrol!"
+		text="Joe祝你汽油永远纯净！"
 		role="NPC"
 		nextReplies="Dlg_pl_000417" />
 
 	<Reply
 		name="Dlg_pl_000417"
-		text="Same to you, Joe!"
+		text="你也一样，Joe！"
 		role="PLAYER"
 		scriptResult="EndConversation()" />
 
 	<Reply
 		name="Sin_Father2_dlg"
-		text="You've reached the end of the Road, Traveller."
+		text="你已经走到'路'的尽头了，旅行者。"
 		role="NPC"
 		scriptCondition="QuestStatus('Sin_Final_Way_qst')==Q_TAKEN"
 		scriptResult="TActivate ('MapEnd') CompleteQuest('Sin_Final_Way_qst')"
@@ -2607,68 +2607,68 @@
 
 	<Reply
 		name="Dlg_pl_000411"
-		text="What am I to do next, Reverend?"
+		text="接下来我该怎么办，牧师？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000412" />
 
 	<Reply
 		name="Dlg_npc_000412"
-		text="It's up to you to decide. Set your goal. Perhaps your enemy will show you the way, if your friend fails. "
+		text="这得由你自己决定。定下你的目标吧。朋友若是帮不上你，兴许敌人会为你指路。"
 		role="NPC"
 		nextReplies="Dlg_pl_000413" />
 
 	<Reply
 		name="Dlg_pl_000413"
-		text="Do you know where to find him?"
+		text="你知道上哪儿能找到他吗？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000414" />
 
 	<Reply
 		name="Dlg_npc_000414"
-		text="It will all end where it started."
+		text="一切会在它开始的地方结束。"
 		role="NPC"
 		nextReplies="Dlg_pl_000415" />
 
 	<Reply
 		name="Dlg_pl_000415"
-		text="Thank you, Reverend."
+		text="多谢，牧师。"
 		role="PLAYER"
 		scriptResult="EndConversation()" />
 
 	<Reply
 		name="Sin_Bulldog3_dlg"
-		text="Good job! We wouldn't have made it without you."
+		text="干得漂亮！没有你，我们成不了事。"
 		role="NPC"
 		scriptCondition="QuestStatus('Sin_Cross_Kitty_qst')==Q_TAKEN"
 		nextReplies="Dlg_pl_000432" />
 
 	<Reply
 		name="Dlg_pl_000432"
-		text="I saw Kitty's truck in the battle. How is she?"
+		text="战斗里我看见Kitty的卡车了。她怎么样？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000420" />
 
 	<Reply
 		name="Dlg_npc_000420"
-		text="Don't worry, she is allright. My men brought her to the old farm. The old Cat will have to pay for her freedom. In the meantime we'll be cutting pieces off her mask and sending them to him."
+		text="放心，她安然无恙。我的人把她押到老农场去了。老Garfield得为她的自由掏腰包。这期间，我们会把她面罩一片片剪下来寄给他。"
 		role="NPC"
 		nextReplies="Dlg_pl_000429" />
 
 	<Reply
 		name="Dlg_pl_000429"
-		text="I'd better check if your men are guarding her well. The Cats must be furious!"
+		text="我还是去检查一下你的人看没看好她吧。猫帮肯定都气疯了！"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000430" />
 
 	<Reply
 		name="Dlg_npc_000430"
-		text="There's no harm in checking. Go and do it."
+		text="查一查也无妨。去吧。"
 		role="NPC"
 		nextReplies="Dlg_pl_000431" />
 
 	<Reply
 		name="Dlg_pl_000431"
-		text="Ok, Boss."
+		text="好的，老大。"
 		role="PLAYER"
 		scriptResult="EndConversation()" />
 </DialogsResource>
