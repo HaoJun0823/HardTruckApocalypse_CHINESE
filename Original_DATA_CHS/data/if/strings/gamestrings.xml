@@ -1,172 +1,172 @@
 <?xml version="1.0" encoding="windows-1251" standalone="yes" ?><!-- edited with XML Spy v4.2 U (http://www.xmlspy.com) by Morgoth (Targem) -->
-<resource><!--Default buttons--><!-- Общие в игре -->
+<resource><!--Default buttons-->
 	<string
 		id="Price"
-		value="Price" />
+		value="јЫёс" />
 
 	<string
 		id="BasePrice"
-		value="Average price" />
+		value="ѕщјЫ" />
 
 	<string
 		id="Goods"
-		value="Merchandise" />
+		value="ЙМЖ·" />
 
 	<string
 		id="Amount"
-		value="Amount" />
+		value="КэБї" />
 
 	<string
 		id="NotEnoughGold"
-		value="Not enough coins" />
+		value="Ѕр±ТІ»Чг" />
 
 	<string
 		id="NotEnoughSpace"
-		value="Not enough inventory space" />
+		value="ОпЖ·АёїХјдІ»Чг" />
 
 	<string
 		id="Buy"
-		value="Buy" />
+		value="№єВт" />
 
 	<string
 		id="Sell"
-		value="Sell" />
+		value="іцКЫ" />
 
 	<string
 		id="NotSellable"
-		value="Not for sale" />
+		value="І»їЙіцКЫ" />
 
 	<string
 		id="NotBuyable"
-		value="@ffff0000Cannot buy" />
+		value="@ffff0000ОЮ·Ё№єВт" />
 
 	<string
 		id="NotSelledByTown"
-		value="@ffff0000Is not for sale" />
+		value="@ffff0000ёГіЗХтІ»іцКЫ" />
 
 	<string
 		id="NotBuyedByTown"
-		value="@ffff0000Cannot be sold" />
+		value="@ffff0000ёГіЗХтІ»КХ№є" />
 
 	<string
 		id="WareNotSelledByTown"
-		value="The town does not sell this merchandise" />
+		value="ёГіЗХтІ»іцКЫґЛЦЦЙМЖ·" />
 
 	<string
 		id="WareNotBuyedByTown"
-		value="The town does not buy this merchandise" />
+		value="ёГіЗХтІ»КХ№єґЛЦЦЙМЖ·" />
 
 	<string
 		id="MoveVehicleItemsFromPlayer"
-		value="Move Everything" />
+		value="И«ІїЧЄТЖ" />
 
 	<string
 		id="MoveVehicleItemsToPlayer"
-		value="Move Everything back" />
+		value="И«ІїЧЄТЖ»ШИҐ" />
 
 	<string
 		id="MoveCabinItemsFromPlayer"
-		value="Move Everything to the new cabin" />
+		value="И«ІїЧЄТЖµЅРВјЭК»КТ" />
 
 	<string
 		id="MoveCabinItemsToPlayer"
-		value="Move Everything to the current cabin" />
+		value="И«ІїЧЄТЖµЅµ±З°јЭК»КТ" />
 
 	<string
 		id="MoveBasketItemsFromPlayer"
-		value="Move Everything to the new body" />
+		value="И«ІїЧЄТЖµЅРВіµПб" />
 
 	<string
 		id="MoveBasketItemsToPlayer"
-		value="Move Everything to the current body" />
+		value="И«ІїЧЄТЖµЅµ±З°іµПб" />
 
 	<string
 		id="TotalPrice"
-		value="Total price" />
+		value="ЧЬјЫ" />
 
 	<string
 		id="NotCompatible"
-		value="@ffff0000Cannot be installed with the current truck's configuration." />
+		value="@ffff0000ОЮ·Ё°ІЧ°µЅµ±З°їЁіµЕдЦГЙПЎЈ" />
 
 	<string
 		id="TooRich"
-		value="@ffff0000You cannot afford this item." />
+		value="@ffff0000ДгВтІ»ЖрХвёцОпЖ·ЎЈ" />
 
 	<string
 		id="BuyPriceByTown"
-		value="Purchase price" />
+		value="№єВтјЫ" />
 
 	<string
 		id="SellPriceByTown"
-		value="Sell price" />
+		value="іцКЫјЫ" />
 
 	<string
 		id="QuickSave"
-		value="QuickSave" />
+		value="їмЛЩґжµµ" />
 
 	<string
 		id="AutoSave"
-		value="AutoSave" />
+		value="ЧФ¶Їґжµµ" />
 
 	<string
 		id="GameWasSaved"
-		value="Game saved: @fffed11b%1s" />
+		value="УОП·ТС±ЈґжЈє@fffed11b%1s" />
 
 	<string
 		id="GameWasLoaded"
-		value="Game loaded: @fffed11b%1s" />
+		value="УОП·ТС¶БИЎЈє@fffed11b%1s" />
 
 	<string
 		id="GameSaving"
-		value="Saving" />
+		value="±ЈґжЦР" />
 
 	<string
 		id="GameSaving..."
-		value="Saving..." />
+		value="±ЈґжЦРЎ­" />
 
 	<string
 		id="SaveGame"
-		value="Save the game" />
+		value="±ЈґжУОП·" />
 
 	<string
 		id="AddNavPoint"
-		value="Add NavPoint to the radar" />
+		value="МнјУµјєЅµгµЅАЧґп" />
 
 	<string
 		id="DeleteNavPoint"
-		value="Remove NavPoint from the radar" />
+		value="ґУАЧґпТЖіэµјєЅµг" />
 
 	<string
 		id="ShotInMinute"
-		value="shot p/min." />
+		value="·ў/·ЦЦУ" />
 
 	<string
 		id="Minute"
-		value="min." />
+		value="·Ц" />
 
 	<string
 		id="Secunde"
-		value="sec." />
+		value="Гл" />
 
 	<string
 		id="Meter"
-		value="m" />
+		value="ГЧ" />
 
 	<string
 		id="KmInSec"
-		value="km p/h." />
+		value="№«Ап/РЎК±" />
 
 	<string
 		id="CurMax"
-		value="cur/max" />
+		value="µ±З°/ЙППЮ" />
 
 	<string
 		id="Km"
-		value="km" />
+		value="№«Ап" />
 
 	<string
 		id="m"
-		value="m" />
+		value="ГЧ" />
 
 	<string
 		id="percent"
@@ -174,721 +174,721 @@
 
 	<string
 		id="PlayerMoney"
-		value="Player's money" />
+		value="НжјТЅр±Т" />
 
 	<string
 		id="Money"
-		value="Money" />
+		value="Ѕр±Т" />
 
 	<string
 		id="QuestItems"
-		value="Quest items" />
-<!-- Окно харктеристик машины -->
+		value="ИООсОпЖ·" />
+<!-- ОдЖчЧґМ¬ -->
 	<string
 		id="Broken"
-		value="Broken" />
+		value="ТСЛр»µ" />
 
 	<string
 		id="NoAmmo"
-		value="Out of ammo" />
-<!-- Окно харктеристик машины -->
+		value="µЇТ©єДѕЎ" />
+<!-- ОдЖчЧґМ¬ -->
 	<string
 		id="WeaponGroups"
-		value="Weapon groups" />
+		value="ОдЖчЧй" />
 
 	<string
 		id="VehicleCharacteristics"
-		value="Truck’s characteristics" />
+		value="їЁіµІОКэ" />
 
 	<string
 		id="CBCharacteristics"
-		value="Cabin and body characteristics" />
+		value="јЭК»КТУліµПбІОКэ" />
 
 	<string
 		id="NotInstalled"
-		value="Not installed" />
-<!-- Игровое меню -->
+		value="Оґ°ІЧ°" />
+<!-- И·ИП¶Ф»°їт -->
 	<string
 		id="ExitCurGame"
-		value="End the current game?|All unsaved data will be lost." />
+		value="ЅбКшµ±З°УОП·Јї|ЛщУРОґ±ЈґжµДКэѕЭЅ«¶ЄК§ЎЈ" />
 
 	<string
 		id="Quit to Main Menu"
-		value="Exit to Main Menu" />
+		value="НЛіцµЅЦчІЛµҐ" />
 
 	<string
 		id="Back"
-		value="Back" />
+		value="·µ»Ш" />
 
 	<string
 		id="ResumeGame"
-		value="Resume game" />
+		value="јМРшУОП·" />
 
 	<string
 		id="GameOver"
-		value="Game over" />
+		value="УОП·ЅбКш" />
 
 	<string
 		id="Load Last Game"
-		value="Load last save game" />
+		value="¶БИЎЙПґОґжµµ" />
 
 	<string
 		id="Start Game From Begin"
-		value="Restart the game" />
+		value="ЦШРВїЄКјУОП·" />
 
 	<string
 		id="quitGameWithSaveWarn"
-		value="Do you want to leave the game?|All unsaved data will be lost." />
-<!-- Окно сохранения -->
+		value="И·ИПАлїЄУОП·Јї|ЛщУРОґ±ЈґжµДКэѕЭЅ«¶ЄК§ЎЈ" />
+<!-- ґжµµПа№Ш -->
 	<string
 		id="SaveNameDemand"
-		value="Enter save game name" />
+		value="КдИлґжµµГыіЖ" />
 
 	<string
 		id="SaveGameExists"
-		value="Overwrite this saved game?" />
+		value="ёІёЗґЛґжµµЈї" />
 
 	<string
 		id="SaveGameDeleteWarning"
-		value="Selected saved game will be deleted! Do you wish to proceed?" />
+		value="СЎЦРµДґжµµЅ«±»ЙѕіэЈЎИ·ИПјМРшВрЈї" />
 
 	<string
 		id="SavingCurrentGame"
-		value="Saving current game" />
+		value="ХэФЪ±ЈґжУОП·" />
 
 	<string
 		id="DeleteGame"
-		value="Delete saved game?" />
-<!-- Характеристики машины/кабины/кузова/оружия/гаджетов -->
+		value="ЙѕіэґжµµЈї" />
+<!-- їЁіµ/ОдЖч/ТэЗж/µЇТ©ІОКэ -->
 	<string
 		id="Power"
-		value="Power (hp)" />
+		value="ВнБ¦ЈЁЖҐЈ©" />
 
 	<string
 		id="EnginePower"
-		value="Engine power" />
+		value="ТэЗжВнБ¦" />
 
 	<string
 		id="Torque"
-		value="Torque" />
+		value="Е¤ѕШ" />
 
 	<string
 		id="Durability"
-		value="Durability" />
+		value="ДНѕГ¶И" />
 
 	<string
 		id="Speed"
-		value="Speed" />
+		value="ЛЩ¶И" />
 
 	<string
 		id="MaxSpeed"
-		value="Max Speed (km/h)" />
+		value="ЧоёЯЛЩ¶ИЈЁ№«Ап/РЎК±Ј©" />
 
 	<string
 		id="Weight"
-		value="Weight (t)" />
+		value="ЦШБїЈЁ¶ЦЈ©" />
 
 	<string
 		id="Damage"
-		value="Damage" />
+		value="ЙЛє¦" />
 
 	<string
 		id="FiringRate"
-		value="Rate of fire" />
+		value="ЙдЛЩ" />
 
 	<string
 		id="FiringRange"
-		value="Fire distance" />
+		value="ЙдіМ" />
 
 	<string
 		id="Armor"
-		value="Armor" />
+		value="Ч°јЧ" />
 
 	<string
 		id="MaxArmor"
-		value="Max armor" />
+		value="ЧоґуЧ°јЧ" />
 
 	<string
 		id="Solidity"
-		value="Durability" />
+		value="ДНѕГ¶И" />
 
 	<string
 		id="Resistance"
-		value="Resistance" />
+		value="ї№РФ" />
 
 	<string
 		id="ShellPool"
-		value="Ammunition" />
+		value="µЇТ©" />
 
 	<string
 		id="ChargeSize"
-		value="Clip size" />
+		value="µЇП»ИЭБї" />
 
 	<string
 		id="RechargingTime"
-		value="Reload time" />
+		value="Ч°МоК±јд" />
 
 	<string
 		id="BasketCapacity"
-		value="Body space (t)" />
+		value="іµПбИЭБїЈЁ¶ЦЈ©" />
 
 	<string
 		id="GADGET_COMMON"
-		value="Vehicle improvement" />
+		value="іµБѕЕдјю" />
 
 	<string
 		id="GADGET_WEAPON"
-		value="Weapon improvement" />
+		value="ОдЖчЕдјю" />
 
 	<string
 		id="GADGET_ENGINE"
-		value="Engine improvement" />
+		value="ТэЗжЕдјю" />
 
 	<string
 		id="GadgetType"
-		value="Type" />
+		value="АаРН" />
 
 	<string
 		id="Piercing"
-		value="Piercing" />
+		value="ґ©јЧ" />
 
 	<string
 		id="Blast"
-		value="Explosive" />
+		value="±¬ХЁ" />
 
 	<string
 		id="Energy"
-		value="Energy" />
+		value="ДЬБї" />
 
 	<string
 		id="Fuel"
-		value="Fuel" />
+		value="ИјБП" />
 
 	<string
 		id="Construction"
-		value="Structure" />
+		value="Ѕб№№" />
 
 	<string
 		id="MaxConstruction"
-		value="Max structure" />
+		value="ЧоґуЅб№№" />
 
 	<string
 		id="PiercingResistance"
-		value=" Piercing damage resistance " />
+		value=" ґ©јЧЙЛє¦ї№РФ " />
 
 	<string
 		id="BlastResistance"
-		value=" Explosion damage resistance" />
+		value=" ±¬ХЁЙЛє¦ї№РФ" />
 
 	<string
 		id="EnergyResistance"
-		value=" Energy damage resistance " />
+		value=" ДЬБїЙЛє¦ї№РФ " />
 
 	<string
 		id="VehicleControl"
-		value="Control" />
+		value="ІЩїШ" />
 
 	<string
 		id="FuelTankCapacity"
-		value="Fuel tank capacity (l)" />
+		value="УНПдИЭБїЈЁЙэЈ©" />
 
 	<string
 		id="Accuracy"
-		value="Accuracy" />
+		value="ѕ«¶И" />
 
 	<string
 		id="CabinDurability"
-		value="Cabin armor" />
+		value="јЭК»КТЧ°јЧ" />
 
 	<string
 		id="BasketDurability"
-		value="Body armor" />
+		value="іµПбЧ°јЧ" />
 
 	<string
 		id="GunType"
-		value="Weapon type" />
+		value="ОдЖчАаРН" />
 
 	<string
 		id="MachineGun"
-		value="Machinegun" />
+		value="»ъЗ№" />
 
 	<string
 		id="Cannon"
-		value="Canon" />
+		value="»рЕЪ" />
 
 	<string
 		id="ShotGun"
-		value="Shotgun " />
+		value="ц±µЇЗ№ " />
 
 	<string
 		id="Laser"
-		value="Laser" />
+		value="ј¤№в" />
 
 	<string
 		id="Plasma"
-		value="Plasma gun" />
+		value="µИАлЧУЕЪ" />
 
 	<string
 		id="Rocket"
-		value="Missile launcher" />
+		value="µјµЇ·ўЙдЖч" />
 
 	<string
 		id="Artillery"
-		value="Mortar" />
+		value="ЖИ»чЕЪ" />
 
 	<string
 		id="Thunderbolt"
-		value="Lightning gun " />
+		value="АЧµзЗ№ " />
 
 	<string
 		id="Mine"
-		value="Mine layer" />
+		value="ІјАЧЖч" />
 
 	<string
 		id="Nail"
-		value="Nail dispenser" />
+		value="Иц¶¤Жч" />
 
 	<string
 		id="Turbo"
-		value="Turbo" />
+		value="ОРВЦФцС№" />
 
 	<string
 		id="Oil"
-		value="Oil dispenser" />
+		value="ИцУНЖч" />
 
 	<string
 		id="Type_Smoke"
-		value="Smoke screen" />
-<!-- Энциклопедия -->
+		value="СМД»" />
+<!-- ОпЖ··ЦАа -->
 	<string
 		id="Weapon"
-		value="Weapon" />
+		value="ОдЖч" />
 
 	<string
 		id="Gadgets"
-		value="Gadgets" />
+		value="Едјю" />
 
 	<string
 		id="Vehicles"
-		value="Vehicles" />
+		value="іµБѕ" />
 
 	<string
 		id="VehicleParts"
-		value="Vehicle Parts" />
+		value="іµБѕБгјю" />
 
 	<string
 		id="Affixes"
-		value="Affixes" />
+		value="ґКЧє" />
 
 	<string
 		id="Clans"
-		value="Clans" />
-<!-- Окно ремонта -->
+		value="ЕЙПµ" />
+<!-- іµБѕІїјю -->
 	<string
 		id="Cabin"
-		value="Cabin" />
+		value="јЭК»КТ" />
 
 	<string
 		id="Basket"
-		value="Body" />
-<!-- Мастерская (гараж) -->
+		value="іµПб" />
+<!-- ·юОсПоДї -->
 	<string
 		id="Repairing"
-		value="Repair" />
+		value="РЮАн" />
 
 	<string
 		id="Refuelling"
-		value="Refuel" />
+		value="јУУН" />
 
 	<string
 		id="Recharging"
-		value="Recharge" />
+		value="Ч°µЇ" />
 
 	<string
 		id="BuySkin"
-		value="Paint" />
+		value="ЕзЖб" />
 
 	<string
 		id="NextSkin"
-		value="Next color" />
+		value="ПВТ»ЦЦСХЙ«" />
 
 	<string
 		id="PrevSkin"
-		value="Previous color" />
+		value="ЙПТ»ЦЦСХЙ«" />
 
 	<string
 		id="SkinAlreadySet"
-		value="This is the current color of your vehicle" />
+		value="ХвѕНКЗДгµ±З°іµБѕµДСХЙ«" />
 
 	<string
 		id="Skinning"
-		value="Vehicle painting" />
+		value="іµБѕЕзЖб" />
 
 	<string
 		id="BuyCabin"
-		value="Buy Cabin" />
+		value="№єВтјЭК»КТ" />
 
 	<string
 		id="BuyBasket"
-		value="Buy Body" />
+		value="№єВтіµПб" />
 
 	<string
 		id="BuyVehicle"
-		value="Buy Vehicle" />
+		value="№єВтіµБѕ" />
 
 	<string
 		id="RefuelMax"
-		value="Full tank" />
+		value="јУВъУНПд" />
 
 	<string
 		id="RepairMax"
-		value="Repair all" />
+		value="И«ІїРЮАн" />
 
 	<string
 		id="RechargeMax"
-		value="Reload all" />
+		value="И«ІїЧ°Мо" />
 
 	<string
 		id="NextVehicle"
-		value="Next vehicle" />
+		value="ПВТ»Бѕіµ" />
 
 	<string
 		id="PrevVehicle"
-		value="Previous vehicle " />
+		value="ЙПТ»Бѕіµ " />
 
 	<string
 		id="NumUnitsToBuy"
-		value="Quantity to buy" />
+		value="№єВтКэБї" />
 
 	<string
 		id="Refuel"
-		value="Refuel" />
+		value="јУУН" />
 
 	<string
 		id="Repair"
-		value="Repair" />
+		value="РЮАн" />
 
 	<string
 		id="Recharge"
-		value="Recharge" />
+		value="Ч°µЇ" />
 
 	<string
 		id="ToAdvancedMode"
-		value="To advanced mode" />
+		value="ЗР»»µЅёЯј¶ДЈКЅ" />
 
 	<string
 		id="ToSimpleMode"
-		value="To simple mode" />
+		value="ЗР»»µЅјтТЧДЈКЅ" />
 
 	<string
 		id="More"
-		value="More" />
+		value="ёь¶а" />
 
 	<string
 		id="Less"
-		value="Less" />
+		value="ёьЙЩ" />
 
 	<string
 		id="OneUnitPrice"
-		value="Price per item" />
+		value="µҐјЫ" />
 
 	<string
 		id="NumUnitsToBuy"
-		value="Quantity to buy" />
+		value="№єВтКэБї" />
 
 	<string
 		id="SummaryPrice"
-		value="Total value" />
+		value="ЧЬјЫЦµ" />
 
 	<string
 		id="RepairNotNeed"
-		value="Repair not needed" />
+		value="ОЮРиРЮАн" />
 
 	<string
 		id="RepairUnavailable"
-		value="Not enough money to repair " />
+		value="Ѕр±ТІ»ЧгЈ¬ОЮ·ЁРЮАн " />
 
 	<string
 		id="RepairPartial"
-		value="Custom repair" />
+		value="ЧФ¶ЁТеРЮАн" />
 
 	<string
 		id="RepairFull"
-		value="Repair all" />
+		value="И«ІїРЮАн" />
 
 	<string
 		id="RefuelNotNeed"
-		value="Gas tank is full" />
+		value="УНПдТСВъ" />
 
 	<string
 		id="RefuelUnavailable"
-		value="Not enough money to refuel" />
+		value="Ѕр±ТІ»ЧгЈ¬ОЮ·ЁјУУН" />
 
 	<string
 		id="RefuelPartial"
-		value="Custom refueling" />
+		value="ЧФ¶ЁТејУУН" />
 
 	<string
 		id="RefuelFull"
-		value="Buy full gas tank" />
+		value="№єВтВъУНПд" />
 
 	<string
 		id="RechargeNotNeed"
-		value="Recharge is not needed" />
+		value="ОЮРиЧ°µЇ" />
 
 	<string
 		id="RechargeUnavailable"
-		value="Not enough money to recharge" />
+		value="Ѕр±ТІ»ЧгЈ¬ОЮ·ЁЧ°µЇ" />
 
 	<string
 		id="RechargePartial"
-		value="Custom recharge" />
+		value="ЧФ¶ЁТеЧ°µЇ" />
 
 	<string
 		id="RechargeFull"
-		value="Recharge all" />
+		value="И«ІїЧ°Мо" />
 
 	<string
 		id="State"
-		value="Status" />
+		value="ЧґМ¬" />
 
 	<string
 		id="LeftItemsInCabin"
-		value="There are gadgets or weapon installed in the cabin.|They will be sold along with the cabin.|Proceed?" />
+		value="јЭК»КТДЪ»№УРЕдјю»тОдЖчЎЈ|ЛьГЗЅ«ЛжјЭК»КТТ»Н¬іцКЫЎЈ|КЗ·сјМРшЈї" />
 
 	<string
 		id="LeftItemsInBasket"
-		value="The body still contains some gadgets or weapon or merchandise|They will be sold along with the body.| Proceed?" />
+		value="іµПбДЪ»№УРЕдјюЎўОдЖч»тЙМЖ·ЎЈ|ЛьГЗЅ«ЛжіµПбТ»Н¬іцКЫЎЈ| КЗ·сјМРшЈї" />
 
 	<string
 		id="LeftItemsInVehicle"
-		value="The truck still has some gadgets or weapon installed or merchandise left in the cargo hold|They will be sold along with the truck.| Proceed?" />
+		value="їЁіµЙП»№УРЕдјюЎўОдЖч»т»хІХЦРµДЙМЖ·ЎЈ|ЛьГЗЅ«ЛжїЁіµТ»Н¬іцКЫЎЈ| КЗ·сјМРшЈї" />
 
 	<string
 		id="BuyItemsCost"
-		value="Buy price" />
+		value="№єВтјЫ" />
 
 	<string
 		id="SellItemsCost"
-		value="Sell price" />
+		value="іцКЫјЫ" />
 
 	<string
 		id="Sum:"
-		value="Total:" />
+		value="ЧЬјЖЈє" />
 
 	<string
 		id="Select"
-		value="Select" />
+		value="СЎФс" />
 
 	<string
 		id="EnterVehicleTrade"
-		value="Next stage of the buy process" />
+		value="№єВтБчіМПВТ»ЅЧ¶О" />
 
 	<string
 		id="VehiclePrice"
-		value="Truck’s price" />
+		value="їЁіµјЫёс" />
 
 	<string
 		id="ReturnToWorkshop"
-		value="Back to the workshop" />
-<!-- Магазин -->
+		value="·µ»Шіµјд" />
+<!-- Ѕ»ТЧЅзГж -->
 	<string
 		id="GunsAndGadgets"
-		value="Guns and gadgets" />
+		value="ОдЖчУлЕдјю" />
 
 	<string
 		id="ShowAllWares"
-		value="Show all goods" />
+		value="ПФКѕИ«Ії»хОп" />
 
 	<string
 		id="ShowTownSelledWares"
-		value="Show all goods available for sale" />
+		value="ПФКѕЛщУРїЙ№є»хОп" />
 
 	<string
 		id="NoWare"
-		value="Not for sale" />
-<!-- Комбо-бокс выбора карт -->
+		value="І»їЙіцКЫ" />
+<!-- °ґЕҐ±кЗ© -->
 	<string
 		id="All"
-		value="All" />
-<!-- Карта -->
+		value="И«Ії" />
+<!-- µјєЅ -->
 	<string
 		id="NavPoint"
-		value="NavPoint" />
+		value="µјєЅµг" />
 
 	<string
 		id="ToGlobalMap"
-		value="Global Map" />
+		value="КАЅзµШНј" />
 
 	<string
 		id="ToLocalMap"
-		value="Local Map" />
+		value="ЗшУтµШНј" />
 
 	<string
 		id="MapUnavailable"
-		value="Not available at the moment" />
+		value="ФЭК±І»їЙУГ" />
 
 	<string
 		id="TradeMode"
-		value="Trade Mode" />
+		value="Ѕ»ТЧДЈКЅ" />
 
 	<string
 		id="InfoMode"
-		value="Info Mode" />
+		value="РЕПўДЈКЅ" />
 
 	<string
 		id="SavePrices"
-		value="Store price list" />
+		value="јЗВјјЫёс±н" />
 
 	<string
 		id="RemovePrices"
-		value="Delete this town’s price list" />
+		value="ЙѕіэёГіЗХтµДјЫёс±н" />
 
 	<string
 		id="ShowObjectNames"
-		value="Show object names" />
+		value="ПФКѕОпМеГыіЖ" />
 
 	<string
 		id="HideObjectNames"
-		value="Hide object names" />
+		value="ТюІШОпМеГыіЖ" />
 
 	<string
 		id="Description"
-		value="Description" />
+		value="ГиКц" />
 
 	<string
 		id="Ruined"
-		value="@ff904040Destroyed" />
-<!-- Список оружия -->
+		value="@ff904040ТСґЭ»Щ" />
+<!-- °ґјьЙиЦГ -->
 	<string
 		id="KeySet"
-		value="Keys combination" />
-<!-- Журнал -->
+		value="°ґјьЧйєП" />
+<!-- СЎПоїЁ -->
 	<string
 		id="History"
-		value="History" />
+		value="ѕзЗй" />
 
 	<string
 		id="Books"
-		value="Books" />
+		value="Кйј®" />
 
 	<string
 		id="Encyclopaedia"
-		value="Encyclopedia" />
+		value="°ЩїЖИ«Кй" />
 
 	<string
 		id="Statistic"
-		value="Statistic" />
+		value="НіјЖ" />
 
 	<string
 		id="Relations"
-		value="Relationship" />
-<!-- Окно репутации -->
+		value="№ШПµ" />
+<!-- ЕЙПµ№ШПµ -->
 	<string
 		id="EnemyRelation"
-		value="Enemy " />
+		value="µР¶Ф " />
 
 	<string
 		id="FriendlyRelation"
-		value="Friend" />
+		value="УСєГ" />
 
 	<string
 		id="NeutralRelation"
-		value="Neutral" />
+		value="ЦРБў" />
 
 	<string
 		id="Peace"
-		value="Peace" />
+		value="єНЖЅ" />
 
 	<string
 		id="War"
-		value="War" />
+		value="ХЅХщ" />
 
 	<string
 		id="PeaceAvailable"
-		value="It is possible to improve your relationship with the faction,|if you talk to its representative |in one of the local settlements." />
-<!-- Квестлог -->
+		value="ДгїЙТФёДЙЖУлёГЕЙПµµД№ШПµЈ¬|ЗлµЅµ±µШѕЫѕУµШ |УлёГЕЙПµґъ±нЅ»МёЎЈ" />
+<!-- ИООсГж°е -->
 	<string
 		id="ShowAllQuests"
-		value="Show all quests" />
+		value="ПФКѕИ«ІїИООс" />
 
 	<string
 		id="ShowNoncompletedQuests"
-		value="Show only complete quests" />
+		value="ЅцПФКѕТСНкіЙИООс" />
 
 	<string
 		id="ShowQuestItems"
-		value="Show special items" />
+		value="ПФКѕМШКвОпЖ·" />
 
 	<string
 		id="ShowQuests"
-		value="Show quests list" />
+		value="ПФКѕИООсБР±н" />
 
 	<string
 		id="Quests"
-		value="Quests" />
-<!-- Инвентарь -->
+		value="ИООс" />
+<!-- К°ИЎ -->
 	<string
 		id="PickUpAll"
-		value="Pick up everything" />
-<!-- Общий интерфейс с закладками -->
+		value="К°ИЎИ«Ії" />
+<!-- µЧІїСЎПоїЁ°ґЕҐ -->
 	<string
 		id="TabBtn_Questlog"
-		value="Quest log" />
+		value="ИООсИХЦѕ" />
 
 	<string
 		id="TabBtn_Map"
-		value="Map" />
+		value="µШНј" />
 
 	<string
 		id="TabBtn_Journal"
-		value="Journal" />
+		value="ИХЦѕ" />
 
 	<string
 		id="TabBtn_Inventory"
-		value="Inventory" />
+		value="ОпЖ·Аё" />
 
 	<string
 		id="TabBtn_Characteristic"
-		value="Truck Stats" />
-<!-- Окно помощи -->
+		value="їЁіµІОКэ" />
+<!-- ЅзГжГж°е -->
 	<string
 		id="DontShowAutoHelp"
-		value="Do not show hints" />
+		value="І»ПФКѕМбКѕ" />
 
 	<string
 		id="Radar"
-		value="Radar" />
+		value="АЧґп" />
 
 	<string
 		id="Speedometer"
-		value="Speedometer" />
+		value="ЛЩ¶И±н" />
 
 	<string
 		id="Timer"
-		value="Timer" />
+		value="јЖК±Жч" />
 
 	<string
 		id="FadingMessages"
-		value="Messages" />
+		value="ПыПў" />
 
 	<string
 		id="ImportantFadingMessages"
-		value="Important messages" />
+		value="ЦШТЄПыПў" />
 
 	<string
 		id="TargetInfo"
-		value="Target information" />
+		value="Дї±кРЕПў" />
 
 	<string
 		id="TargetCapture"
-		value="Lock on target" />
+		value="Лш¶ЁДї±к" />
 
 	<string
 		id="ActionIcons"
-		value="Actions" />
-<!-- Окно бара -->
+		value="РР¶Ї" />
+<!-- ¶Ф»° -->
 	<string
 		id="TalkWithNpc"
-		value="Talk to the character" />
+		value="УлЅЗЙ«Ѕ»Мё" />
 </resource>

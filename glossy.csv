@@ -42,3 +42,70 @@ Faction,派系,世界,敌对/友好阵营
 Journal,日志,界面,含剧情/书籍栏目
 Cargo hold,货舱,核心,卡车货箱
 Inventory,物品栏,界面,背包/物品界面
+Price,价格,经济,交易价格
+Average price,均价,经济,基准价格 BasePrice
+Amount,数量,经济,交易数量
+Buy,购买,经济,购买按钮
+Sell,出售,经济,出售按钮
+Repair,修理,服务,车辆/装甲修理
+Refuel,加油,服务,补充燃料
+Recharge,装弹,服务,补充弹药
+Paint,喷漆,服务,车辆改色 BuySkin
+Power,马力,参数,引擎功率（匹）
+Engine power,引擎马力,参数,
+Torque,扭矩,参数,
+Durability,耐久度,参数,耐久/耐久值
+Speed,速度,参数,
+Max Speed,最高速度,参数,公里/小时
+Weight,重量,参数,单位吨
+Damage,伤害,参数,武器伤害值
+Rate of fire,射速,参数,射速
+Fire distance,射程,参数,射击距离
+Armor,装甲,参数,装甲值
+Resistance,抗性,参数,伤害抗性
+Ammunition,弹药,参数,弹药量 ShellPool
+Clip size,弹匣容量,参数,ChargeSize
+Reload time,装填时间,参数,RechargingTime
+Accuracy,精度,参数,命中精度
+Piercing,穿甲,战斗,穿甲伤害类型
+Explosive,爆炸,战斗,爆炸伤害类型 Blast
+Energy,能量,战斗,能量伤害类型
+Fuel,燃料,核心,车辆燃料
+Structure,结构,参数,车辆结构值
+Control,操控,参数,操控性
+MachineGun,机枪,武器,武器类型
+Cannon,火炮,武器,武器类型
+Shotgun,霰弹枪,武器,武器类型
+Laser,激光,武器,武器类型
+Plasma gun,等离子炮,武器,武器类型
+Missile launcher,导弹发射器,武器,武器类型 Rocket
+Mortar,迫击炮,武器,武器类型 Artillery
+Lightning gun,雷电枪,武器,武器类型 Thunderbolt
+Mine layer,布雷器,武器,武器类型 Mine
+Nail dispenser,撒钉器,武器,武器类型 Nail
+Turbo,涡轮增压,武器,武器类型
+Oil dispenser,撒油器,武器,武器类型 Oil
+Smoke screen,烟幕,武器,武器类型 Type_Smoke
+NavPoint,导航点,界面,雷达导航点
+Global Map,世界地图,界面,大地图
+Local Map,区域地图,界面,局部地图
+Trade Mode,交易模式,界面,
+Info Mode,信息模式,界面,
+Affixes,词缀,核心,装备附加属性
+Clans,派系,世界,游戏派系
+History,剧情,界面,日志中的剧情栏
+Books,书籍,界面,日志中的书籍栏
+Encyclopedia,百科全书,界面,
+Statistic,统计,界面,战绩页
+Relationship,关系,世界,派系关系
+Enemy,敌对,关系,敌对关系
+Friend,友好,关系,友好关系
+Neutral,中立,关系,中立关系
+Peace,和平,关系,和平状态
+War,战争,关系,战争状态
+Quest log,任务日志,界面,Tab按钮
+Radar,雷达,界面,雷达面板
+Speedometer,速度表,界面,速度表面板
+Timer,计时器,界面,计时器面板
+Workshop,车间,界面,改装车间
+Description,描述,界面,物品描述
