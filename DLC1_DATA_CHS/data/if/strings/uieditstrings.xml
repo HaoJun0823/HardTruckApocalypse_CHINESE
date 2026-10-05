@@ -2,167 +2,167 @@
 <resource>
 	<string
 		id="ok"
-		value="OK" />
+		value="确定" />
 
 	<string
 		id="cancel"
-		value="Cancel" />
+		value="取消" />
 
 	<string
 		id="Cancel"
-		value="Cancel" />
+		value="取消" />
 
 	<string
 		id="yes"
-		value="Yes" />
+		value="是" />
 
 	<string
 		id="no"
-		value="No" />
+		value="否" />
 
 	<string
 		id="error"
-		value="Error" />
+		value="错误" />
 
 	<string
 		id="save"
-		value="Save" />
+		value="保存" />
 
 	<string
 		id="Default"
-		value="On default" />
+		value="默认" />
 
 	<string
 		id="Close"
-		value="Close" />
+		value="关闭" />
 
 	<string
 		id="Control"
-		value="Control" />
+		value="控制" />
 
 	<string
 		id="Exit"
-		value="Exit" />
+		value="退出" />
 
 	<string
 		id="Delete"
-		value="Delete" />
+		value="删除" />
 
 	<string
 		id="CloseWindow"
-		value="Close window" />
+		value="关闭窗口" />
 
 	<string
 		id="Date"
-		value="Date" />
+		value="日期" />
 
 	<string
 		id="SaveName"
-		value="Name" />
+		value="名称" />
 
 	<string
 		id="SortByName"
-		value="Sort by savegame name" />
+		value="按存档名称排序" />
 
 	<string
 		id="SortByDate"
-		value="Sort by save time" />
+		value="按保存时间排序" />
 
 	<string
 		id="ServiceSymbolsUsed"
-		value="Not allowed to use |the following symbols:|@ff904040%s in a player's name " />
+		value="玩家名中不能使用|以下符号：|@ff904040%s " />
 
 	<string
 		id="quitGame"
-		value="Do you want to exit the game?" />
+		value="是否退出游戏？" />
 
 	<string
 		id="ChoseDifficultyLevel"
-		value="Select difficulty level and start the game" />
+		value="选择难度并开始游戏" />
 
 	<string
 		id="ChoseDifficultyLevelBack"
-		value="Return to main menu" />
+		value="返回主菜单" />
 
 	<string
 		id="New Game"
-		value="Single game" />
+		value="单人游戏" />
 
 	<string
 		id="StartNetGame"
-		value="Start new game" />
+		value="开始新游戏" />
 
 	<string
 		id="Credits"
-		value="Credits" />
+		value="制作组" />
 
 	<string
 		id="Load Game"
-		value="Load game" />
+		value="读取游戏" />
 
 	<string
 		id="Options"
-		value="Settings" />
+		value="选项" />
 
 	<string
 		id="Quit to Windows"
-		value="Exit the game" />
+		value="退出游戏" />
 
 	<string
 		id="Profile"
-		value="Profile" />
+		value="档案" />
 
 	<string
 		id="ProfileDontChosen"
-		value="Not selected" />
+		value="未选择" />
 
 	<string
 		id="Intro"
-		value="Starting clip" />
+		value="开场动画" />
 
 	<string
 		id="MultiplayerOptions"
-		value="Network game" />
+		value="联机游戏" />
 
 	<string
 		id="Audioplayer"
-		value="Radio" />
+		value="广播" />
 
 	<string
 		id="AudioplayerInMultiplayer"
-		value="Network radio" />
+		value="联机广播" />
 
 	<string
 		id="OpenSavesList"
-		value="Open save games list" />
+		value="打开存档列表" />
 
 	<string
 		id="ShowIntro"
-		value="Start network game" />
+		value="开始联机游戏" />
 
 	<string
 		id="HandleGameOptions"
-		value="Adjust game settings" />
+		value="更改游戏设置" />
 
 	<string
 		id="ShowCredits"
-		value="See Credits" />
+		value="显示制作人员名单" />
 
 	<string
 		id="load"
-		value="Load" />
+		value="读取" />
 
 	<string
 		id="LoadGame"
-		value="Load save game" />
+		value="读取存档" />
 
 	<string
 		id="SavedGameLoading"
-		value="Loading save game" />
+		value="正在读取游戏" />
 
 	<string
 		id="DeleteProfileWarning"
-		value="All saved games will be deleted.|Continue?" />
+		value="所有存档将被删除。|是否继续？" />
 
 	<string
 		id="DefaultProfileName"
@@ -170,295 +170,295 @@
 
 	<string
 		id="Create"
-		value="Create" />
+		value="创建" />
 
 	<string
 		id="CreateProfile"
-		value="Create new profile" />
+		value="创建新档案" />
 
 	<string
 		id="NewProfile"
-		value="New profile" />
+		value="新档案" />
 
 	<string
 		id="ProfileExists"
-		value="Profile with this name is alredy existed.|Enter another name" />
+		value="该名称的档案已存在。|请输入其他名称" />
 
 	<string
 		id="EmptyProfileName"
-		value="Profile without name can not be created" />
+		value="无法创建无名档案" />
 
 	<string
 		id="ProfileCreateError"
-		value="Profile creation error" />
+		value="创建档案失败" />
 
 	<string
 		id="ProfileDeleteError"
-		value="Profile deleting error" />
+		value="删除档案失败" />
 
 	<string
 		id="Chose"
-		value="Select" />
+		value="选择" />
 
 	<string
 		id="DeleteProfile"
-		value="Delete profile" />
+		value="删除档案" />
 
 	<string
 		id="ChoseProfile"
-		value="Select as a current profile" />
+		value="设为当前档案" />
 
 	<string
 		id="CancelExit"
-		value="Close window without saving" />
+		value="关闭窗口并放弃更改" />
 
 	<string
 		id="ChangePlayerProfile"
-		value="Change player profile" />
+		value="更改档案" />
 
 	<string
 		id="ChangeProfile"
-		value="Change profile" />
+		value="更改档案" />
 
 	<string
 		id="CurProfile"
-		value="Current profile" />
+		value="当前档案" />
 
 	<string
 		id="InvalidProfileName"
-		value="Unacceptable profile name" />
+		value="无效的档案名" />
 
 	<string
 		id="Loading"
-		value="Loading" />
+		value="加载中" />
 
 	<string
 		id="LoadingDots"
-		value="LOADING..." />
+		value="加载中…" />
 
 	<string
 		id="LoadWorld"
-		value="LEVEL LOADING" />
+		value="加载关卡" />
 
 	<string
 		id="InitWorld"
-		value="LEVEL INITIALIZATION" />
+		value="关卡初始化" />
 
 	<string
 		id="MainMenuLoading"
-		value="Loading" />
+		value="加载中" />
 
 	<string
 		id="AnimatedModelsServer"
-		value="animated objects" />
+		value="动画对象" />
 
 	<string
 		id="StaticModelsServer"
-		value="static objects" />
+		value="静态对象" />
 
 	<string
 		id="LightsServer"
-		value="light sources" />
+		value="光源" />
 
 	<string
 		id="SpritesServer"
-		value="sprites" />
+		value="精灵" />
 
 	<string
 		id="ParticlesServer"
-		value="particle systems" />
+		value="粒子系统" />
 
 	<string
 		id="SoundsServer"
-		value="sounds" />
+		value="音效" />
 
 	<string
 		id="MusicServer"
-		value="music" />
+		value="音乐" />
 
 	<string
 		id="ProjectorsServer"
-		value="spotlights" />
+		value="投影" />
 
 	<string
 		id="DecalsServer"
-		value="decals" />
+		value="贴花" />
 
 	<string
 		id="Precaching"
-		value="Caching" />
+		value="缓存中" />
 
 	<string
 		id="Video"
-		value="Graphics" />
+		value="视频" />
 
 	<string
 		id="Sound"
-		value="Sound" />
+		value="声音" />
 
 	<string
 		id="Game"
-		value="Game" />
+		value="游戏" />
 
 	<string
 		id="Video settings"
-		value="Graphic settings" />
+		value="视频设置" />
 
 	<string
 		id="Far dist"
-		value="Range of vision" />
+		value="视距" />
 
 	<string
 		id="Gamma"
-		value="Gamma" />
+		value="伽马" />
 
 	<string
 		id="Resolution"
-		value="Resolution" />
+		value="分辨率" />
 
 	<string
 		id="GraphicQuality"
-		value="Graphics quality" />
+		value="画面质量" />
 
 	<string
 		id="Grass"
-		value="Grass" />
+		value="草地" />
 
 	<string
 		id="TextureResolution"
-		value="Texture resolution" />
+		value="纹理分辨率" />
 
 	<string
 		id="Antialiasing"
-		value="Blur" />
+		value="抗锯齿" />
 
 	<string
 		id="Filtration"
-		value="Filtration" />
+		value="过滤" />
 
 	<string
 		id="BloomQuality"
-		value="Bloom Quality" />
+		value="泛光质量" />
 
 	<string
 		id="WaterQuality"
-		value="Water quality" />
+		value="水面质量" />
 
 	<string
 		id="Audio settings"
-		value="Sound settings" />
+		value="音频设置" />
 
 	<string
 		id="Fx vol"
-		value="Effects volume" />
+		value="音效音量" />
 
 	<string
 		id="Music vol"
-		value="Music volume" />
+		value="音乐音量" />
 
 	<string
 		id="Speak vol"
-		value="Speech volume" />
+		value="语音音量" />
 
 	<string
 		id="Game settings"
-		value="Game settings" />
+		value="游戏设置" />
 
 	<string
 		id="DialogPause"
-		value="Pause in dialogues" />
+		value="对话暂停" />
 
 	<string
 		id="AutoHelp"
-		value="Automatic hints" />
+		value="自动提示" />
 
 	<string
 		id="MouseSensitivity"
-		value="Mouse sensibility" />
+		value="鼠标灵敏度" />
 
 	<string
 		id="MouseYAxisFlip"
-		value="Y axis inversion" />
+		value="反转鼠标Y轴" />
 
 	<string
 		id="MouseXAxisFlip"
-		value="X axis inversion" />
+		value="反转鼠标X轴" />
 
 	<string
 		id="Keys"
-		value="Key functions" />
+		value="按键" />
 
 	<string
 		id="RestoreDef"
-		value="Restore defaults" />
+		value="恢复默认设置" />
 
 	<string
 		id="Apply"
-		value="Apply" />
+		value="应用" />
 
 	<string
 		id="Recommended"
-		value="Recommended" />
+		value="推荐" />
 
 	<string
 		id="None"
-		value="No" />
+		value="无" />
 
 	<string
 		id="Near"
-		value="Close" />
+		value="近" />
 
 	<string
 		id="Far"
-		value="Far" />
+		value="远" />
 
 	<string
 		id="LowQuality"
-		value="Low" />
+		value="低" />
 
 	<string
 		id="MediumQuality"
-		value="Middle" />
+		value="中" />
 
 	<string
 		id="HighQuality"
-		value="High" />
+		value="高" />
 
 	<string
 		id="CustomQuality"
-		value="Custom" />
+		value="自定义" />
 
 	<string
 		id="MaxQuality"
-		value="Maximum" />
+		value="最高" />
 
 	<string
 		id="LowResolution"
-		value="Low" />
+		value="低" />
 
 	<string
 		id="HighResolution"
-		value="High" />
+		value="高" />
 
 	<string
 		id="CustomResolution"
-		value="Custom" />
+		value="自定义" />
 
 	<string
 		id="BilinearFiltration"
-		value="Bilinear" />
+		value="双线性" />
 
 	<string
 		id="TrilinearFiltration"
-		value="Trilinear" />
+		value="三线性" />
 
 	<string
 		id="AnisotropFiltration"
-		value="Anisotropic" />
+		value="各向异性" />
 
 	<string
 		id="CustomFiltration"
-		value="Custom" />
+		value="自定义" />
 
 	<string
 		id="Antialiasing_x2"
@@ -478,47 +478,47 @@
 
 	<string
 		id="CustomAntialiasing"
-		value="Custom" />
+		value="自定义" />
 
 	<string
 		id="OptionsChanged"
-		value="Settings were changed. Save changings?" />
+		value="设置已更改。是否保存？" />
 
 	<string
 		id="ShadowsQuality"
-		value="Shade quality" />
+		value="阴影质量" />
 
 	<string
 		id="NumBattleReplies"
-		value="Number of cues in battle" />
+		value="战斗语音频率" />
 
 	<string
 		id="Control settings"
-		value="Controls settings" />
+		value="控制设置" />
 
 	<string
 		id="BindingsChanged"
-		value="Controls were changed. Save changings?" />
+		value="按键已重新定义。是否保存？" />
 
 	<string
 		id="GameDifficulty"
-		value="Difficulty level" />
+		value="游戏难度" />
 
 	<string
 		id="EasyLevel"
-		value="Rookie" />
+		value="简单" />
 
 	<string
 		id="MediumLevel"
-		value="Experienced" />
+		value="中等" />
 
 	<string
 		id="HardLevel"
-		value="Professional" />
+		value="困难" />
 
 	<string
 		id="ImpossibleLevel"
-		value="Master" />
+		value="极难" />
 <!-- DemoSplashWnd -->
 	<string
 		id="Targem Link Tip"
@@ -542,71 +542,71 @@
 
 	<string
 		id="AutoSave"
-		value="Autosave" />
+		value="自动存档" />
 <!-- MultiplayerOptionsWnd -->
 	<string
 		id="ServerCaption"
-		value="Server" />
+		value="服务器" />
 
 	<string
 		id="ServerCaptionTip"
-		value="Create a server" />
+		value="创建服务器" />
 
 	<string
 		id="ClientCaption"
-		value="Client" />
+		value="客户端" />
 
 	<string
 		id="ClientCaptionTip"
-		value="Find network game" />
+		value="查找联机游戏" />
 
 	<string
 		id="OptionsCaption"
-		value="Settings" />
+		value="设置" />
 
 	<string
 		id="OptionsCaptionTip"
-		value="Change player settings" />
+		value="更改玩家设置" />
 <!-- Server settings -->
 	<string
 		id="Server settings"
-		value="Network game creation" />
+		value="创建联机游戏" />
 
 	<string
 		id="ServerName"
-		value="Server name" />
+		value="服务器名称" />
 
 	<string
 		id="GameDescription"
-		value="Game description" />
+		value="游戏描述" />
 
 	<string
 		id="Port"
-		value="Port" />
+		value="端口" />
 
 	<string
 		id="GameType"
-		value="Game mode" />
+		value="游戏模式" />
 
 	<string
 		id="Map"
-		value="Map" />
+		value="地图" />
 
 	<string
 		id="CarType"
-		value="Vehicle type" />
+		value="车辆类型" />
 
 	<string
 		id="FragLimit"
-		value="Frag limit" />
+		value="击杀上限" />
 
 	<string
 		id="TimeLimit"
-		value="Time Limit" />
+		value="时间限制" />
 
 	<string
 		id="PlayersLimit"
-		value="Number of players" />
+		value="玩家数量" />
 
 	<string
 		id="MoreAbbrev"
@@ -614,75 +614,75 @@
 
 	<string
 		id="MoreAbbrevCarTip"
-		value="About cars" />
+		value="关于车辆" />
 
 	<string
 		id="MoreAbbrevMapTip"
-		value="About maps" />
+		value="关于地图" />
 
 	<string
 		id="TeamOptions"
-		value="Team settings" />
+		value="队伍设置" />
 
 	<string
 		id="ServerDefault"
-		value="On default" />
+		value="默认" />
 
 	<string
 		id="StartGame"
-		value="Start game" />
+		value="开始游戏" />
 
 	<string
 		id="FriendlyFire"
-		value="Friendly fire" />
+		value="友军伤害" />
 
 	<string
 		id="NumBots"
-		value="Bot numbers" />
+		value="机器人数量" />
 
 	<string
 		id="GameType_Deathmatch"
-		value="Battle" />
+		value="混战" />
 
 	<string
 		id="GameType_Team2"
-		value="Team battle (2 teams)" />
+		value="团队战（2队）" />
 
 	<string
 		id="GameType_Team3"
-		value="Team battle (3 teams)" />
+		value="团队战（3队）" />
 
 	<string
 		id="GameType_Team4"
-		value="Team battle (4 teams)" />
+		value="团队战（4队）" />
 
 	<string
 		id="GameType_Team5"
-		value="Team battle (5 teams)" />
+		value="团队战（5队）" />
 
 	<string
 		id="GameType_Team6"
-		value="Team battle (6 teams)" />
+		value="团队战（6队）" />
 
 	<string
 		id="GameType_Team7"
-		value="Team battle (7 teams)" />
+		value="团队战（7队）" />
 
 	<string
 		id="GameType_Team8"
-		value="Team battle (8 teams)" />
+		value="团队战（8队）" />
 
 	<string
 		id="GameType_DeathmatchAbbrev"
-		value="Battle" />
+		value="混战" />
 
 	<string
 		id="GameType_TeamAbbrev"
-		value="Team" />
+		value="团队" />
 
 	<string
 		id="Fraglimit0"
-		value="Without limits" />
+		value="无限制" />
 
 	<string
 		id="Fraglimit10"
@@ -714,351 +714,351 @@
 
 	<string
 		id="Timelimit0"
-		value="Without limits" />
+		value="无限制" />
 
 	<string
 		id="Timelimit5"
-		value="5 minutes" />
+		value="5分钟" />
 
 	<string
 		id="Timelimit10"
-		value="10 minutes" />
+		value="10分钟" />
 
 	<string
 		id="Timelimit15"
-		value="15 minutes" />
+		value="15分钟" />
 
 	<string
 		id="Timelimit30"
-		value="30 minutes" />
+		value="30分钟" />
 
 	<string
 		id="Timelimit60"
-		value="60 minutes" />
+		value="60分钟" />
 
 	<string
 		id="EasyMultiplayerLevel"
-		value="Easy" />
+		value="简单" />
 
 	<string
 		id="MediumMultiplayerLevel"
-		value="Medium" />
+		value="中等" />
 
 	<string
 		id="HeavyMultiplayerLevel"
-		value="Hard" />
+		value="困难" />
 <!-- Client settings -->
 	<string
 		id="Client settings"
-		value="Connection to the server game" />
+		value="连接到服务器游戏" />
 
 	<string
 		id="RefreshList"
-		value="Update list" />
+		value="刷新列表" />
 
 	<string
 		id="ClientAdditional"
-		value="Extras" />
+		value="附加" />
 
 	<string
 		id="ClientAdditionalTip"
-		value="Connect to network game by address" />
+		value="通过地址连接联机游戏" />
 
 	<string
 		id="ClientConnect"
-		value="Connect" />
+		value="连接" />
 
 	<string
 		id="CaptionGameName"
-		value="Game name" />
+		value="游戏名称" />
 
 	<string
 		id="CaptionGameMap"
-		value="Map" />
+		value="地图" />
 
 	<string
 		id="CaptionCarType"
-		value="Vehicle" />
+		value="车辆" />
 
 	<string
 		id="CaptionPlayers"
-		value="Players" />
+		value="玩家" />
 
 	<string
 		id="CaptionGameType"
-		value="Type" />
+		value="类型" />
 
 	<string
 		id="CaptionPing"
-		value="Ping" />
+		value="延迟" />
 
 	<string
 		id="ServerNameD"
-		value="Server name: " />
+		value="服务器名称：" />
 
 	<string
 		id="GameTypeD"
-		value="Game mode: " />
+		value="游戏模式：" />
 <!-- Player settings -->
 	<string
 		id="Player settings"
-		value="Player settings" />
+		value="玩家设置" />
 
 	<string
 		id="PlayerDefault"
-		value="On default" />
+		value="默认" />
 
 	<string
 		id="PlayerApply"
-		value="Apply" />
+		value="应用" />
 
 	<string
 		id="POPlayerName"
-		value="Player name" />
+		value="玩家名称" />
 
 	<string
 		id="POSheme"
-		value="Paint style" />
+		value="涂装风格" />
 
 	<string
 		id="POColors"
-		value="Colors" />
+		value="颜色" />
 
 	<string
 		id="POLogo"
-		value="Logo" />
+		value="徽标" />
 
 	<string
 		id="POAutochange"
-		value="Weapon autochange" />
+		value="武器自动切换" />
 
 	<string
 		id="Sheme_Combat"
-		value="Military (-1)" />
+		value="军事（-1）" />
 
 	<string
 		id="Sheme_Peace"
-		value="Paeceful (+1)" />
+		value="和平（+1）" />
 
 	<string
 		id="Sheme_Combat_MP"
-		value="Combat" />
+		value="战斗" />
 
 	<string
 		id="Sheme_Peace_MP"
-		value="Peace" />
+		value="和平" />
 <!-- Teams settings -->
 	<string
 		id="Teams settings"
-		value="Nework game creation > Team settings" />
+		value="创建联机游戏 > 队伍设置" />
 
 	<string
 		id="Team1"
-		value="Team 1" />
+		value="队伍 1" />
 
 	<string
 		id="Team2"
-		value="Team 2" />
+		value="队伍 2" />
 
 	<string
 		id="Team3"
-		value="Team 3" />
+		value="队伍 3" />
 
 	<string
 		id="Team4"
-		value="Team 4" />
+		value="队伍 4" />
 
 	<string
 		id="Team5"
-		value="Team 5" />
+		value="队伍 5" />
 
 	<string
 		id="Team6"
-		value="Team 6" />
+		value="队伍 6" />
 
 	<string
 		id="Team7"
-		value="Team 7" />
+		value="队伍 7" />
 
 	<string
 		id="Team8"
-		value="Team 8" />
+		value="队伍 8" />
 
 	<string
 		id="TeamsDefault"
-		value="On default" />
+		value="默认" />
 
 	<string
 		id="TeamsBack"
-		value="Return" />
+		value="返回" />
 
 	<string
 		id="ColorScheme_0"
-		value="Paint 1" />
+		value="涂装 1" />
 
 	<string
 		id="ColorScheme_1"
-		value="Paint 2" />
+		value="涂装 2" />
 
 	<string
 		id="ColorScheme_2"
-		value="Paint 3" />
+		value="涂装 3" />
 
 	<string
 		id="ColorScheme_3"
-		value="Paint 4" />
+		value="涂装 4" />
 
 	<string
 		id="ColorScheme_4"
-		value="Paint 5" />
+		value="涂装 5" />
 
 	<string
 		id="ColorScheme_5"
-		value="Paint 6" />
+		value="涂装 6" />
 
 	<string
 		id="ColorScheme_6"
-		value="Paint 7" />
+		value="涂装 7" />
 
 	<string
 		id="ColorScheme_7"
-		value="Paint 8" />
+		value="涂装 8" />
 
 	<string
 		id="ColorScheme_8"
-		value="Paint 9" />
+		value="涂装 9" />
 
 	<string
 		id="ColorScheme_9"
-		value="Paint 10" />
+		value="涂装 10" />
 
 	<string
 		id="ColorScheme_10"
-		value="Paint 11" />
+		value="涂装 11" />
 
 	<string
 		id="ColorScheme_11"
-		value="Paint 12" />
+		value="涂装 12" />
 
 	<string
 		id="ColorScheme_12"
-		value="Paint 13" />
+		value="涂装 13" />
 
 	<string
 		id="ColorScheme_13"
-		value="Paint 14" />
+		value="涂装 14" />
 
 	<string
 		id="ColorScheme_14"
-		value="Paint 15" />
+		value="涂装 15" />
 
 	<string
 		id="ColorScheme_15"
-		value="Paint 16" />
+		value="涂装 16" />
 
 	<string
 		id="ColorScheme_16"
-		value="Paint 17" />
+		value="涂装 17" />
 
 	<string
 		id="ColorScheme_17"
-		value="Paint 18" />
+		value="涂装 18" />
 
 	<string
 		id="LogoName_0"
-		value="No logo" />
+		value="无徽标" />
 
 	<string
 		id="LogoName_1"
-		value="Bandits" />
+		value="盗匪" />
 
 	<string
 		id="LogoName_2"
-		value="Headhunters" />
+		value="猎头者" />
 
 	<string
 		id="LogoName_3"
-		value="Adventurers" />
+		value="冒险者" />
 
 	<string
 		id="LogoName_4"
-		value="Explorers" />
+		value="探险家" />
 
 	<string
 		id="LogoName_5"
-		value="Bureaucrats" />
+		value="官僚" />
 
 	<string
 		id="LogoName_6"
-		value="Grizzly" />
+		value="灰熊部落" />
 
 	<string
 		id="LogoName_7"
-		value="Merchants alliance" />
+		value="商人联盟" />
 
 	<string
 		id="LogoName_8"
-		value="World order" />
+		value="世界秩序" />
 
 	<string
 		id="LogoName_9"
-		value="Farmers" />
+		value="农夫" />
 
 	<string
 		id="LogoName_10"
-		value="Children of the Earth" />
+		value="大地之子" />
 
 	<string
 		id="LogoName_11"
-		value="Fallen" />
+		value="堕落者" />
 
 	<string
 		id="LogoName_12"
-		value="Lost" />
+		value="迷失者" />
 
 	<string
 		id="LogoName_13"
-		value="Technicians" />
+		value="技师" />
 
 	<string
 		id="LogoName_14"
-		value="Oracle's followers" />
+		value="神谕信徒" />
 
 	<string
 		id="LogoName_15"
-		value="Drunk Devil" />
+		value="醉酒恶魔" />
 
 	<string
 		id="LogoName_16"
-		value="Stars" />
+		value="星辰" />
 
 	<string
 		id="LogoName_17"
-		value="Mouse-killer" />
+		value="杀鼠者" />
 
 	<string
 		id="LogoName_18"
-		value="Ninja" />
+		value="忍者" />
 
 	<string
 		id="LogoName_19"
-		value="Hippie" />
+		value="嬉皮士" />
 
 	<string
 		id="LogoName_20"
-		value="Graffiti" />
+		value="涂鸦" />
 
 	<string
 		id="LogoName_21"
-		value="USSR" />
+		value="苏联" />
 
 	<string
 		id="LogoName_22"
-		value="Robots" />
+		value="机器人" />
 
 	<string
 		id="LogoName_23"
-		value="Brigade" />
+		value="旅团" />
 
 	<string
 		id="LogoName_24"
@@ -1066,109 +1066,109 @@
 
 	<string
 		id="LogoName_25"
-		value="Catchers" />
+		value="捕手" />
 
 	<string
 		id="LogoName_fetish_moouse_01.dds"
-		value="Mouse-killer (-2)" />
+		value="杀鼠者（-2）" />
 
 	<string
 		id="LogoName_fetish_qqqr_01.dds"
-		value="USSR (-1)" />
+		value="苏联（-1）" />
 
 	<string
 		id="LogoName_fetish_skull_01.dds"
-		value="Robot (+1)" />
+		value="机器人（+1）" />
 
 	<string
 		id="LogoName_fetish_peace_01.dds"
-		value="Hippie (+2)" />
+		value="嬉皮士（+2）" />
 
 	<string
 		id="LogoName_fetish_devil_01.dds"
-		value="Drunk Devil (-2)" />
+		value="醉酒恶魔（-2）" />
 
 	<string
 		id="LogoName_fetish_military_01.dds"
-		value="Stars (+1)" />
+		value="星辰（+1）" />
 
 	<string
 		id="LogoName_fetish_ninja_01.dds"
-		value="Ninja (+2)" />
+		value="忍者（+2）" />
 
 	<string
 		id="LogoName_fetish_punk_01.dds"
-		value="Graffiti (-1)" />
+		value="涂鸦（-1）" />
 <!-- Client Add settings -->
 	<string
 		id="Client Add settings"
-		value="Connection to network game > Extras" />
+		value="连接联机游戏 > 附加" />
 
 	<string
 		id="ClientAddDefault"
-		value="On default" />
+		value="默认" />
 
 	<string
 		id="ClientAddServer"
-		value="Server name" />
+		value="服务器名称" />
 
 	<string
 		id="ClientAddPort"
-		value="Port" />
+		value="端口" />
 
 	<string
 		id="ClientAddBack"
-		value="Return" />
+		value="返回" />
 <!-- View Map&amp;Car settings -->
 	<string
 		id="View Map settings"
-		value="Network game creation > Map review" />
+		value="创建联机游戏 > 地图预览" />
 
 	<string
 		id="View Car settings"
-		value="Network game creation > Vehicle review" />
+		value="创建联机游戏 > 车辆预览" />
 
 	<string
 		id="ViewMapBack"
-		value="Return" />
+		value="返回" />
 
 	<string
 		id="Return"
-		value="Return" />
+		value="返回" />
 <!-- Multiplayer messages -->
 	<string
 		id="ServerHasNewerProtocolVersion"
-		value="Can't connect: incompatible server protocol." />
+		value="无法连接：服务器协议不兼容。" />
 
 	<string
 		id="ServerHasOlderProtocolVersion"
-		value="Can't connect: incompatible server protocol." />
+		value="无法连接：服务器协议不兼容。" />
 
 	<string
 		id="TooManyPlayersOnServer"
-		value="Can't connect: server is full." />
+		value="无法连接：服务器已满。" />
 
 	<string
 		id="ServerHasLeftTheGame"
-		value="Server was closed." />
+		value="服务器已关闭。" />
 
 	<string
 		id="ServerDied"
-		value="Connection lost." />
+		value="连接丢失。" />
 
 	<string
 		id="NetworkErrorOnServer"
-		value="Network error." />
+		value="网络错误。" />
 
 	<string
 		id="NetworkErrorOnClientPreUpdateThread"
-		value="Network error." />
+		value="网络错误。" />
 
 	<string
 		id="ServerMapDoesntExistOnClient"
-		value="Map not found." />
+		value="未找到地图。" />
 
 	<string
 		id="ServerNotReady"
-		value="The server is not ready." />
+		value="服务器未就绪。" />
 </resource>

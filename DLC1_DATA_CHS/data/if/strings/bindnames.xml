@@ -6,31 +6,31 @@
 
 	<string
 		id="IM_FWD"
-		value="Move forward" />
+		value="前进" />
 
 	<string
 		id="IM_BK"
-		value="Move back" />
+		value="后退" />
 
 	<string
 		id="IM_LEFT"
-		value="Move left" />
+		value="左移" />
 
 	<string
 		id="IM_RIGHT"
-		value="Move right" />
+		value="右移" />
 
 	<string
 		id="IM_RUN"
-		value="Run" />
+		value="奔跑" />
 
 	<string
 		id="IM_GAME_ZOOM_CAMERA"
-		value="Camera zoom" />
+		value="缩放镜头" />
 
 	<string
 		id="IM_GAME_DRAG_CAMERA"
-		value="Camera rotate" />
+		value="旋转镜头" />
 
 	<string
 		id="IM_DEBUG_0"
@@ -78,151 +78,151 @@
 
 	<string
 		id="IM_CAR_ACC"
-		value="Accleleration" />
+		value="加速" />
 
 	<string
 		id="IM_CAR_BREAK"
-		value="Brake" />
+		value="刹车" />
 
 	<string
 		id="IM_CAR_HAND_BREAK"
-		value="Handbrake" />
+		value="手刹" />
 
 	<string
 		id="IM_CAR_LEFT"
-		value="Turn left" />
+		value="左转" />
 
 	<string
 		id="IM_CAR_RIGHT"
-		value="Turn right" />
+		value="右转" />
 
 	<string
 		id="IM_CAR_TURNTOWHEELS"
-		value="Restore position" />
+		value="翻回车轮" />
 
 	<string
 		id="IM_CAR_SWITCHCAMERA"
-		value="Camera switch" />
+		value="切换镜头模式" />
 
 	<string
 		id="IM_CAR_GET_OUT_OF_DIFFICULT_PLACE"
-		value="Return to road" />
+		value="脱困" />
 
 	<string
 		id="IM_CAR_FIRE_0"
-		value="Fire from weapon group  1" />
+		value="开火组1" />
 
 	<string
 		id="IM_CAR_FIRE_1"
-		value="Fire from weapon group  2" />
+		value="开火组2" />
 
 	<string
 		id="IM_CAR_FIRE_2"
-		value="Fire from weapon group  3" />
+		value="开火组3" />
 
 	<string
 		id="IM_CAR_FIRE_3"
-		value="Fire from weapon group  4" />
+		value="开火组4" />
 
 	<string
 		id="IM_CAR_FIRE_4"
-		value="Fire from weapon group  5" />
+		value="开火组5" />
 
 	<string
 		id="IM_CAR_FIRE_ALL"
-		value="Fire from all weapon groups" />
+		value="全部开火" />
 
 	<string
 		id="IM_RELOAD_WEAPON"
-		value="Weapon reload" />
+		value="装填武器" />
 
 	<string
 		id="IM_UI_INVENTORY"
-		value="Munitions/Shop" />
+		value="物品栏/市场" />
 
 	<string
 		id="IM_UI_MENUBOOK"
-		value="Game menu" />
+		value="游戏菜单" />
 
 	<string
 		id="IM_UI_QUESTLOG"
-		value="Missions" />
+		value="任务日志" />
 
 	<string
 		id="IM_UI_JOURNAL"
-		value="Log" />
+		value="剧情" />
 
 	<string
 		id="IM_UI_MAP"
-		value="Map" />
+		value="地图" />
 
 	<string
 		id="IM_CAR_LIGHTS"
-		value="Headlight" />
+		value="大灯" />
 
 	<string
 		id="IM_UI_TOGGLE_INTERFACE"
-		value="Show/Hide interface" />
+		value="隐藏/显示界面" />
 
 	<string
 		id="IM_CAR_HORN"
-		value="Signal" />
+		value="喇叭" />
 
 	<string
 		id="IM_UI_VEHICLE_INFO"
-		value="Vehicle info/Repair shop" />
+		value="车辆参数/车间" />
 
 	<string
 		id="IM_QUICK_SAVE"
-		value="Quick save" />
+		value="快速存档" />
 
 	<string
 		id="IM_QUICK_LOAD"
-		value="Quick load" />
+		value="快速读取" />
 
 	<string
 		id="IM_PAUSE"
-		value="Pause" />
+		value="暂停" />
 
 	<string
 		id="IM_UI_BAR"
-		value="Bar" />
+		value="酒吧" />
 
 	<string
 		id="IM_UI_ADDITIONAL_BUILDING"
-		value="Optional mission in the city" />
+		value="城市可选任务" />
 
 	<string
 		id="IM_UI_PICKUP_ALL"
-		value="Pick up all" />
+		value="拾取全部" />
 
 	<string
 		id="IM_UI_HELP"
-		value="Help" />
+		value="帮助" />
 
 	<string
 		id="IM_MP_WEAPON_PREV"
-		value="Previous weapon (network game)" />
+		value="上一件武器（联机游戏）" />
 
 	<string
 		id="IM_MP_WEAPON_NEXT"
-		value="Next weapon (network game)" />
+		value="下一件武器（联机游戏）" />
 
 	<string
 		id="IM_MP_ADD_BOT"
-		value="Add bot (network game)" />
+		value="添加机器人（联机游戏）" />
 
 	<string
 		id="IM_MP_KILL_BOT"
-		value="Delete bot (network game)" />
+		value="删除机器人（联机游戏）" />
 
 	<string
 		id="IM_MP_RESPAWN"
-		value="Respawn (network game)" />
+		value="重生（联机游戏）" />
 
 	<string
 		id="IM_UI_TEAM_JOIN"
-		value="Team change (network game)" />
+		value="更换队伍（联机游戏）" />
 <!--Keys-->
 	<string
 		id="KEY_ESCAPE"
@@ -278,7 +278,7 @@
 
 	<string
 		id="KEY_BACKSPACE"
-		value="Backspace" />
+		value="退格键" />
 
 	<string
 		id="KEY_TAB"
@@ -334,11 +334,11 @@
 
 	<string
 		id="KEY_RETURN"
-		value="Enter" />
+		value="回车" />
 
 	<string
 		id="KEY_LCONTROL"
-		value="Left Ctrl" />
+		value="左Ctrl" />
 
 	<string
 		id="KEY_A"
@@ -390,7 +390,7 @@
 
 	<string
 		id="KEY_LSHIFT"
-		value="Left Shift" />
+		value="左Shift" />
 
 	<string
 		id="KEY_BACKSLASH"
@@ -438,23 +438,23 @@
 
 	<string
 		id="KEY_RSHIFT"
-		value="Right Shift" />
+		value="右Shift" />
 
 	<string
 		id="KEY_NUMPADSTAR"
-		value="* (keyboard number pad)" />
+		value="*（小键盘）" />
 
 	<string
 		id="KEY_LALT"
-		value="Left Alt" />
+		value="左Alt" />
 
 	<string
 		id="KEY_SPACE"
-		value="Space" />
+		value="空格" />
 
 	<string
 		id="KEY_CAPSLOCK"
-		value="CapsLock" />
+		value="大写锁定" />
 
 	<string
 		id="KEY_F1"
@@ -498,63 +498,63 @@
 
 	<string
 		id="KEY_NUMLOCK"
-		value="NumLock" />
+		value="数字锁定" />
 
 	<string
 		id="KEY_SCROLL"
-		value="Scroll" />
+		value="滚动锁定" />
 
 	<string
 		id="KEY_NUMPAD7"
-		value="7 (keyboard number pad)" />
+		value="7（小键盘）" />
 
 	<string
 		id="KEY_NUMPAD8"
-		value="8 (keyboard number pad)" />
+		value="8（小键盘）" />
 
 	<string
 		id="KEY_NUMPAD9"
-		value="9 (keyboard number pad)" />
+		value="9（小键盘）" />
 
 	<string
 		id="KEY_NUMPADMINUS"
-		value="- (keyboard number pad)" />
+		value="-（小键盘）" />
 
 	<string
 		id="KEY_NUMPAD4"
-		value="4 (keyboard number pad)" />
+		value="4（小键盘）" />
 
 	<string
 		id="KEY_NUMPAD5"
-		value="5 (keyboard number pad)" />
+		value="5（小键盘）" />
 
 	<string
 		id="KEY_NUMPAD6"
-		value="6(keyboard number pad)" />
+		value="6（小键盘）" />
 
 	<string
 		id="KEY_NUMPADPLUS"
-		value="+ (keyboard number pad)" />
+		value="+（小键盘）" />
 
 	<string
 		id="KEY_NUMPAD1"
-		value="1 (keyboard number pad)" />
+		value="1（小键盘）" />
 
 	<string
 		id="KEY_NUMPAD2"
-		value="2 (keyboard number pad)" />
+		value="2（小键盘）" />
 
 	<string
 		id="KEY_NUMPAD3"
-		value="3 (keyboard number pad)" />
+		value="3（小键盘）" />
 
 	<string
 		id="KEY_NUMPAD0"
-		value="0 (keyboard number pad)" />
+		value="0（小键盘）" />
 
 	<string
 		id="KEY_NUMPADPERIOD"
-		value=". (keyboard number pad)" />
+		value=".（小键盘）" />
 
 	<string
 		id="KEY_OEM_102"
@@ -646,11 +646,11 @@
 
 	<string
 		id="KEY_NUMPADENTER"
-		value="Enter (keyboard number pad)" />
+		value="回车（小键盘）" />
 
 	<string
 		id="KEY_RCONTROL"
-		value="Right Ctrl" />
+		value="右Ctrl" />
 
 	<string
 		id="KEY_MUTE"
@@ -682,11 +682,11 @@
 
 	<string
 		id="KEY_NUMPADCOMMA"
-		value=", (keyboard number pad)" />
+		value=",（小键盘）" />
 
 	<string
 		id="KEY_NUMPADSLASH"
-		value="/ (keyboard number pad)" />
+		value="/（小键盘）" />
 
 	<string
 		id="KEY_SYSRQ"
@@ -694,7 +694,7 @@
 
 	<string
 		id="KEY_RALT"
-		value="Right Alt" />
+		value="右Alt" />
 
 	<string
 		id="KEY_PAUSE"
@@ -706,7 +706,7 @@
 
 	<string
 		id="KEY_UPARROW"
-		value="Arrow up" />
+		value="上方向键" />
 
 	<string
 		id="KEY_PGUP"
@@ -714,11 +714,11 @@
 
 	<string
 		id="KEY_LEFTARROW"
-		value="Arrow left" />
+		value="左方向键" />
 
 	<string
 		id="KEY_RIGHTARROW"
-		value="Arrow right" />
+		value="右方向键" />
 
 	<string
 		id="KEY_END"
@@ -726,7 +726,7 @@
 
 	<string
 		id="KEY_DOWNARROW"
-		value="Arrow down" />
+		value="下方向键" />
 
 	<string
 		id="KEY_PGDN"
@@ -802,15 +802,15 @@
 
 	<string
 		id="KEY_LBUTTON"
-		value="Left mouse button" />
+		value="鼠标左键" />
 
 	<string
 		id="KEY_RBUTTON"
-		value="Right mouse button" />
+		value="鼠标右键" />
 
 	<string
 		id="KEY_MBUTTON"
-		value="Middle mouse button" />
+		value="鼠标中键" />
 
 	<string
 		id="KEY_MOUSE_MOVE"
@@ -818,7 +818,7 @@
 
 	<string
 		id="KEY_MWHEEL"
-		value="Mouse wheel" />
+		value="鼠标滚轮" />
 
 	<string
 		id="KEY_CONTROL"
@@ -838,13 +838,13 @@
 <!--Messages-->
 	<string
 		id="BINDKEYS_MSG_RESERVED"
-		value="This key sequences is already used" />
+		value="该组合键已被使用。" />
 
 	<string
 		id="BINDKEYS_MSG_EXISTS"
-		value="This key sequences is already used by %s action. Continue?" />
+		value="该组合键已被「%s」动作使用。是否继续？" />
 
 	<string
 		id="BINDKEYS_MSG_EXISTS_ONLY"
-		value="This key sequences is already used by %s action and is the only one for it." />
+		value="该组合键已被「%s」动作使用，且为该动作的唯一绑定。" />
 </resource>

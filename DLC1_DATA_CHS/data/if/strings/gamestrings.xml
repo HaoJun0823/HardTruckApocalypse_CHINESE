@@ -2,171 +2,171 @@
 <resource>
 	<string
 		id="Price"
-		value="Price" />
+		value="价格" />
 
 	<string
 		id="BasePrice"
-		value="Average price" />
+		value="均价" />
 
 	<string
 		id="Goods"
-		value="Goods" />
+		value="商品" />
 
 	<string
 		id="Amount"
-		value="Number" />
+		value="数量" />
 
 	<string
 		id="NotEnoughGold"
-		value="Not enough money" />
+		value="金币不足" />
 
 	<string
 		id="NotEnoughSpace"
-		value="Not enough space in body" />
+		value="物品栏空间不足" />
 
 	<string
 		id="Buy"
-		value="Buy" />
+		value="购买" />
 
 	<string
 		id="Sell"
-		value="Sell" />
+		value="出售" />
 
 	<string
 		id="NotSellable"
-		value="@ffff0000Unable to sell" />
+		value="@ffff0000无法出售" />
 
 	<string
 		id="NotBuyable"
-		value="@ffff0000Unable to buy" />
+		value="@ffff0000无法购买" />
 
 	<string
 		id="NotSelledByTown"
-		value="@ff904040not for sale in the city" />
+		value="@ff904040该城镇不出售" />
 
 	<string
 		id="NotBuyedByTown"
-		value="@ff904040for for purchase in the city" />
+		value="@ff904040该城镇不收购" />
 
 	<string
 		id="WareNotSelledByTown"
-		value="City doesn't sell commodity of this type" />
+		value="该城镇不出售此种商品" />
 
 	<string
 		id="WareNotBuyedByTown"
-		value="City doesn't buy commodity of this type" />
+		value="该城镇不收购此种商品" />
 
 	<string
 		id="MoveVehicleItemsFromPlayer"
-		value="Move upgrades, goods and weapon to the new vehicle" />
+		value="全部转移" />
 
 	<string
 		id="MoveVehicleItemsToPlayer"
-		value="Move upgrades, goods and weapon to the old vehicle" />
+		value="全部转移回去" />
 
 	<string
 		id="MoveCabinItemsFromPlayer"
-		value="Move upgrades and weapon to the new cabin" />
+		value="全部转移到新驾驶室" />
 
 	<string
 		id="MoveCabinItemsToPlayer"
-		value="Move upgrades and weapon to the old cabin" />
+		value="全部转移到当前驾驶室" />
 
 	<string
 		id="MoveBasketItemsFromPlayer"
-		value="Move goods and weapon to the new body" />
+		value="全部转移到新车厢" />
 
 	<string
 		id="MoveBasketItemsToPlayer"
-		value="Move goods and weapon to the old body" />
+		value="全部转移到当前车厢" />
 
 	<string
 		id="TotalPrice"
-		value="Total cost of deal" />
+		value="总价" />
 
 	<string
 		id="NotCompatible"
-		value="Incompatible with current vehicle" />
+		value="与当前车辆不兼容" />
 
 	<string
 		id="TooRich"
-		value="Not enough money to make the deal" />
+		value="金币不足，无法完成交易" />
 
 	<string
 		id="BuyPriceByTown"
-		value="City purchase price" />
+		value="购买价" />
 
 	<string
 		id="SellPriceByTown"
-		value="City sell price" />
+		value="出售价" />
 
 	<string
 		id="QuickSave"
-		value="Quick save" />
+		value="快速存档" />
 
 	<string
 		id="AutoSave"
-		value="Autosave" />
+		value="自动存档" />
 
 	<string
 		id="GameWasSaved"
-		value="Game saved: @fffed11b%1s" />
+		value="游戏已保存：@fffed11b%1s" />
 
 	<string
 		id="GameWasLoaded"
-		value="Game load: @fffed11b%1s" />
+		value="游戏已读取：@fffed11b%1s" />
 
 	<string
 		id="GameSaving"
-		value="Saving" />
+		value="保存中" />
 
 	<string
 		id="GameSaving..."
-		value="Saving..." />
+		value="保存中…" />
 
 	<string
 		id="SaveGame"
-		value="Save game" />
+		value="保存游戏" />
 
 	<string
 		id="AddNavPoint"
-		value="Add landmark" />
+		value="添加导航点到雷达" />
 
 	<string
 		id="DeleteNavPoint"
-		value="Delete landmark" />
+		value="从雷达移除导航点" />
 
 	<string
 		id="ShotInMinute"
-		value="shots per minute" />
+		value="发/分钟" />
 
 	<string
 		id="Minute"
-		value="min" />
+		value="分" />
 
 	<string
 		id="Secunde"
-		value="sec" />
+		value="秒" />
 
 	<string
 		id="Meter"
-		value="m" />
+		value="米" />
 
 	<string
 		id="KmInSec"
-		value="km/sec" />
+		value="公里/小时" />
 
 	<string
 		id="CurMax"
-		value="tec/max" />
+		value="当前/上限" />
 
 	<string
 		id="Km"
-		value="km" />
+		value="公里" />
 
 	<string
 		id="m"
-		value="m" />
+		value="米" />
 
 	<string
 		id="percent"
@@ -174,779 +174,779 @@
 
 	<string
 		id="PlayerMoney"
-		value="Player's money" />
+		value="玩家金币" />
 
 	<string
 		id="Money"
-		value="Money" />
+		value="金币" />
 
 	<string
 		id="QuestItems"
-		value="Special items" />
+		value="任务物品" />
 
 	<string
 		id="Broken"
-		value="Disabled" />
+		value="已损坏" />
 
 	<string
 		id="NoAmmo"
-		value="No ammunition" />
+		value="弹药耗尽" />
 
 	<string
 		id="WeaponGroups"
-		value="Weapon groups" />
+		value="武器组" />
 
 	<string
 		id="VehicleCharacteristics"
-		value="Vehicle characteristics" />
+		value="卡车参数" />
 
 	<string
 		id="CBCharacteristics"
-		value="Cabin and body characteristics" />
+		value="驾驶室与车厢参数" />
 
 	<string
 		id="NotInstalled"
-		value="Not mounted" />
+		value="未安装" />
 
 	<string
 		id="ExitCurGame"
-		value="Do you want to close current game?|Attention: all unsaved data will be lost." />
+		value="结束当前游戏？|所有未保存的数据将丢失。" />
 
 	<string
 		id="Quit to Main Menu"
-		value="Exit to main menu" />
+		value="退出到主菜单" />
 
 	<string
 		id="Back"
-		value="Back" />
+		value="返回" />
 
 	<string
 		id="ResumeGame"
-		value="Return to game" />
+		value="继续游戏" />
 
 	<string
 		id="GameOver"
-		value="Game is over" />
+		value="游戏结束" />
 
 	<string
 		id="Load Last Game"
-		value="Load last saved game" />
+		value="读取上次存档" />
 
 	<string
 		id="Start Game From Begin"
-		value="Start game fron the beginning" />
+		value="重新开始游戏" />
 
 	<string
 		id="quitGameWithSaveWarn"
-		value="Exit the game?|Attention: all unsaved data will be lost." />
+		value="确认离开游戏？|所有未保存的数据将丢失。" />
 
 	<string
 		id="SaveNameDemand"
-		value="Enter save game name" />
+		value="输入存档名称" />
 
 	<string
 		id="SaveGameExists"
-		value="Do you want to overwrite the current save game?" />
+		value="覆盖此存档？" />
 
 	<string
 		id="SaveGameDeleteWarning"
-		value="Selected game will be deleted. Continue?" />
+		value="选中的存档将被删除！确认继续吗？" />
 
 	<string
 		id="SavingCurrentGame"
-		value="Save current game" />
+		value="正在保存游戏" />
 
 	<string
 		id="DeleteGame"
-		value="Delete saved game" />
+		value="删除存档？" />
 
 	<string
 		id="Power"
-		value="Power" />
+		value="马力（匹）" />
 
 	<string
 		id="EnginePower"
-		value="Engine power" />
+		value="引擎马力" />
 
 	<string
 		id="Torque"
-		value="Torsion torque" />
+		value="扭矩" />
 
 	<string
 		id="Durability"
-		value="Strength" />
+		value="耐久度" />
 
 	<string
 		id="Speed"
-		value="Speed" />
+		value="速度" />
 
 	<string
 		id="MaxSpeed"
-		value="Top speed" />
+		value="最高速度" />
 
 	<string
 		id="Weight"
-		value="Weight" />
+		value="重量" />
 
 	<string
 		id="PNBB"
-		value="Collision damage" />
+		value="碰撞伤害" />
 
 	<string
 		id="PNBBtip"
-		value="Quantity of collision damage to the enemy" />
+		value="对敌人造成的碰撞伤害量" />
 
 	<string
 		id="Damage"
-		value="Damages" />
+		value="伤害" />
 
 	<string
 		id="FiringRate"
-		value="Rate of fire" />
+		value="射速" />
 
 	<string
 		id="FiringRange"
-		value="Kill distance" />
+		value="射程" />
 
 	<string
 		id="ThornForce"
-		value="Hit Force" />
+		value="撞击力" />
 
 	<string
 		id="AccelerationTime"
-		value="Acceleration Time" />
+		value="加速时间" />
 
 	<string
 		id="Armor"
-		value="Armor" />
+		value="装甲" />
 
 	<string
 		id="MaxArmor"
-		value="Max Armor" />
+		value="最大装甲" />
 
 	<string
 		id="Solidity"
-		value="Strength" />
+		value="耐久度" />
 
 	<string
 		id="Resistance"
-		value="Resistance" />
+		value="抗性" />
 
 	<string
 		id="ShellPool"
-		value="Ammunition" />
+		value="弹药" />
 
 	<string
 		id="ChargeSize"
-		value="Number bullets in charger" />
+		value="弹匣容量" />
 
 	<string
 		id="RechargingTime"
-		value="Reload time" />
+		value="装填时间" />
 
 	<string
 		id="BasketCapacity"
-		value="Body capacity" />
+		value="车厢容量" />
 
 	<string
 		id="GADGET_COMMON"
-		value="Vehicle upgrade" />
+		value="车辆配件" />
 
 	<string
 		id="GADGET_WEAPON"
-		value="Weapon upgrade" />
+		value="武器配件" />
 
 	<string
 		id="GADGET_ENGINE"
-		value="Engine upgrade" />
+		value="引擎配件" />
 
 	<string
 		id="GadgetType"
-		value="Device type" />
+		value="类型" />
 
 	<string
 		id="Piercing"
-		value="penetrating" />
+		value="穿甲" />
 
 	<string
 		id="Blast"
-		value="blast" />
+		value="爆炸" />
 
 	<string
 		id="Energy"
-		value="energy" />
+		value="能量" />
 
 	<string
 		id="Fuel"
-		value="Fuel" />
+		value="燃料" />
 
 	<string
 		id="Construction"
-		value="Construction" />
+		value="结构" />
 
 	<string
 		id="MaxConstruction"
-		value="Max Construction" />
+		value="最大结构" />
 
 	<string
 		id="PiercingResistance"
-		value="Resistance to the penetrating damages" />
+		value="穿甲伤害抗性" />
 
 	<string
 		id="BlastResistance"
-		value="Resistance to the explosive damages" />
+		value="爆炸伤害抗性" />
 
 	<string
 		id="EnergyResistance"
-		value="Resistance to the energy damages" />
+		value="能量伤害抗性" />
 
 	<string
 		id="VehicleControl"
-		value="Roadability" />
+		value="操控" />
 
 	<string
 		id="FuelTankCapacity"
-		value="Fuel tank volume" />
+		value="油箱容量" />
 
 	<string
 		id="Accuracy"
-		value="Accuracy" />
+		value="精度" />
 
 	<string
 		id="CabinDurability"
-		value="Cabim armor" />
+		value="驾驶室装甲" />
 
 	<string
 		id="BasketDurability"
-		value="Body armor" />
+		value="车厢装甲" />
 
 	<string
 		id="GunType"
-		value="Weapon type" />
+		value="武器类型" />
 
 	<string
 		id="MachineGun"
-		value="Machine gun" />
+		value="机枪" />
 
 	<string
 		id="Cannon"
-		value="Cannon" />
+		value="火炮" />
 
 	<string
 		id="ShotGun"
-		value="Shotgun" />
+		value="霰弹枪" />
 
 	<string
 		id="Laser"
-		value="Laser device" />
+		value="激光" />
 
 	<string
 		id="Plasma"
-		value="Plasma gun" />
+		value="等离子炮" />
 
 	<string
 		id="Rocket"
-		value="Missile launcher" />
+		value="导弹发射器" />
 
 	<string
 		id="Artillery"
-		value="Mortar" />
+		value="迫击炮" />
 
 	<string
 		id="Thunderbolt"
-		value="Lightning  device" />
+		value="雷电枪" />
 
 	<string
 		id="Mine"
-		value="Mine placing machine" />
+		value="布雷器" />
 
 	<string
 		id="Thorns"
-		value="Pins" />
+		value="刺针" />
 
 	<string
 		id="Nail"
-		value="Nails" />
+		value="撒钉器" />
 
 	<string
 		id="Turbo"
-		value="Booster" />
+		value="涡轮增压" />
 
 	<string
 		id="Oil"
-		value="Oil" />
+		value="撒油器" />
 
 	<string
 		id="Smoke"
-		value="Smoke cover" />
+		value="烟幕" />
 
 	<string
 		id="FlamePlasma"
-		value="Flame gun" />
+		value="火焰喷射器" />
 
 	<string
 		id="ElectroPlasma"
-		value="Electric shock" />
+		value="电击武器" />
 
 	<string
 		id="Weapon"
-		value="Weapon" />
+		value="武器" />
 
 	<string
 		id="Gadgets"
-		value="Devices" />
+		value="配件" />
 
 	<string
 		id="Vehicles"
-		value="Vehicles" />
+		value="车辆" />
 
 	<string
 		id="VehicleParts"
-		value="Vehicle parts" />
+		value="车辆零件" />
 
 	<string
 		id="Affixes"
-		value="Modifiers" />
+		value="词缀" />
 
 	<string
 		id="Clans"
-		value="Groups" />
+		value="派系" />
 
 	<string
 		id="Cabin"
-		value="Cabin" />
+		value="驾驶室" />
 
 	<string
 		id="Basket"
-		value="Body" />
+		value="车厢" />
 
 	<string
 		id="Repairing"
-		value="Repair" />
+		value="修理" />
 
 	<string
 		id="Refuelling"
-		value="Fuel station" />
+		value="加油" />
 
 	<string
 		id="Recharging"
-		value="Weapon reload" />
+		value="装弹" />
 
 	<string
 		id="BuySkin"
-		value="Repaint" />
+		value="喷漆" />
 
 	<string
 		id="NextSkin"
-		value="Next color style" />
+		value="下一种颜色" />
 
 	<string
 		id="PrevSkin"
-		value="Previous color style" />
+		value="上一种颜色" />
 
 	<string
 		id="SkinAlreadySet"
-		value="This color style is current" />
+		value="这就是你当前车辆的颜色" />
 
 	<string
 		id="Skinning"
-		value="Vehicle paint" />
+		value="车辆喷漆" />
 
 	<string
 		id="BuyCabin"
-		value="Buy cabin" />
+		value="购买驾驶室" />
 
 	<string
 		id="BuyBasket"
-		value="Buy body" />
+		value="购买车厢" />
 
 	<string
 		id="BuyVehicle"
-		value="Buy vehicle" />
+		value="购买车辆" />
 
 	<string
 		id="RefuelMax"
-		value="Max Fuel" />
+		value="加满油箱" />
 
 	<string
 		id="RepairMax"
-		value="Max Repair" />
+		value="全部修理" />
 
 	<string
 		id="RechargeMax"
-		value="Max weapon reload" />
+		value="全部装填" />
 
 	<string
 		id="NextVehicle"
-		value="Next vehicle" />
+		value="下一辆车" />
 
 	<string
 		id="PrevVehicle"
-		value="Previous vehicle" />
+		value="上一辆车" />
 
 	<string
 		id="NumUnitsToBuy"
-		value="Purchase number" />
+		value="购买数量" />
 
 	<string
 		id="Refuel"
-		value="Fuel" />
+		value="加油" />
 
 	<string
 		id="Repair"
-		value="Repair" />
+		value="修理" />
 
 	<string
 		id="Recharge"
-		value="Relod" />
+		value="装弹" />
 
 	<string
 		id="ToAdvancedMode"
-		value="To enhanced mode" />
+		value="切换到高级模式" />
 
 	<string
 		id="ToSimpleMode"
-		value="To simple mode" />
+		value="切换到简易模式" />
 
 	<string
 		id="More"
-		value="More" />
+		value="更多" />
 
 	<string
 		id="Less"
-		value="Less" />
+		value="更少" />
 
 	<string
 		id="OneUnitPrice"
-		value="Price per piece" />
+		value="单价" />
 
 	<string
 		id="NumUnitsToBuy"
-		value="Amount" />
+		value="购买数量" />
 
 	<string
 		id="SummaryPrice"
-		value="Total cost" />
+		value="总价值" />
 
 	<string
 		id="RepairNotNeed"
-		value="Repair is not needed" />
+		value="无需修理" />
 
 	<string
 		id="RepairUnavailable"
-		value="Not enough money to repair" />
+		value="金币不足，无法修理" />
 
 	<string
 		id="RepairPartial"
-		value="Partial repair" />
+		value="自定义修理" />
 
 	<string
 		id="RepairFull"
-		value="Full repair" />
+		value="全部修理" />
 
 	<string
 		id="RefuelNotNeed"
-		value="Fueling is not required" />
+		value="油箱已满" />
 
 	<string
 		id="RefuelUnavailable"
-		value="Not enough money to fuel" />
+		value="金币不足，无法加油" />
 
 	<string
 		id="RefuelPartial"
-		value="Partial fueling" />
+		value="自定义加油" />
 
 	<string
 		id="RefuelFull"
-		value="Full fueling" />
+		value="购买满油箱" />
 
 	<string
 		id="RechargeNotNeed"
-		value="Reload in noy necessary" />
+		value="无需装弹" />
 
 	<string
 		id="RechargeUnavailable"
-		value="Not enough money to reload" />
+		value="金币不足，无法装弹" />
 
 	<string
 		id="RechargePartial"
-		value="Partial reload" />
+		value="自定义装弹" />
 
 	<string
 		id="RechargeFull"
-		value="Full reload" />
+		value="全部装填" />
 
 	<string
 		id="State"
-		value="Status" />
+		value="状态" />
 
 	<string
 		id="LeftItemsInCabin"
-		value="Some upgrades and weapon left in the cabin. | All things will be sold with the cabin. | Continue?" />
+		value="驾驶室内还有配件或武器。|它们将随驾驶室一同出售。|是否继续？" />
 
 	<string
 		id="LeftItemsInBasket"
-		value="Some upgrades and weapon left in the body. | All things will be sold with the body. | Continue?" />
+		value="车厢内还有配件或武器。|它们将随车厢一同出售。|是否继续？" />
 
 	<string
 		id="LeftItemsInVehicle"
-		value="Some upgrades and weapon left in the vehicle. | All things will be sold with the vehicle. | Continue?" />
+		value="车辆上还有配件或武器。|它们将随车辆一同出售。|是否继续？" />
 
 	<string
 		id="BuyItemsCost"
-		value="Purchase items price" />
+		value="购买价" />
 
 	<string
 		id="SellItemsCost"
-		value="Sell items price" />
+		value="出售价" />
 
 	<string
 		id="Sum:"
-		value="Total:" />
+		value="总计：" />
 
 	<string
 		id="Select"
-		value="Select" />
+		value="选择" />
 
 	<string
 		id="EnterVehicleTrade"
-		value="Enter vehicle purchase mode" />
+		value="购买流程下一阶段" />
 
 	<string
 		id="VehiclePrice"
-		value="Vehicle price" />
+		value="车辆价格" />
 
 	<string
 		id="ReturnToWorkshop"
-		value="Return to repair shop main menu" />
+		value="返回车间" />
 
 	<string
 		id="Aero title"
-		value="Aerographics" />
+		value="贴花" />
 
 	<string
 		id="Paint title"
-		value="Paint" />
+		value="喷漆" />
 
 	<string
 		id="Clearskins"
-		value="Reset" />
+		value="重置" />
 
 	<string
 		id="Buy all skins"
-		value="Buy all for: " />
+		value="全部购买：" />
 
 	<string
 		id="Buy skins"
-		value="Buy for: " />
+		value="购买：" />
 
 	<string
 		id="GunsAndGadgets"
-		value="Weapon and upgrades" />
+		value="武器与配件" />
 
 	<string
 		id="ShowAllWares"
-		value="Show all goods" />
+		value="显示全部货物" />
 
 	<string
 		id="ShowTownSelledWares"
-		value="Show goods sell by city" />
+		value="显示所有可购货物" />
 
 	<string
 		id="NoWare"
-		value="Commodity not available" />
+		value="不可出售" />
 
 	<string
 		id="All"
-		value="All" />
+		value="全部" />
 
 	<string
 		id="NavPoint"
-		value="Landmark" />
+		value="导航点" />
 
 	<string
 		id="ToGlobalMap"
-		value="Switch to global map" />
+		value="世界地图" />
 
 	<string
 		id="ToLocalMap"
-		value="Switch to Local map" />
+		value="区域地图" />
 
 	<string
 		id="MapUnavailable"
-		value="Detailed local map is not avaliable now." />
+		value="暂时不可用" />
 
 	<string
 		id="TradeMode"
-		value="Show pricelist" />
+		value="交易模式" />
 
 	<string
 		id="InfoMode"
-		value="Show description" />
+		value="信息模式" />
 
 	<string
 		id="SavePrices"
-		value="Add city to the saved prices list" />
+		value="记录价格表" />
 
 	<string
 		id="RemovePrices"
-		value="Delete city to the saved prices list" />
+		value="删除该城镇的价格表" />
 
 	<string
 		id="ShowObjectNames"
-		value="Show objects names" />
+		value="显示物体名称" />
 
 	<string
 		id="HideObjectNames"
-		value="Hide objects names" />
+		value="隐藏物体名称" />
 
 	<string
 		id="Description"
-		value="Description" />
+		value="描述" />
 
 	<string
 		id="Ruined"
-		value="@ff904040Destroyed" />
+		value="@ff904040已摧毁" />
 
 	<string
 		id="KeySet"
-		value="Key sequence" />
+		value="按键组合" />
 
 	<string
 		id="History"
-		value="History" />
+		value="剧情" />
 
 	<string
 		id="Books"
-		value="Books" />
+		value="书籍" />
 
 	<string
 		id="Encyclopaedia"
-		value="Encyclopedia" />
+		value="百科全书" />
 
 	<string
 		id="Statistic"
-		value="Statictics" />
+		value="统计" />
 
 	<string
 		id="Relations"
-		value="Relations" />
+		value="关系" />
 
 	<string
 		id="EnemyRelation"
-		value="Hostile relations" />
+		value="敌对" />
 
 	<string
 		id="FriendlyRelation"
-		value="Friendly relations" />
+		value="友好" />
 
 	<string
 		id="NeutralRelation"
-		value="Neutral relations" />
+		value="中立" />
 
 	<string
 		id="Peace"
-		value="Peace" />
+		value="和平" />
 
 	<string
 		id="War"
-		value="War" />
+		value="战争" />
 
 	<string
 		id="PeaceAvailable"
-		value="It is possible to establish good relations with group | if talk to its representatives | in one of the cities" />
+		value="你可以改善与该派系的关系，|请到当地聚居地 |与该派系代表交谈。" />
 
 	<string
 		id="ShowAllQuests"
-		value="Show all missions" />
+		value="显示全部任务" />
 
 	<string
 		id="ShowNoncompletedQuests"
-		value="Show only uncompleted missions" />
+		value="仅显示未完成任务" />
 
 	<string
 		id="ShowQuestItems"
-		value="Show special items" />
+		value="显示特殊物品" />
 
 	<string
 		id="ShowQuests"
-		value="Show missions" />
+		value="显示任务列表" />
 
 	<string
 		id="Quests"
-		value="Missions" />
+		value="任务" />
 
 	<string
 		id="PickUpAll"
-		value="Pick up all" />
+		value="拾取全部" />
 
 	<string
 		id="TabBtn_Questlog"
-		value="Tasks" />
+		value="任务日志" />
 
 	<string
 		id="TabBtn_Map"
-		value="Map" />
+		value="地图" />
 
 	<string
 		id="TabBtn_Journal"
-		value="Log" />
+		value="日志" />
 
 	<string
 		id="TabBtn_Inventory"
-		value="Body content" />
+		value="物品栏" />
 
 	<string
 		id="TabBtn_Characteristic"
-		value="Venicle info" />
+		value="卡车参数" />
 
 	<string
 		id="DontShowAutoHelp"
-		value="Don't show automatic hints" />
+		value="不显示提示" />
 
 	<string
 		id="Radar"
-		value="Radar" />
+		value="雷达" />
 
 	<string
 		id="Speedometer"
-		value="Speedometer" />
+		value="速度表" />
 
 	<string
 		id="Timer"
-		value="Timer" />
+		value="计时器" />
 
 	<string
 		id="FadingMessages"
-		value="Messages" />
+		value="消息" />
 
 	<string
 		id="ImportantFadingMessages"
-		value="Important messages" />
+		value="重要消息" />
 
 	<string
 		id="TargetInfo"
-		value="Target info" />
+		value="目标信息" />
 
 	<string
 		id="TargetCapture"
-		value="Target lock-on" />
+		value="锁定目标" />
 
 	<string
 		id="ActionIcons"
-		value="Actions" />
+		value="行动" />
 
 	<string
 		id="TalkWithNpc"
-		value="Talk to character" />
+		value="与角色交谈" />
 
 	<string
 		id="NetGameOverHeader"
-		value="Game over." />
+		value="游戏结束。" />
 
 	<string
 		id="NetGameOverFooter"
-		value="Press ESC to retuen to main menu." />
+		value="按 ESC 返回主菜单。" />
 
 	<string
 		id="NumberSymbol"
@@ -954,77 +954,77 @@
 
 	<string
 		id="Color"
-		value="Color" />
+		value="颜色" />
 
 	<string
 		id="PlayerName"
-		value="Player name" />
+		value="玩家名称" />
 
 	<string
 		id="Kills"
-		value="Killed" />
+		value="击杀数" />
 
 	<string
 		id="Deaths"
-		value="Deaths" />
+		value="死亡数" />
 
 	<string
 		id="Ping"
-		value="Ping" />
+		value="延迟" />
 
 	<string
 		id="kills:"
-		value="Killed:@ffffcc00 " />
+		value="击杀：@ffffcc00 " />
 
 	<string
 		id="TeamPlayerName"
-		value="Team name/player name" />
+		value="队伍/玩家名称" />
 
 	<string
 		id="TeamName"
-		value="Team name" />
+		value="队伍名称" />
 
 	<string
 		id="Players"
-		value="Players" />
+		value="玩家" />
 
 	<string
 		id="Functions text"
-		value="@ffffcc00[A] @ffffffffAuto   @ffffcc00[S] @ffffffffObserver   @ffffcc00[Tab] @ffffffffStatistics   @ffffcc00[X] @ffffffffTeam selection window" />
+		value="@ffffcc00[A] @ffffffff自动   @ffffcc00[S] @ffffffff观战   @ffffcc00[Tab] @ffffffff统计   @ffffcc00[X] @ffffffff队伍选择窗口" />
 
 	<string
 		id="Helper text"
-		value=" @ffccccccTeam and modes selection is made by pointed keys" />
+		value=" @ffcccccc队伍和模式的选择通过对应按键完成" />
 
 	<string
 		id="Charisma"
-		value="Grace" />
+		value="魅力" />
 
 	<string
 		id="AppliedPerks"
-		value="Perks" />
+		value="特长" />
 
 	<string
 		id="CancelQuest"
-		value="Abort mission" />
+		value="放弃任务" />
 
 	<string
 		id="MainQuests"
-		value="Plot missions" />
+		value="主线任务" />
 
 	<string
 		id="OptionalQuests"
-		value="Additional missions" />
+		value="支线任务" />
 
 	<string
 		id="RestoreDefaultMusic"
-		value="Restore music changing on default" />
+		value="恢复默认音乐切换" />
 
 	<string
 		id="ApplyAndReturnToMenu"
-		value="Apply changes and return to menu" />
+		value="应用更改并返回菜单" />
 
 	<string
 		id="Bot"
-		value="Bot" />
+		value="机器人" />
 </resource>

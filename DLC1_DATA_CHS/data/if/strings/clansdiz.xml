@@ -2,187 +2,187 @@
 <resource><!--Default buttons-->
 	<string
 		id="Belong_1100"
-		value="Player group" />
+		value="玩家" />
 
 	<string
 		id="Belong_1100_abb"
-		value="Ally" />
+		value="友方" />
 
 	<string
 		id="Belong_1105"
-		value="Bandits" />
+		value="盗匪" />
 
 	<string
 		id="Belong_1105_abb"
-		value="Bandit" />
+		value="盗匪" />
 
 	<string
 		id="Belong_1105_diz"
-		value="There is nothing sacred for these vagrant bandits. They can attack any victim whether it be lone traveler or armed caravan." />
+		value="这些流窜的盗匪无恶不作。无论是独行的旅人还是武装商队，都可能成为他们的猎物。" />
 
 	<string
 		id="Belong_1106"
-		value="Freelancers" />
+		value="自由佣兵" />
 
 	<string
 		id="Belong_1106_abb"
-		value="Freelancer" />
+		value="自由佣兵" />
 
 	<string
 		id="Belong_1106_diz"
-		value="This secret union includes the most dangerous fighters of the civilization. They fight for money and observe code of honor." />
+		value="这个秘密组织汇聚了文明世界最危险的战士。他们为钱而战，但恪守自己的荣誉信条。" />
 
 	<string
 		id="Belong_1107"
-		value="Adventurers" />
+		value="冒险者" />
 
 	<string
 		id="Belong_1107_abb"
-		value="Adventurer" />
+		value="冒险者" />
 
 	<string
 		id="Belong_1107_diz"
-		value="They drive all over the world and search for jollies as if life was not dangerous enough. During the sudden battle they can join either attackers or defenders." />
+		value="他们满世界游历寻找刺激，仿佛生活还不够危险。遭遇突发战斗时，他们随时可能加入进攻方或防守方。" />
 
 	<string
 		id="Belong_1108"
-		value="Explorers" />
+		value="探险家" />
 
 	<string
 		id="Belong_1108_abb"
-		value="Explorer" />
+		value="探险家" />
 
 	<string
 		id="Belong_1108_diz"
-		value="In these latter days there are very little of them left but if you succeed to meet Explorer you can count on a cheerful conversation and help in any trouble." />
+		value="如今他们的数量已所剩无几，但若能遇到一位探险家，任何困境中都能指望得到愉快的交谈和帮助。" />
 
 	<string
 		id="Belong_1109"
-		value="Bureaucrats" />
+		value="官僚" />
 
 	<string
 		id="Belong_1109_abb"
-		value="Bureaucrat" />
+		value="官僚" />
 
 	<string
 		id="Belong_1109_diz"
-		value="Bureaucrats control the whole legal banditism, trade and gambling in the region. They inhere all evil that can only be imagined." />
+		value="官僚们控制着该地区全部合法化的强盗行径、贸易和赌博。他们集一切可以想象的罪恶于一身。" />
 
 	<string
 		id="Belong_1110"
-		value="Grizzly" />
+		value="灰熊部落" />
 
 	<string
 		id="Belong_1110_abb"
-		value="Grizzly" />
+		value="灰熊部落" />
 
 	<string
 		id="Belong_1110_diz"
-		value="Small reservations of indigenous inhabitants of America. Tobacco trade and home-made souvenirs are their main forms of activities." />
+		value="美洲原住民的小型保留地。烟草贸易和自制纪念品是他们的主要营生。" />
 
 	<string
 		id="Belong_1111"
-		value="Merchants alliance" />
+		value="商人联盟" />
 
 	<string
 		id="Belong_1111_abb"
-		value="Merchants alliance" />
+		value="商人联盟" />
 
 	<string
 		id="Belong_1111_diz"
-		value="Foes call them Secret Alliance for some offences of the past and for relations with various gangs and freelancers. With reason is believed that Alliance fence and is not ashamed of smuggled goods trade." />
+		value="因为过去的某些劣迹以及与各路帮派和自由佣兵的关系，敌人称他们为秘密联盟。人们有理由相信联盟专门销赃，而且对走私货物贸易毫不羞耻。" />
 
 	<string
 		id="Belong_1112"
-		value="World order" />
+		value="世界秩序" />
 
 	<string
 		id="Belong_1112_abb"
-		value="World order" />
+		value="世界秩序" />
 
 	<string
 		id="Belong_1112_diz"
-		value="Small but very ambitious group propelled by a good idea of civilization renaissance. Desire to reach the sacred goal is the only excuse of their not-always-legal actions." />
+		value="规模不大却野心勃勃的组织，怀抱着文明复兴的理想。为达成这一神圣目标，是他们的行动未必合法的唯一借口。" />
 
 	<string
 		id="Belong_1113"
-		value="Farmers" />
+		value="农夫" />
 
 	<string
 		id="Belong_1113_abb"
-		value="Farmer" />
+		value="农夫" />
 
 	<string
 		id="Belong_1113_diz"
-		value="Farmers work on the Earth as their ancestors in the past. Food is always required and as there is nothing more to take from them they peacefully live in the dangerous world." />
+		value="农夫们像祖先一样耕种土地。粮食永远是必需品，也因为他们身上实在榨不出更多油水，所以在这个危险的世界里过得还算太平。" />
 
 	<string
 		id="Belong_1114"
-		value="Children of the Earth" />
+		value="大地之子" />
 
 	<string
 		id="Belong_1114_abb"
-		value="Children of the Earth" />
+		value="大地之子" />
 
 	<string
 		id="Belong_1114_diz"
-		value="The dwellers of the lost cities live in jungle of Le Canada. They have lost relations with the rest of the world not because of the Great River but because their interests is in the area of religious rather than material." />
+		value="失落城市的居民生活在加拿大的丛林中。他们与世界失去联系并非因为大河阻隔，而是因为他们的兴趣在于宗教而非物质。" />
 
 	<string
 		id="Belong_1115"
-		value="Fallen" />
+		value="堕落者" />
 
 	<string
 		id="Belong_1115_abb"
-		value="Fallen" />
+		value="堕落者" />
 
 	<string
 		id="Belong_1115_diz"
-		value="Mechanic monsters, known as robots, destroy the human settlements. That is why they are forced to live in small communities and constantly hide and tremble for their lives." />
+		value="被称为机器人的机械怪物摧毁人类聚居地。因此他们被迫组成小社群，不断躲藏，为自己的性命担惊受怕。" />
 
 	<string
 		id="Belong_1116"
-		value="Lost" />
+		value="迷失者" />
 
 	<string
 		id="Belong_1116_abb"
-		value="Lost" />
+		value="迷失者" />
 
 	<string
 		id="Belong_1116_diz"
-		value="Group of people built a small village near the rusty flying machine. Their behavior is far more strange than that of most dwellers of La Canada jungle." />
+		value="一群人在锈迹斑斑的飞行机器旁建起了小村庄。他们的行为比大多数加拿大丛林居民还要古怪得多。" />
 
 	<string
 		id="Belong_1117"
-		value="Technicians" />
+		value="技师" />
 
 	<string
 		id="Belong_1117_abb"
-		value="Technicians" />
+		value="技师" />
 
 	<string
 		id="Belong_1117_diz"
-		value="This community includes people who choose as a life goal to service the old factory and the mine near it." />
+		value="这个社群里的人把守护老工厂和附近的矿井当作毕生的目标。" />
 
 	<string
 		id="Belong_1118"
-		value="Oracle's followers" />
+		value="神谕信徒" />
 
 	<string
 		id="Belong_1118_abb"
-		value="Oracle's followers" />
+		value="神谕信徒" />
 
 	<string
 		id="Belong_1118_diz"
-		value="They are senseless mechanic creatures. It is unknown how they appeared on the continent and what aims they are trying to reach. One thing is pretty clear - they bring death and destruction." />
+		value="它们是没有意识的机械造物。无人知晓它们如何出现在这片大陆上，也不知道它们追求什么目标。唯一清楚的是——它们带来死亡与毁灭。" />
 
 	<string
 		id="Belong_1150"
-		value="Children of the Earth" />
+		value="大地之子" />
 
 	<string
 		id="Belong_1150_abb"
-		value="Children of the Earth" />
+		value="大地之子" />
 
 	<string
 		id="Belong_1150_diz"
@@ -190,11 +190,11 @@
 
 	<string
 		id="Belong_1151"
-		value="Bureaucrats" />
+		value="官僚" />
 
 	<string
 		id="Belong_1151_abb"
-		value="Bureaucrat" />
+		value="官僚" />
 
 	<string
 		id="Belong_1151_diz"
@@ -202,11 +202,11 @@
 
 	<string
 		id="Belong_1152"
-		value="Bandits" />
+		value="盗匪" />
 
 	<string
 		id="Belong_1152_abb"
-		value="Bandit" />
+		value="盗匪" />
 
 	<string
 		id="Belong_1152_diz"
@@ -214,11 +214,11 @@
 
 	<string
 		id="Belong_1153"
-		value="Fallen" />
+		value="堕落者" />
 
 	<string
 		id="Belong_1153_abb"
-		value="Fallen" />
+		value="堕落者" />
 
 	<string
 		id="Belong_1153_diz"
@@ -226,7 +226,7 @@
 
 	<string
 		id="Belong_1190"
-		value="Adventurers" />
+		value="冒险者" />
 
 	<string
 		id="Belong_1190_abb"
@@ -234,11 +234,11 @@
 
 	<string
 		id="Belong_1190_diz"
-		value="They drive around the world seeking for adventures, as if life isn't dangerous enough as it is. In a fight they can join any side." />
+		value="他们满世界游历寻找冒险，仿佛生活还不够危险。战斗中他们可能加入任何一方。" />
 
 	<string
 		id="Belong_1191"
-		value="Adventurers" />
+		value="冒险者" />
 
 	<string
 		id="Belong_1191_abb"
@@ -246,11 +246,11 @@
 
 	<string
 		id="Belong_1191_diz"
-		value="They drive around the world seeking for adventures, as if life isn't dangerous enough as it is. In a fight they can join any side." />
+		value="他们满世界游历寻找冒险，仿佛生活还不够危险。战斗中他们可能加入任何一方。" />
 
 	<string
 		id="Belong_1192"
-		value="Bureaucrats" />
+		value="官僚" />
 
 	<string
 		id="Belong_1192_abb"
@@ -258,11 +258,11 @@
 
 	<string
 		id="Belong_1192_diz"
-		value="Bureaucrats controls all brigands, trade and gambling in the region. They have all imaginable vices. " />
+		value="官僚们控制着该地区的所有劫掠者、贸易和赌博。他们集一切可以想象的恶习于一身。 " />
 
 	<string
 		id="Belong_1193"
-		value="Bureaucrats" />
+		value="官僚" />
 
 	<string
 		id="Belong_1193_abb"
@@ -270,11 +270,11 @@
 
 	<string
 		id="Belong_1193_diz"
-		value="Bureaucrats controls all brigands, trade and gambling in the region. They have all imaginable vices. " />
+		value="官僚们控制着该地区的所有劫掠者、贸易和赌博。他们集一切可以想象的恶习于一身。 " />
 
 	<string
 		id="Belong_1194"
-		value="World Order" />
+		value="世界秩序" />
 
 	<string
 		id="Belong_1194_abb"
@@ -282,11 +282,11 @@
 
 	<string
 		id="Belong_1194_diz"
-		value="A small, but ambitious band, that believes in the revival of civilization. Their determination to reach this goal is the only excuse for their not-always-legal actions. " />
+		value="一个规模不大却野心勃勃的团伙，坚信文明终将复兴。为了达成这一目标，是他们那些未必合法的行动的唯一借口。 " />
 
 	<string
 		id="Belong_1195"
-		value="World Order" />
+		value="世界秩序" />
 
 	<string
 		id="Belong_1195_abb"
@@ -294,17 +294,17 @@
 
 	<string
 		id="Belong_1195_diz"
-		value="A small, but ambitious band, that believes in the revival of civilization. Their determination to reach this goal is the only excuse for their not-always-legal actions. " />
+		value="一个规模不大却野心勃勃的团伙，坚信文明终将复兴。为了达成这一目标，是他们那些未必合法的行动的唯一借口。 " />
 
 	<string
 		id="Belong_1196"
-		value="Grizly" />
+		value="灰熊部落" />
 
 	<string
 		id="Belong_1196_abb"
-		value="Grizly" />
+		value="灰熊部落" />
 
 	<string
 		id="Belong_1196_diz"
-		value="Reservations of the native Americans. Tobacco and handicraft trade is their only occupation." />
+		value="美洲原住民的保留地。烟草和手工艺品贸易是他们的唯一营生。" />
 </resource>

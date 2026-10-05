@@ -2,433 +2,433 @@
 <resource><!--Default buttons-->
 	<string
 		id="useless_cabin"
-		value="Useless" />
+		value="无用" />
 
 	<string
 		id="useless_cabin_localizedform_0"
-		value="Useless" />
+		value="无用" />
 
 	<string
 		id="useless_cabin_localizedform_1"
-		value="Useless" />
+		value="无用" />
 
 	<string
 		id="useless_basket"
-		value="Useless" />
+		value="无用" />
 
 	<string
 		id="useless_basket_localizedform_0"
-		value="Useless" />
+		value="无用" />
 
 	<string
 		id="useless_basket_localizedform_1"
-		value="Useless" />
+		value="无用" />
 
 	<string
 		id="useless_gun"
-		value="Useless" />
+		value="无用" />
 
 	<string
 		id="useless_gun_localizedform_0"
-		value="Useless" />
+		value="无用" />
 
 	<string
 		id="useless_gun_localizedform_1"
-		value="Useless" />
+		value="无用" />
 
 	<string
 		id="rusty_cabin"
-		value="Rusty" />
+		value="生锈" />
 
 	<string
 		id="rusty_cabin_localizedform_0"
-		value="Rusty" />
+		value="生锈" />
 
 	<string
 		id="rusty_cabin_localizedform_1"
-		value="Rusty" />
+		value="生锈" />
 
 	<string
 		id="rusty_basket"
-		value="Rusty" />
+		value="生锈" />
 
 	<string
 		id="rusty_basket_localizedform_0"
-		value="Rusty" />
+		value="生锈" />
 
 	<string
 		id="rusty_basket_localizedform_1"
-		value="Rusty" />
+		value="生锈" />
 
 	<string
 		id="rusty_gun"
-		value="Rusty" />
+		value="生锈" />
 
 	<string
 		id="rusty_gun_localizedform_0"
-		value="Rusty" />
+		value="生锈" />
 
 	<string
 		id="rusty_gun_localizedform_1"
-		value="Rusty" />
+		value="生锈" />
 
 	<string
 		id="excellent_cabin"
-		value="Excellent" />
+		value="优秀" />
 
 	<string
 		id="excellent_cabin_localizedform_0"
-		value="Excellent" />
+		value="优秀" />
 
 	<string
 		id="excellent_cabin_localizedform_1"
-		value="Excellent" />
+		value="优秀" />
 
 	<string
 		id="excellent_basket"
-		value="Excellent" />
+		value="优秀" />
 
 	<string
 		id="excellent_basket_localizedform_0"
-		value="Excellent" />
+		value="优秀" />
 
 	<string
 		id="excellent_basket_localizedform_1"
-		value="Excellent" />
+		value="优秀" />
 
 	<string
 		id="excellent_gun"
-		value="Excellent" />
+		value="优秀" />
 
 	<string
 		id="excellent_gun_localizedform_0"
-		value="Excellent" />
+		value="优秀" />
 
 	<string
 		id="excellent_gun_localizedform_1"
-		value="Excellent" />
+		value="优秀" />
 
 	<string
 		id="advanced_cabin"
-		value="Advanced" />
+		value="高级" />
 
 	<string
 		id="advanced_cabin_localizedform_0"
-		value="Advanced" />
+		value="高级" />
 
 	<string
 		id="advanced_cabin_localizedform_1"
-		value="Advanced" />
+		value="高级" />
 
 	<string
 		id="advanced_basket"
-		value="Advanced" />
+		value="高级" />
 
 	<string
 		id="advanced_basket_localizedform_0"
-		value="Advanced" />
+		value="高级" />
 
 	<string
 		id="advanced_basket_localizedform_1"
-		value="Advanced" />
+		value="高级" />
 
 	<string
 		id="advanced_gun"
-		value="Advanced" />
+		value="高级" />
 
 	<string
 		id="advanced_gun_localizedform_0"
-		value="Advanced" />
+		value="高级" />
 
 	<string
 		id="advanced_gun_localizedform_1"
-		value="Advanced" />
+		value="高级" />
 
 	<string
 		id="slow_gun"
-		value="Slow" />
+		value="缓慢" />
 
 	<string
 		id="slow_gun_localizedform_0"
-		value="Slow" />
+		value="缓慢" />
 
 	<string
 		id="slow_gun_localizedform_1"
-		value="Slow" />
+		value="缓慢" />
 
 	<string
 		id="assault_gun"
-		value="Offensive" />
+		value="突击" />
 
 	<string
 		id="assault_gun_localizedform_0"
-		value="Offensive" />
+		value="突击" />
 
 	<string
 		id="assault_gun_localizedform_1"
-		value="Offensive" />
+		value="突击" />
 
 	<string
 		id="rapid_firing_gun"
-		value="Rapid-firing" />
+		value="速射" />
 
 	<string
 		id="rapid_firing_gun_localizedform_0"
-		value="Rapid-firing" />
+		value="速射" />
 
 	<string
 		id="rapid_firing_gun_localizedform_1"
-		value="Rapid-firing" />
+		value="速射" />
 
 	<string
 		id="weak_gun"
-		value="Weak" />
+		value="低劣" />
 
 	<string
 		id="weak_gun_localizedform_0"
-		value="Weak" />
+		value="低劣" />
 
 	<string
 		id="weak_gun_localizedform_1"
-		value="Weak" />
+		value="低劣" />
 
 	<string
 		id="deadly_gun"
-		value="Lethal" />
+		value="致命" />
 
 	<string
 		id="deadly_gun_localizedform_0"
-		value="Lethal" />
+		value="致命" />
 
 	<string
 		id="deadly_gun_localizedform_1"
-		value="Lethal" />
+		value="致命" />
 
 	<string
 		id="destructive_gun"
-		value="Destructive" />
+		value="破坏性" />
 
 	<string
 		id="destructive_gun_localizedform_0"
-		value="Destructive" />
+		value="破坏性" />
 
 	<string
 		id="destructive_gun_localizedform_1"
-		value="Destructive" />
+		value="破坏性" />
 
 	<string
 		id="with_truncated_barrel_gun"
-		value="With sawed-off barrel" />
+		value="截短枪管" />
 
 	<string
 		id="with_truncated_barrel_gun_localizedform_0"
-		value="With sawed-off barrel" />
+		value="截短枪管" />
 
 	<string
 		id="with_truncated_barrel_gun_localizedform_1"
-		value="With sawed-off barrel" />
+		value="截短枪管" />
 
 	<string
 		id="with_enlarged_barrel_gun"
-		value="With enlarged barrel" />
+		value="加粗枪管" />
 
 	<string
 		id="with_enlarged_barrel_gun_localizedform_0"
-		value="With enlarged barrel" />
+		value="加粗枪管" />
 
 	<string
 		id="with_enlarged_barrel_gun_localizedform_1"
-		value="With enlarged barrel" />
+		value="加粗枪管" />
 
 	<string
 		id="with_long_barrel_gun"
-		value="With long barrel" />
+		value="加长枪管" />
 
 	<string
 		id="with_long_barrel_gun_localizedform_0"
-		value="With long barrel" />
+		value="加长枪管" />
 
 	<string
 		id="with_long_barrel_gun_localizedform_1"
-		value="With long barrel" />
+		value="加长枪管" />
 
 	<string
 		id="without_cooling_gun"
-		value="Uncooled" />
+		value="无冷却" />
 
 	<string
 		id="without_cooling_gun_localizedform_0"
-		value="Uncooled" />
+		value="无冷却" />
 
 	<string
 		id="without_cooling_gun_localizedform_1"
-		value="Uncooled" />
+		value="无冷却" />
 
 	<string
 		id="with_water_cooling_gun"
-		value="Water-cooling" />
+		value="水冷" />
 
 	<string
 		id="with_water_cooling_gun_localizedform_0"
-		value="Water-cooling" />
+		value="水冷" />
 
 	<string
 		id="with_water_cooling_gun_localizedform_1"
-		value="Water-cooling" />
+		value="水冷" />
 
 	<string
 		id="with_nitro_cooling_gun"
-		value="Azote-cooling" />
+		value="液氮冷却" />
 
 	<string
 		id="with_nitro_cooling_gun_localizedform_0"
-		value="Azote-cooling" />
+		value="液氮冷却" />
 
 	<string
 		id="with_nitro_cooling_gun_localizedform_1"
-		value="Azote-cooling" />
+		value="液氮冷却" />
 
 	<string
 		id="without_sight_gun"
-		value="Without sight" />
+		value="无瞄准器" />
 
 	<string
 		id="without_sight_gun_localizedform_0"
-		value="Without sight" />
+		value="无瞄准器" />
 
 	<string
 		id="without_sight_gun_localizedform_1"
-		value="Without sight" />
+		value="无瞄准器" />
 
 	<string
 		id="with_laser_sight_gun"
-		value="With laser sight" />
+		value="激光瞄准" />
 
 	<string
 		id="with_laser_sight_gun_localizedform_0"
-		value="With laser sight" />
+		value="激光瞄准" />
 
 	<string
 		id="with_laser_sight_gun_localizedform_1"
-		value="With laser sight" />
+		value="激光瞄准" />
 
 	<string
 		id="with_electric_gun_sight"
-		value="With electric navigation" />
+		value="电子瞄准" />
 
 	<string
 		id="with_electric_sight_gun_localizedform_0"
-		value="With electric navigation" />
+		value="电子瞄准" />
 
 	<string
 		id="with_electric_sight_gun_localizedform_1"
-		value="With electric navigation" />
+		value="电子瞄准" />
 
 	<string
 		id="useless_cabin_diz"
-		value="Attached to cabin| Armor -10% -15% | Top speed -10% -15% | Power -10% -15% " />
+		value="适用于驾驶室| 装甲 -10% -15% | 最高速度 -10% -15% | 马力 -10% -15% " />
 
 	<string
 		id="rusty_cabin_diz"
-		value="Attached to cabin| Armor -5% -7% | Top speed -5% -7% | Power -5% -7% " />
+		value="适用于驾驶室| 装甲 -5% -7% | 最高速度 -5% -7% | 马力 -5% -7% " />
 
 	<string
 		id="excellent_cabin_diz"
-		value="Attached to cabin| Armor +5% +7% | Top speed +5% +7% | Power +5% +7% " />
+		value="适用于驾驶室| 装甲 +5% +7% | 最高速度 +5% +7% | 马力 +5% +7% " />
 
 	<string
 		id="advanced_cabin_diz"
-		value="Attached to cabin| Armor +10% +15% | Top speed +10% +15% | Power +10% +15% " />
+		value="适用于驾驶室| 装甲 +10% +15% | 最高速度 +10% +15% | 马力 +10% +15% " />
 
 	<string
 		id="useless_basket_diz"
-		value=" Attached to body| Armor -10% -15% " />
+		value=" 适用于车厢| 装甲 -10% -15% " />
 
 	<string
 		id="rusty_basket_diz"
-		value=" Attached to body| Armor -5% -7% " />
+		value=" 适用于车厢| 装甲 -5% -7% " />
 
 	<string
 		id="excellent_basket_diz"
-		value=" Attached to body| Armor +5% +7% " />
+		value=" 适用于车厢| 装甲 +5% +7% " />
 
 	<string
 		id="advanced_basket_diz"
-		value=" Attached to body| Armor +10% +15% " />
+		value=" 适用于车厢| 装甲 +10% +15% " />
 
 	<string
 		id="useless_gun_diz"
-		value="Attached to weapon| Strength -10% -15% | Damage -10% -15% | Accuracy -10% -15% " />
+		value="适用于武器| 耐久度 -10% -15% | 伤害 -10% -15% | 精度 -10% -15% " />
 
 	<string
 		id="rusty_gun_diz"
-		value="Attached to weapon| Strength -5% -7% | Damage -5% -7% | Accuracy -5% -7% " />
+		value="适用于武器| 耐久度 -5% -7% | 伤害 -5% -7% | 精度 -5% -7% " />
 
 	<string
 		id="excellent_gun_diz"
-		value="Attached to weapon| Strength +5% +7% | Damage +5% +7% | Accuracy +5% +7% " />
+		value="适用于武器| 耐久度 +5% +7% | 伤害 +5% +7% | 精度 +5% +7% " />
 
 	<string
 		id="advanced_gun_diz"
-		value="Attached to weapon| Strength +10% +15% | Damage +10% +15% | Accuracy +10% +15%" />
+		value="适用于武器| 耐久度 +10% +15% | 伤害 +10% +15% | 精度 +10% +15%" />
 
 	<string
 		id="slow_gun_diz"
-		value="Attached to weapon| Rate of fire -5% -7% " />
+		value="适用于武器| 射速 -5% -7% " />
 
 	<string
 		id="assault_gun_diz"
-		value="Attached to weapon| Rate of fire +5% +7% " />
+		value="适用于武器| 射速 +5% +7% " />
 
 	<string
 		id="rapid_firing_gun_diz"
-		value="Attached to weapon| Rate of fire +10% +15% " />
+		value="适用于武器| 射速 +10% +15% " />
 
 	<string
 		id="weak_gun_diz"
-		value="Attached to weapon| Damage -5% -7% " />
+		value="适用于武器| 伤害 -5% -7% " />
 
 	<string
 		id="deadly_gun_diz"
-		value="Attached to weapon| Damage +5% +7% " />
+		value="适用于武器| 伤害 +5% +7% " />
 
 	<string
 		id="destructive_gun_diz"
-		value="Attached to weapon| Damage +10% +15% " />
+		value="适用于武器| 伤害 +10% +15% " />
 
 	<string
 		id="with_truncated_barrel_gun_diz"
-		value="Attached to weapon| Range of fire -5% -7% " />
+		value="适用于武器| 射程 -5% -7% " />
 
 	<string
 		id="with_enlarged_barrel_gun_diz"
-		value="Attached to weapon| Range of fire +5% +7% " />
+		value="适用于武器| 射程 +5% +7% " />
 
 	<string
 		id="with_long_barrel_gun_diz"
-		value="Attached to weapon| Range of fire +10% +15% " />
+		value="适用于武器| 射程 +10% +15% " />
 
 	<string
 		id="without_cooling_gun_diz"
-		value="Attached to weapon| Reload time +5% +7% " />
+		value="适用于武器| 装填时间 +5% +7% " />
 
 	<string
 		id="with_water_cooling_gun_diz"
-		value="Attached to weapon| Reload time -5% -7% " />
+		value="适用于武器| 装填时间 -5% -7% " />
 
 	<string
 		id="with_nitro_cooling_gun_diz"
-		value="Attached to weapon| Reload time -10% -15% " />
+		value="适用于武器| 装填时间 -10% -15% " />
 
 	<string
 		id="without_sight_gun_diz"
-		value="Attached to weapon| Accuracy -5% -7% | Price -20% -25%" />
+		value="适用于武器| 精度 -5% -7% | 价格 -20% -25%" />
 
 	<string
 		id="with_laser_sight_gun_diz"
-		value="Attached to weapon| Accuracy +5% +7% | Price +20% +25%" />
+		value="适用于武器| 精度 +5% +7% | 价格 +20% +25%" />
 
 	<string
 		id="with_electric_sight_gun_diz"
-		value="Attached to weapon| Accuracy +10% +15% | Price +30% +40%" />
+		value="适用于武器| 精度 +10% +15% | 价格 +30% +40%" />
 </resource>

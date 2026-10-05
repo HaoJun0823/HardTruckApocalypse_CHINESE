@@ -2,185 +2,185 @@
 <resource>
 	<string
 		id="r5m1_TheTownBigHead_diz"
-		value="Very big city depends on banditism, gambling and trade with neighboring villages." />
+		value="靠盗匪活动、赌博和与邻近村庄的贸易维生的大城市。" />
 
 	<string
 		id="r5m1_TheKonneks_diz"
-		value="Besides the name that is hard to pronounce there is no other remarkable features in this city." />
+		value="除了那个难念的名字，这座城市再没什么值得一提的特色。" />
 
 	<string
 		id="r5m1_TheTownMichikar_diz"
-		value="Near the city there is racing track and sometime it holds competitions there." />
+		value="城附近有赛车场，时常举办比赛。" />
 
 	<string
 		id="r5m1_ThePensilvansk_diz"
-		value="Small merchants village." />
+		value="小型商人村庄。" />
 
 	<string
 		id="r5m1_TheApple_diz"
-		value="Forgotten reservation of indigenous inhabitants of America." />
+		value="被遗忘的美洲原住民保留地。" />
 
 	<string
 		id="r5m2_r5m2_Pervomayka_diz"
-		value="Village lives on trade with visitant vagrants." />
+		value="靠与过往流浪者贸易为生的村庄。" />
 
 	<string
 		id="r5m2_r5m2_Sagevsal_diz"
-		value="The population is small main part of village territory is occupied by commodity warehouses." />
+		value="人口稀少，村庄大部分区域被货物仓库占据。" />
 
 	<string
 		id="r5m2_r5m2_Cvetograd_diz"
-		value="Agricultural land." />
+		value="农业用地。" />
 
 	<string
 		id="r5m2_r5m2_Mexico_diz"
-		value="One more small farm village." />
+		value="又一个小型农业村庄。" />
 
 	<string
 		id="r5m2_r5m2_Vraska_diz"
-		value="Housing estate of substantial farmers form village." />
+		value="由富裕农夫的住宅群组成的村庄。" />
 
 	<string
 		id="r5m2_TheOneEyeBase_diz"
-		value="Large, hard-to-hit city." />
+		value="大型且难以攻陷的城市。" />
 
 	<string
 		id="r6m1_r6m1_Lost_diz"
-		value="Strange settlement near the crack up UFO." />
+		value="开裂的 UFO 旁的奇异聚居地。" />
 
 	<string
 		id="r6m1_r6m1_Real_diz"
-		value="Potty little town lied up from all other world." />
+		value="与世隔绝的小破镇。" />
 
 	<string
 		id="r6m1_r6m1_Onto_diz"
-		value="Merchants settlement of local populaption." />
+		value="当地居民的商人聚居地。" />
 
 	<string
 		id="r6m1_r6m1_Lodon_diz"
-		value="Temporary settlement of plant service staff." />
+		value="工厂维护人员的临时居所。" />
 
 	<string
 		id="r6m1_theTownMapleSheet_diz"
-		value="Medium city." />
+		value="中等规模的城市。" />
 
 	<string
 		id="r6m2_r6m1_Vaypeg_diz"
-		value="Well walled town which is able to survive in next robot attack." />
+		value="城墙坚固，能在下一波机器人进攻中幸存的城镇。" />
 
 	<string
 		id="r6m2_r6m1_Tander_diz"
-		value="Good geographic location is the only thing that rescued city from total annihilation by robots." />
+		value="优越的地理位置是这座城市免遭机器人彻底毁灭的唯一原因。" />
 
 	<string
 		id="r6m2_r6m1_Gradofaks_diz"
-		value="Small settlement which tries to survive." />
+		value="努力求生的小型聚居地。" />
 
 	<string
 		id="r6m2_r6m1_Bey_diz"
-		value="Very small village." />
+		value="极小的村庄。" />
 
 	<string
 		id="r6m2_r6m1_Kanata_diz"
-		value="Impenetrable jungle hided this small town from strangers." />
+		value="密林将这座小镇藏在陌生人视线之外。" />
 
 	<string
 		id="r5m1_PetrolStationTown1_diz"
-		value="Fuel station. Here you can fuel and repair." />
+		value="加油站。在这里可以加油和修理。" />
 
 	<string
 		id="r5m1_PetrolStationTown2_diz"
-		value="Fuel station. Here you can fuel and repair." />
+		value="加油站。在这里可以加油和修理。" />
 
 	<string
 		id="r5m1_ToR5M2_diz"
-		value="Road to Oil forests." />
+		value="通往石油森林的道路。" />
 
 	<string
 		id="r5m1_ToR6M1_diz"
-		value="Road across the bridge." />
+		value="过桥的道路。" />
 
 	<string
 		id="r5m2_r5m2_PetrolStation1_diz"
-		value="Fuel station. Here you can fuel and repair." />
+		value="加油站。在这里可以加油和修理。" />
 
 	<string
 		id="r5m2_ToR5M1_diz"
-		value="Road to Sam's lands." />
+		value="通往萨姆之地的道路。" />
 
 	<string
 		id="r5m2_ToR6M2_diz"
-		value="Waftage to the farther shore." />
+		value="摆渡到对岸。" />
 
 	<string
 		id="r6m1_PetrolStationTown2_diz"
-		value="Fuel station. Here you can fuel and repair." />
+		value="加油站。在这里可以加油和修理。" />
 
 	<string
 		id="r6m1_PetrolStationTown7_diz"
-		value="Fuel station. Here you can fuel and repair." />
+		value="加油站。在这里可以加油和修理。" />
 
 	<string
 		id="r6m1_PetrolStationTown9_diz"
-		value="Fuel station. Here you can fuel and repair." />
+		value="加油站。在这里可以加油和修理。" />
 
 	<string
 		id="r6m1_PetrolStationTown10_diz"
-		value="Fuel station. Here you can fuel and repair." />
+		value="加油站。在这里可以加油和修理。" />
 
 	<string
 		id="r6m1_ToR5M1_diz"
-		value="Road across the bridge." />
+		value="过桥的道路。" />
 
 	<string
 		id="r6m1_ToR6M2_diz"
-		value="Road to Mechanic jungle." />
+		value="通往机械丛林的道路。" />
 
 	<string
 		id="r6m2_PetrolStationTown1_diz"
-		value="Fuel station. Here you can fuel and repair." />
+		value="加油站。在这里可以加油和修理。" />
 
 	<string
 		id="r6m2_PetrolStationTown2_diz"
-		value="Fuel station. Here you can fuel and repair." />
+		value="加油站。在这里可以加油和修理。" />
 
 	<string
 		id="r6m2_ToR5M2_diz"
-		value="Waftage to the farther shore." />
+		value="摆渡到对岸。" />
 
 	<string
 		id="r6m2_ToR6M1_diz"
-		value="Road to Living jungle." />
+		value="通往生机丛林的道路。" />
 
 	<string
 		id="sin_PetrolStation_diz"
-		value="Fuel station. Here you can fuel and repair." />
+		value="加油站。在这里可以加油和修理。" />
 
 	<string
 		id="sin_PetrolStation_diz"
-		value="Fuel station. Here you can fuel and repair." />
+		value="加油站。在这里可以加油和修理。" />
 
 	<string
 		id="sin_Sin_SanRafael_diz"
-		value="San Rafael." />
+		value="圣拉斐尔。" />
 
 	<string
 		id="sin_Sin_Church_diz"
-		value="Wheel Church." />
+		value="车轮教堂。" />
 
 	<string
 		id="sin_Sin_CatHouse_diz"
-		value="Cat's House." />
+		value="猫屋。" />
 
 	<string
 		id="sin_Sin_EastIerihon_diz"
-		value="East Ierihon." />
+		value="东耶里洪。" />
 
 	<string
 		id="sin_Sin_WestIerihon_diz"
-		value="West Ierihon." />
+		value="西耶里洪。" />
 
 	<string
 		id="sin_Sin_DogHouse_diz"
-		value="Old farm." />
+		value="旧农场。" />
 </resource>

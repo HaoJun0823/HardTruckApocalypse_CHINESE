@@ -2,45 +2,45 @@
 <resource><!--Default buttons-->
 	<string
 		id="stat_Wares"
-		value="Produced goods (piece)" />
+		value="生产货物（件）" />
 
 	<string
 		id="stat_RealTime"
-		value="Game time (hours : minutes)" />
+		value="游戏时间（时:分）" />
 
 	<string
 		id="stat_GameTime"
-		value="Time in game (days)" />
+		value="游戏内度过天数" />
 
 	<string
 		id="stat_PeoplesKilled"
-		value="Dwellers killed" />
+		value="击杀居民数" />
 
 	<string
 		id="stat_PathElapsed"
-		value="Distance (km)" />
+		value="行驶里程（公里）" />
 
 	<string
 		id="stat_GDP"
-		value="Money earned" />
+		value="赚取金币" />
 
 	<string
 		id="stat_DeathCounter"
-		value="Player deaths" />
+		value="死亡次数" />
 
 	<string
 		id="stat_VehiclesKilled"
-		value="Vehicles destroyed" />
+		value="摧毁车辆数" />
 
 	<string
 		id="stat_ShellsEmitted"
-		value="Shells shot" />
+		value="开火次数" />
 
 	<string
 		id="stat_FavoriteGun"
-		value="Favourite weapon" />
+		value="最常用武器" />
 
 	<string
 		id="stat_HitRatio"
-		value="Hitting accuracy (%)" />
+		value="命中率（%）" />
 </resource>

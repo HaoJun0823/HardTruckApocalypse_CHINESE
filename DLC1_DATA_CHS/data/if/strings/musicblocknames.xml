@@ -2,65 +2,65 @@
 <resource><!--Default buttons-->
 	<string
 		id="music_custom"
-		value="Custom music" />
+		value="自定义音乐" />
 
 	<string
 		id="music_r5_1"
-		value="Blood melody" />
+		value="鲜血旋律" />
 
 	<string
 		id="music_r5_12"
-		value="Passion melody" />
+		value="激情旋律" />
 
 	<string
 		id="music_r5_2"
-		value="Liberty melody" />
+		value="自由旋律" />
 
 	<string
 		id="music_r5_22"
-		value="Wind melody" />
+		value="风之旋律" />
 
 	<string
 		id="music_r6_1"
-		value="Jungle melody" />
+		value="丛林旋律" />
 
 	<string
 		id="music_r6_12"
-		value="Edmonton melody" />
+		value="埃德蒙顿旋律" />
 
 	<string
 		id="music_r6_2"
-		value="Oracle melody" />
+		value="神谕旋律" />
 
 	<string
 		id="music_r6_22"
-		value="Emissary melody" />
+		value="使者旋律" />
 
 	<string
 		id="music_block0"
-		value="Kryai melody (bonus)" />
+		value="克莱旋律（奖励）" />
 
 	<string
 		id="music_block1"
-		value="Regina melody (bonus)" />
+		value="里贾纳旋律（奖励）" />
 
 	<string
 		id="music_r1_4"
-		value="Hell melody (bonus)" />
+		value="赫尔旋律（奖励）" />
 
 	<string
 		id="music_r2_1"
-		value="Librium melody (bonus)" />
+		value="利布里姆旋律（奖励）" />
 
 	<string
 		id="music_r2_2"
-		value="Arzhan melody (bonus)" />
+		value="阿尔然旋律（奖励）" />
 
 	<string
 		id="music_r4_1"
-		value="Vahata melody (bonus)" />
+		value="瓦哈特旋律（奖励）" />
 
 	<string
 		id="music_r4_2"
-		value="Zarmek melody (bonus)" />
+		value="扎尔梅克旋律（奖励）" />
 </resource>

@@ -2,321 +2,321 @@
 <resource>
 	<string
 		id="HELP_ID_INVENTORY_title"
-		value="Equipment" />
+		value="物品栏" />
 
 	<string
 		id="HELP_ID_INVENTORY"
-		value="In the left part of the window there are content of your vehicle body, weapon, upgrades and slots. | In the right side there is Land, where displayed items in nearby boxes and 3-D image of the active item (pointed by cursor) and button Pick up all. | You can drag weapon icons from the body or boxes in weapon slots and vice versa. If you drag weapon and goods from the slots of Goods window into Land window on the main game screen near the vehicle will appear boxes with items which player dragged into Land window." />
+		value="左侧显示卡车货舱、武器槽和配件槽的内容。|右侧显示附近箱子里的物品及其3D图像（光标所指的物品），还有「拾取全部」按钮。|你可以将武器图标在车厢/箱子与武器槽之间拖放。如果将武器和货物从货舱窗口的槽位拖到主游戏屏幕上车辆旁的放置区，就会出现装有玩家拖入物品的箱子。" />
 
 	<string
 		id="HELP_ID_VEHICLE_CHARACTERISTICS_title"
-		value="Vehicle settings" />
+		value="车辆信息" />
 
 	<string
 		id="HELP_ID_VEHICLE_CHARACTERISTICS"
-		value="In the right part of the window you can see detailed characteristics of player's vehicle, 3-D view of the vehicle fully equipped, cabin and body properties. Buttons under the image switch info about vehicle, body, cabin, and weapon. In this window you can readjust weapon groups. | In the left part of the window there are content of your vehicle body, weapon, upgrades and slots. You can mount new devices on you truck and see how the properties will change." />
+		value="窗口右侧显示玩家车辆的详细属性、全副武装的车辆3D视图以及驾驶室和车厢参数。图像下方的按钮可切换车辆、车厢、驾驶室和武器的信息。在此窗口中你可以重新设置武器组。|窗口左侧显示卡车货舱、武器槽和配件槽的内容。你可以给卡车安装新配件并查看属性变化。" />
 
 	<string
 		id="HELP_ID_QUESTLOG_QUESTS_title"
-		value="Mission list" />
+		value="任务列表" />
 
 	<string
 		id="HELP_ID_QUESTLOG_QUESTS"
-		value="In this menu you can find the list of all missions accepted and already completed. Missions can be filtered by map where located start or final mission point using scroll. Also you can switch modes to see all missions or only active. | Every mission has description where is written what should you do to accomplish it. Near the description can be shown button by clicking it you will see on the map and radar the mission landmark. | Mission can consist of several tasks which must be done to accomplish the mission successfully. They are situated below the mission description and every one points on the place on the map. | Special items button is also shown here." />
+		value="在此菜单中你可以找到已接受和已完成的所有任务列表。可用滚动条按任务起始或结束点所在的地图筛选任务，也可切换查看全部任务或仅查看进行中任务的模式。|每个任务都有描述说明该做什么来完成它。描述旁可能有按钮，点击后会在地图和雷达上显示任务导航点。|一个任务可能由若干子目标组成，必须全部完成才能成功完成任务。它们位于任务描述下方，每个都指向地图上的位置。|此处还显示「特殊物品」按钮。" />
 
 	<string
 		id="HELP_ID_QUESTLOG_QUEST_ITEMS_title"
-		value="Special items" />
+		value="任务物品" />
 
 	<string
 		id="HELP_ID_QUESTLOG_QUEST_ITEMS"
-		value="Click Special items buttons and you will see the list of items necessary to accomplish the mission in 3-D view." />
+		value="点击「特殊物品」按钮，你将看到完成任务所需物品的3D视图列表。" />
 
 	<string
 		id="HELP_ID_LOCAL_MAP_title"
-		value="Local map" />
+		value="区域地图" />
 
 	<string
 		id="HELP_ID_LOCAL_MAP"
-		value="Map is a very important tool which helps you to navigate. You can find all important objects on it: cities, exit roads. | There are two map modes: info and trade. Switching between them is made by clicking the appropriate buttons in top-right corner of the window. | Left mouse click on the map object in info mode and you can see the text description. If you select the settlement in trade mode you can see last visit prices for all goods. The pricelist can be saved at for quick search (for example to look through the prices from another map)." />
+		value="地图是辨别方向的重要工具。你可以在上面找到所有重要物体：城镇、出口道路等。|地图有两种模式：信息模式和交易模式。通过窗口右上角的对应按钮切换。|在信息模式下左键点击地图物体可查看文字描述。在交易模式下选中聚居地可看到上次到访时所有货物的价格。价格表可保存以便快速查找（例如从另一张地图查阅价格）。" />
 
 	<string
 		id="HELP_ID_GLOBAL_MAP_title"
-		value="Global map" />
+		value="世界地图" />
 
 	<string
 		id="HELP_ID_GLOBAL_MAP"
-		value="On the global map you can see all regions the player has visited, transport routes and switch between already opened regions." />
+		value="在世界地图上可以看到玩家访问过的所有地区、运输路线，并在已开启的地区间切换。" />
 
 	<string
 		id="HELP_ID_HISTORY_title"
-		value="History" />
+		value="剧情" />
 
 	<string
 		id="HELP_ID_HISTORY"
-		value="This is the history of all remarkable events which happened with player." />
+		value="这里记录了玩家经历的所有重大事件。" />
 
 	<string
 		id="HELP_ID_BOOKS_title"
-		value="Books (documents)" />
+		value="书籍" />
 
 	<string
 		id="HELP_ID_BOOKS"
-		value="In Books are stored different data sources, for example, old newspaper, magazine and books." />
+		value="书籍中存放着各种资料来源，例如旧报纸、杂志和书籍。" />
 
 	<string
 		id="HELP_ID_RELATIONS_title"
-		value="Groups" />
+		value="派系" />
 
 	<string
 		id="HELP_ID_RELATIONS"
-		value="The maintenance of friendly relations with different groups is essential element of survival in the world. In this part you can follow up who respects you and who dreams of killing you." />
+		value="与各派系保持友好关系是在这个世界生存的关键。在此部分你可以查看谁尊敬你、谁又想杀你。" />
 
 	<string
 		id="HELP_ID_STATS_title"
-		value="Statistics" />
+		value="统计" />
 
 	<string
 		id="HELP_ID_STATS"
-		value="In statistics you always can find out the distance you have driven through, the number of enemies you have destroyed and amount of money you have earned and number of shots you have made." />
+		value="在统计中你随时可以查看行驶里程、消灭的敌人数量、赚取的金钱以及开火次数。" />
 
 	<string
 		id="HELP_ID_ENCYCLOPAEDIA_title"
-		value="Encyclopedia" />
+		value="百科全书" />
 
 	<string
 		id="HELP_ID_ENCYCLOPAEDIA"
-		value="All experience gathered by player during the game is here whether it be description of opposite vehicle, weapon or group." />
+		value="玩家在游戏过程中收集到的所有知识都存放在这里，无论是敌方车辆、武器还是派系的描述。" />
 
 	<string
 		id="HELP_ID_SHOP_GUNS_title"
-		value="Shop/Weapon purchase" />
+		value="市场/武器购买" />
 
 	<string
 		id="HELP_ID_SHOP_GUNS"
-		value="Here you can buy guns and upgrade your vehicle and immediately put this entire staff in appropriate slots or in the body. | To buy something you should drag the item from the Shop window (right side of the screen) to the window of your vehicle body (left side) or to the slot. Also you can buy something by right muse click in the shop. In this case the selected item appears in the vehicle body and your money account decreases by item's price. | To sell something you should drag the icon from your vehicle body (left side) to the shop window (right side). Also you can use right mouse click to sell goods. | The price and properties of purchased item are displayed at the pop-up hints. If you don't have enough money to purchase the item or your truck is not equipped by appropriate slots this info appears at the item icon and at the pop-up hint." />
+		value="在这里你可以购买枪炮并升级车辆，然后立即将其装入相应槽位或车厢。|购买时需将物品从商店窗口（屏幕右侧）拖到车辆货舱窗口（左侧）或对应槽位。也可在商店中右键点击购买。此时所选物品会出现在车辆货舱中，你的金钱账户减少相应价格。|出售时需将图标从车辆货舱（左侧）拖到商店窗口（右侧）。也可右键点击出售货物。|所购物品的价格和属性会显示在弹出提示中。如果你的金钱不足以购买该物品，或你的卡车没有合适的槽位，此信息会显示在物品图标和弹出提示上。" />
 
 	<string
 		id="HELP_ID_SHOP_GOODS_title"
-		value="Shop/Goods purchase" />
+		value="市场/商品购买" />
 
 	<string
 		id="HELP_ID_SHOP_GOODS"
-		value="If you select Goods purchase mode you see the goods list with quantity and purchase and sale costs. Not for sale goods in this city are grey. You can turn on special filter to see only for sale goods. | Goods prices change dynamically depending on your actions. When you sell goods in place of sale appears temporary market saturation. This goods fall in price for some time then the price increases by degrees. The reverse situation occurs when purchase goods. | The deals are in real time for every item. Goods in cities are of limited quantity. In length of time it restores. | Usually cities buy any goods but prices can differ a lot. That is why it makes sense before purchase expensive shipment of goods find out the trading routes. Sometimes in order to make profitable deal with rare goods you have to travel from one map to another. But mostly you can make rather profitable deal between several neighboring settlements." />
+		value="选择商品购买模式后，你将看到商品列表及其数量、收购价和出售价。该城市不出售的商品以灰色标注。你可以开启特殊过滤器只显示可购商品。|商品价格会根据你的行为动态变化。当你在某地出售商品时，该地会出现暂时的市场饱和。此商品价格会暂时下跌，然后逐渐回升。购买商品时则相反。|交易按每件商品实时进行。城市中的商品数量有限，会随时间逐渐恢复。|通常城市会收购任何商品，但价格可能相差很大。因此在购买昂贵货物前有必要先了解商路。有时为了用稀有商品做成有利可图的交易，你需要在地图之间往返。但大多数情况下你可以在几个相邻聚居地之间完成相当不错的交易。" />
 
 	<string
 		id="HELP_ID_WORKSHOP_title"
-		value="Repair shop" />
+		value="车间" />
 
 	<string
 		id="HELP_ID_WORKSHOP"
-		value="You enter the Repair shop. | Here you can repair, fuel your vehicle and upgrade the armor. Also you can change vehicle body or cabin. | If you have enough money you can buy here new vehicle. | In the left part there is info about your truck and in right there are Repair shop services." />
+		value="你进入了车间。|在这里你可以修理、给车辆加油并升级装甲，也可以更换车厢或驾驶室。|如果你的金币足够，还可以在这里购买新车辆。|左侧显示你的卡车信息，右侧显示车间服务。" />
 
 	<string
 		id="HELP_ID_WORKSHOP_CABINS_title"
-		value="Cabin change" />
+		value="更换驾驶室" />
 
 	<string
 		id="HELP_ID_WORKSHOP_CABINS"
-		value="To change the vehicle cabin you should click Cabin change button and then select the cabin by mouse from the list. Herewith the truck 3d view and description will change. When you choose the needed cabin click Buy button on cabin icon. The purchase confirmation window opens." />
+		value="要更换车辆驾驶室，请点击「更换驾驶室」按钮，然后用鼠标从列表中选择驾驶室。此时卡车的3D视图和描述都会改变。选好所需驾驶室后，点击驾驶室图标上的「购买」按钮。将打开购买确认窗口。" />
 
 	<string
 		id="HELP_ID_WORKSHOP_BASKETS_title"
-		value="Body change" />
+		value="更换车厢" />
 
 	<string
 		id="HELP_ID_WORKSHOP_BASKETS"
-		value="To change the vehicle body you should click Body change button and then select the body from the list. Herewith the truck view and description (in the left part of the screen) will change. When you choose the body click Buy button on the icon. The purchase confirmation window opens." />
+		value="要更换车辆车厢，请点击「更换车厢」按钮，然后从列表中选择车厢。此时卡车视图和描述（屏幕左侧）都会改变。选好车厢后，点击图标上的「购买」按钮。将打开购买确认窗口。" />
 
 	<string
 		id="HELP_ID_WORKSHOP_VEHICLE_title"
-		value="Purchase of the new vehicle" />
+		value="购买新车辆" />
 
 	<string
 		id="HELP_ID_WORKSHOP_VEHICLE"
-		value="To buy a new vehicle you should click Vehicle purchase button. In the window you can choose the any car you like from all available and change its color. Confirm your choice by clicking Select." />
+		value="要购买新车辆，请点击「购买车辆」按钮。在窗口中你可以从所有可用车辆中挑选喜欢的，并更换颜色。点击「选择」确认你的选择。" />
 
 	<string
 		id="HELP_ID_WORKSHOP_SKIN_title"
-		value="Repaint" />
+		value="喷漆" />
 
 	<string
 		id="HELP_ID_WORKSHOP_SKIN"
-		value="Choose colors and style you like and click button to repaint the vehicle" />
+		value="选择你喜欢的颜色和涂装，然后点击按钮为车辆喷漆。" />
 
 	<string
 		id="HELP_ID_WORKSHOP_REFUEL_title"
-		value="Fueling" />
+		value="加油" />
 
 	<string
 		id="HELP_ID_WORKSHOP_REFUEL"
-		value="Click Full fuel to fuel up the full tank. | If you want to control the amount of purchase fuel click Manual Fuel. Using slider bar select the appropriate amount of fuel and confirm the purchase." />
+		value="点击「加满油箱」可完全加满油箱。|如果你想控制购买油量，点击「自定义加油」。用滑块选择合适的油量并确认购买。" />
 
 	<string
 		id="HELP_ID_WORKSHOP_REPAIR_title"
-		value="Repair" />
+		value="修理" />
 
 	<string
 		id="HELP_ID_WORKSHOP_REPAIR"
-		value="Click Repair all button to repair all details of vehicle (or for the rest money). Click Manual repair to repair separate part of the vehicle. You will see the repair list of all part and cost of repair. Click the needed part to repair it. | If you want to see the repair level of the part click fine tuning button on the name of this part. By slider bar adjust the level of repair and click the part name. | On the pop-up hints you will see the detailed information." />
+		value="点击「全部修理」按钮可修理车辆所有部件（或在金币允许范围内）。点击「自定义修理」可修理车辆的单独部件。你将看到所有部件的修理列表及修理费用。点击所需部件即可修理。|如需查看部件的修理程度，点击该部件名称旁的「微调」按钮。用滑块调整修理程度并点击部件名称。|弹出提示中会显示详细信息。" />
 
 	<string
 		id="HELP_ID_WORKSHOP_RECHARGE_title"
-		value="Ammunition purchase " />
+		value="装填" />
 
 	<string
 		id="HELP_ID_WORKSHOP_RECHARGE"
-		value="Only guns with limited ammunition are reloaded. This mostly concerns heavy cannons and missile launchers. | Click Full reload to reload all guns on the vehicle. | Click Manual reload to select the guns to be reloaded. You will see weapon list and all guns that can be reloaded. Click gun to reload it. | Click fine tuning to setup the number of shells or missiles. Using the slider bar adjust the number and confirm the purchase. | On the pop-up hints you will see the detailed information about reload" />
+		value="只有弹药有限的武器才能装填。这主要涉及重型火炮和导弹发射器。|点击「全部装填」可装填车辆上的所有武器。|点击「自定义装填」可选择要装填的武器。你将看到武器列表和所有可装填的火炮。点击火炮即可装填。|点击「微调」可设置炮弹或导弹的数量。用滑块调整数量并确认购买。|弹出提示中会显示装填的详细信息。" />
 
 	<string
 		id="HELP_ID_BUY_CABIN_title"
-		value="Conformation of cabin purchase" />
+		value="确认购买驾驶室" />
 
 	<string
 		id="HELP_ID_BUY_CABIN"
-		value="Purchase confirmation window opens and you should move all items from the slots of old cabin (left side) to the new cabin slots (right side). You can make it manually or use Move all button. You can also look at the number of weapon slots and other equipment of the new cabin and to find out the final cost of the deal. If you don't like anything click Cancel. If you are sure of the deal click Buy. | In this case all remained items in slots of the left half of the screen will be sold with the old cabin." />
+		value="购买确认窗口打开后，你需要将旧驾驶室槽位（左侧）中的所有物品移到新驾驶室槽位（右侧）。可以手动拖放或使用「全部转移」按钮。你还可以查看新驾驶室的武器槽位和其他装备数量，并了解交易的最终费用。如果不想购买点击「取消」。如果确认交易点击「购买」。|此时屏幕左半侧槽位中剩余的所有物品将随旧驾驶室一同出售。" />
 
 	<string
 		id="HELP_ID_BUY_BASKET_title"
-		value="Conformation of body purchase" />
+		value="确认购买车厢" />
 
 	<string
 		id="HELP_ID_BUY_BASKET"
-		value="Purchase confirmation window opens and you should move all items from the slots of old body (left side) to the new body slots (right side). You can make it manually or use Move all button. You can also look at the number of weapon slots and other equipment of the new body and to find out the final cost of the deal. If you don't like anything click Cancel. If you are sure of the deal click Buy. | In this case all remained items in slots of the left half of the screen will be sold with the old body." />
+		value="购买确认窗口打开后，你需要将旧车厢槽位（左侧）中的所有物品移到新车厢槽位（右侧）。可以手动拖放或使用「全部转移」按钮。你还可以查看新车厢的武器槽位和其他装备数量，并了解交易的最终费用。如果不想购买点击「取消」。如果确认交易点击「购买」。|此时屏幕左半侧槽位中剩余的所有物品将随旧车厢一同出售。" />
 
 	<string
 		id="HELP_ID_BUY_VEHICLE_title"
-		value="Conformation of new vehicle purchase" />
+		value="确认购买车辆" />
 
 	<string
 		id="HELP_ID_BUY_VEHICLE"
-		value="Purchase confirmation window opens and you should move all items from the slots of old truck (left side) to the new truck slots (right side). You can make it manually or use Move all button. You can also look at the number of weapon slots and other equipment of the new truck and to find out the final cost of the deal. If you don't like anything click Cancel. If you are sure of the deal click Buy. | In this case all remained items in slots of the left half of the screen will be sold with the old truck." />
+		value="购买确认窗口打开后，你需要将旧卡车槽位（左侧）中的所有物品移到新卡车槽位（右侧）。可以手动拖放或使用「全部转移」按钮。你还可以查看新卡车的武器槽位和其他装备数量，并了解交易的最终费用。如果不想购买点击「取消」。如果确认交易点击「购买」。|此时屏幕左半侧槽位中剩余的所有物品将随旧卡车一同出售。" />
 
 	<string
 		id="HELP_ID_TOWN_title"
-		value="City" />
+		value="城镇" />
 
 	<string
 		id="HELP_ID_TOWN"
-		value="Cities and villages in Ex Machina world are the centers of trade, science and most important life. Here you can repair and fuel your truck, replenish the weapon supplies, to talk to local residents. | Click button at the top of the screen and you will enter Bar, Shop or Repair shop." />
+		value="Ex Machina世界中的城镇和村庄是贸易、科学和最重要生活活动的中心。在这里你可以修理和给卡车加油、补充武器弹药，与当地居民交谈。|点击屏幕顶部的按钮即可进入酒吧、商店或车间。" />
 
 	<string
 		id="HELP_ID_BAR_title"
-		value="Bar" />
+		value="酒吧" />
 
 	<string
 		id="HELP_ID_BAR"
-		value="You will have to visit Bar often to receive and complete missions. | In the right side of the screen there are icons of all current visitors of Bar. Very often somebody from the visitors is ready to give you simple mission and pay for it. Click on the character icon to begin the dialogue." />
+		value="你经常需要光顾酒吧以接受和完成任务。|屏幕右侧显示当前酒吧里所有访客的图标。访客中常有人愿意给你简单任务并支付报酬。点击角色图标开始对话。" />
 
 	<string
 		id="HELP_ID_TALK_WITH_NPC_title"
-		value="Dialogue" />
+		value="对话" />
 
 	<string
 		id="HELP_ID_TALK_WITH_NPC"
-		value="In this window you see the large character image his cues and your available answers. | You can choose answer using mouse or keyboard numbers. You can only close this window by selecting the appropriate cue of the dialogue." />
+		value="在此窗口你可以看到角色的大幅图像、他的台词以及你可选择的回应。|你可以用鼠标或键盘数字选择回应。只能通过选择对话中相应的台词来关闭此窗口。" />
 
 	<string
 		id="HELP_ID_RADAR"
-		value="In the left upper corner there is Radar. You can see enemies on it (red points), your car (right in the middle), the direction of camera view (sector) and landmarks. The distance to the landmark is shown by figures on the right from radar (figure color corresponds the landmark color)." />
+		value="左上角是雷达。你可以在上面看到敌人（红点）、你的车辆（正中央）、镜头视角方向（扇形）和导航点。导航点的距离显示在雷达右侧的数字上（数字颜色对应导航点颜色）。" />
 
 	<string
 		id="HELP_ID_RADAR_title"
-		value="Radar" />
+		value="雷达" />
 
 	<string
 		id="HELP_ID_SPEEDOMETER"
-		value="Speedometer shows the actual truck speed in digital and analog form. When the reverse gear is turned on the figures become red." />
+		value="速度表以数字和模拟形式显示卡车的实际速度。倒挡开启时数字变为红色。" />
 
 	<string
 		id="HELP_ID_SPEEDOMETER_title"
-		value="Speedometer" />
+		value="速度表" />
 
 	<string
 		id="HELP_ID_HP"
-		value="Construction is the consistency status of your vehicle. If you don't look for its level you can die. When the construction level is critical red indicators shows it. You can repair in repair shops all over the world." />
+		value="结构值代表车辆的整体完整状态。如果不注意其数值你可能会死。结构值危急时红色指示灯会闪烁。你可以在世界各地的车间修理。" />
 
 	<string
 		id="HELP_ID_HP_title"
-		value="Construction" />
+		value="结构" />
 
 	<string
 		id="HELP_ID_FUEL"
-		value="Also keep an eye on fuel level otherwise you can turn out to be in difficult situation. With empty fuel tanks the vehicle moves very slowly using the backup batteries. When the fuel level is critical red indicators shows it. You can fuel your vehicle in repair shops all over the world." />
+		value="也要留意燃料液位，否则可能陷入困境。油箱空了时车辆靠备用电池以极低速度移动。燃料危急时红色指示灯会闪烁。你可以在世界各地的车间加油。" />
 
 	<string
 		id="HELP_ID_FUEL_title"
-		value="Fuel" />
+		value="燃料" />
 
 	<string
 		id="HELP_ID_DURABILITY"
-		value="In the upper part of the screen there is a layout view of truck body and cabin. Different colors show the Armor condition of these parts (green - perfect condition, red - heavy damages)." />
+		value="屏幕顶部有卡车车厢和驾驶室的布局图。不同颜色显示这些部件的装甲状态（绿色=完好，红色=严重损坏）。" />
 
 	<string
 		id="HELP_ID_DURABILITY_title"
-		value="Armor" />
+		value="装甲" />
 
 	<string
 		id="HELP_ID_TIMER"
-		value="Timer appears if you mission is limited in time" />
+		value="当你的任务有时间限制时，计时器会出现。" />
 
 	<string
 		id="HELP_ID_TIMER_title"
-		value="Timer" />
+		value="计时器" />
 
 	<string
 		id="HELP_ID_WEAPON"
-		value="On the icon there are layout view of the weapon, its group number and also the ammunition in charger. After every shot the green bar which shows amount of ammunition in charger decreases. When the charger is empty the reload starts automatically and during it the shooting is impossible. You can reload at any moment (click R button for the default settings). During the reload the bar changes the color and gradually fills up." />
+		value="图标上有武器的布局图、其组编号以及弹匣中的弹药量。每次射击后显示弹匣弹药量的绿色条会减少。弹匣空了时自动开始装填，装填期间无法射击。你可以随时手动装填（默认设置下按R键）。装填期间弹药条变色并逐渐填满。" />
 
 	<string
 		id="HELP_ID_WEAPON_title"
-		value="Weapon" />
+		value="武器" />
 
 	<string
 		id="HELP_ID_FADING_MESSAGES"
-		value="Different enemies cues and messages are shown in this field" />
+		value="此区域显示各种敌人的台词和消息。" />
 
 	<string
 		id="HELP_ID_FADING_MESSAGES_title"
-		value="Messages" />
+		value="消息" />
 
 	<string
 		id="HELP_ID_IMPORTANT_FADING_MESSAGES"
-		value="Important messages about missions are shown here" />
+		value="此处显示关于任务的重要消息。" />
 
 	<string
 		id="HELP_ID_IMPORTANT_FADING_MESSAGES_title"
-		value="Important messages" />
+		value="重要消息" />
 
 	<string
 		id="HELP_ID_TARGET_INFO"
-		value="In the middle of the screen there is Sight. If sight catch the vehicle above the sight appears Vehicle name and Group which it belongs to. The title color reflects the vehicle relation to player: red means hostile, green - friendly. Green bar to the left from the sight shows enemy Construction, orange bar is Armor. Below the sight there is a distance to the enemy." />
+		value="屏幕正中央是准星。当准星锁定车辆时，准星上方会显示车辆名称及其所属派系。标题颜色反映该车辆与玩家的关系：红色代表敌对，绿色代表友好。准星左侧的绿色条显示敌人的结构值，橙色条为装甲。准星下方显示与敌人的距离。" />
 
 	<string
 		id="HELP_ID_TARGET_INFO_title"
-		value="Enemy info" />
+		value="目标信息" />
 
 	<string
 		id="HELP_ID_TARGET_CAPTURE"
-		value="Even if one self-guided missile mounted on the truck the navigation on enemy starts automatically guidance system. When the red circle fills out the missile is guided." />
+		value="只要卡车上装有一枚自导导弹，敌方导航制导系统就会自动启动。红色圆环填满时导弹就已完成制导。" />
 
 	<string
 		id="HELP_ID_TARGET_CAPTURE_title"
-		value="Target lock-on" />
+		value="锁定目标" />
 
 	<string
 		id="HELP_ID_ACTION_ICONS"
-		value="When Cargo icon appears it means that you can pick up items in the box by pushing I key. When Signal icon appears it means that you are in the city boundaries and can enter inside by pushing H key." />
+		value="当货物图标出现时，表示你可以按I键拾取箱子中的物品。当喇叭图标出现时，表示你已进入城镇范围，按H键即可进入。" />
 
 	<string
 		id="HELP_ID_ACTION_ICONS_title"
-		value="Actions" />
+		value="行动" />
 
 	<string
 		id="HELP_ID_HOW_TO_USE_MAIN_GAME_INTERFACE_HELP"
-		value="Point by mouse cursor on the element title to see information about it." />
+		value="将鼠标光标移到元素标题上即可查看其说明。" />
 
 	<string
 		id="HELP_ID_HOW_TO_USE_MAIN_GAME_INTERFACE_HELP_title"
-		value="Interface screen." />
+		value="界面说明" />
 </resource>

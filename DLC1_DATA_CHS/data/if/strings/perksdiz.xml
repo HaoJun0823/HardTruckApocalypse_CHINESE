@@ -2,173 +2,173 @@
 <resource>
 	<string
 		id="adventurer"
-		value="Careless driver" />
+		value="鲁莽司机" />
 
 	<string
 		id="maniac"
-		value="Passed baptism by fire" />
+		value="经战火洗礼" />
 
 	<string
 		id="millionaire"
-		value="Capitalist" />
+		value="资本家" />
 
 	<string
 		id="lucky"
-		value="Sharpshooter" />
+		value="神枪手" />
 
 	<string
 		id="butcher"
-		value="Butcher" />
+		value="屠夫" />
 
 	<string
 		id="aggressor"
-		value="Aggressor" />
+		value="侵略者" />
 
 	<string
 		id="rogue"
-		value="Trickster" />
+		value="骗子" />
 
 	<string
 		id="professional"
-		value="Member of the truck drivers union" />
+		value="卡车司机工会成员" />
 
 	<string
 		id="lawyer"
-		value="Sheriff" />
+		value="警长" />
 
 	<string
 		id="smuggler"
-		value="Bribe taker" />
+		value="受贿者" />
 
 	<string
 		id="adventurer_diz"
-		value="Every vagabond who has a truck with guns gets this perk." />
+		value="任何拥有武装卡车的流浪汉都会获得此特长。" />
 
 	<string
 		id="maniac_diz"
-		value="Every fighter who has 100 kills gets this perk." />
+		value="任何取得 100 次击杀的战士都会获得此特长。" />
 
 	<string
 		id="millionaire_diz"
-		value="A trader who earned $100000 gets this perk." />
+		value="赚到 100000 金币的商人会获得此特长。" />
 
 	<string
 		id="lucky_diz"
-		value="The most accurate marksmen get this perk for two critical shots in the enemy's car in a row." />
+		value="最精准的射手因连续两发命中敌方车辆要害而获得此特长。" />
 
 	<string
 		id="butcher_diz"
-		value="The driver who rode over 10 civilians gets this perk." />
+		value="碾过 10 名平民的司机会获得此特长。" />
 
 	<string
 		id="aggressor_diz"
-		value="A man gets this perk for assaulting 5 trucks of friendly traders or vagabonds." />
+		value="袭击 5 辆友好商人或流浪汉卡车的人会获得此特长。" />
 
 	<string
 		id="rogue_diz"
-		value="The perk is given to anyone who fails 5 tasks in city bars in a row." />
+		value="在城市酒吧连续失败 5 次任务的人会获得此特长。" />
 
 	<string
 		id="professional_diz"
-		value="The perk is given to the drivers who completed 5 tasks in city bars in a row." />
+		value="在城市酒吧连续完成 5 次任务的司机会获得此特长。" />
 
 	<string
 		id="lawyer_diz"
-		value="Respectable citizens who help fight smuggling get this perk as a reward." />
+		value="帮助打击走私的体面公民会获得此特长作为奖励。" />
 
 	<string
 		id="smuggler_diz"
-		value="Those who have deals with bandits and smugglers get this perk." />
+		value="与盗匪和走私者有交易的人会获得此特长。" />
 
 	<string
 		id="adventurer_-1_diz"
-		value="[-1] - In your trophies after the destruction of enemy vehicles money will appear more frequently than goods." />
+		value="[-1] - 击毁敌方车辆后的战利品中，金钱比货物出现得更频繁。" />
 
 	<string
 		id="adventurer_0_diz"
-		value="[0]  - You can get job in city bars." />
+		value="[0]  - 你可以在城市酒吧接到工作。" />
 
 	<string
 		id="adventurer_1_diz"
-		value="[+1] - In your trophies after the destruction of enemy vehicles goods will appear more frequently than money." />
+		value="[+1] - 击毁敌方车辆后的战利品中，货物比金钱出现得更频繁。" />
 
 	<string
 		id="lawyer_-3_diz"
-		value="[-3] - In the city repair shops you have an opportunity to buy device for weapon free of charge." />
+		value="[-3] - 在城市修理厂，你可以免费获得武器配件。" />
 
 	<string
 		id="lawyer_0_diz"
-		value="[0]  - Less opportunity to stay without trophies after destruction of enemy vehicles." />
+		value="[0]  - 击毁敌方车辆后空手而归的可能性降低。" />
 
 	<string
 		id="lawyer_3_diz"
-		value="[+3]  - In the city repair shops you have an opportunity to buy device for vehicle free of charge." />
+		value="[+3]  - 在城市修理厂，你可以免费获得车辆配件。" />
 
 	<string
 		id="lucky_-2_diz"
-		value="[-2] - Choice of devices for weapon in city repair shops is always wider than devices for vehicle." />
+		value="[-2] - 城市修理厂中武器配件的种类总是比车辆配件更丰富。" />
 
 	<string
 		id="lucky_0_diz"
-		value="[0]  - Stories about your ability and accuracy excited the hearts of village people." />
+		value="[0]  - 关于你枪法和精准度的传说激荡着村民的心。" />
 
 	<string
 		id="lucky_2_diz"
-		value="[+2] - Choice of devices for vehicle in city repair shops is always wider than devices for weapon." />
+		value="[+2] - 城市修理厂中车辆配件的种类总是比武器配件更丰富。" />
 
 	<string
 		id="millionaire_0_diz"
-		value="[0]  - In the city repair shops you have an opportunity to buy goods free of charge." />
+		value="[0]  - 在城市修理厂，你可以免费获得货物。" />
 
 	<string
 		id="professional_-3_diz"
-		value="[-3] - Weapon reload in city is cheaper. Vehicle fueling in the city is more expensive." />
+		value="[-3] - 城市中武器装弹更便宜。城市中车辆加油更贵。" />
 
 	<string
 		id="professional_0_diz"
-		value="[0]  - For the missions taken in city bars you get trade union bonus." />
+		value="[0]  - 在城市酒吧接的任务可获得工会奖励。" />
 
 	<string
 		id="professional_3_diz"
-		value="[+3] - Vehicle fueling in the city is cheaper. Weapon reload in city is more expensive." />
+		value="[+3] - 城市中车辆加油更便宜。城市中武器装弹更贵。" />
 
 	<string
 		id="butcher_0_diz"
-		value="[0]  - In city shops list of goods for sale for you is limited." />
+		value="[0]  - 城市商店中你能购买的商品种类受限。" />
 
 	<string
 		id="aggressor_-2_diz"
-		value="[-2] - When you accidentally or specially ride down a wander man you'll find in his pocket a couple of coins." />
+		value="[-2] - 当你无意或有意碾过路人时，能在其口袋里找到几枚金币。" />
 
 	<string
 		id="aggressor_0_diz"
-		value="[0]  - Friendly truck drivers no more salute you by radio." />
+		value="[0]  - 友好的卡车司机不再通过无线电向你致意。" />
 
 	<string
 		id="rogue_-1_diz"
-		value="[-1] - In city bars for you the mission list is limited and you are offered only war missions." />
+		value="[-1] - 城市酒吧中你的任务清单受限，只能接到战斗任务。" />
 
 	<string
 		id="rogue_0_diz"
-		value="[0]  - Trade in city will bring you far more smaller profits." />
+		value="[0]  - 城市中贸易带来的利润远低得多。" />
 
 	<string
 		id="rogue_1_diz"
-		value="[+1]  - In city bars for you the mission list is limited and you are offered only trade missions." />
+		value="[+1]  - 城市酒吧中你的任务清单受限，只能接到贸易任务。" />
 
 	<string
 		id="smuggler_-2_diz"
-		value="[-2] - In city repair shops you purchase only contraband weapons that is why spend less money." />
+		value="[-2] - 城市修理厂中你只能购买走私武器，因此花费更少。" />
 
 	<string
 		id="smuggler_0_diz"
-		value="[0]  - In city bars you are frequently offered missions of dingy nature." />
+		value="[0]  - 城市酒吧中你常被提供一些见不得光的任务。" />
 
 	<string
 		id="maniac_0_diz"
-		value="[0]  - Vehicle repair for you in the city is cheaper." />
+		value="[0]  - 城市中你的车辆修理更便宜。" />
 
 	<string
 		id="maniac_3_diz"
-		value="[+3] - In city and on fuel station you have opportunity to make repairs for free of charge." />
+		value="[+3] - 在城市和加油站你可以免费修理。" />
 </resource>
