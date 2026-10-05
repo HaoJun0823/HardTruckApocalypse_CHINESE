@@ -2,169 +2,169 @@
 <resource><!--Default buttons-->
 	<string
 		id="fm_relation_changed"
-		value="Reminder: one of the major groups of this area is hostile towards you. Somebody can help you to solve this problem. Ask around. " />
+		value="提示：本地区的一个主要派系对你抱有敌意。有人可以帮你解决这个问题。四处打听打听吧。" />
 
 	<string
 		id="fm_hunt_completed"
-		value=" Reminder: The hunt is over. You receive a reward for each killed enemy." />
+		value=" 提示：狩猎结束。你将按击杀数获得赏金。" />
 
 	<string
 		id="fm_dynamic_quest_completed"
-		value="You completed quest '%1s'" />
+		value="你完成了任务「%1s」" />
 
 	<string
 		id="fm_dynamic_quest_failed_because_hirer_becames_enemy"
-		value="You failed to complete the quest '%1s', because you are enemies with the customer now." />
+		value="任务「%1s」失败，因为你现在与委托人处于敌对状态。" />
 
 	<string
 		id="fm_convoy_failed"
-		value="Too bad! You failed to protect the caravan." />
+		value="真糟糕！你未能保护商队。" />
 
 	<string
 		id="fm_history_got"
-		value="A new entry is added to the Story section of your journal." />
+		value="日志的「剧情」栏目新增了一条记录。" />
 
 	<string
 		id="fm_book_got"
-		value="A new book is added to the Books section of your journal." />
+		value="日志的「书籍」栏目新增了一本书。" />
 
 	<string
 		id="fm_fail_quest"
-		value="You failed to complete the quest." />
+		value="任务失败了。" />
 
 	<string
 		id="fm_complete_quest"
-		value="You completed the quest." />
+		value="任务已完成。" />
 
 	<string
 		id="fm_take_quest"
-		value="You have a new quest." />
+		value="你有新任务了。" />
 
 	<string
 		id="fm_cant_move"
-		value="I do not know the road, so I'll stay here." />
+		value="我不认识路，所以就在这里停留。" />
 
 	<string
 		id="fm_not_suzet"
-		value="I do not know what抯 out there, so I抣l stay here. " />
+		value="我不知道那边有什么，所以就在这里停留。" />
 
 	<string
 		id="fm_race_start_1"
-		value="Countdown: ...%1d..." />
+		value="倒计时：…%1d…" />
 
 	<string
 		id="fm_race_start_0"
-		value="S T A R T" />
+		value="出 发" />
 
 	<string
 		id="fm_race_start_false"
-		value="False start!" />
+		value="抢跑！" />
 
 	<string
 		id="fm_race_chekpoint"
-		value="Checkpoint!" />
+		value="检查点！" />
 
 	<string
 		id="fm_race_chekpoint_notright"
-		value="Wrong checkpoint!" />
+		value="错误的检查点！" />
 
 	<string
 		id="fm_race_firslap"
-		value="First lap finished!" />
+		value="第一圈完成！" />
 
 	<string
 		id="fm_race_finish"
-		value="G O A L" />
+		value="终 点" />
 
 	<string
 		id="fm_race_finish_1"
-		value="FIRST" />
+		value="第一名" />
 
 	<string
 		id="fm_race_finish_2"
-		value="SECOND" />
+		value="第二名" />
 
 	<string
 		id="fm_race_finish_3"
-		value="THIRD" />
+		value="第三名" />
 
 	<string
 		id="fm_race_finish_less"
-		value="Your place is %1d out of %2d" />
+		value="你的名次：第 %1d 名（共 %2d 名）" />
 
 	<string
 		id="fm_race_finish_lose"
-		value="You lose the race!" />
+		value="你输掉了比赛！" />
 
 	<string
 		id="fm_race_somedie"
-		value="One of the participants is out!" />
+		value="一名参赛者出局！" />
 
 	<string
 		id="fm_town_enter"
-		value="Press Horn to enter town" />
+		value="按喇叭键进入城镇" />
 
 	<string
 		id="fm_town_cant_enter_enemy"
-		value="You cannot enter this town. It belongs to the enemy faction." />
+		value="无法进入该城镇。它属于敌对阵营。" />
 
 	<string
 		id="fm_town_cant_enter_locked"
-		value="You cannot enter this town. It is closed." />
+		value="无法进入该城镇。城镇已关闭。" />
 
 	<string
 		id="fm_take_chest_hint"
-		value="Press %1m to pick up cargo." />
+		value="按 %1m 拾取货物。" />
 
 	<string
 		id="fm_all_chests_taken"
-		value="The cargo is taken aboard." />
+		value="货物已装车。" />
 
 	<string
 		id="fm_item_pickup"
-		value="You picked up %1s" />
+		value="你拾取了 %1s" />
 
 	<string
 		id="fm_sunrise"
-		value="It抯 morning." />
+		value="清晨了。" />
 
 	<string
 		id="fm_day"
-		value="It抯 another hard day." />
+		value="又是艰难的一天。" />
 
 	<string
 		id="fm_sunset"
-		value="It抯 evening." />
+		value="傍晚了。" />
 
 	<string
 		id="fm_night"
-		value="It抯 night." />
+		value="夜深了。" />
 
 	<string
 		id="fm_save_is_not_allowed"
-		value="You cannot save at this time." />
+		value="当前无法存档。" />
 
 	<string
 		id="fm_player_add_money"
-		value="You received %1d coins!" />
+		value="你获得了 %1d 金币！" />
 
 	<string
 		id="fm_player_give_money"
-		value="You gave away %1d coins" />
+		value="你支出了 %1d 金币" />
 
 	<string
 		id="fm_player_add_thing"
-		value="You received an item: %1p" />
+		value="你获得了物品：%1p" />
 
 	<string
 		id="fm_cheat_is_not_allowed"
-		value="@FF22FF22Please do not @FF2222FFCHEAT@FFFFFFFF" />
+		value="@FF22FF22请不要@FF2222FF作弊@FFFFFFFF" />
 
 	<string
 		id="fm_cheat_is_allowed"
-		value="@FF22FF22Remember, @FF2222FFusing cheats may cause errors!@FFFFFFFF" />
+		value="@FF22FF22记住，@FF2222FF使用作弊码可能导致错误！@FFFFFFFF" />
 
 	<string
 		id="fm_items_remained_on_ground"
-		value="The cargo hold is full. Press %1m to open the inventory screen." />
+		value="货舱已满。按 %1m 打开物品栏界面。" />
 </resource>

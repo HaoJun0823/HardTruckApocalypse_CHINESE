@@ -2,145 +2,145 @@
 <resource><!-- controls captions -->
 	<string
 		id="btnSaveCfg"
-		value="Save changes" />
+		value="保存更改" />
 
 	<string
 		id="btnCancel"
-		value="Exit" />
+		value="退出" />
 
 	<string
 		id="checkFullScreen"
-		value="Full screen" />
+		value="全屏" />
 
 	<string
 		id="staticResolution"
-		value="Resolution and color depth" />
+		value="分辨率与色彩深度" />
 
 	<string
 		id="staticPlatform"
-		value="Video card" />
+		value="显卡" />
 
 	<string
 		id="staticScreenOptions"
-		value="Video settings" />
+		value="视频设置" />
 
 	<string
 		id="checkWaterReflections"
-		value="Water reflections" />
+		value="水面反射" />
 
 	<string
 		id="checkStaticShadows"
-		value="Static shadows" />
+		value="静态阴影" />
 
 	<string
 		id="checkDynamicShadows"
-		value="Dynamic shadows" />
+		value="动态阴影" />
 
 	<string
 		id="staticShadowQuality"
-		value="Shadows quality" />
+		value="阴影质量" />
 
 	<string
 		id="staticShadowLow"
-		value="Low" />
+		value="低" />
 
 	<string
 		id="staticShadowHigh"
-		value="High" />
+		value="高" />
 
 	<string
 		id="staticFardistNear"
-		value="Near" />
+		value="近" />
 
 	<string
 		id="staticFardistFar"
-		value="Far" />
+		value="远" />
 
 	<string
 		id="staticFarDist"
-		value="View distance" />
+		value="视距" />
 
 	<string
 		id="staticShadowOptions"
-		value="Shadows settings" />
+		value="阴影设置" />
 
 	<string
 		id="staticMiscOptions"
-		value="Misc. Settings" />
+		value="其他设置" />
 
 	<string
 		id="staticEffects"
-		value="Effects" />
+		value="特效" />
 
 	<string
 		id="checkSoundEnable"
-		value="Sound is on" />
+		value="开启音效" />
 
 	<string
 		id="checkMusicEnable"
-		value="Music is on" />
+		value="开启音乐" />
 
 	<string
 		id="staticSoundOptions"
-		value="Sound settings" />
+		value="音效设置" />
 
 	<string
 		id="staticMusicOptions"
-		value="Music settings" />
+		value="音乐设置" />
 
 	<string
 		id="staticSoundVolume"
-		value="Sound volume" />
+		value="音效音量" />
 
 	<string
 		id="staticMusicVolume"
-		value="Music volume" />
+		value="音乐音量" />
 
 	<string
 		id="staticSoundLow"
-		value="Low" />
+		value="低" />
 
 	<string
 		id="staticSoundMedium"
-		value="Medium" />
+		value="中" />
 
 	<string
 		id="staticSoundHigh"
-		value="High" />
+		value="高" />
 
 	<string
 		id="staticMusicLow"
-		value="Low" />
+		value="低" />
 
 	<string
 		id="staticMusicMedium"
-		value="Medium" />
+		value="中" />
 
 	<string
 		id="staticMusicHigh"
-		value="High" />
+		value="高" />
 <!-- page names -->
 	<string
 		id="pageVideo"
-		value="Video" />
+		value="视频" />
 
 	<string
 		id="pageInGame"
-		value="Effects" />
+		value="特效" />
 
 	<string
 		id="pageAudio"
-		value="Sound" />
+		value="声音" />
 <!-- application caption -->
 	<string
 		id="dlgMainCaption"
-		value="Settings" />
+		value="设置" />
 <!-- warning dialogs -->
 	<string
 		id="dlgSaveCaption"
-		value="Confirmation" />
+		value="确认" />
 
 	<string
 		id="dlgSaveText"
-		value="Save settings?" />
+		value="保存设置？" />
 </resource>

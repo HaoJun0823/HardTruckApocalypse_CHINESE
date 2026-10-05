@@ -16,3 +16,29 @@ Dwellers,居民,世界,游戏内NPC居民
 Game time,游戏时间,统计,现实游玩时长
 Days lived within game,游戏内度过天数,统计,游戏世界天数
 Distance traveled,行驶里程,统计,单位公里
+Settings,设置,界面,设置窗口标题
+Full screen,全屏,设置,
+Resolution,分辨率,设置,
+Video card,显卡,设置,
+Water reflections,水面反射,设置,
+Static shadows,静态阴影,设置,
+Dynamic shadows,动态阴影,设置,
+Shadows quality,阴影质量,设置,
+View distance,视距,设置,
+Effects,特效,设置,
+Sound,音效,设置,
+Music,音乐,设置,
+Low,低,设置,低/中/高三档
+Medium,中,设置,低/中/高三档
+High,高,设置,低/中/高三档
+Near,近,设置,视距近
+Far,远,设置,视距远
+Confirmation,确认,界面,
+Caravan,商队,任务,护送商队任务
+Hunt,狩猎,任务,按击杀数领赏
+Checkpoint,检查点,赛车,
+Horn,喇叭键,操作,按喇叭键进入城镇
+Faction,派系,世界,敌对/友好阵营
+Journal,日志,界面,含剧情/书籍栏目
+Cargo hold,货舱,核心,卡车货箱
+Inventory,物品栏,界面,背包/物品界面
