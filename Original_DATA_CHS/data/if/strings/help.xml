@@ -2,321 +2,321 @@
 <resource>
 	<string
 		id="HELP_ID_INVENTORY_title"
-		value="Inventory" />
+		value="ÎïÆ·À¸" />
 
 	<string
 		id="HELP_ID_INVENTORY"
-		value="The left part represents the contents of your truck’s cargo hold, weapon slots and gadget slots. Weapon slots have indications of gun shooting sector, drawn into them. |The right part contains objects located in the nearby crates and boxes. If there’s no crate around, it will be empty. If you put something to the empty right part, the crate will appear.| To move object, drag and drop it with the left mouse button. If it is a weapon, you can immediately equip it by dragging it over the highlighted weapon slot. If it is a gadget, you can immediately equip it by dragging it over the highlighted gadget slot." />
+		value="×ó²àÏÔÊ¾¿¨³µ»õ²Õ¡¢ÎäÆ÷²ÛºÍÅä¼þ²ÛµÄÄÚÈÝ¡£ÎäÆ÷²ÛÖÐ±êÓÐ»ðÅÚÉä»÷·½Î»µÄÖ¸Ê¾¡£|ÓÒ²àÏÔÊ¾¸½½üÏä×ÓÀïµÄÎïÆ·¡£Èç¹ûÖÜÎ§Ã»ÓÐÏä×Ó£¬ÓÒ²àÎª¿Õ¡£Èç¹ûÄã°Ñ¶«Î÷·Åµ½¿ÕµÄÓÒ²à£¬Ïä×Ó¾Í»á³öÏÖ¡£|ÓÃÊó±ê×ó¼üÍÏ·ÅÎïÆ·À´ÒÆ¶¯¡£Èç¹ûÊÇÎäÆ÷£¬ÍÏµ½¸ßÁÁµÄÎäÆ÷²Û¼´¿ÉÁ¢¼´×°±¸¡£Èç¹ûÊÇÅä¼þ£¬ÍÏµ½¸ßÁÁµÄÅä¼þ²Û¼´¿ÉÁ¢¼´×°±¸¡£" />
 
 	<string
 		id="HELP_ID_VEHICLE_CHARACTERISTICS_title"
-		value="Vehicle information" />
+		value="³µÁ¾ÐÅÏ¢" />
 
 	<string
 		id="HELP_ID_VEHICLE_CHARACTERISTICS"
-		value=" The left part represents the contents of your truck’s cargo hold, weapon slots and gadget slots. The right part contains all your vehicle properties, including armor properties and resistances, engine and control stats. You can also rotate 3d image of your truck to get a better view of it. You can equip different guns and gadgets and see you truck image and stats change. If you click the number by the weapon name, you can link it to one of five groups. Later in the game, when you have several guns with different properties, you will find grouping quite useful." />
+		value="×ó²àÏÔÊ¾¿¨³µ»õ²Õ¡¢ÎäÆ÷²ÛºÍÅä¼þ²ÛµÄÄÚÈÝ¡£ÓÒ²àÏÔÊ¾³µÁ¾È«²¿ÊôÐÔ£¬°üÀ¨×°¼×ÊôÐÔºÍ¿¹ÐÔ¡¢ÒýÇæºÍ²Ù¿Ø²ÎÊý¡£Äã»¹¿ÉÒÔÐý×ª¿¨³µµÄ3DÍ¼ÏñÒÔ»ñµÃ¸üºÃµÄÊÓ½Ç¡£Äã¿ÉÒÔ×°±¸²»Í¬µÄÎäÆ÷ºÍÅä¼þ£¬²é¿´¿¨³µÍ¼ÏñºÍ²ÎÊýµÄ±ä»¯¡£µã»÷ÎäÆ÷Ãû³ÆÅÔµÄÊý×Ö£¬¿ÉÒÔ½«Ëü±àÈëÎå¸öÎäÆ÷×éÖ®Ò»¡£ÓÎÏ·ºóÆÚµ±ÄãÓµÓÐ¶à°Ñ²»Í¬ÊôÐÔµÄÎäÆ÷Ê±£¬·Ö×é»á·Ç³£ÓÐÓÃ¡£" />
 
 	<string
 		id="HELP_ID_QUESTLOG_QUESTS_title"
-		value="Missions list" />
+		value="ÈÎÎñÁÐ±í" />
 
 	<string
 		id="HELP_ID_QUESTLOG_QUESTS"
-		value="Mission list contains all the quests you have taken. You can sort them by the starting map with the combo box. You can also turn on and off option of showing completed quests.|Each mission has a description that will help you to accomplish it. Near the description you can see a navpoint button. When pressed, it displays the mission goal on the map and the radar.|Main quest color is orange, optional quest – violet.|A mission may have a number of sub-goals that must be completed in order to finish quest.The sub-goals are situated under the mission description and may have separate navpoint buttons." />
+		value="ÈÎÎñÁÐ±í°üº¬ÄãÒÑ½ÓÊÜµÄËùÓÐÈÎÎñ¡£Äã¿ÉÒÔÓÃÏÂÀ­¿ò°´ÆðÊ¼µØÍ¼ÅÅÐò£¬Ò²¿ÉÒÔ¿ªÆô»ò¹Ø±ÕÏÔÊ¾ÒÑÍê³ÉÈÎÎñµÄÑ¡Ïî¡£|Ã¿¸öÈÎÎñ¶¼ÓÐÃèÊö°ïÖúÄãÍê³É¡£ÃèÊöÅÔ±ßÓÐµ¼º½µã°´Å¥£¬°´ÏÂºó»áÔÚµØÍ¼ºÍÀ×´ïÉÏÏÔÊ¾ÈÎÎñÄ¿±ê¡£|Ö÷ÏßÈÎÎñÎª³ÈÉ«£¬Ö§ÏßÈÎÎñÎª×ÏÉ«¡£|Ò»¸öÈÎÎñ¿ÉÄÜÓÐÈô¸É×ÓÄ¿±ê£¬ÐèÒªÈ«²¿Íê³É²ÅÄÜÍê³ÉÈÎÎñ¡£×ÓÄ¿±êÎ»ÓÚÈÎÎñÃèÊöÏÂ·½£¬¿ÉÄÜÓÐ¸÷×ÔµÄµ¼º½µã°´Å¥¡£" />
 
 	<string
 		id="HELP_ID_QUESTLOG_QUEST_ITEMS_title"
-		value="Quest items" />
+		value="ÈÎÎñÎïÆ·" />
 
 	<string
 		id="HELP_ID_QUESTLOG_QUEST_ITEMS"
-		value="The “quest items” button will bring up the special items windows. There you may find a list of objects, needed to complete certain quests as well as its description and 3d image." />
+		value="°´"ÈÎÎñÎïÆ·"°´Å¥»á´ò¿ªÌØÊâÎïÆ·´°¿Ú¡£ÄÇÀïÁÐ³öÁËÍê³ÉÄ³Ð©ÈÎÎñËùÐèµÄÎïÆ·¼°ÆäÃèÊöºÍ3DÍ¼Ïñ¡£" />
 
 	<string
 		id="HELP_ID_LOCAL_MAP_title"
-		value="Local map" />
+		value="ÇøÓòµØÍ¼" />
 
 	<string
 		id="HELP_ID_LOCAL_MAP"
-		value="Map is a useful tool invaluable for the orientation on the land. Locations of towns, map exits and places of interest may be found there.|There are two modes: information mode and trade mode. You can switch between them by clicking corresponding buttons at the upper right of the window.|When in information mode you will see the description of the selected object.|When in trade mode, you will see the list of trade goods of the selected settlement. The price list refers to the last time you visited that place and is saved automatically. You can make a shortcut to the selected town with the “store” button. It will be stored at the bottom of the window. To delete a stored name, release the “store” button when the town is selected.| In this window, you can set a user navpoint by right-clicking on the map space. Select objects by left-clicking on them" />
+		value="µØÍ¼ÊÇÔÚµØÐÎÉÏ±æ±ð·½ÏòµÄÖØÒª¹¤¾ß¡£ÉÏÃæ¿ÉÒÔÕÒµ½³ÇÕò¡¢µØÍ¼³ö¿ÚºÍÐËÈ¤µãµÄÎ»ÖÃ¡£|ÓÐÁ½ÖÖÄ£Ê½£ºÐÅÏ¢Ä£Ê½ºÍ½»Ò×Ä£Ê½¡£Í¨¹ý´°¿ÚÓÒÉÏ½ÇµÄ¶ÔÓ¦°´Å¥ÇÐ»»¡£|ÔÚÐÅÏ¢Ä£Ê½ÏÂÄã»á¿´µ½ËùÑ¡¶ÔÏóµÄÃèÊö¡£|ÔÚ½»Ò×Ä£Ê½ÏÂÄã»á¿´µ½ËùÑ¡¾Û¾ÓµØµÄ½»Ò×ÉÌÆ·ÁÐ±í¡£¼Û¸ñ±í¼ÇÂ¼µÄÊÇÄãÉÏ´Îµ½·Ã¸ÃµØÊ±µÄ¼Û¸ñ²¢×Ô¶¯±£´æ¡£Äã¿ÉÒÔÓÃ"¼ÇÂ¼"°´Å¥ÎªÑ¡ÖÐµÄ³ÇÕò´´½¨¿ì½Ý·½Ê½£¬Ëü»á±£´æÔÚ´°¿Úµ×²¿¡£ÒªÉ¾³ýÒÑ±£´æµÄÃû³Æ£¬ÔÚÑ¡ÖÐ¸Ã³ÇÕòÊ±ËÉ¿ª"¼ÇÂ¼"°´Å¥¼´¿É¡£|ÔÚ´Ë´°¿ÚÖÐ£¬ÓÒ¼üµã»÷µØÍ¼¿Õ°×´¦¿ÉÒÔÉèÖÃÓÃ»§µ¼º½µã¡£×ó¼üµã»÷Ñ¡Ôñ¶ÔÏó¡£" />
 
 	<string
 		id="HELP_ID_GLOBAL_MAP_title"
-		value="Global map" />
+		value="ÊÀ½çµØÍ¼" />
 
 	<string
 		id="HELP_ID_GLOBAL_MAP"
-		value="On the global map, you can see all maps, you have already visited and the roads between them. Here you can switch between maps to review your progress and trade roads." />
+		value="ÔÚÊÀ½çµØÍ¼ÉÏ¿ÉÒÔ¿´µ½ÄãÒÑ·ÃÎÊ¹ýµÄËùÓÐµØÍ¼¼°Æä¼äµÄµÀÂ·¡£Äã¿ÉÒÔÔÚ´ËÇÐ»»µØÍ¼ÒÔ²é¿´½ø¶ÈºÍÉÌÂ·¡£" />
 
 	<string
 		id="HELP_ID_HISTORY_title"
-		value="History" />
+		value="¾çÇé" />
 
 	<string
 		id="HELP_ID_HISTORY"
-		value="All major events that happened with the player are scribed here for you reference." />
+		value="Íæ¼Ò¾­ÀúµÄËùÓÐÖØ´óÊÂ¼þ¶¼¼ÇÂ¼ÔÚ´Ë£¬¹©Äã²Î¿¼¡£" />
 
 	<string
 		id="HELP_ID_BOOKS_title"
-		value="Books" />
+		value="Êé¼®" />
 
 	<string
 		id="HELP_ID_BOOKS"
-		value="All kind of books and documents, found during travels are stored here." />
+		value="ÂÃÐÐÖÐÕÒµ½µÄ¸÷ÖÖÊé¼®ºÍÎÄ¼þ¶¼´æ·ÅÔÚÕâÀï¡£" />
 
 	<string
 		id="HELP_ID_RELATIONS_title"
-		value="Factions" />
+		value="ÅÉÏµ" />
 
 	<string
 		id="HELP_ID_RELATIONS"
-		value="It is advised to keep an eye on your relationships with different factions, inhabiting the world. Some are friendly towards you, some are hostile. The relationship may change depending on your actions, so visit this window to track the changes." />
+		value="½¨ÒéÁôÒâÄãÓëÊÀ½ç¸÷µØ²»Í¬ÅÉÏµµÄ¹ØÏµ¡£ÓÐÐ©¶ÔÄãÓÑºÃ£¬ÓÐÐ©Ôò»³ÓÐµÐÒâ¡£¹ØÏµ¿ÉÄÜÒòÄãµÄÐÐ¶¯¶ø¸Ä±ä£¬Çë¶¨ÆÚ²é¿´´Ë´°¿Ú¸ú×Ù±ä»¯¡£" />
 
 	<string
 		id="HELP_ID_STATS_title"
-		value="Statistics" />
+		value="Í³¼Æ" />
 
 	<string
 		id="HELP_ID_STATS"
-		value="In this window, you can learn what distance you have traveled or the amount of bullets shot as well as other statistic information." />
+		value="ÔÚ´Ë´°¿Ú¿ÉÒÔ²é¿´ÄãÐÐÊ»ÁË¶àÉÙ¾àÀë¡¢Éä»÷ÁË¶àÉÙ×Óµ¯µÈÍ³¼ÆÐÅÏ¢¡£" />
 
 	<string
 		id="HELP_ID_ENCYCLOPAEDIA_title"
-		value="Encyclopedia" />
+		value="°Ù¿ÆÈ«Êé" />
 
 	<string
 		id="HELP_ID_ENCYCLOPAEDIA"
-		value="Every piece of lore, collected by player during travels is stored here. Chose the kind of information you want to review with the combo box. Then select the necessary entry from the list." />
+		value="Íæ¼ÒÔÚÂÃÐÐÖÐÊÕ¼¯µ½µÄÃ¿Ò»Ìõ´«ËµÖªÊ¶¶¼´æ·ÅÔÚÕâÀï¡£ÓÃÏÂÀ­¿òÑ¡ÔñÒª²é¿´µÄÐÅÏ¢Àà±ð£¬È»ºó´ÓÁÐ±íÖÐÑ¡ÔñÐèÒªµÄÌõÄ¿¡£" />
 
 	<string
 		id="HELP_ID_SHOP_GUNS_title"
-		value="Marketplace / Weapons and gadgets mode" />
+		value="ÊÐ³¡ / ÎäÆ÷ÓëÅä¼þÄ£Ê½" />
 
 	<string
 		id="HELP_ID_SHOP_GUNS"
-		value="The left part represents the contents of your truck’s cargo hold, weapon slots and gadget slots. Weapon slots have indications of gun shooting sector, drawn into them. |The right part contains the object sold by the shop and has two modes: weapons and gadgets mode and trade goods mode. The right part contains a number of weapons and gadgets.| To buy something, drag and drop it with the left mouse button. If it is a weapon, you can immediately equip it by dragging it over the highlighted weapon slot. If it is a gadget, you can immediately equip it by dragging it over the highlighted gadget slot. You can also buy objects by right clicking on them.| To sell something drag and drop it with the left mouse button from the left part of the screen to the right one. You can also right click on the item in your cargo hold to sell it.  " />
+		value="×ó²àÏÔÊ¾¿¨³µ»õ²Õ¡¢ÎäÆ÷²ÛºÍÅä¼þ²ÛµÄÄÚÈÝ¡£ÎäÆ÷²ÛÖÐ±êÓÐ»ðÅÚÉä»÷·½Î»µÄÖ¸Ê¾¡£|ÓÒ²àÏÔÊ¾ÉÌµê³öÊÛµÄÎïÆ·£¬ÓÐÁ½ÖÖÄ£Ê½£ºÎäÆ÷ÓëÅä¼þÄ£Ê½ºÍÉÌÆ·Ä£Ê½¡£ÓÒ²à°üº¬Èô¸ÉÎäÆ÷ºÍÅä¼þ¡£|ÓÃÊó±ê×ó¼üÍÏ·ÅÎïÆ·À´¹ºÂò¡£Èç¹ûÊÇÎäÆ÷£¬ÍÏµ½¸ßÁÁµÄÎäÆ÷²Û¼´¿ÉÁ¢¼´×°±¸¡£Èç¹ûÊÇÅä¼þ£¬ÍÏµ½¸ßÁÁµÄÅä¼þ²Û¼´¿ÉÁ¢¼´×°±¸¡£ÓÒ¼üµã»÷ÎïÆ·Ò²¿ÉÒÔ¹ºÂò¡£|ÓÃÊó±ê×ó¼ü´ÓÆÁÄ»×ó²àÍÏ·Åµ½ÓÒ²àÀ´³öÊÛÎïÆ·¡£ÓÒ¼üµã»÷»õ²ÕÖÐµÄÎïÆ·Ò²¿ÉÒÔ³öÊÛ¡£" />
 
 	<string
 		id="HELP_ID_SHOP_GOODS_title"
-		value="Marketplace / Trade goods mode" />
+		value="ÊÐ³¡ / ÉÌÆ·Ä£Ê½" />
 
 	<string
 		id="HELP_ID_SHOP_GOODS"
-		value="The left part represents the contents of your truck’s cargo hold, weapon slots and gadget slots.| The right part contains a list of trade goods with its sale price, purchase price and quantity. The merchandises available for sale are highlighted with bright color, the other are grayed out. You can enable the filter that will only show trade goods available for sale.|Left-click on the merchandise (any place within a row) to buy one piece of it.|To sell something drag and drop it with the left mouse button from the left part of the screen to the right one. You can also right click on the item in your cargo hold to sell it. " />
+		value="×ó²àÏÔÊ¾¿¨³µ»õ²Õ¡¢ÎäÆ÷²ÛºÍÅä¼þ²ÛµÄÄÚÈÝ¡£|ÓÒ²àÏÔÊ¾ÉÌÆ·ÁÐ±í¼°ÆäÊÛ¼Û¡¢ÊÕ¹º¼ÛºÍÊýÁ¿¡£¿É¹ºÂòµÄÉÌÆ·ÒÔÁÁÉ«±ê×¢£¬ÆäÓàÎª»ÒÉ«¡£Äã¿ÉÒÔÆôÓÃ¹ýÂËÆ÷Ö»ÏÔÊ¾¿É¹ºÂòµÄÉÌÆ·¡£|×ó¼üµã»÷ÉÌÆ·£¨ÐÐÄÚÈÎÒâÎ»ÖÃ£©¿É¹ºÂòÒ»·Ý¡£|ÓÃÊó±ê×ó¼ü´ÓÆÁÄ»×ó²àÍÏ·Åµ½ÓÒ²àÀ´³öÊÛÎïÆ·¡£ÓÒ¼üµã»÷»õ²ÕÖÐµÄÎïÆ·Ò²¿ÉÒÔ³öÊÛ¡£" />
 
 	<string
 		id="HELP_ID_WORKSHOP_title"
-		value="Workshop" />
+		value="³µ¼ä" />
 
 	<string
 		id="HELP_ID_WORKSHOP"
-		value="Here you can buy a new cab or car body, refuel, repair and repaint your truck and reload your guns that have limited ammo. |The left part contains all your vehicle properties, including armor properties and resistances, engine and control stats. You can also rotate 3d image of your truck to get a better view of it. |The right part has a number of options. Click corresponding button to select the work you want to be performed on your truck." />
+		value="ÔÚÕâÀïÄã¿ÉÒÔ¹ºÂòÐÂ¼ÝÊ»ÊÒ»ò³µÏá¡¢¼ÓÓÍ¡¢ÐÞÀí¡¢ÅçÆáºÍÎªµ¯Ò©ÓÐÏÞµÄÎäÆ÷×°Ìî¡£|×ó²àÏÔÊ¾³µÁ¾È«²¿ÊôÐÔ£¬°üÀ¨×°¼×ÊôÐÔºÍ¿¹ÐÔ¡¢ÒýÇæºÍ²Ù¿Ø²ÎÊý¡£Äã»¹¿ÉÒÔÐý×ª¿¨³µµÄ3DÍ¼ÏñÒÔ»ñµÃ¸üºÃµÄÊÓ½Ç¡£|ÓÒ²àÓÐÈô¸ÉÑ¡Ïî¡£µã»÷¶ÔÓ¦°´Å¥Ñ¡ÔñÒª¶Ô¿¨³µ½øÐÐµÄ×÷Òµ¡£" />
 
 	<string
 		id="HELP_ID_WORKSHOP_CABINS_title"
-		value="Change cabin" />
+		value="¸ü»»¼ÝÊ»ÊÒ" />
 
 	<string
 		id="HELP_ID_WORKSHOP_CABINS"
-		value="Click the “buy cabin” icon to buy a new cabin. |A list with available cabins will appear. Select the one you need by clicking its picture and watch the changes that will be made to your truck: the 3d image will change as well as vehicle stats. Click the on the “buy” button to enter second stage of the purchase." />
+		value="µã»÷"¹ºÂò¼ÝÊ»ÊÒ"Í¼±êÀ´¹ºÂòÐÂ¼ÝÊ»ÊÒ¡£|½«³öÏÖ¿ÉÓÃ¼ÝÊ»ÊÒÁÐ±í¡£µã»÷Í¼Æ¬Ñ¡ÔñËùÐèµÄ¼ÝÊ»ÊÒ£¬²é¿´¿¨³µµÄ±ä»¯£º3DÍ¼ÏñºÍ³µÁ¾²ÎÊý¶¼»á¸Ä±ä¡£µã»÷"¹ºÂò"°´Å¥½øÈë¹ºÂòµÄµÚ¶þ½×¶Î¡£" />
 
 	<string
 		id="HELP_ID_WORKSHOP_BASKETS_title"
-		value="Change body " />
+		value="¸ü»»³µÏá" />
 
 	<string
 		id="HELP_ID_WORKSHOP_BASKETS"
-		value="Click the “buy body” button. A list with available bodies will appear. Select the one you need by clicking its picture and watch the changes that will be made to your truck: the 3d image will change as well as vehicle stats. Click the on the “buy” button to enter second stage of the purchase." />
+		value="µã»÷"¹ºÂò³µÏá"°´Å¥¡£½«³öÏÖ¿ÉÓÃ³µÏáÁÐ±í¡£µã»÷Í¼Æ¬Ñ¡ÔñËùÐèµÄ³µÏá£¬²é¿´¿¨³µµÄ±ä»¯£º3DÍ¼ÏñºÍ³µÁ¾²ÎÊý¶¼»á¸Ä±ä¡£µã»÷"¹ºÂò"°´Å¥½øÈë¹ºÂòµÄµÚ¶þ½×¶Î¡£" />
 
 	<string
 		id="HELP_ID_WORKSHOP_VEHICLE_title"
-		value="Buy a new truck" />
+		value="¹ºÂòÐÂ¿¨³µ" />
 
 	<string
 		id="HELP_ID_WORKSHOP_VEHICLE"
-		value="Click the “Buy new truck” button. Select the truck you want to purchase by clicking on the large triangular buttons, select the color of your purchase with the small triangular buttons. Click the on the “buy” button to enter second stage of the purchase" />
+		value="µã»÷"¹ºÂòÐÂ¿¨³µ"°´Å¥¡£ÓÃ´óµÄÈý½ÇÐÎ°´Å¥Ñ¡ÔñÒª¹ºÂòµÄ¿¨³µ£¬ÓÃÐ¡µÄÈý½ÇÐÎ°´Å¥Ñ¡ÔñÑÕÉ«¡£µã»÷"¹ºÂò"°´Å¥½øÈë¹ºÂòµÄµÚ¶þ½×¶Î¡£" />
 
 	<string
 		id="HELP_ID_WORKSHOP_SKIN_title"
-		value="Color a truck" />
+		value="¿¨³µÅçÆá" />
 
 	<string
 		id="HELP_ID_WORKSHOP_SKIN"
-		value="Scroll through a number of skins available it the workshop with the small triangular buttons, then confirm the coloring with the button." />
+		value="ÓÃÐ¡µÄÈý½ÇÐÎ°´Å¥ÔÚ³µ¼äÖÐä¯ÀÀ¿ÉÓÃµÄÍ¿×°£¬È»ºóÓÃ°´Å¥È·ÈÏÅçÆá¡£" />
 
 	<string
 		id="HELP_ID_WORKSHOP_REFUEL_title"
-		value="Refuel" />
+		value="¼ÓÓÍ" />
 
 	<string
 		id="HELP_ID_WORKSHOP_REFUEL"
-		value="Click the large “Refuel” button to completely refuel your truck. |Otherwise you can enter the expanded mode by clicking a small button. Here you can select the exact amount of fuel to be bought with the slider. Then confirm the operation by clicking on the button with the price." />
+		value="µã»÷´óµÄ"¼ÓÓÍ"°´Å¥ÍêÈ«¼ÓÂúÓÍÏä¡£|»òÕßµã»÷Ð¡°´Å¥½øÈëÕ¹¿ªÄ£Ê½¡£ÔÚ´Ë¿ÉÒÔÓÃ»¬¿éÑ¡ÔñÒª¹ºÂòµÄÈ·ÇÐÓÍÁ¿£¬È»ºóµã»÷¼Û¸ñ°´Å¥È·ÈÏ²Ù×÷¡£" />
 
 	<string
 		id="HELP_ID_WORKSHOP_REPAIR_title"
-		value="Repair" />
+		value="ÐÞÀí" />
 
 	<string
 		id="HELP_ID_WORKSHOP_REPAIR"
-		value="In order completely repair you truck, just click “repair all” button. It will repair all your truck’s parts and weapons up to the maximum or considering the amount of money you have. |If you want detailed control over the process, you can click “custom repair” button (a small triangle by the large button). The list of all repairable parts will appear; you can fix any one by clicking its name. |You can also expand each “repair part” button by clicking a small “plus”. Now you can select the exact amount of damage you’ll repair with the slider. Then confirm the operation with the part name button." />
+		value="ÒªÍêÈ«ÐÞÀí¿¨³µ£¬Ö»Ðèµã»÷"È«²¿ÐÞÀí"°´Å¥¡£Ëü½«ÐÞÀíËùÓÐ¿¨³µ²¿¼þºÍÎäÆ÷ÖÁ×î´óÖµ£¬»òÔÚÄãµÄ½ð±ÒÔÊÐíµÄ·¶Î§ÄÚ¡£|Èç¹ûÄãÏëÏêÏ¸¿ØÖÆÐÞÀí¹ý³Ì£¬¿ÉÒÔµã»÷"×Ô¶¨ÒåÐÞÀí"°´Å¥£¨´ó°´Å¥ÅÔµÄÐ¡Èý½ÇÐÎ£©¡£½«³öÏÖËùÓÐ¿ÉÐÞÀí²¿¼þµÄÁÐ±í£¬µã»÷Ãû³Æ¼´¿ÉÐÞÀí¡£|ÄãÒ²¿ÉÒÔµã»÷Ð¡µÄ"¼ÓºÅ"Õ¹¿ªÃ¿¸ö"ÐÞÀí²¿¼þ"°´Å¥¡£È»ºóÓÃ»¬¿éÑ¡ÔñÒªÐÞÀíµÄÈ·ÇÐËðÉËÁ¿¡£ÓÃ²¿¼þÃû³Æ°´Å¥È·ÈÏ²Ù×÷¡£" />
 
 	<string
 		id="HELP_ID_WORKSHOP_RECHARGE_title"
-		value="Reload" />
+		value="×°Ìî" />
 
 	<string
 		id="HELP_ID_WORKSHOP_RECHARGE"
-		value="You can either reload all your weapons at a time or select guns and amount of ammo to be loaded.|In order to completely reload you truck, just click “reload all” button. It will reload all your truck’s weapons up to the maximum or considering the amount of money you have.|If you want detailed control over the process, you can click “custom reload” button (a small triangle by the large button). The list of all weapons needing reload will appear; you can reload any one by clicking its name.|You can also expand each “reload weapon” button by clicking a small “plus”. Now you can select the exact amount of ammo you’ll load your gun with. Then confirm the operation with the part name button." />
+		value="Äã¿ÉÒÔÒ»´ÎÐÔ×°ÌîËùÓÐÎäÆ÷£¬Ò²¿ÉÒÔÑ¡ÔñÎäÆ÷ºÍµ¯Ò©Á¿¡£|ÒªÍêÈ«×°Ìî¿¨³µ£¬Ö»Ðèµã»÷"È«²¿×°Ìî"°´Å¥¡£Ëü½«×°ÌîËùÓÐÎäÆ÷ÖÁ×î´óÖµ£¬»òÔÚÄãµÄ½ð±ÒÔÊÐíµÄ·¶Î§ÄÚ¡£|Èç¹ûÄãÏëÏêÏ¸¿ØÖÆ×°Ìî¹ý³Ì£¬¿ÉÒÔµã»÷"×Ô¶¨Òå×°Ìî"°´Å¥£¨´ó°´Å¥ÅÔµÄÐ¡Èý½ÇÐÎ£©¡£½«³öÏÖËùÓÐÐèÒª×°ÌîµÄÎäÆ÷ÁÐ±í£¬µã»÷Ãû³Æ¼´¿É×°Ìî¡£|ÄãÒ²¿ÉÒÔµã»÷Ð¡µÄ"¼ÓºÅ"Õ¹¿ªÃ¿¸ö"×°ÌîÎäÆ÷"°´Å¥¡£È»ºóÓÃ»¬¿éÑ¡ÔñÒª×°ÔØµÄÈ·ÇÐµ¯Ò©Á¿¡£ÓÃ²¿¼þÃû³Æ°´Å¥È·ÈÏ²Ù×÷¡£" />
 
 	<string
 		id="HELP_ID_BUY_CABIN_title"
-		value="Confirm cabin purchase" />
+		value="È·ÈÏ¹ºÂò¼ÝÊ»ÊÒ" />
 
 	<string
 		id="HELP_ID_BUY_CABIN"
-		value="You will be offered to move the contents of your old cabin’s slots to the new one’s. You can either “drag and drop” item or click “Move Everything” button. Things that are left in the old cabin will be sold with it. When chosen, click “buy” button to confirm the purchase. " />
+		value="ÏµÍ³»áÌáÊ¾Äã½«¾É¼ÝÊ»ÊÒ²ÛÎ»ÖÐµÄÄÚÈÝÒÆµ½ÐÂ¼ÝÊ»ÊÒ¡£Äã¿ÉÒÔ"ÍÏ·Å"ÎïÆ·»òµã»÷"È«²¿×ªÒÆ"°´Å¥¡£ÁôÔÚ¾É¼ÝÊ»ÊÒÖÐµÄÎïÆ·½«Ëæ¼ÝÊ»ÊÒÒ»Í¬³öÊÛ¡£Ñ¡ºÃºóµã»÷"¹ºÂò"°´Å¥È·ÈÏ¹ºÂò¡£" />
 
 	<string
 		id="HELP_ID_BUY_BASKET_title"
-		value="Confirm body purchase" />
+		value="È·ÈÏ¹ºÂò³µÏá" />
 
 	<string
 		id="HELP_ID_BUY_BASKET"
-		value="You will be offered to move the contents of your old body’s slots to the new one’s. You can either “drag and drop” item or click “Move Everything” button. Things that are left in the old cabin will be sold with it. Click “buy” button to confirm the purchase." />
+		value="ÏµÍ³»áÌáÊ¾Äã½«¾É³µÏá²ÛÎ»ÖÐµÄÄÚÈÝÒÆµ½ÐÂ³µÏá¡£Äã¿ÉÒÔ"ÍÏ·Å"ÎïÆ·»òµã»÷"È«²¿×ªÒÆ"°´Å¥¡£ÁôÔÚ¾É¼ÝÊ»ÊÒÖÐµÄÎïÆ·½«Ëæ¼ÝÊ»ÊÒÒ»Í¬³öÊÛ¡£µã»÷"¹ºÂò"°´Å¥È·ÈÏ¹ºÂò¡£" />
 
 	<string
 		id="HELP_ID_BUY_VEHICLE_title"
-		value="Confirm vehicle purchase" />
+		value="È·ÈÏ¹ºÂò³µÁ¾" />
 
 	<string
 		id="HELP_ID_BUY_VEHICLE"
-		value="You will be offered to move the contents of your old truck’s slots to the new one’s. You can either “drag and drop” item or click “Move Everything” button. Things that are left in the old cabin will be sold with it. Click “buy” button to confirm the purchase." />
+		value="ÏµÍ³»áÌáÊ¾Äã½«¾É¿¨³µ²ÛÎ»ÖÐµÄÄÚÈÝÒÆµ½ÐÂ¿¨³µ¡£Äã¿ÉÒÔ"ÍÏ·Å"ÎïÆ·»òµã»÷"È«²¿×ªÒÆ"°´Å¥¡£ÁôÔÚ¾É¼ÝÊ»ÊÒÖÐµÄÎïÆ·½«Ëæ¼ÝÊ»ÊÒÒ»Í¬³öÊÛ¡£µã»÷"¹ºÂò"°´Å¥È·ÈÏ¹ºÂò¡£" />
 
 	<string
 		id="HELP_ID_TOWN_title"
-		value="Town" />
+		value="³ÇÕò" />
 
 	<string
 		id="HELP_ID_TOWN"
-		value="Many points of interest in the game are settlements. There you may repair and customize your truck, trade and talk with people. Press buttons in the upper right of the screen for town options: marketplace, workshop, bar and important locations." />
+		value="ÓÎÏ·ÖÐµÄÐí¶àÐËÈ¤µãÊÇ¾Û¾ÓµØ¡£ÔÚÄÇÀïÄã¿ÉÒÔÐÞÀíºÍ¸Ä×°¿¨³µ¡¢½»Ò×ÒÔ¼°ÓëÈË½»Ì¸¡£°´ÆÁÄ»ÓÒÉÏ½ÇµÄ°´Å¥½øÈë³ÇÕòÑ¡Ïî£ºÊÐ³¡¡¢³µ¼ä¡¢¾Æ°ÉºÍÖØÒªµØµã¡£" />
 
 	<string
 		id="HELP_ID_BAR_title"
-		value="Bar " />
+		value="¾Æ°É" />
 
 	<string
 		id="HELP_ID_BAR"
-		value="You will often communicate with NPSs to acquire quests and to get useful information. They may be found at the bars of different settlements.| To the right, you can see the list of NPC’s that are currently at the bar. At least one of them is always eager to give you a mission to accomplish. It is a sure way to get some cash. To begin dialogue with someone, left-click on his picture " />
+		value="Äã¾­³£ÐèÒªÓëNPC½»Á÷ÒÔ»ñÈ¡ÈÎÎñºÍÓÐÓÃÐÅÏ¢¡£ËûÃÇ¿ÉÒÔÔÚ²»Í¬¾Û¾ÓµØµÄ¾Æ°ÉÖÐÕÒµ½¡£|ÓÒ²à¿ÉÒÔ¿´µ½µ±Ç°ÔÚ¾Æ°ÉÀïµÄNPCÁÐ±í¡£ÖÁÉÙÓÐÒ»¸öÈË×ÜÊÇÔ¸Òâ¸øÄãÈÎÎñ¡£ÕâÊÇ×¬È¡½ð±ÒµÄºÃ°ì·¨¡£Òª¿ªÊ¼¶Ô»°£¬×ó¼üµã»÷ÆäÍ·Ïñ¡£" />
 
 	<string
 		id="HELP_ID_TALK_WITH_NPC_title"
-		value="Dialogue" />
+		value="¶Ô»°" />
 
 	<string
 		id="HELP_ID_TALK_WITH_NPC"
-		value="In the upper part of the screen you can see a large picture of the NPC with his or her name and the last phrase told.  In the lower part is the list of available player responses. You can select what to tell by left-clicking on the response or pressing numeric keys." />
+		value="ÆÁÄ»ÉÏ·½ÏÔÊ¾NPCµÄ´ó·ùÍ·Ïñ¼°ÆäÐÕÃûºÍ×îºóËµµÄÌ¨´Ê¡£ÏÂ·½ÊÇ¿ÉÑ¡µÄÍæ¼Ò»ØÓ¦ÁÐ±í¡£×ó¼üµã»÷»ØÓ¦»ò°´Êý×Ö¼üÑ¡ÔñÒªËµµÄ»°¡£" />
 
 	<string
 		id="HELP_ID_RADAR"
-		value="In the upper left corner you can see radar, with arrow, pointing at the current quest destination point. There may me up to 3 arrows: one for the main plot (Orange), one for the subplot (Magenta), one for the user nav. point (Blue) You can also see the distance to the destination. When you are near your goal, the arrow will transform into the circle of the corresponding color. Enemy cars are indicated with the red dots, friendly cars – with green dots. " />
+		value="ÔÚ×óÉÏ½Ç¿ÉÒÔ¿´µ½À×´ï£¬ÉÏÃæµÄ¼ýÍ·Ö¸Ïòµ±Ç°ÈÎÎñÄ¿±êµã¡£×î¶à¿ÉÒÔÓÐ3¸ö¼ýÍ·£ºÒ»¸öÖ¸ÏòÖ÷Ïß¾çÇé£¨³ÈÉ«£©£¬Ò»¸öÖ¸ÏòÖ§ÏßÈÎÎñ£¨×ÏÉ«£©£¬Ò»¸öÖ¸ÏòÓÃ»§µ¼º½µã£¨À¶É«£©¡£Äã»¹¿ÉÒÔ¿´µ½µ½Ä¿±êµÄ¾àÀë¡£½Ó½üÄ¿±êÊ±£¬¼ýÍ·»á±ä³É¶ÔÓ¦ÑÕÉ«µÄÔ²È¦¡£µÐ·½³µÁ¾ÓÃºìµã±íÊ¾£¬ÓÑ·½³µÁ¾ÓÃÂÌµã±íÊ¾¡£" />
 
 	<string
 		id="HELP_ID_RADAR_title"
-		value="Radar" />
+		value="À×´ï" />
 
 	<string
 		id="HELP_ID_SPEEDOMETER"
-		value="Speedometer indicates the current screen of your truck in km/h." />
+		value="ËÙ¶È±íÏÔÊ¾¿¨³µµÄµ±Ç°ËÙ¶È£¬µ¥Î»Îª¹«Àï/Ð¡Ê±¡£" />
 
 	<string
 		id="HELP_ID_SPEEDOMETER_title"
-		value="Speedometer" />
+		value="ËÙ¶È±í" />
 
 	<string
 		id="HELP_ID_HP"
-		value="Structure is the integrity or your truck. If it reaches zero, you will die, so repair often. When the structure is low the red lamp will start flashing. You can repair at the workshops that may be found in every town and village." />
+		value="½á¹¹Öµ´ú±í¿¨³µµÄÍêÕûÐÔ¡£Èç¹û½µÖÁÁãÄã¾Í»áËÀÍö£¬ËùÒÔÇë¾­³£ÐÞÀí¡£½á¹¹ÖµµÍÊ±ºìÉ«Ö¸Ê¾µÆ»áÉÁË¸¡£Äã¿ÉÒÔÔÚÃ¿¸ö³ÇÕòºÍ´å×¯µÄ³µ¼äÐÞÀí¡£" />
 
 	<string
 		id="HELP_ID_HP_title"
-		value="Structure" />
+		value="½á¹¹" />
 
 	<string
 		id="HELP_ID_FUEL"
-		value="If you run out of fuel, the truck will only be able to move with extremely low speed, which means death in the word full of danger. When the fuel level is low, the red lamp will start flashing. You can refuel at the workshops that may be found in every town and village." />
+		value="Èç¹ûÈ¼ÁÏºÄ¾¡£¬¿¨³µÖ»ÄÜÒÔ¼«µÍËÙ¶ÈÐÐÊ»£¬ÕâÔÚ³äÂúÎ£ÏÕµÄÊÀ½çÖÐÒâÎ¶×ÅËÀÍö¡£È¼ÁÏ²»×ãÊ±ºìÉ«Ö¸Ê¾µÆ»áÉÁË¸¡£Äã¿ÉÒÔÔÚÃ¿¸ö³ÇÕòºÍ´å×¯µÄ³µ¼ä¼ÓÓÍ¡£" />
 
 	<string
 		id="HELP_ID_FUEL_title"
-		value="Fuel" />
+		value="È¼ÁÏ" />
 
 	<string
 		id="HELP_ID_DURABILITY"
-		value="At the top of the screen the images of your truck’s cab and body are displayed. Its color indicates the current state of the armor of these parts. (Green – perfect, red – awful). Your truck takes damage when it is hit by enemy fire. The armor adsorbs a part of it, but slowly deteriorates. You can restore your armor at the workshops that may be found in every town and village." />
+		value="ÆÁÄ»¶¥²¿ÏÔÊ¾¿¨³µ¼ÝÊ»ÊÒºÍ³µÏáµÄÍ¼Ïñ¡£ÆäÑÕÉ«±íÊ¾ÕâÐ©²¿¼þ×°¼×µÄµ±Ç°×´Ì¬£¨ÂÌÉ«=ÍêºÃ£¬ºìÉ«=Ôã¸â£©¡£¿¨³µ±»µÐ·½»ðÁ¦»÷ÖÐÊ±»áÊÜµ½ÉËº¦¡£×°¼×ÎüÊÕ²¿·ÖÉËº¦£¬µ«»áÖð½¥ËðºÄ¡£Äã¿ÉÒÔÔÚÃ¿¸ö³ÇÕòºÍ´å×¯µÄ³µ¼ä»Ö¸´×°¼×¡£" />
 
 	<string
 		id="HELP_ID_DURABILITY_title"
-		value="Armor" />
+		value="×°¼×" />
 
 	<string
 		id="HELP_ID_TIMER"
-		value="The timer appears when you are given a mission that has a time limit. " />
+		value="µ±Äã½Óµ½ÓÐÊ±¼äÏÞÖÆµÄÈÎÎñÊ±£¬¼ÆÊ±Æ÷¾Í»á³öÏÖ¡£" />
 
 	<string
 		id="HELP_ID_TIMER_title"
-		value="Timer" />
+		value="¼ÆÊ±Æ÷" />
 
 	<string
 		id="HELP_ID_WEAPON"
-		value="Here are displayed equipped weapons, its group number as well as the clip size and amount of ammo (for weapons that have limited ammo). The green bar displays current amount of ammo in clip. It diminishes as you fire. When it reaches zero, the reload will automatically start. While the gun is reloading, the ammo bar will turn blue. You cannot attack until the bar is filled. " />
+		value="ÕâÀïÏÔÊ¾ÒÑ×°±¸µÄÎäÆ÷¡¢ÎäÆ÷×é±àºÅÒÔ¼°µ¯Ï»ÈÝÁ¿ºÍµ¯Ò©Á¿£¨¶ÔÓÚµ¯Ò©ÓÐÏÞµÄÎäÆ÷£©¡£ÂÌÉ«ÌõÏÔÊ¾µ±Ç°µ¯Ï»ÖÐµÄµ¯Ò©Á¿£¬Éä»÷Ê±»á¼õÉÙ¡£½µÖÁÁãÊ±×Ô¶¯¿ªÊ¼×°Ìî¡£×°ÌîÆÚ¼äµ¯Ò©Ìõ±äÀ¶¡£Ìõ³äÂúÖ®Ç°ÎÞ·¨¹¥»÷¡£" />
 
 	<string
 		id="HELP_ID_WEAPON_title"
-		value="Weapons" />
+		value="ÎäÆ÷" />
 
 	<string
 		id="HELP_ID_FADING_MESSAGES"
-		value="Common messages are displayed here." />
+		value="ÆÕÍ¨ÏûÏ¢ÏÔÊ¾ÔÚÕâÀï¡£" />
 
 	<string
 		id="HELP_ID_FADING_MESSAGES_title"
-		value="Messages" />
+		value="ÏûÏ¢" />
 
 	<string
 		id="HELP_ID_IMPORTANT_FADING_MESSAGES"
-		value="Important messages, concerning missions’ completion are displayed here." />
+		value="¹ØÓÚÈÎÎñÍê³ÉµÄÖØÒªÏûÏ¢ÏÔÊ¾ÔÚÕâÀï¡£" />
 
 	<string
 		id="HELP_ID_IMPORTANT_FADING_MESSAGES_title"
-		value="Important messages" />
+		value="ÖØÒªÏûÏ¢" />
 
 	<string
 		id="HELP_ID_TARGET_INFO"
-		value="In the very center of the screen is the reticle that will assist you in aiming. When you point it at the enemy, you will see its health to the right, armor to the left and its name and faction on top." />
+		value="ÆÁÄ»ÕýÖÐÑëÊÇ°ïÖúÄãÃé×¼µÄ×¼ÐÇ¡£½«ÆäÖ¸ÏòµÐÈËÊ±£¬ÓÒ²àÏÔÊ¾ÆäÉúÃüÖµ£¬×ó²àÏÔÊ¾Æä×°¼×£¬ÉÏ·½ÏÔÊ¾ÆäÃû³ÆºÍËùÊôÅÉÏµ¡£" />
 
 	<string
 		id="HELP_ID_TARGET_INFO_title"
-		value="Target information" />
+		value="Ä¿±êÐÅÏ¢" />
 
 	<string
 		id="HELP_ID_TARGET_CAPTURE"
-		value="Some missiles require time to lock on the enemy. In that case you will see the filling ring around the enemy. " />
+		value="Ä³Ð©µ¼µ¯ÐèÒªÊ±¼äËø¶¨µÐÈË¡£´ËÊ±Äã»á¿´µ½µÐÈËÖÜÎ§µÄÌî³äÔ²»·¡£" />
 
 	<string
 		id="HELP_ID_TARGET_CAPTURE_title"
-		value="Lock on target" />
+		value="Ëø¶¨Ä¿±ê" />
 
 	<string
 		id="HELP_ID_ACTION_ICONS"
-		value="When the Cargo icon appears, you may press I button to pick up the contents of the nearby crates.| When the Horn icon appears, you may press H button to enter the town. " />
+		value="µ±»õÎïÍ¼±ê³öÏÖÊ±£¬°´I¼ü¿ÉÒÔÊ°È¡¸½½üÏä×ÓµÄÄÚÈÝ¡£|µ±À®°ÈÍ¼±ê³öÏÖÊ±£¬°´H¼ü¿ÉÒÔ½øÈë³ÇÕò¡£" />
 
 	<string
 		id="HELP_ID_ACTION_ICONS_title"
-		value="Actions" />
+		value="ÐÐ¶¯" />
 
 	<string
 		id="HELP_ID_HOW_TO_USE_MAIN_GAME_INTERFACE_HELP"
-		value="Move the mouse cursor over the interface element’s name to see its description." />
+		value="½«Êó±ê¹â±êÒÆµ½½çÃæÔªËØÃû³ÆÉÏ¿É²é¿´ÆäËµÃ÷¡£" />
 
 	<string
 		id="HELP_ID_HOW_TO_USE_MAIN_GAME_INTERFACE_HELP_title"
-		value="Interface explanation." />
+		value="½çÃæËµÃ÷" />
 </resource>
