@@ -2,185 +2,185 @@
 <DialogsResource><!--Root-->
 	<Reply
 		name="Dynamic00"
-		text="Hello, traveler!"
+		text="你好，旅行者！"
 		role="NPC"
 		scriptResult="ConversationWnd:ShowDynamicQuestsMenu()"
 		nextReplies="EndDlg2 Dlg_pl_000020" />
 
 	<Reply
 		name="Dlg_pl_000020"
-		text="Sorry, I came to the wrong place."
+		text="抱歉，我找错地方了。"
 		role="PLAYER"
 		scriptCondition="GetCurNpc():HasNotTakenDynamicQuests()"
 		scriptResult="ConversationWnd:EndConversation()" />
 
 	<Reply
 		name="Dynamic00_plYes0"
-		text="I agree!"
+		text="我同意！"
 		role="PLAYER"
 		scriptResult="ConversationWnd:GetCurrentDynamicQuest():Take(); ConversationWnd:EndConversation()" />
 
 	<Reply
 		name="Dynamic00_plNo0"
-		text="I'd rather not."
+		text="还是算了。"
 		role="PLAYER"
 		scriptResult="ConversationWnd:EndConversation()" />
 
 	<Reply
 		name="Dynamic00_Destroy00"
-		text="Do you have any work for me to do?"
+		text="你有工作给我做吗？"
 		role="PLAYER"
 		nextReplies="Dynamic00_Destroy00_npc0" />
 
 	<Reply
 		name="Dynamic00_Destroy00_npc0"
-		text="A thief that was caught several times started his illicit activity once again. Probably, the only way to make him stop stealing is to kill him. Help us and we'll reward you with %3d coins."
+		text="一个多次被抓的小偷又开始作案了。也许让他停手的唯一办法就是杀了他。帮我们这个忙，我们会给你 %3d 金币的酬劳。"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 
 	<Reply
 		name="Dynamic00_Destroy01"
-		text="Do you have any work for me to do?"
+		text="你有工作给我做吗？"
 		role="PLAYER"
 		nextReplies="Dynamic00_Destroy01_npc0" />
 
 	<Reply
 		name="Dynamic00_Destroy01_npc0"
-		text="We noticed somebody burning our crops and poisoning wells. Kill the enemy saboteur to get %3d in reward."
+		text="我们发现有人在烧我们的庄稼、毒我们的水井。消灭敌方破坏者可获得 %3d 金币的酬劳。"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 
 	<Reply
 		name="Dynamic00_Destroy02"
-		text="Do you have any work for me to do?"
+		text="你有工作给我做吗？"
 		role="PLAYER"
 		nextReplies="Dynamic00_Destroy02_npc0" />
 
 	<Reply
 		name="Dynamic00_Destroy02_npc0"
-		text="Some crazy murderer is haunting our lands. Get us rid of his foul presence and receive %3d coins in reward."
+		text="一个疯狂的杀人狂在我们的土地上出没。替我们除掉这个恶人可获得 %3d 金币的酬劳。"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 
 	<Reply
 		name="Dynamic00_Reach00"
-		text="Do you have any work for me to do?"
+		text="你有工作给我做吗？"
 		role="PLAYER"
 		nextReplies="Dynamic00_Reach00_npc0" />
 
 	<Reply
 		name="Dynamic00_Reach00_npc0"
-		text="We collected several pieces of precious machinery. Deliver them to %2n. Local technicians will pay %3d coins for your work."
+		text="我们收集了几件珍贵的机械。请把它们送到 %2n。当地技师会付你 %3d 金币的酬劳。"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 
 	<Reply
 		name="Dynamic00_Reach01"
-		text="Do you have any work for me to do?"
+		text="你有工作给我做吗？"
 		role="PLAYER"
 		nextReplies="Dynamic00_Reach01_npc0" />
 
 	<Reply
 		name="Dynamic00_Reach01_npc0"
-		text="Please deliver this package to %2n. It is a sign of our respect to its people. They will gladly pay you %3d coins for your services."
+		text="请将这个包裹送到 %2n。这是我们对其人民的敬意。他们会很乐意付你 %3d 金币的酬劳。"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 
 	<Reply
 		name="Dynamic00_Convoy00"
-		text="Do you have any work for me to do?"
+		text="你有工作给我做吗？"
 		role="PLAYER"
 		nextReplies="Dynamic00_Convoy00_npc0" />
 
 	<Reply
 		name="Dynamic00_Convoy00_npc0"
-		text="It is dangerous to travel alone. A friend of mine really needs to go to %2n. Make sure he reaches it safely and you'll get %3d coins."
+		text="独自旅行很危险。我的一个朋友非常需要去 %2n。确保他安全抵达，你将得到 %3d 金币。"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 
 	<Reply
 		name="Dynamic00_Convoy01"
-		text="Do you have any work for me to do?"
+		text="你有工作给我做吗？"
 		role="PLAYER"
 		nextReplies="Dynamic00_Convoy01_npc0" />
 
 	<Reply
 		name="Dynamic00_Convoy01_npc0"
-		text="Some local guy is establishing a trade route with %2n. Rivals want to spoil his plan. Help him to get to his destination safely and %3d coins are yours."
+		text="有个本地人正在和 %2n 建立商路。对手想破坏他的计划。帮他安全抵达目的地，%3d 金币就是你的了。"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 
 	<Reply
 		name="EndDlg1"
-		text="Do you have any work for me to do?"
+		text="你有工作给我做吗？"
 		role="PLAYER"
 		scriptResult="ConversationWnd:EndConversation()"
 		nextReplies="Dlg_npc_000017" />
 
 	<Reply
 		name="EndDlg2"
-		text="Any news?"
+		text="有什么消息吗？"
 		role="PLAYER"
 		scriptCondition="not GetCurNpc():HasNotTakenDynamicQuests()"
 		nextReplies="Dlg_npc_000017" />
 
 	<Reply
 		name="Dlg_npc_000017"
-		text="Can you believe it, everything is OK! So your services are not needed at the moment."
+		text="你敢信吗，一切太平！所以暂时不需要你的服务。"
 		role="NPC"
 		nextReplies="Dlg_pl_000018" />
 
 	<Reply
 		name="Dlg_pl_000018"
-		text="It's a pity. Well, I'll come again later"
+		text="真遗憾。那我下次再来吧"
 		role="PLAYER"
 		scriptResult="ConversationWnd:EndConversation()" />
 
 	<Reply
 		name="Dynamic00_Peace00"
-		text="I've got a problem: I fell out with %2b group..."
+		text="我遇到麻烦了：我和 %2b 派系闹翻了……"
 		role="PLAYER"
 		nextReplies="Dynamic00_Peace00_npc0" />
 
 	<Reply
 		name="Dynamic00_Peace00_npc0"
-		text="You did a hard job making %2b hate you! I have a couple of acquaintances among them so I may be able to improve your reputation a bit for mere %3d percent of your money."
+		text="你真有本事让 %2b 恨你！我在他们中间有几个熟人，也许能帮你改善一点声誉，只需你 %3d 百分比的金币。"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 
 	<Reply
 		name="Dynamic00_Peace01"
-		text="I need your help. We've got some irresolvable issues with %2b and now..."
+		text="我需要你的帮助。我们和 %2b 有了一些无法解决的问题，现在……"
 		role="PLAYER"
 		nextReplies="Dynamic00_Peace01_npc0" />
 
 	<Reply
 		name="Dynamic00_Peace01_npc0"
-		text="As much as I know, %2b treat you like a maggot. If you pay me %3d percent of your money, I can help you to regain some respect among them."
+		text="据我所知，%2b 把你当蛆虫看。如果你付给我 %3d 百分比的金币，我可以帮你在他们中间恢复一些尊重。"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 
 	<Reply
 		name="Dynamic00_Hunt00"
-		text="Do you have any work for me to do?"
+		text="你有工作给我做吗？"
 		role="PLAYER"
 		nextReplies="Dynamic00_Hunt00_npc0" />
 
 	<Reply
 		name="Dynamic00_Hunt00_npc0"
-		text="The Hunting season is open. The more enemies you kill, the more money you get. We pay %3d coins for every cold body. You抣l get your reward when the hunt time is over."
+		text="狩猎季开始了。杀敌越多，挣钱越多。每具尸体我们付 %3d 金币。狩猎时间结束后你可以领取酬劳。"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 
 	<Reply
 		name="Dynamic00_Hunt01"
-		text="Do you have any work for me to do?"
+		text="你有工作给我做吗？"
 		role="PLAYER"
 		nextReplies="Dynamic00_Hunt01_npc0" />
 
 	<Reply
 		name="Dynamic00_Hunt01_npc0"
-		text="The bandits really pissed us off! They attack every single car they see. Someone have to teach them a lesson. Shot a couple of them while the people are still angry and you'll get %3d coins for every cold body. "
+		text="匪徒真把我们惹火了！他们见车就抢。得有人教训他们一下。趁着人们还怒火中烧时干掉几个，每具尸体你可得 %3d 金币。"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 </DialogsResource>

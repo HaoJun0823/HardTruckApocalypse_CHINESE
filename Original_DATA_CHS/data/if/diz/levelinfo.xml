@@ -3,7 +3,7 @@
 	<LevelInfo
 		name="mainmenu"
 		file="data\maps\mainmenu.ssl"
-		fullName="Hel"
+		fullName="ºÕ¶û"
 		diz0=""
 		diz1=""
 		image0="data\if\map\r1m4.dds"
@@ -14,7 +14,7 @@
 	<LevelInfo
 		name="t"
 		file="data\maps\t.ssl"
-		fullName="Krai1"
+		fullName="¿ËÀ³"
 		diz0=""
 		diz1=""
 		image0="data\if\map\r1m1.dds"
@@ -25,7 +25,7 @@
 	<LevelInfo
 		name="r1m1"
 		file="data\maps\r1m1.ssl"
-		fullName="Krai"
+		fullName="¿ËÀ³"
 		diz0=""
 		diz1=""
 		north="0 0 1"
@@ -37,7 +37,7 @@
 	<LevelInfo
 		name="r1m2"
 		file="data\maps\r1m2.ssl"
-		fullName="Ridzin"
+		fullName="Àï½ò"
 		diz0=""
 		diz1=""
 		image0="data\if\map\r1m2.dds"
@@ -48,7 +48,7 @@
 	<LevelInfo
 		name="r1m3"
 		file="data\maps\r1m3.ssl"
-		fullName="Vaterland"
+		fullName="ÍßÌØÀ¼"
 		diz0=""
 		diz1=""
 		north="0 0 1"
@@ -60,7 +60,7 @@
 	<LevelInfo
 		name="r1m4"
 		file="data\maps\r1m4.ssl"
-		fullName="Hel"
+		fullName="ºÕ¶û"
 		diz0=""
 		diz1=""
 		north="0 0 1"
@@ -72,7 +72,7 @@
 	<LevelInfo
 		name="r2m1"
 		file="data\maps\r2m1.ssl"
-		fullName="Librium"
+		fullName="Àû²¼ÀïÄ·"
 		diz0=""
 		diz1=""
 		north="0 0 1"
@@ -84,7 +84,7 @@
 	<LevelInfo
 		name="r2m2"
 		file="data\maps\r2m2.ssl"
-		fullName="Argen"
+		fullName="°¢¶û¸ù"
 		diz0=""
 		diz1=""
 		north="0 0 1"
@@ -96,7 +96,7 @@
 	<LevelInfo
 		name="r3m1"
 		file="data\maps\r3m1.ssl"
-		fullName="Sacred Grove"
+		fullName="Ê¥ÁÖ"
 		diz0=""
 		diz1=""
 		north="0 0 1"
@@ -108,7 +108,7 @@
 	<LevelInfo
 		name="r3m2"
 		file="data\maps\r3m2.ssl"
-		fullName="Ignott"
+		fullName="ÒÁ¸ñÅµÌØ"
 		diz0=""
 		diz1=""
 		north="0 0 1"
@@ -120,7 +120,7 @@
 	<LevelInfo
 		name="r4m1"
 		file="data\maps\r4m1.ssl"
-		fullName="Vahat"
+		fullName="Íß¹þÌØ"
 		diz0=""
 		diz1=""
 		north="0 0 1"
@@ -132,7 +132,7 @@
 	<LevelInfo
 		name="r4m2"
 		file="data\maps\r4m2.ssl"
-		fullName="Zarmek"
+		fullName="Ôú¶ûÃ·¿Ë"
 		diz0=""
 		diz1=""
 		north="0 0 1"
