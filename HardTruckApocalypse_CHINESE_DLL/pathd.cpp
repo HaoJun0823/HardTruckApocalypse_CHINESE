@@ -1,53 +1,67 @@
-﻿// pathd.cpp —— 路径 D：把字形索引拓宽到 16 位，支持 65536 个字形
+// pathd.cpp —— 路径 D：让单字节渲染引擎显示 GBK 双字节汉字
 //
 // ═══════════════════════════════════════════════════════════════════════════
-// 为什么必须这么做（一句话）
+// 为什么必须这么做
 // ═══════════════════════════════════════════════════════════════════════════
-// 引擎字形表 Font+0x40 是 **256 项、按单字节索引**：
-//     0x6865A9  0F B6 EB    movzx ebp, bl      ; ★ 单字节
+// 引擎字形表 Font+0x40 是 256 项、按**单字节**索引：
+//     0x6865A9  0F B6 EB    movzx ebp, bl      ; ★ 只读 1 字节
 //     0x6865AC  03 ED       add ebp, ebp
 //     0x6865AE  03 ED       add ebp, ebp       ; ×4
 //     0x6865B0  8B 04 2A    mov eax, [edx+ebp]
 // 扣掉 ASCII/标点/西里尔，能腾给汉字的只有约 72 个 —— 完整汉化需要上千个。
 //
-// 参考项目 MajestyIIExtend 能支持 24163 个字形，是因为**它的引擎有独立的
-// 「字节流→槽号」映射函数**，槽号本来就是完整整数。本引擎没有这个函数，
-// 查表内联在绘制循环里，所以必须改循环本身。
+// ═══════════════════════════════════════════════════════════════════════════
+// ★★★ 索引字节序（历史 bug 的根源，改动前务必先读这段）★★★
+// ═══════════════════════════════════════════════════════════════════════════
+//     ASCII/拉丁  单字节 c          -> 索引 = c              (0x0000..0x00FF)
+//     汉字        GBK 双字节 b1 b2  -> 索引 = (b1<<8)|b2      (0x8140..0xFEFE)
+//
+//   注意是 **(b1<<8)|b2**，也就是 **GBK 原值本身**，不是 b1|(b2<<8)。
+//   两者差一次字节序颠倒，FillCjk 和 P4 必须与之一致，否则整屏错字。
+//
+//   幸运的巧合：b1 天然落在 0x81..0xFE，**永远不会**是 0x23/0x24/0x26/0x40/0x7C
+//   这些被绘制路径劫持的转义字节，所以双字节序列不会被误判为转义。
 //
 // ═══════════════════════════════════════════════════════════════════════════
-// 编码设计（变长 DBCS，保持 ASCII 单字节）
+// 实际采用的架构（⚠ 与早期设计文档不同，别照那份改）
 // ═══════════════════════════════════════════════════════════════════════════
-//     ASCII/拉丁  单字节 c          -> 索引 = c            (0x0000..0x00FF)
-//     汉字        GBK 双字节 b1 b2  -> 索引 = b1|(b2<<8)   (0x4081..0xFEFE)
-//
-// 内存小端：movzx reg, word ptr [p] 得到 p[0] | (p[1]<<8)
-// 而 p[0]=b1（0x81..0xFE）、p[1]=b2（0x40..0xFE）=> 索引 = b1 | (b2<<8)。
-// 两组索引不重叠：前 256 项沿用现有 Latin/西里尔字形，0x100 以上放汉字。
-//
-// 幸运的巧合：b1 天然落在 0x81..0xFE，**永远不会**是 0x23/0x24/0x26/0x40/0x7C
-// 这些被绘制路径劫持的转义字节，所以双字节序列不会被误判为转义。
+//   早期设想是「原地把 movzx 改成读 16 位」（P1/P4 十字节内联编码），
+//   实际落地的是 **call 注入 + naked 助手**，原因见下面三条硬约束：
+//     1. 补丁点只有 9~18 字节，放不下完整的双字节判定；
+//     2. 需要按 Font* 选表（见「每字体独立表」），而 Font* 只在栈上；
+//     3. 引擎要求「除 eax/ecx/ebp 外寄存器原样保留」，C++ 助手做不到。
 //
 // ═══════════════════════════════════════════════════════════════════════════
-// 补丁点（已用 IDA 逐字节核实，hta.exe）
+// 每字体独立汉字表（修复「所有字号互相覆写」）
 // ═══════════════════════════════════════════════════════════════════════════
-//   sub_685CA0 文本绘制：
-//     P1 0x6861EA  预扫索引  0F B6 0C 17        -> 0F B7 0C 17（等长 4 字节）
-//     P2 0x68620D  预扫遍历  83 C7 01 EB B5     -> E8 rel32（5 字节，call 助手）
-//     P3 0x686221  预扫遍历  83 C7 01 EB A1     -> E8 rel32
-//     P4 0x6865A9  主查表    0F B6 EB 03 ED 03 ED 8B 04 2A (10 字节)
-//                                             -> 0F B7 2C 06 C1 E5 02 8B 04 2A
-//     P5 0x686A55  主遍历    83 C6 01 83 C7 01  -> E8 rel32 + 90
+//   旧实现所有字号共用一张 64K 表，而 SetupThread 是按字号依次填充的，
+//   后填的字号会覆盖先填的 —— 每个汉字都拿到**别的字号**的字形，
+//   于是 pxW/pxH/advance 全错。
+//   改为 g_cjkSlots[]（最多 16 槽，每槽 64K 项）懒分配，一字体一表。
+//
+// ═══════════════════════════════════════════════════════════════════════════
+// 补丁点（IDA 逐字节核实，hta.exe；运行时不改 exe 文件）
+// ═══════════════════════════════════════════════════════════════════════════
+//   sub_685CA0 文本绘制（0x685CA0..0x686B07）：
+//     P4  0x6865A6  18 字节  主查表   原 8B 57 40 0F B6 EB 03 ED 03 ED 8B 04 2A 85 C0 8D 0C 2A
+//     P4b 0x686A26  10 字节  第二处查表（原 8B 44 24 34 8B 48 40 8B 04 29）
+//     P5  0x686A52   9 字节  主遍历   原 0F 57 C0 83 C6 01 83 C7 01
+//   另有 4 处跳转目标需同步重定位 0x686A55 -> 0x686A52：
+//     0x6864ED / 0x686507 / 0x68658B / 0x68659C
+//   sub_685CA0 预扫循环（P2/P3）：
+//     0x68620D / 0x686221  各 5 字节，call 条件推进助手
 //   sub_685990 文本度量：
-//     P7 0x685BD1  遍历      83 C7 01           -> E8 rel32 + 90
-//   取字函数：
-//     P8 0x66FEA0  推进量    0F B6 44 24 04     -> 8B 44 24 04（等长）
-//     P9 0x66FE10  UV        0F B6 44 24 08     -> 8B 44 24 08（等长）
-//   P6（度量里把当前字符存进参数槽）在运行时按特征码定位后处理，见 ApplyMeasureArg()。
+//     P7 0x0044ED34  ★ 故意不补丁 ★（3 字节放不下条件判断，硬补会破坏 ASCII）
 //
-// 绘制函数的寄存器角色（反编译确认）：
-//     eax = 串基址(v54)，esi = 下标(v55)，edi = 并行计数器(v57)
-//     循环条件 cmp esi,[esp+6Ch]，该栈槽 = strlen（不是结束指针）
-//     末尾 mov eax,[esp+54h] 会重新装载串基址 => P4 覆盖 eax 是安全的
+// ═══════════════════════════════════════════════════════════════════════════
+// ★★★ 引擎契约（P4/P4b/P5 全部适用，违反即崩）★★★
+// ═══════════════════════════════════════════════════════════════════════════
+//   · 除 eax / ecx / ebp 外，**所有寄存器必须原样保留**。
+//     bl 只是 ebx 的低字节 —— 任何 C++ 函数都可能改写它。
+//   · **绝不在这些助手里用 call 调 C++**：实测一次 call 就让全部文字消失。
+//   · ebp 出口 = 索引*4；ecx = 槽地址；成功时 edx = 字体表。
+//   · 栈偏移一律读 ModRM/SIB 的 disp 字节；IDA 的 stack_frame 表不可信。
+//     经验公式：call-entered helper 实际位移 = 引擎偏移 + 4 + 4*pushes。
 // ═══════════════════════════════════════════════════════════════════════════
 
 #include "pch.h"
@@ -65,8 +79,9 @@ extern "C" void* PathD_PrepassTopB = nullptr;   // P3 预扫分支的循环头
 //   为什么不用字体自己的表：字体表只有 256 项，而 16 位索引会越过它读到
 //   未初始化内存（实测取到 0x1C，随后解引用崩溃）。而且字体何时构造、
 //   表何时扩容都不在我们控制内（首帧绘制就早于字体创建）。
-//   自己持表后，索引 >=256 一律查这里，天然不越界。
-extern "C" uint32_t* g_cjkTable = nullptr;
+// ★★★ 汉字表在下面 g_cjkSlots[] 里按字体懒分配。
+//   这里原本还有一张全局共享的 g_cjkTable，已删除：SetupThread 按字号依次
+//   填充，后填的字号会覆盖先填的，所有汉字都拿到错误尺寸的字形。
 
 // ★★★ 就绪开关：装配完成前，所有查表助手一律返回 NULL ★★★
 //
@@ -150,7 +165,6 @@ extern "C" void __cdecl PathD_GlyphLookup2();
 //     MSVC 14.51 两种都拒绝，只有省略 __cdecl 才通过。）
 extern "C" uint32_t* PathD_CjkTableFor(void* font);
 extern "C" uint32_t* g_lastFontTable = nullptr;   // 助手1 记下的字体表基址
-extern "C" uint32_t  g_badTableCount = 0;         // 表地址体检失败的计数（诊断用）
 
 // ★★★ P4 → P4b 的字形传递（带字符校验）★★★
 //   P4（每轮迭代的取字处）把查到的字形存进 g_curGlyph，同时把**当前字符**
@@ -592,10 +606,10 @@ static bool LoadPackage(const char* path) {
 // ═══════════════════════════════════════════════════════════════════════════
 static const int kGlyphSize = 48;
 
-// 分配一个 glyph（用引擎的堆，和 sub_8B80B0 里 alloc 的走同一条路）
-typedef void* (__thiscall *AllocFn)(int size, int a2, int a3);
-static AllocFn g_engineAlloc = nullptr;
-
+// 分配一个 glyph
+// ★ 原先这里试图复用引擎分配器（g_engineAlloc / DetectEngineAlloc），
+//   但特征码匹配到的是数据段而非代码，且结果无人使用，已删除。
+//   改为自建池：Predictable、可控、不依赖对引擎内部的猜测。
 static void* AllocGlyph() {
     // 原来用 *(mgr+0x18) 当分配器 —— 实测那个地址里是 0x11ABECB4（数据段），
     // 不是代码指针，说明特征码匹配到了别处。改为自建池，不再猜引擎内部结构。
@@ -632,27 +646,6 @@ static void* AllocGlyph() {
     return p;
 }
 
-// 找引擎的分配器：sub_8B80B0 里申请字形结构的写法是
-//     mov eax, ds:dword_A0A88C ; call dword ptr [eax+18h] ; push eax
-// 即 A1 ?? ?? ?? ?? FF 50 18。扫出 dword_A0A88C，再取 [+24] 作为分配函数。
-static void DetectEngineAlloc() {
-    uintptr_t hit = pattern::ScanModule((HMODULE)g_modBase, "A1 ?? ?? ?? ?? FF 50 18");
-    if (!hit) { Logf("pathd: [警告] 未找到引擎分配器特征码（A1 ?? ?? ?? ?? FF 50 18）"); return; }
-    uint32_t mgr = *(uint32_t*)(hit + 1);
-    Logf("pathd: 内存管理器全局 = 0x%08X (在 0x%08X 处引用)", mgr, (unsigned)hit);
-    __try {
-        // heapBlock 结构：+0x18 分配、+0x20 释放（由 sub_406F50 的 free 调用确认）
-        void* fn = *(void**)(mgr + 24);
-        if (fn) {
-            g_engineAlloc = (AllocFn)fn;
-            Logf("pathd: 引擎分配器 = 0x%08X (mgr+0x18)", (unsigned)fn);
-        } else {
-            Logf("pathd: [警告] mgr+0x18 为空");
-        }
-    } __except (EXCEPTION_EXECUTE_HANDLER) {
-        Logf("pathd: [警告] 读内存管理器异常 0x%08X", (unsigned)GetExceptionCode());
-    }
-}
 
 static void FillGlyph(void* g, uint16_t gbk, int page,
                       float u0, float v0, float u1, float v1,
@@ -737,8 +730,6 @@ extern "C" uint32_t* PathD_CjkTableFor(void* font) {
     return g_cjkSlots[i].table;
 }
 
-// 收集到的 CJK 图集页 texId（所有页，按顺序）
-static std::vector<uint32_t> g_cjkPages;
 // 记录哪些 Font 已经处理过，避免重复
 static std::vector<void*>    g_doneFonts;
 
@@ -955,97 +946,6 @@ static int FillCjk(void* font, float h, int basePage) {
     return n;
 }
 
-// ═══════════════════════════════════════════════════════════════════════════
-// 4) Font::CreateFromXmlNode 钩子
-//
-//    ★★★ 三次尝试的实测结论（别再改回前两种写法）★★★
-//
-//    原函数序言（IDA 实证，sub_8B80B0）：
-//        0x8B80B0  sub  esp, 0F8h
-//        0x8B80B6  push ebx / push ebp / push esi
-//        0x8B80B9  mov  ebp, ecx          ← this 进 ebp
-//        0x8B80BB  call sub_8B67A0
-//        0x8B80C0  mov  esi, [esp+104h+arg_4]
-//
-//    IDA 标的 `__userpurge(a1@<ecx>, a2@<edi>)` 里「第二参数在 edi」
-//    是**反编译器的推测** —— 序言从头到尾没碰过 edi。
-//    引擎真正的约定是 **this=ecx，其余参数全在栈上**。
-//
-//    失败记录：
-//      1. `__fastcall (self, edx)` → __fastcall 要求返回前 edx 写回 edi，
-//         原函数不用 edi，于是 detour 一返回就改了引擎寄存器 → 崩。
-//      2. `__cdecl (self, edx)`    → 编译器调 trampoline 时又压一个参数，
-//         序言 `mov esi,[esp+104h+arg_4]` 读到错位栈 → 启动即退。
-//      3. ★naked + 整段栈搬运★    → 唯一保证栈帧逐字节一致的做法。
-//
-//    栈布局（detour 入口）：
-//        [esp+0]  = 引擎的返回地址
-//        [esp+0]  = 引擎压入的最后一个参数（__thiscall 风格，3 个）
-//        [esp+8]  , [esp+12] = 前两个
-//        ecx      = Font*（this）
-//
-//    做法：把「返回地址 + 3 个参数」原样重铺一份，用 `call` 调 trampoline，
-//    trampoline 里的 `ret` 正好弹掉我们给的那个地址，
-//    于是执行流回到 trampolineEnd —— 此时栈已与调用 trampoline 前完全一致。
-// ═══════════════════════════════════════════════════════════════════════════
-typedef int (__cdecl *LoadXmlFn)();          // 不声明参数：调用点自己搬栈
-static LoadXmlFn g_trampLoadXml = nullptr;
-static uintptr_t g_loadXmlTarget = 0;
-static volatile LONG g_loadXmlCalls = 0;
-
-extern "C" uint32_t g_curFontSelf = 0;        // 引擎当前正在创建的 Font*
-extern "C" void __cdecl PathD_AfterLoadXml(void* self);
-
-// trampoline 返回之后的落点。
-// 此刻栈：**已经**被 trampoline 的 ret 恢复到「刚 call 之前」的状态，
-// 也就是 [esp+0]=引擎返回地址 / [esp+4..12]=引擎的 3 个参数，与 detour 入口一致。
-extern "C" __declspec(naked) void PathD_TrampolineEnd() {
-    __asm {
-        // eax = 引擎返回值，先留着不动（后面要返回给引擎）
-        push    eax
-        push    dword ptr [g_curFontSelf]   // 把 this（入口时存的）传进去
-        call    PathD_AfterLoadXml
-        add     esp, 4
-        ret                               // ★ 回到引擎 ★
-    }
-}
-
-// detour 本体。
-//
-// ★★ 关键：push 会改变 esp，所以**必须先把三个参数读进寄存器再压**。
-//   否则 `push dword ptr [esp+12]` 读到的是被前一次 push 挪过的位置。
-extern "C" __declspec(naked) int PathD_LoadXmlTramp() {
-    __asm {
-        mov     dword ptr [g_curFontSelf], ecx   // ★ 先把 this 存起来 ★
-
-        mov     eax, [esp+12]        // 参数 3（最左）
-        mov     ebx, [esp+8]         // 参数 2
-        mov     edx, [esp+0]         // 参数 1（最后压的）
-
-        push    offset PathD_TrampolineEnd    // trampoline 的返回地址
-        push    edx                  // 参数 1
-        push    ebx                  // 参数 2
-        push    eax                  // 参数 3
-        call    g_trampLoadXml       // ★ 栈帧与「引擎直接调它」逐字节一致 ★
-
-        add     esp, 12              // 平衡我们自己压的 3 个参数
-        ret                           // ★ 回到引擎 ★
-    }
-}
-
-// trampoline 返回之后调用：记录这个 Font。
-// ★ 必须在此时才读 height：引擎返回时 Font+0x18 才是最终字号；
-//   在 hook 入口读只能拿到构造函数留下的 0.0。
-extern "C" void __cdecl PathD_AfterLoadXml(void* self) {
-    LONG n = InterlockedIncrement(&g_loadXmlCalls);
-    if (!self || n > 64) return;
-    float h = FontHeight(self);
-    EnterCriticalSection(&g_cs);
-    FontRec rec; rec.font = self; rec.height = h;
-    g_fonts.push_back(rec);
-    LeaveCriticalSection(&g_cs);
-    Logf("pathd: 捕获 Font #%ld  this=0x%08X  height=%.3f", n, (unsigned)self, h);
-}
 
 // ═══════════════════════════════════════════════════════════════════════════
 // 5) 后台线程：等字体管理器就绪 -> 枚举字体 -> 收集 CJK 页 -> 挂页+填字
@@ -1697,8 +1597,6 @@ bool Init(HMODULE game, const char* pkgPath) {
              g_fontMgr, 0x400000u + RVA_EngineCore, (void*)*slot, base);
     }
 
-    DetectEngineAlloc();
-
     // ── 每字体的汉字字形表：改成**懒分配** ──────────────────────────
     //   旧实现在这里一张性分配 256KB 的共享 g_cjkTable；现在每张表都是
     //   256KB × 槽数（最多 16 槽 = 4MB），不能预先全部分配 ——
@@ -1761,7 +1659,6 @@ bool Init(HMODULE game, const char* pkgPath) {
 }
 
 bool IsEnabled() { return g_enabled; }
-int  CjkPageCount() { return (int)g_cjkPages.size(); }
 
 // —— 绘制期字体登记（P4 在热路径上调用）——
 //   只做一次线性去重扫描 + 一次 InterlockedIncrement，

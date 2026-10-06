@@ -1,4 +1,4 @@
-﻿// plugin.h —— Hard Truck Apocalypse / Rise of Clans 中文字体插件
+// plugin.h —— Hard Truck Apocalypse / Rise of Clans 中文字体插件
 //
 // 目标：在不修改 hta.exe / Meridian113.exe 的前提下，让引擎显示 GBK 双字节中文。
 //
@@ -248,7 +248,6 @@ namespace pathd {
 bool Init(HMODULE game, const char* pkgPath);
 
 bool IsEnabled();
-int  CjkPageCount();
 
 } // namespace pathd
 
