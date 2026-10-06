@@ -9,13 +9,13 @@
 	<string
 		id="201"
 		modelName="NewHero_mask"
-		value="瓦根特|  Wiseguy说得没错，让他化油器堵死去吧！这个什么'图书馆'守卫得可真够严实。不过没关系，比这难啃的地方我们都拿下来过！"
+		value="瓦根特|  万事通说得没错，让他化油器堵死去吧！这个什么'图书馆'守卫得可真够严实。不过没关系，比这难啃的地方我们都拿下来过！"
 		sound="data\sounds\Speech\r5m1\r5m1_201_nomad.ogg"
 		time="11" />
 	<string
 		id="401"
 		modelName="NewHero_mask"
-		value="瓦根特|  好啊！你就是人们叫作Wiseguy的那家伙？"
+		value="瓦根特|  好啊！你就是人们叫作万事通的那家伙？"
 		sound="data\sounds\Speech\r5m1\r5m1_401_nomad.ogg"
 		time="4" />
 
@@ -75,7 +75,7 @@
 	<string
 		id="409"
 		modelName="NewHero_mask"
-		value="瓦根特|  我拿消声器发誓！你这松口松得也太快了吧。我看人们叫你Wiseguy，总该有点道理吧？说吧，你忘了提醒我什么？"
+		value="瓦根特|  我拿消声器发誓！你这松口松得也太快了吧。我看人们叫你万事通，总该有点道理吧？说吧，你忘了提醒我什么？"
 		sound="data\sounds\Speech\r5m1\r5m1_409_nomad.ogg"
 		time="11" />
 
@@ -141,14 +141,14 @@
 		id="603"
 		modelName="Sam_mask"
 		modelSlot="1"
-		value="萨姆|  你闯进了我的图书馆。还敢动Wiseguy。Wiseguy也是我的财产！"
+		value="萨姆|  你闯进了我的图书馆。还敢动万事通。万事通也是我的财产！"
 		sound="data\sounds\Speech\r5m1\r5m1_603_sam.ogg"
 		time="12" />
 
 	<string
 		id="604"
 		modelName="NewHero_mask"
-		value="瓦根特|   让我的化油器堵死去吧！我怎么没在Wiseguy身上和图书馆里看到任何'萨姆产业'的牌子。"
+		value="瓦根特|   让我的化油器堵死去吧！我怎么没在万事通身上和图书馆里看到任何'萨姆产业'的牌子。"
 		sound="data\sounds\Speech\r5m1\r5m1_604_nomad.ogg"
 		time="7" />
 

@@ -78,7 +78,7 @@
 
 	<Reply
 		name="r4m2_Bar_Scientist_1_N06"
-		text="我必须找到Ivan Go。我走了这么远的路——现在不会停下来。"
+		text="我必须找到伊万·戈。我走了这么远的路——现在不会停下来。"
 		role="PLAYER"
 		nextReplies="r4m2_Bar_Scientist_1_N07" />
 
@@ -90,7 +90,7 @@
 
 	<Reply
 		name="r4m2_Bar_Scientist_1_N08"
-		text="Ivan死了吗？"
+		text="伊万死了吗？"
 		role="PLAYER"
 		nextReplies="r4m2_Bar_Scientist_1_N09" />
 
@@ -275,13 +275,13 @@
 
 	<Reply
 		name="r4m2_Bar_Scientist_2_N21a"
-		text="Ivan Go曾说过天空中有奇怪的光。当他看到飞船时并不怎么惊讶。他可能早就见过了。"
+		text="伊万·戈曾说过天空中有奇怪的光。当他看到飞船时并不怎么惊讶。他可能早就见过了。"
 		role="NPC"
 		nextReplies="r4m2_Bar_Scientist_2_N22a" />
 
 	<Reply
 		name="r4m2_Bar_Scientist_2_N22a"
-		text="他的朋友Ben Throttle可能知道些什么。我必须和他谈谈。"
+		text="他的朋友本·斯罗特尔可能知道些什么。我必须和他谈谈。"
 		role="PLAYER"
 		nextReplies="r4m2_Bar_Scientist_2_N23a" />
 
@@ -709,7 +709,7 @@
 
 	<Reply
 		name="Kef_Bar_Customer1_1_N02"
-		text="你好。几年前有个叫Ivan的人经过这里。他没有回来，我需要找到他。这里有人能帮我吗？"
+		text="你好。几年前有个叫伊万的人经过这里。他没有回来，我需要找到他。这里有人能帮我吗？"
 		role="PLAYER"
 		nextReplies="Kef_Bar_Customer1_1_N03" />
 
@@ -1148,7 +1148,7 @@
 
 	<Reply
 		name="r4_Dlg_pl_000087"
-		text="在你告诉我你所知道的关于Ivan的一切之前，我不会让你死！"
+		text="在你告诉我你所知道的关于伊万的一切之前，我不会让你死！"
 		role="PLAYER"
 		nextReplies="r4_Dlg_npc_000088" />
 
@@ -1500,7 +1500,7 @@
 
 	<Reply
 		name="r3m2_Oracle_Oracle_2_P041"
-		text="我父亲叫Ivan Go，是一名探险家。几年前他凭空消失，我被他的朋友收养。几个月前我的村庄被烧毁。无人幸存……"
+		text="我父亲叫伊万·戈，是一名探险家。几年前他凭空消失，我被他的朋友收养。几个月前我的村庄被烧毁。无人幸存……"
 		role="PLAYER"
 		scriptCondition="QuestStatus('r3m1_FindNative_2')==Q_COMPLETED"
 		nextReplies="r3m2_Oracle_Oracle_2_N051" />
@@ -1519,7 +1519,7 @@
 
 	<Reply
 		name="r3m2_Oracle_Oracle_2_N071"
-		text="明白了。我不知道Ivan Go的下落。很抱歉你白跑了一趟，朝圣者。再见。"
+		text="明白了。我不知道伊万·戈的下落。很抱歉你白跑了一趟，朝圣者。再见。"
 		role="NPC"
 		nextReplies="r3m2_Oracle_Oracle_2_P081" />
 
@@ -1593,7 +1593,7 @@
 
 	<Reply
 		name="r3m2_Oracle_Oracle_4_N031"
-		text="确实。光盘真的是Ivan Go的。那是一本日记，包含大量关于我们世界的信息。"
+		text="确实。光盘真的是伊万·戈的。那是一本日记，包含大量关于我们世界的信息。"
 		role="NPC"
 		scriptCondition="QuestStatus('r3m1_FindNative_2')==Q_COMPLETED"
 		nextReplies="r3m2_Oracle_Oracle_4_N041" />
@@ -1642,7 +1642,7 @@
 
 	<Reply
 		name="r3m2_Oracle_Oracle_4_N111"
-		text="寻找就会找到。可能在Ivan的遗物中。"
+		text="寻找就会找到。可能在伊万的遗物中。"
 		role="NPC"
 		nextReplies="r3m2_Oracle_Oracle_4_N121" />
 
@@ -1667,7 +1667,7 @@
 
 	<Reply
 		name="r3m2_Oracle_Oracle_4_N052"
-		text="光盘上还有很多关于一个叫Ivan Go的人的信息。"
+		text="光盘上还有很多关于一个叫伊万·戈的人的信息。"
 		role="NPC"
 		nextReplies="r3m2_Oracle_Oracle_4_N062" />
 
@@ -1709,7 +1709,7 @@
 
 	<Reply
 		name="r3m2_Oracle_Oracle_4_N122"
-		text="等等！我还没跟你说完！他走了……看来我得问Lisa几个问题。"
+		text="等等！我还没跟你说完！他走了……看来我得问丽莎几个问题。"
 		role="PLAYER"
 		scriptResult="TakeQuest('r3m2_TalkWithLisa'); EndConversation()" />
 <!--Root/r3m2/принесли 2ой диск-->
@@ -1754,7 +1754,7 @@
 
 	<Reply
 		name="r3m2_Oracle_Oracle_5_N05a"
-		text="你说对了光盘的事：那是Ivan Go的日记，描述了他的旅行和发现。分析全部内容需要时间，但我可以马上回答一般性问题。"
+		text="你说对了光盘的事：那是伊万·戈的日记，描述了他的旅行和发现。分析全部内容需要时间，但我可以马上回答一般性问题。"
 		role="NPC"
 		scriptCondition="QuestStatus('r3m1_FindNative')==Q_COMPLETED"
 		scriptResult="AddHistory( 'r3_v2_LisaDisc1' );"
@@ -1762,7 +1762,7 @@
 
 	<Reply
 		name="r3m2_Oracle_Oracle_5_N06a"
-		text="Ivan去过死亡沙漠吗？光盘上应该有怎么穿过沙漠的线索！"
+		text="伊万去过死亡沙漠吗？光盘上应该有怎么穿过沙漠的线索！"
 		role="PLAYER"
 		nextReplies="r3m2_Oracle_Oracle_5_N07a" />
 
@@ -1786,7 +1786,7 @@
 
 	<Reply
 		name="r3m2_Oracle_Oracle_5_N10a"
-		text="现在我只需要找个机械师。希望Midgard有。"
+		text="现在我只需要找个机械师。希望米德加德有。"
 		role="PLAYER"
 		nextReplies="r3m2_Oracle_Oracle_5_N11a" />
 
@@ -1812,7 +1812,7 @@
 
 	<Reply
 		name="r3m2_AloneDruid1_2_N02"
-		text="你Seth的朋友让我给你这个包裹。"
+		text="你塞斯的朋友让我给你这个包裹。"
 		role="PLAYER"
 		nextReplies="r3m2_AloneDruid1_2_N03" />
 
@@ -1915,7 +1915,7 @@
 
 	<Reply
 		name="Fist_ambush_guard1_1_N07"
-		text="只有大德鲁伊能帮到你。去Seth吧，但小心——路上全是钢铁怪物。"
+		text="只有大德鲁伊能帮到你。去塞斯吧，但小心——路上全是钢铁怪物。"
 		role="NPC"
 		nextReplies="Fist_ambush_guard1_1_P08" />
 
@@ -2188,7 +2188,7 @@
 
 	<Reply
 		name="Set_Bar_MainDruid_5_P022"
-		text="Uluk的人密谋要杀你。他们派我来把你引出城镇。"
+		text="乌鲁克的人密谋要杀你。他们派我来把你引出城镇。"
 		role="PLAYER"
 		scriptResult="FailQuest('r3m1_LureMainDriud');"
 		nextReplies="Set_Bar_MainDruid_5_N032" />
@@ -2238,7 +2238,7 @@
 <!--Root/r3m1/Всякое разное--><!--Root/r3m1/Узнать что случилось с Улуком-->
 	<Reply
 		name="Set_Bar_Customer1_1_N01"
-		text="我们已经好几周没有Uluk的消息了。帮我们查查那里怎么了！"
+		text="我们已经好几周没有乌鲁克的消息了。帮我们查查那里怎么了！"
 		role="NPC"
 		scriptCondition="(not IsQuestTaken('r3m1_LureMainDriud')) and (not IsQuestTaken('r3m1_KnowAboutUluk'))"
 		nextReplies="Set_Bar_Customer2_1_P02" />
@@ -2295,7 +2295,7 @@
 
 	<Reply
 		name="r3m1_NearUluk_Civilian1_1_N01"
-		text="我来告诉你你能做什么，陌生人。我们的村庄在衰亡，人们在受苦。不过不是所有人都疯了。很多人反对这些变化，但害怕怪物的暴怒。最强壮的人已经离开了，但他们独自到不了Seth。"
+		text="我来告诉你你能做什么，陌生人。我们的村庄在衰亡，人们在受苦。不过不是所有人都疯了。很多人反对这些变化，但害怕怪物的暴怒。最强壮的人已经离开了，但他们独自到不了塞斯。"
 		role="NPC"
 		scriptCondition="QuestStatus('r3m1_KnowAboutUluk_GotoSet')==Q_TAKEN and QuestStatus('r3m1_RescueUlukCivil')==Q_CANBEGIVEN"
 		nextReplies="r3m1_NearUluk_Civilian1_1_P02" />
@@ -2326,7 +2326,7 @@
 
 	<Reply
 		name="Set_Bar_Customer1_2_N01"
-		text="Uluk发生了什么？"
+		text="乌鲁克发生了什么？"
 		role="NPC"
 		scriptCondition="QuestStatus('r3m1_KnowAboutUluk_GotoSet')==Q_TAKEN"
 		nextReplies="Set_Bar_Customer2_2_P021 Set_Bar_Customer2_2_P022" />
@@ -2381,13 +2381,13 @@
 
 	<Reply
 		name="RazVill_Bar_Lisa_1_N02"
-		text="拜访神谕后我得到了更多问题而非答案。至少我知道方向对了。告诉我哪里能找到其他光盘，就像我给神谕的那张？有谁能聊聊Ivan Go的事？"
+		text="拜访神谕后我得到了更多问题而非答案。至少我知道方向对了。告诉我哪里能找到其他光盘，就像我给神谕的那张？有谁能聊聊伊万·戈的事？"
 		role="PLAYER"
 		nextReplies="RazVill_Bar_Lisa_1_N03" />
 
 	<Reply
 		name="RazVill_Bar_Lisa_1_N03"
-		text="所有人中，只有Ben Throttle可能知道他的事。他住在Midgard附近。他是老探险家，Ivan的朋友。他应该能帮你。"
+		text="所有人中，只有本·斯罗特尔可能知道他的事。他住在米德加德附近。他是老探险家，伊万的朋友。他应该能帮你。"
 		role="NPC"
 		nextReplies="RazVill_Bar_Lisa_1_N04" />
 
@@ -2753,7 +2753,7 @@
 
 	<Reply
 		name="NewMechanik_hellodlg1"
-		text="你能把这台发动机带回Marezzia吗？当然有报酬。"
+		text="你能把这台发动机带回马雷齐亚吗？当然有报酬。"
 		role="NPC"
 		scriptCondition="GetCurNpc():GetSpokenCount() == 1"
 		nextReplies="Dlg_pl_001257 Dlg_pl_001258" />
@@ -2791,7 +2791,7 @@
 
 	<Reply
 		name="Dlg_pl_000454"
-		text="我是新来的：从东方来。我听说过很多关于你们领袖Axel的事。"
+		text="我是新来的：从东方来。我听说过很多关于你们领袖阿克塞尔的事。"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000455" />
 
@@ -2821,7 +2821,7 @@
 
 	<Reply
 		name="Dlg_npc_000459"
-		text="我说的是'困难'，没说'不可能'。Axel会亲自嘉奖战争英雄。加入我们的军队，证明你是个伟大的战士。那样你就有机会和Axel握手。"
+		text="我说的是'困难'，没说'不可能'。阿克塞尔会亲自嘉奖战争英雄。加入我们的军队，证明你是个伟大的战士。那样你就有机会和阿克塞尔握手。"
 		role="NPC"
 		nextReplies="Dlg_pl_000460" />
 
@@ -2833,7 +2833,7 @@
 
 	<Reply
 		name="Dlg_npc_000461"
-		text="我们的敌人是北方人。在我们最需要帮助时他们背弃了我们，所以我们不再怜悯他们。Axel会带领我们走向繁荣，只有那些可怜的邻居挡在路上。不会太久了，不会太久了……"
+		text="我们的敌人是北方人。在我们最需要帮助时他们背弃了我们，所以我们不再怜悯他们。阿克塞尔会带领我们走向繁荣，只有那些可怜的邻居挡在路上。不会太久了，不会太久了……"
 		role="NPC"
 		nextReplies="Dlg_pl_000462" />
 
@@ -2852,7 +2852,7 @@
 
 	<Reply
 		name="Dlg_pl_000465"
-		text="当然跟你们一起。我会争取做些能见到Axel的事。"
+		text="当然跟你们一起。我会争取做些能见到阿克塞尔的事。"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000468" />
 
@@ -2870,7 +2870,7 @@
 
 	<Reply
 		name="Dlg_pl_000464"
-		text="也许还有别的办法见到Axel……"
+		text="也许还有别的办法见到阿克塞尔……"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000466" />
 
@@ -2928,7 +2928,7 @@
 
 	<Reply
 		name="Dlg_pl_000476"
-		text="我什么时候能见到Axel？"
+		text="我什么时候能见到阿克塞尔？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000477" />
 
@@ -3084,13 +3084,13 @@
 
 	<Reply
 		name="Dlg_npc_000491"
-		text="老Felix。"
+		text="老费利克斯。"
 		role="NPC"
 		nextReplies="Dlg_pl_000492" />
 
 	<Reply
 		name="Dlg_pl_000492"
-		text="什么？Felix？？？"
+		text="什么？费利克斯？？？"
 		role="PLAYER"
 		scriptResult="TakeQuest('r2m2_FightFelix');  TActivate('FELIXMONAX');  EndConversation()" />
 
@@ -3165,7 +3165,7 @@
 
 	<Reply
 		name="Mopl_he"
-		text="我知道Lisa在这里。把她交出来，否则我毁了这个地方！"
+		text="我知道丽莎在这里。把她交出来，否则我毁了这个地方！"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000538" />
 
@@ -3177,7 +3177,7 @@
 
 	<Reply
 		name="Dlg_pl_000539"
-		text="Axel败了，你在这里没有权威了。如果我不毁了这里，别人也会。我数到三就动手。一……二……"
+		text="阿克塞尔败了，你在这里没有权威了。如果我不毁了这里，别人也会。我数到三就动手。一……二……"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000540" />
 
@@ -3202,7 +3202,7 @@
 
 	<Reply
 		name="Dlg_pl_000511"
-		text="我惩罚背叛Axel事业的人。"
+		text="我惩罚背叛阿克塞尔事业的人。"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000512" />
 
@@ -3328,7 +3328,7 @@
 <!--Root/r2m2/Сюжетные/Аксель в Зионе-->
 	<Reply
 		name="Axel_hellodlg0"
-		text="我是Axel。听说你在找我？！"
+		text="我是阿克塞尔。听说你在找我？！"
 		role="NPC"
 		scriptCondition="(IsQuestTaken('r2m2_MoveToZeonToAlex')   and   not(IsQuestComplete('r2m2_MoveToZeonToAlex')))  or  (IsQuestTaken('d_GetAkselBandit_Quest')  and  not(IsQuestComplete('d_GetAkselBandit_Quest')))"
 		nextReplies="Dlg_pl_000530 Dlg_pl_000533" />
@@ -3354,7 +3354,7 @@
 
 	<Reply
 		name="Dlg_pl_000530"
-		text="很高兴终于能直视你的眼睛了，Axel。说实话，我来这里是要你的命。像个男人一样战斗吧！"
+		text="很高兴终于能直视你的眼睛了，阿克塞尔。说实话，我来这里是要你的命。像个男人一样战斗吧！"
 		role="PLAYER"
 		scriptCondition="IsQuestComplete('d_Lisa_Quest')"
 		nextReplies="Dlg_npc_000531" />
@@ -3430,13 +3430,13 @@
 
 	<Reply
 		name="Dlg_pl_001111"
-		text="别拐弯抹角了。是你从Aesthete那里偷了那件杰作吗？"
+		text="别拐弯抹角了。是你从鉴赏家那里偷了那件杰作吗？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_001124" />
 
 	<Reply
 		name="Dlg_npc_001124"
-		text="是的，但……我现在没有了。有个人来找我，说可以帮我偷一件著名的艺术品。我们制定了闯入Aesthete家的计划。我付了定金就再也没见过他。我真希望没做那件事，但我太想要那件艺术品了。也许你能找到骗了我们两个人的家伙。他自称Swindler。我在附近的峡谷遇到的。他可能还在那里。"
+		text="是的，但……我现在没有了。有个人来找我，说可以帮我偷一件著名的艺术品。我们制定了闯入鉴赏家家的计划。我付了定金就再也没见过他。我真希望没做那件事，但我太想要那件艺术品了。也许你能找到骗了我们两个人的家伙。他自称“骗子”。我在附近的峡谷遇到的。他可能还在那里。"
 		role="NPC"
 		nextReplies="Dlg_pl_001125" />
 
@@ -3536,7 +3536,7 @@
 
 	<Reply
 		name="Dlg_pl_000448"
-		text="Lisa来过这里吗？"
+		text="丽莎来过这里吗？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000449" />
 
@@ -3719,7 +3719,7 @@
 
 	<Reply
 		name="Dlg_npc_xyz480"
-		text="你知道吗？去Tous吧。那里的人会告诉你关于侵略者你需要知道的一切。他们也许还能帮你的搜索。"
+		text="你知道吗？去图斯吧。那里的人会告诉你关于侵略者你需要知道的一切。他们也许还能帮你的搜索。"
 		role="NPC"
 		nextReplies="Dlg_pl_xyz481" />
 
@@ -3776,13 +3776,13 @@
 
 	<Reply
 		name="Dlg_pl_xyz489"
-		text="我来这里是因为Axel。我需要见他，所以可以说我们有共同的目标。"
+		text="我来这里是因为阿克塞尔。我需要见他，所以可以说我们有共同的目标。"
 		role="PLAYER"
 		nextReplies="Dlg_npc_xyz490" />
 
 	<Reply
 		name="Dlg_npc_xyz490"
-		text="加入我们的军队。一起我们更有机会拿下Axel。这可不容易：我们派了最好的刺客去，都失败了。"
+		text="加入我们的军队。一起我们更有机会拿下阿克塞尔。这可不容易：我们派了最好的刺客去，都失败了。"
 		role="NPC"
 		nextReplies="Dlg_pl_xyz491" />
 
@@ -3813,7 +3813,7 @@
 
 	<Reply
 		name="Dlg_pl_xyz496"
-		text="我们一起推翻Axel的暴政！"
+		text="我们一起推翻阿克塞尔的暴政！"
 		role="PLAYER"
 		nextReplies="Dlg_npc_xyz499" />
 
@@ -3875,7 +3875,7 @@
 
 	<Reply
 		name="Dlg_pl_xyz504"
-		text="现在你在战场上见过我了。我会不惜一切代价找到Axel。"
+		text="现在你在战场上见过我了。我会不惜一切代价找到阿克塞尔。"
 		role="PLAYER"
 		nextReplies="Dlg_npc_xyz505" />
 
@@ -3991,7 +3991,7 @@
 
 	<Reply
 		name="Dlg_npc_000435"
-		text="在Toscana酒吧找他们的联络人。暗号是：'长夜漫漫'，回答是：'但黎明将至'。"
+		text="在托斯卡纳酒吧找他们的联络人。暗号是：'长夜漫漫'，回答是：'但黎明将至'。"
 		role="NPC"
 		nextReplies="Dlg_pl_000436" />
 
@@ -4003,7 +4003,7 @@
 
 	<Reply
 		name="Senat_hellodlg1"
-		text="你救的那个叛军告诉了我重要消息。Axel的一名将军将带着少数卫兵经过这里。如果能活捉他，我们会得到大量关于敌人的情报。"
+		text="你救的那个叛军告诉了我重要消息。阿克塞尔的一名将军将带着少数卫兵经过这里。如果能活捉他，我们会得到大量关于敌人的情报。"
 		role="NPC"
 		scriptCondition="(IsQuestTaken('d_MoveLeaderInGelvetcia_Quest')   and   not(IsQuestComplete('d_MoveLeaderInGelvetcia_Quest')))   or   (IsQuestTaken('r2m2_HelpAllSNGPeople')   and   not(IsQuestComplete('r2m2_HelpAllSNGPeople')))"
 		nextReplies="Dlg_pl_000438" />
@@ -4028,7 +4028,7 @@
 
 	<Reply
 		name="Senat_hellodlg2"
-		text="你给我们带来了好运，外乡人。将军告诉了我们绕过守卫去找Axel的路，还透露了地下城镇的位置和通行密码。"
+		text="你给我们带来了好运，外乡人。将军告诉了我们绕过守卫去找阿克塞尔的路，还透露了地下城镇的位置和通行密码。"
 		role="NPC"
 		scriptCondition="(IsQuestTaken('d_MoveWithGeneralToGelvetcia_Quest'))  and  not(IsQuestComplete('d_MoveWithGeneralToGelvetcia_Quest'))"
 		nextReplies="Dlg_pl_000442" />
@@ -4041,7 +4041,7 @@
 
 	<Reply
 		name="Dlg_npc_000443"
-		text="你不想知道。我们负责引开敌人，你潜入秘密城镇杀了Axel。"
+		text="你不想知道。我们负责引开敌人，你潜入秘密城镇杀了阿克塞尔。"
 		role="NPC"
 		nextReplies="Dlg_pl_000444" />
 
@@ -4065,7 +4065,7 @@
 <!--Root/r1m4/Разговоры с Гомером-->
 	<Reply
 		name="r1m4Random_Bar_Gomer1_N03"
-		text="假设我是Homer。你想知道什么？"
+		text="假设我是荷马。你想知道什么？"
 		role="NPC"
 		nextReplies="r1m4Random_Bar_Gomer1_P04" />
 
@@ -4101,7 +4101,7 @@
 
 	<Reply
 		name="r1m4Random_Bar_Gomer1_P02"
-		text="你好。你知道哪里能找到Homer吗？"
+		text="你好。你知道哪里能找到荷马吗？"
 		role="PLAYER"
 		nextReplies="r1m4Random_Bar_Gomer1_N03" />
 
@@ -4113,7 +4113,7 @@
 
 	<Reply
 		name="r1m4Random_Bar_Gomer1_P06"
-		text="酒保，给我朋友来杯烈的。好了，Homer，跟我说说那个没人能找到的神秘地方吧。"
+		text="酒保，给我朋友来杯烈的。好了，荷马，跟我说说那个没人能找到的神秘地方吧。"
 		role="PLAYER"
 		nextReplies="r1m4Random_Bar_Gomer1_N07" />
 
@@ -4176,7 +4176,7 @@
 
 	<Reply
 		name="r1m4_RandomBar_Gomer_2_P04"
-		text="酒保，给我朋友来杯烈的。好了，Homer，我怎么穿过沼泽？"
+		text="酒保，给我朋友来杯烈的。好了，荷马，我怎么穿过沼泽？"
 		role="PLAYER"
 		nextReplies="r1m4_RandomBar_Gomer_2_N05" />
 
@@ -4232,7 +4232,7 @@
 
 	<Reply
 		name="Olme_Bar_Customer1_1_P06"
-		text="不完全是。如果冒犯了你的爱国感情那就抱歉了。我在找老Homer。听说过他吗？"
+		text="不完全是。如果冒犯了你的爱国感情那就抱歉了。我在找老荷马。听说过他吗？"
 		role="PLAYER"
 		nextReplies="Olme_Bar_Customer1_1_N07" />
 
@@ -4274,7 +4274,7 @@
 
 	<Reply
 		name="r1m4_UnknownBar_Customer3_1_N01"
-		text="嗨。不坐下来跟我喝一杯ananga吗？"
+		text="嗨。不坐下来跟我喝一杯阿南加吗？"
 		role="NPC"
 		nextReplies="r1m4_UnknownBar_Customer3_1_N02a r1m4_UnknownBar_Customer3_1_N02b" />
 
@@ -4378,7 +4378,7 @@
 
 	<Reply
 		name="r1m4_RandomBar_Customer1_1_P04"
-		text="Homer住这儿吗？"
+		text="荷马住这儿吗？"
 		role="PLAYER"
 		nextReplies="r1m4_RandomBar_Customer1_1_N05" />
 
@@ -4396,7 +4396,7 @@
 
 	<Reply
 		name="Dlg_pl_000090"
-		text="我在找一个人，叫Homer。"
+		text="我在找一个人，叫荷马。"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000091" />
 
@@ -4763,7 +4763,7 @@
 
 	<Reply
 		name="r1m4_SomeWhere_OldWomen1_1_N05a"
-		text="谢谢你，年轻人。我在Perch等消息。"
+		text="谢谢你，年轻人。我在佩奇等消息。"
 		role="NPC"
 		nextReplies="r1m4_SomeWhere_OldWomen1_1_N06a" />
 
@@ -4775,7 +4775,7 @@
 
 	<Reply
 		name="r1m4_SomeWhere_OldWomen1_1_N07a"
-		text="他叫Philemon，现在可能正在某个当地酒吧喝酒。"
+		text="他叫菲利蒙，现在可能正在某个当地酒吧喝酒。"
 		role="NPC"
 		nextReplies="r1m4_SomeWhere_OldWomen1_1_N09a" />
 
@@ -4794,7 +4794,7 @@
 
 	<Reply
 		name="r1m4_SomeWhere_Husbent1_1_N02"
-		text="Philemon，你妻子担心死了，你却在这里喝酒！"
+		text="菲利蒙，你妻子担心死了，你却在这里喝酒！"
 		role="PLAYER"
 		nextReplies="r1m4_SomeWhere_Husbent1_1_N03" />
 
@@ -4913,7 +4913,7 @@
 <!--Root/r1m3/Сюжетные--><!--Root/r1m3/Опциональные--><!--Root/r1m3/Опциональные/Кони и Блайд-->
 	<Reply
 		name="KonnyBlide_hellodlg0"
-		text="嗨！我们是一对新婚夫妇——Connie和Blyde……能搭我们一程吗？我们的车坏了，真的得回家。我们愿意付钱。"
+		text="嗨！我们是一对新婚夫妇——康妮和布莱德……能搭我们一程吗？我们的车坏了，真的得回家。我们愿意付钱。"
 		role="NPC"
 		scriptCondition="GetCurNpc():GetSpokenCount() == 0"
 		nextReplies="Dlg_pl_001080 Dlg_pl_001081" />
@@ -5231,7 +5231,7 @@ EndConversation()" />
 <!--Root/r1m3/Сюжетные/Продавец взрывчатки в Асгарде-->
 	<Reply
 		name="NonBomber_hellodlg0"
-		text="欢迎来到Asgard！"
+		text="欢迎来到阿斯加德！"
 		role="NPC"
 		scriptCondition="(IsQuestTaken('d_BombInAsgard_Quest'))  and not(IsQuestComplete('d_BombInAsgard_Quest'))"
 		nextReplies="Dlg_pl_dd2156" />
@@ -5314,7 +5314,7 @@ EndConversation()" />
 
 	<Reply
 		name="Dlg_npc_000640"
-		text="还有一个问题：镇上没有汽油。没有我们的向导你也找不到去Ohlm的路。如果你能为我们的商队找到汽油，可以跟他们一起北上；他们会给你指去Ohlm的路。现在去跟镇长谈。告诉他Sharky派你来帮忙的。"
+		text="还有一个问题：镇上没有汽油。没有我们的向导你也找不到去奥尔姆的路。如果你能为我们的商队找到汽油，可以跟他们一起北上；他们会给你指去奥尔姆的路。现在去跟镇长谈。告诉他鲨鱼派你来帮忙的。"
 		role="NPC"
 		nextReplies="Dlg_pl_000641" />
 
@@ -5515,13 +5515,13 @@ EndConversation()" />
 
 	<Reply
 		name="Dlg_pl_d3d176"
-		text="我听说探险家Ivan曾住在这里。我想去看看他的房子。"
+		text="我听说探险家伊万曾住在这里。我想去看看他的房子。"
 		role="PLAYER"
 		nextReplies="Dlg_npc_d3d177" />
 
 	<Reply
 		name="Dlg_npc_d3d177"
-		text="你来对地方了：Ivan曾经和妻子、儿子住在那栋房子里。一切都好，直到那个可怕的夜晚，他外出时劫匪杀了他的妻子。劫匪也没一个活着离开。那个勇敢的女人为保护儿子而死。Ivan带着男孩离开了镇子。从那以后房子一直空着。"
+		text="你来对地方了：伊万曾经和妻子、儿子住在那栋房子里。一切都好，直到那个可怕的夜晚，他外出时劫匪杀了他的妻子。劫匪也没一个活着离开。那个勇敢的女人为保护儿子而死。伊万带着男孩离开了镇子。从那以后房子一直空着。"
 		role="NPC"
 		nextReplies="Dlg_pl_d3d178" />
 
@@ -5563,19 +5563,19 @@ EndConversation()" />
 
 	<Reply
 		name="Dlg_npc_d3d208"
-		text="我想起来了……肯定是老Homer。"
+		text="我想起来了……肯定是老荷马。"
 		role="NPC"
 		nextReplies="Dlg_pl_d3d209" />
 
 	<Reply
 		name="Dlg_npc_d3d210"
-		text="当然在海边——渔村里。但还有另一个问题。你看，镇上没有汽油，商队没法北上。你一个人也找不到去Ohlm的路。"
+		text="当然在海边——渔村里。但还有另一个问题。你看，镇上没有汽油，商队没法北上。你一个人也找不到去奥尔姆的路。"
 		role="NPC"
 		nextReplies="Dlg_pl_d3d211" />
 
 	<Reply
 		name="Dlg_npc_d3d212"
-		text="我不明白你在说什么。听着，你看起来是个勇敢的人。如果你帮我们，你可以加入我们的商队一起北上。他们会给你指去Ohlm的路。先去跟镇长谈谈。告诉他Sharky派你来帮忙的。"
+		text="我不明白你在说什么。听着，你看起来是个勇敢的人。如果你帮我们，你可以加入我们的商队一起北上。他们会给你指去奥尔姆的路。先去跟镇长谈谈。告诉他鲨鱼派你来帮忙的。"
 		role="NPC"
 		nextReplies="Dlg_pl_d3d213" />
 
@@ -5671,7 +5671,7 @@ EndConversation()" />
 
 	<Reply
 		name="Dlg_npc_d3d261"
-		text="人人都想要Alice。但谁也别想得到她！哈哈哈！"
+		text="人人都想要爱丽丝。但谁也别想得到她！哈哈哈！"
 		role="NPC"
 		nextReplies="Dlg_pl_d3d262" />
 
@@ -5725,7 +5725,7 @@ EndConversation()" />
 
 	<Reply
 		name="Dlg_npc_dd2153"
-		text="首先，我们得找些炸药。Asgard应该有。他们毕竟是矿工。我们得把炸药放在桥下。当然守卫很严。但我相信你没问题。"
+		text="首先，我们得找些炸药。阿斯加德应该有。他们毕竟是矿工。我们得把炸药放在桥下。当然守卫很严。但我相信你没问题。"
 		role="NPC"
 		nextReplies="Dlg_pl_dd2154" />
 
@@ -5873,7 +5873,7 @@ EndConversation()" />
 
 	<Reply
 		name="Dlg_pl_d3d209"
-		text="老Homer？哪里能找到他？"
+		text="老荷马？哪里能找到他？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_d3d210" />
 
@@ -5891,7 +5891,7 @@ EndConversation()" />
 
 	<Reply
 		name="Dlg_pl_d3d215"
-		text="Sharky派我来帮你解决问题。"
+		text="鲨鱼派我来帮你解决问题。"
 		role="PLAYER"
 		nextReplies="Dlg_npc_d3d217" />
 
@@ -5990,7 +5990,7 @@ EndConversation()" />
 
 	<Reply
 		name="Dlg_pl_d3d247"
-		text="现在我把这桶油带给Minin的人，证明油田恢复生产了。"
+		text="现在我把这桶油带给米宁的人，证明油田恢复生产了。"
 		role="PLAYER"
 		scriptResult="CompleteQuestIfTaken('d_MoveWorkersToOilMine_Quest');  CompleteQuestIfTaken('d_MoveFreelancersToOilMine_Quest');  TakeQuest('d_MoveCanistraToMinin_Quest');  AddQuestItem('quest_first_canistra');  EndConversation()" />
 
@@ -6033,7 +6033,7 @@ EndConversation()" />
 
 	<Reply
 		name="Dlg_pl_d3d260"
-		text="我需要跟Alice谈谈！"
+		text="我需要跟爱丽丝谈谈！"
 		role="PLAYER"
 		nextReplies="Dlg_npc_d3d261" />
 
@@ -6051,7 +6051,7 @@ EndConversation()" />
 
 	<Reply
 		name="Dlg_pl_d3d266"
-		text="我在找一个叫Alice的女孩。中等身高，长得不错，开着一辆颜色和设计都很特别的卡车。"
+		text="我在找一个叫爱丽丝的女孩。中等身高，长得不错，开着一辆颜色和设计都很特别的卡车。"
 		role="PLAYER"
 		nextReplies="Dlg_npc_d3d267" />
 
@@ -6144,7 +6144,7 @@ EndConversation()" />
 
 	<Reply
 		name="Dlg_pl_dd2166"
-		text="不奇怪，Asgard什么都不肯卖。"
+		text="不奇怪，阿斯加德什么都不肯卖。"
 		role="PLAYER"
 		nextReplies="Dlg_npc_dd2167" />
 
@@ -6394,7 +6394,7 @@ EndConversation()" />
 <!--Root/r1m2/Опциональные/Про знаки в Восточном-->
 	<Reply
 		name="MainSigner_hellodlg0"
-		text="Kolkhoz的人害怕了，拒绝收割。如果他们离开田地，明年我们就会短缺。去看看那里出了什么事。"
+		text="科尔霍兹的人害怕了，拒绝收割。如果他们离开田地，明年我们就会短缺。去看看那里出了什么事。"
 		role="NPC"
 		scriptCondition="(GetCurNpc():GetSpokenCount() == 0)   and  not(IsQuestTaken('Signs_Quest'))   and  not(IsQuestComplete('Signs_Quest'))   and  not(IsQuestFailed('Signs_Quest'))"
 		nextReplies="MainSigner_hellodlg0_P1_1 MainSigner_hellodlg0_P1_2" />
@@ -6446,7 +6446,7 @@ EndConversation()" />
 
 	<Reply
 		name="Dlg_pl_000553"
-		text="Toskana附近周期性地出现大型标记！"
+		text="托斯卡纳附近周期性地出现大型标记！"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000554" />
 
@@ -6660,7 +6660,7 @@ EndConversation()" />
 
 	<Reply
 		name="Dlg_pl_xyz276"
-		text="我找Ben Throttle。"
+		text="我找本·斯罗特尔。"
 		role="PLAYER"
 		nextReplies="Dlg_npc_xyz277" />
 
@@ -6678,7 +6678,7 @@ EndConversation()" />
 
 	<Reply
 		name="Dlg_npc_xyz279"
-		text="抱歉，今天不顺。你那个Ben是干什么的？"
+		text="抱歉，今天不顺。你那个本是干什么的？"
 		role="NPC"
 		nextReplies="Dlg_pl_xyz280" />
 
@@ -6779,7 +6779,7 @@ EndConversation()" />
 
 	<Reply
 		name="Dlg_pl_xyz318"
-		text="听说Ben Throttle住在附近。我能跟他谈谈吗？"
+		text="听说本·斯罗特尔住在附近。我能跟他谈谈吗？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_xyz317" />
 
@@ -6804,13 +6804,13 @@ EndConversation()" />
 
 	<Reply
 		name="Dlg_pl_xyz460"
-		text="我在找一个女孩。她叫Alice。你知道她现在在哪吗？"
+		text="我在找一个女孩。她叫爱丽丝。你知道她现在在哪吗？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_001287" />
 
 	<Reply
 		name="Dlg_npc_001287"
-		text="Alice来过，但几个小时前去了Porto。"
+		text="爱丽丝来过，但几个小时前去了波尔图。"
 		role="NPC"
 		nextReplies="Dlg_pl_001288" />
 
@@ -6852,7 +6852,7 @@ EndConversation()" />
 
 	<Reply
 		name="Dlg_npc_xyz301"
-		text="最近路不太平。确保我们商队安全往返Porto。如果同意，去找我们的管家。"
+		text="最近路不太平。确保我们商队安全往返波尔图。如果同意，去找我们的管家。"
 		role="NPC"
 		nextReplies="Dlg_pl_xyz302" />
 
@@ -6865,7 +6865,7 @@ EndConversation()" />
 <!--Root/r1m2/Сюжетные/Бен-->
 	<Reply
 		name="Ben_hellodlg0"
-		text="Ivan，是你吗！？不敢相信……不，你不是他。对不起，年轻人，我认错人了……你找我有什么事？"
+		text="伊万，是你吗！？不敢相信……不，你不是他。对不起，年轻人，我认错人了……你找我有什么事？"
 		role="NPC"
 		scriptCondition="IsQuestComplete('d_FindHouseOfBen_Quest')  and  (GetCurNpc():GetSpokenCount() == 0)"
 		scriptResult="PlayCustomMusic('Sadness1')"
@@ -6903,7 +6903,7 @@ EndConversation()" />
 
 	<Reply
 		name="Dlg_npc_xyz328"
-		text="你想知道自己是谁，来对地方了。你父亲叫Ivan Go。他是个伟大的探险家！他重新发现了无数城镇和发明。"
+		text="你想知道自己是谁，来对地方了。你父亲叫伊万·戈。他是个伟大的探险家！他重新发现了无数城镇和发明。"
 		role="NPC"
 		nextReplies="Dlg_pl_xyz329" />
 
@@ -6915,13 +6915,13 @@ EndConversation()" />
 
 	<Reply
 		name="Dlg_npc_xyz330"
-		text="但我确定。相信我，你周围的世界都是Ivan的功劳。多年前，我们生活在黑暗中，没有无线电也没有电。我们无法与其他聚落联系。我们恐惧而孤独。是他带我们走向了光明。"
+		text="但我确定。相信我，你周围的世界都是伊万的功劳。多年前，我们生活在黑暗中，没有无线电也没有电。我们无法与其他聚落联系。我们恐惧而孤独。是他带我们走向了光明。"
 		role="NPC"
 		nextReplies="Dlg_pl_xyz331" />
 
 	<Reply
 		name="Dlg_pl_xyz331"
-		text="说实话，我从不知道我父亲有多了不起。我甚至不知道自己有父亲。除了可怜的Peter……"
+		text="说实话，我从不知道我父亲有多了不起。我甚至不知道自己有父亲。除了可怜的彼得……"
 		role="PLAYER"
 		nextReplies="Dlg_npc_xyz332" />
 
@@ -6939,7 +6939,7 @@ EndConversation()" />
 
 	<Reply
 		name="Dlg_npc_xyz334"
-		text="没人知道。他就那样消失了。当时他是真正的英雄，没人敢伤害他。而且真正有那本事的人也不多。Ivan把他的卡车改造成了一个奇迹，而且很危险。"
+		text="没人知道。他就那样消失了。当时他是真正的英雄，没人敢伤害他。而且真正有那本事的人也不多。伊万把他的卡车改造成了一个奇迹，而且很危险。"
 		role="NPC"
 		nextReplies="Dlg_pl_xyz335" />
 
@@ -6975,7 +6975,7 @@ EndConversation()" />
 
 	<Reply
 		name="Dlg_npc_xyz340"
-		text="远不止如此！这张光盘是一本书，运气好的话，是Ivan的日记！不幸的是，几乎没办法读它……除非……对了！去Minin你父亲的房子。在那里你应该能找到读取设备。我留在这里做些研究。"
+		text="远不止如此！这张光盘是一本书，运气好的话，是伊万的日记！不幸的是，几乎没办法读它……除非……对了！去米宁你父亲的房子。在那里你应该能找到读取设备。我留在这里做些研究。"
 		role="NPC"
 		nextReplies="Dlg_pl_xyz341" />
 
@@ -6994,13 +6994,13 @@ EndConversation()" />
 
 	<Reply
 		name="Dlg_pl_000621"
-		text="你是Ben Throttle吗？我在找一样你也许了解的东西。是一张塑料光盘，其中一面可能有I G和2的标记。"
+		text="你是本·斯罗特尔吗？我在找一样你也许了解的东西。是一张塑料光盘，其中一面可能有I G和2的标记。"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000620" />
 
 	<Reply
 		name="Dlg_npc_000620"
-		text="让我想想。确实有人向我兜售过你描述的那种光盘。我告诉他Midgard的人可能对那东西感兴趣。"
+		text="让我想想。确实有人向我兜售过你描述的那种光盘。我告诉他米德加德的人可能对那东西感兴趣。"
 		role="NPC"
 		nextReplies="Dlg_pl_000622" />
 
@@ -7019,19 +7019,19 @@ EndConversation()" />
 
 	<Reply
 		name="Dlg_pl_000653"
-		text="我想知道Ivan Go在旅途中是否见过飞行船。他有没有跟你提过？"
+		text="我想知道伊万·戈在旅途中是否见过飞行船。他有没有跟你提过？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000654" />
 
 	<Reply
 		name="Dlg_npc_000654"
-		text="他确实说过。我们以前常坐在草地上交换故事。他会跟我讲天上的光、闪亮的光盘之类的废话。他提到过Seil，然后我跟他说……"
+		text="他确实说过。我们以前常坐在草地上交换故事。他会跟我讲天上的光、闪亮的光盘之类的废话。他提到过塞尔，然后我跟他说……"
 		role="NPC"
 		nextReplies="Dlg_pl_000655" />
 
 	<Reply
 		name="Dlg_pl_000655"
-		text="是Seil！我很想听完你的故事，但我真的该走了。"
+		text="是塞尔！我很想听完你的故事，但我真的该走了。"
 		role="PLAYER"
 		nextReplies="Dlg_npc_001282" />
 
@@ -7068,13 +7068,13 @@ EndConversation()" />
 
 	<Reply
 		name="Dlg_pl_xyz462"
-		text="你知道哪里能找到一个叫Alice的女孩吗？"
+		text="你知道哪里能找到一个叫爱丽丝的女孩吗？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_001289" />
 
 	<Reply
 		name="Dlg_npc_001289"
-		text="没有，Lisa从没来过这里。也许她在路上被劫匪袭击了。他们的巢穴就在海边"
+		text="没有，丽莎从没来过这里。也许她在路上被劫匪袭击了。他们的巢穴就在海边"
 		role="NPC"
 		nextReplies="Dlg_pl_001290" />
 
@@ -7155,13 +7155,13 @@ EndConversation()" />
 
 	<Reply
 		name="Dlg_pl_xyz294"
-		text="抱歉，我没有冒犯之意……我找Ben Throttle，他……"
+		text="抱歉，我没有冒犯之意……我找本·斯罗特尔，他……"
 		role="PLAYER"
 		nextReplies="Dlg_npc_xyz295" />
 
 	<Reply
 		name="Dlg_npc_xyz295"
-		text="不介意。据我所知，Ben住在Midgard附近。去那里问问吧。还有，学着礼貌点。"
+		text="不介意。据我所知，本住在米德加德附近。去那里问问吧。还有，学着礼貌点。"
 		role="NPC"
 		nextReplies="Dlg_pl_xyz296" />
 
@@ -7416,13 +7416,13 @@ EndConversation()" />
 
 	<Reply
 		name="WorkGiver_hellodlg0_1"
-		text="我有一份给Sergo的重要商业提案，但没想到今天能见到他，所以把必要的文件都留在家里了。"
+		text="我有一份给谢尔戈的重要商业提案，但没想到今天能见到他，所以把必要的文件都留在家里了。"
 		role="NPC"
 		nextReplies="WorkGiver_hellodlg0_P1_1" />
 
 	<Reply
 		name="WorkGiver_hellodlg0_2"
-		text="请尽快带我去加油站，好让我收集所有文件向Sergo提出方案。你不用等我；我可以搭邻居的车。"
+		text="请尽快带我去加油站，好让我收集所有文件向谢尔戈提出方案。你不用等我；我可以搭邻居的车。"
 		role="NPC"
 		nextReplies="WorkGiver_hellodlg0_P1_2 WorkGiver_hellodlg0_P1_3" />
 
@@ -7478,7 +7478,7 @@ EndConversation()" />
 
 	<Reply
 		name="Dlg_npc_000559"
-		text="我会找个更灵活的司机带我回Sowth。"
+		text="我会找个更灵活的司机带我回索斯。"
 		role="NPC"
 		nextReplies="Dlg_pl_000557" />
 
@@ -7717,7 +7717,7 @@ EndConversation()" />
 
 	<Reply
 		name="Buyer_hellodlg0_1"
-		text="是的，我是Sergo。你一定是Peter的儿子。你长大了，自从上次见你。"
+		text="是的，我是谢尔戈。你一定是彼得的儿子。你长大了，自从上次见你。"
 		role="NPC"
 		nextReplies="Buyer_hellodlg0_P1_1" />
 
@@ -7729,7 +7729,7 @@ EndConversation()" />
 
 	<Reply
 		name="Buyer_hellodlg0_P1"
-		text="你好，先生。您是Sergo吗？我从Glukhoe给您带了包裹。"
+		text="你好，先生。您是谢尔戈吗？我从格卢霍耶给您带了包裹。"
 		role="PLAYER"
 		nextReplies="Buyer_hellodlg0_1" />
 
@@ -7799,7 +7799,7 @@ EndConversation()" />
 
 	<Reply
 		name="HaveBigBoom_hellodlg0_P1"
-		text="Sowth的酒保派我来取东西。你知道什么意思。"
+		text="索斯的酒保派我来取东西。你知道什么意思。"
 		role="PLAYER"
 		nextReplies="HaveBigBoom_hellodlg0_1 Dlg_npc_000593" />
 
@@ -7812,19 +7812,19 @@ EndConversation()" />
 
 	<Reply
 		name="Dlg_pl_000595"
-		text="太感谢了。现在我要去追杀Felix！"
+		text="太感谢了。现在我要去追杀费利克斯！"
 		role="PLAYER"
 		scriptResult="EndConversation()" />
 
 	<Reply
 		name="HaveBigBoom_hellodlg0_P1_1"
-		text="太感谢了。现在我要去追杀Felix！"
+		text="太感谢了。现在我要去追杀费利克斯！"
 		role="PLAYER"
 		scriptResult="AddPlayerItemsWithBox( 'storm01', 1, 0, CVector(3229,319,1254));  CompleteQuest('d_GetBigBoom_Quest');  TActivate('METALFELIX2');  EndConversation()" />
 <!--Root/r1m1/Сюжетные/Бармен Южного-->
 	<Reply
 		name="HurdTrucker_hellodlg0"
-		text="你不是从Glukhoe来的吗？"
+		text="你不是从格卢霍耶来的吗？"
 		role="NPC"
 		scriptCondition="IsQuestTaken('d_FindBenInSouth_Quest')  and not(IsQuestComplete('d_FindBenInSouth_Quest'))"
 		nextReplies="HurdTrucker_hellodlg0_P1" />
@@ -7837,7 +7837,7 @@ EndConversation()" />
 
 	<Reply
 		name="HurdTrucker_hellodlg0_2"
-		text="没听说过他……去Aeterna试试，很多商人去那里。你能从他们那里打听到消息。不过你找这个人干什么？"
+		text="没听说过他……去埃泰尔纳试试，很多商人去那里。你能从他们那里打听到消息。不过你找这个人干什么？"
 		role="NPC"
 		nextReplies="HurdTrucker_hellodlg0_P1_2" />
 
@@ -7849,7 +7849,7 @@ EndConversation()" />
 
 	<Reply
 		name="HurdTrucker_hellodlg0_P1_1"
-		text="我能搞定。你听说过探险家Ben Throttle吗？"
+		text="我能搞定。你听说过探险家本·斯罗特尔吗？"
 		role="PLAYER"
 		nextReplies="HurdTrucker_hellodlg0_2" />
 
@@ -7868,7 +7868,7 @@ EndConversation()" />
 
 	<Reply
 		name="HurdTrucker_hellodlg1_1"
-		text="太可怕了！谁干的？没有帮派经过Sowth。我们会注意到的。"
+		text="太可怕了！谁干的？没有帮派经过索斯。我们会注意到的。"
 		role="NPC"
 		nextReplies="HurdTrucker_hellodlg1_P1_1" />
 
@@ -7886,7 +7886,7 @@ EndConversation()" />
 
 	<Reply
 		name="HurdTrucker_hellodlg1_4"
-		text="Felix是个危险的人……不过我看你不在乎。他住在一个防御严密的小村庄里。简直就是个基地。"
+		text="费利克斯是个危险的人……不过我看你不在乎。他住在一个防御严密的小村庄里。简直就是个基地。"
 		role="NPC"
 		nextReplies="HurdTrucker_hellodlg1_P1_4" />
 
@@ -7898,13 +7898,13 @@ EndConversation()" />
 
 	<Reply
 		name="HurdTrucker_hellodlg1_6"
-		text="但现在你要去攻打他们的老巢！好吧，我也想除掉这个Felix，所以我会帮你！你需要更好的武器。去Troitsk找酒保。他欠我个人情。"
+		text="但现在你要去攻打他们的老巢！好吧，我也想除掉这个费利克斯，所以我会帮你！你需要更好的武器。去特罗伊茨克找酒保。他欠我个人情。"
 		role="NPC"
 		nextReplies="HurdTrucker_hellodlg1_P1_6" />
 
 	<Reply
 		name="HurdTrucker_hellodlg1_P1"
-		text="Glukhoe被烧毁了！所有人都死了……我父亲……"
+		text="格卢霍耶被烧毁了！所有人都死了……我父亲……"
 		role="PLAYER"
 		nextReplies="HurdTrucker_hellodlg1_1" />
 
@@ -7922,7 +7922,7 @@ EndConversation()" />
 
 	<Reply
 		name="HurdTrucker_hellodlg1_P1_3"
-		text="仔细想想，我知道凶手的名字。只可能是Felix！"
+		text="仔细想想，我知道凶手的名字。只可能是费利克斯！"
 		role="PLAYER"
 		nextReplies="HurdTrucker_hellodlg1_4" />
 
@@ -7959,7 +7959,7 @@ EndConversation()" />
 
 	<Reply
 		name="HurdTrucker_hellodlg2_P1"
-		text="Felix不会再找你麻烦了。他像狗一样跑了！"
+		text="费利克斯不会再找你麻烦了。他像狗一样跑了！"
 		role="PLAYER"
 		nextReplies="HurdTrucker_hellodlg2_1" />
 

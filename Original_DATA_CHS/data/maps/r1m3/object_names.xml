@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<ObjectNames>
+	<Object
+		Name="Asgard"
+		FullName="°ўЛ№јУµВ" />
+
+	<Object
+		Name="Asgard_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="Asgard_Shop"
+		FullName="КРіЎ" />
+
+	<Object
+		Name="Asgard_Bar"
+		FullName="ѕЖ°ЙЎё°ўЛ№јУµВЎ№" />
+
+	<Object
+		Name="Asgard_Bar_Barman"
+		FullName="№¤·д" />
+
+	<Object
+		Name="NonBomber"
+		FullName="ЙМ··НРВнЛ№" />
+
+	<Object
+		Name="Bonny"
+		FullName="БчАЛєєїµДб" />
+
+	<Object
+		Name="Bonny1"
+		FullName="БчАЛєєїµДб" />
+
+	<Object
+		Name="AsgardBarman"
+		FullName="ѕЖ±Ј°НІЄВЮ" />
+
+	<Object
+		Name="UnknownFromTunel"
+		FullName="Д°ЙъИЛ" />
+
+	<Object
+		Name="Pesht"
+		FullName="ЕеКІМШ" />
+
+	<Object
+		Name="Pesht_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="Pesht_Shop"
+		FullName="КРіЎ" />
+
+	<Object
+		Name="Pesht_Bar"
+		FullName="ѕЖ°ЙЎёє¦іжЎ№" />
+
+	<Object
+		Name="Pesht_Bar_Barman"
+		FullName="№¤ИЛІјВіЛ№" />
+
+	<Object
+		Name="CrazyRoadRiders"
+		FullName="ТхіБµДВнїЛОчД·" />
+
+	<Object
+		Name="TheForgotten"
+		FullName="ВеЛ№МШ" />
+
+	<Object
+		Name="TheForgotten_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="TheForgotten_Shop"
+		FullName="КРіЎ" />
+
+	<Object
+		Name="TheForgotten_Bar"
+		FullName="ѕЖ°ЙЎё»ШµЅОґАґЎ№" />
+
+	<Object
+		Name="TheForgotten_Bar_Barman"
+		FullName="№¤Н·±«АпЛ№" />
+
+	<Object
+		Name="LabirintMan"
+		FullName="ІЩЧчФ±ВхїЛ" />
+
+	<Object
+		Name="Minin"
+		FullName="ГЧДю" />
+
+	<Object
+		Name="Minin_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="Minin_Shop"
+		FullName="КРіЎ" />
+
+	<Object
+		Name="Minin_Bar"
+		FullName="ѕЖ°ЙЎёУНѕ®Ў№" />
+
+	<Object
+		Name="Mer_House"
+		FullName="КРХюМь" />
+
+	<Object
+		Name="Minin_Bar_Barman"
+		FullName="ґеі¤°НїЛ" />
+
+	<Object
+		Name="MininWorker"
+		FullName="№¤ИЛЙі»щ" />
+
+	<Object
+		Name="MininMer"
+		FullName="ГЧДюКРі¤" />
+
+	<Object
+		Name="MininWorker2"
+		FullName="№¤ИЛАпµВ" />
+
+	<Object
+		Name="Librarian"
+		FullName="АП¶аµВ" />
+
+	<Object
+		Name="Librarian1"
+		FullName="АП¶аµВ" />
+
+	<Object
+		Name="AboutThief"
+		FullName="»ъРЮ№¤ІјґД" />
+
+	<Object
+		Name="TheShahts"
+		FullName="ІЙКЇіЎ" />
+
+	<Object
+		Name="TheShahts_Workshop"
+		FullName="КРіЎ" />
+
+	<Object
+		Name="TheShahts_Shop"
+		FullName="іµјд" />
+
+	<Object
+		Name="TheShahts_Bar"
+		FullName="КіМГЎёАґЧФµШµЧЎ№" />
+
+	<Object
+		Name="TheShahts_Bar_Barman"
+		FullName="№НЦчґп·т" />
+
+	<Object
+		Name="Bomber"
+		FullName="№¤Н·°ЈµП" />
+
+	<Object
+		Name="TheVozleMinin"
+		FullName="ИыАіЛ№МШ" />
+
+	<Object
+		Name="TheVozleMinin_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="TheVozleMinin_Shop"
+		FullName="КРіЎ" />
+
+	<Object
+		Name="TheVozleMinin_Bar"
+		FullName="ѕЖ°ЙЎёМмїХЎ№" />
+
+	<Object
+		Name="TheVozleMinin_Bar_Barman"
+		FullName="ѕЖ±ЈµП¶ы" />
+
+	<Object
+		Name="WorkerForMoney"
+		FullName="БчАЛєє" />
+
+	<Object
+		Name="TheBanditOilMine"
+		FullName="УНїу" />
+
+	<Object
+		Name="TheBanditOilMine_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="TheBanditOilMine_Shop"
+		FullName="КРіЎ" />
+
+	<Object
+		Name="TheBanditOilMine_Bar"
+		FullName="ѕЖ°ЙЎёЅѕ°БЎ№" />
+
+	<Object
+		Name="OilMineWorker"
+		FullName="їЛАпЛ№" />
+
+	<Object
+		Name="TheBase"
+		FullName="51Зш" />
+
+	<Object
+		Name="TheBase_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="TheBase_Shop"
+		FullName="КРіЎ" />
+
+	<Object
+		Name="TheBase_Bar"
+		FullName="ѕЖ№ЭЎё¶сГыЎ№" />
+
+	<Object
+		Name="BaseBandit"
+		FullName="±«ІЄ" />
+
+	<Object
+		Name="Thief"
+		FullName="АнІйµВ" />
+
+	<Object
+		Name="PeshtGuardian"
+		FullName="ѕУГс°ўДб" />
+
+	<Object
+		Name="PeshtGuardian1"
+		FullName="ѕУГс°ўДб" />
+
+	<Object
+		Name="BaseGuardian"
+		FullName="ОА±шґпїЛ" />
+
+	<Object
+ Name = "BanditPeshtGuardian"
+				FullName = "ВУ¶бХЯДЪЙ­" />
+
+	<Object
+		Name="CircusMan"
+		FullName="ВьДб" />
+<!-- §Э§а§Ь§С§и§Ъ§Ъ -->
+	<Object
+		Name="PetrolStationTown1"
+		FullName="јУУНХѕ" />
+
+	<Object
+		Name="PetrolStationTown1_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="PetrolStationTown2"
+		FullName="јУУНХѕ" />
+
+	<Object
+		Name="PetrolStationTown2_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="PetrolStationTown3"
+		FullName="јУУНХѕ" />
+
+	<Object
+		Name="PetrolStationTown3_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="PetrolStationTown4"
+		FullName="јУУНХѕ" />
+
+	<Object
+		Name="PetrolStationTown4_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="PetrolStationTown5"
+		FullName="јУУНХѕ" />
+
+	<Object
+		Name="PetrolStationTown5_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="Asgard_enter"
+		FullName="°ўЛ№јУµВ" />
+
+	<Object
+		Name="TheForgotten_enter"
+		FullName="ВеЛ№МШ" />
+
+	<Object
+		Name="TheShahts_enter"
+		FullName="ІЙКЇіЎ" />
+
+	<Object
+		Name="ToR1M1"
+		FullName="НЁНщїЛАіµДµАВ·" />
+
+	<Object
+		Name="ToR1M2"
+		FullName="НЁНщАпЅтµДµАВ·" />
+
+	<Object
+		Name="ToR1M4"
+		FullName="НЁНщєХ¶ыµДµАВ·" />
+
+	<Object
+		Name="ToR2M1"
+		FullName="ЛнµА" />
+
+	<Object
+		Name="u1"
+		FullName="А­ОЪ¶ы" />
+
+	<Object
+		Name="u2"
+		FullName="МЖ" />
+
+	<Object
+		Name="u3"
+		FullName="ЧпИЛ" />
+
+	<Object
+		Name="u4"
+		FullName="µВАЧїЛ" />
+
+	<Object
+		Name="u5"
+		FullName="ЅЬТБ" />
+
+	<Object
+		Name="u6"
+		FullName="іБД¬±«ІЄ" />
+
+	<Object
+		Name="u7"
+		FullName="АПКу" />
+
+	<Object
+		Name="u8"
+		FullName="ЗрЕБ" />
+
+	<Object
+		Name="u9"
+		FullName="ТБЧИ" />
+</ObjectNames>

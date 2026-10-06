@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<ObjectNames>
+	<Object
+		Name="TheGadad"
+		FullName="јУґпµВ" />
+
+	<Object
+		Name="Gadad_Bar"
+		FullName="ї§·И№ЭЎёёЙїКЎ№" />
+
+	<Object
+		Name="Gadad_Bar_Barman"
+		FullName="ѕЖ±Ј" />
+
+	<Object
+		Name="Gadad_Shop"
+		FullName="КРіЎ" />
+
+	<Object
+		Name="Gadad_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="Gadad_Bar_Customer1"
+		FullName="¶ЕµВ" />
+
+	<Object
+		Name="TheKef"
+		FullName="ї­·т" />
+
+	<Object
+		Name="Kef_Bar"
+		FullName="ѕЖ°ЙЎёВМЦЮЎ№" />
+
+	<Object
+		Name="Kef_Bar_Barman"
+		FullName="ѕЖ±Ј" />
+
+	<Object
+		Name="Kef_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="Kef_Shop"
+		FullName="КРіЎ" />
+
+	<Object
+		Name="Kef_Bar_Customer1"
+		FullName="ВнАп°В" />
+
+	<Object
+		Name="TheKazif"
+		FullName="№юЧИ·т" />
+
+	<Object
+		Name="Kazif_Bar"
+		FullName="ѕЖ°ЙЎёєЪЅрЎ№" />
+
+	<Object
+		Name="Kazif_Bar_Barman"
+		FullName="ѕЖ±Ј" />
+
+	<Object
+		Name="Kazif_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="Kazif_Shop"
+		FullName="КРіЎ" />
+
+	<Object
+		Name="Kazif_Bar_Customer1"
+		FullName="ЕеАЧЎ¤Еµ°Ј¶ы" />
+
+	<Object
+		Name="r4_AlihamVil"
+		FullName="°ўАы№юД·" />
+
+	<Object
+		Name="r4_Aliham_Shop"
+		FullName="КРіЎ" />
+
+	<Object
+		Name="r4_Aliham_Bar"
+		FullName="ѕЖ°Й" />
+
+	<Object
+		Name="r4_Aliham_Bar_Barman"
+		FullName="±ѕЎ¤А­µЗ" />
+
+	<Object
+		Name="r4_Aliham_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="Oil_loc"
+		FullName="УНїу" />
+
+	<Object
+		Name="Port_loc"
+		FullName="єЈёЫ" />
+
+	<Object
+		Name="LostEngineer_loc"
+		FullName="іцМУµД№¤іМК¦" />
+
+	<Object
+		Name="Buhara_loc"
+		FullName="Іј№юА­" />
+
+	<Object
+		Name="ToR1M1"
+		FullName="НЁНщїЛАіµДµАВ·" />
+
+	<Object
+		Name="ToR4M2"
+		FullName="НЁНщФъ¶ыГ·їЛµДµАВ·" />
+
+	<Object
+		Name="ToR2M2"
+		FullName="НЁНщ°ў¶ыёщµДµАВ·" />
+
+	<Object
+		Name="TheOilCity"
+		FullName="КЇУН±¤" />
+
+	<Object
+		Name="TheZuhel"
+		FullName="ЧжєХ¶ы" />
+
+	<Object
+		Name="r4m1_BuharsLeader"
+		FullName="і¤АП" />
+
+	<Object
+		Name="Kazif_Bar_Customer2"
+		FullName="КжВнєХ" />
+
+	<Object
+		Name="Gadad_Bar_CrazyBook1"
+		FullName="Г·МШАпИыВЮ" />
+
+	<Object
+		Name="PetrolStationTown1"
+		FullName="јУУНХѕ" />
+
+	<Object
+		Name="PetrolStationTown2"
+		FullName="јУУНХѕ" />
+
+	<Object
+		Name="PetrolStationTown3"
+		FullName="јУУНХѕ" />
+
+	<Object
+		Name="PetrolStationTown4"
+		FullName="јУУНХѕ" />
+
+	<Object
+		Name="PetrolStationTown5"
+		FullName="јУУНХѕ" />
+
+	<Object
+		Name="PetrolStationTown6"
+		FullName="јУУНХѕ" />
+
+	<Object
+		Name="PetrolStationTown7"
+		FullName="јУУНХѕ" />
+
+	<Object
+		Name="r4m1_Engineer"
+		FullName="№¤іМК¦" />
+
+	<Object
+		Name="heavy_dot1_vulcan1"
+		FullName="µп±¤" />
+
+	<Object
+		Name="heavy_dot1_vulcan2"
+		FullName="µп±¤" />
+
+	<Object
+		Name="heavy_dot2_vulcan3"
+		FullName="µп±¤" />
+
+	<Object
+		Name="heavy_dot1_vulcan4"
+		FullName="µп±¤" />
+
+	<Object
+		Name="heavy_dot1_vulcan5"
+		FullName="µп±¤" />
+
+	<Object
+		Name="heavy_dot1_vulcan6"
+		FullName="µп±¤" />
+
+	<Object
+		Name="sack_dot2_kord1"
+		FullName="µп±¤" />
+
+	<Object
+		Name="heavy_dot1_vulcan7"
+		FullName="µп±¤" />
+
+	<Object
+		Name="heavy_dot2_vector1"
+		FullName="µп±¤" />
+
+	<Object
+		Name="heavy_dot3_rainmetal1"
+		FullName="µп±¤" />
+
+	<Object
+		Name="sack_dot2_flag1"
+		FullName="µп±¤" />
+
+	<Object
+		Name="sack_dot2_vulcan8"
+		FullName="µп±¤" />
+
+	<Object
+		Name="sack_dot2_kord2"
+		FullName="µп±¤" />
+
+	<Object
+		Name="TheOilCity_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="TheOilCity_Shop"
+		FullName="КРіЎ" />
+
+	<Object
+		Name="PetrolStationTown1_Workshop"
+		FullName="јУУНХѕ" />
+
+	<Object
+		Name="PetrolStationTown2_Workshop"
+		FullName="јУУНХѕ" />
+
+	<Object
+		Name="PetrolStationTown3_Workshop"
+		FullName="јУУНХѕ" />
+
+	<Object
+		Name="PetrolStationTown4_Workshop"
+		FullName="јУУНХѕ" />
+
+	<Object
+		Name="PetrolStationTown5_Workshop"
+		FullName="јУУНХѕ" />
+
+	<Object
+		Name="PetrolStationTown6_Workshop"
+		FullName="јУУНХѕ" />
+
+	<Object
+		Name="PetrolStationTown7_Workshop"
+		FullName="јУУНХѕ" />
+
+	<Object
+		Name="r4_Zuhel_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="r4_Zuhel_Shop"
+		FullName="КРіЎ" />
+
+	<Object
+		Name="urod1"
+		FullName="ИшВъ" />
+
+	<Object
+		Name="urod2"
+		FullName="їЖ¶ыЖХ" />
+
+	<Object
+		Name="urod3"
+		FullName="їу№¤" />
+
+	<Object
+		Name="urod4"
+		FullName="АіїЛЛ№" />
+
+	<Object
+		Name="urod5"
+		FullName="їЁВк" />
+
+	<Object
+		Name="urod6"
+		FullName="УДБй" />
+
+	<Object
+		Name="urod7"
+		FullName="С©ИЛ" />
+
+	<Object
+		Name="urod8"
+		FullName="·ЛНЅ" />
+
+	<Object
+		Name="urod9"
+		FullName="ІјАНДб" />
+
+	<Object
+		Name=""
+		FullName="" />
+
+	<Object
+		Name=""
+		FullName="" />
+
+	<Object
+		Name=""
+		FullName="" />
+</ObjectNames>

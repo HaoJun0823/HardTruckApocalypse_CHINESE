@@ -388,7 +388,7 @@
 
 	<Reply
 		name="Dlg_npc_000109"
-		text="人人都这么说，谁也不肯帮我——连我丈夫Charles都不肯！"
+		text="人人都这么说，谁也不肯帮我——连我丈夫查尔斯都不肯！"
 		role="NPC"
 		nextReplies="Dlg_pl_000110 Dlg_pl_000111" />
 
@@ -418,7 +418,7 @@
 
 	<Reply
 		name="r6m1_Lost_Keyt_dialog2"
-		text="那个倒霉蛋Charles跟你说什么了？"
+		text="那个倒霉蛋查尔斯跟你说什么了？"
 		role="NPC"
 		scriptCondition="GetCurNpc():GetSpokenCount() == 2"
 		nextReplies="Dlg_pl_000107" />
@@ -577,7 +577,7 @@
 
 	<Reply
 		name="Dlg_pl_000122"
-		text="你待在这儿别走，我去跟Kate商量一下再回来。"
+		text="你待在这儿别走，我去跟凯特商量一下再回来。"
 		role="PLAYER"
 		scriptResult="getObj('r6m1_Lost_Keyt'):SetSpokenCount( 2 );  EndConversation()" />
 
@@ -602,7 +602,7 @@
 
 	<Reply
 		name="Dlg_pl_000132"
-		text="啊哈！这才是实话。Kate听了肯定感兴趣。"
+		text="啊哈！这才是实话。凯特听了肯定感兴趣。"
 		role="PLAYER"
 		scriptResult="getObj('r6m1_Lost_Keyt'):SetSpokenCount( 4 );  EndConversation()" />
 
@@ -948,7 +948,7 @@
 
 	<Reply
 		name="r5m2_OneEye_N02"
-		text="早上好。听说这儿收土匪的人头换钱。Ethan的人头，你能给多少？"
+		text="早上好。听说这儿收土匪的人头换钱。伊森的人头，你能给多少？"
 		role="PLAYER"
 		nextReplies="r5m2_OneEye_N03" />
 
@@ -960,13 +960,13 @@
 
 	<Reply
 		name="r5m2_OneEye_N04"
-		text="什么叫先付？Ethan已经死在我手上了。你知道的，往他化油器里灌了把沙子——他还想让我交出全部钱财货色，换他饶我一命呢。"
+		text="什么叫先付？伊森已经死在我手上了。你知道的，往他化油器里灌了把沙子——他还想让我交出全部钱财货色，换他饶我一命呢。"
 		role="PLAYER"
 		nextReplies="r5m2_OneEye_N05" />
 
 	<Reply
 		name="r5m2_OneEye_N05"
-		text="这倒像Ethan的做派。那你怎么回的？"
+		text="这倒像伊森的做派。那你怎么回的？"
 		role="NPC"
 		nextReplies="r5m2_OneEye_N06" />
 
@@ -984,7 +984,7 @@
 
 	<Reply
 		name="r5m2_OneEye_N08"
-		text="我叫Vargant。"
+		text="我叫瓦根特。"
 		role="PLAYER"
 		nextReplies="r5m2_OneEye_N09" />
 
@@ -1074,7 +1074,7 @@
 
 	<Reply
 		name="r5m2_OneEye_N19"
-		text="多谢。去找Amerigo队长，告诉他你被编入了他的队伍。眼睛放亮些。"
+		text="多谢。去找阿梅里戈队长，告诉他你被编入了他的队伍。眼睛放亮些。"
 		role="NPC"
 		nextReplies="r5m2_OneEye_N20" />
 
@@ -1119,7 +1119,7 @@
 
 	<Reply
 		name="r5m2_Starevchik_N02"
-		text="你就是Ragman？"
+		text="你就是破布客？"
 		role="PLAYER"
 		nextReplies="r5m2_Starevchik_N03" />
 
@@ -1179,7 +1179,7 @@
 
 	<Reply
 		name="r5m2_Starevchik_N12b"
-		text="我正打算做道养生菜——原汤炖子弹填Ragman。"
+		text="我正打算做道养生菜——原汤炖子弹填破布客。"
 		role="PLAYER"
 		scriptResult="TActivate('trCreateStarievshik'); EndConversation()" />
 
@@ -1259,13 +1259,13 @@
 
 	<Reply
 		name="Dlg_npc_000346"
-		text="您误会我了。我们这儿有个跑江湖的商贩，大家顺口叫他Ragman。人家不收土豆不收木柴，专倒腾些老物件。他成天在城和垃圾场之间来回打转。不过时不时的，还真能淘到有用的东西。要说古物行家，您最好去找他聊。"
+		text="您误会我了。我们这儿有个跑江湖的商贩，大家顺口叫他破布客。人家不收土豆不收木柴，专倒腾些老物件。他成天在城和垃圾场之间来回打转。不过时不时的，还真能淘到有用的东西。要说古物行家，您最好去找他聊。"
 		role="NPC"
 		nextReplies="Dlg_pl_000347" />
 
 	<Reply
 		name="Dlg_pl_000347"
-		text="Ragman？行，我去找找他。"
+		text="破布客？行，我去找找他。"
 		role="PLAYER"
 		scriptResult="TActivate('trCreateWowHumans'); CompleteQuest('r5m2_FHTalkWithCitizens_Quest'); EndConversation()" />
 
@@ -1289,7 +1289,7 @@
 
 	<Reply
 		name="Dlg_npc_000339"
-		text="先生？您还是先把您那辆车修修吧！都快散架了，亲爱的。这车正好够格进Ragman的收藏。他专收这类老古董，说不定会把这辆老爷车收了。"
+		text="先生？您还是先把您那辆车修修吧！都快散架了，亲爱的。这车正好够格进破布客的收藏。他专收这类老古董，说不定会把这辆老爷车收了。"
 		role="NPC"
 		nextReplies="Dlg_pl_000340" />
 
@@ -1301,7 +1301,7 @@
 
 	<Reply
 		name="Dlg_npc_000341"
-		text="Ragman从不在一个地方落脚，成天来来回回地跑。您在城四周找找吧。只要您那辆破车别半道散架，他兴许还能给您个不错的价。拿着这点钱，先生，把车稍微拾掇拾掇。"
+		text="破布客从不在一个地方落脚，成天来来回回地跑。您在城四周找找吧。只要您那辆破车别半道散架，他兴许还能给您个不错的价。拿着这点钱，先生，把车稍微拾掇拾掇。"
 		role="NPC"
 		nextReplies="Dlg_pl_000342" />
 
@@ -1319,7 +1319,7 @@
 
 	<Reply
 		name="r5m2_Pervomaika_Charli_N07"
-		text="我真是不知道……去找Ragman吧。他是个跑江湖的商贩，在城与城之间来回跑，倒腾古代器物。说不定他能帮上您。"
+		text="我真是不知道……去找破布客吧。他是个跑江湖的商贩，在城与城之间来回跑，倒腾古代器物。说不定他能帮上您。"
 		role="NPC"
 		nextReplies="r5m2_Pervomaika_Charli_N08 Dlg_pl_000338" />
 
@@ -1337,14 +1337,14 @@
 
 	<Reply
 		name="r5m2_Pervomaika_Charli_3_N01"
-		text="哦，是您啊，尊敬的先生！找到Ragman了吗？"
+		text="哦，是您啊，尊敬的先生！找到破布客了吗？"
 		role="NPC"
 		scriptCondition="QuestStatus('r5m2_FHTalkWithAnticwar_Quest')==Q_COMPLETED"
 		nextReplies="r5m2_Pervomaika_Charli_2_N02a r5m2_Pervomaika_Charli_2_N02b" />
 
 	<Reply
 		name="r5m2_Pervomaika_Charli_2_N02b"
-		text="你那位Ragman可真是个奸商。"
+		text="你那位破布客可真是个奸商。"
 		role="PLAYER"
 		scriptCondition="GetVar('StarievshikDie').AsInt~=1"
 		scriptResult="EndConversation()" />
@@ -1508,7 +1508,7 @@
 
 	<Reply
 		name="r5m2_Zamucheniy_1_N03"
-		text="麻烦是我兄弟Maxwell。我们是双胞胎，懂吗？打小他就跟我形影不离。我走到哪儿，每面镜子里都能看见他。我受够了。帮我把他从我的世界里除掉。"
+		text="麻烦是我兄弟麦克斯韦。我们是双胞胎，懂吗？打小他就跟我形影不离。我走到哪儿，每面镜子里都能看见他。我受够了。帮我把他从我的世界里除掉。"
 		role="NPC"
 		nextReplies="r5m2_Zamucheniy_1_N04 r5m2_Zamucheniy_1_N05" />
 
@@ -1709,19 +1709,19 @@
 
 	<Reply
 		name="r5m1_Aplle_Bar_Ralf_1_N05"
-		text="不是每张地图都能通向你要去的地方。离这儿不远住着个人，人称Wiseguy。传言他是地图方面的行家，不过他自己死不承认。"
+		text="不是每张地图都能通向你要去的地方。离这儿不远住着个人，人称万事通。传言他是地图方面的行家，不过他自己死不承认。"
 		role="NPC"
 		nextReplies="r5m1_Aplle_Bar_Ralf_1_N06" />
 
 	<Reply
 		name="r5m1_Aplle_Bar_Ralf_1_N06"
-		text="Wiseguy是谁？我上哪儿找他？"
+		text="万事通是谁？我上哪儿找他？"
 		role="PLAYER"
 		nextReplies="r5m1_Aplle_Bar_Ralf_1_N07" />
 
 	<Reply
 		name="r5m1_Aplle_Bar_Ralf_1_N07"
-		text="伟大的力量就藏在旧时的知识里。他住得离这儿不远，在一栋荒废的屋子里。他的真名叫Jack Noval。"
+		text="伟大的力量就藏在旧时的知识里。他住得离这儿不远，在一栋荒废的屋子里。他的真名叫杰克·诺瓦尔。"
 		role="NPC"
 		nextReplies="r5m1_Aplle_Bar_Ralf_1_N08" />
 
@@ -1746,7 +1746,7 @@
 
 	<Reply
 		name="r5m1_Konneks_Gonchik_1_N03"
-		text="你，还有Sam！明白吗？！"
+		text="你，还有萨姆！明白吗？！"
 		role="NPC"
 		nextReplies="r5m1_Konneks_Gonchik_1_N04" />
 
@@ -1764,7 +1764,7 @@
 
 	<Reply
 		name="r5m1_Konneks_Gonchik_1_N06"
-		text="我看你脑子有点毛病。我该怎么跟Sam回话？"
+		text="我看你脑子有点毛病。我该怎么跟萨姆回话？"
 		role="PLAYER"
 		nextReplies="r5m1_Konneks_Gonchik_1_N07" />
 
@@ -1980,7 +1980,7 @@
 
 	<Reply
 		name="Dlg_npc_000297"
-		text="需要抢在对手前头，把包裹送到Sam手里。记住，赢家通吃。"
+		text="需要抢在对手前头，把包裹送到萨姆手里。记住，赢家通吃。"
 		role="NPC"
 		nextReplies="Dlg_pl_000298 Dlg_pl_000421" />
 
@@ -2078,7 +2078,7 @@
 
 	<Reply
 		name="r5m1_Bratello_1_N06b"
-		text="我还说什么？Eco先生告诉我，你会把货给我，然后告诉我送到哪儿。"
+		text="我还说什么？埃科先生告诉我，你会把货给我，然后告诉我送到哪儿。"
 		role="PLAYER"
 		nextReplies="r5m1_Bratello_1_N07b" />
 
@@ -2226,13 +2226,13 @@
 
 	<Reply
 		name="Dlg_pl_000353"
-		text="我这儿有个包裹要交给Joe。认识他吗？"
+		text="我这儿有个包裹要交给乔。认识他吗？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000354" />
 
 	<Reply
 		name="Dlg_npc_000354"
-		text="老Joe谁不认识。巧了，正是在下。"
+		text="老乔谁不认识。巧了，正是在下。"
 		role="NPC"
 		nextReplies="Dlg_pl_000355" />
 
@@ -2244,26 +2244,26 @@
 
 	<Reply
 		name="Dlg_npc_000356"
-		text="Joe的账从来不欠。这是你的500块。"
+		text="乔的账从来不欠。这是你的500块。"
 		role="NPC"
 		scriptResult="AddPlayerMoney( 500 )"
 		nextReplies="Dlg_pl_000357" />
 
 	<Reply
 		name="Dlg_pl_000357"
-		text="跟我说说，Joe，上哪儿能找到Harlequin？"
+		text="跟我说说，乔，上哪儿能找到丑角？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000358" />
 
 	<Reply
 		name="Dlg_npc_000358"
-		text="Joe这就告诉你。城的这一片归狗帮。把车停下，你自然能听见Harlequin的笑声。"
+		text="乔这就告诉你。城的这一片归狗帮。把车停下，你自然能听见丑角的笑声。"
 		role="NPC"
 		nextReplies="Dlg_pl_000359" />
 
 	<Reply
 		name="Dlg_pl_000359"
-		text="多谢，Joe。"
+		text="多谢，乔。"
 		role="PLAYER"
 		scriptResult="EndConversation()" />
 
@@ -2288,13 +2288,13 @@
 
 	<Reply
 		name="Dlg_pl_000363"
-		text="Harlequin？"
+		text="丑角？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000364" />
 
 	<Reply
 		name="Dlg_npc_000364"
-		text="他曾经是狗帮老大Bulldog的左右手。这儿没人会帮狗帮的敌人。"
+		text="他曾经是狗帮老大斗牛犬的左右手。这儿没人会帮狗帮的敌人。"
 		role="NPC"
 		nextReplies="Dlg_pl_000365" />
 
@@ -2306,7 +2306,7 @@
 
 	<Reply
 		name="Dlg_npc_000366"
-		text="要么，你就去给Garfield的猫帮干活。给Garfield卖命，你就有钱有油。Garfield就在别墅里。告诉他，是Kitty介绍来的。"
+		text="要么，你就去给加菲尔德的猫帮干活。给加菲尔德卖命，你就有钱有油。加菲尔德就在别墅里。告诉他，是凯蒂介绍来的。"
 		role="NPC"
 		nextReplies="Dlg_pl_000367" />
 
@@ -2326,13 +2326,13 @@
 
 	<Reply
 		name="Dlg_pl_000369"
-		text="多谢，老板。我是来谈活儿的。Kitty说您这儿正招人。"
+		text="多谢，老板。我是来谈活儿的。凯蒂说您这儿正招人。"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000370" />
 
 	<Reply
 		name="Dlg_npc_000370"
-		text="没错。听说你就是在正面决斗中干掉Harlequin的那位。你的身手肯定没得说，我雇你了。"
+		text="没错。听说你就是在正面决斗中干掉丑角的那位。你的身手肯定没得说，我雇你了。"
 		role="NPC"
 		nextReplies="Dlg_pl_000371" />
 
@@ -2370,7 +2370,7 @@
 
 	<Reply
 		name="Dlg_npc_000376"
-		text="你走之后，Egoist那头猪对老娘的卡车下了黑手。现在车成了一堆废铁。"
+		text="你走之后，利己者那头猪对老娘的卡车下了黑手。现在车成了一堆废铁。"
 		role="NPC"
 		nextReplies="Dlg_pl_000377" />
 
@@ -2426,7 +2426,7 @@
 
 	<Reply
 		name="Dlg_pl_000385"
-		text="我知道Egoist现在在哪儿。他在圣拉斐尔，身边就带几个护卫。"
+		text="我知道利己者现在在哪儿。他在圣拉斐尔，身边就带几个护卫。"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000386" />
 
@@ -2502,7 +2502,7 @@
 
 	<Reply
 		name="Dlg_pl_000397"
-		text="你活着更值钱。跟我去见Borne。"
+		text="你活着更值钱。跟我去见波恩。"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000398" />
 
@@ -2572,7 +2572,7 @@
 
 	<Reply
 		name="Sin_Joe2_dlg"
-		text="是你吗？Joe多谢你救了他这条命。"
+		text="是你吗？乔多谢你救了他这条命。"
 		role="NPC"
 		scriptCondition="QuestStatus('Sin_JoeSaving_qst')==Q_TAKEN"
 		scriptResult="CompleteQuest('Sin_JoeSaving_qst')"
@@ -2580,20 +2580,20 @@
 
 	<Reply
 		name="Dlg_pl_000409"
-		text="顺手而已。我本是来找Borne算账的，可惜没找着。所以我要走了。走之前去跟牧师道个别。"
+		text="顺手而已。我本是来找波恩算账的，可惜没找着。所以我要走了。走之前去跟牧师道个别。"
 		role="PLAYER"
 		scriptResult="EndConversation()"
 		nextReplies="Dlg_npc_000416" />
 
 	<Reply
 		name="Dlg_npc_000416"
-		text="Joe祝你汽油永远纯净！"
+		text="乔祝你汽油永远纯净！"
 		role="NPC"
 		nextReplies="Dlg_pl_000417" />
 
 	<Reply
 		name="Dlg_pl_000417"
-		text="你也一样，Joe！"
+		text="你也一样，乔！"
 		role="PLAYER"
 		scriptResult="EndConversation()" />
 
@@ -2644,13 +2644,13 @@
 
 	<Reply
 		name="Dlg_pl_000432"
-		text="战斗里我看见Kitty的卡车了。她怎么样？"
+		text="战斗里我看见凯蒂的卡车了。她怎么样？"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000420" />
 
 	<Reply
 		name="Dlg_npc_000420"
-		text="放心，她安然无恙。我的人把她押到老农场去了。老Garfield得为她的自由掏腰包。这期间，我们会把她面罩一片片剪下来寄给他。"
+		text="放心，她安然无恙。我的人把她押到老农场去了。老加菲尔德得为她的自由掏腰包。这期间，我们会把她面罩一片片剪下来寄给他。"
 		role="NPC"
 		nextReplies="Dlg_pl_000429" />
 

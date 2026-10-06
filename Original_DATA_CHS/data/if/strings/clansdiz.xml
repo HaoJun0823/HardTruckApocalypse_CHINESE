@@ -98,11 +98,11 @@
 
 	<string
 		id="Belong_1013"
-		value="Felix帮" />
+		value="费利克斯帮" />
 
 	<string
 		id="Belong_1013_abb"
-		value="Felix帮" />
+		value="费利克斯帮" />
 
 	<string
 		id="Belong_1014"
@@ -178,35 +178,35 @@
 
 	<string
 		id="Belong_1023"
-		value="Harakhat" />
+		value="哈拉卡特" />
 
 	<string
 		id="Belong_1023_abb"
-		value="Harakhat" />
+		value="哈拉卡特" />
 
 	<string
 		id="Belong_1024"
-		value="Kurtadam" />
+		value="库尔塔丹" />
 
 	<string
 		id="Belong_1024_abb"
-		value="Kurtadam" />
+		value="库尔塔丹" />
 
 	<string
 		id="Belong_1025"
-		value="Al'Aran" />
+		value="阿尔阿兰" />
 
 	<string
 		id="Belong_1025_abb"
-		value="Al'Aran" />
+		value="阿尔阿兰" />
 
 	<string
 		id="Belong_1026"
-		value="Serseri" />
+		value="塞尔塞里" />
 
 	<string
 		id="Belong_1026_abb"
-		value="Serseri" />
+		value="塞尔塞里" />
 
 	<string
 		id="Belong_1027"
@@ -234,11 +234,11 @@
 
 	<string
 		id="Belong_1030"
-		value="Njeri" />
+		value="涅里" />
 
 	<string
 		id="Belong_1030_abb"
-		value="Njeri" />
+		value="涅里" />
 
 	<string
 		id="Belong_1040"
@@ -250,7 +250,7 @@
 
 	<string
 		id="Belong_1041"
-		value="Axel" />
+		value="阿克塞尔" />
 
 	<string
 		id="Belong_1041_abb"
@@ -258,7 +258,7 @@
 
 	<string
 		id="Belong_1042"
-		value="Alice" />
+		value="爱丽丝" />
 
 	<string
 		id="Belong_1042_abb"
@@ -266,7 +266,7 @@
 
 	<string
 		id="Belong_1043"
-		value="Zeon镇" />
+		value="锡安镇" />
 
 	<string
 		id="Belong_1043_abb"
@@ -322,7 +322,7 @@
 
 	<string
 		id="Belong_1050"
-		value="Sinx" />
+		value="辛克斯" />
 
 	<string
 		id="Belong_1050_abb"
@@ -350,7 +350,7 @@
 
 	<string
 		id="Belong_1053_abb"
-		value="Seil" />
+		value="塞尔" />
 
 	<string
 		id="Belong_1054"
@@ -394,7 +394,7 @@
 
 	<string
 		id="Belong_1064"
-		value="Uluk民兵" />
+		value="乌鲁克民兵" />
 
 	<string
 		id="Belong_1064_abb"
@@ -470,7 +470,7 @@
 
 	<string
 		id="Belong_1015_diz"
-		value="在魅力非凡的领袖Axel的感召下，阿尔根人与邻邦交战。他们还雇佣各种雇佣兵。" />
+		value="在魅力非凡的领袖阿克塞尔的感召下，阿尔根人与邻邦交战。他们还雇佣各种雇佣兵。" />
 
 	<string
 		id="Belong_1016_diz"
@@ -530,11 +530,11 @@
 
 	<string
 		id="Belong_1030_diz"
-		value="Njeri，来自外太空的客人。" />
+		value="涅里，来自外太空的客人。" />
 
 	<string
 		id="Belong_1040_diz"
-		value="对Axel的统治不满的阿尔根人。" />
+		value="对阿克塞尔的统治不满的阿尔根人。" />
 
 	<string
 		id="Belong_1041_diz"
@@ -546,7 +546,7 @@
 
 	<string
 		id="Belong_1043_diz"
-		value="秘密城镇Zeon的守卫者。" />
+		value="秘密城镇锡安的守卫者。" />
 
 	<string
 		id="Belong_1044_diz"
@@ -574,7 +574,7 @@
 
 	<string
 		id="Belong_1050_diz"
-		value="Sinx。一个没有固定居所的怪人。" />
+		value="辛克斯。一个没有固定居所的怪人。" />
 
 	<string
 		id="Belong_1051_diz"
@@ -610,7 +610,7 @@
 
 	<string
 		id="Belong_1064_diz"
-		value="即便在Uluk的族人中，也仍有忠诚的德鲁伊。" />
+		value="即便在乌鲁克的族人中，也仍有忠诚的德鲁伊。" />
 
 	<string
 		id="Belong_1065_diz"

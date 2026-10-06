@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<ObjectNames>
+	<Object
+		Name="TheGelvetcia"
+		FullName="єХ¶ыО¬µЩСЗ" />
+
+	<Object
+		Name="TheGelvetcia_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="TheGelvetcia_Shop"
+		FullName="КРіЎ" />
+
+	<Object
+		Name="TheGelvetcia_House"
+		FullName="ФЄАПФє" />
+
+	<Object
+		Name="TheGelvetcia_Bar"
+		FullName="јЄёс" />
+
+	<Object
+		Name="TheGelvetcia_Bar_Barman"
+		FullName="ГШКйІјАіїЛ" />
+
+	<Object
+		Name="Senat"
+		FullName="ІОТйФ±К©НЯґД" />
+
+	<Object
+		Name="Gulik"
+		FullName="Ж­ЧУ" />
+
+	<Object
+		Name="TheSel"
+		FullName="Иы¶ы" />
+
+	<Object
+		Name="TheSel_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="TheSel_Shop"
+		FullName="КРіЎ" />
+
+	<Object
+		Name="TheSel_House"
+		FullName="іµХѕ" />
+
+	<Object
+		Name="TheSel_Bar"
+		FullName="ѕЖ°ЙЎёА­О¬¶чЎ№" />
+
+	<Object
+		Name="TheSel_Bar_Barman"
+		FullName="№НЦчСЗІ®" />
+
+	<Object
+		Name="SelCitizen"
+		FullName="µз№¤" />
+
+	<Object
+		Name="SelBarmen"
+		FullName="ѕЖ±Ј" />
+
+	<Object
+		Name="Estet"
+		FullName="ГАС§јТїј·т" />
+
+	<Object
+		Name="TheTuzz"
+		FullName="НјЛ№" />
+
+	<Object
+		Name="TheTuzz_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="TheTuzz_Shop"
+		FullName="КРіЎ" />
+
+	<Object
+		Name="TheTuzz_House"
+		FullName="Хч±шЦРРД" />
+
+	<Object
+		Name="TheTuzz_Bar"
+		FullName="КіМГ" />
+
+	<Object
+		Name="TheTuzz_Bar_Barman"
+		FullName="№Д¶ЇХЯ±«ІЄ" />
+
+	<Object
+		Name="TuzVerb"
+		FullName="Хч±ш№ЩєєїЛ" />
+
+	<Object
+		Name="TheDoubtful"
+		FullName="ЧФУЙХт" />
+
+	<Object
+		Name="TheDoubtful_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="TheDoubtful_Shop"
+		FullName="КРіЎ" />
+
+	<Object
+		Name="TheDoubtful_Bar"
+		FullName="ѕЖ°Й" />
+
+	<Object
+		Name="TheDoubtful_Bar_Barman"
+		FullName="ѕЖ±Ј" />
+
+	<Object
+		Name="AntipodEstet"
+		FullName="ГыјТ" />
+
+	<Object
+		Name="TheUnderAttaks"
+		FullName="І©°®Хт" />
+
+	<Object
+		Name="TheUnderAttaks_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="TheUnderAttaks_Shop"
+		FullName="КРіЎ" />
+
+	<Object
+		Name="TheUnderAttaks_Bar"
+		FullName="ѕЖ°Й" />
+
+	<Object
+		Name="TheUnderAttaks_Bar_Barman"
+		FullName="ѕЖ±Ј" />
+
+	<Object
+		Name="TheVill2"
+		FullName="ЖЅµИХт" />
+
+	<Object
+		Name="TheVill2_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="TheVill2_Shop"
+		FullName="КРіЎ" />
+
+	<Object
+		Name="TheVill2_Bar"
+		FullName="ѕЖ°Й" />
+
+	<Object
+		Name="TheVill2_Bar_Barman"
+		FullName="ѕЖ±Ј" />
+
+	<Object
+		Name="TheVill1"
+		FullName="ёщµЗ±¤" />
+
+	<Object
+		Name="TheVill1_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="TheVill1_Shop"
+		FullName="КРіЎ" />
+
+	<Object
+		Name="TheVill1_Bar"
+		FullName="ѕЖ°Й" />
+
+	<Object
+		Name="TheVill1_Bar_Barman"
+		FullName="ѕЖ±Ј" />
+
+	<Object
+		Name="PetrolStationTown1"
+		FullName="јУУНХѕ" />
+
+	<Object
+		Name="PetrolStationTown1_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="PetrolStationTown2"
+		FullName="јУУНХѕ" />
+
+	<Object
+		Name="PetrolStationTown2_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="PetrolStationTown3"
+		FullName="јУУНХѕ" />
+
+	<Object
+		Name="PetrolStationTown3_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="PetrolStationTown4"
+		FullName="јУУНХѕ" />
+
+	<Object
+		Name="PetrolStationTown4_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="PetrolStationTown5"
+		FullName="јУУНХѕ" />
+
+	<Object
+		Name="PetrolStationTown5_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="TheGelvetcia_enter"
+		FullName="єХ¶ыО¬µЩСЗ" />
+
+	<Object
+		Name="TheSel_enter"
+		FullName="Иы¶ы" />
+
+	<Object
+		Name="TheTuzz_enter"
+		FullName="НјЛ№" />
+
+	<Object
+		Name="TheDoubtful_enter"
+		FullName="ЧФУЙХт" />
+
+	<Object
+		Name="TheUnderAttaks_enter"
+		FullName="І©°®Хт" />
+
+	<Object
+		Name="TheVill1_enter"
+		FullName="ёщµЗ±¤" />
+
+	<Object
+		Name="TheVill2_enter"
+		FullName="ЖЅµИХт" />
+
+	<Object
+		Name="ToR1M3"
+		FullName="ЛнµА" />
+
+	<Object
+		Name="ToR3M1"
+		FullName="єЈµЧЛнµА" />
+
+	<Object
+		Name="ToR2M2"
+		FullName="НЁНщ°ў¶ыёщµДµАВ·" />
+
+	<Object
+		Name="ToR2M2small"
+		FullName="НЁНщ°ў¶ыёщµДРЎѕ¶" />
+
+	<Object
+		Name="u1"
+		FullName="І®АН" />
+
+	<Object
+		Name="u2"
+		FullName="Ж¤МШТЅЙъ" />
+
+	<Object
+		Name="u3"
+		FullName="Апі№" />
+
+	<Object
+		Name="u4"
+		FullName="јЄ¶ч" />
+
+	<Object
+		Name="u5"
+		FullName="ГЧА­" />
+
+	<Object
+		Name="u6"
+		FullName="ёсАЧ" />
+
+	<Object
+		Name="u7"
+		FullName="Иш¶а" />
+
+	<Object
+		Name="u8"
+		FullName="ёЈЛ№ёщ" />
+
+	<Object
+		Name="u9"
+		FullName="Сп" />
+</ObjectNames>

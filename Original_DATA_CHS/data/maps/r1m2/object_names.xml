@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<ObjectNames>
+	<Object
+		Name="Esting"
+		FullName="°ЈМ©¶ыДЙ" />
+
+	<Object
+		Name="Esting_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="Esting_Shop"
+		FullName="ЙМµк" />
+
+	<Object
+		Name="Esting_Bar"
+		FullName="ѕЖ№ЭЎёїмАЦЎ№" />
+
+	<Object
+		Name="Esting_Bar_Barman"
+		FullName="ѕЖ±ЈЛ№ЕЙїЛ" />
+
+	<Object
+		Name="Fermer"
+		FullName="Е©·тФјЙЄ·т" />
+
+	<Object
+		Name="MainSigner"
+		FullName="ЗЎ»щ" />
+
+	<Object
+		Name="Kollizey1"
+		FullName="ОЮБДµДИЛ" />
+
+	<Object
+		Name="Midragd"
+		FullName="ГЧµВјУµВ" />
+
+	<Object
+		Name="Midragd_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="Midragd_Shop"
+		FullName="ЙМµк" />
+
+	<Object
+		Name="Midragd_Bar"
+		FullName="ѕЖ°Й" />
+
+	<Object
+		Name="Midragd_Museum"
+		FullName="І©Оп№Э" />
+
+	<Object
+		Name="Midragd_Bar_Barman"
+		FullName="ѕЖ±Ј" />
+
+	<Object
+		Name="Professor"
+		FullName="АіїЛМШТЅЙъ" />
+
+	<Object
+		Name="Kollizey2"
+		FullName="±нСЭХЯ" />
+
+	<Object
+		Name="Citizen"
+		FullName="КРГс" />
+
+	<Object
+		Name="Zavhoz"
+		FullName="№ЬјТ" />
+
+	<Object
+		Name="Umelec"
+		FullName="ЧЁјТПИЙъ" />
+
+	<Object
+		Name="Porto"
+		FullName="ІЁ¶ыНј" />
+
+	<Object
+		Name="Porto_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="Porto_Shop"
+		FullName="ЙМµк" />
+
+	<Object
+		Name="Porto_Bar"
+		FullName="ѕЖ°ЙЎёИыИЙЦ®ёиЎ№" />
+
+	<Object
+		Name="Porto_Bar_Barman"
+		FullName="ѕЖ±ЈВнїЛЛ№" />
+
+	<Object
+		Name="Karavanshik"
+		FullName="Лѕ»ъ" />
+
+	<Object
+		Name="Anticwar"
+		FullName="їј№ЕС§јТ" />
+
+	<Object
+		Name="Kollizey3"
+		FullName="С°ЗуґМј¤µДИЛ" />
+
+	<Object
+		Name="PortoCitizen"
+		FullName="КРГсї­¶ч" />
+
+	<Object
+		Name="TheArtefact"
+		FullName="ВеївЛ№" />
+
+	<Object
+		Name="TheArtefact_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="TheArtefact_Shop"
+		FullName="ЙМµк" />
+
+	<Object
+		Name="TheArtefact_Bar"
+		FullName="ѕЖ№Э" />
+
+	<Object
+		Name="TheArtefact_Bar_Barman"
+		FullName="ЖЅГсЅЬїЛ" />
+
+	<Object
+		Name="Staruha"
+		FullName="АПёѕИЛ" />
+
+	<Object
+		Name="Ben"
+		FullName="АП±ѕ" />
+
+	<Object
+		Name="TheSign"
+		FullName="СЗ¶ы" />
+
+	<Object
+		Name="TheSign_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="TheSign_Shop"
+		FullName="ЙМµк" />
+
+	<Object
+		Name="TheSign_Bar"
+		FullName="ѕЖ°ЙЎёК®ЧЦВ·їЪЎ№" />
+
+	<Object
+		Name="TheSign_Bar_Barman"
+		FullName="і¤АП±«ІЄ" />
+
+	<Object
+		Name="Signer"
+		FullName="Е©·т" />
+
+	<Object
+		Name="TheRace"
+		FullName="їЖ¶ы»фЧИ" />
+
+	<Object
+		Name="TheRace_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="TheRace_Shop"
+		FullName="ЙМµк" />
+
+	<Object
+		Name="TheRace_Bar"
+		FullName="ѕЖ°ЙЎё»іѕЙЎ№" />
+
+	<Object
+		Name="TheRace_Bar_Barman"
+		FullName="ѕЖ±ЈГЬ°є" />
+
+	<Object
+		Name="TheOlimp"
+		FullName="°ВБЦЖҐЛ№" />
+
+	<Object
+		Name="TheOlimp_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="TheOlimp_Shop"
+		FullName="ЙМµк" />
+
+	<Object
+		Name="TheOlimp_Bar"
+		FullName="ѕЖ°ЙЎё№ЪѕьЎ№" />
+
+	<Object
+		Name="TheOlimp_Bar_Barman"
+		FullName="і¤АПЦжЛ№" />
+
+	<Object
+		Name="TheTickets"
+		FullName="ВЮµВЛ№МШ" />
+
+	<Object
+		Name="TheTickets_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="TheTickets_Shop"
+		FullName="ЙМµк" />
+
+	<Object
+		Name="TheTickets_Bar"
+		FullName="ѕЖ°ЙЎёФ­ЧУЎ№" />
+
+	<Object
+		Name="TheTickets_ZAO"
+		FullName="ЖыіµФЛ¶Ї№«Лѕ" />
+
+	<Object
+		Name="TheTickets_Bar_Barman"
+		FullName="ѕЖ±ЈАо" />
+
+	<Object
+		Name="Director"
+		FullName="ЖуТµјТ" />
+
+	<Object
+		Name="Antisincer"
+		FullName="АБєє" />
+
+	<Object
+		Name="Fighter1"
+		FullName="ЅЗ¶·КїИшА­" />
+
+	<Object
+		Name="Fighter2"
+		FullName="ЅЗ¶·КїВеёщ" />
+
+	<Object
+		Name="PetrolStationTown1"
+		FullName="јУУНХѕ" />
+
+	<Object
+		Name="PetrolStationTown1_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="PetrolStationTown2"
+		FullName="јУУНХѕ" />
+
+	<Object
+		Name="PetrolStationTown2_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="PetrolStationTown3"
+		FullName="јУУНХѕ" />
+
+	<Object
+		Name="PetrolStationTown3_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="PetrolStationTown4"
+		FullName="јУУНХѕ" />
+
+	<Object
+		Name="PetrolStationTown4_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="PetrolStationTown5"
+		FullName="јУУНХѕ" />
+
+	<Object
+		Name="PetrolStationTown5_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="Esting_enter"
+		FullName="°ЈМ©¶ыДЙ" />
+
+	<Object
+		Name="Midragd_enter"
+		FullName="ГЧµВјУµВ" />
+
+	<Object
+		Name="Porto_enter"
+		FullName="ІЁ¶ыНј" />
+
+	<Object
+		Name="TheArtefact_enter"
+		FullName="ВеївЛ№" />
+
+	<Object
+		Name="TheSign_enter"
+		FullName="СЗ¶ы" />
+
+	<Object
+		Name="TheRace_enter"
+		FullName="їЖ¶ы»фЧИ" />
+
+	<Object
+		Name="TheOlimp_enter"
+		FullName="°ВБЦЖҐЛ№" />
+
+	<Object
+		Name="TheTickets_enter"
+		FullName="ВЮµВЛ№МШ" />
+
+	<Object
+		Name="ToR1M1"
+		FullName="НЁНщїЛАіµДµАВ·" />
+
+	<Object
+		Name="ToR1M3"
+		FullName="НЁНщНЯМШАјµДµАВ·" />
+
+	<Object
+		Name="u1"
+		FullName="±ѕЅЬГч" />
+
+	<Object
+		Name="u2"
+		FullName="·иїсГжѕЯ" />
+
+	<Object
+		Name="u3"
+		FullName="К©НЯґД" />
+
+	<Object
+		Name="u4"
+		FullName="ГЧ·т" />
+
+	<Object
+		Name="u5"
+		FullName="НХЧУ" />
+
+	<Object
+		Name="u6"
+		FullName="єУ" />
+
+	<Object
+		Name="u7"
+		FullName="Иы·Ж¶ы" />
+
+	<Object
+		Name="u8"
+		FullName="вэИц" />
+
+	<Object
+		Name="u9"
+		FullName="Фу¶ы" />
+</ObjectNames>

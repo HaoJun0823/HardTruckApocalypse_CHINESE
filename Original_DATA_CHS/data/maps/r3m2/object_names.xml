@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<ObjectNames>
+	<Object
+		Name="OracleDefendersVil"
+		FullName="ґеЧЇ" />
+
+	<Object
+		Name="OracleDefendersVil_Shop"
+		FullName="КРіЎ" />
+
+	<Object
+		Name="OracleDefendersVil_WorkShop"
+		FullName="іµјд" />
+
+	<Object
+		Name="AloneDruid"
+		FullName="¶АРРµВВіТБ" />
+
+	<Object
+		Name="AloneDruidBuilding"
+		FullName="µВВіТБРЎОЭ" />
+
+	<Object
+		Name="OracleDefenders_loc"
+		FullName="ЙсЪНРЕНЅЙЪХѕ" />
+
+	<Object
+		Name="ToR3M1"
+		FullName="НЁНщКҐБЦµДµАВ·" />
+
+	<Object
+		Name="Monster_loc"
+		FullName="їЙЕВµД№ЦОп" />
+
+	<Object
+		Name="VK1_loc"
+		FullName="µЪТ»їйѕЮКЇ±®" />
+
+	<Object
+		Name="VK2_loc"
+		FullName="µЪ¶юїйѕЮКЇ±®" />
+
+	<Object
+		Name="VK3_loc"
+		FullName="µЪИэїйѕЮКЇ±®" />
+
+	<Object
+		Name="Factory_loc"
+		FullName="ЛАХЯЦ®іЗ" />
+
+	<Object
+		Name="Oracle_loc"
+		FullName="ЙсЪН" />
+
+	<Object
+		Name="OracleNPC"
+		FullName="ЙсЪНХЯ" />
+
+	<Object
+		Name="OracleGuardian_1"
+		FullName="ЙсЪНКШОАХЯ" />
+
+	<Object
+		Name="AloneDruid_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="heavy_dot3_vulcan1"
+		FullName="µп±¤" />
+
+	<Object
+		Name="sack_dot2_kord2"
+		FullName="µп±¤" />
+
+	<Object
+		Name="urod1"
+		FullName="МбґпЛ№" />
+
+	<Object
+		Name="urod2"
+		FullName="ГЧЖж" />
+
+	<Object
+		Name="urod3"
+		FullName="ёкВуЛ№" />
+
+	<Object
+		Name="urod4"
+		FullName="СЗАъїЛЛ№" />
+
+	<Object
+		Name="urod5"
+		FullName="Л№їЖЖХ" />
+
+	<Object
+		Name="urod6"
+		FullName="№юЖж" />
+
+	<Object
+		Name="urod7"
+		FullName="Р¤¶ч" />
+
+	<Object
+		Name="urod8"
+		FullName="Ж¤ВеїЛЛ№" />
+
+	<Object
+		Name="urod9"
+		FullName="НъФъ" />
+
+	<Object
+		Name=""
+		FullName="" />
+
+	<Object
+		Name=""
+		FullName="" />
+
+	<Object
+		Name=""
+		FullName="" />
+
+	<Object
+		Name=""
+		FullName="" />
+</ObjectNames>

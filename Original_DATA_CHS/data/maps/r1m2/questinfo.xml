@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes"?>
+<QuestInfoResource>
+
+	<QuestInfo
+		questName="Vostok_Quest1"
+		briefDiz="З°Нщ°ЈМ©¶ыДЙЎЈ"
+		fullDiz="µЦґп°ЈМ©¶ыДЙіЗЈ¬ФЪДЗАпїЙТФґтМэµЅГЧµВјУµВµДПВВдЎЈ"
+		requestForTalk=""
+		smallImage=""
+		largeImage="">
+		<Coordinate value="1664.590 80.000 5261.314"/>
+	</QuestInfo>
+
+	<QuestInfo
+		questName="Fermers_Quest1"
+		briefDiz="ФЛЛН№¤ТХЖ·ЎЈ"
+		fullDiz="ґУґеЧУАпИЎЧЯ№¤ТХЖ·Ј¬ФЩ°СЛьЛНёшЕ©·тЎЈ"
+		requestForTalk="ОТФЪХТГЧµВјУµВЎ­Ў­"
+		smallImage=""
+		largeImage="">
+		<Coordinate value="1664.590 80.000 5261.314"/>
+	</QuestInfo>
+
+	<QuestInfo
+		questName="TalkArtefacter_Quest"
+		briefDiz="С°ХТїу№¤ЎЈ"
+		fullDiz="ФЪґеЧУАпХТµЅїу№¤Ј¬ґУЛыДЗАпИЎЧЯ№¤ТХЖ·ЎЈ"
+		requestForTalk="ОТКЗАґИЎ№¤ТХЖ·µДЎ­Ў­"
+		smallImage=""
+		largeImage="">
+		<Coordinate value="3543.931 75 5200.451"/>
+	</QuestInfo>
+
+	<QuestInfo
+		questName="BackFermers_Quest"
+		briefDiz="»ШµЅ°ЈМ©¶ыДЙЎЈ"
+		fullDiz="ґшЧЕ№¤ТХЖ·»ШµЅ°ЈМ©¶ыДЙЈ¬°СЛьЅ»ёшЕ©·тЎЈ"
+		requestForTalk="№¤ТХЖ·ёшДгЈ¬їмЛµГЧµВјУµВФЪДД¶щЎ­Ў­"
+		smallImage=""
+		largeImage="">
+		<Coordinate
+			value="1664.590 80.000 5261.314"/>
+	</QuestInfo>
+
+	<QuestInfo
+		questName="Bandit1_Quest1"
+		briefDiz="ПЕ»ЈґеГсЎЈ"
+		fullDiz="µГПЕ»ЈПЕ»ЈґеАпµДѕУГсЈ¬ГвµГЛыГЗµГТвНьРОЎЈїЄіµµЅґеЧУЦРСлЈ¬їЄјёЗ№ѕНРРЎЈ"
+		requestForTalk="Е©·тЖ­БЛОТЈ¬¶шОТРиТЄТ»ёцґУГЧµВјУµВАґµДИЛЎ­Ў­"
+		smallImage=""
+		largeImage="">
+		<Coordinate
+			value="3543.931 75 5200.451"/>
+	</QuestInfo>
+
+	<QuestInfo
+		questName="ReturnV_Quest1"
+		briefDiz="»ШµЅ°ЈМ©¶ыДЙЎЈ"
+		fullDiz="»ШµЅ°ЈМ©¶ыДЙИҐХТДЗёцД°ЙъИЛЈ¬ЛыЦЄµА№ШУЪГЧµВјУµВµДТ»ЗРЎЈ"
+		requestForTalk=""
+		smallImage=""
+		largeImage="">
+		<Coordinate
+			value="1664.590 80.000 5261.314"/>
+	</QuestInfo>
+
+	<QuestInfo
+		questName="Bandit1_Quest2"
+		briefDiz="З°НщГЧµВјУµВЎЈ"
+		fullDiz="НЁНщГЧµВјУµВµДВ·ТСѕ­ЗеіюЈ¬ИЛТІХТµЅБЛЈ¬І»ДЬФЩАЛ·СК±јдЎЈ"
+		requestForTalk="ОТ¶ј°мНЧБЛЈ¬їмЛµГЧµВјУµВФЪДД¶щЈїЈЎ"
+		smallImage=""
+		largeImage="">
+		<Coordinate
+			value="4317.598 0.000 806.368"/>
+	</QuestInfo>
+
+	<QuestInfo
+		questName="Bandit2_Quest1"
+		briefDiz="»¤ЛНЙМ¶УИҐІЁ¶ыНјЎЈ"
+		fullDiz="НЁНщГЧµВјУµВµДВ·ТСѕ­ЗеіюЈ¬ИЛТІХТµЅБЛЈ¬І»ДЬФЩАЛ·СК±јдЎЈ"
+		requestForTalk="јы№нЈЎФ­АґОТТЄХТµДИЛѕНКЗДгЈїЈЎДгИГОТАґ»ШХЫМЪКІГґСЅЈЎЈЎЈЎ"
+		smallImage=""
+		largeImage="">
+		<Coordinate
+			value="6827.100 58.000 6487.672"/>
+	</QuestInfo>
+
+	<QuestInfo
+		questName="Bandit3_Quest1"
+		briefDiz="·µ»ШГЧµВјУµВЎЈ"
+		fullDiz="·µ»ШГЧµВјУµВИҐИЎКЦМбПдЎЈ"
+		requestForTalk="ОТ°Сµ№ТЇµДЙМ¶УґУГЧµВјУµВЛНµЅБЛ"
+		smallImage=""
+		largeImage="">
+		<Coordinate
+			value="4317.598 0.000 806.368"/>
+	</QuestInfo>
+
+	<QuestInfo
+		questName="Bandit2_Quest3"
+		briefDiz="ИЎ»ШКЦМбПдЎЈ"
+		fullDiz="ИЎ»ШКЦМбПдЎЈ"
+		requestForTalk="єГБЛЈ¬И«¶ј°мНЧБЛЎ­Ў­"
+		smallImage=""
+		largeImage="">
+		<Coordinate
+			value="4317.598 0.000 806.368"/>
+	</QuestInfo>
+
+	<QuestInfo
+		questName="ProtegeNukem_Quest1"
+		briefDiz="ФЪГЧµВјУµВС°ХТ±¬ЖЖКЦЎЈ"
+		fullDiz="ФЪГЧµВјУµВС°ХТ±¬ЖЖКЦЎ­Ў­"
+		requestForTalk="єГ°ЙЈ¬ДЗДгѕЯМе¶јЦЄµАР©КІГґЈїЎ­Ў­"
+		smallImage=""
+		largeImage="">
+		<Coordinate
+			value="4317.598 0.000 806.368"/>
+	</QuestInfo>
+
+	<QuestInfo
+		questName="Nukem_Quest1"
+		briefDiz="ёшКЦМбПдЧ°ЙПХЁТ©ЎЈ"
+		fullDiz="ёшКЦМбПдЧ°ЙПХЁТ©ЎЈ"
+		requestForTalk="ґэ»б¶щФЩЛµЈ¬ПЦФЪОТРиТЄДг°СХЁТ©Ч°ЅшОТµДКЦМбПдЎ­Ў­"
+		smallImage=""
+		largeImage="">
+		<Coordinate
+			value="4317.598 0.000 806.368"/>
+	</QuestInfo>
+
+	<QuestInfo
+		questName="ReturnG_Quest1"
+		briefDiz="»ШµЅёсВ¬»фТ®ЎЈ"
+		fullDiz="»ШµЅёсВ¬»фТ®ЎЈ"
+		requestForTalk=""
+		smallImage=""
+		largeImage="">
+		<Coordinate
+			value="143 0 5646"/>
+	</QuestInfo>
+
+</QuestInfoResource>

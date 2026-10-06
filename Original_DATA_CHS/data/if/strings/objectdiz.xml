@@ -306,19 +306,19 @@
 
 	<string
 		id="r1m4_FVCalis_diz"
-		value="Calis" />
+		value="卡利斯" />
 
 	<string
 		id="r1m4_FVCordan_diz"
-		value="Cordan" />
+		value="科尔丹" />
 
 	<string
 		id="r1m4_FVPerch_diz"
-		value="Perch" />
+		value="佩奇" />
 
 	<string
 		id="r1m4_FVBerko_diz"
-		value="Berko" />
+		value="伯科" />
 
 	<string
 		id="r1m4_StorageVil_diz"
@@ -358,11 +358,11 @@
 
 	<string
 		id="r2m2_Marezzia_diz"
-		value="恐惧的人们日夜不停地工作，为Axel的雇佣兵提供补给。" />
+		value="恐惧的人们日夜不停地工作，为阿克塞尔的雇佣兵提供补给。" />
 
 	<string
 		id="r2m2_Zeon_diz"
-		value="Axel的隐秘城镇。只有极少数最信任的人知道它的位置。它是猩红之晨的心脏。" />
+		value="阿克塞尔的隐秘城镇。只有极少数最信任的人知道它的位置。它是猩红之晨的心脏。" />
 
 	<string
 		id="r2m2_Toskana_diz"

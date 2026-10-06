@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<ObjectNames>
+	<Object
+		Name="TheOlme"
+		FullName="°В¶ыГ·" />
+
+	<Object
+		Name="Olme_Bar"
+		FullName="ѕЖ°ЙЎё±ЯФµЎ№" />
+
+	<Object
+		Name="Olme_Shop"
+		FullName="КРіЎ" />
+
+	<Object
+		Name="Olme_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="Olme_Bar_Customer1"
+		FullName="Ее¶ыЖжНР" />
+
+	<Object
+		Name="Olme_Bar_Customer2"
+		FullName="јУ¶ыµЗ" />
+<!--Object 
+		Name="Olme_Bar_Customer3"
+FullName = "§®§С§в§Ь§Ъ§Щ§н§й"/-->
+	<Object
+		Name="Olme_Bar_Barman"
+		FullName="ѕЖ±Ј" />
+
+	<Object
+		Name="FVOnOcean"
+		FullName="ИшАыДбОМ" />
+
+	<Object
+		Name="FVOnOcean_Bar"
+		FullName="єЈ±х" />
+
+	<Object
+		Name="FVOnOcean_Shop"
+		FullName="КРіЎ" />
+
+	<Object
+		Name="FVOnOcean_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="FVOnOcean_Bar_Customer1"
+		FullName="ЛюАыОМ" />
+
+	<Object
+		Name="FVOnOcean_Bar_Customer3"
+		FullName="єХ¶ыД·" />
+
+	<Object
+		Name="FVOnOcean_Bar_Gomer"
+		FullName="єЙВн" />
+
+	<Object
+		Name="FVOnOcean_Bar_Barman"
+		FullName="ѕЖ±Ј" />
+
+	<Object
+		Name="FVNearOlme"
+		FullName="АНїЁ" />
+
+	<Object
+		Name="FVNearOlme_Bar"
+		FullName="ИыБЦµВ" />
+
+	<Object
+		Name="FVNearOlme_Shop"
+		FullName="КРіЎ" />
+
+	<Object
+		Name="FVNearOlme_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="FVNearOlme_Bar_Customer2"
+		FullName="ЕБАыДЪЛ№" />
+
+	<Object
+		Name="FVNearOlme_Bar_Customer3"
+		FullName="їЛАпЛ№МШ¶ы" />
+
+	<Object
+		Name="FVNearOlme_Bar_Barman"
+		FullName="ѕЖ±Ј" />
+
+	<Object
+		Name="FVCalis"
+		FullName="їЁАыЛ№" />
+
+	<Object
+		Name="FVCalis_Bar"
+		FullName="ЅЗ¶·Кї" />
+
+	<Object
+		Name="FVCalis_Shop"
+		FullName="КРіЎ" />
+
+	<Object
+		Name="FVCalis_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="FVCalis_Bar_Customer3"
+		FullName="°ЈАпїЛ" />
+
+	<Object
+		Name="FVCalis_Bar_Customer2"
+		FullName="їЛАпЛ№µЩ°І" />
+
+	<Object
+		Name="FVCalis_Bar_Customer1"
+		FullName="ХІД·" />
+
+	<Object
+		Name="FVCalis_Bar_Barman"
+		FullName="ѕЖ±Ј" />
+
+	<Object
+		Name="FVCalis_Bar_Fioniy"
+		FullName="·ЖАыГЙ" />
+
+	<Object
+		Name="FVCordan"
+		FullName="їЖ¶ыµ¤" />
+
+	<Object
+		Name="FVCordan_Bar"
+		FullName="ґу°Чци" />
+
+	<Object
+		Name="FVCordan_Shop"
+		FullName="КРіЎ" />
+
+	<Object
+		Name="FVCordan_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="FVCordan_Bar_Customer2"
+		FullName="ВнРЮ" />
+
+	<Object
+		Name="FVCordan_Bar_Barman"
+		FullName="ішДпДИјС" />
+
+	<Object
+		Name="FVPerch"
+		FullName="ЕеЖж" />
+
+	<Object
+		Name="FVPerch_Bar"
+		FullName="ЅрїуВц" />
+
+	<Object
+		Name="FVPerch_Shop"
+		FullName="КРіЎ" />
+
+	<Object
+		Name="FVPerch_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="FVPerch_Bar_Customer2"
+		FullName="ґпВЧ" />
+
+	<Object
+		Name="FVPerch_Bar_Barman"
+		FullName="ѕЖ±Ј" />
+
+	<Object
+		Name="FVBerko"
+		FullName="І®їЖ" />
+
+	<Object
+		Name="FVBerko_Bar"
+		FullName="ѕЖ°ЙЎёїЛАНЖжѕЎН·Ў№" />
+
+	<Object
+		Name="FVBerko_Shop"
+		FullName="КРіЎ" />
+
+	<Object
+		Name="FVBerko_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="FVBerko_Bar_Customer2"
+		FullName="ДО¶ы" />
+
+	<Object
+		Name="FVBerko_Bar_Barman"
+		FullName="ѕЖ±Ј" />
+
+	<Object
+		Name="StorageVil"
+		FullName="ІЦїв" />
+
+	<Object
+		Name="StorageVilBar"
+		FullName="ѕЖ°ЙЎёТ»°СУІ±ТЎ№" />
+
+	<Object
+		Name="StorageVil_Shop"
+		FullName="ЙМ··МЇО»" />
+
+	<Object
+		Name="r1m4_Storage_Guard1"
+		FullName="ОА±ш" />
+
+	<Object
+		Name="StorageVil_enter"
+		FullName="ІЦїв" />
+
+	<Object
+		Name="TheOlme_enter"
+		FullName="°В¶ыГ·" />
+
+	<Object
+		Name="FVPerch_enter"
+		FullName="ЕеЖж" />
+
+	<Object
+		Name="FVCalis_Bar_Husbent1"
+		FullName="·ЖАыГЙ" />
+
+	<Object
+		Name="LookingWife"
+		FullName="±«»щЛ№" />
+
+	<Object
+		Name="LookingWife1"
+		FullName="±«»щЛ№" />
+
+	<Object
+		Name="Port_loc"
+		FullName="єЈЦ®ГЕ" />
+
+	<Object
+		Name="FVPerch_Houses"
+		FullName="єтіµКТ" />
+
+	<Object
+		Name="ToR1M3"
+		FullName="НЁНщНЯМШАјµДµАВ·" />
+
+	<Object
+		Name="ToR3M1"
+		FullName="З°НщКҐБЦµДёЫїЪ" />
+
+	<Object
+		Name="Olme_Bar_Traider"
+		FullName="ЙМ··" />
+
+	<Object
+		Name="bigboss1"
+		FullName="їЛАН" />
+
+	<Object
+		Name="urod1"
+		FullName="ОВДЭ" />
+
+	<Object
+		Name="urod2"
+		FullName="ЕµµВ" />
+
+	<Object
+		Name="urod3"
+		FullName="УИїЁ" />
+
+	<Object
+		Name="urod4"
+		FullName="ґчЛ№" />
+
+	<Object
+		Name="urod5"
+		FullName="ёЗґД" />
+
+	<Object
+		Name="urod6"
+		FullName="ёЈ¶ыїЖ" />
+
+	<Object
+		Name="urod7"
+		FullName="І©М№" />
+
+	<Object
+		Name="urod8"
+		FullName="¶ЕїЛ" />
+
+	<Object
+		Name="urod9"
+		FullName="ємК®Иэ" />
+</ObjectNames>

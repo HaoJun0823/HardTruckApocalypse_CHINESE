@@ -383,287 +383,287 @@
 	<Item
 		id="cyclops01"
 		locForm="0"
-		value="Cyclops" />
+		value="¶ÀÑÛ¾ÞÈË" />
 
 	<Item
 		id="big_swingfire01"
 		locForm="0"
-		value="Swingfire" />
+		value="ÓÎ»ð" />
 
 	<Item
 		id="rocketLauncher"
 		locForm="0"
-		value="Dragon" />
+		value="»ðÁú" />
 
 	<Item
 		id="storm01"
 		locForm="0"
-		value="Storm" />
+		value="·ç±©" />
 
 	<Item
 		id="molokovozCab01"
 		locForm="0"
-		value="Bolt" />
+		value="ÉÁµç" />
 
 	<Item
 		id="molokovozCab02"
 		locForm="0"
-		value="Whirlpool" />
+		value="äöÎÐ" />
 
 	<Item
 		id="molokovozCab03"
 		locForm="0"
-		value="Thorn" />
+		value="¼â´Ì" />
 
 	<Item
 		id="molokovozCargo01"
 		locForm="0"
-		value="Tent" />
+		value="ÕÊÅñ" />
 
 	<Item
 		id="molokovozCargo02"
 		locForm="0"
-		value="Generator" />
+		value="·¢µçÏä" />
 
 	<Item
 		id="molokovozCargo03"
 		locForm="0"
-		value="Box" />
+		value="·½Ïä" />
 
 	<Item
 		id="belazCab01"
 		locForm="0"
-		value="Zod" />
+		value="×ôµÂ" />
 
 	<Item
 		id="belazCab02"
 		locForm="0"
-		value="Bolivar" />
+		value="²©ÀûÍß¶û" />
 
 	<Item
 		id="belazCab03"
 		locForm="0"
-		value="Rock" />
+		value="ÑÒ" />
 
 	<Item
 		id="belazCab04"
 		locForm="0"
-		value="Terminator" />
+		value="ÖÕ½áÕß" />
 
 	<Item
 		id="belazCab05"
 		locForm="0"
-		value="Shield" />
+		value="¶ÜÅÆ" />
 
 	<Item
 		id="belazCargo01"
 		locForm="0"
-		value="Host" />
+		value="ÈÝ²Õ" />
 
 	<Item
 		id="belazCargo02"
 		locForm="0"
-		value="Constructor" />
+		value="½¨ÔìÕß" />
 
 	<Item
 		id="belazCargo03"
 		locForm="0"
-		value="Colossus" />
+		value="¾ÞÏñ" />
 
 	<Item
 		id="belazCargo04"
 		locForm="0"
-		value="Thunder" />
+		value="¾ªÀ×" />
 
 	<Item
 		id="belazCargo05"
 		locForm="0"
-		value="Cylinder" />
+		value="Ô²Í²" />
 
 	<Item
 		id="bugCab01"
 		locForm="0"
-		value="Bug" />
+		value="¼×³æ" />
 
 	<Item
 		id="bugCab02"
 		locForm="0"
-		value="Mule" />
+		value="Ââ" />
 
 	<Item
 		id="bugCab03"
 		locForm="0"
-		value="Scorpio" />
+		value="Ð«" />
 
 	<Item
 		id="bugCargo01"
 		locForm="0"
-		value="Throttle" />
+		value="Ë¹ÂÞÌØ¶û" />
 
 	<Item
 		id="bugCargo02"
 		locForm="0"
-		value="Cascade" />
+		value="µþÆÙ" />
 
 	<Item
 		id="bugCargo03"
 		locForm="0"
-		value="Grob" />
+		value="¹×" />
 
 	<Item
 		id="uralCab01"
 		locForm="0"
-		value="Chrome" />
+		value="¸õ" />
 
 	<Item
 		id="uralCab02"
 		locForm="0"
-		value="Standard" />
+		value="±ê×¼" />
 
 	<Item
 		id="uralCab03"
 		locForm="0"
-		value="Lord" />
+		value="ÁìÖ÷" />
 
 	<Item
 		id="uralCab04"
 		locForm="0"
-		value="Morion" />
+		value="ºÚµ¨Ê¯" />
 
 	<Item
 		id="uralCab05"
 		locForm="0"
-		value="Knight" />
+		value="ÆïÊ¿" />
 
 	<Item
 		id="uralCargo01"
 		locForm="0"
-		value="Cold" />
+		value="º®±ù" />
 
 	<Item
 		id="uralCargo02"
 		locForm="0"
-		value="Freight" />
+		value="ÔØ»õ" />
 
 	<Item
 		id="uralCargo03"
 		locForm="0"
-		value="Cruiser" />
+		value="Ñ²ÑóÕß" />
 
 	<Item
 		id="uralCargo04"
 		locForm="0"
-		value="Shell" />
+		value="µ¯¿Ç" />
 
 	<Item
 		id="uralCargo05"
 		locForm="0"
-		value="Tiger" />
+		value="ÃÍ»¢" />
 
 	<Item
 		id="BelazForSale"
 		locForm="0"
-		value="Belaz" />
+		value="±´À­Ë¹" />
 
 	<Item
 		id="UralForSale"
 		locForm="0"
-		value="Ural" />
+		value="ÎÚÀ­¶û" />
 
 	<Item
 		id="BugForSale"
 		locForm="0"
-		value="Van" />
+		value="Åî³µ" />
 
 	<Item
 		id="MolokovozForSale"
 		locForm="0"
-		value="Lorry" />
+		value="Çá¿¨" />
 
 	<Item
 		id="MolokovozCargo04"
 		locForm="0"
-		value="ÍÏ³µ Bolt" />
+		value="ÍÏ³µ ÉÁµç" />
 
 	<Item
 		id="mirotvorecCab01"
 		locForm="0"
-		value="Gran" />
+		value="»¨¸Ú" />
 
 	<Item
 		id="mirotvorecCab02"
 		locForm="0"
-		value="Scull" />
+		value="÷¼÷Ã" />
 
 	<Item
 		id="mirotvorecCab03"
 		locForm="0"
-		value="Meteor" />
+		value="Á÷ÐÇ" />
 
 	<Item
 		id="mirotvorecCab04"
 		locForm="0"
-		value="Bulat" />
+		value="²¼À­ÌØ" />
 
 	<Item
 		id="mirotvorecCab05"
 		locForm="0"
-		value="Phantom" />
+		value="»ÃÓ°" />
 
 	<Item
 		id="mirotvorecCargo01"
 		locForm="0"
-		value="Fang" />
+		value="¶¾ÑÀ" />
 
 	<Item
 		id="mirotvorecCargo02"
 		locForm="0"
-		value="Centurion" />
+		value="°Ù·ò³¤" />
 
 	<Item
 		id="mirotvorecCargo03"
 		locForm="0"
-		value="Maya" />
+		value="ÂêÑÅ" />
 
 	<Item
 		id="mirotvorecCargo04"
 		locForm="0"
-		value="Masamune" />
+		value="Õý×Ú" />
 
 	<Item
 		id="mirotvorecCargo05"
 		locForm="0"
-		value="Excalibur" />
+		value="ÍõÕßÖ®½£" />
 
 	<Item
 		id="MirotvorecForSale"
 		locForm="0"
-		value="Peacekeeper" />
+		value="Î¬ºÍÕß" />
 
 	<Item
 		id="sml1Cab01"
 		locForm="1"
-		value="Chinch¼ÝÊ»ÊÒ" />
+		value="ÌøÊó¼ÝÊ»ÊÒ" />
 
 	<Item
 		id="sml2Cab01"
 		locForm="1"
-		value="Cockroach¼ÝÊ»ÊÒ" />
+		value="ó¯òë¼ÝÊ»ÊÒ" />
 
 	<Item
 		id="sml3Cab01"
 		locForm="1"
-		value="Ant¼ÝÊ»ÊÒ" />
+		value="ÂìÒÏ¼ÝÊ»ÊÒ" />
 
 	<Item
 		id="sml4Cab01"
 		locForm="1"
-		value="Grasshopper¼ÝÊ»ÊÒ" />
+		value="ÂìòÆ¼ÝÊ»ÊÒ" />
 
 	<Item
 		id="denscoutCab"
 		locForm="1"
-		value="AliceµÄ¿¨³µ¼ÝÊ»ÊÒ" />
+		value="°®ÀöË¿µÄ¿¨³µ¼ÝÊ»ÊÒ" />
 
 	<Item
 		id="scoutCab01"
@@ -683,17 +683,17 @@
 	<Item
 		id="tank01"
 		locForm="0"
-		value="Tank" />
+		value="Ì¹¿Ë" />
 
 	<Item
 		id="hornet01"
 		locForm="0"
-		value="Hornet" />
+		value="´ó»Æ·ä" />
 
 	<Item
 		id="specter01"
 		locForm="0"
-		value="Specter" />
+		value="ÓÄÁé" />
 
 	<Item
 		id="pkt01"
@@ -703,32 +703,32 @@
 	<Item
 		id="kord01"
 		locForm="0"
-		value="Kord" />
+		value="¿ÆµÂ" />
 
 	<Item
 		id="vector01"
 		locForm="0"
-		value="Vector" />
+		value="Ê¸Á¿" />
 
 	<Item
 		id="vulcan01"
 		locForm="0"
-		value="Vulcan" />
+		value="»ðÉñ" />
 
 	<Item
 		id="maxim01"
 		locForm="0"
-		value="Maxim" />
+		value="Âí¿ËÇß" />
 
 	<Item
 		id="rapier01"
 		locForm="1"
-		value="Rapier" />
+		value="´Ì½£" />
 
 	<Item
 		id="fagot01"
 		locForm="0"
-		value="Fagot" />
+		value="·¨¸êÌØ" />
 
 	<Item
 		id="kpvt01"
@@ -738,72 +738,72 @@
 	<Item
 		id="rainmetal01"
 		locForm="0"
-		value="Rainmetal" />
+		value="¸ÖÓê" />
 
 	<Item
 		id="octopus01"
 		locForm="0"
-		value="Octopus" />
+		value="ÕÂÓã" />
 
 	<Item
 		id="elephant01"
 		locForm="0"
-		value="Elephant" />
+		value="¾ÞÏó" />
 
 	<Item
 		id="flag01"
 		locForm="0"
-		value="Flag" />
+		value="Æì" />
 
 	<Item
 		id="hurricane01"
 		locForm="0"
-		value="Hurricane" />
+		value="ì«·ç" />
 
 	<Item
 		id="hailSideGun"
 		locForm="0"
-		value="Hail" />
+		value="±ù±¢" />
 
 	<Item
 		id="odin01"
 		locForm="0"
-		value="Odin" />
+		value="°Â¶¡" />
 
 	<Item
 		id="hammer01"
 		locForm="0"
-		value="Hammer" />
+		value="Õ½´¸" />
 
 	<Item
 		id="bumblebee01"
 		locForm="0"
-		value="Bumblebee" />
+		value="ÐÜ·ä" />
 
 	<Item
 		id="omega01"
 		locForm="1"
-		value="Omega" />
+		value="Å·Ã×ÇÑ" />
 
 	<Item
 		id="mrakSideGun"
 		locForm="0"
-		value="Mrak" />
+		value="°µÔÆ" />
 
 	<Item
 		id="hunterSideGun"
 		locForm="0"
-		value="Hunter" />
+		value="ÁÔÊÖ" />
 
 	<Item
 		id="zeusSideGun"
 		locForm="0"
-		value="Zeus" />
+		value="ÖæË¹" />
 
 	<Item
 		id="marsSideGun"
 		locForm="0"
-		value="Mars" />
+		value="Âê¶ûË¹" />
 
 	<Item
 		id="minePusher_1"
@@ -818,282 +818,282 @@
 	<Item
 		id="Sml301"
 		locForm="0"
-		value="Ant" />
+		value="ÂìÒÏ" />
 
 	<Item
 		id="r1m1_sml01"
 		locForm="0"
-		value="Chinch" />
+		value="ÌøÊó" />
 
 	<Item
 		id="r1m1_sml02"
 		locForm="0"
-		value="Cockroach" />
+		value="ó¯òë" />
 
 	<Item
 		id="r1m1_sml03"
 		locForm="0"
-		value="Ant" />
+		value="ÂìÒÏ" />
 
 	<Item
 		id="r1m1_sml04"
 		locForm="0"
-		value="Grasshopper" />
+		value="ÂìòÆ" />
 
 	<Item
 		id="r1m1_scout01"
 		locForm="0"
-		value="Scout" />
+		value="Õì²ì±ø" />
 
 	<Item
 		id="r1m1_scout02"
 		locForm="0"
-		value="Scout" />
+		value="Õì²ì±ø" />
 
 	<Item
 		id="r1m1_scout03"
 		locForm="0"
-		value="Scout" />
+		value="Õì²ì±ø" />
 
 	<Item
 		id="r1m1_molokovoz01"
 		locForm="0"
-		value="Lorry" />
+		value="Çá¿¨" />
 
 	<Item
 		id="r1m1_molokovoz02"
 		locForm="0"
-		value="Lorry" />
+		value="Çá¿¨" />
 
 	<Item
 		id="r1m1_molokovoz03"
 		locForm="0"
-		value="Lorry" />
+		value="Çá¿¨" />
 
 	<Item
 		id="r1m1_bug01"
 		locForm="0"
-		value="Van" />
+		value="Åî³µ" />
 
 	<Item
 		id="r1m1_bug02"
 		locForm="0"
-		value="Van" />
+		value="Åî³µ" />
 
 	<Item
 		id="r1m1_bug03"
 		locForm="0"
-		value="Van" />
+		value="Åî³µ" />
 
 	<Item
 		id="r1m2_hunter02"
 		locForm="0"
-		value="Hunter" />
+		value="ÁÔÊÖ" />
 
 	<Item
 		id="Scout01"
 		locForm="0"
-		value="Scout" />
+		value="Õì²ì±ø" />
 
 	<Item
 		id="Scout02"
 		locForm="0"
-		value="Scout" />
+		value="Õì²ì±ø" />
 
 	<Item
 		id="Scout03"
 		locForm="0"
-		value="Scout" />
+		value="Õì²ì±ø" />
 
 	<Item
 		id="ArcadeScout01"
 		locForm="0"
-		value="Scout GT" />
+		value="Õì²ì±ø GT" />
 
 	<Item
 		id="Fighter01"
 		locForm="0"
-		value="Fighter" />
+		value="¶·Ê¿" />
 
 	<Item
 		id="Fighter02"
 		locForm="0"
-		value="Fighter" />
+		value="¶·Ê¿" />
 
 	<Item
 		id="Hunter01"
 		locForm="0"
-		value="Hunter" />
+		value="ÁÔÊÖ" />
 
 	<Item
 		id="Hunter02"
 		locForm="0"
-		value="Hunter" />
+		value="ÁÔÊÖ" />
 
 	<Item
 		id="Cruiser01"
 		locForm="0"
-		value="Cruiser" />
+		value="Ñ²ÑóÕß" />
 
 	<Item
 		id="CruiserTest02"
 		locForm="0"
-		value="Cruiser" />
+		value="Ñ²ÑóÕß" />
 
 	<Item
 		id="Dozer01"
 		locForm="0"
-		value="Bulldozer" />
+		value="ÍÆÍÁ»ú" />
 
 	<Item
 		id="Traktor01"
 		locForm="0"
-		value="Dozer" />
+		value="ÍÆÍÁ»ú" />
 
 	<Item
 		id="Tank01"
 		locForm="0"
-		value="Tank" />
+		value="Ì¹¿Ë" />
 
 	<Item
 		id="Bug01"
 		locForm="0"
-		value="Van" />
+		value="Åî³µ" />
 
 	<Item
 		id="Molokovoz01"
 		locForm="0"
-		value="Lorry" />
+		value="Çá¿¨" />
 
 	<Item
 		id="Molokovoz02"
 		locForm="0"
-		value="Lorry" />
+		value="Çá¿¨" />
 
 	<Item
 		id="Ural01"
 		locForm="0"
-		value="Ural" />
+		value="ÎÚÀ­¶û" />
 
 	<Item
 		id="Belaz01"
 		locForm="0"
-		value="Belaz" />
+		value="±´À­Ë¹" />
 
 	<Item
 		id="CoolBelaz"
 		locForm="0"
-		value="Belaz" />
+		value="±´À­Ë¹" />
 
 	<Item
 		id="Mirotvorec01"
 		locForm="0"
-		value="Peacekeeper" />
+		value="Î¬ºÍÕß" />
 
 	<Item
 		id="ArcadeBelaz"
 		locForm="0"
-		value="Èü³µ Belaz" />
+		value="Èü³µ ±´À­Ë¹" />
 
 	<Item
 		id="DemoBandit"
 		locForm="0"
-		value="Scout" />
+		value="Õì²ì±ø" />
 
 	<Item
 		id="LisaCar"
 		locForm="1"
-		value="Alice" />
+		value="°®ÀöË¿" />
 
 	<Item
 		id="DemoFighter1"
 		locForm="0"
-		value="Fighter" />
+		value="¶·Ê¿" />
 
 	<Item
 		id="DemoHunter1"
 		locForm="0"
-		value="Hunter" />
+		value="ÁÔÊÖ" />
 
 	<Item
 		id="DemoHunter2"
 		locForm="0"
-		value="Hunter" />
+		value="ÁÔÊÖ" />
 
 	<Item
 		id="DemoBug1"
 		locForm="0"
-		value="Van" />
+		value="Åî³µ" />
 
 	<Item
 		id="DemoBug2"
 		locForm="0"
-		value="Van" />
+		value="Åî³µ" />
 
 	<Item
 		id="DemoBug3"
 		locForm="0"
-		value="Van" />
+		value="Åî³µ" />
 
 	<Item
 		id="DemoMolokovoz1"
 		locForm="0"
-		value="Lorry" />
+		value="Çá¿¨" />
 
 	<Item
 		id="DemoMolokovoz2"
 		locForm="0"
-		value="Lorry" />
+		value="Çá¿¨" />
 
 	<Item
 		id="DemoMolokovoz3"
 		locForm="0"
-		value="Lorry" />
+		value="Çá¿¨" />
 
 	<Item
 		id="DemoUral1"
 		locForm="0"
-		value="Ural" />
+		value="ÎÚÀ­¶û" />
 
 	<Item
 		id="DemoUral2"
 		locForm="0"
-		value="Ural" />
+		value="ÎÚÀ­¶û" />
 
 	<Item
 		id="DemoUral3"
 		locForm="0"
-		value="Ural" />
+		value="ÎÚÀ­¶û" />
 
 	<Item
 		id="DemoBelaz1"
 		locForm="0"
-		value="Belaz" />
+		value="±´À­Ë¹" />
 
 	<Item
 		id="DemoBelaz2"
 		locForm="0"
-		value="Belaz" />
+		value="±´À­Ë¹" />
 
 	<Item
 		id="DemoBelaz3"
 		locForm="0"
-		value="Belaz" />
+		value="±´À­Ë¹" />
 
 	<Item
 		id="DemoMirotvorec1"
 		locForm="0"
-		value="Peacekeeper" />
+		value="Î¬ºÍÕß" />
 
 	<Item
 		id="DemoMirotvorec2"
 		locForm="0"
-		value="Peacekeeper" />
+		value="Î¬ºÍÕß" />
 
 	<Item
 		id="DemoMirotvorec3"
 		locForm="0"
-		value="Peacekeeper" />
+		value="Î¬ºÍÕß" />
 
 	<Item
 		id="Revolutioner1"
@@ -1108,82 +1108,82 @@
 	<Item
 		id="BelazTest"
 		locForm="0"
-		value="Belaz" />
+		value="±´À­Ë¹" />
 
 	<Item
 		id="MolokovozTest"
 		locForm="0"
-		value="Lorry" />
+		value="Çá¿¨" />
 
 	<Item
 		id="Sml101"
 		locForm="0"
-		value="Chinch" />
+		value="ÌøÊó" />
 
 	<Item
 		id="Sml201"
 		locForm="0"
-		value="Cockroach" />
+		value="ó¯òë" />
 
 	<Item
 		id="Sml401"
 		locForm="0"
-		value="Grasshopper" />
+		value="ÂìòÆ" />
 
 	<Item
 		id="mirotvorecTest"
 		locForm="0"
-		value="Peacekeeper" />
+		value="Î¬ºÍÕß" />
 
 	<Item
 		id="mirotvorecTest1"
 		locForm="0"
-		value="Peacekeeper" />
+		value="Î¬ºÍÕß" />
 
 	<Item
 		id="BugTest1"
 		locForm="0"
-		value="Van" />
+		value="Åî³µ" />
 
 	<Item
 		id="BelazTest01"
 		locForm="0"
-		value="Belaz" />
+		value="±´À­Ë¹" />
 
 	<Item
 		id="BelazTest02"
 		locForm="0"
-		value="Belaz" />
+		value="±´À­Ë¹" />
 
 	<Item
 		id="BelazTest03"
 		locForm="0"
-		value="Belaz" />
+		value="±´À­Ë¹" />
 
 	<Item
 		id="BelazTest04"
 		locForm="0"
-		value="Belaz" />
+		value="±´À­Ë¹" />
 
 	<Item
 		id="BelazTest05"
 		locForm="0"
-		value="Belaz" />
+		value="±´À­Ë¹" />
 
 	<Item
 		id="BelazShot"
 		locForm="0"
-		value="Belaz" />
+		value="±´À­Ë¹" />
 
 	<Item
 		id="UralShot"
 		locForm="0"
-		value="Ural" />
+		value="ÎÚÀ­¶û" />
 
 	<Item
 		id="MirotvorecShot"
 		locForm="0"
-		value="Peacekeeper" />
+		value="Î¬ºÍÕß" />
 
 	<Item
 		id="Formula01"
@@ -1193,27 +1193,27 @@
 	<Item
 		id="FormulaCab"
 		locForm="0"
-		value="Bolide GT" />
+		value="Á÷ÐÇºÅ GT" />
 
 	<Item
 		id="r1m3_Fighter01"
 		locForm="0"
-		value="Fighter" />
+		value="¶·Ê¿" />
 
 	<Item
 		id="r1m3_Fighter02"
 		locForm="0"
-		value="Fighter" />
+		value="¶·Ê¿" />
 
 	<Item
 		id="r1m3_Sml101"
 		locForm="0"
-		value="Chinch" />
+		value="ÌøÊó" />
 
 	<Item
 		id="r1m3_molokovoz03"
 		locForm="0"
-		value="Lorry" />
+		value="Çá¿¨" />
 
 	<Item
 		id="staticAutoGun01"
@@ -1273,7 +1273,7 @@
 	<Item
 		id="PublicDemoSinks"
 		locForm="0"
-		value="Sinx" />
+		value="ÐÁ¿ËË¹" />
 
 	<Item
 		id="PublicDemoBandit1"
@@ -1293,17 +1293,17 @@
 	<Item
 		id="PublicDemoIeriBand1"
 		locForm="0"
-		value="JeriµÄ»¤ÎÀ" />
+		value="½ÜÈðµÄ»¤ÎÀ" />
 
 	<Item
 		id="PublicDemoIeriBand2"
 		locForm="0"
-		value="JeriµÄ»¤ÎÀ" />
+		value="½ÜÈðµÄ»¤ÎÀ" />
 
 	<Item
 		id="PublicDemoIeriCar"
 		locForm="0"
-		value="Jeri" />
+		value="½ÜÈð" />
 
 	<Item
 		id="r1m2_CaravanBug01"
@@ -1373,27 +1373,27 @@
 	<Item
 		id="ScoutMenu"
 		locForm="0"
-		value="Scout" />
+		value="Õì²ì±ø" />
 
 	<Item
 		id="FighterMenu"
 		locForm="0"
-		value="Fighter" />
+		value="¶·Ê¿" />
 
 	<Item
 		id="MolokovozMenu"
 		locForm="0"
-		value="Lorry" />
+		value="Çá¿¨" />
 
 	<Item
 		id="BelazMenu"
 		locForm="0"
-		value="Belaz" />
+		value="±´À­Ë¹" />
 
 	<Item
 		id="UralMenu"
 		locForm="0"
-		value="Ural" />
+		value="ÎÚÀ­¶û" />
 
 	<Item
 		id="r2m2_CaravanUral01"
@@ -1448,62 +1448,62 @@
 	<Item
 		id="r2m2_Ural01"
 		locForm="0"
-		value="Ural" />
+		value="ÎÚÀ­¶û" />
 
 	<Item
 		id="r2m2_scout01"
 		locForm="0"
-		value="Scout" />
+		value="Õì²ì±ø" />
 
 	<Item
 		id="r2m2_Hunter01"
 		locForm="0"
-		value="Hunter" />
+		value="ÁÔÊÖ" />
 
 	<Item
 		id="r2m2_Fighter02"
 		locForm="0"
-		value="Fighter" />
+		value="¶·Ê¿" />
 
 	<Item
 		id="r2m2_Fighter01"
 		locForm="0"
-		value="Fighter" />
+		value="¶·Ê¿" />
 
 	<Item
 		id="r2m2_Molokovoz01"
 		locForm="0"
-		value="Lorry" />
+		value="Çá¿¨" />
 
 	<Item
 		id="r2m1_scout03"
 		locForm="0"
-		value="Scout" />
+		value="Õì²ì±ø" />
 
 	<Item
 		id="r2m1_scout02"
 		locForm="0"
-		value="Scout" />
+		value="Õì²ì±ø" />
 
 	<Item
 		id="r2m1_scout01"
 		locForm="0"
-		value="Scout" />
+		value="Õì²ì±ø" />
 
 	<Item
 		id="r2m1_Molokovoz01"
 		locForm="0"
-		value="Lorry" />
+		value="Çá¿¨" />
 
 	<Item
 		id="r2m1_Belaz01"
 		locForm="0"
-		value="Belaz" />
+		value="±´À­Ë¹" />
 
 	<Item
 		id="r2m1_Ural01"
 		locForm="0"
-		value="Ural" />
+		value="ÎÚÀ­¶û" />
 
 	<Item
 		id="boss01"
@@ -1523,7 +1523,7 @@
 	<Item
 		id="boss04"
 		locForm="0"
-		value="Njeri»ùµØ" />
+		value="ÄùÀï»ùµØ" />
 
 	<Item
 		id="boss04drone"
@@ -1548,12 +1548,12 @@
 	<Item
 		id="r2m1_Hunter02"
 		locForm="0"
-		value="Hunter" />
+		value="ÁÔÊÖ" />
 
 	<Item
 		id="r2m1_Hunter01"
 		locForm="0"
-		value="Hunter" />
+		value="ÁÔÊÖ" />
 
 	<Item
 		id="r2m1_FighterGulik"
@@ -1563,17 +1563,17 @@
 	<Item
 		id="r2m1_Fighter02"
 		locForm="0"
-		value="Fighter" />
+		value="¶·Ê¿" />
 
 	<Item
 		id="r2m1_Fighter01"
 		locForm="0"
-		value="Fighter" />
+		value="¶·Ê¿" />
 
 	<Item
 		id="r2m1_Bug1"
 		locForm="0"
-		value="Van" />
+		value="Åî³µ" />
 
 	<Item
 		id="r1m3_molokovozInOldCity"
@@ -1588,47 +1588,47 @@
 	<Item
 		id="AxelVehicle"
 		locForm="0"
-		value="Axel" />
+		value="°¢¿ËÈû¶û" />
 
 	<Item
 		id="FelixVehicle2"
 		locForm="0"
-		value="Felix" />
+		value="·ÑÀû¿ËË¹" />
 
 	<Item
 		id="FelixVehicle"
 		locForm="0"
-		value="Felix" />
+		value="·ÑÀû¿ËË¹" />
 
 	<Item
 		id="CoolBelaz_2"
 		locForm="0"
-		value="Belaz" />
+		value="±´À­Ë¹" />
 
 	<Item
 		id="Ural00"
 		locForm="0"
-		value="Ural" />
+		value="ÎÚÀ­¶û" />
 
 	<Item
 		id="Cruiser02"
 		locForm="0"
-		value="Cruiser" />
+		value="Ñ²ÑóÕß" />
 
 	<Item
 		id="Fighter03"
 		locForm="0"
-		value="Fighter" />
+		value="¶·Ê¿" />
 
 	<Item
 		id="r1m3_hunter02"
 		locForm="0"
-		value="Hunter" />
+		value="ÁÔÊÖ" />
 
 	<Item
 		id="r1m2_bug04"
 		locForm="0"
-		value="Van" />
+		value="Åî³µ" />
 
 	<Item
 		id="r1m3_MerScout"
@@ -1658,22 +1658,22 @@
 	<Item
 		id="hunterCab01"
 		locForm="0"
-		value="Hunter¼ÝÊ»ÊÒ" />
+		value="ÁÔÊÖ¼ÝÊ»ÊÒ" />
 
 	<Item
 		id="hunterCab02"
 		locForm="0"
-		value="Hunter¼ÝÊ»ÊÒ" />
+		value="ÁÔÊÖ¼ÝÊ»ÊÒ" />
 
 	<Item
 		id="fighterCab01"
 		locForm="0"
-		value="Fighter¼ÝÊ»ÊÒ" />
+		value="¶·Ê¿¼ÝÊ»ÊÒ" />
 
 	<Item
 		id="fighterCab02"
 		locForm="0"
-		value="Fighter¼ÝÊ»ÊÒ" />
+		value="¶·Ê¿¼ÝÊ»ÊÒ" />
 
 	<Item
 		id="arcadescoutCab"
@@ -1688,12 +1688,12 @@
 	<Item
 		id="cruiserCab01"
 		locForm="0"
-		value="Cruiser¼ÝÊ»ÊÒ" />
+		value="Ñ²ÑóÕß¼ÝÊ»ÊÒ" />
 
 	<Item
 		id="cruiserCab02"
 		locForm="0"
-		value="Cruiser¼ÝÊ»ÊÒ" />
+		value="Ñ²ÑóÕß¼ÝÊ»ÊÒ" />
 
 	<Item
 		id="Smoke"
@@ -1718,17 +1718,17 @@
 	<Item
 		id="Ural02"
 		locForm="0"
-		value="Ural" />
+		value="ÎÚÀ­¶û" />
 
 	<Item
 		id="Scout"
 		locForm="0"
-		value="Scout" />
+		value="Õì²ì±ø" />
 
 	<Item
 		id="Molokovoz"
 		locForm="0"
-		value="Lorry" />
+		value="Çá¿¨" />
 
 	<Item
 		id="Gladiator02"

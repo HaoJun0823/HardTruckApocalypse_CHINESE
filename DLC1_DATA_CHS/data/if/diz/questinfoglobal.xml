@@ -160,8 +160,8 @@
 
 	<QuestInfo
 		questName="Sin_Arlekin_Band_qst"
-		briefDiz="消灭Harlequin的手下。"
-		fullDiz="Harlequin放出了他那群走狗。必须宰了他们。"
+		briefDiz="消灭丑角的手下。"
+		fullDiz="丑角放出了他那群走狗。必须宰了他们。"
 		isMainQuest="1">
 		<Map
 			name="sin"
@@ -170,14 +170,14 @@
 
 	<QuestInfo
 		questName="Sin_Arlekin_Find_qst"
-		briefDiz="找到Harlequin。"
-		fullDiz="Harlequin是从杰里科来的。必须除掉他。"
+		briefDiz="找到丑角。"
+		fullDiz="丑角是从杰里科来的。必须除掉他。"
 		isMainQuest="1" />
 
 	<QuestInfo
 		questName="Sin_Arlekin_Kill_qst"
-		briefDiz="杀死Harlequin。"
-		fullDiz="Harlequin必须死。"
+		briefDiz="杀死丑角。"
+		fullDiz="丑角必须死。"
 		isMainQuest="1">
 		<Map
 			name="sin" />
@@ -185,14 +185,14 @@
 
 	<QuestInfo
 		questName="Sin_Arlekin_qst"
-		briefDiz="杀死Harlequin。"
+		briefDiz="杀死丑角。"
 		fullDiz="现在我知道是谁放狗咬我了。他必须死。在城东能找到他。"
 		isMainQuest="1" />
 
 	<QuestInfo
 		questName="Sin_Cat_Caravan_qst"
 		briefDiz="劫下车队。"
-		fullDiz="Garfield下令袭击并劫下车队。"
+		fullDiz="加菲尔德下令袭击并劫下车队。"
 		isMainQuest="1">
 		<Map
 			name="sin"
@@ -201,8 +201,8 @@
 
 	<QuestInfo
 		questName="Sin_Cat_Garfield_qst"
-		briefDiz="去见猫帮老大Garfield。"
-		fullDiz="我得跟猫帮老大Garfield谈谈，说服他雇我。"
+		briefDiz="去见猫帮老大加菲尔德。"
+		fullDiz="我得跟猫帮老大加菲尔德谈谈，说服他雇我。"
 		isMainQuest="1">
 		<Map
 			name="sin"
@@ -211,8 +211,8 @@
 
 	<QuestInfo
 		questName="Sin_Cat_Kitty_qst"
-		briefDiz="向Kitty汇报车队得手的消息。"
-		fullDiz="车队到手了，我得向Kitty汇报。"
+		briefDiz="向凯蒂汇报车队得手的消息。"
+		fullDiz="车队到手了，我得向凯蒂汇报。"
 		isMainQuest="1">
 		<Map
 			name="sin"
@@ -237,8 +237,8 @@
 
 	<QuestInfo
 		questName="Sin_Cross_Kitty_qst"
-		briefDiz="营救Kitty。"
-		fullDiz="Kitty被抓走关到了老农场。我得干掉守卫救她出来。"
+		briefDiz="营救凯蒂。"
+		fullDiz="凯蒂被抓走关到了老农场。我得干掉守卫救她出来。"
 		isMainQuest="1">
 		<Map
 			name="sin"
@@ -258,7 +258,7 @@
 	<QuestInfo
 		questName="Sin_Cross_Wait_qst"
 		briefDiz="等候狗帮。"
-		fullDiz="Kitty走了。我得等狗帮到来，然后把这笔账栽到猫帮头上。"
+		fullDiz="凯蒂走了。我得等狗帮到来，然后把这笔账栽到猫帮头上。"
 		isMainQuest="1">
 		<Map
 			name="sin"
@@ -273,7 +273,7 @@
 
 	<QuestInfo
 		questName="Sin_E_qst"
-		briefDiz="教训Egoist一顿。"
+		briefDiz="教训利己者一顿。"
 		isMainQuest="0" />
 
 	<QuestInfo
@@ -288,8 +288,8 @@
 
 	<QuestInfo
 		questName="Sin_Egoist_Home_qst"
-		briefDiz="把Egoist押送给Borne。"
-		fullDiz="Egoist到手了。得把他押回去交给Borne。"
+		briefDiz="把利己者押送给波恩。"
+		fullDiz="利己者到手了。得把他押回去交给波恩。"
 		isMainQuest="1">
 		<Map
 			name="sin"
@@ -298,8 +298,8 @@
 
 	<QuestInfo
 		questName="Sin_Egoist_Take_qst"
-		briefDiz="活捉Egoist。"
-		fullDiz="Egoist在圣拉斐尔。我得干掉护卫才能抓到他。"
+		briefDiz="活捉利己者。"
+		fullDiz="利己者在圣拉斐尔。我得干掉护卫才能抓到他。"
 		isMainQuest="1">
 		<Map
 			name="sin"
@@ -308,8 +308,8 @@
 
 	<QuestInfo
 		questName="Sin_Egoist_Trap_qst"
-		briefDiz="跟Borne谈。"
-		fullDiz="狗帮需要Egoist。我该先跟Borne谈谈。"
+		briefDiz="跟波恩谈。"
+		fullDiz="狗帮需要利己者。我该先跟波恩谈谈。"
 		isMainQuest="1">
 		<Map
 			name="sin"
@@ -329,7 +329,7 @@
 	<QuestInfo
 		questName="Sin_Egoist_Way_qst"
 		briefDiz="找到通往圣拉斐尔的路。"
-		fullDiz="Egoist在山岭另一头的圣拉斐尔。我得赶过去。"
+		fullDiz="利己者在山岭另一头的圣拉斐尔。我得赶过去。"
 		isMainQuest="1">
 		<Map
 			name="sin"
@@ -338,14 +338,14 @@
 
 	<QuestInfo
 		questName="Sin_Egoist_qst"
-		briefDiz="找Egoist报仇。"
-		fullDiz="Egoist袭击了Kitty。他必须付出代价。"
+		briefDiz="找利己者报仇。"
+		fullDiz="利己者袭击了凯蒂。他必须付出代价。"
 		isMainQuest="1" />
 
 	<QuestInfo
 		questName="Sin_FedEx_qst"
-		briefDiz="把货物送到杰里科的酒保Joe手里。"
-		fullDiz="有人托我把包裹带给Joe。Joe得付500金币。"
+		briefDiz="把货物送到杰里科的酒保乔手里。"
+		fullDiz="有人托我把包裹带给乔。乔得付500金币。"
 		isMainQuest="1">
 		<Map
 			name="sin"
@@ -354,8 +354,8 @@
 
 	<QuestInfo
 		questName="Sin_Final_Fight_qst"
-		briefDiz="杀死Borne。"
-		fullDiz="这是我跟Borne的最后一面。我们俩之间，只能活下来一个。"
+		briefDiz="杀死波恩。"
+		fullDiz="这是我跟波恩的最后一面。我们俩之间，只能活下来一个。"
 		isMainQuest="1">
 		<Map
 			name="sin"
@@ -386,8 +386,8 @@
 
 	<QuestInfo
 		questName="Sin_JoeSaving_qst"
-		briefDiz="营救酒保Joe。"
-		fullDiz="狗帮把Joe抓走了……必须去救他。"
+		briefDiz="营救酒保乔。"
+		fullDiz="狗帮把乔抓走了……必须去救他。"
 		isMainQuest="1">
 		<Map
 			name="sin"
@@ -433,7 +433,7 @@
 
 	<QuestInfo
 		questName="r5m1_BPOSReturnToSam_Quest"
-		briefDiz="回去向Sam复命。"
+		briefDiz="回去向萨姆复命。"
 		isMainQuest="1">
 		<Map
 			name="r5m1"
@@ -453,7 +453,7 @@
 	<QuestInfo
 		questName="r5m1_BigProblemOnSide_Quest"
 		briefDiz="摆平边境的事端。"
-		fullDiz="解决了外来者的问题，我就能赢得Sam的绝对信任。"
+		fullDiz="解决了外来者的问题，我就能赢得萨姆的绝对信任。"
 		isMainQuest="1">
 		<Map
 			name="r5m1" />
@@ -489,7 +489,7 @@
 	<QuestInfo
 		questName="r5m1_EnterToLibrary_Quest"
 		briefDiz="撤离图书馆。"
-		fullDiz="如果Wiseguy说的是真话，这里一定有我要的地图。就差一点点，我就能找到去埃德蒙顿的路了。有一点很清楚：通往图书馆的正门大道对我已经关死了。"
+		fullDiz="如果万事通说的是真话，这里一定有我要的地图。就差一点点，我就能找到去埃德蒙顿的路了。有一点很清楚：通往图书馆的正门大道对我已经关死了。"
 		isMainQuest="1">
 		<Map
 			name="r5m1" />
@@ -534,8 +534,8 @@
 
 	<QuestInfo
 		questName="r5m1_FirstQofSam_Quest"
-		briefDiz="完成Sam的第一个任务。"
-		fullDiz="这里没人知道梦想之城埃德蒙顿，它就在桥的另一头。但要到那儿，我得先赢得Sam的信任。所以拼了命也得把这封信送到他朋友手上。"
+		briefDiz="完成萨姆的第一个任务。"
+		fullDiz="这里没人知道梦想之城埃德蒙顿，它就在桥的另一头。但要到那儿，我得先赢得萨姆的信任。所以拼了命也得把这封信送到他朋友手上。"
 		isMainQuest="1">
 		<Map
 			name="r5m1"
@@ -579,8 +579,8 @@
 
 	<QuestInfo
 		questName="r5m1_KillBoss4_Quest"
-		briefDiz="杀死Sam！！！"
-		fullDiz="Sam是个肮脏的叛徒加胆小鬼，是时候让这个世界摆脱他了。"
+		briefDiz="杀死萨姆！！！"
+		fullDiz="萨姆是个肮脏的叛徒加胆小鬼，是时候让这个世界摆脱他了。"
 		isMainQuest="1">
 		<Map
 			name="r5m1"
@@ -657,8 +657,8 @@
 
 	<QuestInfo
 		questName="r5m1_ReturnToSamWithMovies_Quest"
-		briefDiz="把胶卷带给Sam。"
-		fullDiz="该回去了。这些胶卷就是我的成绩单。另外，Sam也能从中搞到有用的情报。"
+		briefDiz="把胶卷带给萨姆。"
+		fullDiz="该回去了。这些胶卷就是我的成绩单。另外，萨姆也能从中搞到有用的情报。"
 		isMainQuest="1">
 		<Map
 			name="r5m1"
@@ -690,7 +690,7 @@
 	<QuestInfo
 		questName="r5m1_SecondQofSam_Quest"
 		briefDiz="除掉目标。"
-		fullDiz="Sam跟这家伙之间有什么过节不重要，重要的是我必须拿下。我要赢得老大的信任——俗话说得好，为达目的，不择手段。"
+		fullDiz="萨姆跟这家伙之间有什么过节不重要，重要的是我必须拿下。我要赢得老大的信任——俗话说得好，为达目的，不择手段。"
 		isMainQuest="1">
 		<Map
 			name="r5m1" />
@@ -698,7 +698,7 @@
 
 	<QuestInfo
 		questName="r5m1_WTBWMoveToBookWormHouse_Quest"
-		briefDiz="去见Wiseguy。"
+		briefDiz="去见万事通。"
 		isMainQuest="1">
 		<Map
 			name="r5m1"
@@ -726,7 +726,7 @@
 	<QuestInfo
 		questName="r5m2_DestroyKrot_Quest"
 		briefDiz="捅一捅马蜂窝。"
-		fullDiz="One-eyed托我帮她除掉土匪。老朋友开口，我总不好回绝。"
+		fullDiz="独眼托我帮她除掉土匪。老朋友开口，我总不好回绝。"
 		isMainQuest="1">
 		<Map
 			name="r5m1"
@@ -764,7 +764,7 @@
 
 	<QuestInfo
 		questName="r5m2_FHTalkWithAnticwar_Quest"
-		briefDiz="去找Ragman谈谈。"
+		briefDiz="去找破布客谈谈。"
 		isMainQuest="1">
 		<Map
 			name="r5m1"
@@ -784,7 +784,7 @@
 
 		<Map
 			name="r5m2"
-			targetObjName="r5m2_Pervomayka" />
+			targetObjName="r5m2_佩尔沃迈卡" />
 	</QuestInfo>
 
 	<QuestInfo
@@ -812,7 +812,7 @@
 	<QuestInfo
 		questName="r5m2_GetAllMovies_Quest"
 		briefDiz="夺回胶卷。"
-		fullDiz="One-eyed出什么价都不肯交出她的东西。看来只能动手硬抢。"
+		fullDiz="独眼出什么价都不肯交出她的东西。看来只能动手硬抢。"
 		isMainQuest="1">
 		<Map
 			name="r5m1"
@@ -933,7 +933,7 @@
 	<QuestInfo
 		questName="r5m2_KrotInOneeye_Quest"
 		briefDiz="揪出内鬼。"
-		fullDiz="One-eyed帮里出了内鬼。他跟本地土匪暗通款曲，还帮着张罗各种非法勾当。我得逼他露出马脚，引蛇出洞。"
+		fullDiz="独眼帮里出了内鬼。他跟本地土匪暗通款曲，还帮着张罗各种非法勾当。我得逼他露出马脚，引蛇出洞。"
 		isMainQuest="1">
 		<Map
 			name="r5m1" />
@@ -954,8 +954,8 @@
 
 	<QuestInfo
 		questName="r5m2_MoveToMayak_Quest"
-		briefDiz="跟上Wind。"
-		fullDiz="Wind是位跑惯了江湖的老旅行家，他知道路该怎么走。关键是我得跟得上。"
+		briefDiz="跟上风行者。"
+		fullDiz="风行者是位跑惯了江湖的老旅行家，他知道路该怎么走。关键是我得跟得上。"
 		isMainQuest="1">
 		<Map
 			name="r5m1"
@@ -982,8 +982,8 @@
 
 	<QuestInfo
 		questName="r5m2_MoveToOneeyeCaravans_Quest"
-		briefDiz="追上One-eyed的车队。"
-		fullDiz="One-eyed的车队走不了太远。加把劲的话，我能追上他们。"
+		briefDiz="追上独眼的车队。"
+		fullDiz="独眼的车队走不了太远。加把劲的话，我能追上他们。"
 		isMainQuest="1">
 		<Map
 			name="r5m1"
@@ -996,8 +996,8 @@
 
 	<QuestInfo
 		questName="r5m2_ReturnToOneeyeAfterM_Quest"
-		briefDiz="支援One-eyed。"
-		fullDiz="One-eyed急着找我。我得赶紧回去，越快越好。"
+		briefDiz="支援独眼。"
+		fullDiz="独眼急着找我。我得赶紧回去，越快越好。"
 		isMainQuest="1">
 		<Map
 			name="r5m1"
@@ -1113,7 +1113,7 @@
 	<QuestInfo
 		questName="r6m1_FindABombInJungle_Quest"
 		briefDiz="找到核武库。"
-		fullDiz="通往加拿大的路总算向我敞开了。可要是不把机器人挡住，它们会一路追着我们跑。所以我得帮Sam找到远古武器，否则等我找到埃德蒙顿，这帮该死的铁疙瘩早把它拆成零件了。"
+		fullDiz="通往加拿大的路总算向我敞开了。可要是不把机器人挡住，它们会一路追着我们跑。所以我得帮萨姆找到远古武器，否则等我找到埃德蒙顿，这帮该死的铁疙瘩早把它拆成零件了。"
 		isMainQuest="1">
 		<Map
 			name="r5m1"
@@ -1129,8 +1129,8 @@
 
 	<QuestInfo
 		questName="r6m1_FindBadSam_Quest"
-		briefDiz="追上Sam。"
-		fullDiz="Sam骗了我，但这事儿不能就这么算了。坑我的人，一个都别想白坑。"
+		briefDiz="追上萨姆。"
+		fullDiz="萨姆骗了我，但这事儿不能就这么算了。坑我的人，一个都别想白坑。"
 		isMainQuest="1">
 		<Map
 			name="r5m2"
@@ -1235,7 +1235,7 @@
 	<QuestInfo
 		questName="r6m1_HelpShip_Quest"
 		briefDiz="修好渡船。"
-		fullDiz="如今这艘渡船是我过河去追Sam的唯一指望。"
+		fullDiz="如今这艘渡船是我过河去追萨姆的唯一指望。"
 		isMainQuest="1">
 		<Map
 			name="r6m1" />
@@ -1368,7 +1368,7 @@
 		isMainQuest="1">
 		<Map
 			name="r6m2"
-			targetObjName="Generator" />
+			targetObjName="发电箱" />
 	</QuestInfo>
 
 	<QuestInfo
@@ -1396,7 +1396,7 @@
 
 	<QuestInfo
 		questName="r6m2_HTMMoveToHouseMechanick_Quest"
-		briefDiz="送Mechanic回家。"
+		briefDiz="送机修工回家。"
 		isMainQuest="1">
 		<Map
 			name="r6m1"
@@ -1480,7 +1480,7 @@
 
 	<QuestInfo
 		questName="r6m2_MRHRetturnToMechanick_Quest"
-		briefDiz="把零件还给Mechanic。"
+		briefDiz="把零件还给机修工。"
 		isMainQuest="1">
 		<Map
 			name="r6m2"
@@ -1490,7 +1490,7 @@
 	<QuestInfo
 		questName="r6m2_MakeRoboHuman_Quest"
 		briefDiz="修好机器人。"
-		fullDiz="Mechanic有个端掉机器人基地的妙计：伪装成它们的一员混进基地去。唯一的问题是，得先把他手里那台趴窝的怪物修到能转的程度。"
+		fullDiz="机修工有个端掉机器人基地的妙计：伪装成它们的一员混进基地去。唯一的问题是，得先把他手里那台趴窝的怪物修到能转的程度。"
 		isMainQuest="1">
 		<Map
 			name="r6m1" />

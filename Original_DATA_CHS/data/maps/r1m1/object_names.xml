@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<ObjectNames>
+	<Object
+		Name="TheTown"
+		FullName="ЛчЛ№" />
+
+	<Object
+		Name="TheTown_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="TheTown_Shop"
+		FullName="ЙМµк" />
+
+	<Object
+		Name="TheTown_Bar"
+		FullName="ѕЖ°ЙЎёЧоєуВГіМЎ№" />
+
+	<Object
+		Name="TheTown_Bar_Barman"
+		FullName="ѕЖ±Ј" />
+
+	<Object
+		Name="HurdTrucker"
+		FullName="їЁіµЛѕ»ъ" />
+
+	<Object
+		Name="Buyer"
+		FullName="ЙМИЛР»¶ыёк" />
+
+	<Object
+		Name="WorkGiver"
+		FullName="Е©·тµПїЛ" />
+
+	<Object
+		Name="WorkGiver1"
+		FullName="Е©·тµПїЛ" />
+
+	<Object
+		Name="Lisa"
+		FullName="°®АцЛї" />
+
+	<Object
+		Name="TheGloohoe"
+		FullName="ёсВ¬»фТ®" />
+
+	<Object
+		Name="TheGloohoe_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="TheGloohoe_Shop"
+		FullName="і¬КР" />
+
+	<Object
+		Name="TheGloohoe_House"
+		FullName="·їОЭ" />
+
+	<Object
+		Name="Father"
+		FullName="ёёЗЧ" />
+
+	<Object
+		Name="TheOilVillage"
+		FullName="ФъТБД·їЁ" />
+
+	<Object
+		Name="TheOilVillage_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="TheOilVillage_Shop"
+		FullName="јЇКР" />
+
+	<Object
+		Name="TheOilVillage_Bar"
+		FullName="ѕЖ°ЙЎёЖл°ШБЦ·ЙН§Ў№" />
+
+	<Object
+		Name="TheOilVillage_Bar_Barman"
+		FullName="ЙМИЛёкёк" />
+
+	<Object
+		Name="HaveBigBoom"
+		FullName="ѕЖ±ЈДВёщ" />
+
+	<Object
+		Name="TheContraVillage"
+		FullName="№Е№ЕАыЕµ" />
+
+	<Object
+		Name="TheContraVillage_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="TheContraVillage_Shop"
+		FullName="ФУ»хµк" />
+
+	<Object
+		Name="TheContraVillage_Bar"
+		FullName="ѕЖ°ЙЎё·иКуЎ№" />
+
+	<Object
+		Name="TheContraVillage_Bar_Barman"
+		FullName="ѕЖ±ЈНю¶ы" />
+
+	<Object
+		Name="TheFreedom"
+		FullName="МШВЮТБґДїЛ" />
+
+	<Object
+		Name="TheFreedom_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="TheFreedom_Shop"
+		FullName="ЙМµк" />
+
+	<Object
+		Name="TheFreedom_Bar"
+		FullName="ѕЖ°ЙЎёу¦Р·Ў№" />
+
+	<Object
+		Name="TheFreedom_Bar_Barman"
+		FullName="АПОЧЖЕ" />
+
+	<Object
+		Name="CS"
+		FullName="ёпГьХЯ°ЈµВ" />
+
+	<Object
+		Name="Botanik"
+		FullName="ЦІОпС§јТВ¬їЛ" />
+
+	<Object
+		Name="Medik"
+		FullName="УЖПРІ©°Н" />
+
+	<Object
+		Name="Oldsolder"
+		FullName="АПМАД·" />
+
+	<Object
+		Name="PetrolStationTown1"
+		FullName="јУУНХѕ" />
+
+	<Object
+		Name="PetrolStationTown1_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="PetrolStationTown2"
+		FullName="јУУНХѕ" />
+
+	<Object
+		Name="PetrolStationTown2_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="PetrolStationTown3"
+		FullName="јУУНХѕ" />
+
+	<Object
+		Name="PetrolStationTown3_Workshop"
+		FullName="іµјд" />
+<!-- §Э§а§Ь§С§и§Ъ§Ъ -->
+	<Object
+		Name="ToR1M2"
+		FullName="НЁНщАпЅтµДµАВ·" />
+
+	<Object
+		Name="ToR1M3"
+		FullName="НЁНщНЯМШАјµДµАВ·" />
+
+	<Object
+		Name="ToR4M1"
+		FullName="НЁНщНЯ№юМШµДµАВ·" />
+
+	<Object
+		Name="TheContraVillage_defend"
+		FullName="№Е№ЕАыЕµ" />
+
+	<Object
+		Name="TheTown_enter"
+		FullName="ЛчЛ№Хт" />
+
+	<Object
+		Name="TheFreedom_enter"
+		FullName="МШВЮТБґДїЛґе" />
+
+	<Object
+		Name="TheOilVillage_enter"
+		FullName="ФъТБД·їЁ" />
+
+	<Object
+		Name="u1"
+		FullName="ЗЗ" />
+
+	<Object
+		Name="u2"
+		FullName="ВнїЛЛ№" />
+
+	<Object
+		Name="u3"
+		FullName="ЦХЅбХЯ" />
+
+	<Object
+		Name="u4"
+		FullName="±ИАыЎ¤»щµВ" />
+
+	<Object
+		Name="u5"
+		FullName="ІЦКу" />
+
+	<Object
+		Name="u6"
+		FullName="ІјАЧїЛ" />
+
+	<Object
+		Name="u7"
+		FullName="ґу±ѕ" />
+
+	<Object
+		Name="u8"
+		FullName="ДЄ" />
+
+	<Object
+		Name="u9"
+		FullName="їЖАы" />
+</ObjectNames>

@@ -38,7 +38,7 @@
 
 	<string
 		id="denscoutCab_diz"
-		value="Alice的卡车驾驶室。改装版侦察车。" />
+		value="爱丽丝的卡车驾驶室。改装版侦察车。" />
 
 	<string
 		id="scoutCab01_diz"
@@ -82,11 +82,11 @@
 
 	<string
 		id="Ural01_diz"
-		value="这辆卡车兼顾火力与运载能力。作为最速重型卡车，Ural能带你脱离一切险境。" />
+		value="这辆卡车兼顾火力与运载能力。作为最速重型卡车，乌拉尔能带你脱离一切险境。" />
 
 	<string
 		id="Ural02_diz"
-		value="这辆卡车兼顾火力与运载能力。作为最速重型卡车，Ural能带你脱离一切险境。" />
+		value="这辆卡车兼顾火力与运载能力。作为最速重型卡车，乌拉尔能带你脱离一切险境。" />
 
 	<string
 		id="Bug01_diz"
@@ -102,7 +102,7 @@
 
 	<string
 		id="Mirotvorec01_diz"
-		value="进攻是最好的防守。没有其他卡车能像Peacekeeper一样搭载如此多武器。不过货舱不算宽敞。" />
+		value="进攻是最好的防守。没有其他卡车能像维和者一样搭载如此多武器。不过货舱不算宽敞。" />
 
 	<string
 		id="Tank01_diz"
@@ -122,7 +122,7 @@
 
 	<string
 		id="UralForSale_diz"
-		value="这辆卡车兼顾火力与运载能力。作为最速重型卡车，Ural能带你脱离一切险境。" />
+		value="这辆卡车兼顾火力与运载能力。作为最速重型卡车，乌拉尔能带你脱离一切险境。" />
 
 	<string
 		id="BugForSale_diz"
@@ -134,7 +134,7 @@
 
 	<string
 		id="MirotvorecForSale_diz"
-		value="进攻是最好的防守。没有其他卡车能像Peacekeeper一样搭载如此多武器。不过货舱不算宽敞。" />
+		value="进攻是最好的防守。没有其他卡车能像维和者一样搭载如此多武器。不过货舱不算宽敞。" />
 <!-- Gadgets ______________________________________________-->
 	<string
 		id="cooling_system_guns_diz"
@@ -478,15 +478,15 @@
 <!-- Cabins and baskets ______________________________________________-->
 	<string
 		id="bugCab01_diz"
-		value="Van的最简易驾驶室。" />
+		value="蓬车的最简易驾驶室。" />
 
 	<string
 		id="bugCab02_diz"
-		value="Van的轻微改装驾驶室。" />
+		value="蓬车的轻微改装驾驶室。" />
 
 	<string
 		id="bugCab03_diz"
-		value="Van标准驾驶室重度改装。" />
+		value="蓬车标准驾驶室重度改装。" />
 
 	<string
 		id="molokovozCab01_diz"
@@ -502,7 +502,7 @@
 
 	<string
 		id="uralCab01_diz"
-		value="Ural驾驶室初始型号。" />
+		value="乌拉尔驾驶室初始型号。" />
 
 	<string
 		id="uralCab02_diz"
@@ -522,11 +522,11 @@
 
 	<string
 		id="belazCab01_diz"
-		value="Belaz最便宜最简易的驾驶室。可装一门小炮和几个配件。" />
+		value="贝拉斯最便宜最简易的驾驶室。可装一门小炮和几个配件。" />
 
 	<string
 		id="belazCab02_diz"
-		value="已购Belaz并热衷贸易者的好选择。" />
+		value="已购贝拉斯并热衷贸易者的好选择。" />
 
 	<string
 		id="belazCab03_diz"
@@ -542,7 +542,7 @@
 
 	<string
 		id="mirotvorecCab01_diz"
-		value="Peacekeeper驾驶室基础型号。即使最简陋的驾驶室也具备不俗的行驶与战斗性能。" />
+		value="维和者驾驶室基础型号。即使最简陋的驾驶室也具备不俗的行驶与战斗性能。" />
 
 	<string
 		id="mirotvorecCab02_diz"
@@ -558,11 +558,11 @@
 
 	<string
 		id="mirotvorecCab05_diz"
-		value="Peacekeeper驾驶室顶级型号。这台机械奇迹能装巨型火炮，敌人只能等死或逃命。" />
+		value="维和者驾驶室顶级型号。这台机械奇迹能装巨型火炮，敌人只能等死或逃命。" />
 
 	<string
 		id="bugCargo01_diz"
-		value="Van最小最简的车厢。" />
+		value="蓬车最小最简的车厢。" />
 
 	<string
 		id="bugCargo02_diz"
@@ -602,7 +602,7 @@
 
 	<string
 		id="uralCargo05_diz"
-		value="Ural车厢顶级型号。作战是其直接目的。火力强、装甲不可穿透。" />
+		value="乌拉尔车厢顶级型号。作战是其直接目的。火力强、装甲不可穿透。" />
 
 	<string
 		id="belazCargo01_diz"
@@ -626,7 +626,7 @@
 
 	<string
 		id="mirotvorecCargo01_diz"
-		value="Peacekeeper标准车厢。装甲厚实，货舱大，有装好炮的位置。" />
+		value="维和者标准车厢。装甲厚实，货舱大，有装好炮的位置。" />
 
 	<string
 		id="mirotvorecCargo02_diz"
@@ -654,27 +654,27 @@
 
 	<string
 		id="hunterCab01_diz"
-		value="Hunter的驾驶室。" />
+		value="猎手的驾驶室。" />
 
 	<string
 		id="hunterCab02_diz"
-		value="Hunter改良驾驶室。" />
+		value="猎手改良驾驶室。" />
 
 	<string
 		id="fighterCab01_diz"
-		value="Fighter的驾驶室。" />
+		value="斗士的驾驶室。" />
 
 	<string
 		id="fighterCab02_diz"
-		value="Fighter改良驾驶室。" />
+		value="斗士改良驾驶室。" />
 
 	<string
 		id="cruiserCab01_diz"
-		value="Cruiser的驾驶室。" />
+		value="巡洋者的驾驶室。" />
 
 	<string
 		id="cruiserCab02_diz"
-		value="Cruiser改良驾驶室。" />
+		value="巡洋者改良驾驶室。" />
 <!-- Gadgets ______________________________________________--><!-- QuestItems ___________________________________________-->
 	<string
 		id="quest_monster_head_diz"
@@ -714,12 +714,12 @@
 	<string
 		id="quest_start_father_letter_diz"
 		locForm="0"
-		value="如果你在读这封信，说明我没能回来。悲哀但真实。我很了解Peter，对你的教育毫无担忧。想到你长大成人时我远在天边，我就心如刀绞。这是真正的折磨。但你必须知道，我别无选择只能离开。太多事情处于危险之中。我必须纠正错误。只有达成目标，我才能证明自己配得上父亲……和丈夫的称呼。对不起，儿子。能原谅我吗？" />
+		value="如果你在读这封信，说明我没能回来。悲哀但真实。我很了解彼得，对你的教育毫无担忧。想到你长大成人时我远在天边，我就心如刀绞。这是真正的折磨。但你必须知道，我别无选择只能离开。太多事情处于危险之中。我必须纠正错误。只有达成目标，我才能证明自己配得上父亲……和丈夫的称呼。对不起，儿子。能原谅我吗？" />
 
 	<string
 		id="quest_potato_diz"
 		locForm="0"
-		value="这个包裹必须送到我父亲的朋友Sergo手中。" />
+		value="这个包裹必须送到我父亲的朋友谢尔戈手中。" />
 
 	<string
 		id="quest_medicine_box_diz"
@@ -774,12 +774,12 @@
 	<string
 		id="quest_disk_1_diz"
 		locForm="0"
-		value="曾属于Ivan Go的光盘。可能含有关于他失踪的信息。" />
+		value="曾属于伊万·戈的光盘。可能含有关于他失踪的信息。" />
 
 	<string
 		id="quest_disk_2_diz"
 		locForm="0"
-		value="第二张光盘，包含读取Ivan Go日记的密码。" />
+		value="第二张光盘，包含读取伊万·戈日记的密码。" />
 
 	<string
 		id="quest_key_for_submarine_diz"

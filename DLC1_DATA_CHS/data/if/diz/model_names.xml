@@ -33,7 +33,7 @@
 	<Item
 		id="collectionbook7"
 		locForm="0"
-		value="Denry Dail的日记" />
+		value="丹瑞·戴尔的日记" />
 
 	<Item
 		id="collectionbook8"
@@ -2053,7 +2053,7 @@
 	<Item
 		id="PublicDemoSinks"
 		locForm="0"
-		value="流浪者Sinks" />
+		value="流浪者辛克斯" />
 
 	<Item
 		id="PublicDemoBandit1"
@@ -2073,17 +2073,17 @@
 	<Item
 		id="PublicDemoIeriBand1"
 		locForm="0"
-		value="Yeri的护卫" />
+		value="耶里的护卫" />
 
 	<Item
 		id="PublicDemoIeriBand2"
 		locForm="0"
-		value="Yeri的护卫" />
+		value="耶里的护卫" />
 
 	<Item
 		id="PublicDemoIeriCar"
 		locForm="0"
-		value="Yeri" />
+		value="耶里" />
 
 	<Item
 		id="r1m2_CaravanBug01"
@@ -2303,12 +2303,12 @@
 	<Item
 		id="boss04"
 		locForm="0"
-		value="Neri基地" />
+		value="内里基地" />
 
 	<Item
 		id="boss05"
 		locForm="0"
-		value="Sam的联合收割机" />
+		value="萨姆的联合收割机" />
 
 	<Item
 		id="FlagCar1"
@@ -2388,17 +2388,17 @@
 	<Item
 		id="AxelVehicle"
 		locForm="0"
-		value="Axel" />
+		value="阿克塞尔" />
 
 	<Item
 		id="FelixVehicle2"
 		locForm="0"
-		value="Felix" />
+		value="费利克斯" />
 
 	<Item
 		id="FelixVehicle"
 		locForm="0"
-		value="Felix" />
+		value="费利克斯" />
 
 	<Item
 		id="CoolBelaz_2"
@@ -2603,17 +2603,17 @@
 	<Item
 		id="VeterCar01"
 		locForm="0"
-		value="Wind" />
+		value="风行者" />
 
 	<Item
 		id="Iten_car"
 		locForm="0"
-		value="Ethan" />
+		value="伊森" />
 
 	<Item
 		id="Star_car"
 		locForm="0"
-		value="Ragman" />
+		value="破布客" />
 
 	<Item
 		id="Patr_car"
@@ -2623,7 +2623,7 @@
 	<Item
 		id="Amerigo_car"
 		locForm="0"
-		value="Amerigo队长" />
+		value="阿梅里戈队长" />
 
 	<Item
 		id="ScoutMul01"

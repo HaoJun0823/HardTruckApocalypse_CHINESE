@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes"?>
+<ObjectNames>
+	<Object Name = "Porto"				FullName = "ІЁ¶ыНј" />
+	<Object Name = "Porto_Workshop"         	FullName = "іµјд" />
+	<Object Name = "Porto_Shop"         		FullName = "ЙМµк" />
+	<Object Name = "Porto_Bar"			FullName = "ѕЖ°ЙЎёЛАНцЦ®ГЄЎ№" />
+	<Object Name = "Porto_Bar_Barman"		FullName = "ЙМИЛВнїЛЛ№" />
+
+	<Object Name = "TheTown"			FullName = "ЛчЛ№" />
+	<Object Name = "TheTown_Workshop"		FullName = "іµїв" />
+	<Object Name = "TheTown_Shop"		FullName = "ЙМµк" />
+	<Object Name = "TheTown_Bar"			FullName = "ѕЖ°ЙЎёЧоєуВГіМЎ№" />
+	<Object Name = "TheTown_Bar_Barman"	FullName = "і¤НѕїЁіµЛѕ»ъ" />
+
+</ObjectNames>

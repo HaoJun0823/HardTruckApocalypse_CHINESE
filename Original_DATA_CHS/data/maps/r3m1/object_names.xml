@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<ObjectNames>
+	<Object
+		Name="TheSet"
+		FullName="ИыЛ№" />
+
+	<Object
+		Name="Set_Bar"
+		FullName="ї§·И№ЭЎёАППрКчЎ№" />
+
+	<Object
+		Name="Set_Bar_Barman"
+		FullName="·СВЧ" />
+
+	<Object
+		Name="Set_Bar_MainDruid"
+		FullName="ґуµВВіТБ" />
+
+	<Object
+		Name="Set_Bar_Customer1"
+		FullName="·ТДЭ" />
+
+	<Object
+		Name="Set_Shop"
+		FullName="КРіЎ" />
+
+	<Object
+		Name="Set_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="TheFist"
+		FullName="ёҐЛ№МШ" />
+
+	<Object
+		Name="Fist_Bar"
+		FullName="ѕЖ°ЙЎёѕЮКЇЎ№" />
+
+	<Object
+		Name="Fist_Bar_Barman"
+		FullName="Л№ЛюАы°В" />
+
+	<Object
+		Name="Fist_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="Fist_Shop"
+		FullName="КРіЎ" />
+
+	<Object
+		Name="TheUluk"
+		FullName="ОЪВіїЛ" />
+
+	<Object
+		Name="Uluk_Bar"
+		FullName="ѕЖ°ЙЎёЗъЦбЎ№" />
+
+	<Object
+		Name="Uluk_Bar_Barman"
+		FullName="їЁМШ" />
+
+	<Object
+		Name="Uluk_Bar_Leader"
+		FullName="¶ЇБї" />
+
+	<Object
+		Name="Uluk_Bar_Customer1"
+		FullName="їВІј" />
+
+	<Object
+		Name="Uluk_Workshop"
+		FullName="іµјдЎёЧФјє¶ЇКЦЎ№" />
+
+	<Object
+		Name="Uluk_Shop"
+		FullName="КРіЎ" />
+
+	<Object
+		Name="r3m1_NearFist_Guard1"
+		FullName="ёҐЛ№МШОА±ш" />
+
+	<Object
+		Name="r3m1_NearFist_Guard2"
+		FullName="ёҐЛ№МШОА±ш" />
+
+	<Object
+		Name="r3m1_NearUluk_RescueMan1"
+		FullName="µ¤ДбЛ№" />
+
+	<Object
+		Name="TheRazboynik"
+		FullName="№юД·АЧМШ" />
+
+	<Object
+		Name="TheRazboynik_Bar"
+		FullName="ѕЖ°ЙЎёЖыУНЎ№" />
+
+	<Object
+		Name="TheRazboynik_Workshop"
+		FullName="ЖыіµТЅК¦" />
+
+	<Object
+		Name="Razboynik_Bar_Barman"
+		FullName="ѕЖ±Ј" />
+
+	<Object
+		Name="TheRazboynik_Shop"
+		FullName="КРіЎ" />
+
+	<Object
+		Name="Raz_Bar_Lisa"
+		FullName="°®АцЛї" />
+
+	<Object
+		Name="ToR2M1"
+		FullName="НЁНщАыІјАпД·µДµАВ·" />
+
+	<Object
+		Name="ToR3M2"
+		FullName="НЁНщТБёсЕµМШµДµАВ·" />
+
+	<Object
+		Name="UlukAmush_loc"
+		FullName="·ь»чµг" />
+
+	<Object
+		Name="ToR1M4"
+		FullName="НЁНщєХ¶ыµДµАВ·" />
+
+	<Object
+		Name="r3_FarVillage"
+		FullName="°Ј¶ыГЙМШ" />
+
+	<Object
+		Name="Razboynic_Bar_Customer1"
+		FullName="єъ°І" />
+
+	<Object
+		Name="Uluk_Hram"
+		FullName="ЙсГн" />
+
+	<Object
+		Name="Uluk_Hram_Zrec1"
+		FullName="јАЛѕ" />
+
+	<Object
+		Name="Set_HouseMainDruid"
+		FullName="РЮРРКТ" />
+
+	<Object
+		Name="r3_FarVillage_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="r3_FarVillage_Shop"
+		FullName="ЙМµк" />
+
+	<Object
+		Name="heavy_dot2_vector1"
+		FullName="µп±¤" />
+
+	<Object
+		Name="heavy_dot2_vulcan2"
+		FullName="µп±¤" />
+
+	<Object
+		Name="heavy_dot2_vulcan3"
+		FullName="µп±¤" />
+
+	<Object
+		Name="heavy_dot2_vulcan4"
+		FullName="µп±¤" />
+
+	<Object
+		Name="sack_dot2_vulcan5"
+		FullName="µп±¤" />
+
+	<Object
+		Name="sack_dot2_vulcan6"
+		FullName="µп±¤" />
+
+	<Object
+		Name="heavy_dot4_octopus7"
+		FullName="µп±¤" />
+
+	<Object
+		Name="heavy_dot4_octopus8"
+		FullName="µп±¤" />
+
+	<Object
+		Name="heavy_dot3_vulcan9"
+		FullName="µп±¤" />
+
+	<Object
+		Name="heavy_dot2_vector10"
+		FullName="µп±¤" />
+
+	<Object
+		Name="sack_dot1_vulcan11"
+		FullName="µп±¤" />
+
+	<Object
+		Name="sack_dot2_vulcan12"
+		FullName="µп±¤" />
+
+	<Object
+		Name="sack_dot2_kord13"
+		FullName="µп±¤" />
+
+	<Object
+		Name="sack_dot2_kord14"
+		FullName="µп±¤" />
+
+	<Object
+		Name="sack_dot2_flag15"
+		FullName="µп±¤" />
+
+	<Object
+		Name="heavy_dot4_big_kpvt16"
+		FullName="µп±¤" />
+
+	<Object
+		Name="heavy_dot4_big_kpvt17"
+		FullName="µп±¤" />
+
+	<Object
+		Name="heavy_dot4_vulcan18"
+		FullName="µп±¤" />
+
+	<Object
+		Name="sack_dot2_omega19"
+		FullName="µп±¤" />
+
+	<Object
+		Name="heavy_dot4_big_kpvt20"
+		FullName="µп±¤" />
+
+	<Object
+		Name="sack_dot2_vulcan21"
+		FullName="µп±¤" />
+
+	<Object
+		Name="sack_dot2_kord22"
+		FullName="µп±¤" />
+
+	<Object
+		Name=""
+		FullName="" />
+
+	<Object
+		Name="urod1"
+		FullName="їЛАНµВ" />
+
+	<Object
+		Name="urod2"
+		FullName="Л№їј¶ы" />
+
+	<Object
+		Name="urod3"
+		FullName="І©ёс" />
+
+	<Object
+		Name="urod4"
+		FullName="ДВїЛЛ№" />
+
+	<Object
+		Name="urod5"
+		FullName="µ¤ДбЛ№" />
+
+	<Object
+		Name="urod6"
+		FullName="ёЗСЗ" />
+
+	<Object
+		Name="urod7"
+		FullName="Р»¶ыВь" />
+
+	<Object
+		Name="urod8"
+		FullName="їЦІА" />
+
+	<Object
+		Name="urod9"
+		FullName="ёЈКе" />
+</ObjectNames>

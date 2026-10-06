@@ -13,7 +13,7 @@
 	<QuestInfo
 		questName="Buyer_Quest1"
 		briefDiz="把包裹送到索斯。"
-		fullDiz="我应该把这个包裹交给我父亲的朋友 Sergo。"
+		fullDiz="我应该把这个包裹交给我父亲的朋友 谢尔戈。"
 		isMainQuest="1">
 		<Map
 			name="r1m1"
@@ -140,13 +140,13 @@ isMainQuest="0" />
 		isMainQuest="0">
 		<Map
 			name="r1m2"
-			targetObjName="Esting" />
+			targetObjName="埃斯廷" />
 	</QuestInfo>
 
 	<QuestInfo
 		questName="FindBen2_Quest"
-		briefDiz="寻找 Ben Throttle"
-		fullDiz="现在我确信 Ben 就是我要找的人。问题是去哪里找他。"
+		briefDiz="寻找 本·斯罗特尔"
+		fullDiz="现在我确信 本 就是我要找的人。问题是去哪里找他。"
 		isMainQuest="1">
 		<Map
 			name="r1m2" />
@@ -154,8 +154,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="FindBen_Quest"
-		briefDiz="寻找探险家 Ben Throttle"
-		fullDiz="我的人生已成废墟。要重新拼凑完整，我必须了解我亲生父亲的更多事。我唯一的希望就是 Ben Throttle，不管他究竟是谁……"
+		briefDiz="寻找探险家 本·斯罗特尔"
+		fullDiz="我的人生已成废墟。要重新拼凑完整，我必须了解我亲生父亲的更多事。我唯一的希望就是 本·斯罗特尔，不管他究竟是谁……"
 		isMainQuest="1">
 		<Map
 			name="r1m1" />
@@ -166,14 +166,14 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="FindGomerA_Quest1"
-		briefDiz="寻找 Homer"
-		fullDiz="也许能在某个当地聚落的酒吧里找到 Homer。"
+		briefDiz="寻找 荷马"
+		fullDiz="也许能在某个当地聚落的酒吧里找到 荷马。"
 		isMainQuest="1" />
 
 	<QuestInfo
 		questName="FindGomerB_Quest1"
-		briefDiz="寻找 Homer"
-		fullDiz="也许能在某个当地聚落的酒吧里找到 Homer。"
+		briefDiz="寻找 荷马"
+		fullDiz="也许能在某个当地聚落的酒吧里找到 荷马。"
 		isMainQuest="1" />
 
 	<QuestInfo
@@ -248,7 +248,7 @@ isMainQuest="0" />
 		isMainQuest="0">
 		<Map
 			name="r1m2"
-			targetObjName="Midragd" />
+			targetObjName="米德格拉德" />
 	</QuestInfo>
 
 	<QuestInfo
@@ -258,7 +258,7 @@ isMainQuest="0" />
 		isMainQuest="0">
 		<Map
 			name="r1m2"
-			targetObjName="Porto" />
+			targetObjName="波尔图" />
 	</QuestInfo>
 
 	<QuestInfo
@@ -341,7 +341,7 @@ isMainQuest="0" />
 		isMainQuest="0">
 		<Map
 			name="r1m2"
-			targetObjName="Midragd" />
+			targetObjName="米德格拉德" />
 	</QuestInfo>
 
 	<QuestInfo
@@ -390,7 +390,7 @@ isMainQuest="0" />
 		isMainQuest="0">
 		<Map
 			name="r1m3"
-			targetObjName="Asgard" />
+			targetObjName="阿斯加德" />
 	</QuestInfo>
 
 	<QuestInfo
@@ -412,7 +412,7 @@ isMainQuest="0" />
 		isMainQuest="1">
 		<Map
 			name="r1m3"
-			targetObjName="Asgard" />
+			targetObjName="阿斯加德" />
 	</QuestInfo>
 
 	<QuestInfo
@@ -493,8 +493,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_FindAksel_Quest"
-		briefDiz="寻找 Axel"
-		fullDiz="首先我得找到通往 Axel 地盘的路。然后再决定怎么对付他！"
+		briefDiz="寻找 阿克塞尔"
+		fullDiz="首先我得找到通往 阿克塞尔 地盘的路。然后再决定怎么对付他！"
 		isMainQuest="1">
 		<Map
 			name="r1m2" />
@@ -529,16 +529,16 @@ isMainQuest="0" />
 
 		<Map
 			name="r1m2"
-			targetObjName="Esting" />
+			targetObjName="埃斯廷" />
 	</QuestInfo>
 
 	<QuestInfo
 		questName="d_FindBenInMidgard_Quest"
-		briefDiz="Ben 最后出现在米德加德"
+		briefDiz="本 最后出现在米德加德"
 		isMainQuest="1">
 		<Map
 			name="r1m2"
-			targetObjName="Midragd" />
+			targetObjName="米德格拉德" />
 	</QuestInfo>
 
 	<QuestInfo
@@ -577,7 +577,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_FindFelix_Quest"
-		briefDiz="在索斯找到 Felix。"
+		briefDiz="在索斯找到 费利克斯。"
 		isMainQuest="1">
 		<Map
 			name="r1m1"
@@ -586,8 +586,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_FindHouseOfBen_Quest"
-		briefDiz="和 Ben 见面。"
-		fullDiz="很快我就能见到 Ben Throttle，了解我的身世之谜。"
+		briefDiz="和 本 见面。"
+		fullDiz="很快我就能见到 本·斯罗特尔，了解我的身世之谜。"
 		isMainQuest="1">
 		<Map
 			name="r1m2"
@@ -601,7 +601,7 @@ isMainQuest="0" />
 		isMainQuest="0">
 		<Map
 			name="r1m3"
-			targetObjName="Asgard" />
+			targetObjName="阿斯加德" />
 	</QuestInfo>
 
 	<QuestInfo
@@ -621,8 +621,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_FindLisaInBase_Quest"
-		briefDiz="在51区打听 Alice 的下落。"
-		fullDiz="原来 Alice 和匪徒有牵连。我也不算意外，但还是……"
+		briefDiz="在51区打听 爱丽丝 的下落。"
+		fullDiz="原来 爱丽丝 和匪徒有牵连。我也不算意外，但还是……"
 		isMainQuest="1">
 		<Map
 			name="r1m3"
@@ -631,8 +631,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_FindLisaInGelvetcia_Quest"
-		briefDiz="在赫尔维蒂亚抓住 Alice。"
-		fullDiz="Alice 很快就要为她的所作所为付出代价！我清楚她在哪！"
+		briefDiz="在赫尔维蒂亚抓住 爱丽丝。"
+		fullDiz="爱丽丝 很快就要为她的所作所为付出代价！我清楚她在哪！"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -641,14 +641,14 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_FindLisaInMidragd_Quest"
-		briefDiz="在米德加德寻找 Alice"
+		briefDiz="在米德加德寻找 爱丽丝"
 		isMainQuest="1">
 		<Map
 			name="r1m1" />
 
 		<Map
 			name="r1m2"
-			targetObjName="Midragd" />
+			targetObjName="米德格拉德" />
 
 		<Map
 			name="r1m3"
@@ -673,14 +673,14 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_FindLisaInPorto_Quest"
-		briefDiz="在波尔图寻找 Alice"
+		briefDiz="在波尔图寻找 爱丽丝"
 		isMainQuest="1">
 		<Map
 			name="r1m1" />
 
 		<Map
 			name="r1m2"
-			targetObjName="Porto" />
+			targetObjName="波尔图" />
 
 		<Map
 			name="r1m3" />
@@ -688,8 +688,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_FindLisaOnSever_Quest"
-		briefDiz="在北方追上 Alice"
-		fullDiz="看来 Felix 没有杀我父亲。我唯一的线索就是 Alice。她是罪行的目击者。"
+		briefDiz="在北方追上 爱丽丝"
+		fullDiz="看来 费利克斯 没有杀我父亲。我唯一的线索就是 爱丽丝。她是罪行的目击者。"
 		isMainQuest="1">
 		<Map
 			name="r1m1" />
@@ -737,7 +737,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="d_FindVerbInAR_Quest"
 		briefDiz="在马雷齐亚找到猩红之晨的招募人。"
-		fullDiz="猩红之晨正在招募新兵。加入他们就能接近 Axel。"
+		fullDiz="猩红之晨正在招募新兵。加入他们就能接近 阿克塞尔。"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -745,13 +745,13 @@ isMainQuest="0" />
 
 		<Map
 			name="r2m2"
-			targetObjName="Marezzia" />
+			targetObjName="马雷齐亚" />
 	</QuestInfo>
 
 	<QuestInfo
 		questName="d_FindVerbInSNG_Quest"
 		briefDiz="在图斯找到独立城镇联邦的招募人"
-		fullDiz="独立城镇联邦需要人手来对抗 Axel 的军队。只要我加入他们，就能一起粉碎这个暴君！"
+		fullDiz="独立城镇联邦需要人手来对抗 阿克塞尔 的军队。只要我加入他们，就能一起粉碎这个暴君！"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -821,8 +821,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_GetAkselBandit_Quest"
-		briefDiz="和 Axel 见面"
-		fullDiz="真相揭晓的时刻就要到了。很快我就能和 Axel 面对面了！"
+		briefDiz="和 阿克塞尔 见面"
+		fullDiz="真相揭晓的时刻就要到了。很快我就能和 阿克塞尔 面对面了！"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -830,7 +830,7 @@ isMainQuest="0" />
 
 		<Map
 			name="r2m2"
-			targetObjName="Zeon" />
+			targetObjName="锡安" />
 	</QuestInfo>
 
 	<QuestInfo
@@ -863,7 +863,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="d_GetSupportOneOfTheBands1_Quest"
 		briefDiz="争取一个大派系的支持。"
-		fullDiz="看来麻烦不小。Alice 是当地某个犯罪头目的女人。没有帮手很难把她弄到手。该找些强有力的盟友了。"
+		fullDiz="看来麻烦不小。爱丽丝 是当地某个犯罪头目的女人。没有帮手很难把她弄到手。该找些强有力的盟友了。"
 		isMainQuest="1">
 		<Map
 			name="r2m1" />
@@ -875,7 +875,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="d_GetSupportOneOfTheBands2_Quest"
 		briefDiz="争取一个大派系的支持。"
-		fullDiz="看来我单枪匹马对付不了 Axel。该找些强有力的盟友了。"
+		fullDiz="看来我单枪匹马对付不了 阿克塞尔。该找些强有力的盟友了。"
 		isMainQuest="1">
 		<Map
 			name="r2m1" />
@@ -932,7 +932,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_KillFelix_Quest"
-		briefDiz="杀死 Felix。"
+		briefDiz="杀死 费利克斯。"
 		isMainQuest="1">
 		<Map
 			name="r1m1"
@@ -941,7 +941,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_Lisa_Quest"
-		briefDiz="带 Alice 逛逛当地的村庄。"
+		briefDiz="带 爱丽丝 逛逛当地的村庄。"
 		fullDiz="一个漂亮的姑娘要我陪她。她看起来像个犯罪分子，不过谁在乎呢。"
 		isMainQuest="0">
 		<Map
@@ -963,7 +963,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="d_MeetWithGelvetciaSopr_Quest"
 		briefDiz="联系托斯卡纳的叛军。"
-		fullDiz="我必须去见托斯卡纳的叛军，打探他们掌握的消息。运气好的话，他们会有助于我们击败 Axel 的情报。"
+		fullDiz="我必须去见托斯卡纳的叛军，打探他们掌握的消息。运气好的话，他们会有助于我们击败 阿克塞尔 的情报。"
 		isMainQuest="1">
 		<Map
 			name="r2m1" />
@@ -1062,7 +1062,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="d_MoveWithGeneralToGelvetcia_Quest"
 		briefDiz="把猩红之晨的将军送到赫尔维蒂亚。"
-		fullDiz="这是最后一块拼图。我们会让将军说出 Axel 的弱点。"
+		fullDiz="这是最后一块拼图。我们会让将军说出 阿克塞尔 的弱点。"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -1121,8 +1121,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_ReturnToBen_Quest"
-		briefDiz="回到 Ben 那里。"
-		fullDiz="那条线索断了。希望 Ben 能想出别的办法。"
+		briefDiz="回到 本 那里。"
+		fullDiz="那条线索断了。希望本还能想出别的办法。"
 		isMainQuest="1">
 		<Map
 			name="r1m2"
@@ -1215,7 +1215,7 @@ isMainQuest="0" />
 		isMainQuest="1">
 		<Map
 			name="r1m2"
-			targetObjName="Midragd" />
+			targetObjName="米德格拉德" />
 	</QuestInfo>
 
 	<QuestInfo
@@ -1230,8 +1230,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_TalkAboutAksel_Quest"
-		briefDiz="打听 Axel 的消息。"
-		fullDiz="我得向当地人打听 Axel 的事，尤其是去哪里能找到他。"
+		briefDiz="打听 阿克塞尔 的消息。"
+		fullDiz="我得向当地人打听 阿克塞尔 的事，尤其是去哪里能找到他。"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -1240,8 +1240,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_TalkAboutLisa_Quest"
-		briefDiz="打听 Alice 的下落"
-		fullDiz="人人都认识 Alice。我只要打听就能找到她。"
+		briefDiz="打听 爱丽丝 的下落"
+		fullDiz="人人都认识 爱丽丝。我只要打听就能找到她。"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -1291,7 +1291,7 @@ isMainQuest="0" />
 
 		<Map
 			name="r1m3"
-			targetObjName="Asgard" />
+			targetObjName="阿斯加德" />
 	</QuestInfo>
 
 	<QuestInfo
@@ -1323,7 +1323,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="d_WinLisaInBattle_Quest"
-		briefDiz="战胜 Alice。"
+		briefDiz="战胜 爱丽丝。"
 		fullDiz="她自找的！"
 		isMainQuest="1">
 		<Map
@@ -1341,7 +1341,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="q_FH2"
-		briefDiz="把 Philemon 送回家。"
+		briefDiz="把 菲利蒙 送回家。"
 		isMainQuest="0">
 		<Map
 			name="r1m4"
@@ -1351,7 +1351,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="q_FindHusbent"
 		briefDiz="寻找失踪的丈夫。"
-		fullDiz="他叫 Philemon。请把他带回来！我太爱他了。"
+		fullDiz="他叫 菲利蒙。请把他带回来！我太爱他了。"
 		isMainQuest="0" />
 
 	<QuestInfo
@@ -1373,7 +1373,7 @@ isMainQuest="0" />
 		isMainQuest="0" >
 		<Map
 			name="r1m2"
-			targetObjName="Midragd" />
+			targetObjName="米德格拉德" />
 
 		<Map
 			name="r1m3"
@@ -1456,7 +1456,7 @@ isMainQuest="0" />
 		isMainQuest="1">
 		<Map
 			name="r1m2"
-			targetObjName="Midragd" />
+			targetObjName="米德格拉德" />
 	</QuestInfo>
 
 	<QuestInfo
@@ -1491,7 +1491,7 @@ isMainQuest="0" />
 		isMainQuest="1">
 		<Map
 			name="r1m2"
-			targetObjName="Midragd" />
+			targetObjName="米德格拉德" />
 
 		<Map
 			name="r1m3"
@@ -1539,8 +1539,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r1m2_TW_BanAboutAlien"
-		briefDiz="和 Ben 谈谈外星人的事。"
-		fullDiz="Ben 知道很多关于 Ivan Go 冒险的故事。希望其中某个故事能给我指路。"
+		briefDiz="和 本 谈谈外星人的事。"
+		fullDiz="本 知道很多关于 伊万·戈 冒险的故事。希望其中某个故事能给我指路。"
 		isMainQuest="1">
 		<Map
 			name="r1m1"
@@ -1565,7 +1565,7 @@ isMainQuest="0" />
 		isMainQuest="1">
 		<Map
 			name="r1m2"
-			targetObjName="Midragd" />
+			targetObjName="米德格拉德" />
 
 		<Map
 			name="r1m3"
@@ -1599,7 +1599,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r1m3_BonnyAndKlideQuest"
-		briefDiz="帮助 Conny 和 Blyde。"
+		briefDiz="帮助 康妮 和 布莱德。"
 		fullDiz="一对奇怪的夫妇要我送他们回家。这么简单的活儿他们却给了一大笔钱。"
 		isMainQuest="0">
 		<Map
@@ -1697,8 +1697,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r1m3_LisaWithOberegAndDisk_Quest"
-		briefDiz="在利布里姆找到 Alice。"
-		fullDiz="Alice 偷了光盘往西去了。我必须不惜一切代价抓住她！"
+		briefDiz="在利布里姆找到 爱丽丝。"
+		fullDiz="爱丽丝 偷了光盘往西去了。我必须不惜一切代价抓住她！"
 		isMainQuest="1">
 		<Map
 			name="r1m3" />
@@ -1713,7 +1713,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r1m3_MoveToOraculAfterThief"
 		briefDiz="把第二张光盘交给先知。"
-		fullDiz="先知用它就能破译 Ivan Go 的日记。"
+		fullDiz="先知用它就能破译 伊万·戈 的日记。"
 		isMainQuest="1">
 		<Map
 			name="r1m3"
@@ -1776,12 +1776,12 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r1m3_ToLisaToAsgard"
-		briefDiz="追上 Alice。"
+		briefDiz="追上 爱丽丝。"
 		fullDiz="她朝阿斯加德方向走了。"
 		isMainQuest="1">
 		<Map
 			name="r1m3"
-			targetObjName="Asgard" />
+			targetObjName="阿斯加德" />
 	</QuestInfo>
 
 	<QuestInfo
@@ -1819,8 +1819,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r2m1_ArtAntipod_Quest"
-		briefDiz="和 Virtuoso 谈谈。"
-		fullDiz="有人偷了 Aesthete 的杰作。唯一识货的人就是 Virtuoso。"
+		briefDiz="和 大师 谈谈。"
+		fullDiz="有人偷了 鉴赏家 的杰作。唯一识货的人就是 大师。"
 		isMainQuest="0">
 		<Map
 			name="r2m1"
@@ -1829,8 +1829,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r2m1_ArtGulik_Quest"
-		briefDiz="从 Trickster 手里拿回杰作。"
-		fullDiz="一个叫 Trickster 的人是这起盗窃的幕后主使。我得抓住他，把杰作物归原主。"
+		briefDiz="从 诡术师 手里拿回杰作。"
+		fullDiz="一个叫 诡术师 的人是这起盗窃的幕后主使。我得抓住他，把杰作物归原主。"
 		isMainQuest="0">
 		<Map
 			name="r2m1"
@@ -1840,7 +1840,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r2m1_ArtViva_Quest"
 		briefDiz="归还杰作。"
-		fullDiz="要拿到报酬，我得把杰作还给 Aesthete。不过，也许有人愿意出更高的价。"
+		fullDiz="要拿到报酬，我得把杰作还给 鉴赏家。不过，也许有人愿意出更高的价。"
 		isMainQuest="0">
 		<Map
 			name="r2m1"
@@ -1892,7 +1892,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r2m1_ReturnNarcotics_Quest"
-		briefDiz="带着货物回到 Trickster 那里。"
+		briefDiz="带着货物回到 诡术师 那里。"
 		isMainQuest="0">
 		<Map
 			name="r2m1"
@@ -1953,7 +1953,7 @@ isMainQuest="0" />
 		isMainQuest="1">
 		<Map
 			name="r2m2"
-			targetObjName="Marezzia" />
+			targetObjName="马雷齐亚" />
 	</QuestInfo>
 
 	<QuestInfo
@@ -1970,7 +1970,7 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r2m2_FightFelix"
-		briefDiz="战胜 Felix。"
+		briefDiz="战胜 费利克斯。"
 		fullDiz="这只老狐狸快要识破我的身份了！我绝不能让这种事发生。"
 		isMainQuest="1">
 		<Map
@@ -1980,8 +1980,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r2m2_FightLisaToMonastir"
-		briefDiz="抓住 Alice。"
-		fullDiz="既然我知道 Alice 在哪，就绝不会让她跑了！"
+		briefDiz="抓住 爱丽丝。"
+		fullDiz="既然我知道 爱丽丝 在哪，就绝不会让她跑了！"
 		isMainQuest="0">
 		<Map
 			name="r2m2"
@@ -1990,8 +1990,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r2m2_FightWithAxelInArena_Quest"
-		briefDiz="和 Axel 决斗。"
-		fullDiz="在竞技场上和 Axel 一较高下的时刻到了。老天，我等这一刻等了太久。"
+		briefDiz="和 阿克塞尔 决斗。"
+		fullDiz="在竞技场上和 阿克塞尔 一较高下的时刻到了。老天，我等这一刻等了太久。"
 		isMainQuest="1">
 		<Map
 			name="r2m2"
@@ -2008,8 +2008,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r2m2_FindLisAfterAxelAndFatherDie_Quest"
-		briefDiz="在塞尔抓住 Alice。"
-		fullDiz="原来被 Alice 欺骗的不止我一个。Axel 也在找她。他告诉了我她最后的踪迹，在塞尔附近。奇怪她怎么会去那里，那不是自投罗网吗。"
+		briefDiz="在塞尔抓住 爱丽丝。"
+		fullDiz="原来被 爱丽丝 欺骗的不止我一个。阿克塞尔 也在找她。他告诉了我她最后的踪迹，在塞尔附近。奇怪她怎么会去那里，那不是自投罗网吗。"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -2143,7 +2143,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r2m2_KillMrPresidentAndOther"
 		briefDiz="杀死独立城镇联邦的领袖。"
-		fullDiz="我把独立城镇联邦的领袖诱入了圈套。现在我得把他们全干掉来结束这场战争。然后从 Axel 手里领赏。"
+		fullDiz="我把独立城镇联邦的领袖诱入了圈套。现在我得把他们全干掉来结束这场战争。然后从 阿克塞尔 手里领赏。"
 		isMainQuest="1">
 		<Map
 			name="r2m2"
@@ -2152,12 +2152,12 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r2m2_MoveToZeonToAlex"
-		briefDiz="和 Axel 见面。"
-		fullDiz="终于等到了！我现在是战争英雄，很快就能见到 Axel 了！"
+		briefDiz="和 阿克塞尔 见面。"
+		fullDiz="终于等到了！我现在是战争英雄，很快就能见到 阿克塞尔 了！"
 		isMainQuest="1">
 		<Map
 			name="r2m2"
-			targetObjName="Zeon" />
+			targetObjName="锡安" />
 	</QuestInfo>
 
 	<QuestInfo
@@ -2177,7 +2177,7 @@ isMainQuest="0" />
 		isMainQuest="0">
 		<Map
 			name="r2m2"
-			targetObjName="Marezzia" />
+			targetObjName="马雷齐亚" />
 	</QuestInfo>
 
 	<QuestInfo
@@ -2196,7 +2196,7 @@ isMainQuest="0" />
 		isMainQuest="1">
 		<Map
 			name="r2m2"
-			targetObjName="Marezzia" />
+			targetObjName="马雷齐亚" />
 	</QuestInfo>
 
 	<QuestInfo
@@ -2209,7 +2209,7 @@ isMainQuest="0" />
 
 		<Map
 			name="r2m2"
-			targetObjName="Marezzia" />
+			targetObjName="马雷齐亚" />
 	</QuestInfo>
 
 	<QuestInfo
@@ -2224,11 +2224,11 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r2m2_ReturnToMarecciaFromVillage"
 		briefDiz="回到马雷齐亚"
-		fullDiz="马雷齐亚肯定有新任务在等我。不知道我是不是离 Axel 越来越近了。"
+		fullDiz="马雷齐亚肯定有新任务在等我。不知道我是不是离 阿克塞尔 越来越近了。"
 		isMainQuest="1">
 		<Map
 			name="r2m2"
-			targetObjName="Marezzia" />
+			targetObjName="马雷齐亚" />
 	</QuestInfo>
 
 	<QuestInfo
@@ -2243,8 +2243,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r2m2_ToLisaToMonastir"
-		briefDiz="在修道院打听 Alice 的下落。"
-		fullDiz="我听说修道院的修女们知道的比她们说的多。如果她们真的藏了 Alice，这次她跑不掉了！"
+		briefDiz="在修道院打听 爱丽丝 的下落。"
+		fullDiz="我听说修道院的修女们知道的比她们说的多。如果她们真的藏了 爱丽丝，这次她跑不掉了！"
 		isMainQuest="1">
 		<Map
 			name="r2m2"
@@ -2258,7 +2258,7 @@ isMainQuest="0" />
 		isMainQuest="0">
 		<Map
 			name="r1m2"
-			targetObjName="Midragd" />
+			targetObjName="米德格拉德" />
 
 		<Map
 			name="r1m3"
@@ -2675,7 +2675,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r3m2_RevengeDestroyVillage"
 		briefDiz="为村庄被毁复仇。"
-		fullDiz="现在我有了两张光盘，终于能破译 Ivan Go 的日记了。希望里面的内容能帮我查出是谁摧毁了我的村庄，以及怎么找到他们！"
+		fullDiz="现在我有了两张光盘，终于能破译 伊万·戈 的日记了。希望里面的内容能帮我查出是谁摧毁了我的村庄，以及怎么找到他们！"
 		isMainQuest="1">
 		<Map
 			name="r1m1"
@@ -2738,8 +2738,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r3m2_TalkWithBenAboutCarAfterOracul"
-		briefDiz="和 Ben 谈谈光盘的事。"
-		fullDiz="著名的探险家 Ben Throttle 也许知道第二张光盘在哪。"
+		briefDiz="和 本 谈谈光盘的事。"
+		fullDiz="著名的探险家 本·斯罗特尔 也许知道第二张光盘在哪。"
 		isMainQuest="1">
 		<Map
 			name="r1m2"
@@ -2772,8 +2772,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r3m2_TalkWithLisa"
-		briefDiz="和 Alice 谈谈"
-		fullDiz="先知说 Alice 知道的比她说出来的多。不管怎样我得回到她那里，问问第二张光盘的事。"
+		briefDiz="和 爱丽丝 谈谈"
+		fullDiz="先知说 爱丽丝 知道的比她说出来的多。不管怎样我得回到她那里，问问第二张光盘的事。"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -2926,8 +2926,8 @@ isMainQuest="0" />
 
 	<QuestInfo
 		questName="r4m1_GotoAivenGo"
-		briefDiz="跟踪 Ivan Go。"
-		fullDiz="Ivan 走了这条路。我只知道方向。但我会找到他的，或者找到他的遗骸……"
+		briefDiz="跟踪 伊万·戈。"
+		fullDiz="伊万 走了这条路。我只知道方向。但我会找到他的，或者找到他的遗骸……"
 		isMainQuest="1">
 		<Map
 			name="r1m1"

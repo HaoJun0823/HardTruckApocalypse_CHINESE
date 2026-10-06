@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<ObjectNames>
+	<Object
+		Name="LagerGuardian"
+		FullName="ЕСѕь" />
+
+	<Object
+		Name="Monastery"
+		FullName="ТюРЮФє" />
+
+	<Object
+		Name="Monastery_Bar"
+		FullName="КіМГ" />
+
+	<Object
+		Name="Monastery_Bar_Barman"
+		FullName="ЧпИЛґпАтж«" />
+
+	<Object
+		Name="Monastery_Cell"
+		FullName="Й®·ї" />
+
+	<Object
+		Name="Monastery_Shop"
+		FullName="З°Мь" />
+
+	<Object
+		Name="Monah"
+		FullName="РЮЕ®ФјєІДИ" />
+
+	<Object
+		Name="SektantMain"
+		FullName="Е®РЮµАФєі¤" />
+
+	<Object
+		Name="Marezzia"
+		FullName="ВнАЧЖлСЗ" />
+
+	<Object
+		Name="Marezzia_Shtab"
+		FullName="РЙємЦ®іїЦё»УІї" />
+
+	<Object
+		Name="Marezzia_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="Marezzia_Shop"
+		FullName="КРіЎ" />
+
+	<Object
+		Name="Marezzia_Bar"
+		FullName="ѕЖ°ЙЎёА¶ДµтГЎ№" />
+
+	<Object
+		Name="Marezzia_Bar_Barman"
+		FullName="·юОсФ±°І¶«Дб°В" />
+
+	<Object
+		Name="RecruiterInAR"
+		FullName="єХЛ№їЛ" />
+
+	<Object
+		Name="TrashFarmer"
+		FullName="ЗеµА·тИшїЛЛ№" />
+
+	<Object
+		Name="Zeon"
+		FullName="Фу¶ч" />
+
+	<Object
+		Name="Zeon_CentralHouse"
+		FullName="µШ±¤" />
+
+	<Object
+		Name="Axel"
+		FullName="°ўїЛИы¶ы" />
+
+	<Object
+		Name="Zeon_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="Zeon_Shop"
+		FullName="КРіЎ" />
+
+	<Object
+		Name="Toskana"
+		FullName="НРЛ№їЁДЙ" />
+
+	<Object
+		Name="Toskana_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="Toskana_Shop"
+		FullName="КРіЎ" />
+
+	<Object
+		Name="Toskana_Bar"
+		FullName="ї§·И№ЭЎё»іѕЙЎ№" />
+
+	<Object
+		Name="Toskana_Bar_Barman"
+		FullName="ѕЖ±Ј±ИАы" />
+
+	<Object
+		Name="Agent"
+		FullName="МШ№¤єХВіЕµО¬Жж" />
+
+	<Object
+		Name="GranicaVillage"
+		FullName="±Яѕі" />
+
+	<Object
+		Name="GranicaVillage_Bar"
+		FullName="КіМГ" />
+
+	<Object
+		Name="GranicaVillage_Bar_Barman"
+		FullName="ѕЖ±Ј" />
+
+	<Object
+		Name="GranicaVillage_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="GranicaVillage_Shop"
+		FullName="КРіЎ" />
+
+	<Object
+		Name="ZnakiVillage"
+		FullName="ИшА­ИИОС" />
+
+	<Object
+		Name="ZnakiVillage_Bar"
+		FullName="ѕЖ°ЙЎё»ДФ­Ў№" />
+
+	<Object
+		Name="ZnakiVillage_Bar_Barman"
+		FullName="і¤ХЯ" />
+
+	<Object
+		Name="ZnakiVillage_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="ZnakiVillage_Shop"
+		FullName="КРіЎ" />
+
+	<Object
+		Name="Aborigen"
+		FullName="Пз°НАРР»¶ыёЗ" />
+
+	<Object
+		Name="NewVillage"
+		FullName="°ўЛ№МШАпСЗ" />
+
+	<Object
+		Name="NewVillage_Bar"
+		FullName="ѕЖ°ЙЎё±»ЖъХЯЎ№" />
+
+	<Object
+		Name="NewVillage_Bar_Barman"
+		FullName="ґеі¤" />
+
+	<Object
+		Name="NewVillage_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="NewVillage_Shop"
+		FullName="КРіЎ" />
+
+	<Object
+		Name="NewMechanik"
+		FullName="»ъРЮ№¤ФуОч" />
+
+	<Object
+		Name="PetrolStationTown1"
+		FullName="јУУНХѕ" />
+
+	<Object
+		Name="PetrolStationTown1_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="PetrolStationTown2"
+		FullName="јУУНХѕ" />
+
+	<Object
+		Name="PetrolStationTown2_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="PetrolStationTown3"
+		FullName="јУУНХѕ" />
+
+	<Object
+		Name="PetrolStationTown3_Workshop"
+		FullName="іµјд" />
+
+	<Object
+		Name="Toskana_enter"
+		FullName="НРЛ№їЁДЙ" />
+
+	<Object
+		Name="ZnakiVillage_enter"
+		FullName="ИшА­ИИОС" />
+
+	<Object
+		Name="NewVillage_enter"
+		FullName="°ўЛ№МШАпСЗ" />
+
+	<Object
+		Name="EnterToSubmarine_loc"
+		FullName="єЈЦ®ГЕ" />
+
+	<Object
+		Name="ToR2M1"
+		FullName="НЁНщАыІјАпД·µДµАВ·" />
+
+	<Object
+		Name="ToR2M1small"
+		FullName="НЁНщАыІјАпД·µДРЎѕ¶" />
+
+	<Object
+		Name="u1"
+		FullName="ИшД·" />
+
+	<Object
+		Name="u2"
+		FullName="ЖХАіЛ№" />
+
+	<Object
+		Name="u3"
+		FullName="іН·ЈХЯ" />
+
+	<Object
+		Name="u4"
+		FullName="·С¶аМШ" />
+
+	<Object
+		Name="u5"
+		FullName="ЕоНјЛ№" />
+
+	<Object
+		Name="u6"
+		FullName="Ж¤їЖ" />
+
+	<Object
+		Name="u7"
+		FullName="ЗЗ" />
+
+	<Object
+		Name="u8"
+		FullName="ёЈЛ№ёщ" />
+
+	<Object
+		Name="u9"
+		FullName="Сп" />
+</ObjectNames>
