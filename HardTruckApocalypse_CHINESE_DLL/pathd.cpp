@@ -809,6 +809,15 @@ extern "C" uint32_t* PathD_CjkTableFor(void* font) {
 
 // 记录哪些 Font 已经处理过，避免重复
 static std::vector<void*>    g_doneFonts;
+// ★ 全局保存「字号序号 -> CJK 页 texId 列表」★
+//   原先是 SetupThread 里的局部变量，装配完就丢。
+//   但有的字体（典型是 tooltip 用的那一个）**启动时还没被绘制过**，
+//   绘制期登记 g_seenFonts 里没有它，于是永远不会被装配 ——
+//   tooltip 框有尺寸（度量查到西里尔字形宽度）却**不显示汉字**。
+//   提升到全局后，装配线程可以在装配完成后继续轮询，
+//   给"后来才出现"的字体补装配。
+static std::vector<std::vector<uint32_t> > g_pagesBySize;
+static volatile LONG g_pagesReady = 0;   // 1 = g_pagesBySize 已可用
 
 static float FontHeight(void* font) { return *(float*)((uint8_t*)font + kFontOffHeight); }
 
@@ -1272,7 +1281,9 @@ static DWORD WINAPI SetupThread(LPVOID) {
     //
     // 这样做的好处：**完全不碰渲染器接口**（不用猜 createTexture /
     // uploadPixels 的签名和像素格式），复用引擎自己的纹理加载。
-    std::vector<std::vector<uint32_t> > pagesBySize;   // sizeIndex -> [texId]
+    // ★ 用全局 g_pagesBySize（不再用局部变量）—— 装配线程结束后
+    //   还要继续用它给"后来才出现"的字体补装配。
+    std::vector<std::vector<uint32_t> >& pagesBySize = g_pagesBySize;
     int pageFonts = 0;
     for (auto& fr : fonts) {
         fr.height = FontHeight(fr.font);   // ★ 重新读：钩子入口时还没解析
@@ -1341,8 +1352,52 @@ static DWORD WINAPI SetupThread(LPVOID) {
             return 0;
         }
     }
+    InterlockedExchange(&g_pagesReady, 1);   // 允许后续补装配
     InterlockedExchange(&g_cjkReady, 1);
     Logf("pathd: 装配线程收尾（g_cjkReady=1，仅诊断用；渲染看的是每槽 ready）");
+
+    // ★★★ 补装配循环：给"启动后才出现"的字体补汉字 ★★★
+    //
+    //   问题：有些字体（典型是 tooltip 用的那个）在装配阶段
+    //   **还没被绘制过**，所以不在 g_seenFonts 里，也没被装配。
+    //   结果 tooltip 框有尺寸（度量查到西里尔字形宽度）却不显示汉字。
+    //
+    //   做法：装配线程不退出，改成低频轮询。每次检查绘制期登记的
+    //   字体里有没有"还没装配过"的，有就补一次。
+    //   · g_doneFonts 记录已装配的，避免重复
+    //   · 每轮只处理新增的，成本极低
+    //   · 找不到对应字号（包文件里没有）就跳过，不报错
+    Logf("pathd: 进入补装配轮询（给启动后才出现的字体补汉字，如 tooltip 字体）");
+    int late = 0;
+    for (int round = 0; round < 600; ++round) {   // 最多约 20 分钟
+        Sleep(2000);
+        if (!g_pagesReady) continue;
+        LONG sn = g_seenCount;
+        if (sn > MAX_SEEN_FONTS) sn = MAX_SEEN_FONTS;
+        for (LONG i = 0; i < sn; ++i) {
+            void* fp = g_seenFonts[i].p;
+            if (!fp) continue;
+            bool done = false;
+            for (size_t k = 0; k < g_doneFonts.size(); ++k)
+                if (g_doneFonts[k] == fp) { done = true; break; }
+            if (done) continue;
+            float h = FontHeight(fp);
+            if (h <= 0.0f || h >= kCjkBase) continue;
+            int si = -1;
+            for (size_t k = 0; k < g_pkg.sizes.size(); ++k)
+                if (fabsf(g_pkg.sizes[k].height - h) < 0.01f) { si = (int)k; break; }
+            if (si < 0) continue;
+            if (si >= (int)g_pagesBySize.size() || g_pagesBySize[si].empty()) continue;
+            const std::vector<uint32_t>& pv = g_pagesBySize[si];
+            int n = SafeProcessFont(fp, h, pv.data(), (int)pv.size());
+            if (n > 0) {
+                g_doneFonts.push_back(fp);
+                ++late;
+                Logf("pathd: [补装配] height=%.3f 装入 %d 个汉字（累计补 %d 个字体）",
+                     (double)h, n, late);
+            }
+        }
+    }
     return 0;
 }
 
