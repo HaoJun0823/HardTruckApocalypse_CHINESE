@@ -83,19 +83,21 @@ extern "C" void* PathD_PrepassTopB = nullptr;   // P3 预扫分支的循环头
 //   这里原本还有一张全局共享的 g_cjkTable，已删除：SetupThread 按字号依次
 //   填充，后填的字号会覆盖先填的，所有汉字都拿到错误尺寸的字形。
 
-// ★★★ 就绪开关：装配完成前，所有查表助手一律返回 NULL ★★★
+// ★★★ 就绪标志（⚠ 已不参与渲染判据，仅供诊断）★★★
 //
-//   转储证据（hta.exe0041，08:17:46）：
+//   历史：这里原本是「全部装完才置 1」的总闸门，P4 查它来决定
+//   返不返回字形。代价是「进入界面要等 8 秒才出中文」。
+//   现在改成**每槽独立 ready**（见 CjkSlot），第一个字号填完就能显示。
+//   本变量只在装配线程收尾时置 1，用于日志区分「装配中/已完成」。
+//
+//   ★ 原始设计意图（保留供追溯，防有人再踩回去）★
+//   补丁是**立即生效**的（引擎一进绘制循环就用上了），而装配要等
+//   SetupThread 完成，两者天然有竞态。转储 hta.exe0041 实证：
 //       第1次  0x686A2F  EAX=1352328C   ← P4 返回了这个指针
 //       第2次  0x663C50A5                ← 引擎解引用它时炸了
-//   EAX 是个"看起来像堆指针"的值，但那一格里的东西还没被正确初始化：
-//   SetupThread 还在枚举字体 / 还在往表里填 glyph，绘制却已经先跑起来了。
-//   ★ 补丁是**立即生效**的（引擎一进绘制循环就用上了），
-//     而装配要等 SetupThread 完成，两者天然有竞态。★
-//
-//   做法：g_cjkReady 在「枚举完字体 + 填完所有 glyph」之后才置 1；
-//   未置位时助手直接返回 NULL —— 引擎的 `test eax,eax / jz` 会安全跳过
-//   整个字形（等于那一帧汉字不显示），绝不会崩。
+//   EAX 是个"看起来像堆指针"的值，但那一格还没初始化完。
+//   ⇒ **未就绪一律返回 NULL**，让引擎 `test eax,eax / jz` 安全跳过
+//     整个字形（那一帧不显示），绝不能返回半成品指针。
 extern "C" volatile LONG g_cjkReady = 0;
 
 // ★★★ Font* 自注册表：绘制时自动发现字体，不再靠枚举全局变量 ★★★
@@ -1096,8 +1098,19 @@ static void CollectAllFonts(std::vector<FontRec>& out) {
         uintptr_t end  = base + mbi.RegionSize;
         if (mbi.State == MEM_COMMIT && mbi.Protect != PAGE_NOACCESS
             && mbi.Protect != PAGE_GUARD) {
-            // 每 4 字节试一次：Font 按 4 对齐，步长大点才跑得完
+            // ★★★ 快速预筛（在进 __try 之前）★★★（实测省 3.5 秒）
+            //   堆扫描慢的根因是 __try 的 SEH 帧进入/退出开销，
+            //   而 ±2MB 每 4 字节一次 = 约 100 万次调用。
+            //   height 只是一次普通读，且本区域已由 VirtualQuery 确认
+            //   MEM_COMMIT 且非 PAGE_NOACCESS/GUARD，读 p+0x18 是安全的。
+            //   一次比较就能筛掉 99.9% 的候选地址。
+            //
+            // ⚠ 这个筛必须在**内层 for 循环体内**：放在 while 体外时
+            //   continue 会作用于 while，而那里还没有 p —— 一个字节都扫不到。
             for (uintptr_t p = (base + 3) & ~3ull; p + 0x50 <= end; p += 4) {
+                float hh = *(float*)(p + kFontOffHeight);
+                if (!(hh >= 4.0f && hh <= 40.0f) && !(hh >= kCjkBase && hh <= 999.0f))
+                    continue;
                 float h = 0.0f; uint32_t tex = 0;
                 if (!LooksLikeCjkFont(p, &h, &tex)) continue;
                 bool dup = false;
@@ -1129,10 +1142,15 @@ static DWORD WINAPI SetupThread(LPVOID) {
     // 等绘制登记稳定 2 秒后一次性收集。
     std::vector<FontRec> fonts;
     int lastCount = -1, stable = 0;
+    // ★ 等「绘制期登记的字体数连续稳定」就够，不必死等 2 秒 ★
+    //   实测：进入界面要等 8 秒才出中文，这里就占了 2 秒。
+    //   fonts.xml 在启动阶段一次性加载完，实测 0.5 秒内计数就稳定了。
+    //   万一没稳定就走 900 次（90 秒）上限，且漏掉的字号只是没有汉字，
+    //   引擎会安全跳过 —— 不会崩。
     for (int i = 0; i < 900; ++i) {               // 最多等 90 秒
         Sleep(100);
         LONG cur = g_seenCount;
-        if (cur > 0 && cur == lastCount) { if (++stable >= 20) break; }   // 稳定 2s
+        if (cur > 0 && cur == lastCount) { if (++stable >= 5) break; }    // 稳定 0.5s
         else stable = 0;
         lastCount = (int)cur;
     }
@@ -1216,23 +1234,20 @@ static DWORD WINAPI SetupThread(LPVOID) {
     Logf("pathd: === 路径 D 准备完成：%d 个字号已装入汉字 ===", ok);
     Logf("pathd: 汉字现在用 16 位索引查表（GBK 原样，不做转码）");
 
-    // ★★★ 全部填完之后才开闸 ★★★
-    //   之前补丁一装上就生效，而字形表还在被 SetupThread 逐格填充；
-    //   绘制函数先跑到，读到尚未初始化完的槽位 → 返回野指针 → 崩
-    //   （转储实证：0x686A2F 返回 EAX=1352328C，随后解引用炸）。
-    //   这里置位之后，查表助手才肯返回真实字形。
+    // ★★★ 装配线程整体结束标记（**不再参与渲染判据**）★★★
+    //   P4 现在查的是每个槽自己的 ready（分批开闸），
+    //   所以第 1 个字号填完就能显示，不必等这里。
+    //   这个标志只用于日志/诊断。
     // ★ HTA_CHS_NO_CJK=1 时不开闸（二分定位用）★
-    //   开了这个开关，P4 的汉字分支永远走 pl_null，等于「只有 ASCII 的挂钩」。
-    //   用途：判定 0x68660D 这类崩溃到底依不依赖汉字路径。
     {
         char v[8] = {0};
         if (GetEnvironmentVariableA("HTA_CHS_NO_CJK", v, sizeof(v)) > 0) {
-            Logf("pathd: [调试] HTA_CHS_NO_CJK 已设 —— 不开闸，汉字分支恒返回 NULL");
+            Logf("pathd: [调试] HTA_CHS_NO_CJK 已设 —— 装配线程跳过收尾");
             return 0;
         }
     }
     InterlockedExchange(&g_cjkReady, 1);
-    Logf("pathd: 闸门 g_cjkReady = 1，汉字开始参与渲染");
+    Logf("pathd: 装配线程收尾（g_cjkReady=1，仅诊断用；渲染看的是每槽 ready）");
     return 0;
 }
 
@@ -1822,10 +1837,33 @@ __declspec(naked) void __cdecl PathD_GlyphLookup() {
         jmp   pl_out
 
     pl_cjk:
-        // ★★★ 装配未完成前一律不返回字形（见 g_cjkReady 的说明）★★★
-        cmp   dword ptr [g_cjkReady], 0
-        jne   pl_cjk_go
-        jmp   pl_null
+        // ★★★ 分批开闸：只查**当前字体那个槽**的 ready，不再等全部字号 ★★★
+        //
+        //   旧实现用全局 g_cjkReady，要等 10 个字号全填完才置 1，
+        //   于是「进入界面要等 8 秒才出中文」。但第 1 个字号填完
+        //   （约 0.4 秒）就已经能显示了 —— 后面几个慢慢来即可。
+        //   FillCjk 本来就是每填完一个字号就置该槽 ready=1，
+        //   这里查的就是它。未就绪的槽 -> 引擎安全跳过（该帧不显示），
+        //   既不崩，也不拖累别的字号。
+        //
+        //   g_cjkReady 保留为「装配线程整体结束」的诊断标记，不再参与判据。
+        //   槽布局：{ void* font(0); uint32_t* table(4); LONG ready(8); }
+        mov   eax, offset g_cjkSlots
+        mov   ecx, dword ptr [esp+0]      // Font*
+        mov   edx, dword ptr [g_cjkSlotCount]
+        test  edx, edx
+        jz    pl_null                     ; 一个槽都没有
+    pl_gate:
+        test  edx, edx
+        jz    pl_null
+        cmp   dword ptr [eax], ecx         ; slot.font == Font* ?
+        je    pl_gate_hit
+        add   eax, 12                     ; sizeof(CjkSlot)
+        dec   edx
+        jmp   pl_gate
+    pl_gate_hit:
+        cmp   dword ptr [eax+8], 0        ; ★ slot.ready —— 分批开闸就在这
+        je    pl_null                     ; 该字号还没填完 -> 跳过
     pl_cjk_go:
         // ★★★ 汉字分支：按 GBK 取 2 字节，查我们自持的 64K 表 ★★★
         //
@@ -1891,31 +1929,16 @@ __declspec(naked) void __cdecl PathD_GlyphLookup() {
         //          `movzx ebp,bl` 索引全错，整个 CJK 判据失效。
         //     ⇒ 只能内联，且只碰引擎已经用完、不再需要的寄存器。
         //
-        //   ★ 可用寄存器（契约：eax/ecx/ebp 可自由改写）★
-        //     eax : 要交回字形指针，可当临时
-        //     ecx : b2 已取完，不再需要
-        //     esi : 引擎下标，**失败路径要用** -> 不能碰
-        //     ebx/bl : 当前字符，**绝对不能碰**
-        //     edx : 已用完（b2 已取），可当临时
-        //     ⇒ 安全临时 = eax / ecx / edx
+        //   ★ 槽地址 eax 从 pl_gate 一路带到这里 ★
+        //     pl_gate 已经找到 slot 并验过 ready，这里直接取 table 即可。
+        //     旧代码在这里又扫了一遍同样的槽表 —— 每个字形多花 16 次
+        //     比较，热路径上是纯浪费。
+        //     中途只改了 ebp(GBK 码)/ecx(b2)/edx(文本基址)，eax 未被动过。
         //
-        //   ★ GBK 码先挪到 ebp 的高 16 位之外保存？不行 ——
-        //     契约要求出口 ebp = 索引*4，所以码只能放在 eax 里带过扫描。
-        mov   ecx, dword ptr [esp+0]      // Font*
-        mov   eax, offset g_cjkSlots
-        mov   edx, dword ptr [g_cjkSlotCount]
-        test  edx, edx
-        jz    pl_null                     ; 一个槽都没有
-    pl_scan2:
-        test  edx, edx
-        jz    pl_null                     ; 扫完没找到
-        cmp   dword ptr [eax], ecx
-        je    pl_found
-        add   eax, 12                     ; sizeof(CjkSlot) = 4+4+4
-        dec   edx
-        jmp   pl_scan2
-    pl_found:
-        mov   edi, dword ptr [eax+4]     ; 该字体的表
+        //   ★ 为什么不能把 GBK 码放 eax 带过扫描 ★
+        //     契约要求出口 ebp = 索引*4，eax 最终必须交回字形指针，
+        //     两个位置都被占满，码只能一路待在 ebp 里。
+        mov   edi, dword ptr [eax+4]        ; 该字体的表
         test  edi, edi
         jz    pl_null                     ; 无汉字表 -> 引擎安全跳过
         cmp   edi, 10000h
