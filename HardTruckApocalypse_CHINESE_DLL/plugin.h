@@ -64,6 +64,13 @@ uintptr_t ScanRange(uintptr_t base, size_t size, const char* pat);
 // 统计命中数量；addrs 可为空。
 int CountModule(HMODULE mod, const char* pat);
 
+// ★ 一次扫描同时返回首个命中与总数 ★
+//   ScanModule + CountModule 是**两次**全模块扫描，6.6MB 上实测极慢
+//   （单次 ScanModule 就要 3.5~4.9 秒，朴素 O(n·m) 匹配）。
+//   需要「既要知道首个位置、又要知道是否唯一」时必须用这个。
+//   outFirst 可为 NULL（只要计数）。
+int ScanModuleCount(HMODULE mod, const char* pat, uintptr_t* outFirst);
+
 } // namespace pattern
 
 // ===========================================================================

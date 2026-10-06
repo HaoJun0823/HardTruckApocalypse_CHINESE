@@ -1,4 +1,4 @@
-﻿// pattern.cpp —— 按特征码在模块内定位函数
+// pattern.cpp —— 按特征码在模块内定位函数
 //
 // 为什么不用硬编码地址：本体是 hta.exe (6.6MB)，资料片是 Meridian113.exe (9.3MB)，
 // 两者字体代码同源但地址完全不同（例如度量函数 0x685990 vs 0x690A10）。
@@ -126,6 +126,89 @@ uintptr_t ScanModule(HMODULE mod, const char* pat) {
         if (hit) return hit;
     }
     return 0;
+}
+
+// ★ 一次扫描同时拿到「首个命中」和「总命中数」★
+//
+//   为什么需要它（实测 2026-10-07）：
+//     引入「多命中即拒绝」的保护时，ScanUnique 变成了
+//         ScanModule() + CountModule()
+//     两次全模块扫描。而 ScanRange 是逐字节朴素匹配（O(n·m)），
+//     结果每个锚点要扫两遍 6.6MB —— 实测单次 ScanModule 就要 3.5~4.9 秒，
+//     整个初始化从基线的 **4 秒** 涨到 **>19 秒还没跑完**。
+//     用户在跑完之前手动关了游戏，看到的是「补丁装了一半」的中间状态：
+//     P4/P4b 已改走我们的表、表却是空的 ⇒ GBK 字节被当 cp1251 解码
+//     ⇒ 满屏西里尔乱码 + 度量未修所以叠字 + 后续没跑所以空白。
+//
+//   这不是崩溃，是性能回归暴露出的半成品状态。
+//   —— 必须同时消掉重复扫描，否则保护机制本身就是 bug。
+int ScanModuleCount(HMODULE mod, const char* pat, uintptr_t* outFirst) {
+    if (outFirst) *outFirst = 0;
+    uintptr_t base = 0; size_t size = 0;
+    if (!ModuleRange(mod, &base, &size)) return 0;
+
+    PatByte pb[256];
+    int plen = ParsePattern(pat, pb, 256);
+    if (plen <= 0) return 0;
+
+    // 选**最靠前**的非通配字节做跳跃锚点（首字节通常是 0x8B/0x83，
+    // 命中率太低；中间那些更稀有）。这是纯性能优化，不改语义。
+    int anchor = -1;
+    for (int i = 0; i < plen; ++i) {
+        if (pb[i].wild) continue;
+        anchor = i; break;
+    }
+    // 首字节若过于常见（0x00/0xFF/0x8B），再往后找一个更稀有的
+    if (anchor >= 0) {
+        static const uint8_t kCommon[] = { 0x00, 0xFF, 0x8B, 0x89, 0x83, 0x74, 0x75 };
+        bool common = false;
+        for (uint8_t c : kCommon) if (pb[anchor].val == c) { common = true; break; }
+        if (common) {
+            for (int i = anchor + 1; i < plen; ++i) {
+                if (pb[i].wild) continue;
+                bool c2 = false;
+                for (uint8_t c : kCommon) if (pb[i].val == c) { c2 = true; break; }
+                if (!c2) { anchor = i; break; }
+            }
+        }
+    }
+
+    auto dos = (const IMAGE_DOS_HEADER*)mod;
+    auto nt  = (const IMAGE_NT_HEADERS32*)((const uint8_t*)mod + dos->e_lfanew);
+    auto sec = IMAGE_FIRST_SECTION(nt);
+    int count = 0;
+    for (int s = 0; s < nt->FileHeader.NumberOfSections; ++s, ++sec) {
+        if (!(sec->Characteristics & IMAGE_SCN_MEM_EXECUTE)) continue;
+        uintptr_t sb = base + sec->VirtualAddress;
+        size_t    ss = sec->Misc.VirtualSize ? sec->Misc.VirtualSize : sec->SizeOfRawData;
+        if (ss < (size_t)plen) continue;
+
+        const uint8_t* p   = (const uint8_t*)sb;
+        const uint8_t* end = p + ss - plen;
+        const uint8_t* cur = p;
+        if (anchor < 0) {
+            for (; cur <= end; ++cur) {
+                int i = 0;
+                for (; i < plen; ++i)
+                    if (!pb[i].wild && cur[i] != pb[i].val) break;
+                if (i != plen) continue;
+                if (!count && outFirst) *outFirst = (uintptr_t)cur;
+                ++count;
+            }
+        } else {
+            const uint8_t av = pb[anchor].val;
+            for (; cur + anchor <= end; ++cur) {
+                if (cur[anchor] != av) continue;      // ★ 一次跳跃过滤掉绝大多数位置
+                int i = 0;
+                for (; i < plen; ++i)
+                    if (!pb[i].wild && cur[i] != pb[i].val) break;
+                if (i != plen) continue;
+                if (!count && outFirst) *outFirst = (uintptr_t)cur;
+                ++count;
+            }
+        }
+    }
+    return count;
 }
 
 } // namespace pattern

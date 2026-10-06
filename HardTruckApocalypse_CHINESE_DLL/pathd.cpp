@@ -157,6 +157,56 @@ extern "C" {
 // 除 eax/ecx/ebp 外全部寄存器必须原样保留。
 extern "C" void __cdecl PathD_GlyphLookup();
 extern "C" void __cdecl PathD_GlyphLookup2();
+
+// —— P7/P8：度量路径（sub_685990）——
+//   ★★ 这两个是 **jmp 进入**（不是 call），所以**栈上没有返回地址**。
+//      助手里的 [esp+X] 与引擎循环体内完全同基准，可直接用字节 disp ★★
+extern "C" void __cdecl PathD_MsrAdvanceW();   // P7 宽度
+extern "C" void __cdecl PathD_MsrAdvanceB();   // P8 双字节推进
+
+// 度量循环的两个绝对回跳目标 + P7 落点（P7/P8 助手要跳回去）
+//   循环头 0x685A80 / 退出 0x685C12 / P7 落点 0x685B2B（相对基址在 InstallPatches 里算）
+//   ★ x86 不允许 `jmp dword ptr [标号]`（内存间接到控制转移），必须经寄存器中转。
+extern "C" uint32_t g_msrLoopHead = 0;
+extern "C" uint32_t g_msrLoopExit = 0;
+extern "C" uint32_t g_msrAfterW   = 0;
+// P7 扫槽表时暂存 GBK 码（ecx 要留给 Font*，x86 也没有两个内存操作数的 cmp）
+extern "C" uint32_t g_msrGbk = 0;
+// P7 一次性诊断：记录前几次调用看到的 Font* / 字符 / 表指针 / 字形指针。
+//   汇编里没法调 Logf（会破坏寄存器与浮点栈），所以只落几个数，
+//   由装配线程或下一次日志点统一打印。
+extern "C" uint32_t g_msrDiagFont  = 0;
+extern "C" uint32_t g_msrDiagChar  = 0;
+extern "C" uint32_t g_msrDiagTable = 0;
+extern "C" uint32_t g_msrDiagGlyph = 0;
+extern "C" uint32_t g_msrDiagCount = 0;
+// 分类失败计数：汉字分支到底卡在哪一步（此前"表=0 字形=0"是诊断漏赋值，
+// 不是真实故障 —— 必须能区分「没命中槽」「槽未就绪」「表空」「字形空」）
+extern "C" uint32_t g_msrFailNotReady = 0;
+extern "C" uint32_t g_msrFailNoTable  = 0;
+extern "C" uint32_t g_msrFailNoGlyph  = 0;
+extern "C" uint32_t g_msrFailNoSlot   = 0;
+// ★ 成功/失败分支的**总**计数（自进程启动累计）★
+//   只有"装配完成后"的差值才有意义 —— 装配本身要跑好几秒，
+//   期间槽还没填完，失败计数必然很大（实测"未就绪=352"）。
+extern "C" uint32_t g_msrHitCjk   = 0;   // 汉字分支成功
+extern "C" uint32_t g_msrHitAscii = 0;   // ASCII 分支成功
+extern "C" uint32_t g_msrHitNoDef = 0;   // 缺字出口
+// 装配完成瞬间的快照：用 (当前 - 快照) 得到装配后的真实分布
+extern "C" uint32_t g_msrSnapHitCjk = 0;
+extern "C" uint32_t g_msrSnapNoDef  = 0;
+extern "C" uint32_t g_msrSnapNotReady = 0;
+// 装配后的缺字计数（由 mw_nodef 直接累加，装配收尾时清零重新开始）
+extern "C" uint32_t g_msrPostNoDef   = 0;
+extern "C" uint32_t g_msrPostHitCjk  = 0;
+
+// 启动冻结：定义在 5.5 节（同在 pathd 命名空间内，且在匿名 namespace 之外）。
+//   声明必须放在 `namespace pathd {` **之内**，否则会被当成全局名，
+//   与定义（pathd::UnfreezeGameThreads）不匹配 → 「已声明但未定义」。
+//   见文件下方 namespace pathd 开头的重复声明。
+// 度量缺字默认宽度：与引擎 sub_66FEA0 缺字分支**同一个值**
+//   实测来源：xmmword_9E6A74 + 8 = 字节 00 00 00 3E = 0.125f
+extern "C" float    g_msrNoGlyphW    = 0.125f;
 // P4 的裸汇编要 call 它取本字体的汉字表。**返回类型必须与定义一致**
 // （早先这里声明成 void，定义成 uint32_t*，MSVC 直接拒绝并把后面
 //  所有符号的解析带偏，报出一堆「kFontOffPages 未声明」之类的假错误）。
@@ -200,6 +250,13 @@ extern "C" int32_t  g_p4Hit    = 0;        // 本轮 P4 是否成功
 //     反而干扰定位。现在的策略是：崩溃一律看转储 + 补丁落地自检。
 
 namespace pathd {
+
+// 启动冻结的前置声明（定义在 5.5 节；SetupThread 在它之前就要用）
+//   ★ g_frozen 的声明**不能**再带 static 初始化式 ★
+//     `static bool g_frozen;` 在 C++ 里是**定义**（默认零初始化），
+//     写两次就是重定义。所以这里用 extern 声明，定义处才是 static。
+static void UnfreezeGameThreads();
+extern bool g_frozen;
 
 namespace {
 
@@ -254,6 +311,7 @@ bool        g_skipPatch  = false;    // HTA_CHS_NO_PATCH=1  时跳过补丁（�
 bool        g_skipExpand = false;    // HTA_CHS_NO_EXPAND=1 时跳过扩表（二分定位用）
 bool        g_skipP5     = false;    // HTA_CHS_NO_P5=1   跳过 P5 主遍历助手
 bool        g_skipP4b    = false;    // HTA_CHS_NO_P4B=1  跳过 P4b 第二处查表助手
+bool        g_skipP7     = false;    // HTA_CHS_NO_P7=1   跳过 P7/P8 度量补丁（二分定位用）
 bool        g_skipScan   = false;    // HTA_CHS_NO_SCAN=1 跳过堆扫描（对照实验用）
 bool        g_hookFont   = false;    // 是否安装 Font::CreateFromXmlNode 钩子
                                        // ★ 默认关：实测该钩子破坏 esi 导致崩溃，
@@ -472,14 +530,62 @@ bool WriteBlockSafe(uintptr_t at, const uint8_t* buf, size_t n, const char* what
     bool wrote = false;
     uintptr_t blockerEip = 0;
 
+    // ★★★ 实测根因（2026-10-07，用户提供"正常1 vs 俄语乱码"两份日志）★★★
+    //
+    //   同一个补丁点（P4b @0x686A26），写入耗时：
+    //       正常1   :   147 ms
+    //       俄语乱码: 36457 ms     ← 差 248 倍
+    //   而 kTotalBudgetMs = 3000 并**没有**拦住它 —— 36 秒不在重试循环里
+    //   （40 次重试 + 递增 Sleep 最多几百毫秒），而是**单次 SuspendThread
+    //   就阻塞了几十秒**：目标线程若正持有内核对象（加载锁/堆锁/CRT 锁），
+    //   SuspendThread 可能长时间不返回；它一卡，游戏主线程也随之停住。
+    //   ⇒ 这解释了「同样等待、结果不同」，**与你等多久无关**。
+    //
+    //   ★ 修法方向（本轮**只加计时诊断，不改写入策略**）★
+    //   我一度想改成"只挂 8 个线程就写"，但那有安全漏洞：
+    //   漏检的那个线程若 EIP 正落在 [at-15, at)，补丁后必崩。
+    //   在**没有实测数据证明 36 秒花在哪一步之前**，不动安全边界。
+    //   下面给挂起/校验两个阶段分别计时，下一轮日志就能定位。
+    //
+    //   ★ 安全边界不变 ★：EIP ∈ [at-15, at) 仍然拒绝写入。
+
+    DWORD tSuspendTotal = 0, tCheckTotal = 0;   // 诊断：两阶段各耗多久
+
     for (attempt = 0; attempt < 40; ++attempt) {
         heldN = 0;
+        // ★ 挂起阶段的独立预算 ★
+        //   实测 P4b 曾卡 36 秒，而 kTotalBudgetMs=3000 根本拦不住 ——
+        //   因为耗时发生在**单次 SuspendThread** 内部，不在重试循环里。
+        //   这里给"挂起全部线程"这一步也加上预算：一旦超时，
+        //   立即停止继续挂起、恢复已挂起的、放弃这次尝试。
+        const DWORD tSuspend0 = GetTickCount();
+        bool suspendAborted = false;
+        DWORD tOneSuspendMax = 0;      // 诊断：单次 SuspendThread 最长耗时
+        DWORD tOpenMax = 0;            // 诊断：单次 OpenThread 最长耗时
         for (int i = 0; i < tidN; ++i) {
+            if (GetTickCount() - tSuspend0 > kTotalBudgetMs) { suspendAborted = true; break; }
+            DWORD ta = GetTickCount();
             HANDLE th = OpenThread(THREAD_SUSPEND_RESUME | THREAD_GET_CONTEXT |
                                    THREAD_QUERY_INFORMATION, FALSE, tids[i]);
+            DWORD tb = GetTickCount();
+            if (tb - ta > tOpenMax) tOpenMax = tb - ta;
             if (!th) continue;
             if (SuspendThread(th) == (DWORD)-1) { CloseHandle(th); continue; }
+            DWORD tc = GetTickCount();
+            if (tc - tb > tOneSuspendMax) tOneSuspendMax = tc - tb;
             held[heldN++] = th;
+        }
+        tSuspendTotal += GetTickCount() - tSuspend0;
+        if (tOneSuspendMax > 200 || tOpenMax > 200) {
+            // 只在真的出现长阻塞时打印（避免污染日志）
+            Logf("pathd:   [计时] %s 第%d轮 挂起阶段 %u ms（OpenThread 峰值 %u ms，SuspendThread 峰值 %u ms，线程数 %d）",
+                 what, attempt, (unsigned)(GetTickCount() - tSuspend0),
+                 (unsigned)tOpenMax, (unsigned)tOneSuspendMax, tidN);
+        }
+        if (suspendAborted) {
+            for (int i = 0; i < heldN; ++i) { ResumeThread(held[i]); CloseHandle(held[i]); }
+            heldN = 0;
+            break;      // 不再重试：这个点太危险，保持原样（宁可不打补丁）
         }
 
         // ── 校验：只拒绝"指令跨边界"的情况 ──────────────────────────
@@ -500,12 +606,14 @@ bool WriteBlockSafe(uintptr_t at, const uint8_t* buf, size_t n, const char* what
         const uintptr_t loGuard = (at >= 15) ? (at - 15) : 0;
         bool busy = false;
         blockerEip = 0;
+        DWORD tChk0 = GetTickCount();
         for (int i = 0; i < heldN && !busy; ++i) {
             CONTEXT c; memset(&c, 0, sizeof(c)); c.ContextFlags = CONTEXT_CONTROL;
             if (!GetThreadContext(held[i], &c)) continue;
             uintptr_t eip = (uintptr_t)c.Eip;
             if (eip >= loGuard && eip < at) { busy = true; blockerEip = eip; }
         }
+        tCheckTotal += GetTickCount() - tChk0;
 
         if (!busy) {
             memcpy((void*)at, buf, n);
@@ -514,10 +622,24 @@ bool WriteBlockSafe(uintptr_t at, const uint8_t* buf, size_t n, const char* what
             break;
         }
 
+        // ★ 重试节流 ★
+        //   实测（05:19 那份"俄文乱码然后空白"日志）：P4b 写入用 8 秒、
+        //   P3 用 4 秒，十几个补丁点累积几十秒 —— 用户等不及就关了游戏，
+        //   于是停在"补丁装了一半"的中间态（= 乱码 + 空白）。
+        //
+        //   慢的根因：每次重试都 SuspendThread **全部**线程（几十个），
+        //   再逐个 GetThreadContext。而真正可能挡路的只有**正好执行到
+        //   目标函数**的那个渲染线程。
+        //
+        //   这里把重试间隔从固定 1ms 改成递增，让"短暂冲突"能很快过去，
+        //   同时总预算不变 —— 不改变安全性，只减少无谓的全量挂起次数。
         for (int i = 0; i < heldN; ++i) { ResumeThread(held[i]); CloseHandle(held[i]); }
         heldN = 0;
         if (GetTickCount() - t0 > kTotalBudgetMs) break;
-        Sleep(1);
+        // 递增间隔：前几次几乎立即重试（短暂冲突立刻过去），
+        // 后面逐步拉长以免空转。上限 4ms。
+        DWORD backoff = (attempt < 8) ? 0 : ((attempt < 20) ? 1 : 4);
+        if (backoff) Sleep(backoff);
     }
 
     // ★ 统一出口：无论如何都必须恢复所有线程，否则游戏直接卡死 ★
@@ -526,6 +648,13 @@ bool WriteBlockSafe(uintptr_t at, const uint8_t* buf, size_t n, const char* what
 
     if (wrote) {
         if (attempt) Logf("pathd:   %s 冻结重试 %d 次后写入成功", what, attempt);
+        // ★ 计时汇总：只在异常慢时打印，用来定位"36 秒花在哪" ★
+        DWORD tot = GetTickCount() - t0;
+        if (tot > 400) {
+            Logf("pathd:   [计时] %s 总耗时 %u ms（挂起累计 %u ms，校验累计 %u ms，重试 %d 次）",
+                 what, (unsigned)tot, (unsigned)tSuspendTotal,
+                 (unsigned)tCheckTotal, attempt);
+        }
         return true;
     }
     // 走到这里说明没写成。绝不静默失败 —— 否则像之前那样日志无输出、
@@ -555,18 +684,86 @@ bool WriteCallBlock(uintptr_t at, size_t total, void* target, const char* what) 
     return true;
 }
 
+// 把 "jmp 助手 + NOP 填充" 组装成单个缓冲区后**一次**写入
+//
+//   ★ 为什么度量补丁用 jmp 而不是 call ★
+//     call 会把返回地址压栈，而 P7（双字节推进）挂在 `add edi,1` 上，
+//     引擎原本是「顺序执行、靠末尾的 jl 回跳」。用 call 就必须在助手里
+//     手工丢弃那个返回地址（`add esp,4`），而历史上 P2/P3 正是用
+//     `add esp,4 / jmp eax` 尾跳崩在助手内部（hta.exe0057）。
+//     jmp 不动栈，栈平衡由构造保证，栈错乱这条失败模式直接消失。
+bool WriteJmpBlock(uintptr_t at, size_t total, void* target, const char* what) {
+    int64_t rel = (int64_t)target - (int64_t)(at + 5);
+    if (rel > 0x7FFFFFFFLL || rel < -0x80000000LL) {
+        Logf("pathd: %s 目标 0x%p 距离过远，无法 E9 相对跳转", what, target);
+        return false;
+    }
+    if (total < 5)   { Logf("pathd: %s 覆盖 %u 字节 < 5，放不下 jmp", what, (unsigned)total); return false; }
+    if (total > 64)  { Logf("pathd: %s 覆盖 %u 字节超缓冲", what, (unsigned)total); return false; }
+    uint8_t b[64];
+    b[0] = 0xE9;
+    *(int32_t*)(b + 1) = (int32_t)rel;
+    for (size_t i = 5; i < total; ++i) b[i] = 0x90;
+    if (!WriteBlockSafe(at, b, total, what)) return false;
+    Logf("pathd:   %s @0x%08X -> jmp 0x%p (rel=%d, 共 %u 字节一次写入)",
+         what, (unsigned)at, target, (int)rel, (unsigned)total);
+    return true;
+}
+
 // 按特征码在模块里找唯一命中；通配 '?'
-uintptr_t ScanUnique(const char* sig, const char* what, bool required = true) {
-    uintptr_t hit = pattern::ScanModule((HMODULE)g_modBase, sig);
+//
+//   ★★★ 多命中时必须拒绝，而不是取第一个 ★★★
+//     实测教训（2026-10-07）：度量推进的锚点
+//     "83 C7 01 3B 7C 24 ?? 0F 8C" 有 8 处命中，真正的那处在第 5 位
+//     （0x685BD1）。取第一处 → 装到 0x44ED34 这个无关函数上，
+//     把正常代码覆盖成 jmp → 乱码 + 字符全叠在一起。
+//     函数叫 ScanUnique，就该兑现 unique 的承诺：
+//     命中数 != 1 一律返回 0，让上层打印 [MISS] 并保持原样。
+//     **宁可不打补丁，也不能打错位置** —— 打错会破坏无关功能，
+//     而不打补丁只是"这个 bug 没修"。
+//
+//   ★ 但 `allowMulti` 逃生口是必需的 ★
+//     引擎分配器 sub_589410 的特征码**天然**就是 2 处命中
+//     （alloc 的两包装），它一直是「取第一处 + 运行时 probe 自检」的设计。
+//     实测（04:29:46）我加了全局歧义拦截后，它直接返回 0，
+//     日志变成「[歧义] 引擎分配器 —— 拒绝安装」，
+//     结果该字号汉字无法挂页 —— 这是**我引入的回归**。
+//     凡是**自带运行时自检**的目标都该传 allowMulti=true。
+uintptr_t ScanUniqueEx(const char* sig, const char* what, bool allowMulti) {
+    // ★ 一次扫描拿「首命中 + 总数」★
+    //   早先写成 ScanModule() + CountModule()，那是**两次**全模块扫描。
+    //   实测（04:37 那一轮）单次 ScanModule 就要 3.5~4.9 秒
+    //   （朴素 O(n·m) 匹配 6.6MB），每个锚点扫两遍 ⇒ 初始化从基线
+    //   4 秒涨到 >19 秒还没跑完。用户中途关掉了游戏，看到的是
+    //   「P4 已装、表还空」的半成品 ⇒ 满屏西里尔乱码 + 叠字 + 空白。
+    //   **保护机制自己变成了 bug**，必须消掉重复扫描。
+    uintptr_t hit = 0;
+    int n = pattern::ScanModuleCount((HMODULE)g_modBase, sig, &hit);
     if (!hit) {
-        if (required) Logf("pathd: [MISS] %s  特征码 %s", what, sig);
-        else          Logf("pathd: [可选缺失] %s", what);
+        Logf("pathd: [MISS] %s  特征码 %s", what, sig);
         return 0;
     }
-    // 报告命中数（帮助判断是否需要消歧）
-    int n = pattern::CountModule((HMODULE)g_modBase, sig);
-    Logf("pathd: %-22s -> 0x%08X  (%d 处命中)", what, (unsigned)hit, n);
+    if (n != 1 && !allowMulti) {
+        Logf("pathd: [歧义] %s 特征码命中 **%d 处**（0x%08X 起）——拒绝安装，保持原样",
+             what, n, (unsigned)hit);
+        Logf("pathd:        特征码: %s", sig);
+        Logf("pathd:        ★必须先把这个锚点收紧到唯一★ 打错位置会破坏无关功能");
+        return 0;
+    }
+    Logf("pathd: %-22s -> 0x%08X  (%d 处命中%s)", what, (unsigned)hit, n,
+         allowMulti && n > 1 ? "，按设计取首个 + 运行时自检" : "");
     return hit;
+}
+
+uintptr_t ScanUnique(const char* sig, const char* what, bool required = true) {
+    uintptr_t hit = ScanUniqueEx(sig, what, false);
+    if (!hit && !required) Logf("pathd: [可选缺失] %s", what);
+    return hit;
+}
+
+// 允许「多命中取首个」的版本 —— 仅供**自带运行时自检**的目标使用
+uintptr_t ScanFirst(const char* sig, const char* what) {
+    return ScanUniqueEx(sig, what, true);
 }
 
 } // namespace
@@ -691,8 +888,9 @@ static void* AllocGlyph() {
     static size_t   used  = 0;
     static size_t   cap   = 0;
     // ★★★ 2207 字形 × 10 字号 = 22070 个 × 48 字节 = 1,059,360 字节 ★★★
-    //   起步就直接给足 2MB，让**任何一次分配都不需要搬迁**。
-    const size_t kInit = 2u * 1024 * 1024;      // ≈ 43000 个字形，有余量
+    //   起步给 1.1MB（≈24000 个字形），已能装下全部 22070 个且不触发增长，
+    //   同时比原 2MB 少占 ~0.9MB 常驻地址空间（减重，缓解 2GB 模式压力）。
+    const size_t kInit = 1100u * 1024;          // 1.1MB，足够 22070 个字形，指针永久有效
     if (used + kGlyphSize > cap) {
         size_t ncap = cap ? cap * 2 : kInit;
         uint8_t* np = (uint8_t*)VirtualAlloc(NULL, ncap, MEM_COMMIT | MEM_RESERVE, PAGE_READWRITE);
@@ -1221,30 +1419,37 @@ static void CollectAllFonts(std::vector<FontRec>& out) {
 }
 
 static DWORD WINAPI SetupThread(LPVOID) {
-    Logf("pathd: 后台线程启动，等待字体就绪…");
-    // 两个来源都要：
-    //   A) FontManager 的 vector —— 拿 CJK 图集页字体（height>=900，
-    //      它们永远不会被绘制，所以绘制期登记拿不到）
-    //   B) 绘制期登记           —— 兜底
-    // 等绘制登记稳定 2 秒后一次性收集。
+    // ★★ 冻结模式下**不能**靠 g_seenCount 等稳定 ★★
+    //   g_seenCount 是「绘制期登记」累加的（P4 在渲染线程里调）。
+    //   冻结时渲染线程不动，这个计数永远是 0。
+    //   ★ 但直接跳过等待是错的 ★（实测：一个字体都收集不到）
+    //   因为 CollectAllFonts 的**锚点**正是来自这里 —— 没有锚点就
+    //   直接 return，连堆扫描都不跑。
+    //   所以冻结模式下这条路径必然失败，只能靠 HTA_CHS_FREEZE 实验复现。
+    bool frozen = g_frozen;
+    if (frozen) {
+        Logf("pathd: [警告] 处于冻结模式 —— 绘制登记不会增长，字体收集很可能为空");
+        Logf("pathd:        这是 HTA_CHS_FREEZE 实验模式的已知后果");
+    } else {
+        Logf("pathd: 后台线程启动，等待字体就绪…");
+    }
     std::vector<FontRec> fonts;
     int lastCount = -1, stable = 0;
-    // ★ 等「绘制期登记的字体数连续稳定」就够，不必死等 2 秒 ★
-    //   实测：进入界面要等 8 秒才出中文，这里就占了 2 秒。
-    //   fonts.xml 在启动阶段一次性加载完，实测 0.5 秒内计数就稳定了。
-    //   万一没稳定就走 900 次（90 秒）上限，且漏掉的字号只是没有汉字，
-    //   引擎会安全跳过 —— 不会崩。
-    for (int i = 0; i < 900; ++i) {               // 最多等 90 秒
-        Sleep(100);
-        LONG cur = g_seenCount;
-        if (cur > 0 && cur == lastCount) { if (++stable >= 5) break; }    // 稳定 0.5s
-        else stable = 0;
-        lastCount = (int)cur;
+    {
+        for (int i = 0; i < 900; ++i) {               // 最多等 90 秒
+            Sleep(100);
+            LONG cur = g_seenCount;
+            if (cur > 0 && cur == lastCount) { if (++stable >= 5) break; }    // 稳定 0.5s
+            else stable = 0;
+            lastCount = (int)cur;
+            if (frozen && i >= 10) break;   // 冻结模式：等 1 秒就放弃，别白等 90 秒
+        }
     }
     CollectAllFonts(fonts);
     Logf("pathd: 合计收集到 %u 个 Font", (unsigned)fonts.size());
     if (fonts.empty()) {
         Logf("pathd: [失败] 一个字体都没收集到");
+        UnfreezeGameThreads();            // ★ 必须解冻，否则游戏永久卡死 ★
         return 0;
     }
     {   // 逐个打印，方便对照引擎实际用到的字号
@@ -1286,6 +1491,7 @@ static DWORD WINAPI SetupThread(LPVOID) {
         Logf("pathd: [失败] 没有找到任何 CJK 图集页");
         Logf("pathd:        需要在 fonts.xml 里加 height>=900 的 Item 指向 CJK 图集");
         Logf("pathd:        字形表已扩到 65536，汉字全为 NULL（会被安全跳过，不崩）");
+        UnfreezeGameThreads();            // ★ 必须解冻 ★
         return 0;
     }
     {
@@ -1321,25 +1527,141 @@ static DWORD WINAPI SetupThread(LPVOID) {
     Logf("pathd: === 路径 D 准备完成：%d 个字号已装入汉字 ===", ok);
     Logf("pathd: 汉字现在用 16 位索引查表（GBK 原样，不做转码）");
 
+    // ── P7 诊断汇总（A 方案）────────────────────────────────────────
+    //   汇编助手没法直接 Logf，只落了几个数。这里统一打印，
+    //   用来一次性确定 Font* / 表指针 / 字形指针到底是什么。
+    if (g_msrDiagCount > 0) {
+        Logf("pathd: [P7诊断] 调用 %u 次，最后一次: Font*=0x%08X 字符=0x%04X "
+             "表=0x%08X 字形=0x%08X",
+             (unsigned)g_msrDiagCount, g_msrDiagFont, g_msrDiagChar,
+             g_msrDiagTable, g_msrDiagGlyph);
+        Logf("pathd: [P7诊断] 汉字分支失败分类(累计): 无槽=%u 未就绪=%u 无表=%u 无字形=%u",
+             (unsigned)g_msrFailNoSlot, (unsigned)g_msrFailNotReady,
+             (unsigned)g_msrFailNoTable, (unsigned)g_msrFailNoGlyph);
+        Logf("pathd: [P7诊断] 槽数 g_cjkSlotCount=%d（成功命中会走 mw_gate_hit）",
+             (int)g_cjkSlotCount);
+        Logf("pathd: [P7诊断] 分支累计: 汉字成功=%u ASCII成功=%u 缺字=%u",
+             (unsigned)g_msrHitCjk, (unsigned)g_msrHitAscii, (unsigned)g_msrHitNoDef);
+    }
+
     // ★★★ 装配线程整体结束标记（**不再参与渲染判据**）★★★
     //   P4 现在查的是每个槽自己的 ready（分批开闸），
     //   所以第 1 个字号填完就能显示，不必等这里。
     //   这个标志只用于日志/诊断。
     // ★ HTA_CHS_NO_CJK=1 时不开闸（二分定位用）★
+    //   注意：提前 return 前必须解冻，否则游戏永久卡死。
     {
         char v[8] = {0};
         if (GetEnvironmentVariableA("HTA_CHS_NO_CJK", v, sizeof(v)) > 0) {
             Logf("pathd: [调试] HTA_CHS_NO_CJK 已设 —— 装配线程跳过收尾");
+            UnfreezeGameThreads();
             return 0;
         }
     }
     InterlockedExchange(&g_cjkReady, 1);
     Logf("pathd: 装配线程收尾（g_cjkReady=1，仅诊断用；渲染看的是每槽 ready）");
+
+    // ★ 装配完成 → 解冻游戏 ★（只有真的冻结过才有意义）
+    //   旧代码无条件打印"解冻"，日志里看着像一直在冻结 —— 误导。
+    if (g_frozen) {
+        Logf("pathd: ★装配完成，解冻游戏线程★");
+        UnfreezeGameThreads();
+    }
     return 0;
 }
 
 // ═══════════════════════════════════════════════════════════════════════════
-// 6) 补丁安装
+// 5.5) 启动冻结：DLL 安装期间把游戏线程全部挂起
+// ═══════════════════════════════════════════════════════════════════════════
+//
+//   动机（用户实测反馈）：「游戏有时候会装不上」。
+//   根因是**竞争**：我们在装补丁的同时，引擎的加载线程也在跑，
+//   它会去调正在被我们改写的那些函数（度量/绘制/烘图）。
+//   表现就是偶发装不上、或装到一半被游戏逻辑打断。
+//
+//   做法：初始化一开始就挂起除自己以外的全部线程，装配完成再恢复。
+//   这与 WriteBlockSafe 的「短暂挂起→写→恢复」是同一套思路，
+//   只是时间窗口从"微秒级"扩大到"整个初始化"。
+//
+//   ★ 死锁风险与规避 ★
+//   被挂起的线程若正持有某个锁（比如引擎的加载锁、CRT 锁），
+//   而**我们又去要那个锁**，就会死锁 —— 日志就是最典型的例子
+//   （Logf 走 CRT/文件锁）。所以：
+//     · 冻结期间**绝不调用 Logf**
+//     · 冻结前把所有要打印的日志先打完
+//     · 装配线程所需的锁（我们自己那把）在冻结前就已释放
+//   我们冻结期间不调用任何引擎函数，只用 Win32 API 和自己的内存。
+//
+//   ★ 兜底 ★
+//   万一装配卡住，不能把游戏永久冻死。用 HTA_CHS_NO_FREEZE=1 可整体关闭；
+//   兜底超时 kFreezeBudgetMs 到点无条件恢复。
+static HANDLE g_frozenThreads[512];
+static int    g_frozenCount = 0;
+bool         g_frozen = false;
+
+static DWORD WINAPI FreezeWatchdog(LPVOID param);   // 前置声明（定义在下方）
+
+static void FreezeGameThreads() {
+    if (g_frozen) return;
+    char v[8] = {0};
+    if (GetEnvironmentVariableA("HTA_CHS_NO_FREEZE", v, sizeof(v)) > 0) return;
+
+    const DWORD self = GetCurrentThreadId();
+    g_frozenCount = 0;
+    HANDLE snap = CreateToolhelp32Snapshot(TH32CS_SNAPTHREAD, 0);
+    if (snap == INVALID_HANDLE_VALUE) return;
+    THREADENTRY32 te; te.dwSize = sizeof(te);
+    if (Thread32First(snap, &te)) {
+        do {
+            if (te.th32OwnerProcessID != GetCurrentProcessId()) continue;
+            if (te.th32ThreadID == self) continue;
+            if (g_frozenCount >= 512) break;
+            HANDLE th = OpenThread(THREAD_SUSPEND_RESUME, FALSE, te.th32ThreadID);
+            if (!th) continue;
+            if (SuspendThread(th) == (DWORD)-1) { CloseHandle(th); continue; }
+            g_frozenThreads[g_frozenCount++] = th;
+        } while (Thread32Next(snap, &te));
+    }
+    CloseHandle(snap);
+    g_frozen = true;
+
+    // ★ 兜底：最长冻结 kFreezeBudgetMs，到点无条件解冻 ★
+    //   装配实测约 10 秒（含字形填充）。给到 120 秒足够宽裕，
+    //   同时避免"卡住就永久冻死"这种最坏情况。
+    const DWORD kFreezeBudgetMs = 120000;
+    HANDLE wd = CreateThread(nullptr, 64 * 1024, FreezeWatchdog,
+                             (LPVOID)(uintptr_t)kFreezeBudgetMs, 0, nullptr);
+    if (wd) CloseHandle(wd);
+}
+
+static void UnfreezeGameThreads() {
+    if (!g_frozen) return;
+    for (int i = 0; i < g_frozenCount; ++i) {
+        ResumeThread(g_frozenThreads[i]);
+        CloseHandle(g_frozenThreads[i]);
+    }
+    g_frozenCount = 0;
+    g_frozen = false;
+}
+
+// ── 兜底看门狗 ──────────────────────────────────────────────────────────
+//   装配线程若因为任何意外卡住（比如某个字体结构损坏导致死循环），
+//   冻结就没人解除 —— 用户看到的是永久黑屏无响应。
+//   所以起一个**独立**的看门狗线程：到点无条件解冻。
+//   它只做一件事，不碰任何引擎数据，最坏情况也只是"提前解冻"。
+static DWORD WINAPI FreezeWatchdog(LPVOID param) {
+    DWORD ms = (DWORD)(uintptr_t)param;
+    Sleep(ms);
+    if (g_frozen) {
+        // 这里可以安全 Logf：看门狗不持有任何锁，且此时解冻是正确行为
+        Logf("pathd: [看门狗] 超过 %lu ms 仍未装配完成，强制解冻游戏线程", ms);
+        UnfreezeGameThreads();
+    }
+    return 0;
+}
+
+// ═══════════════════════════════════════════════════════════════════════════
+// 6) 补丁安装（仍在 pathd 内）
 // ═══════════════════════════════════════════════════════════════════════════
 struct PatchSpec {
     const char* name;
@@ -1433,7 +1755,37 @@ bool InstallPatches() {
         uintptr_t b = ScanUnique("83 C7 01 EB ?? 8B 46 18 83 F8 03", "P3 预扫遍历B", false);
         pPreWalkA = a; pPreWalkB = b;
     }
-    uintptr_t pMsrWalk = ScanUnique("83 C7 01 3B 7C 24 ?? 0F 8C", "P7 度量遍历");
+    // ★ P7/P8 度量补丁定位 —— ★特征码必须**唯一**，多命中即拒绝 ★
+    //
+    //   实测教训（2026-10-07 首次上机）：锚点 "83 C7 01 3B 7C 24 ?? 0F 8C"
+    //   在 hta.exe 里有 **8 处**命中（IDA find_bytes 实证）：
+    //       0x44ED34 / 0x5C5B2C / 0x60B24D / 0x635F36 /
+    //       0x685BD1（★ 真正的度量循环）/ 0x8AD87E / 0x8ADB83 / 0x8ADECE
+    //   ScanUnique 只取第一处 -> 装到了 0x44ED34 这个**完全无关的函数**上，
+    //   直接把正常代码覆盖成 jmp，症状就是"乱码 + 字全叠一起"。
+    //
+    //   ⇒ 修法：锚点**必须带上度量循环独有的上文**，让它全局唯一。
+    //   上文（0x685BC3 起，逐字节实测）：
+    //       movss xmm0,[esp+0x14]     F3 0F 10 44 24 14
+    //       mov   ecx,[esp+0x10]      8B 4C 24 10
+    //       mov   esi,[esp+0x20]      8B 74 24 20
+    //       add   edi,1              83 C7 01
+    //   最后那个 [esp+0x20]（文本基址）+ 紧跟 add edi,1 的组合是独有的。
+    //   ★ 这里刻意**不用 ??** 通配那三个 disp ★
+    //     disp 已用字节逐条核实过，写死反而能让签名唯一。
+    //     若哪天引擎小版本平移了栈帧，应该是「签名失配 -> 拒绝安装」，
+    //     而不是「误装到别的函数上」—— 后者会静默破坏正常代码。
+    uintptr_t pMsrWalk = ScanUnique("F3 0F 10 44 24 14 8B 4C 24 10 8B 74 24 20 83 C7 01",
+                                     "P8 度量推进");
+    // 锚点起点是 0x685BC3（movss xmm0,[esp+0x14]），三条上文指令共
+    //   6 + 4 + 4 = 14 字节，其后才是 `add edi,1`（0x685BD1）。
+    //   ★ 这个 14 是算出来的，不是估的 ★
+    if (pMsrWalk) pMsrWalk += 14;
+    // P7 锚点：mov esi,[esp+0x4C] ; push esi ; call rel32 ; fadd [esp+0x14]
+    //   末尾的 fadd [esp+0x14] 是 P7 的**回跳落点**，必须一并锁定，
+    //   否则 10 字节覆盖范围会错位、把下一条指令劈开。
+    uintptr_t pMsrW2   = ScanUnique("8B 74 24 4C 56 E8 ?? ?? ?? ?? D8 44 24 14",
+                                     "P7 度量宽度", false);
 
     // ── P4b 第二处查表：★10 字节★ -> call 助手2 + 5 NOPs ──────────────
     //
@@ -1606,13 +1958,97 @@ bool InstallPatches() {
     //   所以这里保持原样：度量按字节走，中文宽度会被低估约一半。
     //   后果：居中/右对齐的中文会偏左；左对齐不受影响。
     //   绘制本身是正确的（P4/P5 已补）。后续用重定位方案再修 P7。
-    if (pMsrWalk) {
-        Logf("pathd: [保持原样] P7 度量遍历 @0x%08X  原字节 %s",
-             (unsigned)pMsrWalk, HexDump(pMsrWalk, 3).c_str());
-        Logf("pathd:        原因：3 字节空间放不下条件判断，硬补会破坏 ASCII 度量。");
-        Logf("pathd:        影响：中文宽度被低估（居中/右对齐会偏左），左对齐无影响。");
+    // ── P7/P8 度量路径（修「过场剧情不换行」）─────────────────────────
+    //
+    //   根因（字节级核实）：引擎度量循环只按**单字节**推进，且字形查询只喂
+    //   单字节（sub_66FEA0 / sub_66FE10 都只收 uint8）。GBK 前导字节 >= 0x81
+    //   在引擎自带 256 项表里查不到，每个汉字的两个字节各贡献一次
+    //   **0.125f**（xmmword_9E6A74+8，实测 00 00 00 3E）
+    //   ⇒ 一个汉字被记成 0.25 em（真实约 1.0），宽度低估到 1/4
+    //   ⇒ 整行累加到头也够不着行宽阈值 ⇒ 不折行。
+    //
+    //   ★ 为什么不能改 sub_66FEA0/sub_66FE10（它们只有 0x22/0x3B 字节，
+    //     小到看着能整体重写）★
+    //     它们**只收一个字节**，拿不到 GBK 后继字节 b2，函数内部无法判断
+    //     "这个 0x81 后面还有没有第二个字节"。⇒ hook 必须在循环内。
+    //
+    //   P7 = 宽度：jmp 挂在 0x685B21，覆盖 mov esi,[esp+4C] / push esi /
+    //        call sub_66FEA0 共 10 字节，助手返回 st(0)=advance 后 jmp 回
+    //        0x685B2B（引擎的 fadd 继续执行）。
+    //   P8 = 推进：jmp 挂在 0x685BD1，覆盖 add edi,1 / cmp / jl 共 13 字节，
+    //        助手自己推进并**自己完成 cmp + 回跳循环头**（0x685A80）。
+    //
+    //   ★★ 为什么用 jmp 而不是 call ★★
+    //     jmp 进来的助手栈上**没有返回地址**，绝不能 ret；出口也必须是 jmp。
+    //     call 会压 4 字节返回地址，P8 就必须 `add esp,4` 丢它 ——
+    //     那正是 P2/P3 崩在助手内部（hta.exe0057）的手法。jmp 栈零风险。
+    // P7：度量宽度点。**独立判定** —— P7/P8 是两处独立补丁，
+    //   任一失配不应牵连另一处（旧写法用 if(pMsrWalk) 把两者圈在一起，
+    //   P7 定位失败时会在 HexDump(0,...) 上读野地址）。
+    if (pMsrW2) {
+        uintptr_t pMsrW = pMsrW2;
+        uintptr_t afterW = pMsrW + 10;
+        Logf("pathd: [度量] P7 宽度点 @0x%08X  原字节 %s", (unsigned)pMsrW, HexDump(pMsrW, 10).c_str());
+        if (g_skipP7) {
+            Logf("pathd: [度量] P7 被 HTA_CHS_NO_P7 关闭，保持原样");
+        } else if (rd8(pMsrW) != 0x8B || rd8(pMsrW+1) != 0x74 || rd8(pMsrW+2) != 0x24 || rd8(pMsrW+3) != 0x4C
+            || rd8(pMsrW+4) != 0x56 || rd8(pMsrW+5) != 0xE8) {
+            Logf("pathd:   ★原字节与预期不符（%s），拒绝安装 P7★", HexDump(pMsrW, 6).c_str());
+        } else if (rd8(afterW) != 0xD8 || rd8(afterW+1) != 0x44 || rd8(afterW+2) != 0x24 || rd8(afterW+3) != 0x14) {
+            Logf("pathd:   ★落点 0x%08X 应为 fadd [esp+14]（D8 44 24 14）却是 %s，拒绝安装 P7★",
+                 (unsigned)afterW, HexDump(afterW, 4).c_str());
+        } else {
+            g_msrAfterW = (uint32_t)afterW;
+            if (WriteJmpBlock(pMsrW, 10, (void*)&PathD_MsrAdvanceW, "P7 度量宽度")) ++done; else ++fail;
+            Logf("pathd:   落点 g_msrAfterW=0x%08X", g_msrAfterW);
+        }
     } else {
-        Logf("pathd: [MISS] P7 度量遍历");
+        Logf("pathd: [MISS] P7 度量宽度（中文宽度仍按 0.125em 计 → 不换行，但能显示）");
+    }
+
+    // P8：双字节推进点
+    if (pMsrWalk) {
+        uintptr_t pMsrB = pMsrWalk;
+        // ★★ rel32 在 +9，不是 +7 ★★（2026-10-07 实测闭环）
+        //   布局： +0 83 C7 01          add edi,1            (3)
+        //          +3 3B 7C 24 1C       cmp edi,[esp+1C]     (4)
+        //          +7 0F 8C             jl 近跳转操作码      (2)  ← 不是位移！
+        //          +9 A2 FE FF FF       rel32 = -0x15E       (4)
+        //   实测证据：写 +7 时读到 `0F 8C A2 FE` = -22901745，
+        //     0x685BDE - 0x15D67C1 = 0xFF0AE7ED —— 与日志打印的坏值
+        //     「★引擎 jl 目标 0xFF0AE7ED★」分毫不差，诊断闭环。
+        //   验证：0x685BDE + (-0x15E) = 0x685A80 正是循环头。
+        //
+        //   顺带记一笔我自己的纠错：退出地址那边我一度以为 `EB 32` 跳去
+        //   0x685BCB，那是错的 —— 我在 Python 里把 `unpack_from("<b",b,13)`
+        //   读成了 0xEB **操作码**（rel8 在 +14）。0x32 = +50，
+        //   0x685BE0 + 50 = 0x685C12，IDA 的解析是对的。
+        uintptr_t loopHead = (uintptr_t)((int64_t)(pMsrB + 13) + (int32_t)rd32s(pMsrB + 9));
+        // 引擎原本的 jl 目标就是循环头，直接沿用，不重新计算
+        g_msrLoopHead = (uint32_t)loopHead;
+        // 0x685BDE 是 `jmp short 0x685C12`（EB xx），落点 = pMsrB+13+2+rel8
+        int8_t  exitRel  = (int8_t)rd8(pMsrB + 14);
+        g_msrLoopExit   = (uint32_t)((int64_t)(pMsrB + 13 + 2) + exitRel);
+        Logf("pathd: [度量] P8 推进点 @0x%08X  原字节 %s", (unsigned)pMsrB, HexDump(pMsrB, 15).c_str());
+        if (g_skipP7) {
+            Logf("pathd: [度量] P8 被 HTA_CHS_NO_P7 关闭，保持原样");
+        } else if (rd8(pMsrB) != 0x83 || rd8(pMsrB+1) != 0xC7 || rd8(pMsrB+2) != 0x01
+            || rd8(pMsrB+3) != 0x3B || rd8(pMsrB+4) != 0x7C || rd8(pMsrB+5) != 0x24 || rd8(pMsrB+6) != 0x1C
+            || rd8(pMsrB+7) != 0x0F || rd8(pMsrB+8) != 0x8C) {
+            Logf("pathd:   ★原字节与预期不符（%s），拒绝安装 P8★", HexDump(pMsrB, 9).c_str());
+        } else if (loopHead != g_modBase + (0x685A80 - 0x400000)) {
+            Logf("pathd:   ★引擎 jl 目标 0x%08X 与预期循环头 0x%08X 不符，拒绝安装 P8★",
+                 (unsigned)loopHead, (unsigned)(g_modBase + (0x685A80 - 0x400000)));
+        } else if (g_msrLoopExit != g_modBase + (0x685C12 - 0x400000)) {
+            Logf("pathd:   ★退出地址 0x%08X 与预期 0x%08X 不符，拒绝安装 P8★",
+                 g_msrLoopExit, (unsigned)(g_modBase + (0x685C12 - 0x400000)));
+        } else {
+            if (WriteJmpBlock(pMsrB, 13, (void*)&PathD_MsrAdvanceB, "P8 度量推进")) ++done; else ++fail;
+            Logf("pathd:   循环头 g_msrLoopHead=0x%08X  退出 g_msrLoopExit=0x%08X",
+                 g_msrLoopHead, g_msrLoopExit);
+        }
+    } else {
+        Logf("pathd: [MISS] P8 度量推进（中文不换行，但能显示）");
     }
 
     // ── P2/P3 预扫遍历 ───────────────────────────────────────────────
@@ -1649,8 +2085,10 @@ bool InstallPatches() {
             { "P4  第一处查表", pMainLookup, 18 },
             { "P4b 第二处查表", pLookup2,     10 },   // ★ 9 是错的，见上 ★
             { "P5  主遍历",     pMainWalk,     9 },
+            { "P7  度量宽度", pMsrW2,       10 },
+            { "P8  度量推进", pMsrWalk,     13 },
         };
-        for (int i = 0; i < 3; ++i) {
+        for (int i = 0; i < 5; ++i) {
             if (!chk[i].at) { Logf("pathd: [自检] %-16s 未定位", chk[i].tag); continue; }
             Logf("pathd: [自检] %-16s @0x%08X  覆盖 %d 字节: %s  ‖ 边界外: %s",
                  chk[i].tag, (unsigned)chk[i].at, chk[i].n,
@@ -1677,9 +2115,11 @@ bool Init(HMODULE game, const char* pkgPath) {
         g_skipExpand = GetEnvironmentVariableA("HTA_CHS_NO_EXPAND", v, sizeof(v)) > 0;
         g_skipP5     = GetEnvironmentVariableA("HTA_CHS_NO_P5",     v, sizeof(v)) > 0;
         g_skipP4b    = GetEnvironmentVariableA("HTA_CHS_NO_P4B",    v, sizeof(v)) > 0;
+        g_skipP7     = GetEnvironmentVariableA("HTA_CHS_NO_P7",     v, sizeof(v)) > 0;
         g_skipScan   = GetEnvironmentVariableA("HTA_CHS_NO_SCAN",   v, sizeof(v)) > 0;
-        Logf("pathd: 调试开关 跳过补丁=%d 跳过扩表=%d 跳过P5=%d 跳过P4b=%d 跳过扫描=%d",
-             (int)g_skipPatch, (int)g_skipExpand, (int)g_skipP5, (int)g_skipP4b, (int)g_skipScan);
+        Logf("pathd: 调试开关 跳过补丁=%d 跳过扩表=%d 跳过P5=%d 跳过P4b=%d 跳过P7=%d 跳过扫描=%d",
+             (int)g_skipPatch, (int)g_skipExpand, (int)g_skipP5, (int)g_skipP4b,
+             (int)g_skipP7, (int)g_skipScan);
     }
 
     Logf("pathd: ══════════ 路径 D 初始化 ══════════");
@@ -1733,7 +2173,10 @@ bool Init(HMODULE game, const char* pkgPath) {
     //   sub_589410 : __fastcall(ecx=size, edx=0, stack=0)，内部 mov ecx,dword_A0A880
     //               后调 sub_748DC0；返回 retn 4。
     //   用它给页表分配内存，引擎 ~Font 的 free 才能正确配对。
-    g_engineAlloc = (EngineAllocFn)ScanUnique(SIG_ENGINE_ALLOC, "引擎分配器(sub_589410)", false);
+    // ★ 这个锚点天然 2 处命中（alloc 的两个包装），设计就是取首个 +
+    //   下面的运行时 probe 自检兜底，所以必须 allowMulti。
+    //   我曾用 ScanUnique 统一收口，结果它变成 0 → 汉字挂不上页（回归）。
+    g_engineAlloc = (EngineAllocFn)ScanFirst(SIG_ENGINE_ALLOC, "引擎分配器(sub_589410)");
     if (!g_engineAlloc) {
         Logf("pathd: [警告] 未定位到引擎分配器 —— 页表无法挂载，汉字将不显示");
         Logf("pathd:         特征码: %s", SIG_ENGINE_ALLOC);
@@ -1774,21 +2217,61 @@ bool Init(HMODULE game, const char* pkgPath) {
     Logf("pathd: 不挂钩字体创建（装钩子晚于字体加载 1.2 秒），改用字体管理器枚举");
     g_hookFont = false;
 
+    // ★ 安装前先把游戏线程全部挂起 ★
+    //
+    //   ⚠⚠ 实测教训（2026-10-07）：**长时间冻结会把装配彻底搞坏** ⚠⚠
+    //     症状：每次启动结果都不一样（崩溃 / 乱码 / 文字闪烁 / 完全无字）。
+    //
+    //     根因：CollectAllFonts 的**锚点**来自 g_seenFonts —— 那是绘制期
+    //     登记（P4 在渲染线程里执行 inc g_seenCount）。
+    //     而 CollectAllFonts 第 1265 行是 `if (anchors.empty()) return;`
+    //     —— 锚点为空就**直接返回，连堆扫描都不跑**。
+    //     冻住渲染线程 ⇒ g_seenCount 恒为 0 ⇒ 一个字体都收集不到
+    //     ⇒ 汉字表全空 ⇒ 你看到的那些症状。
+    //
+    //     实测日志就是铁证：
+    //         [冻结中] 跳过「等绘制登记稳定」，直接收集字体
+    //         [失败] 一个字体都没收集到
+    //
+    //     「每次不一样」也由此而来：字体能不能收到，取决于冻结那一刻
+    //     引擎有没有已经画过一帧 —— 纯时序竞争。
+    //
+    //   ⇒ 结论：**装配必须让引擎正常跑**，冻结只能用于「写那几字节」
+    //     的瞬间 —— 也就是 WriteBlockSafe 已经做的事。
+    //     长时间的进程级冻结在本项目里是行不通的方案。
+    //     保留开关以便你随时对照，但**默认关闭**。
+    const bool kFreezeInstall = GetEnvironmentVariableA("HTA_CHS_FREEZE", nullptr, 0) > 0;
+    if (kFreezeInstall) {
+        Logf("pathd: [实验] HTA_CHS_FREEZE 已设 —— 冻结期间安装（注意：会导致装配失败）");
+        FreezeGameThreads();
+    }
+
     // 安装 16 位索引补丁
     InstallPatches();
 
     // 起后台线程做后续装配
     //
-    // ★★ 必须显式指定小栈 + CREATE_SUSPENDED 后降栈再启动 ★★
-    //   实测失败：CreateThread 返回 NULL，GetLastError()=8
-    //   (ERROR_NOT_ENOUGH_MEMORY)。后果是**装配线程根本没起来** ->
-    //   汉字表永远为空 -> P4 查不到汉字 -> 引擎退回单字节查表 ->
-    //   GBK 字节被当成西里尔字母显示（用户看到的"俄语乱码"）。
+    // ★★ 实测失败：CreateThread 返回 NULL，GetLastError()=8 ★★
+    //   (ERROR_NOT_ENOUGH_MEMORY) —— 四种栈大小（256K/128K/64K/默认）全失败。
+    //   后果极其严重：**装配线程根本没起来 → 汉字表永远为空**
+    //   → P4 查不到汉字 → 引擎退回单字节查表 → GBK 字节被当西里尔字母
+    //   显示（用户看到的"俄语乱码 / 所有字消失"）。
     //
-    //   原因：hta.exe 无 LARGE_ADDRESS_AWARE，只有 2GB 地址空间；
-    //   转储实测 `Total virtual memory available = 322 MB`，
-    //   音频就占了 83MB。默认 1MB 栈预留在这种压力下会失败。
-    //   SetupThread 只做线性扫描与填表，256KB 栈足够。
+    //   ★ 注意：错误 8 在实际观测里**并不代表真的内存不够** ★
+    //     日志同期 `Total virtual memory available = 445 MB`，给 64KB 栈绰绰有余。
+    //     32 位 + 无 LAA 的进程里，CreateThread 报 8 的常见真因是
+    //     **提交量/地址空间碎片化**或线程配额，而不是真的分配不出 64KB。
+    //     历史上我改过三轮（含一次回退 0fe2344）都没根治 —— 因为方向错了：
+    //     问题不是"怎么把线程创建成功"，而是"**根本不需要第二个线程**"。
+    //
+    //   ★ 正确做法（本次）★
+    //     本函数 `Init` 已经运行在 DllMain 创建的 **InitThread** 里，
+    //     那本来就是个独立线程。装配直接在这里同步做即可 ——
+    //     游戏在它自己的线程上照常跑，不需要我们再多开一个。
+    //     ⇒ 优先仍试后台线程（让初始化尽快返回），
+    //       失败就**退化为在 InitThread 里同步装配**，不再有"彻底失败"这条路。
+    //
+    //   ★ 关于栈 ★ SetupThread 只做线性扫描与填表，256KB 足够。
     HANDLE th = nullptr;
     const SIZE_T stackSizes[] = { 256 * 1024, 128 * 1024, 64 * 1024, 0 };
     for (int i = 0; i < 4 && !th; ++i) {
@@ -1800,16 +2283,22 @@ bool Init(HMODULE game, const char* pkgPath) {
     }
     if (th) {
         CloseHandle(th);
-        Logf("pathd: 装配线程已启动");
-    } else {
-        Logf("pathd: [失败] 装配线程创建彻底失败 %lu —— 汉字将不显示（回退单字节）",
-             GetLastError());
+        Logf("pathd: 装配线程已启动（后台装配）");
         g_enabled = true;
+        Logf("pathd: 初始化返回（补丁已生效，装配在后台进行）");
         return true;
     }
 
+    // ── 退化路径：直接在 InitThread 里同步装配 ────────────────────────
+    //   这条路**必须成功**，否则游戏里一个汉字都没有。
+    //   它不需要创建任何线程，因此错误 8 不可能再拦住我们。
+    Logf("pathd: [退化] 装配线程创建失败 —— 改为在初始化线程内同步装配");
+    Logf("pathd:        这会延迟初始化返回，但不影响游戏自己的线程");
+    SetupThread(nullptr);          // 直接调用：同步等字体 → 填表 → 开闸
+    Logf("pathd: [退化] 同步装配结束");
+
     g_enabled = true;
-    Logf("pathd: 初始化返回（补丁已生效，装配在后台进行）");
+    Logf("pathd: 初始化返回（补丁已生效，装配已在初始化线程内完成）");
     return true;
 }
 
@@ -2235,21 +2724,275 @@ __declspec(naked) void __cdecl PathD_DrawAdvance() {
     }
 }
 
-// —— P7：度量遍历（3 字节位置）——
-//    这里空间只有 3 字节，无法容下 call。改由 InstallPatches 直接改成 add edi,2。
-//    保留此助手以备后续重定位方案使用。
-__declspec(naked) void __cdecl PathD_MeasureAdvance() {
+// ═══════════════════════════════════════════════════════════════════════════
+// 度量路径（sub_685990）——「过场剧情不换行」的修复
+//
+// ─── 根因（本次会话用 IDA 字节逐条核实）───
+//   引擎度量循环只按**单字节**推进，且字形查询只喂**单字节**：
+//     0x66FEA0(Font*, uint8)  = 查引擎自带 256 项表 [Font+0x40]，返回 advance
+//     0x66FE10(Font*, out*, uint8) = 同上，返回 pxW/pxH
+//   GBK 前导字节 >= 0x81 时，引擎的 256 项表里**根本没有这一格**，
+//   于是每个汉字的两个字节各走一次「查不到」分支，各贡献
+//   0.125f（= xmmword_9E6A74+8，实测字节 00 00 00 3E）。
+//   ⇒ 一个汉字被记成 0.25 em，真实约 1.0 em。**宽度低估到 1/4**，
+//     整行累加到头也够不着行宽阈值 -> 不折行（字仍占位，所以看着只是不换行）。
+//
+// ─── 为什么不能改 sub_66FEA0/sub_66FE10 ★★
+//   两个函数都只有 0x22 / 0x3B 字节，看起来"小到能整体重写"，
+//   但它们**只收一个字节**，拿不到 GBK 后继字节 b2 ——
+//   单靠函数内部无法判断"这个 0x81 后面还有没有第二个字节"。
+//   （xref 已确认：两者各自只有 sub_685990 一个调用者，
+//     0x66FEA0 ← 0x685B26、0x66FE10 ← 0x685B3F。）
+//   ⇒ hook 点必须落在**循环内部**。
+//
+// ─── 真实栈位移（★ IDA 的 stack_frame 在此函数不可信 ★）───
+//   IDA 显示 `[esp+3Ch+var_28]`，但字节约 dis 是 `D8 44 24 14`，
+//   即**真实 disp = IDA 显示值 − 0x34**。下面全部用字节 disp，
+//   含义都是「引擎循环体内那一点的 esp 位移」：
+//     [esp+0x14]  宽度累加器 var_28      （0x685B2B fadd [esp+14]）
+//     [esp+0x18]  行数计数   var_20      （0x685BBE add [esp+18],1）
+//     [esp+0x1C]  字符串长度 strlen      （0x685BD4 cmp edi,[esp+1C]）
+//     [esp+0x20]  文本基址**指针**       （0x685B9C mov ecx,[esp+20]）
+//     [esp+0x4C]  当前字符（1 字节）    （0x685B21 mov esi,[esp+4C]）
+//     ecx         Font*（全程不变，0x685B5B/0x685B9C 反复用它）
+//   ★ strlen 槽位经两处独立确认：0x685A61 存 strlen、0x685BD4 与之 cmp，
+//     两条落在同一绝对槽 [S−0x20]。这是双字节推进能安全越界判定的依据。
+//
+// ─── 为什么用 jmp 而不是 call ───
+//   P8 挂在 `add edi,1` 上（顺序执行流），call 会压返回地址、助手里还得
+//   `add esp,4` 丢它 —— 那正是 P2/P3 崩在助手内部的手法（hta.exe0057）。
+//   jmp 完全不动栈。
+// ═══════════════════════════════════════════════════════════════════════════
+
+// —— P7：度量宽度（jmp @0x685B21，覆盖 11 字节）——
+//
+//   覆盖引擎这三条（0x685B21..0x685B2B）：
+//       0x685B21  mov esi,[esp+0x4C]   4 字节   8B 74 24 4C
+//       0x685B25  push esi             1 字节   56
+//       0x685B26  call sub_66FEA0      5 字节   E8 75 A3 FE FF
+//       0x685B2B  fadd [esp+0x14]      ← **不在补丁内**（下一步）
+//                                    合计    10 字节
+//
+//   出口契约（引擎紧接着 0x685B2B 就要 fadd）：
+//     st(0) = 该字符的 advance；其余一切保持原样。
+//     ★ esp 不能动 ★ —— 下一条 fadd 用 [esp+0x14]，一动就全错。
+__declspec(naked) void __cdecl PathD_MsrAdvanceW() {
     __asm {
-        push eax
-        movzx eax, byte ptr [edi]
-        inc  edi
-        cmp  eax, 81h
-        jb   ma_done
-        inc  edi
-    ma_done:
-        ret
+        movzx edx, byte ptr [esp+4Ch]      ; b1
+        mov   esi, edx                     ; ★ 还原被覆盖的 mov esi,[esp+4C]
+        cmp   edx, 81h
+        jb    mw_ascii                     ; <0x81 -> 引擎原语义
+
+        // ── 只有 GBK 前导字节才继续；必须确认后继字节在界内 ──
+        lea   eax, [edi+1]
+        cmp   eax, dword ptr [esp+1Ch]     ; b1+1 < strlen ?
+        jge   mw_ascii                     ; 越界 -> 当单字节处理
+        mov   eax, dword ptr [esp+20h]     ; ★ 文本基址**指针** ★
+        test  eax, eax
+        jz    mw_ascii                     ; 基址为空，绝不解引用
+        movzx eax, byte ptr [eax+edi+1]    ; ★ b2：先取基址，再间接寻址 ★
+        shl   edx, 8
+        or    edx, eax                     ; edx = GBK 码
+        mov   dword ptr [g_msrGbk], edx     ; ★ 落内存：ecx 要留给 Font*
+
+        ; ★★★★★ Font* 在哪个栈槽 —— 用引擎自己的两次读取闭环确证 ★★★★★
+        ;
+        ; 引擎在**同一段循环**里两次读这个槽，中间隔着 push ebx / push ebp：
+        ;     0x685A0B  call sub_679700        ; 返回 Font* 于 eax
+        ;     0x685A10  mov  ecx, eax          ; 8B C8
+        ;     0x685A12  mov  [esp+08h], ecx    ; 89 4C 24 08  ← 写入（push 之前）
+        ;     0x685A5B  mov  ecx, [esp+08h]    ; 8B 4C 24 08  ← 读回（push 之前）
+        ;     0x685BC9  mov  ecx, [esp+10h]    ; 8B 4C 24 10  ← 读回（push 之后，循环体内）
+        ;     0x685AFD  movss xmm1,[ecx+18h]   ; F3 0F 10 49 18  当 Font* 用（取宽高比）
+        ;
+        ;   0x685A65 push ebx / 0x685A77 push ebp 使循环体内 esp 比上面低 8：
+        ;       0x08 + 8 = 0x10   ✓ 两次读的是**同一个槽**
+        ;   ⇒ 循环体内 Font* = **[esp+10h]**
+        ;
+        ; ★ 交叉验证同一换算（全部 +8，一一对上）★
+        ;     宽度累加器 : 0x685A37 写 [esp+0Ch] → 0x685B2B 读 [esp+14h]  (D8 44 24 14)
+        ;     strlen     : 0x685A61 写 [esp+14h] → 0x685BD4 读 [esp+1Ch]  (3B 7C 24 1C)
+        ;   我代码里在用的 0x14 / 0x1C 与此**完全吻合** —— 说明换算本身没错，
+        ;   错的只是我把 Font* 的槽位判断成了别处。
+        ;
+        ; ★★ 我为什么会连错三次（0x10 → 0x50 → 0x58）★★
+        ;   1) 上次崩溃 hta.exe0101 现场 EAX=3、崩在 fld [eax+2Ch]。
+        ;      真因是**漏了 [Font+0x40] 这层解引用** —— 旧代码把 Font* 直接
+        ;      当字形表基址，于是读到 [Font + 0x45*4] = [Font+0x114] = 3。
+        ;   2) 我却误判成「槽位取错了」，于是去凑 IDA 的 arg_N 标签，
+        ;      推出 0x50 / 0x58 —— 全部越出本函数栈帧（只 sub esp,2Ch），
+        ;      [P7诊断] 打印 Font*=0x00000000 正是读到帧外的铁证。
+        ;   **教训：崩溃点是解引用时，先怀疑少了一层/多了一层间接，
+        ;     而不是先去改栈槽。**
+        mov   ecx, dword ptr [esp+10h]     ; ★ Font*（与引擎 0x685BC9 同一槽）★
+
+        ; 诊断：记录 Font* 与字符，供一次性核对
+        mov   dword ptr [g_msrDiagFont], ecx
+        mov   eax, dword ptr [g_msrDiagCount]
+        cmp   eax, 6
+        jae   mw_diag_done
+        inc   eax
+        mov   dword ptr [g_msrDiagCount], eax
+        mov   dword ptr [g_msrDiagChar], edx
+    mw_diag_done:
+
+        mov   eax, offset g_cjkSlots
+        mov   edx, dword ptr [g_cjkSlotCount]
+        test  edx, edx
+        jz    mw_nodef
+        ; ★ 硬边界护栏：g_cjkSlots 是 MAX_CJK_TABLES(16) 项 × 12 字节 = 192 字节。
+        ;   循环**不能只靠计数器终止** —— 实测崩溃 hta.exe0102 就是这么来的：
+        ;   edx 用 dec 递减，dec 不置 CF，于是无条件回跳；一旦这个 Font*
+        ;   压根没被登记进 g_cjkSlots（tips 用的字体就没登记），
+        ;   edx 归零后继续减成 0xFFFFFFFF，eax 一路 +12 走出数组，
+        ;   最后 cmp [eax],ecx 读在 0x53B21000（DLL 映像尾边界）上炸掉。
+        ;   —— 教训：汇编里的循环**永远要有一条独立于计数器的地址边界判据**。
+    mw_gate:
+        cmp   eax, offset g_cjkSlots + MAX_CJK_TABLES * 12
+        jae   mw_nodef_noslot               ; ★ 地址护栏：不依赖计数器 ★
+        test  edx, edx
+        jz    mw_nodef_noslot               ; ★ 计数器判零（dec 不置 CF，必须显式测）★
+        cmp   dword ptr [eax], ecx         ; slot.font == Font* ?（一内存一寄存器，合法）
+        je    mw_gate_hit
+        add   eax, 12                      ; sizeof(CjkSlot)
+        dec   edx
+        jmp   mw_gate
+    mw_gate_hit:
+        cmp   dword ptr [eax+8], 0         ; ★ slot.ready（分批开闸就在这）
+        je    mw_nodef_notready
+        mov   edx, dword ptr [eax+4]       ; 该字体的 64K 表
+        test  edx, edx
+        jz    mw_nodef_notable
+        cmp   edx, 10000h
+        jb    mw_nodef_notable
+        cmp   edx, 7FFFFFFFh
+        jae   mw_nodef_notable
+        ; ★ 诊断：把真正命中的槽信息记下来（此前只记 Font*/字符，
+        ;   导致日志里"表=0 字形=0"看起来像失败，其实那两个变量从未被赋值）
+        mov   dword ptr [g_msrDiagTable], edx
+        mov   ecx, dword ptr [g_msrGbk]    ; ★ 扫到这儿 Font* 已用完，ecx 改作下标
+        mov   eax, dword ptr [edx+ecx*4]   ; 该 GBK 的字形
+        mov   dword ptr [g_msrDiagGlyph], eax
+        test  eax, eax
+        jz    mw_nodef_noglyph
+        cmp   eax, 10000h                  ; ★ 字形指针区间（P4 已验证的判据）★
+        jb    mw_nodef_noglyph
+        cmp   eax, 7FFFFFFFh
+        jae   mw_nodef_noglyph
+        fld   dword ptr [eax+2Ch]          ; ★ 真实 advance ★
+        inc   dword ptr [g_msrHitCjk]      ; ★ 诊断：汉字分支成功命中次数 ★
+        mov   ecx, dword ptr [g_msrAfterW] ; ★ jmp 绝对地址须先过寄存器
+        jmp   ecx                         ;   → 回 0x685B2B（引擎的 fadd）
+
+        ; ── 分类出口（只为诊断区分，语义同 mw_nodef）──
+        ;   ★ 关键：g_msrFail* 是**自进程启动以来的累计值** ★
+        ;     装配要跑好几秒，期间这些计数必然很大（实测"未就绪=352"），
+        ;     那是装配**还没填完**时的正常历史，不代表装配后的行为。
+        ;     所以额外记一份"装配完成后"的计数：装配收尾时把当前值
+        ;     快照到 g_msrPost*，两个值的差才是装配后的真实分布。
+    mw_nodef_noslot:
+        inc   dword ptr [g_msrFailNoSlot]
+        jmp   mw_nodef
+    mw_nodef_notready:
+        inc   dword ptr [g_msrFailNotReady]
+        jmp   mw_nodef
+    mw_nodef_notable:
+        inc   dword ptr [g_msrFailNoTable]
+        jmp   mw_nodef
+    mw_nodef_noglyph:
+        inc   dword ptr [g_msrFailNoGlyph]
+        jmp   mw_nodef
+
+    mw_ascii:
+        // ★ 与 sub_66FEA0 同语义：ecx=Font*，两级解引用 ★
+        //   sub_66FEA0 反编译：
+        //       v2 = *(this + 16) + 4*a2;      // this+0x40 = 表指针
+        //       if (*(_DWORD*)v2) return *(float*)(*(_DWORD*)v2 + 44);
+        //   ★ 上一轮崩溃 hta.exe0101 就是漏了第一级：
+        //     旧代码把 Font* 直接当表基址，于是 fld [Font + ch*4 + 0x2C]
+        //     对 'E'(0x45) 读到 [Font+0x114] = 3 → fld [3+0x2C] = [0x2F] 炸。
+        //   所以这里必须 **先 [Font+0x40] 取表**，再从表里取字形。
+        mov   ecx, dword ptr [esp+10h]     ; Font*（与引擎 0x685BC9 同一槽）
+        test  ecx, ecx
+        jz    mw_nodef
+        mov   eax, ecx
+        cmp   eax, 10000h                  ; Font* 必须落在引擎堆区
+        jb    mw_nodef
+        cmp   eax, 7FFFFFFFh
+        jae   mw_nodef
+        mov   eax, dword ptr [ecx+40h]     ; ★ 第一级：Font->字形表（256 项 vector）★
+        test  eax, eax
+        jz    mw_nodef
+        cmp   eax, 10000h
+        jb    mw_nodef
+        cmp   eax, 7FFFFFFFh
+        jae   mw_nodef
+        movzx edx, byte ptr [esp+4Ch]      ; 字符
+        mov   ecx, dword ptr [eax+edx*4]   ; ★ 第二级：表[ch] = 字形 ★
+        test  ecx, ecx
+        jz    mw_nodef
+        cmp   ecx, 10000h                  ; 字形指针区间（拦下 3 这种野值）
+        jb    mw_nodef
+        cmp   ecx, 7FFFFFFFh
+        jae   mw_nodef
+        fld   dword ptr [ecx+2Ch]          ; glyph+0x2C = advance
+        inc   dword ptr [g_msrHitAscii]    ; ★ 诊断：ASCII 分支命中次数 ★
+        mov   ecx, dword ptr [g_msrAfterW]
+        jmp   ecx
+
+    mw_nodef:
+        inc   dword ptr [g_msrHitNoDef]    ; ★ 诊断：缺字出口次数 ★
+        inc   dword ptr [g_msrPostNoDef]   ; ★ 诊断：装配后计数（见下方说明）
+        // ★ 不是 0 ★：引擎缺字分支 fld 的是 xmmword_9E6A74+8，
+        //   实测字节 00 00 00 3E = 0.125。误判成 0 会得出
+        //   「宽度永不累加所以永不折行」的错误结论。
+        fld   dword ptr [g_msrNoGlyphW]     ; 0.125f，与引擎缺字行为一致
+        mov   ecx, dword ptr [g_msrAfterW]
+        jmp   ecx
     }
 }
+
+// —— P8：度量双字节推进（jmp @0x685BD1，覆盖 13 字节）——
+//
+//   覆盖引擎这四条（0x685BD1..0x685BDE）：
+//       0x685BD1  add edi,1        3 字节   83 C7 01
+//       0x685BD4  cmp edi,[esp+1C] 4 字节   3B 7C 24 1C
+//       0x685BD8  jl  0x685A80     6 字节   0F 8C A2 FE FF FF
+//       0x685BDE  jmp 0x685C12     ← **不在补丁内**
+//                                    合计    13 字节
+//
+//   ★ 覆盖范围必须含 jl（6 字节），不能只盖 add+cmp（7 字节）——
+//     那样 jl 会落到补丁区中间的 NOP 上，执行结果不可控。
+//   ★ 上次 7cee8cf 失败的真因：把 add/cmp/jl 一起盖成 call+13B NOP，
+//     助手 ret 后落到 0x685BDE（jmp 退出循环），循环**只跑一轮**
+//     => 度量只算一个字符 => 文字整体右偏 + tooltip 连尺寸都没有。
+//     本助手自己完成 cmp + 回跳，**绝不依赖 fall-through**。
+//
+//   出口契约：edi 按 GBK 推进，然后必须自己跳回循环头或退出循环。
+//     除 edi 外全部寄存器原样保留（含 ebx/bl —— 引擎契约要求）。
+__declspec(naked) void __cdecl PathD_MsrAdvanceB() {
+    __asm {
+        // 看当前字节决定推进量：GBK 前导字节且未越界 -> 2，否则 1
+        movzx eax, byte ptr [esp+4Ch]      ; 当前字符 b1（★ 栈槽 ★）
+        add   edi, 1                        ; ★ 先按单字节推进（ASCII 路径不变）
+        cmp   eax, 81h
+        jb    mb_loop
+        // 越界检查：edi（已 +1）必须 < strlen，即 b1+1 < strlen
+        cmp   edi, dword ptr [esp+1Ch]
+        jge   mb_loop                       // 后继字节不存在 -> 只 +1
+        inc   edi                           ; ★ 双字节：+2
+    mb_loop:
+        cmp   edi, dword ptr [esp+1Ch]      ; edi < strlen ?
+        jl    mb_go
+        mov   eax, dword ptr [g_msrLoopExit] ; 退出 -> 0x685C12
+        jmp   eax
+    mb_go:
+        mov   eax, dword ptr [g_msrLoopHead] ; 回 0x685A80（★ jmp 进入，栈上无返回地址 ⇒ 绝不能 ret）
+        jmp   eax
+    }
+}
+
+//   ★★★ 上次 7cee8cf 失败的真因（务必不要重犯）★★★
 
 // —— P2/P3：预扫描遍历（5 字节位置：add edi,1 + jmp）——
 //
