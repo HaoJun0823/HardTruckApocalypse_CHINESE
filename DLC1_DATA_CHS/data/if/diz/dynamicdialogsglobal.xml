@@ -266,7 +266,7 @@
 		name="Dynamic00_DrugsNoMoney"
 		text="呃……给我留着，我这就回去取钱。"
 		role="PLAYER"
-		scriptCondition="GetPlayerMoney() < ConversationWnd:GetCurrentDynamicQuest():GetReward()"
+		scriptCondition="GetPlayerMoney() &lt; ConversationWnd:GetCurrentDynamicQuest():GetReward()"
 		scriptResult="ConversationWnd:EndConversation()" />
 
 	<Reply

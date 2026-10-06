@@ -8,7 +8,7 @@
 	<Pages>
 		<Page
 			id="1"
-			text="游戏设计 "Targem Games""
+			text="游戏设计 &quot;Targem Games&quot;"
 			modelName	= ""
 			modelSkin	= "0"
 			modelCfg	= "0"
@@ -17,7 +17,7 @@
 
 		<Page
 			id="2"
-			text="内部制作人|| Stanislav "Scorp" Skorb"
+			text="内部制作人|| Stanislav &quot;Scorp&quot; Skorb"
 			modelName	= "r2_man"
 			modelSkin	= "0"
 			modelCfg	= "294"
@@ -35,7 +35,7 @@
 
 		<Page
 			id="4"
-			text="项目经理 || Evgeniy "rrr" Khrunov"
+			text="项目经理 || Evgeniy &quot;rrr&quot; Khrunov"
 			modelName	= "r2_man"
 			modelSkin	= "2"
 			modelCfg	= "368"
@@ -44,7 +44,7 @@
 
 		<Page
 			id="5"
-			text="编剧|| Alexey "Alex TG" Tchestnikh"
+			text="编剧|| Alexey &quot;Alex TG&quot; Tchestnikh"
 			modelName	= "r2_man"
 			modelSkin	= "0"
 			modelCfg	= "87"
@@ -53,7 +53,7 @@
 
 		<Page
 			id="6"
-			text="首席程序员 || Anton "anger" Savin"
+			text="首席程序员 || Anton &quot;anger&quot; Savin"
 			modelName	= "r2_man"
 			modelSkin	= "0"
 			modelCfg="20"
@@ -62,7 +62,7 @@
 
 		<Page
 			id="7"
-			text="首席设计师 || Alexey "Alex TG" Tchestnikh"
+			text="首席设计师 || Alexey &quot;Alex TG&quot; Tchestnikh"
 			modelName	= "r2_man"
 			modelSkin	= "0"
 			modelCfg	= "87"
@@ -71,7 +71,7 @@
 
 		<Page
 			id="8"
-			text="首席美术 || Alexander "Alex ML" Magrushin"
+			text="首席美术 || Alexander &quot;Alex ML&quot; Magrushin"
 			modelName	= "r2_man"
 			modelSkin	= "2"
 			modelCfg	= "8"
@@ -80,7 +80,7 @@
 
 		<Page
 			id="9"
-			text="设计师 || Denis "mif2000" Galanin| Sergey "Sinx" Udurminskiy| Alexey "zazaz" Anufriev| Stanislav "Scorp" Skorb| Boris "gorg" Smirnov"
+			text="设计师 || Denis &quot;mif2000&quot; Galanin| Sergey &quot;Sinx&quot; Udurminskiy| Alexey &quot;zazaz&quot; Anufriev| Stanislav &quot;Scorp&quot; Skorb| Boris &quot;gorg&quot; Smirnov"
 			modelName	= "r3_man"
 			modelSkin	= "2"
 			modelCfg	= "1917"
@@ -89,7 +89,7 @@
 
 		<Page
 			id="10"
-			text="程序员|| Elena "SoftKitty" Evdokimova| Ivan "Vano" Vlasov| Ilya "Chosgen" Ruzakov | Maxim "Shadow" Sarmanov | Sergey "Ice Cat" Kluchkovsky| Igor "Yoryh" Dyagterev"
+			text="程序员|| Elena &quot;SoftKitty&quot; Evdokimova| Ivan &quot;Vano&quot; Vlasov| Ilya &quot;Chosgen&quot; Ruzakov | Maxim &quot;Shadow&quot; Sarmanov | Sergey &quot;Ice Cat&quot; Kluchkovsky| Igor &quot;Yoryh&quot; Dyagterev"
 			modelName	= "r2_man"
 			modelSkin	= "1"
 			modelCfg	= "140"
@@ -98,7 +98,7 @@
 
 		<Page
 			id="11"
-			text="美术|| Ivan Snigirev| Evgeny "Ezhin" Goltsov| Vladimir "Price" Seleznev| Stanislav "Staz" Cherva"
+			text="美术|| Ivan Snigirev| Evgeny &quot;Ezhin&quot; Goltsov| Vladimir &quot;Price&quot; Seleznev| Stanislav &quot;Staz&quot; Cherva"
 			modelName	= "r3_man"
 			modelSkin	= "1"
 			modelCfg	= "1529"
@@ -107,7 +107,7 @@
 
 		<Page
 			id="12"
-			text="美术|| Rustam "Zychi" Turey| Evgeny  Tokarev| Sergey "Mega" Mitryaev| Viktor "Osymbosi" Koryakin| Roman Latynov"
+			text="美术|| Rustam &quot;Zychi&quot; Turey| Evgeny  Tokarev| Sergey &quot;Mega&quot; Mitryaev| Viktor &quot;Osymbosi&quot; Koryakin| Roman Latynov"
 			modelName	= "r3_man"
 			modelSkin="1"
 			modelCfg="1529"
@@ -116,7 +116,7 @@
 
 		<Page
 			id="13"
-			text="关卡设计师|| Denis "mif2000" Galanin| Sergey "Sinx" Udurminskiy| Artem "Solo" Solovev| Daniil "DiKiller" Kondratiev| Stanislav "Staz" Cherva"
+			text="关卡设计师|| Denis &quot;mif2000&quot; Galanin| Sergey &quot;Sinx&quot; Udurminskiy| Artem &quot;Solo&quot; Solovev| Daniil &quot;DiKiller&quot; Kondratiev| Stanislav &quot;Staz&quot; Cherva"
 			modelName	= "r3_man"
 			modelSkin	= "2"
 			modelCfg	= "1917"
@@ -125,7 +125,7 @@
 
 		<Page
 			id="14"
-			text="界面设计师|| Mikhail "Zai" Matvienko||特效|| Alexey "Dal" Lobanov"
+			text="界面设计师|| Mikhail &quot;Zai&quot; Matvienko||特效|| Alexey &quot;Dal&quot; Lobanov"
 			modelName	= "r2_man"
 			modelSkin	= "2"
 			modelCfg	= "104"
@@ -143,7 +143,7 @@
 
 		<Page
 			id="16"
-			text="质量保证 || Vyacheslav "Ls" Avdeev"
+			text="质量保证 || Vyacheslav &quot;Ls&quot; Avdeev"
 			modelName	= "r2_man"
 			modelSkin	= "2"
 			modelCfg	= "84"
@@ -152,7 +152,7 @@
 
 		<Page
 			id="17"
-			text="公关经理|| Svetlana "Crystal" Tchestnikh"
+			text="公关经理|| Svetlana &quot;Crystal&quot; Tchestnikh"
 			modelName	= "r2_woman"
 			modelSkin	= "0"
 			modelCfg	= "20"
@@ -179,7 +179,7 @@
 
 		<Page
 			id="20"
-			text="发行商 "Buka Entertainment""
+			text="发行商 &quot;Buka Entertainment&quot;"
 			modelName	= "r2_man"
 			modelSkin	= "0"
 			modelCfg	= "0"

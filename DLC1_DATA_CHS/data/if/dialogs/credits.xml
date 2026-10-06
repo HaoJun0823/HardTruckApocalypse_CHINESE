@@ -7,7 +7,7 @@
 	<Pages>
 		<Page
 			id="2"
-			text="游戏设计||"Targem Games""
+			text="游戏设计||&quot;Targem Games&quot;"
 			modelName="Sam_mask"
 			modelSkin="0"
 			modelCfg="0"
@@ -16,7 +16,7 @@
 
 		<Page
 			id="12"
-			text="@CC990000制作人|@CC000000Stanislav "Scorp" Scorb||@CC990000技术总监|@CC000000Alex Skryabin||@CC990000美术总监|@CC000000Alex "Alex ML" Magushin"
+			text="@CC990000制作人|@CC000000Stanislav &quot;Scorp&quot; Scorb||@CC990000技术总监|@CC000000Alex Skryabin||@CC990000美术总监|@CC000000Alex &quot;Alex ML&quot; Magushin"
 			modelName="Sam_mask"
 			modelSkin="0"
 			modelCfg="0"
@@ -25,7 +25,7 @@
 
 		<Page
 			id="13"
-			text="@CC990000项目经理|@CC000000Boris "gorg" Smirnov||@CC990000首席设计师|@CC000000Denis "mif2000" Galanin||@CC990000首席程序员|@CC000000Anton "anger" Savin||@CC990000首席美术|@CC000000Roman Latynov"
+			text="@CC990000项目经理|@CC000000Boris &quot;gorg&quot; Smirnov||@CC990000首席设计师|@CC000000Denis &quot;mif2000&quot; Galanin||@CC990000首席程序员|@CC000000Anton &quot;anger&quot; Savin||@CC990000首席美术|@CC000000Roman Latynov"
 			modelName="Sam_mask"
 			modelSkin="0"
 			modelCfg="0"
@@ -34,7 +34,7 @@
 
 		<Page
 			id="14"
-			text="@CC990000设计师|@CC000000Serge "Sinx" Udurminskiy|@CC000000Alex "zazaz" Anufriev|@CC000000Jerzy Krasowski||@CC990000编剧|@CC000000Alexander Brusin"
+			text="@CC990000设计师|@CC000000Serge &quot;Sinx&quot; Udurminskiy|@CC000000Alex &quot;zazaz&quot; Anufriev|@CC000000Jerzy Krasowski||@CC990000编剧|@CC000000Alexander Brusin"
 			modelName="Sam_mask"
 			modelSkin="0"
 			modelCfg="0"
@@ -43,7 +43,7 @@
 
 		<Page
 			id="15"
-			text="@CC990000程序员|@CC000000Elena "SoftKitty" Evdokimova|@CC000000Ilya "Chosgen" Ruzakov|@CC000000Ivan "Vano" Vlasov|@CC000000Maxim "Shadow" Sarmanov"
+			text="@CC990000程序员|@CC000000Elena &quot;SoftKitty&quot; Evdokimova|@CC000000Ilya &quot;Chosgen&quot; Ruzakov|@CC000000Ivan &quot;Vano&quot; Vlasov|@CC000000Maxim &quot;Shadow&quot; Sarmanov"
 			modelName="Sam_mask"
 			modelSkin="0"
 			modelCfg="0"
@@ -52,7 +52,7 @@
 
 		<Page
 			id="16"
-			text="@CC990000美术|@CC000000Stas "Staz" Cherva|@CC000000Olga "Kot" Kotyuh|@CC000000Victor "Osymbosi" Korjakin|@CC000000Vladimir "Price" Seleznev"
+			text="@CC990000美术|@CC000000Stas &quot;Staz&quot; Cherva|@CC000000Olga &quot;Kot&quot; Kotyuh|@CC000000Victor &quot;Osymbosi&quot; Korjakin|@CC000000Vladimir &quot;Price&quot; Seleznev"
 			modelName="Sam_mask"
 			modelSkin="0"
 			modelCfg="0"
@@ -61,7 +61,7 @@
 
 		<Page        
 			id="17"
-			text="@CC990000美术|@CC000000Yaroslav "Puntus" Puntus|@CC000000Alexander "WHITE" Belyaev|@CC000000Rustam "Zychi" Turey"
+			text="@CC990000美术|@CC000000Yaroslav &quot;Puntus&quot; Puntus|@CC000000Alexander &quot;WHITE&quot; Belyaev|@CC000000Rustam &quot;Zychi&quot; Turey"
 			modelName="Sam_mask"
 			modelSkin="0"
 			modelCfg="0"
@@ -70,7 +70,7 @@
 
 		<Page        
 			id="18"
-			text="@CC990000界面设计|@CC000000Mikhail "Zai" Matvienko||@CC990000音乐与音效|@CC000000Anton Popov||@CC990000特效|@CC000000Alex "Dal" Lobanov"
+			text="@CC990000界面设计|@CC000000Mikhail &quot;Zai&quot; Matvienko||@CC990000音乐与音效|@CC000000Anton Popov||@CC990000特效|@CC000000Alex &quot;Dal&quot; Lobanov"
 			modelName="Sam_mask"
 			modelSkin="0"
 			modelCfg="0"
@@ -79,7 +79,7 @@
 
 		<Page        
 			id="19"
-			text="@CC990000质量保证|@CC000000Vjacheslav "Ls" Avdeyev|@CC000000Andrew "Akari" Antonov|@CC000000Konstantin "CruelDwarf" Obvintsev|@CC000000Alexander "Sinx" Oleshuk||@CC990000公关|@CC000000Svetlana "Crystal" Chestnikh"
+			text="@CC990000质量保证|@CC000000Vjacheslav &quot;Ls&quot; Avdeyev|@CC000000Andrew &quot;Akari&quot; Antonov|@CC000000Konstantin &quot;CruelDwarf&quot; Obvintsev|@CC000000Alexander &quot;Sinx&quot; Oleshuk||@CC990000公关|@CC000000Svetlana &quot;Crystal&quot; Chestnikh"
 			modelName="Sam_mask"
 			modelSkin="0"
 			modelCfg="0"
@@ -88,7 +88,7 @@
 
 		<Page        
 			id="20"
-			text="@CC990000特别感谢|@CC000000Olga Prohorova|Tatiana "Liska" Zhuro|Ilya "Dr.Garret" Sadchikov"
+			text="@CC990000特别感谢|@CC000000Olga Prohorova|Tatiana &quot;Liska&quot; Zhuro|Ilya &quot;Dr.Garret&quot; Sadchikov"
 			modelName="Sam_mask"
 			modelSkin="0"
 			modelCfg="0"
@@ -97,7 +97,7 @@
 
 		<Page
 			id="30"
-			text="公司||"Buka Entertainment""
+			text="公司||&quot;Buka Entertainment&quot;"
 			modelName="Sam_mask"
 			modelSkin="0"
 			modelCfg="0"
@@ -132,7 +132,7 @@
 
 		<Page        
 			id="35"
-			text="@CC990000执行制作人|@CC000000Alexander Pak||@CC990000质量保证团队主管|@CC000000Eugene "Uncle_Fu" Popov"
+			text="@CC990000执行制作人|@CC000000Alexander Pak||@CC990000质量保证团队主管|@CC000000Eugene &quot;Uncle_Fu&quot; Popov"
 			modelName="Sam_mask"
 			modelSkin="0"
 			modelCfg="0"
@@ -141,7 +141,7 @@
 
 		<Page        
 			id="36"
-			text="@CC990000质量保证|@CC000000Ovsyannikova "Lio" Lidia|Dmitriev "IVWarboss" Igor|Raynov "Pa" Ivan|Popov "Uncle_Fu" Eugene|Popenkov "StC" Alex"
+			text="@CC990000质量保证|@CC000000Ovsyannikova &quot;Lio&quot; Lidia|Dmitriev &quot;IVWarboss&quot; Igor|Raynov &quot;Pa&quot; Ivan|Popov &quot;Uncle_Fu&quot; Eugene|Popenkov &quot;StC&quot; Alex"
 			modelName="Sam_mask"
 			modelSkin="0"
 			modelCfg="0"
@@ -150,7 +150,7 @@
 
 		<Page        
 			id="37"
-			text="@CC990000质量保证|@CC000000Bratolubova "Prolonga" Maria|Petrov "Pifagor" Alex|Anufriev "Solovey" Dmitry|Larin "BM" Dmitry"
+			text="@CC990000质量保证|@CC000000Bratolubova &quot;Prolonga&quot; Maria|Petrov &quot;Pifagor&quot; Alex|Anufriev &quot;Solovey&quot; Dmitry|Larin &quot;BM&quot; Dmitry"
 			modelName="Sam_mask"
 			modelSkin="0"
 			modelCfg="0"
@@ -159,7 +159,7 @@
 
 		<Page        
 			id="38"
-			text="@CC990000测试员|@CC000000Dmitry "DragonVD" Volkov|Artem "DarkOsa" Osminin|Anton "Aries" Kirsh|Ivan "Shizoman" Larionov|Alexander "Mrutoy_men" Sedykh"
+			text="@CC990000测试员|@CC000000Dmitry &quot;DragonVD&quot; Volkov|Artem &quot;DarkOsa&quot; Osminin|Anton &quot;Aries&quot; Kirsh|Ivan &quot;Shizoman&quot; Larionov|Alexander &quot;Mrutoy_men&quot; Sedykh"
 			modelName="Sam_mask"
 			modelSkin="0"
 			modelCfg="0"
@@ -168,7 +168,7 @@
 
 		<Page        
 			id="39"
-			text="@CC990000测试员|@CC000000Maria "Floddy" Fedorova|Roman "Kojima" Kusayko|Andrew "Rabbal" Rostanin|Alex "Nexus" Sherihov|Vasily "Baza" Kuznetsov"
+			text="@CC990000测试员|@CC000000Maria &quot;Floddy&quot; Fedorova|Roman &quot;Kojima&quot; Kusayko|Andrew &quot;Rabbal&quot; Rostanin|Alex &quot;Nexus&quot; Sherihov|Vasily &quot;Baza&quot; Kuznetsov"
 			modelName="Sam_mask"
 			modelSkin="0"
 			modelCfg="0"
@@ -177,7 +177,7 @@
 
 		<Page        
 			id="40"
-			text="@CC990000测试员|@CC000000Maxim "DX" Popov|Konstatnin "Master" Izmailov|Kirill "Lfo" Safronov|Denis "SoftStar" Gubin|Vasily "Rober" Kuznetsov"
+			text="@CC990000测试员|@CC000000Maxim &quot;DX&quot; Popov|Konstatnin &quot;Master&quot; Izmailov|Kirill &quot;Lfo&quot; Safronov|Denis &quot;SoftStar&quot; Gubin|Vasily &quot;Rober&quot; Kuznetsov"
 			modelName="Sam_mask"
 			modelSkin="0"
 			modelCfg="0"
@@ -186,7 +186,7 @@
 
 		<Page        
 			id="41"
-			text="@CC990000测试员|@CC000000Andrew "Armeec" Sarosek|Artem "Minfor" Timohin|Nikita "Septer" Stepanov|Alexandra "LaraCroft" Fedonnikova"
+			text="@CC990000测试员|@CC000000Andrew &quot;Armeec&quot; Sarosek|Artem &quot;Minfor&quot; Timohin|Nikita &quot;Septer&quot; Stepanov|Alexandra &quot;LaraCroft&quot; Fedonnikova"
 			modelName="Sam_mask"
 			modelSkin="0"
 			modelCfg="0"
