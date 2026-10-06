@@ -62,7 +62,7 @@
 
 	<string
 		id="MoveVehicleItemsToPlayer"
-		value="全部转移回去" />
+		value="全部取回" />
 
 	<string
 		id="MoveCabinItemsFromPlayer"
@@ -546,7 +546,7 @@
 
 	<string
 		id="SkinAlreadySet"
-		value="这就是你当前车辆的颜色" />
+		value="这就是你现在的车色" />
 
 	<string
 		id="Skinning"
@@ -710,7 +710,7 @@
 
 	<string
 		id="EnterVehicleTrade"
-		value="购买流程下一阶段" />
+		value="进入购买下一步" />
 
 	<string
 		id="VehiclePrice"

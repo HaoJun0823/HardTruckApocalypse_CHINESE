@@ -102,7 +102,7 @@
 
 	<Reply
 		name="r4m2_Bar_Scientist_1_N10"
-		text="别故弄玄虚了。告诉我他在哪里。"
+		text="别卖关子了。告诉我他在哪里。"
 		role="PLAYER"
 		nextReplies="r4m2_Bar_Scientist_1_N11" />
 
@@ -1407,7 +1407,7 @@
 
 	<Reply
 		name="r3m2_Oracle_Oracle_1_P02"
-		text="回答我的问题，然后继续睡你的觉。"
+		text="回答我的问题，然后继续打你的盹。"
 		role="PLAYER"
 		nextReplies="r3m2_Oracle_Oracle_1_N03" />
 
@@ -1971,7 +1971,7 @@
 
 	<Reply
 		name="Set_Bar_MainDruid_1_P08"
-		text="我身经百战都赢了。没理由这次会不同。"
+		text="我身经百战都赢了。没理由这次会输。"
 		role="PLAYER"
 		scriptResult="TakeQuest('r3m1_ClearSanctuary'); TActivate('trCreateLoggersMech'); EndConversation()" />
 
@@ -3177,7 +3177,7 @@
 
 	<Reply
 		name="Dlg_pl_000539"
-		text="Axel败了，你在这里没有权威了。如果我不毁了这里，别人也会。我数到三就攻击你们。一……二……"
+		text="Axel败了，你在这里没有权威了。如果我不毁了这里，别人也会。我数到三就动手。一……二……"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000540" />
 
@@ -3615,7 +3615,7 @@
 
 	<Reply
 		name="Dlg_pl_000650"
-		text="算你走运我今天心情好。你这种挡在拯救世界路上的人真让我发疯。"
+		text="算你走运我今天心情好。你这种挡我拯救世界的人真让我发疯。"
 		role="PLAYER"
 		scriptResult="CompleteQuest('r1m3_DestroyRadiationSource');  TActivate('RolikBegin_UFO');  LeaveTown(true)" />
 
@@ -4328,7 +4328,7 @@
 
 	<Reply
 		name="r1m4_UnknownBar_Customer5_1_N01"
-		text="我坐在这里自怜自艾。"
+		text="我坐在这里自怨自艾。"
 		role="NPC"
 		nextReplies="r1m4_UnknownBar_Customer5_1_N02" />
 
@@ -4557,7 +4557,7 @@
 
 	<Reply
 		name="r1m4_NearOlme_Leader1_1_P02"
-		text="无所谓。上车，我带你去找你的人。"
+		text="小事一桩。上车，我带你去找你的人。"
 		role="PLAYER"
 		nextReplies="r1m4_NearOlme_Leader1_1_N03" />
 
@@ -4583,7 +4583,7 @@
 
 	<Reply
 		name="r1m4_Storage_Guard1_1_N03"
-		text="让我们来判断。你是谁？"
+		text="让我们看看。你是谁？"
 		role="NPC"
 		nextReplies="r1m4_Storage_Guard1_1_N04" />
 
@@ -4670,7 +4670,7 @@
 
 	<Reply
 		name="r1m4_Storage_Guard1_3_N01"
-		text="不敢相信我的眼睛。外人守信了，我们的领袖回来了！"
+		text="不敢相信我的眼睛。这外乡人守信用，我们的领袖回来了！"
 		role="NPC"
 		scriptCondition="QuestStatus('FreeExtremistLeader_Quest4')==Q_TAKEN"
 		scriptResult="CompleteQuest('FreeExtremistLeader_Quest4')"
@@ -4725,7 +4725,7 @@
 
 	<Reply
 		name="Olme_Bar_Customer2_3_N04a"
-		text="酷。"
+		text="行。"
 		role="PLAYER"
 		scriptResult="EndConversation();" />
 <!--Root/r1m4/Опциональные/Поиски муженька-->
@@ -4800,7 +4800,7 @@
 
 	<Reply
 		name="r1m4_SomeWhere_Husbent1_1_N03"
-		text="我烦死她了。男人就不能跟朋友出去喝个晚上？！"
+		text="我被她烦死了。男人就不能跟朋友出去喝个晚上？！"
 		role="NPC"
 		nextReplies="r1m4_SomeWhere_Husbent1_1_N04" />
 
@@ -4920,7 +4920,7 @@
 
 	<Reply
 		name="Dlg_pl_001081"
-		text="不对，我闻到阴谋的味道。"
+		text="不对，我闻到阴谋的味道了。"
 		role="PLAYER"
 		scriptResult=" EndConversation()" />
 
@@ -4945,7 +4945,7 @@
 
 	<Reply
 		name="Dlg_pl_001083"
-		text="该死！原来你们就是一帮劫匪。要什么拿什么，但别杀我。"
+		text="该死！原来你们就是一帮劫匪。要什么随便拿，别杀我就行。"
 		role="PLAYER"
 		nextReplies="Dlg_npc_001085" />
 
@@ -4957,7 +4957,7 @@
 
 	<Reply
 		name="Dlg_pl_001086"
-		text="又一次轻信别人……"
+		text="又轻信了别人一次……"
 		role="PLAYER"
 		scriptResult="CompleteQuest('r1m3_BonnyAndKlideQuest');  AddPlayerMoney( -500 );  EndConversation()" />
 <!--Root/r1m3/Опциональные/Безумец в Пеште-->
@@ -5280,7 +5280,7 @@ EndConversation()" />
 
 	<Reply
 		name="MininWorker_hellodlg15"
-		text="那我的动力呢？我想要点现金。"
+		text="那我图什么？我要现金。"
 		role="NPC"
 		scriptCondition="IsQuestTaken('d_TalkAboutVrataInMinin_Quest')   and   not(IsQuestComplete('d_TalkAboutVrataInMinin_Quest'))  and  (GetCurNpc():GetSpokenCount() > 0)"
 		nextReplies="Dlg_pl_d3d206 Dlg_pl_d3d207" />
@@ -5396,13 +5396,13 @@ EndConversation()" />
 
 	<Reply
 		name="Dlg_npc_xyz454"
-		text="少教我怎么做生意，年轻人。"
+		text="少教我怎么做生意，小子。"
 		role="NPC"
 		nextReplies="Dlg_pl_xyz455" />
 
 	<Reply
 		name="Dlg_pl_xyz455"
-		text="真是的！"
+		text="切！"
 		role="PLAYER"
 		scriptResult="CompleteQuestIfTaken('d_TunelInAsgard_Quest');  CompleteQuestIfTaken('r1m3_ToLisaToAsgard');  TActivate('TUNNELLOCATION');  EndConversation()" />
 
@@ -5433,7 +5433,7 @@ EndConversation()" />
 
 	<Reply
 		name="Dlg_pl_xyz457"
-		text="好多钱……好吧，我想我得付。"
+		text="好贵……好吧，我付。"
 		role="PLAYER"
 		scriptCondition="GetPlayerMoney() >= 10000"
 		nextReplies="Dlg_npc_xyz458" />
@@ -5761,13 +5761,13 @@ EndConversation()" />
 
 	<Reply
 		name="Dlg_npc_dd2200"
-		text="我们为什么不直接拿你的钱然后把你埋了？"
+		text="我们为什么不直接拿了你的钱再把你埋了？"
 		role="NPC"
 		nextReplies="Dlg_pl_dd2201" />
 
 	<Reply
 		name="Dlg_npc_dd2202"
-		text="我真的很欣赏你的幽默感！付钱走人。但如果再让我看到你，我杀了你！"
+		text="你的幽默感真不错！付钱走人。但再让我看到你，就杀了你！"
 		role="NPC"
 		nextReplies="Dlg_pl_dd2203" />
 

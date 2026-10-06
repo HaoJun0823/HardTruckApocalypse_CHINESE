@@ -62,7 +62,7 @@
 
 	<string
 		id="MoveVehicleItemsToPlayer"
-		value="全部转移回去" />
+		value="全部取回" />
 
 	<string
 		id="MoveCabinItemsFromPlayer"
@@ -90,7 +90,7 @@
 
 	<string
 		id="TooRich"
-		value="@ffff0000你买不起这个物品。" />
+		value="@ffff0000你买不起这东西。" />
 
 	<string
 		id="BuyPriceByTown"
@@ -518,7 +518,7 @@
 
 	<string
 		id="SkinAlreadySet"
-		value="这就是你当前车辆的颜色" />
+		value="这就是你现在的车色" />
 
 	<string
 		id="Skinning"
@@ -682,7 +682,7 @@
 
 	<string
 		id="EnterVehicleTrade"
-		value="购买流程下一阶段" />
+		value="进入购买下一步" />
 
 	<string
 		id="VehiclePrice"
@@ -814,7 +814,7 @@
 
 	<string
 		id="ShowNoncompletedQuests"
-		value="仅显示已完成任务" />
+		value="仅显示未完成任务" />
 
 	<string
 		id="ShowQuestItems"

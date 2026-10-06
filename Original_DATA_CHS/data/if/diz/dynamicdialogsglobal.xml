@@ -126,7 +126,7 @@
 
 	<Reply
 		name="Dlg_npc_000017"
-		text="你敢信吗，一切太平！所以暂时不需要你的服务。"
+		text="你信吗，一切太平！所以暂时不需要你的服务。"
 		role="NPC"
 		nextReplies="Dlg_pl_000018" />
 
@@ -168,7 +168,7 @@
 
 	<Reply
 		name="Dynamic00_Hunt00_npc0"
-		text="狩猎季开始了。杀敌越多，挣钱越多。每具尸体我们付 %3d 金币。狩猎时间结束后你可以领取酬劳。"
+		text="狩猎季开始了。杀敌越多，挣钱越多。每杀一个，我们付 %3d 金币。狩猎时间结束后你可以领取酬劳。"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 
@@ -180,7 +180,7 @@
 
 	<Reply
 		name="Dynamic00_Hunt01_npc0"
-		text="匪徒真把我们惹火了！他们见车就抢。得有人教训他们一下。趁着人们还怒火中烧时干掉几个，每具尸体你可得 %3d 金币。"
+		text="匪徒真把我们惹火了！他们见车就抢。得有人教训他们一下。趁着人们还怒火中烧时干掉几个，每杀一个，可得 %3d 金币。"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 </DialogsResource>
