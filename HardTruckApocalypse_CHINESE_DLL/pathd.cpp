@@ -217,6 +217,39 @@ uintptr_t g_uvGet    = 0;       // sub_66FE10
 typedef unsigned int (__thiscall *VecResizeFn)(void* self, unsigned int n, int value);
 VecResizeFn g_vecResize = nullptr;
 bool        g_vecResizeOk = false;   // 自检通过才敢用
+
+// ★★★ 引擎堆分配器 —— 修复退出崩溃与堆破坏的关键 ★★★
+//
+//   背景：AppendPages 原来用 VirtualAlloc 给字体的**页表**(Font+0x30)分配
+//   新缓冲，然后整体替换 vector 的 _Myfirst/_Mylast/_Myend。
+//   引擎 ~Font 析构时会用自己的 free 去释放 _Myfirst ——
+//   而 VirtualAlloc 出来的内存**绝对不能**被 free，于是崩在
+//       0x748EF2  cmp dword ptr [edx-4], 0xDEADBEEF     (0xC0000005)
+//   这就是 hta.exe0081 / 0092 两个转储里同一个地址的由来。
+//
+//   引擎自己的堆（IDA 实证）：
+//     sub_748DC0 = alloc  块头写 0xDEADBEEF，返回 ptr+12 处的用户指针
+//     sub_748EE0 = free   校验 [ptr-4] == 0xDEADBEEF
+//     sub_748FA0 = realloc（先 alloc 再拷再 free，证明两者配对）
+//     sub_589410 = alloc 的公开包装，__fastcall(ecx=size, edx, stack)，
+//                  内部取 dword_A0A880 作为管理器 this
+//
+//   用引擎的 alloc 分配页表，free 就能正确配对，堆破坏消失。
+//
+//   ★ 签名说明（逐字节核实 0x589410）★
+//       8B 44 24 04   mov eax,[esp+arg_0]
+//       50            push eax        ← 第 3 参数
+//       52            push edx        ← 第 2 参数
+//       51            push ecx        ← 第 1 参数（= size）
+//       8B 0D ?? ?? ?? ??  mov ecx, dword_A0A880
+//       E8 ?? ?? ?? ??     call sub_748DC0
+//       C2 04 00      retn 4          ← 被调用方清栈 4 字节
+//     => __fastcall 带 1 个栈参数；ecx 是 size，edx 与栈参数在小块
+//        （<1024）路径下不使用，传 0 即可。
+typedef void* (__fastcall *EngineAllocFn)(uint32_t size, void* a2, int a3);
+static EngineAllocFn g_engineAlloc = nullptr;
+// 0x589410 的特征码（a0a880 与 call 目标用 ?? 通配）
+#define SIG_ENGINE_ALLOC "8B 44 24 04 50 52 51 8B 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? C2 04 00"
 bool        g_skipPatch  = false;    // HTA_CHS_NO_PATCH=1  时跳过补丁（二分定位用）
 bool        g_skipExpand = false;    // HTA_CHS_NO_EXPAND=1 时跳过扩表（二分定位用）
 bool        g_skipP5     = false;    // HTA_CHS_NO_P5=1   跳过 P5 主遍历助手
@@ -411,61 +444,95 @@ bool WriteBlockSafe(uintptr_t at, const uint8_t* buf, size_t n, const char* what
     }
 
     const DWORD self = GetCurrentThreadId();
-    for (int attempt = 0; attempt < 40; ++attempt) {
-        // ── 1) 快照全部线程并挂起 ────────────────────────────────────
-        HANDLE snap = CreateToolhelp32Snapshot(TH32CS_SNAPTHREAD, 0);
-        if (snap == INVALID_HANDLE_VALUE) {
-            memcpy((void*)at, buf, n);
-            FlushInstructionCache(GetCurrentProcess(), (LPVOID)at, n);
-            VirtualProtect((LPVOID)at, n, old, &old);
-            Logf("pathd: [%s] 线程快照失败，退化为直接写入", what);
-            return true;
-        }
 
-        HANDLE held[512]; int heldN = 0; bool busy = false;
+    // ── 线程句柄只快照一次，重试时复用 ──────────────────────────────
+    //   原写法每次重试都 CreateToolhelp32Snapshot + OpenThread 全部线程。
+    //   游戏有几十个线程，40 次重试 = 上千次系统调用，是"补丁安装耗时
+    //   11 秒"的主因之一。线程集合在运行期基本不变，缓存即可。
+    DWORD tids[512]; int tidN = 0;
+    HANDLE snap = CreateToolhelp32Snapshot(TH32CS_SNAPTHREAD, 0);
+    if (snap != INVALID_HANDLE_VALUE) {
         THREADENTRY32 te; te.dwSize = sizeof(te);
         if (Thread32First(snap, &te)) {
             do {
                 if (te.th32OwnerProcessID != GetCurrentProcessId()) continue;
                 if (te.th32ThreadID == self) continue;
-                if (heldN >= 512) break;
-                HANDLE th = OpenThread(THREAD_SUSPEND_RESUME | THREAD_GET_CONTEXT |
-                                       THREAD_QUERY_INFORMATION, FALSE, te.th32ThreadID);
-                if (!th) continue;
-                if (SuspendThread(th) == (DWORD)-1) { CloseHandle(th); continue; }
-                held[heldN++] = th;
+                if (tidN >= 512) break;
+                tids[tidN++] = te.th32ThreadID;
             } while (Thread32Next(snap, &te));
         }
         CloseHandle(snap);
+    }
 
-        // ── 2) 校验没有线程停在补丁区间内部 ──────────────────────────
-        //   ★ 危险区必须往前多让 15 字节 ★
-        //   x86 单条指令最长 15 字节。若某线程 EIP 落在 at 之前、而那条
-        //   指令恰好跨过 at 边界，补丁后从 EIP 重新解码就会得到不同的
-        //   指令 —— 同样是不一致状态。所以 [at-15, at+n) 都算"忙"。
+    HANDLE held[512];
+    int heldN = 0;
+    const DWORD t0 = GetTickCount();
+    const DWORD kTotalBudgetMs = 3000;      // ★ 总超时 3 秒，绝不无限等 ★
+    int attempt = 0;
+    bool wrote = false;
+    uintptr_t blockerEip = 0;
+
+    for (attempt = 0; attempt < 40; ++attempt) {
+        heldN = 0;
+        for (int i = 0; i < tidN; ++i) {
+            HANDLE th = OpenThread(THREAD_SUSPEND_RESUME | THREAD_GET_CONTEXT |
+                                   THREAD_QUERY_INFORMATION, FALSE, tids[i]);
+            if (!th) continue;
+            if (SuspendThread(th) == (DWORD)-1) { CloseHandle(th); continue; }
+            held[heldN++] = th;
+        }
+
+        // ── 校验：只拒绝"指令跨边界"的情况 ──────────────────────────
+        //   ★ 这是本次最重要的修正 ★
+        //   旧判据把 [at-15, at+n) 全算"忙"。但 P4/P4b/P5 补丁的正是
+        //   绘制函数的**热点**，渲染线程大部分时间 EIP 就在这段里 ——
+        //   于是每次校验都 busy，40 次重试全白费，补丁安装卡十几秒
+        //   甚至永远写不进去（实测日志停在"原字节"再无输出）。
+        //
+        //   ★ 真正危险的只有一种 ★
+        //     EIP ∈ [at-15, at)：该线程正停在一条**跨越 at 边界**的指令
+        //     上，补丁后从 EIP 重新解码会得到完全不同的指令 —— 必崩。
+        //
+        //   ★ 而 EIP ∈ [at, at+n) 是安全的 ★
+        //     线程已挂起，写入期间不会执行；Resume 后它从 at 处的
+        //     `E8 call 助手` 开始跑，等价于"它自己调用了助手"，
+        //     助手会正确返回到 at+n —— 语义正确，不是半更新状态。
         const uintptr_t loGuard = (at >= 15) ? (at - 15) : 0;
+        bool busy = false;
+        blockerEip = 0;
         for (int i = 0; i < heldN && !busy; ++i) {
             CONTEXT c; memset(&c, 0, sizeof(c)); c.ContextFlags = CONTEXT_CONTROL;
             if (!GetThreadContext(held[i], &c)) continue;
             uintptr_t eip = (uintptr_t)c.Eip;
-            if (eip >= loGuard && eip < at + n) busy = true;
+            if (eip >= loGuard && eip < at) { busy = true; blockerEip = eip; }
         }
 
-        // ── 3) 就绪则单次整块写入；否则解冻重试 ──────────────────────
         if (!busy) {
             memcpy((void*)at, buf, n);
             FlushInstructionCache(GetCurrentProcess(), (LPVOID)at, n);
-            for (int i = 0; i < heldN; ++i) { ResumeThread(held[i]); CloseHandle(held[i]); }
-            VirtualProtect((LPVOID)at, n, old, &old);
-            if (attempt) Logf("pathd:   %s 冻结重试 %d 次后写入成功", what, attempt);
-            return true;
+            wrote = true;
+            break;
         }
+
         for (int i = 0; i < heldN; ++i) { ResumeThread(held[i]); CloseHandle(held[i]); }
+        heldN = 0;
+        if (GetTickCount() - t0 > kTotalBudgetMs) break;
         Sleep(1);
     }
 
+    // ★ 统一出口：无论如何都必须恢复所有线程，否则游戏直接卡死 ★
+    for (int i = 0; i < heldN; ++i) { ResumeThread(held[i]); CloseHandle(held[i]); }
     VirtualProtect((LPVOID)at, n, old, &old);
-    Logf("pathd: [%s] 40 次冻结重试仍失败，放弃该补丁（保持原样）", what);
+
+    if (wrote) {
+        if (attempt) Logf("pathd:   %s 冻结重试 %d 次后写入成功", what, attempt);
+        return true;
+    }
+    // 走到这里说明没写成。绝不静默失败 —— 否则像之前那样日志无输出、
+    // 表面"没崩"实际补丁全没装上，汉字永远不显示。
+    Logf("pathd: [%s] ★写入失败★ 重试 %d 次/超时 %lums，阻塞 EIP=0x%08X",
+         what, attempt, (unsigned long)(GetTickCount() - t0), (unsigned)blockerEip);
+    Logf("pathd:       补丁未生效，该路径的汉字不会显示（游戏不会崩）");
     return false;
 }
 
@@ -834,25 +901,43 @@ static bool ExpandTable(void* font, float h) {
 
 // 把 CJK 图集页挂到这个 Font 的页表（Font+0x30）末尾。
 // ⚠ 本函数内不能有需要对象展开的 C++ 对象 —— 它会被包在 __try 里（否则 C2712）。
+//
+// ★★★ 必须用引擎自己的堆分配器，绝不能用 VirtualAlloc ★★★
+//   原因：我们把 vec[0](_Myfirst) 整体替换掉了。引擎 ~Font 析构时会
+//   用自己的 free 释放这个指针；VirtualAlloc 出来的内存被 free 会直接
+//   崩在魔数校验上（0x748EF2 cmp [edx-4],0xDEADBEEF），
+//   实测转储 hta.exe0081 / 0092 都是同一个地址。
+//   改用 sub_589410（引擎 alloc 的包装）后，free 能正确配对。
+//
+//   ★ 为什么不再回退 VirtualAlloc ★
+//     之前"分配失败就用 VirtualAlloc"的兜底，正是堆破坏的来源。
+//     现在拿不到引擎分配器就**直接失败**——该字号没有汉字，
+//     也比砸烂整个堆、让游戏随机崩溃要好得多。
 static bool AppendPages(void* font, float h, const uint32_t* pages, int npages,
                         int* outBasePage) {
+    if (!g_engineAlloc) {
+        Logf("pathd: [%7.3f] 无引擎分配器，跳过挂页（该字号无汉字，但不崩）", h);
+        return false;
+    }
     uint8_t* f = (uint8_t*)font;
     uint32_t* vec = (uint32_t*)(f + kFontOffPages);
     uint32_t cnt = (vec[1] && vec[0]) ? (vec[1] - vec[0]) / 4 : 0;
     uint32_t newCnt = cnt + (uint32_t)npages;
     size_t bytes = (size_t)newCnt * 4;
 
-    // 同样不碰引擎的扩容函数（原因见 Init 里的说明），自己分配并替换指针。
-    void* buf = VirtualAlloc(NULL, bytes, MEM_COMMIT | MEM_RESERVE, PAGE_READWRITE);
-    if (!buf) { Logf("pathd: [%7.3f] 页表分配失败(%u 页)", h, newCnt); return false; }
+    void* buf = g_engineAlloc((uint32_t)bytes, nullptr, 0);
+    if (!buf) {
+        Logf("pathd: [%7.3f] 引擎分配页表失败(%u 页, %u 字节)", h, newCnt, (unsigned)bytes);
+        return false;
+    }
     memset(buf, 0, bytes);
     if (vec[0] && cnt) memcpy(buf, (void*)vec[0], cnt * 4);
     for (int i = 0; i < npages; ++i)
         ((uint32_t*)buf)[cnt + i] = pages[i];
 
     *outBasePage = (int)cnt;
-    Logf("pathd: [%7.3f] 页表 %u -> %u 页，CJK 页从索引 %u 起（原指针 0x%08X -> 0x%08X）",
-         h, cnt, newCnt, cnt, vec[0], (unsigned)(uintptr_t)buf);
+    Logf("pathd: [%7.3f] 页表 %u -> %u 页，CJK 页从索引 %u 起（引擎堆 0x%08X）",
+         h, cnt, newCnt, cnt, (unsigned)(uintptr_t)buf);
     vec[0] = (uint32_t)buf;
     vec[1] = (uint32_t)buf + (uint32_t)bytes;
     vec[2] = (uint32_t)buf + (uint32_t)bytes;
@@ -1091,6 +1176,8 @@ static void CollectAllFonts(std::vector<FontRec>& out) {
     int found = 0;
     uintptr_t a = lo;
     DWORD tick0 = GetTickCount();
+    Logf("pathd: 堆扫描开始 0x%08X..0x%08X（%.1f MB，锚点 %u 个）",
+         (unsigned)lo, (unsigned)hi, (hi - lo) / 1048576.0, (unsigned)anchors.size());
     while (a < hi) {
         MEMORY_BASIC_INFORMATION mbi;
         if (!VirtualQuery((void*)a, &mbi, sizeof(mbi))) break;
@@ -1641,6 +1728,33 @@ bool Init(HMODULE game, const char* pkgPath) {
     //   所以彻底不碰它，一律用自己分配的表。
     g_vecResizeOk = false;
     Logf("pathd: 不使用引擎扩容函数（身份未证实，调用它有栈错乱风险）");
+
+    // ★★★ 定位引擎堆分配器（修复堆破坏的关键一步）★★★
+    //   sub_589410 : __fastcall(ecx=size, edx=0, stack=0)，内部 mov ecx,dword_A0A880
+    //               后调 sub_748DC0；返回 retn 4。
+    //   用它给页表分配内存，引擎 ~Font 的 free 才能正确配对。
+    g_engineAlloc = (EngineAllocFn)ScanUnique(SIG_ENGINE_ALLOC, "引擎分配器(sub_589410)", false);
+    if (!g_engineAlloc) {
+        Logf("pathd: [警告] 未定位到引擎分配器 —— 页表无法挂载，汉字将不显示");
+        Logf("pathd:         特征码: %s", SIG_ENGINE_ALLOC);
+    } else {
+        // 自检：真的能分配 + 释放吗？只分配不释放（泄漏几十字节换安全），
+        // 但至少要确认返回值合理（引擎堆指针，非 NULL、已对齐）。
+        void* probe = nullptr;
+        __try {
+            probe = g_engineAlloc(64, nullptr, 0);
+        } __except (EXCEPTION_EXECUTE_HANDLER) {
+            Logf("pathd: [警告] 引擎分配器自检抛异常 0x%08X", (unsigned)GetExceptionCode());
+            g_engineAlloc = nullptr;
+        }
+        if (probe) {
+            Logf("pathd: 引擎分配器 = 0x%08X（自检通过，probe=0x%08X）",
+                 (unsigned)(uintptr_t)g_engineAlloc, (unsigned)(uintptr_t)probe);
+        } else if (g_engineAlloc) {
+            Logf("pathd: [警告] 引擎分配器自检返回 NULL，停用以避免崩溃");
+            g_engineAlloc = nullptr;
+        }
+    }
 
     // ── 字体获取方式：直接枚举字体管理器数组（不挂钩）────────────────
     //
