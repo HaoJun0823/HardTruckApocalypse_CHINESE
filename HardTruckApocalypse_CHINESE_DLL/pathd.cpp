@@ -255,14 +255,6 @@ bool        g_skipExpand = false;    // HTA_CHS_NO_EXPAND=1 时跳过扩表（�
 bool        g_skipP5     = false;    // HTA_CHS_NO_P5=1   跳过 P5 主遍历助手
 bool        g_skipP4b    = false;    // HTA_CHS_NO_P4B=1  跳过 P4b 第二处查表助手
 bool        g_skipScan   = false;    // HTA_CHS_NO_SCAN=1 跳过堆扫描（对照实验用）
-// ★★ P7（度量遍历补丁）当前默认关闭，需 HTA_CHS_P7=1 才启用 ★★
-//   原因见 InstallPatches 里的 P7 说明：0x685BD1 之后的 cmp/jl 是
-//   **循环回跳**，和 add edi,1 紧邻。把它一起盖掉的话，助手 ret 会落到
-//   0x685BDE（jmp 退出循环），度量只跑一个字符 —— 实测导致文字整体右偏、
-//   tooltip 连尺寸都没有（2026-10-07 那次）。
-//   要正确实现，助手必须自己做完 cmp + 回跳，不能简单 ret。暂不启用。
-bool        g_skipP7     = true;     // 默认关闭
-bool        g_p7OptIn    = false;    // HTA_CHS_P7=1 才打开
 bool        g_hookFont   = false;    // 是否安装 Font::CreateFromXmlNode 钩子
                                        // ★ 默认关：实测该钩子破坏 esi 导致崩溃，
                                        //   而且它从未成功找到过 CJK 图集页。
@@ -1522,68 +1514,6 @@ bool InstallPatches() {
     if (pAdvGet) Logf("pathd: [已撤销] P8 推进量取字 @0x%08X（读 4 字节会取到调用方垃圾高位）", (unsigned)pAdvGet);
     if (pUvGet)  Logf("pathd: [已撤销] P9 UV 取字   @0x%08X（同上）", (unsigned)pUvGet);
 
-    // ── P7 度量遍历：让度量与绘制推进一致（修 tooltip 空白）─────────────
-    //
-    //   ★ 早期判断"3 字节放不下，只影响居中偏左"是错的 ★
-    //   实测后果是 tooltip 完全空白：sub_685990 把汉字当两个字符度量，
-    //   宽度翻倍 -> tooltip 认为放不下 -> 换行/裁剪 -> 无字。
-    //
-    //   ★★ 覆盖长度必须按指令边界逐条累加 = 13 字节 ★★
-    //       0x685BD1  83 C7 01              add edi,1           (3)
-    //       0x685BD4  3B 7C 24 1C           cmp edi,[esp+1Ch]   (4)
-    //       0x685BD8  0F 8C A2 FE FF FF     jl 0x685A80         (6)
-    //     = 3 + 4 + 6 = 13，落点 0x685BDE（`EB 32` jmp loc_685C12）。
-    //
-    //     ⚠⚠ 血的教训（这次真的踩了）⚠⚠
-    //       第一版取 9 字节（call 5 + NOP 4），理由是"与 P5 一致"。
-    //       结果只盖到 `0F 8C` 两个字节，把 6 字节的 jl 劈开，
-    //       落点 0x685BDA 落在残字节 `A2 FE FF FF` 上 —— 崩在
-    //       0x685BDA（write to 0xEBFFFFFE），转储 hta.exe0093。
-    //       这和 P4 那次"19 字节把 C6 44 24 12 00 切成 44 24"
-    //       是**同一个错误**，注释里早就写过"长度必须逐条累加"，
-    //       还是因为偷懒照抄 P5 的 9 又犯了一次。
-    //       ⇒ 落点必须落在**下一条完整指令的起始字节**。
-    //
-    //   ★ 用 21 字节长特征码保证唯一（短特征码实测 8 处命中）★
-    {
-        uintptr_t pMsr = 0;
-        if (!g_skipP7) {
-            // ★ 直接扫 sub_685990 的**入口**，再 +0x241 到 ++v8 ★
-            //   之前用"++v8 附近 21 字节"做特征码，实测 **8 处命中**
-            //   （0x0044ED34 等处有完全相同的字节序列）—— 不唯一，
-            //   ScanUnique 返回 0，补丁静默没装。
-            //   函数入口 `8B 4C 24 1C 83 EC 2C 56 57 33 FF 3B CF 74 0C`
-            //   是唯一的大函数序言，用它定位最可靠。
-            uintptr_t fn = ScanUnique(
-                "8B 4C 24 1C 83 EC 2C 56 57 33 FF 3B CF 74 0C",
-                "sub_685990 入口", false);
-            if (fn) {
-                pMsr = fn + 0x241;              // -> 0x685BD1 (add edi,1)
-                // 就地校验：该处必须是 83 C7 01，防止版本变了打错地方
-                uint8_t b0 = rd8(pMsr), b1 = rd8(pMsr + 1), b2 = rd8(pMsr + 2);
-                if (!(b0 == 0x83 && b1 == 0xC7 && b2 == 0x01)) {
-                    Logf("pathd: [MISS] P7 落点校验失败 @0x%08X 字节 %02X %02X %02X（期望 83 C7 01）",
-                         (unsigned)pMsr, b0, b1, b2);
-                    pMsr = 0;
-                } else {
-                    Logf("pathd: sub_685990 入口 0x%08X，P7 落点 +0x241 = 0x%08X（校验通过）",
-                         (unsigned)fn, (unsigned)pMsr);
-                }
-            }
-        }
-        if (g_skipP7) {
-            Logf("pathd: P7 度量补丁【默认关闭】（需 HTA_CHS_P7=1 启用）");
-            Logf("pathd:        现状：度量按单字节走，汉字宽度偏大，tooltip 无文字但有尺寸");
-        } else if (!pMsr) {
-            Logf("pathd: [MISS] P7 度量遍历（tooltip 中文可能空白）");
-        } else {
-            Logf("pathd: 补丁 P7 度量遍历 @0x%08X  原字节: %s",
-                 (unsigned)pMsr, HexDump(pMsr, 13).c_str());
-            if (WriteCallBlock(pMsr, 13, (void*)&PathD_MeasureAdvance, "P7 度量遍历")) ++done;
-            else ++fail;
-        }
-    }
-
     // ── P5 主遍历：9 字节 -> call 助手 + 4 NOP ─────────────────────────
     //
     // ★★★ 为什么必须连 xorps 一起覆盖（0xC0000096 @0x686A5E 的真正原因）★★★
@@ -1748,11 +1678,8 @@ bool Init(HMODULE game, const char* pkgPath) {
         g_skipP5     = GetEnvironmentVariableA("HTA_CHS_NO_P5",     v, sizeof(v)) > 0;
         g_skipP4b    = GetEnvironmentVariableA("HTA_CHS_NO_P4B",    v, sizeof(v)) > 0;
         g_skipScan   = GetEnvironmentVariableA("HTA_CHS_NO_SCAN",   v, sizeof(v)) > 0;
-        g_p7OptIn    = GetEnvironmentVariableA("HTA_CHS_P7",        v, sizeof(v)) > 0;
-        g_skipP7     = !g_p7OptIn;   // 默认关闭，需 HTA_CHS_P7=1
-        Logf("pathd: 调试开关 跳过补丁=%d 跳过扩表=%d 跳过P5=%d 跳过P4b=%d 跳过扫描=%d 跳过P7=%d",
-             (int)g_skipPatch, (int)g_skipExpand, (int)g_skipP5, (int)g_skipP4b,
-             (int)g_skipScan, (int)g_skipP7);
+        Logf("pathd: 调试开关 跳过补丁=%d 跳过扩表=%d 跳过P5=%d 跳过P4b=%d 跳过扫描=%d",
+             (int)g_skipPatch, (int)g_skipExpand, (int)g_skipP5, (int)g_skipP4b, (int)g_skipScan);
     }
 
     Logf("pathd: ══════════ 路径 D 初始化 ══════════");
@@ -2267,72 +2194,6 @@ __declspec(naked) void __cdecl PathD_GlyphLookup2() {
 //   ★ 双字节推进 ★
 //     GBK 前导字节 >= 0x81 时，esi（文本游标）与 edi（输出游标）
 //     都要 +2，否则后续字符整体错位一格。
-// —— P7：文本【度量】遍历（9 字节位置 @0x685BD1）——
-//
-//   ★ 为什么必须修（tooltip 空白的真因）★
-//     tooltip 的文本布局走 sub_685990（度量），**不是**我们打过补丁的
-//     绘制函数 sub_685CA0。度量循环末尾是 `add edi,1`（只 +1），
-//     于是 GBK 汉字被当成两个字符各度量一次：
-//         第 1 字节 0xBF -> 汉字字形宽度 W（对）
-//         第 2 字节 0xAA -> 又查一次，再加一份错误字形宽度（错）
-//     宽度翻倍 -> tooltip 认为放不下 -> 换行/裁剪 -> 显示空白。
-//     之前判断"3 字节放不下、只影响居中偏左"，低估了后果。
-//
-//   ★★ 判据必须与绘制一致 ★★
-//     P5（绘制）用 `cmp bl,81h / jb` 判断 GBK 前导字节。
-//     度量必须用**同一个** 0x81 阈值，否则绘制推进 2、度量推进 1，
-//     两者不一致会产生新的错位。
-//
-//   ★ 为什么跳过第 2 字节是安全的 ★
-//     度量循环里 '@'(0x40)、'|'(0x7C)、'#'(0x23) 等被当作转义符处理，
-//     而 GBK 第 2 字节范围 0x40..0x7E / 0x80..0xFE 恰好包含 '@' 与 '|'。
-//     但我们直接 `edi += 2` 跳过第 2 字节，那轮循环根本不会执行，
-//     转义误判自然不会发生。
-//
-//   ★ 寄存器安全性 ★
-//     入口 esi = 字符串基址、edi = 当前索引（0x685BCD 刚重设过 esi）。
-//     返回后 0x685BD4 只用 edi；循环回到 0x685A80 会重设 v11/v10，
-//     且函数返回值来自 var_24（不是 eax），所以 eax 可以安全用作临时。
-//     ⚠ ecx 此时是字体指针（0x685BC9 刚装载），**绝不能碰**。
-__declspec(naked) void __cdecl PathD_MeasureAdvance() {
-    __asm {
-        movzx eax, byte ptr [esi + edi]   // 当前字节（esi=串, edi=索引）
-        cmp   eax, 81h                    // ★ 与 P5 完全相同的阈值 ★
-        jb    ma_single
-        add   edi, 2                      // GBK 双字节：跳过第 2 字节
-        ret
-    ma_single:
-        add   edi, 1                      // 原指令
-        ret
-    }
-}
-
-// —— P5：绘制主遍历（9 字节位置 @0x686A52）——
-//
-//   覆盖的是 `xorps xmm0,xmm0 / add esi,1 / add edi,1`，call 返回后落到
-//   0x686A5B（`cmp esi,[esp+var_84]`）继续，然后 0x686A63 `jl` 回 0x6864D5。
-//
-//   ★★ 这里有 **5 个跳入点**，寄存器状态并不一致：★★
-//     0x6864ED  jmp  （字符 < 0x20，控制符）
-//     0x686507  jle  （'@' 且没到截断位置）
-//     0x68658B  jmp
-//     0x68659C  jz
-//     0x686A4E  经 `mov eax,[esp+var_9C]` 落下来（转义路径）
-//
-//   ★ 实测崩溃（hta.exe0036）：0xC0000096 @0x686A5E，
-//     寄存器 ESI=0x09、EDI=0x11、EAX=0x4A2804DC。
-//     EAX 是文本基址没错，但 **EAX 并非在所有跳入点都有效** ——
-//     只有 0x686A4E 那条会重新 `mov eax,[esp+var_9C]` 刷新它，
-//     其余 4 条沿用的是上一次迭代残留的 eax。
-//     所以「靠 eax 取字符」在残留路径上会读到垃圾地址。
-//
-//   ★ 正确做法：只看 bl ★
-//     跳入前的 0x686A13 `cmp bl,20h` 证明 bl 在这些路径上都是当前字符，
-//     不依赖任何栈偏移或残留寄存器。
-//
-//   ★ 双字节推进 ★
-//     GBK 前导字节 >= 0x81 时，esi（文本游标）与 edi（输出游标）
-//     都要 +2，否则后续字符整体错位一格。
 __declspec(naked) void __cdecl PathD_DrawAdvance() {
     __asm {
         xorps xmm0, xmm0               // 原指令 0x686A52：清累加器
@@ -2344,6 +2205,22 @@ __declspec(naked) void __cdecl PathD_DrawAdvance() {
     da_ascii:
         inc   esi                       // 原指令 0x686A55
         inc   edi                       // 原指令 0x686A58
+        ret
+    }
+}
+
+// —— P7：度量遍历（3 字节位置）——
+//    这里空间只有 3 字节，无法容下 call。改由 InstallPatches 直接改成 add edi,2。
+//    保留此助手以备后续重定位方案使用。
+__declspec(naked) void __cdecl PathD_MeasureAdvance() {
+    __asm {
+        push eax
+        movzx eax, byte ptr [edi]
+        inc  edi
+        cmp  eax, 81h
+        jb   ma_done
+        inc  edi
+    ma_done:
         ret
     }
 }
