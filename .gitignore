@@ -259,3 +259,17 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+
+# ---- project additions (milestone 2026-10-06) ----
+# build artifacts
+HardTruckApocalypse_CHINESE_DLL/build/
+HardTruckApocalypse_CHINESE_DLL/tools/*.exe
+# runtime screenshots / crash dumps / backups (large, regenerable)
+_shots/
+_backup/
+_cjk_backup_300/
+# generated glyph package + atlases (produced by fontgen scripts, not source)
+update_pathd/
+# scratch dirs from the translation pipeline
+.temp/
+_cjk_backup/

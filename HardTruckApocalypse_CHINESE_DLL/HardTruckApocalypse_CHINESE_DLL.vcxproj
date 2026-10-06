@@ -112,6 +112,7 @@
     <ClCompile Include="ldisasm.cpp" />
     <ClCompile Include="log.cpp" />
     <ClCompile Include="pattern.cpp" />
+    <ClCompile Include="pathd.cpp" />
     <ClCompile Include="slotmap.cpp" />
     <ClCompile Include="text_hooks.cpp" />
     <ClCompile Include="render.cpp" />

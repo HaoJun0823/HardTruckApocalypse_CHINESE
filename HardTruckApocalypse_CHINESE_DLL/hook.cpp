@@ -95,17 +95,26 @@ bool Install(const char* name, uintptr_t target, void* detour, void** trampoline
     if (g_count >= (int)(sizeof(g_entries) / sizeof(g_entries[0]))) return false;
 
     // 1) 量出至少要覆盖多少字节才能塞下 5 字节 jmp
+    //    同时把每条指令的长度记下来打日志 —— 一旦反汇编器解错（例如把
+    //    组指令 81 /5 imm32 当成 2 字节），回跳点就会落在指令中间并崩，
+    //    而长度序列能让人一眼看出问题。
     uint8_t* dst = (uint8_t*)target;
     int need = 0;
+    char bounds[160] = {0};
     while (need < 5) {
         lde::Insn insn;
         if (!lde::Decode(dst + need, 16, &insn) || insn.len <= 0) {
             Logf("hook[%s]: 序言反汇编失败 @0x%08X", name, (unsigned)target);
             return false;
         }
+        char t[16];
+        _snprintf_s(t, sizeof(t), _TRUNCATE, "%d ", insn.len);
+        strcat_s(bounds, sizeof(bounds), t);
         need += insn.len;
         if (need > 32) { Logf("hook[%s]: 序言过长", name); return false; }
     }
+    Logf("hook[%s]: 序言指令长度序列 = [%s] 合计 %d 字节（首字节 %02X %02X %02X %02X %02X %02X）",
+         name, bounds, need, dst[0], dst[1], dst[2], dst[3], dst[4], dst[5]);
 
     // 2) 分配跳板：need 字节 + 5 字节回跳
     size_t trampSize = (size_t)need + 5;

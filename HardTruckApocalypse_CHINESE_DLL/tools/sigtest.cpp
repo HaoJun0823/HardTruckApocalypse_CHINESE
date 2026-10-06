@@ -176,17 +176,65 @@ static int TestOne(const char* path) {
         }
     }
 
-    // 反汇编器自检
-    if (got4[0]) {
-        const uint8_t* p = (const uint8_t*)got4[0];
-        int total = 0; bool ok = true;
-        for (int k = 0; k < 8; ++k) {
+    // ── 反汇编器自检：**逐条比对期望长度** ──────────────────────────────
+    //    旧版本只要求「能连解 8 条不失败」，解错了也报 OK —— 正因如此它
+    //    没能抓到 `81 EC F8 00 00 00` 被解成 2 字节的 bug（那导致 trampoline
+    //    回跳点落在指令中间，挂 Font::CreateFromXmlNode 时崩溃）。
+    {
+        struct Case { const char* bytes; int len; int n; const char* note; };
+        static const Case kCases[] = {
+            { "\x81\xEC\xF8\x00\x00\x00",             6, 0, "sub esp,0F8h   (grp1 imm32)" },
+            { "\x81\xEC\xE0\x00\x00\x00",             6, 0, "sub esp,0E0h   (grp1 imm32)" },
+            { "\x81\xEC\xA4\x00\x00\x00",             6, 0, "sub esp,0A4h   (grp1 imm32)" },
+            { "\x83\xEC\x14",                         3, 0, "sub esp,14h    (grp1 imm8)" },
+            { "\x81\xC1\x00\x01\x00\x00",             6, 0, "add ecx,100h   (grp1 imm32)" },
+            { "\x68\x00\x01\x00\x00",                 5, 0, "push 100h" },
+            { "\x6A\xFF",                             2, 0, "push -1" },
+            { "\x8B\x44\x24\x04",                     4, 0, "mov eax,[esp+4]" },
+            { "\x8B\x7C\x24\x34",                     4, 0, "mov edi,[esp+34h]" },
+            { "\x8D\x0C\x2A",                         3, 0, "lea ecx,[edx+ebp]" },
+            { "\x0F\xB6\xEB",                         3, 0, "movzx ebp,bl" },
+            { "\x0F\xB6\x0C\x17",                     4, 0, "movzx ecx,byte[edi+edx]" },
+            { "\x0F\xB7\x0C\x17",                     4, 0, "movzx ecx,word[edi+edx]" },
+            { "\x0F\xB7\x2C\x06",                     4, 0, "movzx ebp,word[esi+eax]" },
+            { "\xC1\xE5\x02",                         3, 0, "shl ebp,2" },
+            { "\x03\xED",                             2, 0, "add ebp,ebp" },
+            { "\x0F\x84\xB3\x04\x00\x00",             6, 0, "jz rel32" },
+            { "\x0F\x8C\xA2\xFE\xFF\xFF",             6, 0, "jl rel32" },
+            { "\xEB\xB5",                             2, 0, "jmp rel8" },
+            { "\x74\x16",                             2, 0, "jz rel8" },
+            { "\xC7\x44\x24\x12\x00\x00\x00\x00",     8, 0, "mov dword[esp+12h],0" },
+            { "\xC6\x44\x24\x12\x00",                 5, 0, "mov byte[esp+12h],0" },
+            { "\xF3\x0F\x10\x48\x24",                 5, 0, "movss xmm1,[eax+24h]" },
+            { "\xF3\x0F\x11\x4C\x24\x50",             6, 0, "movss [esp+50h],xmm1" },
+            { "\xF3\x0F\x59\x46\x20",                 5, 0, "mulss xmm0,[esi+20h]" },
+            { "\xF3\x0F\x2A\x4C\x24\x14",             6, 0, "cvtss2si ecx,[esp+14h]" },
+            { "\xFF\x92\x04\x04\x00\x00",             6, 0, "call [edx+404h]" },
+            { "\xFF\x50\x18",                         3, 0, "call [eax+18h]" },
+            { "\x83\x3C\x81\x00",                     4, 0, "cmp dword[ecx+eax*4],0" },
+            { "\x8B\x04\x88",                         3, 0, "mov eax,[eax+ecx*4]" },
+            { "\x53",                         1, 0, "push ebx" },
+            { "\x55",                         1, 0, "push ebp" },
+            { "\x8B\xF9",                     2, 0, "mov edi,ecx" },
+            { "\xE8\x11\x22\x33\x44",             5, 0, "call rel32" },
+            { "\x88\x5C\x24\x40",                     4, 0, "mov [esp+40h],bl" },
+            { "\xD9\x42\x2C",                         3, 0, "fld dword[edx+2Ch]" },
+            { "\x0F\x57\xC0",                         3, 0, "xorps xmm0,xmm0" },
+        };
+        int okc = 0, badc = 0;
+        for (int k = 0; k < (int)(sizeof(kCases)/sizeof(kCases[0])); ++k) {
             lde::Insn in;
-            if (!lde::Decode(p + total, 16, &in) || in.len <= 0) { ok = false; break; }
-            total += in.len;
+            const uint8_t* p = (const uint8_t*)kCases[k].bytes;
+            bool ok = lde::Decode(p, 16, &in) && in.len == kCases[k].len;
+            if (ok) ++okc;
+            else {
+                ++badc; ++fail;
+                printf("  FAIL %-24s %-32s 期望 %d 实际 %d\n",
+                       "ldisasm", kCases[k].note, kCases[k].len, in.len);
+            }
         }
-        if (!ok) ++fail;
-        printf("  %s %-24s 8 条指令共 %d 字节\n", ok ? "OK  " : "FAIL", "ldisasm 自检", total);
+        printf("  %s %-24s %d/%d 条长度正确\n",
+               badc ? "FAIL" : "OK  ", "ldisasm 长度自检", okc, okc + badc);
     }
 
     UnmapViewOfFile(mod);

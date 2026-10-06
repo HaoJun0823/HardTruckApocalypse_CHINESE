@@ -87,5 +87,9 @@ void Logf(const char* fmt, ...) {
     }
     Unlock();
 
-    OutputDebugStringA(line);
+    // 不再调用 OutputDebugStringA：
+    //   1) 它在 x64dbg 里会被「Break on debug strings」拦下，调试时每写一行日志
+    //      就中断一次，完全没法用（ASI 加载器 winmm.dll 自己也会大量输出，
+    //      那个只能靠调试器设置关掉，但我们至少不该再火上浇油）；
+    //   2) Logf 在热路径上会被频繁调用，走一次调试输出很拖速度。
 }

@@ -49,7 +49,7 @@ const uint8_t kImm1[256] = {
 /*30*/0,0,0,0,1,4,0,0, 0,0,0,0,1,4,0,0,
 /*40*/0,0,0,0,0,0,0,0, 0,0,0,0,0,0,0,0,
 /*50*/0,0,0,0,0,0,0,0, 0,0,0,0,0,0,0,0,
-/*60*/0,0,0,0,0,0,0,0, 0,5,0,1,0,0,0,0,
+/*60*/0,0,0,0,0,0,0,0, 4,5,1,1,0,0,0,0,
 /*70*/1,1,1,1,1,1,1,1, 1,1,1,1,1,1,1,1,
 /*80*/0,0,0,0,0,0,0,0, 0,0,0,0,0,0,0,0,
 /*90*/0,0,0,0,0,0,0,0, 0,0,6,0,0,0,0,0,
@@ -130,23 +130,27 @@ bool Decode(const uint8_t* code, int maxLen, Insn* out) {
         imm = kImm2[op2];
         // 0F 80..8F 是 rel32 条件跳转
         if (op2 >= 0x80 && op2 <= 0x8F) {
+            // ⚠ rel 字节必须计入指令长度！原先写 imm=0，导致
+            //   `0F 84 rel32` 被算成 2 字节（应为 6）——
+            //   挂钩含条件跳转的函数时回跳点会落在指令中间而崩。
             out->relOff = i; out->relSize = 4;
-            imm = 0;
+            imm = 4;
         }
     } else {
         hasModRM = kModRM1[op] != 0;
         imm = kImm1[op];
         // 相对跳转
-        if (op == 0xE8 || op == 0xE9) { out->relOff = i; out->relSize = 4; imm = 0; }
-        else if (op == 0xEB)          { out->relOff = i; out->relSize = 1; imm = 0; }
-        else if (op >= 0x70 && op <= 0x7F) { out->relOff = i; out->relSize = 1; imm = 0; }
+        // ⚠ 同样：rel 字节必须计入长度
+        if (op == 0xE8 || op == 0xE9) { out->relOff = i; out->relSize = 4; imm = 4; }
+        else if (op == 0xEB)          { out->relOff = i; out->relSize = 1; imm = 1; }
+        else if (op >= 0x70 && op <= 0x7F) { out->relOff = i; out->relSize = 1; imm = 1; }
         // 0xA0..0xA3 moffs
         if (op >= 0xA0 && op <= 0xA3) imm = op67 ? 4 : 4;
         // 0x9A far call / 0xEA far jmp —— 本引擎不出现
         if (op == 0x9A || op == 0xEA) return false;
         // 操作数前缀影响立即数宽度
-        if (op66 && imm == 4) imm = 2;
-        if (op66 && imm == 2) imm = 2;
+        // 注意：0x66 前缀不影响 rel 宽度（恒 32 位），所以只在非跳转时调整
+        if (out->relOff < 0) { if (op66 && imm == 4) imm = 2; }
     }
 
     if (op == 0x9A || op == 0xEA) return false;
@@ -171,6 +175,26 @@ bool Decode(const uint8_t* code, int maxLen, Insn* out) {
         }
         i += disp;
         if (i > maxLen) return false;
+    }
+
+    // ★★ 组指令的立即数宽度由 ModRM.reg 决定 —— 原先漏掉的一整类。
+    //    漏了它会把 `81 EC F8 00 00 00`（sub esp,0F8h）解成 2 字节，
+    //    于是 trampoline 的 need 偏小、回跳点落在指令中间，执行垃圾指令然后崩
+    //    （实测：挂 Font::CreateFromXmlNode 时 0xC0000005，EIP 落在 trampoline 里）。
+    if (hasModRM) {
+        uint8_t reg = (modrm >> 3) & 7;
+        switch (op) {
+            case 0x80: case 0x82: case 0x83: imm = 1; break;          // grp1 imm8
+            case 0x81: imm = op66 ? 2 : 4; break;                     // grp1 imm32/16
+            case 0xC0: case 0xC1: imm = 1; break;                     // shift imm8
+            case 0xC6: imm = 1; break;                                // mov r/m8, imm8
+            case 0xC7: imm = op66 ? 2 : 4; break;                     // mov r/m32, imm32
+            case 0xF6: imm = (reg <= 1) ? 1 : 0; break;               // test/not.. imm8
+            case 0xF7: imm = (reg <= 1) ? (op66 ? 2 : 4) : 0; break;  // test/not.. imm32
+            case 0x69: imm = op66 ? 2 : 4; break;                     // imul imm32
+            case 0x6B: imm = 1; break;                                // imul imm8
+            default: break;
+        }
     }
 
     // 立即数

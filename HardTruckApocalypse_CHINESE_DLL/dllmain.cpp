@@ -47,7 +47,7 @@ DWORD WINAPI InitThread(LPVOID) {
         int r = render::Locate(game);
         Logf("渲染器原语定位: %d/2", r);
 
-        // 3) 加载槽位映射表（必须与离线烘的字库配套）
+        // 3) 选择方案：路径 D（16 位索引）优先；没有包文件则回退路径 C（单字节槽位）
         {
             char selfDir[MAX_PATH] = {0};
             HMODULE self = NULL;
@@ -63,23 +63,46 @@ DWORD WINAPI InitThread(LPVOID) {
             char* gl = strrchr(gameDir, '\\');
             if (gl) *gl = 0;
 
-            const char* names[] = { "hta_chs_slotmap.txt", "slotmap.txt" };
-            bool ok = false;
-            char path[MAX_PATH];
-            for (int i = 0; i < 2 && !ok; ++i) {
-                _snprintf_s(path, sizeof(path), _TRUNCATE, "%s\\%s", gameDir, names[i]);
-                ok = slotmap::Load(path);
-                if (!ok) {
-                    _snprintf_s(path, sizeof(path), _TRUNCATE, "%s\\%s", selfDir, names[i]);
-                    ok = slotmap::Load(path);
-                }
+            // ── 路径 D：汉字包文件 ──
+            // 放在游戏根目录、update\ 或 asi 同目录都能找到。
+            bool pathD = false;
+            char pkg[MAX_PATH];
+            const char* dirs[3] = { gameDir, selfDir, nullptr };
+            _snprintf_s(pkg, sizeof(pkg), _TRUNCATE, "%s\\update", gameDir);
+            dirs[2] = pkg;
+            for (int i = 0; i < 3 && !pathD; ++i) {
+                if (!dirs[i]) continue;
+                _snprintf_s(pkg, sizeof(pkg), _TRUNCATE,
+                            "%s\\hta_chs_cjk.bin", dirs[i]);
+                pathD = pathd::Init(game, pkg);
             }
-            Logf("slotmap: 加载%s，共 %d 条映射",
-                 ok ? "成功" : "失败（中文将显示为 ?）", slotmap::Count());
-        }
 
-        // 4) 安装文本转码挂钩
-        texthook::Install(game);
+            if (pathD) {
+                Logf("=== 使用路径 D（16 位字形索引，汉字上限 65536）===");
+                Logf("=== 注意：路径 D 下**不做**字符串转码，GBK 原样交给引擎 ===");
+            } else {
+                Logf("=== 使用路径 C（单字节槽位，汉字上限约 72/字号）===");
+                const char* names[] = { "hta_chs_slotmap.txt", "slotmap.txt" };
+                bool ok = false;
+                char path[MAX_PATH];
+                for (int i = 0; i < 2 && !ok; ++i) {
+                    _snprintf_s(path, sizeof(path), _TRUNCATE, "%s\\%s", gameDir, names[i]);
+                    ok = slotmap::Load(path);
+                    if (!ok) {
+                        _snprintf_s(path, sizeof(path), _TRUNCATE, "%s\\%s", selfDir, names[i]);
+                        ok = slotmap::Load(path);
+                    }
+                    if (!ok) {
+                        _snprintf_s(path, sizeof(path), _TRUNCATE, "%s\\update\\%s", gameDir, names[i]);
+                        ok = slotmap::Load(path);
+                    }
+                }
+                Logf("slotmap: 加载%s，共 %d 条映射",
+                     ok ? "成功" : "失败（中文将显示为 ?）", slotmap::Count());
+                // 只有路径 C 才需要转码
+                texthook::Install(game);
+            }
+        }
 
         Logf("=== 初始化完成 ===");
     }
