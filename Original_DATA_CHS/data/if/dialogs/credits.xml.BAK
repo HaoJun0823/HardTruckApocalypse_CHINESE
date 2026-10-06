@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<Credits
+	breakTime		= "0.7"
+	breakSoundFile="data\sounds\Driving\shifter1.wav"
+	showSoundFile="data\sounds\Driving\shifter1.wav"
+	ambientSoundFile=""
+	musicFile="data\music\credits.ogg">
+	<Pages>
+		<Page
+			id="1"
+			text="УОП·ЙијЖ "Targem Games""
+			modelName	= ""
+			modelSkin	= "0"
+			modelCfg	= "0"
+			showTime="3"
+			fontSize="40" />
+
+		<Page
+			id="2"
+			text="ДЪІїЦЖЧчИЛ|| Stanislav "Scorp" Skorb"
+			modelName	= "r2_man"
+			modelSkin	= "0"
+			modelCfg	= "294"
+			showTime="3"
+			fontSize="20" />
+
+		<Page
+			id="3"
+			text="јјКхЧЬја || Alexey Skriabin"
+			modelName	= "r2_man"
+			modelSkin	= "0"
+			modelCfg	= "182"
+			showTime="3"
+			fontSize="20" />
+
+		<Page
+			id="4"
+			text="ПоДїѕ­Ан || Evgeniy "rrr" Khrunov"
+			modelName	= "r2_man"
+			modelSkin	= "2"
+			modelCfg	= "368"
+			showTime="3"
+			fontSize="20" />
+
+		<Page
+			id="5"
+			text="±аѕз|| Alexey "Alex TG" Tchestnikh"
+			modelName	= "r2_man"
+			modelSkin	= "0"
+			modelCfg	= "87"
+			showTime="3"
+			fontSize="20" />
+
+		<Page
+			id="6"
+			text="КЧПЇіМРтФ± || Anton "anger" Savin"
+			modelName	= "r2_man"
+			modelSkin	= "0"
+			modelCfg="20"
+			showTime="3"
+			fontSize="20" />
+
+		<Page
+			id="7"
+			text="КЧПЇЙијЖК¦ || Alexey "Alex TG" Tchestnikh"
+			modelName	= "r2_man"
+			modelSkin	= "0"
+			modelCfg	= "87"
+			showTime="3"
+			fontSize="20" />
+
+		<Page
+			id="8"
+			text="КЧПЇГАКх || Alexander "Alex ML" Magrushin"
+			modelName	= "r2_man"
+			modelSkin	= "2"
+			modelCfg	= "8"
+			showTime="3"
+			fontSize="20" />
+
+		<Page
+			id="9"
+			text="ЙијЖК¦ || Denis "mif2000" Galanin| Sergey "Sinx" Udurminskiy| Alexey "zazaz" Anufriev| Stanislav "Scorp" Skorb| Boris "gorg" Smirnov"
+			modelName	= "r3_man"
+			modelSkin	= "2"
+			modelCfg	= "1917"
+			showTime="5"
+			fontSize="20" />
+
+		<Page
+			id="10"
+			text="іМРтФ±|| Elena "SoftKitty" Evdokimova| Ivan "Vano" Vlasov| Ilya "Chosgen" Ruzakov | Maxim "Shadow" Sarmanov | Sergey "Ice Cat" Kluchkovsky| Igor "Yoryh" Dyagterev"
+			modelName	= "r2_man"
+			modelSkin	= "1"
+			modelCfg	= "140"
+			showTime	= "5"
+			fontSize="18" />
+
+		<Page
+			id="11"
+			text="ГАКх|| Ivan Snigirev| Evgeny "Ezhin" Goltsov| Vladimir "Price" Seleznev| Stanislav "Staz" Cherva"
+			modelName	= "r3_man"
+			modelSkin	= "1"
+			modelCfg	= "1529"
+			showTime="6"
+			fontSize="20" />
+
+		<Page
+			id="12"
+			text="ГАКх|| Rustam "Zychi" Turey| Evgeny  Tokarev| Sergey "Mega" Mitryaev| Viktor "Osymbosi" Koryakin| Roman Latynov"
+			modelName	= "r3_man"
+			modelSkin="1"
+			modelCfg="1529"
+			showTime="6"
+			fontSize="20" />
+
+		<Page
+			id="13"
+			text="№ШїЁЙијЖК¦|| Denis "mif2000" Galanin| Sergey "Sinx" Udurminskiy| Artem "Solo" Solovev| Daniil "DiKiller" Kondratiev| Stanislav "Staz" Cherva"
+			modelName	= "r3_man"
+			modelSkin	= "2"
+			modelCfg	= "1917"
+			showTime="4"
+			fontSize="20" />
+
+		<Page
+			id="14"
+			text="ЅзГжЙијЖК¦|| Mikhail "Zai" Matvienko||МШР§|| Alexey "Dal" Lobanov"
+			modelName	= "r2_man"
+			modelSkin	= "2"
+			modelCfg	= "104"
+			showTime="3"
+			fontSize="20" />
+
+		<Page
+			id="15"
+			text="ТфР§ЧЬја||Anton Popov|Ekaterina Shvemmer"
+			modelName	= "r2_man"
+			modelSkin	= "1"
+			modelCfg	= "330"
+			showTime	= "3"
+			fontSize="20" />
+
+		<Page
+			id="16"
+			text="ЦКБї±ЈЦ¤ || Vyacheslav "Ls" Avdeev"
+			modelName	= "r2_man"
+			modelSkin	= "2"
+			modelCfg	= "84"
+			showTime="3"
+			fontSize="20" />
+
+		<Page
+			id="17"
+			text="№«№Шѕ­Ан|| Svetlana "Crystal" Tchestnikh"
+			modelName	= "r2_woman"
+			modelSkin	= "0"
+			modelCfg	= "20"
+			showTime="3"
+			fontSize="20" />
+
+		<Page
+			id="18"
+			text="Ф­Йщґш°ьє¬ТфАЦ±ИИь»сК¤ХЯµДЗъДїЈє || Alexander Chekster|Boris Vedensky and  Alexander Treger| Mikhail Sidorov | Alexander Lisenkov|Paralaxeen|Igor Belousov"
+			modelName	= "r2_man"
+			modelSkin	= "1"
+			modelCfg	= "132"
+			showTime	= "4"
+			fontSize="14" />
+
+		<Page
+			id="19"
+			text="МШ±рёРР»Јє ||Constantine Sokharev - programming|Svyatoslav Patashnikov - management|Alexey Andruschenko - web design"
+			modelName	= "r2_man"
+			modelSkin	= "2"
+			modelCfg	= "24"
+			showTime	= "3"
+			fontSize="16" />
+
+		<Page
+			id="20"
+			text="·ўРРЙМ "Buka Entertainment""
+			modelName	= "r2_man"
+			modelSkin	= "0"
+			modelCfg	= "0"
+			showTime="3"
+			fontSize="40" />
+
+		<Page
+			id="21"
+			text="ЦЖЧчИЛ || Ivan Bunakov"
+			modelName	= "r3_man"
+			modelSkin	= "1"
+			modelCfg	= "2812"
+			showTime="3"
+			fontSize="20" />
+
+		<Page
+			id="22"
+			text="ёЯј¶ЦґРРЦЖЧчИЛ||Ivan Moroz"
+			modelName	= "r2_man"
+			modelSkin	= "0"
+			modelCfg	= "198"
+			showTime="3"
+			fontSize="20" />
+
+		<Page
+			id="23"
+			text="ПъКЫѕ­Ан||Youriy Virich|Alexey Pisklukov"
+			modelName	= "r3_man"
+			modelSkin	= "2"
+			modelCfg	= "2298"
+			showTime	= "3"
+			fontSize="20" />
+
+		<Page
+			id="24"
+			text="јјКхЧЁјТ || Kirill Bestemyanov"
+			modelName	= "r3_man"
+			modelSkin	= "0"
+			modelCfg	= "57"
+			showTime="3"
+			fontSize="20" />
+
+		<Page
+			id="25"
+			text="ТфР§ЧЁјТ || Ruslan Dmitriev"
+			modelName	= "r3_man"
+			modelSkin	= "2"
+			modelCfg	= "1745"
+			showTime="3"
+			fontSize="20" />
+
+		<Page
+			id="26"
+			text="·вГжЙијЖ ||Sanan Ushanov| Daniella Klimashevskaya"
+			modelName	= "r2_woman"
+			modelSkin	= "2"
+			modelCfg	= "43"
+			showTime	= "3"
+			fontSize="20" />
+
+		<Page
+			id="27"
+			text="№«№Шѕ­Ан||Alexey Pastushenko."
+			modelName	= "r3_man"
+			modelSkin	= "2"
+			modelCfg	= "765"
+			showTime="3"
+			fontSize="20" />
+
+		<Page
+			id="28"
+			text="№«№Шѕ­АнЦъАн||Oleg Morozov."
+			modelName	= "r3_man"
+			modelSkin	= "2"
+			modelCfg	= "456"
+			showTime="3"
+			fontSize="20" />
+
+		<Page
+			id="29"
+			text="ЦЖЧчИЛЦъАн|| Alexey Peshekhonov| Nikolay Safronov"
+			modelName	= "r3_man"
+			modelSkin	= "1"
+			modelCfg	= "761"
+			showTime	= "3"
+			fontSize="20" />
+
+		<Page
+			id="30"
+			text="РВНЕ¶Уѕ­Ан||Nikolay Safronov"
+			modelName	= "r3_man"
+			modelSkin	= "2"
+			modelCfg	= "635"
+			showTime="3"
+			fontSize="20" />
+
+		<Page
+			id="31"
+			text="ЦґРРЦЖЧчИЛ||Alexander Pak"
+			modelName	= "r3_man"
+			modelSkin	= "0"
+			modelCfg	= "253"
+			showTime="3"
+			fontSize="20" />
+
+		<Page
+			id="32"
+			text="ЦКБї±ЈЦ¤Цч№Ь||Evgeny Popov|Ivan Rid"
+			modelName	= "r3_man"
+			modelSkin	= "1"
+			modelCfg	= "379"
+			showTime	= "3"
+			fontSize="20" />
+
+		<Page
+			id="33"
+			text="ЦКБї±ЈЦ¤НЕ¶У ||Anton Epishin|Dmitry Lesin|Alexander Poloshin |Evgeny Popov |Ivan Raynov| Ivan Rid |Alexey Chebotarev"
+			modelName	= "r3_man"
+			modelSkin	= "1"
+			modelCfg	= "456"
+			showTime="5"
+			fontSize="20" />
+
+		<Page
+			id="34"
+			text="НвІїІвКФ||Peter Beliaev|Alexey Bunak|Igor Dmitriev|Michael Matushov|Denis Sokolov"
+			modelName	= "r3_man"
+			modelSkin	= "1"
+			modelCfg	= "0"
+			showTime="3"
+			fontSize="20" />
+
+		<Page
+			id="34_1"
+			text="НвІїІвКФ||Igor Peshekhontsev|Dmitry Chichikov|Alexey SHekhovtsev|Ilia Yusipov|Timur Yusipov"
+			modelName	= "r3_man"
+			modelSkin	= "1"
+			modelCfg	= "0"
+			showTime="3"
+			fontSize="20" />
+
+		<Page
+			id="35"
+			text="ПъКЫІї ||Maxim N. Alexeev| Maxim U.  Alexeev | Maxim A.  Alexeev |Natalia Ankundinova |Elena Antonova |Ilia Brovchenko |Pavel Grigoriev |Victoria Kiseleva|Alexander Kochetkov"
+			modelName	= "r3_man"
+			modelSkin	= "0"
+			modelCfg	= "123"
+			showTime	= "5"
+			fontSize="14" />
+
+		<Page
+			id="36"
+			text="ПъКЫІї ||Andrey Osipov|Alexandr Petrinsky|Olga Polkovnikova|Larisa Savelieva |Evgeny Samsonov |Svetlana Samsonova |Valery Tikhvonski|Sergey Fedosof"
+			modelName	= "r2_woman"
+			modelSkin	= "0"
+			modelCfg	= "4"
+			showTime	= "5"
+			fontSize="14" />
+
+		<Page
+			id="37"
+			text="КРіЎ||Tatiana Vasekina"
+			modelName	= "r2_woman"
+			modelSkin	= "2"
+			modelCfg	= "113"
+			showTime="3"
+			fontSize="20" />
+
+		<Page
+			id="38"
+			text="ЙзЗшѕ­Ан||Alexander Kovalev"
+			modelName	= "r3_man"
+			modelSkin	= "2"
+			modelCfg	= "97"
+			showTime="3"
+			fontSize="20" />
+
+		<Page
+			id="39"
+			text="ЧЁјТОЇФ±»б ||Vladimir Miniaev|Maxim N. Mikhalev |Ivan Moroz|Sergey Rudenko|Vitaly Kharitonenko"
+			modelName	= "r3_man"
+			modelSkin	= "0"
+			modelCfg	= "225"
+			showTime="5"
+			fontSize="20" />
+
+		<Page
+			id="40"
+			text="·ЁОсЦ§іЦ ||Georgy Vitaliev"
+			modelName	= "r3_man"
+			modelSkin	= "2"
+			modelCfg	= "369"
+			showTime="3"
+			fontSize="20" />
+
+		<Page
+			id="41"
+			text="јјКхЦ§іЦ||Evgeny Dmitriev"
+			modelName	= "r3_man"
+			modelSkin	= "1"
+			modelCfg	= "381"
+			showTime="3"
+			fontSize="20" />
+
+		<Page
+			id="42"
+			text="КЧПЇЦґРР№Щ|| Alexander Mikhailov"
+			modelName	= "r3_man"
+			modelSkin	= "1"
+			modelCfg	= "2300"
+			showTime="3"
+			fontSize="20" />
+
+		<Page
+			id="43"
+			text="КЧПЇІЖОс№Щ ||Marina Ravoon"
+			modelName	= "r2_woman"
+			modelSkin	= "2"
+			modelCfg	= "108"
+			showTime="3"
+			fontSize="20" />
+
+		<Page
+			id="44"
+			text="КРіЎІїЦч№Ь || Maxim N. Mikhalev"
+			modelName	= "r3_man"
+			modelSkin	= "1"
+			modelCfg	= "635"
+			showTime="3"
+			fontSize="20" />
+
+		<Page
+			id="45"
+			text="ПъКЫІїЦч№Ь ||Tatiana Ustinova"
+			modelName	= "r2_woman"
+			modelSkin	= "0"
+			modelCfg	= "100"
+			showTime="3"
+			fontSize="20" />
+
+		<Page
+			id="46"
+			text="їЄ·ўІїЦч№Ь ||Ivan Bunalov"
+			modelName	= "r3_man"
+			modelSkin	= "1"
+			modelCfg	= "2812"
+			showTime="3"
+			fontSize="20" />
+
+		<Page
+			id="47"
+			text="МШ±рёРР»Јє||Youlia Belova|Sergey Bobkov|Ilia Brovchenko|Dmitry Zakharov|Dmitry Kuleshov|Dmitry Lesin|Vladimir Miniaev |Ivan Moroz"
+			modelName	= "r3_man"
+			modelSkin	= "2"
+			modelCfg	= "1745"
+			showTime	= "5"
+			fontSize="14" />
+
+		<Page
+			id="48"
+			text="МШ±рёРР»Јє||Marina Ravoon|Ivan Rid|Inna Sutsepina|Igor Ustinov|Irina Tsareva|Victoria Enns"
+			modelName	= "r3_man"
+			modelSkin	= "1"
+			modelCfg	= "57"
+			showTime	= "5"
+			fontSize="14" />
+	</Pages>
+</Credits>

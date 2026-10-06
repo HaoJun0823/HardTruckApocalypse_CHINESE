@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<DialogsResource><!--Root-->
+	<Reply
+		name="Dynamic00"
+		text="»¶У­ДгЈ¬БчАЛХЯЎЈ"
+		role="NPC"
+		scriptResult="ConversationWnd:ShowDynamicQuestsMenu()"
+		nextReplies="EndDlg2 Dlg_pl_000020" />
+
+	<Reply
+		name="Dlg_pl_000020"
+		text="±§ЗёЈ¬їґАґКЗОТИПґнИЛБЛЎЈ"
+		role="PLAYER"
+		scriptCondition="GetCurNpc():HasNotTakenDynamicQuests()"
+		scriptResult="ConversationWnd:EndConversation()" />
+
+	<Reply
+		name="Dynamic00_plYes0"
+		text="єГЎЈ"
+		role="PLAYER"
+		scriptResult="ConversationWnd:GetCurrentDynamicQuest():Take(); ConversationWnd:EndConversation()" />
+
+	<Reply
+		name="Dynamic00_plNo0"
+		text="І»БЛЎЈ"
+		role="PLAYER"
+		scriptResult="ConversationWnd:EndConversation()" />
+
+	<Reply
+		name="Dynamic00_Destroy00"
+		text="ОТФЪХТ»о¶щёЙЈ¬ДгХв¶щУРКІГґДЬёшОТµДВрЈї"
+		role="PLAYER"
+		nextReplies="Dynamic00_Destroy00_npc0" />
+
+	<Reply
+		name="Dynamic00_DestroyTimelimited00"
+		text="ОТПлХТ·Э»о¶щёЙЈ¬І»№эЦ»ёЙТ»РЎХуЧУЎЈ"
+		role="PLAYER"
+		nextReplies="Dynamic00_Destroy00_npc0" />
+
+	<Reply
+		name="Dynamic00_Destroy00_npc0"
+		text="ёЅЅьЧЎЧЕТ»ёц№ЯНµЎЈТЄЛыИЛН·Ј¬ЙНЅр%3dЎЈХв»о¶щДгЅУВрЈї"
+		role="NPC"
+		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
+
+	<Reply
+		name="Dynamic00_Destroy01"
+		text="УРКІГґ»о¶щВрЈї"
+		role="PLAYER"
+		nextReplies="Dynamic00_Destroy01_npc0" />
+
+	<Reply
+		name="Dynamic00_DestroyTimelimited01"
+		text="Хв¶щУРБг»о¶щїЙёЙВрЈї"
+		role="PLAYER"
+		nextReplies="Dynamic00_Destroy01_npc0" />
+
+	<Reply
+		name="Dynamic00_Destroy01_npc0"
+		text="УРИЛЙХБЛОТГЗµДЦЦЧУЈ¬»№НщЛ®ѕ®АпПВ¶ѕЎЈК®УР°ЛѕЕКЗµРИЛµДјйПёЎЈёЙµфЛыЈ¬%3dѕН№йДгЎЈёЙІ»ёЙЈї"
+		role="NPC"
+		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
+
+	<Reply
+		name="Dynamic00_Destroy02"
+		text="УР»о¶щЅ»ёшОТВрЈї"
+		role="PLAYER"
+		nextReplies="Dynamic00_Destroy02_npc0" />
+
+	<Reply
+		name="Dynamic00_DestroyTimelimited02"
+		text="УРИООсЅ»ёшОТВрЈї"
+		role="PLAYER"
+		nextReplies="Dynamic00_Destroy02_npc0" />
+
+	<Reply
+		name="Dynamic00_Destroy02_npc0"
+		text="іЗЅјУРёц·иЧУµЅґ¦ВТґЬЈ¬ЧЁЙиВс·ьПЕ»ЈґеГсЎЈЛыЛгІ»ЙПКІГґєЭЅЗЙ«Ј¬їЙАП°ЩРХФ№ЙщФШµАЎЈёЙµфЛыЈ¬%3dѕН№йДгЎЈФёТв°пГ¦ВрЈї"
+		role="NPC"
+		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
+
+	<Reply
+		name="Dynamic00_Reach00"
+		text="ОТПлґтМэґтМэУРКІГґ»о¶щЎЈ"
+		role="PLAYER"
+		nextReplies="Dynamic00_Reach00_npc0" />
+
+	<Reply
+		name="Dynamic00_ReachTimelimited00"
+		text="ОТПлХТ·ЭЗ®¶а»о¶щЗбµДІоКВЎЈ"
+		role="PLAYER"
+		nextReplies="Dynamic00_Reach00_npc0" />
+
+	<Reply
+		name="Dynamic00_Reach00_npc0"
+		text="РиТЄ°СТ»ЕъСРѕїЧКБПєНБгјюЛНµЅ%2nѕЫВдЎЈ»хµЅё¶їоЎЈХвМЛ»о¶щёш%3dЈ¬±ЁікІ»ЛгЙЩЎЈХвМЛ»хДгЅУВрЈї"
+		role="NPC"
+		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
+
+	<Reply
+		name="Dynamic00_Reach01"
+		text="МэЛµФЪХв¶щДЬХТµЅ»о¶щёЙЈї"
+		role="PLAYER"
+		nextReplies="Dynamic00_Reach01_npc0" />
+
+	<Reply
+		name="Dynamic00_ReachTimelimited01"
+		text="МэЛµКЦЅЕВйАыµДИЛФЪХв¶щДЬХТµЅ»о¶щёЙЎЈ"
+		role="PLAYER"
+		nextReplies="Dynamic00_Reach01_npc0" />
+
+	<Reply
+		name="Dynamic00_Reach01_npc0"
+		text="ОТГЗУРёц°ь№ьТЄЛНµЅ%2nѕЫВдЎЈДгЛіВ·µДК±єтЙУ№эИҐѕНРРЈ¬І»ј±ЧЕТЄЎЈЛНµЅё¶Дг%3dЎЈДЬЦёНыДгВрЈї"
+		role="NPC"
+		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
+
+	<Reply
+		name="Dynamic00_ReachComplete00"
+		text="Хв°ь№ьѕНКЗёГЅ»ёшДгµД°ЙЈї"
+		role="PLAYER"
+		nextReplies="Dynamic00_ReachComplete00_npc0" />
+
+	<Reply
+		name="Dynamic00_ReachComplete00_npc0"
+		text="¶ФЈ¬ѕНКЗХвёцЎЈ¶«Оч¶јЖлБЛЈї"
+		role="NPC"
+		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
+
+	<Reply
+		name="Dynamic00_Convoy00"
+		text="Хв¶щДЬХТµг»о¶щёЙВрЈї"
+		role="PLAYER"
+		nextReplies="Dynamic00_Convoy00_npc0" />
+
+	<Reply
+		name="Dynamic00_ConvoyTimelimited00"
+		text="ОТИ±З®Ј¬КІГґ»о¶щ¶јЅУЎЈ"
+		role="PLAYER"
+		nextReplies="Dynamic00_Convoy00_npc0" />
+
+	<Reply
+		name="Dynamic00_Convoy00_npc0"
+		text="єГ°ЙЎЈТ»ёцИЛёПВ·М«ОЈПХЈ¬ХэєГОТУРёцЕуУСТЄИҐ%2nЎЈ»¤ЛНЛыТ»іМЈ¬µЅБЛµШ·Ѕё¶Дг%3dЎЈИҐВрЈї"
+		role="NPC"
+		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
+
+	<Reply
+		name="Dynamic00_Convoy01"
+		text="УРКІГґ»о¶щДЬёшОТЅйЙЬЅйЙЬВрЈї"
+		role="PLAYER"
+		nextReplies="Dynamic00_Convoy01_npc0" />
+
+	<Reply
+		name="Dynamic00_ConvoyTimelimited01"
+		text="УРКІГґБг»о¶щДЬёшОТЅйЙЬЅйЙЬВрЈї"
+		role="PLAYER"
+		nextReplies="Dynamic00_Convoy01_npc0" />
+
+	<Reply
+		name="Dynamic00_Convoy01_npc0"
+		text="Хв¶щУРО»АПРЦёъБЪіЗЧцВтВфЈ¬іЈТЄЛНСщЖ·№эИҐЎЈ»¤ЛНЛыИҐ%2nЈ¬Лі±г¶ўЅфЙнєуµДОІ°НЎЈЕ¶¶ФБЛЈЎ±ЁікКЗ%3dЎЈЧј±ё»¤ЛНБЛВрЈї"
+		role="NPC"
+		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
+
+	<Reply
+		name="EndDlg1"
+		text="ОТИ±З®ЎЈХвіЗАпУРКІГґ»о¶щµДГЕВ·ВрЈї"
+		role="PLAYER"
+		scriptResult="ConversationWnd:EndConversation()"
+		nextReplies="Dlg_npc_000017" />
+
+	<Reply
+		name="EndDlg2"
+		text="УРКІГґРВПККВ¶щВрЈї"
+		role="PLAYER"
+		scriptCondition="not GetCurNpc():HasNotTakenDynamicQuests()"
+		nextReplies="Dlg_npc_000017" />
+
+	<Reply
+		name="Dlg_npc_000017"
+		text="ЧЬМеЙПГ»КІГґРВПКµДЎЈХвР©МмТ»Ц±·зЖЅАЛѕІЎЈ"
+		role="NPC"
+		nextReplies="Dlg_pl_000018" />
+
+	<Reply
+		name="Dlg_pl_000018"
+		text="РРЈ¬»ШјыЎЈ"
+		role="PLAYER"
+		scriptResult="ConversationWnd:EndConversation()" />
+
+	<Reply
+		name="Dynamic00_Peace00"
+		text="ОТУцµЅВй·іБЛЈ¬ОТёъ%2bNNNЖрБЛ№эЅЪ"
+		role="PLAYER"
+		nextReplies="Dynamic00_Peace00_npc0" />
+
+	<Reply
+		name="Dynamic00_Peace00_npc0"
+		text="ОТїґДг°С%2bИЗГ«БЛІЕ±»ЛыГЗµ±іЙµРИЛNNNОТУРјёёцКмИЛЈ¬Ц»ТЄДгїПіцЙнЙПІЖІъµД°Щ·ЦЦ®%3dЈ¬ОТѕНДЬИҐёъКРХю»бµДИЛґтЙщХРєфЎЈДгґшЗ®БЛВрЈї"
+		role="NPC"
+		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
+
+	<Reply
+		name="Dynamic00_Peace01"
+		text="ОТРиТЄ°пГ¦ЎЈОТєН%2bУРёцОКМвКјЦХМёІ»ВЈЈ¬СЫПВNNN"
+		role="PLAYER"
+		nextReplies="Dynamic00_Peace01_npc0" />
+
+	<Reply
+		name="Dynamic00_Peace01_npc0"
+		text="ОТЦЄµА%2bІ»ПлёъДгґтЅ»µАЎЈЦ»РиТ»µгРЎРЎµДРБїа·СЎЄЎЄДгІЖІъµД°Щ·ЦЦ®%3dЎЄЎЄОТѕНДЬ°пДгФЪЛыГЗЦРјд°СНюРЕБўЖрАґЎЈЗ®±ёєГБЛВрЈї"
+		role="NPC"
+		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
+
+	<Reply
+		name="Dynamic00_Hunt00"
+		text="ОТїґХв¶щёГУР»о¶щёЙЎЈ"
+		role="PLAYER"
+		nextReplies="Dynamic00_Hunt00_npc0" />
+
+	<Reply
+		name="Dynamic00_HuntTimelimited00"
+		text="ОТїґХв¶щУРЗбЛЙµД»о¶щёЙ°ЙЈї"
+		role="PLAYER"
+		nextReplies="Dynamic00_Hunt00_npc0" />
+
+	<Reply
+		name="Dynamic00_Hunt00_npc0"
+		text="НБ·ЛбчБФјѕїЄХЕБЛЎЈГїёЙµфТ»БѕіµЅ±Аш%3dЎЈЙНЅрµИИьјѕЅбКшТ»ІўЅбЗеЎЈТЄёшДгµЗјЗВрЈї"
+		role="NPC"
+		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
+
+	<Reply
+		name="Dynamic00_Hunt01"
+		text="ОТїґХвГґґуµДіЗЈ¬ЧЬёГУРОТµД»о¶щ°ЙЈї"
+		role="PLAYER"
+		nextReplies="Dynamic00_Hunt01_npc0" />
+
+	<Reply
+		name="Dynamic00_HuntTimelimited01"
+		text="ОТїґХвГґґуµДіЗЈ¬ЧЬёГУРЧ¬Н·І»ґнµД»о¶щ°ЙЈї"
+		role="PLAYER"
+		nextReplies="Dynamic00_Hunt01_npc0" />
+
+	<Reply
+		name="Dynamic00_Hunt01_npc0"
+		text="НБ·ЛјтЦ±ОЮ·ЁОЮМмБЛЈЎЛыГЗґіЅшОТГЗµДµШЕМЈ¬»№°СКЦЙмЅшОТГЗµДІЦївЎЈµГєГєГЅМСµЛыГЗТ»¶ЩЎЈЙ±јёёцБўБўНюЈ¬Й±ј¦ЩУєпЎЈЧўТвЧҐЅфК±јдЈ¬ГїёЙµфТ»ёцµГ%3dЎЈёТЅУВрЈї"
+		role="NPC"
+		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
+
+	<Reply
+		name="Dynamic00_Drugs00"
+		text="ДгХв¶щКЗІ»КЗУРµгДЗёцЎ­Ў­Дг¶®ОТКІГґТвЛј°ЙЈїЈЎ"
+		role="PLAYER"
+		nextReplies="Dynamic00_Drugs00_npc0" />
+
+	<Reply
+		name="Dynamic00_Drugs00_npc0"
+		text="РРЈ¬РЎµгЙщЎЈХвУРёц°ь№ьЎЈОТПлДгїґµГіцАґЈ¬ХвКЗЙПµИ»хЙ«µДЧЯЛЅЖ·ЎЈВфДг%3dЈ¬І»№эДгДЬЧЄКЦВфіцёЯµГ¶аµДјЫЎ­Ў­З°МбКЗДгДЬ»оЧЕЎЈВтВрЈї"
+		role="NPC"
+		nextReplies="Dynamic00_DrugsTake Dynamic00_DrugsNoMoney Dynamic00_plNo0" />
+
+	<Reply
+		name="Dynamic00_DrugsNoMoney"
+		text="ЯАЎ­Ў­ёшОТБфЧЕЈ¬ОТХвѕН»ШИҐИЎЗ®ЎЈ"
+		role="PLAYER"
+		scriptCondition="GetPlayerMoney() < ConversationWnd:GetCurrentDynamicQuest():GetReward()"
+		scriptResult="ConversationWnd:EndConversation()" />
+
+	<Reply
+		name="Dynamic00_DrugsTake"
+		text="ёшОТ°ЙЈ¬ОТЦЄµАЙПДД¶щіцКЦЎЈ"
+		role="PLAYER"
+		scriptCondition="GetPlayerMoney() >= ConversationWnd:GetCurrentDynamicQuest():GetReward()"
+		scriptResult="ConversationWnd:GetCurrentDynamicQuest():Take(); ConversationWnd:EndConversation()" />
+
+	<Reply
+		name="Dynamic00_SellDrugs00"
+		text="ОТПл°СТ»ёц°ь№ьВфёшК¶»хµДИЛЎЈ"
+		role="PLAYER"
+		nextReplies="Dynamic00_SellDrugs00_npc0" />
+
+	<Reply
+		name="Dynamic00_SellDrugs00_npc0"
+		text="РЎµгЙщЈ¬±рХРАґІ»±ШТЄµДЧўТвЎЈДгПлВф¶аЙЩЈї"
+		role="NPC"
+		nextReplies="Dynamic00_SellDrugs00_1x Dynamic00_SellDrugs00_1.5x Dynamic00_SellDrugs00_2x" />
+
+	<Reply
+		name="Dynamic00_SellDrugs00_1x"
+		text="ОТФ­јЫіцЈ¬І»Ч¬ДгТ»·ЦЎЈ"
+		role="PLAYER"
+		scriptResult="ConversationWnd:GetCurrentDynamicQuest():SetRewardCoeff(1.0); ConversationWnd:GetCurrentDynamicQuest():Take()"
+		nextReplies="Dynamic00_SellDrugs00_try_yes Dynamic00_SellDrugs00_try_no" />
+
+	<Reply
+		name="Dynamic00_SellDrugs00_1.5x"
+		text="ХвµҐЙъТвЈ¬¶аЙЩµГИГОТЧ¬Т»µг°ЙЎЈ"
+		role="PLAYER"
+		scriptResult="ConversationWnd:GetCurrentDynamicQuest():SetRewardCoeff(1.5); ConversationWnd:GetCurrentDynamicQuest():Take()"
+		nextReplies="Dynamic00_SellDrugs00_try_yes Dynamic00_SellDrugs00_try_no" />
+
+	<Reply
+		name="Dynamic00_SellDrugs00_2x"
+		text="ОТВфЛ«±¶јЫЎЈ"
+		role="PLAYER"
+		scriptResult="ConversationWnd:GetCurrentDynamicQuest():SetRewardCoeff(2.0); ConversationWnd:GetCurrentDynamicQuest():Take()"
+		nextReplies="Dynamic00_SellDrugs00_try_yes Dynamic00_SellDrugs00_try_no" />
+
+	<Reply
+		name="Dynamic00_SellDrugs00_try_yes"
+		text="РРЈ¬ОТКХБЛЈЎХвКЗДгУ¦µГµД%3dЈЎ"
+		role="NPC"
+		scriptCondition="not ConversationWnd:GetCurrentDynamicQuest():IsStatusFailed()"
+		nextReplies="Dynamic00_SellDrugs00_ok" />
+
+	<Reply
+		name="Dynamic00_SellDrugs00_try_no"
+		text="КІГґЈїЈЎДг»№ёТТЄјЫЈїЈЎМэЧЕЈ¬Хв»хОТТЄ°ЧДГЈЎФЩ¶аЛµТ»ѕдЈ¬ОТѕНёжЛЯОА±шДгФЪХв¶щВфµДКІГґНжТв¶щЎЈ№цФ¶µгЎЈ"
+		role="NPC"
+		scriptCondition="ConversationWnd:GetCurrentDynamicQuest():IsStatusFailed()"
+		nextReplies="Dynamic00_SellDrugs00_ok" />
+
+	<Reply
+		name="Dynamic00_SellDrugs00_ok"
+		text="»ШјыЎЈ"
+		role="PLAYER"
+		scriptResult="ConversationWnd:EndConversation()" />
+
+	<Reply
+		name="Dynamic00_Treasure00"
+		text="ОТЦ»¶ФВсФЪХвёцµШЗшµДёчЦЦ№ЕОпёРРЛИ¤ЎЈ"
+		role="PLAYER"
+		nextReplies="Dynamic00_Treasure00_npc0" />
+
+	<Reply
+		name="Dynamic00_Treasure00_npc0"
+		text="ОТХв¶щУРМхПыПўВфёшДгЎЈОТІ»ПлИЗВй·іЈ¬іЗАп»№УРВтВфТЄЧцЎЈОТіµЙПТІГ»Ч°С°±¦МЅІвЖчЎЈТАОТїґЈ¬ХвёЅЅьУРёцµШ·ЅЦµµГМЅТ»МЅЎЈОТїЙТФ°пДгФЪµШНјЙП±кіцАґЎЄЎЄµ±И»Ј¬З°МбКЗДгПлТЄЎЈ"
+		role="NPC"
+		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
+</DialogsResource>
