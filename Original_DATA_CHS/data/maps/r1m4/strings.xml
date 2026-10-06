@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<resource>
+	<string
+		id="1"
+		modelName="mask_hero"
+		value="|ДЗїЙКЗёцТЄГьµД№нµШ·ЅЎЈГ»УРАнУЙОТІ»»бИҐЎЈ"
+		sound="data\sounds\Speech\r1m4\r1m4_1_hero.ogg" />
+
+	<string
+		id="2"
+		modelName="mask_hero"
+		value="|їґАґХвѕНКЗєЙВнЛµµДµШ·ЅЎЈОТґУХв¶щ№эХУФуЎЈ"
+		sound="data\sounds\Speech\r1m4\r1m4_2_hero.ogg" />
+
+	<string
+		id="3"
+		modelName="mask_hero"
+		value="|АПН·ЛµµДКЗКµ»°ЎЈ±Ў±ЎТ»ІгДаЅ¬ПВГжКЗКµґтКµµДУІµШЎЈІ»ЦЄµАХУФу¶ФГжµИЧЕОТµДКЗКІГґЎЈ"
+		sound="data\sounds\Speech\r1m4\r1m4_3_hero.ogg" />
+
+	<string
+		id="4"
+		modelName="r1_man"
+		modelSkin="2"
+		modelCfg="132"
+		modelSlot="1"
+		value="КШОА|±р№эАґЈЎИОєОµР¶ФРРОЄ¶јЅ«ИГДгЛНГьЈЎ"
+		sound="data\sounds\Speech\r1m4\r1m4_4_guard.ogg"
+		time="4" />
+
+	<string
+		id="5"
+		modelName="mask_hero"
+		value="|ДгГЗФЛµД»хХэКЗОТРиТЄµДЎЈ°СЛьИГёшОТЈ¬ОТХХјЫё¶З®ЈЎ"
+		sound="data\sounds\Speech\r1m4\r1m4_5_hero.ogg"
+		time="4" />
+
+	<string
+		id="6"
+		modelName="r1_man"
+		modelSkin="2"
+		modelCfg="132"
+		modelSlot="1"
+		value="КШОА|ДгПл»ЯВёОТГЗЈїєГґуµДµЁЧУЈЎ"
+		sound="data\sounds\Speech\r1m4\r1m4_6_guard.ogg"
+		time="4" />
+
+	<string
+		id="7"
+		modelName="mask_hero"
+		value="|ДЗєГЈ¬ФЫГЗѕНАґУІµДЎЈ·ЕµфЗф·ёЈ¬іГОТ»№Г»·ў»рёПЅф№цЈЎ"
+		sound="data\sounds\Speech\r1m4\r1m4_7_hero.ogg"
+		time="4" />
+
+	<string
+		id="8"
+		modelName="r1_man"
+		modelSkin="2"
+		modelCfg="132"
+		modelSlot="1"
+		value="КШОА| і­јТ»пЈЎИГХв»мµ°јыК¶јыК¶Ачє¦ЈЎ"
+		sound="data\sounds\Speech\r1m4\r1m4_8_guard.ogg"
+		time="4" />
+
+	<string
+		id="9"
+		modelName="mask_hero"
+		value="|ХвКЗДгГЗЧФХТµДЎЈЗфіµОТІ»ДЬЕцЈ»ЖдЛыµД¶јёшОТПВµШУь°ЙЈЎ"
+		sound="data\sounds\Speech\r1m4\r1m4_9_hero.ogg"
+		time="4" />
+
+	<string
+		id="10"
+		modelName="mask_hero"
+		value="|»№г¶ЧЕёЙКІГґЈїЙПіµЈЎїмµгЈ¬ЛыГЗїЙДЬТСѕ­ЅРБЛФ®±шЎЈ"
+		sound="data\sounds\Speech\r1m4\r1m4_10_hero.ogg"
+		time="4" />
+
+	<string
+		id="11"
+		modelName="r1_man"
+		modelSkin="0"
+		modelCfg="86"
+		modelSlot="1"
+		value="БмРд|¶аР»ДгѕИБЛОТЈ¬Д°ЙъИЛЎЈїЙДгКЗЛ­ЈїОТІ»И·¶ЁДЬІ»ДЬРЕµГ№эДгЎ­Ў­"
+		sound="data\sounds\Speech\r1m4\r1m4_11_leader.ogg"
+		time="4" />
+
+	<string
+		id="12"
+		modelName="mask_hero"
+		value="|ОТёъДгµДКЦПВЧцБЛ±КЅ»ТЧЎЈОТѕИДгіцАґЈ¬ЛыГЗёшОТРиТЄµД¶«ОчЎЈОТХв±ЯµДіРЕµТСѕ­¶ТПЦБЛЎЈ"
+		sound="data\sounds\Speech\r1m4\r1m4_12_hero.ogg"
+		time="4" />
+
+	<string
+		id="13"
+		modelName="mask_hero"
+		value="|ФгБЛЈ¬Зфіµ±¬ХЁБЛЎЈБмРдЛАБЛЈ¬ОТФЩТІГ»УРКІГґДЬёъДЗР©ј«¶Л·ЦЧУЅ»»»µДБЛЎЈ"
+		sound="data\sounds\Speech\r1m4\r1m4_13_hero.ogg"
+		time="4" />
+
+	<string
+		id="14"
+		modelName="mask_hero"
+		value="|їґАґЈ¬ОТЦ»ДЬУІЗАДЗёцІЦївБЛЎЈРЎІЛТ»µъЈЎ"
+		sound="data\sounds\Speech\r1m4\r1m4_14_hero.ogg"
+		time="4" />
+
+	<string
+		id="15"
+		value="ѕЮЧ¦|·ўПЦИлЗЦХЯЈ¬ѕЇ±ЁЈЎ"
+		sound="data\sounds\Speech\r1m4\r1m4_15_boss.ogg"
+		time="4" />
+
+	<string
+		id="16"
+		modelName="mask_hero"
+		value="|ХвКЗКІГґЈїЎ­Ў­ОЄКІГґУРИЛТЄФмХвЦЦ№ЦОпЈї"
+		sound="data\sounds\Speech\r1m4\r1m4_16_hero.ogg"
+		time="4" />
+
+	<string
+		id="17"
+		modelName="mask_hero"
+		value="|ОТГч°ЧБЛЈ¬ХвјТ»пФЪКШОАєЈГЕЎЈОТ±ШРлИЖїЄЛьЎЈЧУµЇДЬІ»ДЬЙЛµЅЛьЈ¬І»єГЛµЎЈґт°ЬЛьТ»¶ЁУРКІГґѕчЗПЎЈ"
+		sound="data\sounds\Speech\r1m4\r1m4_17_hero.ogg"
+		time="4" />
+
+	<string
+		id="18"
+		modelName="mask_hero"
+		value="|ѕНКЗХвёцµШ·ЅЈ¬їЙЦЬО§Б¬ёцГЕµДУ°ЧУ¶јГ»УРЎ­Ў­ДСµАХвТ»ЗР¶ј°Ч·СБЛЈї"
+		sound="data\sounds\Speech\r1m4\r1m4_18_hero.ogg"
+		time="4" />
+
+	<string
+		id="19"
+		modelName="mask_hero"
+		value="|µИµИЈ¬ФїіЧїЄКј·ўИИБЛЎЈУРКІГґ¶«ОчХэґУЛ®АпіцАґЈЎФміцХвЦЦ№ЦОпµД№ЕИЛѕш¶ФКЗ·иБЛЎЈїґАґУЦУРТ»іЎУІХМТЄґтЎЈ"
+		sound="data\sounds\Speech\r1m4\r1m4_19_hero.ogg"
+		time="4" />
+
+	<string
+		id="20"
+		modelName="mask_hero"
+		value="|µИµИЈ¬ЛьГ»УР№Ґ»чЎЈїґЖрАґПсКЗФЪЗлОТЅшЛьЧмАпЎЈОТГч°ЧБЛЈ¬ХвѕНКЗєЈГЕЈЎОТТЄЧкЅшХв№ЦУгµД¶ЗЧУЈ¬З°НщЙсЪНµД№ъ¶ИЎЈ·ґХэОТТІГ»КІГґїЙЛрК§µДБЛЎЈИ«ЛЩЗ°ЅшЈЎ"
+		sound="data\sounds\Speech\r1m4\r1m4_20_hero.ogg"
+		time="4" />
+
+	<string
+		id="21"
+		modelName="mask_hero"
+		value="|ХвР©·ЛНЅФЩТІЙ§ИЕІ»БЛЙМИЛБЛЈЎ"
+		sound="data\sounds\Speech\r1m4\r1m4_21_hero.ogg"
+		time="4" />
+
+	<string
+		id="22"
+		modelName="mask_hero"
+		value="|ПЦФЪОТµГёжЛЯ°В¶ыД·µДИЛЈ¬ІЦївТСѕ­ДГПВАґБЛЎЈ"
+		sound="data\sounds\Speech\r1m4\r1m4_22_hero.ogg"
+		time="4" />
+
+	<string
+		id="23"
+		modelName="mask_hero"
+		value=""
+		time="4" />
+
+	<string
+		id="24"
+		modelName="mask_hero"
+		value=""
+		time="4" />
+
+	<string
+		id="8801"
+		value="ДгПлЗ°НщБнТ»ёцµШЗшВрЈї"
+		numButtons="2" />
+
+	<string
+		id="8802"
+		modelName="mask_hero"
+		value="ОТІ»ИПК¶В·Ј¬»№КЗБфФЪХв¶щ°ЙЎЈ" />
+
+	<string
+		id="8803"
+		modelName="mask_hero"
+		value="ХвµШ·ЅНёЧЕ№Й№Цѕў¶щЎЈОТІ»ПлИҐДЗ¶щЎЈ" />
+</resource>

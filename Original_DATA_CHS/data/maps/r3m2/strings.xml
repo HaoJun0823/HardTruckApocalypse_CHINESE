@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?><!-- edited with XMLSPY v2004 rel. 4 U (http://www.xmlspy.com) by JSinx (Targem) -->
+<resource>
+	<string
+		id="1001"
+		modelName="mask_hero"
+		value="|ХвіЎ¶сХМЧЬЛгґтНкБЛЎЈїЙОТДГХвїЕДФґьµЅµЧТЄёЙКІГґЈї"
+		sound="data\sounds\Speech\r3m2\r3m2_1001_hero.ogg"
+		time="4" />
+
+	<string
+		id="1002"
+		modelName="mask_hero"
+		value="|КЧПИµГПл°м·Ё°СХвїЕДФґьґУЙнЧУЙПР¶ПВАґЎЈУРµгј¬КЦЎ­Ў­УРБЛЈЎФЩёшОТјё·ЦЦУЎ­Ў­"
+		sound="data\sounds\Speech\r3m2\r3m2_1002_hero.ogg"
+		time="3" />
+
+	<string
+		id="1003"
+		modelName="mask_hero"
+		value="|ёг¶ЁБЛЎЈПЦФЪїЙТФ»ШИҐјыЙсЪНРЕНЅБЛЎЈ"
+		sound="data\sounds\Speech\r3m2\r3m2_1003_hero.ogg"
+		time="3" />
+
+	<string
+		id="1004"
+		modelName="mask_hero"
+		value="|ХвББ№вКЗКІГґЈїїґСщЧУКЗЙсЪНМбµЅµД№ЕґъТЕОпЦ®Т»ЎЈ"
+		sound="data\sounds\Speech\r3m2\r3m2_1004_hero.ogg"
+		time="1" />
+
+	<string
+		id="1005"
+		modelName="mask_hero"
+		value="|ёЙµГєГЈЎЅУПВАґКЗµЪ¶юёцЎЈ"
+		sound="data\sounds\Speech\r3m2\r3m2_1005_hero.ogg"
+		time="1" />
+
+	<string
+		id="1006"
+		modelName="mask_hero"
+		value="|РиТЄµД¶«Оч¶јµЅКЦБЛЎЈЙсЪН»бВъТвµДЎЈ"
+		sound="data\sounds\Speech\r3m2\r3m2_1006_hero.ogg"
+		time="1" />
+
+	<string
+		id="1"
+		modelName="mask_hero"
+		value="|µЪТ»ёцРЎ°пКЦѕНО»БЛЎЈ¶а»ъБйµДРЎјТ»пЈЎ"
+		sound="data\sounds\Speech\r3m2\r3m2_1_hero.ogg"
+		time="1" />
+
+	<string
+		id="2"
+		modelName="mask_hero"
+		value="|µЪ¶юёцРЎ°пКЦїЄ№¤БЛЎЈёГИҐЛНЧоєуТ»ёцБЛЎЈ"
+		sound="data\sounds\Speech\r3m2\r3m2_2_hero.ogg"
+		time="1" />
+
+	<string
+		id="3"
+		modelName="mask_hero"
+		value="|ЧоєуТ»ёцРЎ°пКЦТІЧј±ёѕНРчЎЈПЈНыЛьГЗДЬ°пЙсЪНХТ»ШјЗТдЎЈ"
+		sound="data\sounds\Speech\r3m2\r3m2_3_hero.ogg"
+		time="1" />
+
+	<string
+		id="4"
+		modelName="mask_hero"
+		value="|ХвТ»В·ОТјы№эµД№ЦКВІ»ЙЩЎЈїЙОТ»№КЗПлІ»НЁЈ¬ФхГґ»бУРИЛФЪМпТ°ЙПБфПВХвР©ЙсГШµДУЎєЫЎЈ"
+		sound="data\sounds\Speech\r3m2\r3m2_4_hero.ogg"
+		time="1" />
+
+	<string
+		id="5"
+		modelName="mask_hero"
+		value="|ГЧµВјУµВµДїЖС§јТДЬЅвїЄХвёцГХЎЈ"
+		sound="data\sounds\Speech\r3m2\r3m2_5_hero.ogg"
+		time="1" />
+
+	<string
+		id="6"
+		modelName="mask_hero"
+		value="|НЁµАМ«Х­БЛЎЈОТµДїЁіµ№эІ»ИҐЎЈїЙОТТІІ»ПлЧЯВ·ЈЎ"
+		sound="data\sounds\Speech\r3m2\r3m2_6_hero.ogg"
+		time="1" />
+
+	<string
+		id="7"
+		modelName="mask_hero"
+		value="|ОТµГХТБѕРЎТ»µгµДіµЎЈјЗµГФЪёЅЅьєГПсјы№эТ»БѕЎЈ"
+		sound="data\sounds\Speech\r3m2\r3m2_7_hero.ogg"
+		time="1" />
+
+	<string
+		id="8"
+		modelName="mask_hero"
+		value="|¶аїч°СіµБфФЪХв¶щµДДЗО»ЎЈЖпЧЕХвЖҐЎєМъВнЎ»Ј¬ОТѕНДЬЗ±Ѕш№¤і§ЎЈ"
+		sound="data\sounds\Speech\r3m2\r3m2_8_hero.ogg"
+		time="1" />
+
+	<string
+		id="9"
+		modelName="mask_hero"
+		value="|ОТїґЅиУГТ»»б¶щГ»ИЛ»б·ґ¶ФЎЈјмІйУНБїЎ­Ў­µг»рЎ­Ў­·ў¶Ї»ъЖф¶ЇЈЎ"
+		sound="data\sounds\Speech\r3m2\r3m2_9_hero.ogg"
+		time="1" />
+
+	<string
+		id="10"
+		modelName="mask_hero"
+		value="|ЛЩ¶ИїмµГАлЖЧЎЈОТјёєхїШЦЖІ»ЧЎЎЈ"
+		sound="data\sounds\Speech\r3m2\r3m2_10_hero.ogg"
+		time="1" />
+
+	<string
+		id="11"
+		modelName="mask_hero"
+		value="|ОТИҐДЗ¶щГ»КІГґКВїЙ°мЎЈ"
+		sound="data\sounds\Speech\r3m2\r3m2_11_hero.ogg"
+		time="1" />
+
+	<string
+		id="12"
+		modelName="mask_hero"
+		value="|№ЦОпАґБЛЎЈОТїґЛьІ»»б№Ф№Ф°СДФґьЅ»іцАґЈ¬ГвІ»БЛУРТ»ХЅЎЈ"
+		sound="data\sounds\Speech\r3m2\r3m2_12_hero.ogg"
+		time="1" />
+
+	<string
+		id="13"
+		modelName="mask_hero"
+		value="|КЗёцЗїµРЈ¬І»№эОТДЬУ¦ё¶ЈЎ"
+		sound="data\sounds\Speech\r3m2\r3m2_13_hero.ogg"
+		time="1" />
+
+	<string
+		id="14"
+		modelName="mask_hero"
+		value="|ґУГ»јы№эХвГґЕУґуµД·ПРжЎЈІ»ЦЄµАґуФЦ±дЦ®З°ХвАпКЗКІГґСщЧУЎ­Ў­"
+		sound="data\sounds\Speech\r3m2\r3m2_14_hero.ogg"
+		time="1" />
+
+	<string
+		id="15"
+		modelName="mask_hero"
+		value="|ХэГЕ±»¶ВЛАБЛЈ»ОТСШМъВ·ЕцЕцФЛЖш°ЙЎЈ"
+		sound="data\sounds\Speech\r3m2\r3m2_15_hero.ogg"
+		time="1" />
+
+	<string
+		id="16"
+		image=""
+		value="|"
+		time="1" />
+
+	<string
+		id="17"
+		value="ДгІ»ДЬїЄЧЕХвБѕіµАлїЄґЛµШЎЈМ«ОЈПХБЛЎЈЧоєГ»»»ШДгЧФјєµДїЁіµЎЈ"
+		numButtons="1" />
+
+	<string
+		id="8801"
+		value="ДгПлЗ°НщБнТ»ёцµШЗшВрЈї"
+		numButtons="2" />
+</resource>

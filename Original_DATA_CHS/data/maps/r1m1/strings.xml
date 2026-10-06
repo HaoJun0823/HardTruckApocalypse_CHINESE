@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<resource>
+	<string
+		id="1"
+		modelName="mask_father"
+		modelSlot="1"
+		value="ёёЗЧ|ёГЖрґІАІЈЎЅсМмКЗДгЙъИХЈ¬ОТУРёцєГПыПўТЄёжЛЯДгЎЈ"
+		sound="data\sounds\Speech\r1m1\r1m1_1_father.ogg"
+		time="11" />
+
+	<string
+		id="2"
+		modelName="mask_hero"
+		value="|ФзЙПєГЈ¬ёёЗЧЎЈОТПґ¶ъ№§МэЎЈ"
+		sound="data\sounds\Speech\r1m1\r1m1_2_hero.ogg"
+		time="3" />
+
+	<string
+		id="3"
+		modelName="mask_father"
+		modelSlot="1"
+		value="ёёЗЧ|ЅсМм¶ФФЫБ©АґЛµ¶јКЗёцґуИХЧУЎЈДгИзЅсКЗґуИЛБЛЈ¬ПлЧцКІГґ¶јРРЎЈ"
+		sound="data\sounds\Speech\r1m1\r1m1_3_father.ogg"
+		time="17" />
+
+	<string
+		id="31"
+		modelName="mask_father"
+		modelSlot="1"
+		value="ёёЗЧ|µ±И»Ј¬ДгЧоєГ»№КЗХчµГёёЗЧµДРнїЙЎЈѕНЛµДгХвЦЦЗйїцЎЄЎЄµГХчµГОТµДРнїЙЎЈїґјыХвБѕїЁіµБЛВрЈїґУПЦФЪЖрЛьКЗДгµДБЛЎЈ"
+		sound="data\sounds\Speech\r1m1\r1m1_31_father.ogg"
+		time="12" />
+
+	<string
+		id="4"
+		modelName="mask_hero"
+		value="|ХжІ»ёТПаРЕЎЈОТЦХУЪїЙТФ¶АЧФїЄіµЙПВ·БЛЈЎ"
+		sound="data\sounds\Speech\r1m1\r1m1_4_hero.ogg"
+		time="6" />
+
+	<string
+		id="41"
+		modelName="mask_hero"
+		value="|ОТКЗЛµЎЄЎЄР»Р»ДъЈ¬і¤№ЩЎ­Ў­ЯАЈ¬ёёЗЧґуИЛЈЎ"
+		sound="data\sounds\Speech\r1m1\r1m1_41_hero.ogg"
+		time="6" />
+
+	<string
+		id="5"
+		modelName="mask_father"
+		modelSlot="1"
+		value="ёёЗЧ|Г»ґнЈ¬І»№эФЪДЗЦ®З°Ў­Ў­"
+		sound="data\sounds\Speech\r1m1\r1m1_5_father.ogg"
+		time="5" />
+
+	<string
+		id="6"
+		modelName="mask_hero"
+		value="|НЫЈЎОТТЄїЄіµИҐМмСДєЈЅЗЈЎ"
+		sound="data\sounds\Speech\r1m1\r1m1_6_hero.ogg"
+		time="4" />
+
+	<string
+		id="7"
+		modelName="mask_father"
+		modelSlot="1"
+		value="ёёЗЧ|аЕЈ¬РР°ЎЈ¬Ц»ТЄДгІ»ЕВЛ¤Ѕш№µАпЎЈІ»№эН·Т»јюЈ¬ДгµГПИИҐЛчЛ№Ј¬°СХвёц°ь№ьЛНёшОТЕуУСР»¶ыёкЎЈХэєГБ·Б·іµјјЈ¬НкКВБўїМ»ШАґЎЈ"
+		sound="data\sounds\Speech\r1m1\r1m1_7_father.ogg"
+		time="12" />
+
+	<string
+		id="8"
+		modelName="mask_hero"
+		value="|ДъµД·ФёАѕНКЗОТµДГьБоЈЎ"
+		sound="data\sounds\Speech\r1m1\r1m1_8_hero.ogg"
+		time="4" />
+
+	<string
+		id="1111"
+		modelName="mask_lisa"
+		modelSlot="1"
+		value="°®АцЛї|ФЪХв¶щµИЧЕЈ¬µИОТ°мНкКВЎЈ"
+		sound="data\sounds\Speech\r1m1\r1m1_1111_lisa.ogg"
+		time="3" />
+
+	<string
+		id="1112"
+		modelName="mask_lisa"
+		modelSlot="1"
+		value="°®АцЛї|ЧЯ°ЙЎЈ"
+		sound="data\sounds\Speech\r1m1\r1m1_1112_lisa.ogg"
+		time="3" />
+
+	<string
+		id="1121"
+		modelName="mask_lisa"
+		modelSlot="1"
+		value="°®АцЛї|јы№нЈЎОТїП¶ЁЛыѕНФЪХвёЅЅьЎЈДгИ·¶ЁХвТ»ґшГ»УР±рµДґеЧУЈї"
+		sound="data\sounds\Speech\r1m1\r1m1_1121_lisa.ogg"
+		time="7" />
+
+	<string
+		id="1122"
+		modelName="mask_hero"
+		value="|ЖдКµ»№УРТ»ёцґеЧУЈ¬ёсВ¬»фТ®ЎЈІ»№эДгФЪДЗ¶щХТІ»µЅКІГґїН»§ЎЈ"
+		sound="data\sounds\Speech\r1m1\r1m1_1122_hero.ogg"
+		time="10" />
+
+	<string
+		id="1123"
+		modelName="mask_lisa"
+		modelSlot="1"
+		value="°®АцЛї|ХТІ»ХТµГµЅїН»§Ј¬µГОТЛµБЛЛгЎЈФхГґИҐДЗ¶щЈї"
+		sound="data\sounds\Speech\r1m1\r1m1_1123_lisa.ogg"
+		time="4" />
+
+	<string
+		id="1124"
+		modelName="mask_hero"
+		value="|ФЪ±±±ЯЎЈІ»ЛгФ¶Ј¬µ«Г»УРЦ±ґпµДВ·Ј¬ОТГЗ»№µГФЩґ©Т»ґОЛчЛ№ЎЈ"
+		sound="data\sounds\Speech\r1m1\r1m1_1124_hero.ogg"
+		time="7" />
+
+	<string
+		id="1125"
+		modelName="mask_lisa"
+		modelSlot="1"
+		value="°®АцЛї|ёъЧЕДгХвБѕВэіµЈ¬ОТ¶јёъАЫБЛЎЈґУПЦФЪЖрОТЧФјєЧЯЎЈХвКЗДгµД±ЁікЎЈФЩјыЈЎ"
+		sound="data\sounds\Speech\r1m1\r1m1_1125_lisa.ogg"
+		time="11" />
+
+	<string
+		id="1126"
+		modelName="mask_hero"
+		value="|Лэ¶ЇЧчХжїмЎ­Ў­ОТТІёГ»ШјТБЛЎЈ"
+		sound="data\sounds\Speech\r1m1\r1m1_1126_hero.ogg"
+		time="7" />
+
+	<string
+		id="1131"
+		modelName="r1_man"
+		modelSkin="0"
+		modelCfg="172"
+		modelSlot="1"
+		value="·САыїЛЛ№|їЙЛгґюЧЕДгБЛЎЈДгІ»ЦЄµАГїёцРВАґµДЙМИЛ¶јµГПтОТЅ»Л°ВрЈїН·Т»±КЈ¬Т»З§Ѕр±ТЎЈ"
+		sound="data\sounds\Speech\r1m1\r1m1_1131_felix.ogg"
+		time="19" />
+
+	<string
+		id="1132"
+		modelName="mask_hero"
+		value="|Дг·иБЛВрЈїОТБ¬јы¶јГ»јы№эДЗГґ¶аЗ®ЈЎ"
+		sound="data\sounds\Speech\r1m1\r1m1_1132_hero.ogg"
+		time="5" />
+
+	<string
+		id="1133"
+		modelName="r1_man"
+		modelSkin="0"
+		modelCfg="172"
+		modelSlot="1"
+		value="·САыїЛЛ№|ХвГґЧЕ°ЙЈ¬Ѕ»З®ЎЄЎЄ»оГьЎЈІ»Ѕ»ВпЎ­Ў­ёшОТЙПЈЎ"
+		sound="data\sounds\Speech\r1m1\r1m1_1133_felix.ogg"
+		time="7" />
+
+	<string
+		id="1134"
+		modelName="r1_man"
+		modelSkin="0"
+		modelCfg="172"
+		modelSlot="1"
+		value="·САыїЛЛ№|Дг»бё¶іцґъјЫµДЈ¬РЎбМЧУЈЎ·САыїЛЛ№МмСДєЈЅЗ¶јДЬХТµЅДгЎЈі·ЈЎ"
+		sound="data\sounds\Speech\r1m1\r1m1_1134_felix.ogg"
+		time="8" />
+
+	<string
+		id="1141"
+		modelName="mask_hero"
+		value="|ОТІ»ёТПаРЕЧФјєµДСЫѕ¦ЈЎИ«ЛАБЛЎ­Ў­КІГґ№ЦОпДЬёЙіцХвЦЦКВЈїЎ­Ў­"
+		sound="data\sounds\Speech\r1m1\r1m1_1141_hero.ogg"
+		time="11" />
+
+	<string
+		id="1142"
+		modelName="mask_hero"
+		value="|Ў­Ў­"
+		sound="data\sounds\Speech\r1m1\r1m1_1142_hero.ogg"
+		time="1" />
+
+	<string
+		id="1143"
+		modelName="mask_hero"
+		value="|ОТЦ»КЈТ»МхВ·їЙЧЯЎ­Ў­ёґірЈЎОТ»бХТµЅДгµДЈ¬РЧКЦЈЎ"
+		sound="data\sounds\Speech\r1m1\r1m1_1143_hero.ogg"
+		time="13" />
+
+	<string
+		id="1144"
+		modelName="mask_hero"
+		value="|µИµИЎ­Ў­ЙПґОјыГжК±·САыїЛЛ№ёъОТ·­БЛБіЎЈЛыјИУР¶Ї»ъУЦУРКЦ¶ОЎ­Ў­ЛыРЭПлеРТЈ·ЁНвЈЎ"
+		sound="data\sounds\Speech\r1m1\r1m1_1144_hero.ogg"
+		time="11" />
+
+	<string
+		id="1151"
+		modelName="mask_hero"
+		value="|ОТТЄОЄёёЗЧЦ®ЛАёґірЈЎ"
+		sound="data\sounds\Speech\r1m1\r1m1_1151_hero.ogg"
+		time="3" />
+
+	<string
+		id="1152"
+		modelName="r1_man"
+		modelSkin="0"
+		modelCfg="172"
+		modelSlot="1"
+		value="·САыїЛЛ№|КЗДгЈїХвПВДгТЄОЄДгµД·ЕЛБё¶іцґъјЫБЛЈЎ"
+		sound="data\sounds\Speech\r1m1\r1m1_1152_felix.ogg"
+		time="6" />
+
+	<string
+		id="1153"
+		modelName="mask_hero"
+		value="|ѕНХвµг±ѕКВЈїУРЦЦіцАґЈ¬ПсёцДРИЛТ»СщґтЈЎ"
+		sound="data\sounds\Speech\r1m1\r1m1_1153_hero.ogg"
+		time="5" />
+
+	<string
+		id="11540"
+		modelName="r1_man"
+		modelSkin="0"
+		modelCfg="172"
+		modelSlot="1"
+		value="·САыїЛЛ№|Пл°мµГАыЛчЈ¬ѕНµГЗЧЧФіцВнЎЈИГОТАґКХК°ЛыЎЈ"
+		sound="data\sounds\Speech\r1m1\r1m1_1154_felix.ogg"
+		time="10" />
+
+	<string
+		id="1155"
+		modelName="mask_hero"
+		value="|ДгХвёцЙ±ИЛРЧКЦЈ¬ДГГьАґЈЎ"
+		sound="data\sounds\Speech\r1m1\r1m1_1155_hero.ogg"
+		time="3" />
+
+	<string
+		id="1156"
+		modelName="r1_man"
+		modelSkin="0"
+		modelCfg="172"
+		modelSlot="1"
+		value="·САыїЛЛ№|µИµИЎЈОТТСѕ­єГјёДкГ»Й±№эИЛБЛЎЈОТГЗєН±ѕµШИЛУРР­ТйФЪПИЎЈµ№КЗДгФЪП®»чОТµДµЬРЦГЗЈЎ"
+		sound="data\sounds\Speech\r1m1\r1m1_1156_felix.ogg"
+		time="10" />
+
+	<string
+		id="1157"
+		modelName="mask_hero"
+		value="|ДгЙ±БЛОТёёЗЧЈ¬»ЩБЛОТµДјТЈЎ"
+		sound="data\sounds\Speech\r1m1\r1m1_1157_hero.ogg"
+		time="5" />
+
+	<string
+		id="1158"
+		modelName="r1_man"
+		modelSkin="0"
+		modelCfg="172"
+		modelSlot="1"
+		value="·САыїЛЛ№|±рј¤¶ЇЈ¬РЦµЬЎЈДгКЗёсВ¬»фТ®АґµДЈЎПаРЕОТЈ¬ДЗІ»КЗОТГЗ°пёЙµДЎЈКЗТ»»п·и·исІсІµДНвАґИЛёЙµДЎЈ"
+		sound="data\sounds\Speech\r1m1\r1m1_1158_felix.ogg"
+		time="8" />
+
+	<string
+		id="1159"
+		modelName="mask_hero"
+		value="|ДгИц»СЈЎ"
+		sound="data\sounds\Speech\r1m1\r1m1_1159_hero.ogg"
+		time="1" />
+
+	<string
+		id="11510"
+		modelName="r1_man"
+		modelSkin="0"
+		modelCfg="172"
+		modelSlot="1"
+		value="·САыїЛЛ№|ОТ¶ФЧЕОТДпµД·ШН··ўКДЈЎИҐОКОКДгДЗО»№ГДпЈ¬ЛэИ«¶јїґјыБЛЎЈ"
+		sound="data\sounds\Speech\r1m1\r1m1_11510_felix.ogg"
+		time="7" />
+
+	<string
+		id="11511"
+		modelName="mask_hero"
+		value="|ДгКЗЛµ°®АцЛїЈїХвДгФхГґЦЄµАЈї"
+		sound="data\sounds\Speech\r1m1\r1m1_11511_hero.ogg"
+		time="2" />
+
+	<string
+		id="11512"
+		modelName="r1_man"
+		modelSkin="0"
+		modelCfg="172"
+		modelSlot="1"
+		value="·САыїЛЛ№|ЛэЧФјєЛµµДЎЈЛэ±±ЙПВ·№эОТГЗУЄµШЈ¬НщЕеЛ№МШИҐБЛЎЈЛэµ±К±ПЕµГ»к¶щ¶јГ»БЛЎЈ"
+		sound="data\sounds\Speech\r1m1\r1m1_11512_felix.ogg"
+		time="6" />
+
+	<string
+		id="11513"
+		modelName="mask_hero"
+		value="|ОТГч°ЧБЛЎ­Ў­ОТ»бИҐЧ·ЛэЎЈДгїЙТФЧЯБЛЈ¬·САыїЛЛ№Ј¬µ«УАФ¶±рФЩ»ШАґЈЎ"
+		sound="data\sounds\Speech\r1m1\r1m1_11513_hero.ogg"
+		time="17" />
+
+	<string
+		id="11514"
+		modelName="r1_man"
+		modelSkin="0"
+		modelCfg="172"
+		modelSlot="1"
+		value="·САыїЛЛ№|Хв»ШЛгДгУ®ЎЈµИОТГЗФЩјыГжК±Ј¬ОТ»бЧј±ёµГёьід·ЦЎЈ"
+		sound="data\sounds\Speech\r1m1\r1m1_11514_felix.ogg"
+		time="5" />
+
+	<string
+		id="11515"
+		modelName="mask_hero"
+		value="|»ШјыЈЎ"
+		sound="data\sounds\Speech\r1m1\r1m1_11515_hero.ogg"
+		time="2" />
+
+	<string
+		id="2222"
+		modelName="r1_man"
+		modelSkin="0"
+		modelCfg="70"
+		modelSlot="1"
+		value="ёпГьХЯ°ЈµВ| ХвПВЛыГЗФЩПлП®»чФЫГЗґеЈ¬їЙµГµаБїµаБїБЛЈЎ"
+		sound="data\sounds\Speech\r1m1\r1m1_2222_ed.ogg"
+		time="4" />
+
+	<string
+		id="33330"
+		modelName="mask_father"
+		value="ёёЗЧ|ОТµДєўЧУЎ­Ў­№эАґЎ­Ў­"
+		modelSlot="1"
+		sound="data\sounds\Speech\r1m1\r1m1_33330_father.ogg"
+		time="3" />
+
+	<string
+		id="33331"
+		modelName="mask_hero"
+		value="|ХвАпіцКІГґКВБЛЈїКЗЛ­ёЙµДЈї"
+		sound="data\sounds\Speech\r1m1\r1m1_33331_hero.ogg"
+		time="6" />
+
+	<string
+		id="33332"
+		modelName="mask_father"
+		modelSlot="1"
+		value="ёёЗЧ|ЧРПёМэЧЕЎЈХвР©ДкТ»Ц±КЗОТФЪХХ№ЛДгЎ­Ў­їЙДгЦХѕїКЗКХСшµДєўЧУЎЈХвР©¶«ОчКЗДгЗЧЙъёёЗЧµДТЕОпЈ¬ДГИҐ°ЙЎЈИҐХТ±ѕЎ¤Л№ВЮМШ¶ыЎ­Ў­ЛыєНДгёёЗЧТ»СщЈ¬КЗёцМЅПХјТЎЈЛы»б°пДгµДЎ­Ў­ИҐ°ЙЎ­Ў­єўЧУЎ­Ў­"
+		sound="data\sounds\Speech\r1m1\r1m1_33332_father.ogg"
+		time="30" />
+
+	<string
+		id="33333"
+		modelName="mask_hero"
+		value="|ОТХвТ»±ІЧУЎ­Ў­ПЦФЪёГФхГґ°мЈїКІГґ¶јГ»БЛЎ­Ў­Л­ТІІ»КЈБЛЎ­Ў­Ц»КЈХв·вРЕ"
+		sound="data\sounds\Speech\r1m1\r1m1_33333_hero.ogg"
+		time="10" />
+
+	<string
+		id="33334"
+		modelAutosized="true"
+		modelName="quest_letter"
+		modelSlot="1"
+		value="РЕјю|''Из№ыДг¶БµЅХв·вРЕЈ¬ЛµГчОТГ»ДЬ»ШАґЎЈєЬТЕє¶Ј¬µ«КВКµИзґЛЎЈОТєЬБЛЅв±ЛµГЈ¬ДгµДЅМСшНкИ«І»УГµЈРДЎ­Ў­''"
+		sound="data\sounds\Speech\r1m1\r1m1_33334_letter.ogg"
+		time="16" />
+
+	<string
+		id="33335"
+		modelAutosized="true"
+		modelName="quest_letter"
+		modelSlot="1"
+		value="РЕјю|''Ў­Ў­Т»ПлµЅОТФЪФ¶·ЅЈ¬¶шДгХэі¤іЙґуИЛЈ¬ОТѕНРДНґДСµ±ЎЈХвХжКЗје°ѕЎЈµ«Дг±ШРлЦЄµАЈ¬ОТ±рОЮСЎФсЈ¬Ц»ДЬАлїЄЎЈКВ№ШЦШґуЈ¬І»ИЭУРК§Ў­Ў­ЎЄЎЄ''"
+		sound="data\sounds\Speech\r1m1\r1m1_33335_letter.ogg"
+		time="12" />
+
+	<string
+		id="33336"
+		modelAutosized="true"
+		modelName="quest_letter"
+		modelSlot="1"
+		value="РЕјю|''Ў­Ў­ОТ±ШРлѕАХэХвёцґнОуЎЈЦ»УРґпіЙДї±кЈ¬ОТІЕДЬЦ¤ГчЧФјєЕдµГЙПЎєёёЗЧЎ»Ў­Ў­єНЎєХЙ·тЎ»ХвёціЖєфЎЈ¶ФІ»ЖрЈ¬¶щЧУЎЈИфДгДЬФ­БВЈ¬ЗлФ­БВОТЎЈЎЄЎЄ''"
+		sound="data\sounds\Speech\r1m1\r1m1_33336_letter.ogg"
+		time="16" />
+
+	<string
+		id="33337"
+		modelName="mask_hero"
+		value="|ѕНХвР©ЈїБ¬Т»ѕдЅвКН¶јГ»УРЎ­Ў­Т»ёцОТґУОґ№ЦЧп№эµДИЛЈ¬ИГОТФхГґФ­БВЈїОТФЪХв¶щТСѕ­ОЮКВїЙЧцБЛЎЈТІРн±ѕДЬОЄОТЦёµгГФЅтЎЈОТТЄХТµЅЛыЈ¬ФЩѕц¶ЁОТµДИЛЙъФхГґЧЯЎЈІ»ЦЄµАЛыЧЎФЪДД¶щЎЈ"
+		sound="data\sounds\Speech\r1m1\r1m1_33337_hero.ogg"
+		time="16" />
+
+	<string
+		id="8800"
+		value="ХвКЗДгµЪТ»ґОНжЎ¶Д©ИХїЁіµЈєЖфКѕВјЎ·ЎЈРиТЄ»сИЎУОП·ІЩЧчМбКѕВрЈї"
+		numButtons="2" />
+
+	<string
+		id="8801"
+		value="ДгПлЗ°НщБнТ»ёцµШЗшВрЈї"
+		numButtons="2" />
+
+	<string
+		id="8802"
+		modelName="mask_hero"
+		sound="data\sounds\Speech\r3m1\r3m1_8802_hero.ogg"
+		value="ОТІ»ИПК¶В·Ј¬»№КЗБфФЪХв¶щ°ЙЎЈ"
+		time="3" />
+
+	<string
+		id="8803"
+		modelName="mask_hero"
+		sound="data\sounds\Speech\r3m1\r3m1_8803_hero.ogg"
+		value="ХвµШ·ЅНёЧЕ№Й№Цѕў¶щЎЈОТІ»ПлИҐДЗ¶щЎЈ"
+		time="3" />
+
+	<string
+		id="77771"
+		msgType="SCROLL"
+		image="data\if\ico\CinemaPanel\foreground_movie_shade_midle.dds"
+		upOverlay="data\if\ico\CinemaPanel\foreground_movie_shade_up.dds"
+		downOverlay="data\if\ico\CinemaPanel\foreground_movie_shade.dds"
+		value="@ffffffff|    АъК·Г»УРБфПВ№ШУЪґуФЦ±дЦ®єуєЪ°µК±ґъµДИ·ЗРјЗФШЎЈµ«УРТ»µгИ·¶ЁОЮТЙЈєХьѕИИ«ИЛАаµДЈ¬КЗ·А¶ѕГжѕЯЎЈХвјюОЮГыМмІЕµДФмОп±Ј»¤ИЛГЗГвКЬОЫИѕїХЖшµДЗЦє¦Ј¬ТІИГЛщУРИЛ±дµГЖЅµИЎЈХвµАёфїЄЙъГьУлЛАНцµД±Ў±ЎЖБХПЈ¬іЙБЛРВИЛАаµДПуХчЎЈГжѕЯ°СИЛГЗНЕЅбФЪТ»ЖрЈ¬ёшБЛЛыГЗОЄОґАґ¶шХЅµДБ¦БїЎЈ ||    РВµД¶ЁѕУµгЅЁФЪФ¶АлѕЙіЗµДµШ·ЅЎЄЎЄДЗР©ѕЙіЗФзТСіЙБЛНтИЛїУЎЈЅҐЅҐµШЈ¬РТґжХЯµДРЎНЕМеЦ®јдЅЁБўЖрБЛГіТЧНщАґЎЈїу№¤ЎўЕ©ГсЎўЙМИЛХвР©С°іЈРРµ±іЙБЛЗАКЦ»ојЖЎЈРБЗЪµДАНЧчИГИЛГЗНьИґБЛ№эИҐµДїЦІАЎЈ||    µ«Г»УРКІГґДЬёД±дИЛµД±ѕРФЎЈИОєОК±ґъ¶јУРХвСщµДИЛЈєЛыГЗ±ЈґжЦЗ»ЫЈ¬УлИЛ·ЦПнЈ»ТІЧЬУРБнТ»ЦЦИЛЈ¬Ж«°®»мВТУл»ЩГрЈ¬К¤№эТ»ЗРЎЈ"
+		sound="data\sounds\Speech\rolik\r1m1_969_narrator.ogg"
+		fontSize="18"
+		scrollSpeed="0.5"
+		time="68" />
+
+	<string
+		id="90000"
+		value="Ў¶Д©ИХїЁіµЈєЖфКѕВјЎ·||РиТЄ»сИЎУОП·ІЩЧчМбКѕВрЈї"
+		numButtons="2" />
+</resource>
