@@ -1778,9 +1778,35 @@ bool Init(HMODULE game, const char* pkgPath) {
     InstallPatches();
 
     // 起后台线程做后续装配
-    HANDLE th = CreateThread(nullptr, 0, SetupThread, nullptr, 0, nullptr);
-    if (th) { CloseHandle(th); Logf("pathd: 装配线程已启动"); }
-    else    { Logf("pathd: [失败] 装配线程创建失败 %lu", GetLastError()); }
+    //
+    // ★★ 必须显式指定小栈 + CREATE_SUSPENDED 后降栈再启动 ★★
+    //   实测失败：CreateThread 返回 NULL，GetLastError()=8
+    //   (ERROR_NOT_ENOUGH_MEMORY)。后果是**装配线程根本没起来** ->
+    //   汉字表永远为空 -> P4 查不到汉字 -> 引擎退回单字节查表 ->
+    //   GBK 字节被当成西里尔字母显示（用户看到的"俄语乱码"）。
+    //
+    //   原因：hta.exe 无 LARGE_ADDRESS_AWARE，只有 2GB 地址空间；
+    //   转储实测 `Total virtual memory available = 322 MB`，
+    //   音频就占了 83MB。默认 1MB 栈预留在这种压力下会失败。
+    //   SetupThread 只做线性扫描与填表，256KB 栈足够。
+    HANDLE th = nullptr;
+    const SIZE_T stackSizes[] = { 256 * 1024, 128 * 1024, 64 * 1024, 0 };
+    for (int i = 0; i < 4 && !th; ++i) {
+        th = CreateThread(nullptr, stackSizes[i], SetupThread, nullptr, 0, nullptr);
+        if (!th) {
+            Logf("pathd: [警告] 装配线程创建失败(栈=%u) 错误 %lu，换更小的栈重试",
+                 (unsigned)(stackSizes[i] / 1024), GetLastError());
+        }
+    }
+    if (th) {
+        CloseHandle(th);
+        Logf("pathd: 装配线程已启动");
+    } else {
+        Logf("pathd: [失败] 装配线程创建彻底失败 %lu —— 汉字将不显示（回退单字节）",
+             GetLastError());
+        g_enabled = true;
+        return true;
+    }
 
     g_enabled = true;
     Logf("pathd: 初始化返回（补丁已生效，装配在后台进行）");
