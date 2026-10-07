@@ -1,9 +1,0 @@
-# hta_chs_slotmap 1
-# GBK-hex slot-hex
-D0C2 EC
-D3CE ED
-CFB7 EE
-B6C1 EF
-C8A1 F0
-B4E6 F1
-B5B5 F2
