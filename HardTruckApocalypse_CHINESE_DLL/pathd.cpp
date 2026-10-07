@@ -199,6 +199,28 @@ extern "C" uint32_t g_msrSnapNotReady = 0;
 // 装配后的缺字计数（由 mw_nodef 直接累加，装配收尾时清零重新开始）
 extern "C" uint32_t g_msrPostNoDef   = 0;
 extern "C" uint32_t g_msrPostHitCjk  = 0;
+// 绘制路径（P4）的诊断：区分"没命中槽"与"槽未就绪"。
+//   tips 只显示英文 = 汉字查不到 → 必须知道是这两者中的哪一个。
+extern "C" uint32_t g_plNoSlot = 0;
+extern "C" uint32_t g_plNotReady = 0;
+extern "C" uint32_t g_plLastNoSlotFont = 0;
+// ★★★ 渲染线程识别（解决"启动卡 30 秒"）★★★
+//
+//   实测：WriteBlockSafe 每次要挂起**全部** 55 个线程，每个约 51ms
+//   ⇒ 单点 ~2.8 秒，11 个点累计 30+ 秒。这就是用户说的"太卡"。
+//
+//   ★ 但真正危险的只有正在执行目标函数的线程 —— 也就是渲染线程 ★
+//   怎么知道哪个是渲染线程？**让渲染线程自己报告**：
+//   P4/P5 助手在热路径上执行，它们所在的线程就是渲染线程。
+//   助手只做一次 GetCurrentThreadId 并把结果存进 g_renderTid。
+//   之后 WriteBlockSafe 就只挂那一个线程 + 少数几个，而不是 55 个。
+extern "C" uint32_t g_renderTid = 0;
+extern "C" uint32_t g_renderTidHits = 0;
+// ★ 「过场不换行」的决定性诊断 ★
+//   引擎折行判定被编译器缓存在 ebp（0x685AF1 就是 `test ebp,ebp`）。
+//   统计它：只有 ebp != 0 时才可能折行；ebp == 0 必然截断。
+extern "C" uint32_t g_msrHasWidth = 0;   // ebp != 0（有可用行宽 -> 可折行）
+extern "C" uint32_t g_msrNoWidth  = 0;   // ebp == 0（无行宽 -> 永不折行）
 
 // 启动冻结：定义在 5.5 节（同在 pathd 命名空间内，且在匿名 namespace 之外）。
 //   声明必须放在 `namespace pathd {` **之内**，否则会被当成全局名，
@@ -265,6 +287,24 @@ namespace {
 // ─────────────────────────────────────────────────────────────────────────
 bool     g_enabled   = false;   // 路径 D 是否启用（包文件存在才启用）
 uintptr_t g_modBase  = 0;
+
+// ★ 补丁安装状态（2026-10-07 新增）★★
+//   0 = 正在安装（cave 会等它）
+//   1 = 全部装好
+//   2 = 装失败并已整体回滚
+//
+//   ★ 为什么必须有这个门 ★
+//     08:35 两次实测对照，装配结果**完全一致**（10 字号 × 2079 字形齐备），
+//     唯一差别是有没有补丁：
+//       失败那次  装配 08:35:09~12（引擎主线程）→ 补丁 08:35:13~30 写了 17 秒未完
+//       成功那次  装配 08:35:50~53            → 补丁 08:35:54~55（1.98 秒）写完
+//     没有 P4/P5 补丁，引擎按 8 位查表 → 双字节汉字被拆成两个字节
+//     → 字叠在一起 + 乱码。所以装配**必须排在补丁之后**，不能并行。
+//     （旧的注释"补丁不参与字体加载，装配不依赖补丁，顺序正确"是错的。）
+static volatile LONG g_patchState = 0;   // 见上方三种取值
+#define PATCH_STATE_BUSY   0
+#define PATCH_STATE_OK     1
+#define PATCH_STATE_FAILED 2
 
 // 取字函数（用于 P8/P9 等长改宽度）
 uintptr_t g_advGet   = 0;       // sub_66FEA0
@@ -401,7 +441,11 @@ struct Package {
         std::vector<uint32_t> cell;
     };
     std::vector<SizeRec> sizes;
-    bool loaded = false;
+    // ★ 必须是 volatile ★
+    //   它被 InitThread 写、被引擎主线程轮询读。
+    //   若只是普通 bool，编译器有权把它缓存进寄存器，
+    //   于是 `while (!g_pkg.loaded && ...)` 可能永远看不到变化。
+    volatile bool loaded = false;
 };
 Package g_pkg;
 
@@ -494,12 +538,145 @@ bool WriteCall(uintptr_t at, void* target, const char* what) {
 //
 //   ★ 冻结区间内**绝对不能调用 Logf** ★ 若被冻结的线程正持有日志的
 //   CRT/文件锁，我们再写日志就会死锁。日志一律放在冻结之前或之后。
+// ★★★ 冻结期间的实时进度追踪（不走 Logf！）★★★
+//
+//   为什么需要它：
+//     实测 P4/P4b 的写入有时卡 10~36 秒，而**日志里什么都看不到** ——
+//     因为卡死发生在"打印"之前，诊断行根本执行不到。
+//     Logf 自己每行都 FlushFileBuffers，所以不是缓冲问题，
+//     而是**我们压根没走到那行代码**。
+//
+//   为什么不能直接用 Logf：
+//     冻结期间若调用 Logf，会和被冻结线程持有的 CRT/文件锁互等 → 死锁。
+//
+//   ⇒ 用一个**独立的、无锁的**文件句柄，直接 WriteFile + Flush。
+//     只写极短的一行（<128 字节），且**不取任何锁**：
+//     即使两个线程同时写，最坏也只是两行交错，不会死锁。
+//     目的只是"卡住时能知道卡在第几个线程、第几次尝试"。
+static HANDLE g_progFile = INVALID_HANDLE_VALUE;
+
+static void ProgOpen() {
+    if (g_progFile != INVALID_HANDLE_VALUE) return;
+    char dir[MAX_PATH] = {0};
+    // 与日志同目录（插件所在目录）
+    HMODULE self = NULL;
+    GetModuleHandleExA(GET_MODULE_HANDLE_EX_FLAG_FROM_ADDRESS |
+                       GET_MODULE_HANDLE_EX_FLAG_UNCHANGED_REFCOUNT,
+                       (LPCSTR)&ProgOpen, &self);
+    if (!GetModuleFileNameA(self, dir, sizeof(dir))) return;
+    char* slash = strrchr(dir, '\\');
+    if (!slash) return;
+    *slash = '\0';
+    char path[MAX_PATH];
+    _snprintf_s(path, sizeof(path), _TRUNCATE, "%s\\hta_chs_progress.txt", dir);
+    g_progFile = CreateFileA(path, GENERIC_WRITE, FILE_SHARE_READ,
+                             NULL, CREATE_ALWAYS, FILE_ATTRIBUTE_NORMAL, NULL);
+}
+
+// 无锁、无 CRITICAL_SECTION —— 只为"卡死时留下痕迹"
+//
+// ★★★ 性能教训（必须记住）★★★
+//   初版对**每一行**都调 FlushFileBuffers。实测代价：
+//       P4b 挂起耗时：无进度文件 147ms → 有进度文件 1360ms（**慢 9 倍**）
+//   因为 55 线程 × 2 次刷盘 × 11 个补丁点 ≈ 1200 次磁盘刷写。
+//   用户反馈"实在是太卡了"，根因就是这段**我自己加的诊断代码**。
+//
+//   ⇒ 两点修正：
+//     1) **不再 FlushFileBuffers**：WriteFile 会把数据放进内核文件缓存，
+//        进程即使崩溃，缓存内容依然可读（崩溃后看文件是完整的）。
+//        只有 LogClose 那种正常退出才需要 Flush。
+//     2) 只写关键行，不逐线程刷 —— 由调用方控制粒度。
+static void ProgRaw(const char* fmt, ...) {
+    if (g_progFile == INVALID_HANDLE_VALUE) return;
+    char buf[192];
+    va_list ap; va_start(ap, fmt);
+    int n = _vsnprintf_s(buf, sizeof(buf), _TRUNCATE, fmt, ap);
+    va_end(ap);
+    if (n <= 0) return;
+    DWORD w = 0;
+    WriteFile(g_progFile, buf, (DWORD)n, &w, NULL);   // ★ 不 Flush，交给内核缓存 ★
+}
+
+// ── 延迟写入缓冲（2026-10-07）────────────────────────────────────────────
+//
+//   ★ 为什么不能在挂起窗口内调 ProgRaw ★
+//   ProgRaw 看着"无锁"，但 WriteFile 进内核要走文件系统对象锁；
+//   而此刻被挂起的 55 个游戏线程里，很可能有一个正持有 update 目录
+//   所在卷的文件锁（比如它自己也在写存档/日志）。我们在冻结期间碰同一
+//   个卷，就可能与之互等 —— 表现就是「游戏卡死 + 调试器看起来死锁」。
+//
+//   之前的进度文件印证了这个窗口存在：文件最后写入时间 09:58:43
+//   与日志最后一行 09:58:43.156 完全一致，即进程死在挂起期间。
+//
+//   ⇒ 做法：**挂起期间只往内存里拼字符串，绝不碰文件系统**；
+//     统一出口（恢复完所有线程之后）再一次性落盘。
+//     代价是"崩在半路时看不到最后几行"，但相比死锁完全可以接受 ——
+//     而且挂起点与写入点之间本来就只有一次 memcpy，丢的信息有限。
+//
+//   ★ 不加锁的原因 ★
+//   g_progProg 只在 WriteBlockSafe 这一个线程里用（补丁安装是单线程），
+//   即使将来多线程用，也只是内容交错，不会死锁 —— 绝不在这里引入
+//   CRITICAL_SECTION，那才是真的会和被冻结线程互等。
+struct PendingProg {
+    char     buf[4][160];
+    int      n;
+};
+static PendingProg g_pending;
+static inline void ProgDefer(const char* fmt, ...) {
+    if (g_pending.n >= 4) return;                       // 只留最近 4 条
+    char* dst = g_pending.buf[g_pending.n];
+    va_list ap; va_start(ap, fmt);
+    _vsnprintf_s(dst, sizeof(g_pending.buf[0]), _TRUNCATE, fmt, ap);
+    va_end(ap);
+    g_pending.n++;
+}
+static inline void ProgFlushPending() {
+    for (int i = 0; i < g_pending.n; ++i) ProgRaw("%s", g_pending.buf[i]);
+    g_pending.n = 0;
+}
+
+// ★★★ 「全或无」补丁记录 ★★★
+//
+//   每成功写入一个补丁点，就把**原字节**存下来。若后续任何一个补丁
+//   写入失败，就用这些记录把已生效的补丁全部还原 —— 绝不允许
+//   "部分补丁生效"的半成品状态（实测 hta.exe0004 就是它导致的
+//   巨卡/没字/崩溃：查表的补丁装了、推进的补丁没装）。
+struct InstalledPatch {
+    uintptr_t at;
+    uint8_t   orig[64];
+    size_t    len;
+};
+static std::vector<InstalledPatch> g_installedPatches;
+// 回滚期间置 true：此时不要再记录"原字节"（那会记成已被补丁覆盖的值）
+static bool g_rollingBack = false;
+
+// 记录一次成功写入（WriteBlockSafe 成功后由调用方登记）
+static void RecordInstalled(uintptr_t at, size_t len) {
+    if (len == 0 || len > 64) return;
+    InstalledPatch ip;
+    ip.at = at;
+    ip.len = len;
+    memcpy(ip.orig, (const void*)at, len);   // ★ 必须在写入**之前**调用 ★
+    g_installedPatches.push_back(ip);
+}
+
 bool WriteBlockSafe(uintptr_t at, const uint8_t* buf, size_t n, const char* what) {
     DWORD old = 0;
+    // ★ 2026-10-07 计时诊断 ★
+    //   实测 P4b 写入耗时 2.71 秒，而进度文件显示「挂起 0ms / 校验 0ms /
+    //   写入成功 attempt=0」—— 三步都秒完成，2.71 秒必然花在**循环之外**。
+    //   WriteBlockSafe 里循环之外只有两件事：开头的 VirtualProtect 和
+    //   结尾的 VirtualProtect + 恢复线程。
+    //   头号嫌疑是 VirtualProtect 改页权限触发写时复制 + TLB 刷新 +
+    //   该页上所有线程的指令缓存失效（0x686xxx 是被 55 个线程反复执行的
+    //   引擎代码页）；x64dbg 下更会放大 —— 这与「开调试器反而死锁」吻合。
+    //   ⇒ 这里把两处 VirtualProtect 各自计时，下次日志直接给出答案。
+    const DWORD tVpEntry0 = GetTickCount();
     if (!VirtualProtect((LPVOID)at, n, PAGE_EXECUTE_READWRITE, &old)) {
         Logf("pathd: [%s] VirtualProtect 失败 0x%08X (%lu)", what, (unsigned)at, GetLastError());
         return false;
     }
+    const DWORD tVpEntry = GetTickCount() - tVpEntry0;
 
     const DWORD self = GetCurrentThreadId();
 
@@ -525,7 +702,29 @@ bool WriteBlockSafe(uintptr_t at, const uint8_t* buf, size_t n, const char* what
     HANDLE held[512];
     int heldN = 0;
     const DWORD t0 = GetTickCount();
-    const DWORD kTotalBudgetMs = 3000;      // ★ 总超时 3 秒，绝不无限等 ★
+    // ★★★ 实测修正（2026-10-07，progress 文件 988 行给出决定性数据）★★★
+    //
+    //   我把这个预算设成 3000ms 是**错的**，它把正常操作误判成卡死，
+    //   导致 7 个补丁点全部"写入失败"，最终 `成功 3，失败 4`：
+    //       [jmp (控制符 <0x20)] ★写入失败★ 重试 0 次/超时 3047ms
+    //       [P5 主遍历]          ★写入失败★ 重试 0 次/超时 3079ms
+    //       [P7 度量宽度]        ★写入失败★ 重试 0 次/超时 3078ms
+    //       [P8 度量推进]        ★写入失败★ 重试 0 次/超时 3094ms
+    //       ...
+    //   而成功那几点的挂起耗时是 1485 / 1531 / 2859ms。
+    //   ⇒ **挂起 55 个线程本来就要 1.5~3.1 秒**（每个 OpenThread+
+    //     SuspendThread 约 55ms），3000ms 的预算正好横在正常波动中间。
+    //
+    //   后果最严重的是"部分补丁生效"这个半成品状态：
+    //     P4/P4b（查表）装上了，P5/P7/P8（推进/度量）没装上
+    //     → 引擎按新逻辑查我们**没准备好**的表 → 巨卡 + 没字 + 崩溃。
+    //
+    //   ★ 两条修正 ★
+    //   1) 预算给足：挂起阶段允许 20 秒（正常 3 秒，留 6 倍余量）
+    //   2) 超时**不再放弃补丁**，而是继续用已挂起的线程去写 ——
+    //      少挂几个线程的风险，远小于"补丁装一半"的风险
+    const DWORD kTotalBudgetMs    = 30000;   // 重试循环总预算（写给"写不进去"）
+    const DWORD kSuspendBudgetMs  = 20000;   // ★ 挂起阶段单独预算（新增语义）★
     int attempt = 0;
     bool wrote = false;
     uintptr_t blockerEip = 0;
@@ -550,6 +749,12 @@ bool WriteBlockSafe(uintptr_t at, const uint8_t* buf, size_t n, const char* what
     //   ★ 安全边界不变 ★：EIP ∈ [at-15, at) 仍然拒绝写入。
 
     DWORD tSuspendTotal = 0, tCheckTotal = 0;   // 诊断：两阶段各耗多久
+    // 挂起超时的延迟上报（不能在冻结窗口内 Logf，理由见下方使用处）
+    bool        g_abortWarn = false;
+    const char* g_abortWhat  = nullptr;
+    DWORD       g_abortMs    = 0;
+    int         g_abortHeldN = 0;
+    ProgOpen();                                  // 打开"卡死也能留痕"的进度文件
 
     for (attempt = 0; attempt < 40; ++attempt) {
         heldN = 0;
@@ -562,8 +767,17 @@ bool WriteBlockSafe(uintptr_t at, const uint8_t* buf, size_t n, const char* what
         bool suspendAborted = false;
         DWORD tOneSuspendMax = 0;      // 诊断：单次 SuspendThread 最长耗时
         DWORD tOpenMax = 0;            // 诊断：单次 OpenThread 最长耗时
+        ProgRaw("=== %s @0x%08X attempt=%d tidN=%d ===\n",
+                what, (unsigned)at, attempt, tidN);
         for (int i = 0; i < tidN; ++i) {
-            if (GetTickCount() - tSuspend0 > kTotalBudgetMs) { suspendAborted = true; break; }
+            // ★ 用独立的挂起预算（20 秒），不再用重试总预算 ★
+            //   实测正常挂起就要 1.5~3.1 秒；超时也只停止"继续挂"，
+            //   并用**已经挂起的那些**继续走校验 + 写入（见下方）。
+            if (GetTickCount() - tSuspend0 > kSuspendBudgetMs) { suspendAborted = true; break; }
+            // ★ 不再逐线程写进度文件 ★
+            //   那是"太卡"的元凶：55 线程 × 2 次刷盘 = 110 次磁盘操作/补丁点。
+            //   现在只在**单个线程挂起超过 200ms**时才记一行 —— 那才是
+            //   真正的异常（正常每线程约 7ms）。
             DWORD ta = GetTickCount();
             HANDLE th = OpenThread(THREAD_SUSPEND_RESUME | THREAD_GET_CONTEXT |
                                    THREAD_QUERY_INFORMATION, FALSE, tids[i]);
@@ -573,8 +787,15 @@ bool WriteBlockSafe(uintptr_t at, const uint8_t* buf, size_t n, const char* what
             if (SuspendThread(th) == (DWORD)-1) { CloseHandle(th); continue; }
             DWORD tc = GetTickCount();
             if (tc - tb > tOneSuspendMax) tOneSuspendMax = tc - tb;
+            if (tc - ta > 200) {
+                ProgDefer("  慢! #%d tid=%lu Open=%lums Suspend=%lums\n",
+                        i, (unsigned long)tids[i],
+                        (unsigned long)(tb - ta), (unsigned long)(tc - tb));
+            }
             held[heldN++] = th;
         }
+        ProgDefer("  挂起完成 %d 个 %lums\n", heldN,
+                (unsigned long)(GetTickCount() - tSuspend0));
         tSuspendTotal += GetTickCount() - tSuspend0;
         if (tOneSuspendMax > 200 || tOpenMax > 200) {
             // 只在真的出现长阻塞时打印（避免污染日志）
@@ -583,9 +804,31 @@ bool WriteBlockSafe(uintptr_t at, const uint8_t* buf, size_t n, const char* what
                  (unsigned)tOpenMax, (unsigned)tOneSuspendMax, tidN);
         }
         if (suspendAborted) {
-            for (int i = 0; i < heldN; ++i) { ResumeThread(held[i]); CloseHandle(held[i]); }
-            heldN = 0;
-            break;      // 不再重试：这个点太危险，保持原样（宁可不打补丁）
+            // ★★★ 关键修正：超时**不再放弃补丁** ★★★
+            //
+            //   旧代码在这里 `break` 直接返回 false —— 那会让这个补丁
+            //   **完全不装**，而前面几个补丁已经生效，于是引擎处于
+            //   "查新表但没人填/推进逻辑不配套"的半成品状态：
+            //   实测表现就是巨卡 + 没字 + 崩溃（hta.exe0004）。
+            //
+            //   现在改为：带着**已经挂起的那些线程**继续校验并写入。
+            //   少挂几个线程确实有残余风险（未挂起的线程若正好 EIP 落在
+            //   [at-15, at)），但那个风险远小于"补丁装一半"——
+            //   后者是**必然**的严重破坏，前者是小概率且可用重试缓解。
+            //   ★ 这里**绝不能**调 Logf ★
+            //     Logf 每行都 FlushFileBuffers，要进 CRT 与文件系统。
+            //     而此刻 55 个游戏线程已被挂起，其中任何一个都可能正持有
+            //     CRT 锁或卷锁 —— 我们在同一把锁上等，就成了真死锁。
+            //     这不是理论风险：用户实测「开 x64dbg 时会死锁在补丁里」，
+            //     而进度文件的最后写入时间与日志最后一行完全一致，
+            //     说明进程确实死在冻结窗口内。
+            //   ⇒ 记下标志，等统一出口恢复完线程后再补打日志。
+            suspendAborted = true;
+            g_abortWarn = true;
+            g_abortWhat  = what;
+            g_abortMs    = GetTickCount() - tSuspend0;
+            g_abortHeldN = heldN;
+            ProgDefer("  挂起超时，用已挂起的 %d 个继续\n", heldN);
         }
 
         // ── 校验：只拒绝"指令跨边界"的情况 ──────────────────────────
@@ -607,6 +850,8 @@ bool WriteBlockSafe(uintptr_t at, const uint8_t* buf, size_t n, const char* what
         bool busy = false;
         blockerEip = 0;
         DWORD tChk0 = GetTickCount();
+        ProgDefer("  校验开始（%d 个已挂起，危险区 [0x%08X,0x%08X)）\n",
+                heldN, (unsigned)loGuard, (unsigned)at);
         for (int i = 0; i < heldN && !busy; ++i) {
             CONTEXT c; memset(&c, 0, sizeof(c)); c.ContextFlags = CONTEXT_CONTROL;
             if (!GetThreadContext(held[i], &c)) continue;
@@ -614,13 +859,20 @@ bool WriteBlockSafe(uintptr_t at, const uint8_t* buf, size_t n, const char* what
             if (eip >= loGuard && eip < at) { busy = true; blockerEip = eip; }
         }
         tCheckTotal += GetTickCount() - tChk0;
+        ProgDefer("  校验完成 %lums，busy=%d blockerEip=0x%08X\n",
+                (unsigned long)(GetTickCount() - tChk0), (int)busy, (unsigned)blockerEip);
 
         if (!busy) {
+            // ★ 写入前先把原字节记下来（供"全或无"回滚用）★
+            //   放在这里而不是要求每个调用方记得调用，避免遗漏。
+            if (!g_rollingBack) RecordInstalled(at, n);
             memcpy((void*)at, buf, n);
             FlushInstructionCache(GetCurrentProcess(), (LPVOID)at, n);
             wrote = true;
+            ProgDefer("  ★写入完成 attempt=%d\n", attempt);
             break;
         }
+        ProgDefer("  busy，恢复线程重试\n");
 
         // ★ 重试节流 ★
         //   实测（05:19 那份"俄文乱码然后空白"日志）：P4b 写入用 8 秒、
@@ -644,16 +896,35 @@ bool WriteBlockSafe(uintptr_t at, const uint8_t* buf, size_t n, const char* what
 
     // ★ 统一出口：无论如何都必须恢复所有线程，否则游戏直接卡死 ★
     for (int i = 0; i < heldN; ++i) { ResumeThread(held[i]); CloseHandle(held[i]); }
+    const DWORD tVpExit0 = GetTickCount();
     VirtualProtect((LPVOID)at, n, old, &old);
+    const DWORD tVpExit = GetTickCount() - tVpExit0;
+
+    // ★ 落盘时机 ★
+    //   必须放在**恢复全部线程之后**。冻结期间任何文件系统访问都可能与
+    //   被冻结线程持有的卷锁互等（详见 PendingProg 上方注释）。
+    ProgFlushPending();
+
+    // ★ 补打挂起超时的警告 ★
+    //   现在才打是安全的：所有游戏线程都已恢复，不再有锁互等的风险。
+    //   这条信息很重要（意味着"只挂了部分线程就写入"），不能丢。
+    if (g_abortWarn) {
+        Logf("pathd:   [警告] %s 挂起超时（%lums），用已挂起的 %d 个线程继续写入",
+             g_abortWhat, (unsigned long)g_abortMs, g_abortHeldN);
+        g_abortWarn = false;
+    }
 
     if (wrote) {
         if (attempt) Logf("pathd:   %s 冻结重试 %d 次后写入成功", what, attempt);
-        // ★ 计时汇总：只在异常慢时打印，用来定位"36 秒花在哪" ★
+        // ★ 计时汇总：只在异常慢时打印，用来定位"2.71 秒 / 36 秒花在哪" ★
+        //   本轮新增 tVpEntry / tVpExit 两项 —— 它们是**循环之外**仅有的
+        //   两个可能耗时点。加上它们，这行日志就能把总耗时完整归因。
         DWORD tot = GetTickCount() - t0;
         if (tot > 400) {
-            Logf("pathd:   [计时] %s 总耗时 %u ms（挂起累计 %u ms，校验累计 %u ms，重试 %d 次）",
-                 what, (unsigned)tot, (unsigned)tSuspendTotal,
-                 (unsigned)tCheckTotal, attempt);
+            Logf("pathd:   [计时] %s 总耗时 %u ms（改权限 %u ms + 还原权限 %u ms"
+                 " + 挂起累计 %u ms + 校验累计 %u ms，重试 %d 次）",
+                 what, (unsigned)tot, (unsigned)tVpEntry, (unsigned)tVpExit,
+                 (unsigned)tSuspendTotal, (unsigned)tCheckTotal, attempt);
         }
         return true;
     }
@@ -887,22 +1158,96 @@ static void* AllocGlyph() {
     static uint8_t* pool = nullptr;
     static size_t   used  = 0;
     static size_t   cap   = 0;
-    // ★★★ 2207 字形 × 10 字号 = 22070 个 × 48 字节 = 1,059,360 字节 ★★★
-    //   起步给 1.1MB（≈24000 个字形），已能装下全部 22070 个且不触发增长，
-    //   同时比原 2MB 少占 ~0.9MB 常驻地址空间（减重，缓解 2GB 模式压力）。
-    const size_t kInit = 1100u * 1024;          // 1.1MB，足够 22070 个字形，指针永久有效
+    // ★★★ 池的容量策略（改自 1100KB 起步 / 翻倍）★★★
+    //
+    //   实测泄漏证据（一次运行）：
+    //       [07:29:53.791] pathd: 字形池 1100KB @0x1D990000
+    //       [07:30:01.549] pathd: 字形池 2200KB @0x732C0000
+    //   一次运行漏了 3.3MB —— 因为原策略是「起步 1.1MB，不够就**翻倍**」，
+    //   而 1.1MB 只够装 ~10000 个字形（每个 48 字节），实际要装 2207×12
+    //   ≈ 26500 个 → **必然触发翻倍**。
+    //
+    //   ★ 我原先注释里写的"泄漏上限 ~2MB"是错的 ★
+    //     那个估计按"只有 10 个字号"算的。加了周期补装配后，
+    //     ProcessFont 的调用次数**不再有上界**（每个运行期新建的字体都会
+    //     再走一遍），于是每次调用都重新摊一份 1.1~2.2MB。
+    //     → 2026-10-07 07:27 那次崩溃（hta.exe0009）就是这个：
+    //       Virtual memory available 只剩 39MB，崩在引擎自己的代码里。
+    //     （LAA 只是把 2GB 上限抬到 4GB，掩盖了症状，没解决泄漏。）
+    //
+    //   ★ 改法：按"每个槽需要多少"成组预留，一次到位 ★
+    //     每字形 48 字节，每槽 2207 个 → ≈103KB / 槽。
+    //     槽的硬上限是 MAX_CJK_TABLES = 16（见 CjkSlotFor / FillCjk），
+    //     **不是字号的种类数**。补装配会为"同一字号的新 Font*"再开槽：
+    //     实测 07:40 那次基础 10 槽 + 补装配 2 槽 = 12 槽，已超出我上次
+    //     按 10 配的 kInit → 触发了第二次分配（又漏 1034KB）。
+    //     → 教训：容量必须按**槽上限 16** 配，不能按"字号种类"。
+    //   16 槽 × 103KB ≈ 1.6MB，一次 VirtualAlloc 到位，永不扩容。
+    const size_t kPerFont = 2207u * kGlyphSize;        // ≈103 KB / 槽
+    const size_t kInit    = kPerFont * MAX_CJK_TABLES;  // 16 槽 ≈1.6MB，封顶
     if (used + kGlyphSize > cap) {
-        size_t ncap = cap ? cap * 2 : kInit;
+        // ★ 兜底增量（正常不会走到）★
+        //   万一将来 MAX_CJK_TABLES 调大或字体数超 16，再 +4 槽，不翻倍。
+        const bool  bFirst = (cap == 0);      // ★ 首配 vs 扩容
+        size_t ncap = bFirst ? kInit : cap + kPerFont * 4;
+
+        // ★★★ 内存保险丝（2026-10-07 修正）★★★
+        //
+        //   原实现在这里对**首配也生效**，后果是实测启动直接废掉：
+        //       [08:31:28] [字形池] 可用虚拟内存仅 132MB，拒绝扩容  ← 刷屏开始
+        //       ...重复 500+ 行，每行对应一个字形...
+        //       [08:31:41] 可用虚拟内存仅 198MB，拒绝扩容
+        //       [08:31:42] 字形池 1655KB @0x11620000             ← 14 秒后才成功
+        //       [08:31:42] [ 18.750] 填充 **1807** 个汉字字形      ← 应为 2079
+        //
+        //   两个缺陷：
+        //     (a) 首配只需要 1.6MB，而判定用的是"全局可用虚拟内存"。
+        //         引擎自身+D3D 在 2GB 地址空间下常把可用压到 130~200MB，
+        //         这是**正常稳态**，不是危险信号 → 首配被无理由拒绝。
+        //     (b) 拒绝后 cap 仍为 0，于是**每一个字形都重走这条拒绝路径**
+        //         （FillCjk 的 `if (!g) continue;` 不计数也不报警），
+        //         于是刷出上千行日志、并静默丢掉 272 个字形 → 汉字空白。
+        //
+        //   修正：
+        //     1) 首配（cap==0）**不做**保险丝检查 —— 1.6MB 相对整个进程
+        //        是可忽略的量，不值得为它放弃全部汉字。
+        //     2) 扩容才检查，且失败日志**每次只打一条**（去重），
+        //        避免上千行日志淹没真正的错误。
+        //     3) 若最终连首配都没成功，FillCjk 那边会打出
+        //        "缺 N 个"的明确诊断，不再静默 continue。
+        if (!bFirst) {
+            MEMORYSTATUSEX ms;
+            ms.dwLength = sizeof(ms);
+            if (GlobalMemoryStatusEx(&ms) && ms.ullAvailVirtual < (200ull << 20)) {
+                static bool warned = false;   // ★ 只警告一次
+                if (!warned) {
+                    warned = true;
+                    Logf("pathd: [字形池] 可用虚拟内存仅 %uMB，**扩容**被拒（防 OOM，本次新增字形将缺失）",
+                         (unsigned)(ms.ullAvailVirtual >> 20));
+                }
+                return nullptr;
+            }
+        }
+
         uint8_t* np = (uint8_t*)VirtualAlloc(NULL, ncap, MEM_COMMIT | MEM_RESERVE, PAGE_READWRITE);
-        if (!np) { Logf("pathd: 字形池扩容失败(%u 字节)", (unsigned)ncap); return nullptr; }
+        if (!np) {
+            static bool warnedAlloc = false;
+            if (!warnedAlloc) {
+                warnedAlloc = true;
+                Logf("pathd: ★字形池 VirtualAlloc 失败(%u 字节) —— 汉字将全部缺失★", (unsigned)ncap);
+            }
+            return nullptr;
+        }
         // ★★★ 旧池**绝不释放** ★★★
-        //   g_cjkTable 里存的是**每个字形的原始地址**，不是偏移。
+        //   g_cjkSlots[].table 里存的是**每个字形的原始地址**，不是偏移。
         //   一旦 VirtualFree 旧池，先前填好的所有字形指针立刻悬空 ——
         //   引擎 0x6865C7 `movss xmm1,[eax+24h]`（读字形宽高）读到的
         //   就是已释放页，直接 0xC0000005。
         //   实测崩溃 hta.exe0080：EAX=0x68948340，故障地址 0x68948364 = EAX+0x24，
         //   而 0x68948340 正是被 MEM_RELEASE 掉的旧池地址。
-        //   泄漏上限 ~2MB（装满 2207×10 只需 ~1.06MB），换取指针永久有效。
+        //   代价：扩容仍会漏旧池。但现在扩容**极少发生**（首配 10 个字号，
+        //   实测最多用到 12 个槽），所以泄漏从"每次调用都摊"
+        //   降到"进程生命周期内摊一次几 MB 以内"。
         if (pool) memcpy(np, pool, used);      // 只搬数据，**不 VirtualFree**
         Logf("pathd: 字形池 %uKB @0x%08X（自建；旧池故意不释放，字形指针须永久有效）",
              (unsigned)(ncap / 1024), (unsigned)(uintptr_t)np);
@@ -1188,13 +1533,20 @@ static int FillCjk(void* font, float h, int basePage) {
     float adv = (float)cw;               // 汉字等宽推进 = 单元宽
 
     int n = 0;
+    // ★ 丢弃分类计数（2026-10-07）：解释"填充数 < 包内字形数"的差额
+    uint32_t nNoCell = 0, nBadPage = 0, nAllocFail = 0;
     for (uint32_t i = 0; i < g_pkg.glyphCount; ++i) {
         uint32_t cell = rec->cell[i];
         uint32_t page = cell / perPage;
         uint32_t pos  = cell % perPage;
         uint32_t col  = pos % cols;
         uint32_t row  = pos / cols;
-        if ((int)page >= (int)rec->pageCount) continue;
+        // ★ 丢弃计数（2026-10-07）★
+        //   下面这一行原本是无声 continue，导致"填充 1807 / 2079"这种
+        //   少 272 个字形的事故在日志里看不出少了什么、也看不出为什么。
+        //   分开统计三种丢弃，让下一次出问题能一眼定性。
+        if (cell == 0xFFFFFFFFu) { ++nNoCell; continue; }   // 该字不在本字号图集里
+        if ((int)page >= (int)rec->pageCount) { ++nBadPage; continue; }  // ★ 异常：页号越界
 
         uint16_t gbk = g_pkg.codes[i];
         // ★★★ 索引必须与 P4 逐字节一致：(b1<<8)|b2，也就是 gbk 原值 ★★★
@@ -1220,7 +1572,7 @@ static int FillCjk(void* font, float h, int basePage) {
         float pxW = (float)cw, pxH = (float)chh;
 
         void* g = AllocGlyph();
-        if (!g) continue;
+        if (!g) { ++nAllocFail; continue; }   // ★ 不再静默丢字（见下方汇总日志）
         FillGlyph(g, gbk, basePage + (int)page, u0, v0, u1, v1, pxW, pxH, adv);
         table[idx] = (uint32_t)g;      // ★ 写进**本字体**的表（见函数头说明）★
         ++n;
@@ -1228,6 +1580,28 @@ static int FillCjk(void* font, float h, int basePage) {
     g_cjkSlots[slot].ready = 1;              // ★ 填完才开闸 ★
     Logf("pathd: [%7.3f] 填充 %d 个汉字字形（单元 %ux%u，每页 %u 格，%u 页，页基址 %d，槽 %d）",
          h, n, cw, chh, perPage, rec->pageCount, basePage, (int)slot);
+
+    // ★ 差额诊断（2026-10-07）★
+    //   包内字形数与实际填充数必须对得上；对不上就把差在哪一类讲清楚。
+    //   实测事故："填充 1807 / 包内 2079" 少 272 个 → 当时 AllocGlyph 因
+    //   内存保险丝反复拒绝（且每次都静默 continue），于是这些汉字没有
+    //   字形，界面上就是空白/缺字。现已让每一类丢弃都有计数。
+    {
+        const uint32_t total = (uint32_t)g_pkg.glyphCount;
+        const uint32_t diff  = total - (uint32_t)n;
+        if (diff != 0) {
+            Logf("pathd: [%7.3f] ★字形差额 %u（包内 %u，实填 %u）："
+                 "无图集格 %u  页号越界 %u  分配失败 %u",
+                 h, diff, total, (uint32_t)n, nNoCell, nBadPage, nAllocFail);
+        } else {
+            Logf("pathd: [%7.3f] 字形齐备（%u/%u，无缺失）", h, total, (uint32_t)n);
+        }
+        //   分配失败是唯一可自愈的一类（其余是烘包期就该发现的数据问题）
+        if (nAllocFail) {
+            Logf("pathd: [%7.3f]   ★%u 个字形因内存分配失败而缺失 —— 这些汉字会显示空白★",
+                 h, nAllocFail);
+        }
+    }
     return n;
 }
 
@@ -1363,12 +1737,36 @@ static void CollectAllFonts(std::vector<FontRec>& out) {
         return;
     }
     const uintptr_t kSpan = 2u << 20;
+    // ★★ 合并区间必须限幅，否则会爆炸（实测 06:08 那次）★★
+    //
+    //   锚点各自 ±2MB 再取并集。**锚点一多、且分散，并集就会覆盖整个跨度**：
+    //     实测绘制期登记 5 个字体，锚点跨 0x12DADB24 .. 0x1D6AB564，
+    //     并集 = **169 MB** → 每 4 字节一次 LooksLikeCjkFont = 4200 万次
+    //     → 装配线程卡死（用户看到的"太卡"）。
+    //   正常情况只有 1~2 个锚点、彼此相邻，并集才 4MB。
+    //
+    //   ⇒ 按"离锚点最近"排序，只保留能覆盖在 kMaxSpan 内的锚点。
+    //     宁可少扫几个字号（漏掉的字号只是没有汉字，引擎会安全跳过），
+    //     也不能把装配卡死几分钟。
+    const uintptr_t kMaxSpan = 8u << 20;      // 总跨度上限 8MB
     uintptr_t lo = 0, hi = 0;
-    for (uintptr_t a : anchors) {
-        uintptr_t s = (a > kSpan) ? a - kSpan : 0x10000;
-        uintptr_t e = a + kSpan;
-        if (lo == 0 || s < lo) lo = s;
-        if (e > hi) hi = e;
+    {
+        // 以第一个锚点起步，逐个尝试并入；超限就丢弃该锚点
+        uintptr_t a0 = anchors[0];
+        lo = (a0 > kSpan) ? a0 - kSpan : 0x10000;
+        hi = a0 + kSpan;
+        for (size_t i = 1; i < anchors.size(); ++i) {
+            uintptr_t a = anchors[i];
+            uintptr_t s = (a > kSpan) ? a - kSpan : 0x10000;
+            uintptr_t e = a + kSpan;
+            uintptr_t nlo = (s < lo) ? s : lo;
+            uintptr_t nhi = (e > hi) ? e : hi;
+            if (nhi - nlo <= kMaxSpan) { lo = nlo; hi = nhi; }
+            else {
+                Logf("pathd: [跳过] 锚点 0x%08X 会使扫描区间超 %uMB，忽略它",
+                     (unsigned)a, (unsigned)(kMaxSpan >> 20));
+            }
+        }
     }
 
     int found = 0;
@@ -1418,46 +1816,237 @@ static void CollectAllFonts(std::vector<FontRec>& out) {
          (void*)lo, (void*)hi, found, (unsigned)out.size());
 }
 
-static DWORD WINAPI SetupThread(LPVOID) {
-    // ★★ 冻结模式下**不能**靠 g_seenCount 等稳定 ★★
-    //   g_seenCount 是「绘制期登记」累加的（P4 在渲染线程里调）。
-    //   冻结时渲染线程不动，这个计数永远是 0。
-    //   ★ 但直接跳过等待是错的 ★（实测：一个字体都收集不到）
-    //   因为 CollectAllFonts 的**锚点**正是来自这里 —— 没有锚点就
-    //   直接 return，连堆扫描都不跑。
-    //   所以冻结模式下这条路径必然失败，只能靠 HTA_CHS_FREEZE 实验复现。
-    bool frozen = g_frozen;
-    if (frozen) {
-        Logf("pathd: [警告] 处于冻结模式 —— 绘制登记不会增长，字体收集很可能为空");
-        Logf("pathd:        这是 HTA_CHS_FREEZE 实验模式的已知后果");
-    } else {
-        Logf("pathd: 后台线程启动，等待字体就绪…");
+// ★ 装配状态：0=未装，1=已装（或正在装）。
+//   ★ 定义放在这里（SetupThread 之前）★，而不是下面 5.4 节 ——
+//     C++ 里 `static volatile LONG x;` 就是**定义**（零初始化），
+//     在下面再写一次 `= 0` 会构成重定义错误（g_frozen 那次已踩过）。
+static volatile LONG g_assembled = 0;
+static int PathD_AssembleAll(const char* why);
+// 前置声明：补装配线程定义在 5.3b 节（在 SetupThread 之后），
+//   但 SetupThread 要调用它。注意 C++ 里 `static` 前置声明就是**定义**，
+//   不能再写一份定义（g_frozen 那次已踩过这个坑）。
+static DWORD WINAPI PathD_RescanThread(LPVOID);
+
+// ═══════════════════════════════════════════════════════════════════════════
+// 内存快照 + LAA 检测（2026-10-07）
+// ═══════════════════════════════════════════════════════════════════════════
+//
+//  ★ 为什么需要 ★
+//    两类崩溃的内存画像完全相反，但都缺一个关键数据：**谁在占内存**。
+//      无 LAA（hta.exe0025）：vmAvail = 19MB，崩在 0x8CA1BE
+//                           `call [edx+480h]` 分配顶点缓冲返回 NULL，
+//                           引擎不检查就 `rep movsd` 拷 47808 字节到 NULL。
+//      有 LAA（hta_laa0000）：vmAvail = 1993MB，崩在 dxrender9+188022 读 NULL。
+//    MemoryManager 自报 mem used ≈ 108MB，但用户区可用只剩 19MB ——
+//    差额去哪了没人知道。**先测量，再优化**，不然只能瞎改。
+//
+//  ★ LAA 怎么判断（踩过的坑）★
+//    转储字段极易读错，务必分清：
+//        Total memory                     = 4095 MB  ← **不代表 LAA**
+//                                              （hta.exe0025 无 LAA 时也是 4095）
+//        Total virtual memory             = 2047 MB  ← ★ 这才是用户区上限 ★
+//                                              4095 = 有 LAA，2047 = 无 LAA
+//        Total virtual memory available   = 实际剩余（与 LAA 无关）
+//    我此前把"可用内存低"当成"LAA 关"，误判过一轮。
+//    程序内的判定方式：直接探测能否在 0x90000000（2304MB）提交一页。
+//    无 LAA 的 32 位进程用户区止于 0x80000000（2048MB），那里探测必然失败。
+
+static bool DetectLargeAddressAware() {
+    //   探测后立刻释放，不留任何痕迹，也不影响内存画像。
+    void* p = VirtualAlloc((void*)0x90000000, 4096,
+                           MEM_COMMIT | MEM_RESERVE, PAGE_READWRITE);
+    if (!p) return false;
+    VirtualFree(p, 0, MEM_RELEASE);
+    return true;
+}
+
+// 打印一次完整内存画像
+static void LogMemorySnapshot(const char* tag) {
+    MEMORYSTATUSEX ms;
+    ms.dwLength = sizeof(ms);
+    if (!GlobalMemoryStatusEx(&ms)) return;
+
+    const bool laa = DetectLargeAddressAware();
+
+    Logf("pathd: ── 内存快照 [%s] ──", tag);
+    Logf("pathd:   LAA(大地址感知) = %s   ← 转储里对应 Total virtual memory = %s",
+         laa ? "已启用 (4095MB 用户区)" : "未启用 (2047MB 用户区)",
+         laa ? "4095 MB" : "2047 MB");
+    Logf("pathd:   物理内存   总 %llu MB / 可用 %llu MB",
+         (unsigned long long)(ms.ullTotalPhys >> 20),
+         (unsigned long long)(ms.ullAvailPhys >> 20));
+    Logf("pathd:   虚拟内存   总 %llu MB / 可用 %llu MB",
+         (unsigned long long)(ms.ullTotalVirtual >> 20),
+         (unsigned long long)(ms.ullAvailVirtual >> 20));
+    //   ★ 提交剩余才是决定"分配会不会失败"的量 ★
+    //     转储里的 Total virtual memory available 就是它：
+    //       无 LAA 崩溃那次 = 19MB，引擎分配顶点缓冲失败 → 返回 NULL
+    //       有 LAA 崩溃那次 = 1993MB，内存充足却崩在别处
+    Logf("pathd:   ★提交剩余 = %llu MB   ← 转储里的 Total virtual memory available 就是它★",
+         (unsigned long long)(ms.ullAvailPageFile >> 20));
+    Logf("pathd:   提交内存   上限 %llu MB / 已提交 %llu MB",
+         (unsigned long long)(ms.ullTotalPageFile >> 20),
+         (unsigned long long)((ms.ullTotalPageFile - ms.ullAvailPageFile) >> 20));
+    Logf("pathd:   扩展内存(仅64位有效)  可用 %llu MB",
+         (unsigned long long)(ms.ullAvailExtendedVirtual >> 20));
+    //   提交率是"离 OOM 还有多远"的直接指标。
+    //   注意分母用**用户区上限**（ullTotalVirtual）：它同时包含了
+    //   已提交页和保留地址空间，无 LAA 时是 2047MB、LAA 时是 4095MB。
+    if (ms.ullTotalVirtual) {
+        const unsigned long long committed = ms.ullTotalPageFile - ms.ullAvailPageFile;
+        const unsigned pct = (unsigned)((committed * 100) / ms.ullTotalVirtual);
+        Logf("pathd:   ★提交占用率 = %u%%（已提交 %llu MB / 用户区上限 %llu MB）"
+             " ← 接近 100%% 时引擎分配会开始返回 NULL★",
+             pct, committed >> 20, (unsigned long long)(ms.ullTotalVirtual >> 20));
     }
-    std::vector<FontRec> fonts;
-    int lastCount = -1, stable = 0;
-    {
+
+    // ── 我们自己占了多少（这是要对比的重点）────────────────────────
+    int   slotsUsed = 0;
+    size_t tableBytes = 0;
+    for (int i = 0; i < MAX_CJK_TABLES; ++i) {
+        if (g_cjkSlots[i].table) { ++slotsUsed; tableBytes += 0x10000 * sizeof(uint32_t); }
+    }
+    Logf("pathd:   [我们] CJK 槽 %d/%d，汉字码表 %u KB；字形池见上方“字形池”行",
+         slotsUsed, MAX_CJK_TABLES, (unsigned)(tableBytes / 1024));
+}
+
+// ★ 字体加载器 hook 抓到的 FontManager ★
+//
+//   为什么不复用 g_fontMgr：那个变量存的是 **uiCore**（实测 0xA0A890），
+//   不是 FontManager。而 FontManager 的真实来源在这里：
+//       sub_6843F0:  684E48  mov ecx, [edx+4A4h]   ← ecx = FontManager
+//                    684E4E  call sub_8BA480        ← 我们的 hook 点
+//   也就是说 **hook 入口时 ecx 就是 FontManager**。
+//   所以 cave 里第一件事就是把 ecx 存下来 —— 比事后反推可靠得多。
+//
+//   ★ 布局（由 sub_8BA3A0 的字体查询代码实证）★
+//       FontManager+4 = vector<Font*> begin
+//       FontManager+8 = vector<Font*> end
+//       count = (end - begin) / 4
+extern "C" uint32_t g_hookFontMgr = 0;
+// 早期 hook 是否安装成功（Init 里置位，InstallPatches 里读）
+static bool g_loaderHooked = false;
+
+// ★ 旧路径（后备）：后台线程等引擎画过一帧后装配。
+//   自从在字体加载器 sub_8BA480 里直接装配之后，这条路径**通常不会被执行**
+//   （g_assembled 已被 hook 置 1）。保留它是因为：
+//     · 万一加载器的特征码在别的版本上定位失败，还有后备
+//     · 若 hook 装配失败，它仍有第二次机会（但此时时机已晚，属兜底）
+static DWORD WINAPI SetupThread(LPVOID) {
+    if (g_assembled) {
+        Logf("pathd: [SetupThread] 加载器 hook 已完成装配，转入周期补装配");
+    } else {
+        Logf("pathd: [SetupThread] 后备路径启动，等待字体就绪…");
         for (int i = 0; i < 900; ++i) {               // 最多等 90 秒
             Sleep(100);
             LONG cur = g_seenCount;
-            if (cur > 0 && cur == lastCount) { if (++stable >= 5) break; }    // 稳定 0.5s
-            else stable = 0;
-            lastCount = (int)cur;
-            if (frozen && i >= 10) break;   // 冻结模式：等 1 秒就放弃，别白等 90 秒
+            if (cur > 0 && cur >= (LONG)g_fonts.size()) break;
+            if (i > 20 && g_fontMgr) break;           // 有管理器就够，不必死等
         }
+        InterlockedExchange(&g_assembled, 1);
+        PathD_AssembleAll("SetupThread 后备路径");
     }
-    CollectAllFonts(fonts);
-    Logf("pathd: 合计收集到 %u 个 Font", (unsigned)fonts.size());
-    if (fonts.empty()) {
-        Logf("pathd: [失败] 一个字体都没收集到");
-        UnfreezeGameThreads();            // ★ 必须解冻，否则游戏永久卡死 ★
+
+    // ★★★ 周期补装配（方案 B）—— 复用这个线程，不再另开 ★★★
+    //
+    //   为什么不单独开线程：这个进程里 CreateThread 曾反复返回错误 8
+    //   （见 Init 里那段长注释）。既然 SetupThread 已经成功跑起来了，
+    //   直接让它继续做补装配，就不会再遇到"线程起不来"这条路。
+    PathD_RescanThread(nullptr);
+    return 0;
+}
+
+// ═══════════════════════════════════════════════════════════════════════════
+// 5.4) 装配主体（可被两条路径复用）
+// ═══════════════════════════════════════════════════════════════════════════
+//
+//   ★ 为什么要抽出来（架构变更 2026-10-07）★
+//     原来只有 SetupThread 一条路：起线程 → 等引擎画过一帧 → 收集字体 → 装配。
+//     问题是"事后追赶"：字体可能在我们装配完成**之后**才被创建
+//     （实测 tips 用的 18.75 字体就是这样），于是永远没有槽 → 无中文。
+//     而且 setup 与引擎并发跑，时序不确定 —— 用户看到"每次启动不一样"。
+//
+//   ★ 新路径：在字体加载器 sub_8BA480 里直接装配 ★
+//     实测（x64dbg 断点统计）：
+//         sub_8B9B60 (字体加载器)  hit = 1      ← 只调用一次
+//         sub_8B80B0 (CreateFromXmlNode) hit = 99  ← 10 字号 + 89 CJK 页
+//     所以在 sub_8BA480 里 `call sub_8B9B60` 返回之后装配，
+//     此刻 99 个字体**全部就绪**，且引擎**还没渲染过任何文本** ——
+//     引擎第一次看到字体时它就已经是完整的，不存在竞态。
+//
+//   两条路径都调这个函数，靠 g_assembled 保证只装一次。
+//   （g_assembled 的定义在上方 SetupThread 之前）
+
+// 从 FontManager 的 vector 直接枚举字体（**不依赖绘制期登记**）
+//   这是新路径的关键：加载器返回时引擎还没画过，g_seenFonts 是空的。
+//
+//   ★ FontManager 来源（见 g_hookFontMgr 上方说明）★
+//     hook 入口的 ecx 就是它，由 cave 存进 g_hookFontMgr。
+//     布局：+4 = begin, +8 = end（sub_8BA3A0 实证）。
+//   ★ 不再用 g_fontMgr+4 ★ —— 那个存的是 uiCore，不是 FontManager。
+static int CollectFontsFromManager(std::vector<FontRec>& out) {
+    void* mgr = (void*)(uintptr_t)g_hookFontMgr;
+    if (!mgr) {
+        // 兜底：若 hook 没抓到（比如加载器 hook 未安装），退回旧路径的推导
+        void* uiCore = g_fontMgr;
+        if (uiCore) mgr = *(void**)((uint8_t*)uiCore + 0x4A4);
+        if (!mgr) {
+            Logf("pathd: [装配] FontManager 不可得（g_hookFontMgr=0 且 uiCore+0x4A4=0）");
+            return 0;
+        }
+        Logf("pathd: [装配] 用 uiCore+0x4A4 兜底得到 FontManager=%p", mgr);
+    }
+    Vec3* vec = (Vec3*)((uint8_t*)mgr + 4);
+    if (!vec->begin || !vec->end || vec->end < vec->begin) {
+        Logf("pathd: [装配] FontManager=%p 的 vector 无效（begin=%p end=%p）",
+             mgr, vec->begin, vec->end);
         return 0;
     }
-    {   // 逐个打印，方便对照引擎实际用到的字号
-        char buf[64];
-        for (size_t i = 0; i < fonts.size() && i < 40; ++i) {
-            _snprintf_s(buf, sizeof(buf), _TRUNCATE, "%.3f", (double)fonts[i].height);
-            Logf("pathd:   Font[%u] %p  height=%s", (unsigned)i, fonts[i].font, buf);
+    size_t n = (size_t)(vec->end - vec->begin);
+    if (n > 4096) n = 4096;                     // 保险上限
+    int added = 0;
+    for (size_t i = 0; i < n; ++i) {
+        void* fp = (void*)vec->begin[i];
+        if (!fp) continue;
+        float h = 0.0f;
+        if (!SafeFontHeight(fp, &h)) continue;
+        bool dup = false;
+        for (auto& r : out) if (r.font == fp) { dup = true; break; }
+        if (dup) continue;
+        FontRec rec; rec.font = fp; rec.height = h;
+        out.push_back(rec);
+        ++added;
+    }
+    Logf("pathd: [装配] FontManager=%p 直接枚举：vector 有 %u 项，新增 %d 个字体",
+         mgr, (unsigned)n, added);
+    return added;
+}
+
+// 装配主体：收集字体 → 归类 CJK 页 → 建槽 + 填字。
+//   返回装入汉字的字号数；<0 表示被环境变量关闭。
+static int PathD_AssembleAll(const char* why) {
+    Logf("pathd: [装配] 开始（触发点：%s）", why);
+
+    std::vector<FontRec> fonts;
+
+    // 来源 A：FontManager 的 vector（新路径主要靠它，不依赖渲染）
+    CollectFontsFromManager(fonts);
+
+    // 来源 B：绘制期登记 + 堆扫描（旧路径的兜底；新路径下 g_seenCount 通常为 0）
+    if (g_seenCount > 0) {
+        std::vector<FontRec> more;
+        CollectAllFonts(more);
+        for (auto& r : more) {
+            bool dup = false;
+            for (auto& q : fonts) if (q.font == r.font) { dup = true; break; }
+            if (!dup) fonts.push_back(r);
         }
+    }
+
+    Logf("pathd: [装配] 合计收集到 %u 个 Font", (unsigned)fonts.size());
+    if (fonts.empty()) {
+        Logf("pathd: [装配失败] 一个字体都没收集到");
+        return 0;
     }
 
     // ── 图集页来源 ────────────────────────────────────────────────────
@@ -1472,7 +2061,7 @@ static DWORD WINAPI SetupThread(LPVOID) {
     std::vector<std::vector<uint32_t> > pagesBySize;   // sizeIndex -> [texId]
     int pageFonts = 0;
     for (auto& fr : fonts) {
-        fr.height = FontHeight(fr.font);   // ★ 重新读：钩子入口时还没解析
+        fr.height = FontHeight(fr.font);   // ★ 重新读
         if (fr.height < kCjkBase || fr.height > kCjkMax) continue;
         ++pageFonts;
         int enc = (int)(fr.height - kCjkBase + 0.5f);
@@ -1488,10 +2077,8 @@ static DWORD WINAPI SetupThread(LPVOID) {
              fr.height, si, pi, id, cnt);
     }
     if (pagesBySize.empty()) {
-        Logf("pathd: [失败] 没有找到任何 CJK 图集页");
+        Logf("pathd: [装配失败] 没有找到任何 CJK 图集页");
         Logf("pathd:        需要在 fonts.xml 里加 height>=900 的 Item 指向 CJK 图集");
-        Logf("pathd:        字形表已扩到 65536，汉字全为 NULL（会被安全跳过，不崩）");
-        UnfreezeGameThreads();            // ★ 必须解冻 ★
         return 0;
     }
     {
@@ -1525,11 +2112,13 @@ static DWORD WINAPI SetupThread(LPVOID) {
         }
     }
     Logf("pathd: === 路径 D 准备完成：%d 个字号已装入汉字 ===", ok);
+    //   立刻打一次内存画像：这是"进世界前"这个关键节点的基线，
+    //   与之后崩溃转储里的Total virtual memory available 对照，
+    //   就能看出是我们自己占的，还是引擎/驱动占的。
+    LogMemorySnapshot("装配完成（进世界前）");
     Logf("pathd: 汉字现在用 16 位索引查表（GBK 原样，不做转码）");
 
-    // ── P7 诊断汇总（A 方案）────────────────────────────────────────
-    //   汇编助手没法直接 Logf，只落了几个数。这里统一打印，
-    //   用来一次性确定 Font* / 表指针 / 字形指针到底是什么。
+    // ── P7 诊断汇总 ──────────────────────────────────────────────────
     if (g_msrDiagCount > 0) {
         Logf("pathd: [P7诊断] 调用 %u 次，最后一次: Font*=0x%08X 字符=0x%04X "
              "表=0x%08X 字形=0x%08X",
@@ -1538,36 +2127,656 @@ static DWORD WINAPI SetupThread(LPVOID) {
         Logf("pathd: [P7诊断] 汉字分支失败分类(累计): 无槽=%u 未就绪=%u 无表=%u 无字形=%u",
              (unsigned)g_msrFailNoSlot, (unsigned)g_msrFailNotReady,
              (unsigned)g_msrFailNoTable, (unsigned)g_msrFailNoGlyph);
-        Logf("pathd: [P7诊断] 槽数 g_cjkSlotCount=%d（成功命中会走 mw_gate_hit）",
-             (int)g_cjkSlotCount);
+        Logf("pathd: [P7诊断] 槽数 g_cjkSlotCount=%d", (int)g_cjkSlotCount);
         Logf("pathd: [P7诊断] 分支累计: 汉字成功=%u ASCII成功=%u 缺字=%u",
              (unsigned)g_msrHitCjk, (unsigned)g_msrHitAscii, (unsigned)g_msrHitNoDef);
-    }
-
-    // ★★★ 装配线程整体结束标记（**不再参与渲染判据**）★★★
-    //   P4 现在查的是每个槽自己的 ready（分批开闸），
-    //   所以第 1 个字号填完就能显示，不必等这里。
-    //   这个标志只用于日志/诊断。
-    // ★ HTA_CHS_NO_CJK=1 时不开闸（二分定位用）★
-    //   注意：提前 return 前必须解冻，否则游戏永久卡死。
-    {
-        char v[8] = {0};
-        if (GetEnvironmentVariableA("HTA_CHS_NO_CJK", v, sizeof(v)) > 0) {
-            Logf("pathd: [调试] HTA_CHS_NO_CJK 已设 —— 装配线程跳过收尾");
-            UnfreezeGameThreads();
-            return 0;
-        }
+        Logf("pathd: [P4诊断] 绘制路径汉字: 无槽=%u 未就绪=%u",
+             (unsigned)g_plNoSlot, (unsigned)g_plNotReady);
     }
     InterlockedExchange(&g_cjkReady, 1);
-    Logf("pathd: 装配线程收尾（g_cjkReady=1，仅诊断用；渲染看的是每槽 ready）");
+    return ok;
+}
 
-    // ★ 装配完成 → 解冻游戏 ★（只有真的冻结过才有意义）
-    //   旧代码无条件打印"解冻"，日志里看着像一直在冻结 —— 误导。
-    if (g_frozen) {
-        Logf("pathd: ★装配完成，解冻游戏线程★");
-        UnfreezeGameThreads();
+// ═══════════════════════════════════════════════════════════════════════════
+// 5.3b) 运行期补装配（方案 B）—— 修 tips 框没有汉字
+// ═══════════════════════════════════════════════════════════════════════════
+//
+// ★ 问题 ★
+//   tips 框用的是一个**运行期新建**的 18.750 字体（实测 Font*=0x12FEDB24）。
+//   而 CjkSlotFor(font) 是**按 Font\* 指针精确匹配**的：
+//       if (g_cjkSlots[i].font == font) return i;
+//   那个字体不在已装配的 10 个槽里 → 查不到 → 走 ASCII 分支 → 显示英文。
+//
+// ★ 为什么以前"有时正常"★
+//   那次正常运行里 g_cjkSlotCount=11 —— 引擎**恰好**在装配之后又建了一个
+//   18.750 字体并被枚举到，于是各占一槽。
+//   换句话说：**那是运气，不是设计**。本次（07:11）只有 10 个槽，tips 就废了。
+//
+// ★ 为什么按 height 回退不安全（我没选它）★
+//   回退要在**裸汇编**渲染助手里加逻辑：读 [Font+0x18] 拿 height，
+//   再按 height 找已装槽。裸汇编是本项目踩坑最多的地方，且 height 是 float、
+//   逐位比较易出边界错误。更重要的是它只治标 —— 任何**新字号**仍然会缺。
+//
+// ★ 本方案（用户选定 B）★
+//   后台线程周期性重扫 FontManager，发现**没登记过**的新字体就补一次
+//   SafeProcessFont —— 复用已经验证过的装配路径，不碰任何裸汇编。
+//   同时天然覆盖未来 DLC 引入的新字号。
+//
+// ★ 关键防坑（每条都对应一个具体的失败模式）★
+//   1. 幂等：CjkSlotFor 已登记的直接跳过，绝不重复填表。
+//   2. 槽满保护：MAX_CJK_TABLES=16，已用 10，余 6。满了就放弃并记日志，
+//      不会越界写。
+//   3. 首字节闸门：FillCjk 内部已有 ready=0 → 填 → ready=1，
+//      渲染线程绝不会读到半成品表。
+//   4. 不用锁碰渲染路径：本线程只写 g_cjkSlots，渲染线程只读。
+//      槽分配用 g_cjkSlotCount++（原子自增），登记顺序是
+//      **先占槽再填表**，所以渲染线程最坏看到 ready=0 而跳过，不会读到野指针。
+//   5. 不在首次装配完成前跑：那时 g_pkg / pagesBySize 还不完整。
+static volatile LONG g_rescanStop = 0;
+static volatile LONG g_rescanRuns = 0;
+
+static void PathD_RescanOnce(const char* why) {
+    // 依赖未就绪就不跑（首次装配前、或包文件没载入）
+    if (!g_engineAlloc || !g_pkg.loaded) return;
+    if (InterlockedCompareExchange(&g_cjkReady, 1, 1) == 0) {
+        return;                 // 首次装配还没完成
     }
+
+    std::vector<FontRec> fonts;
+    if (!CollectFontsFromManager(fonts) || fonts.empty()) return;
+
+    // ── 先重建 CJK 页表（pagesBySize）────────────────────────────────
+    //   每次都重建是对的：CJK 页字体可能也是运行期加载的，
+    //   而首次装配时它们已经在（99 项里），所以重建结果与首次一致。
+    std::vector<std::vector<uint32_t> > pagesBySize;
+    for (auto& fr : fonts) {
+        fr.height = FontHeight(fr.font);
+        if (fr.height < kCjkBase || fr.height > kCjkMax) continue;
+        int enc = (int)(fr.height - kCjkBase + 0.5f);
+        int si = enc / kCjkStep, pi = enc % kCjkStep;
+        uint8_t* f = (uint8_t*)fr.font;
+        uint32_t* vec = (uint32_t*)(f + kFontOffPages);
+        uint32_t cnt = (vec[1] && vec[0]) ? (vec[1] - vec[0]) / 4 : 0;
+        uint32_t id = cnt ? ((uint32_t*)vec[0])[0] : 0;
+        if (si >= (int)pagesBySize.size()) pagesBySize.resize(si + 1);
+        if (pi >= (int)pagesBySize[si].size()) pagesBySize[si].resize(pi + 1, 0);
+        pagesBySize[si][pi] = id;
+    }
+    if (pagesBySize.empty()) return;
+
+    // ── 找未登记的真实字号字体，补装配 ──────────────────────────────
+    int added = 0;
+    for (auto& fr : fonts) {
+        fr.height = FontHeight(fr.font);
+        if (fr.height >= kCjkBase || fr.height <= 0.0f) continue;   // CJK 页 / 非法
+        if (CjkSlotFor(fr.font) >= 0) continue;                     // ★ 已登记，幂等 ★
+
+        int si = -1;
+        for (size_t k = 0; k < g_pkg.sizes.size(); ++k)
+            if (fabsf(g_pkg.sizes[k].height - fr.height) < 0.01f) { si = (int)k; break; }
+        if (si < 0) continue;                       // 新字号，包文件没有 → 不处理
+        if (si >= (int)pagesBySize.size() || pagesBySize[si].empty()) continue;
+        if (g_cjkSlotCount >= MAX_CJK_TABLES) {
+            Logf("pathd: [补装配%u] 槽已满(%d/%d)，放弃剩下的新字体",
+                 (unsigned)InterlockedIncrement(&g_rescanRuns), (int)g_cjkSlotCount, MAX_CJK_TABLES);
+            break;
+        }
+        const std::vector<uint32_t>& pv = pagesBySize[si];
+        int n = SafeProcessFont(fr.font, fr.height, pv.data(), (int)pv.size());
+        if (n > 0) {
+            ++added;
+            Logf("pathd: [补装配%u] ★新增字体 %.3f @%p（槽 %d，%d 个汉字）★",
+                 (unsigned)InterlockedIncrement(&g_rescanRuns),
+                 fr.height, fr.font, (int)(g_cjkSlotCount - 1), n);
+        }
+    }
+    if (added) {
+        Logf("pathd: [补装配] 本轮新增 %d 个字体，累计槽数 %d", added, (int)g_cjkSlotCount);
+    }
+}
+
+static DWORD WINAPI PathD_RescanThread(LPVOID) {
+    const DWORD kFirstDelayMs = 5000;    // 给首次装配留足时间
+    const DWORD kIntervalMs   = 2000;
+    Sleep(kFirstDelayMs);
+    for (int round = 1; round <= 180 && !InterlockedCompareExchange(&g_rescanStop, 1, 1); ++round) {
+        __try {
+            PathD_RescanOnce("周期补装配");
+        } __except (EXCEPTION_EXECUTE_HANDLER) {
+            Logf("pathd: [补装配异常] 0x%08X", (unsigned)GetExceptionCode());
+        }
+
+        // ── 内存变化哨兵（2026-10-07）────────────────────────────────
+        //   目的：抓"进世界读条阶段"的内存走势。转储显示崩在读条 1/4 处时
+        //   可用虚拟内存只剩 19MB，但我们不知道那19MB 是谁吃掉的。
+        //   做法：**只在变化显著时才记一行**，避免每2 秒刷一次日志把
+        //   真正的错误淹没（v23 那次刷了 500+ 行教训）。
+        //   阈值 16MB：既抓得住"几十 MB 级"的下跌，又不会被小抖动带偏。
+        {
+            static DWORD  lastAvailMB  = 0xFFFFFFFFu;
+            static DWORD  lastCommitMB = 0xFFFFFFFFu;
+            MEMORYSTATUSEX ms;
+            ms.dwLength = sizeof(ms);
+            if (GlobalMemoryStatusEx(&ms)) {
+                const DWORD availMB  = (DWORD)(ms.ullAvailVirtual  >> 20);
+                const DWORD commitMB = (DWORD)(ms.ullTotalPageFile >> 20);
+                const DWORD dAvail = (lastAvailMB  == 0xFFFFFFFFu) ? 0u
+                                 : (lastAvailMB  > availMB  ? lastAvailMB  - availMB  : 0u);
+                const DWORD dCommit = (lastCommitMB == 0xFFFFFFFFu) ? 0u
+                                  : (lastCommitMB > commitMB ? lastCommitMB - commitMB : 0u);
+                if (lastAvailMB == 0xFFFFFFFFu || dAvail >= 16 || dCommit >= 16) {
+                    Logf("pathd: [内存哨兵] 第 %d 轮：可用 %u MB（较上次 -%u）提交 %u MB（较上次 -%u）",
+                         round, availMB, dAvail, commitMB, dCommit);
+                }
+                lastAvailMB  = availMB;
+                lastCommitMB = commitMB;
+            }
+        }
+
+        // 分段睡眠，好让退出能及时响应
+        for (int s = 0; s < kIntervalMs / 250 && !g_rescanStop; ++s) Sleep(250);
+    }
+    Logf("pathd: [补装配] 线程退出（共 %u 轮）", (unsigned)g_rescanRuns);
     return 0;
+}
+
+// 卸载时叫停补装配线程。
+//   ★ 只置标志，不等它退出 ★
+//     DllMain 里不能 Join（会死锁：等一个正在 Sleep 的线程，
+//     而它的下一段代码又要调 Logf，而 Logf 的锁可能已经在卸载路径上）。
+//     标志置上后它最多再跑 250ms 就自行退出，而进程本来就要卸载了。
+void PathD_StopRescan() {
+    InterlockedExchange(&g_rescanStop, 1);
+}
+
+// 供 hook 调用（cdecl 无参，汇编里 call 它）
+// ★ 前置声明（cave 构建器在定义之前引用它）
+extern "C" void __cdecl PathD_InitExitGate();
+
+extern "C" void __cdecl PathD_HookAssemble() {
+    if (InterlockedCompareExchange(&g_assembled, 1, 0) != 0) {
+        return;                 // 已经装过了，幂等
+    }
+
+    // ★★★ 必须等全部前置依赖就绪 ★★★
+    //
+    //   背景：字体加载器**只被调用一次**（x64dbg 实测 hit=1），错过就没第二次，
+    //   所以不能"先放弃、等下次"，必须在这里阻塞等待。
+    //   问题是它什么时候被调用完全由引擎决定（实测跨度从 0.3 秒到 65 秒），
+    //   而我们的 InitThread 正在并行建立依赖 —— 两者赛跑，谁快谁慢全随机。
+    //
+    //   ★ 下面是一次修两次的记录（都因"门开了但门里没东西"）★
+    //     07:03 那次：等包文件 → 漏了分配器 → 0 个字号
+    //     07:16 那次：等分配器 → 漏了包文件 → 0 个字号
+    //     07:24 那次：等分配器 → 漏了包文件 → 9 个字号（少一个，闪乱码）
+    //
+    //   装配依赖两样东西，缺一不可：
+    //     (a) g_engineAlloc —— 挂 CJK 图集页表必须用引擎堆，
+    //         否则引擎 ~Font 的 free 配不上（页表挂不上 → 汉字没图集 → 俄文）
+    //     (b) g_pkg        —— 字号表/字形表，装配按 height 逐个匹配它
+    //
+    //   ★ 我上一版只等 (a)，并写下"分配器就绪蕴含包文件已载入"—— 实测证明是错的 ★
+    //     我把分配器定位提到了 LoadPackage **之前**，所以顺序其实是：
+    //         引擎分配器定位 → LoadPackage → 字体管理器 → 补丁
+    //     分配器就绪时包文件**还早得很**。两次实测各暴露一半：
+    //
+    //       07:16:26 那次（只等包文件 → 漏了分配器）：
+    //           07:16:26.207  包文件已就绪
+    //           07:16:29.653  [ 12.000] 无引擎分配器，跳过挂页
+    //           07:16:29.986  === 准备完成：0 个字号 ===
+    //           07:16:30.641  引擎分配器就绪（晚了 4.4 秒）
+    //
+    //       07:24:03 那次（只等分配器 → 漏了包文件）：
+    //           07:24:03.121  [装配] 开始
+    //           07:24:07.177  [ 15.625] 包文件里没有这个字号，跳过   ← ★ 撕裂 ★
+    //           07:24:07.210  === 准备完成：9 个字号 ===
+    //           07:24:07.620  包文件载入成功                        ← 晚 0.4 秒
+    //       15.625 正好是 g_pkg.sizes 的**最后一项**，装配扫到最后一项时
+    //       LoadPackage 恰好还没写进去。**跑赢赢 10 个、跑输赢 9 个**，
+    //       取决于磁盘快慢与线程调度 —— 这就是"启动后随机乱码"的来源。
+    //
+    //   ★ 教训：竞态的门必须覆盖**全部**前置依赖，一个都不能少 ★
+    //     我两次都是"修好了 A，漏了 B"。所以这里用显式的双条件，
+    //     并在注释里列出清单 —— 以后再加依赖时，照着清单补，别再靠推断。
+    //     （依赖清单：g_engineAlloc、g_pkg。g_fontMgr 有 hook 抓的
+    //       g_hookFontMgr 兜底，不参与本门。）
+    //
+    //   ★ 死锁风险已排除（实测线程归属）★
+    //     装配运行在**引擎主线程**（cave 是引擎调加载器时进入的），
+    //     依赖建立运行在 **InitThread**。两者不同，不会自锁。
+    //     唯一的交互是 InitThread 装补丁时会挂起引擎主线程 ——
+    //     那只会让装配暂停一会儿（补丁装完自动恢复），不是死锁。
+    // ★ 可观测性补丁（2026-10-07）★
+    //   起因：07:55:01 那次失败启动，日志最后一行停在
+    //        "[SetupThread] 后备路径启动，等待字体就绪…"，此后**完全静默**，
+    //        整个进程还活着但汉字没装上。没有"进入/退出装配"的日志，
+    //        导致无法区分"卡在枚举里"和"根本没进装配"。
+    //   这里给 cave 的每次进入/退出、以及依赖门的三种结局都留痕，
+    //   下次再出现"装不上"，一眼就能看出停在哪一行。
+    Logf("pathd: [装配] 进入（依赖：分配器=%p 包文件=%d 字号数=%u 补丁=%ld）",
+         g_engineAlloc, (int)g_pkg.loaded, (unsigned)g_pkg.sizes.size(),
+         (long)g_patchState);
+
+    if (!g_engineAlloc || !g_pkg.loaded) {
+        Logf("pathd: [装配] 依赖未就绪（分配器=%p 包文件=%d）—— 等待 Init 线程完成初始化…",
+             g_engineAlloc, (int)g_pkg.loaded);
+        DWORD t0 = GetTickCount();
+        while ((!g_engineAlloc || !g_pkg.loaded) && (GetTickCount() - t0) < 10000) {
+            Sleep(5);
+        }
+        DWORD waited = GetTickCount() - t0;
+        if (!g_engineAlloc || !g_pkg.loaded) {
+            Logf("pathd: [装配] ★等待 %u ms 后依赖仍未就绪（分配器=%p 包文件=%d），放弃★（该次无汉字）",
+                 (unsigned)waited, g_engineAlloc, (int)g_pkg.loaded);
+            InterlockedExchange(&g_assembled, 0);   // 让后备线程还有机会再试
+            return;
+        }
+        Logf("pathd: [装配] 依赖已就绪（等待 %u ms，分配器=%p，字号数 %u）",
+             (unsigned)waited, g_engineAlloc, (unsigned)g_pkg.sizes.size());
+    }
+
+    // ═══════════════════════════════════════════════════════════════════
+    // ★★★ 第二道门：等补丁装完（2026-10-07）★★★���════════════════════════════
+    //
+    //   依赖清单要更新了 —— 现在是**三样**：
+    //     (a) g_engineAlloc —— 挂 CJK 图集页表必须用引擎堆
+    //     (b) g_pkg        —— 字号表/字形表
+    //     (c) g_patchState —— ★ 新增 ★ P4/P5 查表补丁必须已就位
+    //
+    //   ★ 为什么 (c) 缺一不可（08:35 两次实测对照）★
+    //     失败那次  08:35:09.405 装配开始 → 12.746 装完（10 字号 2079 齐备）
+    //                08:35:13.315 P0撤销 → 30.260 P1撤销（写了 17 秒仍未完）
+    //                → 全程没有"补丁安装完成"这一行
+    //     成功那次  08:35:50.382 装配开始 → 53.906 装完（同上，也是齐备的）
+    //                08:35:54.080 P1撤销 → 55.881 补丁安装完成（仅 1.98 秒）
+    //
+    //     **两次的装配结果完全一致**，差别只在补丁有没有写完。
+    //     而没有 P4/P5，引擎就用 8 位查表 + 8 位前进量去渲染双字节汉字：
+    //     前导字节和后继字节被当成两个独立字符，前进量按字节累加
+    //     → 字叠在一起 + 乱码。**这才是"装不上"的真正形态。**
+    //
+    //   ★ 与旧注释的说法相反 ★
+    //     这里原来写着"补丁不参与字体加载，装配只写数据结构不依赖补丁，
+    //     所以顺序正确"。实测证明那是错的：装配产出的 64K 码表**只有
+    //     引擎用 16 位索引去查它才有意义**，补丁没装 = 表白填。
+    //
+    //   ★ 阻塞多久 ★
+    //     正常情况补丁 2 秒内装完 → 引擎主线程被扣住约 2 秒，可接受
+    //     （此前是界面 17 秒不可用且最终仍失败）。
+    //     设 30 秒上限只是防挂死；补丁失败时 Init 线程会弹框并退出进程，
+    //     那时这里根本等不到超时。
+    {
+        DWORD tw0 = GetTickCount();
+        while (g_patchState == PATCH_STATE_BUSY && (GetTickCount() - tw0) < 30000) {
+            Sleep(5);
+        }
+        const DWORD waited = GetTickCount() - tw0;
+        if (g_patchState != PATCH_STATE_OK) {
+            Logf("pathd: [装配] ★补丁未就绪（状态=%ld，等待 %u ms），放弃装配★"
+                 "（补丁缺失时填表无意义；这属于致命失败，Init 会弹框并退出）",
+                 (long)g_patchState, (unsigned)waited);
+            InterlockedExchange(&g_assembled, 0);
+            return;
+        }
+        if (waited) {
+            Logf("pathd: [装配] 补丁已就绪（等待 %u ms）", (unsigned)waited);
+        }
+    }
+
+    __try {
+        PathD_AssembleAll("字体加载器返回");
+    }
+    __except (EXCEPTION_EXECUTE_HANDLER) {
+        Logf("pathd: [装配异常] 0x%08X", (unsigned)GetExceptionCode());
+    }
+}
+
+// ═══════════════════════════════════════════════════════════════════════════
+// 5.4c) ★ 冻结门本体（方案 F）★
+// ═══════════════════════════════════════════════════════════════════════════
+//
+//   触发时机：Application::init 的**成功出口**（0x5AA388，IDA 实证唯一）。
+//   此刻引擎状态满足：
+//     · 字体已全部加载完（sub_8BA480 已返回过）
+//     · 尚未进入主循环 sub_5A8310
+//     · 运行在主线程，引擎没有任何绘制在跑
+//
+//   ⇒ 定位可以任意慢（单核也无所谓），引擎不会撞上半装状态。
+static bool g_gateDone = false;
+// ★ 方案 B 交接标志 ★
+//   Init() 跑完依赖准备（引擎分配器 / 包文件 / 字体管理器）后置 1。
+//   冻结门只在看到这个标志才敢装补丁 —— 否则就是在半成品依赖上打补丁。
+static volatile LONG g_initDepsReady = 0;
+
+// ★★★ 方案 B：这里做**全部**工作（定位 → 写补丁 → 装配）★★★
+//   Init() 只负责装冻结门 + 备好依赖，然后立刻返回；
+//   引擎主线程走到 Application::init 出口时进入本函数，此时它已停住。
+//
+// ★ 前置声明（两者定义都在本函数之后）★
+static bool InstallPatches();
+static void FatalInstallFailure(const char* reason);
+static bool InstallFontLoaderHookEarly(uintptr_t modBase);
+
+extern "C" void __cdecl PathD_InitExitGate() {
+    if (g_gateDone) return;                  // 幂等（理论上只会命中一次）
+    g_gateDone = true;
+
+    const DWORD t0 = GetTickCount();
+    Logf("pathd: ╔═════════ [冻结门] 接管 Application::init 出口 ═════════");
+
+    // ── 前置条件 1：Init() 的依赖准备已完成 ──────────────────────────
+    //   引擎跑完 init 通常只要 1.7~4 秒，而 Init() 要 3.4 秒 ——
+    //   **引擎可能先到**。此时依赖还没备齐，贸然打补丁就是半成品。
+    if (InterlockedCompareExchange(&g_initDepsReady, 1, 1) == 0) {
+        Logf("pathd: [冻结门] ★Init 依赖尚未就绪，放弃★"
+             "（引擎比初始化线程先跑完了 Application::init）");
+        FatalInstallFailure("引擎初始化比汉化补丁更快完成，"
+                            "补丁无法在正确时机安装（建议重试或关闭后台程序）");
+        return;
+    }
+    if (!g_engineAlloc) {
+        Logf("pathd: [冻结门] ★引擎分配器未就绪，放弃★（会导致俄文乱码）");
+        FatalInstallFailure("未能定位引擎内存分配器，汉化无法挂载字形图集");
+        return;
+    }
+    if (!g_pkg.loaded) {
+        Logf("pathd: [冻结门] ★包文件未载入，放弃★（会导致无汉字）");
+        FatalInstallFailure("未能载入汉化字库包文件（hta_chs_cjk.bin）");
+        return;
+    }
+
+    // ── 第 1 步：安装 16 位索引补丁 ──────────────────────────────────
+    //   ★ 为什么放在这里 ★
+    //     旧做法在 InitThread 上装，与引擎主线程赛跑（实测只赢 0.6 秒）。
+    //     现在引擎主线程**就在本函数里停着**，不存在竞争，
+    //     单核慢 20 倍也无所谓 —— 游戏本来就该停在这里。
+    const DWORD tPatch0 = GetTickCount();
+    if (!g_skipPatch) {
+        if (!InstallPatches()) {
+            // 失败 = 已整体回滚。带着原版引擎进主循环时不会有汉字，
+            // 但玩家会看到满屏乱码且不知为何 ⇒ 明确告知并退出。
+            FatalInstallFailure("运行时代码补丁未能写入游戏进程（16 位汉字索引补丁安装失败）");
+            return;
+        }
+        Logf("pathd: [冻结门] 补丁安装完成，耗时 %u ms",
+             (unsigned)(GetTickCount() - tPatch0));
+    } else {
+        Logf("pathd: [冻结门] HTA_CHS_NO_PATCH 已设 —— 跳过补丁安装");
+    }
+
+    // ── 第 2 步：枚举 FontManager 装汉字 ─────────────────────────────
+    //   此时字体 100% 完整（引擎刚做完 init），枚举必然成功。
+    //   这也绕开了旧方案最大的软肋：冻结渲染线程会导致收集不到字体。
+    __try {
+        PathD_AssembleAll("冻结门");
+    }
+    __except (EXCEPTION_EXECUTE_HANDLER) {
+        Logf("pathd: [冻结门] ★装配异常 0x%08X★", (unsigned)GetExceptionCode());
+    }
+    Logf("pathd: ╚═════════ [冻结门] 放行（总耗时 %u ms）═════════",
+         (unsigned)(GetTickCount() - t0));
+}
+
+// ═══════════════════════════════════════════════════════════════════════════
+// 5.4b) 字体加载器 hook（trampoline / 代码洞）
+// ═══════════════════════════════════════════════════════════════════════════
+//
+//   ★ 为什么选 sub_8BA480 而不是 sub_8B9B60（用户建议用代码洞重放原指令）★
+//
+//   sub_8BA480 的**整个函数**只有 9 字节：
+//       E8 DB F6 FF FF    call sub_8B9B60     ← 5 字节，完整一条指令
+//       83 E0 01          and  eax, 1
+//       C3                ret
+//   前 5 字节恰好是一条完整的 call —— 覆盖它**不劈开任何指令**。
+//   对比 sub_8B9B60 开头是 `81 EC 84 00 00 00`（sub esp,84h，6 字节），
+//   覆盖 5 字节会劈开它，必须抄两条指令并算准回跳偏移，容易出错。
+//
+//   ★ trampoline 结构（原函数整体搬进我们的代码洞）★
+//       cave:
+//           call  <sub_8B9B60>      ; 重放被覆盖的原指令，语义完全一致
+//           pushad                  ; ★ 保存全部寄存器 ★
+//           call  PathD_HookAssemble; ← 此刻 99 个字体已就绪，做装配
+//           popad                   ; 恢复（eax 也会被恢复）
+//           and   eax, 1            ; 补回原函数的第 2 条指令
+//           ret                     ; 补回原函数的第 3 条指令
+//
+//   注意 pushad/popad **会**保存/恢复 eax，所以 call 前的 eax（= call 的
+//   返回值）会被完整保留，`and eax,1` 拿到的仍是原返回值 —— 语义正确。
+//
+//   ★ 为什么要 pushad ★
+//     PathD_HookAssemble 是 C++ 函数，会破坏 eax/ecx/edx 等。
+//     而原函数返回后调用方（sub_6843F0）依赖 eax（`and eax,1` 的结果）。
+//     pushad/popad 把 8 个通用寄存器全部保护起来。
+//
+//   ★ cave 放在哪 ★
+//     就地取材：直接在 sub_8BA480 之后（0x8BA489 起是 7 字节 CC 填充区，
+//     不够放）。所以改用 DLL 内自建的可执行内存 —— 用 VirtualAlloc 申请
+//     PAGE_EXECUTE_READWRITE，把上述机器码写进去。
+//     （DLL 自己的 .text 是只读的，运行时改属性也行，但新建一块更干净。）
+static void* g_fontHookCave = nullptr;
+
+// 生成 cave 的机器码。返回 cave 地址（失败返回 nullptr）。
+static void* BuildFontLoaderCave(uintptr_t callTarget) {
+    // cave 布局（手工汇编，逐字节可控）：
+    //   89 0D <imm32>         mov [g_hookFontMgr], ecx   ; ★ 抓住 FontManager ★
+    //   B8 <imm32>            mov eax, callTarget
+    //   FF D0                 call eax                  ; 重放原 call
+    //   83 E0 01              and eax, 1
+    //   C3                    ret
+    //
+    //   ★ 第一行至关重要 ★
+    //     hook 点是 sub_8BA480 的入口，此时 ecx 就是 FontManager
+    //     （调用方 sub_6843F0 在 0x684E48 `mov ecx,[edx+4A4h]` 传入）。
+    //     必须在**任何 call 之前**保存它 —— 之后 ecx 会被调用破坏。
+    //
+    // ★★ 2026-10-07 路线 1：这里**不再调用 PathD_HookAssemble** ★★
+    //   职责解耦：
+    //     本 hook 只负责「抓到 FontManager 指针」这一件事，
+    //     装配时机**完全交给 Application::init 出口的冻结门**。
+    //   为什么必须解耦（实测 空白字失败.log）：
+    //     冻结门触发时引擎还没画过一帧 ⇒ g_seenFonts 锚点为空
+    //     ⇒ 堆扫描路径直接 return ⇒ FontManager 拿不到时**一个字体都收不到**
+    //     ⇒ 「合计收集到 0 个 Font」→「空白字」。
+    //     而 FontManager 只有这个 hook 能抓到（uiCore+0x4A4 实测恒为 0），
+    //     所以 hook 必须留着，装配却必须挪走。
+    //
+    //   代价：cave 不再调 C++ 函数 ⇒ 不需要 pushad/popad，
+    //         也不怕与被冻结线程争 CRT 锁。
+    uint8_t code[48];
+    size_t  n = 0;
+    // mov dword ptr [g_hookFontMgr], ecx  =  89 0D <disp32>
+    code[n++] = 0x89; code[n++] = 0x0D;
+    *(uint32_t*)(code + n) = (uint32_t)(uintptr_t)&g_hookFontMgr; n += 4;
+    // mov eax, callTarget
+    code[n++] = 0xB8;
+    *(uint32_t*)(code + n) = (uint32_t)callTarget; n += 4;
+    code[n++] = 0xFF; code[n++] = 0xD0;                       // call eax
+    code[n++] = 0x83; code[n++] = 0xE0; code[n++] = 0x01;      // and eax,1
+    code[n++] = 0xC3;                                          // ret
+
+    void* cave = VirtualAlloc(nullptr, 64, MEM_COMMIT | MEM_RESERVE,
+                              PAGE_EXECUTE_READWRITE);
+    if (!cave) {
+        Logf("pathd: [字体加载器hook] VirtualAlloc 失败");
+        return nullptr;
+    }
+    memcpy(cave, code, n);
+    FlushInstructionCache(GetCurrentProcess(), cave, n);
+    Logf("pathd: [字体加载器hook] cave @0x%08X（%u 字节，首条为保存 ecx=FontManager）",
+         (unsigned)(uintptr_t)cave, (unsigned)n);
+    return cave;
+}
+
+// ═══════════════════════════════════════════════════════════════════════════
+// ★★★ 方案 F：Application::init 出口冻结门（2026-10-07）★★★
+//
+// ── 为什么这是根治方案 ──────────────────────────────────────────────────
+//   旧方案依赖「引擎什么时候调字体加载器」，这是**不可控的时序竞争**：
+//     实测（正常.log vs 没冻上.log）：
+//       正常那次    引擎 10:16:47.892 触发 → 门控生效 → 汉化正常
+//       没冻上那次  引擎在我们装完补丁后才触发 → 无门控 → 俄文/叠字
+//   两份日志的补丁定位耗时差 20 倍（0.42s vs 8.5s），慢的那次直接输了。
+//
+// ── IDA 实证的调用链（单线程、无分支、每个节点仅 1 个 xref）────────────
+//     WinMain @0x414C80
+//       └─ sub_5A9040 = Application::init      （字符串 "Application::init"）
+//            ├─ sub_59F100 → sub_58DC50 → sub_6843F0 → sub_8BA480 ★字体全部加载完★
+//            ├─ … 引擎各子系统 …
+//            ├─ 打印 "----------------------- Engine inited in: "
+//            └─ 0x5AA388: mov eax,1   ← ★★ 冻结点 ★★
+//       └─ sub_5A8310 = 主循环（游戏正式开始）
+//
+//   5 个 retn 出口全部核实：
+//     0x5A921F eax=0 config 打不开   0x5A92A7 eax=0 device 失败
+//     0x5AA1F5 eax=0 input 失败      0x5AA411 eax=0 3D 失败
+//     0x5AA394 eax=1 ★唯一成功★（紧邻 "Engine inited in: "）
+//
+// ── 为什么这个点能根治所有症状 ─────────────────────────────────────────
+//   冻结时刻引擎满足三个条件，缺一不可：
+//     (a) 字体**已全部建完** → 枚举 FontManager 必定成功（原问题：收集不到）
+//     (b) **尚未进入主循环** → 不可能有半装状态被引擎执行（原问题：叠字/崩溃）
+//     (c) 在**主线程**上，引擎此刻不跑任何绘制 → 收集不依赖渲染线程
+//   于是定位/写补丁/装配可以任意慢（单核也无所谓），因为游戏本来就停着。
+//
+// ── 线程安全性 ────────────────────────────────────────────────────────
+//   IDA 实证：整个引擎**只有 1 处 CreateThread**（sub_949FE0，线程池 worker）。
+//   所以「挂起全部线程」不存在"挂起时对方正在建字体"的交错风险。
+
+static void* g_gateCave = nullptr;
+
+// cave 布局（5 字节窗口内做完 init 出口的拦截）：
+//   60                    pushad
+//   B8 <imm32>            mov eax, PathD_InitExitGate
+//   FF D0                 call eax
+//   61                    popad
+//   B8 01 00 00 00        mov eax, 1        ← 恢复被覆盖的 mov eax,1
+//   E9 <rel32>            jmp 0x5AA38D      ← pop ebx / add esp,0F0h / retn 14h
+static void* BuildGateCave(uintptr_t backTo) {
+    void* cave = VirtualAlloc(nullptr, 64, MEM_COMMIT | MEM_RESERVE,
+                              PAGE_EXECUTE_READWRITE);
+    if (!cave) { Logf("pathd: [冻结门] VirtualAlloc 失败"); return nullptr; }
+
+    // 布局（偏移固定，便于回填 rel32）：
+    //   +00 60                    pushad
+    //   +01 B8 <imm32>            mov eax, PathD_InitExitGate
+    //   +06 FF D0                 call eax
+    //   +08 61                    popad
+    //   +09 B8 01 00 00 00        mov eax, 1
+    //   +0E E9 <rel32>            jmp backTo        ← +13 处回填
+    //   +13 = 结束
+    uint8_t* c = (uint8_t*)cave;
+    size_t n = 0;
+    c[n++] = 0x60;
+    c[n++] = 0xB8;
+    *(uint32_t*)(c + n) = (uint32_t)(uintptr_t)&PathD_InitExitGate; n += 4;
+    c[n++] = 0xFF; c[n++] = 0xD0;
+    c[n++] = 0x61;
+    c[n++] = 0xB8; c[n++] = 0x01; c[n++] = 0x00; c[n++] = 0x00; c[n++] = 0x00;
+    c[n++] = 0xE9;
+    const size_t relOff = n;                 // rel32 所在偏移
+    *(uint32_t*)(c + n) = 0; n += 4;
+    // ★ cave 基址此刻确定，才回填 jmp 目标 ★
+    *(uint32_t*)(c + relOff) =
+        (uint32_t)(int32_t)((int64_t)backTo - (int64_t)(c + n));
+
+    FlushInstructionCache(GetCurrentProcess(), cave, n);
+    Logf("pathd: [冻结门] cave @0x%08X（%u 字节，回跳 0x%08X）",
+         (unsigned)(uintptr_t)cave, (unsigned)n, (unsigned)backTo);
+    return cave;
+}
+
+// 在 Application::init 的成功出口安装冻结门。
+static bool InstallInitExitHook(uintptr_t modBase) {
+    const uintptr_t at = modBase + (0x5AA388 - 0x400000);   // mov eax, 1
+
+    // ★ 逐字节校验：`B8 01 00 00 00` ★
+    //   只认这一条指令。万一引擎小版本把它挪了或改了，立即拒绝安装，
+    //   绝不盲写 —— 写错会把「init 成功」变成崩溃。
+    if (rd8(at) != 0xB8 || rd8(at + 1) != 0x01 ||
+        rd8(at + 2) != 0x00 || rd8(at + 3) != 0x00 || rd8(at + 4) != 0x00) {
+        Logf("pathd: [冻结门] ★0x%08X 字节 %s ≠ B8 01 00 00 00，拒绝安装★",
+             (unsigned)at, HexDump(at, 5).c_str());
+        return false;
+    }
+    // 顺带核对紧随其后的两条，确���这就是成功出口而不是别处
+    if (rd8(at + 5) != 0x5B) {          // pop ebx
+        Logf("pathd: [冻结门] ★后继字节 %s 与预期 pop ebx 不符，拒绝★",
+             HexDump(at + 5, 3).c_str());
+        return false;
+    }
+
+    g_gateCave = BuildGateCave(at + 5);
+    if (!g_gateCave) return false;
+
+    int64_t rel = (int64_t)g_gateCave - (int64_t)(at + 5);
+    if (rel > 0x7FFFFFFFLL || rel < -0x80000000LL) {
+        Logf("pathd: [冻结门] ★cave 0x%08X 距 0x%08X 超 rel32 范围，拒绝★",
+             (unsigned)(uintptr_t)g_gateCave, (unsigned)at);
+        VirtualFree(g_gateCave, 0, MEM_RELEASE);
+        g_gateCave = nullptr;
+        return false;
+    }
+    uint8_t patch[5];
+    patch[0] = 0xE9;
+    *(int32_t*)(patch + 1) = (int32_t)rel;
+    if (!WriteBlockSafe(at, patch, 5, "冻结门 Application::init 出口")) return false;
+
+    Logf("pathd: [冻结门] ★已安装★ 0x%08X: mov eax,1 -> jmp 0x%08X",
+         (unsigned)at, (unsigned)(uintptr_t)g_gateCave);
+    return true;
+}
+
+// 安装：把 sub_8BA480 前 5 字节改成 jmp cave
+static bool InstallFontLoaderHook(uintptr_t at) {
+    // ★ 逐字节核对原指令：必须是 `E8 xx xx xx xx`（call rel32）★
+    if (rd8(at) != 0xE8) {
+        Logf("pathd: [字体加载器hook] ★0x%08X 不是 E8（实为 %02X），拒绝安装★",
+             (unsigned)at, rd8(at));
+        return false;
+    }
+    int32_t oldRel = (int32_t)rd32s(at + 1);
+    uintptr_t oldTgt = (uintptr_t)((int64_t)(at + 5) + oldRel);
+    // 预期目标是字体加载器 sub_8B9B60（相对模块基址）
+    if (oldTgt != g_modBase + (0x8B9B60 - 0x400000)) {
+        Logf("pathd: [字体加载器hook] ★call 目标 0x%08X 不是 0x%08X（sub_8B9B60），拒绝安装★",
+             (unsigned)oldTgt, (unsigned)(g_modBase + (0x8B9B60 - 0x400000)));
+        return false;
+    }
+    // 后两条指令也核对（and eax,1 / ret）
+    if (rd8(at + 5) != 0x83 || rd8(at + 6) != 0xE0 || rd8(at + 7) != 0x01 || rd8(at + 8) != 0xC3) {
+        Logf("pathd: [字体加载器hook] ★后续字节 %s 与预期 (83 E0 01 C3) 不符，拒绝安装★",
+             HexDump(at + 5, 4).c_str());
+        return false;
+    }
+
+    g_fontHookCave = BuildFontLoaderCave(oldTgt);
+    if (!g_fontHookCave) return false;
+
+    // ★ E9 jmp rel32 到 cave，后 1 字节 NOP ★
+    //   注意：cave 是 VirtualAlloc 来的，可能远离 hta.exe（>2GB）——
+    //   E9 是 rel32，够不到时改用 `FF 25`（jmp [imm32] 绝对间接跳转，6 字节）。
+    //   5 字节窗口只能放 E9，所以先算距离。
+    int64_t rel = (int64_t)g_fontHookCave - (int64_t)(at + 5);
+    uint8_t patch[5];
+    if (rel > 0x7FFFFFFFLL || rel < -0x80000000LL) {
+        Logf("pathd: [字体加载器hook] ★cave 0x%08X 距目标 0x%08X 超过 rel32 范围，拒绝★",
+             (unsigned)(uintptr_t)g_fontHookCave, (unsigned)at);
+        VirtualFree(g_fontHookCave, 0, MEM_RELEASE);
+        g_fontHookCave = nullptr;
+        return false;
+    }
+    patch[0] = 0xE9;
+    *(int32_t*)(patch + 1) = (int32_t)rel;
+
+    if (!WriteBlockSafe(at, patch, 5, "字体加载器hook")) {
+        Logf("pathd: [字体加载器hook] 写入失败");
+        return false;
+    }
+    Logf("pathd: [字体加载器hook] ★已安装★ 0x%08X: call rel32 -> E9 jmp 0x%08X",
+         (unsigned)at, (unsigned)(uintptr_t)g_fontHookCave);
+    Logf("pathd:   cave: call 0x%08X (原 sub_8B9B60) → pushad → 装配 → popad → and eax,1 → ret",
+         (unsigned)oldTgt);
+    return true;
 }
 
 // ═══════════════════════════════════════════════════════════════════════════
@@ -1696,8 +2905,73 @@ static bool PatchEqual(const char* name, uintptr_t at, const uint8_t* bytes, siz
     return true;
 }
 
+// ═══════════════════════════════════════════════════════════════════════════
+// 汉化安装失败 → 弹框告知玩家 → 退出游戏
+// ═══════════════════════════════════════════════════════════════════════════
+//
+//  ★ 为什么必须退出，而不是"回滚后继续玩原版" ★
+//     以前失败时的做法是整体回滚、游戏按原版跑（稳定但没中文）。实测下来
+//     这个"安静降级"反而更糟：
+//       · 玩家看到的是**乱码 + 字叠在一起**，根本看不出"汉化没装上"，
+//         只会以为游戏坏了；
+//       · 更坑的是**半装状态**——引擎可能已经按 16 位索引取到了我们
+//         填好的表，却仍用 8 位的前进/度量逻辑渲染，于是满屏叠字。
+//     既然装了补丁却不能正确工作，就明确告诉玩家"没装上"并退出，
+//     比让玩家对着一个坏画面反复重启、并误以为显卡/游戏有问题要好。
+//
+//  ★ 为什么归因写"游戏太老 / 电脑太新" ★
+//     真实原因是这个补丁方案依赖**写引擎 .text 段**并在特定线程状态下抢写，
+//     而现代 Windows 的内存保护（DEP/WER/线程调度）让这种"热补丁"越来越
+//     难稳定成功。这话对玩家是准确的，也是可行动的（重试可能成功）。
+static void FatalInstallFailure(const char* reason) {
+    // ★ 不用 _snprintf_s 拼格式 ★
+    //   实测编译警告 C4474：把 reason 作为可变参数传给 _snprintf_s 时，
+    //   编译器判定该重载不接受可变参数，"原因"会变成垃圾。
+    //   纯拼接没有这个歧义，也不会碰 % 之类的格式符转义问题。
+    char        msg[1024];
+    const char* head =
+        "汉化安装失败。\n\n"
+        "原因：";
+    const char* tail =
+        "\n\n"
+        "《Hard Truck Apocalypse》(2006) 的引擎代码年代久远，"
+        "而现代 Windows 的内存保护机制让“运行时热补丁”很难稳定写入。\n\n"
+        "请尝试重新启动游戏 —— 多数情况下重试即可成功。\n"
+        "若多次重试仍失败，请把 update 目录下的 hta_chs*.log 一并反馈。";
+
+    size_t need = strlen(head) + strlen(reason ? reason : "(未知)") + strlen(tail) + 1;
+    if (need > sizeof(msg)) need = sizeof(msg);
+    msg[0] = '\0';
+    strncat_s(msg, sizeof(msg), head, _TRUNCATE);
+    strncat_s(msg, sizeof(msg), reason ? reason : "(未知)", _TRUNCATE);
+    strncat_s(msg, sizeof(msg), tail, _TRUNCATE);
+
+    Logf("pathd: ═════ 汉化安装失败，提示玩家并退出 ═════");
+    Logf("pathd:   原因: %s", reason ? reason : "(未知)");
+    Logf("pathd:   提示用户重新启动游戏；日志见 update\\hta_chs*.log");
+
+    // ★ 顺序很关键：先弹框，等玩家点掉，再退出 ★
+    //   （不能在弹框前 ExitProcess，那样玩家什么都看不到。）
+    HMODULE u32 = ::GetModuleHandleA("user32.dll");
+    if (u32) {
+        typedef int (__stdcall *MsgBoxA_t)(void*, const char*, const char*, unsigned);
+        MsgBoxA_t fn = (MsgBoxA_t)::GetProcAddress(u32, "MessageBoxA");
+        if (fn) fn(nullptr, msg, "Hard Truck Apocalypse - 汉化安装失败",
+                    MB_OK | MB_ICONERROR | MB_SETFOREGROUND | MB_TOPMOST);
+    } else {
+        // 连 user32 都没有（极端情况）：至少写日志，然后退出。
+        Logf("pathd:   [警告] user32.dll 不可用，无法弹框");
+    }
+    Logf("pathd:   玩家已确认，正在退出进程");
+    ::ExitProcess(1);
+}
+
 bool InstallPatches() {
-    if (g_skipPatch) { Logf("pathd: [调试] 按开关跳过全部补丁"); return true; }
+    if (g_skipPatch) {
+        Logf("pathd: [调试] 按开关跳过全部补丁");
+        InterlockedExchange(&g_patchState, PATCH_STATE_OK);
+        return true;
+    }
     Logf("pathd: ───── 安装 16 位索引补丁 ─────");
     int done = 0, fail = 0;
 
@@ -2097,16 +3371,189 @@ bool InstallPatches() {
         }
     }
 
+    // ── 字体加载器 hook 已在 Init 最开头装好（早期注入）──────────────
+    //
+    //   ★ 这里不再安装 ★ 原因见 InstallFontLoaderHookEarly 的说明：
+    //     装在这里就晚了 —— 引擎字体加载发生在进程启动后约 1 秒
+    //     （游戏日志实证：05:55:28 Starting up → 05:55:29 fonts loaded），
+    //     而本函数里的 7 个补丁每个要挂起 50 个线程，累计十几秒。
+    //     早期注入只做"算地址 + 校验 + 写 5 字节"，几微秒完成。
+    //   ★ 方案 B：字体加载器 hook **已完全停用** ★
+    //     它是旧方案的核心机制，靠"引擎何时调加载器"触发装配 ——
+    //     那个时机不可控，实测只有约 60% 命中率。
+    //     现在改由 Application::init 出口的冻结门接管（时机 100% 确定），
+    //     所以这里不再安装字体加载器 hook。
+    //     保留 InstallFontLoaderHook / BuildFontLoaderCave 代码以便回退。
+    Logf("pathd: [路线1] 字体加载器 hook 仅用于抓 FontManager，装配时机交给冻结门");
+
+    // ★ "补丁安装完成"这条日志已移到函数末尾（与 g_patchState 置位放在一起）★
+
+    // ★★★ 全或无：失败必须整体回滚 ★★★
+    //
+    //   实测 hta.exe0004（巨卡/没字/崩溃）的根因就是这个：
+    //       补丁安装完成：成功 3，失败 4
+    //   P4/P4b（查表）装上了，P5/P7/P8（推进与度量）没装上。
+    //   引擎于是按新逻辑查我们**没准备好**的表 —— 半成品状态
+    //   比"完全不装"危险得多：完全不装只是没有汉化，半成品会崩。
+    //
+    //   ⇒ 任何一个补丁写入失败，就把**已写成功的全部还原成原字节**。
+    //     退出"汉化模式"，游戏回到原版行为（能正常玩，只是没中文）。
+    //
+    //   还原用同一套 WriteBlockSafe（此时线程状态与装补丁时相同），
+    //   失败概率极低；即使还原失败也有日志可查。
+    if (fail > 0) {
+        Logf("pathd: ★有 %d 个补丁未能安装 —— 执行**整体回滚**，避免半成品状态★", fail);
+        Logf("pathd:   半成品（部分补丁生效）会让引擎查未准备好的表 → 巨卡/没字/崩溃；");
+        Logf("pathd:   整体回滚后游戏按原版逻辑运行：没有汉化，但稳定可玩。");
+        int rolled = 0;
+        g_rollingBack = true;
+        for (int i = (int)g_installedPatches.size() - 1; i >= 0; --i) {
+            const InstalledPatch& ip = g_installedPatches[i];
+            if (WriteBlockSafe(ip.at, ip.orig, ip.len, "回滚")) {
+                ++rolled;
+            } else {
+                Logf("pathd:   [回滚失败] @0x%08X（%u 字节）—— 请把日志发给开发者",
+                     (unsigned)ip.at, (unsigned)ip.len);
+            }
+        }
+        g_installedPatches.clear();
+        g_rollingBack = false;
+        Logf("pathd: 回滚完成：还原 %d 个补丁", rolled);
+        g_enabled = false;      // ← 关键：告诉上层"汉化未启用"
+        // ★ 放行 cave：置 FAILED 而不是让它继续等 30 秒 ★
+        //   补丁没了，cave 里的装配本来就没有意义，
+        //   让它立刻返回比干等超时好得多（引擎主线程不被白扣住）。
+        InterlockedExchange(&g_patchState, PATCH_STATE_FAILED);
+        return false;           // ← 让 Init 知道补丁没装上
+    }
+
+    // ★ 全部补丁装好：放行 cave 去装配 ★
+    //   这一行是"补丁 → 装配"这个顺序的关键：cave 里会等这个标志，
+    //   所以不可能再出现"字形装好了但补丁还没写进去"的半成品状态。
     Logf("pathd: ───── 补丁安装完成：成功 %d，失败 %d ─────", done, fail);
-    return done > 0;
+    InterlockedExchange(&g_patchState, PATCH_STATE_OK);
+    return true;
 }
 
 // ═══════════════════════════════════════════════════════════════════════════
 // 7) 入口
 // ═══════════════════════════════════════════════════════════════════════════
+
+// ★★★ 最早期安装：字体加载器 hook ★★★
+//
+//   动机（用户提出的架构问题）："引擎在运行，DLL 也在运行，二者时态不一致"。
+//   根因不是"加载器太早"，而是**我们的 Init 太慢**：
+//       历史实测：引擎字体加载于 08:06:26
+//                 我们装钩子于 08:06:27.218   ← 晚了 1.2 秒
+//   而慢的原因是 Init 里有大量工作：特征码扫描（要扫 6.6MB × 多次）
+//   + 7 个补丁逐个安装（每个要挂起 50 个线程，累计 11 秒）。
+//
+//   ★ 所以把「装 hook」与「装补丁」分开 ★
+//     装 hook 只需要：
+//       1. 算出目标地址（**直接用 RVA**，本 exe ImageBase 固定 0x400000 且无 ASLR）
+//       2. 校验字节
+//       3. 写 5 字节 jmp
+//     全部是几微秒级操作，不做任何扫描。
+//     于是 hook 在所有慢活之前就装好了 —— 引擎调加载器时必然命中。
+//
+//   补丁（P4/P5/P7/P8…）仍然在 hook 之后慢慢装——顺序仍然对，
+//   但**理由和当初写的相反**，务必注意：
+//     ★ 当初写的是"补丁不参与字体加载，装配只写数据结构不依赖补丁，
+//       所以顺序正确"。实测证明那是错的（08:35 两次对照）：
+//         失败那次  装配 08:35:09~12（10 字号 2079 齐备）
+//                    补丁 08:35:13~30 写了 17 秒仍未完→ 无"补丁安装完成"
+//         成功那次  装配 08:35:50~53（同上，也是齐备的）
+//                    补丁 08:35:54~55（1.98 秒）全部写完
+//       两次**装配结果完全一致**，差别只在补丁。装配填的 64K 码表只有
+//       引擎用 16 位索引去查才有意义；补丁没装 = 8 位查表 + 8 位前进量
+//       → 双字节汉字被拆成两个字节 → 字叠在一起 + 乱码。
+//     ⇒ 现在 PathD_HookAssemble 里加了**补丁门**（等 g_patchState），
+//       把"装配"强制排在"补丁就绪"之后，这才是顺序正确的真正原因。
+//     ⇒ 另：不要试图把 LoadPackage 提到 hook 之前（v23 实测是回归）：
+//       Init 会因此多花约 600ms，引擎在 hook 装好前就把字体加载完，
+//       cave 永不触发 → g_hookFontMgr=0 → 汉字几乎装不上。
+static bool InstallFontLoaderHookEarly(uintptr_t modBase) {
+    // 直接算地址：sub_8BA480 的 RVA = 0x8BA480 - 0x400000 = 0x4BA480
+    const uintptr_t kRva = 0x8BA480 - 0x400000;
+    uintptr_t at = modBase + kRva;
+
+    // ★ 字节校验：不能盲信 RVA（万一别的版本不同）★
+    //   E8 ?? ?? ?? ??  83 E0 01 C3
+    if (rd8(at) != 0xE8 || rd8(at + 5) != 0x83 || rd8(at + 6) != 0xE0
+        || rd8(at + 7) != 0x01 || rd8(at + 8) != 0xC3) {
+        Logf("pathd: [早期hook] ★0x%08X 字节不符（%s），拒绝安装★",
+             (unsigned)at, HexDump(at, 9).c_str());
+        return false;
+    }
+    // call 目标必须是字体加载器 sub_8B9B60
+    int32_t rel = (int32_t)rd32s(at + 1);
+    uintptr_t tgt = (uintptr_t)((int64_t)(at + 5) + rel);
+    uintptr_t want = modBase + (0x8B9B60 - 0x400000);
+    if (tgt != want) {
+        Logf("pathd: [早期hook] ★call 目标 0x%08X ≠ sub_8B9B60(0x%08X)，拒绝★",
+             (unsigned)tgt, (unsigned)want);
+        return false;
+    }
+    Logf("pathd: [早期hook] 字节与 call 目标均校验通过（call 0x%08X = sub_8B9B60）",
+         (unsigned)tgt);
+    return InstallFontLoaderHook(at);
+}
+
 bool Init(HMODULE game, const char* pkgPath) {
     g_modBase = (uintptr_t)game;
     InitializeCriticalSection(&g_cs);
+
+    // ── 最早期基线快照（2026-10-07）───────────────────────────────
+    //   在做任何事之前先记一次内存画像，之后每个关键节点再记一次。
+    //   有了"我们还没占任何东西"这条基线，才能算出**我们到底占了多少**：
+    //     我们占的 ≈ 装配完成时的提交量 − 这一刻的提交量
+    //   转储里 MemoryManager 自报 mem used ≈ 108MB，但用户区只剩 19MB，
+    //   差额不明——这组快照就是为了把差额拆出来。
+    LogMemorySnapshot("插件启动（尚未占用）");
+
+    // ★★★ 第一件事：装两个 hook（都只要几微秒，不做任何扫描）★★★���
+    //
+    //   (1) 字体加载器 hook @0x8BA480 —— **只为抓 FontManager**
+    //       路线 1（2026-10-07）：职责解耦。
+    //       它不再触发装配，只在 cave 里存一句
+    //           mov [g_hookFontMgr], ecx
+    //       为什么必须有它（实测 空白字失败.log）：
+    //           冻结门触发时引擎还没画过一帧 ⇒ 堆扫描锚点为空 ⇒
+    //           FontManager 是唯一能枚举出字体的来源，而 uiCore+0x4A4
+    //           实测恒为 0，只有这个 hook 抓得到。
+    //
+    //   (2) Application::init 出口冻结门 @0x5AA388 —— 决定装配时机
+    //       方案 F：把装配从「引擎何时调加载器」这个不可控竞争里拿出来。
+    //
+    //   两者都必须在所有慢活之前装好：引擎随时可能触发其中任何一个。
+    DWORD tEarly0 = GetTickCount();
+    bool loaderHooked = false, gateHooked = false;
+    if (!g_skipPatch) {
+        __try { loaderHooked = InstallFontLoaderHookEarly((uintptr_t)game); }
+        __except (EXCEPTION_EXECUTE_HANDLER) {
+            Logf("pathd: [早期hook] 异常 0x%08X", (unsigned)GetExceptionCode());
+        }
+        __try { gateHooked = InstallInitExitHook((uintptr_t)game); }
+        __except (EXCEPTION_EXECUTE_HANDLER) {
+            Logf("pathd: [冻结门] 安装异常 0x%08X", (unsigned)GetExceptionCode());
+        }
+    }
+    g_loaderHooked = loaderHooked;
+    Logf("pathd: === 早期注入结束：字体hook=%s 冻结门=%s，耗时 %u ms ===",
+         loaderHooked ? "已装" : "未装", gateHooked ? "已装" : "未装",
+         (unsigned)(GetTickCount() - tEarly0));
+
+    // ★ 冻结门装不上 = 完全无法掌控装配时机 ⇒ 弹框退出（不静默降级）
+    if (!gateHooked) {
+        FatalInstallFailure("无法在引擎初始化出口安装同步挂钩"
+                            "（汉化必须在此刻完成，否则会出现乱码或叠字）");
+    }
+    // ★ 字体 hook 装不上 = 冻结门里拿不到 FontManager ⇒ 同样只能退出
+    //   （实测：FontManager 为 0 时「合计收集到 0 个 Font」= 空白字）
+    if (!loaderHooked) {
+        FatalInstallFailure("无法在引擎字体加载函数上挂钩"
+                            "（将无法读取已加载的字体，汉化会出现空白字）");
+    }
 
     // 二分定位开关（临时调试用）
     {
@@ -2123,7 +3570,67 @@ bool Init(HMODULE game, const char* pkgPath) {
     }
 
     Logf("pathd: ══════════ 路径 D 初始化 ══════════");
+
+    // ★★★ 引擎分配器必须最先定位（在 LoadPackage 之前）★★★
+    //
+    //   原因：字体加载器 hook 一装好，引擎随时可能立刻触发装配，
+    //   而装配要靠 g_engineAlloc 给 CJK 图集页表分配内存
+    //   （必须用引擎堆，引擎 ~Font 的 free 才能正确配对）。
+    //
+    //   ★ 实测教训（07:16:26 那次"俄语乱码"）★
+    //       07:16:26.207  包文件已就绪（等待 312 ms）
+    //       07:16:26.253  [装配] 开始
+    //       07:16:29.653  [ 12.000] 无引擎分配器，跳过挂页
+    //       ...           10 个字号全部"无引擎分配器"
+    //       07:16:29.986  === 准备完成：0 个字号已装入汉字 ===
+    //       07:16:30.641  引擎分配器 = 0x00589410（自检通过）  ← ★ 晚了 4.4 秒
+    //   ⇒ 根因：分配器定位排在 ScanUnique(vector::resize) 之后，
+    //     被那次**无用的**扫描又拖慢，最后整个落在装配之后。
+    //
+    //   这也解释了"单核 bat 有时能治好"：单核让引擎变慢，
+    //   Init 线程（分配器）可能抢在加载器之前跑完 —— 但并**不保证**，
+    //   所以用户实测"单核也不一定解决"。真正的修法就是这个顺序调整。
+    {
+        //   sub_589410 : __fastcall(ecx=size, edx=0, stack=0)，内部 mov ecx,dword_A0A880
+        //               后调 sub_748DC0；返回 retn 4。
+        // ★ 这个锚点天然 2 处命中（alloc 的两个包装），设计就是取首个 +
+        //   下面的运行时 probe 自检兜底，所以必须 allowMulti。
+        //   我曾用 ScanUnique 统一收口，结果它变成 0 → 汉字挂不上页（回归）。
+        g_engineAlloc = (EngineAllocFn)ScanFirst(SIG_ENGINE_ALLOC, "引擎分配器(sub_589410)");
+        if (!g_engineAlloc) {
+            Logf("pathd: [警告] 未定位到引擎分配器 —— 页表无法挂载，汉字将不显示");
+            Logf("pathd:         特征码: %s", SIG_ENGINE_ALLOC);
+        } else {
+            // 自检：真的能分配 + 释放吗？只分配不释放（泄漏几十字节换安全），
+            // 但至少要确认返回值合理（引擎堆指针，非 NULL、已对齐）。
+            void* probe = nullptr;
+            __try {
+                probe = g_engineAlloc(64, nullptr, 0);
+            } __except (EXCEPTION_EXECUTE_HANDLER) {
+                Logf("pathd: [警告] 引擎分配器自检抛异常 0x%08X", (unsigned)GetExceptionCode());
+                g_engineAlloc = nullptr;
+            }
+            if (probe) {
+                Logf("pathd: 引擎分配器 = 0x%08X（自检通过，probe=0x%08X）",
+                     (unsigned)(uintptr_t)g_engineAlloc, (unsigned)(uintptr_t)probe);
+            } else if (g_engineAlloc) {
+                Logf("pathd: [警告] 引擎分配器自检返回 NULL，停用以避免崩溃");
+                g_engineAlloc = nullptr;
+            }
+        }
+    }
+
+    // ★ 包文件已恢复到此处的原始调用位置（曾被临时提前到装 hook 之前，
+    //   2026-10-07 v23 实测为回归：提前后 Init 多花 ~600ms，引擎在
+    //   hook 装好之前就把字体加载完，cave 永不触发 → g_hookFontMgr=0 →
+    //   走 SetupThread 后备路径且 FontManager 取不到 → 汉字几乎装不上。
+    //   教训：hook 必须**尽��装**，任何排在它前面的耗时活都会喂饱引擎。）
+    //   详细的失败日志见 commit 说明 / 空白字.log 同批日志 083117。
     if (!LoadPackage(pkgPath)) {
+        // ★ 2026-10-07：包文件缺失/损坏同样属于"装不上"，
+        //   以前只写日志就回退，玩家看到的是原版俄文且毫无提示。
+        FatalInstallFailure("找不到或无法读取汉化字库文件 hta_chs_cjk.bin"
+                            "（请确认它位于游戏 update 目录下）");
         Logf("pathd: 未启用路径 D（回退路径 C）");
         return false;
     }
@@ -2148,56 +3655,26 @@ bool Init(HMODULE game, const char* pkgPath) {
     Logf("pathd: 汉字表改为按字体懒分配（最多 %d 槽 × %u 项）",
          MAX_CJK_TABLES, kTableEntries);
 
-    // vector::resize（引擎自带，保证用同一个分配器）
-    g_vecResize = (VecResizeFn)ScanUnique(
-        "51 8B 4C 24 08 8B 41 04 85 C0 74 0A 8B 51 08 2B D0 C1 FA 02",
-        "vector::resize(sub_8B6660)", false);
-    if (!g_vecResize) {
-        // 退一步：直接用已知 RVA（仅 hta.exe 正确）
-        uintptr_t cand = g_modBase + 0x8B6660 - 0x400000;
-        Logf("pathd: vector::resize 特征码未命中，按 RVA 猜测 0x%08X（可能只对本作有效）", (unsigned)cand);
-        g_vecResize = (VecResizeFn)cand;
-    }
-
-    // ── 不再调用引擎的扩容函数 ────────────────────────────────────────
+    // ★ 不再定位引擎的 vector::resize ★
+    //
     //   它是我在特征码未命中后按 RVA **猜**出来的（0x8B6660），连调用约定
     //   都是猜的。实测调用它之后容量/指针毫无变化，说明身份就是错的。
     //   而「能返回」不等于「调用约定对」—— 若它实际是 __cdecl，被调用方不
     //   清理栈，调用者的 ESP 就会偏低若干字节，函数返回时弹出的返回地址
     //   是垃圾，直接跳到 NULL（实测 0xC0000005 @ EIP=0）。
     //   所以彻底不碰它，一律用自己分配的表。
+    //
+    // ★ 连扫描都删掉了 ★
+    //   ScanUnique 要扫 6.6MB 约 1~2 秒，而结果根本用不上（下面直接置 0）。
+    //   实测（07:16 那次）正是这段无用扫描把"引擎分配器定位"拖到
+    //   字体加载器之后 → 装配时分配器还是 NULL → 0 个字号装成 → 俄文乱码。
+    //   教训：**废弃的东西要连它的初始化一起删干净**，
+    //        留着"反正不调用"的空转代码，一样要付时间代价。
+    g_vecResize = nullptr;
     g_vecResizeOk = false;
     Logf("pathd: 不使用引擎扩容函数（身份未证实，调用它有栈错乱风险）");
 
-    // ★★★ 定位引擎堆分配器（修复堆破坏的关键一步）★★★
-    //   sub_589410 : __fastcall(ecx=size, edx=0, stack=0)，内部 mov ecx,dword_A0A880
-    //               后调 sub_748DC0；返回 retn 4。
-    //   用它给页表分配内存，引擎 ~Font 的 free 才能正确配对。
-    // ★ 这个锚点天然 2 处命中（alloc 的两个包装），设计就是取首个 +
-    //   下面的运行时 probe 自检兜底，所以必须 allowMulti。
-    //   我曾用 ScanUnique 统一收口，结果它变成 0 → 汉字挂不上页（回归）。
-    g_engineAlloc = (EngineAllocFn)ScanFirst(SIG_ENGINE_ALLOC, "引擎分配器(sub_589410)");
-    if (!g_engineAlloc) {
-        Logf("pathd: [警告] 未定位到引擎分配器 —— 页表无法挂载，汉字将不显示");
-        Logf("pathd:         特征码: %s", SIG_ENGINE_ALLOC);
-    } else {
-        // 自检：真的能分配 + 释放吗？只分配不释放（泄漏几十字节换安全），
-        // 但至少要确认返回值合理（引擎堆指针，非 NULL、已对齐）。
-        void* probe = nullptr;
-        __try {
-            probe = g_engineAlloc(64, nullptr, 0);
-        } __except (EXCEPTION_EXECUTE_HANDLER) {
-            Logf("pathd: [警告] 引擎分配器自检抛异常 0x%08X", (unsigned)GetExceptionCode());
-            g_engineAlloc = nullptr;
-        }
-        if (probe) {
-            Logf("pathd: 引擎分配器 = 0x%08X（自检通过，probe=0x%08X）",
-                 (unsigned)(uintptr_t)g_engineAlloc, (unsigned)(uintptr_t)probe);
-        } else if (g_engineAlloc) {
-            Logf("pathd: [警告] 引擎分配器自检返回 NULL，停用以避免崩溃");
-            g_engineAlloc = nullptr;
-        }
-    }
+    // ★ 引擎分配器已在上面（LoadPackage 之前）定位完毕 —— 不重复定位。★
 
     // ── 字体获取方式：直接枚举字体管理器数组（不挂钩）────────────────
     //
@@ -2247,7 +3724,28 @@ bool Init(HMODULE game, const char* pkgPath) {
     }
 
     // 安装 16 位索引补丁
-    InstallPatches();
+    //
+    // ★★★ 2026-10-07 方案 B：补丁安装**移交冻结门** ★★★
+    //
+    //   实测（还是没冻上.log）的失败模式：
+    //       10:29:42.340  Init 开始慢活（定位 + 装补丁）
+    //       10:29:44.105  冻结门触发 →「补丁未就绪（状态=0），放弃装配」
+    //   本函数跑在 **InitThread**，而引擎主线程完全不受影响地继续跑
+    //   Application::init。两者赛跑，谁快谁慢全随机：
+    //       成功那次 Init 3.38s vs 引擎 4.0s   ← 只赢了 0.6s，纯属侥幸
+    //       失败那次 Init >1.77s vs 引擎 1.77s ← 输了
+    //
+    //   ⇒ 根治不是"等 Init 装完"（等不到，且 WriteBlockSafe 要挂起当前这个
+    //     引擎主线程 ⇒ 死锁），而是**把补丁安装也放进冻结门**：
+    //       Init() 只装冻结门（0.2s）并备好依赖，立刻返回；
+    //       引擎走到出口触发 gate，gate 在**引擎主线程已停住**的前提下
+    //       同步完成「定位 → 写补丁 → 装配」。此时没有任何竞争。
+    //
+    //   前置依赖（分配器/包文件/字体管理器）用 g_initDepsReady 显式交接，
+    //   gate 缺它就不装补丁、不装配 —— 宁可弹框退出也不留半装状态。
+    g_initDepsReady = 1;
+    Logf("pathd: [方案B] 依赖已就绪，补丁安装移交冻结门"
+         "（Application::init 出口同步执行）");
 
     // 起后台线程做后续装配
     //
@@ -2272,6 +3770,16 @@ bool Init(HMODULE game, const char* pkgPath) {
     //       失败就**退化为在 InitThread 里同步装配**，不再有"彻底失败"这条路。
     //
     //   ★ 关于栈 ★ SetupThread 只做线性扫描与填表，256KB 足够。
+    // ═══════════════════════════════════════════════════════════════════
+    // ★★ 2026-10-07 方案 F：后台装配线程**已停用**（代码保留以便回退）★★
+    //
+    //   原因：装配现在由「冻结门」在 Application::init 成功出口同步完成，
+    //   时机确定、字体完整，不需要再靠后台线程去「事后追赶」。
+    //   保留这段是为了万一方案 F 不行，可以一行注释恢复。
+    //
+    //   恢复方法：把下面 #if 0 改成 #if 1（或删掉 #if 0/#endif）。
+    // ═══════════════════════════════════════════════════════════════════
+#if 0
     HANDLE th = nullptr;
     const SIZE_T stackSizes[] = { 256 * 1024, 128 * 1024, 64 * 1024, 0 };
     for (int i = 0; i < 4 && !th; ++i) {
@@ -2296,13 +3804,16 @@ bool Init(HMODULE game, const char* pkgPath) {
     Logf("pathd:        这会延迟初始化返回，但不影响游戏自己的线程");
     SetupThread(nullptr);          // 直接调用：同步等字体 → 填表 → 开闸
     Logf("pathd: [退化] 同步装配结束");
+#endif  // #if 0
 
     g_enabled = true;
-    Logf("pathd: 初始化返回（补丁已生效，装配已在初始化线程内完成）");
+    Logf("pathd: 初始化返回（补丁已生效；装配将在 Application::init 出口同步完成）");
     return true;
 }
 
 bool IsEnabled() { return g_enabled; }
+
+void StopRescan() { PathD_StopRescan(); }
 
 // —— 绘制期字体登记（P4 在热路径上调用）——
 //   只做一次线性去重扫描 + 一次 InterlockedIncrement，
@@ -2352,6 +3863,25 @@ __declspec(naked) void __cdecl PathD_GlyphLookup() {
         push ebx
         push esi
         push edi
+        // ★ 渲染线程自报家门（解决"启动卡 30 秒"）★
+        //   P4 在绘制热路径上，执行它的线程就是渲染线程。
+        //   只做一次：若 g_renderTid 还是 0，就调 GetCurrentThreadId 记下来。
+        //   ★ 必须保存所有会被破坏的寄存器 ★ GetCurrentThreadId 是
+        //     __stdcall 无参数，返回 eax，会破坏 eax/ecx/edx。
+        //   这里处于 push ebx/esi/edi **之后**、真正逻辑之前，
+        //   所以 eax/ecx/edx 还没被引擎赋予含义，可以安全使用。
+        cmp   dword ptr [g_renderTid], 0
+        jne   pl_tid_done
+        push  eax
+        push  ecx
+        push  edx
+        call  GetCurrentThreadId
+        mov   dword ptr [g_renderTid], eax
+        inc   dword ptr [g_renderTidHits]
+        pop   edx
+        pop   ecx
+        pop   eax
+    pl_tid_done:
         // ★★★ 绝对不要 push/pop eax ★★★
         //   eax 是**返回值**（字形指针），引擎靠它判断「有没有字形」
         //   （0x6865B3 test eax,eax / 0x686604 test eax,eax / jz）。
@@ -2484,15 +4014,27 @@ __declspec(naked) void __cdecl PathD_GlyphLookup() {
         jz    pl_null                     ; 一个槽都没有
     pl_gate:
         test  edx, edx
-        jz    pl_null
+        jz    pl_null_noslot               ; ★ 诊断：槽表扫完没命中 ★
         cmp   dword ptr [eax], ecx         ; slot.font == Font* ?
         je    pl_gate_hit
         add   eax, 12                     ; sizeof(CjkSlot)
         dec   edx
         jmp   pl_gate
+    pl_null_noslot:
+        // ★ 诊断：槽表扫完都没命中当前 Font* ★
+        //   这是「tips 只显示英文」最可能的解释：tips 用的字体
+        //   可能是启动后才创建的，装配阶段枚举不到 → 没有槽 → 无汉字。
+        //   ★ 只做两次内存写入，不碰任何寄存器 ★
+        //     （P4 是绘制热路径，破坏寄存器契约会立刻出问题；
+        //      之前那版用 esi 暂存是错的，已撤掉）
+        inc   dword ptr [g_plNoSlot]
+        mov   dword ptr [g_plLastNoSlotFont], ecx   ; ecx = 当前 Font*
+        jmp   pl_null
     pl_gate_hit:
         cmp   dword ptr [eax+8], 0        ; ★ slot.ready —— 分批开闸就在这
-        je    pl_null                     ; 该字号还没填完 -> 跳过
+        jne   pl_cjk_go
+        inc   dword ptr [g_plNotReady]    ; ★ 诊断：槽未就绪（装配期间属正常）★
+        jmp   pl_null
     pl_cjk_go:
         // ★★★ 汉字分支：按 GBK 取 2 字节，查我们自持的 64K 表 ★★★
         //
@@ -2778,6 +4320,27 @@ __declspec(naked) void __cdecl PathD_DrawAdvance() {
 //     ★ esp 不能动 ★ —— 下一条 fadd 用 [esp+0x14]，一动就全错。
 __declspec(naked) void __cdecl PathD_MsrAdvanceW() {
     __asm {
+        ; ★★★★★ 「过场不换行」的决定性诊断 ★★★★★
+        ;
+        ;   引擎的折行判定（0x685B1B，sub_685990 反编译）：
+        ;       if (v15 && a6 && (v13/(font[24]/font[28])) > (v15[2] + *v15))
+        ;           { *a6 = v8; break; }
+        ;   v15 = a4 = **可用行宽指针**，被编译器缓存在 **ebp**。
+        ;   证据：0x685AF1 就是 `test ebp,ebp`（85 ED），若 ebp==0
+        ;        直接跳到 0x685B21（我们的 P7 点）—— 说明 ebp 是
+        ;        这个折行判定的开关。
+        ;   ⇒ **只要 ebp == 0，引擎永不折行**，文字一路画到边界被裁掉，
+        ;     表现就是用户看到的「长文本被截断」。
+        ;   所以这里统计 ebp 为 0 / 非 0 的次数：这是"度量对不对"
+        ;   之外的另一半答案，而且不需要改任何行为。
+        test  ebp, ebp
+        jz    mw_no_width
+        inc   dword ptr [g_msrHasWidth]
+        jmp   mw_width_done
+    mw_no_width:
+        inc   dword ptr [g_msrNoWidth]
+    mw_width_done:
+
         movzx edx, byte ptr [esp+4Ch]      ; b1
         mov   esi, edx                     ; ★ 还原被覆盖的 mov esi,[esp+4C]
         cmp   edx, 81h

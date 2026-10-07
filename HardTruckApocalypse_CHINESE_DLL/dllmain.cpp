@@ -1,4 +1,4 @@
-﻿// dllmain.cpp —— ASI 插件入口
+// dllmain.cpp —— ASI 插件入口
 //
 // 由 Ultimate-ASI-Loader (winmm.dll) 加载。加载时机在游戏主模块映射之后、
 // 主逻辑之前，因此此时可以安全地做特征码扫描与挂钩。
@@ -129,6 +129,7 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD reason, LPVOID lpReserved) {
         break;
 
     case DLL_PROCESS_DETACH:
+        pathd::StopRescan();  // 先叫停补装配线程，再拆钩子（只置标志，不等待）
         if (g_installed) {
             hook::UninstallAll();
             g_installed = false;

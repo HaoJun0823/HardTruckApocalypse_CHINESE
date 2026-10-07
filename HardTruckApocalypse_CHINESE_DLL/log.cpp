@@ -1,6 +1,8 @@
-﻿// log.cpp —— 插件日志
+// log.cpp —— 插件日志
 #include "pch.h"
 #include "plugin.h"
+#include <algorithm>
+#include <vector>
 
 namespace {
 
@@ -21,6 +23,54 @@ bool ResolvePluginDir(HMODULE self, char* out, size_t outLen) {
     return true;
 }
 
+// ★ 轮转日志：保留最近 kKeepLogs 份，删掉更旧的 ★
+//
+//   为什么需要轮转：
+//   日志文件按时间戳命名（见 LogOpen），每次启动一个新文件。
+//   不清理的话 update\ 目录会无限堆 .log，迟早磁盘满 —— 而磁盘满会连带
+//   影响游戏自己的资源加载。
+//
+//   匹配规则："hta_chs." 打头、".log" 结尾、中间是 15 位时间戳。
+//   只删严格符合这个名字的，绝不碰同目录下的其它文件（用户的备份等）。
+void RotateLogs(const char* dir) {
+    const int kKeepLogs = 10;
+
+    WIN32_FIND_DATAA fd;
+    HANDLE h = FindFirstFileA(dir, &fd);
+    if (h == INVALID_HANDLE_VALUE) return;
+
+    // 收集（时间戳, 完整路径）
+    struct Entry { char path[MAX_PATH]; char stamp[16]; };
+    std::vector<Entry> found;
+    do {
+        const char* name = fd.cFileName;
+        size_t n = strlen(name);
+        // 前缀 "hta_chs." = 8 字符，后缀 ".log" = 4 字符 → 时间戳 15 字符
+        if (n != 8 + 15 + 4) continue;
+        if (memcmp(name, "hta_chs.", 8) != 0) continue;
+        if (memcmp(name + n - 4, ".log", 4) != 0) continue;
+        Entry e;
+        memcpy(e.stamp, name + 8, 15);
+        e.stamp[15] = '\0';
+        _snprintf_s(e.path, sizeof(e.path), _TRUNCATE, "%s\\%s", dir, name);
+        found.push_back(e);
+    } while (FindNextFileA(h, &fd));
+    FindClose(h);
+
+    if ((int)found.size() <= kKeepLogs) return;
+
+    // 时间戳是 "YYYYMMDD_HHMMSS"，字典序 == 时间序，直接按字符串排
+    std::sort(found.begin(), found.end(),
+              [](const Entry& a, const Entry& b) { return strcmp(a.stamp, b.stamp) < 0; });
+
+    size_t toRemove = found.size() - kKeepLogs;
+    for (size_t i = 0; i < toRemove; ++i) {
+        // 不打日志：此刻日志文件还没打开（LogOpen 正在创建它），
+        // 而且轮转是正常维护行为，不需要留下痕迹。
+        DeleteFileA(found[i].path);
+    }
+}
+
 } // namespace
 
 void LogOpen(HMODULE self) {
@@ -36,15 +86,32 @@ void LogOpen(HMODULE self) {
 
     char path[MAX_PATH];
     // 日志与游戏 exe / 加载器 DLL 同目录，便于排查
-    _snprintf_s(path, sizeof(path), _TRUNCATE, "%s\\hta_chs.log", g_dir);
+    //
+    // ★ 文件名带时间戳，不再覆盖上一次 ★
+    //   原来固定写 hta_chs.log + CREATE_ALWAYS，每次启动都把上一次的抹掉。
+    //   调试"随机问题"时这等于把证据全毁了 —— 07:24 那次就是因为旧日志
+    //   还在，才能看出"装配和 LoadPackage 在赛跑、15.625 被漏掉"。
+    //   随机 bug 往往要跑十几次才复现，覆盖式日志会让你永远抓不到。
+    char dirWithSlash[MAX_PATH];
+    _snprintf_s(dirWithSlash, sizeof(dirWithSlash), _TRUNCATE, "%s\\", g_dir);
+    RotateLogs(dirWithSlash);
+
+    SYSTEMTIME st;
+    GetLocalTime(&st);
+    _snprintf_s(path, sizeof(path), _TRUNCATE,
+                "%shta_chs.%04d%02d%02d_%02d%02d%02d.log",
+                dirWithSlash,
+                st.wYear, st.wMonth, st.wDay, st.wHour, st.wMinute, st.wSecond);
 
     g_file = CreateFileA(path, GENERIC_WRITE, FILE_SHARE_READ,
                          NULL, CREATE_ALWAYS, FILE_ATTRIBUTE_NORMAL, NULL);
     if (g_file == INVALID_HANDLE_VALUE) {
-        // 回退到系统临时目录
+        // 回退到系统临时目录（同样带时间戳）
         char tmp[MAX_PATH];
         if (GetTempPathA(sizeof(tmp), tmp)) {
-            _snprintf_s(path, sizeof(path), _TRUNCATE, "%shta_chs.log", tmp);
+            _snprintf_s(path, sizeof(path), _TRUNCATE,
+                        "%shta_chs.%04d%02d%02d_%02d%02d%02d.log",
+                        tmp, st.wYear, st.wMonth, st.wDay, st.wHour, st.wMinute, st.wSecond);
             lstrcpynA(g_dir, tmp, sizeof(g_dir));
             g_file = CreateFileA(path, GENERIC_WRITE, FILE_SHARE_READ,
                                  NULL, CREATE_ALWAYS, FILE_ATTRIBUTE_NORMAL, NULL);

@@ -256,6 +256,10 @@ bool Init(HMODULE game, const char* pkgPath);
 
 bool IsEnabled();
 
+// 叫停后台"周期补装配"线程（DLL 卸载时调用）。
+//   只置标志不等待 —— DllMain 里 Join 会死锁，见 pathd.cpp 里该函数注释。
+void StopRescan();
+
 } // namespace pathd
 
 // ===========================================================================
