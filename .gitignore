@@ -273,3 +273,24 @@ update_pathd/
 # scratch dirs from the translation pipeline
 .temp/
 _cjk_backup/
+
+# ---- project additions (2026-10-07) ----
+# Render9Fix 的构建产物
+Render9Fix/build/
+# Render9Fix\test\ 是本机测试目录：只跟踪两个 .cpp 与文档，其余都是编译/运行产物
+Render9Fix/test/*.exe
+Render9Fix/test/*.dll
+Render9Fix/test/*.lib
+Render9Fix/test/*.exp
+Render9Fix/test/*.obj
+Render9Fix/test/*.pdb
+Render9Fix/test/*.ilk
+Render9Fix/test/*.ini
+Render9Fix/test/*.log
+# IDA 数据库（本机分析产物，动辄上百 MB）
+*.i64
+*.id0
+*.id1
+*.id2
+*.nam
+*.til
