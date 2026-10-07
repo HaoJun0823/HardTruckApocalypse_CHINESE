@@ -1,0 +1,21 @@
+扫描目录:
+  G:\Projects\HardTruckApocalypse_CHINESE\Original_DATA_CHS
+  G:\Projects\HardTruckApocalypse_CHINESE\DLC1_DATA_CHS
+
+译文字符(全范围) : 2390
+可 GBK 双字节    : 2390
+包内已烘字形     : 2207
+
+★ 缺失 185 个字
+  『(A1BA) 』(A1BB) 熬(B0BE) 扒(B0C7) 霸(B0D4) 柏(B0D8) 班(B0E0) 鲍(B1AB) 毙(B1D0) 卜(B2B7) 茬(B2E7) 尝(B3A2) 抄(B3AD) 澄(B3CE) 尺(B3DF) 丑(B3F3) 厨(B3F8) 储(B4A2) 串(B4AE) 床(B4B2)
+  茨(B4C4) 丹(B5A4) 稻(B5BE) 滴(B5CE) 迪(B5CF) 掂(B5E0) 碟(B5FA) 叠(B5FE) 睹(B6C3) 肚(B6C7) 兑(B6D2) 舵(B6E6) 蛾(B6EA) 厄(B6F2) 饭(B7B9) 啡(B7C8) 坟(B7D8) 枫(B7E3) 讽(B7ED) 俘(B7FD)
+  弗(B8A5) 甘(B8CA) 岗(B8DA) 恭(B9A7) 咕(B9BE) 乖(B9D4) 棺(B9D7) 锅(B9F8) 骇(BAA7) 涵(BAAD) 翰(BAB2) 晃(BBCE) 稽(BBFC) 讥(BCA5) 棘(BCAC) 煎(BCE5) 鉴(BCF8) 诀(BEF7) 咖(BFA7) 柯(BFC2)
+  课(BFCE) 枯(BFDD) 哭(BFDE) 窟(BFDF) 夸(BFE4) 垮(BFE5) 魁(BFFD) 啦(C0B2) 狼(C0C7) 佬(C0D0) 李(C0EE) 莉(C0F2) 凛(C1DD) 刘(C1F5) 窿(C1FE) 虏(C2B2) 骡(C2E2) 洛(C2E5) 迈(C2F5) 曼(C2FC)
+  茫(C3A3) 媚(C3C4) 庙(C3ED) 牡(C4B5) 呐(C4C5) 娜(C4C8) 妮(C4DD) 尼(C4E1) 涅(C4F9) 牛(C5A3) 爬(C5C0) 帕(C5C1) 盼(C5CE) 盆(C5E8) 蓬(C5EE) 泼(C6C3) 仆(C6CD) 企(C6F3) 掐(C6FE) 乔(C7C7)
+  俏(C7CE) 茄(C7D1) 囚(C7F4) 壬(C8C9) 瑞(C8F0) 丧(C9A5) 扫(C9A8) 瑟(C9AA) 莎(C9AF) 啥(C9B6) 煽(C9BF) 哨(C9DA) 绅(C9F0) 省(CAA1) 耍(CBA3) 摔(CBA4) 肆(CBC1) 蒜(CBE2) 抬(CCA7) 泰(CCA9)
+  叹(CCBE) 唐(CCC6) 厅(CCFC) 廷(CDA2) 艇(CDA7) 吐(CDC2) 洼(CDDD) 顽(CDE7) 碗(CDEB) 韦(CEA4) 勿(CEF0) 锡(CEFD) 弦(CFD2) 祥(CFE9) 削(CFF7) 肖(D0A4) 歇(D0AA) 蟹(D0B7) 熏(D1AC) 殃(D1EA)
+  扬(D1EF) 叶(D2B6) 谊(D2EA) 悠(D3C6) 犹(D3CC) 愈(D3FA) 豫(D4A5) 凿(D4E4) 赠(D4F9) 詹(D5B2) 沾(D5B4) 仲(D6D9) 粥(D6E0) 诸(D6EE) 姿(D7CB) 滋(D7CC) 卒(D7E4) 攥(DFAC) 叨(DFB6) 呗(DFC2)
+  啧(DFF5) 喽(E0B6) 嘞(E0CF) 嘀(E0D6) 崽(E1CC) 恺(E2FD) 惬(E3AB) 愣(E3B6) 逍(E5D0) 咫(E5EB) 娅(E6AB) 幺(E7DB) 玷(E7E8) 飙(ECAD) 齑(ECB4) 盹(EDEF) 皈(F0A7) 癫(F1B2) 蛎(F2C3) 蛞(F2D2)
+  蝓(F2F5) 螃(F3A6) 笃(F3C6) 鲨(F6E8) 鳄(F6F9)
+
+非 GBK 双字节字符 : 0 个 -> 

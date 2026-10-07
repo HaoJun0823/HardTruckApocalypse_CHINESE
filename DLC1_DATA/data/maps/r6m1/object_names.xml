@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<ObjectNames>
+	<Object
+		Name="ToR6M2"
+		FullName="Road to Mechanic jungle" />
+
+	<Object
+		Name="ToR5M1"
+		FullName="Road to Sam lands" />
+
+	<Object
+		Name="PetrolStationTown2"
+		FullName="Fuel station" />
+
+	<Object
+		Name="PetrolStationTown2_Workshop"
+		FullName="Workshop" />
+
+	<Object
+		Name="PetrolStationTown7"
+		FullName="Fuel station" />
+
+	<Object
+		Name="PetrolStationTown7_Workshop"
+		FullName="Workshop" />
+
+	<Object
+		Name="PetrolStationTown9"
+		FullName="Fuel station" />
+
+	<Object
+		Name="PetrolStationTown9_Workshop"
+		FullName="Workshop" />
+
+	<Object
+		Name="PetrolStationTown10"
+		FullName="Fuel station" />
+
+	<Object
+		Name="PetrolStationTown10_Workshop"
+		FullName="Workshop" />
+
+	<Object
+		Name="r6m1_Lost"
+		FullName="Lost" />
+
+	<Object
+		Name="r6m1_Lost_Bar"
+		FullName="Luc Bar" />
+
+	<Object
+		Name="r6m1_Lost_Workshop"
+		FullName="Workshop" />
+
+	<Object
+		Name="r6m1_Lost_Shop"
+		FullName="Shop" />
+
+	<Object
+		Name="r6m1_Lost_Bar_Barman"
+		FullName="Barman Dez" />
+
+	<Object
+		Name="r6m1_Lost_LostMan"
+		FullName="Headman Jack" />
+
+	<Object
+		Name="r6m1_Lost_Keyt"
+		FullName="Dweller Claire" />
+
+	<Object
+		Name="r6m1_Lost_Charli"
+		FullName="Troubadour Charles" />
+
+	<Object
+		Name="r6m1_Lost_AvtostopMan1"
+		FullName="Passer-by Ben" />
+
+	<Object
+		Name="r6m1_Lost_AvtostopMan2"
+		FullName="Passer-by Ben" />
+
+	<Object
+		Name="r6m1_Real"
+		FullName="Real" />
+
+	<Object
+		Name="r6m1_Real_Bar"
+		FullName="Oyster Bar" />
+
+	<Object
+		Name="r6m1_Real_Workshop"
+		FullName="Workshop" />
+
+	<Object
+		Name="r6m1_Real_Shop"
+		FullName="Shop" />
+
+	<Object
+		Name="r6m1_Real_Bar_Barman"
+		FullName="Barman Mik" />
+
+	<Object
+		Name="r6m1_Real_Racer"
+		FullName="Dweller Scott" />
+
+	<Object
+		Name="r6m1_Onto"
+		FullName="Otno" />
+
+	<Object
+		Name="r6m1_Onto_Bar"
+		FullName="Tor Bar" />
+
+	<Object
+		Name="r6m1_Onto_Workshop"
+		FullName="Workshop" />
+
+	<Object
+		Name="r6m1_Onto_Shop"
+		FullName="Shop" />
+
+	<Object
+		Name="r6m1_Onto_Bar_Barman"
+		FullName="Barman John" />
+
+	<Object
+		Name="r6m1_Onto_Signer"
+		FullName="Peasant Mel" />
+
+	<Object
+		Name="r6m1_Lodon"
+		FullName="Lodon" />
+
+	<Object
+		Name="r6m1_Lodon_Bar"
+		FullName="Slaughter Pub" />
+
+	<Object
+		Name="r6m1_Lodon_Workshop"
+		FullName="Workshop" />
+
+	<Object
+		Name="r6m1_Lodon_Shop"
+		FullName="Shop" />
+
+	<Object
+		Name="r6m1_Lodon_Bar_Barman"
+		FullName="Barman Edrian" />
+
+	<Object
+		Name="r6m1_Lodon_Worker"
+		FullName="Worker Stan" />
+
+	<Object
+		Name="theTownMapleSheet"
+		FullName="MapleSheet" />
+
+	<Object
+		Name="theTownMapleSheet_Bar"
+		FullName="Bar ''Clarified''" />
+
+	<Object
+		Name="theTownMapleSheet_Workshop"
+		FullName="Workshop" />
+
+	<Object
+		Name="theTownMapleSheet_Shop"
+		FullName="Shop" />
+
+	<Object
+		Name="theTownMapleSheet_Bar_Barman"
+		FullName="Barman Jhan" />
+
+	<Object
+		Name="theTownMapleSheet_WorestMan"
+		FullName="Educator Tom" />
+
+	<Object
+		Name="theTownMapleSheet_WorestScientist"
+		FullName="Scientist Abraham" />
+
+	<Object
+		Name="DynQEnemy01"
+		FullName="Garold" />
+
+	<Object
+		Name="DynQEnemy02"
+		FullName="Bill" />
+
+	<Object
+		Name="DynQEnemy03"
+		FullName="Gudvin" />
+
+	<Object
+		Name="DynQEnemy04"
+		FullName="Jorge" />
+
+	<Object
+		Name="DynQEnemy05"
+		FullName="Hugo" />
+
+	<Object
+		Name="DynQEnemy06"
+		FullName="Greg" />
+
+	<Object
+		Name="DynQEnemy07"
+		FullName="Nicolos" />
+
+	<Object
+		Name="DynQEnemy08"
+		FullName="Tom" />
+
+	<Object
+		Name="DynQEnemy09"
+		FullName="John" />
+
+	<Object
+		Name="DynQEnemy10"
+		FullName="Clint" />
+
+	<Object
+		Name="DynQEnemy11"
+		FullName="Joe" />
+
+	<Object
+		Name="DynQEnemy12"
+		FullName="Max" />
+
+	<Object
+		Name="DynQEnemy13"
+		FullName="Ell" />
+
+	<Object
+		Name="DynQEnemy14"
+		FullName="Soyer" />
+
+	<Object
+		Name="DynQEnemy15"
+		FullName="Charli" />
+
+	<Object
+		Name="DynQEnemy16"
+		FullName="Bor Ris" />
+
+	<Object
+		Name="DynQEnemy17"
+		FullName="Ben" />
+
+	<Object
+		Name="DynQEnemy18"
+		FullName="Smith" />
+
+	<Object
+		Name="DynQEnemy19"
+		FullName="Piter" />
+
+	<Object
+		Name="DynQEnemy20"
+		FullName="Jan" />
+
+	<Object
+		Name="DynQEnemy21"
+		FullName="Jhonny" />
+
+	<Object
+		Name="DynQEnemy22"
+		FullName="Entony" />
+
+	<Object
+		Name="DynQEnemy23"
+		FullName="Billy" />
+
+	<Object
+		Name="DynQEnemy24"
+		FullName="Big Bill" />
+
+	<Object
+		Name="DynQEnemy25"
+		FullName="Michle" />
+</ObjectNames>

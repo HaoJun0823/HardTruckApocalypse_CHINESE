@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<ObjectNames>
+	<Object
+		Name="ToR6M1"
+		FullName="Road to Le Canada" />
+
+	<Object
+		Name="ToR5M2"
+		FullName="Road to Oil forests" />
+
+	<Object
+		Name="PetrolStationTown1"
+		FullName="Fuel station" />
+
+	<Object
+		Name="PetrolStationTown1_Workshop"
+		FullName="Workshop" />
+
+	<Object
+		Name="PetrolStationTown2"
+		FullName="Fuel station" />
+
+	<Object
+		Name="PetrolStationTown2_Workshop"
+		FullName="Workshop" />
+
+	<Object
+		Name="TheTownBigHead_enter"
+		FullName="Big head" />
+
+	<Object
+		Name="TheApple_enter"
+		FullName="Small apple" />
+
+	<Object
+		Name="TheKonneks_enter"
+		FullName="Connectsk" />
+
+	<Object
+		Name="TheTownMichikar_enter"
+		FullName="Michicar" />
+
+	<Object
+		Name="ThePensilvansk_enter"
+		FullName="Pennsylvansk" />
+
+	<Object
+		Name="TownBigHead_enter"
+		FullName="Big Head" />
+
+	<Object
+		Name="r5m1_Konneks4110_enter"
+		FullName="Connectsk" />
+
+	<Object
+		Name="TheTownBigHead"
+		FullName="Big head" />
+
+	<Object
+		Name="TheTownBigHead_Bar"
+		FullName="Independent Bar" />
+
+	<Object
+		Name="TheTownBigHead_Workshop"
+		FullName="Workshop" />
+
+	<Object
+		Name="TheTownBigHead_Shop"
+		FullName="Shop" />
+
+	<Object
+		Name="TheTownBigHead_Bar_Barman"
+		FullName="Barman Abraham" />
+
+	<Object
+		Name="TheTownBigHead_Bar_LotteryMan_NPC"
+		FullName="Player Alex" />
+
+	<Object
+		Name="TheKonneks"
+		FullName="Connectsk" />
+
+	<Object
+		Name="TheKonneks_Bar"
+		FullName="Hill Bar" />
+
+	<Object
+		Name="TheKonneks_Workshop"
+		FullName="Workshop" />
+
+	<Object
+		Name="TheKonneks_Shop"
+		FullName="Shop" />
+
+	<Object
+		Name="TheKonneks_Bar_Barman"
+		FullName="Barman Bruce" />
+
+	<Object
+		Name="TheKonneks_Bar_ExGonchik_NPC"
+		FullName="Rude fellow C Jay" />
+
+	<Object
+		Name="TheKonneks_Bar_Posilka_NPC"
+		FullName="Customer Billy Bob" />
+
+	<Object
+		Name="TheTownMichikar"
+		FullName="Michicar" />
+
+	<Object
+		Name="TheTownMichikar_Bar"
+		FullName="Ganz Bar" />
+
+	<Object
+		Name="TheTownMichikar_Workshop"
+		FullName="Workshop" />
+
+	<Object
+		Name="TheTownMichikar_Shop"
+		FullName="Shop" />
+
+	<Object
+		Name="TheTownMichikar_Bar_Barman"
+		FullName="Barman Woody" />
+
+	<Object
+		Name="TheTownMichikar_MisterEko_NPC"
+		FullName="Sturdy Eco" />
+
+	<Object
+		Name="ThePensilvansk"
+		FullName="Pennsylvansk" />
+
+	<Object
+		Name="ThePensilvansk_Bar"
+		FullName="Bloody Bar" />
+
+	<Object
+		Name="ThePensilvansk_Workshop"
+		FullName="Workshop" />
+
+	<Object
+		Name="ThePensilvansk_Shop"
+		FullName="Shop" />
+
+	<Object
+		Name="ThePensilvansk_Bar_Barman"
+		FullName="Barman Conrad" />
+
+	<Object
+		Name="ThePensilvansk_Bar_LotteryMan_NPC"
+		FullName="Player Jay" />
+
+	<Object
+		Name="ThePensilvansk_Bratello_NPC"
+		FullName="Helegal Salvin" />
+
+	<Object
+		Name="ThePensilvansk_KillContra_NPC"
+		FullName="Sheriff Clint" />
+
+	<Object
+		Name="TheApple"
+		FullName="Small apple" />
+
+	<Object
+		Name="TheApple_Bar"
+		FullName="Hill Bar" />
+
+	<Object
+		Name="TheApple_Workshop"
+		FullName="Workshop" />
+
+	<Object
+		Name="TheApple_Shop"
+		FullName="Shop" />
+
+	<Object
+		Name="TheApple_Bar_Barman"
+		FullName="Barman Paco" />
+
+	<Object
+		Name="TheApple_Bar_Ralf_NPC"
+		FullName="Chief Yankee" />
+
+	<Object
+		Name="TheApple_Bar_TreasureMan_NPC"
+		FullName="Adventurer Nodin" />
+
+	<Object
+		Name="TheApple_BuyerNarkota_NPC"
+		FullName="Slicker Kersie" />
+
+	<Object
+		Name="DynQEnemy01"
+		FullName="Garold" />
+
+	<Object
+		Name="DynQEnemy02"
+		FullName="Bill" />
+
+	<Object
+		Name="DynQEnemy03"
+		FullName="Gudvin" />
+
+	<Object
+		Name="DynQEnemy04"
+		FullName="Jorge" />
+
+	<Object
+		Name="DynQEnemy05"
+		FullName="Hugo" />
+
+	<Object
+		Name="DynQEnemy06"
+		FullName="Greg" />
+
+	<Object
+		Name="DynQEnemy07"
+		FullName="Nicolos" />
+
+	<Object
+		Name="DynQEnemy08"
+		FullName="Tom" />
+
+	<Object
+		Name="DynQEnemy09"
+		FullName="John" />
+
+	<Object
+		Name="DynQEnemy10"
+		FullName="Clint" />
+
+	<Object
+		Name="DynQEnemy11"
+		FullName="Joe" />
+
+	<Object
+		Name="DynQEnemy12"
+		FullName="Max" />
+
+	<Object
+		Name="DynQEnemy13"
+		FullName="Ell" />
+
+	<Object
+		Name="DynQEnemy14"
+		FullName="Soyer" />
+
+	<Object
+		Name="DynQEnemy15"
+		FullName="Charli" />
+
+	<Object
+		Name="DynQEnemy16"
+		FullName="Bor Ris" />
+
+	<Object
+		Name="DynQEnemy17"
+		FullName="Ben" />
+
+	<Object
+		Name="DynQEnemy18"
+		FullName="Smith" />
+
+	<Object
+		Name="DynQEnemy19"
+		FullName="Piter" />
+
+	<Object
+		Name="DynQEnemy20"
+		FullName="Jan" />
+
+	<Object
+		Name="DynQEnemy21"
+		FullName="Jhonny" />
+
+	<Object
+		Name="DynQEnemy22"
+		FullName="Entony" />
+
+	<Object
+		Name="DynQEnemy23"
+		FullName="Billy" />
+
+	<Object
+		Name="DynQEnemy24"
+		FullName="Big Bill" />
+
+	<Object
+		Name="DynQEnemy25"
+		FullName="Michle" />
+</ObjectNames>

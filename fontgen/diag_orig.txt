@@ -1,0 +1,16 @@
+扫描目录:
+  G:\Projects\HardTruckApocalypse_CHINESE\Original_DATA_CHS
+
+译文字符(全范围) : 2079
+可 GBK 双字节    : 2079
+包内已烘字形     : 2207
+
+★ 缺失 114 个字
+  『(A1BA) 』(A1BB) 熬(B0BE) 柏(B0D8) 班(B0E0) 鲍(B1AB) 卜(B2B7) 茬(B2E7) 抄(B3AD) 尺(B3DF) 厨(B3F8) 储(B4A2) 床(B4B2) 茨(B4C4) 丹(B5A4) 稻(B5BE) 迪(B5CF) 掂(B5E0) 碟(B5FA) 叠(B5FE)
+  睹(B6C3) 肚(B6C7) 兑(B6D2) 啡(B7C8) 坟(B7D8) 弗(B8A5) 岗(B8DA) 恭(B9A7) 咕(B9BE) 乖(B9D4) 棺(B9D7) 翰(BAB2) 稽(BBFC) 棘(BCAC) 煎(BCE5) 鉴(BCF8) 诀(BEF7) 咖(BFA7) 柯(BFC2) 课(BFCE)
+  垮(BFE5) 啦(C0B2) 佬(C0D0) 李(C0EE) 莉(C0F2) 骡(C2E2) 洛(C2E5) 迈(C2F5) 曼(C2FC) 茫(C3A3) 庙(C3ED) 牡(C4B5) 娜(C4C8) 妮(C4DD) 尼(C4E1) 涅(C4F9) 爬(C5C0) 帕(C5C1) 盼(C5CE) 蓬(C5EE)
+  仆(C6CD) 企(C6F3) 乔(C7C7) 俏(C7CE) 茄(C7D1) 囚(C7F4) 壬(C8C9) 瑞(C8F0) 瑟(C9AA) 莎(C9AF) 啥(C9B6) 煽(C9BF) 哨(C9DA) 绅(C9F0) 省(CAA1) 摔(CBA4) 肆(CBC1) 泰(CCA9) 叹(CCBE) 唐(CCC6)
+  厅(CCFC) 廷(CDA2) 艇(CDA7) 吐(CDC2) 顽(CDE7) 锡(CEFD) 祥(CFE9) 削(CFF7) 肖(D0A4) 蟹(D0B7) 熏(D1AC) 殃(D1EA) 扬(D1EF) 悠(D3C6) 犹(D3CC) 愈(D3FA) 豫(D4A5) 赠(D4F9) 詹(D5B2) 仲(D6D9)
+  啧(DFF5) 嘀(E0D6) 崽(E1CC) 恺(E2FD) 愣(E3B6) 逍(E5D0) 咫(E5EB) 娅(E6AB) 盹(EDEF) 皈(F0A7) 癫(F1B2) 蛎(F2C3) 螃(F3A6) 鲨(F6E8)
+
+非 GBK 双字节字符 : 0 个 -> 

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<ObjectNames>
+	<Object
+		Name="ToR6M1"
+		FullName="Road to Living jungle" />
+
+	<Object
+		Name="ToR5M2"
+		FullName="Waftage to the farther shore" />
+
+	<Object
+		Name="PetrolStationTown1"
+		FullName="Fuel station" />
+
+	<Object
+		Name="PetrolStationTown1_Workshop"
+		FullName="Workshop" />
+
+	<Object
+		Name="PetrolStationTown2"
+		FullName="Fuel station" />
+
+	<Object
+		Name="PetrolStationTown2_Workshop"
+		FullName="Workshop" />
+
+	<Object
+		Name="r6m1_Vaypeg"
+		FullName="Winepeg" />
+
+	<Object
+		Name="r6m1_Vaypeg_Bar"
+		FullName="Ell Pub" />
+
+	<Object
+		Name="r6m1_Vaypeg_Workshop"
+		FullName="Workshop" />
+
+	<Object
+		Name="r6m1_Vaypeg_Shop"
+		FullName="Shop" />
+
+	<Object
+		Name="r6m1_Vaypeg_Bar_Barman"
+		FullName="Barman Nathan" />
+
+	<Object
+		Name="r6m1_Vaypeg_Bar_Gonshik1_NPC"
+		FullName="Adventurer Kulhatsker" />
+
+	<Object
+		Name="r6m1_Tander"
+		FullName="Tander" />
+
+	<Object
+		Name="r6m1_Tander_Bar"
+		FullName="Bolt Bar" />
+
+	<Object
+		Name="r6m1_Tander_Workshop"
+		FullName="Workshop" />
+
+	<Object
+		Name="r6m1_Tander_Shop"
+		FullName="Shop" />
+
+	<Object
+		Name="r6m1_Tander_Bar_Barman"
+		FullName="Barman Edward" />
+
+	<Object
+		Name="r6m2_Tander_Bar_SearchMan_NPC"
+		FullName="Nervous Mark" />
+
+	<Object
+		Name="r6m1_Gradofaks"
+		FullName="Cityfax" />
+
+	<Object
+		Name="r6m1_Gradofaks_Bar"
+		FullName="Pub" />
+
+	<Object
+		Name="r6m1_Gradofaks_Workshop"
+		FullName="Workshop" />
+
+	<Object
+		Name="r6m1_Gradofaks_Shop"
+		FullName="Shop" />
+
+	<Object
+		Name="r6m1_Gradofaks_Bar_Barman"
+		FullName="Barman Paul" />
+
+	<Object
+		Name="r6m1_Vaypeg_Bar_Gonshik2_NPC"
+		FullName="Gigolo Enky" />
+
+	<Object
+		Name="r6m1_Bey"
+		FullName="Bay" />
+
+	<Object
+		Name="r6m1_Bey_Bar"
+		FullName="Solitary wolf Bar" />
+
+	<Object
+		Name="r6m1_Bey_Workshop"
+		FullName="Workshop" />
+
+	<Object
+		Name="r6m1_Bey_Shop"
+		FullName="Shop" />
+
+	<Object
+		Name="r6m1_Bey_Bar_Barman"
+		FullName="Barman Jacques" />
+
+	<Object
+		Name="r6m1_Kanata"
+		FullName="Canata" />
+
+	<Object
+		Name="r6m1_Kanata_Bar"
+		FullName="Patriot Bar" />
+
+	<Object
+		Name="r6m1_Kanata_Workshop"
+		FullName="Workshop" />
+
+	<Object
+		Name="r6m1_Kanata_Shop"
+		FullName="Shop" />
+
+	<Object
+		Name="r6m1_Kanata_Bar_Barman"
+		FullName="Barman Jimmie" />
+
+	<Object
+		Name="r6m1_BrokenVeh_Voditel_NPC"
+		FullName="Unlucky fellow Carl" />
+
+	<Object
+		Name="DynQEnemy01"
+		FullName="Garold" />
+
+	<Object
+		Name="DynQEnemy02"
+		FullName="Bill" />
+
+	<Object
+		Name="DynQEnemy03"
+		FullName="Gudvin" />
+
+	<Object
+		Name="DynQEnemy04"
+		FullName="Jorge" />
+
+	<Object
+		Name="DynQEnemy05"
+		FullName="Hugo" />
+
+	<Object
+		Name="DynQEnemy06"
+		FullName="Greg" />
+
+	<Object
+		Name="DynQEnemy07"
+		FullName="Nicolos" />
+
+	<Object
+		Name="DynQEnemy08"
+		FullName="Tom" />
+
+	<Object
+		Name="DynQEnemy09"
+		FullName="John" />
+
+	<Object
+		Name="DynQEnemy10"
+		FullName="Clint" />
+
+	<Object
+		Name="DynQEnemy11"
+		FullName="Joe" />
+
+	<Object
+		Name="DynQEnemy12"
+		FullName="Max" />
+
+	<Object
+		Name="DynQEnemy13"
+		FullName="Ell" />
+
+	<Object
+		Name="DynQEnemy14"
+		FullName="Soyer" />
+
+	<Object
+		Name="DynQEnemy15"
+		FullName="Charli" />
+
+	<Object
+		Name="DynQEnemy16"
+		FullName="Bor Ris" />
+
+	<Object
+		Name="DynQEnemy17"
+		FullName="Ben" />
+
+	<Object
+		Name="DynQEnemy18"
+		FullName="Smith" />
+
+	<Object
+		Name="DynQEnemy19"
+		FullName="Piter" />
+
+	<Object
+		Name="DynQEnemy20"
+		FullName="Jan" />
+
+	<Object
+		Name="DynQEnemy21"
+		FullName="Jhonny" />
+
+	<Object
+		Name="DynQEnemy22"
+		FullName="Entony" />
+
+	<Object
+		Name="DynQEnemy23"
+		FullName="Billy" />
+
+	<Object
+		Name="DynQEnemy24"
+		FullName="Big Bill" />
+
+	<Object
+		Name="DynQEnemy25"
+		FullName="Michle" />
+</ObjectNames>

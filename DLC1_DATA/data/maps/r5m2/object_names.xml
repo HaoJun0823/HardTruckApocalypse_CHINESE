@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<ObjectNames>
+	<Object
+		Name="r5m2_PetrolStation1"
+		FullName="Fuel station" />
+
+	<Object
+		Name="r5m2_Sagevsal_enter"
+		FullName="Sag-Evsal" />
+
+	<Object
+		Name="r5m2_Mexico_enter"
+		FullName="Mexico" />
+
+	<Object
+		Name="r5m2_Vraska_enter"
+		FullName="Vraska" />
+
+	<Object
+		Name="r5m2_Cvetograd_enter"
+		FullName="Colorcity" />
+
+	<Object
+		Name="ToR5M1"
+		FullName="Road to Sam's lands" />
+
+	<Object
+		Name="ToR6M2"
+		FullName="Ferry" />
+
+	<Object
+		Name="r5m2_Pervomayka"
+		FullName="Pervomaiskaya" />
+
+	<Object
+		Name="r5m2_Pervomayka_Bar"
+		FullName="Bar" />
+
+	<Object
+		Name="r5m2_Pervomayka_Bar_Barman"
+		FullName="Barman Johnny" />
+
+	<Object
+		Name="r5m2_Pervomayka_Shop"
+		FullName="Shop" />
+
+	<Object
+		Name="r5m2_Pervomayka_Workshop"
+		FullName="Workshop" />
+
+	<Object
+		Name="r5m2_Pervomayka_Bar_Charli_NPC"
+		FullName="Drunkard Charley" />
+
+	<Object
+		Name="r5m2_Sagevsal"
+		FullName="Sag-Evsal" />
+
+	<Object
+		Name="r5m2_Sagevsal_Shop"
+		FullName="Shop" />
+
+	<Object
+		Name="r5m2_Sagevsal_Bar"
+		FullName="Hazard Bar" />
+
+	<Object
+		Name="r5m2_Sagevsal_Bar_Barman"
+		FullName="Barman Ell" />
+
+	<Object
+		Name="r5m2_Sagevsal_Workshop"
+		FullName="Workshop" />
+
+	<Object
+		Name="r5m2_Cvetograd"
+		FullName="Colorcity" />
+
+	<Object
+		Name="r5m2_Cvetograd_Shop"
+		FullName="Shop" />
+
+	<Object
+		Name="r5m2_Cvetograd_Bar"
+		FullName="Mac Bar" />
+
+	<Object
+		Name="r5m2_Cvetograd_Workshop"
+		FullName="Workshop" />
+
+	<Object
+		Name="r5m2_Cvetograd_Bar_Barman"
+		FullName="Barman Dak" />
+
+	<Object
+		Name="r5m2_Mexico"
+		FullName="Mexico" />
+
+	<Object
+		Name="r5m2_Mexico_Shop"
+		FullName="Shop" />
+
+	<Object
+		Name="r5m2_Mexico_Bar"
+		FullName="From dusk Saloon" />
+
+	<Object
+		Name="r5m2_Mexico_Bar_Barman"
+		FullName="Barman Lewis" />
+
+	<Object
+		Name="r5m2_Mexico_Workshop"
+		FullName="Workshop" />
+
+	<Object
+		Name="r5m2_Vraska"
+		FullName="Vraska" />
+
+	<Object
+		Name="r5m2_Vraska_Shop"
+		FullName="Shop" />
+
+	<Object
+		Name="r5m2_Vraska_Bar"
+		FullName="Till Dawn Bar" />
+
+	<Object
+		Name="TheOneEyeBase_House"
+		FullName="Base" />
+
+	<Object
+		Name="r5m2_Vraska_Workshop"
+		FullName="Workshop" />
+
+	<Object
+		Name="r5m2_Vraska_Bar_Barman"
+		FullName="Barman Boon" />
+
+	<Object
+		Name="TheOneEyeBase"
+		FullName="One-Eyed Base" />
+
+	<Object
+		Name="TheOneEyeBase_Shop"
+		FullName="Shop" />
+
+	<Object
+		Name="TheOneEyeBase_Bar"
+		FullName="At liberty Bar" />
+
+	<Object
+		Name="TheOneEyeBase_Bar_Barman"
+		FullName="Barman George" />
+
+	<Object
+		Name="TheOneEyeBase_Workshop"
+		FullName="Workshop" />
+
+	<Object
+		Name="TheOneEyeBase_Bar_OneEye_NPC"
+		FullName="One-Eyed" />
+
+	<Object
+		Name="Starievshik_loc"
+		FullName="Ragman house" />
+
+	<Object
+		Name="Starievshik_NPC"
+		FullName="Ragman Rock" />
+
+	<Object
+		Name="r5m2_Sagevsal_Bar_Shumaher1"
+		FullName="Driver Michael" />
+
+	<Object
+		Name="r5m2_Mexico_Bar_Shumaher2"
+		FullName="Driver Michael" />
+
+	<Object
+		Name="r5m2_Cvetograd_Bar_Plemaynik"
+		FullName="Mechanic Michaels" />
+
+	<Object
+		Name="r5m2_Mexico_Bar_KladMan"
+		FullName="Vagrant Eugene" />
+
+	<Object
+		Name="r5m2_Vraska_Bar_Zamucheniy"
+		FullName="Farmer Tom" />
+
+	<Object
+		Name="DynQEnemy01"
+		FullName="Garold" />
+
+	<Object
+		Name="DynQEnemy02"
+		FullName="Bill" />
+
+	<Object
+		Name="DynQEnemy03"
+		FullName="Gudvin" />
+
+	<Object
+		Name="DynQEnemy04"
+		FullName="Jorge" />
+
+	<Object
+		Name="DynQEnemy05"
+		FullName="Hugo" />
+
+	<Object
+		Name="DynQEnemy06"
+		FullName="Greg" />
+
+	<Object
+		Name="DynQEnemy07"
+		FullName="Nicolos" />
+
+	<Object
+		Name="DynQEnemy08"
+		FullName="Tom" />
+
+	<Object
+		Name="DynQEnemy09"
+		FullName="John" />
+
+	<Object
+		Name="DynQEnemy10"
+		FullName="Clint" />
+
+	<Object
+		Name="DynQEnemy11"
+		FullName="Joe" />
+
+	<Object
+		Name="DynQEnemy12"
+		FullName="Max" />
+
+	<Object
+		Name="DynQEnemy13"
+		FullName="Ell" />
+
+	<Object
+		Name="DynQEnemy14"
+		FullName="Soyer" />
+
+	<Object
+		Name="DynQEnemy15"
+		FullName="Charli" />
+
+	<Object
+		Name="DynQEnemy16"
+		FullName="Bor Ris" />
+
+	<Object
+		Name="DynQEnemy17"
+		FullName="Ben" />
+
+	<Object
+		Name="DynQEnemy18"
+		FullName="Smith" />
+
+	<Object
+		Name="DynQEnemy19"
+		FullName="Piter" />
+
+	<Object
+		Name="DynQEnemy20"
+		FullName="Jan" />
+
+	<Object
+		Name="DynQEnemy21"
+		FullName="Jhonny" />
+
+	<Object
+		Name="DynQEnemy22"
+		FullName="Entony" />
+
+	<Object
+		Name="DynQEnemy23"
+		FullName="Billy" />
+
+	<Object
+		Name="DynQEnemy24"
+		FullName="Big Bill" />
+
+	<Object
+		Name="DynQEnemy25"
+		FullName="Michle" />
+</ObjectNames>

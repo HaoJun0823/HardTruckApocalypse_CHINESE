@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<ObjectNames>
+	<Object
+		Name="Sin_WestIerihon"
+		FullName="West Jericho" />
+
+	<Object
+		Name="Sin_WestIerihon_Bar"
+		FullName="Bar 'Joe's'" />
+
+	<Object
+		Name="Sin_WestIerihon_Shop"
+		FullName="Shop" />
+
+	<Object
+		Name="Sin_WestIerihon_Workshop"
+		FullName="Workshop" />
+
+	<Object
+		Name="Sin_EastIerihon_Shop"
+		FullName="Shop" />
+
+	<Object
+		Name="Sin_EastIerihon_Workshop"
+		FullName="Workshop" />
+
+	<Object
+		Name="Sin_EastIerihon_Bar"
+		FullName="Bar" />
+
+	<Object
+		Name="Sin_SanRafael_Shop"
+		FullName="Shop" />
+
+	<Object
+		Name="Sin_SanRafael_Workshop"
+		FullName="Workshop" />
+
+	<Object
+		Name="Sin_CatHouse_Shop"
+		FullName="Shop" />
+
+	<Object
+		Name="Sin_CatHouse_Workshop"
+		FullName="Workshop" />
+
+	<Object
+		Name="Sin_DogHouse_Shop"
+		FullName="Shop" />
+
+	<Object
+		Name="Sin_DogHouse_Workshop"
+		FullName="Workshop" />
+
+	<Object
+		Name="Sin_DogHouse_Bar"
+		FullName="Farm" />
+
+	<Object
+		Name="Sin_Church_Workshop"
+		FullName="Workshop" />
+
+	<Object
+		Name="Sin_Church_Bar"
+		FullName = "Church" />
+
+	<Object
+		Name="PetrolStation_Workshop"
+		FullName="Workshop" />
+
+	<Object
+		Name="Sin_EastIerihon_Bar_Barman"
+		FullName="Barman" />
+
+	<Object
+		Name="Sin_EastIerihon"
+		FullName="East Jericho" />
+
+	<Object
+		Name="Sin_IerihonEast_MayorPlace"
+		FullName="City Hall" />
+
+	<Object
+		Name="Sin_Joe"
+		FullName="Joe" />
+
+	<Object
+		Name="Sin_Kitty"
+		FullName="Little Kitty" />
+
+	<Object
+		Name="Sin_Bulldog"
+		FullName="Born" />
+
+	<Object
+		Name="Sin_Garfield"
+		FullName = "Chief Cat" />
+
+	<Object
+		Name="Sin_BlackWood"
+		FullName="Blackwood" />
+
+	<Object
+		Name="Sin_Egoist"
+		FullName="Egoist" />
+
+	<Object
+		Name="Sin_Kitty_Trapped"
+		FullName="Kitty" />
+
+	<Object
+		Name="Sin_Father"
+		FullName="Priest" />
+
+	<Object
+		Name="Sin_Church"
+		FullName="Wheel Church" />
+
+	<Object
+		Name="Sin_CatHouse"
+		FullName="Cats House" />
+
+	<Object
+		Name="Sin_DogHouse"
+		FullName="Old farm" />
+
+	<Object
+		Name="Sin_SanRafael"
+		FullName="San Raphael" />
+
+	<Object
+		Name="Sin_Church_Inside"
+		FullName="Church" />
+
+	<Object
+		Name="PetrolStation"
+		FullName="San Raphael" />
+
+	<Object
+		Name="Sin_CatHouse_Bar"
+		FullName="Bar" />
+
+	<Object
+		Name="Sin_CatHouse_Bar_Barman"
+		FullName="Chuck" />
+
+	<Object
+		Name="Sin_SanRafael_Bar"
+		FullName="Bar 'Alligator'" />
+
+	<Object
+		Name="Sin_SanRafael_Bar_Barman"
+		FullName="Mario" />
+</ObjectNames>

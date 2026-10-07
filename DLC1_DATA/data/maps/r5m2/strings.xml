@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<resource>
+	<string
+		id="1701"
+		modelName="NewHero_mask"
+		value="VAGRANT|  Yeah, this isn't Le Canada. No different from Sam's lands, drill his carburetor. Let's see what's gonna happen next."
+		sound="data\sounds\Speech\r5m2\r5m2_1701_nomad.ogg"
+		time="9" />
+
+	<string
+		id="2001"
+		modelName="r2_woman"
+		modelSkin="1"
+		modelCfg="58"
+		modelSlot="1"
+		value="ETHAN|  Wait a bit, buddy."
+		sound="data\sounds\Speech\r5m2\r5m2_2001_itan.ogg"
+		time="2" />
+
+	<string
+		id="2002"
+		modelName="NewHero_mask"
+		value="VAGRANT|  What do you want?"
+		sound="data\sounds\Speech\r5m2\r5m2_2002_nomad.ogg"
+		time="1" />
+
+	<string
+		id="2003"
+		modelName="r2_woman"
+		modelSkin="1"
+		modelCfg="58"
+		modelSlot="1"
+		value="ETHAN|  My name is Ethan, and it somehow seems to me that you wish to share your freight and money with us. And in exchange for that I won't do you any harm."
+		sound="data\sounds\Speech\r5m2\r5m2_2003_itan.ogg"
+		time="13" />
+
+	<string
+		id="2004"
+		modelName="NewHero_mask"
+		value="VAGRANT|  Now listen here! If you, drill your carburetor, gas away from here now, the worst you'll get is a bullet in the car body. If not, the bullet will be in your forhead. Guess which hurts more?"
+		sound="data\sounds\Speech\r5m2\r5m2_2004_nomad.ogg"
+		time="15" />
+
+	<string
+		id="2005"
+		modelName="r2_woman"
+		modelSkin="1"
+		modelCfg="58"
+		modelSlot="1"
+		value="ETHAN|  Well, this will serve you right - I gota teach you good manners."
+		sound="data\sounds\Speech\r5m2\r5m2_2005_itan.ogg"
+		time="9" />
+
+	<string
+		id="2101"
+		modelName="r1_man"
+		modelSkin="0"
+		modelCfg="46"
+		modelSlot="1"
+		value="DWELLER| You got quits with Ethan himself, did you not? Nice bounty for his head was announced."
+		sound="data\sounds\Speech\r5m2\r5m2_2101_citizen.ogg"
+		time="7" />
+
+	<string
+		id="2102"
+		modelName="NewHero_mask"
+		value="VAGRANT|  Serious? See what a crankshaft we got ourselves here! And where is the award distribution point here?"
+		sound="data\sounds\Speech\r5m2\r5m2_2102_nomad.ogg"
+		time="7" />
+
+	<string
+		id="2103"
+		modelName="r1_man"
+		modelSkin="0"
+		modelCfg="46"
+		modelSlot="1"
+		value="DWELLER|  What point? We don't have any points here! Our Regent will give you your reward."
+		sound="data\sounds\Speech\r5m2\r5m2_2103_citizen.ogg"
+		time="7" />
+
+	<string
+		id="2301"
+		modelName="mask_axel"
+		modelSkin="1"
+		modelSlot="1"
+		value="CAPITAN AMERIGO|  Who allowed you to start shooting?"
+		sound="data\sounds\Speech\r5m2\r5m2_2301_amerigo.ogg"
+		time="2" />
+
+	<string
+		id="2302"
+		modelName="NewHero_mask"
+		value="VAGRANT|  But they are bandits, snatch their throttle! Do you want me to blow kisses to them?"
+		sound="data\sounds\Speech\r5m2\r5m2_2302_nomad.ogg"
+		time="5" />
+
+	<string
+		id="2303"
+		modelName="mask_axel"
+		modelSkin="1"
+		modelSlot="1"
+		value="CAPITAN AMERIGO|  Do you know what happens to those who open fire without the commander's order?"
+		sound="data\sounds\Speech\r5m2\r5m2_2303_amerigo.ogg"
+		time="4" />
+
+	<string
+		id="2304"
+		modelName="NewHero_mask"
+		value="VAGRANT|  Yeah I know. They live longer."
+		sound="data\sounds\Speech\r5m2\r5m2_2304_nomad.ogg"
+		time="3" />
+
+	<string
+		id="2305"
+		modelName="mask_axel"
+		modelSkin="1"
+		modelSlot="1"
+		value="CAPITAN AMERIGO|  On the contrary. You will be executed by firing squad for insubordination according to the laws of war! Open fire men!"
+		sound="data\sounds\Speech\r5m2\r5m2_2305_amerigo.ogg"
+		time="7" />
+
+	<string
+		id="2401"
+		modelName="NewHero_mask"
+		value="VAGRANT|  Hello, One-eyed. You'll be laughing, but I am still alive."
+		sound="data\sounds\Speech\r5m2\r5m2_2401_nomad.ogg"
+		time="5" />
+
+	<string
+		id="2402"
+		modelAutosized="true"
+		modelName="gadget_12"
+		modelSlot="1"
+		value="ONE-EYED|  Why? Could you really die?"
+		sound="data\sounds\Speech\r5m2\r5m2_2402_oneeyed.ogg"
+		time="2" />
+
+	<string
+		id="2403"
+		modelName="NewHero_mask"
+		value="VAGRANT|  Well, I'd say, this Captain Amerigo of yours, may his tires blow in the world beyond, did everything he could for that."
+		sound="data\sounds\Speech\r5m2\r5m2_2403_nomad.ogg"
+		time="8" />
+
+	<string
+		id="2404"
+		modelAutosized="true"
+		modelName="gadget_12"
+		modelSlot="1"
+		value="ONE-EYED|  Damned traitor! I will send my best fighters to have the matter with him out!"
+		sound="data\sounds\Speech\r5m2\r5m2_2404_oneeyed.ogg"
+		time="4" />
+
+	<string
+		id="2405"
+		modelName="NewHero_mask"
+		value="VAGRANT|  Forget about it. He won't give any trouble any more. Admittedly, a few bandits left with whom he was be in cahoots with."
+		sound="data\sounds\Speech\r5m2\r5m2_2405_nomad.ogg"
+		time="7" />
+
+	<string
+		id="2406"
+		modelAutosized="true"
+		modelName="gadget_12"
+		modelSlot="1"
+		value="ONE-EYED|  Damn them! Do you know where the bandits' base is?"
+		sound="data\sounds\Speech\r5m2\r5m2_2406_oneeyed.ogg"
+		time="4" />
+
+	<string
+		id="2407"
+		modelName="NewHero_mask"
+		value="VAGRANT|  Don't know for sure, but I think it is not far."
+		sound="data\sounds\Speech\r5m2\r5m2_2407_nomad.ogg"
+		time="4" />
+
+	<string
+		id="2408"
+		modelAutosized="true"
+		modelName="gadget_12"
+		modelSlot="1"
+		value="ONE-EYED|  Bandits must be destroyed and the sooner the better, unless they have scattered around! Do it! It is my order! "
+		sound="data\sounds\Speech\r5m2\r5m2_2408_oneeyed.ogg"
+		time="7" />
+
+	<string
+		id="2409"
+		modelName="NewHero_mask"
+		value="VAGRANT|  We'll make the best of it! I'll show them rake in the toes."
+		sound="data\sounds\Speech\r5m2\r5m2_2409_nomad.ogg"
+		time="5" />
+
+	<string
+		id="2501"
+		modelName="NewHero_mask"
+		value="VAGRANT|  What is your name?"
+		sound="data\sounds\Speech\r5m2\r5m2_2501_nomad.ogg"
+		time="2" />
+
+	<string
+		id="2502"
+		modelName="mask_father"
+		modelSkin="1"
+		modelSlot="1"
+		value="WIND|  People don't call me names. You can address me as Wind."
+		sound="data\sounds\Speech\r5m2\r5m2_2502_veter.ogg"
+		time="7" />
+
+	<string
+		id="2503"
+		modelName="NewHero_mask"
+		value="VAGRANT|  Wind? I've heard of a guy called Wind. He is a great traveler and all that stuff."
+		sound="data\sounds\Speech\r5m2\r5m2_2503_nomad.ogg"
+		time="7" />
+
+	<string
+		id="2504"
+		modelName="mask_father"
+		modelSkin="1"
+		modelSlot="1"
+		value="WIND|  Great or not - I don't know. But my name is Wind."
+		sound="data\sounds\Speech\r5m2\r5m2_2504_veter.ogg"
+		time="5" />
+
+	<string
+		id="2506"
+		modelName="NewHero_mask"
+		value="VAGRANT|  How did you get here?"
+		sound="data\sounds\Speech\r5m2\r5m2_2506_nomad.ogg"
+		time="2" />
+
+	<string
+		id="2507"
+		modelName="mask_father"
+		modelSkin="1"
+		modelSlot="1"
+		value="WIND|  I was taken prisoner. I was on my way to Le Canada but ran into bandits."
+		sound="data\sounds\Speech\r5m2\r5m2_2507_veter.ogg"
+		time="7" />
+
+	<string
+		id="2508"
+		modelName="NewHero_mask"
+		value="VAGRANT|  So you were on the way to Le Canada, weren't you? I'm gonna have to disappoint you then: I would not make it anyway. The Bridge to Le Canada is deadlocked."
+		sound="data\sounds\Speech\r5m2\r5m2_2508_nomad.ogg"
+		time="10" />
+
+	<string
+		id="2509"
+		modelName="mask_father"
+		modelSkin="1"
+		modelSlot="1"
+		value="WIND|  What bridge? I know nothing about a bridge."
+		sound="data\sounds\Speech\r5m2\r5m2_2509_veter.ogg"
+		time="4" />
+
+	<string
+		id="2510"
+		modelName="NewHero_mask"
+		value="VAGRANT|  Oh really? And how did you expect to get to Le Canada?"
+		sound="data\sounds\Speech\r5m2\r5m2_2510_nomad.ogg"
+		time="4" />
+
+	<string
+		id="2511"
+		modelName="mask_father"
+		modelSkin="1"
+		modelSlot="1"
+		value="WIND|  Of course, with the use of a lighthouse."
+		sound="data\sounds\Speech\r5m2\r5m2_2511_veter.ogg"
+		time="2" />
+
+	<string
+		id="2512"
+		modelName="NewHero_mask"
+		value="VAGRANT|  What kind of a lighthouse?"
+		sound="data\sounds\Speech\r5m2\r5m2_2512_nomad.ogg"
+		time="2" />
+
+	<string
+		id="2513"
+		modelName="mask_father"
+		modelSkin="1"
+		modelSlot="1"
+		value="WIND|  A regular lighthouse. One should turn it on and wait for a while. Some time later, the ferry will come from the other bank of the Great River and pick up all who want to get to Le Canada."
+		sound="data\sounds\Speech\r5m2\r5m2_2513_veter.ogg"
+		time="15" />
+
+	<string
+		id="2514"
+		modelName="NewHero_mask"
+		value="VAGRANT|  Crack my covers! If this is real, so what am I doing here? What the heck do I need all these Sams, One-Eyeds and the rest for? Show me the way."
+		sound="data\sounds\Speech\r5m2\r5m2_2514_nomad.ogg"
+		time="11" />
+
+	<string
+		id="2601"
+		modelName="NewHero_mask"
+		value="VAGRANT|  We've turned it on!"
+		sound="data\sounds\Speech\r5m2\r5m2_2601_nomad.ogg"
+		time="2" />
+
+	<string
+		id="2602"
+		modelName="mask_father"
+		modelSkin="1"
+		modelSlot="1"
+		value="WIND|  Yes. Now we have to wait."
+		sound="data\sounds\Speech\r5m2\r5m2_2602_veter.ogg"
+		time="4" />
+
+	<string
+		id="2603"
+		modelName="NewHero_mask"
+		value="VAGRANT|  How long do you think we'll have to wait here?"
+		sound="data\sounds\Speech\r5m2\r5m2_2603_nomad.ogg"
+		time="4" />
+
+	<string
+		id="2604"
+		modelName="mask_father"
+		modelSkin="1"
+		modelSlot="1"
+		value="WIND|  How much time to wait does not matter when the way is found."
+		sound="data\sounds\Speech\r5m2\r5m2_2604_veter.ogg"
+		time="6" />
+
+	<string
+		id="2605"
+		modelName="NewHero_mask"
+		value="VAGRANT|  Holy fuel! Do you mean that it doesn't matter how long we've stay here? You mean the main thing is to find the Lighthouse? Do you expect Le Canada to emerge here on its own?"
+		sound="data\sounds\Speech\r5m2\r5m2_2605_nomad.ogg"
+		time="12" />
+
+	<string
+		id="2606"
+		modelName="mask_father"
+		modelSkin="1"
+		modelSlot="1"
+		value="WIND|  No. Everybody finds his own Le Canada; and Le Canada will come only to that man who searches."
+		sound="data\sounds\Speech\r5m2\r5m2_2606_veter.ogg"
+		time="10" />
+
+	<string
+		id="2607"
+		modelName="NewHero_mask"
+		value="VAGRANT|  You seem to talk somehow too odd, Wind."
+		sound="data\sounds\Speech\r5m2\r5m2_2607_nomad.ogg"
+		time="4" />
+
+	<string
+		id="2608"
+		modelName="NewHero_mask"
+		value="VAGRANT|  Hey, Wind! Where are you? I don't understand where he could disappear to? He couldn't just walk away. Or maybe he could?"
+		sound="data\sounds\Speech\r5m2\r5m2_2608_nomad.ogg"
+		time="8" />
+
+	<string
+		id="2701"
+		modelName="NewHero_mask"
+		value="VAGRANT|  Where did all the damned monsters come from? Not bad - the lighthouse is on!"
+		sound="data\sounds\Speech\r5m2\r5m2_2701_nomad.ogg"
+		time="6" />
+
+	<string
+		id="2702"
+		modelAutosized="true"
+		modelName="gadget_12"
+		modelSlot="1"
+		value="ONE-EYED|  Vagrant, can you hear me? Over."
+		sound="data\sounds\Speech\r5m2\r5m2_2702_oneeyed.ogg"
+		time="3" />
+
+	<string
+		id="2703"
+		modelName="NewHero_mask"
+		value="VAGRANT|  I can hear you perfectly well!"
+		sound="data\sounds\Speech\r5m2\r5m2_2703_nomad.ogg"
+		time="2" />
+
+	<string
+		id="2704"
+		modelAutosized="true"
+		modelName="gadget_12"
+		modelSlot="1"
+		value="ONE-EYED|  Get back right away! Wherever you are now."
+		sound="data\sounds\Speech\r5m2\r5m2_2704_oneeyed.ogg"
+		time="3" />
+
+	<string
+		id="2705"
+		modelName="NewHero_mask"
+		value="VAGRANT|  Holy fuel, what happened?"
+		sound="data\sounds\Speech\r5m2\r5m2_2705_nomad.ogg"
+		time="3" />
+
+	<string
+		id="2706"
+		modelAutosized="true"
+		modelName="gadget_12"
+		modelSlot="1"
+		value="ONE-EYED|  We are being attacked by metallic monsters; we're short of fighters. Forget the bandits and get back immediately!"
+		sound="data\sounds\Speech\r5m2\r5m2_2706_oneeyed.ogg"
+		time="7" />
+
+	<string
+		id="2707"
+		modelName="NewHero_mask"
+		value="VAGRANT|  Okay, One-Eyed, I'll be back as soon as possible."
+		sound="data\sounds\Speech\r5m2\r5m2_2707_nomad.ogg"
+		time="3" />
+
+	<string
+		id="2801"
+		modelName="NewHero_mask"
+		value="VAGRANT|  Why didn't I shoot the thing when it was not moving? It seems that I didn't because it wasn't."
+		sound="data\sounds\Speech\r5m2\r5m2_2801_nomad.ogg"
+		time="8" />
+
+	<string
+		id="2901"
+		modelName="mask_lisa"
+		modelSlot="1"
+		value="ONE-EYED|  You are just in time. We cannot hold the stronghold. The iron things are too many. I am afraid they will attack us on the road too."
+		sound="data\sounds\Speech\r5m2\r5m2_2901_oneeyed.ogg"
+		time="8" />
+
+	<string
+		id="2902"
+		modelName="NewHero_mask"
+		value="VAGRANT|  Bullshit. Take only the most valuabe stuff and go off leave, and I will settle in one of the pillboxes and cover your retreat."
+		sound="data\sounds\Speech\r5m2\r5m2_2902_nomad.ogg"
+		time="8" />
+
+	<string
+		id="2903"
+		modelName="mask_lisa"
+		modelSlot="1"
+		value="ONE-EYED|  But this is too dangerous, you can die without having time to get out."
+		sound="data\sounds\Speech\r5m2\r5m2_2903_oneeyed.ogg"
+		time="4" />
+
+	<string
+		id="2904"
+		modelName="NewHero_mask"
+		value="VAGRANT|  We'll live you'll see, oil duct to his loins! I used to fight the things so don't cry for me."
+		sound="data\sounds\Speech\r5m2\r5m2_2904_nomad.ogg"
+		time="10" />
+
+	<string
+		id="2905"
+		modelName="mask_lisa"
+		modelSlot="1"
+		value="ONE-EYED|  Vagrant, you are a hero! Thank you."
+		sound="data\sounds\Speech\r5m2\r5m2_2905_oneeyed.ogg"
+		time="4" />
+
+	<string
+		id="2906"
+		modelName="NewHero_mask"
+		value="VAGRANT|  Thanks for nothing, pull that throttle! Come on, hurry up. Take only the most valuable stuff! Time is money."
+		sound="data\sounds\Speech\r5m2\r5m2_2906_nomad.ogg"
+		time="7" />
+
+	<string
+		id="2907"
+		modelName="mask_lisa"
+		modelSlot="1"
+		value="ONE-EYED|  OK. We will go in several caravans. Join any of them. Good luck!"
+		sound="data\sounds\Speech\r5m2\r5m2_2907_oneeyed.ogg"
+		time="6" />
+
+	<string
+		id="3001"
+		modelName="NewHero_mask"
+		value="VAGRANT|  What kind of people are they, sugar them to carburetor! They could not fail to pick up the whole treasury with them! Now I will have to catch up with the caravan and take the rolls away."
+		sound="data\sounds\Speech\r5m2\r5m2_3001_nomad.ogg"
+		time="11" />
+
+	<string
+		id="3101"
+		modelName="mask_lisa"
+		modelSlot="1"
+		value="ONE-EYED|  You are alive. I am glad!"
+		sound="data\sounds\Speech\r5m2\r5m2_3101_oneeyed.ogg"
+		time="2" />
+
+	<string
+		id="3102"
+		modelName="NewHero_mask"
+		value="VAGRANT|  Listen up, One-Eyed, I need you to do something for me."
+		sound="data\sounds\Speech\r5m2\r5m2_3102_nomad.ogg"
+		time="3" />
+
+	<string
+		id="3103"
+		modelName="mask_lisa"
+		modelSlot="1"
+		value="ONE-EYED|  Anything you want."
+		sound="data\sounds\Speech\r5m2\r5m2_3103_oneeyed.ogg"
+		time="5" />
+
+	<string
+		id="3104"
+		modelName="NewHero_mask"
+		value="VAGRANT|  I need boxes similar to those that they stole from your treasury."
+		sound="data\sounds\Speech\r5m2\r5m2_3104_nomad.ogg"
+		time="5" />
+
+	<string
+		id="3105"
+		modelName="mask_lisa"
+		modelSlot="1"
+		value="ONE-EYED|  So, you work with thieves, don't you?"
+		sound="data\sounds\Speech\r5m2\r5m2_3105_oneeyed.ogg"
+		time="3" />
+
+	<string
+		id="3106"
+		modelName="NewHero_mask"
+		value="VAGRANT|  Nothing of the kind. And nonetheless, I need the boxes."
+		sound="data\sounds\Speech\r5m2\r5m2_3106_nomad.ogg"
+		time="5" />
+
+	<string
+		id="3107"
+		modelName="mask_lisa"
+		modelSlot="1"
+		value="ONE-EYED|  You are the most odious traitor of all I've ever known! Even worse than Amerigo was! No boxes for you! Get away or I'll order my men to destroy you!"
+		sound="data\sounds\Speech\r5m2\r5m2_3107_oneeyed.ogg"
+		time="9" />
+
+	<string
+		id="3108"
+		modelName="NewHero_mask"
+		value="VAGRANT|  Well, injector to your protector, that's your fault."
+		sound="data\sounds\Speech\r5m2\r5m2_3108_nomad.ogg"
+		time="5" />
+
+	<string
+		id="3201"
+		modelName="NewHero_mask"
+		value="VAGRANT|  I've got the filmstrips. Now we can go to Sam, bloody gasoline."
+		sound="data\sounds\Speech\r5m2\r5m2_3201_nomad.ogg"
+		time="6" />
+
+	<string
+		id="8801"
+		value="Do you want to leave this area?"
+		numButtons="2" />
+
+	<string
+		id="8802"
+		value="Wind is dead. Road to to the lighthouse has been lost together with him!"
+		numButtons="1" />
+
+	<string
+		id="8803"
+		value="Robots find a way into the base!"
+		numButtons="1" />
+</resource>

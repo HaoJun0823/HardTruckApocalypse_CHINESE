@@ -1,0 +1,1004 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<resource>
+	<string
+		id="101"
+		modelName="NewHero_mask"
+		value="VAGRANT|  I see no plate with an inscription, 'Edmonton - 10 km'. We'll look for it."
+		sound="data\sounds\Speech\r5m1\r5m1_101_nomad.ogg"
+		time="7" />
+	<string
+		id="201"
+		modelName="NewHero_mask"
+		value="VAGRANT|  Wiseguy was right, drill his carburetor! This what-you-call-it Library is really well guarded. But that's ok; we've taken much worse places!"
+		sound="data\sounds\Speech\r5m1\r5m1_201_nomad.ogg"
+		time="11" />
+	<string
+		id="401"
+		modelName="NewHero_mask"
+		value="VAGRANT| Cool! So are you the fella they call Wiseguy?"
+		sound="data\sounds\Speech\r5m1\r5m1_401_nomad.ogg"
+		time="4" />
+
+	<string
+		id="402"
+		modelName="mask_ben"
+		modelSlot="1"
+		value="NOVAL|  Yes, that's what people call me. Who are you and what do you want?"
+		sound="data\sounds\Speech\r5m1\r5m1_402_noval.ogg"
+		time="5" />
+
+	<string
+		id="403"
+		modelName="NewHero_mask"
+		value="VAGRANT| My name is Vagrant. They say you're an expert in all the kind of ancient maps and other astronomies. I need find out how to get to Edmonton."
+		sound="data\sounds\Speech\r5m1\r5m1_403_nomad.ogg"
+		time="10" />
+
+	<string
+		id="404"
+		modelName="mask_ben"
+		modelSlot="1"
+		value="NOVAL| I have never heard that name. "
+		sound="data\sounds\Speech\r5m1\r5m1_404_noval.ogg"
+		time="3" />
+
+	<string
+		id="405"
+		modelName="NewHero_mask"
+		value="VAGRANT|  Hey, come on, pack it up! You are a good expert in all those maps, crack your tank! You're just supposed to know about Edmonton."
+		sound="data\sounds\Speech\r5m1\r5m1_405_nomad.ogg"
+		time="8" />
+
+	<string
+		id="406"
+		modelName="mask_ben"
+		modelSlot="1"
+		value="NOVAL|  How dare you, mister?! I owe nothing to anybody. I do not understand maps. I understand playing cards! I am an expert in the history of gambling."
+		sound="data\sounds\Speech\r5m1\r5m1_406_noval.ogg"
+		time="20" />
+
+	<string
+		id="407"
+		modelName="NewHero_mask"
+		value="VAGRANT|  Look here, Mister Pain-in-the-Ass. I don't know what you're talking about, but bear this in your mind, 'I don't care about these games of yours, so either you tell me where Edmonton is, or I'll have to introduce you to bat. Do you dig me?'"
+		sound="data\sounds\Speech\r5m1\r5m1_407_nomad.ogg"
+		time="16" />
+
+	<string
+		id="408"
+		modelName="mask_ben"
+		modelSlot="1"
+		value="NOVAL|  I see. Don't be nervous! Though I really don't know where the town of Edmonton is, I can give advice. The maps you need are in the building that they call the Library; it is located several hundred meters from here."
+		sound="data\sounds\Speech\r5m1\r5m1_408_noval.ogg"
+		time="20" />
+
+	<string
+		id="409"
+		modelName="NewHero_mask"
+		value="VAGRANT|  I swear on my muffler! It seems to me, you gave up too fast. I believe they had reasons to call Wiseguy, didn't they? Now, tell me what you forgot to warn me against?"
+		sound="data\sounds\Speech\r5m1\r5m1_409_nomad.ogg"
+		time="11" />
+
+	<string
+		id="410"
+		modelName="mask_ben"
+		modelSlot="1"
+		value="NOVAL|  Not at all! It is not that I forgot. Plainly I did not have enough time. The matter is that the Library is Sam's property and is guarded by his fighters."
+		sound="data\sounds\Speech\r5m1\r5m1_410_noval.ogg"
+		time="13" />
+
+	<string
+		id="411"
+		modelName="NewHero_mask"
+		value="VAGRANT|  What Sam? A local big shot?"
+		sound="data\sounds\Speech\r5m1\r5m1_411_nomad.ogg"
+		time="4" />
+
+	<string
+		id="412"
+		modelName="mask_ben"
+		modelSlot="1"
+		value="NOVAL|  Yes, you are right; except for some minor details."
+		sound="data\sounds\Speech\r5m1\r5m1_412_noval.ogg"
+		time="6" />
+
+	<string
+		id="413"
+		modelName="NewHero_mask"
+		value="VAGRANT|  OK, I'll keep this Sam in mind."
+		sound="data\sounds\Speech\r5m1\r5m1_413_nomad.ogg"
+		time="4" />
+
+	<string
+		id="5011"
+		modelName="NewHero_mask"
+		value="VAGRANT|  Aha.., hum..., I see! Then Edmonton is somewhere across the Great River, in the land of ... eeh ... Le Canada."
+		sound="data\sounds\Speech\r5m1\r5m1_5011_nomad.ogg"
+		time="11" />
+
+	<string
+		id="5012"
+		modelName="NewHero_mask"
+		value="VAGRANT|  And how am I expected to cross the river? I see. Aha. There is a bridge ok. If this here indicates a bridge, of course. I hope, it hasn't collapsed. 'Cause I don't see any other bridge on this map which could bring me to the other side of the Great River."
+		sound="data\sounds\Speech\r5m1\r5m1_5012_nomad.ogg"
+		time="20" />
+
+	<string
+		id="601"
+		modelSlot="1"
+		value="SAM|  Fellow, your head is aching, isn't it? Or do you seriously fancy that you can rob me with impunity? And even twice!"
+		sound="data\sounds\Speech\r5m1\r5m1_601_sam.ogg"
+		time="10" />
+
+	<string
+		id="602"
+		modelName="NewHero_mask"
+		value="VAGRANT|   Twice?!  I can't recall it even happening once!"
+		sound="data\sounds\Speech\r5m1\r5m1_602_nomad.ogg"
+		time="4" />
+
+	<string
+		id="603"
+		modelName="Sam_mask"
+		modelSlot="1"
+		value="SAM|  You got into the Library, which I own. And you dared to start on Wiseguy. Wiseguy is my property too!"
+		sound="data\sounds\Speech\r5m1\r5m1_603_sam.ogg"
+		time="12" />
+
+	<string
+		id="604"
+		modelName="NewHero_mask"
+		value="VAGRANT|   Drill my carburetor! I somehow failed to notice any signs like 'Sam's Property' neither on Wiseguy, nor in the Library."
+		sound="data\sounds\Speech\r5m1\r5m1_604_nomad.ogg"
+		time="7" />
+
+	<string
+		id="605"
+		modelName="Sam_mask"
+		modelSlot="1"
+		value="SAM|  A charged mine has no inscriptions on it too, but once you step on it and - booooom!!! Consider me a mine that you have come across. I should shoot you but you are not worth spending bullets. "
+		sound="data\sounds\Speech\r5m1\r5m1_605_sam.ogg"
+		time="19" />
+
+	<string
+		id="60512"
+		modelName="Sam_mask"
+		modelSlot="1"
+		value="SAM|  Perhaps, the best thing is to set you out for gladiatorial fighting, so that I earn money by means of totalizator."
+		sound="data\sounds\Speech\r5m1\r5m1_60512_sam.ogg"
+		time="10" />
+
+	<string
+		id="606"
+		modelName="NewHero_mask"
+		value="VAGRANT|  And you're sure I gonna fight?"
+		sound="data\sounds\Speech\r5m1\r5m1_606_nomad.ogg"
+		time="3" />
+
+	<string
+		id="607"
+		modelName="Sam_mask"
+		modelSlot="1"
+		value="SAM|  Don't fight if you do not want to. I can bet on what part of your vehicle will be shot off first."
+		sound="data\sounds\Speech\r5m1\r5m1_607_sam.ogg"
+		time="11" />
+
+	<string
+		id="608"
+		modelName="NewHero_mask"
+		value="VAGRANT|  What if I win?"
+		sound="data\sounds\Speech\r5m1\r5m1_608_nomad.ogg"
+		time="3" />
+
+	<string
+		id="609"
+		modelName="Sam_mask"
+		modelSlot="1"
+		value="SAM|  Then, I will give you 24 hours to get off my territory."
+		sound="data\sounds\Speech\r5m1\r5m1_609_sam.ogg"
+		time="7" />
+
+	<string
+		id="610"
+		modelName="NewHero_mask"
+		value="VAGRANT|  Fine. I'll fight. And take my advice. Bet your money on me. You won't regret."
+		sound="data\sounds\Speech\r5m1\r5m1_610_nomad.ogg"
+		time="9" />
+
+	<string
+		id="611"
+		modelName="Sam_mask"
+		modelSlot="1"
+		value="SAM|  What an impudent guy!"
+		sound="data\sounds\Speech\r5m1\r5m1_611_sam.ogg"
+		time="2" />
+	<string
+		id="701"
+		modelName="Sam_mask"
+		modelSlot="1"
+		value="SAM|  Listen, friend, I was wrong. I have rarely seen fighters as skillful as you are. You are a born driver. What would you say if I ask you to join my team?"
+		sound="data\sounds\Speech\r5m1\r5m1_701_sam.ogg"
+		time="12" />
+
+	<string
+		id="702"
+		modelName="NewHero_mask"
+		value="VAGRANT|  Why do you think I need it?"
+		sound="data\sounds\Speech\r5m1\r5m1_702_nomad.ogg"
+		time="2" />
+
+	<string
+		id="703"
+		modelName="Sam_mask"
+		modelSlot="1"
+		value="SAM|  Listen to me. You obviously think that you are offered a job of a fighter in an ordinary gang? If so, you are mistaken/ Look around you. I am the sole owner of the country. Understand that?"
+		sound="data\sounds\Speech\r5m1\r5m1_703_sam.ogg"
+		time="18" />
+
+	<string
+		id="704"
+		modelName="NewHero_mask"
+		value="VAGRANT|  Oh, since you are a master here, you should  know where the Bridge of the Great River is?"
+		sound="data\sounds\Speech\r5m1\r5m1_704_nomad.ogg"
+		time="7" />
+
+	<string
+		id="705"
+		modelName="Sam_mask"
+		modelSlot="1"
+		value="SAM|  I know but I don't even think to butt into his. The lands of Le Canada lay over the Bridge. One day I will get to the riches of the country, but unless I do, no one will be allowed to pass by me. Anyone who will just approach the Bridge will be killed on the spot."
+		sound="data\sounds\Speech\r5m1\r5m1_705_sam.ogg"
+		time="22" />
+
+	<string
+		id="70512"
+		modelName="Sam_mask"
+		modelSlot="1"
+		value="SAM|  And anyone who'll try to outwit me will have a bullet into his fuel tank, understand? Keep it in mind - the Bridge is well secured by my men."
+		sound="data\sounds\Speech\r5m1\r5m1_70512_sam.ogg"
+		time="15" />
+
+	<string
+		id="706"
+		modelName="NewHero_mask"
+		value="VAGRANT|  I see. I asked that for no particular reason, man. What's the story with this 'Le Canada'? And, as for the offer to join your team, I agree."
+		sound="data\sounds\Speech\r5m1\r5m1_706_nomad.ogg"
+		time="11" />
+
+	<string
+		id="707"
+		modelName="Sam_mask"
+		modelSlot="1"
+		value="SAM|   Well, fine then! Believe me you were right to make this choice."
+		sound="data\sounds\Speech\r5m1\r5m1_707_sam.ogg"
+		time="7" />
+	<string
+		id="901"
+		modelName="Sam_mask"
+		modelSlot="1"
+		value="SAM|  So, what did he tell you?"
+		sound="data\sounds\Speech\r5m1\r5m1_901_sam.ogg"
+		time="2" />
+
+	<string
+		id="902"
+		modelName="NewHero_mask"
+		value="VAGRANT|  Of course I can be mistaken, but the answer was negative. As far as I remember."
+		sound="data\sounds\Speech\r5m1\r5m1_902_nomad.ogg"
+		time="4" />
+
+	<string
+		id="903"
+		modelName="Sam_mask"
+		modelSlot="1"
+		value="SAM|  Damn it!!! Listen up then - I will give a different task. You must urgently destroy a vehicle."
+		sound="data\sounds\Speech\r5m1\r5m1_903_sam.ogg"
+		time="8" />
+
+	<string
+		id="904"
+		modelName="NewHero_mask"
+		value="VAGRANT|  I have destroyed heaps of vehicles in my lifetime, you know, so what's the buzz?"
+		sound="data\sounds\Speech\r5m1\r5m1_904_nomad.ogg"
+		time="5" />
+
+	<string
+		id="905"
+		modelName="Sam_mask"
+		modelSlot="1"
+		value="SAM|  There is implication. My former friend uses his vehicle to transport contraband. I would not like him to be killed. Just in memory of our past friendship. But you must put an end to trafficking."
+		sound="data\sounds\Speech\r5m1\r5m1_905_sam.ogg"
+		time="15" />
+
+	<string
+		id="90512"
+		modelName="Sam_mask"
+		modelSlot="1"
+		value="SAM|  If you shoot the vehicle at the time when its owner is at home, we will stop trafficking and my friend will not be injured. So, are you in?"
+		sound="data\sounds\Speech\r5m1\r5m1_90512_sam.ogg"
+		time="10" />
+	<string
+		id="1001"
+		modelName="r2_man"
+		modelSkin="2"
+		modelCfg="332"
+		modelSlot="1"
+		value="STRANGER|  Who are you? What do you do here?"
+		sound="data\sounds\Speech\r5m1\r5m1_1001_stranger.ogg"
+		time="3" />
+
+	<string
+		id="1002"
+		modelName="NewHero_mask"
+		value="VAGRANT|  I have come to reprimand you about your trafficking."
+		sound="data\sounds\Speech\r5m1\r5m1_1002_nomad.ogg"
+		time="5" />
+
+	<string
+		id="1003"
+		modelName="r2_man"
+		modelSkin="2"
+		modelCfg="332"
+		modelSlot="1"
+		value="STRANGER|   Are you nuts? Trafficking? I have nothing to do with it!"
+		sound="data\sounds\Speech\r5m1\r5m1_1003_stranger.ogg"
+		time="4" />
+
+	<string
+		id="1004"
+		modelName="NewHero_mask"
+		value="VAGRANT|  So this is what you must tell everybody. This will be absolutely true, when I'm finished with you."
+		sound="data\sounds\Speech\r5m1\r5m1_1004_nomad.ogg"
+		time="7" />
+	<string
+		id="1101"
+		modelName="Sam_mask"
+		modelSlot="1"
+		value="SAM|  So what's the progress?"
+		sound="data\sounds\Speech\r5m1\r5m1_1101_sam.ogg"
+		time="2" />
+
+	<string
+		id="1102"
+		modelName="NewHero_mask"
+		value="VAGRANT|  Everything is pretty fine! Your friend has escaped trafficking."
+		sound="data\sounds\Speech\r5m1\r5m1_1102_nomad.ogg"
+		time="5" />
+
+	<string
+		id="1103"
+		modelName="Sam_mask"
+		modelSlot="1"
+		value="SAM|  Great. Now, I have a serious proposal for you. "
+		sound="data\sounds\Speech\r5m1\r5m1_1103_sam.ogg"
+		time="6" />
+
+	<string
+		id="1104"
+		modelName="NewHero_mask"
+		value="VAGRANT|  And what was that before? A joke?"
+		sound="data\sounds\Speech\r5m1\r5m1_1104_nomad.ogg"
+		time="2" />
+
+	<string
+		id="1105"
+		modelName="Sam_mask"
+		modelSlot="1"
+		value="SAM|  No, but not as serious as this one was. We will organize racing every year. Lots of participants and lots of fans. They stake big money on a winner. This time I made up my mind to take part in gambling. "
+		sound="data\sounds\Speech\r5m1\r5m1_1105_sam.ogg"
+		time="18" />
+
+	<string
+		id="1106"
+		modelName="NewHero_mask"
+		value="VAGRANT|   I see.  I'll take care of the security for the most probable winner, right?"
+		sound="data\sounds\Speech\r5m1\r5m1_1106_nomad.ogg"
+		time="5" />
+
+	<string
+		id="1107"
+		modelName="Sam_mask"
+		modelSlot="1"
+		value="SAM|  Do you remember a guy to whom you brought a package? He was the guy I wanted to bet on. But as you remember, he refused."
+		sound="data\sounds\Speech\r5m1\r5m1_1107_sam.ogg"
+		time="12" />
+
+	<string
+		id="1108"
+		modelName="NewHero_mask"
+		value="VAGRANT|  It happened, crack his covers!"
+		sound="data\sounds\Speech\r5m1\r5m1_1108_nomad.ogg"
+		time="3" />
+
+	<string
+		id="1109"
+		modelName="Sam_mask"
+		modelSlot="1"
+		value="SAM|  Then, at my request, you shot the vehicle that belonged to the main pretender for victory. Now no one knows on whom to bet. I propose that you take part in the racing and become my dark horse which will break the bank. "
+		sound="data\sounds\Speech\r5m1\r5m1_1109_sam.ogg"
+		time="16" />
+
+	<string
+		id="1110"
+		modelName="NewHero_mask"
+		value="VAGRANT|  Tempting. I can't refuse it."
+		sound="data\sounds\Speech\r5m1\r5m1_1110_nomad.ogg"
+		time="4" />
+	<string
+		id="1201"
+		modelName="Sam_mask"
+		modelSlot="1"
+		value="SAM|  Well, I am glad I was not wrong about you. "
+		sound="data\sounds\Speech\r5m1\r5m1_1201_sam.ogg"
+		time="4" />
+
+	<string
+		id="1202"
+		modelName="NewHero_mask"
+		value="VAGRANT|  That was not too difficult."
+		sound="data\sounds\Speech\r5m1\r5m1_1202_nomad.ogg"
+		time="2" />
+
+	<string
+		id="120212"
+		modelName="Sam_mask"
+		modelSlot="1"
+		value="SAM|  Here is your share in the gains. I make honest business. "
+		sound="data\sounds\Speech\r5m1\r5m1_120212_sam.ogg"
+		time="6" />
+
+	<string
+		id="1203"
+		modelName="Sam_mask"
+		modelSlot="1"
+		value="SAM|  I have got a commission right for a tough racer as you are. I know someone who does not care about my customs. "
+		sound="data\sounds\Speech\r5m1\r5m1_1203_sam.ogg"
+		time="10" />
+
+	<string
+		id="1204"
+		modelName="NewHero_mask"
+		value="VAGRANT|  You've been speeding, haven't you?!"
+		sound="data\sounds\Speech\r5m1\r5m1_1204_nomad.ogg"
+		time="2" />
+
+	<string
+		id="1205"
+		modelName="Sam_mask"
+		modelSlot="1"
+		value="SAM|  Something like that"
+		sound="data\sounds\Speech\r5m1\r5m1_1205_sam.ogg"
+		time="2" />
+
+	<string
+		id="1206"
+		modelName="NewHero_mask"
+		value="VAGRANT|  Get to the point Sam.  It's a strange custom you've got, of beating around the bush."
+		sound="data\sounds\Speech\r5m1\r5m1_1206_nomad.ogg"
+		time="5" />
+
+	<string
+		id="1207"
+		modelName="Sam_mask"
+		modelSlot="1"
+		value="SAM|   Some idiots ride across my country without my permission, shoot about and frighten farmers. Get the rascals and give them a good lesson. "
+		sound="data\sounds\Speech\r5m1\r5m1_1207_sam.ogg"
+		time="14" />
+	<string
+		id="1301"
+		modelName="r2_man"
+		modelSkin="0"
+		modelCfg="314"
+		modelSlot="1"
+		value="CHASER|  What are you doing here? Get out while you're still alive!"
+		sound="data\sounds\Speech\r5m1\r5m1_1301_persecutor.ogg"
+		time="3" />
+
+	<string
+		id="1302"
+		modelName="NewHero_mask"
+		value="VAGRANT|  You guys have trespassed private property. And I've come here expressly to give you a geography lesson. "
+		sound="data\sounds\Speech\r5m1\r5m1_1302_nomad.ogg"
+		time="10" />
+
+	<string
+		id="1303"
+		modelName="r2_man"
+		modelSkin="0"
+		modelCfg="314"
+		modelSlot="1"
+		value="CHASER|  We pursueing the thief who robbed the Treasury of World Order, and you'd better not bother us, if you don't want to get a bullet in your head."
+		sound="data\sounds\Speech\r5m1\r5m1_1303_persecutor.ogg"
+		time="7" />
+
+	<string
+		id="1304"
+		modelName="NewHero_mask"
+		value="VAGRANT|  I hope you guys will forgive me for interrupting.  "
+		sound="data\sounds\Speech\r5m1\r5m1_1304_nomad.ogg"
+		time="4" />
+	<string
+		id="1401"
+		modelName="Man_mask"
+		modelSkin="0"
+		modelCfg="148"
+		modelSlot="1"
+		value="THIEF|  Thank you for your help buddy. And now, farewell!"
+		sound="data\sounds\Speech\r5m1\r5m1_1401_thief.ogg"
+		time="5" />
+
+	<string
+		id="1402"
+		modelName="NewHero_mask"
+		value="VAGRANT|  Wait, wait. What's the hurry. Who are you? Who are the blocks, and what are you doing here?"
+		sound="data\sounds\Speech\r5m1\r5m1_1402_nomad.ogg"
+		time="8" />
+
+	<string
+		id="1403"
+		modelName="Man_mask"
+		modelSkin="0"
+		modelCfg="148"
+		modelSlot="1"
+		value="THIEF|  These guys are the bandits who wanted to rob me."
+		sound="data\sounds\Speech\r5m1\r5m1_1403_thief.ogg"
+		time="4" />
+
+	<string
+		id="1404"
+		modelName="NewHero_mask"
+		value="VAGRANT|  You don't say so! And they told us that you were the thief. Won't you show us what's in your trunk?"
+		sound="data\sounds\Speech\r5m1\r5m1_1404_nomad.ogg"
+		time="9" />
+
+	<string
+		id="1405"
+		modelName="Man_mask"
+		modelSkin="0"
+		modelCfg="148"
+		modelSlot="1"
+		value="THIEF|  What's next? You'd better calm down, fella. Otherwise I can forget that you helped me. Generally, I could cope with that on my own. So you'd better go."
+		sound="data\sounds\Speech\r5m1\r5m1_1405_thief.ogg"
+		time="16" />
+
+	<string
+		id="1406"
+		modelName="NewHero_mask"
+		value="VAGRANT|  You are not so polite, are you? Well, then I'll have to teach you good manners."
+		sound="data\sounds\Speech\r5m1\r5m1_1406_nomad.ogg"
+		time="7" />
+	<string
+		id="1601"
+		modelName="NewHero_mask"
+		value="VAGRANT|  I hope this thing is worth the ammunition I've wasted on getting it.   I wonder what it is. I guess, Sam will make it out."
+		sound="data\sounds\Speech\r5m1\r5m1_1601_nomad.ogg"
+		time="11" />
+	<string
+		id="1701"
+		modelName="NewHero_mask"
+		value="VAGRANT|  Hello, Sam. I have finished off all who dared trespass the border."
+		sound="data\sounds\Speech\r5m1\r5m1_1701_nomad.ogg"
+		time="5" />
+
+	<string
+		id="1702"
+		modelName="Sam_mask"
+		modelSlot="1"
+		value="SAM|  Well done! Did you occasionally find out who were the idiots?"
+		sound="data\sounds\Speech\r5m1\r5m1_1702_sam.ogg"
+		time="6" />
+
+	<string
+		id="1703"
+		modelName="NewHero_mask"
+		value="VAGRANT|  They claimed they were from the World Order gang. They pursued a thief."
+		sound="data\sounds\Speech\r5m1\r5m1_1703_nomad.ogg"
+		time="6" />
+
+	<string
+		id="1704"
+		modelName="Sam_mask"
+		modelSlot="1"
+		value="SAM|  You could not catch the thief, could you?"
+		sound="data\sounds\Speech\r5m1\r5m1_1704_sam.ogg"
+		time="3" />
+
+	<string
+		id="1705"
+		modelName="NewHero_mask"
+		value="VAGRANT|  You hurt me man. No one can get away from me. I shot down both the thief and the chasers. I found this odd scroll in the thief's things. I have no slightest idea what it is."
+		sound="data\sounds\Speech\r5m1\r5m1_1705_nomad.ogg"
+		time="13" />
+
+	<string
+		id="1706"
+		modelName="Sam_mask"
+		modelSlot="1"
+		value="SAM|  This is a medium my friend. To read it, you will need a special device."
+		sound="data\sounds\Speech\r5m1\r5m1_1706_sam.ogg"
+		time="8" />
+
+	<string
+		id="1707"
+		modelName="NewHero_mask"
+		value="VAGRANT|  And what's in it?"
+		sound="data\sounds\Speech\r5m1\r5m1_1707_nomad.ogg"
+		time="2" />
+
+	<string
+		id="1708"
+		modelName="Sam_mask"
+		modelSlot="1"
+		value="SAM|  Now we'll see."
+		sound="data\sounds\Speech\r5m1\r5m1_1708_sam.ogg"
+		time="2" />
+
+	<string
+		id="1801"
+		modelName="Sam_mask"
+		modelSlot="1"
+		value="SAM|  Vagrant, you are a genius! You are a hero!!! You do not even imagine how valuable the information you've brought to me is! We have just witnessed the effect of the super powerful weapon! This weapon ought to be mine. Understand it? "
+		sound="data\sounds\Speech\r5m1\r5m1_1801_sam.ogg"
+		time="22" />
+
+	<string
+		id="180112"
+		modelName="Sam_mask"
+		modelSlot="1"
+		value="SAM|  I do not want anybody else to learn about the finding. You must get to the World Order and procure more of the scrolls. They will surely contain the information on how to get the weapon, where it is kept and what it is like."
+		sound="data\sounds\Speech\r5m1\r5m1_180112_sam.ogg"
+		time="20" />                   
+
+	<string
+		id="1802"
+		modelName="NewHero_mask"
+		value="VAGRANT|  Sam, this weapon could have disappeared ages and ages ago"
+		sound="data\sounds\Speech\r5m1\r5m1_1802_nomad.ogg"
+		time="4" />
+
+	<string
+		id="1803"
+		modelName="Sam_mask"
+		modelSlot="1"
+		value="SAM|  Believe me, it exists. No one would ever arrange chase for a little thief who stole something of no significance."
+		sound="data\sounds\Speech\r5m1\r5m1_1803_sam.ogg"
+		time="9" />
+
+	<string
+		id="1804"
+		modelName="NewHero_mask"
+		value="VAGRANT|  Well that sounds logic. But I have never been there. Where and what shall I look for?"
+		sound="data\sounds\Speech\r5m1\r5m1_1804_nomad.ogg"
+		time="6" />
+
+	<string
+		id="1805"
+		modelName="Sam_mask"
+		modelSlot="1"
+		value="SAM|  Vagrant, you are smart enough to find the scrolls. I believe in you."
+		sound="data\sounds\Speech\r5m1\r5m1_1805_sam.ogg"
+		time="8" />
+
+	<string
+		id="1806"
+		modelName="NewHero_mask"
+		value="VAGRANT|  OK. You have persuaded me."
+		sound="data\sounds\Speech\r5m1\r5m1_1806_nomad.ogg"
+		time="2" />
+	<string
+		id="3201"
+		modelName="Sam_mask"
+		modelSlot="1"
+		value="SAM|  You are right in time, my friend. Have you seen what is going on here?"
+		sound="data\sounds\Speech\r5m1\r5m1_3201_sam.ogg"
+		time="5" />
+
+	<string
+		id="3202"
+		modelName="NewHero_mask"
+		value="VAGRANT|  Yeah funny, I must say. "
+		sound="data\sounds\Speech\r5m1\r5m1_3202_nomad.ogg"
+		time="4" />
+
+	<string
+		id="3203"
+		modelName="Sam_mask"
+		modelSlot="1"
+		value="SAM|  Our ammunition comes to an end."
+		sound="data\sounds\Speech\r5m1\r5m1_3203_sam.ogg"
+		time="3" />
+
+	<string
+		id="3204"
+		modelName="NewHero_mask"
+		value="VAGRANT|  Am i right to assume that the boxes you sent me for are now of no importance?"
+		sound="data\sounds\Speech\r5m1\r5m1_3204_nomad.ogg"
+		time="6" />
+
+	<string
+		id="3205"
+		modelName="Sam_mask"
+		modelSlot="1"
+		value="SAM|  Did you procure them? But this is our chance to survive! "
+		sound="data\sounds\Speech\r5m1\r5m1_3205_sam.ogg"
+		time="5" />
+
+	<string
+		id="3206"
+		modelName="NewHero_mask"
+		value="VAGRANT|  I don't see how they can help us?"
+		sound="data\sounds\Speech\r5m1\r5m1_3206_nomad.ogg"
+		time="3" />
+
+	<string
+		id="3207"
+		modelName="Sam_mask"
+		modelSlot="1"
+		value="SAM|  What is unclear about them? These films indicate the location of the Ancients' superweapon. As soon as we get it, we will destroy all the robots."
+		sound="data\sounds\Speech\r5m1\r5m1_3207_sam.ogg"
+		time="12" />
+
+	<string
+		id="3208"
+		modelName="NewHero_mask"
+		value="VAGRANT|  And how can we get to Le Canada? Robots have blockaded all the roads! "
+		sound="data\sounds\Speech\r5m1\r5m1_3208_nomad.ogg"
+		time="5" />
+
+	<string
+		id="3209"
+		modelName="Sam_mask"
+		modelSlot="1"
+		value="SAM|  We'll make it. I have not used all of my resources. Follow me, I'll show you something. "
+		sound="data\sounds\Speech\r5m1\r5m1_3209_sam.ogg"
+		time="8" />
+	<string
+		id="3301"
+		modelName="NewHero_mask"
+		value="VAGRANT|  What a heap."
+		sound="data\sounds\Speech\r5m1\r5m1_3301_nomad.ogg"
+		time="2" />
+
+	<string
+		id="3302"
+		modelName="Sam_mask"
+		modelSlot="1"
+		value="SAM|  This is a tank. It is the most powerful machine for hundred miles around. Shoot the robots and I will control the process. "
+		sound="data\sounds\Speech\r5m1\r5m1_3302_sam.ogg"
+		time="10" />
+
+	<string
+		id="3303"
+		modelName="NewHero_mask"
+		value="VAGRANT|  Well-well-well."
+		sound="data\sounds\Speech\r5m1\r5m1_3303_nomad.ogg"
+		time="2" />
+	<string
+		id="3401"
+		modelName="NewHero_mask"
+		value="VAGRANT|  It looks like our powerful weapon is through now ..."
+		sound="data\sounds\Speech\r5m1\r5m1_3401_nomad.ogg"
+		time="3" />
+
+	<string
+		id="3402"
+		modelName="Sam_mask"
+		modelSlot="1"
+		value="SAM|  Well, rest in piece, our iron friend. You have rendered an inestimable service to us. And we shall cross the bridge in traditional vehicles."
+		sound="data\sounds\Speech\r5m1\r5m1_3402_sam.ogg"
+		time="14" />
+	<string
+		id="5301"
+		modelName="NewHero_mask"
+		value="VAGRANT|  Hey Sammy! You didnt forget about me, did you?"
+		sound="data\sounds\Speech\r5m1\r5m1_5301_nomad.ogg"
+		time="3" />
+
+	<string
+		id="5302"
+		modelName="Sam_mask"
+		modelSlot="1"
+		value="SAM|  No, Vagrant! I remember you well. I am surprised you are alive!"
+		sound="data\sounds\Speech\r5m1\r5m1_5302_sam.ogg"
+		time="7" />
+
+	<string
+		id="5303"
+		modelName="NewHero_mask"
+		value="VAGRANT|  That's not to your credit! Was it not you who advised Oracle's Emissary to kill me? You are a mean traitor Sam! We all trusted you! And you..."
+		sound="data\sounds\Speech\r5m1\r5m1_5303_nomad.ogg"
+		time="11" />
+
+	<string
+		id="5304"
+		modelName="Sam_mask"
+		modelSlot="1"
+		value="SAM|  Leave this slobbery conversation! Friendship! Betrayal! Bullshit! The only thing that matters in this world is power and strength. Since I have got them both, you would better get out of my way, friend."
+		sound="data\sounds\Speech\r5m1\r5m1_5304_sam.ogg"
+		time="18" />
+
+	<string
+		id="5305"
+		modelName="NewHero_mask"
+		value="VAGRANT|  Really? See what a crankshaft we got here! Not too much strength for you? You won't burst, will you? "
+		sound="data\sounds\Speech\r5m1\r5m1_5305_nomad.ogg"
+		time="6" />
+
+	<string
+		id="5306"
+		modelName="Sam_mask"
+		modelSlot="1"
+		value="SAM|  Get ready to die! "
+		sound="data\sounds\Speech\r5m1\r5m1_5306_sam.ogg"
+		time="3" />
+	<string
+		id="5401"
+		modelName="NewHero_mask"
+		value="VAGRANT|  The army of robots that had no reinforcements was gradually destroyed by humans."
+		sound="data\sounds\Speech\r5m1\r5m1_5401_nomad.ogg"
+		time="5" />
+
+	<string
+		id="5402"
+		modelName="NewHero_mask"
+		value="VAGRANT|  We don't care about Oracles or their Emissaries anymore. I had to take Sam's place."
+		sound="data\sounds\Speech\r5m1\r5m1_5402_nomad.ogg"
+		time="7" />
+
+	<string
+		id="5403"
+		modelName="NewHero_mask"
+		value="VAGRANT|  I'm sure this isn't Edmonton, but it will do. I did not find my dream, but it could be worse."
+		sound="data\sounds\Speech\r5m1\r5m1_5403_nomad.ogg"
+		time="8" />
+	<string
+		id="6001"
+		modelName="NewHero_mask"
+		value="VAGRANT|  Hey Sam! You didn't forget about me, did you?"
+		sound="data\sounds\Speech\r5m1\r5m1_6001_nomad.ogg"
+		time="3" />
+
+	<string
+		id="6002"
+		modelName="Sam_mask"
+		modelSlot="1"
+		value="SAM|  No, Vagrant! I remember you well. I am glad you are alive!  "
+		sound="data\sounds\Speech\r5m1\r5m1_6002_sam.ogg"
+		time="7" />
+
+	<string
+		id="6003"
+		modelName="NewHero_mask"
+		value="VAGRANT|  That's not to your credit, Sam! Was it not you who advised Oracle's Emissary to kill me? You are a mean traitor Sam! We all trusted you! And you..."
+		sound="data\sounds\Speech\r5m1\r5m1_6003_nomad.ogg"
+		time="11" />
+
+	<string
+		id="6004"
+		modelName="Sam_mask"
+		modelSlot="1"
+		value="SAM|  Stop shouting out. I'd better try to think logical. I have got an offer that you won't refuse."
+		sound="data\sounds\Speech\r5m1\r5m1_6004_sam.ogg"
+		time="10" />
+
+	<string
+		id="6005"
+		modelName="NewHero_mask"
+		value="VAGRANT|  Speak but speak fast, because my finger on the trigger is cramping up. It looks like I' m going to shoot. "
+		sound="data\sounds\Speech\r5m1\r5m1_6005_nomad.ogg"
+		time="8" />
+
+	<string
+		id="6006"
+		modelName="Sam_mask"
+		modelSlot="1"
+		value="SAM|  Calm down buddy. The whole world can be at our disposal. My knowledge together with you fighting skills and purposefulness can bring us to excellent results! If you understand what I mean ..."
+		sound="data\sounds\Speech\r5m1\r5m1_6006_sam.ogg"
+		time="18" />
+
+	<string
+		id="6101"
+		modelName="NewHero_mask"
+		value="VAGRANT|  The army of robots that had no reinforcements was gradually destroyed by humans."
+		sound="data\sounds\Speech\r5m1\r5m1_6101_nomad.ogg"
+		time="5" />
+
+	<string
+		id="6102"
+		modelName="NewHero_mask"
+		value="VAGRANT|  I did not find my dream, but it could be worse."
+		sound="data\sounds\Speech\r5m1\r5m1_6102_nomad.ogg"
+		time="5" />
+
+	<string
+		id="6103"
+		modelName="Sam_mask"
+		modelSlot="1"
+		value="SAM|  Edmonton, Edmonton... The entire continent is at our disposal. The only thing is to go and take it."
+		sound="data\sounds\Speech\r5m1\r5m1_6103_sam.ogg"
+		time="10" />
+
+	<string
+		id="8801"
+		value="Do you want to leave this area?"
+		numButtons="2" />
+
+	<string
+		id="8802"
+		modelName="NewHero_mask"
+		value="VAGRANT|  I do not know where the road leads to. That is why I am staying here."
+		sound="data\sounds\Speech\r5m1\r5m1_8802_nomad.ogg"
+		time="5" />
+
+	<string
+		id="8803"
+		modelName="NewHero_mask"
+		value="VAGRANT|  The place looks weird. We'd better get away from here."
+		sound="data\sounds\Speech\r5m1\r5m1_8802_nomad.ogg"
+		time="5" />
+
+	<string
+		id="8804"
+		value="You loose the race. Without winner's prize there is no use to return to Sam.| Try once again."
+		numButtons="1" />
+
+	<string
+		id="8805"
+		value="You leave the city without defence. Army of robots has destroied it."
+		numButtons="1" />
+
+	<string
+		id="8806"
+		value="Sam disappeared in the unknown direction. You have lost."
+		numButtons="1" />
+
+	<string
+		id="9001"
+		value="Collection books - 1 of 10."
+		numButtons="1" />
+
+	<string
+		id="9002"
+		value="Collection books - 2 of 10."
+		numButtons="1" />
+
+	<string
+		id="9003"
+		value="Collection books - 3 of 10."
+		numButtons="1" />
+
+	<string
+		id="9004"
+		value="Collection books - 4 of 10."
+		numButtons="1" />
+
+	<string
+		id="9005"
+		value="Collection books - 5 of 10."
+		numButtons="1" />
+
+	<string
+		id="9006"
+		value="Collection books - 6 of 10."
+		numButtons="1" />
+
+	<string
+		id="9007"
+		value="Collection books - 7 of 10."
+		numButtons="1" />
+
+	<string
+		id="9008"
+		value="Collection books - 8 of 10."
+		numButtons="1" />
+
+	<string
+		id="9009"
+		value="Collection books - 9 of 10."
+		numButtons="1" />
+
+	<string
+		id="9010"
+		value="Collection books - 10 of 10!|Access to an additional map has opened."
+		numButtons="1" />
+</resource>
