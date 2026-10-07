@@ -1279,6 +1279,65 @@ static void FillGlyph(void* g, uint16_t gbk, int page,
 }
 
 // ═══════════════════════════════════════════════════════════════════════════
+// 就近采纳：计划外字号的运行期兜底（2026-10-08）
+// ═══════════════════════════════════════════════════════════════════════════
+//
+// ★ 为什么要这个 ★
+//   引擎会在**运行期**造出 fonts.xml 里根本不存在的字号。实测证据：
+//     失败机日志 [16.922] 与 [14.102] 被跳过，
+//     而它自己那份 fonts.xml 里真实字号只有 7.813~18.750 十档。
+//     16.922/15.000 = 1.12813，14.102/12.500 = 1.12816 ——
+//   两个比值精确一致到小数点后第 4 位 ⇒ 是按渲染分辨率整体放大出来的。
+//   包文件是照 fonts.xml 烘的，自然没有这两档；三处精确匹配全部 si<0
+//   ⇒ 该字号一个汉字都没有 ⇒ 界面整块回退英文。
+//
+//   在用户这一侧改 fonts.xml + 重烘字库只能治这一台；引擎换个分辨率
+//   又会变出第三、第四个字号。**所以兜底必须做在运行期。**
+//
+// ★ 做法 ★
+//   借用几何上最接近的那档图集，并把方块字的宽/高/推进按
+//       ratio = 目标高度 / 采纳档高度
+//   缩放。这两件事之所以能拆开，是因为：
+//     · 字形**位图**由 uv 决定（u0/v0/u1/v1 指向图集那一格）⇒ 不缩放；
+//     · pxW / pxH / advance 是我们在 FillGlyph 里**单独写的浮点数**
+//       ⇒ 按比例缩放。
+//   结果：**字高是精确的**，代价只是位图被重采样（放大略糊 / 缩小略锐）。
+//   对比原来"该字号一个汉字都没有"，这是净收益。
+//
+// ★ 内存开销：零 ★
+//   每槽 256KB 表 + ~106KB 字形，与"这一档是不是包里烘出来的"无关；
+//   采纳邻近档不额外占槽、不额外占字形池。
+//
+// ★ 为什么不用含析构的 C++ 对象 ★
+//   它被 FillCjk → ProcessFont → SafeProcessFont 这条 __try 路径调用，
+//   带析构语义的对象会触发 C2712。SizePick 是 POD，全程只碰 g_pkg。
+struct SizePick {
+    int   si;      // 采纳的包内字号序号；-1 = 没有可接受的档位
+    float ratio;   // 目标高度 / 采纳档高度；1.0 = 精确命中
+};
+// 相对偏差上限。实测最大偏差 9.8%（16.922 借 18.750），留一倍余量。
+// 超出就不采纳：那种档位位图糊到没法看，宁可让它降级为英文，
+// 也不要让用户对着一坨马赛克。
+static const float kAdoptTol = 0.20f;
+
+static SizePick PickSize(float h) {
+    SizePick r; r.si = -1; r.ratio = 1.0f;
+    if (h <= 0.0f || !g_pkg.loaded || g_pkg.sizes.empty()) return r;
+    float bestRel = 1e9f;
+    for (size_t k = 0; k < g_pkg.sizes.size(); ++k) {
+        const Package::SizeRec& s = g_pkg.sizes[k];
+        if (s.height <= 0.0f) continue;
+        // 相对差用两者中较大者作分母 ⇒ 放大/缩小两个方向对称
+        float base = (h > s.height) ? h : s.height;
+        float rel  = fabsf(s.height - h) / base;
+        if (rel < bestRel) { bestRel = rel; r.si = (int)k; }
+    }
+    if (r.si < 0 || bestRel > kAdoptTol) { r.si = -1; r.ratio = 1.0f; return r; }
+    r.ratio = h / g_pkg.sizes[r.si].height;
+    return r;
+}
+
+// ═══════════════════════════════════════════════════════════════════════════
 // 3) 表扩展 / 页挂载 / 汉字填充
 // ═══════════════════════════════════════════════════════════════════════════
 static const int    kTableEntries = 0x10000;   // 65536
@@ -1521,16 +1580,27 @@ static int FillCjk(void* font, float h, int basePage) {
     LONG slot = CjkSlotFor(font);
     g_cjkSlots[slot].ready = 0;              // 正在填，先别让绘制线程读半成品
 
-    // 找匹配的字号记录
-    const Package::SizeRec* rec = nullptr;
-    for (auto& s : g_pkg.sizes)
-        if (fabsf(s.height - h) < 0.01f) { rec = &s; break; }
+    // 找匹配的字号记录。
+    // ★ 就近采纳（2026-10-08）★
+    //   运行期可能出现包里没有的字号（实测 14.102 / 16.922，见 PickSize 注释）。
+    //   这里必须与 PrepareCJK / PathD_RescanOnce **用同一个 PickSize**，
+    //   否则两处选出不同的 si ⇒位图与度量来自不同档位⇒字形尺寸错乱。
+    SizePick pk = PickSize(h);
+    const Package::SizeRec* rec = (pk.si >= 0) ? &g_pkg.sizes[pk.si] : nullptr;
     if (!rec) { Logf("pathd: [%7.3f] 包文件里没有这个字号，跳过汉字填充", h); return 0; }
+    if (fabsf(pk.ratio - 1.0f) > 0.005f) {
+        Logf("pathd: [%7.3f] ★计划外字号★ 采纳 %.3f 档图集（%.1f%%，%s）",
+             h, rec->height, fabsf(pk.ratio - 1.0f) * 100.0f,
+             pk.ratio > 1.0f ? "位图放大" : "位图缩小");
+    }
 
     const float PW = (float)g_pkg.pageW, PH = (float)g_pkg.pageH;
     const uint32_t cols = rec->cols, perPage = rec->cellsPerPage;
     const uint32_t cw = rec->cellW, chh = rec->cellH;
-    float adv = (float)cw;               // 汉字等宽推进 = 单元宽
+    // ★ 这里 **绝不** 乘 pk.ratio ★
+    //   cw/chh 是**图集那一格的固有尺寸**，用来算 uv；它是位图属性，
+    //   不该被目标字号影响。乘了会导致采样窗口错位、串到相邻格。
+    float adv = (float)cw * pk.ratio;   // 汉字等宽推进：按目标字号缩放
 
     int n = 0;
     // ★ 丢弃分类计数（2026-10-07）：解释"填充数 < 包内字形数"的差额
@@ -1569,7 +1639,10 @@ static int FillCjk(void* font, float h, int basePage) {
 
         float u0 = (col * cw) / PW,          v0 = (row * chh) / PH;
         float u1 = ((col + 1) * cw) / PW,    v1 = ((row + 1) * chh) / PH;
-        float pxW = (float)cw, pxH = (float)chh;
+        // uv 用图集固有格尺寸 cw/chh（未缩放），因为要精确框住那一格；
+        // pxW/pxH/adv 才是"这个字画多大"，按 pk.ratio 缩放到目标字号。
+        float pxW = (float)cw  * pk.ratio;
+        float pxH = (float)chh * pk.ratio;
 
         void* g = AllocGlyph();
         if (!g) { ++nAllocFail; continue; }   // ★ 不再静默丢字（见下方汇总日志）
@@ -2143,11 +2216,17 @@ static int PathD_AssembleAll(const char* why) {
         fr.height = FontHeight(fr.font);   // ★ 重新读
         if (fr.height >= kCjkBase) continue;
         {
-            // 该字号在包文件里的序号
-            int si = -1;
-            for (size_t k = 0; k < g_pkg.sizes.size(); ++k)
-                if (fabsf(g_pkg.sizes[k].height - fr.height) < 0.01f) { si = (int)k; break; }
+            // 该字号在包文件里的序号。
+            // ★ 就近采纳（2026-10-08）★：允许借用几何上最接近的档位，
+            //   并与 FillCjk 共用同一个 PickSize（否则两处选档不一致会错位）。
+            SizePick pk = PickSize(fr.height);
+            int si = pk.si;
             if (si < 0) { Logf("pathd: [%7.3f] 包文件里没有这个字号，跳过", fr.height); continue; }
+            if (fabsf(pk.ratio - 1.0f) > 0.005f) {
+                Logf("pathd: [%7.3f] 借用 %.3f 档（%.1f%%，%s）", fr.height,
+                     g_pkg.sizes[si].height, fabsf(pk.ratio - 1.0f) * 100.0f,
+                     pk.ratio > 1.0f ? "放大" : "缩小");
+            }
             if (si >= (int)pagesBySize.size() || pagesBySize[si].empty()) {
                 Logf("pathd: [%7.3f] 字号序号 %d 没有对应的 CJK 页，跳过", fr.height, si);
                 continue;
@@ -2258,10 +2337,9 @@ static void PathD_RescanOnce(const char* why) {
         if (fr.height >= kCjkBase || fr.height <= 0.0f) continue;   // CJK 页 / 非法
         if (CjkSlotFor(fr.font) >= 0) continue;                     // ★ 已登记，幂等 ★
 
-        int si = -1;
-        for (size_t k = 0; k < g_pkg.sizes.size(); ++k)
-            if (fabsf(g_pkg.sizes[k].height - fr.height) < 0.01f) { si = (int)k; break; }
-        if (si < 0) continue;                       // 新字号，包文件没有 → 不处理
+        SizePick pk = PickSize(fr.height);
+        int si = pk.si;
+        if (si < 0) continue;                       // 没有可接受档位 → 不处理
         if (si >= (int)pagesBySize.size() || pagesBySize[si].empty()) continue;
         if (g_cjkSlotCount >= MAX_CJK_TABLES) {
             Logf("pathd: [补装配%u] 槽已满(%d/%d)，放弃剩下的新字体",
