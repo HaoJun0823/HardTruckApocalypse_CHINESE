@@ -9,11 +9,15 @@
 
 | 文档 | 内容 | 状态 |
 |---|---|---|
+| [资料片 113 汉化移植与 LAA 崩溃修复](2026-10-08-资料片113汉化移植与LAA崩溃修复.md) | Meridian113.exe 与 hta.exe 的全部锚点差异（多 0x60 字节 / 预扫寄存器 edi→esi / Kernel 偏移 +0x18→+0x30）、LAA 崩溃的 dump 栈回溯取证、`DLC1_MemFix` 的**两个实现陷阱**（池太小 + 泄漏原块） | ✅ 已实机验证 |
 | [LAA 内存扩展崩溃：根因与 Render9Fix](2026-10-07-LAA内存扩展崩溃-根因与Render9Fix.md) | hta.exe 开 LAA 后进世界崩在 `dxrender9+0x416D6` 的完整取证链、排除的假设、静态验证（IDA）、修复与实机验证 | ✅ 已修复并验证 |
 | [汉化冻结门：时序失败根因与修复](2026-10-07-汉化冻结门时序失败-根因与修复.md) | 失败对话框乱码 + "冷启动正常/热重启失效"的两个时序竞态（F1/F2）、三处修复、3 次连续验证 | ✅ 已修复并验证 |
 | [PATH_D_DESIGN.md](../PATH_D_DESIGN.md) | 路径 D 总设计：让单字节渲染引擎显示 GBK 双字节汉字（字形索引拓宽到 16 位） | ✅ 已实机验证 |
-| [HardTruckApocalypse_CHINESE_DLL/README.md](../HardTruckApocalypse_CHINESE_DLL/README.md) | 汉化插件（`hta_chs.asi`）实现细节 | — |
-| [Render9Fix/README.md](../Render9Fix/README.md) | 崩溃修复插件（`Render9Fix.asi`）设计、安全设计、配置、日志判读 | — |
+| [HardTruckApocalypse_CHINESE_DLL/README.md](../HardTruckApocalypse_CHINESE_DLL/README.md) | 汉化插件（`hta_chs.asi`）实现细节 —— 本体 hta.exe |
+| [HardTruckApocalypse_CHINESE_DLL_DLC1/README.md](../HardTruckApocalypse_CHINESE_DLL_DLC1/README.md) | 汉化插件（`hta_chs_dlc1.asi`）实现细节 —— 资料片 Meridian113.exe |
+| [DLC1_MemFix/](../DLC1_MemFix/) | 资料片的内存修复插件（`DLC1_MemFix.asi`）源码 |
+| [Render9Fix/README.md](../Render9Fix/README.md) | 崩溃修复插件（`Render9Fix.asi`）设计、安全设计、配置、日志判读 |
+| [dist_dlc1/README.md](../dist_dlc1/README.md) | 资料片汉化的交付包：每个文件放哪、怎么装/卸 |
 
 截图在 [screenshots/](screenshots/)。
 

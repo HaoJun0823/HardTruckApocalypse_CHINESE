@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?><!-- edited with XML Spy v4.2 U (http://www.xmlspy.com) by Morgoth (Targem) -->
+<resource>
+	<string
+		id="MsgQuestTaken"
+		value="ТСЅУКЬИООс %1s" />
+
+	<string
+		id="MsgQuestFailed"
+		value="ИООс %1s К§°Ь" />
+
+	<string
+		id="MsgQuestCompleted"
+		value="ИООс %1s ТСНкіЙ" />
+</resource>

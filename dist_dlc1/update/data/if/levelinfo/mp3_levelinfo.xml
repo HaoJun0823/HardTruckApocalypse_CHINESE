@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<LevelInfoResource>
+	<LevelInfo
+		name="mp3"
+		file="data\maps\mp3.ssl"
+		fullName="РВѕєјјіЎ"
+		diz0="НвРЗИЛИФФЪіЦРш№ЫІмЧЕµШЗтЎЈФЪ±ЈБфµШАпЈ¬АґЧФКАЅзёчµШЧоІРИМКИСЄµД¶·КїОЄБЛИЎФГНвРЗИлЗЦХЯ¶ш»ҐПаШЛЙ±ЎЈµ«ХвЦЦИХЧУі¤І»БЛЎЄЎЄіЩФз»бУР¶Ґјв¶·Кї±»јУГбОЄ№ЪѕьЈ¬ХѕµЅNeriГжЗ°ЎЈµЅК±єтЈ¬ѕНёГВЦµЅЛыГЗБЛЈЎ"
+		diz1=""
+		image0=""
+		image1=""
+		imageDescr="data\if\ico\MPMapDesc\desc_mp3.dds"
+		multiplayer="1"
+		splashes="data\if\ico\Splashes\Loading_mp3.dds"
+		musicBlocks="custom" />
+</LevelInfoResource>

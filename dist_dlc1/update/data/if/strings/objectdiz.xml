@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<resource>
+	<string
+		id="r5m1_TheTownBigHead_diz"
+		value="їїµБ·Л»о¶ЇЎў¶ДІ©єНУлБЪЅьґеЧЇµДГіТЧО¬ЙъµДґуіЗКРЎЈ" />
+
+	<string
+		id="r5m1_TheKonneks_diz"
+		value="іэБЛДЗёцДСДоµДГыЧЦЈ¬ХвЧщіЗКРФЩГ»КІГґЦµµГТ»МбµДМШЙ«ЎЈ" />
+
+	<string
+		id="r5m1_TheTownMichikar_diz"
+		value="іЗёЅЅьУРИьіµіЎЈ¬К±іЈѕЩ°м±ИИьЎЈ" />
+
+	<string
+		id="r5m1_ThePensilvansk_diz"
+		value="РЎРНЙМИЛґеЧЇЎЈ" />
+
+	<string
+		id="r5m1_TheApple_diz"
+		value="±»ТЕНьµДГАЦЮФ­ЧЎГс±ЈБфµШЎЈ" />
+
+	<string
+		id="r5m2_r5m2_Pervomayka_diz"
+		value="їїУл№эНщБчАЛХЯГіТЧОЄЙъµДґеЧЇЎЈ" />
+
+	<string
+		id="r5m2_r5m2_Sagevsal_diz"
+		value="ИЛїЪПЎЙЩЈ¬ґеЧЇґуІї·ЦЗшУт±»»хОпІЦївХјѕЭЎЈ" />
+
+	<string
+		id="r5m2_r5m2_Cvetograd_diz"
+		value="Е©ТµУГµШЎЈ" />
+
+	<string
+		id="r5m2_r5m2_Mexico_diz"
+		value="УЦТ»ёцРЎРНЕ©ТµґеЧЇЎЈ" />
+
+	<string
+		id="r5m2_r5m2_Vraska_diz"
+		value="УЙё»ФЈЕ©·тµДЧЎХ¬ИєЧйіЙµДґеЧЇЎЈ" />
+
+	<string
+		id="r5m2_TheOneEyeBase_diz"
+		value="ґуРНЗТДСТФ№ҐПЭµДіЗКРЎЈ" />
+
+	<string
+		id="r6m1_r6m1_Lost_diz"
+		value="їЄБСµД UFO ЕФµДЖжТмѕЫѕУµШЎЈ" />
+
+	<string
+		id="r6m1_r6m1_Real_diz"
+		value="УлКАёфѕшµДРЎЖЖХтЎЈ" />
+
+	<string
+		id="r6m1_r6m1_Onto_diz"
+		value="µ±µШѕУГсµДЙМИЛѕЫѕУµШЎЈ" />
+
+	<string
+		id="r6m1_r6m1_Lodon_diz"
+		value="№¤і§О¬»¤ИЛФ±µДБЩК±ѕУЛщЎЈ" />
+
+	<string
+		id="r6m1_theTownMapleSheet_diz"
+		value="ЦРµИ№жДЈµДіЗКРЎЈ" />
+
+	<string
+		id="r6m2_r6m1_Vaypeg_diz"
+		value="іЗЗЅјб№МЈ¬ДЬФЪПВТ»ІЁ»ъЖчИЛЅш№ҐЦРРТґжµДіЗХтЎЈ" />
+
+	<string
+		id="r6m2_r6m1_Tander_diz"
+		value="УЕФЅµДµШАнО»ЦГКЗХвЧщіЗКРГвФв»ъЖчИЛі№µЧ»ЩГрµДОЁТ»Ф­ТтЎЈ" />
+
+	<string
+		id="r6m2_r6m1_Gradofaks_diz"
+		value="Е¬Б¦ЗуЙъµДРЎРНѕЫѕУµШЎЈ" />
+
+	<string
+		id="r6m2_r6m1_Bey_diz"
+		value="ј«РЎµДґеЧЇЎЈ" />
+
+	<string
+		id="r6m2_r6m1_Kanata_diz"
+		value="ГЬБЦЅ«ХвЧщРЎХтІШФЪД°ЙъИЛКУПЯЦ®НвЎЈ" />
+
+	<string
+		id="r5m1_PetrolStationTown1_diz"
+		value="јУУНХѕЎЈФЪХвАпїЙТФјУУНєНРЮАнЎЈ" />
+
+	<string
+		id="r5m1_PetrolStationTown2_diz"
+		value="јУУНХѕЎЈФЪХвАпїЙТФјУУНєНРЮАнЎЈ" />
+
+	<string
+		id="r5m1_ToR5M2_diz"
+		value="НЁНщКЇУНЙ­БЦµДµАВ·ЎЈ" />
+
+	<string
+		id="r5m1_ToR6M1_diz"
+		value="№эЗЕµДµАВ·ЎЈ" />
+
+	<string
+		id="r5m2_r5m2_PetrolStation1_diz"
+		value="јУУНХѕЎЈФЪХвАпїЙТФјУУНєНРЮАнЎЈ" />
+
+	<string
+		id="r5m2_ToR5M1_diz"
+		value="НЁНщИшД·Ц®µШµДµАВ·ЎЈ" />
+
+	<string
+		id="r5m2_ToR6M2_diz"
+		value="°Ъ¶ЙµЅ¶Ф°¶ЎЈ" />
+
+	<string
+		id="r6m1_PetrolStationTown2_diz"
+		value="јУУНХѕЎЈФЪХвАпїЙТФјУУНєНРЮАнЎЈ" />
+
+	<string
+		id="r6m1_PetrolStationTown7_diz"
+		value="јУУНХѕЎЈФЪХвАпїЙТФјУУНєНРЮАнЎЈ" />
+
+	<string
+		id="r6m1_PetrolStationTown9_diz"
+		value="јУУНХѕЎЈФЪХвАпїЙТФјУУНєНРЮАнЎЈ" />
+
+	<string
+		id="r6m1_PetrolStationTown10_diz"
+		value="јУУНХѕЎЈФЪХвАпїЙТФјУУНєНРЮАнЎЈ" />
+
+	<string
+		id="r6m1_ToR5M1_diz"
+		value="№эЗЕµДµАВ·ЎЈ" />
+
+	<string
+		id="r6m1_ToR6M2_diz"
+		value="НЁНщ»ъРµґФБЦµДµАВ·ЎЈ" />
+
+	<string
+		id="r6m2_PetrolStationTown1_diz"
+		value="јУУНХѕЎЈФЪХвАпїЙТФјУУНєНРЮАнЎЈ" />
+
+	<string
+		id="r6m2_PetrolStationTown2_diz"
+		value="јУУНХѕЎЈФЪХвАпїЙТФјУУНєНРЮАнЎЈ" />
+
+	<string
+		id="r6m2_ToR5M2_diz"
+		value="°Ъ¶ЙµЅ¶Ф°¶ЎЈ" />
+
+	<string
+		id="r6m2_ToR6M1_diz"
+		value="НЁНщЙъ»ъґФБЦµДµАВ·ЎЈ" />
+
+	<string
+		id="sin_PetrolStation_diz"
+		value="јУУНХѕЎЈФЪХвАпїЙТФјУУНєНРЮАнЎЈ" />
+
+	<string
+		id="sin_PetrolStation_diz"
+		value="јУУНХѕЎЈФЪХвАпїЙТФјУУНєНРЮАнЎЈ" />
+
+	<string
+		id="sin_Sin_SanRafael_diz"
+		value="КҐА­мі¶ыЎЈ" />
+
+	<string
+		id="sin_Sin_Church_diz"
+		value="іµВЦЅММГЎЈ" />
+
+	<string
+		id="sin_Sin_CatHouse_diz"
+		value="ГЁОЭЎЈ" />
+
+	<string
+		id="sin_Sin_EastIerihon_diz"
+		value="¶«Т®АпєйЎЈ" />
+
+	<string
+		id="sin_Sin_WestIerihon_diz"
+		value="ОчТ®АпєйЎЈ" />
+
+	<string
+		id="sin_Sin_DogHouse_diz"
+		value="ѕЙЕ©іЎЎЈ" />
+</resource>

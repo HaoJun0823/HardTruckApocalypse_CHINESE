@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?><!-- edited with XML Spy v4.2 U (http://www.xmlspy.com) by Morgoth (Targem) -->
+<resource><!--Default buttons-->
+	<string
+		id="fm_relation_changed"
+		value="ДгТСіЙОЄДіТ»ЕЙПµµДµРИЛЎЈ" />
+
+	<string
+		id="fm_hunt_completed_no_enemies"
+		value="бчБФЅбКшЎЈЛщУРµРИЛТС±»»чЙ±ЎЈ" />
+
+	<string
+		id="fm_hunt_completed_time_out"
+		value="бчБФЅбКшЎЈ±»ґЭ»ЩµДїЁіµѕщТСё¶ікЎЈ" />
+
+	<string
+		id="fm_dynamic_quest_completed"
+		value="ДгНкіЙБЛИООсЎё%1sЎ№" />
+
+	<string
+		id="fm_dynamic_quest_timelimit"
+		value="ИООсЎё%1sЎ№К±јдТСµЅЎЈИООсК§°ЬЎЈ" />
+
+	<string
+		id="fm_dynamic_quest_failed_because_hirer_becames_enemy"
+		value="ИООсЎё%1sЎ№К§°ЬЈ¬ТтОЄДгУлОЇНР·ЅЕЙПµµД№ШПµ¶с»ЇБЛЎЈ" />
+
+	<string
+		id="fm_convoy_failed"
+		value="ДгОґДЬ±Ј»¤їЁіµЎЈ±рЦёНыДГµЅ±ЁікБЛЎЈ" />
+
+	<string
+		id="fm_perk_given"
+		value='Дг»сµГБЛМШі¤Ўё%1sЎ№' />
+
+	<string
+		id="fm_perk_lost"
+		value='К§ИҐБЛМШі¤Ўё%1sЎ№' />
+
+	<string
+		id="fm_quest_item_given"
+		value="Дг»сµГБЛОпЖ·Јє%1s" />
+
+	<string
+		id="fm_quest_item_lost"
+		value="ОпЖ· %1s ±»ДГЧЯБЛ" />
+
+	<string
+		id="fm_history_got"
+		value="ИХЦѕµДЎёѕзЗйЎ№АёДїРВФцБЛТ»МхјЗВјЎЈ" />
+
+	<string
+		id="fm_book_got"
+		value="ИХЦѕµДЎёКйј®Ў№АёДїРВФцБЛТ»±ѕКйЎЈ" />
+
+	<string
+		id="fm_fail_quest"
+		value="ИООсК§°ЬБЛЎЈ" />
+
+	<string
+		id="fm_complete_quest"
+		value="ИООсТСНкіЙЎЈ" />
+
+	<string
+		id="fm_take_quest"
+		value="ДгУРРВИООсБЛЎЈ" />
+
+	<string
+		id="fm_cant_move"
+		value="ОТІ»ИПК¶В·Ј¬ЛщТФѕНФЪХвАпНЈБфЎЈ" />
+
+	<string
+		id="fm_not_suzet"
+		value="ХвµШ·ЅїґЧЕІ»¶ФѕўЎЈОТГЗЧоєГАлФ¶µгЎЈ" />
+
+	<string
+		id="fm_race_start_1"
+		value="µ№јЖК±ЈєЎ­%1dЎ­" />
+
+	<string
+		id="fm_race_start_0"
+		value=" іц ·ў" />
+
+	<string
+		id="fm_race_start_false"
+		value="ЗАЕЬЈЎ" />
+
+	<string
+		id="fm_race_chekpoint"
+		value="јмІйµгЈЎ" />
+
+	<string
+		id="fm_race_chekpoint_notright"
+		value="ґнОуµДјмІйµгЈЎ" />
+
+	<string
+		id="fm_race_firslap"
+		value="µЪТ»И¦НкіЙЈЎ" />
+
+	<string
+		id="fm_race_finish"
+		value="ЦХ µг" />
+
+	<string
+		id="fm_race_finish_1"
+		value="µЪТ»Гы" />
+
+	<string
+		id="fm_race_finish_2"
+		value="µЪ¶юГы" />
+
+	<string
+		id="fm_race_finish_3"
+		value="µЪИэГы" />
+
+	<string
+		id="fm_race_finish_less"
+		value="ДгµДГыґОЈєµЪ %1d ГыЈЁ№І %2d ГыЈ©" />
+
+	<string
+		id="fm_race_finish_lose"
+		value="ДгКдµфБЛ±ИИьЈЎ" />
+
+	<string
+		id="fm_race_somedie"
+		value="Т»ГыІОИьХЯіцѕЦЈЎ" />
+
+	<string
+		id="fm_town_enter"
+		value="°ґА®°ИјьЈЁ%1mЈ©ЅшИліЗХт" />
+
+	<string
+		id="fm_town_cant_enter_enemy"
+		value="ОЮ·ЁЅшИлёГіЗХтЎЈЛьКфУЪµР¶ФХуУЄЎЈ" />
+
+	<string
+		id="fm_town_cant_enter_locked"
+		value="ОЮ·ЁЅшИлёГіЗХтЎЈіЗХтТС№Ш±ХЎЈ" />
+
+	<string
+		id="fm_take_chest_hint"
+		value="°ґ %1m К°ИЎ»хОпЎЈ" />
+
+	<string
+		id="fm_all_chests_taken"
+		value="»хОпТСЧ°іµЎЈ" />
+
+	<string
+		id="fm_item_pickup"
+		value="ДгК°ИЎБЛ %1s" />
+
+	<string
+		id="fm_sunrise"
+		value="ЗеіїБЛЎЈ" />
+
+	<string
+		id="fm_day"
+		value="УЦКЗјиДСµДТ»МмЎЈ" />
+
+	<string
+		id="fm_sunset"
+		value="°шНнБЛЎЈ" />
+
+	<string
+		id="fm_night"
+		value="Т№ЙоБЛЎЈ" />
+
+	<string
+		id="fm_save_is_not_allowed"
+		value="µ±З°ОЮ·ЁґжµµЎЈ" />
+
+	<string
+		id="fm_player_add_money"
+		value="Дг»сµГБЛ %1d Ѕр±ТЈЎ" />
+
+	<string
+		id="fm_player_give_money"
+		value="ДгЦ§іцБЛ %1d Ѕр±Т" />
+
+	<string
+		id="fm_player_add_thing"
+		value="Дг»сµГБЛОпЖ·Јє%1pЈЎ" />
+
+	<string
+		id="fm_cheat_is_not_allowed"
+		value="@FF22FF22К№УГЧч±ЧВлЈє@FF2222FFЅыЦ№@FFFFFFFF" />
+
+	<string
+		id="fm_cheat_is_allowed"
+		value="@FF22FF22УОП·ІвКФДЈКЅПВЈ¬@FF2222FFК№УГЧч±ЧВлїЙДЬµјЦВґнОуЈЎ@FFFFFFFF" />
+
+	<string
+		id="fm_items_remained_on_ground"
+		value="»хІХТСВъЎЈ°ґ %1m ґтїЄОпЖ·АёЅзГжЎЈ" />
+
+	<string
+		id="fm_mp_player_killed_player"
+		value="%1s%2s »чЙ±БЛ %3s" />
+
+	<string
+		id="fm_mp_player_was_killed"
+		value="%1s%2s ХуНцБЛ" />
+</resource>

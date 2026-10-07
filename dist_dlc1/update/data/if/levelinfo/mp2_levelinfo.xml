@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<LevelInfoResource>
+	<LevelInfo
+		name="mp2"
+		file="data\maps\mp2.ssl"
+		fullName="ХдЦйёЫµє"
+		diz0="єЬѕГТФЗ°Ј¬ХвЧщµєіЙБЛјёК®ЛТґ¬Ц»µДіБГ»Ц®µШЎЈГ»ИЛЦЄµАХвТ»ЗРКЗФхГґ·ўЙъµДЎЈТІРнФЪДЗёцТЈФ¶µДДкґъЈ¬ґ¬Ц»І»ЅцФЪєЈЙПєЅРРЈ¬»№ДЬФЪєЈЙП·ЙЎЈИзЅсЛьГЗµДІРєЎФЪОЮ±ЯµДЛ®ГжЙПД¬Д¬ЙъРвЎЈµ«ГїДкТ»ґОЈ¬КАЅзЙПЧоЗїµДХЅКї¶ј»бАґµЅХвЧщіРФШЧЕФ¶№ЕИЩТ«µДµєУмХ№їЄШЛЙ±ЎЈєНґУЗ°Т»СщЈ¬У®јТНЁіФЎЈ"
+		diz1=""
+		image0=""
+		image1=""
+		imageDescr="data\if\ico\MPMapDesc\desc_mp2.dds"
+		multiplayer="1"
+		splashes="data\if\ico\Splashes\Loading_mp2.dds"
+		musicBlocks="custom" />
+</LevelInfoResource>

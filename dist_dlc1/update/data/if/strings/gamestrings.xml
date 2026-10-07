@@ -1,0 +1,1030 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?><!-- edited with XML Spy v4.2 U (http://www.xmlspy.com) by Morgoth (Targem) -->
+<resource>
+	<string
+		id="Price"
+		value="јЫёс" />
+
+	<string
+		id="BasePrice"
+		value="ѕщјЫ" />
+
+	<string
+		id="Goods"
+		value="ЙМЖ·" />
+
+	<string
+		id="Amount"
+		value="КэБї" />
+
+	<string
+		id="NotEnoughGold"
+		value="Ѕр±ТІ»Чг" />
+
+	<string
+		id="NotEnoughSpace"
+		value="ОпЖ·АёїХјдІ»Чг" />
+
+	<string
+		id="Buy"
+		value="№єВт" />
+
+	<string
+		id="Sell"
+		value="іцКЫ" />
+
+	<string
+		id="NotSellable"
+		value="@ffff0000ОЮ·ЁіцКЫ" />
+
+	<string
+		id="NotBuyable"
+		value="@ffff0000ОЮ·Ё№єВт" />
+
+	<string
+		id="NotSelledByTown"
+		value="@ff904040ёГіЗХтІ»іцКЫ" />
+
+	<string
+		id="NotBuyedByTown"
+		value="@ff904040ёГіЗХтІ»КХ№є" />
+
+	<string
+		id="WareNotSelledByTown"
+		value="ёГіЗХтІ»іцКЫґЛЦЦЙМЖ·" />
+
+	<string
+		id="WareNotBuyedByTown"
+		value="ёГіЗХтІ»КХ№єґЛЦЦЙМЖ·" />
+
+	<string
+		id="MoveVehicleItemsFromPlayer"
+		value="И«ІїЧЄТЖ" />
+
+	<string
+		id="MoveVehicleItemsToPlayer"
+		value="И«ІїИЎ»Ш" />
+
+	<string
+		id="MoveCabinItemsFromPlayer"
+		value="И«ІїЧЄТЖµЅРВјЭК»КТ" />
+
+	<string
+		id="MoveCabinItemsToPlayer"
+		value="И«ІїЧЄТЖµЅµ±З°јЭК»КТ" />
+
+	<string
+		id="MoveBasketItemsFromPlayer"
+		value="И«ІїЧЄТЖµЅРВіµПб" />
+
+	<string
+		id="MoveBasketItemsToPlayer"
+		value="И«ІїЧЄТЖµЅµ±З°іµПб" />
+
+	<string
+		id="TotalPrice"
+		value="ЧЬјЫ" />
+
+	<string
+		id="NotCompatible"
+		value="Улµ±З°іµБѕІ»јжИЭ" />
+
+	<string
+		id="TooRich"
+		value="Ѕр±ТІ»ЧгЈ¬ОЮ·ЁНкіЙЅ»ТЧ" />
+
+	<string
+		id="BuyPriceByTown"
+		value="№єВтјЫ" />
+
+	<string
+		id="SellPriceByTown"
+		value="іцКЫјЫ" />
+
+	<string
+		id="QuickSave"
+		value="їмЛЩґжµµ" />
+
+	<string
+		id="AutoSave"
+		value="ЧФ¶Їґжµµ" />
+
+	<string
+		id="GameWasSaved"
+		value="УОП·ТС±ЈґжЈє@fffed11b%1s" />
+
+	<string
+		id="GameWasLoaded"
+		value="УОП·ТС¶БИЎЈє@fffed11b%1s" />
+
+	<string
+		id="GameSaving"
+		value="±ЈґжЦР" />
+
+	<string
+		id="GameSaving..."
+		value="±ЈґжЦРЎ­" />
+
+	<string
+		id="SaveGame"
+		value="±ЈґжУОП·" />
+
+	<string
+		id="AddNavPoint"
+		value="МнјУµјєЅµгµЅАЧґп" />
+
+	<string
+		id="DeleteNavPoint"
+		value="ґУАЧґпТЖіэµјєЅµг" />
+
+	<string
+		id="ShotInMinute"
+		value="·ў/·ЦЦУ" />
+
+	<string
+		id="Minute"
+		value="·Ц" />
+
+	<string
+		id="Secunde"
+		value="Гл" />
+
+	<string
+		id="Meter"
+		value="ГЧ" />
+
+	<string
+		id="KmInSec"
+		value="№«Ап/РЎК±" />
+
+	<string
+		id="CurMax"
+		value="µ±З°/ЙППЮ" />
+
+	<string
+		id="Km"
+		value="№«Ап" />
+
+	<string
+		id="m"
+		value="ГЧ" />
+
+	<string
+		id="percent"
+		value="%" />
+
+	<string
+		id="PlayerMoney"
+		value="НжјТЅр±Т" />
+
+	<string
+		id="Money"
+		value="Ѕр±Т" />
+
+	<string
+		id="QuestItems"
+		value="ИООсОпЖ·" />
+
+	<string
+		id="Broken"
+		value="ТСЛр»µ" />
+
+	<string
+		id="NoAmmo"
+		value="µЇТ©єДѕЎ" />
+
+	<string
+		id="WeaponGroups"
+		value="ОдЖчЧй" />
+
+	<string
+		id="VehicleCharacteristics"
+		value="їЁіµІОКэ" />
+
+	<string
+		id="CBCharacteristics"
+		value="јЭК»КТУліµПбІОКэ" />
+
+	<string
+		id="NotInstalled"
+		value="Оґ°ІЧ°" />
+
+	<string
+		id="ExitCurGame"
+		value="ЅбКшµ±З°УОП·Јї|ЛщУРОґ±ЈґжµДКэѕЭЅ«¶ЄК§ЎЈ" />
+
+	<string
+		id="Quit to Main Menu"
+		value="НЛіцµЅЦчІЛµҐ" />
+
+	<string
+		id="Back"
+		value="·µ»Ш" />
+
+	<string
+		id="ResumeGame"
+		value="јМРшУОП·" />
+
+	<string
+		id="GameOver"
+		value="УОП·ЅбКш" />
+
+	<string
+		id="Load Last Game"
+		value="¶БИЎЙПґОґжµµ" />
+
+	<string
+		id="Start Game From Begin"
+		value="ЦШРВїЄКјУОП·" />
+
+	<string
+		id="quitGameWithSaveWarn"
+		value="И·ИПАлїЄУОП·Јї|ЛщУРОґ±ЈґжµДКэѕЭЅ«¶ЄК§ЎЈ" />
+
+	<string
+		id="SaveNameDemand"
+		value="КдИлґжµµГыіЖ" />
+
+	<string
+		id="SaveGameExists"
+		value="ёІёЗґЛґжµµЈї" />
+
+	<string
+		id="SaveGameDeleteWarning"
+		value="СЎЦРµДґжµµЅ«±»ЙѕіэЈЎИ·ИПјМРшВрЈї" />
+
+	<string
+		id="SavingCurrentGame"
+		value="ХэФЪ±ЈґжУОП·" />
+
+	<string
+		id="DeleteGame"
+		value="ЙѕіэґжµµЈї" />
+
+	<string
+		id="Power"
+		value="ВнБ¦ЈЁЖҐЈ©" />
+
+	<string
+		id="EnginePower"
+		value="ТэЗжВнБ¦" />
+
+	<string
+		id="Torque"
+		value="Е¤ѕШ" />
+
+	<string
+		id="Durability"
+		value="ДНѕГ¶И" />
+
+	<string
+		id="Speed"
+		value="ЛЩ¶И" />
+
+	<string
+		id="MaxSpeed"
+		value="ЧоёЯЛЩ¶И" />
+
+	<string
+		id="Weight"
+		value="ЦШБї" />
+
+	<string
+		id="PNBB"
+		value="ЕцЧІЙЛє¦" />
+
+	<string
+		id="PNBBtip"
+		value="¶ФµРИЛФміЙµДЕцЧІЙЛє¦Бї" />
+
+	<string
+		id="Damage"
+		value="ЙЛє¦" />
+
+	<string
+		id="FiringRate"
+		value="ЙдЛЩ" />
+
+	<string
+		id="FiringRange"
+		value="ЙдіМ" />
+
+	<string
+		id="ThornForce"
+		value="ЧІ»чБ¦" />
+
+	<string
+		id="AccelerationTime"
+		value="јУЛЩК±јд" />
+
+	<string
+		id="Armor"
+		value="Ч°јЧ" />
+
+	<string
+		id="MaxArmor"
+		value="ЧоґуЧ°јЧ" />
+
+	<string
+		id="Solidity"
+		value="ДНѕГ¶И" />
+
+	<string
+		id="Resistance"
+		value="ї№РФ" />
+
+	<string
+		id="ShellPool"
+		value="µЇТ©" />
+
+	<string
+		id="ChargeSize"
+		value="µЇП»ИЭБї" />
+
+	<string
+		id="RechargingTime"
+		value="Ч°МоК±јд" />
+
+	<string
+		id="BasketCapacity"
+		value="іµПбИЭБї" />
+
+	<string
+		id="GADGET_COMMON"
+		value="іµБѕЕдјю" />
+
+	<string
+		id="GADGET_WEAPON"
+		value="ОдЖчЕдјю" />
+
+	<string
+		id="GADGET_ENGINE"
+		value="ТэЗжЕдјю" />
+
+	<string
+		id="GadgetType"
+		value="АаРН" />
+
+	<string
+		id="Piercing"
+		value="ґ©јЧ" />
+
+	<string
+		id="Blast"
+		value="±¬ХЁ" />
+
+	<string
+		id="Energy"
+		value="ДЬБї" />
+
+	<string
+		id="Fuel"
+		value="ИјБП" />
+
+	<string
+		id="Construction"
+		value="Ѕб№№" />
+
+	<string
+		id="MaxConstruction"
+		value="ЧоґуЅб№№" />
+
+	<string
+		id="PiercingResistance"
+		value="ґ©јЧЙЛє¦ї№РФ" />
+
+	<string
+		id="BlastResistance"
+		value="±¬ХЁЙЛє¦ї№РФ" />
+
+	<string
+		id="EnergyResistance"
+		value="ДЬБїЙЛє¦ї№РФ" />
+
+	<string
+		id="VehicleControl"
+		value="ІЩїШ" />
+
+	<string
+		id="FuelTankCapacity"
+		value="УНПдИЭБї" />
+
+	<string
+		id="Accuracy"
+		value="ѕ«¶И" />
+
+	<string
+		id="CabinDurability"
+		value="јЭК»КТЧ°јЧ" />
+
+	<string
+		id="BasketDurability"
+		value="іµПбЧ°јЧ" />
+
+	<string
+		id="GunType"
+		value="ОдЖчАаРН" />
+
+	<string
+		id="MachineGun"
+		value="»ъЗ№" />
+
+	<string
+		id="Cannon"
+		value="»рЕЪ" />
+
+	<string
+		id="ShotGun"
+		value="ц±µЇЗ№" />
+
+	<string
+		id="Laser"
+		value="ј¤№в" />
+
+	<string
+		id="Plasma"
+		value="µИАлЧУЕЪ" />
+
+	<string
+		id="Rocket"
+		value="µјµЇ·ўЙдЖч" />
+
+	<string
+		id="Artillery"
+		value="ЖИ»чЕЪ" />
+
+	<string
+		id="Thunderbolt"
+		value="АЧµзЗ№" />
+
+	<string
+		id="Mine"
+		value="ІјАЧЖч" />
+
+	<string
+		id="Thorns"
+		value="ґМХл" />
+
+	<string
+		id="Nail"
+		value="Иц¶¤Жч" />
+
+	<string
+		id="Turbo"
+		value="ОРВЦФцС№" />
+
+	<string
+		id="Oil"
+		value="ИцУНЖч" />
+
+	<string
+		id="Smoke"
+		value="СМД»" />
+
+	<string
+		id="FlamePlasma"
+		value="»рСжЕзЙдЖч" />
+
+	<string
+		id="ElectroPlasma"
+		value="µз»чОдЖч" />
+
+	<string
+		id="Weapon"
+		value="ОдЖч" />
+
+	<string
+		id="Gadgets"
+		value="Едјю" />
+
+	<string
+		id="Vehicles"
+		value="іµБѕ" />
+
+	<string
+		id="VehicleParts"
+		value="іµБѕБгјю" />
+
+	<string
+		id="Affixes"
+		value="ґКЧє" />
+
+	<string
+		id="Clans"
+		value="ЕЙПµ" />
+
+	<string
+		id="Cabin"
+		value="јЭК»КТ" />
+
+	<string
+		id="Basket"
+		value="іµПб" />
+
+	<string
+		id="Repairing"
+		value="РЮАн" />
+
+	<string
+		id="Refuelling"
+		value="јУУН" />
+
+	<string
+		id="Recharging"
+		value="Ч°µЇ" />
+
+	<string
+		id="BuySkin"
+		value="ЕзЖб" />
+
+	<string
+		id="NextSkin"
+		value="ПВТ»ЦЦСХЙ«" />
+
+	<string
+		id="PrevSkin"
+		value="ЙПТ»ЦЦСХЙ«" />
+
+	<string
+		id="SkinAlreadySet"
+		value="ХвѕНКЗДгПЦФЪµДіµЙ«" />
+
+	<string
+		id="Skinning"
+		value="іµБѕЕзЖб" />
+
+	<string
+		id="BuyCabin"
+		value="№єВтјЭК»КТ" />
+
+	<string
+		id="BuyBasket"
+		value="№єВтіµПб" />
+
+	<string
+		id="BuyVehicle"
+		value="№єВтіµБѕ" />
+
+	<string
+		id="RefuelMax"
+		value="јУВъУНПд" />
+
+	<string
+		id="RepairMax"
+		value="И«ІїРЮАн" />
+
+	<string
+		id="RechargeMax"
+		value="И«ІїЧ°Мо" />
+
+	<string
+		id="NextVehicle"
+		value="ПВТ»Бѕіµ" />
+
+	<string
+		id="PrevVehicle"
+		value="ЙПТ»Бѕіµ" />
+
+	<string
+		id="NumUnitsToBuy"
+		value="№єВтКэБї" />
+
+	<string
+		id="Refuel"
+		value="јУУН" />
+
+	<string
+		id="Repair"
+		value="РЮАн" />
+
+	<string
+		id="Recharge"
+		value="Ч°µЇ" />
+
+	<string
+		id="ToAdvancedMode"
+		value="ЗР»»µЅёЯј¶ДЈКЅ" />
+
+	<string
+		id="ToSimpleMode"
+		value="ЗР»»µЅјтТЧДЈКЅ" />
+
+	<string
+		id="More"
+		value="ёь¶а" />
+
+	<string
+		id="Less"
+		value="ёьЙЩ" />
+
+	<string
+		id="OneUnitPrice"
+		value="µҐјЫ" />
+
+	<string
+		id="NumUnitsToBuy"
+		value="№єВтКэБї" />
+
+	<string
+		id="SummaryPrice"
+		value="ЧЬјЫЦµ" />
+
+	<string
+		id="RepairNotNeed"
+		value="ОЮРиРЮАн" />
+
+	<string
+		id="RepairUnavailable"
+		value="Ѕр±ТІ»ЧгЈ¬ОЮ·ЁРЮАн" />
+
+	<string
+		id="RepairPartial"
+		value="ЧФ¶ЁТеРЮАн" />
+
+	<string
+		id="RepairFull"
+		value="И«ІїРЮАн" />
+
+	<string
+		id="RefuelNotNeed"
+		value="УНПдТСВъ" />
+
+	<string
+		id="RefuelUnavailable"
+		value="Ѕр±ТІ»ЧгЈ¬ОЮ·ЁјУУН" />
+
+	<string
+		id="RefuelPartial"
+		value="ЧФ¶ЁТејУУН" />
+
+	<string
+		id="RefuelFull"
+		value="№єВтВъУНПд" />
+
+	<string
+		id="RechargeNotNeed"
+		value="ОЮРиЧ°µЇ" />
+
+	<string
+		id="RechargeUnavailable"
+		value="Ѕр±ТІ»ЧгЈ¬ОЮ·ЁЧ°µЇ" />
+
+	<string
+		id="RechargePartial"
+		value="ЧФ¶ЁТеЧ°µЇ" />
+
+	<string
+		id="RechargeFull"
+		value="И«ІїЧ°Мо" />
+
+	<string
+		id="State"
+		value="ЧґМ¬" />
+
+	<string
+		id="LeftItemsInCabin"
+		value="јЭК»КТДЪ»№УРЕдјю»тОдЖчЎЈ|ЛьГЗЅ«ЛжјЭК»КТТ»Н¬іцКЫЎЈ|КЗ·сјМРшЈї" />
+
+	<string
+		id="LeftItemsInBasket"
+		value="іµПбДЪ»№УРЕдјю»тОдЖчЎЈ|ЛьГЗЅ«ЛжіµПбТ»Н¬іцКЫЎЈ|КЗ·сјМРшЈї" />
+
+	<string
+		id="LeftItemsInVehicle"
+		value="іµБѕЙП»№УРЕдјю»тОдЖчЎЈ|ЛьГЗЅ«ЛжіµБѕТ»Н¬іцКЫЎЈ|КЗ·сјМРшЈї" />
+
+	<string
+		id="BuyItemsCost"
+		value="№єВтјЫ" />
+
+	<string
+		id="SellItemsCost"
+		value="іцКЫјЫ" />
+
+	<string
+		id="Sum:"
+		value="ЧЬјЖЈє" />
+
+	<string
+		id="Select"
+		value="СЎФс" />
+
+	<string
+		id="EnterVehicleTrade"
+		value="ЅшИл№єВтПВТ»ІЅ" />
+
+	<string
+		id="VehiclePrice"
+		value="іµБѕјЫёс" />
+
+	<string
+		id="ReturnToWorkshop"
+		value="·µ»Шіµјд" />
+
+	<string
+		id="Aero title"
+		value="Мщ»Ё" />
+
+	<string
+		id="Paint title"
+		value="ЕзЖб" />
+
+	<string
+		id="Clearskins"
+		value="ЦШЦГ" />
+
+	<string
+		id="Buy all skins"
+		value="И«Ії№єВтЈє" />
+
+	<string
+		id="Buy skins"
+		value="№єВтЈє" />
+
+	<string
+		id="GunsAndGadgets"
+		value="ОдЖчУлЕдјю" />
+
+	<string
+		id="ShowAllWares"
+		value="ПФКѕИ«Ії»хОп" />
+
+	<string
+		id="ShowTownSelledWares"
+		value="ПФКѕЛщУРїЙ№є»хОп" />
+
+	<string
+		id="NoWare"
+		value="І»їЙіцКЫ" />
+
+	<string
+		id="All"
+		value="И«Ії" />
+
+	<string
+		id="NavPoint"
+		value="µјєЅµг" />
+
+	<string
+		id="ToGlobalMap"
+		value="КАЅзµШНј" />
+
+	<string
+		id="ToLocalMap"
+		value="ЗшУтµШНј" />
+
+	<string
+		id="MapUnavailable"
+		value="ФЭК±І»їЙУГ" />
+
+	<string
+		id="TradeMode"
+		value="Ѕ»ТЧДЈКЅ" />
+
+	<string
+		id="InfoMode"
+		value="РЕПўДЈКЅ" />
+
+	<string
+		id="SavePrices"
+		value="јЗВјјЫёс±н" />
+
+	<string
+		id="RemovePrices"
+		value="ЙѕіэёГіЗХтµДјЫёс±н" />
+
+	<string
+		id="ShowObjectNames"
+		value="ПФКѕОпМеГыіЖ" />
+
+	<string
+		id="HideObjectNames"
+		value="ТюІШОпМеГыіЖ" />
+
+	<string
+		id="Description"
+		value="ГиКц" />
+
+	<string
+		id="Ruined"
+		value="@ff904040ТСґЭ»Щ" />
+
+	<string
+		id="KeySet"
+		value="°ґјьЧйєП" />
+
+	<string
+		id="History"
+		value="ѕзЗй" />
+
+	<string
+		id="Books"
+		value="Кйј®" />
+
+	<string
+		id="Encyclopaedia"
+		value="°ЩїЖИ«Кй" />
+
+	<string
+		id="Statistic"
+		value="НіјЖ" />
+
+	<string
+		id="Relations"
+		value="№ШПµ" />
+
+	<string
+		id="EnemyRelation"
+		value="µР¶Ф" />
+
+	<string
+		id="FriendlyRelation"
+		value="УСєГ" />
+
+	<string
+		id="NeutralRelation"
+		value="ЦРБў" />
+
+	<string
+		id="Peace"
+		value="єНЖЅ" />
+
+	<string
+		id="War"
+		value="ХЅХщ" />
+
+	<string
+		id="PeaceAvailable"
+		value="ДгїЙТФёДЙЖУлёГЕЙПµµД№ШПµЈ¬|ЗлµЅµ±µШѕЫѕУµШ |УлёГЕЙПµґъ±нЅ»МёЎЈ" />
+
+	<string
+		id="ShowAllQuests"
+		value="ПФКѕИ«ІїИООс" />
+
+	<string
+		id="ShowNoncompletedQuests"
+		value="ЅцПФКѕОґНкіЙИООс" />
+
+	<string
+		id="ShowQuestItems"
+		value="ПФКѕМШКвОпЖ·" />
+
+	<string
+		id="ShowQuests"
+		value="ПФКѕИООсБР±н" />
+
+	<string
+		id="Quests"
+		value="ИООс" />
+
+	<string
+		id="PickUpAll"
+		value="К°ИЎИ«Ії" />
+
+	<string
+		id="TabBtn_Questlog"
+		value="ИООсИХЦѕ" />
+
+	<string
+		id="TabBtn_Map"
+		value="µШНј" />
+
+	<string
+		id="TabBtn_Journal"
+		value="ИХЦѕ" />
+
+	<string
+		id="TabBtn_Inventory"
+		value="ОпЖ·Аё" />
+
+	<string
+		id="TabBtn_Characteristic"
+		value="їЁіµІОКэ" />
+
+	<string
+		id="DontShowAutoHelp"
+		value="І»ПФКѕМбКѕ" />
+
+	<string
+		id="Radar"
+		value="АЧґп" />
+
+	<string
+		id="Speedometer"
+		value="ЛЩ¶И±н" />
+
+	<string
+		id="Timer"
+		value="јЖК±Жч" />
+
+	<string
+		id="FadingMessages"
+		value="ПыПў" />
+
+	<string
+		id="ImportantFadingMessages"
+		value="ЦШТЄПыПў" />
+
+	<string
+		id="TargetInfo"
+		value="Дї±кРЕПў" />
+
+	<string
+		id="TargetCapture"
+		value="Лш¶ЁДї±к" />
+
+	<string
+		id="ActionIcons"
+		value="РР¶Ї" />
+
+	<string
+		id="TalkWithNpc"
+		value="УлЅЗЙ«Ѕ»Мё" />
+
+	<string
+		id="NetGameOverHeader"
+		value="УОП·ЅбКшЎЈ" />
+
+	<string
+		id="NetGameOverFooter"
+		value="°ґ ESC ·µ»ШЦчІЛµҐЎЈ" />
+
+	<string
+		id="NumberSymbol"
+		value="#" />
+
+	<string
+		id="Color"
+		value="СХЙ«" />
+
+	<string
+		id="PlayerName"
+		value="НжјТГыіЖ" />
+
+	<string
+		id="Kills"
+		value="»чЙ±Кэ" />
+
+	<string
+		id="Deaths"
+		value="ЛАНцКэ" />
+
+	<string
+		id="Ping"
+		value="СУіЩ" />
+
+	<string
+		id="kills:"
+		value="»чЙ±Јє@ffffcc00 " />
+
+	<string
+		id="TeamPlayerName"
+		value="¶УОй/НжјТГыіЖ" />
+
+	<string
+		id="TeamName"
+		value="¶УОйГыіЖ" />
+
+	<string
+		id="Players"
+		value="НжјТ" />
+
+	<string
+		id="Functions text"
+		value="@ffffcc00[A] @ffffffffЧФ¶Ї   @ffffcc00[S] @ffffffff№ЫХЅ   @ffffcc00[Tab] @ffffffffНіјЖ   @ffffcc00[X] @ffffffff¶УОйСЎФсґ°їЪ" />
+
+	<string
+		id="Helper text"
+		value=" @ffcccccc¶УОйєНДЈКЅµДСЎФсНЁ№э¶ФУ¦°ґјьНкіЙ" />
+
+	<string
+		id="Charisma"
+		value="чИБ¦" />
+
+	<string
+		id="AppliedPerks"
+		value="МШі¤" />
+
+	<string
+		id="CancelQuest"
+		value="·ЕЖъИООс" />
+
+	<string
+		id="MainQuests"
+		value="ЦчПЯИООс" />
+
+	<string
+		id="OptionalQuests"
+		value="Ц§ПЯИООс" />
+
+	<string
+		id="RestoreDefaultMusic"
+		value="»ЦёґД¬ИПТфАЦЗР»»" />
+
+	<string
+		id="ApplyAndReturnToMenu"
+		value="У¦УГёьёДІў·µ»ШІЛµҐ" />
+
+	<string
+		id="Bot"
+		value="»ъЖчИЛ" />
+</resource>

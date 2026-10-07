@@ -117,7 +117,13 @@ def decode_text(raw):
 
 
 def decode_dds(p):
-    td = tempfile.mkdtemp()
+    # ★ 不用 tempfile.mkdtemp()：它内部走 os.mkdir(path, 0o700)，而 Windows 上的
+    #   Python 会因此写入一个**显式限制性 DACL**，本机 DSH 沙箱用户不在其中 ——
+    #   目录能建出来，但往里写文件必然 PermissionError(13)。
+    #   改用普通子目录（os.makedirs 用默认 mode，不设 DACL），语义等价：同处一地、用完即删。
+    td = os.path.join(tempfile.gettempdir(), 'hta_cjk_decode_tmp')
+    shutil.rmtree(td, ignore_errors=True)
+    os.makedirs(td, exist_ok=True)
     try:
         subprocess.run([TEXCONV, p, '-f', 'R8G8B8A8_UNORM', '-ft', 'png', '-o', td,
                         '-y', '-nologo'], check=True,
@@ -131,7 +137,10 @@ def decode_dds(p):
 def encode_dds(img, p):
     p = os.path.abspath(p)
     os.makedirs(os.path.dirname(p), exist_ok=True)
-    td = tempfile.mkdtemp(dir=os.path.dirname(p))
+    # ★ 同上：mkdtemp 的 0o700 -> 显式 DACL -> 沙箱下不可写。
+    td = os.path.join(os.path.dirname(p), '_tmp_dds_encode')
+    shutil.rmtree(td, ignore_errors=True)
+    os.makedirs(td, exist_ok=True)
     try:
         stem = os.path.splitext(os.path.basename(p))[0]
         png = os.path.join(td, stem + '.png')

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<Credits
+	breakTime="0.7"
+	breakSoundFile="data\sounds\Driving\shifter1.wav"
+	showSoundFile="data\sounds\Driving\shifter1.wav"
+	musicFile="data\music\credits.ogg">
+	<Pages>
+		<Page
+			id="2"
+			text="УОП·ЙијЖ||&quot;Targem Games&quot;"
+			modelName="Sam_mask"
+			modelSkin="0"
+			modelCfg="0"
+			showTime="3"
+			fontSize="24" />
+
+		<Page
+			id="12"
+			text="@CC990000ЦЖЧчИЛ|@CC000000Stanislav &quot;Scorp&quot; Scorb||@CC990000јјКхЧЬја|@CC000000Alex Skryabin||@CC990000ГАКхЧЬја|@CC000000Alex &quot;Alex ML&quot; Magushin"
+			modelName="Sam_mask"
+			modelSkin="0"
+			modelCfg="0"
+			showTime="5"
+			fontSize="16" />
+
+		<Page
+			id="13"
+			text="@CC990000ПоДїѕ­Ан|@CC000000Boris &quot;gorg&quot; Smirnov||@CC990000КЧПЇЙијЖК¦|@CC000000Denis &quot;mif2000&quot; Galanin||@CC990000КЧПЇіМРтФ±|@CC000000Anton &quot;anger&quot; Savin||@CC990000КЧПЇГАКх|@CC000000Roman Latynov"
+			modelName="Sam_mask"
+			modelSkin="0"
+			modelCfg="0"
+			showTime="6"
+			fontSize="16" />
+
+		<Page
+			id="14"
+			text="@CC990000ЙијЖК¦|@CC000000Serge &quot;Sinx&quot; Udurminskiy|@CC000000Alex &quot;zazaz&quot; Anufriev|@CC000000Jerzy Krasowski||@CC990000±аѕз|@CC000000Alexander Brusin"
+			modelName="Sam_mask"
+			modelSkin="0"
+			modelCfg="0"
+			showTime="6"
+			fontSize="16" />
+
+		<Page
+			id="15"
+			text="@CC990000іМРтФ±|@CC000000Elena &quot;SoftKitty&quot; Evdokimova|@CC000000Ilya &quot;Chosgen&quot; Ruzakov|@CC000000Ivan &quot;Vano&quot; Vlasov|@CC000000Maxim &quot;Shadow&quot; Sarmanov"
+			modelName="Sam_mask"
+			modelSkin="0"
+			modelCfg="0"
+			showTime="6"
+			fontSize="16" />
+
+		<Page
+			id="16"
+			text="@CC990000ГАКх|@CC000000Stas &quot;Staz&quot; Cherva|@CC000000Olga &quot;Kot&quot; Kotyuh|@CC000000Victor &quot;Osymbosi&quot; Korjakin|@CC000000Vladimir &quot;Price&quot; Seleznev"
+			modelName="Sam_mask"
+			modelSkin="0"
+			modelCfg="0"
+			showTime="6"
+			fontSize="16" />
+
+		<Page        
+			id="17"
+			text="@CC990000ГАКх|@CC000000Yaroslav &quot;Puntus&quot; Puntus|@CC000000Alexander &quot;WHITE&quot; Belyaev|@CC000000Rustam &quot;Zychi&quot; Turey"
+			modelName="Sam_mask"
+			modelSkin="0"
+			modelCfg="0"
+			showTime="6"
+			fontSize="16" />
+
+		<Page        
+			id="18"
+			text="@CC990000ЅзГжЙијЖ|@CC000000Mikhail &quot;Zai&quot; Matvienko||@CC990000ТфАЦУлТфР§|@CC000000Anton Popov||@CC990000МШР§|@CC000000Alex &quot;Dal&quot; Lobanov"
+			modelName="Sam_mask"
+			modelSkin="0"
+			modelCfg="0"
+			showTime="6"
+			fontSize="16" />
+
+		<Page        
+			id="19"
+			text="@CC990000ЦКБї±ЈЦ¤|@CC000000Vjacheslav &quot;Ls&quot; Avdeyev|@CC000000Andrew &quot;Akari&quot; Antonov|@CC000000Konstantin &quot;CruelDwarf&quot; Obvintsev|@CC000000Alexander &quot;Sinx&quot; Oleshuk||@CC990000№«№Ш|@CC000000Svetlana &quot;Crystal&quot; Chestnikh"
+			modelName="Sam_mask"
+			modelSkin="0"
+			modelCfg="0"
+			showTime="6"
+			fontSize="16" />
+
+		<Page        
+			id="20"
+			text="@CC990000МШ±рёРР»|@CC000000Olga Prohorova|Tatiana &quot;Liska&quot; Zhuro|Ilya &quot;Dr.Garret&quot; Sadchikov"
+			modelName="Sam_mask"
+			modelSkin="0"
+			modelCfg="0"
+			showTime="6"
+			fontSize="16" />
+
+		<Page
+			id="30"
+			text="№«Лѕ||&quot;Buka Entertainment&quot;"
+			modelName="Sam_mask"
+			modelSkin="0"
+			modelCfg="0"
+			showTime="3"
+			fontSize="24" />
+		<Page        
+			id="31"
+			text="@CC990000ЦЖЧчИЛ|@CC000000Ekaterina Myshenko"
+			modelName="Sam_mask"
+			modelSkin="0"
+			modelCfg="0"
+			showTime="4"
+			fontSize="16" />
+
+		<Page        
+			id="33"
+			text="@CC990000ТфР§№ЛОК|@CC000000Ruslan Dmitriev||@CC990000јјКх№ЛОК|@CC000000Kirill Bestemjanov||@CC990000ЙијЖК¦|@CC000000Sanan Ushanov|Daniella Klimashevskaya"
+			modelName="Sam_mask"
+			modelSkin="0"
+			modelCfg="0"
+			showTime="6"
+			fontSize="16" />
+
+		<Page        
+			id="34"
+			text="@CC990000№«№Ш|@CC000000Alex Pastushenko||@CC990000ЦЖЧчИЛЦъАн|@CC000000Nikolay Safronov|Chebotarev Alex"
+			modelName="Sam_mask"
+			modelSkin="0"
+			modelCfg="0"
+			showTime="6"
+			fontSize="16" />
+
+		<Page        
+			id="35"
+			text="@CC990000ЦґРРЦЖЧчИЛ|@CC000000Alexander Pak||@CC990000ЦКБї±ЈЦ¤НЕ¶УЦч№Ь|@CC000000Eugene &quot;Uncle_Fu&quot; Popov"
+			modelName="Sam_mask"
+			modelSkin="0"
+			modelCfg="0"
+			showTime="6"
+			fontSize="16" />
+
+		<Page        
+			id="36"
+			text="@CC990000ЦКБї±ЈЦ¤|@CC000000Ovsyannikova &quot;Lio&quot; Lidia|Dmitriev &quot;IVWarboss&quot; Igor|Raynov &quot;Pa&quot; Ivan|Popov &quot;Uncle_Fu&quot; Eugene|Popenkov &quot;StC&quot; Alex"
+			modelName="Sam_mask"
+			modelSkin="0"
+			modelCfg="0"
+			showTime="6"
+			fontSize="16" />
+
+		<Page        
+			id="37"
+			text="@CC990000ЦКБї±ЈЦ¤|@CC000000Bratolubova &quot;Prolonga&quot; Maria|Petrov &quot;Pifagor&quot; Alex|Anufriev &quot;Solovey&quot; Dmitry|Larin &quot;BM&quot; Dmitry"
+			modelName="Sam_mask"
+			modelSkin="0"
+			modelCfg="0"
+			showTime="6"
+			fontSize="16" />
+
+		<Page        
+			id="38"
+			text="@CC990000ІвКФФ±|@CC000000Dmitry &quot;DragonVD&quot; Volkov|Artem &quot;DarkOsa&quot; Osminin|Anton &quot;Aries&quot; Kirsh|Ivan &quot;Shizoman&quot; Larionov|Alexander &quot;Mrutoy_men&quot; Sedykh"
+			modelName="Sam_mask"
+			modelSkin="0"
+			modelCfg="0"
+			showTime="6"
+			fontSize="16" />
+
+		<Page        
+			id="39"
+			text="@CC990000ІвКФФ±|@CC000000Maria &quot;Floddy&quot; Fedorova|Roman &quot;Kojima&quot; Kusayko|Andrew &quot;Rabbal&quot; Rostanin|Alex &quot;Nexus&quot; Sherihov|Vasily &quot;Baza&quot; Kuznetsov"
+			modelName="Sam_mask"
+			modelSkin="0"
+			modelCfg="0"
+			showTime="6"
+			fontSize="16" />
+
+		<Page        
+			id="40"
+			text="@CC990000ІвКФФ±|@CC000000Maxim &quot;DX&quot; Popov|Konstatnin &quot;Master&quot; Izmailov|Kirill &quot;Lfo&quot; Safronov|Denis &quot;SoftStar&quot; Gubin|Vasily &quot;Rober&quot; Kuznetsov"
+			modelName="Sam_mask"
+			modelSkin="0"
+			modelCfg="0"
+			showTime="6"
+			fontSize="16" />
+
+		<Page        
+			id="41"
+			text="@CC990000ІвКФФ±|@CC000000Andrew &quot;Armeec&quot; Sarosek|Artem &quot;Minfor&quot; Timohin|Nikita &quot;Septer&quot; Stepanov|Alexandra &quot;LaraCroft&quot; Fedonnikova"
+			modelName="Sam_mask"
+			modelSkin="0"
+			modelCfg="0"
+			showTime="6"
+			fontSize="16" />
+
+		<Page        
+			id="43"
+			text="@CC990000·ЁВЙ№ЛОК|@CC000000Georgy Vitaliev||@CC990000јјКхЦ§іЦ|@CC000000Eugene Dmitriev|Roman Alexeev|Serge Scherban|Vadim Sidorov"
+			modelName="Sam_mask"
+			modelSkin="0"
+			modelCfg="0"
+			showTime="6"
+			fontSize="16" />
+
+		<Page        
+			id="44"
+			text="@CC990000КЧПЇЦґРР№Щ|@CC000000Alexander Mikhaylov||@CC990000ІЖОсё±ЧЬІГ|@CC000000Marina Ravun"
+			modelName="Sam_mask"
+			modelSkin="0"
+			modelCfg="0"
+			showTime="6"
+			fontSize="16" />
+
+		<Page        
+			id="45"
+			text="@CC990000№«№ШУлКРіЎѕ­Ан|@CC000000Oleg Dobroshtan||@CC990000їЄ·ўё±ЧЬІГ|@CC000000Ivan Bunakov||@CC990000МШ±рёРР»|@CC000000Marina Ravun|Ivan Bunakov"
+			modelName="Sam_mask"
+			modelSkin="0"
+			modelCfg="0"
+			showTime="6"
+			fontSize="16" />
+	</Pages>
+</Credits>

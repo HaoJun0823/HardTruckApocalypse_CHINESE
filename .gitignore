@@ -299,3 +299,21 @@ Render9Fix/test/*.log
 # 本机一次性的分析/构建脚手架（体积大、可重建，不属于项目内容）
 _work/
 _acl_recovery/
+
+# ---- project additions (2026-10-08) ----
+# 资料片(DLC1)汉化：构建产物
+HardTruckApocalypse_CHINESE_DLL_DLC1/build/
+HardTruckApocalypse_CHINESE_DLL_DLC1/tools/*.exe
+DLC1_MemFix/build/
+# 字库烘焙产物（由 fontgen/build_cjk.py 生成，见 docs/2026-10-08-资料片113汉化移植与LAA崩溃修复.md）
+update_chs_dlc1/
+# 交付包里的重型/可再生文件：
+#   winmm.dll 是第三方 Ultimate-ASI-Loader（本体游戏目录里就有一份，直接复制即可）
+#   cjk_*.dds 与 hta_chs_cjk_dlc1.bin 由 fontgen 生成
+#   *.asi 是构建产物（仓库惯例：不跟踪构建产物）
+dist_dlc1/winmm.dll
+dist_dlc1/*.asi
+dist_dlc1/data/if/fonts/cjk_*.dds
+dist_dlc1/update/hta_chs_cjk_dlc1.bin
+# 运行时截图（regenerable）
+_shots_dlc1/

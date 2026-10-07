@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?><!-- edited with XML Spy v4.2 U (http://www.xmlspy.com) by Morgoth (Targem) -->
+<resource><!--Default buttons-->
+	<string
+		id="music_custom"
+		value="ЧФ¶ЁТеТфАЦ" />
+
+	<string
+		id="music_r5_1"
+		value="ПКСЄРэВЙ" />
+
+	<string
+		id="music_r5_12"
+		value="ј¤ЗйРэВЙ" />
+
+	<string
+		id="music_r5_2"
+		value="ЧФУЙРэВЙ" />
+
+	<string
+		id="music_r5_22"
+		value="·зЦ®РэВЙ" />
+
+	<string
+		id="music_r6_1"
+		value="ґФБЦРэВЙ" />
+
+	<string
+		id="music_r6_12"
+		value="°ЈµВГЙ¶ЩРэВЙ" />
+
+	<string
+		id="music_r6_2"
+		value="ЙсЪНРэВЙ" />
+
+	<string
+		id="music_r6_22"
+		value="К№ХЯРэВЙ" />
+
+	<string
+		id="music_block0"
+		value="їЛАіРэВЙЈЁЅ±АшЈ©" />
+
+	<string
+		id="music_block1"
+		value="АпјЦДЙРэВЙЈЁЅ±АшЈ©" />
+
+	<string
+		id="music_r1_4"
+		value="єХ¶ыРэВЙЈЁЅ±АшЈ©" />
+
+	<string
+		id="music_r2_1"
+		value="АыІјАпД·РэВЙЈЁЅ±АшЈ©" />
+
+	<string
+		id="music_r2_2"
+		value="°ў¶ыИ»РэВЙЈЁЅ±АшЈ©" />
+
+	<string
+		id="music_r4_1"
+		value="НЯ№юМШРэВЙЈЁЅ±АшЈ©" />
+
+	<string
+		id="music_r4_2"
+		value="Фъ¶ыГ·їЛРэВЙЈЁЅ±АшЈ©" />
+</resource>

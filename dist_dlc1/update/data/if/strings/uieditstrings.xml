@@ -1,0 +1,1174 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?><!-- edited with XML Spy v4.2 U (http://www.xmlspy.com) by Morgoth (Targem) -->
+<resource>
+	<string
+		id="ok"
+		value="И·¶Ё" />
+
+	<string
+		id="cancel"
+		value="ИЎПы" />
+
+	<string
+		id="Cancel"
+		value="ИЎПы" />
+
+	<string
+		id="yes"
+		value="КЗ" />
+
+	<string
+		id="no"
+		value="·с" />
+
+	<string
+		id="error"
+		value="ґнОу" />
+
+	<string
+		id="save"
+		value="±Јґж" />
+
+	<string
+		id="Default"
+		value="Д¬ИП" />
+
+	<string
+		id="Close"
+		value="№Ш±Х" />
+
+	<string
+		id="Control"
+		value="їШЦЖ" />
+
+	<string
+		id="Exit"
+		value="НЛіц" />
+
+	<string
+		id="Delete"
+		value="Йѕіэ" />
+
+	<string
+		id="CloseWindow"
+		value="№Ш±Хґ°їЪ" />
+
+	<string
+		id="Date"
+		value="ИХЖЪ" />
+
+	<string
+		id="SaveName"
+		value="ГыіЖ" />
+
+	<string
+		id="SortByName"
+		value="°ґґжµµГыіЖЕЕРт" />
+
+	<string
+		id="SortByDate"
+		value="°ґ±ЈґжК±јдЕЕРт" />
+
+	<string
+		id="ServiceSymbolsUsed"
+		value="НжјТГыЦРІ»ДЬК№УГ|ТФПВ·ыєЕЈє|@ff904040%s " />
+
+	<string
+		id="quitGame"
+		value="КЗ·сНЛіцУОП·Јї" />
+
+	<string
+		id="ChoseDifficultyLevel"
+		value="СЎФсДС¶ИІўїЄКјУОП·" />
+
+	<string
+		id="ChoseDifficultyLevelBack"
+		value="·µ»ШЦчІЛµҐ" />
+
+	<string
+		id="New Game"
+		value="µҐИЛУОП·" />
+
+	<string
+		id="StartNetGame"
+		value="їЄКјРВУОП·" />
+
+	<string
+		id="Credits"
+		value="ЦЖЧчЧй" />
+
+	<string
+		id="Load Game"
+		value="¶БИЎУОП·" />
+
+	<string
+		id="Options"
+		value="СЎПо" />
+
+	<string
+		id="Quit to Windows"
+		value="НЛіцУОП·" />
+
+	<string
+		id="Profile"
+		value="µµ°ё" />
+
+	<string
+		id="ProfileDontChosen"
+		value="ОґСЎФс" />
+
+	<string
+		id="Intro"
+		value="їЄіЎ¶Ї»­" />
+
+	<string
+		id="MultiplayerOptions"
+		value="БЄ»ъУОП·" />
+
+	<string
+		id="Audioplayer"
+		value="№гІҐ" />
+
+	<string
+		id="AudioplayerInMultiplayer"
+		value="БЄ»ъ№гІҐ" />
+
+	<string
+		id="OpenSavesList"
+		value="ґтїЄґжµµБР±н" />
+
+	<string
+		id="ShowIntro"
+		value="їЄКјБЄ»ъУОП·" />
+
+	<string
+		id="HandleGameOptions"
+		value="ёьёДУОП·ЙиЦГ" />
+
+	<string
+		id="ShowCredits"
+		value="ПФКѕЦЖЧчИЛФ±ГыµҐ" />
+
+	<string
+		id="load"
+		value="¶БИЎ" />
+
+	<string
+		id="LoadGame"
+		value="¶БИЎґжµµ" />
+
+	<string
+		id="SavedGameLoading"
+		value="ХэФЪ¶БИЎУОП·" />
+
+	<string
+		id="DeleteProfileWarning"
+		value="ЛщУРґжµµЅ«±»ЙѕіэЎЈ|КЗ·сјМРшЈї" />
+
+	<string
+		id="DefaultProfileName"
+		value="" />
+
+	<string
+		id="Create"
+		value="ґґЅЁ" />
+
+	<string
+		id="CreateProfile"
+		value="ґґЅЁРВµµ°ё" />
+
+	<string
+		id="NewProfile"
+		value="РВµµ°ё" />
+
+	<string
+		id="ProfileExists"
+		value="ёГГыіЖµДµµ°ёТСґжФЪЎЈ|ЗлКдИлЖдЛыГыіЖ" />
+
+	<string
+		id="EmptyProfileName"
+		value="ОЮ·ЁґґЅЁОЮГыµµ°ё" />
+
+	<string
+		id="ProfileCreateError"
+		value="ґґЅЁµµ°ёК§°Ь" />
+
+	<string
+		id="ProfileDeleteError"
+		value="Йѕіэµµ°ёК§°Ь" />
+
+	<string
+		id="Chose"
+		value="СЎФс" />
+
+	<string
+		id="DeleteProfile"
+		value="Йѕіэµµ°ё" />
+
+	<string
+		id="ChoseProfile"
+		value="ЙиОЄµ±З°µµ°ё" />
+
+	<string
+		id="CancelExit"
+		value="№Ш±Хґ°їЪІў·ЕЖъёьёД" />
+
+	<string
+		id="ChangePlayerProfile"
+		value="ёьёДµµ°ё" />
+
+	<string
+		id="ChangeProfile"
+		value="ёьёДµµ°ё" />
+
+	<string
+		id="CurProfile"
+		value="µ±З°µµ°ё" />
+
+	<string
+		id="InvalidProfileName"
+		value="ОЮР§µДµµ°ёГы" />
+
+	<string
+		id="Loading"
+		value="јУФШЦР" />
+
+	<string
+		id="LoadingDots"
+		value="јУФШЦРЎ­" />
+
+	<string
+		id="LoadWorld"
+		value="јУФШ№ШїЁ" />
+
+	<string
+		id="InitWorld"
+		value="№ШїЁіхКј»Ї" />
+
+	<string
+		id="MainMenuLoading"
+		value="јУФШЦР" />
+
+	<string
+		id="AnimatedModelsServer"
+		value="¶Ї»­¶ФПу" />
+
+	<string
+		id="StaticModelsServer"
+		value="ѕІМ¬¶ФПу" />
+
+	<string
+		id="LightsServer"
+		value="№вФґ" />
+
+	<string
+		id="SpritesServer"
+		value="ѕ«Бй" />
+
+	<string
+		id="ParticlesServer"
+		value="БЈЧУПµНі" />
+
+	<string
+		id="SoundsServer"
+		value="ТфР§" />
+
+	<string
+		id="MusicServer"
+		value="ТфАЦ" />
+
+	<string
+		id="ProjectorsServer"
+		value="Н¶У°" />
+
+	<string
+		id="DecalsServer"
+		value="Мщ»Ё" />
+
+	<string
+		id="Precaching"
+		value="»єґжЦР" />
+
+	<string
+		id="Video"
+		value="КУЖµ" />
+
+	<string
+		id="Sound"
+		value="ЙщТф" />
+
+	<string
+		id="Game"
+		value="УОП·" />
+
+	<string
+		id="Video settings"
+		value="КУЖµЙиЦГ" />
+
+	<string
+		id="Far dist"
+		value="КУѕа" />
+
+	<string
+		id="Gamma"
+		value="Щ¤Вн" />
+
+	<string
+		id="Resolution"
+		value="·Ц±жВК" />
+
+	<string
+		id="GraphicQuality"
+		value="»­ГжЦКБї" />
+
+	<string
+		id="Grass"
+		value="ІЭµШ" />
+
+	<string
+		id="TextureResolution"
+		value="ОЖАн·Ц±жВК" />
+
+	<string
+		id="Antialiasing"
+		value="ї№ѕвіЭ" />
+
+	<string
+		id="Filtration"
+		value="№эВЛ" />
+
+	<string
+		id="BloomQuality"
+		value="·є№вЦКБї" />
+
+	<string
+		id="WaterQuality"
+		value="Л®ГжЦКБї" />
+
+	<string
+		id="Audio settings"
+		value="ТфЖµЙиЦГ" />
+
+	<string
+		id="Fx vol"
+		value="ТфР§ТфБї" />
+
+	<string
+		id="Music vol"
+		value="ТфАЦТфБї" />
+
+	<string
+		id="Speak vol"
+		value="УпТфТфБї" />
+
+	<string
+		id="Game settings"
+		value="УОП·ЙиЦГ" />
+
+	<string
+		id="DialogPause"
+		value="¶Ф»°ФЭНЈ" />
+
+	<string
+		id="AutoHelp"
+		value="ЧФ¶ЇМбКѕ" />
+
+	<string
+		id="MouseSensitivity"
+		value="Ку±кБйГф¶И" />
+
+	<string
+		id="MouseYAxisFlip"
+		value="·ґЧЄКу±кYЦб" />
+
+	<string
+		id="MouseXAxisFlip"
+		value="·ґЧЄКу±кXЦб" />
+
+	<string
+		id="Keys"
+		value="°ґјь" />
+
+	<string
+		id="RestoreDef"
+		value="»ЦёґД¬ИПЙиЦГ" />
+
+	<string
+		id="Apply"
+		value="У¦УГ" />
+
+	<string
+		id="Recommended"
+		value="НЖјц" />
+
+	<string
+		id="None"
+		value="ОЮ" />
+
+	<string
+		id="Near"
+		value="Ѕь" />
+
+	<string
+		id="Far"
+		value="Ф¶" />
+
+	<string
+		id="LowQuality"
+		value="µН" />
+
+	<string
+		id="MediumQuality"
+		value="ЦР" />
+
+	<string
+		id="HighQuality"
+		value="ёЯ" />
+
+	<string
+		id="CustomQuality"
+		value="ЧФ¶ЁТе" />
+
+	<string
+		id="MaxQuality"
+		value="ЧоёЯ" />
+
+	<string
+		id="LowResolution"
+		value="µН" />
+
+	<string
+		id="HighResolution"
+		value="ёЯ" />
+
+	<string
+		id="CustomResolution"
+		value="ЧФ¶ЁТе" />
+
+	<string
+		id="BilinearFiltration"
+		value="Л«ПЯРФ" />
+
+	<string
+		id="TrilinearFiltration"
+		value="ИэПЯРФ" />
+
+	<string
+		id="AnisotropFiltration"
+		value="ёчПтТмРФ" />
+
+	<string
+		id="CustomFiltration"
+		value="ЧФ¶ЁТе" />
+
+	<string
+		id="Antialiasing_x2"
+		value="x2" />
+
+	<string
+		id="Antialiasing_x4"
+		value="x4" />
+
+	<string
+		id="Antialiasing_x8"
+		value="x8" />
+
+	<string
+		id="Antialiasing_x16"
+		value="x16" />
+
+	<string
+		id="CustomAntialiasing"
+		value="ЧФ¶ЁТе" />
+
+	<string
+		id="OptionsChanged"
+		value="ЙиЦГТСёьёДЎЈКЗ·с±ЈґжЈї" />
+
+	<string
+		id="ShadowsQuality"
+		value="ТхУ°ЦКБї" />
+
+	<string
+		id="NumBattleReplies"
+		value="ХЅ¶·УпТфЖµВК" />
+
+	<string
+		id="Control settings"
+		value="їШЦЖЙиЦГ" />
+
+	<string
+		id="BindingsChanged"
+		value="°ґјьТСЦШРВ¶ЁТеЎЈКЗ·с±ЈґжЈї" />
+
+	<string
+		id="GameDifficulty"
+		value="УОП·ДС¶И" />
+
+	<string
+		id="EasyLevel"
+		value="јтµҐ" />
+
+	<string
+		id="MediumLevel"
+		value="ЦРµИ" />
+
+	<string
+		id="HardLevel"
+		value="А§ДС" />
+
+	<string
+		id="ImpossibleLevel"
+		value="ј«ДС" />
+<!-- DemoSplashWnd -->
+	<string
+		id="Targem Link Tip"
+		value="Targem" />
+
+	<string
+		id="Buka Link Tip"
+		value="Buka" />
+
+	<string
+		id="ExMachina URL"
+		value="http://www.targem.ru" />
+
+	<string
+		id="Buka URL"
+		value="http://www.buka.ru" />
+
+	<string
+		id="Nival URL"
+		value="http://www.nival.com" />
+
+	<string
+		id="AutoSave"
+		value="ЧФ¶Їґжµµ" />
+<!-- MultiplayerOptionsWnd -->
+	<string
+		id="ServerCaption"
+		value="·юОсЖч" />
+
+	<string
+		id="ServerCaptionTip"
+		value="ґґЅЁ·юОсЖч" />
+
+	<string
+		id="ClientCaption"
+		value="їН»§¶Л" />
+
+	<string
+		id="ClientCaptionTip"
+		value="ІйХТБЄ»ъУОП·" />
+
+	<string
+		id="OptionsCaption"
+		value="ЙиЦГ" />
+
+	<string
+		id="OptionsCaptionTip"
+		value="ёьёДНжјТЙиЦГ" />
+<!-- Server settings -->
+	<string
+		id="Server settings"
+		value="ґґЅЁБЄ»ъУОП·" />
+
+	<string
+		id="ServerName"
+		value="·юОсЖчГыіЖ" />
+
+	<string
+		id="GameDescription"
+		value="УОП·ГиКц" />
+
+	<string
+		id="Port"
+		value="¶ЛїЪ" />
+
+	<string
+		id="GameType"
+		value="УОП·ДЈКЅ" />
+
+	<string
+		id="Map"
+		value="µШНј" />
+
+	<string
+		id="CarType"
+		value="іµБѕАаРН" />
+
+	<string
+		id="FragLimit"
+		value="»чЙ±ЙППЮ" />
+
+	<string
+		id="TimeLimit"
+		value="К±јдПЮЦЖ" />
+
+	<string
+		id="PlayersLimit"
+		value="НжјТКэБї" />
+
+	<string
+		id="MoreAbbrev"
+		value="..." />
+
+	<string
+		id="MoreAbbrevCarTip"
+		value="№ШУЪіµБѕ" />
+
+	<string
+		id="MoreAbbrevMapTip"
+		value="№ШУЪµШНј" />
+
+	<string
+		id="TeamOptions"
+		value="¶УОйЙиЦГ" />
+
+	<string
+		id="ServerDefault"
+		value="Д¬ИП" />
+
+	<string
+		id="StartGame"
+		value="їЄКјУОП·" />
+
+	<string
+		id="FriendlyFire"
+		value="УСѕьЙЛє¦" />
+
+	<string
+		id="NumBots"
+		value="»ъЖчИЛКэБї" />
+
+	<string
+		id="GameType_Deathmatch"
+		value="»мХЅ" />
+
+	<string
+		id="GameType_Team2"
+		value="НЕ¶УХЅЈЁ2¶УЈ©" />
+
+	<string
+		id="GameType_Team3"
+		value="НЕ¶УХЅЈЁ3¶УЈ©" />
+
+	<string
+		id="GameType_Team4"
+		value="НЕ¶УХЅЈЁ4¶УЈ©" />
+
+	<string
+		id="GameType_Team5"
+		value="НЕ¶УХЅЈЁ5¶УЈ©" />
+
+	<string
+		id="GameType_Team6"
+		value="НЕ¶УХЅЈЁ6¶УЈ©" />
+
+	<string
+		id="GameType_Team7"
+		value="НЕ¶УХЅЈЁ7¶УЈ©" />
+
+	<string
+		id="GameType_Team8"
+		value="НЕ¶УХЅЈЁ8¶УЈ©" />
+
+	<string
+		id="GameType_DeathmatchAbbrev"
+		value="»мХЅ" />
+
+	<string
+		id="GameType_TeamAbbrev"
+		value="НЕ¶У" />
+
+	<string
+		id="Fraglimit0"
+		value="ОЮПЮЦЖ" />
+
+	<string
+		id="Fraglimit10"
+		value="10" />
+
+	<string
+		id="Fraglimit15"
+		value="15" />
+
+	<string
+		id="Fraglimit20"
+		value="20" />
+
+	<string
+		id="Fraglimit25"
+		value="25" />
+
+	<string
+		id="Fraglimit50"
+		value="50" />
+
+	<string
+		id="Fraglimit75"
+		value="75" />
+
+	<string
+		id="Fraglimit100"
+		value="100" />
+
+	<string
+		id="Timelimit0"
+		value="ОЮПЮЦЖ" />
+
+	<string
+		id="Timelimit5"
+		value="5·ЦЦУ" />
+
+	<string
+		id="Timelimit10"
+		value="10·ЦЦУ" />
+
+	<string
+		id="Timelimit15"
+		value="15·ЦЦУ" />
+
+	<string
+		id="Timelimit30"
+		value="30·ЦЦУ" />
+
+	<string
+		id="Timelimit60"
+		value="60·ЦЦУ" />
+
+	<string
+		id="EasyMultiplayerLevel"
+		value="јтµҐ" />
+
+	<string
+		id="MediumMultiplayerLevel"
+		value="ЦРµИ" />
+
+	<string
+		id="HeavyMultiplayerLevel"
+		value="А§ДС" />
+<!-- Client settings -->
+	<string
+		id="Client settings"
+		value="Б¬ЅУµЅ·юОсЖчУОП·" />
+
+	<string
+		id="RefreshList"
+		value="ЛўРВБР±н" />
+
+	<string
+		id="ClientAdditional"
+		value="ёЅјУ" />
+
+	<string
+		id="ClientAdditionalTip"
+		value="НЁ№эµШЦ·Б¬ЅУБЄ»ъУОП·" />
+
+	<string
+		id="ClientConnect"
+		value="Б¬ЅУ" />
+
+	<string
+		id="CaptionGameName"
+		value="УОП·ГыіЖ" />
+
+	<string
+		id="CaptionGameMap"
+		value="µШНј" />
+
+	<string
+		id="CaptionCarType"
+		value="іµБѕ" />
+
+	<string
+		id="CaptionPlayers"
+		value="НжјТ" />
+
+	<string
+		id="CaptionGameType"
+		value="АаРН" />
+
+	<string
+		id="CaptionPing"
+		value="СУіЩ" />
+
+	<string
+		id="ServerNameD"
+		value="·юОсЖчГыіЖЈє" />
+
+	<string
+		id="GameTypeD"
+		value="УОП·ДЈКЅЈє" />
+<!-- Player settings -->
+	<string
+		id="Player settings"
+		value="НжјТЙиЦГ" />
+
+	<string
+		id="PlayerDefault"
+		value="Д¬ИП" />
+
+	<string
+		id="PlayerApply"
+		value="У¦УГ" />
+
+	<string
+		id="POPlayerName"
+		value="НжјТГыіЖ" />
+
+	<string
+		id="POSheme"
+		value="НїЧ°·зёс" />
+
+	<string
+		id="POColors"
+		value="СХЙ«" />
+
+	<string
+		id="POLogo"
+		value="»Х±к" />
+
+	<string
+		id="POAutochange"
+		value="ОдЖчЧФ¶ЇЗР»»" />
+
+	<string
+		id="Sheme_Combat"
+		value="ѕьКВЈЁ-1Ј©" />
+
+	<string
+		id="Sheme_Peace"
+		value="єНЖЅЈЁ+1Ј©" />
+
+	<string
+		id="Sheme_Combat_MP"
+		value="ХЅ¶·" />
+
+	<string
+		id="Sheme_Peace_MP"
+		value="єНЖЅ" />
+<!-- Teams settings -->
+	<string
+		id="Teams settings"
+		value="ґґЅЁБЄ»ъУОП· > ¶УОйЙиЦГ" />
+
+	<string
+		id="Team1"
+		value="¶УОй 1" />
+
+	<string
+		id="Team2"
+		value="¶УОй 2" />
+
+	<string
+		id="Team3"
+		value="¶УОй 3" />
+
+	<string
+		id="Team4"
+		value="¶УОй 4" />
+
+	<string
+		id="Team5"
+		value="¶УОй 5" />
+
+	<string
+		id="Team6"
+		value="¶УОй 6" />
+
+	<string
+		id="Team7"
+		value="¶УОй 7" />
+
+	<string
+		id="Team8"
+		value="¶УОй 8" />
+
+	<string
+		id="TeamsDefault"
+		value="Д¬ИП" />
+
+	<string
+		id="TeamsBack"
+		value="·µ»Ш" />
+
+	<string
+		id="ColorScheme_0"
+		value="НїЧ° 1" />
+
+	<string
+		id="ColorScheme_1"
+		value="НїЧ° 2" />
+
+	<string
+		id="ColorScheme_2"
+		value="НїЧ° 3" />
+
+	<string
+		id="ColorScheme_3"
+		value="НїЧ° 4" />
+
+	<string
+		id="ColorScheme_4"
+		value="НїЧ° 5" />
+
+	<string
+		id="ColorScheme_5"
+		value="НїЧ° 6" />
+
+	<string
+		id="ColorScheme_6"
+		value="НїЧ° 7" />
+
+	<string
+		id="ColorScheme_7"
+		value="НїЧ° 8" />
+
+	<string
+		id="ColorScheme_8"
+		value="НїЧ° 9" />
+
+	<string
+		id="ColorScheme_9"
+		value="НїЧ° 10" />
+
+	<string
+		id="ColorScheme_10"
+		value="НїЧ° 11" />
+
+	<string
+		id="ColorScheme_11"
+		value="НїЧ° 12" />
+
+	<string
+		id="ColorScheme_12"
+		value="НїЧ° 13" />
+
+	<string
+		id="ColorScheme_13"
+		value="НїЧ° 14" />
+
+	<string
+		id="ColorScheme_14"
+		value="НїЧ° 15" />
+
+	<string
+		id="ColorScheme_15"
+		value="НїЧ° 16" />
+
+	<string
+		id="ColorScheme_16"
+		value="НїЧ° 17" />
+
+	<string
+		id="ColorScheme_17"
+		value="НїЧ° 18" />
+
+	<string
+		id="LogoName_0"
+		value="ОЮ»Х±к" />
+
+	<string
+		id="LogoName_1"
+		value="µБ·Л" />
+
+	<string
+		id="LogoName_2"
+		value="БФН·ХЯ" />
+
+	<string
+		id="LogoName_3"
+		value="Г°ПХХЯ" />
+
+	<string
+		id="LogoName_4"
+		value="МЅПХјТ" />
+
+	<string
+		id="LogoName_5"
+		value="№ЩБЕ" />
+
+	<string
+		id="LogoName_6"
+		value="»ТРЬІїВд" />
+
+	<string
+		id="LogoName_7"
+		value="ЙМИЛБЄГЛ" />
+
+	<string
+		id="LogoName_8"
+		value="КАЅзЦИРт" />
+
+	<string
+		id="LogoName_9"
+		value="Е©·т" />
+
+	<string
+		id="LogoName_10"
+		value="ґуµШЦ®ЧУ" />
+
+	<string
+		id="LogoName_11"
+		value="¶йВдХЯ" />
+
+	<string
+		id="LogoName_12"
+		value="ГФК§ХЯ" />
+
+	<string
+		id="LogoName_13"
+		value="јјК¦" />
+
+	<string
+		id="LogoName_14"
+		value="ЙсЪНРЕНЅ" />
+
+	<string
+		id="LogoName_15"
+		value="ЧнѕЖ¶сД§" />
+
+	<string
+		id="LogoName_16"
+		value="РЗіЅ" />
+
+	<string
+		id="LogoName_17"
+		value="Й±КуХЯ" />
+
+	<string
+		id="LogoName_18"
+		value="ИМХЯ" />
+
+	<string
+		id="LogoName_19"
+		value="жТЖ¤Кї" />
+
+	<string
+		id="LogoName_20"
+		value="НїС»" />
+
+	<string
+		id="LogoName_21"
+		value="ЛХБЄ" />
+
+	<string
+		id="LogoName_22"
+		value="»ъЖчИЛ" />
+
+	<string
+		id="LogoName_23"
+		value="ВГНЕ" />
+
+	<string
+		id="LogoName_24"
+		value="ДщАп" />
+
+	<string
+		id="LogoName_25"
+		value="І¶КЦ" />
+
+	<string
+		id="LogoName_fetish_moouse_01.dds"
+		value="Й±КуХЯЈЁ-2Ј©" />
+
+	<string
+		id="LogoName_fetish_qqqr_01.dds"
+		value="ЛХБЄЈЁ-1Ј©" />
+
+	<string
+		id="LogoName_fetish_skull_01.dds"
+		value="»ъЖчИЛЈЁ+1Ј©" />
+
+	<string
+		id="LogoName_fetish_peace_01.dds"
+		value="жТЖ¤КїЈЁ+2Ј©" />
+
+	<string
+		id="LogoName_fetish_devil_01.dds"
+		value="ЧнѕЖ¶сД§ЈЁ-2Ј©" />
+
+	<string
+		id="LogoName_fetish_military_01.dds"
+		value="РЗіЅЈЁ+1Ј©" />
+
+	<string
+		id="LogoName_fetish_ninja_01.dds"
+		value="ИМХЯЈЁ+2Ј©" />
+
+	<string
+		id="LogoName_fetish_punk_01.dds"
+		value="НїС»ЈЁ-1Ј©" />
+<!-- Client Add settings -->
+	<string
+		id="Client Add settings"
+		value="Б¬ЅУБЄ»ъУОП· > ёЅјУ" />
+
+	<string
+		id="ClientAddDefault"
+		value="Д¬ИП" />
+
+	<string
+		id="ClientAddServer"
+		value="·юОсЖчГыіЖ" />
+
+	<string
+		id="ClientAddPort"
+		value="¶ЛїЪ" />
+
+	<string
+		id="ClientAddBack"
+		value="·µ»Ш" />
+<!-- View Map&amp;Car settings -->
+	<string
+		id="View Map settings"
+		value="ґґЅЁБЄ»ъУОП· > µШНјФ¤АА" />
+
+	<string
+		id="View Car settings"
+		value="ґґЅЁБЄ»ъУОП· > іµБѕФ¤АА" />
+
+	<string
+		id="ViewMapBack"
+		value="·µ»Ш" />
+
+	<string
+		id="Return"
+		value="·µ»Ш" />
+<!-- Multiplayer messages -->
+	<string
+		id="ServerHasNewerProtocolVersion"
+		value="ОЮ·ЁБ¬ЅУЈє·юОсЖчР­ТйІ»јжИЭЎЈ" />
+
+	<string
+		id="ServerHasOlderProtocolVersion"
+		value="ОЮ·ЁБ¬ЅУЈє·юОсЖчР­ТйІ»јжИЭЎЈ" />
+
+	<string
+		id="TooManyPlayersOnServer"
+		value="ОЮ·ЁБ¬ЅУЈє·юОсЖчТСВъЎЈ" />
+
+	<string
+		id="ServerHasLeftTheGame"
+		value="·юОсЖчТС№Ш±ХЎЈ" />
+
+	<string
+		id="ServerDied"
+		value="Б¬ЅУ¶ЄК§ЎЈ" />
+
+	<string
+		id="NetworkErrorOnServer"
+		value="НшВзґнОуЎЈ" />
+
+	<string
+		id="NetworkErrorOnClientPreUpdateThread"
+		value="НшВзґнОуЎЈ" />
+
+	<string
+		id="ServerMapDoesntExistOnClient"
+		value="ОґХТµЅµШНјЎЈ" />
+
+	<string
+		id="ServerNotReady"
+		value="·юОсЖчОґѕНРчЎЈ" />
+</resource>
