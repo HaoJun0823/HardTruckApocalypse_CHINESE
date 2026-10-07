@@ -3,21 +3,21 @@
 	<string
 		id="5000"
 		modelName="NewHero_mask"
-		value="瓦根特|  这世上没什么好事是白白欠下的人情……把包裹送到世界的另一头，就挣区区500金币。谁让我欠了机械师救我卡车的情呢。"
+		value="瓦根特|  这世上没什么好事是白|白欠下的人情……|把包裹送到世界的另一头，|就挣区区500金币。|谁让我欠了机械师救我卡车的情呢。"
 		sound="data\sounds\Speech\sin\sin_5000_nomad.ogg"
 		time="11" />
 
 	<string
 		id="5001"
 		modelName="NewHero_mask"
-		value="瓦根特|  人情债，还清了才叫好。我这份报答，是荒漠里足足400英里。左边是山，右边是草原……要不就是右边是山、左边是草原——真是多姿多彩啊。这等美景看得我想吐。"
+		value="瓦根特|  人情债，还清了才叫好。|我这份报答，是荒漠里足足|400英里。左边是山，|右边是草原……要不就是右边是山、|左边是草原——真是多姿多彩啊。|这等美景看得我想吐。"
 		sound="data\sounds\Speech\sin\sin_5001_nomad.ogg"
 		time="13" />
 
 	<string
 		id="5002"
 		modelName="NewHero_mask"
-		value="瓦根特|  旅途的终点，我到了名叫杰里科的小镇。我怀疑这儿的人能不能找出一间像样的酒吧……"
+		value="瓦根特|  旅途的终点，|我到了名叫杰里科的小镇。|我怀疑这儿的人能不能找出|一间像样的酒吧……"
 		sound="data\sounds\Speech\sin\sin_5002_nomad.ogg"
 		time="6" />
 
@@ -44,7 +44,7 @@
 		modelSkin="1"
 		modelCfg="58"
 		modelSlot="1"
-		value="丑角|  你现在站的是狼道。我们是狗帮，流浪仔。那种隔着几里地就散发麻烦味儿的外乡人，我们不喜欢。要不是自己找麻烦，你最好掉头回去。"
+		value="丑角|  你现在站的是狼道。|我们是狗帮，流浪仔。|那种隔着几里地就散发麻烦|味儿的外乡人，我们不喜欢。|要不是自己找麻烦，|你最好掉头回去。"
 		sound="data\sounds\Speech\sin\sin_5102_arlekin.ogg"
 		time="7" />
 
@@ -61,7 +61,7 @@
 		modelSkin="1"
 		modelCfg="58"
 		modelSlot="1"
-		value="丑角|  狗仔们，这位客人好像不懂本地的规矩。热情点儿，给他讲解讲解"
+		value="丑角|  狗仔们，这位客人好像|不懂本地的规矩。|热情点儿，给他讲解讲解"
 		sound="data\sounds\Speech\sin\sin_5104_arlekin.ogg"
 		time="5" />
 
@@ -104,7 +104,7 @@
 	<string
 		id="5202"
 		modelName="NewHero_mask"
-		value="瓦根特|  上车……我从不朝没车的人开枪。"
+		value="瓦根特|  上车……我从不朝没|车的人开枪。"
 		sound="data\sounds\Speech\sin\sin_5202_nomad.ogg"
 		time="4" />
 
@@ -121,7 +121,7 @@
 	<string
 		id="5204"
 		modelName="NewHero_mask"
-		value="瓦根特|  这镇上还有谁想跟我'打招呼'吗？……没有？拜拜了您呐，小狗崽子们。"
+		value="瓦根特|  这镇上还有谁想跟我'|打招呼'吗？……|没有？拜拜了您呐，小狗崽子们。"
 		sound="data\sounds\Speech\sin\sin_5204_nomad.ogg"
 		time="7" />
 
@@ -148,14 +148,14 @@
 		modelSkin="1"
 		modelCfg="132"
 		modelSlot="1"
-		value="利己者|  就是这外乡人打的丑角。这下要因为他打起来了。"
+		value="利己者|  就是这外乡人打的丑角。|这下要因为他打起来了。"
 		sound="data\sounds\Speech\sin\sin_5302_egoist.ogg"
 		time="6" />
 
 	<string
 		id="5303"
 		modelName="NewHero_mask"
-		value="瓦根特|  你有什么不痛快的？你们的对头可削弱了。"
+		value="瓦根特|  你有什么不痛快的？|你们的对头可削弱了。"
 		sound="data\sounds\Speech\sin\sin_5303_nomad.ogg"
 		time="2" />
 
@@ -223,7 +223,7 @@
 	<string
 		id="5314"
 		modelName="NewHero_mask"
-		value="瓦根特|  死不了的你瞧着吧……你要是乐意，我就在这镇上多待会儿。"
+		value="瓦根特|  死不了的你瞧着吧……|你要是乐意，我就在这镇上|多待会儿。"
 		sound="data\sounds\Speech\sin\sin_5314_nomad.ogg"
 		time="4" />
 
@@ -240,7 +240,7 @@
 		modelSkin="1"
 		modelCfg="8"
 		modelSlot="1"
-		value="司机|  谁都乐意有人搭把手。你不就是宰了丑角的那位司机吗？"
+		value="司机|  谁都乐意有人搭把手。|你不就是宰了丑角的那位司机吗？"
 		sound="data\sounds\Speech\sin\sin_5401_driver.ogg"
 		time="5" />
 
@@ -290,7 +290,7 @@
 	<string
 		id="5503"
 		modelName="NewHero_mask"
-		value="瓦根特|  你们的报酬就在这儿了……弟兄们，开火！"
+		value="瓦根特|  你们的报酬就在这儿了……|弟兄们，开火！"
 		sound="data\sounds\Speech\sin\sin_5503_nomad.ogg"
 		time="3" />
 
@@ -321,7 +321,7 @@
 	<string
 		id="5702"
 		modelName="NewHero_mask"
-		value="瓦根特|  上我的车……敢乱动就要你的命。"
+		value="瓦根特|  上我的车……|敢乱动就要你的命。"
 		sound="data\sounds\Speech\sin\sin_5702_nomad.ogg"
 		time="4" />
 
@@ -350,7 +350,7 @@
 		modelSkin="0"
 		modelCfg="132"
 		modelSlot="1"
-		value="猫帮老大|  先把那个利己者带上来给我看看。"
+		value="猫帮老大|  先把那个利己者带上|来给我看看。"
 		sound="data\sounds\Speech\sin\sin_5802_cat.ogg"
 		time="2" />
 
@@ -411,7 +411,7 @@
 	<string
 		id="6001"
 		modelName="NewHero_mask"
-		value="瓦根特|  狗帮显然添了新打手……我赶到的时候，一切都完事了。"
+		value="瓦根特|  狗帮显然添了新打手……|我赶到的时候，一切都完事了。"
 		sound="data\sounds\Speech\sin\sin_6001_nomad.ogg"
 		time="5" />
 
@@ -445,7 +445,7 @@
 	<string
 		id="6005"
 		modelName="NewHero_mask"
-		value="瓦根特|  该不会是让人拆了当零件卖了吧？"
+		value="瓦根特|  该不会是让人拆了当零|件卖了吧？"
 		sound="data\sounds\Speech\sin\sin_6005_nomad.ogg"
 		time="2" />
 
@@ -455,7 +455,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="凯文|  我看不至于。那司机既不是狗帮的，也不是猫帮的；他就是只下作的老鼠。把他车上的武器给卸下来。"
+		value="凯文|  我看不至于。|那司机既不是狗帮的，|也不是猫帮的；他就是只下|作的老鼠。把他车上的武|器给卸下来。"
 		sound="data\sounds\Speech\sin\sin_6006_kevin.ogg"
 		time="7" />
 
@@ -472,7 +472,7 @@
 		modelSkin="0"
 		modelCfg="132"
 		modelSlot="1"
-		value="猫帮老大|  你们怎么放他跑了？！立刻去追！！！"
+		value="猫帮老大|  你们怎么放他跑了？！|立刻去追！！！"
 		sound="data\sounds\Speech\sin\sin_6100_cat.ogg"
 		time="3" />
 
@@ -482,7 +482,7 @@
 		modelSkin="0"
 		modelCfg="132"
 		modelSlot="1"
-		value="猫帮老大|  他人呢？！马克斯、弗莱明——你俩留下；其余的跟我来。"
+		value="猫帮老大|  他人呢？！马克斯、弗莱明——|你俩留下；其余的跟我来。"
 		sound="data\sounds\Speech\sin\sin_6101_cat.ogg"
 		time="5" />
 
@@ -508,7 +508,7 @@
 	<string
 		id="6104"
 		modelName="NewHero_mask"
-		value="瓦根特|  看样子是跑掉了。我们最好上教堂去——在那儿能躲到风头过去。"
+		value="瓦根特|  看样子是跑掉了。|我们最好上教堂去——|在那儿能躲到风头过去。"
 		sound="data\sounds\Speech\sin\sin_6104_nomad.ogg"
 		time="4" />
 
@@ -527,14 +527,14 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="市长|  你干得漂亮极了——两帮中的一帮已经不复存在。接下来你有什么打算？"
+		value="市长|  你干得漂亮极了——|两帮中的一帮已经不复存在。|接下来你有什么打算？"
 		sound="data\sounds\Speech\sin\sin_6201_mer.ogg"
 		time="5" />
 
 	<string
 		id="6202"
 		modelName="NewHero_mask"
-		value="瓦根特|  我得先把车修好，再给自己弄几件武器。"
+		value="瓦根特|  我得先把车修好，|再给自己弄几件武器。"
 		sound="data\sounds\Speech\sin\sin_6202_nomad.ogg"
 		time="3" />
 
@@ -544,7 +544,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="市长|  多少钱我都不会帮你……也不会帮。我只给你武器。狗帮把乔抓走了。我不想让他出什么闪失。"
+		value="市长|  多少钱我都不会帮你……|也不会帮。我只给你武器。|狗帮把乔抓走了。|我不想让他出什么闪失。"
 		sound="data\sounds\Speech\sin\sin_6203_mer.ogg"
 		time="10" />
 
@@ -561,7 +561,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="市长|  是，在城东边。波恩和凯文找凯蒂去了——那边只剩些普通打手……"
+		value="市长|  是，在城东边。|波恩和凯文找凯蒂去了——|那边只剩些普通打手……"
 		sound="data\sounds\Speech\sin\sin_6205_mer.ogg"
 		time="6" />
 
@@ -571,7 +571,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="凯文|  干得漂亮！兴许你都有我这么能耐了。"
+		value="凯文|  干得漂亮！兴许你都有我这么|能耐了。"
 		sound="data\sounds\Speech\sin\sin_6300_kevin.ogg"
 		time="4" />
 
@@ -598,14 +598,14 @@
 		modelSkin="3"
 		modelCfg="132"
 		modelSlot="1"
-		value="波恩|  听着！我不想打仗。咱们犯不着打了。仗打完了——我们赢了。还打什么打？咱们该高兴才对！瓦根特，跟我一伙吧。咱们一起去找凯蒂；我有钱。一切都会好起来的！我们赢了！"
+		value="波恩|  听着！我不想打仗。|咱们犯不着打了。|仗打完了——我们赢了。|还打什么打？咱们该高兴才对！|瓦根特，跟我一伙吧。|咱们一起去找凯蒂；我有钱。|一切都会好起来的！我们赢了！"
 		sound="data\sounds\Speech\sin\sin_6303_born.ogg"
 		time="21" />
 
 	<string
 		id="6304"
 		modelName="NewHero_mask"
-		value="瓦根特|  恐怕我和凯文走不到一条道上……"
+		value="瓦根特|  恐怕我和凯文走不到一|条道上……"
 		sound="data\sounds\Speech\sin\sin_6304_nomad.ogg"
 		time="2" />
 
@@ -622,20 +622,20 @@
 	<string
 		id="6400"
 		modelName="NewHero_mask"
-		value="瓦根特|  故事到此为止……杰里科镇毁了。恨透了帮派的本地人，离了帮派的钱在镇上活不下去，没多久就都走了。波恩的钱财也没了下落。猫帮的财宝，连同他们的宅子一起烧成了灰。"
+		value="瓦根特|  故事到此为止……|杰里科镇毁了。恨透了帮|派的本地人，离了帮|派的钱在镇上活不下去，|没多久就都走了。|波恩的钱财也没了下落。|猫帮的财宝，连同他们的宅|子一起烧成了灰。"
 		sound="data\sounds\Speech\sin\sin_6400_nomad.ogg"
 		time="18" />
 
 	<string
 		id="6401"
 		modelName="NewHero_mask"
-		value="瓦根特|  我把剩下的钱全花在修车上，然后踏上了旅程。酒吧里一个醉汉走漏了风声：有辆装着值钱货的卡车，扮作不起眼的小商贩走乡串户。这样的机会要是浪费了，那我可就是蠢货了……"
+		value="瓦根特|  我把剩下的钱全花在修车上，|然后踏上了旅程。|酒吧里一个醉汉走漏了风声：|有辆装着值钱货的卡车，|扮作不起眼的小商贩走乡串户。|这样的机会要是浪费了，|那我可就是蠢货了……"
 		sound="data\sounds\Speech\sin\sin_6401_nomad.ogg"
 		time="15" />
 
 	<string
 		id="6500"
-		value="瓦根特|  看这样子我从这儿过不去。肯定还有别的路。"
+		value="瓦根特|  看这样子我从这儿过不去。|肯定还有别的路。"
 		sound="data\sounds\Speech\sin\sin_6500_nomad.ogg"
 		time="3" />
 
@@ -647,14 +647,14 @@
 	<string
 		id="8802"
 		modelName="NewHero_mask"
-		value="瓦根特|  我不知道这条路通向哪里。所以我还是留在这儿。"
+		value="瓦根特|  我不知道这条路通向哪里。|所以我还是留在这儿。"
 		sound="data\sounds\Speech\r5m1\r5m1_8802_nomad.ogg"
 		time="5" />
 
 	<string
 		id="8803"
 		modelName="NewHero_mask"
-		value="瓦根特|  这地方透着古怪。我们最好离远点。"
+		value="瓦根特|  这地方透着古怪。|我们最好离远点。"
 		sound="data\sounds\Speech\r5m1\r5m1_8802_nomad.ogg"
 		time="5" />
 </resource>

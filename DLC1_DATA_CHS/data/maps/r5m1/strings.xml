@@ -3,19 +3,19 @@
 	<string
 		id="101"
 		modelName="NewHero_mask"
-		value="瓦根特|  我没看见写着'埃德蒙顿 - 10公里'的路牌。我们找找看。"
+		value="瓦根特|  我没看见写着'埃德蒙|顿 - 10公里'的路牌。|我们找找看。"
 		sound="data\sounds\Speech\r5m1\r5m1_101_nomad.ogg"
 		time="7" />
 	<string
 		id="201"
 		modelName="NewHero_mask"
-		value="瓦根特|  万事通说得没错，让他化油器堵死去吧！这个什么'图书馆'守卫得可真够严实。不过没关系，比这难啃的地方我们都拿下来过！"
+		value="瓦根特|  万事通说得没错，|让他化油器堵死去吧！|这个什么'图书馆'守卫得|可真够严实。不过没关系，|比这难啃的地方我们都拿下来过！"
 		sound="data\sounds\Speech\r5m1\r5m1_201_nomad.ogg"
 		time="11" />
 	<string
 		id="401"
 		modelName="NewHero_mask"
-		value="瓦根特|  好啊！你就是人们叫作万事通的那家伙？"
+		value="瓦根特|  好啊！你就是人们叫作|万事通的那家伙？"
 		sound="data\sounds\Speech\r5m1\r5m1_401_nomad.ogg"
 		time="4" />
 
@@ -23,14 +23,14 @@
 		id="402"
 		modelName="mask_ben"
 		modelSlot="1"
-		value="诺瓦尔|  是的，大家都这么叫我。你是谁？想干什么？"
+		value="诺瓦尔|  是的，大家都这么叫我。|你是谁？想干什么？"
 		sound="data\sounds\Speech\r5m1\r5m1_402_noval.ogg"
 		time="5" />
 
 	<string
 		id="403"
 		modelName="NewHero_mask"
-		value="瓦根特|  我叫瓦根特。听说你是古地图和天文星象方面的行家。我得弄清楚怎么去埃德蒙顿。"
+		value="瓦根特|  我叫瓦根特。|听说你是古地图和天文星象|方面的行家。我得弄清楚|怎么去埃德蒙顿。"
 		sound="data\sounds\Speech\r5m1\r5m1_403_nomad.ogg"
 		time="10" />
 
@@ -45,7 +45,7 @@
 	<string
 		id="405"
 		modelName="NewHero_mask"
-		value="瓦根特|  哎，行了，少装蒜！你就是研究那些地图的行家，炸了你的油箱！你理应知道埃德蒙顿的事儿。"
+		value="瓦根特|  哎，行了，少装蒜！|你就是研究那些地图的行家，|炸了你的油箱！你理应知道|埃德蒙顿的事儿。"
 		sound="data\sounds\Speech\r5m1\r5m1_405_nomad.ogg"
 		time="8" />
 
@@ -53,14 +53,14 @@
 		id="406"
 		modelName="mask_ben"
 		modelSlot="1"
-		value="诺瓦尔|  你怎么敢这样，先生？！我谁也不欠。我不懂什么地图。我懂的是纸牌！我是赌博史专家。"
+		value="诺瓦尔|  你怎么敢这样，先生？！|我谁也不欠。我不懂什么地图。|我懂的是纸牌！我是赌博史专家。"
 		sound="data\sounds\Speech\r5m1\r5m1_406_noval.ogg"
 		time="20" />
 
 	<string
 		id="407"
 		modelName="NewHero_mask"
-		value="瓦根特|  听着，'讨厌鬼'先生。我不懂你在念叨什么，但给我记住了：'你那些牌局我压根不稀罕，要么告诉我埃德蒙顿在哪儿，要么我就让你尝尝棒子的滋味。听明白了吗？'"
+		value="瓦根特|  听着，'讨厌鬼'先生。|我不懂你在念叨什么，|但给我记住了：'你那些牌|局我压根不稀罕，|要么告诉我埃德蒙顿在哪儿，|要么我就让你尝尝棒子的滋味。|听明白了吗？'"
 		sound="data\sounds\Speech\r5m1\r5m1_407_nomad.ogg"
 		time="16" />
 
@@ -68,14 +68,14 @@
 		id="408"
 		modelName="mask_ben"
 		modelSlot="1"
-		value="诺瓦尔|  明白了。别激动！虽然我真不知道埃德蒙顿城在哪儿，但我可以给你指条道。你要的地图就在那栋他们叫作'图书馆'的楼里，离这儿几百米。"
+		value="诺瓦尔|  明白了。别激动！|虽然我真不知道埃德蒙顿城在哪儿，|但我可以给你指条道。|你要的地图就在那栋他们叫|作'图书馆'的楼里，|离这儿几百米。"
 		sound="data\sounds\Speech\r5m1\r5m1_408_noval.ogg"
 		time="20" />
 
 	<string
 		id="409"
 		modelName="NewHero_mask"
-		value="瓦根特|  我拿消声器发誓！你这松口松得也太快了吧。我看人们叫你万事通，总该有点道理吧？说吧，你忘了提醒我什么？"
+		value="瓦根特|  我拿消声器发誓！|你这松口松得也太快了吧。|我看人们叫你万事通，|总该有点道理吧？|说吧，你忘了提醒我什么？"
 		sound="data\sounds\Speech\r5m1\r5m1_409_nomad.ogg"
 		time="11" />
 
@@ -83,7 +83,7 @@
 		id="410"
 		modelName="mask_ben"
 		modelSlot="1"
-		value="诺瓦尔|  哪儿的话！不是我忘了。是我没来得及说。问题是，那座图书馆是萨姆的产业，有他的打手把守着。"
+		value="诺瓦尔|  哪儿的话！不是我忘了。|是我没来得及说。|问题是，那座图书馆是萨姆的产业，|有他的打手把守着。"
 		sound="data\sounds\Speech\r5m1\r5m1_410_noval.ogg"
 		time="13" />
 
@@ -98,7 +98,7 @@
 		id="412"
 		modelName="mask_ben"
 		modelSlot="1"
-		value="诺瓦尔|  是的，你说得没错——除了一些无关紧要的小细节。"
+		value="诺瓦尔|  是的，你说得没错——|除了一些无关紧要的小细节。"
 		sound="data\sounds\Speech\r5m1\r5m1_412_noval.ogg"
 		time="6" />
 
@@ -112,28 +112,28 @@
 	<string
 		id="5011"
 		modelName="NewHero_mask"
-		value="瓦根特|  啊哈……嗯……我明白了！这么说埃德蒙顿在大河对岸的什么地方，在那个叫……呃……加拿大的地界。"
+		value="瓦根特|  啊哈……嗯……|我明白了！这么说埃德蒙|顿在大河对岸的什么地方，|在那个叫……呃……加拿大的地界。"
 		sound="data\sounds\Speech\r5m1\r5m1_5011_nomad.ogg"
 		time="11" />
 
 	<string
 		id="5012"
 		modelName="NewHero_mask"
-		value="瓦根特|  那我怎么过河呢？明白了。啊哈。有座桥。当然，前提是这上面画的确实是座桥。希望它还没塌。因为这张地图上，我实在找不到第二座能过到大河对岸的桥了。"
+		value="瓦根特|  那我怎么过河呢？|明白了。啊哈。有座桥。|当然，前提是这上面画的确实|是座桥。希望它还没塌。|因为这张地图上，|我实在找不到第二座能过到大|河对岸的桥了。"
 		sound="data\sounds\Speech\r5m1\r5m1_5012_nomad.ogg"
 		time="20" />
 
 	<string
 		id="601"
 		modelSlot="1"
-		value="萨姆|  伙计，你脑子是不是坏掉了？还是说你真觉得抢了我还能不付代价？居然还抢了两次！"
+		value="萨姆|  伙计，你脑子是不是坏掉了？|还是说你真觉得抢了我还能|不付代价？居然还抢了两次！"
 		sound="data\sounds\Speech\r5m1\r5m1_601_sam.ogg"
 		time="10" />
 
 	<string
 		id="602"
 		modelName="NewHero_mask"
-		value="瓦根特|   两次？！我怎么连一次都不记得！"
+		value="瓦根特|   两次？！我怎么连一|次都不记得！"
 		sound="data\sounds\Speech\r5m1\r5m1_602_nomad.ogg"
 		time="4" />
 
@@ -141,14 +141,14 @@
 		id="603"
 		modelName="Sam_mask"
 		modelSlot="1"
-		value="萨姆|  你闯进了我的图书馆。还敢动万事通。万事通也是我的财产！"
+		value="萨姆|  你闯进了我的图书馆。|还敢动万事通。万事|通也是我的财产！"
 		sound="data\sounds\Speech\r5m1\r5m1_603_sam.ogg"
 		time="12" />
 
 	<string
 		id="604"
 		modelName="NewHero_mask"
-		value="瓦根特|   让我的化油器堵死去吧！我怎么没在万事通身上和图书馆里看到任何'萨姆产业'的牌子。"
+		value="瓦根特|   让我的化油器堵死去吧！|我怎么没在万事通身上和图|书馆里看到任何'萨姆产业|'的牌子。"
 		sound="data\sounds\Speech\r5m1\r5m1_604_nomad.ogg"
 		time="7" />
 
@@ -156,7 +156,7 @@
 		id="605"
 		modelName="Sam_mask"
 		modelSlot="1"
-		value="萨姆|  上了弦的地雷上也没写字，可你一踩上去——轰！！！你就把我当成一颗撞上的地雷吧。按说我该崩了你，可惜你不配浪费子弹。"
+		value="萨姆|  上了弦的地雷上也没写字，|可你一踩上去——轰！！！|你就把我当成一颗撞上的地雷吧。|按说我该崩了你，|可惜你不配浪费子弹。"
 		sound="data\sounds\Speech\r5m1\r5m1_605_sam.ogg"
 		time="19" />
 
@@ -164,7 +164,7 @@
 		id="60512"
 		modelName="Sam_mask"
 		modelSlot="1"
-		value="萨姆|  依我看，最好把你扔进角斗场，我还能靠赌局抽头赚上一笔。"
+		value="萨姆|  依我看，最好把你扔进角斗场，|我还能靠赌局抽头赚上一笔。"
 		sound="data\sounds\Speech\r5m1\r5m1_60512_sam.ogg"
 		time="10" />
 
@@ -179,7 +179,7 @@
 		id="607"
 		modelName="Sam_mask"
 		modelSlot="1"
-		value="萨姆|  不想打也随你。我还可以赌赌你车上哪个部位最先被打飞。"
+		value="萨姆|  不想打也随你。|我还可以赌赌你车上哪个部|位最先被打飞。"
 		sound="data\sounds\Speech\r5m1\r5m1_607_sam.ogg"
 		time="11" />
 
@@ -194,14 +194,14 @@
 		id="609"
 		modelName="Sam_mask"
 		modelSlot="1"
-		value="萨姆|  那我就给你24小时，滚出我的地盘。"
+		value="萨姆|  那我就给你24小时，|滚出我的地盘。"
 		sound="data\sounds\Speech\r5m1\r5m1_609_sam.ogg"
 		time="7" />
 
 	<string
 		id="610"
 		modelName="NewHero_mask"
-		value="瓦根特|  行。我打。听我一句劝——把你的钱都押我身上。你不会后悔的。"
+		value="瓦根特|  行。我打。听我一句劝——|把你的钱都押我身上。|你不会后悔的。"
 		sound="data\sounds\Speech\r5m1\r5m1_610_nomad.ogg"
 		time="9" />
 
@@ -216,7 +216,7 @@
 		id="701"
 		modelName="Sam_mask"
 		modelSlot="1"
-		value="萨姆|  听着，朋友，是我看走眼了。像你这么身手利落的，我可少见。你天生就是吃这碗饭的。我要是请你入伙，意下如何？"
+		value="萨姆|  听着，朋友，是我看走眼了。|像你这么身手利落的，我可少见。|你天生就是吃这碗饭的。|我要是请你入伙，意下如何？"
 		sound="data\sounds\Speech\r5m1\r5m1_701_sam.ogg"
 		time="12" />
 
@@ -231,14 +231,14 @@
 		id="703"
 		modelName="Sam_mask"
 		modelSlot="1"
-		value="萨姆|  听我说。你八成以为我请你是去当个普通帮派的打手？那你就想岔了。看看你周围。这片国土唯一的老板就是我。明白吗？"
+		value="萨姆|  听我说。你八成以为我请你是|去当个普通帮派的打手？|那你就想岔了。看看你周围。|这片国土唯一的老板就是我。|明白吗？"
 		sound="data\sounds\Speech\r5m1\r5m1_703_sam.ogg"
 		time="18" />
 
 	<string
 		id="704"
 		modelName="NewHero_mask"
-		value="瓦根特|  哦，既然你是这儿的主人，那你总该知道大河桥在哪儿吧？"
+		value="瓦根特|  哦，既然你是这儿的主人，|那你总该知道大河桥在哪儿吧？"
 		sound="data\sounds\Speech\r5m1\r5m1_704_nomad.ogg"
 		time="7" />
 
@@ -246,7 +246,7 @@
 		id="705"
 		modelName="Sam_mask"
 		modelSlot="1"
-		value="萨姆|  我知道，不过我暂时还不想动它。桥对面就是加拿大地界。总有一天我会过去拿下那边的财富，但在那之前，谁也别想从我眼皮底下过去。胆敢靠近大桥的人，格杀勿论。"
+		value="萨姆|  我知道，不过我暂时还不|想动它。桥对面就是加拿大地界。|总有一天我会过去拿下那边的财富，|但在那之前，谁也别想从我眼|皮底下过去。胆敢靠近大桥的人，|格杀勿论。"
 		sound="data\sounds\Speech\r5m1\r5m1_705_sam.ogg"
 		time="22" />
 
@@ -254,14 +254,14 @@
 		id="70512"
 		modelName="Sam_mask"
 		modelSlot="1"
-		value="萨姆|  谁要想跟我耍花招，子弹就会钻进他的油箱，明白吗？记住——桥上有我的人严防死守。"
+		value="萨姆|  谁要想跟我耍花招，|子弹就会钻进他的油箱，明白吗？|记住——桥上有我的人严防死守。"
 		sound="data\sounds\Speech\r5m1\r5m1_70512_sam.ogg"
 		time="15" />
 
 	<string
 		id="706"
 		modelName="NewHero_mask"
-		value="瓦根特|  明白了。我就是随口一问。那个'加拿大'到底有什么名堂？至于入伙的事，我答应了。"
+		value="瓦根特|  明白了。我就是随口一问。|那个'加拿大'到底有什么名堂？|至于入伙的事，我答应了。"
 		sound="data\sounds\Speech\r5m1\r5m1_706_nomad.ogg"
 		time="11" />
 
@@ -269,7 +269,7 @@
 		id="707"
 		modelName="Sam_mask"
 		modelSlot="1"
-		value="萨姆|   好极了！相信我，你这一步选对了。"
+		value="萨姆|   好极了！相信我，|你这一步选对了。"
 		sound="data\sounds\Speech\r5m1\r5m1_707_sam.ogg"
 		time="7" />
 	<string
@@ -283,7 +283,7 @@
 	<string
 		id="902"
 		modelName="NewHero_mask"
-		value="瓦根特|  当然，我可能记岔了，不过他没答应。就我记忆所及是这样。"
+		value="瓦根特|  当然，我可能记岔了，|不过他没答应。就我记忆所及|是这样。"
 		sound="data\sounds\Speech\r5m1\r5m1_902_nomad.ogg"
 		time="4" />
 
@@ -291,14 +291,14 @@
 		id="903"
 		modelName="Sam_mask"
 		modelSlot="1"
-		value="萨姆|  该死！！！那就听着——我给你换桩差事。你必须火速干掉一辆车。"
+		value="萨姆|  该死！！！那就听着——|我给你换桩差事。|你必须火速干掉一辆车。"
 		sound="data\sounds\Speech\r5m1\r5m1_903_sam.ogg"
 		time="8" />
 
 	<string
 		id="904"
 		modelName="NewHero_mask"
-		value="瓦根特|  我这辈子毁掉的车没有一百也有八十，怎么，这次有什么讲究？"
+		value="瓦根特|  我这辈子毁掉的车没有|一百也有八十，怎么，|这次有什么讲究？"
 		sound="data\sounds\Speech\r5m1\r5m1_904_nomad.ogg"
 		time="5" />
 
@@ -306,7 +306,7 @@
 		id="905"
 		modelName="Sam_mask"
 		modelSlot="1"
-		value="萨姆|  讲究大了。我的一位老朋友用自己的车跑走私。我不希望他人没了。就当是念着我们过去的交情。但走私这营生，必须了结。"
+		value="萨姆|  讲究大了。我的一位老|朋友用自己的车跑走私。|我不希望他人没了。|就当是念着我们过去的交情。|但走私这营生，必须了结。"
 		sound="data\sounds\Speech\r5m1\r5m1_905_sam.ogg"
 		time="15" />
 
@@ -314,7 +314,7 @@
 		id="90512"
 		modelName="Sam_mask"
 		modelSlot="1"
-		value="萨姆|  你只要趁车主在家的时候把车打烂，走私就断了，我那位朋友也毫发无伤。怎么样，干不干？"
+		value="萨姆|  你只要趁车主在家的时|候把车打烂，走私就断了，|我那位朋友也毫发无伤。|怎么样，干不干？"
 		sound="data\sounds\Speech\r5m1\r5m1_90512_sam.ogg"
 		time="10" />
 	<string
@@ -330,7 +330,7 @@
 	<string
 		id="1002"
 		modelName="NewHero_mask"
-		value="瓦根特|  我是来教训教训你们这帮走私贩的。"
+		value="瓦根特|  我是来教训教训你们这帮|走私贩的。"
 		sound="data\sounds\Speech\r5m1\r5m1_1002_nomad.ogg"
 		time="5" />
 
@@ -340,14 +340,14 @@
 		modelSkin="2"
 		modelCfg="332"
 		modelSlot="1"
-		value="陌生人|   你疯了吗？走私？我可不沾这摊子事！"
+		value="陌生人|   你疯了吗？|走私？我可不沾这摊子事！"
 		sound="data\sounds\Speech\r5m1\r5m1_1003_stranger.ogg"
 		time="4" />
 
 	<string
 		id="1004"
 		modelName="NewHero_mask"
-		value="瓦根特|  那这话你就照原样告诉所有人吧。等我收拾完你，这就是板上钉钉的事实了。"
+		value="瓦根特|  那这话你就照原样告|诉所有人吧。等我收拾完你，|这就是板上钉钉的事实了。"
 		sound="data\sounds\Speech\r5m1\r5m1_1004_nomad.ogg"
 		time="7" />
 	<string
@@ -361,7 +361,7 @@
 	<string
 		id="1102"
 		modelName="NewHero_mask"
-		value="瓦根特|  一切顺利！你那位朋友金盆洗手，不干走私了。"
+		value="瓦根特|  一切顺利！你那位朋友|金盆洗手，不干走私了。"
 		sound="data\sounds\Speech\r5m1\r5m1_1102_nomad.ogg"
 		time="5" />
 
@@ -369,7 +369,7 @@
 		id="1103"
 		modelName="Sam_mask"
 		modelSlot="1"
-		value="萨姆|  很好。现在，我有一桩正经买卖要跟你谈。"
+		value="萨姆|  很好。现在，|我有一桩正经买卖要跟你谈。"
 		sound="data\sounds\Speech\r5m1\r5m1_1103_sam.ogg"
 		time="6" />
 
@@ -384,14 +384,14 @@
 		id="1105"
 		modelName="Sam_mask"
 		modelSlot="1"
-		value="萨姆|  不算，不过没这桩正经。我们要办一年一度的车赛。参赛的人多，看热闹的人也多。人们会往夺魁热门身上押大钱。这回我打定主意，要亲自下场赌一把。"
+		value="萨姆|  不算，不过没这桩正经。|我们要办一年一度的车赛。|参赛的人多，看热闹的人也多。|人们会往夺魁热门身上押大钱。|这回我打定主意，|要亲自下场赌一把。"
 		sound="data\sounds\Speech\r5m1\r5m1_1105_sam.ogg"
 		time="18" />
 
 	<string
 		id="1106"
 		modelName="NewHero_mask"
-		value="瓦根特|   明白了。就是让我给那个最可能夺冠的家伙当保镖，对吧？"
+		value="瓦根特|   明白了。就是让我给那个|最可能夺冠的家伙当保镖，对吧？"
 		sound="data\sounds\Speech\r5m1\r5m1_1106_nomad.ogg"
 		time="5" />
 
@@ -399,7 +399,7 @@
 		id="1107"
 		modelName="Sam_mask"
 		modelSlot="1"
-		value="萨姆|  你还记得你送过包裹的那个家伙吗？我本来就想押他。可你也知道，他退赛了。"
+		value="萨姆|  你还记得你送过包|裹的那个家伙吗？我本来就想押他。|可你也知道，他退赛了。"
 		sound="data\sounds\Speech\r5m1\r5m1_1107_sam.ogg"
 		time="12" />
 
@@ -414,7 +414,7 @@
 		id="1109"
 		modelName="Sam_mask"
 		modelSlot="1"
-		value="萨姆|  然后，按我的吩咐，你把最有希望夺魁那家伙的车给打烂了。现在没人知道该押谁了。所以我提议：你亲自下场参赛，当我的那匹黑马，杀他们个片甲不留。"
+		value="萨姆|  然后，按我的吩咐，|你把最有希望夺魁那家|伙的车给打烂了。|现在没人知道该押谁了。|所以我提议：你亲自下场参赛，|当我的那匹黑马，|杀他们个片甲不留。"
 		sound="data\sounds\Speech\r5m1\r5m1_1109_sam.ogg"
 		time="16" />
 
@@ -443,7 +443,7 @@
 		id="120212"
 		modelName="Sam_mask"
 		modelSlot="1"
-		value="萨姆|  这是你的那份红利。我做的可是正经生意。"
+		value="萨姆|  这是你的那份红利。|我做的可是正经生意。"
 		sound="data\sounds\Speech\r5m1\r5m1_120212_sam.ogg"
 		time="6" />
 
@@ -451,7 +451,7 @@
 		id="1203"
 		modelName="Sam_mask"
 		modelSlot="1"
-		value="萨姆|  我手上正好有个活儿，适合你这种硬茬车手。我知道有那么一号人，根本不把我的规矩放在眼里。"
+		value="萨姆|  我手上正好有个活儿，|适合你这种硬茬车手。|我知道有那么一号人，|根本不把我的规矩放在眼里。"
 		sound="data\sounds\Speech\r5m1\r5m1_1203_sam.ogg"
 		time="10" />
 
@@ -473,7 +473,7 @@
 	<string
 		id="1206"
 		modelName="NewHero_mask"
-		value="瓦根特|  说正题吧，萨姆。你这吞吞吐吐绕弯子的毛病可真够呛。"
+		value="瓦根特|  说正题吧，萨姆。|你这吞吞吐吐绕弯子的毛病|可真够呛。"
 		sound="data\sounds\Speech\r5m1\r5m1_1206_nomad.ogg"
 		time="5" />
 
@@ -481,7 +481,7 @@
 		id="1207"
 		modelName="Sam_mask"
 		modelSlot="1"
-		value="萨姆|   有些蠢货没经我允许就在我的国土上乱窜，四处开火，吓唬庄稼人。去把那帮泼皮收拾了，好好给他们上一课。"
+		value="萨姆|   有些蠢货没经我允|许就在我的国土上乱窜，四处开火，|吓唬庄稼人。去把那帮泼皮收拾了，|好好给他们上一课。"
 		sound="data\sounds\Speech\r5m1\r5m1_1207_sam.ogg"
 		time="14" />
 	<string
@@ -490,14 +490,14 @@
 		modelSkin="0"
 		modelCfg="314"
 		modelSlot="1"
-		value="追兵|  你在这儿干什么？趁还活着赶紧滚！"
+		value="追兵|  你在这儿干什么？|趁还活着赶紧滚！"
 		sound="data\sounds\Speech\r5m1\r5m1_1301_persecutor.ogg"
 		time="3" />
 
 	<string
 		id="1302"
 		modelName="NewHero_mask"
-		value="瓦根特|  你们几个闯进了私人地界。我就是专程来给你们上一堂地理课的。"
+		value="瓦根特|  你们几个闯进了私人地界。|我就是专程来给你们上一堂|地理课的。"
 		sound="data\sounds\Speech\r5m1\r5m1_1302_nomad.ogg"
 		time="10" />
 
@@ -507,7 +507,7 @@
 		modelSkin="0"
 		modelCfg="314"
 		modelSlot="1"
-		value="追兵|  我们在追捕盗窃世界秩序帮金库的小偷，你最好别碍事，不然让你脑袋开花。"
+		value="追兵|  我们在追捕盗窃世界秩|序帮金库的小偷，你最好别碍事，|不然让你脑袋开花。"
 		sound="data\sounds\Speech\r5m1\r5m1_1303_persecutor.ogg"
 		time="7" />
 
@@ -530,7 +530,7 @@
 	<string
 		id="1402"
 		modelName="NewHero_mask"
-		value="瓦根特|  等等，等等。急什么。你是谁？那帮家伙又是谁？你们在这儿干什么？"
+		value="瓦根特|  等等，等等。|急什么。你是谁？|那帮家伙又是谁？|你们在这儿干什么？"
 		sound="data\sounds\Speech\r5m1\r5m1_1402_nomad.ogg"
 		time="8" />
 
@@ -547,7 +547,7 @@
 	<string
 		id="1404"
 		modelName="NewHero_mask"
-		value="瓦根特|  不会吧！他们可说小偷是你。要不要让我们看看你后备箱里装的是什么？"
+		value="瓦根特|  不会吧！他们可说小偷是你。|要不要让我们看看你后备|箱里装的是什么？"
 		sound="data\sounds\Speech\r5m1\r5m1_1404_nomad.ogg"
 		time="9" />
 
@@ -557,26 +557,26 @@
 		modelSkin="0"
 		modelCfg="148"
 		modelSlot="1"
-		value="小偷|  还想怎么样？你放尊重点，伙计。不然我可要忘了你刚才帮过我这茬了。再说了，我一个人本来就应付得来。你还是走吧。"
+		value="小偷|  还想怎么样？|你放尊重点，伙计。|不然我可要忘了你刚才|帮过我这茬了。再说了，|我一个人本来就应付得来。|你还是走吧。"
 		sound="data\sounds\Speech\r5m1\r5m1_1405_thief.ogg"
 		time="16" />
 
 	<string
 		id="1406"
 		modelName="NewHero_mask"
-		value="瓦根特|  你这嘴可不太客气啊？行，那我只好教教你规矩了。"
+		value="瓦根特|  你这嘴可不太客气啊？|行，那我只好教教你规矩了。"
 		sound="data\sounds\Speech\r5m1\r5m1_1406_nomad.ogg"
 		time="7" />
 	<string
 		id="1601"
 		modelName="NewHero_mask"
-		value="瓦根特|  但愿这玩意儿值得我搭进去的那些弹药。真搞不懂这是什么东西。我猜，萨姆能看出门道来。"
+		value="瓦根特|  但愿这玩意儿值得我搭|进去的那些弹药。|真搞不懂这是什么东西。|我猜，萨姆能看出门道来。"
 		sound="data\sounds\Speech\r5m1\r5m1_1601_nomad.ogg"
 		time="11" />
 	<string
 		id="1701"
 		modelName="NewHero_mask"
-		value="瓦根特|  你好，萨姆。胆敢越境的家伙都让我料理干净了。"
+		value="瓦根特|  你好，萨姆。|胆敢越境的家伙都让我料理干净了。"
 		sound="data\sounds\Speech\r5m1\r5m1_1701_nomad.ogg"
 		time="5" />
 
@@ -584,14 +584,14 @@
 		id="1702"
 		modelName="Sam_mask"
 		modelSlot="1"
-		value="萨姆|  干得漂亮！那你顺便打听出那帮蠢货是什么来头了吗？"
+		value="萨姆|  干得漂亮！那你顺便打|听出那帮蠢货是什么来头了吗？"
 		sound="data\sounds\Speech\r5m1\r5m1_1702_sam.ogg"
 		time="6" />
 
 	<string
 		id="1703"
 		modelName="NewHero_mask"
-		value="瓦根特|  他们自称是世界秩序帮的。在追一个小偷。"
+		value="瓦根特|  他们自称是世界秩序帮的。|在追一个小偷。"
 		sound="data\sounds\Speech\r5m1\r5m1_1703_nomad.ogg"
 		time="6" />
 
@@ -606,7 +606,7 @@
 	<string
 		id="1705"
 		modelName="NewHero_mask"
-		value="瓦根特|  你可伤我心了。还没有人能从我手心里溜掉。小偷和追兵都让我做了。我在小偷的行李里翻出这么个古怪卷轴。我一点头绪都没有，这到底是啥。"
+		value="瓦根特|  你可伤我心了。|还没有人能从我手心里溜掉。|小偷和追兵都让我做了。|我在小偷的行李里翻出这么个|古怪卷轴。我一点头绪都没有，|这到底是啥。"
 		sound="data\sounds\Speech\r5m1\r5m1_1705_nomad.ogg"
 		time="13" />
 
@@ -614,7 +614,7 @@
 		id="1706"
 		modelName="Sam_mask"
 		modelSlot="1"
-		value="萨姆|  这是种存储介质，我的朋友。要读它，得有专门的设备。"
+		value="萨姆|  这是种存储介质，我的朋友。|要读它，得有专门的设备。"
 		sound="data\sounds\Speech\r5m1\r5m1_1706_sam.ogg"
 		time="8" />
 
@@ -637,7 +637,7 @@
 		id="1801"
 		modelName="Sam_mask"
 		modelSlot="1"
-		value="萨姆|  瓦根特，你是个天才！你是个英雄！！！你根本想象不到，你带来的情报有多值钱！我们刚刚亲眼见识了超级武器的威力！这武器理应归我。明白吗？"
+		value="萨姆|  瓦根特，你是个天才！|你是个英雄！！！|你根本想象不到，|你带来的情报有多值钱！|我们刚刚亲眼见识了超级武|器的威力！这武器理应归我。|明白吗？"
 		sound="data\sounds\Speech\r5m1\r5m1_1801_sam.ogg"
 		time="22" />
 
@@ -645,14 +645,14 @@
 		id="180112"
 		modelName="Sam_mask"
 		modelSlot="1"
-		value="萨姆|  我不想让任何人知道这个发现。你必须潜进世界秩序帮，再弄几卷这种卷轴来。里面肯定记着怎么得到那件武器、藏在哪儿、长什么样。"
+		value="萨姆|  我不想让任何人知道这个发现。|你必须潜进世界秩序帮，|再弄几卷这种卷轴来。|里面肯定记着怎么得到那件武器、|藏在哪儿、长什么样。"
 		sound="data\sounds\Speech\r5m1\r5m1_180112_sam.ogg"
 		time="20" />
 
 	<string
 		id="1802"
 		modelName="NewHero_mask"
-		value="瓦根特|  萨姆，这武器说不定早就没了，多少年前就没了"
+		value="瓦根特|  萨姆，这武器说不定早就没了，|多少年前就没了"
 		sound="data\sounds\Speech\r5m1\r5m1_1802_nomad.ogg"
 		time="4" />
 
@@ -660,14 +660,14 @@
 		id="1803"
 		modelName="Sam_mask"
 		modelSlot="1"
-		value="萨姆|  相信我，它还在。谁也不会为了个偷了点不值钱玩意儿的小毛贼，兴师动众地追杀。"
+		value="萨姆|  相信我，它还在。|谁也不会为了个偷了点不值|钱玩意儿的小毛贼，|兴师动众地追杀。"
 		sound="data\sounds\Speech\r5m1\r5m1_1803_sam.ogg"
 		time="9" />
 
 	<string
 		id="1804"
 		modelName="NewHero_mask"
-		value="瓦根特|  听着倒是有道理。可我从没去过那儿。让我上哪儿、找什么？"
+		value="瓦根特|  听着倒是有道理。|可我从没去过那儿。|让我上哪儿、找什么？"
 		sound="data\sounds\Speech\r5m1\r5m1_1804_nomad.ogg"
 		time="6" />
 
@@ -675,7 +675,7 @@
 		id="1805"
 		modelName="Sam_mask"
 		modelSlot="1"
-		value="萨姆|  瓦根特，凭你的脑子，找几卷卷轴不在话下。我看好你。"
+		value="萨姆|  瓦根特，凭你的脑子，|找几卷卷轴不在话下。我看好你。"
 		sound="data\sounds\Speech\r5m1\r5m1_1805_sam.ogg"
 		time="8" />
 
@@ -689,7 +689,7 @@
 		id="3201"
 		modelName="Sam_mask"
 		modelSlot="1"
-		value="萨姆|  你来得正是时候，我的朋友。看见这儿的情况了吗？"
+		value="萨姆|  你来得正是时候，我的朋友。|看见这儿的情况了吗？"
 		sound="data\sounds\Speech\r5m1\r5m1_3201_sam.ogg"
 		time="5" />
 
@@ -711,7 +711,7 @@
 	<string
 		id="3204"
 		modelName="NewHero_mask"
-		value="瓦根特|  那我是不是可以这么理解——你派我去取的那些箱子，现在已经不重要了？"
+		value="瓦根特|  那我是不是可以这么理解——|你派我去取的那些箱子，|现在已经不重要了？"
 		sound="data\sounds\Speech\r5m1\r5m1_3204_nomad.ogg"
 		time="6" />
 
@@ -719,7 +719,7 @@
 		id="3205"
 		modelName="Sam_mask"
 		modelSlot="1"
-		value="萨姆|  你取到了？那可是我们活下去的唯一指望！"
+		value="萨姆|  你取到了？那可是我们活下|去的唯一指望！"
 		sound="data\sounds\Speech\r5m1\r5m1_3205_sam.ogg"
 		time="5" />
 
@@ -734,14 +734,14 @@
 		id="3207"
 		modelName="Sam_mask"
 		modelSlot="1"
-		value="萨姆|  这有什么不明白的？这些胶片标记着先祖超级武器的位置。一到手，我们就能把机器人赶尽杀绝。"
+		value="萨姆|  这有什么不明白的？|这些胶片标记着先祖超级武|器的位置。一到手，|我们就能把机器人赶尽杀绝。"
 		sound="data\sounds\Speech\r5m1\r5m1_3207_sam.ogg"
 		time="12" />
 
 	<string
 		id="3208"
 		modelName="NewHero_mask"
-		value="瓦根特|  可我们怎么去加拿大？机器人把路全封死了！"
+		value="瓦根特|  可我们怎么去加拿大？|机器人把路全封死了！"
 		sound="data\sounds\Speech\r5m1\r5m1_3208_nomad.ogg"
 		time="5" />
 
@@ -749,7 +749,7 @@
 		id="3209"
 		modelName="Sam_mask"
 		modelSlot="1"
-		value="萨姆|  会有办法的。我手里还有没用上的家底。跟我来，给你看点东西。"
+		value="萨姆|  会有办法的。|我手里还有没用上的家底。|跟我来，给你看点东西。"
 		sound="data\sounds\Speech\r5m1\r5m1_3209_sam.ogg"
 		time="8" />
 	<string
@@ -763,7 +763,7 @@
 		id="3302"
 		modelName="Sam_mask"
 		modelSlot="1"
-		value="萨姆|  这是辆坦克。方圆百里最猛的机器。你来打机器人，我来掌舵。"
+		value="萨姆|  这是辆坦克。|方圆百里最猛的机器。|你来打机器人，我来掌舵。"
 		sound="data\sounds\Speech\r5m1\r5m1_3302_sam.ogg"
 		time="10" />
 
@@ -776,7 +776,7 @@
 	<string
 		id="3401"
 		modelName="NewHero_mask"
-		value="瓦根特|  看来咱们那件威风凛凛的武器，这下是撑到头了……"
+		value="瓦根特|  看来咱们那件威风凛凛的武器，|这下是撑到头了……"
 		sound="data\sounds\Speech\r5m1\r5m1_3401_nomad.ogg"
 		time="3" />
 
@@ -784,7 +784,7 @@
 		id="3402"
 		modelName="Sam_mask"
 		modelSlot="1"
-		value="萨姆|  安息吧，我们的铁哥们儿。你为我们立下了不可磨灭的功劳。过桥嘛，我们还是坐回传统车辆吧。"
+		value="萨姆|  安息吧，我们的铁哥们儿。|你为我们立下了不可磨灭的功劳。|过桥嘛，我们还是坐回传统车辆吧。"
 		sound="data\sounds\Speech\r5m1\r5m1_3402_sam.ogg"
 		time="14" />
 	<string
@@ -798,14 +798,14 @@
 		id="5302"
 		modelName="Sam_mask"
 		modelSlot="1"
-		value="萨姆|  没忘，瓦根特！我记得清清楚楚。你居然还活着，真叫我意外！"
+		value="萨姆|  没忘，瓦根特！|我记得清清楚楚。|你居然还活着，真叫我意外！"
 		sound="data\sounds\Speech\r5m1\r5m1_5302_sam.ogg"
 		time="7" />
 
 	<string
 		id="5303"
 		modelName="NewHero_mask"
-		value="瓦根特|  这可没什么好光彩的！劝神谕特使杀我的，不就是你吗？你就是个卑鄙的叛徒，萨姆！我们都那么信任你！可你……"
+		value="瓦根特|  这可没什么好光彩的！|劝神谕特使杀我的，不就是你吗？|你就是个卑鄙的叛徒，萨姆！|我们都那么信任你！可你……"
 		sound="data\sounds\Speech\r5m1\r5m1_5303_nomad.ogg"
 		time="11" />
 
@@ -813,14 +813,14 @@
 		id="5304"
 		modelName="Sam_mask"
 		modelSlot="1"
-		value="萨姆|  收起你这套煽情吧！友谊！背叛！全是屁话！这世上顶要紧的，只有权势和力量。既然两样都在我手里，你最好给我让路，朋友。"
+		value="萨姆|  收起你这套煽情吧！友谊！|背叛！全是屁话！|这世上顶要紧的，只有权势和力量。|既然两样都在我手里，|你最好给我让路，朋友。"
 		sound="data\sounds\Speech\r5m1\r5m1_5304_sam.ogg"
 		time="18" />
 
 	<string
 		id="5305"
 		modelName="NewHero_mask"
-		value="瓦根特|  是吗？瞧瞧这儿有根多好的曲轴！劲儿是不是大了点？可别把自己撑爆喽？"
+		value="瓦根特|  是吗？瞧瞧这儿有根多|好的曲轴！劲儿是不是大了点？|可别把自己撑爆喽？"
 		sound="data\sounds\Speech\r5m1\r5m1_5305_nomad.ogg"
 		time="6" />
 
@@ -834,21 +834,21 @@
 	<string
 		id="5401"
 		modelName="NewHero_mask"
-		value="瓦根特|  失去后援的机器人大军，就这样一点点被人类消灭干净了。"
+		value="瓦根特|  失去后援的机器人大军，|就这样一点点被人类消灭干净了。"
 		sound="data\sounds\Speech\r5m1\r5m1_5401_nomad.ogg"
 		time="5" />
 
 	<string
 		id="5402"
 		modelName="NewHero_mask"
-		value="瓦根特|  神谕也好，特使也罢，我们再也不放在心上了。萨姆的位置，只好由我来坐了。"
+		value="瓦根特|  神谕也好，特使也罢，|我们再也不放在心上了。|萨姆的位置，只好由我来坐了。"
 		sound="data\sounds\Speech\r5m1\r5m1_5402_nomad.ogg"
 		time="7" />
 
 	<string
 		id="5403"
 		modelName="NewHero_mask"
-		value="瓦根特|  我敢肯定这儿不是埃德蒙顿，不过也凑合了。梦想没找着，但总归不算太坏。"
+		value="瓦根特|  我敢肯定这儿不是埃德蒙顿，|不过也凑合了。梦想没找着，|但总归不算太坏。"
 		sound="data\sounds\Speech\r5m1\r5m1_5403_nomad.ogg"
 		time="8" />
 	<string
@@ -862,14 +862,14 @@
 		id="6002"
 		modelName="Sam_mask"
 		modelSlot="1"
-		value="萨姆|  没忘，瓦根特！我记得清清楚楚。你还活着，我很高兴！"
+		value="萨姆|  没忘，瓦根特！|我记得清清楚楚。|你还活着，我很高兴！"
 		sound="data\sounds\Speech\r5m1\r5m1_6002_sam.ogg"
 		time="7" />
 
 	<string
 		id="6003"
 		modelName="NewHero_mask"
-		value="瓦根特|  这可没什么好光彩的，萨姆！劝神谕特使杀我的，不就是你吗？你就是个卑鄙的叛徒，萨姆！我们都那么信任你！可你……"
+		value="瓦根特|  这可没什么好光彩的，萨姆！|劝神谕特使杀我的，不就是你吗？|你就是个卑鄙的叛徒，萨姆！|我们都那么信任你！可你……"
 		sound="data\sounds\Speech\r5m1\r5m1_6003_nomad.ogg"
 		time="11" />
 
@@ -877,14 +877,14 @@
 		id="6004"
 		modelName="Sam_mask"
 		modelSlot="1"
-		value="萨姆|  别嚷嚷。我还是冷静讲讲道理。我有个提议，你绝不会拒绝。"
+		value="萨姆|  别嚷嚷。我还是冷静讲讲道理。|我有个提议，你绝不会拒绝。"
 		sound="data\sounds\Speech\r5m1\r5m1_6004_sam.ogg"
 		time="10" />
 
 	<string
 		id="6005"
 		modelName="NewHero_mask"
-		value="瓦根特|  说吧，抓紧说，我扣扳机的手指都抽筋了。看这样子是真要开火了。"
+		value="瓦根特|  说吧，抓紧说，|我扣扳机的手指都抽筋了。|看这样子是真要开火了。"
 		sound="data\sounds\Speech\r5m1\r5m1_6005_nomad.ogg"
 		time="8" />
 
@@ -892,13 +892,13 @@
 		id="6006"
 		modelName="Sam_mask"
 		modelSlot="1"
-		value="萨姆|  冷静点，伙计。整个天下都能攥在咱们手心里。我的头脑，加上你的身手和那股狠劲儿，何愁大事不成！懂我的意思吧……"
+		value="萨姆|  冷静点，伙计。|整个天下都能攥在咱们手心里。|我的头脑，加上你的身|手和那股狠劲儿，何愁大事不成！|懂我的意思吧……"
 		sound="data\sounds\Speech\r5m1\r5m1_6006_sam.ogg"
 		time="18" />
 	<string
 		id="6101"
 		modelName="NewHero_mask"
-		value="瓦根特|  失去后援的机器人大军，就这样一点点被人类消灭干净了。"
+		value="瓦根特|  失去后援的机器人大军，|就这样一点点被人类消灭干净了。"
 		sound="data\sounds\Speech\r5m1\r5m1_6101_nomad.ogg"
 		time="5" />
 
@@ -913,7 +913,7 @@
 		id="6103"
 		modelName="Sam_mask"
 		modelSlot="1"
-		value="萨姆|  埃德蒙顿，埃德蒙顿……整个大陆都任凭咱们取用。只消抬脚过去，伸手拿下就是。"
+		value="萨姆|  埃德蒙顿，埃德蒙顿……|整个大陆都任凭咱们取用。|只消抬脚过去，伸手拿下就是。"
 		sound="data\sounds\Speech\r5m1\r5m1_6103_sam.ogg"
 		time="10" />
 
@@ -925,25 +925,25 @@
 	<string
 		id="8802"
 		modelName="NewHero_mask"
-		value="瓦根特|  我不知道这条路通向哪里。所以我还是留在这儿。"
+		value="瓦根特|  我不知道这条路通向哪里。|所以我还是留在这儿。"
 		sound="data\sounds\Speech\r5m1\r5m1_8802_nomad.ogg"
 		time="5" />
 
 	<string
 		id="8803"
 		modelName="NewHero_mask"
-		value="瓦根特|  这地方透着古怪。我们最好离远点。"
+		value="瓦根特|  这地方透着古怪。|我们最好离远点。"
 		sound="data\sounds\Speech\r5m1\r5m1_8802_nomad.ogg"
 		time="5" />
 
 	<string
 		id="8804"
-		value="你输了这场比赛。没有夺魁奖金，就没脸回去见萨姆。| 再试一次。"
+		value="你输了这场比赛。|没有夺魁奖金，就没脸回去见萨姆。| 再试一次。"
 		numButtons="1" />
 
 	<string
 		id="8805"
-		value="你弃城而去，城中无人防守。机器人大军已将它夷为平地。"
+		value="你弃城而去，城中无人防守。|机器人大军已将它夷为平地。"
 		numButtons="1" />
 
 	<string

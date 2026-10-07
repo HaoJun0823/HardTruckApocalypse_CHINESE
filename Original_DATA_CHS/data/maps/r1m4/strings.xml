@@ -3,19 +3,19 @@
 	<string
 		id="1"
 		modelName="mask_hero"
-		value="|那可是个要命的鬼地方。没有理由我不会去。"
+		value="|那可是个要命的鬼地方。|没有理由我不会去。"
 		sound="data\sounds\Speech\r1m4\r1m4_1_hero.ogg" />
 
 	<string
 		id="2"
 		modelName="mask_hero"
-		value="|看来这就是荷马说的地方。我从这儿过沼泽。"
+		value="|看来这就是荷马说的地方。|我从这儿过沼泽。"
 		sound="data\sounds\Speech\r1m4\r1m4_2_hero.ogg" />
 
 	<string
 		id="3"
 		modelName="mask_hero"
-		value="|老头说的是实话。薄薄一层泥浆下面是实打实的硬地。不知道沼泽对面等着我的是什么。"
+		value="|老头说的是实话。|薄薄一层泥浆下面是实打实的硬地。|不知道沼泽对面等着我的是什么。"
 		sound="data\sounds\Speech\r1m4\r1m4_3_hero.ogg" />
 
 	<string
@@ -24,14 +24,14 @@
 		modelSkin="2"
 		modelCfg="132"
 		modelSlot="1"
-		value="守卫|别过来！任何敌对行为都将让你送命！"
+		value="守卫|别过来！任何敌对行为都将|让你送命！"
 		sound="data\sounds\Speech\r1m4\r1m4_4_guard.ogg"
 		time="4" />
 
 	<string
 		id="5"
 		modelName="mask_hero"
-		value="|你们运的货正是我需要的。把它让给我，我照价付钱！"
+		value="|你们运的货正是我需要的。|把它让给我，我照价付钱！"
 		sound="data\sounds\Speech\r1m4\r1m4_5_hero.ogg"
 		time="4" />
 
@@ -48,7 +48,7 @@
 	<string
 		id="7"
 		modelName="mask_hero"
-		value="|那好，咱们就来硬的。放掉囚犯，趁我还没发火赶紧滚！"
+		value="|那好，咱们就来硬的。|放掉囚犯，趁我还没发火赶紧滚！"
 		sound="data\sounds\Speech\r1m4\r1m4_7_hero.ogg"
 		time="4" />
 
@@ -65,14 +65,14 @@
 	<string
 		id="9"
 		modelName="mask_hero"
-		value="|这是你们自找的。囚车我不能碰；其他的都给我下地狱吧！"
+		value="|这是你们自找的。|囚车我不能碰；其他的都给我下|地狱吧！"
 		sound="data\sounds\Speech\r1m4\r1m4_9_hero.ogg"
 		time="4" />
 
 	<string
 		id="10"
 		modelName="mask_hero"
-		value="|还愣着干什么？上车！快点，他们可能已经叫了援兵。"
+		value="|还愣着干什么？上车！|快点，他们可能已经叫了援兵。"
 		sound="data\sounds\Speech\r1m4\r1m4_10_hero.ogg"
 		time="4" />
 
@@ -82,28 +82,28 @@
 		modelSkin="0"
 		modelCfg="86"
 		modelSlot="1"
-		value="领袖|多谢你救了我，陌生人。可你是谁？我不确定能不能信得过你……"
+		value="领袖|多谢你救了我，陌生人。|可你是谁？我不确定能不能|信得过你……"
 		sound="data\sounds\Speech\r1m4\r1m4_11_leader.ogg"
 		time="4" />
 
 	<string
 		id="12"
 		modelName="mask_hero"
-		value="|我跟你的手下做了笔交易。我救你出来，他们给我需要的东西。我这边的承诺已经兑现了。"
+		value="|我跟你的手下做了笔交易。|我救你出来，他们给我需要的东西。|我这边的承诺已经兑现了。"
 		sound="data\sounds\Speech\r1m4\r1m4_12_hero.ogg"
 		time="4" />
 
 	<string
 		id="13"
 		modelName="mask_hero"
-		value="|糟了，囚车爆炸了。领袖死了，我再也没有什么能跟那些极端分子交换的了。"
+		value="|糟了，囚车爆炸了。|领袖死了，我再也没有什么|能跟那些极端分子交换的了。"
 		sound="data\sounds\Speech\r1m4\r1m4_13_hero.ogg"
 		time="4" />
 
 	<string
 		id="14"
 		modelName="mask_hero"
-		value="|看来，我只能硬抢那个仓库了。小菜一碟！"
+		value="|看来，我只能硬抢那个仓库了。|小菜一碟！"
 		sound="data\sounds\Speech\r1m4\r1m4_14_hero.ogg"
 		time="4" />
 
@@ -116,35 +116,35 @@
 	<string
 		id="16"
 		modelName="mask_hero"
-		value="|这是什么？……为什么有人要造这种怪物？"
+		value="|这是什么？……为什么有人|要造这种怪物？"
 		sound="data\sounds\Speech\r1m4\r1m4_16_hero.ogg"
 		time="4" />
 
 	<string
 		id="17"
 		modelName="mask_hero"
-		value="|我明白了，这家伙在守卫海门。我必须绕开它。子弹能不能伤到它，不好说。打败它一定有什么诀窍。"
+		value="|我明白了，这家伙在守卫海门。|我必须绕开它。子弹能不能伤到它，|不好说。打败它一定有什么诀窍。"
 		sound="data\sounds\Speech\r1m4\r1m4_17_hero.ogg"
 		time="4" />
 
 	<string
 		id="18"
 		modelName="mask_hero"
-		value="|就是这个地方，可周围连个门的影子都没有……难道这一切都白费了？"
+		value="|就是这个地方，可周围连个|门的影子都没有……|难道这一切都白费了？"
 		sound="data\sounds\Speech\r1m4\r1m4_18_hero.ogg"
 		time="4" />
 
 	<string
 		id="19"
 		modelName="mask_hero"
-		value="|等等，钥匙开始发热了。有什么东西正从水里出来！造出这种怪物的古人绝对是疯了。看来又有一场硬仗要打。"
+		value="|等等，钥匙开始发热了。|有什么东西正从水里出来！|造出这种怪物的古人绝对是疯了。|看来又有一场硬仗要打。"
 		sound="data\sounds\Speech\r1m4\r1m4_19_hero.ogg"
 		time="4" />
 
 	<string
 		id="20"
 		modelName="mask_hero"
-		value="|等等，它没有攻击。看起来像是在请我进它嘴里。我明白了，这就是海门！我要钻进这怪鱼的肚子，前往神谕的国度。反正我也没什么可损失的了。全速前进！"
+		value="|等等，它没有攻击。|看起来像是在请我进它嘴里。|我明白了，这就是海门！|我要钻进这怪鱼的肚子，|前往神谕的国度。|反正我也没什么可损失的了。|全速前进！"
 		sound="data\sounds\Speech\r1m4\r1m4_20_hero.ogg"
 		time="4" />
 
@@ -158,7 +158,7 @@
 	<string
 		id="22"
 		modelName="mask_hero"
-		value="|现在我得告诉奥尔姆的人，仓库已经拿下来了。"
+		value="|现在我得告诉奥尔姆的人，|仓库已经拿下来了。"
 		sound="data\sounds\Speech\r1m4\r1m4_22_hero.ogg"
 		time="4" />
 
@@ -187,5 +187,5 @@
 	<string
 		id="8803"
 		modelName="mask_hero"
-		value="这地方透着股怪劲儿。我不想去那儿。" />
+		value="这地方透着股怪劲儿。|我不想去那儿。" />
 </resource>

@@ -2,7 +2,7 @@
 <resource><!--Default buttons--><!-- Vehicles ______________________________________________-->
 	<string
 		id="player_diz"
-		value="一个即将踏入这个世界的年轻人。前方路途险恶。" />
+		value="一个即将踏入这个世界的年轻人。|前方路途险恶。" />
 
 	<string
 		id="Sml101_diz"
@@ -38,7 +38,7 @@
 
 	<string
 		id="denscoutCab_diz"
-		value="爱丽丝的卡车驾驶室。改装版侦察车。" />
+		value="爱丽丝的卡车驾驶室。|改装版侦察车。" />
 
 	<string
 		id="scoutCab01_diz"
@@ -58,11 +58,11 @@
 
 	<string
 		id="Fighter01_diz"
-		value="这辆外形怪异的车辆火力充足，足以构成实质威胁，何况劫掠者很少单独行动。" />
+		value="这辆外形怪异的车辆火力充足，|足以构成实质威胁，|何况劫掠者很少单独行动。" />
 
 	<string
 		id="Hunter01_diz"
-		value="重装甲车辆。当心它的导弹发射器改型。" />
+		value="重装甲车辆。当心它的导弹|发射器改型。" />
 
 	<string
 		id="Cruiser01_diz"
@@ -78,31 +78,31 @@
 
 	<string
 		id="Belaz01_diz"
-		value="这辆卡车惊人的运载能力已成传奇。速度慢，常沦为劫掠者的猎物。" />
+		value="这辆卡车惊人的运载能力已成传奇。|速度慢，常沦为劫掠者的猎物。" />
 
 	<string
 		id="Ural01_diz"
-		value="这辆卡车兼顾火力与运载能力。作为最速重型卡车，乌拉尔能带你脱离一切险境。" />
+		value="这辆卡车兼顾火力与运载能力。|作为最速重型卡车，|乌拉尔能带你脱离一切险境。" />
 
 	<string
 		id="Ural02_diz"
-		value="这辆卡车兼顾火力与运载能力。作为最速重型卡车，乌拉尔能带你脱离一切险境。" />
+		value="这辆卡车兼顾火力与运载能力。|作为最速重型卡车，|乌拉尔能带你脱离一切险境。" />
 
 	<string
 		id="Bug01_diz"
-		value="只有粗心或走投无路的商人才会冒险驾驶这辆车。一门弱炮和几乎没有的装甲部分被高机动性弥补。" />
+		value="只有粗心或走投无路的商|人才会冒险驾驶这辆车。|一门弱炮和几乎没有的装甲|部分被高机动性弥补。" />
 
 	<string
 		id="Molokovoz01_diz"
-		value="轻型卡车，以最佳性价比受富裕农夫青睐。但安全性不足以让职业司机喜欢。" />
+		value="轻型卡车，以最佳性价比受|富裕农夫青睐。但安全性不|足以让职业司机喜欢。" />
 
 	<string
 		id="Molokovoz02_diz"
-		value="轻型卡车，以最佳性价比受富裕农夫青睐。但安全性不足以让职业司机喜欢。" />
+		value="轻型卡车，以最佳性价比受|富裕农夫青睐。但安全性不|足以让职业司机喜欢。" />
 
 	<string
 		id="Mirotvorec01_diz"
-		value="进攻是最好的防守。没有其他卡车能像维和者一样搭载如此多武器。不过货舱不算宽敞。" />
+		value="进攻是最好的防守。|没有其他卡车能像维和者|一样搭载如此多武器。|不过货舱不算宽敞。" />
 
 	<string
 		id="Tank01_diz"
@@ -118,23 +118,23 @@
 
 	<string
 		id="BelazForSale_diz"
-		value="这辆卡车惊人的运载能力已成传奇。速度慢，常沦为劫掠者的猎物。" />
+		value="这辆卡车惊人的运载能力已成传奇。|速度慢，常沦为劫掠者的猎物。" />
 
 	<string
 		id="UralForSale_diz"
-		value="这辆卡车兼顾火力与运载能力。作为最速重型卡车，乌拉尔能带你脱离一切险境。" />
+		value="这辆卡车兼顾火力与运载能力。|作为最速重型卡车，|乌拉尔能带你脱离一切险境。" />
 
 	<string
 		id="BugForSale_diz"
-		value="只有粗心或走投无路的商人才会冒险驾驶这辆车。一门弱炮和几乎没有的装甲部分被高机动性弥补。" />
+		value="只有粗心或走投无路的商|人才会冒险驾驶这辆车。|一门弱炮和几乎没有的装甲|部分被高机动性弥补。" />
 
 	<string
 		id="MolokovozForSale_diz"
-		value="轻型卡车，以最佳性价比受富裕农夫青睐。但安全性不足以让职业司机喜欢。" />
+		value="轻型卡车，以最佳性价比受|富裕农夫青睐。但安全性不|足以让职业司机喜欢。" />
 
 	<string
 		id="MirotvorecForSale_diz"
-		value="进攻是最好的防守。没有其他卡车能像维和者一样搭载如此多武器。不过货舱不算宽敞。" />
+		value="进攻是最好的防守。|没有其他卡车能像维和者|一样搭载如此多武器。|不过货舱不算宽敞。" />
 <!-- Gadgets ______________________________________________-->
 	<string
 		id="cooling_system_guns_diz"
@@ -142,11 +142,11 @@
 
 	<string
 		id="cooling_system_energy_diz"
-		value="简易冷却系统。缩短能量武器装填时间。| 能量武器充能速度 +20%" />
+		value="简易冷却系统。缩短能量武|器装填时间。| 能量武器充能速度 +20%" />
 
 	<string
 		id="cooling_system_explosion_diz"
-		value="简易冷却系统。缩短爆炸武器装填时间。| 爆炸武器充能速度 +20%" />
+		value="简易冷却系统。缩短爆炸武|器装填时间。| 爆炸武器充能速度 +20%" />
 
 	<string
 		id="firing_rate_guns_diz"
@@ -154,7 +154,7 @@
 
 	<string
 		id="firing_range_guns_diz"
-		value="这个简易配件一定能让准狙击手如愿。| 枪炮射程 +20%" />
+		value="这个简易配件一定能让准狙|击手如愿。| 枪炮射程 +20%" />
 
 	<string
 		id="firing_rate_energy_diz"
@@ -166,15 +166,15 @@
 
 	<string
 		id="add_damage_guns_diz"
-		value="装上这个配件后枪炮伤害更高。简易型号。| 枪炮伤害 +20%" />
+		value="装上这个配件后枪炮伤害更高。|简易型号。| 枪炮伤害 +20%" />
 
 	<string
 		id="add_damage_energy_diz"
-		value="装上这个配件后能量武器伤害更高。简易型号。| 能量武器伤害 +20%" />
+		value="装上这个配件后能量武器伤害更高。|简易型号。| 能量武器伤害 +20%" />
 
 	<string
 		id="add_damage_explosion_diz"
-		value="装上这个配件后爆炸武器伤害更高。简易型号。| 爆炸武器伤害 +20%" />
+		value="装上这个配件后爆炸武器伤害更高。|简易型号。| 爆炸武器伤害 +20%" />
 
 	<string
 		id="cooling_system_guns2_diz"
@@ -182,11 +182,11 @@
 
 	<string
 		id="cooling_system_energy2_diz"
-		value="高级冷却系统。缩短能量武器装填时间。| 能量武器充能速度 +40%" />
+		value="高级冷却系统。缩短能量武|器装填时间。| 能量武器充能速度 +40%" />
 
 	<string
 		id="cooling_system_explosion2_diz"
-		value="高级冷却系统。缩短爆炸武器装填时间。| 爆炸武器充能速度 +40%" />
+		value="高级冷却系统。缩短爆炸武|器装填时间。| 爆炸武器充能速度 +40%" />
 
 	<string
 		id="firing_rate_guns2_diz"
@@ -202,15 +202,15 @@
 
 	<string
 		id="add_damage_guns2_diz"
-		value="装上这个配件后枪炮伤害更高。高级型号。| 枪炮伤害 +40%" />
+		value="装上这个配件后枪炮伤害更高。|高级型号。| 枪炮伤害 +40%" />
 
 	<string
 		id="add_damage_energy2_diz"
-		value="装上这个配件后能量武器伤害更高。高级型号。| 能量武器伤害 +40%" />
+		value="装上这个配件后能量武器伤害更高。|高级型号。| 能量武器伤害 +40%" />
 
 	<string
 		id="add_damage_explosion2_diz"
-		value="装上这个配件后爆炸武器伤害更高。高级型号。| 爆炸武器伤害 +40%" />
+		value="装上这个配件后爆炸武器伤害更高。|高级型号。| 爆炸武器伤害 +40%" />
 
 	<string
 		id="cooling_system_guns_and_firing_rate_guns_diz"
@@ -266,7 +266,7 @@
 
 	<string
 		id="additional_fuel_tank2_diz"
-		value="更大的油箱容量让你行驶更远。高级型号。| 油箱容量 +100%" />
+		value="更大的油箱容量让你行驶更远。|高级型号。| 油箱容量 +100%" />
 
 	<string
 		id="additional_torque2_diz"
@@ -274,7 +274,7 @@
 
 	<string
 		id="additional_durability2_diz"
-		value="提升装甲。坦克般的感觉。高级型号。| 装甲 +20%" />
+		value="提升装甲。坦克般的感觉。|高级型号。| 装甲 +20%" />
 
 	<string
 		id="add_speed_and_torque_diz"
@@ -342,23 +342,23 @@
 <!-- Weapons ______________________________________________-->
 	<string
 		id="vulcan01_diz"
-		value="这挺转管机枪向目标倾泻成千上万发子弹" />
+		value="这挺转管机枪向目标倾泻成|千上万发子弹" />
 
 	<string
 		id="hornet01_diz"
-		value="5,45 mm机枪是你能为卡车装备的最弱武器。" />
+		value="5,45 mm机枪是你能为卡|车装备的最弱武器。" />
 
 	<string
 		id="specter01_diz"
-		value="5,45 mm双管机枪比单管原型有效得多" />
+		value="5,45 mm双管机枪比|单管原型有效得多" />
 
 	<string
 		id="pkt01_diz"
-		value="7,62 mm机枪——大概能帮你度过艰难旅程。" />
+		value="7,62 mm机枪——|大概能帮你度过艰难旅程。" />
 
 	<string
 		id="kord01_diz"
-		value="12,7 mm机枪——抵御劫掠者的好武器。" />
+		value="12,7 mm机枪——|抵御劫掠者的好武器。" />
 
 	<string
 		id="vector01_diz"
@@ -366,7 +366,7 @@
 
 	<string
 		id="maxim01_diz"
-		value="最小的军用激光更像装饰品而非真武器，但也有其优点" />
+		value="最小的军用激光更像装饰|品而非真武器，但也有其优点" />
 
 	<string
 		id="rapier01_diz"
@@ -378,7 +378,7 @@
 
 	<string
 		id="fagot01_diz"
-		value="20 mm速射火炮能把飞机打下来。" />
+		value="20 mm速射火炮能把飞|机打下来。" />
 
 	<string
 		id="kpvt01_diz"
@@ -386,11 +386,11 @@
 
 	<string
 		id="rainmetal01_diz"
-		value="20 mm速射炮是猎杀两足野兽的好选择。" />
+		value="20 mm速射炮是猎杀两|足野兽的好选择。" />
 
 	<string
 		id="octopus01_diz"
-		value="20 mm速射火炮能把飞机打下来。" />
+		value="20 mm速射火炮能把飞|机打下来。" />
 
 	<string
 		id="cyclops01_diz"
@@ -406,7 +406,7 @@
 
 	<string
 		id="flag01_diz"
-		value="重型霰弹枪能把胆敢靠近的人轰成渣。" />
+		value="重型霰弹枪能把胆敢靠近的人|轰成渣。" />
 
 	<string
 		id="hurricane01_diz"
@@ -426,7 +426,7 @@
 
 	<string
 		id="hammer01_diz"
-		value="战场上的终极王牌。一击可将中型卡车化为灰烬。" />
+		value="战场上的终极王牌。|一击可将中型卡车化为灰烬。" />
 
 	<string
 		id="odin01_diz"
@@ -498,7 +498,7 @@
 
 	<string
 		id="molokovozCab03_diz"
-		value="高级驾驶室，有充足武器位和吓人的尖刺。" />
+		value="高级驾驶室，有充足武器|位和吓人的尖刺。" />
 
 	<string
 		id="uralCab01_diz"
@@ -510,19 +510,19 @@
 
 	<string
 		id="uralCab03_diz"
-		value="贸易改良版。已经可以装上像样的火炮了。" />
+		value="贸易改良版。已经可以装上|像样的火炮了。" />
 
 	<string
 		id="uralCab04_diz"
-		value="标准作战驾驶室。装甲加强。两个武器槽。" />
+		value="标准作战驾驶室。|装甲加强。两个武器槽。" />
 
 	<string
 		id="uralCab05_diz"
-		value="此驾驶室拥有最多升级。装甲、武器、扭矩、速度一应俱全。" />
+		value="此驾驶室拥有最多升级。|装甲、武器、扭矩、速度一应俱全。" />
 
 	<string
 		id="belazCab01_diz"
-		value="贝拉斯最便宜最简易的驾驶室。可装一门小炮和几个配件。" />
+		value="贝拉斯最便宜最简易的驾驶室。|可装一门小炮和几个配件。" />
 
 	<string
 		id="belazCab02_diz"
@@ -534,15 +534,15 @@
 
 	<string
 		id="belazCab04_diz"
-		value="此驾驶室专为不仅看重扭矩和车厢容量、还注重运输安全的经销商设计。" />
+		value="此驾驶室专为不仅看重扭|矩和车厢容量、还注重运输|安全的经销商设计。" />
 
 	<string
 		id="belazCab05_diz"
-		value="兼顾出色行驶性能与强大火力的驾驶室。" />
+		value="兼顾出色行驶性能与强大火|力的驾驶室。" />
 
 	<string
 		id="mirotvorecCab01_diz"
-		value="维和者驾驶室基础型号。即使最简陋的驾驶室也具备不俗的行驶与战斗性能。" />
+		value="维和者驾驶室基础型号。|即使最简陋的驾驶室也具备|不俗的行驶与战斗性能。" />
 
 	<string
 		id="mirotvorecCab02_diz"
@@ -558,7 +558,7 @@
 
 	<string
 		id="mirotvorecCab05_diz"
-		value="维和者驾驶室顶级型号。这台机械奇迹能装巨型火炮，敌人只能等死或逃命。" />
+		value="维和者驾驶室顶级型号。|这台机械奇迹能装巨型火炮，|敌人只能等死或逃命。" />
 
 	<string
 		id="bugCargo01_diz"
@@ -566,23 +566,23 @@
 
 	<string
 		id="bugCargo02_diz"
-		value="比基础型号有更多货物空间，也有特种武器位。" />
+		value="比基础型号有更多货物空间，|也有特种武器位。" />
 
 	<string
 		id="bugCargo03_diz"
-		value="车厢容量足够初入行者，装甲也适合新手冒险。" />
+		value="车厢容量足够初入行者，|装甲也适合新手冒险。" />
 
 	<string
 		id="molokovozCargo01_diz"
-		value="大车厢加武器位——最简版已相当不错。" />
+		value="大车厢加武器位——|最简版已相当不错。" />
 
 	<string
 		id="molokovozCargo02_diz"
-		value="基础车厢轻微改良，装甲更厚并有特种武器槽。" />
+		value="基础车厢轻微改良，|装甲更厚并有特种武器槽。" />
 
 	<string
 		id="molokovozCargo03_diz"
-		value="基础车厢轻微改良。装甲更好并有特种武器位。" />
+		value="基础车厢轻微改良。|装甲更好并有特种武器位。" />
 
 	<string
 		id="uralCargo01_diz"
@@ -598,43 +598,43 @@
 
 	<string
 		id="uralCargo04_diz"
-		value="此车厢为作战而非贸易设计。能装巨型火炮使其成为买不起最顶级型号的射击爱好者的最佳选择。" />
+		value="此车厢为作战而非贸易设计。|能装巨型火炮使其成为买不|起最顶级型号的射击爱好|者的最佳选择。" />
 
 	<string
 		id="uralCargo05_diz"
-		value="乌拉尔车厢顶级型号。作战是其直接目的。火力强、装甲不可穿透。" />
+		value="乌拉尔车厢顶级型号。|作战是其直接目的。|火力强、装甲不可穿透。" />
 
 	<string
 		id="belazCargo01_diz"
-		value="虽然这车厢看起来像个罐头，但运载能力不错。" />
+		value="虽然这车厢看起来像个罐头，|但运载能力不错。" />
 
 	<string
 		id="belazCargo02_diz"
-		value="专为从商者设计的车厢。购买此车厢是实现任何卡车司机梦想的第一步。" />
+		value="专为从商者设计的车厢。|购买此车厢是实现任何卡车|司机梦想的第一步。" />
 
 	<string
 		id="belazCargo03_diz"
-		value="无与伦比的车厢容量，对付劫掠者也足够胜任。" />
+		value="无与伦比的车厢容量，|对付劫掠者也足够胜任。" />
 
 	<string
 		id="belazCargo04_diz"
-		value="更偏向作战而非贸易。巨型火炮加不可穿透装甲。" />
+		value="更偏向作战而非贸易。|巨型火炮加不可穿透装甲。" />
 
 	<string
 		id="belazCargo05_diz"
-		value="几乎不可穿透的车厢，贸易与作战皆宜。任何匪徒都奈何不了它。" />
+		value="几乎不可穿透的车厢，|贸易与作战皆宜。|任何匪徒都奈何不了它。" />
 
 	<string
 		id="mirotvorecCargo01_diz"
-		value="维和者标准车厢。装甲厚实，货舱大，有装好炮的位置。" />
+		value="维和者标准车厢。|装甲厚实，货舱大，|有装好炮的位置。" />
 
 	<string
 		id="mirotvorecCargo02_diz"
-		value="装甲更多。有装巨型火炮和特种武器的地方。" />
+		value="装甲更多。有装巨型火炮和特|种武器的地方。" />
 
 	<string
 		id="mirotvorecCargo03_diz"
-		value="你可以在这种车厢上放一整个军械库，多数敌人都不想惹你。" />
+		value="你可以在这种车厢上放一|整个军械库，多数敌人都不想惹你。" />
 
 	<string
 		id="mirotvorecCargo04_diz"
@@ -642,11 +642,11 @@
 
 	<string
 		id="mirotvorecCargo05_diz"
-		value="军事技术的巅峰。任何军国主义者梦寐以求的一切。" />
+		value="军事技术的巅峰。|任何军国主义者梦寐以求的一切。" />
 
 	<string
 		id="ArcadeScout01_diz"
-		value="越野侦察车。专为在最崎岖的地方旅行设计。" />
+		value="越野侦察车。专为在最崎|岖的地方旅行设计。" />
 
 	<string
 		id="arcadescoutCab_diz"
@@ -684,17 +684,17 @@
 	<string
 		id="quest_magic_thing1_diz"
 		locForm="0"
-		value="我不太确定这东西，但神谕没有给出所需文物的精确描述。这个应该可以。" />
+		value="我不太确定这东西，|但神谕没有给出所需文物的精|确描述。这个应该可以。" />
 
 	<string
 		id="quest_magic_thing2_diz"
 		locForm="0"
-		value="希望神谕觉得这装置有用。我可不想再回工厂了。" />
+		value="希望神谕觉得这装置有用。|我可不想再回工厂了。" />
 
 	<string
 		id="quest_explosion_stone_diz"
 		locForm="0"
-		value="据德鲁伊说，这颗石头会唤起大地的愤怒。触发时我最好离得远远的。" />
+		value="据德鲁伊说，这颗石头会唤|起大地的愤怒。触发时我最|好离得远远的。" />
 
 	<string
 		id="quest_repair_robot1_diz"
@@ -714,12 +714,12 @@
 	<string
 		id="quest_start_father_letter_diz"
 		locForm="0"
-		value="如果你在读这封信，说明我没能回来。悲哀但真实。我很了解彼得，对你的教育毫无担忧。想到你长大成人时我远在天边，我就心如刀绞。这是真正的折磨。但你必须知道，我别无选择只能离开。太多事情处于危险之中。我必须纠正错误。只有达成目标，我才能证明自己配得上父亲……和丈夫的称呼。对不起，儿子。能原谅我吗？" />
+		value="如果你在读这封信，|说明我没能回来。|悲哀但真实。我很了解彼得，|对你的教育毫无担忧。|想到你长大成人时我远在天边，|我就心如刀绞。这是真正的折磨。|但你必须知道，我别无选|择只能离开。太多事情处于危|险之中。我必须纠正错误。|只有达成目标，我才能证明|自己配得上父亲……和丈夫的称呼。|对不起，儿子。能原谅我吗？" />
 
 	<string
 		id="quest_potato_diz"
 		locForm="0"
-		value="这个包裹必须送到我父亲的朋友谢尔戈手中。" />
+		value="这个包裹必须送到我父亲的朋|友谢尔戈手中。" />
 
 	<string
 		id="quest_medicine_box_diz"
@@ -734,7 +734,7 @@
 	<string
 		id="quest_wine_barrels_diz"
 		locForm="0"
-		value="修道院给我的酒桶。我不愿回想为得到它做了什么。" />
+		value="修道院给我的酒桶。|我不愿回想为得到它做了什么。" />
 
 	<string
 		id="quest_komp_splav_diz"
@@ -764,22 +764,22 @@
 	<string
 		id="quest_mafia_narcotik_diz"
 		locForm="0"
-		value="从当地犯罪分子那里偷来的毒品货物。" />
+		value="从当地犯罪分子那里偷来的毒|品货物。" />
 
 	<string
 		id="quest_first_canistra_diz"
 		locForm="0"
-		value="一桶原油。我必须送达作为任务完成的证明。" />
+		value="一桶原油。我必须送达作为任|务完成的证明。" />
 
 	<string
 		id="quest_disk_1_diz"
 		locForm="0"
-		value="曾属于伊万·戈的光盘。可能含有关于他失踪的信息。" />
+		value="曾属于伊万·戈的光盘。|可能含有关于他失踪的信息。" />
 
 	<string
 		id="quest_disk_2_diz"
 		locForm="0"
-		value="第二张光盘，包含读取伊万·戈日记的密码。" />
+		value="第二张光盘，包含读取伊万|·戈日记的密码。" />
 
 	<string
 		id="quest_key_for_submarine_diz"
@@ -799,5 +799,5 @@
 	<string
 		id="anti_missile_system_diz"
 		locForm="0"
-		value="反导系统通过干扰敌方导弹传感器保护你" />
+		value="反导系统通过干扰敌方导弹|传感器保护你" />
 </resource>

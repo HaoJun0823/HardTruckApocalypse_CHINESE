@@ -3,14 +3,14 @@
 	<string
 		id="1"
 		modelName="mask_hero"
-		value="|桥炸塌了！匪徒们再也用不了这条路了。该回去了。"
+		value="|桥炸塌了！匪徒们再也用|不了这条路了。该回去了。"
 		sound="data\sounds\Speech\r1m3\r1m3_1_hero.ogg"
 		time="4" />
 
 	<string
 		id="4"
 		modelName="mask_hero"
-		value="|这儿堆满了古怪的玩意儿……可全都是坏的……真不走运……等等，这块木板上刻着我的名字……让我凑近看看。后面藏着东西！是个护符之类的东西。"
+		value="|这儿堆满了古怪的玩意儿……|可全都是坏的……|真不走运……等等，|这块木板上刻着我的名字……|让我凑近看看。后面藏着东西！|是个护符之类的东西。"
 		sound="data\sounds\Speech\r1m3\r1m3_4_hero.ogg"
 		time="8" />
 
@@ -19,14 +19,14 @@
 		modelAutosized="true"
 		modelName="gadget_12"
 		modelSlot="1"
-		value="电台|喂！……通了！……我是本，收到。我把无线电发报机修好了。调查进行得怎么样了？"
+		value="电台|喂！……通了！……我是本，收到。|我把无线电发报机修好了。|调查进行得怎么样了？"
 		sound="data\sounds\Speech\r1m3\r1m3_401_ben_radio.ogg"
 		time="8" />
 
 	<string
 		id="402"
 		modelName="mask_hero"
-		value="|电台？你真是个天才，本！这里一切都成了废墟。我只找到一个带按钮的有趣护符。上面刻着一行字：UB-627 红色通行。这东西值钱吗？收到。"
+		value="|电台？你真是个天才，本！|这里一切都成了废墟。|我只找到一个带按钮的有趣护符。|上面刻着一行字：|UB-627 红色通行。|这东西值钱吗？收到。"
 		sound="data\sounds\Speech\r1m3\r1m3_402_hero.ogg"
 		time="8" />
 
@@ -35,7 +35,7 @@
 		modelAutosized="true"
 		modelName="gadget_12"
 		modelSlot="1"
-		value="电台|让我想想……对了，我知道了！这是海门的钥匙！真想知道你父亲是怎么弄到它的。现在仔细听好："
+		value="电台|让我想想……对了，我知道了！|这是海门的钥匙！|真想知道你父亲是怎么弄到它的。|现在仔细听好："
 		sound="data\sounds\Speech\r1m3\r1m3_403_ben_radio.ogg"
 		time="8" />
 
@@ -44,14 +44,14 @@
 		modelAutosized="true"
 		modelName="gadget_12"
 		modelSlot="1"
-		value="电台|传说神谕就住在远方的一座小岛上……谁能克服千难万险见到它，任何问题都能得到解答！当然，这多半是无稽之谈……"
+		value="电台|传说神谕就住在远方的一座|小岛上……谁能克服千难万|险见到它，任何问题都能得到解答！|当然，这多半是无稽之谈……"
 		sound="data\sounds\Speech\r1m3\r1m3_404_ben_radio.ogg"
 		time="12" />
 
 	<string
 		id="405"
 		modelName="mask_hero"
-		value="|要是能问问你的那位神谕，伊万的下落如何，那该多好。不管怎么说，这把钥匙藏在这儿，绝不是巧合。"
+		value="|要是能问问你的那位神谕，|伊万的下落如何，那该多好。|不管怎么说，这把钥匙藏在这儿，|绝不是巧合。"
 		sound="data\sounds\Speech\r1m3\r1m3_405_hero.ogg"
 		time="8" />
 
@@ -60,7 +60,7 @@
 		modelAutosized="true"
 		modelName="gadget_12"
 		modelSlot="1"
-		value="电台|先让我把话说完。不过有些古老文献提到，那座远岛上有一处绝密设施。里面还提到了你的护符。这传说背后没准真有点东西。你一定要去查个明白。"
+		value="电台|先让我把话说完。|不过有些古老文献提到，|那座远岛上有一处绝密设施。|里面还提到了你的护符。|这传说背后没准真有点东西。|你一定要去查个明白。"
 		sound="data\sounds\Speech\r1m3\r1m3_406_ben_radio.ogg"
 		time="8" />
 
@@ -70,28 +70,28 @@
 		modelName="gadget_12"
 		modelSlot="1"
 		sound="data\sounds\Speech\r1m3\r1m3_407_ben_radio.ogg"
-		value="电台|一直往北走。海门就在世界的尽头某处。再多的我也不知道了。四处打听打听吧。这该死的发报机……"
+		value="电台|一直往北走。海门就在世|界的尽头某处。再多的我也不|知道了。四处打听打听吧。|这该死的发报机……"
 		time="12" />
 
 	<string
 		id="408"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r1m3\r1m3_408_hero.ogg"
-		value="|信号断了。不过我现在知道该找什么了。这就去四处打听。"
+		value="|信号断了。不过我现在知道|该找什么了。这就去四处打听。"
 		time="4" />
 
 	<string
 		id="5"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r1m3\r1m3_5_hero.ogg"
-		value="|可我要怎么打开这些大门呢？酒吧老板是个精明的家伙。要是我再回去找他，他准会把钥匙标个天价……也许还有别的法子？"
+		value="|可我要怎么打开这些大门呢？|酒吧老板是个精明的家伙。|要是我再回去找他，|他准会把钥匙标个天价……|也许还有别的法子？"
 		time="8" />
 
 	<string
 		id="6"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r1m3\r1m3_6_hero.ogg"
-		value="|我琢磨着，早晚会有人通过这些大门。我只需要找个好地方藏起来。"
+		value="|我琢磨着，早晚会有人|通过这些大门。我只需要|找个好地方藏起来。"
 		time="8" />
 
 	<string
@@ -105,21 +105,21 @@
 		id="8"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r1m3\r1m3_8_hero.ogg"
-		value="|有人正从隧道里出来。我可以直接干掉他，还是先跟踪他，看看他去哪儿？"
+		value="|有人正从隧道里出来。|我可以直接干掉他，还是先跟踪他，|看看他去哪儿？"
 		time="8" />
 
 	<string
 		id="9"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r1m3\r1m3_9_hero.ogg"
-		value="|对不住了，兄弟。可这把钥匙我真的很需要。"
+		value="|对不住了，兄弟。|可这把钥匙我真的很需要。"
 		time="4" />
 
 	<string
 		id="10"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r1m3\r1m3_10_hero.ogg"
-		value="|看见了，他去了酒吧。我最好跟上他。"
+		value="|看见了，他去了酒吧。|我最好跟上他。"
 		time="4" />
 
 	<string
@@ -129,14 +129,14 @@
 		modelCfg="118"
 		modelSlot="1"
 		sound="data\sounds\Speech\r1m3\r1m3_11_bob.ogg"
-		value="鲍勃|哥们儿，你可真是个疯子！想跟我们入伙吗？咱们天天都能像这样打上一仗！"
+		value="鲍勃|哥们儿，你可真是个疯子！|想跟我们入伙吗？|咱们天天都能像这样打上一仗！"
 		time="8" />
 
 	<string
 		id="12"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r1m3\r1m3_12_hero.ogg"
-		value="|我才不跟你们这些匪徒打交道！就是你们这种人杀了我父亲！爱丽丝在哪儿？！"
+		value="|我才不跟你们这些匪徒打交道！|就是你们这种人杀了我父亲！|爱丽丝在哪儿？！"
 		time="4" />
 
 	<string
@@ -146,7 +146,7 @@
 		modelCfg="118"
 		modelSlot="1"
 		sound="data\sounds\Speech\r1m3\r1m3_13_bob.ogg"
-		value="鲍勃|可你这不是已经在跟我们打交道了嘛，哈哈。是这样，爱丽丝几天前来过，带着她老板的信儿。她急匆匆的，很快就走了。"
+		value="鲍勃|可你这不是已经在跟我们打|交道了嘛，哈哈。|是这样，爱丽丝几天前来过，|带着她老板的信儿。|她急匆匆的，很快就走了。"
 		time="8" />
 
 	<string
@@ -163,21 +163,21 @@
 		modelCfg="118"
 		modelSlot="1"
 		sound="data\sounds\Speech\r1m3\r1m3_15_bob.ogg"
-		value="鲍勃|她好像需要什么精密机器。全世界只有一个地方能找到那种东西。米德加德。"
+		value="鲍勃|她好像需要什么精密机器。|全世界只有一个地方能|找到那种东西。米德加德。"
 		time="8" />
 
 	<string
 		id="16"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r1m3\r1m3_16_hero.ogg"
-		value="|等等！那不是镇长的车吗？他这是要去哪儿？跟上他。"
+		value="|等等！那不是镇长的车吗？|他这是要去哪儿？跟上他。"
 		time="4" />
 
 	<string
 		id="17"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r1m3\r1m3_17_hero.ogg"
-		value="|我的天哪。这里堆着成山的货物！镇长果然是个窃贼！等我把这事告诉米宁的人，他肯定会被赶下台。工人们也能回油田干活了！"
+		value="|我的天哪。这里堆着成山的货物！|镇长果然是个窃贼！|等我把这事告诉米宁的人，|他肯定会被赶下台。|工人们也能回油田干活了！"
 		time="12" />
 
 	<string
@@ -191,35 +191,35 @@
 		id="19"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r1m3\r1m3_19_hero.ogg"
-		value="|我没能跟上镇长。好吧，那就另想办法让油田复工。"
+		value="|我没能跟上镇长。|好吧，那就另想办法让油田复工。"
 		time="4" />
 
 	<string
 		id="20"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r1m3\r1m3_20_hero.ogg"
-		value="|油田没有匪徒了！最后一个敌人正在逃跑！跟着他，说不定能找到他们的老巢。"
+		value="|油田没有匪徒了！|最后一个敌人正在逃跑！|跟着他，说不定能找到他们的老巢。"
 		time="8" />
 
 	<string
 		id="30"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r1m3\r1m3_30_hero.ogg"
-		value="|这里出过什么事？有人抢在我之前来过。他八成找到了暗藏的储藏点。该死！光盘被偷了！"
+		value="|这里出过什么事？|有人抢在我之前来过。|他八成找到了暗藏的储藏点。该死！|光盘被偷了！"
 		time="8" />
 
 	<string
 		id="31"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r1m3\r1m3_31_hero.ogg"
-		value="|成功了！光盘到手！该去和神谕谈谈了。"
+		value="|成功了！光盘到手！|该去和神谕谈谈了。"
 		time="4" />
 
 	<string
 		id="32"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r1m3\r1m3_32_hero.ogg"
-		value="|爱丽丝，是你？！在陌生的地方碰到熟面孔，真是运气。你最近怎么样？"
+		value="|爱丽丝，是你？！|在陌生的地方碰到熟面孔，|真是运气。你最近怎么样？"
 		time="4" />
 
 	<string
@@ -227,14 +227,14 @@
 		modelName="mask_lisa"
 		modelSlot="1"
 		sound="data\sounds\Speech\r1m3\r1m3_33_alice.ogg"
-		value="爱丽丝|我很好，谢谢。要是当初就知道你是谁，能省我多少事。不过今天还真是我的幸运日！"
+		value="爱丽丝|我很好，谢谢。要是当初就知|道你是谁，能省我多少事。|不过今天还真是我的幸运日！"
 		time="8" />
 
 	<string
 		id="34"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r1m3\r1m3_34_hero.ogg"
-		value="|你干什么？站住！那是我的！真不敢相信，她偷走了我的光盘和钥匙。小偷！不管花多大代价，我都要找到你！"
+		value="|你干什么？站住！那是我的！|真不敢相信，她偷走了我的光|盘和钥匙。小偷！|不管花多大代价，我都要找到你！"
 		time="8" />
 
 	<string
@@ -256,7 +256,7 @@
 		id="36"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r1m3\r1m3_36_hero.ogg"
-		value="|神谕？你变化真大！我有一件事必须告诉你！"
+		value="|神谕？你变化真大！|我有一件事必须告诉你！"
 		time="4" />
 
 	<string
@@ -264,7 +264,7 @@
 		modelName="mask_oracul"
 		modelSlot="1"
 		sound="data\sounds\Speech\r1m3\r1m3_361_oracle.ogg"
-		value="神谕|先听我说。你已经赢得了我的完全信任，现在我要与你分享我的知识。许多年前，外星入侵者用死亡射线照射我们的星球，几乎将地表的生命赶尽杀绝。"
+		value="神谕|先听我说。你已经赢得了我的完|全信任，现在我要与你分|享我的知识。许多年前，|外星入侵者用死亡射线照|射我们的星球，几乎将地|表的生命赶尽杀绝。"
 		time="22" />
 
 	<string
@@ -272,14 +272,14 @@
 		modelName="mask_oracul"
 		modelSlot="1"
 		sound="data\sounds\Speech\r1m3\r1m3_3610_oracle.ogg"
-		value="神谕|我几乎已经定位到了它的源头，但还需要收集更多数据。"
+		value="神谕|我几乎已经定位到了它的源头，|但还需要收集更多数据。"
 		time="15" />
 
 	<string
 		id="362"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r1m3\r1m3_362_hero.ogg"
-		value="|我知道它在哪儿，而且它还在运转！我在沙漠里发现了一台巨大的装置，能把人逼疯。它周围笼罩着恐惧的气场。必须毁掉它！"
+		value="|我知道它在哪儿，而且它还在运转！|我在沙漠里发现了一台巨大的装置，|能把人逼疯。它周围笼罩着恐|惧的气场。必须毁掉它！"
 		time="12" />
 
 	<string
@@ -287,14 +287,14 @@
 		modelName="mask_oracul"
 		modelSlot="1"
 		sound="data\sounds\Speech\r1m3\r1m3_363_oracle.ogg"
-		value="神谕|你的情报无价。而且，我正打算阻止入侵者完成他们的计划。"
+		value="神谕|你的情报无价。而且，|我正打算阻止入侵者完|成他们的计划。"
 		time="8" />
 
 	<string
 		id="364"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r1m3\r1m3_364_hero.ogg"
-		value="|这正是我来找你的原因。你一定知道上哪儿能找到一种武器，能炸出直径两公里的弹坑！"
+		value="|这正是我来找你的原因。|你一定知道上哪儿能找到一种武器，|能炸出直径两公里的弹坑！"
 		time="8" />
 
 	<string
@@ -302,7 +302,7 @@
 		modelName="mask_oracul"
 		modelSlot="1"
 		sound="data\sounds\Speech\r1m3\r1m3_365_oracle.ogg"
-		value="神谕|这种武器确实存在。此刻就有几颗战争卫星在绕着地球转，等待发射信号。"
+		value="神谕|这种武器确实存在。|此刻就有几颗战争卫星在绕着地|球转，等待发射信号。"
 		time="12" />
 
 	<string
@@ -317,14 +317,14 @@
 		modelName="mask_oracul"
 		modelSlot="1"
 		sound="data\sounds\Speech\r1m3\r1m3_367_oracle.ogg"
-		value="神谕|不行。一台强力干扰装置屏蔽了我的大部分信号。我怀疑它就在利布里姆的某个地方。"
+		value="神谕|不行。一台强力干扰装置屏|蔽了我的大部分信号。|我怀疑它就在利布里姆的某个地方。"
 		time="12" />
 
 	<string
 		id="368"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r1m3\r1m3_368_hero.ogg"
-		value="|我去替你关掉那台装置。噪音一停，你们就进攻。"
+		value="|我去替你关掉那台装置。|噪音一停，你们就进攻。"
 		time="4" />
 
 	<string
@@ -332,21 +332,21 @@
 		modelName="mask_oracul"
 		modelSlot="1"
 		sound="data\sounds\Speech\r1m3\r1m3_369_oracle.ogg"
-		value="神谕|很快，这颗星球就将摆脱外星人的魔影！"
+		value="神谕|很快，这颗星球就将摆脱外|星人的魔影！"
 		time="4" />
 
 	<string
 		id="37"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r1m3\r1m3_37_hero.ogg"
-		value="|现在我得去别的村子找工人了。米宁的人不愿意在油田干活。"
+		value="|现在我得去别的村子找工人了。|米宁的人不愿意在油田干活。"
 		time="4" />
 
 	<string
 		id="38"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r1m3\r1m3_38_hero.ogg"
-		value="|这下我永远不知道匪徒老巢在哪儿了。不过，不知道也罢。"
+		value="|这下我永远不知道匪徒老|巢在哪儿了。不过，不知道也罢。"
 		time="4" />
 
 	<string
@@ -361,14 +361,14 @@
 		modelName="mask_oracul"
 		modelSlot="1"
 		sound="data\sounds\Speech\r1m3\r1m3_3002_oracle.ogg"
-		value="神谕|人类，多亏你的帮助，我恢复了昔日的力量。为此我感谢你。但现在，你在插手你根本理解不了的事情。"
+		value="神谕|人类，多亏你的帮助，|我恢复了昔日的力量。|为此我感谢你。但现在，|你在插手你根本理解不了的事情。"
 		time="8" />
 
 	<string
 		id="3003"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r1m3\r1m3_3003_hero.ogg"
-		value="神谕！是你！难以置信！我正好需要借用你的机翼运送装置……我找到了治愈我们世界的方法！"
+		value="神谕！是你！难以置信！|我正好需要借用你的机翼运|送装置……我找到了治|愈我们世界的方法！"
 		time="8" />
 
 	<string
@@ -376,14 +376,14 @@
 		modelName="mask_oracul"
 		modelSlot="1"
 		sound="data\sounds\Speech\r1m3\r1m3_3004_oracle.ogg"
-		value="神谕|阻止污染的唯一办法，就是摧毁它的源头！"
+		value="神谕|阻止污染的唯一办法，|就是摧毁它的源头！"
 		time="4" />
 
 	<string
 		id="3005"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r1m3\r1m3_3005_hero.ogg"
-		value="|还有别的办法！我随身带着的这台装置能让源点慢慢失效，谁都不会受到冲击！"
+		value="|还有别的办法！我随身|带着的这台装置能让源点慢慢失效，|谁都不会受到冲击！"
 		time="8" />
 
 	<string
@@ -391,14 +391,14 @@
 		modelName="mask_oracul"
 		modelSlot="1"
 		sound="data\sounds\Speech\r1m3\r1m3_3006_oracle.ogg"
-		value="神谕|蠢货！外星人正利用你去完成他们的地球化改造计划！装置一启动，我们星球上的生命就会被彻底抹除！"
+		value="神谕|蠢货！外星人正利用你去完|成他们的地球化改造计划！|装置一启动，我们星球上的生|命就会被彻底抹除！"
 		time="8" />
 
 	<string
 		id="3007"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r1m3\r1m3_3007_hero.ogg"
-		value="|你疯了。这些年给野蛮人算命占卜，把你的脑子都算坏了！放我走！"
+		value="|你疯了。这些年给野蛮人算命占卜，|把你的脑子都算坏了！放我走！"
 		time="4" />
 
 	<string
@@ -406,7 +406,7 @@
 		modelName="mask_oracul"
 		modelSlot="1"
 		sound="data\sounds\Speech\r1m3\r1m3_3008_oracle.ogg"
-		value="神谕|与敌人合作不可容忍。叛徒必须清除！"
+		value="神谕|与敌人合作不可容忍。|叛徒必须清除！"
 		time="4" />
 
 	<string
@@ -432,7 +432,7 @@
 		id="8803"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r3m1\r3m1_8803_hero.ogg"
-		value="这地方透着股怪劲儿。我不想去那儿。"
+		value="这地方透着股怪劲儿。|我不想去那儿。"
 		time="3" />
 
 	<string
@@ -447,7 +447,7 @@
 
 	<string
 		id="6006"
-		value="过桥需要付500金币。你的钱不够。" />
+		value="过桥需要付500金币。|你的钱不够。" />
 
 	<string
 		id="77771"
@@ -455,7 +455,7 @@
 		image="data\if\ico\CinemaPanel\foreground_movie_shade_midle.dds"
 		upOverlay="data\if\ico\CinemaPanel\foreground_movie_shade_up.dds"
 		downOverlay="data\if\ico\CinemaPanel\foreground_movie_shade.dds"
-		value="神谕的移动模块虽然被摧毁，它的主机却完好无损。它的金属仆从退回丛林，专门袭击落单的涅里小队。干扰装置如期发挥了作用。外星人的基地迁到了扎尔梅克，在那里，这些天外来客终于得以研究辐射及其对人类的影响。实验成功了：有几个人摘下面具活了下来。不过，也只能在涅里的实验室里。一百年来，人们第一次看到世界恢复如常的希望。只有那些精明的人还在犯嘀咕：那艘飞碟的坠落究竟是不是意外，新盟友的计划又是否真与人类的希望一致"
+		value="神谕的移动模块虽然被摧毁，|它的主机却完好无损。|它的金属仆从退回丛林，|专门袭击落单的涅里小队。|干扰装置如期发挥了作用。|外星人的基地迁到了扎尔梅克，|在那里，这些天外来客|终于得以研究辐射及其对人|类的影响。实验成功了：|有几个人摘下面具活了下来。|不过，也只能在涅里的实验室里。|一百年来，人们第一次看到世|界恢复如常的希望。|只有那些精明的人还在犯嘀咕：|那艘飞碟的坠落究竟是不是意外，|新盟友的计划又是否真与人|类的希望一致"
 		sound="data\sounds\Speech\rolik\ending1.ogg"
 		fontSize="18"
 		scrollSpeed="0.5"

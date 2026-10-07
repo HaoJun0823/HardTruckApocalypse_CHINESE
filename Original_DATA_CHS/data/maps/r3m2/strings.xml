@@ -3,28 +3,28 @@
 	<string
 		id="1001"
 		modelName="mask_hero"
-		value="|这场恶仗总算打完了。可我拿这颗脑袋到底要干什么？"
+		value="|这场恶仗总算打完了。|可我拿这颗脑袋到底要干什么？"
 		sound="data\sounds\Speech\r3m2\r3m2_1001_hero.ogg"
 		time="4" />
 
 	<string
 		id="1002"
 		modelName="mask_hero"
-		value="|首先得想办法把这颗脑袋从身子上卸下来。有点棘手……有了！再给我几分钟……"
+		value="|首先得想办法把这颗脑袋从身|子上卸下来。有点棘手……有了！|再给我几分钟……"
 		sound="data\sounds\Speech\r3m2\r3m2_1002_hero.ogg"
 		time="3" />
 
 	<string
 		id="1003"
 		modelName="mask_hero"
-		value="|搞定了。现在可以回去见神谕信徒了。"
+		value="|搞定了。现在可以回去见神|谕信徒了。"
 		sound="data\sounds\Speech\r3m2\r3m2_1003_hero.ogg"
 		time="3" />
 
 	<string
 		id="1004"
 		modelName="mask_hero"
-		value="|这亮光是什么？看样子是神谕提到的古代遗物之一。"
+		value="|这亮光是什么？看样子是神|谕提到的古代遗物之一。"
 		sound="data\sounds\Speech\r3m2\r3m2_1004_hero.ogg"
 		time="1" />
 
@@ -38,35 +38,35 @@
 	<string
 		id="1006"
 		modelName="mask_hero"
-		value="|需要的东西都到手了。神谕会满意的。"
+		value="|需要的东西都到手了。|神谕会满意的。"
 		sound="data\sounds\Speech\r3m2\r3m2_1006_hero.ogg"
 		time="1" />
 
 	<string
 		id="1"
 		modelName="mask_hero"
-		value="|第一个小帮手就位了。多机灵的小家伙！"
+		value="|第一个小帮手就位了。|多机灵的小家伙！"
 		sound="data\sounds\Speech\r3m2\r3m2_1_hero.ogg"
 		time="1" />
 
 	<string
 		id="2"
 		modelName="mask_hero"
-		value="|第二个小帮手开工了。该去送最后一个了。"
+		value="|第二个小帮手开工了。|该去送最后一个了。"
 		sound="data\sounds\Speech\r3m2\r3m2_2_hero.ogg"
 		time="1" />
 
 	<string
 		id="3"
 		modelName="mask_hero"
-		value="|最后一个小帮手也准备就绪。希望它们能帮神谕找回记忆。"
+		value="|最后一个小帮手也准备就绪。|希望它们能帮神谕找回记忆。"
 		sound="data\sounds\Speech\r3m2\r3m2_3_hero.ogg"
 		time="1" />
 
 	<string
 		id="4"
 		modelName="mask_hero"
-		value="|这一路我见过的怪事不少。可我还是想不通，怎么会有人在田野上留下这些神秘的印痕。"
+		value="|这一路我见过的怪事不少。|可我还是想不通，|怎么会有人在田野上留下这些|神秘的印痕。"
 		sound="data\sounds\Speech\r3m2\r3m2_4_hero.ogg"
 		time="1" />
 
@@ -80,28 +80,28 @@
 	<string
 		id="6"
 		modelName="mask_hero"
-		value="|通道太窄了。我的卡车过不去。可我也不想走路！"
+		value="|通道太窄了。我的卡车过不去。|可我也不想走路！"
 		sound="data\sounds\Speech\r3m2\r3m2_6_hero.ogg"
 		time="1" />
 
 	<string
 		id="7"
 		modelName="mask_hero"
-		value="|我得找辆小一点的车。记得在附近好像见过一辆。"
+		value="|我得找辆小一点的车。|记得在附近好像见过一辆。"
 		sound="data\sounds\Speech\r3m2\r3m2_7_hero.ogg"
 		time="1" />
 
 	<string
 		id="8"
 		modelName="mask_hero"
-		value="|多亏把车留在这儿的那位。骑着这匹『铁马』，我就能潜进工厂。"
+		value="|多亏把车留在这儿的那位。|骑着这匹『铁马』，|我就能潜进工厂。"
 		sound="data\sounds\Speech\r3m2\r3m2_8_hero.ogg"
 		time="1" />
 
 	<string
 		id="9"
 		modelName="mask_hero"
-		value="|我看借用一会儿没人会反对。检查油量……点火……发动机启动！"
+		value="|我看借用一会儿没人会反对。|检查油量……点火……发动机启动！"
 		sound="data\sounds\Speech\r3m2\r3m2_9_hero.ogg"
 		time="1" />
 
@@ -122,7 +122,7 @@
 	<string
 		id="12"
 		modelName="mask_hero"
-		value="|怪物来了。我看它不会乖乖把脑袋交出来，免不了有一战。"
+		value="|怪物来了。我看它不会乖|乖把脑袋交出来，免不了有一战。"
 		sound="data\sounds\Speech\r3m2\r3m2_12_hero.ogg"
 		time="1" />
 
@@ -136,14 +136,14 @@
 	<string
 		id="14"
 		modelName="mask_hero"
-		value="|从没见过这么庞大的废墟。不知道大灾变之前这里是什么样子……"
+		value="|从没见过这么庞大的废墟。|不知道大灾变之前这里是|什么样子……"
 		sound="data\sounds\Speech\r3m2\r3m2_14_hero.ogg"
 		time="1" />
 
 	<string
 		id="15"
 		modelName="mask_hero"
-		value="|正门被堵死了；我沿铁路碰碰运气吧。"
+		value="|正门被堵死了；我沿铁路碰|碰运气吧。"
 		sound="data\sounds\Speech\r3m2\r3m2_15_hero.ogg"
 		time="1" />
 
@@ -155,7 +155,7 @@
 
 	<string
 		id="17"
-		value="你不能开着这辆车离开此地。太危险了。最好换回你自己的卡车。"
+		value="你不能开着这辆车离开此地。|太危险了。最好换回你自己的卡车。"
 		numButtons="1" />
 
 	<string

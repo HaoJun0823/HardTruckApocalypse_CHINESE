@@ -4,7 +4,7 @@
 		id="1"
 		modelName="mask_father"
 		modelSlot="1"
-		value="父亲|该起床啦！今天是你生日，我有个好消息要告诉你。"
+		value="父亲|该起床啦！今天是你生日，|我有个好消息要告诉你。"
 		sound="data\sounds\Speech\r1m1\r1m1_1_father.ogg"
 		time="11" />
 
@@ -19,7 +19,7 @@
 		id="3"
 		modelName="mask_father"
 		modelSlot="1"
-		value="父亲|今天对咱俩来说都是个大日子。你如今是大人了，想做什么都行。"
+		value="父亲|今天对咱俩来说都是个大日子。|你如今是大人了，想做什么都行。"
 		sound="data\sounds\Speech\r1m1\r1m1_3_father.ogg"
 		time="17" />
 
@@ -27,21 +27,21 @@
 		id="31"
 		modelName="mask_father"
 		modelSlot="1"
-		value="父亲|当然，你最好还是征得父亲的许可。就说你这种情况——得征得我的许可。看见这辆卡车了吗？从现在起它是你的了。"
+		value="父亲|当然，你最好还是征得父亲的许可。|就说你这种情况——|得征得我的许可。|看见这辆卡车了吗？|从现在起它是你的了。"
 		sound="data\sounds\Speech\r1m1\r1m1_31_father.ogg"
 		time="12" />
 
 	<string
 		id="4"
 		modelName="mask_hero"
-		value="|真不敢相信。我终于可以独自开车上路了！"
+		value="|真不敢相信。我终于可以独|自开车上路了！"
 		sound="data\sounds\Speech\r1m1\r1m1_4_hero.ogg"
 		time="6" />
 
 	<string
 		id="41"
 		modelName="mask_hero"
-		value="|我是说——谢谢您，长官……呃，父亲大人！"
+		value="|我是说——谢谢您，长官……|呃，父亲大人！"
 		sound="data\sounds\Speech\r1m1\r1m1_41_hero.ogg"
 		time="6" />
 
@@ -64,7 +64,7 @@
 		id="7"
 		modelName="mask_father"
 		modelSlot="1"
-		value="父亲|嗯，行啊，只要你不怕摔进沟里。不过头一件，你得先去索斯，把这个包裹送给我朋友谢尔戈。正好练练车技，完事立刻回来。"
+		value="父亲|嗯，行啊，只要你不怕摔进沟里。|不过头一件，你得先去索斯，|把这个包裹送给我朋友谢尔戈。|正好练练车技，完事立刻回来。"
 		sound="data\sounds\Speech\r1m1\r1m1_7_father.ogg"
 		time="12" />
 
@@ -95,14 +95,14 @@
 		id="1121"
 		modelName="mask_lisa"
 		modelSlot="1"
-		value="爱丽丝|见鬼！我肯定他就在这附近。你确定这一带没有别的村子？"
+		value="爱丽丝|见鬼！我肯定他就在这附近。|你确定这一带没有别的村子？"
 		sound="data\sounds\Speech\r1m1\r1m1_1121_lisa.ogg"
 		time="7" />
 
 	<string
 		id="1122"
 		modelName="mask_hero"
-		value="|其实还有一个村子，格卢霍耶。不过你在那儿找不到什么客户。"
+		value="|其实还有一个村子，格卢霍耶。|不过你在那儿找不到什么客户。"
 		sound="data\sounds\Speech\r1m1\r1m1_1122_hero.ogg"
 		time="10" />
 
@@ -110,14 +110,14 @@
 		id="1123"
 		modelName="mask_lisa"
 		modelSlot="1"
-		value="爱丽丝|找不找得到客户，得我说了算。怎么去那儿？"
+		value="爱丽丝|找不找得到客户，得我说了算。|怎么去那儿？"
 		sound="data\sounds\Speech\r1m1\r1m1_1123_lisa.ogg"
 		time="4" />
 
 	<string
 		id="1124"
 		modelName="mask_hero"
-		value="|在北边。不算远，但没有直达的路，我们还得再穿一次索斯。"
+		value="|在北边。不算远，|但没有直达的路，|我们还得再穿一次索斯。"
 		sound="data\sounds\Speech\r1m1\r1m1_1124_hero.ogg"
 		time="7" />
 
@@ -125,7 +125,7 @@
 		id="1125"
 		modelName="mask_lisa"
 		modelSlot="1"
-		value="爱丽丝|跟着你这辆慢车，我都跟累了。从现在起我自己走。这是你的报酬。再见！"
+		value="爱丽丝|跟着你这辆慢车，我都跟累了。|从现在起我自己走。这是你的报酬。|再见！"
 		sound="data\sounds\Speech\r1m1\r1m1_1125_lisa.ogg"
 		time="11" />
 
@@ -142,14 +142,14 @@
 		modelSkin="0"
 		modelCfg="172"
 		modelSlot="1"
-		value="费利克斯|可算逮着你了。你不知道每个新来的商人都得向我交税吗？头一笔，一千金币。"
+		value="费利克斯|可算逮着你了。你不知道|每个新来的商人都得向我交税吗？|头一笔，一千金币。"
 		sound="data\sounds\Speech\r1m1\r1m1_1131_felix.ogg"
 		time="19" />
 
 	<string
 		id="1132"
 		modelName="mask_hero"
-		value="|你疯了吗？我连见都没见过那么多钱！"
+		value="|你疯了吗？我连见都没|见过那么多钱！"
 		sound="data\sounds\Speech\r1m1\r1m1_1132_hero.ogg"
 		time="5" />
 
@@ -159,7 +159,7 @@
 		modelSkin="0"
 		modelCfg="172"
 		modelSlot="1"
-		value="费利克斯|这么着吧，交钱——活命。不交嘛……给我上！"
+		value="费利克斯|这么着吧，交钱——活命。|不交嘛……给我上！"
 		sound="data\sounds\Speech\r1m1\r1m1_1133_felix.ogg"
 		time="7" />
 
@@ -169,14 +169,14 @@
 		modelSkin="0"
 		modelCfg="172"
 		modelSlot="1"
-		value="费利克斯|你会付出代价的，小崽子！费利克斯天涯海角都能找到你。撤！"
+		value="费利克斯|你会付出代价的，小崽子！|费利克斯天涯海角都能找到你。撤！"
 		sound="data\sounds\Speech\r1m1\r1m1_1134_felix.ogg"
 		time="8" />
 
 	<string
 		id="1141"
 		modelName="mask_hero"
-		value="|我不敢相信自己的眼睛！全死了……什么怪物能干出这种事？……"
+		value="|我不敢相信自己的眼睛！全死了……|什么怪物能干出这种事？……"
 		sound="data\sounds\Speech\r1m1\r1m1_1141_hero.ogg"
 		time="11" />
 
@@ -190,14 +190,14 @@
 	<string
 		id="1143"
 		modelName="mask_hero"
-		value="|我只剩一条路可走……复仇！我会找到你的，凶手！"
+		value="|我只剩一条路可走……|复仇！我会找到你的，凶手！"
 		sound="data\sounds\Speech\r1m1\r1m1_1143_hero.ogg"
 		time="13" />
 
 	<string
 		id="1144"
 		modelName="mask_hero"
-		value="|等等……上次见面时费利克斯跟我翻了脸。他既有动机又有手段……他休想逍遥法外！"
+		value="|等等……上次见面时费利克|斯跟我翻了脸。他既有动|机又有手段……他休想逍遥法外！"
 		sound="data\sounds\Speech\r1m1\r1m1_1144_hero.ogg"
 		time="11" />
 
@@ -214,14 +214,14 @@
 		modelSkin="0"
 		modelCfg="172"
 		modelSlot="1"
-		value="费利克斯|是你？这下你要为你的放肆付出代价了！"
+		value="费利克斯|是你？这下你要为你的放肆|付出代价了！"
 		sound="data\sounds\Speech\r1m1\r1m1_1152_felix.ogg"
 		time="6" />
 
 	<string
 		id="1153"
 		modelName="mask_hero"
-		value="|就这点本事？有种出来，像个男人一样打！"
+		value="|就这点本事？有种出来，|像个男人一样打！"
 		sound="data\sounds\Speech\r1m1\r1m1_1153_hero.ogg"
 		time="5" />
 
@@ -231,7 +231,7 @@
 		modelSkin="0"
 		modelCfg="172"
 		modelSlot="1"
-		value="费利克斯|想办得利索，就得亲自出马。让我来收拾他。"
+		value="费利克斯|想办得利索，就得亲自出马。|让我来收拾他。"
 		sound="data\sounds\Speech\r1m1\r1m1_1154_felix.ogg"
 		time="10" />
 
@@ -248,7 +248,7 @@
 		modelSkin="0"
 		modelCfg="172"
 		modelSlot="1"
-		value="费利克斯|等等。我已经好几年没杀过人了。我们和本地人有协议在先。倒是你在袭击我的弟兄们！"
+		value="费利克斯|等等。我已经好几年没杀过人了。|我们和本地人有协议在先。|倒是你在袭击我的弟兄们！"
 		sound="data\sounds\Speech\r1m1\r1m1_1156_felix.ogg"
 		time="10" />
 
@@ -265,7 +265,7 @@
 		modelSkin="0"
 		modelCfg="172"
 		modelSlot="1"
-		value="费利克斯|别激动，兄弟。你是格卢霍耶来的！相信我，那不是我们帮干的。是一伙疯疯癫癫的外来人干的。"
+		value="费利克斯|别激动，兄弟。你是格卢霍耶来的！|相信我，那不是我们帮干的。|是一伙疯疯癫癫的外来人干的。"
 		sound="data\sounds\Speech\r1m1\r1m1_1158_felix.ogg"
 		time="8" />
 
@@ -282,7 +282,7 @@
 		modelSkin="0"
 		modelCfg="172"
 		modelSlot="1"
-		value="费利克斯|我对着我娘的坟头发誓！去问问你那位姑娘，她全都看见了。"
+		value="费利克斯|我对着我娘的坟头发誓！|去问问你那位姑娘，她全都看见了。"
 		sound="data\sounds\Speech\r1m1\r1m1_11510_felix.ogg"
 		time="7" />
 
@@ -299,14 +299,14 @@
 		modelSkin="0"
 		modelCfg="172"
 		modelSlot="1"
-		value="费利克斯|她自己说的。她北上路过我们营地，往佩斯特去了。她当时吓得魂儿都没了。"
+		value="费利克斯|她自己说的。她北上路过我们营地，|往佩斯特去了。她当时吓得|魂儿都没了。"
 		sound="data\sounds\Speech\r1m1\r1m1_11512_felix.ogg"
 		time="6" />
 
 	<string
 		id="11513"
 		modelName="mask_hero"
-		value="|我明白了……我会去追她。你可以走了，费利克斯，但永远别再回来！"
+		value="|我明白了……我会去追她。|你可以走了，费利克斯，|但永远别再回来！"
 		sound="data\sounds\Speech\r1m1\r1m1_11513_hero.ogg"
 		time="17" />
 
@@ -316,7 +316,7 @@
 		modelSkin="0"
 		modelCfg="172"
 		modelSlot="1"
-		value="费利克斯|这回算你赢。等我们再见面时，我会准备得更充分。"
+		value="费利克斯|这回算你赢。等我们再见面时，|我会准备得更充分。"
 		sound="data\sounds\Speech\r1m1\r1m1_11514_felix.ogg"
 		time="5" />
 
@@ -333,7 +333,7 @@
 		modelSkin="0"
 		modelCfg="70"
 		modelSlot="1"
-		value="革命者埃德| 这下他们再想袭击咱们村，可得掂量掂量了！"
+		value="革命者埃德| 这下他们再想袭击咱们村，|可得掂量掂量了！"
 		sound="data\sounds\Speech\r1m1\r1m1_2222_ed.ogg"
 		time="4" />
 
@@ -356,14 +356,14 @@
 		id="33332"
 		modelName="mask_father"
 		modelSlot="1"
-		value="父亲|仔细听着。这些年一直是我在照顾你……可你终究是收养的孩子。这些东西是你亲生父亲的遗物，拿去吧。去找本·斯罗特尔……他和你父亲一样，是个探险家。他会帮你的……去吧……孩子……"
+		value="父亲|仔细听着。这些年一直|是我在照顾你……|可你终究是收养的孩子。|这些东西是你亲生父亲的遗物，|拿去吧。去找本·斯罗特尔……|他和你父亲一样，是个探险家。|他会帮你的……去吧……孩子……"
 		sound="data\sounds\Speech\r1m1\r1m1_33332_father.ogg"
 		time="30" />
 
 	<string
 		id="33333"
 		modelName="mask_hero"
-		value="|我这一辈子……现在该怎么办？什么都没了……谁也不剩了……只剩这封信"
+		value="|我这一辈子……现在该怎么办？|什么都没了……谁也不剩了……|只剩这封信"
 		sound="data\sounds\Speech\r1m1\r1m1_33333_hero.ogg"
 		time="10" />
 
@@ -372,7 +372,7 @@
 		modelAutosized="true"
 		modelName="quest_letter"
 		modelSlot="1"
-		value="信件|''如果你读到这封信，说明我没能回来。很遗憾，但事实如此。我很了解彼得，你的教养完全不用担心……''"
+		value="信件|''如果你读到这封信，|说明我没能回来。|很遗憾，但事实如此。|我很了解彼得，你的教养完|全不用担心……''"
 		sound="data\sounds\Speech\r1m1\r1m1_33334_letter.ogg"
 		time="16" />
 
@@ -381,7 +381,7 @@
 		modelAutosized="true"
 		modelName="quest_letter"
 		modelSlot="1"
-		value="信件|''……一想到我在远方，而你正长成大人，我就心痛难当。这真是煎熬。但你必须知道，我别无选择，只能离开。事关重大，不容有失……——''"
+		value="信件|''……一想到我在远方，|而你正长成大人，我就心痛难当。|这真是煎熬。但你必须知道，|我别无选择，只能离开。|事关重大，不容有失……——''"
 		sound="data\sounds\Speech\r1m1\r1m1_33335_letter.ogg"
 		time="12" />
 
@@ -390,20 +390,20 @@
 		modelAutosized="true"
 		modelName="quest_letter"
 		modelSlot="1"
-		value="信件|''……我必须纠正这个错误。只有达成目标，我才能证明自己配得上『父亲』……和『丈夫』这个称呼。对不起，儿子。若你能原谅，请原谅我。——''"
+		value="信件|''……我必须纠正这个错误。|只有达成目标，我才能证明|自己配得上『父亲』……|和『丈夫』这个称呼。|对不起，儿子。若你能原谅，|请原谅我。——''"
 		sound="data\sounds\Speech\r1m1\r1m1_33336_letter.ogg"
 		time="16" />
 
 	<string
 		id="33337"
 		modelName="mask_hero"
-		value="|就这些？连一句解释都没有……一个我从未怪罪过的人，让我怎么原谅？我在这儿已经无事可做了。也许本能为我指点迷津。我要找到他，再决定我的人生怎么走。不知道他住在哪儿。"
+		value="|就这些？连一句解释都没有……|一个我从未怪罪过的人，|让我怎么原谅？我在这儿已|经无事可做了。也许本|能为我指点迷津。|我要找到他，再决定我的人|生怎么走。不知道他住在哪儿。"
 		sound="data\sounds\Speech\r1m1\r1m1_33337_hero.ogg"
 		time="16" />
 
 	<string
 		id="8800"
-		value="这是你第一次玩《末日卡车：启示录》。需要获取游戏操作提示吗？"
+		value="这是你第一次玩《末日卡车：|启示录》。需要获取游戏操|作提示吗？"
 		numButtons="2" />
 
 	<string
@@ -422,7 +422,7 @@
 		id="8803"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r3m1\r3m1_8803_hero.ogg"
-		value="这地方透着股怪劲儿。我不想去那儿。"
+		value="这地方透着股怪劲儿。|我不想去那儿。"
 		time="3" />
 
 	<string
@@ -431,7 +431,7 @@
 		image="data\if\ico\CinemaPanel\foreground_movie_shade_midle.dds"
 		upOverlay="data\if\ico\CinemaPanel\foreground_movie_shade_up.dds"
 		downOverlay="data\if\ico\CinemaPanel\foreground_movie_shade.dds"
-		value="@ffffffff|    历史没有留下关于大灾变之后黑暗时代的确切记载。但有一点确定无疑：拯救全人类的，是防毒面具。这件无名天才的造物保护人们免受污染空气的侵害，也让所有人变得平等。这道隔开生命与死亡的薄薄屏障，成了新人类的象征。面具把人们团结在一起，给了他们为未来而战的力量。 ||    新的定居点建在远离旧城的地方——那些旧城早已成了万人坑。渐渐地，幸存者的小团体之间建立起了贸易往来。矿工、农民、商人这些寻常行当成了抢手活计。辛勤的劳作让人们忘却了过去的恐怖。||    但没有什么能改变人的本性。任何时代都有这样的人：他们保存智慧，与人分享；也总有另一种人，偏爱混乱与毁灭，胜过一切。"
+		value="@ffffffff|    历史没有留下关于大|灾变之后黑暗时代的确切记载。|但有一点确定无疑：|拯救全人类的，是防毒面具。|这件无名天才的造物保护|人们免受污染空气的侵害，|也让所有人变得平等。|这道隔开生命与死亡的薄薄屏障，|成了新人类的象征。|面具把人们团结在一起，|给了他们为未来而战的力量。 ||    新的定居点建在远|离旧城的地方——|那些旧城早已成了万人坑。|渐渐地，幸存者的小团体之|间建立起了贸易往来。|矿工、农民、商人这些寻常|行当成了抢手活计。|辛勤的劳作让人们忘|却了过去的恐怖。||    但没有什么能改变|人的本性。任何时代都有这样的人：|他们保存智慧，与人分享；|也总有另一种人，|偏爱混乱与毁灭，胜过一切。"
 		sound="data\sounds\Speech\rolik\r1m1_969_narrator.ogg"
 		fontSize="18"
 		scrollSpeed="0.5"

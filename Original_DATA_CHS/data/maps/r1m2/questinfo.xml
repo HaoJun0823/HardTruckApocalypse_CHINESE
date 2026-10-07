@@ -4,7 +4,7 @@
 	<QuestInfo
 		questName="Vostok_Quest1"
 		briefDiz="前往埃泰尔纳。"
-		fullDiz="抵达埃泰尔纳城，在那里可以打听到米德加德的下落。"
+		fullDiz="抵达埃泰尔纳城，|在那里可以打听到米德加德的下落。"
 		requestForTalk=""
 		smallImage=""
 		largeImage="">
@@ -14,7 +14,7 @@
 	<QuestInfo
 		questName="Fermers_Quest1"
 		briefDiz="运送工艺品。"
-		fullDiz="从村子里取走工艺品，再把它送给农夫。"
+		fullDiz="从村子里取走工艺品，|再把它送给农夫。"
 		requestForTalk="我在找米德加德……"
 		smallImage=""
 		largeImage="">
@@ -24,7 +24,7 @@
 	<QuestInfo
 		questName="TalkArtefacter_Quest"
 		briefDiz="寻找矿工。"
-		fullDiz="在村子里找到矿工，从他那里取走工艺品。"
+		fullDiz="在村子里找到矿工，|从他那里取走工艺品。"
 		requestForTalk="我是来取工艺品的……"
 		smallImage=""
 		largeImage="">
@@ -34,7 +34,7 @@
 	<QuestInfo
 		questName="BackFermers_Quest"
 		briefDiz="回到埃泰尔纳。"
-		fullDiz="带着工艺品回到埃泰尔纳，把它交给农夫。"
+		fullDiz="带着工艺品回到埃泰尔纳，|把它交给农夫。"
 		requestForTalk="工艺品给你，快说米德加德在哪儿……"
 		smallImage=""
 		largeImage="">
@@ -45,7 +45,7 @@
 	<QuestInfo
 		questName="Bandit1_Quest1"
 		briefDiz="吓唬村民。"
-		fullDiz="得吓唬吓唬村里的居民，免得他们得意忘形。开车到村子中央，开几枪就行。"
+		fullDiz="得吓唬吓唬村里的居民，|免得他们得意忘形。|开车到村子中央，开几枪就行。"
 		requestForTalk="农夫骗了我，而我需要一个从米德加德来的人……"
 		smallImage=""
 		largeImage="">
@@ -56,7 +56,7 @@
 	<QuestInfo
 		questName="ReturnV_Quest1"
 		briefDiz="回到埃泰尔纳。"
-		fullDiz="回到埃泰尔纳去找那个陌生人，他知道关于米德加德的一切。"
+		fullDiz="回到埃泰尔纳去找那个陌生人，|他知道关于米德加德的一切。"
 		requestForTalk=""
 		smallImage=""
 		largeImage="">
@@ -67,7 +67,7 @@
 	<QuestInfo
 		questName="Bandit1_Quest2"
 		briefDiz="前往米德加德。"
-		fullDiz="通往米德加德的路已经清楚，人也找到了，不能再浪费时间。"
+		fullDiz="通往米德加德的路已经清楚，|人也找到了，不能再浪费时间。"
 		requestForTalk="我都办妥了，快说米德加德在哪儿？！"
 		smallImage=""
 		largeImage="">
@@ -78,7 +78,7 @@
 	<QuestInfo
 		questName="Bandit2_Quest1"
 		briefDiz="护送商队去波尔图。"
-		fullDiz="通往米德加德的路已经清楚，人也找到了，不能再浪费时间。"
+		fullDiz="通往米德加德的路已经清楚，|人也找到了，不能再浪费时间。"
 		requestForTalk="见鬼！原来我要找的人就是你？！你让我来回折腾什么呀！！！"
 		smallImage=""
 		largeImage="">

@@ -6,7 +6,7 @@
 		modelSkin="0"
 		modelCfg="1496"
 		modelSlot="1"
-		value="叛徒|哟，瞧瞧这是谁啊！现在该看看这里谁说了算了！你迫害我们的弟兄，这笔账要清算。"
+		value="叛徒|哟，瞧瞧这是谁啊！|现在该看看这里谁说了算了！|你迫害我们的弟兄，这笔账要清算。"
 		sound="data\sounds\Speech\r3m1\r3m1_1001_traitor.ogg"
 		time="4" />
 
@@ -16,7 +16,7 @@
 		modelSkin="2"
 		modelCfg="1915"
 		modelSlot="1"
-		value="德鲁伊|你终究还是背叛了我……我不怪你，无知的孩子。但一切恶行终将受罚，这是生命的法则。我为你叹息……"
+		value="德鲁伊|你终究还是背叛了我……|我不怪你，无知的孩子。|但一切恶行终将受罚，|这是生命的法则。我为你叹息……"
 		sound="data\sounds\Speech\r3m1\r3m1_1002_druid.ogg"
 		time="5" />
 
@@ -26,7 +26,7 @@
 		modelSkin="0"
 		modelCfg="1496"
 		modelSlot="1"
-		value="叛徒|少废话，老头！你——去乌卢克领你的赏钱。"
+		value="叛徒|少废话，老头！你——|去乌卢克领你的赏钱。"
 		sound="data\sounds\Speech\r3m1\r3m1_1003_traitor.ogg"
 		time="4" />
 
@@ -40,7 +40,7 @@
 	<string
 		id="1020"
 		modelName="mask_hero"
-		value="|我们总算到了。我还以为再也爬不出这个臭气熏天的洞了。你在这儿有认识的人吗？"
+		value="|我们总算到了。我还以为再也爬|不出这个臭气熏天的洞了。|你在这儿有认识的人吗？"
 		sound="data\sounds\Speech\r3m1\r3m1_1020_hero.ogg"
 		time="4" />
 
@@ -63,7 +63,7 @@
 		id="1023"
 		modelName="mask_lisa"
 		modelSlot="1"
-		value="爱丽丝|我的一些老朋友，过去都有些见不得光。他们不喜欢生人，没人引荐的话你最好别去见他们。"
+		value="爱丽丝|我的一些老朋友，|过去都有些见不得光。|他们不喜欢生人，|没人引荐的话你最好别去见他们。"
 		sound="data\sounds\Speech\r3m1\r3m1_1023_alice.ogg"
 		time="4" />
 
@@ -71,7 +71,7 @@
 		id="1024"
 		modelName="mask_lisa"
 		modelSlot="1"
-		value="爱丽丝|你去找神谕的时候，我就待在他们那儿。办完了事，就到那儿找我。"
+		value="爱丽丝|你去找神谕的时候，|我就待在他们那儿。|办完了事，就到那儿找我。"
 		sound="data\sounds\Speech\r3m1\r3m1_1024_alice.ogg"
 		time="4" />
 
@@ -90,13 +90,13 @@
 		modelSkin="0"
 		modelCfg="637"
 		modelSlot="1"
-		value="难民|救救我们，好心人！我们拒绝皈依乌卢克新主人的信仰。现在那些异端在追杀我们！"
+		value="难民|救救我们，好心人！|我们拒绝皈依乌卢克新主人的信仰。|现在那些异端在追杀我们！"
 		sound="data\sounds\Speech\r3m1\r3m1_22_refugee.ogg" />
 
 	<string
 		id="23"
 		modelName="mask_hero"
-		value="|别怕！我们齐心协力，定能打退这次进攻！凡是拿得动武器的，都来战斗吧！"
+		value="|别怕！我们齐心协力，|定能打退这次进攻！|凡是拿得动武器的，都来战斗吧！"
 		sound="data\sounds\Speech\r3m1\r3m1_23_hero.ogg" />
 
 	<string
@@ -105,13 +105,13 @@
 		modelSkin="0"
 		modelCfg="637"
 		modelSlot="1"
-		value="难民|好样的！逃够了！我们要为性命而战！"
+		value="难民|好样的！逃够了！|我们要为性命而战！"
 		sound="data\sounds\Speech\r3m1\r3m1_24_refugee.ogg" />
 
 	<string
 		id="25"
 		modelName="mask_hero"
-		value="|我们赢了这场仗，但没赢这场战争。那些异端随时可能杀回来。快去塞斯！在那儿我们就安全了。"
+		value="|我们赢了这场仗，但没赢这场战争。|那些异端随时可能杀回来。|快去塞斯！在那儿我们就安全了。"
 		sound="data\sounds\Speech\r3m1\r3m1_25_hero.ogg"
 		time="4" />
 
@@ -121,7 +121,7 @@
 		modelSkin="0"
 		modelCfg="637"
 		modelSlot="1"
-		value="难民|多谢搭救！你给了我们希望，高贵的陌生人！"
+		value="难民|多谢搭救！你给了我们希望，|高贵的陌生人！"
 		sound="data\sounds\Speech\r3m1\r3m1_26_refugee.ogg"
 		time="4" />
 
@@ -135,28 +135,28 @@
 	<string
 		id="27"
 		modelName="mask_hero"
-		value="|好一台怪机器。现在我明白德鲁伊们在怕什么了。这怪东西看得我直起鸡皮疙瘩。"
+		value="|好一台怪机器。现在我明白|德鲁伊们在怕什么了。|这怪东西看得我直起鸡皮疙瘩。"
 		sound="data\sounds\Speech\r3m1\r3m1_27_hero.ogg"
 		time="4" />
 
 	<string
 		id="28"
 		modelName="mask_hero"
-		value="|跟怪物交手，这又不是头一回！我干的是正义之事，我必将粉碎敌人！"
+		value="|跟怪物交手，这又不是头一回！|我干的是正义之事，|我必将粉碎敌人！"
 		sound="data\sounds\Speech\r3m1\r3m1_28_hero.ogg"
 		time="4" />
 
 	<string
 		id="31"
 		modelName="mask_hero"
-		value="|毁坏巨石阵的暴徒死了。我得通知德鲁伊。"
+		value="|毁坏巨石阵的暴徒死了。|我得通知德鲁伊。"
 		sound="data\sounds\Speech\r3m1\r3m1_31_hero.ogg"
 		time="4" />
 
 	<string
 		id="29"
 		modelName="mask_hero"
-		value="|圣石归位了。我得赶在大地之母的怒火降临这片被亵渎的土地之前离开。"
+		value="|圣石归位了。我得赶在大地|之母的怒火降临这片被亵|渎的土地之前离开。"
 		sound="data\sounds\Speech\r3m1\r3m1_29_hero.ogg"
 		time="4" />
 
@@ -170,7 +170,7 @@
 	<string
 		id="30"
 		modelName="mask_hero"
-		value="|塞斯的德鲁伊们要是知道这儿发生的事，一定会很高兴。"
+		value="|塞斯的德鲁伊们要是知道这儿|发生的事，一定会很高兴。"
 		sound="data\sounds\Speech\r3m1\r3m1_30_hero.ogg"
 		time="4" />
 
@@ -189,5 +189,5 @@
 		id="8803"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r3m1\r3m1_8803_hero.ogg"
-		value="这地方透着股怪劲儿。我不想去那儿。" />
+		value="这地方透着股怪劲儿。|我不想去那儿。" />
 </resource>

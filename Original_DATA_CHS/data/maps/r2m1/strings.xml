@@ -4,14 +4,14 @@
 		id="0"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r2m1\r2m1_0_hero.ogg"
-		value="|真奇怪，这里的天空不太一样……可现在不是赏景的时候。我得找人问路。我看他们已经发现我了。"
+		value="|真奇怪，这里的天空不太一样……|可现在不是赏景的时候。|我得找人问路。我看他们已|经发现我了。"
 		time="8" />
 
 	<string
 		id="1"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r2m1\r2m1_1_hero.ogg"
-		value="|你好啊。我在找阿克塞尔。你碰巧认识他吗？"
+		value="|你好啊。我在找阿克塞尔。|你碰巧认识他吗？"
 		time="4" />
 
 	<string
@@ -21,14 +21,14 @@
 		modelCfg="59"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m1\r2m1_2_stranger.ogg"
-		value="陌生人|阿克塞尔是最伟大的领袖！他正带领我们走向胜利和繁荣！"
+		value="陌生人|阿克塞尔是最伟大的领袖！|他正带领我们走向胜利和繁荣！"
 		time="8" />
 
 	<string
 		id="3"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r2m1\r2m1_3_hero.ogg"
-		value="|嗯……看得出来，他是个大人物。我怎么才能见到他？"
+		value="|嗯……看得出来，他是个大人物。|我怎么才能见到他？"
 		time="4" />
 
 	<string
@@ -38,14 +38,14 @@
 		modelCfg="59"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m1\r2m1_4_stranger.ogg"
-		value="陌生人|这么说你不是派来煽动的？该死，我还以为你是来查我们士气的。反正我也没什么好怕的。我可是忠诚的士兵！"
+		value="陌生人|这么说你不是派来煽动的？|该死，我还以为你是来|查我们士气的。反正我也没|什么好怕的。我可是忠诚的士兵！"
 		time="8" />
 
 	<string
 		id="5"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r2m1\r2m1_5_hero.ogg"
-		value="|关于你们领袖的传闻我听了不少，我实在很想跟他握个手。"
+		value="|关于你们领袖的传闻我听了不少，|我实在很想跟他握个手。"
 		time="4" />
 
 	<string
@@ -55,14 +55,14 @@
 		modelCfg="59"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m1\r2m1_6_stranger.ogg"
-		value="陌生人|只有战争英雄才能见他。你嘛，显然不够格。"
+		value="陌生人|只有战争英雄才能见他。|你嘛，显然不够格。"
 		time="8" />
 
 	<string
 		id="7"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r2m1\r2m1_7_hero.ogg"
-		value="|不管怎样，我都要碰碰运气。你要是帮不了我，我就去找能帮忙的人。"
+		value="|不管怎样，我都要碰碰运气。|你要是帮不了我，|我就去找能帮忙的人。"
 		time="8" />
 
 	<string
@@ -72,14 +72,14 @@
 		modelCfg="59"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m1\r2m1_8_stranger.ogg"
-		value="陌生人|站住！你是谁？你怎么会有隧道钥匙？"
+		value="陌生人|站住！你是谁？你怎么会有|隧道钥匙？"
 		time="4" />
 
 	<string
 		id="9"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r2m1\r2m1_9_hero.ogg"
-		value="|这不关你的事！我是自由人，想去哪儿就去哪儿。"
+		value="|这不关你的事！我是自由人，|想去哪儿就去哪儿。"
 		time="4" />
 
 	<string
@@ -89,7 +89,7 @@
 		modelCfg="59"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m1\r2m1_10_stranger.ogg"
-		value="陌生人|而我正是在保护大家，防的就是你这种奸细！这就是我的事！"
+		value="陌生人|而我正是在保护大家，|防的就是你这种奸细！|这就是我的事！"
 		time="4" />
 
 	<string
@@ -99,7 +99,7 @@
 		modelCfg="59"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m1\r2m1_11_stranger.ogg"
-		value="陌生人|你是个硬茬子。要是哪天想找活儿干，就去马雷齐亚，到我们总部来。我们需要你这样的打手！"
+		value="陌生人|你是个硬茬子。要是哪天想|找活儿干，就去马雷齐亚，|到我们总部来。我们需|要你这样的打手！"
 		time="8" />
 
 	<string
@@ -115,21 +115,21 @@
 		modelName="gadget_12"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m1\r2m1_13_CIT_officer_radio.ogg"
-		value="电台|士兵！敌人正在袭击附近的村庄！你的任务是守住它，直到援军抵达！"
+		value="电台|士兵！敌人正在袭击附近的村庄！|你的任务是守住它，直到援军抵达！"
 		time="8" />
 
 	<string
 		id="14"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r2m1\r2m1_14_hero.ogg"
-		value="|老天，我最恨这种袭击无辜百姓的劫掠者！"
+		value="|老天，我最恨这种袭击无辜|百姓的劫掠者！"
 		time="4" />
 
 	<string
 		id="15"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r2m1\r2m1_15_hero.ogg"
-		value="|咱们的援兵到了！这边，伙计们！把他们全干掉！"
+		value="|咱们的援兵到了！|这边，伙计们！把他们全干掉！"
 		time="4" />
 
 	<string
@@ -139,21 +139,21 @@
 		modelCfg="326"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m1\r2m1_16_CIT_soldier.ogg"
-		value="联邦士兵|干得漂亮。回基地吧。新任务在等着你。"
+		value="联邦士兵|干得漂亮。回基地吧。|新任务在等着你。"
 		time="4" />
 
 	<string
 		id="17"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r2m1\r2m1_17_hero.ogg"
-		value="|这批商队的货物能让村子多撑上几天。"
+		value="|这批商队的货物能让村子多|撑上几天。"
 		time="4" />
 
 	<string
 		id="18"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r2m1\r2m1_18_hero.ogg"
-		value="|我能感觉到，我的所作所为正帮着这些可怜人。我要终结这场战争。"
+		value="|我能感觉到，我的所作所为正|帮着这些可怜人。|我要终结这场战争。"
 		time="4" />
 
 	<string
@@ -167,7 +167,7 @@
 		id="20"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r2m1\r2m1_20_hero.ogg"
-		value="|从今往后，这条隧道归所有自由人使用，不再只是阿克塞尔的走狗们的专用道！我得通知领袖们。"
+		value="|从今往后，这条隧道归所有|自由人使用，不再只是阿克|塞尔的走狗们的专用道！|我得通知领袖们。"
 		time="8" />
 
 	<string
@@ -176,7 +176,7 @@
 		modelName="gadget_12"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m1\r2m1_2012_CIT_officer_radio.ogg"
-		value="电台|你是真正的英雄！我们的领袖要把一项绝密任务交给你。直接去赫尔维蒂亚。祝你好运，士兵！"
+		value="电台|你是真正的英雄！|我们的领袖要把一项绝密任|务交给你。直接去赫尔维蒂亚。|祝你好运，士兵！"
 		time="8" />
 
 	<string
@@ -186,28 +186,28 @@
 		modelCfg="326"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m1\r2m1_21_CIT_soldier.ogg"
-		value="联邦士兵|我们来收拾守卫，你去追那个将军。他坐的是专用车，一眼就能认出来。"
+		value="联邦士兵|我们来收拾守卫，你去追那个将军。|他坐的是专用车，一眼就能认出来。"
 		time="4" />
 
 	<string
 		id="22"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r2m1\r2m1_22_hero.ogg"
-		value="|将军落到我们手里了！在赫尔维蒂亚，他们会让他把所知道的关于阿克塞尔的一切都吐出来。"
+		value="|将军落到我们手里了！|在赫尔维蒂亚，他们会|让他把所知道的关于阿克塞|尔的一切都吐出来。"
 		time="4" />
 
 	<string
 		id="23"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r2m1\r2m1_23_hero.ogg"
-		value="|这下爱丽丝逃不出我的手心了！我为他们做了这么多，当地人会很乐意告诉我她藏在哪儿。"
+		value="|这下爱丽丝逃不出我的手心了！|我为他们做了这么多，|当地人会很乐意告诉我她藏在哪儿。"
 		time="4" />
 
 	<string
 		id="24"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r2m1\r2m1_24_hero.ogg"
-		value="|你好！我在找一个叫爱丽丝的姑娘。你知道我在哪儿能找到她吗？"
+		value="|你好！我在找一个叫爱丽丝的姑娘。|你知道我在哪儿能找到她吗？"
 		time="4" />
 
 	<string
@@ -217,7 +217,7 @@
 		modelCfg="59"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m1\r2m1_25_stranger.ogg"
-		value="陌生人|谁都知道爱丽丝。不过你休想找到她。她是我们领袖阿克塞尔的女朋友。"
+		value="陌生人|谁都知道爱丽丝。|不过你休想找到她。|她是我们领袖阿克塞尔的女朋友。"
 		time="8" />
 
 	<string
@@ -234,7 +234,7 @@
 		modelCfg="59"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m1\r2m1_27_stranger.ogg"
-		value="陌生人|你根本没机会见他！只有战争英雄才能从他手里领赏。"
+		value="陌生人|你根本没机会见他！|只有战争英雄才能从他手里领赏。"
 		time="8" />
 
 	<string
@@ -248,7 +248,7 @@
 		id="29"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r2m1\r2m1_29_hero.ogg"
-		value="|爱丽丝！可算抓到你了！现在你要为你的所作所为付出代价！"
+		value="|爱丽丝！可算抓到你了！|现在你要为你的所作所为付出代价！"
 		time="4" />
 
 	<string
@@ -256,7 +256,7 @@
 		modelName="mask_lisa"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m1\r2m1_30_alice.ogg"
-		value="爱丽丝|哼，我想我已经给你上了一课，小子。"
+		value="爱丽丝|哼，我想我已经给你上了一课，|小子。"
 		time="4" />
 
 	<string
@@ -271,7 +271,7 @@
 		id="32"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r2m1\r2m1_32_hero.ogg"
-		value="|你要是再背叛我一次，我发誓杀了你！谁杀了我父亲？回答我！"
+		value="|你要是再背叛我一次，|我发誓杀了你！谁杀了我父亲？|回答我！"
 		time="4" />
 
 	<string
@@ -279,14 +279,14 @@
 		modelName="mask_lisa"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m1\r2m1_33_alice.ogg"
-		value="爱丽丝|有一伙怪人，开着蒙着沙布的车子。我看见他们往东边去了。"
+		value="爱丽丝|有一伙怪人，开着蒙着沙布的车子。|我看见他们往东边去了。"
 		time="4" />
 
 	<string
 		id="34"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r2m1\r2m1_34_hero.ogg"
-		value="|是吗？去死亡沙漠？我早该猜到的！骗子！！！先把我往西边支，现在又往东边支。下一步呢？直接支我去地狱吗？不，不会再有下次了！"
+		value="|是吗？去死亡沙漠？我早该猜到的！|骗子！！！先把我往西边支，|现在又往东边支。下一步呢？|直接支我去地狱吗？|不，不会再有下次了！"
 		time="8" />
 
 	<string
@@ -294,7 +294,7 @@
 		modelName="mask_lisa"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m1\r2m1_35_alice.ogg"
-		value="爱丽丝|别开枪！我说的是实话！先听我把话说完！"
+		value="爱丽丝|别开枪！我说的是实话！|先听我把话说完！"
 		time="4" />
 
 	<string
@@ -309,7 +309,7 @@
 		modelName="mask_lisa"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m1\r2m1_37_alice.ogg"
-		value="爱丽丝|我这辈子都在寻找一个问题的答案。你还记得那位著名的探险家伊万·戈吗？他搞出了许多了不起的发明，让我们的生活变得更好。后来他突然神秘地失踪了"
+		value="爱丽丝|我这辈子都在寻找一个问题的答案。|你还记得那位著名的探险家|伊万·戈吗？他搞出了许|多了不起的发明，|让我们的生活变得更好。|后来他突然神秘地失踪了"
 		time="8" />
 
 	<string
@@ -317,7 +317,7 @@
 		modelName="mask_lisa"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m1\r2m1_38_alice.ogg"
-		value="爱丽丝|多少人试着追查他的踪迹。但找到他的人只能是我！我必须证明……算了，不说了。伊万有家人，一个妻子和一个儿子。可就在他失踪前不久，他们都死了。为了追查线索，我花了整整好几年。"
+		value="爱丽丝|多少人试着追查他的踪迹。|但找到他的人只能是我！|我必须证明……算了，不说了。|伊万有家人，一个妻子和一个儿子。|可就在他失踪前不久，他们都死了。|为了追查线索，我花了整整好几年。"
 		time="8" />
 
 	<string
@@ -325,14 +325,14 @@
 		modelName="mask_lisa"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m1\r2m1_39_alice.ogg"
-		value="爱丽丝|前些日子，我打听到了他童年好友的相貌特征。有人最后一次见到他是在克莱的某个地方。我连他叫什么都不知道，就去了索斯，在那儿……"
+		value="爱丽丝|前些日子，我打听到了他童|年好友的相貌特征。|有人最后一次见到他是在克|莱的某个地方。我连他叫|什么都不知道，就去了索斯，|在那儿……"
 		time="8" />
 
 	<string
 		id="40"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r2m1\r2m1_40_hero.ogg"
-		value="|你遇到了我。你让我带你走遍各个村子，好找到符合那相貌特征的人！"
+		value="|你遇到了我。你让我带你走|遍各个村子，好找到符合那相|貌特征的人！"
 		time="8" />
 
 	<string
@@ -340,14 +340,14 @@
 		modelName="mask_lisa"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m1\r2m1_41_alice.ogg"
-		value="爱丽丝|是的，我终于找到了他，可惜太迟了……"
+		value="爱丽丝|是的，我终于找到了他，|可惜太迟了……"
 		time="4" />
 
 	<string
 		id="42"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r2m1\r2m1_42_hero.ogg"
-		value="|为了除掉最后一个目击者，他们血洗了我的家乡，鸡犬不留！畜生！八成是伊万发现了什么重大秘密，现在有人在杀人灭口！"
+		value="|为了除掉最后一个目击者，|他们血洗了我的家乡，鸡犬不留！|畜生！八成是伊万发现了什么|重大秘密，现在有人在杀人灭口！"
 		time="12" />
 
 	<string
@@ -355,7 +355,7 @@
 		modelName="mask_lisa"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m1\r2m1_43_alice.ogg"
-		value="爱丽丝|你说得对！说不定伊万还活着，被这些杀人犯关押着。"
+		value="爱丽丝|你说得对！说不定伊万还活着，|被这些杀人犯关押着。"
 		time="8" />
 
 	<string
@@ -370,7 +370,7 @@
 		modelName="mask_lisa"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m1\r2m1_45_alice.ogg"
-		value="爱丽丝|是我们！这是我毕生的事业。再说了，我手里还有线索！"
+		value="爱丽丝|是我们！这是我毕生的事业。|再说了，我手里还有线索！"
 		time="4" />
 
 	<string
@@ -385,21 +385,21 @@
 		modelName="mask_lisa"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m1\r2m1_47_alice.ogg"
-		value="爱丽丝|我是第一个搜查那座被烧村庄的人，在那个死掉的目击者旁边找到了一张光盘。我四处打听，才知道这光盘是某种书！可恐怕要读懂它，只能求助于神谕。"
+		value="爱丽丝|我是第一个搜查那座被烧村庄的人，|在那个死掉的目击者旁边|找到了一张光盘。|我四处打听，才知道这光盘|是某种书！可恐怕要读懂它，|只能求助于神谕。"
 		time="8" />
 
 	<string
 		id="48"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r2m1\r2m1_48_hero.ogg"
-		value="|神谕……听着挺唬人。没准他还知道怎么穿越死亡沙漠，好让我去追那些凶手。当然，前提是你说的是实话。"
+		value="|神谕……听着挺唬人。|没准他还知道怎么穿越死亡沙漠，|好让我去追那些凶手。|当然，前提是你说的是实话。"
 		time="8" />
 
 	<string
 		id="49"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r2m1\r2m1_49_hero.ogg"
-		value="|好吧，咱们暂时搭个伴。你那位神谕住在哪儿？"
+		value="|好吧，咱们暂时搭个伴。|你那位神谕住在哪儿？"
 		time="4" />
 
 	<string
@@ -407,14 +407,14 @@
 		modelName="mask_lisa"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m1\r2m1_50_alice.ogg"
-		value="爱丽丝|听说他住在海对岸的某个地方。别担心！有一条很长的地下通道，能带我们到他附近！不过那里守卫森严。"
+		value="爱丽丝|听说他住在海对岸的某个地方。|别担心！有一条很长的地下通道，|能带我们到他附近！|不过那里守卫森严。"
 		time="8" />
 
 	<string
 		id="51"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r2m1\r2m1_51_hero.ogg"
-		value="|这不叫事儿。打倒阿克塞尔之后，我就是全国的英雄，随便哪个士兵都会放我过去。"
+		value="|这不叫事儿。打倒阿克塞尔之后，|我就是全国的英雄，|随便哪个士兵都会放我过去。"
 		time="8" />
 
 	<string
@@ -422,21 +422,21 @@
 		modelName="mask_lisa"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m1\r2m1_52_alice.ogg"
-		value="爱丽丝|问题是那个守卫不完全是人类。你自己去看看就明白了。"
+		value="爱丽丝|问题是那个守卫不完全是人类。|你自己去看看就明白了。"
 		time="4" />
 
 	<string
 		id="60"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r2m1\r2m1_60_hero.ogg"
-		value="|任务完成。商队被拦下了。我可以回基地了。"
+		value="|任务完成。商队被拦下了。|我可以回基地了。"
 		time="4" />
 
 	<string
 		id="100"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r2m1\r2m1_100_hero.ogg"
-		value="|你们是谁？我的同胞在受苦受难，你们凭什么躲起来？"
+		value="|你们是谁？我的同胞在受苦受难，|你们凭什么躲起来？"
 		time="4" />
 
 	<string
@@ -445,14 +445,14 @@
 		modelName="boss04dronegun"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m1\r2m1_101_njeri.ogg"
-		value="涅里|我们是涅里人，来自别的世界。茫茫宇宙中，我们双方的道路阴差阳错地相交，带来的却只有痛苦。"
+		value="涅里|我们是涅里人，来自别的世界。|茫茫宇宙中，我们双方的道|路阴差阳错地相交，|带来的却只有痛苦。"
 		time="8" />
 
 	<string
 		id="102"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r2m1\r2m1_102_hero.ogg"
-		value="|我知道你们的一台机器正在毒害这颗星球，我想知道这是为什么。"
+		value="|我知道你们的一台机器正在毒|害这颗星球，我想知道这是为什么。"
 		time="4" />
 
 	<string
@@ -461,7 +461,7 @@
 		modelName="boss04dronegun"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m1\r2m1_103_njeri.ogg"
-		value="涅里|我们的运输船是被你们的轨道防御系统击落的。我们还在筹划营救远征的时候，你们地球人先找到了它，还启动了一台装置。那台装置本该在远离一切生灵的开放太空中运行。"
+		value="涅里|我们的运输船是被你们的轨|道防御系统击落的。|我们还在筹划营救远征的时候，|你们地球人先找到了它，|还启动了一台装置。|那台装置本该在远离一切生|灵的开放太空中运行。"
 		time="10" />
 
 	<string
@@ -477,14 +477,14 @@
 		modelName="boss04dronegun"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m1\r2m1_105_njeri.ogg"
-		value="涅里|技术细节跟你说了也没用。关键是，它给所有生命带来了死亡。只有最顽强的物种幸存了下来，包括人类——不过也发生了一些变化。这种辐射连我们都能致命。"
+		value="涅里|技术细节跟你说了也没用。|关键是，它给所有生命带来了死亡。|只有最顽强的物种幸存了下来，|包括人类——不过也发|生了一些变化。这种辐射|连我们都能致命。"
 		time="12" />
 
 	<string
 		id="106"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r2m1\r2m1_106_hero.ogg"
-		value="|这场大灾难，我们两个种族都有责任。可你们眼睁睁看着它发生，却没有出手阻止！"
+		value="|这场大灾难，我们两个种|族都有责任。可你们眼睁睁|看着它发生，却没有出手阻止！"
 		time="8" />
 
 	<string
@@ -493,7 +493,7 @@
 		modelName="boss04dronegun"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m1\r2m1_107_njeri.ogg"
-		value="涅里|我们一直在努力弥补给你们星球造成的伤害。但一切徒劳，我们甚至无法靠近坠毁地点。更何况，污染源有独立的供能单元，根本关不掉。"
+		value="涅里|我们一直在努力弥补给你们星|球造成的伤害。但一切徒劳，|我们甚至无法靠近坠毁地点。|更何况，污染源有独立的供能单元，|根本关不掉。"
 		time="12" />
 
 	<string
@@ -509,14 +509,14 @@
 		modelName="boss04dronegun"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m1\r2m1_109_njeri.ogg"
-		value="涅里|谁也说不准那会导致什么。信息场一旦剧烈震荡，可能就会压垮所有幸存者这最后一根稻草。何况你们这个种族的元气并非取之不尽。就算是你们当中最强壮的人，也终有一死。"
+		value="涅里|谁也说不准那会导致什么。|信息场一旦剧烈震荡，|可能就会压垮所有幸存|者这最后一根稻草。|何况你们这个种族的元气并非|取之不尽。就算是你们当中|最强壮的人，也终有一死。"
 		time="8" />
 
 	<string
 		id="110"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r2m1\r2m1_110_hero.ogg"
-		value="|我相信，在地球上待了这么多年后，你们肯定找到了解决办法。"
+		value="|我相信，在地球上待了这么多年后，|你们肯定找到了解决办法。"
 		time="4" />
 
 	<string
@@ -525,14 +525,14 @@
 		modelName="boss04dronegun"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m1\r2m1_111_njeri.ogg"
-		value="涅里|我们造出了一台装置，能缓慢削弱辐射。它会为我们争取时间。我们需要把装置放在失事飞船附近，但无论是我们还是我们的机器人都无法靠得够近。"
+		value="涅里|我们造出了一台装置，|能缓慢削弱辐射。|它会为我们争取时间。|我们需要把装置放在失事飞船附近，|但无论是我们还是我们的机|器人都无法靠得够近。"
 		time="12" />
 
 	<string
 		id="112"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r2m1\r2m1_112_hero.ogg"
-		value="|我明白了。我去过那儿，啥事没有。所以，我应该能把你们的装置送到飞船那儿。"
+		value="|我明白了。我去过那儿，啥事没有。|所以，我应该能把你们的装|置送到飞船那儿。"
 		time="12" />
 
 	<string
@@ -541,14 +541,14 @@
 		modelName="boss04dronegun"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m1\r2m1_113_njeri.ogg"
-		value="涅里|我们正盼着你能伸出援手。你是人类最后的希望。"
+		value="涅里|我们正盼着你能伸出援手。|你是人类最后的希望。"
 		time="4" />
 
 	<string
 		id="120"
 		modelName="mask_oracul"
 		sound="data\sounds\Speech\r2m1\r2m1_120_oracle.ogg"
-		value="神谕|……错误……计算出……干扰尚未……第二基地……"
+		value="神谕|……错误……计算出……|干扰尚未……第二基地……"
 		time="4" />
 
 	<string
@@ -569,21 +569,21 @@
 		id="123"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r2m1\r2m1_123_hero.ogg"
-		value="既然他们露面了，我就要去搅黄他们的计划！"
+		value="既然他们露面了，|我就要去搅黄他们的计划！"
 		time="4" />
 
 	<string
 		id="130"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r2m1\r2m1_130_hero.ogg"
-		value="|看来出事了……我得赶过去！现在已经没有什么能吓到我了。"
+		value="|看来出事了……我得赶过去！|现在已经没有什么能吓到我了。"
 		time="4" />
 
 	<string
 		id="131"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r2m1\r2m1_131_hero.ogg"
-		value="现在，世界将摆脱污染，人们又能重新呼吸空气了。"
+		value="现在，世界将摆脱污染，|人们又能重新呼吸空气了。"
 		time="4" />
 
 	<string
@@ -614,7 +614,7 @@
 		id="8803"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r3m1\r3m1_8803_hero.ogg"
-		value="这地方透着股怪劲儿。我不想去那儿。"
+		value="这地方透着股怪劲儿。|我不想去那儿。"
 		time="3" />
 
 	<string
@@ -623,7 +623,7 @@
 		image="data\if\ico\CinemaPanel\foreground_movie_shade_midle.dds"
 		upOverlay="data\if\ico\CinemaPanel\foreground_movie_shade_up.dds"
 		downOverlay="data\if\ico\CinemaPanel\foreground_movie_shade.dds"
-		value="涅里前哨站的陷落让神谕占尽先机。它做的第一件事，就是接管轨道武器库，朝扎尔梅克投下了一枚核弹。污染源被摧毁，让大多数人大为震惊。不是所有人都从中恢复了过来：辐射早已在人的身心里扎根太深。为了弥补损害，这台超级计算机渗入了人类生活的方方面面。它复刻出各种有用的装置，本意是帮助幸存者应付日常生计。但并非所有人都接受这些改变。有些人拒绝了神谕的馈赠，回归了简朴的生活。时不时会有人怀念起脑海里那个不断低语着『升华』的声音。"
+		value="涅里前哨站的陷落让神谕占尽先机。|它做的第一件事，|就是接管轨道武器库，|朝扎尔梅克投下了一枚核弹。|污染源被摧毁，让大多数人|大为震惊。不是所有人都从中|恢复了过来：辐射早已在人的身|心里扎根太深。为了弥补损害，|这台超级计算机渗入了人类|生活的方方面面。|它复刻出各种有用的装置，|本意是帮助幸存者应付日常生计。|但并非所有人都接受这些改变。|有些人拒绝了神谕的馈赠，|回归了简朴的生活。|时不时会有人怀念起脑|海里那个不断低语着『升华|』的声音。"
 		sound="data\sounds\Speech\rolik\ending2.ogg"
 		fontSize="18"
 		scrollSpeed="0.5"

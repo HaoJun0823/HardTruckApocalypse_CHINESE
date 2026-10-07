@@ -28,19 +28,19 @@
 
 	<Reply
 		name="Dynamic00_Destroy00"
-		text="我在找活儿干，你这儿有什么能给我的吗？"
+		text="我在找活儿干，你这儿有|什么能给我的吗？"
 		role="PLAYER"
 		nextReplies="Dynamic00_Destroy00_npc0" />
 
 	<Reply
 		name="Dynamic00_DestroyTimelimited00"
-		text="我想找份活儿干，不过只干一小阵子。"
+		text="我想找份活儿干，|不过只干一小阵子。"
 		role="PLAYER"
 		nextReplies="Dynamic00_Destroy00_npc0" />
 
 	<Reply
 		name="Dynamic00_Destroy00_npc0"
-		text="附近住着一个惯偷。要他人头，赏金%3d。这活儿你接吗？"
+		text="附近住着一个惯偷。|要他人头，赏金%3d。|这活儿你接吗？"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 
@@ -58,7 +58,7 @@
 
 	<Reply
 		name="Dynamic00_Destroy01_npc0"
-		text="有人烧了我们的种子，还往水井里下毒。十有八九是敌人的奸细。干掉他，%3d就归你。干不干？"
+		text="有人烧了我们的种子，|还往水井里下毒。|十有八九是敌人的奸细。|干掉他，%3d就归你。干不干？"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 
@@ -76,7 +76,7 @@
 
 	<Reply
 		name="Dynamic00_Destroy02_npc0"
-		text="城郊有个疯子到处乱窜，专设埋伏吓唬村民。他算不上什么狠角色，可老百姓怨声载道。干掉他，%3d就归你。愿意帮忙吗？"
+		text="城郊有个疯子到处乱窜，|专设埋伏吓唬村民。|他算不上什么狠角色，|可老百姓怨声载道。|干掉他，%3d就归你。|愿意帮忙吗？"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 
@@ -94,7 +94,7 @@
 
 	<Reply
 		name="Dynamic00_Reach00_npc0"
-		text="需要把一批研究资料和零件送到%2n聚落。货到付款。这趟活儿给%3d，报酬不算少。这趟货你接吗？"
+		text="需要把一批研究资料和零件|送到%2n聚落。|货到付款。这趟活儿给%3d，|报酬不算少。这趟货你接吗？"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 
@@ -106,13 +106,13 @@
 
 	<Reply
 		name="Dynamic00_ReachTimelimited01"
-		text="听说手脚麻利的人在这儿能找到活儿干。"
+		text="听说手脚麻利的人在这儿能|找到活儿干。"
 		role="PLAYER"
 		nextReplies="Dynamic00_Reach01_npc0" />
 
 	<Reply
 		name="Dynamic00_Reach01_npc0"
-		text="我们有个包裹要送到%2n聚落。你顺路的时候捎过去就行，不急着要。送到付你%3d。能指望你吗？"
+		text="我们有个包裹要送到%2n聚落。|你顺路的时候捎过去就行，|不急着要。送到付你%3d。|能指望你吗？"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 
@@ -142,7 +142,7 @@
 
 	<Reply
 		name="Dynamic00_Convoy00_npc0"
-		text="好吧。一个人赶路太危险，正好我有个朋友要去%2n。护送他一程，到了地方付你%3d。去吗？"
+		text="好吧。一个人赶路太危险，|正好我有个朋友要去%2n。|护送他一程，到了地方付你%3d。|去吗？"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 
@@ -160,13 +160,13 @@
 
 	<Reply
 		name="Dynamic00_Convoy01_npc0"
-		text="这儿有位老兄跟邻城做买卖，常要送样品过去。护送他去%2n，顺便盯紧身后的尾巴。哦对了！报酬是%3d。准备护送了吗？"
+		text="这儿有位老兄跟邻城做买卖，|常要送样品过去。|护送他去%2n，|顺便盯紧身后的尾巴。|哦对了！报酬是%3d。|准备护送了吗？"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 
 	<Reply
 		name="EndDlg1"
-		text="我缺钱。这城里有什么活儿的门路吗？"
+		text="我缺钱。这城里有什么活|儿的门路吗？"
 		role="PLAYER"
 		scriptResult="ConversationWnd:EndConversation()"
 		nextReplies="Dlg_npc_000017" />
@@ -180,7 +180,7 @@
 
 	<Reply
 		name="Dlg_npc_000017"
-		text="总体上没什么新鲜的。这些天一直风平浪静。"
+		text="总体上没什么新鲜的。|这些天一直风平浪静。"
 		role="NPC"
 		nextReplies="Dlg_pl_000018" />
 
@@ -192,25 +192,25 @@
 
 	<Reply
 		name="Dynamic00_Peace00"
-		text="我遇到麻烦了，我跟%2bNNN起了过节"
+		text="我遇到麻烦了，我跟%2b|NNN起了过节"
 		role="PLAYER"
 		nextReplies="Dynamic00_Peace00_npc0" />
 
 	<Reply
 		name="Dynamic00_Peace00_npc0"
-		text="我看你把%2b惹毛了才被他们当成敌人NNN我有几个熟人，只要你肯出身上财产的百分之%3d，我就能去跟市政会的人打声招呼。你带钱了吗？"
+		text="我看你把%2b惹毛了才被他们当|成敌人NNN我有几个熟人，|只要你肯出身上财产的百分|之%3d，我就能去跟市政|会的人打声招呼。你带钱了吗？"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 
 	<Reply
 		name="Dynamic00_Peace01"
-		text="我需要帮忙。我和%2b有个问题始终谈不拢，眼下NNN"
+		text="我需要帮忙。我和%2b有个|问题始终谈不拢，眼下NNN"
 		role="PLAYER"
 		nextReplies="Dynamic00_Peace01_npc0" />
 
 	<Reply
 		name="Dynamic00_Peace01_npc0"
-		text="我知道%2b不想跟你打交道。只需一点小小的辛苦费——你财产的百分之%3d——我就能帮你在他们中间把威信立起来。钱备好了吗？"
+		text="我知道%2b不想跟你打交道。|只需一点小小的辛苦费——|你财产的百分之%3d——|我就能帮你在他们中间把威|信立起来。钱备好了吗？"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 
@@ -228,37 +228,37 @@
 
 	<Reply
 		name="Dynamic00_Hunt00_npc0"
-		text="土匪狩猎季开张了。每干掉一辆车奖励%3d。赏金等赛季结束一并结清。要给你登记吗？"
+		text="土匪狩猎季开张了。|每干掉一辆车奖励%3d。|赏金等赛季结束一并结清。|要给你登记吗？"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 
 	<Reply
 		name="Dynamic00_Hunt01"
-		text="我看这么大的城，总该有我的活儿吧？"
+		text="我看这么大的城，|总该有我的活儿吧？"
 		role="PLAYER"
 		nextReplies="Dynamic00_Hunt01_npc0" />
 
 	<Reply
 		name="Dynamic00_HuntTimelimited01"
-		text="我看这么大的城，总该有赚头不错的活儿吧？"
+		text="我看这么大的城，|总该有赚头不错的活儿吧？"
 		role="PLAYER"
 		nextReplies="Dynamic00_Hunt01_npc0" />
 
 	<Reply
 		name="Dynamic00_Hunt01_npc0"
-		text="土匪简直无法无天了！他们闯进我们的地盘，还把手伸进我们的仓库。得好好教训他们一顿。杀几个立立威，杀鸡儆猴。注意抓紧时间，每干掉一个得%3d。敢接吗？"
+		text="土匪简直无法无天了！|他们闯进我们的地盘，|还把手伸进我们的仓库。|得好好教训他们一顿。|杀几个立立威，杀鸡儆猴。|注意抓紧时间，每干掉一个|得%3d。敢接吗？"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 
 	<Reply
 		name="Dynamic00_Drugs00"
-		text="你这儿是不是有点那个……你懂我什么意思吧？！"
+		text="你这儿是不是有点那个……|你懂我什么意思吧？！"
 		role="PLAYER"
 		nextReplies="Dynamic00_Drugs00_npc0" />
 
 	<Reply
 		name="Dynamic00_Drugs00_npc0"
-		text="行，小点声。这有个包裹。我想你看得出来，这是上等货色的走私品。卖你%3d，不过你能转手卖出高得多的价……前提是你能活着。买吗？"
+		text="行，小点声。这有个包裹。|我想你看得出来，|这是上等货色的走私品。|卖你%3d，不过你能转手|卖出高得多的价……|前提是你能活着。买吗？"
 		role="NPC"
 		nextReplies="Dynamic00_DrugsTake Dynamic00_DrugsNoMoney Dynamic00_plNo0" />
 
@@ -284,7 +284,7 @@
 
 	<Reply
 		name="Dynamic00_SellDrugs00_npc0"
-		text="小点声，别招来不必要的注意。你想卖多少？"
+		text="小点声，别招来不必要的注意。|你想卖多少？"
 		role="NPC"
 		nextReplies="Dynamic00_SellDrugs00_1x Dynamic00_SellDrugs00_1.5x Dynamic00_SellDrugs00_2x" />
 
@@ -318,7 +318,7 @@
 
 	<Reply
 		name="Dynamic00_SellDrugs00_try_no"
-		text="什么？！你还敢要价？！听着，这货我要白拿！再多说一句，我就告诉卫兵你在这儿卖的什么玩意儿。滚远点。"
+		text="什么？！你还敢要价？！|听着，这货我要白拿！|再多说一句，我就告诉卫|兵你在这儿卖的什么玩意儿。|滚远点。"
 		role="NPC"
 		scriptCondition="ConversationWnd:GetCurrentDynamicQuest():IsStatusFailed()"
 		nextReplies="Dynamic00_SellDrugs00_ok" />
@@ -331,13 +331,13 @@
 
 	<Reply
 		name="Dynamic00_Treasure00"
-		text="我只对埋在这个地区的各种古物感兴趣。"
+		text="我只对埋在这个地区的各种|古物感兴趣。"
 		role="PLAYER"
 		nextReplies="Dynamic00_Treasure00_npc0" />
 
 	<Reply
 		name="Dynamic00_Treasure00_npc0"
-		text="我这儿有条消息卖给你。我不想惹麻烦，城里还有买卖要做。我车上也没装寻宝探测器。依我看，这附近有个地方值得探一探。我可以帮你在地图上标出来——当然，前提是你想要。"
+		text="我这儿有条消息卖给你。|我不想惹麻烦，城里还有买卖要做。|我车上也没装寻宝探测器。|依我看，这附近有个地方值|得探一探。我可以帮你在地|图上标出来——当然，|前提是你想要。"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 </DialogsResource>

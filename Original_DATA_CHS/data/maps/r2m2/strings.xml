@@ -6,7 +6,7 @@
 		modelName="gadget_12"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m2\r2m2_1_cd_officer_radio.ogg"
-		value="电台|附近有座村子守备薄弱。现在发动进攻，敌人就不得不分兵去保护它。"
+		value="电台|附近有座村子守备薄弱。|现在发动进攻，敌人就不得|不分兵去保护它。"
 		time="8" />
 
 	<string
@@ -15,7 +15,7 @@
 		modelName="gadget_12"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m2\r2m2_2_cd_officer_radio.ogg"
-		value="电台|正是出击的好时机。尽可能长时间拖住敌人，但别把村子烧了。上！"
+		value="电台|正是出击的好时机。|尽可能长时间拖住敌人，|但别把村子烧了。上！"
 		time="8" />
 
 	<string
@@ -34,14 +34,14 @@
 		modelCfg="172"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m2\r2m2_4_felix.ogg"
-		value="费利克斯|我们总算又碰上了！我就知道我们还会再见。这回我可做好了战斗准备，你别想活着离开这儿。"
+		value="费利克斯|我们总算又碰上了！|我就知道我们还会再见。|这回我可做好了战斗准备，|你别想活着离开这儿。"
 		time="8" />
 
 	<string
 		id="5"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r2m2\r2m2_5_hero.ogg"
-		value="|你挡在我和目标之间。我会毫不犹豫地碾碎你。"
+		value="|你挡在我和目标之间。|我会毫不犹豫地碾碎你。"
 		time="4" />
 
 	<string
@@ -60,7 +60,7 @@
 		modelName="gadget_12"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m2\r2m2_7_cd_officer_radio.ogg"
-		value="电台|你已经证明了对我们理想的忠诚。现在说你的任务。我们抓住了一名叛军，从他口中得知，他们正准备和独立城镇联邦的特务接头。"
+		value="电台|你已经证明了对我们理想的忠诚。|现在说你的任务。|我们抓住了一名叛军，|从他口中得知，他们正准|备和独立城镇联邦的特务接头。"
 		time="8" />
 
 	<string
@@ -69,7 +69,7 @@
 		modelName="gadget_12"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m2\r2m2_8_cd_officer_radio.ogg"
-		value="电台|你要假扮成那名叛军去和特务接头。从他嘴里能套多少就套多少。接头地点在托斯卡纳酒吧。暗号是：'长夜漫漫'，回答是：'但黎明将至'。"
+		value="电台|你要假扮成那名叛军去和特务接头。|从他嘴里能套多少就套多少。|接头地点在托斯卡纳酒吧。|暗号是：'长夜漫漫'，回答是：|'但黎明将至'。"
 		time="8" />
 
 	<string
@@ -85,7 +85,7 @@
 		modelName="gadget_12"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m2\r2m2_10_cd_officer_radio.ogg"
-		value="电台|胜利属于我们！群龙无首的独立城镇联邦不足为惧。你让我们的梦想成真，你会得到奖赏！锡安——阿克塞尔的隐秘之城——将为你敞开大门。去见我们的领袖吧，英雄！"
+		value="电台|胜利属于我们！群龙无首的独|立城镇联邦不足为惧。|你让我们的梦想成真，|你会得到奖赏！锡安——|阿克塞尔的隐秘之城——|将为你敞开大门。|去见我们的领袖吧，英雄！"
 		time="8" />
 
 	<string
@@ -100,14 +100,14 @@
 		modelName="mask_axel"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m2\r2m2_11_axel.ogg"
-		value="阿克塞尔|你哪来这么大的火气？你跟我有什么仇？你甚至都不是这片土地上的人！"
+		value="阿克塞尔|你哪来这么大的火气？|你跟我有什么仇？|你甚至都不是这片土地上的人！"
 		time="4" />
 
 	<string
 		id="12"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r2m2\r2m2_12_hero.ogg"
-		value="|你还记得吗，你雇雇佣兵来劫掠，想吓唬克莱的百姓？他们烧了我的家乡，杀了我父亲！"
+		value="|你还记得吗，你雇雇佣兵来劫掠，|想吓唬克莱的百姓？|他们烧了我的家乡，杀了我父亲！"
 		time="8" />
 
 	<string
@@ -115,7 +115,7 @@
 		modelName="mask_axel"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m2\r2m2_13_axel.ogg"
-		value="阿克塞尔|别人说什么你都信？谁卖给你的这套鬼话？"
+		value="阿克塞尔|别人说什么你都信？|谁卖给你的这套鬼话？"
 		time="4" />
 
 	<string
@@ -130,7 +130,7 @@
 		modelName="mask_axel"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m2\r2m2_15_axel.ogg"
-		value="阿克塞尔|是个姑娘吧。开着快车的俏美人，满世界都是危险的瓜葛，我说得对不对？"
+		value="阿克塞尔|是个姑娘吧。开着快车的俏美人，|满世界都是危险的瓜葛，|我说得对不对？"
 		time="4" />
 
 	<string
@@ -145,14 +145,14 @@
 		modelName="mask_axel"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m2\r2m2_17_axel.ogg"
-		value="阿克塞尔|爱丽丝，我太了解她了。她就是一条人形的毒蛇。她的谎言已经毁了我的生活，也毁了许多其他人的。欢迎加入受害者俱乐部。"
+		value="阿克塞尔|爱丽丝，我太了解她了。|她就是一条人形的毒蛇。|她的谎言已经毁了我的生活，|也毁了许多其他人的。|欢迎加入受害者俱乐部。"
 		time="8" />
 
 	<string
 		id="18"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r2m2\r2m2_18_hero.ogg"
-		value="|现在你为了保住脑袋，什么话都编得出来！"
+		value="|现在你为了保住脑袋，|什么话都编得出来！"
 		time="4" />
 
 	<string
@@ -160,7 +160,7 @@
 		modelName="mask_axel"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m2\r2m2_19_axel.ogg"
-		value="阿克塞尔|她来找我，哀求我保护她不受敌人伤害——她是这么说的。我以绅士之道收留了她。可她洗劫了我一笔，然后跑了。我那么信任她！"
+		value="阿克塞尔|她来找我，哀求我保护她不|受敌人伤害——她是这么说的。|我以绅士之道收留了她。|可她洗劫了我一笔，然后跑了。|我那么信任她！"
 		time="8" />
 
 	<string
@@ -175,14 +175,14 @@
 		modelName="mask_axel"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m2\r2m2_21_axel.ogg"
-		value="阿克塞尔|相信我，我自己国内已经够焦头烂额了。这几个月我们寸步未离阵地。我们从来没袭击过你的家！"
+		value="阿克塞尔|相信我，我自己国内已经够|焦头烂额了。这几个月我们寸|步未离阵地。我们从来没袭|击过你的家！"
 		time="8" />
 
 	<string
 		id="22"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r2m2\r2m2_22_hero.ogg"
-		value="|你说的像是真话……可没犯这一桩罪，也洗不净你其他的暴行。对那几百名死者的父母，你又有什么可说的？"
+		value="|你说的像是真话……|可没犯这一桩罪，|也洗不净你其他的暴行。|对那几百名死者的父母，|你又有什么可说的？"
 		time="12" />
 
 	<string
@@ -190,7 +190,7 @@
 		modelName="mask_axel"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m2\r2m2_23_axel.ogg"
-		value="阿克塞尔|我把我的子民从饥荒中拯救了出来！只有强有力的政权才能拯救这个世界免于堕落。这场战争中死去的每一个人，都记在我的账上。我记住他们每个人的名字。我只遗憾，如今这一切都成了徒劳。"
+		value="阿克塞尔|我把我的子民从饥荒中拯救了出来！|只有强有力的政权才能拯|救这个世界免于堕落。|这场战争中死去的每一个人，|都记在我的账上。|我记住他们每个人的名字。|我只遗憾，如今这一切都成了徒劳。"
 		time="12" />
 
 	<string
@@ -198,14 +198,14 @@
 		modelName="mask_axel"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m2\r2m2_25_axel.ogg"
-		value="阿克塞尔|住手！别开枪！你想从我这儿得到什么？你看上去可不像是独立城镇联邦的兵。"
+		value="阿克塞尔|住手！别开枪！你想从我这儿|得到什么？你看上去可不像|是独立城镇联邦的兵。"
 		time="4" />
 
 	<string
 		id="26"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r2m2\r2m2_26_hero.ogg"
-		value="|眼力不错。说实话，你们这点狗屁纠纷我毫无兴趣。我只想终于见上爱丽丝一面！"
+		value="|眼力不错。说实话，|你们这点狗屁纠纷我毫无兴趣。|我只想终于见上爱丽丝一面！"
 		time="8" />
 
 	<string
@@ -213,7 +213,7 @@
 		modelName="mask_axel"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m2\r2m2_27_axel.ogg"
-		value="阿克塞尔|哈哈哈！欢迎加入受害者俱乐部！被她坑过的人可太多了。"
+		value="阿克塞尔|哈哈哈！欢迎加入受害者俱乐部！|被她坑过的人可太多了。"
 		time="4" />
 
 	<string
@@ -228,14 +228,14 @@
 		modelName="mask_axel"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m2\r2m2_29_axel.ogg"
-		value="阿克塞尔|她来找我，哀求我保护她不受敌人伤害——她是这么说的。我以绅士之道收留了她。可她利用了我和我的资源，然后跑了。我差点就爱上了她……"
+		value="阿克塞尔|她来找我，哀求我保护她不|受敌人伤害——她是这么说的。|我以绅士之道收留了她。|可她利用了我和我的资源，|然后跑了。我差点就爱上了她……"
 		time="12" />
 
 	<string
 		id="30"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r2m2\r2m2_30_hero.ogg"
-		value="|该死！这么说，这一切都白折腾了？！等等。我敢肯定，丽莎就在这个地区！我一直跟踪她到了地界。"
+		value="|该死！这么说，这一切都白|折腾了？！等等。|我敢肯定，丽莎就在这个地区！|我一直跟踪她到了地界。"
 		time="8" />
 
 	<string
@@ -243,7 +243,7 @@
 		modelName="mask_axel"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m2\r2m2_31_axel.ogg"
-		value="阿克塞尔|没错。我也得到消息说她回到了这里。最后一次有人见到她是在修道院附近。你插手的当口，我正打算去拜访她呢。"
+		value="阿克塞尔|没错。我也得到消息|说她回到了这里。|最后一次有人见到她是在修|道院附近。你插手的当口，|我正打算去拜访她呢。"
 		time="8" />
 
 	<string
@@ -257,7 +257,7 @@
 		id="33"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r2m2\r2m2_33_hero.ogg"
-		value="|我饶你一命。但你的统治到此为止。滚吧，永远别回来！"
+		value="|我饶你一命。但你的统治到此为止。|滚吧，永远别回来！"
 		time="4" />
 
 	<string
@@ -295,7 +295,7 @@
 		modelName="mask_lisa"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m2\r2m2_39_alice.ogg"
-		value="爱丽丝|你说了算。给你……但先听我说。我不是大家以为的那种恶人。我只是太想找到伊万·戈了！"
+		value="爱丽丝|你说了算。给你……|但先听我说。我不是大|家以为的那种恶人。|我只是太想找到伊万·戈了！"
 		time="8" />
 
 	<string
@@ -310,7 +310,7 @@
 		modelName="mask_lisa"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m2\r2m2_41_alice.ogg"
-		value="爱丽丝|他是人类的象征。谁能找到他，或他的遗骸，谁就会成为英雄，就能把全世界团结在进步的大旗下。我必须做到！"
+		value="爱丽丝|他是人类的象征。|谁能找到他，或他的遗骸，|谁就会成为英雄，|就能把全世界团结在进步的大旗下。|我必须做到！"
 		time="12" />
 
 	<string
@@ -325,14 +325,14 @@
 		modelName="mask_lisa"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m2\r2m2_43_alice.ogg"
-		value="爱丽丝|艰难时世需要狠心的决断。我这辈子都在解他失踪之谜。终于，经过多年研究，我弄到了伊万的日记。偏偏这时候你冒出来了！"
+		value="爱丽丝|艰难时世需要狠心的决断。|我这辈子都在解他失踪之谜。|终于，经过多年研究，|我弄到了伊万的日记。|偏偏这时候你冒出来了！"
 		time="12" />
 
 	<string
 		id="44"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r2m2\r2m2_44_hero.ogg"
-		value="|我很难理解你。你给我惹的这些麻烦，我也不会原谅。日记属于我，只属于我一个人。"
+		value="|我很难理解你。你给我惹的这些|麻烦，我也不会原谅。|日记属于我，只属于我一个人。"
 		time="8" />
 
 	<string
@@ -340,14 +340,14 @@
 		modelName="mask_lisa"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m2\r2m2_45_alice.ogg"
-		value="爱丽丝|你离找到他只剩一步之遥。求你了，让我跟你一起去。我想亲眼看到我的事业完成！"
+		value="爱丽丝|你离找到他只剩一步之遥。|求你了，让我跟你一起去。|我想亲眼看到我的事业完成！"
 		time="8" />
 
 	<string
 		id="46"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r2m2\r2m2_46_hero.ogg"
-		value="|我要去见神谕。一个人去！也许有朝一日我们还会重逢，我会把我故事的结局讲给你听。"
+		value="|我要去见神谕。一个人去！|也许有朝一日我们还会重逢，|我会把我故事的结局讲给你听。"
 		time="8" />
 
 	<string
@@ -355,14 +355,14 @@
 		modelName="mask_lisa"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m2\r2m2_47_alice.ogg"
-		value="爱丽丝|好吧，我也没指望你会答应。祝你好运。"
+		value="爱丽丝|好吧，我也没指望你会答应。|祝你好运。"
 		time="4" />
 
 	<string
 		id="50"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r2m2\r2m2_50_hero.ogg"
-		value="|啧，这现象可真稀奇。我看米德加德的科学家会对此感兴趣的。"
+		value="|啧，这现象可真稀奇。|我看米德加德的科学家|会对此感兴趣的。"
 		time="4" />
 
 	<string
@@ -393,6 +393,6 @@
 		id="8803"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r3m1\r3m1_8803_hero.ogg"
-		value="这地方透着股怪劲儿。我不想去那儿。"
+		value="这地方透着股怪劲儿。|我不想去那儿。"
 		time="3" />
 </resource>

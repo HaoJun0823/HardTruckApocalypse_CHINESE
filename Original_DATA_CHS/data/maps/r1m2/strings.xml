@@ -3,7 +3,7 @@
 	<string
 		id="1"
 		modelName="mask_hero"
-		value="|确实奇怪。看起来像某种印痕。难怪人们害怕，谁知道是什么邪祟污染了这片田野。也许米德加德的科学家能帮上忙。"
+		value="|确实奇怪。看起来像某种印痕。|难怪人们害怕，谁知道是|什么邪祟污染了这片田野。|也许米德加德的科学家能帮上忙。"
 		sound="data\sounds\Speech\r1m2\r1m2_1_hero.ogg"
 		time="12" />
 
@@ -21,14 +21,14 @@
 		id="21"
 		modelName="mask_lisa"
 		modelSlot="1"
-		value="爱丽丝|是你？搞什么……我是说，谢谢你救了我。"
+		value="爱丽丝|是你？搞什么……|我是说，谢谢你救了我。"
 		sound="data\sounds\Speech\r1m2\r1m2_21_lisa.ogg"
 		time="7" />
 
 	<string
 		id="22"
 		modelName="mask_hero"
-		value="|没错，我救了你，现在你得告诉我，是谁杀了我父亲！"
+		value="|没错，我救了你，|现在你得告诉我，是谁杀了我父亲！"
 		sound="data\sounds\Speech\r1m2\r1m2_22_hero.ogg"
 		time="6" />
 
@@ -51,14 +51,14 @@
 		id="25"
 		modelName="mask_lisa"
 		modelSlot="1"
-		value="爱丽丝|那你来这儿干什么？这里离你家那么远。"
+		value="爱丽丝|那你来这儿干什么？|这里离你家那么远。"
 		sound="data\sounds\Speech\r1m2\r1m2_25_lisa.ogg"
 		time="2" />
 
 	<string
 		id="26"
 		modelName="mask_hero"
-		value="这儿是我问话！告诉我，是谁袭击了格卢霍耶？你是唯一的目击者。"
+		value="这儿是我问话！告诉我，|是谁袭击了格卢霍耶？|你是唯一的目击者。"
 		sound="data\sounds\Speech\r1m2\r1m2_26_hero.ogg"
 		time="11" />
 
@@ -81,7 +81,7 @@
 		id="29"
 		modelName="mask_lisa"
 		modelSlot="1"
-		value="爱丽丝|猩红之晨，来自西边的恐怖分子。他们很少离开老巢，可现在开始往外跑了。"
+		value="爱丽丝|猩红之晨，来自西边的恐怖分子。|他们很少离开老巢，|可现在开始往外跑了。"
 		sound="data\sounds\Speech\r1m2\r1m2_29_lisa.ogg"
 		time="10" />
 
@@ -96,14 +96,14 @@
 		id="211"
 		modelName="mask_lisa"
 		modelSlot="1"
-		value="爱丽丝|我四处游历，寻找失落的科技和古代遗物。"
+		value="爱丽丝|我四处游历，寻找失落的科|技和古代遗物。"
 		sound="data\sounds\Speech\r1m2\r1m2_211_lisa.ogg"
 		time="6" />
 
 	<string
 		id="212"
 		modelName="mask_hero"
-		value="|原来如此。可他们为什么要袭击我们这样的无辜百姓？"
+		value="|原来如此。可他们为什么要|袭击我们这样的无辜百姓？"
 		sound="data\sounds\Speech\r1m2\r1m2_212_hero.ogg"
 		time="3" />
 
@@ -111,7 +111,7 @@
 		id="213"
 		modelName="mask_lisa"
 		modelSlot="1"
-		value="爱丽丝|有什么东西正把他们从老巢里逼出来。最近他们的袭击越来越频繁。不少城镇都遭了他们的殃。"
+		value="爱丽丝|有什么东西正把他们从老|巢里逼出来。最近他们的袭|击越来越频繁。不少城|镇都遭了他们的殃。"
 		sound="data\sounds\Speech\r1m2\r1m2_213_lisa.ogg"
 		time="10" />
 
@@ -126,7 +126,7 @@
 		id="215"
 		modelName="mask_lisa"
 		modelSlot="1"
-		value="爱丽丝|别冲动。用不着杀光所有人。你要找的人是他们的头目——阿克塞尔。"
+		value="爱丽丝|别冲动。用不着杀光所有人。|你要找的人是他们的头目——|阿克塞尔。"
 		sound="data\sounds\Speech\r1m2\r1m2_215_lisa.ogg"
 		time="9" />
 
@@ -134,7 +134,7 @@
 		id="2150"
 		modelName="mask_lisa"
 		modelSlot="1"
-		value="爱丽丝|干掉他，他那邪恶的帝国就会轰然倒塌。"
+		value="爱丽丝|干掉他，他那邪恶的帝国就会|轰然倒塌。"
 		sound="data\sounds\Speech\r1m2\r1m2_2150_lisa.ogg"
 		time="12" />
 
@@ -149,7 +149,7 @@
 		id="217"
 		modelName="mask_lisa"
 		modelSlot="1"
-		value="爱丽丝|你得心里有数，他是个危险人物。想抓住他可不容易。"
+		value="爱丽丝|你得心里有数，他是个危险人物。|想抓住他可不容易。"
 		sound="data\sounds\Speech\r1m2\r1m2_217_lisa.ogg"
 		time="7" />
 
@@ -164,7 +164,7 @@
 		id="219"
 		modelName="mask_lisa"
 		modelSlot="1"
-		value="爱丽丝|据我所知只有一条路：山底的隧道。到阿斯加德找人问问，他们会指给你。再见了，英雄！"
+		value="爱丽丝|据我所知只有一条路：山底的隧道。|到阿斯加德找人问问，|他们会指给你。再见了，英雄！"
 		sound="data\sounds\Speech\r1m2\r1m2_219_lisa.ogg"
 		time="8" />
 
@@ -230,6 +230,6 @@
 		id="8803"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r3m1\r3m1_8803_hero.ogg"
-		value="这地方透着股怪劲儿。我不想去那儿。"
+		value="这地方透着股怪劲儿。|我不想去那儿。"
 		time="3" />
 </resource>

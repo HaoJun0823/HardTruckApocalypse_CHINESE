@@ -3,7 +3,7 @@
 	<string
 		id="1701"
 		modelName="NewHero_mask"
-		value="瓦根特|  是啊，这儿可不是加拿大。跟萨姆的地界没什么两样，让他化油器堵死去吧。且看接下来还会出什么幺蛾子。"
+		value="瓦根特|  是啊，这儿可不是加拿大。|跟萨姆的地界没什么两样，|让他化油器堵死去吧。|且看接下来还会出什么幺蛾子。"
 		sound="data\sounds\Speech\r5m2\r5m2_1701_nomad.ogg"
 		time="9" />
 
@@ -30,14 +30,14 @@
 		modelSkin="1"
 		modelCfg="58"
 		modelSlot="1"
-		value="伊森|  我叫伊森。不知怎么的，我觉得你有意把你的货和钱分给我们。作为交换，我就不伤你一根毫毛。"
+		value="伊森|  我叫伊森。不知怎么的，|我觉得你有意把你的货和钱|分给我们。作为交换，|我就不伤你一根毫毛。"
 		sound="data\sounds\Speech\r5m2\r5m2_2003_itan.ogg"
 		time="13" />
 
 	<string
 		id="2004"
 		modelName="NewHero_mask"
-		value="瓦根特|  听好了！你，化油器堵死鬼，要是现在就踩油门滚，顶多车身上吃颗子弹。要是不滚，子弹可就钻你脑门了。猜猜哪种更疼？"
+		value="瓦根特|  听好了！你，|化油器堵死鬼，要是现在就踩|油门滚，顶多车身上吃颗子弹。|要是不滚，子弹可就钻你脑门了。|猜猜哪种更疼？"
 		sound="data\sounds\Speech\r5m2\r5m2_2004_nomad.ogg"
 		time="15" />
 
@@ -47,7 +47,7 @@
 		modelSkin="1"
 		modelCfg="58"
 		modelSlot="1"
-		value="伊森|  哼，这是你自己找的——我得教教你规矩。"
+		value="伊森|  哼，这是你自己找的——|我得教教你规矩。"
 		sound="data\sounds\Speech\r5m2\r5m2_2005_itan.ogg"
 		time="9" />
 
@@ -57,14 +57,14 @@
 		modelSkin="0"
 		modelCfg="46"
 		modelSlot="1"
-		value="居民|  你把伊森本人给解决了？他的悬赏金可不少。"
+		value="居民|  你把伊森本人给解决了？|他的悬赏金可不少。"
 		sound="data\sounds\Speech\r5m2\r5m2_2101_citizen.ogg"
 		time="7" />
 
 	<string
 		id="2102"
 		modelName="NewHero_mask"
-		value="瓦根特|  当真？瞧瞧咱们这根曲轴！那这儿的领赏点在哪儿？"
+		value="瓦根特|  当真？瞧瞧咱们这根曲轴！|那这儿的领赏点在哪儿？"
 		sound="data\sounds\Speech\r5m2\r5m2_2102_nomad.ogg"
 		time="7" />
 
@@ -74,7 +74,7 @@
 		modelSkin="0"
 		modelCfg="46"
 		modelSlot="1"
-		value="居民|  什么点？我们这儿可没什么领赏点！我们的摄政王会给你发赏。"
+		value="居民|  什么点？我们这儿可没|什么领赏点！我们的摄政王|会给你发赏。"
 		sound="data\sounds\Speech\r5m2\r5m2_2103_citizen.ogg"
 		time="7" />
 
@@ -90,7 +90,7 @@
 	<string
 		id="2302"
 		modelName="NewHero_mask"
-		value="瓦根特|  可他们是土匪，掐了他们的油门！你总不能指望我朝他们抛媚眼吧？"
+		value="瓦根特|  可他们是土匪，|掐了他们的油门！|你总不能指望我朝他们抛媚眼吧？"
 		sound="data\sounds\Speech\r5m2\r5m2_2302_nomad.ogg"
 		time="5" />
 
@@ -99,7 +99,7 @@
 		modelName="mask_axel"
 		modelSkin="1"
 		modelSlot="1"
-		value="阿梅里戈队长|  你知道不经指挥官命令就擅自开火的人，会有什么下场吗？"
+		value="阿梅里戈队长|  你知道不经指挥官命|令就擅自开火的人，|会有什么下场吗？"
 		sound="data\sounds\Speech\r5m2\r5m2_2303_amerigo.ogg"
 		time="4" />
 
@@ -115,14 +115,14 @@
 		modelName="mask_axel"
 		modelSkin="1"
 		modelSlot="1"
-		value="阿梅里戈队长|  恰恰相反。按战时军法，抗命者一律枪毙！弟兄们，开火！"
+		value="阿梅里戈队长|  恰恰相反。按战时军法，|抗命者一律枪毙！弟兄们，开火！"
 		sound="data\sounds\Speech\r5m2\r5m2_2305_amerigo.ogg"
 		time="7" />
 
 	<string
 		id="2401"
 		modelName="NewHero_mask"
-		value="瓦根特|  你好啊，独眼。说出来不怕你笑话，我可还活着呢。"
+		value="瓦根特|  你好啊，独眼。|说出来不怕你笑话，我可还活着呢。"
 		sound="data\sounds\Speech\r5m2\r5m2_2401_nomad.ogg"
 		time="5" />
 
@@ -138,7 +138,7 @@
 	<string
 		id="2403"
 		modelName="NewHero_mask"
-		value="瓦根特|  这么说吧，你那位阿梅里戈队长——愿他在那边轮胎全爆——为了送我上路，可是什么都试过了。"
+		value="瓦根特|  这么说吧，你那位阿|梅里戈队长——愿他在那边|轮胎全爆——为了送我上路，|可是什么都试过了。"
 		sound="data\sounds\Speech\r5m2\r5m2_2403_nomad.ogg"
 		time="8" />
 
@@ -147,14 +147,14 @@
 		modelAutosized="true"
 		modelName="gadget_12"
 		modelSlot="1"
-		value="独眼|  该死的叛徒！我这就派我手底下最厉害的弟兄去收拾他！"
+		value="独眼|  该死的叛徒！|我这就派我手底下最厉害的弟|兄去收拾他！"
 		sound="data\sounds\Speech\r5m2\r5m2_2404_oneeyed.ogg"
 		time="4" />
 
 	<string
 		id="2405"
 		modelName="NewHero_mask"
-		value="瓦根特|  算了吧。他再也翻不起什么浪了。不过说实话，跟他勾结的那伙土匪还剩下几个。"
+		value="瓦根特|  算了吧。他再也翻不起|什么浪了。不过说实话，|跟他勾结的那伙土匪还剩下几个。"
 		sound="data\sounds\Speech\r5m2\r5m2_2405_nomad.ogg"
 		time="7" />
 
@@ -163,7 +163,7 @@
 		modelAutosized="true"
 		modelName="gadget_12"
 		modelSlot="1"
-		value="独眼|  这帮该死的！你知道土匪的老巢在哪儿吗？"
+		value="独眼|  这帮该死的！|你知道土匪的老巢在哪儿吗？"
 		sound="data\sounds\Speech\r5m2\r5m2_2406_oneeyed.ogg"
 		time="4" />
 
@@ -179,14 +179,14 @@
 		modelAutosized="true"
 		modelName="gadget_12"
 		modelSlot="1"
-		value="独眼|  一定要把土匪连根拔掉，趁他们还没散伙，越快越好！去办吧！这是命令！"
+		value="独眼|  一定要把土匪连根拔掉，|趁他们还没散伙，越快越好！|去办吧！这是命令！"
 		sound="data\sounds\Speech\r5m2\r5m2_2408_oneeyed.ogg"
 		time="7" />
 
 	<string
 		id="2409"
 		modelName="NewHero_mask"
-		value="瓦根特|  包在我身上！我让他们知道马王爷有几只眼。"
+		value="瓦根特|  包在我身上！|我让他们知道马王爷有几只眼。"
 		sound="data\sounds\Speech\r5m2\r5m2_2409_nomad.ogg"
 		time="5" />
 
@@ -202,14 +202,14 @@
 		modelName="mask_father"
 		modelSkin="1"
 		modelSlot="1"
-		value="风行者|  人们不叫我的名号。你可以称我'风行者'。"
+		value="风行者|  人们不叫我的名号。|你可以称我'风行者'。"
 		sound="data\sounds\Speech\r5m2\r5m2_2502_veter.ogg"
 		time="7" />
 
 	<string
 		id="2503"
 		modelName="NewHero_mask"
-		value="瓦根特|  风行者？我听说过一个叫风行者的家伙。是个了不起的旅行家什么的。"
+		value="瓦根特|  风行者？我听说过一个|叫风行者的家伙。|是个了不起的旅行家什么的。"
 		sound="data\sounds\Speech\r5m2\r5m2_2503_nomad.ogg"
 		time="7" />
 
@@ -218,7 +218,7 @@
 		modelName="mask_father"
 		modelSkin="1"
 		modelSlot="1"
-		value="风行者|  了不起不了不起——我不知道。但我确实叫风行者。"
+		value="风行者|  了不起不了不起——我不知道。|但我确实叫风行者。"
 		sound="data\sounds\Speech\r5m2\r5m2_2504_veter.ogg"
 		time="5" />
 
@@ -234,14 +234,14 @@
 		modelName="mask_father"
 		modelSkin="1"
 		modelSlot="1"
-		value="风行者|  我被抓了俘虏。我本来正要去加拿大，半路撞上了土匪。"
+		value="风行者|  我被抓了俘虏。|我本来正要去加拿大，|半路撞上了土匪。"
 		sound="data\sounds\Speech\r5m2\r5m2_2507_veter.ogg"
 		time="7" />
 
 	<string
 		id="2508"
 		modelName="NewHero_mask"
-		value="瓦根特|  这么说你原本是奔加拿大去的？那我可得让你失望了：反正我也过不去。通往加拿大的大桥走不通了。"
+		value="瓦根特|  这么说你原本是奔加拿大去的？|那我可得让你失望了：|反正我也过不去。|通往加拿大的大桥走不通了。"
 		sound="data\sounds\Speech\r5m2\r5m2_2508_nomad.ogg"
 		time="10" />
 
@@ -257,7 +257,7 @@
 	<string
 		id="2510"
 		modelName="NewHero_mask"
-		value="瓦根特|  哦，是吗？那你原本打算怎么去加拿大？"
+		value="瓦根特|  哦，是吗？那你原本打|算怎么去加拿大？"
 		sound="data\sounds\Speech\r5m2\r5m2_2510_nomad.ogg"
 		time="4" />
 
@@ -282,14 +282,14 @@
 		modelName="mask_father"
 		modelSkin="1"
 		modelSlot="1"
-		value="风行者|  普普通通的灯塔。把灯点亮，然后等上一阵子。过不了多久，渡船就会从大河对岸开过来，把想去加拿大的人都接上。"
+		value="风行者|  普普通通的灯塔。|把灯点亮，然后等上一阵子。|过不了多久，渡船就会从大|河对岸开过来，把想去加拿|大的人都接上。"
 		sound="data\sounds\Speech\r5m2\r5m2_2513_veter.ogg"
 		time="15" />
 
 	<string
 		id="2514"
 		modelName="NewHero_mask"
-		value="瓦根特|  砸了我的缸盖！要是这是真的，那我还在这儿耗什么劲？还要这些萨姆啊、独眼啊什么的干什么？给我指路！"
+		value="瓦根特|  砸了我的缸盖！|要是这是真的，那我还在这儿|耗什么劲？还要这些萨姆啊、|独眼啊什么的干什么？给我指路！"
 		sound="data\sounds\Speech\r5m2\r5m2_2514_nomad.ogg"
 		time="11" />
 
@@ -321,14 +321,14 @@
 		modelName="mask_father"
 		modelSkin="1"
 		modelSlot="1"
-		value="风行者|  只要路找到了，等多久都不要紧。"
+		value="风行者|  只要路找到了，|等多久都不要紧。"
 		sound="data\sounds\Speech\r5m2\r5m2_2604_veter.ogg"
 		time="6" />
 
 	<string
 		id="2605"
 		modelName="NewHero_mask"
-		value="瓦根特|  我的汽油老天爷！你是说我们在这儿待多久都无所谓？关键是找到灯塔就成？难不成你还指望加拿大自己找上门来？"
+		value="瓦根特|  我的汽油老天爷！|你是说我们在这儿待多久都无所谓？|关键是找到灯塔就成？|难不成你还指望加拿大自己|找上门来？"
 		sound="data\sounds\Speech\r5m2\r5m2_2605_nomad.ogg"
 		time="12" />
 
@@ -337,28 +337,28 @@
 		modelName="mask_father"
 		modelSkin="1"
 		modelSlot="1"
-		value="风行者|  不是。每个人都得自己找到自己的加拿大；而加拿大，也只降临到寻找它的人身上。"
+		value="风行者|  不是。每个人都得自己|找到自己的加拿大；|而加拿大，也只降临到寻|找它的人身上。"
 		sound="data\sounds\Speech\r5m2\r5m2_2606_veter.ogg"
 		time="10" />
 
 	<string
 		id="2607"
 		modelName="NewHero_mask"
-		value="瓦根特|  你这话说得可有点玄乎，风行者。"
+		value="瓦根特|  你这话说得可有点玄乎，|风行者。"
 		sound="data\sounds\Speech\r5m2\r5m2_2607_nomad.ogg"
 		time="4" />
 
 	<string
 		id="2608"
 		modelName="NewHero_mask"
-		value="瓦根特|  喂，风行者！你在哪儿？真搞不懂他能跑去哪儿？总不能就这么走掉了吧。或者，还真能？"
+		value="瓦根特|  喂，风行者！你在哪儿？|真搞不懂他能跑去哪儿？|总不能就这么走掉了吧。|或者，还真能？"
 		sound="data\sounds\Speech\r5m2\r5m2_2608_nomad.ogg"
 		time="8" />
 
 	<string
 		id="2701"
 		modelName="NewHero_mask"
-		value="瓦根特|  这帮该死的铁怪物是从哪儿冒出来的？不管了——灯塔总算亮了！"
+		value="瓦根特|  这帮该死的铁怪物是从哪|儿冒出来的？不管了——|灯塔总算亮了！"
 		sound="data\sounds\Speech\r5m2\r5m2_2701_nomad.ogg"
 		time="6" />
 
@@ -399,7 +399,7 @@
 		modelAutosized="true"
 		modelName="gadget_12"
 		modelSlot="1"
-		value="独眼|  铁怪物打过来了；我们人手不够。别管土匪了，立刻给我回来！"
+		value="独眼|  铁怪物打过来了；|我们人手不够。别管土匪了，|立刻给我回来！"
 		sound="data\sounds\Speech\r5m2\r5m2_2706_oneeyed.ogg"
 		time="7" />
 
@@ -413,7 +413,7 @@
 	<string
 		id="2801"
 		modelName="NewHero_mask"
-		value="瓦根特|  那玩意儿还不动弹的时候，我怎么就没开火呢？看来没打是因为——它那会儿确实还没动。"
+		value="瓦根特|  那玩意儿还不动弹的时候，|我怎么就没开火呢？|看来没打是因为——|它那会儿确实还没动。"
 		sound="data\sounds\Speech\r5m2\r5m2_2801_nomad.ogg"
 		time="8" />
 
@@ -421,14 +421,14 @@
 		id="2901"
 		modelName="mask_lisa"
 		modelSlot="1"
-		value="独眼|  你来得正好。据点是守不住了。铁疙瘩太多。我担心它们在路上也会袭击我们。"
+		value="独眼|  你来得正好。|据点是守不住了。|铁疙瘩太多。我担|心它们在路上也会袭击我们。"
 		sound="data\sounds\Speech\r5m2\r5m2_2901_oneeyed.ogg"
 		time="8" />
 
 	<string
 		id="2902"
 		modelName="NewHero_mask"
-		value="瓦根特|  胡说。带上最值钱的东西赶紧撤，我钻进一个碉堡里，给你们断后。"
+		value="瓦根特|  胡说。带上最值钱的东|西赶紧撤，我钻进一个碉堡里，|给你们断后。"
 		sound="data\sounds\Speech\r5m2\r5m2_2902_nomad.ogg"
 		time="8" />
 
@@ -436,14 +436,14 @@
 		id="2903"
 		modelName="mask_lisa"
 		modelSlot="1"
-		value="独眼|  可这太危险了，你搞不好想撤都撤不出来。"
+		value="独眼|  可这太危险了，|你搞不好想撤都撤不出来。"
 		sound="data\sounds\Speech\r5m2\r5m2_2903_oneeyed.ogg"
 		time="4" />
 
 	<string
 		id="2904"
 		modelName="NewHero_mask"
-		value="瓦根特|  死不了的你瞧着吧，让他的油路堵到腰子上！这玩意儿我以前就打过，用不着替我哭丧。"
+		value="瓦根特|  死不了的你瞧着吧，|让他的油路堵到腰子上！|这玩意儿我以前就打过，|用不着替我哭丧。"
 		sound="data\sounds\Speech\r5m2\r5m2_2904_nomad.ogg"
 		time="10" />
 
@@ -458,7 +458,7 @@
 	<string
 		id="2906"
 		modelName="NewHero_mask"
-		value="瓦根特|  谢就免了，快踩油门！来吧，动作快点。只带最值钱的东西！时间就是金钱。"
+		value="瓦根特|  谢就免了，快踩油门！|来吧，动作快点。|只带最值钱的东西！时间就是金钱。"
 		sound="data\sounds\Speech\r5m2\r5m2_2906_nomad.ogg"
 		time="7" />
 
@@ -466,14 +466,14 @@
 		id="2907"
 		modelName="mask_lisa"
 		modelSlot="1"
-		value="独眼|  好。我们分几支车队走。你随便跟上一支。祝你好运！"
+		value="独眼|  好。我们分几支车队走。|你随便跟上一支。祝你好运！"
 		sound="data\sounds\Speech\r5m2\r5m2_2907_oneeyed.ogg"
 		time="6" />
 
 	<string
 		id="3001"
 		modelName="NewHero_mask"
-		value="瓦根特|  这都什么人啊，往他们化油器里灌糖水！他们怎么可能不把整个金库都搬走！这下我只得追上车队，把胶卷夺回来。"
+		value="瓦根特|  这都什么人啊，|往他们化油器里灌糖水！|他们怎么可能不把整个金库都搬走！|这下我只得追上车队，|把胶卷夺回来。"
 		sound="data\sounds\Speech\r5m2\r5m2_3001_nomad.ogg"
 		time="11" />
 
@@ -503,7 +503,7 @@
 	<string
 		id="3104"
 		modelName="NewHero_mask"
-		value="瓦根特|  我要几只箱子，跟他们从你金库里偷走的那种一样的。"
+		value="瓦根特|  我要几只箱子，|跟他们从你金库里偷走的那种|一样的。"
 		sound="data\sounds\Speech\r5m2\r5m2_3104_nomad.ogg"
 		time="5" />
 
@@ -518,7 +518,7 @@
 	<string
 		id="3106"
 		modelName="NewHero_mask"
-		value="瓦根特|  哪儿跟哪儿。但不管怎么说，我就是要那种箱子。"
+		value="瓦根特|  哪儿跟哪儿。|但不管怎么说，我就是要那种箱子。"
 		sound="data\sounds\Speech\r5m2\r5m2_3106_nomad.ogg"
 		time="5" />
 
@@ -526,21 +526,21 @@
 		id="3107"
 		modelName="mask_lisa"
 		modelSlot="1"
-		value="独眼|  你是我这辈子见过最可恨的叛徒！比阿梅里戈还坏！箱子休想给你！滚，不然我这就叫手下把你轰成渣！"
+		value="独眼|  你是我这辈子见过最可|恨的叛徒！比阿梅里戈还坏！|箱子休想给你！滚，|不然我这就叫手下把你轰成渣！"
 		sound="data\sounds\Speech\r5m2\r5m2_3107_oneeyed.ogg"
 		time="9" />
 
 	<string
 		id="3108"
 		modelName="NewHero_mask"
-		value="瓦根特|  行啊，喷你喷油嘴的，这可全是你自找的。"
+		value="瓦根特|  行啊，喷你喷油嘴的，|这可全是你自找的。"
 		sound="data\sounds\Speech\r5m2\r5m2_3108_nomad.ogg"
 		time="5" />
 
 	<string
 		id="3201"
 		modelName="NewHero_mask"
-		value="瓦根特|  胶片到手了。现在可以回去见萨姆了，该死的汽油。"
+		value="瓦根特|  胶片到手了。|现在可以回去见萨姆了，|该死的汽油。"
 		sound="data\sounds\Speech\r5m2\r5m2_3201_nomad.ogg"
 		time="6" />
 
@@ -551,7 +551,7 @@
 
 	<string
 		id="8802"
-		value="风行者死了。通往灯塔的路也随他一同断绝了！"
+		value="风行者死了。通往灯|塔的路也随他一同断绝了！"
 		numButtons="1" />
 
 	<string

@@ -20,7 +20,7 @@
 	<string
 		id="4302"
 		modelName="NewHero_mask"
-		value="瓦根特|  小事一桩。我最近刚从这堆发疯的铁疙瘩手里救下过人。"
+		value="瓦根特|  小事一桩。我最近|刚从这堆发疯的铁疙瘩手里|救下过人。"
 		sound="data\sounds\Speech\r6m2\r6m2_4302_nomad.ogg"
 		time="7" />
 
@@ -30,7 +30,7 @@
 		modelSkin="1"
 		modelCfg="148"
 		modelSlot="1"
-		value="机械师|  这些东西冒出来之前，这地方还挺太平的。"
+		value="机械师|  这些东西冒出来之前，|这地方还挺太平的。"
 		sound="data\sounds\Speech\r6m2\r6m2_4303_mechanic.ogg"
 		time="5" />
 
@@ -47,14 +47,14 @@
 		modelSkin="1"
 		modelCfg="148"
 		modelSlot="1"
-		value="机械师|  哦，倒是不久。可它们来得突然，数量又多，我们没剩下几个活口。"
+		value="机械师|  哦，倒是不久。|可它们来得突然，|数量又多，我们没剩下几个活口。"
 		sound="data\sounds\Speech\r6m2\r6m2_4305_mechanic.ogg"
 		time="6" />
 
 	<string
 		id="4306"
 		modelName="NewHero_mask"
-		value="瓦根特|  听着，伙计，你知不知道它们的老巢在哪儿？"
+		value="瓦根特|  听着，伙计，|你知不知道它们的老巢在哪儿？"
 		sound="data\sounds\Speech\r6m2\r6m2_4306_nomad.ogg"
 		time="4" />
 
@@ -64,7 +64,7 @@
 		modelSkin="1"
 		modelCfg="148"
 		modelSlot="1"
-		value="机械师|  当然知道！不过咱们最好先离开这儿，免得新的铁怪物追上来。送我回家，到家再细说你的事。"
+		value="机械师|  当然知道！不过咱们最|好先离开这儿，免得新的铁|怪物追上来。送我回家，|到家再细说你的事。"
 		sound="data\sounds\Speech\r6m2\r6m2_4307_mechanic.ogg"
 		time="8" />
 
@@ -88,7 +88,7 @@
 		modelSkin="1"
 		modelCfg="148"
 		modelSlot="1"
-		value="机械师|  照一路上我见的情况看，你车开得好，枪法更是没得说，还胆识过人。"
+		value="机械师|  照一路上我见的情况看，|你车开得好，枪法更是没得说，|还胆识过人。"
 		sound="data\sounds\Speech\r6m2\r6m2_4402_mechanic.ogg"
 		time="7" />
 
@@ -105,14 +105,14 @@
 		modelSkin="1"
 		modelCfg="148"
 		modelSlot="1"
-		value="机械师|  我有个计划，能把机器人一锅端。但要成事，就需要你这样的人。"
+		value="机械师|  我有个计划，|能把机器人一锅端。|但要成事，就需要你这样的人。"
 		sound="data\sounds\Speech\r6m2\r6m2_4404_mechanic.ogg"
 		time="6" />
 
 	<string
 		id="4405"
 		modelName="NewHero_mask"
-		value="瓦根特|  说来听听？你那高明计划是什么？"
+		value="瓦根特|  说来听听？你那高明计|划是什么？"
 		sound="data\sounds\Speech\r6m2\r6m2_4405_nomad.ogg"
 		time="4" />
 
@@ -122,14 +122,14 @@
 		modelSkin="1"
 		modelCfg="148"
 		modelSlot="1"
-		value="机械师|  我们必须潜进制造机器人的基地，断了它们的生产线。"
+		value="机械师|  我们必须潜进制造机器|人的基地，断了它们的生产线。"
 		sound="data\sounds\Speech\r6m2\r6m2_4406_mechanic.ogg"
 		time="5" />
 
 	<string
 		id="4407"
 		modelName="NewHero_mask"
-		value="瓦根特|  好主意！我还得说，真是新鲜又独特。那你该不会恰好知道什么通往它们基地的隐秘小道吧？"
+		value="瓦根特|  好主意！我还得说，|真是新鲜又独特。|那你该不会恰好知道什么|通往它们基地的隐秘小道吧？"
 		sound="data\sounds\Speech\r6m2\r6m2_4407_nomad.ogg"
 		time="8" />
 
@@ -139,14 +139,14 @@
 		modelSkin="1"
 		modelCfg="148"
 		modelSlot="1"
-		value="机械师|  那倒不重要。前不久我弄到了一具机器人壳子；修了修，还稍微改装了一下。现在，人可以钻进机器人里头，操纵它。"
+		value="机械师|  那倒不重要。|前不久我弄到了一具机器人壳子；|修了修，还稍微改装了一下。|现在，人可以钻进机器人里头，|操纵它。"
 		sound="data\sounds\Speech\r6m2\r6m2_4408_mechanic.ogg"
 		time="11" />
 
 	<string
 		id="4409"
 		modelName="NewHero_mask"
-		value="瓦根特|  干吗这么大费周章？我的卡车灵活得多，火力也不弱。"
+		value="瓦根特|  干吗这么大费周章？|我的卡车灵活得多，火力也不弱。"
 		sound="data\sounds\Speech\r6m2\r6m2_4409_nomad.ogg"
 		time="5" />
 
@@ -156,7 +156,7 @@
 		modelSkin="1"
 		modelCfg="148"
 		modelSlot="1"
-		value="机械师|  话是没错，可你得一路杀进机器人基地。我的方案是：你扮成它们中的一个混进去，再从里头把它端了。这样看起来根本不冒什么风险！"
+		value="机械师|  话是没错，可你得一路|杀进机器人基地。|我的方案是：你扮成它们中的一个|混进去，再从里头把它端了。|这样看起来根本不冒什么风险！"
 		sound="data\sounds\Speech\r6m2\r6m2_4410_mechanic.ogg"
 		time="10" />
 
@@ -173,14 +173,14 @@
 		modelSkin="1"
 		modelCfg="148"
 		modelSlot="1"
-		value="机械师|  我还缺几个零件，活儿才能收尾。再说了，我也没你那个胆量。"
+		value="机械师|  我还缺几个零件，|活儿才能收尾。再说了，|我也没你那个胆量。"
 		sound="data\sounds\Speech\r6m2\r6m2_4412_mechanic.ogg"
 		time="7" />
 
 	<string
 		id="4413"
 		modelName="NewHero_mask"
-		value="瓦根特|  行。告诉我要弄哪些零件。回头再商量怎么混进机器人基地。"
+		value="瓦根特|  行。告诉我要弄哪些零件。|回头再商量怎么混进机器人基地。"
 		sound="data\sounds\Speech\r6m2\r6m2_4413_nomad.ogg"
 		time="7" />
 
@@ -190,7 +190,7 @@
 		modelSkin="1"
 		modelCfg="148"
 		modelSlot="1"
-		value="机械师|  你得找到一套液压系统用的软管、一块电池，再弄两个光学系统的摄像头。这些东西都能从侵占斯泰格努姆的维修机器人身上扒到。我会在你地图上标出位置。"
+		value="机械师|  你得找到一套液压系统|用的软管、一块电池，|再弄两个光学系统的摄像头。|这些东西都能从侵占斯泰格|努姆的维修机器人身上扒到。|我会在你地图上标出位置。"
 		sound="data\sounds\Speech\r6m2\r6m2_4414_mechanic.ogg"
 		time="11" />
 
@@ -207,14 +207,14 @@
 		modelSkin="1"
 		modelCfg="148"
 		modelSlot="1"
-		value="机械师|  太好了！现在你可以毫无阻碍地潜进机器人基地，从里头把它端了。"
+		value="机械师|  太好了！现在你可以毫|无阻碍地潜进机器人基地，|从里头把它端了。"
 		sound="data\sounds\Speech\r6m2\r6m2_4501_mechanic.ogg"
 		time="6" />
 
 	<string
 		id="4502"
 		modelName="NewHero_mask"
-		value="瓦根特|  怎么潜入我会琢磨，可还有个问题——怎么摧毁它。你有什么头绪吗，在哪儿动手、怎么动手？"
+		value="瓦根特|  怎么潜入我会琢磨，|可还有个问题——怎么摧毁它。|你有什么头绪吗，在哪儿动手、|怎么动手？"
 		sound="data\sounds\Speech\r6m2\r6m2_4502_nomad.ogg"
 		time="8" />
 
@@ -224,7 +224,7 @@
 		modelSkin="1"
 		modelCfg="148"
 		modelSlot="1"
-		value="机械师|  找找给工厂供电的发电机。只要你能把它毁掉，整条生产线就得停摆。"
+		value="机械师|  找找给工厂供电的发电机。|只要你能把它毁掉，|整条生产线就得停摆。"
 		sound="data\sounds\Speech\r6m2\r6m2_4503_mechanic.ogg"
 		time="8" />
 
@@ -238,14 +238,14 @@
 	<string
 		id="4601"
 		modelName="NewHero_mask"
-		value="瓦根特|  明白了，想进来没我想的那么容易。我得学这些铁怪物的做派。一个动作不对，我这机器人就得提前报废。连我一块儿。"
+		value="瓦根特|  明白了，想进来|没我想的那么容易。|我得学这些铁怪物的做派。|一个动作不对，我这机器|人就得提前报废。连我一块儿。"
 		sound="data\sounds\Speech\r6m2\r6m2_4601_nomad.ogg"
 		time="13" />
 
 	<string
 		id="4701"
 		modelName="NewHero_mask"
-		value="瓦根特|  看来这就是机械师说的那台发电机了。好，用不了一分钟，这世上就要少一台发电机。"
+		value="瓦根特|  看来这就是机械师|说的那台发电机了。|好，用不了一分钟，|这世上就要少一台发电机。"
 		sound="data\sounds\Speech\r6m2\r6m2_4701_nomad.ogg"
 		time="9" />
 
@@ -260,7 +260,7 @@
 	<string
 		id="4703"
 		modelName="NewHero_mask"
-		value="瓦根特|  搅了你一锅好粥的人。问这么多细节干什么？！"
+		value="瓦根特|  搅了你一锅好粥的人。|问这么多细节干什么？！"
 		sound="data\sounds\Speech\r6m2\r6m2_4703_nomad.ogg"
 		time="5" />
 
@@ -268,14 +268,14 @@
 		id="4704"
 		modelName="mask_hero"
 		modelSlot="1"
-		value="特使|  你好大的胆子？！我苦心经营的一切，全让你毁了！"
+		value="特使|  你好大的胆子？！|我苦心经营的一切，全让你毁了！"
 		sound="data\sounds\Speech\r6m2\r6m2_4704_emissary.ogg"
 		time="5" />
 
 	<string
 		id="4705"
 		modelName="NewHero_mask"
-		value="瓦根特|  别夸张。也不是全没了。你不还剩辆车、剩条命嘛。"
+		value="瓦根特|  别夸张。也不是全没了。|你不还剩辆车、剩条命嘛。"
 		sound="data\sounds\Speech\r6m2\r6m2_4705_nomad.ogg"
 		time="7" />
 
@@ -290,14 +290,14 @@
 	<string
 		id="4707"
 		modelName="NewHero_mask"
-		value="瓦根特|  吓死我了。你尽可以以为，我开火是因为怕了你。"
+		value="瓦根特|  吓死我了。你尽可以以为，|我开火是因为怕了你。"
 		sound="data\sounds\Speech\r6m2\r6m2_4707_nomad.ogg"
 		time="5" />
 
 	<string
 		id="4801"
 		modelName="NewHero_mask"
-		value="瓦根特|  看着像什么档案记录。我试着放放看……放出来了。"
+		value="瓦根特|  看着像什么档案记录。|我试着放放看……放出来了。"
 		sound="data\sounds\Speech\r6m2\r6m2_4801_nomad.ogg"
 		time="6" />
 
@@ -305,14 +305,14 @@
 		id="4802"
 		modelName="mask_hero"
 		modelSlot="1"
-		value="特使|  档案摘录：''这是在某片大陆上，罗斯韦尔镇附近。1974年，一个不明飞行物坠落在那里。军方随即封锁了现场，谁也没能见到那个外星人，它来自……"
+		value="特使|  档案摘录：''这是在某|片大陆上，罗斯韦尔镇附近。|1974年，一个不明飞行|物坠落在那里。军方随即封|锁了现场，谁也没能见到那个外|星人，它来自……"
 		sound="data\sounds\Speech\r6m2\r6m2_4802_emissary.ogg"
 		time="19" />
 
 	<string
 		id="4803"
 		modelName="mask_hero"
-		value="特使|  特使呈神谕。第11号报告。我在搜寻第二架飞行器'尼厄里'方面的任务，遭遇了当地居民出人意料的抵制。我的所有问题，都只换来讥讽与不解。"
+		value="特使|  特使呈神谕。|第11号报告。我在搜寻第|二架飞行器'尼厄里'方面的任务，|遭遇了当地居民出人意料的抵制。|我的所有问题，都只换来讥|讽与不解。"
 		sound="data\sounds\Speech\r6m2\r6m2_4803_emissary.ogg"
 		time="16" />
 
@@ -320,14 +320,14 @@
 		id="480312"
 		modelName="mask_hero"
 		modelSlot="1"
-		value="特使|  鉴于无法再容忍如此浪费时间的徒劳方式，我认为可以启动'突袭'战术方案。发此报文时，我已控制了相当大的区域。不明飞行物仍未寻获。"
+		value="特使|  鉴于无法再容忍如此浪|费时间的徒劳方式，|我认为可以启动'突袭'战术方案。|发此报文时，我已控制了相|当大的区域。不明飞行物仍未寻获。"
 		sound="data\sounds\Speech\r6m2\r6m2_480312_emissary.ogg"
 		time="17" />
 
 	<string
 		id="4804"
 		modelName="mask_hero"
-		value="特使|  特使呈神谕。第15号报告。在侦察与清剿区域的行动中，我俘获了一名愿意合作的当地居民。我相信，这将为搜寻工作带来可观的优势。"
+		value="特使|  特使呈神谕。|第15号报告。在侦察与清|剿区域的行动中，|我俘获了一名愿意合作的当地居民。|我相信，这将为搜寻工作带|来可观的优势。"
 		sound="data\sounds\Speech\r6m2\r6m2_4804_emissary.ogg"
 		time="17" />
 
@@ -335,14 +335,14 @@
 		id="4805"
 		modelName="Sam_mask"
 		modelSlot="1"
-		value="萨姆|  听着，我好像认得你。你就是那个逢人便打听18号机库的家伙，对吧？"
+		value="萨姆|  听着，我好像认得你。|你就是那个逢人便打听18|号机库的家伙，对吧？"
 		sound="data\sounds\Speech\r6m2\r6m2_4805_sam.ogg"
 		time="10" />
 
 	<string
 		id="4806"
 		modelName="mask_hero"
-		value="特使|  是的，没错。搜寻工作，我从未得到过任何协助。"
+		value="特使|  是的，没错。|搜寻工作，我从未得到过任何协助。"
 		sound="data\sounds\Speech\r6m2\r6m2_4806_emissary.ogg"
 		time="4" />
 
@@ -350,7 +350,7 @@
 		id="4807"
 		modelName="Sam_mask"
 		modelSlot="1"
-		value="萨姆|  早知道您背后有这样一股力量，先生，我定会以完全不同的礼数相待。不过，现在开始也不晚。"
+		value="萨姆|  早知道您背后有这样一股力量，|先生，我定会以完全不同的礼|数相待。不过，现在开始也不晚。"
 		sound="data\sounds\Speech\r6m2\r6m2_4807_sam.ogg"
 		time="10" />
 
@@ -380,7 +380,7 @@
 		id="4811"
 		modelName="Sam_mask"
 		modelSlot="1"
-		value="萨姆|  多少知道些。我熟悉我据点周边的土地。我知道该上哪儿找，但要开展搜寻，得有我目前没有的人马。另外，多亏了你的机器人，我连自己的地盘都丢了。"
+		value="萨姆|  多少知道些。|我熟悉我据点周边的土地。|我知道该上哪儿找，但要开展搜寻，|得有我目前没有的人马。|另外，多亏了你的机器人，|我连自己的地盘都丢了。"
 		sound="data\sounds\Speech\r6m2\r6m2_4811_sam.ogg"
 		time="18" />
 
@@ -395,14 +395,14 @@
 		id="4813"
 		modelName="Sam_mask"
 		modelSlot="1"
-		value="萨姆|  您手握强大的机器和骇人的武器，先生。把这些与我共享，我不光能替您找到机库，还能帮您把周边区域清扫干净。"
+		value="萨姆|  您手握强大的机器和骇|人的武器，先生。|把这些与我共享，|我不光能替您找到机库，|还能帮您把周边区域清扫干净。"
 		sound="data\sounds\Speech\r6m2\r6m2_4813_sam.ogg"
 		time="14" />
 
 	<string
 		id="4814"
 		modelName="mask_hero"
-		value="特使|  容我考虑考虑……好吧，你会得到你想要的。"
+		value="特使|  容我考虑考虑……|好吧，你会得到你想要的。"
 		sound="data\sounds\Speech\r6m2\r6m2_4814_emissary.ogg"
 		time="4" />
 
@@ -410,7 +410,7 @@
 		id="4815"
 		modelName="Sam_mask"
 		modelSlot="1"
-		value="萨姆|  明智的决定，先生。另外有件事得提醒您。这一带有号人物晃悠，名叫瓦根特。他是我所知最厉害的狠角色之一。一有时机，务必除掉他。"
+		value="萨姆|  明智的决定，先生。|另外有件事得提醒您。|这一带有号人物晃悠，名叫瓦根特。|他是我所知最厉害的狠角色之一。|一有时机，务必除掉他。"
 		sound="data\sounds\Speech\r6m2\r6m2_4815_sam.ogg"
 		time="19" />
 
@@ -425,21 +425,21 @@
 		id="4817"
 		modelName="mask_hero"
 		modelSlot="1"
-		value="特使|  此人不可信，但他渴求权势。一旦拿到武器和机器，他就会开始清剿我的机器人尚未触及之地的敌人。如此一来，他正好替我完成我需要的工作。"
+		value="特使|  此人不可信，但他渴求权势。|一旦拿到武器和机器，|他就会开始清剿我的机器人|尚未触及之地的敌人。|如此一来，他正好替我完|成我需要的工作。"
 		sound="data\sounds\Speech\r6m2\r6m2_4817_emissary.ogg"
 		time="16" />
 
 	<string
 		id="4818"
 		modelName="NewHero_mask"
-		value="瓦根特|  好啊萨姆！好你个祸害！砸了你的油箱！哪怕你逃到天涯海角，我也要找到你！"
+		value="瓦根特|  好啊萨姆！好你个祸害！|砸了你的油箱！哪怕你逃到天|涯海角，我也要找到你！"
 		sound="data\sounds\Speech\r6m2\r6m2_4818_nomad.ogg"
 		time="6" />
 
 	<string
 		id="4901"
 		modelName="NewHero_mask"
-		value="瓦根特|  这下渡船该通航了！等着吧萨姆！"
+		value="瓦根特|  这下渡船该通航了！|等着吧萨姆！"
 		sound="data\sounds\Speech\r6m2\r6m2_4901_nomad.ogg"
 		time="5" />
 

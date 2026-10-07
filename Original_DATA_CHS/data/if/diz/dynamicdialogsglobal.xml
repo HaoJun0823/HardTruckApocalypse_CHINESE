@@ -34,7 +34,7 @@
 
 	<Reply
 		name="Dynamic00_Destroy00_npc0"
-		text="一个多次被抓的小偷又开始作案了。也许让他停手的唯一办法就是杀了他。帮我们这个忙，我们会给你 %3d 金币的酬劳。"
+		text="一个多次被抓的小偷又开始作案了。|也许让他停手的唯一办法就是|杀了他。帮我们这个忙，|我们会给你 %3d 金币的酬劳。"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 
@@ -46,7 +46,7 @@
 
 	<Reply
 		name="Dynamic00_Destroy01_npc0"
-		text="我们发现有人在烧我们的庄稼、毒我们的水井。消灭敌方破坏者可获得 %3d 金币的酬劳。"
+		text="我们发现有人在烧我们的庄稼、|毒我们的水井。消灭敌方破|坏者可获得 %3d 金币的酬劳。"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 
@@ -58,7 +58,7 @@
 
 	<Reply
 		name="Dynamic00_Destroy02_npc0"
-		text="一个疯狂的杀人狂在我们的土地上出没。替我们除掉这个恶人可获得 %3d 金币的酬劳。"
+		text="一个疯狂的杀人狂在我们的土|地上出没。替我们除掉这个|恶人可获得 %3d 金币的酬劳。"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 
@@ -70,7 +70,7 @@
 
 	<Reply
 		name="Dynamic00_Reach00_npc0"
-		text="我们收集了几件珍贵的机械。请把它们送到 %2n。当地技师会付你 %3d 金币的酬劳。"
+		text="我们收集了几件珍贵的机械。|请把它们送到 %2n。|当地技师会付你 %3d |金币的酬劳。"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 
@@ -82,7 +82,7 @@
 
 	<Reply
 		name="Dynamic00_Reach01_npc0"
-		text="请将这个包裹送到 %2n。这是我们对其人民的敬意。他们会很乐意付你 %3d 金币的酬劳。"
+		text="请将这个包裹送到 %2n。|这是我们对其人民的敬意。|他们会很乐意付你 %3d| 金币的酬劳。"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 
@@ -94,7 +94,7 @@
 
 	<Reply
 		name="Dynamic00_Convoy00_npc0"
-		text="独自旅行很危险。我的一个朋友非常需要去 %2n。确保他安全抵达，你将得到 %3d 金币。"
+		text="独自旅行很危险。|我的一个朋友非常需要去 %2n。|确保他安全抵达，|你将得到 %3d 金币。"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 
@@ -106,7 +106,7 @@
 
 	<Reply
 		name="Dynamic00_Convoy01_npc0"
-		text="有个本地人正在和 %2n 建立商路。对手想破坏他的计划。帮他安全抵达目的地，%3d 金币就是你的了。"
+		text="有个本地人正在和 %2n| 建立商路。对手想破坏他的计划。|帮他安全抵达目的地，|%3d 金币就是你的了。"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 
@@ -126,7 +126,7 @@
 
 	<Reply
 		name="Dlg_npc_000017"
-		text="你信吗，一切太平！所以暂时不需要你的服务。"
+		text="你信吗，一切太平！|所以暂时不需要你的服务。"
 		role="NPC"
 		nextReplies="Dlg_pl_000018" />
 
@@ -138,25 +138,25 @@
 
 	<Reply
 		name="Dynamic00_Peace00"
-		text="我遇到麻烦了：我和 %2b 派系闹翻了……"
+		text="我遇到麻烦了：我和 %2b| 派系闹翻了……"
 		role="PLAYER"
 		nextReplies="Dynamic00_Peace00_npc0" />
 
 	<Reply
 		name="Dynamic00_Peace00_npc0"
-		text="你真有本事让 %2b 恨你！我在他们中间有几个熟人，也许能帮你改善一点声誉，只需你 %3d 百分比的金币。"
+		text="你真有本事让 %2b 恨你！|我在他们中间有几个熟人，|也许能帮你改善一点声誉，|只需你 %3d 百分比的金币。"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 
 	<Reply
 		name="Dynamic00_Peace01"
-		text="我需要你的帮助。我们和 %2b 有了一些无法解决的问题，现在……"
+		text="我需要你的帮助。|我们和 %2b 有了一些|无法解决的问题，现在……"
 		role="PLAYER"
 		nextReplies="Dynamic00_Peace01_npc0" />
 
 	<Reply
 		name="Dynamic00_Peace01_npc0"
-		text="据我所知，%2b 把你当蛆虫看。如果你付给我 %3d 百分比的金币，我可以帮你在他们中间恢复一些尊重。"
+		text="据我所知，%2b 把你当蛆虫看。|如果你付给我 %3d 百|分比的金币，我可以帮你在他们中|间恢复一些尊重。"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 
@@ -168,7 +168,7 @@
 
 	<Reply
 		name="Dynamic00_Hunt00_npc0"
-		text="狩猎季开始了。杀敌越多，挣钱越多。每杀一个，我们付 %3d 金币。狩猎时间结束后你可以领取酬劳。"
+		text="狩猎季开始了。杀敌越多，|挣钱越多。每杀一个，|我们付 %3d 金币。|狩猎时间结束后你可以领取酬劳。"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 
@@ -180,7 +180,7 @@
 
 	<Reply
 		name="Dynamic00_Hunt01_npc0"
-		text="匪徒真把我们惹火了！他们见车就抢。得有人教训他们一下。趁着人们还怒火中烧时干掉几个，每杀一个，可得 %3d 金币。"
+		text="匪徒真把我们惹火了！|他们见车就抢。得有人教|训他们一下。趁着人们还怒|火中烧时干掉几个，|每杀一个，可得 %3d 金币。"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 </DialogsResource>

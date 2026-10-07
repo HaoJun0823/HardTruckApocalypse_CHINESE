@@ -13,7 +13,7 @@
 	<QuestInfo
 		questName="Buyer_Quest1"
 		briefDiz="把包裹送到索斯。"
-		fullDiz="我应该把这个包裹交给我父亲的朋友 谢尔戈。"
+		fullDiz="我应该把这个包裹交给我父|亲的朋友 谢尔戈。"
 		isMainQuest="1">
 		<Map
 			name="r1m1"
@@ -23,7 +23,7 @@
 	<QuestInfo
 		questName="CombatInKollizey_Quest"
 		briefDiz="表演赛"
-		fullDiz="在竞技场让大家见识一场真正的战斗。"
+		fullDiz="在竞技场让大家见识一场真|正的战斗。"
 		isMainQuest="0">
 		<Map
 			name="r1m2"
@@ -33,7 +33,7 @@
 	<QuestInfo
 		questName="DestroyRuins_Quest"
 		briefDiz="抢劫考古学家"
-		fullDiz="考古学家们正在挖掘什么有趣的东西……他们几乎没有防备。这是赚点钱的好机会。"
+		fullDiz="考古学家们正在挖掘什么有|趣的东西……他们几乎没有防备。|这是赚点钱的好机会。"
 		isMainQuest="0">
 		<Map
 			name="r1m2"
@@ -43,70 +43,70 @@
 	<QuestInfo
 		questName="Dynamic_Convoy_0"
 		briefDiz="护送商队前往 %2n"
-		fullDiz="%1n 镇请你护送商队前往 %2n"
+		fullDiz="%1n 镇请你护送商|队前往 %2n"
 		isMainQuest="0" />
 
 	<QuestInfo
 		questName="Dynamic_Convoy_1"
 		briefDiz="保卫运输车"
-		fullDiz="%1n 的一个居民要我护送运输车前往 %2n，并答应支付 %3d。"
+		fullDiz="%1n 的一个居民要我护|送运输车前往 %2n，|并答应支付 %3d。"
 		isMainQuest="0" />
 
 	<QuestInfo
 		questName="Dynamic_Convoy_2"
 		briefDiz="确保运输车安全"
-		fullDiz="%1n 要求我护送装载重要货物的运输车前往 %2n。如果安全抵达，我将得到 %3d。"
+		fullDiz="%1n 要求我护送装载重|要货物的运输车前往 %2n。|如果安全抵达，我将得到 %3d。"
 		isMainQuest="0" />
 
 	<QuestInfo
 		questName="Dynamic_Convoy_3"
 		briefDiz="护送运输车前往 %2n"
-		fullDiz="运输车从 %1n 出发前往 %2n。一些匪徒经常在那条路上伏击商人，所以我答应保护他们，报酬只是区区 %3d。"
+		fullDiz="运输车从 %1n 出|发前往 %2n。|一些匪徒经常在那条路上伏击商人，|所以我答应保护他们，|报酬只是区区 %3d。"
 		isMainQuest="0" />
 
 	<QuestInfo
 		questName="Dynamic_Destroy_0"
 		briefDiz="消灭敌人"
-		fullDiz="%1n 镇请你消灭敌人，会有报酬。"
+		fullDiz="%1n 镇请你消灭敌人，|会有报酬。"
 		requestForTalk="你好，有什么活儿交给我干吗？" />
 isMainQuest="0" />
 
 	<QuestInfo
 		questName="Dynamic_Destroy_1"
 		briefDiz="消除威胁"
-		fullDiz="%1n 的居民经常遭到那个狡猾匪徒的袭击，他总是逃避惩罚。我答应除掉他，报酬 %3d。"
+		fullDiz="%1n 的居民经常遭到那个|狡猾匪徒的袭击，他总是逃避惩罚。|我答应除掉他，报酬 %3d。"
 		requestForTalk="你好，有什么活儿交给我干吗？"
 		isMainQuest="0" />
 
 	<QuestInfo
 		questName="Dynamic_Destroy_2"
 		briefDiz="追踪袭击者"
-		fullDiz="除掉威胁 %1n 的恶徒后，我将得到 %3d。"
+		fullDiz="除掉威胁 %1n 的恶徒后，|我将得到 %3d。"
 		requestForTalk="你好，有什么活儿交给我干吗？"
 		isMainQuest="0" />
 
 	<QuestInfo
 		questName="Dynamic_Hunt_0"
 		briefDiz="狩猎开始。"
-		fullDiz="%1n 镇会为每消灭一个敌人支付 %3d 金币。"
+		fullDiz="%1n 镇会为每消灭一个|敌人支付 %3d 金币。"
 		isMainQuest="0" />
 
 	<QuestInfo
 		questName="Dynamic_Hunt_1"
 		briefDiz="教训匪徒"
-		fullDiz="该让当地的匪徒知道厉害了！%1n 的人会为每消灭一个敌人支付 %3d。"
+		fullDiz="该让当地的匪徒知道厉害了！|%1n 的人会为每消灭|一个敌人支付 %3d。"
 		isMainQuest="0" />
 
 	<QuestInfo
 		questName="Dynamic_Hunt_2"
 		briefDiz="肃清周边"
-		fullDiz="%1n 当局开始为贸易路线的安全而战，每消灭一个恶徒我会得到 %3d。"
+		fullDiz="%1n 当局开始为贸易路|线的安全而战，每消灭一个|恶徒我会得到 %3d。"
 		isMainQuest="0" />
 
 	<QuestInfo
 		questName="Dynamic_Peace_0"
 		briefDiz="降低与 %2b 的敌意。"
-		fullDiz="你必须向 %2b 支付你金钱的百分之 %3d 来赎罪。"
+		fullDiz="你必须向 %2b 支付你金|钱的百分之 %3d 来赎罪。"
 		isMainQuest="0" />
 
 	<QuestInfo
@@ -120,7 +120,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="Dynamic_Reach_1"
 		briefDiz="把包裹送到 %2n"
-		fullDiz="把包裹送到 %2n 后，我会得到 %3d。有人在等它，但这么点钱我可不想赶路。"
+		fullDiz="把包裹送到 %2n 后，|我会得到 %3d。|有人在等它，但这么点钱我可|不想赶路。"
 		requestForTalk="你好，有什么活儿交给我干吗？"
 		resuestForComplete="我把来自 %1n 的包裹送到了。"
 		isMainQuest="0" />
@@ -128,7 +128,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="Dynamic_Reach_2"
 		briefDiz="前往 %2n"
-		fullDiz="%1n 的一个怪人愿意付我 %3d，要我去向他住在 %2n 的朋友问声好。"
+		fullDiz="%1n 的一个怪人愿意|付我 %3d，要我去向他住在 |%2n 的朋友问声好。"
 		requestForTalk="你好，有什么活儿交给我干吗？"
 		resuestForComplete="我把来自 %1n 的包裹送到了。"
 		isMainQuest="0" />
@@ -146,7 +146,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="FindBen2_Quest"
 		briefDiz="寻找 本·斯罗特尔"
-		fullDiz="现在我确信 本 就是我要找的人。问题是去哪里找他。"
+		fullDiz="现在我确信 本 就是我要找的人。|问题是去哪里找他。"
 		isMainQuest="1">
 		<Map
 			name="r1m2" />
@@ -155,7 +155,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="FindBen_Quest"
 		briefDiz="寻找探险家 本·斯罗特尔"
-		fullDiz="我的人生已成废墟。要重新拼凑完整，我必须了解我亲生父亲的更多事。我唯一的希望就是 本·斯罗特尔，不管他究竟是谁……"
+		fullDiz="我的人生已成废墟。|要重新拼凑完整，|我必须了解我亲生父亲的更多事。|我唯一的希望就是 本·斯罗特尔，|不管他究竟是谁……"
 		isMainQuest="1">
 		<Map
 			name="r1m1" />
@@ -167,19 +167,19 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="FindGomerA_Quest1"
 		briefDiz="寻找 荷马"
-		fullDiz="也许能在某个当地聚落的酒吧里找到 荷马。"
+		fullDiz="也许能在某个当地聚落的酒吧里|找到 荷马。"
 		isMainQuest="1" />
 
 	<QuestInfo
 		questName="FindGomerB_Quest1"
 		briefDiz="寻找 荷马"
-		fullDiz="也许能在某个当地聚落的酒吧里找到 荷马。"
+		fullDiz="也许能在某个当地聚落的酒吧里|找到 荷马。"
 		isMainQuest="1" />
 
 	<QuestInfo
 		questName="FreeExtremistLeader_Quest1"
 		briefDiz="释放极端分子的首领"
-		fullDiz="仓库被极端分子占领了。我必须救出他们的首领才能得到我需要的东西。"
+		fullDiz="仓库被极端分子占领了。|我必须救出他们的首领才能|得到我需要的东西。"
 		isMainQuest="0">
 		<Map
 			name="r1m4" />
@@ -215,7 +215,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="HelpRuins_Quest"
 		briefDiz="帮助考古学家"
-		fullDiz="当地的掠夺者妨碍考古学家挖掘。我必须除掉他们。"
+		fullDiz="当地的掠夺者妨碍考古学家挖掘。|我必须除掉他们。"
 		isMainQuest="0">
 		<Map
 			name="r1m2"
@@ -225,7 +225,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="KillExtremist_Quest1"
 		briefDiz="消灭占领仓库的匪徒。"
-		fullDiz="要得到我需要的东西，一个办法就是消灭所有挡我路的人。"
+		fullDiz="要得到我需要的东西，|一个办法就是消灭所有挡我路的人。"
 		isMainQuest="0">
 		<Map
 			name="r1m4"
@@ -235,7 +235,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="Kollizey_Quest"
 		briefDiz="协助重开竞技场"
-		fullDiz="有个商人想重新开张竞技场。我可以帮一把。"
+		fullDiz="有个商人想重新开张竞技场。|我可以帮一把。"
 		isMainQuest="0">
 		<Map
 			name="r1m2" />
@@ -294,7 +294,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="Signs_Quest"
 		briefDiz="标记"
-		fullDiz="集体农庄的田地上出现了神秘的标记。"
+		fullDiz="集体农庄的田地上出现了神|秘的标记。"
 		isMainQuest="0">
 		<Map
 			name="r1m2" />
@@ -337,7 +337,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="TalkProfessor_Quest"
 		briefDiz="把标记的事告诉科学家"
-		fullDiz="把这事告诉米德加德的科学家，他们会查清楚这里到底发生了什么。"
+		fullDiz="把这事告诉米德加德的科学家，|他们会查清楚这里到底发生了什么。"
 		isMainQuest="0">
 		<Map
 			name="r1m2"
@@ -347,7 +347,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="TalkWithFather_Quest"
 		briefDiz="回到父亲身边。"
-		fullDiz="我做成了人生中第一笔生意。父亲知道了一定会很高兴。"
+		fullDiz="我做成了人生中第一笔生意。|父亲知道了一定会很高兴。"
 		isMainQuest="1">
 		<Map
 			name="r1m1"
@@ -357,7 +357,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="TraiderStorage_Quest1"
 		briefDiz="从匪徒手中夺回仓库"
-		fullDiz="仓库被匪徒占领了。我必须想办法把他们赶走。"
+		fullDiz="仓库被匪徒占领了。|我必须想办法把他们赶走。"
 		isMainQuest="0">
 		<Map
 			name="r1m4" />
@@ -366,7 +366,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="WhereSigns_Quest"
 		briefDiz="调查集体农庄的事件"
-		fullDiz="集体农庄的农夫们被吓坏了，不肯去收割庄稼。"
+		fullDiz="集体农庄的农夫们被吓坏了，|不肯去收割庄稼。"
 		isMainQuest="0">
 		<Map
 			name="r1m2"
@@ -376,7 +376,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="WorkGiver_Quest1"
 		briefDiz="把富农带到加油站。"
-		fullDiz="我把富农带到加油站后，他会给我报酬。"
+		fullDiz="我把富农带到加油站后，|他会给我报酬。"
 		isMainQuest="0">
 		<Map
 			name="r1m1"
@@ -386,7 +386,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="d_BarForTunel_Quest"
 		briefDiz="去酒吧"
-		fullDiz="阿斯加德酒吧里总有人知道翻越群山的路。"
+		fullDiz="阿斯加德酒吧里总有人知道|翻越群山的路。"
 		isMainQuest="0">
 		<Map
 			name="r1m3"
@@ -436,7 +436,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="d_CaravanFromTuzzToVillage_Quest"
 		briefDiz="确保商队的安全。"
-		fullDiz="这批货物必须不惜一切代价送达。我的任务是护送它，确保万无一失。"
+		fullDiz="这批货物必须不惜一切代价送达。|我的任务是护送它，确保万无一失。"
 		isMainQuest="1">
 		<Map
 			name="r2m1" />
@@ -463,7 +463,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="d_DestroyBridge_Quest"
 		briefDiz="放置炸药"
-		fullDiz="炸药有了，我只需要把它放到正确的位置。"
+		fullDiz="炸药有了，我只需要把它放到正|确的位置。"
 		isMainQuest="1">
 		<Map
 			name="r1m3"
@@ -494,7 +494,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="d_FindAksel_Quest"
 		briefDiz="寻找 阿克塞尔"
-		fullDiz="首先我得找到通往 阿克塞尔 地盘的路。然后再决定怎么对付他！"
+		fullDiz="首先我得找到通往 阿克塞|尔 地盘的路。然后再决定|怎么对付他！"
 		isMainQuest="1">
 		<Map
 			name="r1m2" />
@@ -512,7 +512,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="d_FindBanditBaseOfOilMine_Quest"
 		briefDiz="找到并摧毁匪徒的营地。"
-		fullDiz="我得跟着这辆车回它的老巢。绝不能攻击这辆车。"
+		fullDiz="我得跟着这辆车回它的老巢。|绝不能攻击这辆车。"
 		isMainQuest="0">
 		<Map
 			name="r1m3"
@@ -568,7 +568,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="d_FindDoorInTunel_Quest"
 		briefDiz="找到隧道入口。"
-		fullDiz="既然我知道入口在哪了，穿过它应该不成问题。"
+		fullDiz="既然我知道入口在哪了，|穿过它应该不成问题。"
 		isMainQuest="1">
 		<Map
 			name="r1m3"
@@ -587,7 +587,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="d_FindHouseOfBen_Quest"
 		briefDiz="和 本 见面。"
-		fullDiz="很快我就能见到 本·斯罗特尔，了解我的身世之谜。"
+		fullDiz="很快我就能见到 本·斯罗特尔，|了解我的身世之谜。"
 		isMainQuest="1">
 		<Map
 			name="r1m2"
@@ -597,7 +597,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="d_FindKeyInTunel_Quest"
 		briefDiz="向酒保买钥匙。"
-		fullDiz="我敢肯定酒保知道那扇门锁了。他甚至可能有钥匙。"
+		fullDiz="我敢肯定酒保知道那扇门锁了。|他甚至可能有钥匙。"
 		isMainQuest="0">
 		<Map
 			name="r1m3"
@@ -622,7 +622,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="d_FindLisaInBase_Quest"
 		briefDiz="在51区打听 爱丽丝 的下落。"
-		fullDiz="原来 爱丽丝 和匪徒有牵连。我也不算意外，但还是……"
+		fullDiz="原来 爱丽丝 和匪徒有牵连。|我也不算意外，但还是……"
 		isMainQuest="1">
 		<Map
 			name="r1m3"
@@ -632,7 +632,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="d_FindLisaInGelvetcia_Quest"
 		briefDiz="在赫尔维蒂亚抓住 爱丽丝。"
-		fullDiz="爱丽丝 很快就要为她的所作所为付出代价！我清楚她在哪！"
+		fullDiz="爱丽丝 很快就要为她的所作所为付|出代价！我清楚她在哪！"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -689,7 +689,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="d_FindLisaOnSever_Quest"
 		briefDiz="在北方追上 爱丽丝"
-		fullDiz="看来 费利克斯 没有杀我父亲。我唯一的线索就是 爱丽丝。她是罪行的目击者。"
+		fullDiz="看来 费利克斯 没有杀我父亲。|我唯一的线索就是 爱丽丝。|她是罪行的目击者。"
 		isMainQuest="1">
 		<Map
 			name="r1m1" />
@@ -704,7 +704,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="d_FindOracul_Quest"
 		briefDiz="寻找先知"
-		fullDiz="父亲留下的线索指向一片遥远的土地，那里住着无所不知的先知。"
+		fullDiz="父亲留下的线索指向一片遥|远的土地，那里住着无所不|知的先知。"
 		isMainQuest="1">
 		<Map
 			name="r1m2"
@@ -725,7 +725,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="d_FindRealFatherRoom_Quest"
 		briefDiz="找到父亲的家。"
-		fullDiz="父亲可能还活着！无论如何我都要找到他。|也许在他的房子里能找到些线索，那房子在米宁。"
+		fullDiz="父亲可能还活着！|无论如何我都要找到他。|也许在他的房子里能找到些线索，|那房子在米宁。"
 		isMainQuest="1">
 		<Map
 			name="r1m2" />
@@ -737,7 +737,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="d_FindVerbInAR_Quest"
 		briefDiz="在马雷齐亚找到猩红之晨的招募人。"
-		fullDiz="猩红之晨正在招募新兵。加入他们就能接近 阿克塞尔。"
+		fullDiz="猩红之晨正在招募新兵。|加入他们就能接近 阿克塞尔。"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -751,7 +751,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="d_FindVerbInSNG_Quest"
 		briefDiz="在图斯找到独立城镇联邦的招募人"
-		fullDiz="独立城镇联邦需要人手来对抗 阿克塞尔 的军队。只要我加入他们，就能一起粉碎这个暴君！"
+		fullDiz="独立城镇联邦需要人手来对抗| 阿克塞尔 的军队。|只要我加入他们，|就能一起粉碎这个暴君！"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -761,7 +761,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="d_FindVrata_Quest"
 		briefDiz="寻找海门"
-		fullDiz="海门就在遥远的北方某处。米宁的商队会给我指路。"
+		fullDiz="海门就在遥远的北方某处。|米宁的商队会给我指路。"
 		isMainQuest="1">
 		<Map
 			name="r1m3" />
@@ -773,7 +773,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="d_FindWorkersToOilMine_Quest"
 		briefDiz="说服米宁的工人。"
-		fullDiz="油田的工人正坐在米宁的酒吧里。我必须说服他们回去干活。"
+		fullDiz="油田的工人正坐在米宁的酒吧里。|我必须说服他们回去干活。"
 		isMainQuest="1">
 		<Map
 			name="r1m3"
@@ -783,7 +783,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="d_FindZasadaInTunel_Quest"
 		briefDiz="找个埋伏的地方。"
-		fullDiz="迟早会有人用这条隧道。我就在这里埋伏，抢到钥匙！"
+		fullDiz="迟早会有人用这条隧道。|我就在这里埋伏，抢到钥匙！"
 		isMainQuest="0">
 		<Map
 			name="r1m3"
@@ -802,7 +802,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="d_FreeTunel_Quest"
 		briefDiz="解放隧道。"
-		fullDiz="猩红之晨通过隧道源源不断地获得资源和兵力。一旦夺取隧道，独立城镇联邦就能与外界建立稳固的联系，同时切断敌人的补给线。为了崇高的理想，隧道的守卫者必须死。"
+		fullDiz="猩红之晨通过隧道源源不断|地获得资源和兵力。|一旦夺取隧道，独立城镇联|邦就能与外界建立稳固的联系，|同时切断敌人的补给线。|为了崇高的理想，|隧道的守卫者必须死。"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -812,7 +812,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="d_FromTuzzToGelvetcia_Quest"
 		briefDiz="前往赫尔维蒂亚"
-		fullDiz="我的行动没有逃过人们的眼睛。很快我就能见到独立城镇联邦的高层了！"
+		fullDiz="我的行动没有逃过人们的眼睛。|很快我就能见到独立城镇联|邦的高层了！"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -822,7 +822,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="d_GetAkselBandit_Quest"
 		briefDiz="和 阿克塞尔 见面"
-		fullDiz="真相揭晓的时刻就要到了。很快我就能和 阿克塞尔 面对面了！"
+		fullDiz="真相揭晓的时刻就要到了。|很快我就能和 阿克塞尔 |面对面了！"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -845,7 +845,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="d_GetBomb_Quest"
 		briefDiz="找些炸药。"
-		fullDiz="我得消除匪徒袭击的威胁，才能通过佩斯特。我唯一能想到的办法就是炸掉通往他们基地的桥。"
+		fullDiz="我得消除匪徒袭击的威胁，|才能通过佩斯特。|我唯一能想到的办法就是炸|掉通往他们基地的桥。"
 		isMainQuest="1">
 		<Map
 			name="r1m3" />
@@ -854,7 +854,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="d_GetHelpWorkersInMinin_Quest"
 		briefDiz="从匪徒手中解放油田"
-		fullDiz="我得让油田恢复生产，米宁的人才会给我指北方的路。"
+		fullDiz="我得让油田恢复生产，|米宁的人才会给我指北方的路。"
 		isMainQuest="1">
 		<Map
 			name="r1m3" />
@@ -863,7 +863,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="d_GetSupportOneOfTheBands1_Quest"
 		briefDiz="争取一个大派系的支持。"
-		fullDiz="看来麻烦不小。爱丽丝 是当地某个犯罪头目的女人。没有帮手很难把她弄到手。该找些强有力的盟友了。"
+		fullDiz="看来麻烦不小。爱丽丝 是|当地某个犯罪头目的女人。|没有帮手很难把她弄到手。|该找些强有力的盟友了。"
 		isMainQuest="1">
 		<Map
 			name="r2m1" />
@@ -875,7 +875,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="d_GetSupportOneOfTheBands2_Quest"
 		briefDiz="争取一个大派系的支持。"
-		fullDiz="看来我单枪匹马对付不了 阿克塞尔。该找些强有力的盟友了。"
+		fullDiz="看来我单枪匹马对付不了 |阿克塞尔。该找些强有力的盟友了。"
 		isMainQuest="1">
 		<Map
 			name="r2m1" />
@@ -887,7 +887,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="d_GiveMoneyToBase_Quest"
 		briefDiz="凑够交过路费的钱"
-		fullDiz="匪徒同意让我通过他们的地盘，条件是 10000 金币。"
+		fullDiz="匪徒同意让我通过他们的地盘，|条件是 10000 金币。"
 		isMainQuest="1">
 		<Map
 			name="r1m3"
@@ -897,7 +897,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="d_GiveProblemToBase_Quest"
 		briefDiz="教训匪徒。"
-		fullDiz="看来匪徒唯一听得懂的语言就是枪声！"
+		fullDiz="看来匪徒唯一听得懂的语|言就是枪声！"
 		isMainQuest="1">
 		<Map
 			name="r1m3"
@@ -914,7 +914,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="d_HelpSideVillageSNG_Quest"
 		briefDiz="保护村庄。"
-		fullDiz="村庄遭到袭击！我的车离战场最近。我必须帮忙。"
+		fullDiz="村庄遭到袭击！我的车离战场最近。|我必须帮忙。"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -924,7 +924,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="d_IntrigaOfMerMinin_Quest"
 		briefDiz="揭开阴谋。"
-		fullDiz="我觉得有猫腻。我必须让矿工们干活！而这里有人在骗我！"
+		fullDiz="我觉得有猫腻。我必须让矿|工们干活！而这里有人在骗我！"
 		isMainQuest="1">
 		<Map
 			name="r1m3" />
@@ -942,7 +942,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="d_Lisa_Quest"
 		briefDiz="带 爱丽丝 逛逛当地的村庄。"
-		fullDiz="一个漂亮的姑娘要我陪她。她看起来像个犯罪分子，不过谁在乎呢。"
+		fullDiz="一个漂亮的姑娘要我陪她。|她看起来像个犯罪分子，|不过谁在乎呢。"
 		isMainQuest="0">
 		<Map
 			name="r1m1" />
@@ -963,7 +963,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="d_MeetWithGelvetciaSopr_Quest"
 		briefDiz="联系托斯卡纳的叛军。"
-		fullDiz="我必须去见托斯卡纳的叛军，打探他们掌握的消息。运气好的话，他们会有助于我们击败 阿克塞尔 的情报。"
+		fullDiz="我必须去见托斯卡纳的叛军，|打探他们掌握的消息。|运气好的话，他们会有|助于我们击败 阿克塞尔 的情报。"
 		isMainQuest="1">
 		<Map
 			name="r2m1" />
@@ -984,7 +984,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="d_MoveCanistraToMinin_Quest"
 		briefDiz="把油桶送到米宁。"
-		fullDiz="这桶油标志着油田重新开工了。我必须把它送到镇上。"
+		fullDiz="这桶油标志着油田重新开工了。|我必须把它送到镇上。"
 		isMainQuest="1">
 		<Map
 			name="r1m3"
@@ -994,7 +994,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="d_MoveFreelancersToOilMine_Quest"
 		briefDiz="把雇来的工人带到油田。"
-		fullDiz="只要我把这些人带到油田，他们就会开始干活。"
+		fullDiz="只要我把这些人带到油田，|他们就会开始干活。"
 		isMainQuest="1">
 		<Map
 			name="r1m3"
@@ -1004,7 +1004,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="d_MoveInParis_Quest"
 		briefDiz="找到隧道"
-		fullDiz="我必须找到通往先知之地的海底隧道入口。"
+		fullDiz="我必须找到通往先知之地的海|底隧道入口。"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -1014,7 +1014,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="d_MoveLeaderInGelvetcia_Quest"
 		briefDiz="把叛军领袖送到赫尔维蒂亚。"
-		fullDiz="希望他掌握的情报真的值得付出这一切牺牲。"
+		fullDiz="希望他掌握的情报真的值得|付出这一切牺牲。"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -1062,7 +1062,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="d_MoveWithGeneralToGelvetcia_Quest"
 		briefDiz="把猩红之晨的将军送到赫尔维蒂亚。"
-		fullDiz="这是最后一块拼图。我们会让将军说出 阿克塞尔 的弱点。"
+		fullDiz="这是最后一块拼图。|我们会让将军说出 阿克塞|尔 的弱点。"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -1072,7 +1072,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="d_MoveWorkersToOilMine_Quest"
 		briefDiz="把工人送到油田。"
-		fullDiz="现在工人们自己做主了。他们乐意去油田干活。我倒想知道为什么？"
+		fullDiz="现在工人们自己做主了。|他们乐意去油田干活。|我倒想知道为什么？"
 		isMainQuest="1">
 		<Map
 			name="r1m3"
@@ -1082,7 +1082,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="d_OpenTunel_Quest"
 		briefDiz="用钥匙打开大门"
-		fullDiz="我有了隧道大门的钥匙。只要打开它就行了。"
+		fullDiz="我有了隧道大门的钥匙。|只要打开它就行了。"
 		isMainQuest="0">
 		<Map
 			name="r1m3"
@@ -1092,7 +1092,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="d_PatrulSideSNG_Quest"
 		briefDiz="巡逻边境。"
-		fullDiz="我的任务是巡逻边境，以防敌人出现。"
+		fullDiz="我的任务是巡逻边境，|以防敌人出现。"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -1112,7 +1112,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="d_PunishBandits_Quest"
 		briefDiz="教训匪徒"
-		fullDiz="当地人决心吓跑掠夺者。也许我该帮他们一把。"
+		fullDiz="当地人决心吓跑掠夺者。|也许我该帮他们一把。"
 		isMainQuest="0">
 		<Map
 			name="r1m1"
@@ -1122,7 +1122,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="d_ReturnToBen_Quest"
 		briefDiz="回到 本 那里。"
-		fullDiz="那条线索断了。希望本还能想出别的办法。"
+		fullDiz="那条线索断了。希望本还能|想出别的办法。"
 		isMainQuest="1">
 		<Map
 			name="r1m2"
@@ -1174,7 +1174,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="d_RideAcrossBase_Quest"
 		briefDiz="试试从别处穿过深谷。"
-		fullDiz="我必须穿过那条深谷。有两座桥：一座在佩斯特镇，另一座在匪徒的地盘。"
+		fullDiz="我必须穿过那条深谷。|有两座桥：一座在佩斯特镇，|另一座在匪徒的地盘。"
 		isMainQuest="1">
 		<Map
 			name="r1m3"
@@ -1193,7 +1193,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="d_SerchCarTunel_Quest"
 		briefDiz="跟着那辆车。"
-		fullDiz="如果我跟着那辆车到它的目的地，大概就有机会偷到钥匙。"
+		fullDiz="如果我跟着那辆车到它的目的地，|大概就有机会偷到钥匙。"
 		isMainQuest="0">
 		<Map
 			name="r1m3"
@@ -1203,7 +1203,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="d_SinFather_Quest"
 		briefDiz="为父亲报仇"
-		fullDiz="不管凶手藏在哪，我都会找到他并惩罚他！"
+		fullDiz="不管凶手藏在哪，|我都会找到他并惩罚他！"
 		isMainQuest="1">
 		<Map
 			name="r1m1" />
@@ -1221,7 +1221,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="d_TakeGeneralOfBandits_Quest"
 		briefDiz="活捉猩红之晨的将军。"
-		fullDiz="在几名独立城镇联邦精锐战士的陪同下，我必须活捉猩红之晨的将军。"
+		fullDiz="在几名独立城镇联邦精锐战|士的陪同下，我必须活捉猩|红之晨的将军。"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -1231,7 +1231,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="d_TalkAboutAksel_Quest"
 		briefDiz="打听 阿克塞尔 的消息。"
-		fullDiz="我得向当地人打听 阿克塞尔 的事，尤其是去哪里能找到他。"
+		fullDiz="我得向当地人打听 阿克塞|尔 的事，尤其是去哪里能找到他。"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -1241,7 +1241,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="d_TalkAboutLisa_Quest"
 		briefDiz="打听 爱丽丝 的下落"
-		fullDiz="人人都认识 爱丽丝。我只要打听就能找到她。"
+		fullDiz="人人都认识 爱丽丝。|我只要打听就能找到她。"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -1283,7 +1283,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="d_TunelInAsgard_Quest"
 		briefDiz="在阿斯加德打听隧道的事。"
-		fullDiz="那里总有人知道怎样、在哪里可以翻越群山。"
+		fullDiz="那里总有人知道怎样、|在哪里可以翻越群山。"
 		isMainQuest="1">
 		<Map
 			name="r1m2"
@@ -1351,7 +1351,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="q_FindHusbent"
 		briefDiz="寻找失踪的丈夫。"
-		fullDiz="他叫 菲利蒙。请把他带回来！我太爱他了。"
+		fullDiz="他叫 菲利蒙。请把他带回来！|我太爱他了。"
 		isMainQuest="0" />
 
 	<QuestInfo
@@ -1402,13 +1402,13 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="q_PlaceWithSign"
 		briefDiz="农田上的标记。"
-		fullDiz="德鲁伊提到了奇怪的标记。去看看吧。"
+		fullDiz="德鲁伊提到了奇怪的标记。|去看看吧。"
 		isMainQuest="0" />
 
 	<QuestInfo
 		questName="q_VisitDruid"
 		briefDiz="去拜访德鲁伊。"
-		fullDiz="那位隐居的德鲁伊远离人群独自生活。我该去拜访他，问声好。"
+		fullDiz="那位隐居的德鲁伊远离人群|独自生活。我该去拜访他，问声好。"
 		isMainQuest="0">
 		<Map
 			name="r3m1"
@@ -1422,7 +1422,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r1m1_Botanik_Quest"
 		briefDiz="给植物学家送些药品和木材"
-		fullDiz="我能在镇上买到木材，但药品要去哪里找呢？"
+		fullDiz="我能在镇上买到木材，|但药品要去哪里找呢？"
 		isMainQuest="0">
 		<Map
 			name="r1m1"
@@ -1432,7 +1432,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r1m1_FindBotanik_Quest"
 		briefDiz="寻找植物学家"
-		fullDiz="一个老兵提到了植物学家。也许我得去找他。"
+		fullDiz="一个老兵提到了植物学家。|也许我得去找他。"
 		isMainQuest="0">
 		<Map
 			name="r1m1"
@@ -1540,7 +1540,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r1m2_TW_BanAboutAlien"
 		briefDiz="和 本 谈谈外星人的事。"
-		fullDiz="本 知道很多关于 伊万·戈 冒险的故事。希望其中某个故事能给我指路。"
+		fullDiz="本 知道很多关于 伊万·|戈 冒险的故事。|希望其中某个故事能给我指路。"
 		isMainQuest="1">
 		<Map
 			name="r1m1"
@@ -1590,7 +1590,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r1m3_ArchHelp"
 		briefDiz="送这位老人。"
-		fullDiz="老人要我把他送到古代遗迹。我想他打算死在那里。真够阴森的。"
+		fullDiz="老人要我把他送到古代遗迹。|我想他打算死在那里。真够阴森的。"
 		isMainQuest="0">
 		<Map
 			name="r1m3"
@@ -1600,7 +1600,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r1m3_BonnyAndKlideQuest"
 		briefDiz="帮助 康妮 和 布莱德。"
-		fullDiz="一对奇怪的夫妇要我送他们回家。这么简单的活儿他们却给了一大笔钱。"
+		fullDiz="一对奇怪的夫妇要我送他们回家。|这么简单的活儿他们却给了一|大笔钱。"
 		isMainQuest="0">
 		<Map
 			name="r1m3"
@@ -1610,7 +1610,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r1m3_CrazyManQuest"
 		briefDiz="找到娱乐中心。"
-		fullDiz="据那男孩的广告说，娱乐中心简直就是天堂。去看看吧。"
+		fullDiz="据那男孩的广告说，|娱乐中心简直就是天堂。去看看吧。"
 		isMainQuest="0">
 		<Map
 			name="r1m3"
@@ -1620,7 +1620,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r1m3_DestroyOracle"
 		briefDiz="消灭先知。"
-		fullDiz="先知彻底疯了。他打算摧毁一切，从我下手。我绝不能让这种事发生！"
+		fullDiz="先知彻底疯了。他打算摧毁一切，|从我下手。我绝不能让这种事发生！"
 		isMainQuest="1">
 		<Map
 			name="r1m3" />
@@ -1629,7 +1629,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r1m3_DestroyRadiationSource"
 		briefDiz="摧毁干扰站。"
-		fullDiz="塞尔的发电站是强大的干扰源。它干扰了先知的信号，使他无法控制轨道武器。"
+		fullDiz="塞尔的发电站是强大的干扰源。|它干扰了先知的信号，|使他无法控制轨道武器。"
 		isMainQuest="1">
 		<Map
 			name="r1m3"
@@ -1643,7 +1643,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r1m3_FightWithThief"
 		briefDiz="从窃贼手中夺回光盘。"
-		fullDiz="那窃贼还不知道他的对手是谁。光盘会是我的。"
+		fullDiz="那窃贼还不知道他的对手是谁。|光盘会是我的。"
 		isMainQuest="1">
 		<Map
 			name="r1m3"
@@ -1653,7 +1653,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r1m3_FindHmirinSever"
 		briefDiz="找到北上的路。"
-		fullDiz="我必须找到北上的路。米宁的人知道怎么走。"
+		fullDiz="我必须找到北上的路。|米宁的人知道怎么走。"
 		isMainQuest="1">
 		<Map
 			name="r1m2"
@@ -1667,7 +1667,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r1m3_FindManyWorkers_Quest"
 		briefDiz="找人去油田干活。"
-		fullDiz="光解放油田还不够让它运转起来。现在我还得找人去干活。"
+		fullDiz="光解放油田还不够让它运转起来。|现在我还得找人去干活。"
 		isMainQuest="0">
 		<Map
 			name="r1m3" />
@@ -1676,7 +1676,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r1m3_FindThiefFromFatherHouse"
 		briefDiz="找到窃贼。"
-		fullDiz="父亲家里被翻得乱七八糟。一定有人看到了发生了什么。我去酒吧问问。"
+		fullDiz="父亲家里被翻得乱七八糟。|一定有人看到了发生了什么。|我去酒吧问问。"
 		isMainQuest="1">
 		<Map
 			name="r1m3"
@@ -1698,7 +1698,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r1m3_LisaWithOberegAndDisk_Quest"
 		briefDiz="在利布里姆找到 爱丽丝。"
-		fullDiz="爱丽丝 偷了光盘往西去了。我必须不惜一切代价抓住她！"
+		fullDiz="爱丽丝 偷了光盘往西去了。|我必须不惜一切代价抓住她！"
 		isMainQuest="1">
 		<Map
 			name="r1m3" />
@@ -1713,7 +1713,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r1m3_MoveToOraculAfterThief"
 		briefDiz="把第二张光盘交给先知。"
-		fullDiz="先知用它就能破译 伊万·戈 的日记。"
+		fullDiz="先知用它就能破译 伊万·|戈 的日记。"
 		isMainQuest="1">
 		<Map
 			name="r1m3"
@@ -1735,7 +1735,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r1m3_OldTownOutsiderCar_Quest"
 		briefDiz="在废弃的小镇追上那个逃跑者。"
-		fullDiz="那匪徒藏在废弃的小镇某处。如果我杀了他，村民会付钱给我。"
+		fullDiz="那匪徒藏在废弃的小镇某处。|如果我杀了他，村民会付钱给我。"
 		isMainQuest="0">
 		<Map
 			name="r1m3"
@@ -1745,7 +1745,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r1m3_TW_OralceAboutAlien"
 		briefDiz="和先知谈谈。"
-		fullDiz="只有先知可能拥有足以摧毁污染源的强大武器。"
+		fullDiz="只有先知可能拥有足以摧毁|污染源的强大武器。"
 		isMainQuest="1">
 		<Map
 			name="r1m1"
@@ -1767,7 +1767,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r1m3_TalkWithThiefFromFatherHouse"
 		briefDiz="跟踪窃贼。"
-		fullDiz="窃贼无处可去，只能去51区。我会在那里逮住他！"
+		fullDiz="窃贼无处可去，只能去51区。|我会在那里逮住他！"
 		isMainQuest="1">
 		<Map
 			name="r1m3"
@@ -1796,7 +1796,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r1m4_OvercomeMirras"
 		briefDiz="穿过沼泽。"
-		fullDiz="通往海门的路要经过沼泽。我必须找到穿过它的路。"
+		fullDiz="通往海门的路要经过沼泽。|我必须找到穿过它的路。"
 		isMainQuest="0">
 		<Map
 			name="r1m4"
@@ -1820,7 +1820,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r2m1_ArtAntipod_Quest"
 		briefDiz="和 大师 谈谈。"
-		fullDiz="有人偷了 鉴赏家 的杰作。唯一识货的人就是 大师。"
+		fullDiz="有人偷了 鉴赏家 的杰作。|唯一识货的人就是 大师。"
 		isMainQuest="0">
 		<Map
 			name="r2m1"
@@ -1830,7 +1830,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r2m1_ArtGulik_Quest"
 		briefDiz="从 诡术师 手里拿回杰作。"
-		fullDiz="一个叫 诡术师 的人是这起盗窃的幕后主使。我得抓住他，把杰作物归原主。"
+		fullDiz="一个叫 诡术师 的人是这起|盗窃的幕后主使。|我得抓住他，把杰作物归原主。"
 		isMainQuest="0">
 		<Map
 			name="r2m1"
@@ -1840,7 +1840,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r2m1_ArtViva_Quest"
 		briefDiz="归还杰作。"
-		fullDiz="要拿到报酬，我得把杰作还给 鉴赏家。不过，也许有人愿意出更高的价。"
+		fullDiz="要拿到报酬，我得把杰|作还给 鉴赏家。|不过，也许有人愿意出更高的价。"
 		isMainQuest="0">
 		<Map
 			name="r2m1"
@@ -1850,7 +1850,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r2m1_DeployBloks"
 		briefDiz="安装干扰装置。"
-		fullDiz="只有我能阻止这场吞噬世界的疯狂。我要安装这个装置来降低污染程度。这是我的使命。"
+		fullDiz="只有我能阻止这场吞噬世界的疯狂。|我要安装这个装置来降低污染程度。|这是我的使命。"
 		isMainQuest="1">
 		<Map
 			name="r1m3"
@@ -1864,7 +1864,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r2m1_DestroyAlienShip"
 		briefDiz="消灭邪恶的入侵者。"
-		fullDiz="外星飞船一直藏在这里。他们为了争夺新领土杀了无数人类。我必须阻止他们！希望摧毁这台机器能让先知重新掌控轨道武器。"
+		fullDiz="外星飞船一直藏在这里。|他们为了争夺新领土杀了无数人类。|我必须阻止他们！|希望摧毁这台机器能让先知|重新掌控轨道武器。"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -1874,7 +1874,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r2m1_KillGodFather_Quest"
 		briefDiz="干掉黑帮老大。"
-		fullDiz="我偷了他的货物后，老大可能给我惹大麻烦。我必须先下手为强。"
+		fullDiz="我偷了他的货物后，|老大可能给我惹大麻烦。|我必须先下手为强。"
 		isMainQuest="0">
 		<Map
 			name="r2m1"
@@ -1902,7 +1902,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r2m1_TW_AlienInShip"
 		briefDiz="和外星人谈谈"
-		fullDiz="外星人一定知道怎么停止那可怕的装置。他们是我最后的指望了。"
+		fullDiz="外星人一定知道怎么停止那可|怕的装置。他们是我最后的指望了。"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -1912,7 +1912,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r2m1_TW_SellsCivilian"
 		briefDiz="和塞尔的人谈谈。"
-		fullDiz="线索指向塞尔。有人在这里附近见过那艘外星飞船。"
+		fullDiz="线索指向塞尔。有人在这里|附近见过那艘外星飞船。"
 		isMainQuest="1">
 		<Map
 			name="r1m2"
@@ -1930,7 +1930,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r2m1_TakeNarcotics_Quest"
 		briefDiz="夺取货物。"
-		fullDiz="我打听到一支装载贵重货物的商队很快就要南下，几乎没有护卫。这是个好机会。"
+		fullDiz="我打听到一支装载贵重货|物的商队很快就要南下，|几乎没有护卫。这是个好机会。"
 		isMainQuest="0">
 		<Map
 			name="r2m1" />
@@ -1939,7 +1939,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r2m2_AferaARSNG"
 		briefDiz="假扮叛军。"
-		fullDiz="我必须假扮叛军，向独立城镇联邦的特工传递假情报。"
+		fullDiz="我必须假扮叛军，|向独立城镇联邦的特工传递假情报。"
 		isMainQuest="1">
 		<Map
 			name="r2m2"
@@ -1959,7 +1959,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r2m2_DestroySNGKaravan"
 		briefDiz="打击独立城镇联邦的补给线。"
-		fullDiz="现在我得去袭击独立城镇联邦的补给商队。这肯定能打击敌人的士气。"
+		fullDiz="现在我得去袭击独立城镇联|邦的补给商队。这肯定能打|击敌人的士气。"
 		isMainQuest="1">
 		<Map
 			name="r2m1" />
@@ -1971,7 +1971,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r2m2_FightFelix"
 		briefDiz="战胜 费利克斯。"
-		fullDiz="这只老狐狸快要识破我的身份了！我绝不能让这种事发生。"
+		fullDiz="这只老狐狸快要识破我的身份了！|我绝不能让这种事发生。"
 		isMainQuest="1">
 		<Map
 			name="r2m2"
@@ -1981,7 +1981,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r2m2_FightLisaToMonastir"
 		briefDiz="抓住 爱丽丝。"
-		fullDiz="既然我知道 爱丽丝 在哪，就绝不会让她跑了！"
+		fullDiz="既然我知道 爱丽丝 在哪，|就绝不会让她跑了！"
 		isMainQuest="0">
 		<Map
 			name="r2m2"
@@ -1991,7 +1991,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r2m2_FightWithAxelInArena_Quest"
 		briefDiz="和 阿克塞尔 决斗。"
-		fullDiz="在竞技场上和 阿克塞尔 一较高下的时刻到了。老天，我等这一刻等了太久。"
+		fullDiz="在竞技场上和 阿克塞尔 |一较高下的时刻到了。|老天，我等这一刻等了太久。"
 		isMainQuest="1">
 		<Map
 			name="r2m2"
@@ -2009,7 +2009,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r2m2_FindLisAfterAxelAndFatherDie_Quest"
 		briefDiz="在塞尔抓住 爱丽丝。"
-		fullDiz="原来被 爱丽丝 欺骗的不止我一个。阿克塞尔 也在找她。他告诉了我她最后的踪迹，在塞尔附近。奇怪她怎么会去那里，那不是自投罗网吗。"
+		fullDiz="原来被 爱丽丝 欺骗的不|止我一个。阿克塞尔 也在找她。|他告诉了我她最后的踪迹，|在塞尔附近。奇怪她怎么会去那里，|那不是自投罗网吗。"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -2032,7 +2032,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r2m2_FindROMinCastle"
 		briefDiz="去修道院。"
-		fullDiz="我需要从修道院送些葡萄酒过去。但我觉得这个差事没那么简单。"
+		fullDiz="我需要从修道院送些葡萄酒过去。|但我觉得这个差事没那么简单。"
 		isMainQuest="1">
 		<Map
 			name="r2m2"
@@ -2055,7 +2055,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r2m2_GiveBardakToEnemy"
 		briefDiz="扰乱敌人。"
-		fullDiz="如果我随便摧毁几辆独立城镇联邦的车辆，就能让敌人神经紧绷。"
+		fullDiz="如果我随便摧毁几辆独立城|镇联邦的车辆，就能让敌人|神经紧绷。"
 		isMainQuest="1">
 		<Map
 			name="r2m2"
@@ -2065,7 +2065,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r2m2_GiveBardakToSideVillage"
 		briefDiz="袭击村庄。"
-		fullDiz="现在该干点大的了。袭击村庄肯定能激怒敌人。"
+		fullDiz="现在该干点大的了。|袭击村庄肯定能激怒敌人。"
 		isMainQuest="1">
 		<Map
 			name="r2m2"
@@ -2075,7 +2075,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r2m2_GiveDisk2ToOrakul"
 		briefDiz="把第二张光盘交给先知。"
-		fullDiz="终于，第二张光盘到手了，我可以去伊格诺特和先知谈谈了。"
+		fullDiz="终于，第二张光盘到手了，|我可以去伊格诺特和先知谈谈了。"
 		isMainQuest="1">
 		<Map
 			name="r1m3" />
@@ -2120,7 +2120,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r2m2_HeadsHunterQuest"
 		briefDiz="女修道院长的任务。"
-		fullDiz="女修道院长有任务交给我。我必须猎杀异端和异教徒。"
+		fullDiz="女修道院长有任务交给我。|我必须猎杀异端和异教徒。"
 		isMainQuest="0">
 		<Map
 			name="r2m2" />
@@ -2143,7 +2143,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r2m2_KillMrPresidentAndOther"
 		briefDiz="杀死独立城镇联邦的领袖。"
-		fullDiz="我把独立城镇联邦的领袖诱入了圈套。现在我得把他们全干掉来结束这场战争。然后从 阿克塞尔 手里领赏。"
+		fullDiz="我把独立城镇联邦的领袖诱|入了圈套。现在我得把他们全|干掉来结束这场战争。|然后从 阿克塞尔 手里领赏。"
 		isMainQuest="1">
 		<Map
 			name="r2m2"
@@ -2153,7 +2153,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r2m2_MoveToZeonToAlex"
 		briefDiz="和 阿克塞尔 见面。"
-		fullDiz="终于等到了！我现在是战争英雄，很快就能见到 阿克塞尔 了！"
+		fullDiz="终于等到了！我现在是战争英雄，|很快就能见到 阿克塞尔 了！"
 		isMainQuest="1">
 		<Map
 			name="r2m2"
@@ -2163,7 +2163,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r2m2_OldDvigatel1_Quest"
 		briefDiz="送这堆破铜烂铁。"
-		fullDiz="送货是件轻松活儿。不算刺激，但报酬还不错。"
+		fullDiz="送货是件轻松活儿。|不算刺激，但报酬还不错。"
 		isMainQuest="0">
 		<Map
 			name="r2m2"
@@ -2173,7 +2173,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r2m2_OldDvigatel2_Quest"
 		briefDiz="把破烂送回马雷齐亚。"
-		fullDiz="事情开始变得有趣了。不知道我得把这堆老机器来回拖多少趟。"
+		fullDiz="事情开始变得有趣了。|不知道我得把这堆老机器来|回拖多少趟。"
 		isMainQuest="0">
 		<Map
 			name="r2m2"
@@ -2224,7 +2224,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r2m2_ReturnToMarecciaFromVillage"
 		briefDiz="回到马雷齐亚"
-		fullDiz="马雷齐亚肯定有新任务在等我。不知道我是不是离 阿克塞尔 越来越近了。"
+		fullDiz="马雷齐亚肯定有新任务在等我。|不知道我是不是离 阿克塞|尔 越来越近了。"
 		isMainQuest="1">
 		<Map
 			name="r2m2"
@@ -2234,7 +2234,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r2m2_ToKillAllSNGPeople"
 		briefDiz="摧毁叛军营地。"
-		fullDiz="我奉命杀光所有叛军。我不确定是否该这么做……这真是太残忍了……"
+		fullDiz="我奉命杀光所有叛军。|我不确定是否该这么做……|这真是太残忍了……"
 		isMainQuest="1">
 		<Map
 			name="r2m2"
@@ -2244,7 +2244,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r2m2_ToLisaToMonastir"
 		briefDiz="在修道院打听 爱丽丝 的下落。"
-		fullDiz="我听说修道院的修女们知道的比她们说的多。如果她们真的藏了 爱丽丝，这次她跑不掉了！"
+		fullDiz="我听说修道院的修女们知|道的比她们说的多。|如果她们真的藏了 爱丽丝，|这次她跑不掉了！"
 		isMainQuest="1">
 		<Map
 			name="r2m2"
@@ -2254,7 +2254,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r2m2_Znaki2Midgard_Quest"
 		briefDiz="在米德加德讲讲标记的事"
-		fullDiz="米德加德的科学家们肯定会对田地上出现的神秘痕迹感兴趣。运气好的话我还能因为通风报信得到奖赏。"
+		fullDiz="米德加德的科学家们肯定|会对田地上出现的神秘痕迹感兴趣。|运气好的话我还能因为通风|报信得到奖赏。"
 		isMainQuest="0">
 		<Map
 			name="r1m2"
@@ -2276,7 +2276,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r2m2_Znaki2_Quest"
 		briefDiz="去看看那片农田。"
-		fullDiz="我觉得那片农田值得一看。不知道是什么把人吓成那样。"
+		fullDiz="我觉得那片农田值得一看。|不知道是什么把人吓成那样。"
 		isMainQuest="0">
 		<Map
 			name="r2m2"
@@ -2286,7 +2286,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r3m1_ClearSanctuary"
 		briefDiz="净化圣所。"
-		fullDiz="要赢得德鲁伊的信任，我必须清除圣所里的怪物。奇怪，我一直以为怪物不存在。"
+		fullDiz="要赢得德鲁伊的信任，|我必须清除圣所里的怪物。|奇怪，我一直以为怪物不存在。"
 		isMainQuest="1">
 		<Map
 			name="r1m4"
@@ -2339,7 +2339,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r3m1_FindMoreNative"
 		briefDiz="联系和平的土著。"
-		fullDiz="我在这里遇到的第一批人可一点也不友好。得找些更和善的人。"
+		fullDiz="我在这里遇到的第一批人可|一点也不友好。得找些更和善的人。"
 		isMainQuest="1">
 		<Map
 			name="r3m1" />
@@ -2348,7 +2348,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r3m1_FindNative"
 		briefDiz="寻找当地人。"
-		fullDiz="这里总有人知道先知的下落。问题是去哪里找到他或她。"
+		fullDiz="这里总有人知道先知的下落。|问题是去哪里找到他或她。"
 		isMainQuest="1">
 		<Map
 			name="r1m4"
@@ -2361,7 +2361,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r3m1_FindNative_2"
 		briefDiz="寻找当地人。"
-		fullDiz="这里总有人知道先知的下落。问题是去哪里找到他或她。"
+		fullDiz="这里总有人知道先知的下落。|问题是去哪里找到他或她。"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -2374,7 +2374,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r3m1_GoToOracle"
 		briefDiz="去见先知。"
-		fullDiz="我现在知道去先知那里的路了。很快就能见到他。"
+		fullDiz="我现在知道去先知那里的路了。|很快就能见到他。"
 		isMainQuest="1">
 		<Map
 			name="r1m4"
@@ -2396,7 +2396,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r3m1_KnowAboutUluk"
 		briefDiz="调查乌卢克的事件。"
-		fullDiz="乌卢克已经有一阵子没有消息了。我得去调查一下那里出了什么事。"
+		fullDiz="乌卢克已经有一阵子没有消息了。|我得去调查一下那里出了什么事。"
 		isMainQuest="0">
 		<Map
 			name="r3m1" />
@@ -2423,7 +2423,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r3m1_LureMainDriud"
 		briefDiz="诱出大德鲁伊。"
-		fullDiz="铁之子计划推翻德鲁伊。他们需要除掉领袖。我答应把大德鲁伊引出城，作为交换他们告诉我先知的下落。"
+		fullDiz="铁之子计划推翻德鲁伊。|他们需要除掉领袖。|我答应把大德鲁伊引出城，|作为交换他们告诉我先知的下落。"
 		isMainQuest="1">
 		<Map
 			name="r1m4"
@@ -2467,7 +2467,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r3m1_RescueUlukCivil"
 		briefDiz="拯救乌卢克的德鲁伊。"
-		fullDiz="并非所有乌卢克的人都向铁之子屈服。我得帮助德鲁伊们逃离。"
+		fullDiz="并非所有乌卢克的人都向铁|之子屈服。我得帮助德鲁伊们逃离。"
 		isMainQuest="0">
 		<Map
 			name="r3m1" />
@@ -2502,7 +2502,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r3m1_TalkWithMainDruid"
 		briefDiz="和大德鲁伊谈谈。"
-		fullDiz="我听说住在塞斯的大德鲁伊知道先知的下落。"
+		fullDiz="我听说住在塞斯的大德鲁伊|知道先知的下落。"
 		isMainQuest="1">
 		<Map
 			name="r1m4"
@@ -2520,7 +2520,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r3m2_FindInfoAboutFather"
 		briefDiz="寻找关于父亲的信息。"
-		fullDiz="现在我有了两张光盘，也许终于能弄清父亲的命运了。希望日记里的内容能给我指路。"
+		fullDiz="现在我有了两张光盘，|也许终于能弄清父亲的命运了。|希望日记里的内容能给我指路。"
 		isMainQuest="1">
 		<Map
 			name="r1m1"
@@ -2558,7 +2558,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r3m2_MonterHead"
 		briefDiz="带回怪物的头。"
-		fullDiz="只要杀死住在遗迹旁的怪物，神谕信徒就会放我过去。作为证明，我得把它的头带回去。"
+		fullDiz="只要杀死住在遗迹旁的怪物，|神谕信徒就会放我过去。|作为证明，我得把它的头带回去。"
 		isMainQuest="1">
 		<Map
 			name="r3m1"
@@ -2572,7 +2572,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r3m2_OracleMemory"
 		briefDiz="帮助先知恢复记忆。"
-		fullDiz="先知能帮我，但我得先帮他恢复记忆。然后他就知道怎么解读我手里这张光盘了。"
+		fullDiz="先知能帮我，但我得先帮他恢|复记忆。然后他就知道怎么|解读我手里这张光盘了。"
 		isMainQuest="1">
 		<Map
 			name="r3m1"
@@ -2637,7 +2637,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r3m2_OvercomeOracleGuard"
 		briefDiz="通过神谕信徒的阻拦。"
-		fullDiz="一些奇怪的人在把守通往先知的路。我得想办法过去。"
+		fullDiz="一些奇怪的人在把守通往先知的路。|我得想办法过去。"
 		isMainQuest="1">
 		<Map
 			name="r3m1"
@@ -2651,7 +2651,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r3m2_ReadyToTravel"
 		briefDiz="升级卡车以穿越沙漠。"
-		fullDiz="要穿越沙漠，我的卡车得改进一下。图纸有了，现在需要有人来做。"
+		fullDiz="要穿越沙漠，我的卡车得改进一下。|图纸有了，现在需要有人来做。"
 		isMainQuest="1">
 		<Map
 			name="r1m2" />
@@ -2675,7 +2675,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r3m2_RevengeDestroyVillage"
 		briefDiz="为村庄被毁复仇。"
-		fullDiz="现在我有了两张光盘，终于能破译 伊万·戈 的日记了。希望里面的内容能帮我查出是谁摧毁了我的村庄，以及怎么找到他们！"
+		fullDiz="现在我有了两张光盘，|终于能破译 伊万·戈 的日记了。|希望里面的内容能帮我查出|是谁摧毁了我的村庄，|以及怎么找到他们！"
 		isMainQuest="1">
 		<Map
 			name="r1m1"
@@ -2709,7 +2709,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r3m2_RideToFatherRoomAfterOracul"
 		briefDiz="回到父亲的家。"
-		fullDiz="第二张光盘可能藏在父亲家里。也许上次我漏掉了。"
+		fullDiz="第二张光盘可能藏在父亲家里。|也许上次我漏掉了。"
 		isMainQuest="1">
 		<Map
 			name="r1m3"
@@ -2739,7 +2739,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r3m2_TalkWithBenAboutCarAfterOracul"
 		briefDiz="和 本 谈谈光盘的事。"
-		fullDiz="著名的探险家 本·斯罗特尔 也许知道第二张光盘在哪。"
+		fullDiz="著名的探险家 本·斯罗特|尔 也许知道第二张光盘在哪。"
 		isMainQuest="1">
 		<Map
 			name="r1m2"
@@ -2773,7 +2773,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r3m2_TalkWithLisa"
 		briefDiz="和 爱丽丝 谈谈"
-		fullDiz="先知说 爱丽丝 知道的比她说出来的多。不管怎样我得回到她那里，问问第二张光盘的事。"
+		fullDiz="先知说 爱丽丝 知道的比她说|出来的多。不管怎样我得|回到她那里，问问第二张光盘的事。"
 		isMainQuest="1">
 		<Map
 			name="r2m1"
@@ -2791,7 +2791,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r3m2_TwoMagicThing"
 		briefDiz="给先知带回两件神器。"
-		fullDiz="只有我从死者之城带回任意两件神器，先知才肯和我说话。"
+		fullDiz="只有我从死者之城带回任意|两件神器，先知才肯和我说话。"
 		isMainQuest="1">
 		<Map
 			name="r3m2" />
@@ -2876,7 +2876,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r4m1_FindMilitaryBase"
 		briefDiz="找到匪徒的巢穴。"
-		fullDiz="我只知道巢穴的大概位置。但我无论如何都会找到它。"
+		fullDiz="我只知道巢穴的大概位置。|但我无论如何都会找到它。"
 		isMainQuest="1">
 		<Map
 			name="r1m1"
@@ -2901,7 +2901,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r4m1_FindNative"
 		briefDiz="和当地人取得联系。"
-		fullDiz="首先我得找人给我指路。只希望这里真的有人住……"
+		fullDiz="首先我得找人给我指路。|只希望这里真的有人住……"
 		isMainQuest="1">
 		<Map
 			name="r1m1"
@@ -2914,7 +2914,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r4m1_FindResponsiblePeople"
 		briefDiz="找到明白人。"
-		fullDiz="这里住的人真够奇怪的。我得找个明白点的人来回答我的问题。"
+		fullDiz="这里住的人真够奇怪的。|我得找个明白点的人来回|答我的问题。"
 		isMainQuest="1">
 		<Map
 			name="r1m1"
@@ -2927,7 +2927,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r4m1_GotoAivenGo"
 		briefDiz="跟踪 伊万·戈。"
-		fullDiz="伊万 走了这条路。我只知道方向。但我会找到他的，或者找到他的遗骸……"
+		fullDiz="伊万 走了这条路。我只知道方向。|但我会找到他的，|或者找到他的遗骸……"
 		isMainQuest="1">
 		<Map
 			name="r1m1"
@@ -2988,7 +2988,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r4m1_Kef_NeedOil"
 		briefDiz="凯夫需要石油。"
-		fullDiz="凯夫的人缺少石油。没有石油，机器就转不起来，车辆也无法巡逻保护居民。"
+		fullDiz="凯夫的人缺少石油。|没有石油，机器就转不起来，|车辆也无法巡逻保护居民。"
 		isMainQuest="1">
 		<Map
 			name="r1m1"
@@ -3024,7 +3024,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r4m1_RescueBuharsCivilian"
 		briefDiz="拯救布哈拉人。"
-		fullDiz="我希望帮了这些人后，他们会告诉我去哪里找我要的东西。再说，我也不能眼睁睁看着他们送命！"
+		fullDiz="我希望帮了这些人后，|他们会告诉我去哪里找我要的东西。|再说，我也不能眼睁睁|看着他们送命！"
 		isMainQuest="1">
 		<Map
 			name="r1m1"
@@ -3037,7 +3037,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r4m2_DestroyPlate"
 		briefDiz="摧毁污染源。"
-		fullDiz="外星飞船就是差点让地球生命灭绝的污染源。为了幸存者，必须摧毁它。"
+		fullDiz="外星飞船就是差点让地球生|命灭绝的污染源。|为了幸存者，必须摧毁它。"
 		isMainQuest="1">
 		<Map
 			name="r1m1" />
@@ -3073,7 +3073,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r4m2_FightWithCrazy"
 		briefDiz="和疯子们战斗。"
-		fullDiz="道路被一个满是暴徒的军事基地堵住了。打一仗是唯一的出路。"
+		fullDiz="道路被一个满是暴徒的军事|基地堵住了。打一仗是唯一的出路。"
 		isMainQuest="1">
 		<Map
 			name="r4m1"
@@ -3087,7 +3087,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r4m2_InvestigationPlate"
 		briefDiz="调查那艘飞船。"
-		fullDiz="科学家提到了外星飞船。我得亲眼去看看！"
+		fullDiz="科学家提到了外星飞船。|我得亲眼去看看！"
 		isMainQuest="1">
 		<Map
 			name="r4m1"
@@ -3101,7 +3101,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r4m2_NeutralizePlate"
 		briefDiz="消除污染源。"
-		fullDiz="外星飞船就是差点让地球生命灭绝的污染源。为了幸存者，必须让它停下来。这件事一定有和平解决的办法。"
+		fullDiz="外星飞船就是差点让地球生|命灭绝的污染源。|为了幸存者，必须让它停下来。|这件事一定有和平解决的办法。"
 		isMainQuest="1">
 		<Map
 			name="r1m1" />
@@ -3137,7 +3137,7 @@ isMainQuest="0" />
 	<QuestInfo
 		questName="r4m2_TalkWithScientific"
 		briefDiz="和科学家谈谈。"
-		fullDiz="这些人救了我的命。我想他们的领袖想要我做点什么作为回报。"
+		fullDiz="这些人救了我的命。|我想他们的领袖想要我做点|什么作为回报。"
 		isMainQuest="1">
 		<Map
 			name="r4m1"

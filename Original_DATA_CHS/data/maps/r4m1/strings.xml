@@ -3,21 +3,21 @@
 	<string
 		id="1"
 		modelName="mask_hero"
-		value="|我穿越了死亡沙漠！而在这里我依然能感觉到人类的踪迹。我的路线没错！"
+		value="|我穿越了死亡沙漠！|而在这里我依然能感觉到人|类的踪迹。我的路线没错！"
 		sound="data\sounds\Speech\r4m1\r4m1_1_hero.ogg"
 		time="1" />
 
 	<string
 		id="2"
 		modelName="mask_hero"
-		value="|当务之急，我得修一修卡车，补一补弹药。附近肯定有个定居点。"
+		value="|当务之急，我得修一修卡车，|补一补弹药。附近肯定有个定居点。"
 		sound="data\sounds\Speech\r4m1\r4m1_2_hero.ogg"
 		time="1" />
 
 	<string
 		id="3"
 		modelName="mask_hero"
-		value="|油库到了。现在只要把油装上车，然后返程。这活儿应该没什么难的。"
+		value="|油库到了。现在只要把油装上车，|然后返程。这活儿应该没什么难的。"
 		sound="data\sounds\Speech\r4m1\r4m1_3_hero.ogg"
 		time="1" />
 
@@ -60,14 +60,14 @@
 	<string
 		id="10"
 		modelName="mask_hero"
-		value="|我做梦都想要一辆挂车！梦想成真了！"
+		value="|我做梦都想要一辆挂车！|梦想成真了！"
 		sound="data\sounds\Speech\r4m1\r4m1_10_hero.ogg"
 		time="5" />
 
 	<string
 		id="11"
 		modelName="mask_hero"
-		value="|我的老伙计卡车，我都开始担心你了。挂车见鬼去吧！我的车这样就好。"
+		value="|我的老伙计卡车，|我都开始担心你了。|挂车见鬼去吧！我的车这样就好。"
 		sound="data\sounds\Speech\r4m1\r4m1_11_hero.ogg"
 		time="5" />
 
@@ -84,14 +84,14 @@
 	<string
 		id="13"
 		modelName="mask_hero"
-		value="|能帮上忙是我的荣幸。祝你们越洋之旅一路平安！"
+		value="|能帮上忙是我的荣幸。|祝你们越洋之旅一路平安！"
 		sound="data\sounds\Speech\r4m1\r4m1_13_hero.ogg"
 		time="5" />
 
 	<string
 		id="14"
 		modelName="mask_hero"
-		value="|把爱丽丝也带上吧。她看起来状态很不对。"
+		value="|把爱丽丝也带上吧。|她看起来状态很不对。"
 		sound="data\sounds\Speech\r4m1\r4m1_14_hero.ogg"
 		time="5" />
 
@@ -101,14 +101,14 @@
 		modelSkin="0"
 		modelCfg="135"
 		modelSlot="1"
-		value="老人|还有一件事。现在我对你了解多了，可以跟你说说你要找的那个人了。多年前伊万·戈来过我们村子。他问了许多问题，然后就往东去了。沙漠里最要命的地带就在那个方向。求你了，跟我们走吧。别去追他，那边只有死亡在等着你……"
+		value="老人|还有一件事。现在我对你了解多了，|可以跟你说说你要找的那个人了。|多年前伊万·戈来过我们村子。|他问了许多问题，然后就往东去了。|沙漠里最要命的地带就在那个方向。|求你了，跟我们走吧。|别去追他，那边只有死|亡在等着你……"
 		sound="data\sounds\Speech\r4m1\r4m1_15_oldman.ogg"
 		time="5" />
 
 	<string
 		id="16"
 		modelName="mask_hero"
-		value="|真是见鬼了！什么东西把他吓破了胆……可怜的家伙最后彻底疯了。|这下我回凯夫怎么说？"
+		value="|真是见鬼了！什么东西把他吓|破了胆……可怜的家伙最后|彻底疯了。|这下我回凯夫怎么说？"
 		sound="data\sounds\Speech\r4m1\r4m1_16_hero.ogg"
 		time="5" />
 
@@ -123,7 +123,7 @@
 		id="18"
 		modelName="mask_lisa"
 		modelSlot="1"
-		value="爱丽丝|我感觉不对劲……自从到了这片沙漠，我身上就有些不对。"
+		value="爱丽丝|我感觉不对劲……|自从到了这片沙漠，|我身上就有些不对。"
 		sound="data\sounds\Speech\r4m1\r4m1_18_alice.ogg"
 		time="5" />
 
@@ -138,14 +138,14 @@
 		id="20"
 		modelName="mask_lisa"
 		modelSlot="1"
-		value="爱丽丝|都怪你！是你把我拽到这儿来的，现在却要眼睁睁看我死！"
+		value="爱丽丝|都怪你！是你把我拽到这儿来的，|现在却要眼睁睁看我死！"
 		sound="data\sounds\Speech\r4m1\r4m1_20_alice.ogg"
 		time="5" />
 
 	<string
 		id="21"
 		modelName="mask_hero"
-		value="|[她终究还是撑不住了。真是怕什么来什么！]爱丽丝，冷静。一切都好。看着我。我从来没有想过要伤害你。"
+		value="|[她终究还是撑不住了。|真是怕什么来什么！|]爱丽丝，冷静。|一切都好。看着我。|我从来没有想过要伤害你。"
 		sound="data\sounds\Speech\r4m1\r4m1_21_hero.ogg"
 		time="1" />
 
@@ -153,7 +153,7 @@
 		id="22"
 		modelName="mask_lisa"
 		modelSlot="1"
-		value="爱丽丝|对不起……我明白……我会尽量控制住自己……都怪这片该死的沙漠！"
+		value="爱丽丝|对不起……我明白……|我会尽量控制住自己……|都怪这片该死的沙漠！"
 		sound="data\sounds\Speech\r4m1\r4m1_22_alice.ogg"
 		time="5" />
 
@@ -172,19 +172,19 @@
 		id="8803"
 		modelName="mask_hero"
 		sound="data\sounds\Speech\r3m1\r3m1_8803_hero.ogg"
-		value="这地方透着股怪劲儿。我不想去那儿。" />
+		value="这地方透着股怪劲儿。|我不想去那儿。" />
 
 	<string
 		id="8804"
 		modelName="mask_hero"
-		value="看来召唤渡船的装置坏了。也可能是哪个野蛮人弄坏了当地的机器。不管怎样，我只能开车走陆路了。"
+		value="看来召唤渡船的装置坏了。|也可能是哪个野蛮人弄坏了当|地的机器。不管怎样，|我只能开车走陆路了。"
 		numButtons="1"
 		 />
 
 
 	<string
 		id="8901"
-		value="你没能保护好村民。现在你永远无法达成目标了。" />
+		value="你没能保护好村民。|现在你永远无法达成目标了。" />
 
 	<string
 		id="8902"
