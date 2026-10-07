@@ -1994,17 +1994,49 @@ static DWORD WINAPI SetupThread(LPVOID) {
 //     （0x68444E `jz loc_684484` 提前跳走），实测偶发不执行
 //     ⇒ 抓到的 FontManager 偶发为 0 ⇒ 空白字。
 //     GfxServer 本身则每次 init 必到。
+// ★★★ 路线 3（2026-10-07）：GfxServer 改从引擎全局直读 ★★★
+//   数据源 = hta.exe 的 dword_A13CC0（RVA 0xA13CC0）。
+//   ★ 为什么不再靠 hook ★
+//     sub_6843F0 只在 0x5aa061 被调一次，位置在 init 的很前半段；
+//     而冻结门在 0x5AA388（同函数尾部，中间还隔着十几个子系统初始化）。
+//     注入线程若在此窗口内才写完 hook，那一次调用已经错过
+//     ⇒ hook 报「已安装」但 g_hookFontMgr 恒为 0 ⇒ 空白字。
+//   ★ 为什么直读一定有效（静态可证，非推测）★
+//     写者只有两处（全镜像字节扫描穷举）：
+//       A3 C0 3C A1 00        @0x594281  sub_594130  → 赋值
+//       C7 05 C0 3C A1 00 ... @0x593D55  sub_593CD0  → 清零
+//     赋值路径：sub_594130 ← sub_5AA440 @0x5aa464 ← sub_414DF0 @0x414dfd
+//               ← WinMain @0x414cd9
+//     冻结门在 sub_5A9040（WinMain @0x414d1c 才调用），严格晚于赋值。
+//     清零路径：sub_593CD0 三个调用点中，
+//       0x5AA27D —— 其所在块 0x5aa27a 是 0x5aa26f 的「jnz 不取」分支；
+//                   而门所在块 0x5aa2a3 的唯一前驱就是那条 jnz。
+//                   ⇒ 门触发 ⟹ jnz 取了 ⟹ 从未执行 0x5aa27a ⟹ 未清零。
+//       0x5A0459 —— 在 sub_59FE60，仅 WinMain @0x414d71 调用，
+//                   晚于 sub_5A9040 返回。
+//       0x59C183 —— sub_59C180 的 xrefs_to = 0，死代码。
+//     ⇒ 门触发时 dword_A13CC0 必然非 0。
+//   hook 保留，仅作交叉校验与兜底。
 static int CollectFontsFromManager(std::vector<FontRec>& out) {
-    void* gfx = (void*)(uintptr_t)g_hookFontMgr;
+    void* gfxHook = (void*)(uintptr_t)g_hookFontMgr;
+    void* gfx = nullptr;
+    // 直读引擎全局（g_modBase 非 0 才是可信基址）
+    if (g_modBase)
+        gfx = *(void**)((uint8_t*)g_modBase + (0xA13CC0 - 0x400000));
+    if (!gfx) gfx = gfxHook;                 // 全局为空才退回 hook
+    Logf("pathd: [装配] GfxServer 全局 dword_A13CC0=%p，hook=%p%s",
+         gfx, gfxHook,
+         (gfx && gfxHook && gfx != gfxHook) ? "（★不一致，以全局为准★）" : "");
+
     void* mgr = gfx ? *(void**)((uint8_t*)gfx + 0x4A4) : nullptr;
     if (!mgr) {
-        // 兜底：若入口 hook 没抓到，退回旧推导（实测 uiCore+0x4A4 恒为 0，
+        // 兜底：若两条路都没拿到，退回旧推导（实测 uiCore+0x4A4 恒为 0，
         // 这里只是保留最后一条路，不指望它）
         void* uiCore = g_fontMgr;
         if (uiCore) mgr = *(void**)((uint8_t*)uiCore + 0x4A4);
         if (!mgr) {
-            Logf("pathd: [装配] FontManager 不可得（GfxServer=%p，+0x4A4=0；"
-                 "入口 hook 未触发？）", gfx);
+            Logf("pathd: [装配] FontManager 不可得（全局=%p hook=%p，+0x4A4=0）",
+                 gfx, gfxHook);
             return 0;
         }
         Logf("pathd: [装配] 用 uiCore+0x4A4 兜底得到 FontManager=%p", mgr);
@@ -2650,6 +2682,10 @@ static void* BuildFontLoaderCave(uintptr_t callTarget) {
 static void* g_gfxCave = nullptr;
 
 // 在 sub_6843F0 入口安装「抓 GfxServer」hook。返回是否成功。
+// ★ 路线 3 起：本 hook 已降级为「交叉校验 + 兜底」，不再是唯一数据源。★
+//   权威数据源是引擎全局 dword_A13CC0（见 CollectFontsFromManager）。
+//   保留它有两个用处：1) 与全局对照，能立刻暴露偏移/版本错配；
+//   2) 万一全局被意外清零，还有一条后路。
 static bool InstallGfxServerHook(uintptr_t modBase) {
     const uintptr_t at = modBase + (0x6843F0 - 0x400000);
     const uintptr_t back = at + 6;               // 重放 6 字节后继续的位置
@@ -3646,11 +3682,13 @@ bool Init(HMODULE game, const char* pkgPath) {
         FatalInstallFailure("无法在引擎初始化出口安装同步挂钩"
                             "（汉化必须在此刻完成，否则会出现乱码或叠字）");
     }
-    // ★ GfxServer hook 装不上 = 冻结门里拿不到 FontManager ⇒ 同样只能退出
-    //   （实测：FontManager 为 0 时「合计收集到 0 个 Font」= 空白字）
+    // ★ 路线 3：GfxServer 已改为直读引擎全局 dword_A13CC0。
+    //   门触发 ⟹ 全局必然非 0（CFG 静态证明，见 CollectFontsFromManager 上方注释），
+    //   所以入口 hook 装不上**不再致命**，仅降级为交叉校验。
+    //   （旧行为：hook 装不上就弹框退出——那是把「唯一的抓取手段」当成了必需。）
     if (!gfxHooked) {
-        FatalInstallFailure("无法在引擎 UI 构建入口挂钩"
-                            "（将无法读取已加载的字体，汉化会出现空白字）");
+        Logf("pathd: [路线3] ★GfxServer hook 未装上——不影响★ "
+             "已改为直读全局 dword_A13CC0（门触发时必然有效）");
     }
 
     // 二分定位开关（临时调试用）
