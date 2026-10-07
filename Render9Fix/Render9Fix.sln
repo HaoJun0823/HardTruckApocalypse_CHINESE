@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.37530.8
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Render9Fix", "Render9Fix.vcxproj", "{EF816D3F-2229-4A73-8642-94FD71AF181C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF816D3F-2229-4A73-8642-94FD71AF181C}.Release|x86.ActiveCfg = Release|Win32
+		{EF816D3F-2229-4A73-8642-94FD71AF181C}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F7BE918D-3F92-4549-9A3E-BB781FB60D20}
+	EndGlobalSection
+EndGlobal
