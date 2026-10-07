@@ -1984,17 +1984,32 @@ static DWORD WINAPI SetupThread(LPVOID) {
 //     hook 入口的 ecx 就是它，由 cave 存进 g_hookFontMgr。
 //     布局：+4 = begin, +8 = end（sub_8BA3A0 实证）。
 //   ★ 不再用 g_fontMgr+4 ★ —— 那个存的是 uiCore，不是 FontManager。
+// ★★★ 路线 2（2026-10-07）：g_hookFontMgr 现在存的是 **GfxServer** ★★★
+//   它由 sub_6843F0 入口 hook 抓来（ecx = this = GfxServer，无条件执行）。
+//   而 FontManager = GfxServer + 0x4A4 —— IDA 0x684E48 `mov ecx,[edx+4A4h]` 实证。
+//   FontManager 自身布局：+4 = begin, +8 = end（sub_8BA3A0 实证）。
+//
+//   ★ 为什么不能直接抓 FontManager（路线 1 的教训）★
+//     sub_8BA480 只在 sub_6843F0 的 schema 解析成功时才被调用
+//     （0x68444E `jz loc_684484` 提前跳走），实测偶发不执行
+//     ⇒ 抓到的 FontManager 偶发为 0 ⇒ 空白字。
+//     GfxServer 本身则每次 init 必到。
 static int CollectFontsFromManager(std::vector<FontRec>& out) {
-    void* mgr = (void*)(uintptr_t)g_hookFontMgr;
+    void* gfx = (void*)(uintptr_t)g_hookFontMgr;
+    void* mgr = gfx ? *(void**)((uint8_t*)gfx + 0x4A4) : nullptr;
     if (!mgr) {
-        // 兜底：若 hook 没抓到（比如加载器 hook 未安装），退回旧路径的推导
+        // 兜底：若入口 hook 没抓到，退回旧推导（实测 uiCore+0x4A4 恒为 0，
+        // 这里只是保留最后一条路，不指望它）
         void* uiCore = g_fontMgr;
         if (uiCore) mgr = *(void**)((uint8_t*)uiCore + 0x4A4);
         if (!mgr) {
-            Logf("pathd: [装配] FontManager 不可得（g_hookFontMgr=0 且 uiCore+0x4A4=0）");
+            Logf("pathd: [装配] FontManager 不可得（GfxServer=%p，+0x4A4=0；"
+                 "入口 hook 未触发？）", gfx);
             return 0;
         }
         Logf("pathd: [装配] 用 uiCore+0x4A4 兜底得到 FontManager=%p", mgr);
+    } else {
+        Logf("pathd: [装配] FontManager=%p 直接枚举（GfxServer=%p + 0x4A4）", mgr, gfx);
     }
     Vec3* vec = (Vec3*)((uint8_t*)mgr + 4);
     if (!vec->begin || !vec->end || vec->end < vec->begin) {
@@ -2455,7 +2470,7 @@ static volatile LONG g_initDepsReady = 0;
 // ★ 前置声明（两者定义都在本函数之后）★
 static bool InstallPatches();
 static void FatalInstallFailure(const char* reason);
-static bool InstallFontLoaderHookEarly(uintptr_t modBase);
+static bool InstallGfxServerHook(uintptr_t modBase);
 
 extern "C" void __cdecl PathD_InitExitGate() {
     if (g_gateDone) return;                  // 幂等（理论上只会命中一次）
@@ -2558,35 +2573,17 @@ static void* g_fontHookCave = nullptr;
 // 生成 cave 的机器码。返回 cave 地址（失败返回 nullptr）。
 static void* BuildFontLoaderCave(uintptr_t callTarget) {
     // cave 布局（手工汇编，逐字节可控）：
-    //   89 0D <imm32>         mov [g_hookFontMgr], ecx   ; ★ 抓住 FontManager ★
     //   B8 <imm32>            mov eax, callTarget
     //   FF D0                 call eax                  ; 重放原 call
     //   83 E0 01              and eax, 1
     //   C3                    ret
     //
-    //   ★ 第一行至关重要 ★
-    //     hook 点是 sub_8BA480 的入口，此时 ecx 就是 FontManager
-    //     （调用方 sub_6843F0 在 0x684E48 `mov ecx,[edx+4A4h]` 传入）。
-    //     必须在**任何 call 之前**保存它 —— 之后 ecx 会被调用破坏。
-    //
-    // ★★ 2026-10-07 路线 1：这里**不再调用 PathD_HookAssemble** ★★
-    //   职责解耦：
-    //     本 hook 只负责「抓到 FontManager 指针」这一件事，
-    //     装配时机**完全交给 Application::init 出口的冻结门**。
-    //   为什么必须解耦（实测 空白字失败.log）：
-    //     冻结门触发时引擎还没画过一帧 ⇒ g_seenFonts 锚点为空
-    //     ⇒ 堆扫描路径直接 return ⇒ FontManager 拿不到时**一个字体都收不到**
-    //     ⇒ 「合计收集到 0 个 Font」→「空白字」。
-    //     而 FontManager 只有这个 hook 能抓到（uiCore+0x4A4 实测恒为 0），
-    //     所以 hook 必须留着，装配却必须挪走。
-    //
-    //   代价：cave 不再调 C++ 函数 ⇒ 不需要 pushad/popad，
-    //         也不怕与被冻结线程争 CRT 锁。
+    // ★★ 2026-10-07 路线 2：这里**只重放原指令，不再抓任何指针** ★★
+    //   抓 FontManager 的职责已移到 sub_6843F0 入口（InstallGfxServerHook），
+    //   因为 sub_8BA480 只在 schema 解析成功时才被调用（实测偶发不执行）。
+    //   保留这个 hook 只是为了不再动它 —— 它现在是纯 trampoline。
     uint8_t code[48];
     size_t  n = 0;
-    // mov dword ptr [g_hookFontMgr], ecx  =  89 0D <disp32>
-    code[n++] = 0x89; code[n++] = 0x0D;
-    *(uint32_t*)(code + n) = (uint32_t)(uintptr_t)&g_hookFontMgr; n += 4;
     // mov eax, callTarget
     code[n++] = 0xB8;
     *(uint32_t*)(code + n) = (uint32_t)callTarget; n += 4;
@@ -2602,9 +2599,110 @@ static void* BuildFontLoaderCave(uintptr_t callTarget) {
     }
     memcpy(cave, code, n);
     FlushInstructionCache(GetCurrentProcess(), cave, n);
-    Logf("pathd: [字体加载器hook] cave @0x%08X（%u 字节，首条为保存 ecx=FontManager）",
+    Logf("pathd: [字体加载器hook] cave @0x%08X（%u 字节，仅重放原 call + 存 FontManager）",
          (unsigned)(uintptr_t)cave, (unsigned)n);
     return cave;
+}
+
+// ═══════════════════════════════════════════════════════════════════════════
+// ★★★ 路线 2：FontManager 抓取点前移到 sub_6843F0 入口（2026-10-07）★★★
+// ═══════════════════════════════════════════════════════════════════════════
+//
+// ── 为什么必须换点（实测 103904.log 失败 / 103918.log 成功）───────────
+//   两次的 hook 装好→冻结门接管间隔几乎相同（3.36s vs 3.17s），
+//   结果却一个 `FontManager=130A133C`、一个 `g_hookFontMgr=0`。
+//   ⇒ 不是我们的初始化慢，是 **sub_8BA480 有时根本不执行**。
+//
+// ── IDA 实证的根因 ────────────────────────────────────────────────────
+//   sub_6843F0 是 **schema 驱动的 UI 构建**，开头：
+//       0x684401  mov ecx,[eax]          ; eax = arg_0 = schema 名
+//       0x684406  cmp ecx,edi / jz ...   ; 空名 → 提前返回
+//       0x684441  call sub_425DF0        ; ★ 在 schema 资源里查控件
+//       0x684446  mov esi,eax
+//       0x68444A  mov [var_4C],esi
+//       0x68444E  jz  loc_684484         ; ★★ 查不到 → 不往下走 ★★
+//   而抓 FontManager 的那句在很后面：
+//       0x684E44  mov edx,[var_5C]       ; edx = GfxServer
+//       0x684E48  mov ecx,[edx+4A4h]     ; ★ ecx = FontManager
+//       0x684E4E  call sub_8BA480        ; ← 旧 hook 点
+//   schema 解析失败 ⇒ 永远走不到 0x684E4E ⇒ 旧 hook 永不触发 ⇒ FontManager 丢失。
+//
+// ── 新点为什么必定成功 ────────────────────────────────────────────────
+//   sub_6843F0 的**入口**：
+//       0x6843F0  81 EC 8C 00 00 00     sub esp, 8Ch
+//       0x6843FF  8B D9                 mov ebx, ecx     ← ecx = GfxServer
+//   它由 sub_58DC50 无条件调用（Application::init 必经），入口处 ecx 已在手上，
+//   且 `FontManager = GfxServer + 0x4A4` 在**任何分支之前**就成立。
+//
+// ── 入口字节与覆盖窗口 ────────────────────────────────────────────────
+//   实测字节：
+//       0x6843F0  81 EC 8C 00 00 00   (6B) sub esp,8Ch
+//       0x6843F6  8B 84 24 90 00 00 00 (7B)
+//   首条指令 6 字节 > 5 ⇒ 5 字节窗口会劈开它，
+//   所以覆盖 **6 字节**（E9 rel32 + 1 字节 NOP），cave 原样重放那 6 字节。
+//
+// ── cave 布局 ────────────────────────────────────────────────────────
+//   81 EC 8C 00 00 00        sub esp, 8Ch        ; ★ 原样重放被覆盖的指令
+//   89 0D <imm32>            mov [g_gfxServer],ecx; ★ 抓 GfxServer（this）
+//   E9 <rel32>               jmp 0x6843F6         ; 继续原函数
+//   —— 只做一次「存指针」，不调任何 C++ 函数，无 CRT 锁风险。
+
+static void* g_gfxCave = nullptr;
+
+// 在 sub_6843F0 入口安装「抓 GfxServer」hook。返回是否成功。
+static bool InstallGfxServerHook(uintptr_t modBase) {
+    const uintptr_t at = modBase + (0x6843F0 - 0x400000);
+    const uintptr_t back = at + 6;               // 重放 6 字节后继续的位置
+
+    // ★ 逐字节校验：必须是 `81 EC 8C 00 00 00` ★
+    //   只认这一条，不盲写 —— 写错会把 UI 构建变成崩溃。
+    static const uint8_t kWant[6] = { 0x81, 0xEC, 0x8C, 0x00, 0x00, 0x00 };
+    for (int i = 0; i < 6; ++i) {
+        if (rd8(at + i) != kWant[i]) {
+            Logf("pathd: [GfxServer hook] ★0x%08X 字节 %s ≠ 81 EC 8C 00 00 00，拒绝★",
+                 (unsigned)at, HexDump(at, 6).c_str());
+            return false;
+        }
+    }
+
+    void* cave = VirtualAlloc(nullptr, 64, MEM_COMMIT | MEM_RESERVE,
+                              PAGE_EXECUTE_READWRITE);
+    if (!cave) { Logf("pathd: [GfxServer hook] VirtualAlloc 失败"); return nullptr; }
+    uint8_t* c = (uint8_t*)cave;
+    size_t n = 0;
+    c[n++] = 0x81; c[n++] = 0xEC; c[n++] = 0x8C; c[n++] = 0x00;
+    c[n++] = 0x00; c[n++] = 0x00;                 // sub esp, 8Ch（原样重放）
+    c[n++] = 0x89; c[n++] = 0x0D;                // mov [g_gfxServer], ecx
+    *(uint32_t*)(c + n) = (uint32_t)(uintptr_t)&g_hookFontMgr; n += 4;
+    c[n++] = 0xE9;                               // jmp back
+    *(uint32_t*)(c + n) = 0;                     // 回填
+    const size_t relOff = n; n += 4;
+    *(uint32_t*)(c + relOff) =
+        (uint32_t)(int32_t)((int64_t)back - (int64_t)(c + n));
+    FlushInstructionCache(GetCurrentProcess(), cave, n);
+
+    g_gfxCave = cave;
+
+    // 写 6 字节：E9 rel32 + NOP
+    int64_t rel = (int64_t)cave - (int64_t)(at + 5);
+    if (rel > 0x7FFFFFFFLL || rel < -0x80000000LL) {
+        Logf("pathd: [GfxServer hook] ★cave 0x%08X 超 rel32 范围，拒绝★",
+             (unsigned)(uintptr_t)cave);
+        VirtualFree(cave, 0, MEM_RELEASE);
+        g_gfxCave = nullptr;
+        return false;
+    }
+    uint8_t patch[6] = { 0xE9, 0, 0, 0, 0, 0x90 };
+    *(int32_t*)(patch + 1) = (int32_t)rel;
+    if (!WriteBlockSafe(at, patch, 6, "GfxServer hook")) {
+        VirtualFree(cave, 0, MEM_RELEASE);
+        g_gfxCave = nullptr;
+        return false;
+    }
+    Logf("pathd: [GfxServer hook] ★已安装★ 0x%08X → cave 0x%08X"
+         "（重放 sub esp,8Ch 后抓 ecx=GfxServer）",
+         (unsigned)at, (unsigned)(uintptr_t)cave);
+    return true;
 }
 
 // ═══════════════════════════════════════════════════════════════════════════
@@ -3384,7 +3482,8 @@ bool InstallPatches() {
     //     现在改由 Application::init 出口的冻结门接管（时机 100% 确定），
     //     所以这里不再安装字体加载器 hook。
     //     保留 InstallFontLoaderHook / BuildFontLoaderCave 代码以便回退。
-    Logf("pathd: [路线1] 字体加载器 hook 仅用于抓 FontManager，装配时机交给冻结门");
+    Logf("pathd: [路线2] GfxServer hook 抓 GfxServer（FontManager = GfxServer+0x4A4），"
+         "装配时机交给冻结门");
 
     // ★ "补丁安装完成"这条日志已移到函数末尾（与 g_patchState 置位放在一起）★
 
@@ -3513,34 +3612,33 @@ bool Init(HMODULE game, const char* pkgPath) {
 
     // ★★★ 第一件事：装两个 hook（都只要几微秒，不做任何扫描）★★★���
     //
-    //   (1) 字体加载器 hook @0x8BA480 —— **只为抓 FontManager**
-    //       路线 1（2026-10-07）：职责解耦。
-    //       它不再触发装配，只在 cave 里存一句
-    //           mov [g_hookFontMgr], ecx
-    //       为什么必须有它（实测 空白字失败.log）：
-    //           冻结门触发时引擎还没画过一帧 ⇒ 堆扫描锚点为空 ⇒
-    //           FontManager 是唯一能枚举出字体的来源，而 uiCore+0x4A4
-    //           实测恒为 0，只有这个 hook 抓得到。
+    //   (1) GfxServer hook @0x6843F0 —— **只为抓 GfxServer（⇒ FontManager）**
+    //       路线 2（2026-10-07）。sub_6843F0 是 UI 构建总入口，
+    //       由 sub_58DC50 无条件调用，入口 ecx 就是 GfxServer，
+    //       而 FontManager = GfxServer + 0x4A4（IDA 0x684E48 实证）。
+    //       为什么不抓 sub_8BA480（FontManager 本尊）：
+    //         它只在 schema 解析成功时才被调用（0x68444E `jz` 提前跳走），
+    //         实测偶发不执行 ⇒ 抓到的 FontManager 偶发为 0 ⇒ 空白字。
     //
     //   (2) Application::init 出口冻结门 @0x5AA388 —— 决定装配时机
     //       方案 F：把装配从「引擎何时调加载器」这个不可控竞争里拿出来。
     //
     //   两者都必须在所有慢活之前装好：引擎随时可能触发其中任何一个。
     DWORD tEarly0 = GetTickCount();
-    bool loaderHooked = false, gateHooked = false;
+    bool gfxHooked = false, gateHooked = false;
     if (!g_skipPatch) {
-        __try { loaderHooked = InstallFontLoaderHookEarly((uintptr_t)game); }
+        __try { gfxHooked = InstallGfxServerHook((uintptr_t)game); }
         __except (EXCEPTION_EXECUTE_HANDLER) {
-            Logf("pathd: [早期hook] 异常 0x%08X", (unsigned)GetExceptionCode());
+            Logf("pathd: [GfxServer hook] 安装异常 0x%08X", (unsigned)GetExceptionCode());
         }
         __try { gateHooked = InstallInitExitHook((uintptr_t)game); }
         __except (EXCEPTION_EXECUTE_HANDLER) {
             Logf("pathd: [冻结门] 安装异常 0x%08X", (unsigned)GetExceptionCode());
         }
     }
-    g_loaderHooked = loaderHooked;
-    Logf("pathd: === 早期注入结束：字体hook=%s 冻结门=%s，耗时 %u ms ===",
-         loaderHooked ? "已装" : "未装", gateHooked ? "已装" : "未装",
+    g_loaderHooked = gfxHooked;
+    Logf("pathd: === 早期注入结束：GfxServer hook=%s 冻结门=%s，耗时 %u ms ===",
+         gfxHooked ? "已装" : "未装", gateHooked ? "已装" : "未装",
          (unsigned)(GetTickCount() - tEarly0));
 
     // ★ 冻结门装不上 = 完全无法掌控装配时机 ⇒ 弹框退出（不静默降级）
@@ -3548,10 +3646,10 @@ bool Init(HMODULE game, const char* pkgPath) {
         FatalInstallFailure("无法在引擎初始化出口安装同步挂钩"
                             "（汉化必须在此刻完成，否则会出现乱码或叠字）");
     }
-    // ★ 字体 hook 装不上 = 冻结门里拿不到 FontManager ⇒ 同样只能退出
+    // ★ GfxServer hook 装不上 = 冻结门里拿不到 FontManager ⇒ 同样只能退出
     //   （实测：FontManager 为 0 时「合计收集到 0 个 Font」= 空白字）
-    if (!loaderHooked) {
-        FatalInstallFailure("无法在引擎字体加载函数上挂钩"
+    if (!gfxHooked) {
+        FatalInstallFailure("无法在引擎 UI 构建入口挂钩"
                             "（将无法读取已加载的字体，汉化会出现空白字）");
     }
 
