@@ -2513,13 +2513,32 @@ extern "C" void __cdecl PathD_InitExitGate() {
 
     // ── 前置条件 1：Init() 的依赖准备已完成 ──────────────────────────
     //   引擎跑完 init 通常只要 1.7~4 秒，而 Init() 要 3.4 秒 ——
-    //   **引擎可能先到**。此时依赖还没备齐，贸然打补丁就是半成品。
+    //   **引擎可能先到**。
+    //
+    // ★★ 2026-10-07 修正：这里必须"等"，不能"立刻放弃" ★★
+    //   实测失败日志（hta_chs.20261007_210533.log）：
+    //       38.051  冻结门接管
+    //       38.095  ★Init 依赖尚未就绪，放弃★     ← 旧版在这里直接弹框退出
+    //       38.880  [方案B] 依赖已就绪             ← 只晚了 0.83 秒！
+    //   而"门"的整个意义就是**让引擎主线程停在这里**（见本函数上方注释），
+    //   依赖准备跑在独立的 InitThread 上（特征码扫描 / 读包文件 / 读全局，
+    //   只有一个分配器自检探针会调引擎），所以原地等待不存在竞争。
+    //   ⇒ 有界等待：等到了就正常装配；20 秒还等不到才是真失败。
     if (InterlockedCompareExchange(&g_initDepsReady, 1, 1) == 0) {
-        Logf("pathd: [冻结门] ★Init 依赖尚未就绪，放弃★"
-             "（引擎比初始化线程先跑完了 Application::init）");
-        FatalInstallFailure("引擎初始化比汉化补丁更快完成，"
-                            "补丁无法在正确时机安装（建议重试或关闭后台程序）");
-        return;
+        const DWORD tWait0 = GetTickCount();
+        Logf("pathd: [冻结门] Init 依赖尚未就绪 —— 原地等待"
+             "（引擎主线程已停在门里，等待是安全的）");
+        while (InterlockedCompareExchange(&g_initDepsReady, 1, 1) == 0) {
+            if (GetTickCount() - tWait0 > 20000) break;
+            Sleep(10);
+        }
+        const DWORD waited = GetTickCount() - tWait0;
+        if (InterlockedCompareExchange(&g_initDepsReady, 1, 1) == 0) {
+            Logf("pathd: [冻结门] ★已等待 %u ms，依赖仍未就绪，放弃★", (unsigned)waited);
+            FatalInstallFailure("汉化补丁的依赖准备迟迟未完成（已等待 20 秒）");
+            return;
+        }
+        Logf("pathd: [冻结门] 依赖就绪（等待了 %u ms），继续装配", (unsigned)waited);
     }
     if (!g_engineAlloc) {
         Logf("pathd: [冻结门] ★引擎分配器未就绪，放弃★（会导致俄文乱码）");
@@ -3086,12 +3105,32 @@ static void FatalInstallFailure(const char* reason) {
 
     // ★ 顺序很关键：先弹框，等玩家点掉，再退出 ★
     //   （不能在弹框前 ExitProcess，那样玩家什么都看不到。）
+    //
+    // ★★ 为什么必须用 MessageBoxW（2026-10-07 修正）★★
+    //   本 DLL 编译带 /utf-8 ⇒ 源码里的中文字面量是 **UTF-8 字节**。
+    //   而 MessageBoxA 会把这些字节按**系统 ANSI 代码页**（中文系统 = 936/GBK）
+    //   解释 ⇒ 标题和正文全成乱码。实测玩家看到的是：
+    //       "Hard Truck Apocalypse-姹久穿瀹菱口澶辫触"
+    //   正确做法：显式把 UTF-8 转成 UTF-16 再交给 MessageBoxW —— 与代码页无关。
     HMODULE u32 = ::GetModuleHandleA("user32.dll");
     if (u32) {
-        typedef int (__stdcall *MsgBoxA_t)(void*, const char*, const char*, unsigned);
-        MsgBoxA_t fn = (MsgBoxA_t)::GetProcAddress(u32, "MessageBoxA");
-        if (fn) fn(nullptr, msg, "Hard Truck Apocalypse - 汉化安装失败",
-                    MB_OK | MB_ICONERROR | MB_SETFOREGROUND | MB_TOPMOST);
+        typedef int (__stdcall *MsgBoxW_t)(void*, const wchar_t*, const wchar_t*, unsigned);
+        MsgBoxW_t fnW = (MsgBoxW_t)::GetProcAddress(u32, "MessageBoxW");
+        if (fnW) {
+            wchar_t   wmsg[1024] = {0};
+            wchar_t   wtitle[128] = {0};
+            const int nMsg = ::MultiByteToWideChar(CP_UTF8, 0, msg, -1, wmsg,
+                                                   (int)(sizeof(wmsg) / sizeof(wmsg[0])));
+            const int nTitle = ::MultiByteToWideChar(CP_UTF8, 0, "Hard Truck Apocalypse - 汉化安装失败", -1,
+                                                     wtitle, (int)(sizeof(wtitle) / sizeof(wtitle[0])));
+            if (nMsg > 0 && nTitle > 0) {
+                fnW(nullptr, wmsg, wtitle, MB_OK | MB_ICONERROR | MB_SETFOREGROUND | MB_TOPMOST);
+            } else {
+                Logf("pathd:   [警告] UTF-8→UTF-16 转换失败(%d/%d)，无法弹框", nMsg, nTitle);
+            }
+        } else {
+            Logf("pathd:   [警告] 找不到 MessageBoxW，无法弹框");
+        }
     } else {
         // 连 user32 都没有（极端情况）：至少写日志，然后退出。
         Logf("pathd:   [警告] user32.dll 不可用，无法弹框");
@@ -3663,13 +3702,18 @@ bool Init(HMODULE game, const char* pkgPath) {
     DWORD tEarly0 = GetTickCount();
     bool gfxHooked = false, gateHooked = false;
     if (!g_skipPatch) {
-        __try { gfxHooked = InstallGfxServerHook((uintptr_t)game); }
-        __except (EXCEPTION_EXECUTE_HANDLER) {
-            Logf("pathd: [GfxServer hook] 安装异常 0x%08X", (unsigned)GetExceptionCode());
-        }
+        // ★ 顺序（2026-10-07 调整）：冻结门**先装** ★
+        //   门决定装配时机，装晚了引擎就可能已经越过 0x5AA388 ⇒ 门永不触发
+        //   ⇒ 没有"接管"日志、也没有弹框，静默无汉字（实测 210633 那次）。
+        //   而 WriteBlockSafe 要挂起全部线程（实测 ~1.4~3.2 秒），谁先装谁就先落地，
+        //   所以把最关键的门放到最前面。
         __try { gateHooked = InstallInitExitHook((uintptr_t)game); }
         __except (EXCEPTION_EXECUTE_HANDLER) {
             Logf("pathd: [冻结门] 安装异常 0x%08X", (unsigned)GetExceptionCode());
+        }
+        __try { gfxHooked = InstallGfxServerHook((uintptr_t)game); }
+        __except (EXCEPTION_EXECUTE_HANDLER) {
+            Logf("pathd: [GfxServer hook] 安装异常 0x%08X", (unsigned)GetExceptionCode());
         }
     }
     g_loaderHooked = gfxHooked;
