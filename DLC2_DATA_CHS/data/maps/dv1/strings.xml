@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<resource>
+	<string
+		id="1001"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="I think you'll like the truck. First, because you won't get another one anyway."
+		sound="data\sounds\dv_sounds\dialogs\dv1_5.wav"
+		time="7" />
+
+	<string
+		id="10012"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Second, because this truck is a killer. Even your Bureau doesn't own a truck like this."
+		sound="data\sounds\dv_sounds\dialogs\dv1_6.wav"
+		time="6" />
+
+	<string
+		id="10015"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="What you have to do is get used to the vehicle. By the way, remember that the area is not too safe."
+		sound="data\sounds\dv_sounds\dialogs\dv1_9.wav"
+		time="6" />
+
+	<string
+		id="10016"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Some armed bastards keep racing around, completely ignoring governmental emergency order."
+		sound="data\sounds\dv_sounds\dialogs\dv1_10.wav"
+		time="6" />
+
+	<string
+		id="10017"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="They will be happy to spend some ammo on you. I recommend attacking first and not giving them a chance."
+		sound="data\sounds\dv_sounds\dialogs\dv1_11.wav"
+		time="6" />
+
+	<string
+		id="1002"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="So, how it feels? Did you ever drive a vehicle like this one? I'm sure you didn't."
+		sound="data\sounds\dv_sounds\dialogs\dv1_12.wav"
+		time="6" />
+
+	<string
+		id="10021"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Any catastrophe, even the smallest, wakes up all bad things in people. "
+		sound="data\sounds\dv_sounds\dialogs\dv1_13.wav"
+		time="6" />
+
+	<string
+		id="10022"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Evacuation measures were just initiated, and hordes of marauders started rushing from every den. They carry the loot in truckloads."
+		sound="data\sounds\dv_sounds\dialogs\dv1_14.wav"
+		time="6" />
+
+	<string
+		id="10023"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="One of such motorcades is going to pass right nearby. You know what I mean?"
+		sound="data\sounds\dv_sounds\dialogs\dv1_15.wav"
+		time="6" />
+
+	<string
+		id="10024"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="That's right, it's a great occasion to try your new truck's weapons on them. Don't let these robbers get away."
+		sound="data\sounds\dv_sounds\dialogs\dv1_16.wav"
+		time="6" />
+
+	<string
+		id="10025"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Agent, the local sheriff's office refuses to accept our cooperation directive. It seems, the sheriff went completely crazy, and thinks he's a local king."
+		sound="data\sounds\dv_sounds\dialogs\dv1_7.wav"
+		time="6" />
+
+	<string
+		id="10026"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Be aware, that if the local cops will stand between you and completion of this mission, you have the right to use  emergency, and by that I mean extremely aggressive, measures."
+		sound="data\sounds\dv_sounds\dialogs\dv1_8.wav"
+		time="6" />
+
+	<string
+		id="1003"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="You have a firm hand and sharp eye, agent."
+		sound="data\sounds\dv_sounds\dialogs\dv1_17.wav"
+		time="5" />
+
+	<string
+		id="10031"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="So, I guess, the drill is finished."
+		sound="data\sounds\dv_sounds\dialogs\dv1_27.wav"
+		time="5" />
+
+	<string
+		id="10032"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="You got used to the car, the weapons, the area, and the way the things are. It's time for your primary mission."
+		sound="data\sounds\dv_sounds\dialogs\dv1_28.wav"
+		time="5" />
+
+	<string
+		id="10033"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Yes, now I'm really sure you will be able to go through the place where a whole squad of my boys perished."
+		sound="data\sounds\dv_sounds\dialogs\dv1_29.wav"
+		time="5" />
+
+	<string
+		id="1004"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="The world is really cleaner now."
+		sound="data\sounds\dv_sounds\dialogs\dv1_21.wav"
+		time="5" />
+
+	<string
+		id="10041"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="As I told you before, there is a number of asocial subjects robbing and looting the area."
+		sound="data\sounds\dv_sounds\dialogs\dv1_18.wav"
+		time="5" />
+
+	<string
+		id="10042"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="The order was to stop such actions by all possible means. Absolutely by all means. Do you understand me, agent?"
+		sound="data\sounds\dv_sounds\dialogs\dv1_19.wav"
+		time="5" />
+
+	<string
+		id="10043"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="We just have sent a scout chopper and spotted one of marauders camp. Your objective is to destroy the bandits."
+		sound="data\sounds\dv_sounds\dialogs\dv1_20.wav"
+		time="5" />
+
+	<string
+		id="1005"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Impossible! Did these soldiers left their post without permission?!"
+		sound="data\sounds\dv_sounds\dialogs\dv1_24.wav"
+		time="9" />
+
+	<string
+		id="1006"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="There is nothing as disgusting as desertion! Mutants, zombies and stuff are not an excuse."
+		sound="data\sounds\dv_sounds\dialogs\dv1_25.wav"
+		time="7" />
+
+	<string
+		id="10062"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Whet American army soldiers must be afraid is their sergeant, not a brainless zombie!"
+		sound="data\sounds\dv_sounds\dialogs\dv1_26.wav"
+		time="8" />
+
+	<string
+		id="10063"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Frankly, it escapes me why there is so many armed outsiders inside such a strong cordon? How do they get in here?"
+		sound="data\sounds\dv_sounds\dialogs\dv1_22.wav"
+		time="7" />
+
+	<string
+		id="10064"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="We need to find out, as soon as possible."
+		sound="data\sounds\dv_sounds\dialogs\dv1_23.wav"
+		time="8" />
+
+	<string
+		id="1900"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="So, you are the federal agent the Bureau sent to do the job that our task force failed to accomplish? All right, we'll see. Before giving you the basic tasks, I want you to get used to the truck, which you will drive for a long time."
+		time="13"
+		numButtons="1" />
+
+	<string
+		id="1901"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="I know you're an excellent driver, but every vehicle has its own features, and it's better to learn them in relatively peaceful environment, near the base. Get used to the controls, feel the grip, try the brakes. Learn how to use the equipment to take environmental samples."
+		time="12"
+		numButtons="1" />
+
+	<string
+		id="1902"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Remember, the car is equipped with automatic navigation device - this is a complex gadget in the left part of the panel. Guys uploaded your mission route to this thing, so it always lets you know where to turn."
+		sound="data\sounds\dv_sounds\dialogs\dv0_2.wav"
+		time="7" />
+
+	<string
+		id="1903"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="It seems that the weather went crazy here, not just the people. Some roaming tornadoes were spotted in range - avoid them if you don't want a ride on hell's merry-go-round."
+		sound="data\sounds\dv_sounds\dialogs\dv0_1.wav"
+		time="11" />
+
+	<string
+		id="1904"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="There's a settlement of the base civilian staff in front of you. Our scouts report it's an outpost of some unknown gang. Get rid of the bastards…"
+		sound="data\sounds\dv_sounds\dialogs\dv0_3.wav"
+		time="9" />
+
+	<string
+		id="1050"
+		value="So, you are the federal agent the Bureau sent to do the job that our task force failed to accomplish? All right, we'll see. Before giving you the basic tasks, I want you to get used to the truck, which you will drive for a long time. I know you're an excellent driver, but every vehicle has its own features, and it's better to learn them in relatively peaceful environment, near the base. Get used to the controls, feel the grip, try the brakes. Learn how to use the equipment to take environmental samples.|  Extra task:|                Take samples of ground and air (at least 100)"
+		numButtons="1" />
+
+	<string
+		id="1051"
+		value="So, I guess, the drill is finished. You got used to the car, the weapons, the area, and the way the things are. It's time for your primary mission."
+		numButtons="1" />
+</resource>

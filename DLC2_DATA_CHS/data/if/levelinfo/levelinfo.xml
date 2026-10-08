@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<LevelInfoResource>
+	<LevelInfo
+		name="menu_dv"
+		file="data\maps\menu_dv.ssl"
+		fullName=""
+		diz0=""
+		diz1=""
+		image0=""
+		image1=""
+		splashes="data\if\ico\Splashes\menu.dds"
+		musicBlocks=""
+		gamelevel="false" />
+
+	<LevelInfo
+		name="dv1"
+		file="data\maps\dv1.ssl"
+		fullName="Under siege"
+		diz0="You must to get used to the vehicle, agent. By the way, remember the surrounding area can be dangerous."
+		diz1="So, you are the federal agent the Bureau sent to do the job that our task force failed to accomplish? All right, we'll see. Before giving you the basic tasks, I want you to get used to the truck, which you will drive for a long time. I know you're an excellent driver, but every vehicle has its own features, and it's better to learn them in relatively peaceful environment, near the base. Get used to the controls, feel the grip, try the brakes. Learn how to use the equipment to take environmental samples."
+		north="0 0 1"
+		image1="data\if\ico\Splashes\dv1.dds"
+		splashes="data\if\ico\Splashes\dv1.dds"
+		musicBlocks="dv_1 dv_1_2" />
+
+	<LevelInfo
+		name="dv2"
+		file="data\maps\dv2.ssl"
+		fullName="Base #31"
+		diz0="Follow the route, get to Base #31 and evacuate the professor out of it."
+		diz1="Ok, here is your task. Follow the route shown on the map, and you will reach the object marked as Base #31. Penetrate the object area, then find and secure professor Pappers. Professor was analyzing the remnants of the crashed alien ship. Saving the best expert of this branch is a national security task. This is your primary objective."
+		north="0 0 1"
+		image1="data\if\ico\Splashes\dv2.dds"
+		splashes="data\if\ico\Splashes\dv2.dds"
+		musicBlocks="dv_2 dv_2_2" />
+
+	<LevelInfo
+		name="dv4"
+		file="data\maps\dv4.ssl"
+		fullName="Secret files"
+		diz0="Our primary objective is to find out what happened to team Delta. It possibly will give us some clues on location of Z-120 container."
+		diz1="The condition is critical. The experts and researchers working at the location of the ruined lab given their first suggestions. Also, we got interrogation transcripts from a few survivors. As you know, Base #31 was working on research of the alien ship. Professor Pappers was the leading specialist in this branch. It seems that not long before the catastrophe he made a serious breakthrough in his studies. We suspect that the discovery the professor made and the attack on the base are related. It remains unclear how exactly this top secret information leaked and who could use it like that. But it's not the thing that matters. We don't have a slightest idea what happened to professor Pappers and his discovery. We need to find the professor at any cost. I contacted the President directly, and he gave me the right to take any measures, even extraordinary."
+		north="0 0 1"
+		image1="data\if\ico\Splashes\dv4.dds"
+		splashes="data\if\ico\Splashes\dv4.dds"
+		musicBlocks="dv_1" />
+
+	<LevelInfo
+		name="dv5"
+		file="data\maps\dv5.ssl"
+		fullName="Strange jungle"
+		diz0="We know where professor Pappers is, all we need to do is get him out alive and well."
+		diz1="Here is your next mission, agent  Team Delta is in pursuit of the smugglers in order to get the Z-120 container back to the government. Which means professor Pappers rescue mission is still your objective. The guys from team Delta will most likely use the terrain and drive the smugglers into a trap. If the bandits have the professor, you will have to get him out of the crossfire."
+		north="0 0 1"
+		image1="data\if\ico\Splashes\dv5.dds"
+		splashes="data\if\ico\Splashes\dv5.dds"
+		musicBlocks="dv_3_2 dv_3_3" />
+
+	<LevelInfo
+		name="dv6"
+		file="data\maps\dv6.ssl"
+		fullName="Swamp roads"
+		diz0="This damn professor refuses to evacuate without his documents. He claims they were stolen by bandit. We have to go after them to the swamp."
+		diz1="The problem has a really simple solution, yes it does. Your soldiers must have driven the bandits into the marsh already. They have guns, grenades and stuff, yes they do. But my research! My materials! The soldiers are too dumb to pick them up, I'm sure! I know the military, all right. They'll rip everything with bullets, will cause Z-120 to leak and will destroy valuable specimens."
+		north="0 0 1"
+		image1="data\if\ico\Splashes\dv6.dds"
+		splashes="data\if\ico\Splashes\dv6.dds"
+		musicBlocks="dv_3 dv_3_3" />
+
+	<LevelInfo
+		name="dv7"
+		file="data\maps\dv7.ssl"
+		fullName="Last man standing"
+		diz0="Our astronomers detected a huge UFO on the orbit. Pappers is the leading specialist on aliens, so we need to hear his opinion as soon as possible."
+		diz1="Our astronomers detected a huge UFO on geostationary orbit. Pappers is a leading specialist of Base 31, and it was the base researching alien technologies. We need to hear his opinion. So here is your new mission: return to professor Pappers, pick him up whatever he says, use force if needed, and leave the infected area immediately."
+		north="0 0 1"
+		image1="data\if\ico\Splashes\dv7.dds"
+		splashes="data\if\ico\Splashes\dv7.dds"
+		musicBlocks="dv_2 dv_2_2" />
+
+	<LevelInfo
+		name="dv8"
+		file="data\maps\dv8.ssl"
+		fullName="Desert heat"
+		diz0="Bearers of the Z-120 virus try to leave the Territory. Agent, you are the only person close enough to the place to intercept them."
+		diz1="A huge number of bearers of the Z-120 virus intend to leave the area right now. These are marauders, infected military patrols and even local civilians that were hiding during the evacuation. You are the only person close enough to the place to react to changes in the situation in time."
+		north="0 0 1"
+		image1="data\if\ico\Splashes\dv8.dds"
+		splashes="data\if\ico\Splashes\dv8.dds"
+		musicBlocks="dv_2 dv_2_2" />
+
+	<LevelInfo
+		name="dv9"
+		file="data\maps\dv9.ssl"
+		fullName="The Big Hunt"
+		diz0="We've underestimated the might of the virus, and, as a consequence, we've underestimated the new abilities of professor Papers. He escaped and killed the entire MP escort. Finish your job and kill the bastard."
+		diz1="Sorry, agent, I've got bad news for you again. We've underestimated the might of the virus, and, as a consequence, we've underestimated the new abilities of professor Papers. He escaped and killed the entire MP escort. Luckily, he doesn't know the vehicle he used to escape is equipped with a hidden beacon. At the moment you are the closer to the mad scientist than anybody. Intercept him at any cost. We must not let this whole nightmare to happen again."
+		north="0 0 1"
+		image1="data\if\ico\Splashes\dv9.dds"
+		splashes="data\if\ico\Splashes\dv9.dds"
+		musicBlocks="dv_1 dv_1_2" />
+</LevelInfoResource>

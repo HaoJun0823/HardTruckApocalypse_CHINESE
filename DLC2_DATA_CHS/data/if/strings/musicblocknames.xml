@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?><!-- edited with XML Spy v4.2 U (http://www.xmlspy.com) by Morgoth (Targem) -->
+<resource>
+<!--Default buttons-->
+<!-- Названия -->
+
+	<string
+		id="music_dv3_1"
+		value="''Вампиры повсюду'' (Супер-Бонус)" />
+
+	<string
+		id="music_r5_1"
+		value="''Мелодия Сэма''" />
+	<string
+		id="music_r5_12"
+		value="''Мелодия Азарта''" />
+
+	<string
+		id="music_r5_2"
+		value="''Мелодия Свободы''" />
+	<string
+		id="music_r5_22"
+		value="''Мелодия Ветра''" />
+
+	<string
+		id="music_r6_1"
+		value="''Мелодия Джунглей''" />
+	<string
+		id="music_r6_12"
+		value="''Мелодия Эдмонтона''" />
+
+	<string
+		id="music_r6_2"
+		value="''Мелодия Оракула''" />
+	<string
+		id="music_r6_22"
+		value="''Мелодия Эмиссара''" />
+
+	<string
+		id="music_custom"
+		value="Пользовательская музыка" />	
+
+	<string
+		id="music_block0"
+		value="''Мелодия Края'' (бонус)" />
+	<string
+		id="music_block1"
+		value="''Мелодия Риджина'' (бонус)" />
+	<string
+		id="music_r1_4"
+		value="''Мелодия Хеля'' (бонус)" />
+
+	<string
+		id="music_r2_1"
+		value="''Мелодия Либриума'' (бонус)" />
+	<string
+		id="music_r2_2"
+		value="''Мелодия Аржана'' (бонус)" />
+
+	<string
+		id="music_r4_1"
+		value="''Мелодия Вахата'' (бонус)" />
+	<string
+		id="music_r4_2"
+		value="''Мелодия Зармека'' (бонус)" />
+
+</resource>

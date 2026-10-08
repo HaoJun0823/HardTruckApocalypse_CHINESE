@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?><!-- edited with XML Spy v4.2 U (http://www.xmlspy.com) by Morgoth (Targem) -->
+<resource>
+	<string
+		id="ok"
+		value="И·¶Ё" />
+
+	<string
+		id="cancel"
+		value="ИЎПы" />
+
+	<string
+		id="yes"
+		value="КЗ" />
+
+	<string
+		id="no"
+		value="·с" />
+
+	<string
+		id="error"
+		value="ґнОу" />
+
+	<string
+		id="sure"
+		value="И·ИПЈї" />
+
+	<string
+		id="main"
+		value="ЦчІЛµҐ" />
+
+	<string
+		id="file"
+		value="ОДјю..." />
+
+	<string
+		id="newdialog"
+		value="РВЅЁ¶Ф»°їт" />
+
+	<string
+		id="loaddlg"
+		value="јУФШ¶Ф»°їт" />
+
+	<string
+		id="savedlg"
+		value="±Јґж¶Ф»°їт" />
+
+	<string
+		id="loadscheme"
+		value="јУФШ·Ѕ°ё" />
+
+	<string
+		id="test"
+		value="ІвКФ..." />
+
+	<string
+		id="quit"
+		value="НЛіц" />
+
+	<string
+		id="bg"
+		value="±іѕ°..." />
+
+	<string
+		id="bgload"
+		value="јУФШ±іѕ°" />
+
+	<string
+		id="bgyesno"
+		value="УР±іѕ°/ОЮ±іѕ°" />
+
+	<string
+		id="dim"
+		value="ЖБД»·Ц±жВК" />
+
+	<string
+		id="dim640x480"
+		value="640 x 480" />
+
+	<string
+		id="dim800x600"
+		value="800 x 600" />
+
+	<string
+		id="dim1024x768"
+		value="1024 x 768" />
+
+	<string
+		id="newdlgname"
+		value="КдИл¶Ф»°їтГыіЖ" />
+
+	<string
+		id="abouttoclose"
+		value="И·ИПТЄ№Ш±ХВрЈї" />
+
+	<string
+		id="loadtexture"
+		value="јУФШОЖАн" />
+
+	<string
+		id="testenter"
+		value="ЅшИлІвКФДЈКЅ" />
+
+	<string
+		id="testexit"
+		value="НЛіцІвКФДЈКЅ" />
+
+	<string
+		id="flagnodraw"
+		value="єцВФІ»їЙјыїШјю" />
+
+	<string
+		id="flaginside"
+		value="І»ФКРні¬іц±ЯЅз" />
+
+	<string
+		id="flagmovable"
+		value="їЙТЖ¶ЇїШјю" />
+
+	<string
+		id="flagresizable"
+		value="ФКРнёД±дїШјюґуРЎ" />
+
+	<string
+		id="flagnoframe"
+		value="ТЖіэґ°їЪїтјЬ" />
+
+	<string
+		id="flagtransparent"
+		value="ФКРнНёГчСХЙ«" />
+
+	<string
+		id="flagnumeric"
+		value="ЅцФКРнКэЧЦєНРЎКэµг" />
+
+	<string
+		id="flagvisible"
+		value="їЙјыїШјю" />
+
+	<string
+		id="flagcenterxy"
+		value="ѕУЦРЈЁ°ґБЅёцЦбЈ©" />
+
+	<string
+		id="flagcenterx"
+		value="ѕУЦРЈЁ°ґ X ЦбЈ©" />
+
+	<string
+		id="flagcentery"
+		value="ѕУЦРЈЁ°ґ Y ЦбЈ©" />
+
+	<string
+		id="flagcfocus"
+		value="±ЈґжЅ№µгїШјю" />
+
+	<string
+		id="flagactivatable"
+		value="їЙј¤»оїШјю" />
+
+	<string
+		id="flagareflect"
+		value="·ґЙд»о¶ЇїШјю" />
+
+	<string
+		id="flagdisabled"
+		value="І»їЙЅУКХЅ№µг" />
+
+	<string
+		id="flagdefault"
+		value="°ґПВК±ј¤»о" />
+
+	<string
+		id="flagshadow"
+		value="ФКРнН¶ЙдТхУ°" />
+
+	<string
+		id="flagempty"
+		value="ЗеїХ°ґПВК±ј¤»о" />
+
+	<string
+		id="flagusedefault"
+		value="ЗеїХ°ґПВК±ј¤»о" />
+
+	<string
+		id="flagmkreflect"
+		value="·ґЙд°ґПВєНКН·ЕїШјю" />
+
+	<string
+		id="flagid"
+		value="І»ј¤»о±іѕ°" />
+
+	<string
+		id="ctrlname"
+		value="їШјюГы" />
+
+	<string
+		id="ctrlid"
+		value="їШјю±кК¶·ы" />
+
+	<string
+		id="ctrlcaption"
+		value="їШјю±кМв" />
+
+	<string
+		id="ctrlapplysizes"
+		value="У¦УГґуРЎєНО»ЦГ" />
+
+	<string
+		id="ctrlwidth"
+		value="їШјюїн" />
+
+	<string
+		id="ctrlheight"
+		value="їШјюёЯ" />
+
+	<string
+		id="ctrlapplyorigin"
+		value="У¦УГФ­µгО»ЦГ" />
+
+	<string
+		id="ctrlleft"
+		value="Чу±ЯФµ" />
+
+	<string
+		id="ctrltop"
+		value="¶Ґ±ЯФµ" />
+
+	<string
+		id="ctrlbg"
+		value="јУФШїШјю±іѕ°ОЖАн" />
+
+	<string
+		id="ctrltooltip"
+		value="Ку±кМбКѕОД±ѕ" />
+
+	<string
+		id="gridshow"
+		value="ПФКѕНшёс" />
+
+	<string
+		id="gridsnap"
+		value="ОьёЅµЅНшёс" />
+
+	<string
+		id="gridstep"
+		value="НшёсІЅі¤" />
+
+	<string
+		id="activationorder"
+		value="ПФКѕј¤»оЛіРт" />
+
+	<string
+		id="btnisimaged"
+		value="°ґПВєНµЇЖрБЅЦЦЧґМ¬" />
+
+	<string
+		id="btninsidetex"
+		value="Ку±кТЖИлК±ОЖАн" />
+
+	<string
+		id="btndowntex"
+		value="°ґПВК±ОЖАн" />
+
+	<string
+		id="btnregtex"
+		value="ЖХНЁЧґМ¬ОЖАн" />
+
+	<string
+		id="btnisin"
+		value="ТЖИлАпГж" />
+
+	<string
+		id="btnisdown"
+		value="°ґПВЧґМ¬" />
+
+	<string
+		id="framelist"
+		value="ГыіЖБР±н" />
+
+	<string
+		id="linehorz"
+		value="Л®ЖЅПЯ" />
+
+	<string
+		id="linevert"
+		value="ґ№Ц±ПЯ" />
+
+	<string
+		id="drawBg"
+		value="»жЦЖ±іѕ°" />
+
+	<string
+		id="drawCorners"
+		value="»жЦЖ±ЯЅЗ" />
+
+	<string
+		id="drawBars"
+		value="»жЦЖМх" />
+</resource>

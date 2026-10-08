@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<resource>
+	<string
+		id="8001"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="A huge number of bearers of the Z-120 virus intend to leave the area right now."
+		sound="data\sounds\dv_sounds\dialogs\dv8_10.wav"
+		time="6" />
+
+	<string
+		id="80011"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="These are marauders, infected military patrols and even local civilians that were hiding during the evacuation."
+		sound="data\sounds\dv_sounds\dialogs\dv8_11.wav"
+		time="6" />
+
+	<string
+		id="80012"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="You are the only person close enough to the place to react to changes in the situation in time."
+		sound="data\sounds\dv_sounds\dialogs\dv8_12.wav"
+		time="6" />
+
+	<string
+		id="80013"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="A big number of military vehicles is moving towards the area limit on high speed without answering on our radio calls."
+		sound="data\sounds\dv_sounds\dialogs\dv8_13.wav"
+		time="7" />
+
+	<string
+		id="80014"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="We have data they are affected by the infestation. They will leave the limits of the area they were supposed to guard in five minutes."
+		sound="data\sounds\dv_sounds\dialogs\dv8_14.wav"
+		time="7" />
+
+	<string
+		id="80015"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="You must intercept them before they will carry the infection to the world."
+		sound="data\sounds\dv_sounds\dialogs\dv8_15.wav"
+		time="3" />
+
+	<string
+		id="8002"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Yes, they are the vehicles. Attack them, agent!"
+		sound="data\sounds\dv_sounds\dialogs\dv8_16.wav"
+		time="3" />
+
+	<string
+		id="8003"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Ok, this problem is no more, but stay online. The infestation prevention operation is at high point."
+		sound="data\sounds\dv_sounds\dialogs\dv8_17.wav"
+		time="7" />
+
+	<string
+		id="80031"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="By the way, the MP squad has the hiding place of Pappers surrounded. I'm expecting the report of his arrest in a minute."
+		sound="data\sounds\dv_sounds\dialogs\dv8_18.wav"
+		time="8" />
+
+	<string
+		id="80035"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="A gang of well-armed marauders have attacked the town of Fly Hill."
+		sound="data\sounds\dv_sounds\dialogs\dv8_19.wav"
+		time="3" />
+
+	<string
+		id="80036"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="We found out that the town hall has a helicopter in disposal."
+		sound="data\sounds\dv_sounds\dialogs\dv8_20.wav"
+		time="4" />
+
+	<string
+		id="80037"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="This craft is very small, it's all plastic, so it will be very difficult to track it with radars."
+		sound="data\sounds\dv_sounds\dialogs\dv8_21.wav"
+		time="5" />
+
+	<string
+		id="80038"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="If the infected will use this chopper to escape, it will hardly be possible to bring them down, so the world will face the catastrophe."
+		sound="data\sounds\dv_sounds\dialogs\dv8_22.wav"
+		time="8" />
+
+	<string
+		id="80039"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Our experts say you have about 10 minutes to stop them."
+		sound="data\sounds\dv_sounds\dialogs\dv8_23.wav"
+		time="5" />
+
+	<string
+		id="8006"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Make it quick. You must exterminate all bandits before one of them reaches the helicopter hangar."
+		sound="data\sounds\dv_sounds\dialogs\dv8_24.wav"
+		time="7" />
+
+	<string
+		id="8007"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Not a single bastard left, well done!"
+		sound="data\sounds\dv_sounds\dialogs\dv8_25.wav"
+		time="2" />
+
+	<string
+		id="80071"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="The MPs have arrested Pappers. Be aware that the information about infected people being under his control is at least partially true."
+		sound="data\sounds\dv_sounds\dialogs\dv8_26.wav"
+		time="10" />
+
+	<string
+		id="80075"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="A group of infected people hide amongst poisonous mushrooms near the Road river, we are about to transfer you the exact coordinates."
+		sound="data\sounds\dv_sounds\dialogs\dv8_27.wav"
+		time="9" />
+
+	<string
+		id="80076"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="These mutants collect mushroom spores, which share the nature with everything in the area."
+		sound="data\sounds\dv_sounds\dialogs\dv8_28.wav"
+		time="8" />
+
+	<string
+		id="80077"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="If a big amount of spores gets in the river, all territories downstream will be infested."
+		sound="data\sounds\dv_sounds\dialogs\dv8_29.wav"
+		time="6" />
+
+	<string
+		id="80078"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="You have to destroy these mutants in no more then 15 minutes."
+		sound="data\sounds\dv_sounds\dialogs\dv8_30.wav"
+		time="4" />
+
+	<string
+		id="8005"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="The place meets the air recon description. Begin your mission."
+		sound="data\sounds\dv_sounds\dialogs\dv8_31.wav"
+		time="4" />
+
+	<string
+		id="8004"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="It seems you did the job in time. Of course, we'll have the experts to check the water cleanness downstream, but I think it will be clean."
+		sound="data\sounds\dv_sounds\dialogs\dv8_32.wav"
+		time="6" />
+
+	<string
+		id="80041"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="I want to inform you proudly, that at the moment our country received the approval of the whole world to destroy the alien aggressor with surface-to-space class missiles."
+		sound="data\sounds\dv_sounds\dialogs\dv8_33.wav"
+		time="11" />
+
+	<string
+		id="80042"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="It seems that the Earth salvation operation is in the final stage. Return to the base."
+		sound="data\sounds\dv_sounds\dialogs\dv8_34.wav"
+		time="5" />
+
+	<string
+		id="8008"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Infested people are leaving, you were unable to find and destroy them… We'll have to secure the area using air support."
+		sound="data\sounds\dv_sounds\dialogs\dv8_.wav"
+		time="8" />
+</resource>

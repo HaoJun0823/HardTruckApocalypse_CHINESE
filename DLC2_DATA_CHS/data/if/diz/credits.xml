@@ -1,0 +1,852 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<Credits
+	text="Oleg Dobroshtan">
+	<Record
+		id="1"
+		type="TITLE"
+		fontName="SM_Impact"
+		fontSize="30"
+		color="ffaa9966"
+		text="Targem Games Company" />
+
+	<Record
+		height="100" />
+
+	<Record
+		id="2"
+		type="TITLE"
+		text="Producer" />
+
+	<Record
+		id="3"
+		type="TITLE"
+		color="ffffaa00"
+		text="Stanislav Skorb" />
+
+	<Record
+		height="70" />
+
+	<Record
+		id="4"
+		type="TITLE"
+		text="Art" />
+
+	<Record
+		id="5"
+		type="TITLE"
+		color="ffffaa00"
+		text="Alexander Beliaev" />
+
+	<Record
+		id="6"
+		type="TITLE"
+		color="ffffaa00"
+		text="Alexander Magrushin" />
+
+	<Record
+		id="7"
+		type="TITLE"
+		color="ffffaa00"
+		text="Artem Soloviev" />
+
+	<Record
+		id="8"
+		type="TITLE"
+		color="ffffaa00"
+		text="Anton Khudiakov" />
+
+	<Record
+		id="9"
+		type="TITLE"
+		color="ffffaa00"
+		text="Denis Galanin" />
+
+	<Record
+		id="10"
+		type="TITLE"
+		color="ffffaa00"
+		text="Olga Kotukh" />
+
+	<Record
+		id="11"
+		type="TITLE"
+		color="ffffaa00"
+		text="Rustam Turey" />
+
+	<Record
+		id="12"
+		type="TITLE"
+		color="ffffaa00"
+		text="Stanislav Cherva" />
+
+	<Record
+		height="70" />
+
+	<Record
+		id="13"
+		type="TITLE"
+		text="Design" />
+
+	<Record
+		id="14"
+		type="TITLE"
+		color="ffffaa00"
+		text="Andrey Katorgin" />
+
+	<Record
+		id="15"
+		type="TITLE"
+		color="ffffaa00"
+		text="Nikolay Seleznev" />
+
+	<Record
+		id="16"
+		type="TITLE"
+		color="ffffaa00"
+		text="Petr Kukushkin" />
+
+	<Record
+		height="70" />
+
+	<Record
+		id="17"
+		type="TITLE"
+		text="Sounds and music" />
+
+	<Record
+		id="18"
+		type="TITLE"
+		color="ffffaa00"
+		text="Anton Popov" />
+
+	<Record />
+
+	<Record
+		id="19"
+		type="TITLE"
+		text="Interface design" />
+
+	<Record
+		id="20"
+		type="TITLE"
+		color="ffffaa00"
+		text="Mikhail Matvienko" />
+
+	<Record />
+
+	<Record
+		id="21"
+		type="TITLE"
+		text="Programming" />
+
+	<Record
+		id="22"
+		type="TITLE"
+		color="ffffaa00"
+		text="Elena Evdokimova" />
+
+	<Record
+		id="23"
+		type="TITLE"
+		color="ffffaa00"
+		text="Ilya Ruzakov" />
+
+	<Record
+		id="24"
+		type="TITLE"
+		color="ffffaa00"
+		text="Ivan Bizaev" />
+
+	<Record
+		id="25"
+		type="TITLE"
+		color="ffffaa00"
+		text="Sergey Klyuchkovsky" />
+
+	<Record />
+
+	<Record
+		id="26"
+		type="TITLE"
+		text="Texts" />
+
+	<Record
+		id="27"
+		type="TITLE"
+		color="ffffaa00"
+		text="Alexander Brusin" />
+
+	<Record
+		id="28"
+		type="TITLE"
+		color="ffffaa00"
+		text="Alexander Proskuriakov" />
+
+	<Record />
+
+	<Record
+		id="29"
+		type="TITLE"
+		text="QA department" />
+
+	<Record
+		id="30"
+		type="TITLE"
+		color="ffffaa00"
+		text="Andrey Antonov" />
+
+	<Record
+		id="31"
+		type="TITLE"
+		color="ffffaa00"
+		text="Konstantin Obvincev" />
+
+	<Record />
+
+	<Record
+		id="32"
+		type="TITLE"
+		text="Special thanks to" />
+
+	<Record
+		id="33"
+		type="TITLE"
+		color="ffffaa00"
+		text="Alexey Vinogradov" />
+
+	<Record
+		id="34"
+		type="TITLE"
+		color="ffffaa00"
+		text="Boris Smirnov" />
+
+	<Record
+		id="35"
+		type="TITLE"
+		color="ffffaa00"
+		text="Danil Eremeev" />
+
+	<Record
+		id="36"
+		type="TITLE"
+		color="ffffaa00"
+		text="Evgenia Zhiganova" />
+
+	<Record
+		id="37"
+		type="TITLE"
+		color="ffffaa00"
+		text="Marina Nikonova" />
+
+	<Record
+		id="38"
+		type="TITLE"
+		color="ffffaa00"
+		text="Olga Prokhorova" />
+
+	<Record
+		id="39"
+		type="TITLE"
+		color="ffffaa00"
+		text="Svetlana Chestnykh" />
+
+	<Record
+		id="40"
+		type="TITLE"
+		color="ffffaa00"
+		text="Tatiana Juro" />
+
+	<Record
+		height="100" />
+
+	<Record
+		id="41"
+		type="TITLE"
+		fontName="SM_Impact"
+		fontSize="30"
+		color="ffaa9966"
+		text="Buka Company" />
+
+	<Record
+		height="100" />
+
+	<Record
+		id="42"
+		type="TITLE"
+		text="Producer" />
+
+	<Record
+		id="43"
+		type="TITLE"
+		color="ffffaa00"
+		text="Ivan Bunakov" />
+
+	<Record
+		height="70" />
+
+	<Record
+		id="44"
+		type="TITLE"
+		text="Product promotion managers" />
+
+	<Record
+		id="45"
+		type="TITLE"
+		color="ffffaa00"
+		text="Yuriy Virich" />
+
+	<Record
+		id="46"
+		type="TITLE"
+		color="ffffaa00"
+		text="Oksana Saichkina" />
+
+	<Record />
+
+	<Record
+		id="47"
+		type="TITLE"
+		text="Chief of advertisement and PR" />
+
+	<Record
+		id="48"
+		type="TITLE"
+		color="ffffaa00"
+		text="Svetlana Ladoshkina" />
+
+	<Record />
+
+	<Record
+		id="49"
+		type="TITLE"
+		text="Assistant of manager of advertisement and PR" />
+
+	<Record
+		id="50"
+		type="TITLE"
+		color="ffffaa00"
+		text="Alevtina Vinogradova" />
+
+	<Record />
+
+	<Record
+		id="51"
+		type="TITLE"
+		text="Community manager" />
+
+	<Record
+		id="52"
+		type="TITLE"
+		color="ffffaa00"
+		text="Sergey Vladinec" />
+
+	<Record />
+
+	<Record
+		id="53"
+		type="TITLE"
+		text="Polygraph designers" />
+
+	<Record
+		id="54"
+		type="TITLE"
+		color="ffffaa00"
+		text="Sanan Oushanov" />
+
+	<Record
+		id="55"
+		type="TITLE"
+		color="ffffaa00"
+		text="Ekaterina Gromova" />
+
+	<Record
+		id="56"
+		type="TITLE"
+		color="ffffaa00"
+		text="Daniella Klimashevskaya" />
+
+	<Record
+		id="57"
+		type="TITLE"
+		color="ffffaa00"
+		text="Artem Sukhanov" />
+
+	<Record />
+
+	<Record
+		id="58"
+		type="TITLE"
+		text="Technical expert" />
+
+	<Record
+		id="59"
+		type="TITLE"
+		color="ffffaa00"
+		text="Kirill “Kbest” Bestemyanov" />
+
+	<Record />
+
+	<Record
+		id="60"
+		type="TITLE"
+		text="Sound expert" />
+
+	<Record
+		id="61"
+		type="TITLE"
+		color="ffffaa00"
+		text="Ruslan “Rus” Dmitriev" />
+
+	<Record />
+
+	<Record
+		id="62"
+		type="TITLE"
+		text="Beta testing coordinator" />
+
+	<Record
+		id="63"
+		type="TITLE"
+		color="ffffaa00"
+		text="Alexander Pak" />
+
+	<Record />
+
+	<Record
+		id="64"
+		type="TITLE"
+		text="Lead tester" />
+
+	<Record
+		id="65"
+		type="TITLE"
+		color="ffffaa00"
+		text="Ivan «Qa» Rainov" />
+
+	<Record />
+
+	<Record
+		id="66"
+		type="TITLE"
+		text="Buka Company testers" />
+
+	<Record
+		id="67"
+		type="TITLE"
+		color="ffffaa00"
+		text="Eugene «Uncle_Fu» Popov" />
+
+	<Record
+		id="68"
+		type="TITLE"
+		color="ffffaa00"
+		text="Lidiya «Lio» Ovsyannikova" />
+
+	<Record
+		id="69"
+		type="TITLE"
+		color="ffffaa00"
+		text="Igor «DIVWarboss» Dmitriev" />
+
+	<Record
+		id="70"
+		type="TITLE"
+		color="ffffaa00"
+		text="Ivan «Qa» Rainov" />
+
+	<Record
+		id="71"
+		type="TITLE"
+		color="ffffaa00"
+		text="Alexey «StC» Popenkov" />
+
+	<Record
+		id="72"
+		type="TITLE"
+		color="ffffaa00"
+		text="Dmitry «Solovey» Anufriev" />
+
+	<Record
+		id="73"
+		type="TITLE"
+		color="ffffaa00"
+		text="Kirill «Nightcrawler» Leiko" />
+
+	<Record
+		id="74"
+		type="TITLE"
+		color="ffffaa00"
+		text="Alexander «Russian_Bear» Konyakhin" />
+
+	<Record />
+
+	<Record
+		id="75"
+		type="TITLE"
+		text="Sales managers" />
+
+	<Record
+		id="76"
+		type="TITLE"
+		color="ffffaa00"
+		text="Elena Antonova" />
+
+	<Record
+		id="77"
+		type="TITLE"
+		color="ffffaa00"
+		text="Maxim Alekseev" />
+
+	<Record
+		id="78"
+		type="TITLE"
+		color="ffffaa00"
+		text="Natalia Ankundinova" />
+
+	<Record
+		id="79"
+		type="TITLE"
+		color="ffffaa00"
+		text="Vadim Loschilov" />
+
+	<Record
+		id="80"
+		type="TITLE"
+		color="ffffaa00"
+		text="Sergey Nagorny" />
+
+	<Record
+		id="81"
+		type="TITLE"
+		color="ffffaa00"
+		text="Nina Starichenkova" />
+
+	<Record
+		id="82"
+		type="TITLE"
+		color="ffffaa00"
+		text="Alexander Petrinski" />
+
+	<Record
+		id="83"
+		type="TITLE"
+		color="ffffaa00"
+		text="Olga Polkovnokova" />
+
+	<Record
+		id="84"
+		type="TITLE"
+		color="ffffaa00"
+		text="Maxim Alekseev" />
+
+	<Record
+		id="85"
+		type="TITLE"
+		color="ffffaa00"
+		text="Igor Kolchin" />
+
+	<Record
+		id="86"
+		type="TITLE"
+		color="ffffaa00"
+		text="Evgeny Samsonov" />
+
+	<Record
+		id="87"
+		type="TITLE"
+		color="ffffaa00"
+		text="Valery Tikhvinsky" />
+
+	<Record
+		id="88"
+		type="TITLE"
+		color="ffffaa00"
+		text="Sergey Fedosov" />
+
+	<Record
+		id="89"
+		type="TITLE"
+		color="ffffaa00"
+		text="Alexey Kapuza" />
+
+	<Record />
+
+	<Record
+		id="90"
+		type="TITLE"
+		text="Marketing" />
+
+	<Record
+		id="91"
+		type="TITLE"
+		color="ffffaa00"
+		text="Alexander Kochetkov" />
+
+	<Record
+		id="92"
+		type="TITLE"
+		color="ffffaa00"
+		text="Tatiana Vasekina" />
+
+	<Record
+		id="93"
+		type="TITLE"
+		color="ffffaa00"
+		text="Olga Ivanova" />
+
+	<Record
+		id="94"
+		type="TITLE"
+		color="ffffaa00"
+		text="Elena Boriskina" />
+
+	<Record
+		id="95"
+		type="TITLE"
+		color="ffffaa00"
+		text="Evgeny Glazov" />
+
+	<Record
+		id="96"
+		type="TITLE"
+		color="ffffaa00"
+		text="Artem Gordov" />
+
+	<Record
+		id="97"
+		type="TITLE"
+		color="ffffaa00"
+		text="Vyacheslav Grigoriev" />
+
+	<Record
+		id="98"
+		type="TITLE"
+		color="ffffaa00"
+		text="Sergey Zolotov" />
+
+	<Record
+		id="99"
+		type="TITLE"
+		color="ffffaa00"
+		text="Konstantin Kalinovsky" />
+
+	<Record
+		id="100"
+		type="TITLE"
+		color="ffffaa00"
+		text="Roman Karmeluk" />
+
+	<Record
+		id="101"
+		type="TITLE"
+		color="ffffaa00"
+		text="Taisia Lavrova" />
+
+	<Record
+		id="102"
+		type="TITLE"
+		color="ffffaa00"
+		text="Artem Mitenkov" />
+
+	<Record
+		id="103"
+		type="TITLE"
+		color="ffffaa00"
+		text="Andrey Osipov" />
+
+	<Record
+		id="104"
+		type="TITLE"
+		color="ffffaa00"
+		text="Vyacheslav Poschischailo" />
+
+	<Record
+		id="105"
+		type="TITLE"
+		color="ffffaa00"
+		text="Alexey Usov" />
+
+	<Record />
+
+	<Record
+		id="106"
+		type="TITLE"
+		text="Legal support" />
+
+	<Record
+		id="107"
+		type="TITLE"
+		color="ffffaa00"
+		text="George Vitaliev" />
+
+	<Record
+		id="108"
+		type="TITLE"
+		color="ffffaa00"
+		text="Kirill Lykov" />
+
+	<Record />
+
+	<Record
+		id="109"
+		type="TITLE"
+		text="Technical support" />
+
+	<Record
+		id="110"
+		type="TITLE"
+		color="ffffaa00"
+		text="Evgeny Dmitriev" />
+
+	<Record
+		id="111"
+		type="TITLE"
+		color="ffffaa00"
+		text="Roman Alexeev" />
+
+	<Record
+		id="112"
+		type="TITLE"
+		color="ffffaa00"
+		text="Sergey Scherban" />
+
+	<Record
+		id="113"
+		type="TITLE"
+		color="ffffaa00"
+		text="Vadim Sidorov" />
+
+	<Record
+		id="114"
+		type="TITLE"
+		color="ffffaa00"
+		text="Dmitry Bakutin" />
+
+	<Record
+		id="115"
+		type="TITLE"
+		color="ffffaa00"
+		text="Kirill Stoliarov" />
+
+	<Record />
+
+	<Record
+		id="116"
+		type="TITLE"
+		text="Chief of marketing" />
+
+	<Record
+		id=""
+		type="TITLE"
+		color="ffffaa00"
+		text="Олег Доброштан" />
+
+	<Record />
+
+	<Record
+		id="117"
+		type="TITLE"
+		text="Chief of development" />
+
+	<Record
+		id="118"
+		type="TITLE"
+		color="ffffaa00"
+		text="Ivan Bunakov" />
+
+	<Record />
+
+	<Record
+		id="119"
+		type="TITLE"
+		text="Chief of commerce" />
+
+	<Record
+		id="120"
+		type="TITLE"
+		color="ffffaa00"
+		text="Tatiana Ustinova" />
+
+	<Record />
+
+	<Record
+		id="121"
+		type="TITLE"
+		text="Chief of finance" />
+
+	<Record
+		id="122"
+		type="TITLE"
+		color="ffffaa00"
+		text="Marina Revun" />
+
+	<Record />
+
+	<Record
+		id="123"
+		type="TITLE"
+		text="Director general" />
+
+	<Record
+		id="124"
+		type="TITLE"
+		color="ffffaa00"
+		text="Alexander Mikhailov" />
+
+	<Record />
+
+	<Record
+		id="125"
+		type="TITLE"
+		text="Special thanks to" />
+
+	<Record
+		id="126"
+		type="TITLE"
+		color="ffffaa00"
+		text="Ilya Brovchenko" />
+
+	<Record
+		id="127"
+		type="TITLE"
+		color="ffffaa00"
+		text="Yury Virich" />
+
+	<Record
+		id="128"
+		type="TITLE"
+		color="ffffaa00"
+		text="Ekaterina Myshenko" />
+
+	<Record
+		id="129"
+		type="TITLE"
+		color="ffffaa00"
+		text="Marina Revun" />
+
+	<Record
+		id="130"
+		type="TITLE"
+		color="ffffaa00"
+		text="Ivan «Qa» Rainov" />
+
+	<Record
+		id="131"
+		type="TITLE"
+		color="ffffaa00"
+		text="Eugenia Udalova" />
+
+	<Record
+		id="132"
+		type="TITLE"
+		color="ffffaa00"
+		text="Igor Ustinov" />
+
+	<Record />
+
+	<Record />
+
+	<Record />
+
+	<Record />
+</Credits>

@@ -45,6 +45,18 @@
 #*.gif   binary
 
 ###############################################################################
+# byte-sensitive game data: never normalize
+#
+# 上面第 4 行的 `* text=auto` 会对未列出的文件做行尾转换（LF->CRLF）。
+# 汉化资源是 GBK 汉字与 cp1251 俄文混排的**字节流**，任何文本归一化都会
+# 改变字节、破坏游戏加载，所以这里显式标为 -text，并关闭文本 diff。
+###############################################################################
+DLC2_DATA_CHS/**      -text -diff
+DLC1_DATA_CHS/**      -text -diff
+Original_DATA_CHS/**  -text -diff
+tools_dlc2/reuse_pool.json -text
+
+###############################################################################
 # diff behavior for common document formats
 # 
 # Convert binary document formats to text before diffing them. This feature

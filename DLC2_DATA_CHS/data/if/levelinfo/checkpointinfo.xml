@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<CheckpointInfoResource>
+	<CheckpointInfo
+		id="dv1_AfterSwamp"
+		levelName="dv1"
+		fullName="Highway to nowhere"
+		diz="" />
+
+	<CheckpointInfo
+		id="dv1_AfterSwamp2"
+		levelName="dv1"
+		fullName="Interstate 60"
+		diz="" />
+
+	<CheckpointInfo
+		id="dv1_BeforeCaravan"
+		levelName="dv1"
+		fullName="Marauders"
+		diz="" />
+
+	<CheckpointInfo
+		id="dv2_AfterJump"
+		levelName="dv2"
+		fullName="Remote lab"
+		diz="" />
+
+	<CheckpointInfo
+		id="dv2_AfterTown2"
+		levelName="dv2"
+		fullName="In search for professor"
+		diz="" />
+
+	<CheckpointInfo
+		id="dv4_After3item"
+		levelName="dv4"
+		fullName="Search continues"
+		diz="" />
+
+	<CheckpointInfo
+		id="dv4_AfterAloneTown"
+		levelName="dv4"
+		fullName="Following the track"
+		diz="" />
+
+	<CheckpointInfo
+		id="dv5_AfterFall"
+		levelName="dv5"
+		fullName="Wild jungle"
+		diz="" />
+
+	<CheckpointInfo
+		id="dv5_DarkSwamp"
+		levelName="dv5"
+		fullName="Swamp"
+		diz="" />
+
+	<CheckpointInfo
+		id="dv6_AfterProf"
+		levelName="dv6"
+		fullName="Incoming fire"
+		diz="" />
+
+	<CheckpointInfo
+		id="dv6_startRun"
+		levelName="dv6"
+		fullName="Chasing Z-120"
+		diz="" />
+
+	<CheckpointInfo
+		id="dv6_AfterFirstTrck"
+		levelName="dv6"
+		fullName="The final tank"
+		diz="" />
+
+	<CheckpointInfo
+		id="dv7_AfterRun"
+		levelName="dv7"
+		fullName="Stop the madness"
+		diz="" />
+
+	<CheckpointInfo
+		id="dv8_BeforeZombie"
+		levelName="dv8"
+		fullName="Collectors"
+		diz="" />
+
+	<CheckpointInfo
+		id="dv8_BeforeAngar"
+		levelName="dv8"
+		fullName="Flyhill"
+		diz="" />
+
+	<CheckpointInfo
+		id="dv9_Before1Swamp"
+		levelName="dv9"
+		fullName="Chase"
+		diz="" />
+
+	<CheckpointInfo
+		id="dv9_BeforeBoss"
+		levelName="dv9"
+		fullName="Pappers must die"
+		diz="" />
+</CheckpointInfoResource>

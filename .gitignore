@@ -317,3 +317,12 @@ dist_dlc1/data/if/fonts/cjk_*.dds
 dist_dlc1/update/hta_chs_cjk_dlc1.bin
 # 运行时截图（regenerable）
 _shots_dlc1/
+
+# ---- project additions (2026-10-08c) ----
+# DLC2 汉化流水线：仓库只跟踪 DLC2_DATA_CHS/（成品）与 tools_dlc2/（脚本 + 译文表）。
+# DLC2_DATA/ 是第三方原版数据；DLC2_DATA_CHS_PREVIEW/ 与 _DLC2_corrupted_snapshot_*/
+# 是事故现场备份 —— 体积大、可再生、且与 DLC2_DATA 高度重复，不入库。
+DLC2_DATA/
+DLC2_DATA_CHS_PREVIEW/
+_DLC2_corrupted_snapshot_*/
+_DLC2_DATA_CHS_backup/

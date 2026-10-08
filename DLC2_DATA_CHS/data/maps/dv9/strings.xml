@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<resource>
+	<string
+		id="90000"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="We left with few things to do. As soon as the alien spaceship will reach the hit point, we'll launch the missiles and the invasion will be over."
+		sound="data\sounds\dv_sounds\dialogs\dv9_7.wav"
+		time="10" />
+
+	<string
+		id="90001"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Your mission is to neutralize Pappers. Be extremely careful, we know he has some neurostimulator packs in disposal."
+		sound="data\sounds\dv_sounds\dialogs\dv9_8.wav"
+		time="10" />
+
+	<string
+		id="90002"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="We don't know what this drug does, but the professor developed it together with the Z-120 virus, and he came back for it to the place there the MPs arrested him."
+		sound="data\sounds\dv_sounds\dialogs\dv9_9.wav"
+		time="10" />
+
+	<string
+		id="90003"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="We presume he finds this neurostimulator very important, because his return was a high risk."
+		sound="data\sounds\dv_sounds\dialogs\dv9_10.wav"
+		time="8" />
+
+	<string
+		id="90004"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Destroy Pappers as soon as possible, he is more dangerous then a tank division even without his drug; what happens if he uses the neurostimulator is beyond my imagination."
+		sound="data\sounds\dv_sounds\dialogs\dv9_11.wav"
+		time="11" />
+
+	<string
+		id="9001"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Pappers have shown he has some supernatural skills. Be extremely careful and attack first."
+		sound="data\sounds\dv_sounds\dialogs\dv9_12.wav"
+		time="8" />
+
+	<string
+		id="90015"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="You need to chase down professor Pappers. Do not waste a second."
+		sound="data\sounds\dv_sounds\dialogs\dv9_13.wav"
+		time="4" />
+
+	<string
+		id="9002"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="According to the data from the beacon wired in the vehicle Pappers stole, he's nearby. Be careful."
+		sound="data\sounds\dv_sounds\dialogs\dv9_14.wav"
+		time="7" />
+
+	<string
+		id="90021"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="You must destroy the professor, or this thing he became, before he turns into something you can't destroy at all."
+		sound="data\sounds\dv_sounds\dialogs\dv9_15.wav"
+		time="10" />
+
+	<string
+		id="9003"
+		modelName="mask_prof"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Oh, it's you again, agent! You don't get a clue at all, do you? I already gave you a number of chances to die as a hero, yes I did."
+		sound="data\sounds\dv_sounds\dialogs\dv9_16.wav"
+		time="8" />
+
+	<string
+		id="9004"
+		modelName="mask_prof"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="But you think you can stand in the way of the progress I represent, yes you do. "
+		sound="data\sounds\dv_sounds\dialogs\dv9_17.wav"
+		time="4" />
+
+	<string
+		id="90041"
+		modelName="mask_prof"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="You are just a sneaky harmful person, yes you are. So I have to destroy you."
+		sound="data\sounds\dv_sounds\dialogs\dv9_18.wav"
+		time="3" />
+
+	<string
+		id="90042"
+		modelName="mask_prof"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="You can be proud to be removed from the Earth by Pappers the Great himself."
+		sound="data\sounds\dv_sounds\dialogs\dv9_19.wav"
+		time="3" />
+
+	<string
+		id="90043"
+		modelName="mask_prof"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="However, you may as well kill yourself, yes you do. You have a couple of minutes before I finish my neurostimulation session."
+		sound="data\sounds\dv_sounds\dialogs\dv9_20.wav"
+		time="7" />
+
+	<string
+		id="9005"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Kill this monster while you still can."
+		sound="data\sounds\dv_sounds\dialogs\dv9_21.wav"
+		time="3" />
+
+	<string
+		id="90050"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Congratulations, agent! Thanks to your efforts, the Earth is safe."
+		sound="data\sounds\dv_sounds\dialogs\dv9_22.wav"
+		time="4" />
+
+	<string
+		id="90051"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="We launched the missiles five minutes ago, and now they are only a few miles away from the alien mothership."
+		sound="data\sounds\dv_sounds\dialogs\dv9_23.wav"
+		time="8" />
+
+	<string
+		id="9006"
+		modelName="mask_prof"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="You brainless critters. You deficient failure! You have no idea what you're doing!! It was our key to the highest state of…"
+		sound="data\sounds\dv_sounds\dialogs\dv9_24.wav"
+		time="7" />
+</resource>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<Prefabs>
+	<Node
+		name			= "FadingMsgsList"
+		class			= "Wnd"
+		org				= "0 128 1024 64"
+		style			= "832"
+	/>
+</Prefabs>
