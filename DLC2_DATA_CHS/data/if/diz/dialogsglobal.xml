@@ -2,1116 +2,1116 @@
 <DialogsResource><!--Root--><!--Root/Sin--><!--Root/r5m1--><!--Root/r5m2--><!--Root/r6m1--><!--Root/r6m2--><!--Root/r6m2/Îïöèîíàëüíûå--><!--Root/r6m2/Îïöèîíàëüíûå/Ïðîñëåäèòü çà ðîáîòîì-->
 	<Reply
 		name="r6m2_SearchRobot_1_N01"
-		text="Ìíå íóæíà òâîÿ ïîìîùü, äðóã."
+		text="ÎÒÐèÒªÄã´î°ÑÊÖ£¬ÅóÓÑ¡£"
 		role="NPC"
 		scriptCondition="QuestStatus('r6m2_WhereRobotGo')==Q_CANBEGIVEN"
 		nextReplies="Dlg_pl_000214" />
 
 	<Reply
 		name="Dlg_pl_000214"
-		text="Äà? È ÷òî íàäî ñäåëàòü? Êîãî óáèòü?"
+		text="Å¶£¿ÄÇÒªÎÒ¸ÉÊ²Ã´£¿Õâ»ØÒªÔ×Ë­£¿"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000215" />
 
 	<Reply
 		name="Dlg_npc_000215"
-		text="Íèêîãî íå íàäî óáèâàòü! Ïðîñòî ïðîñëåäè, êóäà íàïðàâëÿþòñÿ âîí òå ðîáîòû."
+		text="Õâ»Ø²»ÓÃÔ×ÈË£¡Ö»Ðè¶¢×¡ÕâÐ©|»úÆ÷ÈË£¬¿´ËüÃÇÍùÄÄ¶ùÈ¥¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000216 Dlg_pl_000426" />
 
 	<Reply
 		name="Dlg_pl_000426"
-		text="Òåáå íàäî, òû è ñëåäè. "
+		text="ÄãÐèÒªµÄ»°£¬×Ô¼º¸úÈ¥¡£"
 		role="PLAYER"
 		scriptResult=" EndConversation()" />
 
 	<Reply
 		name="Dlg_pl_000216"
-		text="Êàêèå èìåííî?"
+		text="¾ßÌåµã£¬Ê²Ã´ÊÂ£¿"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000217" />
 
 	<Reply
 		name="Dlg_npc_000217"
-		text="Äà âîí òå!"
+		text="¾ÍÄÇÐ©£¡"
 		role="NPC"
 		nextReplies="Dlg_pl_000218" />
 
 	<Reply
 		name="Dlg_pl_000218"
-		text="Âèæó. Àãà. Ñ÷èòàé, ÷òî äåëî ñäåëàíî."
+		text="¿´¼ûÁË¡£àÅ¡£|ÊÂÇé°ìÍ×ÁË¡£"
 		role="PLAYER"
 		scriptResult="TakeQuest('r6m2_WhereRobotGo'); EndConversation()" />
 <!--Root/r6m2/Îïöèîíàëüíûå/Ãîíêè-->
 	<Reply
 		name="r6m2_Gonka_1_N01"
-		text="Ïðèâåòñòâóåì òåáÿ, óâàæàåìûé! Òîëüêî ñåãîäíÿ è òîëüêî ñåé÷àñ! Ñóïåðãîíêè! Ó òåáÿ åñòü óíèêàëüíàÿ âîçìîæíîñòü ïðèíÿòü ó÷àñòèå."
+		text="ÏòÄãÖÂ¾´£¬Ç×°®µÄÅóÓÑ£¡|¾ÍÔÚ´ËÊ±´ËµØ£¡³¬¼¶Èü³µ±ÈÈü£¡|ÄãÓÐ¸öÇ§ÔØÄÑ·êµÄ»ú»á²ÎÈü£¡"
 		role="NPC"
 		scriptCondition="QuestStatus('r6m2_Gonka1')==Q_CANBEGIVEN"
 		nextReplies="Dlg_pl_000220" />
 
 	<Reply
 		name="Dlg_pl_000220"
-		text="Ñòîèò ëè ó÷àñòâîâàòü?"
+		text="ÖµµÃ²Î¼ÓÂð£¿"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000221" />
 
 	<Reply
 		name="Dlg_npc_000221"
-		text="Âçíîñ çà ó÷àñòèå - âñåãî 1000. Ðåøàéñÿ!"
+		text="²ÎÈü·ÑÖ»ÒªÒ»Ç§¡£|¸É²»¸É£¿"
 		role="NPC"
 		nextReplies="Dlg_pl_000222 Dlg_pl_000225 Dlg_pl_000226" />
 
 	<Reply
 		name="Dlg_pl_000226"
-		text="Ãîíêè - ýòî äëÿ áåçäåëüíèêîâ, à ó ìåíÿ êó÷à äåë."
+		text="Èü³µÊÇÏÐÈË²ÅÍæµÄ£¬|ÎÒ¿ÉÓÐÒ»¶ÑÂé·³ÊÂÒªÃ¦¡£"
 		role="PLAYER"
 		scriptCondition="GetPlayerMoney()>1000"
 		scriptResult="EndConversation()" />
 
 	<Reply
 		name="Dlg_pl_000225"
-		text="Ó ìåíÿ íåò ñòîëüêî äåíåã."
+		text="ÎÒ¿ÉÃ»ÕâÃ´¶àÇ®¡£"
 		role="PLAYER"
 		scriptCondition="1000>GetPlayerMoney() "
 		scriptResult="EndConversation()" />
 
 	<Reply
 		name="Dlg_pl_000222"
-		text="Çà äåëî!"
+		text="±È¾Í±È£¡"
 		role="PLAYER"
 		scriptCondition="GetPlayerMoney()>1000"
 		nextReplies="Dlg_npc_000223" />
 
 	<Reply
 		name="Dlg_npc_000223"
-		text="Íà ñòàðò. Âíèìàíèå. Ìàðø!"
+		text="Ô¤±¸¡ª¡ª¿ªÊ¼£¡"
 		role="NPC"
 		nextReplies="Dlg_pl_000224" />
 
 	<Reply
 		name="Dlg_pl_000224"
-		text="Ïîãíàëè!!!"
+		text="³å°¡£¡£¡£¡"
 		role="PLAYER"
 		scriptResult="AddPlayerMoney( -1000 );  TakeQuest('r6m2_Gonka1');  TActivate ('trCreateVehGonka');  EndConversation()" />
 
 	<Reply
 		name="r6m2_Gonka_2_N01"
-		text="Ãîíêà çàêîí÷èëàñü. "
+		text="±ÈÈü½áÊøÁË¡£"
 		role="NPC"
 		scriptCondition="QuestStatus('r6m2_Gonka1')==Q_TAKEN"
 		nextReplies="Dlg_pl_000228" />
 
 	<Reply
 		name="Dlg_pl_000228"
-		text="Îòëè÷íî! Âûèãðûø ìîé?"
+		text="ºÃ£¡½±½ð¹éÎÒÁË£¬¶Ô°É£¿"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000229 Dlg_npc_000231 Dlg_npc_000433" />
 
 	<Reply
 		name="Dlg_npc_000433"
-		text="Íà ñàìîì äåëå, åñëè òû ÷èòàåøü ýòîò òåêñò - çíà÷èò â èãðå ïðîèçîøëà îøèáêà! Òû ñìîã ïîáåäèòü ïðîãðàììó. Ïðèÿòíîé èãðû!"
+		text="ÆäÊµ£¬ÄãÒªÊÇ¿´µ½Õâ¶Î»°¡ª¡ª|ËµÃ÷ÓÎÏ·³öÁË²í×Ó£¡|Äã¾ÓÈ»ÄÜÓ®¹ý³ÌÐò¡£×£ÄãÍæµÃÓä¿ì£¡"
 		role="NPC"
 		scriptCondition="GetVar('Gonka').AsInt==0"
 		nextReplies="Dlg_pl_000434" />
 
 	<Reply
 		name="Dlg_pl_000434"
-		text="ß ïîáåäèë ïðîãðàììó!"
+		text="ÎÒÓ®ÁË³ÌÐò£¡"
 		role="PLAYER"
 		scriptResult="FailQuest('r6m2_Gonka1'); EndConversation()" />
 
 	<Reply
 		name="Dlg_npc_000231"
-		text="Ñ ÷åãî áû ýòî? Òû æå ÷óòü íå ïîñëåäíèì ïðèøåë!"
+		text="ÄãÆ¾Ê²Ã´ÕâÃ´Ëµ£¿Äã²îµã¾Íµæµ×ÁË£¡"
 		role="NPC"
 		scriptCondition="GetVar('Gonka').AsInt==2"
 		nextReplies="Dlg_pl_000232" />
 
 	<Reply
 		name="Dlg_pl_000232"
-		text="Çàð-ðàçà!"
+		text="¸ÃËÀ£¡"
 		role="PLAYER"
 		scriptResult="FailQuest('r6m2_Gonka1'); EndConversation()" />
 
 	<Reply
 		name="Dlg_npc_000229"
-		text="Äà, îí òâîé ïî ïðàâó!"
+		text="Ã»´í£¬ÄãÓ®µÃ¹âÃ÷Õý´ó£¡"
 		role="NPC"
 		scriptCondition="GetVar('Gonka').AsInt==1"
 		nextReplies="Dlg_pl_000230" />
 
 	<Reply
 		name="Dlg_pl_000230"
-		text="À òî!"
+		text="ÄÇÊÇ×ÔÈ»£¡"
 		role="PLAYER"
 		scriptResult="CompleteQuest('r6m2_Gonka1'); EndConversation()" />
 <!--Root/r6m2/Îïöèîíàëüíûå/Ïîìî÷ü ÷åëó-->
 	<Reply
 		name="r6m2_BrokenCar_1_N01"
-		text="Ïîìîãè ìíå, äîáðûé ÷åëîâåê! "
+		text="°ï°ïÎÒ£¬ºÃÐÄÈË£¡"
 		role="NPC"
 		scriptCondition="QuestStatus('r6m2_HelpVoditel')==Q_CANBEGIVEN"
 		nextReplies="Dlg_pl_000234" />
 
 	<Reply
 		name="Dlg_pl_000234"
-		text="Ñ ÷åãî òû âçÿë, ÷òî ÿ äîáðûé?"
+		text="ÄãÔõÃ´¾õµÃÎÒÊÇºÃÐÄÈË£¿"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000235" />
 
 	<Reply
 		name="Dlg_npc_000235"
-		text="Íóòðîì ÷óþ. Ìàøèíà ó ìåíÿ ïîëîìàëàñü. À çàï÷àñòåé íåò."
+		text="ÎÒ¹ÇÍ··ìÀï¾ÍÓÐÕâÖ±¾õ¡£|ÎÒµÄ³µÅ×ÃªÁË£¬ÊÖÍ·ÓÖÃ»ÁãÅä¼þÐÞ¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000236" />
 
 	<Reply
 		name="Dlg_pl_000236"
-		text="À ÷òî èìåííî ñëîìàëîñü? Êàêèå òåáå çàï÷àñòè íóæíû?"
+		text="¾ßÌåÊÇÊ²Ã´»µÁË£¿ÄãÒªÊ²Ã´Åä¼þ£¿"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000237" />
 
 	<Reply
 		name="Dlg_npc_000237"
-		text="Ý-ý, ïðîùå ñêàçàòü, ÷òî ó ìåíÿ íå ñëîìàëîñü. Íå ñëîìàëñÿ ó ìåíÿ ðóëü. Çàòî ñëîìàëîñü âñå îñòàëüíîå. Òàê ÷òî êàêèå çàï÷àñòè íàéäåøü - òàêèå è âåçè. ß âñå âîçüìó, ñêîëüêî íè ïðèâåçåøü."
+		text="°¦£¬ËµÄÄ¸öÃ»»µ»¹¿ìÐ©¡£|·½ÏòÅÌµ¹ÊÇºÃµÄ£¬ÆäËûÈ«Å¿ÎÑÁË¡£|ËùÒÔÄãÄÜÕÒµ½Ê²Ã´Åä¼þÎÒ¶¼Òª£¬|À­À´¶àÉÙÎÒÊÕ¶àÉÙ¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000238 Dlg_pl_000239 Dlg_pl_000427" />
 
 	<Reply
 		name="Dlg_pl_000427"
-		text="Íó âîò, ñåé÷àñ âñå áðîøó è áóäó òåáå çàï÷àñòè âîçèòü!"
+		text="ÏëµÃÃÀ£¬ÎÒ²Å²»»áÈÓÏÂÒ»ÇÐ|ÂúÊÀ½ç¸øÄãÕÒÅä¼þÄØ£¡"
 		role="PLAYER"
 		scriptResult=" EndConversation()" />
 
 	<Reply
 		name="Dlg_pl_000239"
-		text="Ó ìåíÿ ñ ñîáîé åñòü, âîçüìåøü?"
+		text="ÎÒÕâ¶ùÕýºÃÓÐÐ©¡£ÊÕÂð£¿"
 		role="PLAYER"
 		scriptCondition="GetItemsAmount('machinery')>0 "
 		nextReplies="Dlg_npc_000240" />
 
 	<Reply
 		name="Dlg_npc_000240"
-		text="Âîçüìó, äîáðûé ÷åëîâåê, êîíå÷íî âîçüìó! Âîò òåáå äåíüãè."
+		text="µ±È»ÊÕ£¬ºÃÐÄÈË£¬ÎÒÈ«ÒªÁË£¡|Ç®¸øÄã¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000241" />
 
 	<Reply
 		name="Dlg_pl_000241"
-		text="Îòëè÷íî."
+		text="ºÃ¼«ÁË¡£"
 		role="PLAYER"
 		scriptResult="RemovePlayerItem('machinery', GetItemsAmount('machinery')); CompleteQuest('r6m2_HelpVoditel'); EndConversation()" />
 
 	<Reply
 		name="Dlg_pl_000238"
-		text="Õîðîøî, ñòîé òóò, íèêóäà íå óåçæàé. ß äî äåðåâíè è îáðàòíî. Îäíî êîëåñî òóò, äðóãîå òàì."
+		text="ÐÐ£¬Äã´ýÕâ¶ù±ðÂÒÅÜ¡£|ÎÒÕâ¾Í½ø´åÈ¥È¡£¬ÂíÉÏ»ØÀ´¡£|ÂéÀûµã¶ùµÄ¡£"
 		role="PLAYER"
 		scriptResult="TakeQuest('r6m2_HelpVoditel'); EndConversation()" />
 
 	<Reply
 		name="r6m2_BrokenCar_2_N01"
-		text="Òû ïðèâåç ìíå çàï÷àñòè?"
+		text="Åä¼þ¸øÎÒ´øÀ´ÁËÂð£¿"
 		role="NPC"
 		scriptCondition="QuestStatus('r6m2_HelpVoditel')==Q_TAKEN"
 		nextReplies="Dlg_pl_000243 Dlg_pl_000244" />
 
 	<Reply
 		name="Dlg_pl_000244"
-		text="Èçâèíè, ïîêà íå äî çàï÷àñòåé áûëî. Íî ÿ ïðèâåçó, òû, ãëàâíîå, æäè."
+		text="±§Ç¸£¬Åä¼þ»¹Ã»¸øÄãÅªµ½¡£|ÎÒÊµÔÚÌÚ²»³ö¹¤·ò¡£|²»¹ýÄãµÈ×Å£¬»õ¿Ï¶¨¸øÄãËÍµ½¡£"
 		role="PLAYER"
 		scriptResult="EndConversation()" />
 
 	<Reply
 		name="Dlg_pl_000243"
-		text="Äà, âîò äåðæè."
+		text="ßö£¬½Ó×Å¡£"
 		role="PLAYER"
 		scriptCondition="GetItemsAmount('machinery')>0"
 		nextReplies="Dlg_npc_000245" />
 
 	<Reply
 		name="Dlg_npc_000245"
-		text="Áëàãîäàðþ òåáÿ, äîáðûé ÷åëîâåê. Âîò òâîè äåíüãè."
+		text="¶àÐ»ÁË£¬ºÃÐÄÈË¡£Ç®¸øÄã¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000246" />
 
 	<Reply
 		name="Dlg_pl_000246"
-		text="Îáðàùàéñÿ, åñëè ÷òî."
+		text="ËæÊ±Ð§ÀÍ¡£"
 		role="PLAYER"
 		scriptResult="RemovePlayerItem('machinery', GetItemsAmount('machinery')); CompleteQuest('r6m2_HelpVoditel'); EndConversation()" />
 <!--Root/r6m1/ñþæåòíûå--><!--Root/r6m1/îïöèîíàëüíûå--><!--Root/r6m1/îïöèîíàëüíûå/Íàéòè ðåáåíêà--><!--Root/r6m1/îïöèîíàëüíûå/Ïîäâåçòè-->
 	<Reply
 		name="r6m1_AvtostopMan_dialog1"
-		text="Íå ïîäâåçåøü?"
+		text="ÄÜÉÓÎÒÒ»³ÌÂð£¿"
 		role="NPC"
 		scriptCondition="GetCurNpc():GetSpokenCount() == 0"
 		nextReplies="Dlg_pl_000139" />
 
 	<Reply
 		name="Dlg_pl_000139"
-		text="Êóäà?"
+		text="È¥ÄÄ¶ù£¿"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000140" />
 
 	<Reply
 		name="Dlg_npc_000140"
-		text="Äî Îíòî."
+		text="È¥°ÂÌØÅµ¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000141 Dlg_pl_000142" />
 
 	<Reply
 		name="Dlg_pl_000142"
-		text="Íåò."
+		text="²»ÁË¡£"
 		role="PLAYER"
 		scriptResult="GetCurNpc():SetSpokenCount( 1 );  EndConversation()" />
 
 	<Reply
 		name="Dlg_pl_000141"
-		text="ß ñîãëàñåí."
+		text="ÐÐ£¬ÎÒ´ðÓ¦Äã¡£"
 		role="PLAYER"
 		scriptResult="GetCurNpc():SetSpokenCount( 1 );  TakeQuest('r6m1_opt_HelpAvtostopshik');  local r = GetEntityByName ('HumanAvtoSTOP');  if r then r:Remove() end;  EndConversation()" />
 
 	<Reply
 		name="r6m1_AvtostopMan_dialog2"
-		text="Õîðîøî äîåõàëè."
+		text="Ò»Â·Ë³·ç¡£"
 		role="NPC"
 		scriptCondition="IsQuestTaken('r6m1_opt_HelpAvtostopshik')  and  not(IsQuestComplete('r6m1_opt_HelpAvtostopshik'))"
 		nextReplies="Dlg_pl_000143" />
 
 	<Reply
 		name="Dlg_pl_000143"
-		text="Äà, íåïëîõî."
+		text="àÅ£¬»¹Ëã²»Àµ¡£"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000144" />
 
 	<Reply
 		name="Dlg_npc_000144"
-		text="Âîò äåíüãè."
+		text="Ç®¸øÄã¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000145" />
 
 	<Reply
 		name="Dlg_pl_000145"
-		text="Îòëè÷íî."
+		text="ºÃ¼«ÁË¡£"
 		role="PLAYER"
 		scriptResult="CompleteQuest('r6m1_opt_HelpAvtostopshik');  EndConversation()" />
 <!--Root/r6m1/îïöèîíàëüíûå/Çíàêè-->
 	<Reply
 		name="r6m1_Onto_Signer_dialog1"
-		text="×òî-òî ñòðàííîå ïðîèçîøëî íà ïîëÿõ... Ìû áîèìñÿ òóäà õîäèòü, íî â ãîðîäå, íàâåðíîå, çàèíòåðåñîâàëèñü áû ýòèì ÿâëåíèåì. Òû âîçìåøüñÿ îïèñàòü äëÿ ãîðîæàí ïðîèñõîäÿùåå íà ïîëÿõ?"
+		text="ÌïÀï³öÁË¹ÖÊÂ¡­¡­|ÎÒÃÇ²»¸ÒÈ¥¿´£¬³ÇÀïÈË|È´¶ÔÕâÊÂ¶ùÌØ±ðÀ´¾¢¡£|ÄãÄÜÌæ´ó»ï¶ùÈ¥¿´¿´ÔõÃ´»ØÊÂÂð£¿"
 		role="NPC"
 		scriptCondition="GetCurNpc():GetSpokenCount() == 0"
 		nextReplies="Dlg_pl_000147 Dlg_pl_000148" />
 
 	<Reply
 		name="Dlg_pl_000148"
-		text="Íåò."
+		text="²»ÁË¡£"
 		role="PLAYER"
 		scriptResult="EndConversation()" />
 
 	<Reply
 		name="Dlg_pl_000147"
-		text="Äà."
+		text="ºÃ¡£"
 		role="PLAYER"
 		scriptResult="GetCurNpc():SetSpokenCount( 1 );  TakeQuest('r6m1_opt_Signs');  TActivate ('triggerSeeSigns');  EndConversation()" />
 
 	<Reply
 		name="r6m1_TownMapleSheet_WorestScientist_dialog1"
-		text="Íó, ÷òî-íèáóäü óçíàë?"
+		text="´òÌýµ½Ê²Ã´ÁËÂð£¿"
 		role="NPC"
 		scriptCondition="IsQuestTaken('r6m1_opt_SignsDoklad')  and  not(IsQuestComplete('r6m1_opt_SignsDoklad'))"
 		nextReplies="Dlg_pl_000150" />
 
 	<Reply
 		name="Dlg_pl_000150"
-		text="ß îñìîòðåë âàøè ïîëÿ. Âîò âàì áëîêíîò ñ ïîëíûì îò÷åòîì, ðèñóíêàì è ñõåìàìè."
+		text="ÎÒ°ÑÄã¼ÒÌïµØ¿´ÁËÒ»±é¡£|¸ø¡ª¡ª±Ê¼Ç±¾ÀïÊÇÍêÕûµÄ±¨¸æ£¬|¸½Í¼ºÍÍ¼±í¶¼ÔÚ¡£"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000151" />
 
 	<Reply
 		name="Dlg_npc_000151"
-		text="Ñïàñèáî. Âîò òåáå íàãðàäà çà êîëîññàëüíûé ðèñê, êîòîðîìó òû ïîäâåðãàëñÿ."
+		text="¶àÐ»¡£ÕâÊÇÄãÃ°×ÅÌì´ó·çÏÕ|Ó¦µÃµÄ±¨³ê¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000152" />
 
 	<Reply
 		name="Dlg_pl_000152"
-		text="Äà, ðèñê áûë óæàñíûé, òàê ÷òî äåíüãè áóäóò õîðîøåé êîìïåíñàöèåé."
+		text="ÊÇ°¡£¬Õæ¹»ÐüµÄ£¬|ÕâÇ®Ëã¶ÔµÃÆðÄÇ·Ý·çÏÕ¡£"
 		role="PLAYER"
 		scriptResult="CompleteQuest('r6m1_opt_SignsDoklad');  EndConversation()" />
 <!--Root/r6m1/îïöèîíàëüíûå/Ãîíêè-->
 	<Reply
 		name="r6m1_Real_Racer_dialog1"
-		text="Õî÷åøü ïîó÷àñòâîâàòü â ãîíêàõ?"
+		text="Ïë²Î¼ÓÈü³µÂð£¿"
 		role="NPC"
 		scriptCondition="GetCurNpc():GetSpokenCount() == 0"
 		nextReplies="Dlg_pl_000154" />
 
 	<Reply
 		name="Dlg_pl_000154"
-		text="Ãîíêè?!"
+		text="Èü³µ£¿£¡"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000155" />
 
 	<Reply
 		name="Dlg_npc_000155"
-		text="Äà, ãîíêà. Êòî áûñòðåå äîåäåò äî ãîðîäà. Ñ òåáÿ ïëàòà çà ó÷àñòèå - 1000. Âûèãðàåøü ïî÷òè â 3 ðàçà áîëüøå."
+		text="¶Ô£¬ÊÇÈü³µ¡£¿´Ë­ÏÈ¿ªµ½³ÇÀï¡£|²ÎÈü·ÑÒ»Ç§£¬Ó®ÁË²î²»¶àÄÜÄÃÈý±¶¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000156 Dlg_pl_000157" />
 
 	<Reply
 		name="Dlg_pl_000157"
-		text="Ìíå ýòî íå èíòåðåñíî."
+		text="ÎÒ²»¸ÐÐËÈ¤¡£"
 		role="PLAYER"
 		scriptResult=" EndConversation()" />
 
 	<Reply
 		name="Dlg_pl_000156"
-		text="ß ó÷àñòâóþ."
+		text="ÐÐ£¬ÎÒ²Î¼Ó¡£"
 		role="PLAYER"
 		scriptCondition="GetPlayerMoney() >= 1000"
 		scriptResult="AddPlayerMoney( -1000 );  GetCurNpc():SetSpokenCount( 1 );  TakeQuest('r6m1_opt_StartRace');  TActivate ('triggerBigRace');  EndConversation()" />
 <!--Root/r6m1/îïöèîíàëüíûå/Íàéòè ðåáåíêà/Êåéò-->
 	<Reply
 		name="r6m1_Lost_Keyt_dialog1"
-		text="Äîáðûé ÷åëîâåê, ïîìîãèòå ìíå. Ó ìåíÿ ïðîïàë ðåáåíîê."
+		text="ºÃÐÄÈË£¬°ï°ïÎÒ°É¡£ÎÒµÄº¢×Ó¶ªÁË¡£"
 		role="NPC"
 		scriptCondition="GetCurNpc():GetSpokenCount() == 0"
 		nextReplies="Dlg_pl_000100" />
 
 	<Reply
 		name="Dlg_pl_000100"
-		text="À ÿ òóò ïðè÷åì?"
+		text="Õâ¸úÎÒÓÐÊ²Ã´¹ØÏµ£¿"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000109" />
 
 	<Reply
 		name="Dlg_npc_000109"
-		text="Âñå ãîâîðÿò, ÷òî îíè íè ïðè÷åì, è íè êòî íå õî÷åò ïîìî÷ü! Äàæå ìîé ìóæ ×àðëüç!"
+		text="ÈËÈË¶¼ÕâÃ´Ëµ£¬Ë­Ò²²»¿Ï°ïÎÒ¡ª¡ª|Á¬ÎÒÕÉ·ò²é¶ûË¹¶¼²»¿Ï£¡"
 		role="NPC"
 		nextReplies="Dlg_pl_000110 Dlg_pl_000111" />
 
 	<Reply
 		name="Dlg_pl_000111"
-		text="Íó, ðàç äàæå ìóæ îòêàçûâàåòñÿ, òî ìíå è ïîäàâíî íåò íóæäû ââÿçûâàòüñÿ â ýòî äåëî."
+		text="Á¬ÕÉ·ò¶¼²»¿Ï°ïÃ¦£¬|ÄÇÎÒ¾Í¸üÃ»±ØÒªÏ¹²ôºÍÁË¡£"
 		role="PLAYER"
 		scriptResult=" EndConversation()" />
 
 	<Reply
 		name="Dlg_pl_000110"
-		text="Ëàäíî, ïîïðîáóþ ïîìî÷ü."
+		text="ÐÐ°É£¬ÎÒ°ïÄãÊÔÊÔ¡£"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000135" />
 
 	<Reply
 		name="Dlg_npc_000135"
-		text="Ñïàñèáî òåáå îãðîìíîå, äîáðûé ÷åëîâåê!"
+		text="Ì«¸ÐÐ»ÁË£¬´óºÃÈË£¡"
 		role="NPC"
 		nextReplies="Dlg_pl_000136" />
 
 	<Reply
 		name="Dlg_pl_000136"
-		text="Ïîêà åùå íå çà ÷òî. Ïîñìîòðèì, ÷òî ÿ ñìîãó ñäåëàòü. Äëÿ íà÷àëà ìíå íàäî áóäåò ïîãîâîðèòü ñ òâîèì ìóæåì."
+		text="²»¿ÍÆø¡£ÈÃÎÒ¿´¿´ÄÜ×öµãÊ²Ã´¡£|Ê×ÏÈÎÒµÃ¸úÄãÕÉ·òÌ¸Ì¸¡£"
 		role="PLAYER"
 		scriptResult="GetCurNpc():SetSpokenCount( 1 );  TakeQuest('r6m1_opt_FindKids');  EndConversation()" />
 
 	<Reply
 		name="r6m1_Lost_Keyt_dialog2"
-		text="×òî òåáå ðàññêàçàë ýòîò íåóäà÷íèê ×àðëüç?"
+		text="ÄÇ¸öµ¹Ã¹µ°²é¶ûË¹¸úÄãËµÊ²Ã´ÁË£¿"
 		role="NPC"
 		scriptCondition="GetCurNpc():GetSpokenCount() == 2"
 		nextReplies="Dlg_pl_000107" />
 
 	<Reply
 		name="Dlg_pl_000107"
-		text="Âàø ìóæ âåäåò ñåáÿ íåñêîëüêî ñòðàííî. Íî îí ïîìîã ìíå ïîíÿòü îäíó âåùü. Êàê äàâíî âû âèäåëè ñâîåãî ðåáåíêà?"
+		text="ÄãÕÉ·òµÄ¾Ù¶¯Ïàµ±¹Å¹Ö¡£|²»¹ýËûµ¹°ïÎÒÅªÃ÷°×ÁËÒ»¼þÊÂ¡£|Äã×îºóÒ»´Î¼ûµ½º¢×ÓÊÇÊ²Ã´Ê±ºò£¿"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000120" />
 
 	<Reply
 		name="Dlg_npc_000120"
-		text="Íå çíàþ. Ýòî òðóäíî ñîèçìåðèòü. Ïîìíþ òîëüêî, êàê åìó áûëî íåñêîëüêî ìåñÿöåâ, è ÿ äåðæàëà åãî íà ðóêàõ. Îí òàêîé ìàëåíüêèé è ñìåøíîé..."
+		text="ÎÒ²»ÖªµÀ£¬ÕâºÜÄÑËµÇå¡£|ÎÒÖ»¼ÇµÃËû²Å¼¸¸öÔÂ´ó£¬|ÎÒ°ÑËû±§ÔÚ»³Àï¡£|ËûÄÇÃ´Ð¡£¬ÄÇÃ´ÈÇÈËÌÛ¡­¡­"
 		role="NPC"
 		nextReplies="Dlg_pl_000125 Dlg_pl_000126" />
 
 	<Reply
 		name="Dlg_pl_000126"
-		text="Õì, à âû óâåðåíû, ÷òî ó âàñ áûë ðåáåíîê? Ìîæåò áûòü, íèêàêîãî ðåáåíêà è íå áûëî?"
+		text="àÅ¡­¡­ÄãÈ·¶¨ÄãÓÐ¹ýº¢×Ó£¿|Ëµ²»¶¨Ñ¹¸ù¶ù¾ÍÃ»ÓÐº¢×Ó£¿"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000129" />
 
 	<Reply
 		name="Dlg_npc_000129"
-		text="×òî?!!! Òû õî÷åøü ñêàçàòü, ÷òî ÿ ñîøëà ñ óìà?!!! Óáèðàéñÿ ïðî÷ü!!!"
+		text="Ê²Ã´£¿£¡£¡£¡ÄãÊÇÏë|ËµÎÒ·èÁËÂð£¿£¡£¡£¡¹ö³öÈ¥£¡£¡£¡"
 		role="NPC"
 		nextReplies="Dlg_pl_000130" />
 
 	<Reply
 		name="Dlg_pl_000130"
-		text="À äåíüãè?.."
+		text="ÄÇÉÍ½ðÄØ£¿¡­¡­"
 		role="PLAYER"
 		scriptResult="GetCurNpc():SetSpokenCount( 10 );  FailQuest('r6m1_opt_FindKids');  EndConversation()" />
 
 	<Reply
 		name="Dlg_pl_000125"
-		text="Âàø ìóæ ãîâîðèò òîæå ñàìîå. Ñòðàííî ýòî êàê-òî."
+		text="ÄãÕÉ·òÒ²ÊÇÕâÃ´ËµµÄ¡£|Õâ¿ÉÕæ¹»¹ÖµÄ¡£"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000127" />
 
 	<Reply
 		name="Dlg_npc_000127"
-		text="Çíàåòå, ÿ íå õîòåëà âàì ãîâîðèòü, íî îí óâëåêàåòñÿ âñÿêèìè âåùåñòâàìè. Íó, âû ìåíÿ ïîíèìàåòå."
+		text="Ìý×Å£¬ÎÒ±¾²»ÏëËµ£¬|¿ÉËûÃÔÉÏÁËÄ³ÖÖ'¶«Î÷'¡£|ÄãÃ÷°×ÎÒÊ²Ã´ÒâË¼¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000128" />
 
 	<Reply
 		name="Dlg_pl_000128"
-		text="Ïîíÿòíî.  Ïîéäó, åùå ðàç ñ íèì ïîãîâîðþ."
+		text="ÐÐ¡£ÎÒÔÙÈ¥¸úËûÌ¸Ò»´Î¡£"
 		role="PLAYER"
 		scriptResult="GetCurNpc():SetSpokenCount( 3 );  EndConversation()" />
 
 	<Reply
 		name="r6m1_Lost_Keyt_dialog3"
-		text="Íó ÷òî, âû óçíàëè õîòü ÷òî-íèáóäü?"
+		text="ÓÐÃ¼Ä¿ÁËÂð£¿"
 		role="NPC"
 		scriptCondition="GetCurNpc():GetSpokenCount() == 4"
 		nextReplies="Dlg_pl_000108" />
 
 	<Reply
 		name="Dlg_pl_000108"
-		text="Õì, â ýòî ñëîæíî ïîâåðèòü, íî âñå æå ïîñëóøàéòå ìåíÿ. ß îáû÷íûé áðîäÿãà, è ÿ ïîáûâàë âî ìíîãèõ ãîðîäàõ è äåðåâíÿõ. Íî ÿ äàâíûì-äàâíî íèãäå íå âèäåë äåòåé... Áîþñü, âû íèêîãäà íå íàéäåòå ñâîåãî ñûíà."
+		text="°¦£¬Õâ»°²»ºÃÌý£¬µ«ÄãÌýÎÒËµ¡£|ÎÒ¾ÍÊÇ¸öÁ÷ÀËºº£¬|×ß¹ýµÄ³ÇÕò´åÂäÃ»ÓÐÒ»°ÙÒ²ÓÐ°ËÊ®¡£|¿ÉÎÒÕâÃ´¾ÃÒÔÀ´¾ÍÃ»¼û¹ýÒ»¸ö|º¢×Ó¡­¡­¿ÖÅÂÄãÓÀÔ¶Ò²ÕÒ|²»µ½ÄãµÄº¢×ÓÁË¡£"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000133" />
 
 	<Reply
 		name="Dlg_npc_000133"
-		text="Î, ãîðå ìíå, ãîðå! Âîò âàøè äåíüãè, ìíå îíè áîëüøå íå íóæíû."
+		text="°¦£¬ÎÒÃüºÃ¿à£¡Ç®ÄÃÈ¥°É£¬|ÎÒÏÖÔÚÓÃ²»×ÅÁË¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000134" />
 
 	<Reply
 		name="Dlg_pl_000134"
-		text="Ñïàñèáî. Çàòî ìíå îíè íóæíû."
+		text="¶àÐ»£¬²»¹ýÕâÇ®ÎÒÒª¡£"
 		role="PLAYER"
 		scriptResult="CompleteQuest('r6m1_opt_FindKids');  GetCurNpc():SetSpokenCount( 10 );  EndConversation()" />
 <!--Root/r6m1/îïöèîíàëüíûå/Íàéòè ðåáåíêà/×àðëè-->
 	<Reply
 		name="r6m1_Lost_Charli_dialog1"
-		text="Ãîâîðè áûñòðåå, ÷òî òåáå íàäî, ÿ çàíÿò. ß ñëóøàþ êðàñèâóþ ìóçûêó."
+		text="ÓÐ»°¿ìËµ£¬ÎÒÃ¦×ÅÄØ¡£|ÎÒÕýÌýÃÀÃîµÄÒôÀÖÄØ¡£"
 		role="NPC"
 		scriptCondition="getObj('r6m1_Lost_Keyt'):GetSpokenCount() == 1"
 		nextReplies="Dlg_pl_000103" />
 
 	<Reply
 		name="Dlg_pl_000103"
-		text="Ìóçûêó?! ß íå ñëûøó çäåñü íèêàêîé ìóçûêè, òåì áîëåå - êðàñèâîé. ß õîòåë óçíàòü î ïðîïàâøåì ðåáåíêå, âàøà æåíà áåñïîêîèòñÿ. Êóäà îí ìîã äåòüñÿ?"
+		text="ÒôÀÖ£¿£¡ÎÒÔõÃ´Ã»Ìý¼ûÊ²Ã´ÒôÀÖ£¬|»¹ÃÀÃîµÄÄØ¡£ÎÒÏëÎÊÎÊ¶ªº¢×ÓµÄÊÂ£¬|ÄãÀÏÆÅÕýÎªÕâÊÂ×Å¼±ÄØ¡£|º¢×ÓÉÏÄÄ¶ùÈ¥ÁË£¿"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000112" />
 
 	<Reply
 		name="Dlg_npc_000112"
-		text="Ìóçûêà ðîæäàåòñÿ ó ìåíÿ â ãîëîâå. È ÿ åå ñëóøàþ. À ïðî ðåáåíêà ÿ íè÷åãî íå çíàþ. Ïîìíþ òîëüêî, êàê åìó áûëî íåñêîëüêî ìåñÿöåâ, è ÿ äåðæàë åãî íà ðóêàõ. Îí òàêîé ìàëåíüêèé è ñìåøíîé."
+		text="ÒôÀÖÔÚÎÒÄÔ×ÓÀï£¬ÎÒÌýµÃ¼û¡£|ÎÒÒ»Ö±ÔÚÌý¡£º¢×ÓµÄÊÂÎÒÒ»¸Å²»Öª¡£|ÎÒÖ»¼ÇµÃËû²Å¼¸¸öÔÂ´ó£¬|ÎÒ°ÑËû±§ÔÚ»³Àï¡£|ËûÄÇÃ´Ð¡£¬ÄÇÃ´ÈÇÈËÌÛ¡­¡­"
 		role="NPC"
 		nextReplies="Dlg_pl_000113 Dlg_pl_000114" />
 
 	<Reply
 		name="Dlg_pl_000114"
-		text="Äà âàì, óâàæàåìûé, ãîëîâó ëå÷èòü íàäî."
+		text="ÄãÕæ¸ÃÈ¥¿´¿´´ó·òÁË¡£"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000115" />
 
 	<Reply
 		name="Dlg_npc_000115"
-		text="ß áîëüøå íå õî÷ó ñ òîáîé ðàçãîâàðèâàòü."
+		text="ÎÒ²»Ïë¸úÄãËµ»°ÁË¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000116" />
 
 	<Reply
 		name="Dlg_pl_000116"
-		text="Íå ìîãó ñêàçàòü, ÷òîá ÿ óçíàë ÷òî-íèáóäü ïîëåçíîå èç ýòîãî ðàçãîâîðà."
+		text="ÎÒÒ²Ëµ²»ÉÏ´òÌý³öÁËÊ²Ã´ÓÐÓÃµÄ¡£"
 		role="PLAYER"
 		scriptResult="getObj('r6m1_Lost_Keyt'):SetSpokenCount( 10 );  FailQuest('r6m1_opt_FindKids');  EndConversation()" />
 
 	<Reply
 		name="Dlg_pl_000113"
-		text="Ýòî âàøå ïîñëåäíåå âîñïîìèíàíèå î íåì? Êàê äàâíî ýòî áûëî?"
+		text="Õâ¾ÍÊÇÄã¶ÔËû×îºóµÄ¼ÇÒäÁË£¿|ÄÇÊÇ¶à¾ÃÇ°µÄÊÂ£¿"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000117" />
 
 	<Reply
 		name="Dlg_npc_000117"
-		text="Íå çíàþ, ÿ óæå äàâíî íå îùóùàþ âðåìåíè. Âðåìÿ... Âðåìÿ çàìåðëî â ýòèõ ëåñàõ. Âîò íà ìîèõ ÷àñàõ ñåé÷àñ 18 ôåâðàëÿ 6 ÷àñîâ âå÷åðà 35 ìèíóò."
+		text="²»ÖªµÀ£¬ÎÒºÜ¾ÃÃ»¸ÐÊÜ¹ýÊ±¼äÁË¡£|Ê±¼ä¡­¡­Ê±¼äÔÚÉ­ÁÖÀïÍ£×¡ÁË¡£|ÎÒÄÇ¿é»³±íÏÖÔÚ»¹Í£ÔÚ2ÔÂ|18ÈÕÔçÉÏ6µã35·Ö¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000118 Dlg_pl_000119" />
 
 	<Reply
 		name="Dlg_pl_000119"
-		text="Íà ìîèõ òîæå ñàìîå."
+		text="ÎÒµÄ±íÒ²ÊÇÕâ¸öÊ±¼ä¡£"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000123" />
 
 	<Reply
 		name="Dlg_npc_000123"
-		text="Òû âðåøü, ó òåáÿ è ÷àñîâ-òî íåò. Èäè ïðî÷ü. Õîòÿ, ëó÷øå ÿ ñàì óéäó."
+		text="ÄãÈö»Ñ£¬Äã¸ù±¾Ã»±í¡£|×ß¿ª¡£²»£¬»¹ÊÇÎÒ×Ô¼º×ß°É¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000124" />
 
 	<Reply
 		name="Dlg_pl_000124"
-		text="Ì-äà, òÿæåëûé ñëó÷àé, ÿçâè åãî êàðòåð."
+		text="°¦£¬Õæ»ÞÆø£¬ÈÃËû»¯ÓÍÆ÷¶ÂËÀÈ¥°É¡£"
 		role="PLAYER"
 		scriptResult="getObj('r6m1_Lost_Keyt'):SetSpokenCount( 10 );  FailQuest('r6m1_opt_FindKids');  EndConversation()" />
 
 	<Reply
 		name="Dlg_pl_000118"
-		text="À âàì íå êàæåòñÿ, ÷òî âàøè ÷àñû ñòîÿò?"
+		text="ÄãÓÐÃ»ÓÐÏë¹ý£¬ÊÇÄãµÄ±í²»×ßÁË£¿"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000121" />
 
 	<Reply
 		name="Dlg_npc_000121"
-		text="Êîíå÷íî, êîãäà òû âèäåë ðàáîòàþùèå ÷àñû â ïîñëåäíèé ðàç?! Âðåìÿ èäåò íåçàìåòíî. Âîò ìû ñ òîáîé òóò ðàçãîâîðèëèñü, è óæå ïðîøëî ìíîãî âðåìåíè, ÷àñîâ, à ìîæåò áûòü, è äíåé. Òû îá ýòîì íå äóìàë?"
+		text="Ëüµ±È»²»×ßÁË¡ª¡ª|ÄãÉÏ»Ø¼ûµ½»¹×ß×Ö¶ùµÄ±íÊÇ|Ê²Ã´Ê±ºòµÄÊÂ£¿ÔÛÃÇÔÚÕâ¶ùÁÄ×Å£¬|ÍâÍ·Ëµ²»¶¨ÒÑ¾­¹ýÁËºÃ¼¸¸öÖÓÍ·£¬|ÉõÖÁºÃ¼¸Ìì¡£Äã¾ÍÃ»×ÁÄ¥¹ýÕâÊÂ¶ù£¿"
 		role="NPC"
 		nextReplies="Dlg_pl_000122" />
 
 	<Reply
 		name="Dlg_pl_000122"
-		text="Íèêóäà íå óõîäè, ÿ îáñóæó ýòî ñ Êåéò è âåðíóñü."
+		text="Äã´ýÔÚÕâ¶ù±ð×ß£¬|ÎÒÈ¥¸ú¿­ÌØÉÌÁ¿Ò»ÏÂÔÙ»ØÀ´¡£"
 		role="PLAYER"
 		scriptResult="getObj('r6m1_Lost_Keyt'):SetSpokenCount( 2 );  EndConversation()" />
 
 	<Reply
 		name="r6m1_Lost_Charli_dialog2"
-		text="Ìû ñ âàìè ãäå-òî âñòðå÷àëèñü?"
+		text="ÔÛÃÇÊÇ²»ÊÇÔÚÄÄ¶ù¼û¹ý£¿"
 		role="NPC"
 		scriptCondition="getObj('r6m1_Lost_Keyt'):GetSpokenCount() == 3"
 		nextReplies="Dlg_pl_000104" />
 
 	<Reply
 		name="Dlg_pl_000104"
-		text="Äà, ÿ ðàçãîâàðèâàë ñ âàìè 15 ìèíóò íàçàä. À êàê íàñ÷åò óïîòðåáëåíèÿ íàðêîòèêîâ?"
+		text="ÎÒÊ®Îå·ÖÖÓÇ°¸Õ¸úËûËµ¹ý»°¡£|ÄÇ¸ö'ñ«'ÊÇÔõÃ´»ØÊÂ£¿"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000131" />
 
 	<Reply
 		name="Dlg_npc_000131"
-		text="Íàðêîòèêè? Ãëþê-ãðèáû - ýòî âîâñå íå íàðêîòèê... Ëàäíî, õîðîøî, âû ìåíÿ ïîäëîâèëè. ß âàì âñå ðàññêàæó ïðè óñëîâèè, ÷òî âû íå ðàññêàæåòå íèêîìó î ìîåì óâëå÷åíèè. Ëþäè èç îáùèíû íå ïîéìóò ìåíÿ. Ïîíèìàåòå, îùóùåíèå âðåìåíè ñëèøêîì ñòðàííî. Ïî ìîèì îùóùåíèÿì, ÿ âèäåë ðåáåíêà î÷åíü è î÷åíü äàâíî. Âîçìîæíî, äàæå íåñêîëüêî äåñÿòêîâ ëåò íàçàä. Íî æåíà íå õî÷åò è ñëûøàòü îá ýòîì."
+		text="¶¾Æ·£¿'ÃÔÃÎ¹½'¿É²»Ëã¶¾Æ·¡­¡­|ºÃ°É£¬±»Äã´þ×ÅÁË¡£|ÎÒÈ«ÕÐ¡ª¡ªµ«ÓÐ¸öÌõ¼þ£º|²»Ðí°ÑÎÒÕâÃ«²¡¸æËßÈÎºÎÈË¡£|ÕòÉÏµÄÈË²»»áÀí½âÎÒµÄ¡£|Ìý×Å£¬Ê±¼äÕâ¶«Î÷µÄ¸Ð¾õÌØ±ð¹Å¹Ö¡£|ÕÕÎÒ×Ô¼ºµÄ¸Ð¾õ£¬|ÎÒ¼ûµ½ÄÇº¢×ÓÊÇºÜ¾ÃÒÔÇ°µÄÊÂÁË¡£|Ëµ²»¶¨¶¼¹ýÈ¥ºÃ¼¸Ê®ÄêÁË¡£|¿ÉÎÒÀÏÆÅ²»¿ÏÌýÕâÐ©¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000132" />
 
 	<Reply
 		name="Dlg_pl_000132"
-		text="Àãà! Âîò îíà - èñòèíà. Êëýð áóäåò èíòåðåñíî ýòî óçíàòü."
+		text="°¡¹þ£¡Õâ²ÅÊÇÊµ»°¡£|¿­ÌØÌýÁË¿Ï¶¨¸ÐÐËÈ¤¡£"
 		role="PLAYER"
 		scriptResult="getObj('r6m1_Lost_Keyt'):SetSpokenCount( 4 );  EndConversation()" />
 <!--Root/r6m1/ñþæåòíûå/Ðàçãîâîð ñ Îòøåëüíèêàìè-->
 	<Reply
 		name="r6m1_TownMapleSheet_WorestMan_dialog1"
-		text="Ãîâîðè..."
+		text="ÄÇ¸ö¡­¡­"
 		role="NPC"
 		scriptCondition="IsQuestTaken('r6m1_TalkWithWorestMen_Quest')    and    not(IsQuestComplete('r6m1_TalkWithWorestMen_Quest'))"
 		nextReplies="Dlg_pl_000048" />
 
 	<Reply
 		name="Dlg_pl_000048"
-		text="Äîáðûé äåíü!"
+		text="ÔçÉÏºÃ£¡"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000049" />
 
 	<Reply
 		name="Dlg_npc_000049"
-		text="Åñëè ýòîò äåíü äîáð äëÿ òåáÿ, òî ýòî áëàãî."
+		text="Äã×Ô¼º¾õµÃÕâÌìºÃ£¬Ëü¾ÍÊÇºÃµÄ¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000050" />
 
 	<Reply
 		name="Dlg_pl_000050"
-		text="Äà? Íàâåðíî. Òû íå çíàåøü, êîìó ïðèíàäëåæèò ëåòàþùàÿ ìàøèíà?"
+		text="ÊÇÂð£¿Ò²Ðí°É¡£ÄãÖªµÀÄÇÁ¾|·ÉÐÐÆ÷ÊÇË­µÄÂð£¿"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000051" />
 
 	<Reply
 		name="Dlg_npc_000051"
-		text="Â ýòîì íåò òàéíû. Ïëåìÿ, æèâóùåå â Ëåñó Çàòåðÿííûõ, âëàäååò ìàøèíîé, ðîæäåííîé äëÿ ïîëåòà."
+		text="ÕâÃ»Ê²Ã´ºÃ±£ÃÜµÄ¡£|ÕâÁ¾ÉúÀ´¾Í»á·ÉµÄ·ÉÐÐÆ÷£¬|ÊôÓÚ×¡ÔÚÃÔÊ§É­ÁÖÀïµÄ²¿Âä¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000052" />
 
 	<Reply
 		name="Dlg_pl_000052"
-		text="Êàê ïîïàñòü â ýòîò ëåñ?"
+		text="ÎÒÔõÃ´²ÅÄÜÈ¥ÄÇÆ¬É­ÁÖ£¿"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000053" />
 
 	<Reply
 		name="Dlg_npc_000053"
-		text="Ïåðåìåùàéñÿ ïî äîðîãå, è îíà ïðèâåäåò òåáÿ."
+		text="ÑØ×Å´óÂ·×ß£¬Â·×ÔÈ»»á°ÑÄã´ø¹ýÈ¥¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000054" />
 
 	<Reply
 		name="Dlg_pl_000054"
-		text="Òû ÷åãî?! Èçäåâàåøüñÿ?! ß è òàê çíàþ, ÷òî ïîïàñòü êóäà-òî ìîæíî òîëüêî ïî äîðîãå. Âîò ÿ è ñïðàøèâàþ: ïî êàêîé äîðîãå òóäà åõàòü?"
+		text="Äã¸ãÊ²Ã´£¿£¡ÄÃÎÒ¿ªäÌÄØ£¿£¡|ÎÒÖªµÀÈ¥ÄÄ¶ù¶¼µÃÑØ×ÅÂ·×ß¡£|ÎÒÎÊÄãµÄÊÇ£¬¾ßÌå×ßÄÄÌõÂ·£¿"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000055" />
 
 	<Reply
 		name="Dlg_npc_000055"
-		text="Íå âî âñå ìåñòà âåäåò äîðîãà."
+		text="¿ÉÓÐÐ©µØ·½£¬¹â¿¿Â·ÊÇµ½²»ÁËµÄ¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000056" />
 
 	<Reply
 		name="Dlg_pl_000056"
-		text="Ñëóøàé! Äàâàé òû ìíå ïðîñòî ïîêàæåøü, êàêàÿ äîðîãà âåäåò ê ýòîìó ïîòåðÿííîìó ëåñó, õîðîøî?"
+		text="ÐÐÁË£¡¸øÎÒÖ¸¸öÈ¥É­ÁÖµÄµÀ¶ù£¬|¾ÍÕâÃ´¼òµ¥£¬ÐÐ²»ÐÐ£¿"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000057" />
 
 	<Reply
 		name="Dlg_npc_000057"
-		text="ß ïîêàæó òåáå äîðîãó, êîòîðóþ òû õî÷åøü, íî, ïîâåðü, ýòî íå òà äîðîãà, êîòîðàÿ íóæíà òåáå."
+		text="ÎÒ¿ÉÒÔ¸øÄãÖ¸Â·£¬|µ«ÄÇ¿É²»ÊÇÄãÏëÒªµÄÄÇÖÖ'Â·'¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000058" />
 
 	<Reply
 		name="Dlg_pl_000058"
-		text="Òû ìíå, ãëàâíîå ïîêàæè, à óæ òà ýòî äîðîãà èëè íå òà, ÿ ñàì ðàçáåðóñü, ëàäíî?"
+		text="ÄãÖ»¹ÜÖ¸£¬Ê£ÏÂµÄÎÒ×Ô¼º»áÅÐ¶Ï£¬|ÐÐÁË°É£¿"
 		role="PLAYER"
 		scriptResult="CompleteQuest('r6m1_TalkWithWorestMen_Quest');  EndConversation()" />
 
 	<Reply
 		name="r6m1_TownMapleSheet_WorestMan_dialog0"
-		text="Îñîçíàåøü ëè òû öåëü ñâîåãî ñóùåñòâîâàíèÿ? Êóäà èäåøü è çà÷åì? Êòî òû? È êòî ÿ? Îñòàâàéñÿ çäåñü, è ìû âìåñòå ïîïûòàåìñÿ îòâåòèòü íà ýòè ñëîæíûå âîïðîñû..."
+		text="ÄãÏëÃ÷°×Äã»î×ÅÎªÁËÊ²Ã´Âð£¿|ÄãÒªÈ¥ÄÄ¶ù£¬ÓÖÎªÊ²Ã´È¥£¿ÄãÊÇË­£¿|ÎÒÓÖÊÇË­£¿ÁôÏÂÀ´°É£¬|ÔÛÃÇÒ»Æð×ÁÄ¥×ÁÄ¥ÕâÐ©ÄÑÌâ¡­¡­"
 		role="NPC"
 		scriptCondition="not(IsQuestTaken('r6m1_TalkWithWorestMen_Quest'))  or  IsQuestComplete('r6m1_TalkWithWorestMen_Quest')"
 		nextReplies="Dlg_pl_000088" />
 
 	<Reply
 		name="Dlg_pl_000088"
-		text="ßñíî, ÿñíî. Íó, ÿ ïîøåë."
+		text="ÐÐÁË£¬È«Ã÷°×ÁË¡£ÎÒ×ßÁË¡£"
 		role="PLAYER"
 		scriptResult=" EndConversation()" />
 <!--Root/r6m1/ñþæåòíûå/×åëîâåê â øàõòàõ-->
 	<Reply
 		name="r6m1_Lodon_Worker_dialog01"
-		text="Ðîáîòû âûãíàëè íàñ ñ ôàáðèêè. À âåäü ôàáðèêà - ýòî íàøà æèçíü. Õîðîøî, õîòü íàøó øàõòó íèêòî íå îòîáðàë."
+		text="»úÆ÷ÈË°ÑÎÒÃÇ´Ó¹¤³§Àï¸ÏÁË³öÀ´¡£|¹¤³§¾ÍÊÇÎÒÃÇµÄÃü¸ù×Ó¡£|ºÃÔÚ»¹ÕÒµ½ÁËÕâ×ù¿ó¾®¡£"
 		role="NPC"
 		scriptCondition="not(IsQuestComplete('r6m1_KillBoss2_Quest'))"
 		nextReplies="Dlg_pl_000092" />
 
 	<Reply
 		name="Dlg_pl_000092"
-		text="È ÷òî æå âû äîáûâàåòå íà øàõòå?"
+		text="ÄãÃÇÍÚÊ²Ã´¿ó£¿"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000095" />
 
 	<Reply
 		name="Dlg_npc_000095"
-		text="Ý...ììì... Ýòî... Íå âàæíî, ÿ ñëèøêîì îïå÷àëåí ïîëîæåíèåì äåë íà ôàáðèêå, ÷òîáû ðàçãîâàðèâàòü ñ òîáîé."
+		text="ßÀ¡­¡­Õâ¸ö¡­¡­Õâ²»ÖØÒª¡£|¹¤³§µÄÊÂÎÒÐÄÀïÒÑ¾­²»ÄÑÊÜÁË£¬|ËùÒÔ²»Ïë¸úÄã¶àÁÄ¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000096" />
 
 	<Reply
 		name="Dlg_pl_000096"
-		text="Íå áóäó ìåøàòü."
+		text="ÄÇÎÒ²»´òÈÅÁË¡£"
 		role="PLAYER"
 		scriptResult=" EndConversation()" />
 
 	<Reply
 		name="r6m1_Lodon_Worker_dialog02"
-		text="Ôàáðèêà ñâîáîäíà! È ñíîâà â æèçíè ïîÿâèëàñü öåëü! Çàâàë, çàêðûâàþùèé ïóòü ê çàâîäó, ìû ðàñ÷èñòèëè, îñòàëîñü òîëüêî ãëàâíûé âõîä íà çàâîä ïî÷èíèòü."
+		text="¹¤³§½â·ÅÁË£¡ÎÒÃÇµÄÈÕ×ÓÓÖÓÐ|±¼Í·ÁË£¡¶Â×¡¹¤³§µÀÂ·µÄÀÃ|Ä¾Í·ÒÑ¾­ÇåµôÁË£¬|¾ÍÊ£°Ñ¹¤³§´óÃÅÐÞºÃÕâÒ»¼þÊÂÁË¡£"
 		role="NPC"
 		scriptCondition="IsQuestComplete('r6m1_KillBoss2_Quest')"
 		nextReplies="Dlg_pl_000094" />
 
 	<Reply
 		name="Dlg_pl_000094"
-		text="Íó, òàê ÷òî æå âû äîáûâàåòå?"
+		text="ÄÇÄãÃÇÍÚÊ²Ã´¿ó£¿"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000097" />
 
 	<Reply
 		name="Dlg_npc_000097"
-		text="Äà íå çíàþ ÿ! ß âîîáùå â ýòîé äåðåâíå íåäàâíî ïîñåëèëñÿ."
+		text="²»ÖªµÀ£¡ÎÒ¸ÕÀ´Õâ´å×ÓÃ»¶à¾Ã¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000098" />
 
 	<Reply
 		name="Dlg_pl_000098"
-		text="Òåïåðü ìíå âñå ÿñíî."
+		text="ÐÐ£¬ÏÖÔÚÎÒÈ«Ã÷°×ÁË¡£"
 		role="PLAYER"
 		scriptResult=" EndConversation()" />
 <!--Root/r6m1/ñþæåòíûå/Ðàçãîâîð ñ Ïëåìåíåì ó Ñàìîëåòà-->
 	<Reply
 		name="r6m1_Lost_LostMan_dialog1"
-		text="×òî ïðèâåëî òåáÿ ê íàì, ÷óæåçåìåö?"
+		text="Ê²Ã´·ç°ÑÄã´µµ½ÎÒÃÇÕâ¶ùÀ´ÁË£¬|ÍâÏçÈË£¿"
 		role="NPC"
 		scriptCondition="IsQuestTaken('r6m1_FindLOST_Quest')   and   not(IsQuestComplete('r6m1_FindLOST_Quest')) "
 		nextReplies="Dlg_pl_000059" />
 
 	<Reply
 		name="Dlg_pl_000059"
-		text="Æåëàíèå èñïîðòèòü êîå-êîìó çäîðîâüå."
+		text="Ò»¹ÉÏë¸øÈËÌí¶ÂµÄÇ¿ÁÒÔ¸Íû¡£"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000060" />
 
 	<Reply
 		name="Dlg_npc_000060"
-		text="À ïðè÷åì òóò íàøå ïëåìÿ? Ìû - ìèðíûå ëþäè."
+		text="ÄÇÄãÎªÊ²Ã´ÉÏÎÒÃÇ²¿ÂäÀ´£¿|ÎÒÃÇ¿ÉÊÇ°²·ÖÊØ¼ºµÄ¾ÓÃñ¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000061" />
 
 	<Reply
 		name="Dlg_pl_000061"
-		text="Ïðè÷åì? À ðàçâå íå âû îáñòðåëÿëè ìåíÿ ñî ñâîåé ëåòàþùåé ìàøèíû?"
+		text="ÎªÊ²Ã´£¿ÄãÃÇ²»ÊÇÓÃÄÇ·ÉÐÐ|Æ÷³¯ÎÒ¿ª¹ý»ðÂð£¿"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000067" />
 
 	<Reply
 		name="Dlg_npc_000067"
-		text="Ïðîñòè, ÷óæåçåìåö. Íî òû ñòàë æåðòâîé îøèáêè."
+		text="±§Ç¸£¬ÍâÏçÈË¡£ÄÇÊÇ¸öÎó»á¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000068" />
 
 	<Reply
 		name="Dlg_pl_000068"
-		text="Òû õî÷åøü ñêàçàòü, ÷òî âû ñëó÷àéíî ðàçðÿäèëè â ìåíÿ îðóäèÿ?"
+		text="ÄãÊÇÏëËµ£¬ÄãÃÇÊÇÊ§ÊÖ´ò×ÅÎÒµÄ£¿"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000069" />
 
 	<Reply
 		name="Dlg_npc_000069"
-		text="Íåò, äåëî íå â ýòîì. Ìû âîîáùå íå ñòðåëÿëè â òåáÿ ñ íàøåé ëåòàþùåé ìàøèíû, ïîòîìó ÷òî íàøà ìàøèíà äàâíî óæå íå ìîæåò ëåòàòü. Ìíîãèå ïîêîëåíèÿ íàøåãî ïëåìåíè  ïûòàëèñü âîññòàíîâèòü å¸, íî áåçóñïåøíî. À òåïåðü, áîþñü, ýòî è âîâñå íå âîçìîæíî."
+		text="²»ÊÇ£¬¹Ø¼üÊÇ¡ª¡ª|ÎÒÃÇÑ¹¸ù¶ù¾ÍÃ»³¯Äã¿ª¹ý»ð¡£|ÎÒÃÇµÄ·ÉÐÐÆ÷Ôç¾Í·É²»ÆðÀ´ÁË¡£|²¿ÂäÀïºÃ¼¸´úÈË¶¼ÏëÐÞºÃËü£¬|¶¼Ã»³É¡£ÎÒ¿´°¡£¬ÊÇÐÞ²»ºÃÁË¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000070" />
 
 	<Reply
 		name="Dlg_pl_000070"
-		text="Äà? Ïî÷åìó?"
+		text="ÊÇÂð£¿ÎªÊ²Ã´ÐÞ²»ºÃ£¿"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000071" />
 
 	<Reply
 		name="Dlg_npc_000071"
-		text="Ó íàñ íåò íóæíûõ çàï÷àñòåé, ÷òîáû âåðíóòü íàøåé ëåòàþùåé ìàøèíå âëàñòü íàä âîçäóõîì! Ðàíüøå ìû ïîëó÷àëè íóæíûå äåòàëè ñ Ôàáðèêè-â-Ãîðàõ, íî ñ ïðèõîäîì ðîáîòîâ  âñå ïðîïàëî."
+		text="ÎÒÃÇÃ»ÓÐÄÜÈÃËüÖØÐÂÉÏÌìµÄÁã¼þ£¡|ÔçÏÈÎÒÃÇ»¹ÄÜ´ÓÉ½ÀïµÄ¹¤³§|Åªµ½ÐèÒªµÄ²¿¼þ£¬|¿É»úÆ÷ÈËÒ»À´£¬¾ÍÈ«ÍêÁË¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000072" />
 
 	<Reply
 		name="Dlg_pl_000072"
-		text="Ðîáîòîâ?"
+		text="»úÆ÷ÈË£¿"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000073" />
 
 	<Reply
 		name="Dlg_npc_000073"
-		text="Æåëåçíûå ñóùåñòâà, óíè÷òîæàþùèå âñå íà ñâîåì ïóòè. Èìè ïîâåëåâàåò ÷åëîâåê, âëàäåþùåé ìàøèíîé, êîòîðàÿ ëåòàåò, íî íå òàê, êàê íàøà."
+		text="ÄÇÐ©Ìú¸í´ñ¼ûÊ²Ã´»ÙÊ²Ã´¡£|ÁìÍ·µÄ¼Ò»ïÒ²ÓÐÁ¾·ÉÐÐÆ÷¡ª¡ª|²»¹ý¸úÔÛÃÇÕâÖÖ·É·¨²»Ò»Ñù¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000074" />
 
 	<Reply
 		name="Dlg_pl_000074"
-		text="À âàøà ìàøèíà òîæå ëåòàåò?"
+		text="ÄÇÄãÃÇÕâÁ¾ÄÜ·É£¿"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000075" />
 
 	<Reply
 		name="Dlg_npc_000075"
-		text="Íåò, íî ìîãëà áû. Åñëè áû ìû ìîãëè ñîáðàòü âñå äåòàëè."
+		text="ÏÖÔÚ²»ÄÜ£¬µ«Ëü±¾À´¿ÉÒÔ¡£|Ö»ÒªÎÒÃÇÄÜ´ÕÆëËùÓÐÁã¼þ¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000076" />
 
 	<Reply
 		name="Dlg_pl_000076"
-		text="Ìàøèíà ÷åëîâåêà, êîòîðûé ïðèâåë ðîáîòîâ, ãðîìêî òàðàõòèò è ìîæåò âèñåòü â âîçäóõå íà îäíîì ìåñòå?"
+		text="ÄÇ¸ö´ø»úÆ÷ÈËÀ´µÄ¼Ò»ï£¬|ËûµÄ·ÉÐÐÆ÷ÊÇ²»ÊÇÔëÉùºÜ´ó¡¢|ÄÜÐüÔÚ°ë¿ÕÖÐ£¿"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000077" />
 
 	<Reply
 		name="Dlg_npc_000077"
-		text="Âåðíî."
+		text="ÕýÊÇ¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000078" />
 
 	<Reply
 		name="Dlg_pl_000078"
-		text="Âîò íåçàäà÷à! Èìåííî òàêàÿ øòóêà ìåíÿ è îáñòðåëÿëà. Âû çíàåòå, êàê íàéòè ýòó ëåòàþùóþ ìàøèíó? Îíà âåäü íå ìîæåò ëåòàòü âñå âðåìÿ, âñå ðàâíî åé íóæíî çàïðàâëÿòüñÿ."
+		text="Âé·³ÁË£¡£¡¾ÍÊÇÄÇÖÖ·ÉÐÐÆ÷|³¯ÎÒ¿ªµÄ»ð¡£ÄãÖªµÀÎÒÉÏÄÄ|¶ùÄÜÕÒµ½ËüÂð£¿Ëü×Ü²»ÄÜÓÀ|Ô¶ÔÚÌìÉÏ·É£¬ÔçÍíµÃÂäµØ¼ÓÓÍ¡£"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000079" />
 
 	<Reply
 		name="Dlg_npc_000079"
-		text="Íàâåðíî. Ñïðîñè ó æèòåëåé Ôàáðèêè-â-Ãîðàõ. Èõ çåìëè ïåðâûìè ïàëè ïîä óäàðàìè ðîáîòîâ. Ìîæåò áûòü, îíè ñìîãóò òåáå ðàññêàçàòü î ðîáîòàõ è îá èõ õîçÿèíå áîëüøå, íåæåëè ìû. "
+		text="ÐËÐí°É¡£È¥ÎÊÎÊÉ½Àï¹¤³§µÄÈË¡£|ËûÃÇµÄµØÅÌÊÇ×îÏÈ±»»úÆ÷ÈËÕ¼µÄ¡£|¹ØÓÚ»úÆ÷ÈËºÍËüÃÇÖ÷ÈËµÄÊÂ£¬|ËûÃÇÖªµÀµÄÐËÐí±ÈÎÒÃÇ¶à¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000080" />
 
 	<Reply
 		name="Dlg_pl_000080"
-		text="Ïîíÿòíî."
+		text="ºÃ¡£"
 		role="PLAYER"
 		scriptResult="CompleteQuest('r6m1_FindLOST_Quest');  TActivate ('triggerWayToZavod');  EndConversation()" />
 
 	<Reply
 		name="r6m1_Lost_LostMan_dialog2"
-		text="Ïðèâåòñòâóåì òåáÿ. Äî íàñ äîøëè ñëóõè, ÷òî èìåííî òåáå ìû îáÿçàíû èçáàâëåíèåì îò ñòðàøíûõ ðîáîòîâ."
+		text="»¶Ó­Äã¡£ÓÐ´«ÑÔËµ£¬|¶à¿÷ÁËÄã£¬ÄÇ»ï¿É¶ñµÄ»úÆ÷|ÈË²Å±»ÇåÀí¸É¾»¡£"
 		role="NPC"
 		scriptCondition="IsQuestTaken('r6m1_HSFindParts_Quest')   and   not(IsQuestComplete('r6m1_HSFindParts_Quest'))"
 		nextReplies="Dlg_pl_000062" />
 
 	<Reply
 		name="Dlg_pl_000062"
-		text="Òàê è åñòü."
+		text="Ã»´í£¬ÊÇÎÒ¡£"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000063" />
 
 	<Reply
 		name="Dlg_npc_000063"
-		text="Êàê ìû ìîæåì òåáÿ îòáëàãîäàðèòü?"
+		text="ÎÒÃÇ¸ÃÔõÃ´±¨´ðÄã£¿"
 		role="NPC"
 		nextReplies="Dlg_pl_000064" />
 
 	<Reply
 		name="Dlg_pl_000064"
-		text="Î÷åíü äàæå ëåãêî! ß çíàþ, ÷òî âû ñíÿëè äâèãàòåëü ñ ïàðîìà. Âåðíî?"
+		text="ÓÐ¸öÌØ±ð¼òµ¥µÄ·¨×Ó£¡|ÎÒÖªµÀÄãÃÇ°Ñ¶É´¬ÉÏµÄ·¢¶¯|»ú²ðÏÂÀ´ÁË¡£ÊÇÕæµÄÂð£¿"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000065" />
 
 	<Reply
 		name="Dlg_npc_000065"
-		text="Ýòî äåéñòâèòåëüíî òàê. Îí äî ñèõ ïîð ëåæèò â ñàðàå ñ ïðî÷èìè çàï÷àñòÿìè. Ê ñîæàëåíèþ, îí íàì íå ïîäîøåë."
+		text="ÊÇÓÐÕâÃ´»ØÊÂ¡£ËüºÍÆäËûÅä|¼þÒ»Æð·ÅÔÚÅï×ÓÀï¡£|¿ÉÏ§¶ÔÎÒÃÇÃ»ÓÃ¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000066" />
 
 	<Reply
 		name="Dlg_pl_000066"
-		text="Îòëè÷íî! Ðàç îí âàì íå ïîäîøåë, òî, ìîæåò áûòü, âû îòäàäèòå åãî ìíå?"
+		text="Ì«ºÃÁË£¡¼ÈÈ»ÓÃ²»ÉÏ£¬|ÄÇ²»Èç°ÑËüÈÃ¸øÎÒ£¿"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000081" />
 
 	<Reply
 		name="Dlg_npc_000081"
-		text="Ïðîñòè, íî ýòî íåâîçìîæíî. Âñå, ÷òî ìîæåò ïîéòè íà äåëî ïîäúåìà íàøåé ñâÿòûíè â âîçäóõ, äîëæíî îñòàâàòüñÿ ó íàñ. Ìîæåò áûòü, íàì óäàñòñÿ ïîìåíÿòü ýòîò äâèãàòåëü íà ÷òî-òî äðóãîå?"
+		text="±§Ç¸£¬Õâ²»¿ÉÄÜ¡£|·²ÊÇ¿ÉÄÜÓÃµÃÉÏÎÒÃÇÊ¥Îï·É|ÐÐÆ÷µÄ¶«Î÷£¬¶¼µÃÁôÔÚÕâ¶ù¡£|Òª²»¡­¡­ÎÒÃÇ¿ÉÒÔÄÃËü»»µã±ðµÄ¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000082" />
 
 	<Reply
 		name="Dlg_pl_000082"
-		text="Äàâàéòå ÿ çàïëà÷ó âàì çà íåãî? Íà ýòè äåíüãè âàì äàæå ëåã÷å áóäåò ïîëó÷èòü íåîáõîäèìîå."
+		text="ÎÒ³öÇ®ÂòÐÐ²»ÐÐ£¿|ÄÃ×ÅÇ®ÏëÂòÊ²Ã´²»ÊÇ¸ü·½±ã£¿"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000083" />
 
 	<Reply
 		name="Dlg_npc_000083"
-		text="Â òâîèõ ñëîâàõ åñòü ñìûñë, íî öåíà áóäåò âûñîêà - 100000."
+		text="ÄãÕâ»°ËµµÃÒ²ÔÚÀí£¬|²»¹ý¼ÛÇ®¿É²»Ð¡¡ª¡ªÊ®Íò¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000084 Dlg_pl_000085" />
 
 	<Reply
 		name="Dlg_pl_000085"
-		text="Äîðîãîâàòî çà ñòàðûé ìîòîð, íî ëàäíî, ó ìåíÿ ìàëî âðåìåíè."
+		text="¶ÔÒ»Ì¨¾É·¢¶¯»úÀ´ËµÕâ¼Û¹»ºÚµÄÁË£¬|²»¹ýÎÒ¸ÏÊ±¼ä¡£"
 		role="PLAYER"
 		scriptCondition="GetPlayerMoney() >= 100000"
 		scriptResult="AddPlayerMoney( -100000 );  CompleteQuest('r6m1_HSFindParts_Quest');  CompleteQuest('r6m1_HSBuyParts_Quest');  EndConversation()" />
 
 	<Reply
 		name="Dlg_pl_000084"
-		text="Âû ñ óìà ñîøëè, äà çà òàêèå äåíüãè ìîæíî ìàøèíó êóïèòü!"
+		text="Äã·èÁË°É£¬ÕâÇ®¶¼¹»ÂòÁ¾ÐÂ³µÁË£¡"
 		role="PLAYER"
 		scriptResult="CompleteQuest('r6m1_HSFindParts_Quest');  EndConversation()" />
 
 	<Reply
 		name="r6m1_Lost_LostMan_dialog3"
-		text="Íàøåë äåíüãè?"
+		text="Ç®´Õ¹»ÁËÂð£¿"
 		role="NPC"
 		scriptCondition="IsQuestTaken('r6m1_HSBuyParts_Quest')   and   not(IsQuestComplete('r6m1_HSBuyParts_Quest'))"
 		nextReplies="Dlg_pl_000084 Dlg_pl_000085" />
 
 	<Reply
 		name="r6m1_Lost_LostMan_dialog0"
-		text="Ñòðàííîå îùóùåíèå âíóòðè òÿíåò íàñ âñåõ ââåðõ, êóäà-òî ê íåáåñàì. Íèêòî íå çíàåò çà÷åì. Íî ëåòàþùàÿ ìàøèíà ìîãëà áû ïîìî÷ü îòâåòèòü íà ýòè âîïðîñû."
+		text="ÎÒÃÇÐÄÀï×ÜÓÐÖÖËµ²»ÇåµÄ¸Ð¾õ£¬|×§×ÅÎÒÃÇÍùÌìÉÏÈ¥¡£|Ë­Ò²²»ÖªµÀÎªÊ²Ã´£¿|¿ÉÄÇÁ¾·ÉÐÐÆ÷±¾¿ÉÒÔ°ïÎÒÃÇÕÒµ½´ð|°¸µÄ¡£"
 		role="NPC"
 		scriptCondition="(not(IsQuestTaken('r6m1_FindLOST_Quest'))  or  IsQuestComplete('r6m1_FindLOST_Quest'))  and  (not(IsQuestTaken('r6m1_HSFindParts_Quest'))  or  IsQuestComplete('r6m1_HSFindParts_Quest'))  and  (not(IsQuestTaken('r6m1_HSBuyParts_Quest'))  or  IsQuestComplete('r6m1_HSBuyParts_Quest'))"
 		nextReplies="Dlg_pl_000090" />
 
 	<Reply
 		name="Dlg_pl_000090"
-		text="ß ïîäàâëÿþ â ñåáå òàêèå îùóùåíèÿ."
+		text="ÕâÖÖÄîÍ·ÎÒÔçÑ¹ÏÂÈ¥ÁË¡£"
 		role="PLAYER"
 		scriptResult=" EndConversation()" />
 <!--Root/r5m2/Îïöèîíàëüíûå--><!--Root/r5m2/ñþæåòíûå--><!--Root/r5m2/ñþæåòíûå/Îäíîãëàçàÿ-->
 	<Reply
 		name="r5m2_OneEye_N01"
-		text="Êòî òû òàêîé?"
+		text="ÄãÊÇË­£¿"
 		role="NPC"
 		scriptCondition="QuestStatus('r5m2_MoveToOneEye_Quest') == Q_TAKEN  and  QuestStatus('r5m2_KillWantedBandit_Quest') == Q_COMPLETED"
 		nextReplies="r5m2_OneEye_N02" />
 
 	<Reply
 		name="r5m2_OneEye_N02"
-		text="Äîáðûé äåíü. Ìíå ñêàçàëè, ÷òî òóò ìåíÿþò ãîëîâû áàíäèòîâ íà äîëëàðû. Ñêîëüêî ìíå äàäóò çà ãîëîâó áàíäèòà ïî èìåíè Èòàí?"
+		text="ÔçÉÏºÃ¡£ÌýËµÕâ¶ùÊÕÍÁ·ËµÄÈË|Í·»»Ç®¡£ÒÁÉ­µÄÈËÍ·£¬ÄãÄÜ¸ø¶àÉÙ£¿"
 		role="PLAYER"
 		nextReplies="r5m2_OneEye_N03" />
 
 	<Reply
 		name="r5m2_OneEye_N03"
-		text="Óæ íå âîîáðàæàåøü ëè òû, ÷òî ÿ äàì òåáå äåíüãè âïåðåä?"
+		text="Äã¸Ã²»»áÒÔÎªÎÒ»áÏÈ¸¶Ç®°É£¿"
 		role="NPC"
 		nextReplies="r5m2_OneEye_N04" />
 
 	<Reply
 		name="r5m2_OneEye_N04"
-		text="Çà÷åì «âïåðåä»? Èòàíà áîëüøå íåò. Îí, âèäèòå ëè, ïåñêà åìó â êàðáþðàòîð, ïðåäëîæèë íå îáèæàòü ìåíÿ, åñëè ÿ åìó îòäàì ãðóç è äåíüãè."
+		text="Ê²Ã´½ÐÏÈ¸¶£¿ÒÁÉ­ÒÑ¾­|ËÀÔÚÎÒÊÖÉÏÁË¡£ÄãÖªµÀµÄ£¬|ÍùËû»¯ÓÍÆ÷Àï¹àÁË°ÑÉ³×Ó¡ª¡ª|Ëû»¹ÏëÈÃÎÒ½»³öÈ«²¿Ç®²Æ»õÉ«£¬|»»ËûÈÄÎÒÒ»ÃüÄØ¡£"
 		role="PLAYER"
 		nextReplies="r5m2_OneEye_N05" />
 
 	<Reply
 		name="r5m2_OneEye_N05"
-		text="Ïîõîæå íà Èòàíà. À ÷òî òû?"
+		text="Õâµ¹ÏñÒÁÉ­µÄ×öÅÉ¡£ÄÇÄãÔõÃ´»ØµÄ£¿"
 		role="NPC"
 		nextReplies="r5m2_OneEye_N06" />
 
 	<Reply
 		name="r5m2_OneEye_N06"
-		text="Íó, ìû íåìíîãî ïîîáèæàëè äðóã äðóãà. À ïîòîì îí ëîïíóë îò çëîñòè."
+		text="ÎÒÃÇ»¥ÏàÎÊºòÁË¶Ô·½×æ×ÚÒ»Õó×Ó¡£|È»ºóËû¾ÍÆøÕ¨ÁË¡£"
 		role="PLAYER"
 		nextReplies="r5m2_OneEye_N07" />
 
 	<Reply
 		name="r5m2_OneEye_N07"
-		text="Íó õîðîøî, ÿ ïîâåðþ òåáå. Êàê òâîå èìÿ?"
+		text="ÐÐ£¬ÎÒÐÅÁË¡£Äã½ÐÊ²Ã´Ãû×Ö£¿"
 		role="NPC"
 		nextReplies="r5m2_OneEye_N08" />
 
 	<Reply
 		name="r5m2_OneEye_N08"
-		text="Ìåíÿ çîâóò Áðîäÿãà."
+		text="ÎÒ½ÐÍß¸ùÌØ¡£"
 		role="PLAYER"
 		nextReplies="r5m2_OneEye_N09" />
 
 	<Reply
 		name="r5m2_OneEye_N09"
-		text="Òû íå óçíàåøü ìåíÿ?"
+		text="ÈÏ²»³öÎÒÁË£¿"
 		role="NPC"
 		nextReplies="r5m2_OneEye_N10 Dlg_pl_000348" />
 
 	<Reply
 		name="Dlg_pl_000348"
-		text="Íåò, à ÷òî, äîëæåí?"
+		text="ÈÏ²»³ö£¬ÎÒÓÐÕâ¸öÒåÎñÂð£¿"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000350" />
 
 	<Reply
 		name="Dlg_npc_000350"
-		text="Òû î÷åíü ïîõîæ íà ìîåãî ñòàðîãî ïðèÿòåëÿ, ñ êîòîðûì ÿ íå âèäåëàñü óæå íåñêîëüêî ëåò. Óâèäåâ òåáÿ, ÿ óæå ðåøèëà, ÷òî îäíà èç ìîèõ ïðîáëåì ðåøåíà."
+		text="Äã¸úÎÒÒ»Î»ÀÏÅóÓÑ³¤µÃÌ«ÏñÁË£¬|ÎÒ¶¼ÓÐ¶àÉÙÄêÃ»¼û¹ýËûÁË¡£|¿´×ÅÄã£¬ÎÒ´ò¶¨Ö÷Òâ¡ª¡ª|ÕýºÃ½â¾öÎÒÒ»¸öÄÑÌâ¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000351" />
 
 	<Reply
 		name="Dlg_pl_000351"
-		text="Ðàçðàçè ìåíÿ àêêóìóëÿòîðíîé èñêðîé! Ðåøàòü ïðîáëåìû - ýòî ìîÿ ðàáîòà! Âîïðîñ â öåíå."
+		text="ÈÃµçÆ¿»ð»¨ÅüËÀÎÒ°É£¡|½â¾öÂé·³¾ÍÊÇÎÒµÄÀÏ±¾ÐÐ£¡|Ö»ÓÐÒ»¸öÎÊÌâ¡ª¡ª¼ÛÇ®¡£"
 		role="PLAYER"
 		nextReplies="r5m2_OneEye_N17" />
 
 	<Reply
 		name="r5m2_OneEye_N10"
-		text="×òîá ó ìåíÿ ðåäóêòîð ïîëåòåë! Ìû âñòðå÷àëèñü ñ âàìè, âåðíî?"
+		text="²ðÁËÎÒµÄ±äËÙÏä£¡ÔÛÃÇÊÇ²»ÊÇ¼û¹ý£¿"
 		role="PLAYER"
 		nextReplies="r5m2_OneEye_N11" />
 
 	<Reply
 		name="r5m2_OneEye_N11"
-		text="Àãà. Òû òîãäà åùå îáîçâàë ìåíÿ îäíîãëàçîé äóðîé."
+		text="°¡¹þ¡£ÄÇ»á¶ùÄã»¹¹ÜÎÒÕâ'|¶ÀÑÛÆÆ³µ'À´×Å¡£"
 		role="NPC"
 		nextReplies="r5m2_OneEye_N12" />
 
 	<Reply
 		name="r5m2_OneEye_N12"
-		text="Îäíîãëàçàÿ! Òî÷íî! Õà, íî âåäü òû òîãäà çäîðîâî ïîìÿëà ìîé ãðóçîâèê! Âîò òàê âñòðå÷à! Ñêîëüêî ëåò ïðîøëî! ß äî ñèõ ïîð æàëåþ, ÷òî ìû ðàññòàëèñü ñ òîáîé. Íî êàê æå òâîÿ ìå÷òà î íåáîëüøîì äîìèêå íà õîëìå?"
+		text="¶ÀÑÛ£¡Ã»´í£¡ÄÇÊ±ºòÄã»¹°ÑÎÒµÄ¿¨|³µ×²µÃ¹»ÇºÄØ¡£Õâ¿ÉÕæÊÇÔµ·Ö£¡|¶àÉÙÄêÃ»¼ûÁË£¡Õæºó»Úµ±³õ|Àë¿ªÁËÄã¡£»°Ëµ£¬|ÄãÄÇÉ½¼äÐ¡ÎÝµÄÃÎÏëÔõÃ´ÑùÁË£¿"
 		role="PLAYER"
 		nextReplies="r5m2_OneEye_N13" />
 
 	<Reply
 		name="r5m2_OneEye_N13"
-		text="Íó, ÿ è ïîñåëèëàñü â äîìèêå íà õîëìå. ×åì ýòî òåáå íå äîìèê? Ïîñëóøàé, ýòî îãðîìíàÿ óäà÷à, ÷òî ìû ñ òîáîé âñòðåòèëèñü."
+		text="ÎÒÏÖÔÚ¾Í×¡ÔÚÉ½ÆÂÉÏµÄ·¿×ÓÀïÁË¡£|Äã²»Ï²»¶Õâ¶°Âð£¿|ÔÛÃÇÄÜÖØ·ê£¬¿ÉÊÇÌì´óµÄÔËÆø¡£"
 		role="NPC"
 		nextReplies="r5m2_OneEye_N14" />
 
 	<Reply
 		name="r5m2_OneEye_N14"
-		text="Ïî ýòîìó ïîâîäó òû óâåëè÷èøü âîçíàãðàæäåíèå?"
+		text="ÄÇÕâ½±½ðÊÇ²»ÊÇÒ²¸ÃÕÇÕÇÁË£¿"
 		role="PLAYER"
 		nextReplies="r5m2_OneEye_N15" />
 
 	<Reply
 		name="r5m2_OneEye_N15"
-		text="Âîçíàãðàæäåíèå ÿ äàì òåáå òàêîå, êàêîå è îáåùàëà. Îäíàêî íå ñîãëàñèøüñÿ ëè òû âûïîëíèòü îäíó ìîþ ïðîñüáó? Íàãðàäà áóäåò, ýòî ñàìî ñîáîé."
+		text="²»£¬ÉÍ½ð»¹ÊÇÕÕÔ­À´ËµºÃµÄ¡£|²»¹ý£¬ÄÜÔÙ°ïÎÒ°ì¼þÊÂÂð£¿|µ±È»£¬ÊÂ³ÉÖ®ºóÁíÓÐ³êÐ»¡£"
 		role="NPC"
 		nextReplies="r5m2_OneEye_N16 Dlg_pl_000349" />
 
 	<Reply
 		name="Dlg_pl_000349"
-		text="ß ãîòîâ ïîìî÷ü òåáå äàæå áåñïëàòíî."
+		text="ÎÒÔ¸ÒâÃâ·Ñ°ïÄã¡£"
 		role="PLAYER"
 		nextReplies="r5m2_OneEye_N17" />
 
 	<Reply
 		name="r5m2_OneEye_N16"
-		text="Äëÿ òåáÿ - âñå ÷òî óãîäíî! Îñîáåííî ïðè ñîîòâåòñòâóþùåé îïëàòå."
+		text="ÎªÄúÎÒÊ²Ã´¶¼¸É£¡|ÓÈÆäÊÇ±¨³ê·áºñµÄÊ±ºò¡£"
 		role="PLAYER"
 		nextReplies="r5m2_OneEye_N17" />
 
 	<Reply
 		name="r5m2_OneEye_N17"
-		text="Íó ÷òî æ, íàäåþñü, ÷òî ó òåáÿ ïîëó÷èòñÿ. Íåäàâíî èç ìîåé ñîêðîâèùíèöû êîå-÷òî óêðàëè. Ìåíÿ, åñëè ÷åñòíî,  ïðèâîäèò â áåøåíñòâî íå ñòîëüêî öåííîñòü ïîõèùåííîãî, ñêîëüêî ñàì ôàêò òîãî, ÷òî êîìó-òî ýòî óäàëîñü. ß ïîäîçðåâàþ ïðåäàòåëüñòâî ñî ñòîðîíû îäíîãî èç ìîèõ êàïèòàíîâ. Òû áóäåøü íàçíà÷åí â îòðÿä ýòîãî ÷åëîâåêà, è åñëè çàìåòèøü ÷òî-íèáóäü ïîäîçðèòåëüíîå, íåìåäëåííî ñîîáùèøü ìíå."
+		text="×£ÄãÂíµ½³É¹¦¡£²»¾ÃÇ°£¬|ÎÒµÄ½ð¿â¶ªÁËÒ»¼þ¶«Î÷¡£|ËµÊµ»°£¬¶ªµÄ¶«Î÷±¾ÉíÎÒ²»ÐÄÌÛ£¬|¿ÉÕâÊÂ¾¹È»ÄÜ·¢Éú£¬Õâ²ÅÊÇÒªÃüµÄ¡£|ÎÒ»³ÒÉÊÇÎÒµÄÄÄÎ»¶Ó³¤ÆðÁË¶þÐÄ¡£|ÎÒ»á°ÑÄã°²²å½ø´ËÈËµÄ¶ÓÎé£¬|Ò»µ©·¢ÏÖ¿ÉÒÉÖ®´¦£¬Á¢¿ÌÏòÎÒ±¨¸æ¡£"
 		role="NPC"
 		nextReplies="r5m2_OneEye_N18" />
 
 	<Reply
 		name="r5m2_OneEye_N18"
-		text="Ýòî íå òàê ëåãêî, êàê ÿ íàäåÿëñÿ, íî è íå òàê òÿæåëî, êàê ÿ áîÿëñÿ! Õîðîøî, ÿ ñäåëàþ ýòî."
+		text="Õâ»î¶ùÃ»ÎÒÏëµÄÄÇÃ´ÄÑ£¬|µ«Ò²Ã»ÄÇÃ´ÈÝÒ×£¡ÐÐ£¬ÎÒ½ÓÁË¡£"
 		role="PLAYER"
 		nextReplies="r5m2_OneEye_N19" />
 
 	<Reply
 		name="r5m2_OneEye_N19"
-		text="Ñïàñèáî. Íàéäè êàïèòàíà Àìåðèãî è ñêàæè, ÷òî òû íàçíà÷åí â åãî îòðÿä.  Áóäü íàñòîðîæå."
+		text="¶àÐ»¡£È¥ÕÒ°¢Ã·Àï¸ê¶Ó³¤£¬|¸æËßËûÄã±»±àÈëÁËËûµÄ¶ÓÎé¡£|ÑÛ¾¦·ÅÁÁÐ©¡£"
 		role="NPC"
 		nextReplies="r5m2_OneEye_N20" />
 
 	<Reply
 		name="r5m2_OneEye_N20"
-		text="À òî êàê æå!"
+		text="·ÅÐÄ£¡"
 		role="PLAYER"
 		scriptResult="CompleteQuest('r5m2_MoveToOneEye_Quest'); TActivate('trCreateAmerigoTeam'); EndConversation()" />
 
 	<Reply
 		name="r5m2_OneEye_2_N01"
-		text="Çíàåøü, ìû çäåñü ïûòàåìñÿ æèòü ïðàâèëüíî, êàê æèëè ðàíüøå. Íàøà öåëü âîçðîäèòü çàáûòûå ïîðÿäêè è âîññòàíîâèòü ïîòåðÿííóþ öèâèëèçàöèþ."
+		text="ÄãÊÇÖªµÀµÄ£¬ÎÒÃÇÒ»Ö±Å¬Á¦|°´¹æ¾Ø¹ýÈÕ×Ó£¬¾ÍÏñ´ÓÇ°ÄÇÑù¡£|ÎÒÃÇµÄÄ¿±êÊÇ»½ÐÑ±»ÒÅÍüµÄ¹æ¾Ø£¬|ÖØ½¨Ê§ÂäµÄÎÄÃ÷¡£"
 		role="NPC"
 		scriptCondition="Q_CANBEGIVEN >= QuestStatus('r5m2_ReturnToOneeyeAfterM_Quest')  and  QuestStatus('r5m2_KillWantedBandit_Quest') == Q_COMPLETED"
 		nextReplies="r5m2_OneEye_2_N02" />
 
 	<Reply
 		name="r5m2_OneEye_2_N02"
-		text="Ïîíÿòíî. Òîãäà ïî÷åìó æå âû âåäåòå ñåáÿ, êàê âñå: íå ñìóùàÿñü, ó÷àñòâóåòå â ãðÿçíûõ äåëèøêàõ?"
+		text="ÕâÎÒÃ÷°×¡£ÄÇÄãÃÇ¸ÉµÄÊÂ|ÔõÃ´¸ú±ðÈËÒ»¸öÂ·Êý£¿|¸ÉÆðÔà»î¶ùÀ´£¬ÄãÃÇÒ²²»º¦ëý£¬|ÊÇ°É£¿"
 		role="PLAYER"
 		nextReplies="r5m2_OneEye_2_N03" />
 
 	<Reply
 		name="r5m2_OneEye_2_N03"
-		text="Ýõ, òÿæåëî ñëåäîâàòü ïðàâåäíîìó ïóòè. È ìû èíîãäà ñáèâàåìñÿ ñ íåãî. Ïîñòîé, à ðàçâå ó òåáÿ ñåé÷àñ áîëüøå íåò íèêàêèõ äåë?!"
+		text="°¦£¬ÕýµÀÄÄÓÐÄÇÃ´ºÃ×ß¡£|ÎÒÃÇÅ¼¶ûÒ²»áÆ«º½¡£|µÈµÈ£¬Äã²»ÊÇ»¹ÓÐ±ðµÄÕýÊÂÂð£¿£¡"
 		role="NPC"
 		nextReplies="r5m2_OneEye_2_N04" />
 
 	<Reply
 		name="r5m2_OneEye_2_N04"
-		text="À... Íó, äà, êîíå÷íî."
+		text="°¡¡­¡­¶Ô£¬µ±È»¡£"
 		role="PLAYER"
 		scriptResult="EndConversation()" />
 <!--Root/r5m2/ñþæåòíûå/Ñòàðüåâùèê-->
 	<Reply
 		name="r5m2_Starevchik_N01"
-		text="Ìîå ïî÷òåíèå, óâàæàåìûé ñýð."
+		text="ÏòÄúÖÂ¾´£¬×ð¾´µÄÏÈÉú¡£"
 		role="NPC"
 		scriptCondition="QuestStatus('r5m2_FHTalkWithAnticwar_Quest')==Q_TAKEN"
 		scriptResult="CompleteQuest('r5m2_FHTalkWithAnticwar_Quest')"
@@ -1119,531 +1119,531 @@
 
 	<Reply
 		name="r5m2_Starevchik_N02"
-		text="Ýòî íå òåáÿ Ñòàðüåâùèêîì çîâóò?"
+		text="Äã¾ÍÊÇÆÆ²¼¿Í£¿"
 		role="PLAYER"
 		nextReplies="r5m2_Starevchik_N03" />
 
 	<Reply
 		name="r5m2_Starevchik_N03"
-		text="Ìåíÿ, óâàæàåìûé, ìåíÿ. Âû õîòèòå ÷òî-òî êóïèòü? Èëè, ìîæåò áûòü, ïðîäàòü? Ïîâåðüòå, òóò íèêòî íå äàñò âàì áîëåå ñïðàâåäëèâîé öåíû, ÷åì ÿ."
+		text="ÕýÊÇÔÚÏÂ¡£ÏëÂòµãÊ²Ã´£¿»¹ÊÇÏëÂô£¿|ÐÅÎÒµÄ£¬ÎÒÕâ¶ùµÄ¼ÛÇ®×îÊµÔÚ¡£"
 		role="NPC"
 		nextReplies="r5m2_Starevchik_N04" />
 
 	<Reply
 		name="r5m2_Starevchik_N04"
-		text="Ñíà÷àëà ñêàæè, äëÿ ÷åãî íóæíà ýòà øòóêà? À ïîòîì è î öåíå ïîãîâîðèì."
+		text="ÏÈ¸æËßÎÒÕâÍæÒâ¶ùÊÇ¸ÉÊ²Ã´ÓÃµÄ£¬|È»ºóÔÛÃÇÔÙÌ¸¼ÛÇ®¡£"
 		role="PLAYER"
 		nextReplies="r5m2_Starevchik_N05" />
 
 	<Reply
 		name="r5m2_Starevchik_N05"
-		text="Ãäå âàì óäàëîñü äîáûòü òàêóþ ðåäêóþ âåùü, óâàæàåìûé ñýð?"
+		text="ÕâÃ´¼þ¹ÅÎï£¬ÄúÊÇ´ÓÄÄ¶ùÅªÀ´µÄ£¬|×ð¾´µÄÏÈÉú£¿"
 		role="NPC"
 		nextReplies="r5m2_Starevchik_N06" />
 
 	<Reply
 		name="r5m2_Starevchik_N06"
-		text="Åñëè ÷åñòíî, òî ÿ íàøåë åå íà äîðîãå."
+		text="Êµ»°ÊµËµ£¬Â·ÉÏ¼ñµÄ¡£"
 		role="PLAYER"
 		nextReplies="r5m2_Starevchik_N07" />
 
 	<Reply
 		name="r5m2_Starevchik_N07"
-		text="Ãîâîðèòå «íà äîðîãå», äîñòî÷òèìûé ñýð? ×òî-òî íå âåðèòñÿ. ß êàæäóþ ñâîþ íàõîäêó ïîìíþ, äî ïîñëåäíåé öàðàïèíêè íà áîêàõ. Âîò ýòó êîðîáêó ìíîãî ëåò íàçàä ÿ íàøåë â ñòàðûõ ðàçâàëèíàõ è ïðîäàë ìåñòíîé ïðàâèòåëüíèöå. Ðàññêàçûâàëè, ÷òî íåäàâíî êòî-òî îãðàáèë å¸ ñîêðîâèùíèöó! Çà ãîëîâó ãðàáèòåëÿ íàçíà÷åíà ïðåìèÿ, ÷óòü ëè íå 10000 äîëëàðîâ. ×òî ñêàæåòå íà ýòî, óâàæàåìûé ñýð?"
+		text="Â·ÉÏ¼ñµÄ£¬×ð¾´µÄÏÈÉú£¿|Õâ¿É²»´óÏñÊµ»°¡£|ÎÒ¼ñ¹ýµÄÃ¿Ñù¶«Î÷£¬|Ö±µ½×îºóÒ»µÀ»®ºÛÎÒ¶¼¼ÇµÃ|ÇåÇå³þ³þ¡£Õâ¸öºÐ×ÓÊÇÎÒ¶à|ÄêÇ°ÔÚÀÏ·ÏÐæÀï·¢ÏÖµÄ£¬|ºóÀ´Âô¸øÁË±¾µØ×Ü¶½¡£|ÌýËµËý½ð¿â×î½ü±»ÇÀÁË£¡|ÇÀ·ËµÄÈËÍ·ÐüÉÍÒ»Íò¿é¡£|×ð¾´µÄÏÈÉú£¬ÏÖÔÚÄú»¹ÓÐ|Ê²Ã´ÒªËµµÄ£¿"
 		role="NPC"
 		nextReplies="r5m2_Starevchik_N08" />
 
 	<Reply
 		name="r5m2_Starevchik_N08"
-		text="Òû âåäü íå äóìàåøü, ÷òî ýòî ñäåëàë ÿ?"
+		text="Äã²»»á¾õµÃÊÇÎÒ¸ÉµÄ°É£¿"
 		role="PLAYER"
 		nextReplies="r5m2_Starevchik_N09" />
 
 	<Reply
 		name="r5m2_Starevchik_N09"
-		text="À ÷åãî òóò äóìàòü? Âåùü óêðàëè, çàòåì ïîÿâëÿåòñÿ ÷óæàê ñ ïðîïàæåé è ðàññêàçûâàåò, ÷òî ïðîñòî íàøåë å¸. Íî ÿ íèêîìó íå áóäó ðàññêàçûâàòü î ñâîèõ ìûñëÿõ, åñëè âû, óâàæàåìûé ñýð, çàïëàòèòå ìíå 500 äîëëàðîâ."
+		text="ÕâÓÃ²»×ÅÏë¡£¶«Î÷±»ÍµÁË£¬|È»ºóÒ»¸öÍâÏçÈËÄÃ×ÅËüÉÏÃÅ£¬|»¹ËµÊÇ¼ñµÄ¡£²»¹ýÂï¡ª¡ª|Ö»ÒªÄú¸¶ÎÒ500¿é£¬|×ð¾´µÄÏÈÉú£¬ÎÒ¾Íµ±Ê²Ã´¶¼Ã»¿´¼û¡£"
 		role="NPC"
 		nextReplies="r5m2_Starevchik_N010a r5m2_Starevchik_N10b" />
 
 	<Reply
 		name="r5m2_Starevchik_N10b"
-		text="Ìîæåò, ìíå ñäåëàòü òàê, ÷òî áû â òâîåé ãîëîâå âîîáùå ïåðåñòàëè ìûñëè âîäèòüñÿ?"
+		text="Òª²»ÎÒ¸É´à×öµãÊ²Ã´£¬|ÈÃÄãÓÀÔ¶±Õ×ì£¿"
 		role="PLAYER"
 		nextReplies="r5m2_Starevchik_N11b" />
 
 	<Reply
 		name="r5m2_Starevchik_N11b"
-		text="Ìíå êàæåòñÿ, ÷òî òû õî÷åøü ïðîãëîòèòü ñëèøêîì æèðíûé êóñîê, ìàëûø. Íå ïîäàâèøüñÿ?"
+		text="ÎÒ¿´ÄãÓÐµã×Ô²»Á¿Á¦°¡£¬Ð¡×Ó¡£|¾ÍÄã£¬»¹Ïë´ÓÎÒÕâ¶ùÌÖµ½±ãÒË£¿"
 		role="NPC"
 		nextReplies="r5m2_Starevchik_N12b" />
 
 	<Reply
 		name="r5m2_Starevchik_N12b"
-		text="À ÿ ñåé÷àñ ñäåëàþ äèåòè÷åñêîå áëþäî - Ñòàðüåâùèê, ôàðøèðîâàííûé ñâèíöîì, â ñîáñòâåííîì ñîêó."
+		text="ÎÒÕý´òËã×öµÀÑøÉú²Ë¡ª¡ª|Ô­ÌÀìÀ×Óµ¯ÌîÆÆ²¼¿Í¡£"
 		role="PLAYER"
 		scriptResult="TActivate('trCreateStarievshik'); EndConversation()" />
 
 	<Reply
 		name="r5m2_Starevchik_N010a"
-		text="Õîðîøî, âîò òåáå äåíüãè."
+		text="ÐÐ£¬Ç®¸øÄã¡£"
 		role="PLAYER"
 		scriptCondition="GetPlayerMoney()>=500"
 		nextReplies="r5m2_Starevchik_N011a" />
 
 	<Reply
 		name="r5m2_Starevchik_N011a"
-		text="Ñ âàìè ïðèÿòíî èìåòü äåëî. Îáðàùàéòåñü åùå."
+		text="¸úÄú×öÉúÒâÕæÍ´¿ì¡£|ËæÊ±¶¼ÄÜÕÒµ½ÎÒ¡£"
 		role="NPC"
 		nextReplies="r5m2_Starevchik_N012a" />
 
 	<Reply
 		name="r5m2_Starevchik_N012a"
-		text="ß áóäó èìåòü òåáÿ  â âèäó."
+		text="¼Ç×¡ÁË¡£"
 		role="PLAYER"
 		scriptResult="AddPlayerMoney(-500); CompleteQuest('r5m2_FHDeleteSled_Quest'); EndConversation()" />
 <!--Root/r5m2/ñþæåòíûå/Æèòåëü ×àðëè-->
 	<Reply
 		name="r5m2_Pervomaika_Charli_N01"
-		text="×åì ìîãó ïîìî÷ü âàì, ñýð?"
+		text="ÏÈÉú£¬ÓÐºÎ·Ô¸À£¿"
 		role="NPC"
 		scriptCondition="QuestStatus('r5m2_FHTalkWithCitizens_Quest')==Q_TAKEN"
 		nextReplies="r5m2_Pervomaika_Charli_N02" />
 
 	<Reply
 		name="r5m2_Pervomaika_Charli_N02"
-		text="Ñêàæè, áðàòîê... Â âàøèõ ìåñòàõ íåò îáû÷àÿ, ÷òîáû äâóì âîäèòåëÿì áèòüñÿ ìåæäó ñîáîé äî ñìåðòè? Êîãäà ÿ ñþäà åõàë, ÿ íàòêíóëñÿ íà ñëåäû äðàêè. Îò ìàøèí - îäíè îáëîìêè."
+		text="¸úÎÒËµËµ£¬ÀÏÐÖ¡­¡­|ÄãÃÇÕâ¶ùÓÐÃ»ÓÐÁ½¸öË¾»ú·Ç|´òµ½·Ö³öÉúËÀ²»¿ÉµÄ¹æ¾Ø£¿|ÎÒÀ´µÄÊ±ºò×²¼ûÁËÒ»´¦Õ½¶·µÄºÛ¼££¬|³µÁ¾Ö»Ê£ÏÂ²Ðº¡ÁË¡£"
 		role="PLAYER"
 		nextReplies="r5m2_Pervomaika_Charli_N03" />
 
 	<Reply
 		name="r5m2_Pervomaika_Charli_N03"
-		text="Íåò, ñýð, ÷òî âû! Ó íàñ òóò íàðîä ïî áîëüøåé ÷àñòè ìèðíûé. Íå çíàþ äàæå, ÷òî âàì è ñêàçàòü."
+		text="Ã»ÓÐµÄÊÂ£¬ÏÈÉú£¡|Õâ¶ùµÄÈË¿É°²·ÖÁË¡£|ÎÒ²»ÖªµÀ¸Ã¸úÄúËµÊ²Ã´¡£"
 		role="NPC"
 		nextReplies="r5m2_Pervomaika_Charli_N04 Dlg_pl_000334" />
 
 	<Reply
 		name="Dlg_pl_000334"
-		text="Êàê òû äóìàåøü, ìîã áûòü ïðè÷èíîé äðàêè êàêîé-íèáóäü íåîáû÷íûé è î÷åíü öåííûé ïðåäìåò?"
+		text="Äã¾õµÃÒ»¼þ¶ÀÒ»ÎÞ¶þÓÖÌØ±ð|ÖµÇ®µÄ¶«Î÷£¬»á²»»á¾ÍÊÇÄÇ³¡|¶ñ¶·µÄÆðÒò£¿"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000335" />
 
 	<Reply
 		name="Dlg_npc_000335"
-		text="Êòî çíàåò, óâàæàåìûé ñýð? Âû, ìîæåò, áîèòåñü, ÷òî ó íàñ òàêèå áåçîáðàçèÿ  ÷àñòî áûâàþò? Íå î÷åíü. Õîòÿ íà îõðàííèêîâ ñïðîñ åñòü. Â ëþáîì ãîðîäå, ó ëþáîãî áàðìåíà ñïðîñèòå."
+		text="ÕâË­ÖªµÀÄØ£¬ÏÈÉú£¿|Äú¸Ã²»ÊÇµ£ÐÄÕâÖÖÊÂ¶ùÔÚÕâ¶ù|²»ËãÏ¡Ææ°É£¿ÆäÊµºÜÉÙ·¢Éú¡£|µ¹ÊÇ»¤ÎÀµÄ»î¶ùÍ¦ÇÀÊÖ¡£|ÄúËæ±ãÈ¥ÄÄ×ù³ÇÕÒ¸ö¾Æ±£´òÌý´òÌý¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000336" />
 
 	<Reply
 		name="Dlg_pl_000336"
-		text="Ìåíÿ íå èíòåðåñóåò ðàáîòà îõðàííèêà. ß ñîáèðàþ ðàçëè÷íûå ñòàðèííûå ïðåäìåòû."
+		text="ÎÒ¶Ôµ±»¤ÎÀÃ»ÐËÈ¤¡£|ÎÒ¸ãµÄÊÇ¹ÅÎïÊÕ²Ø¡£"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000343" />
 
 	<Reply
 		name="Dlg_npc_000343"
-		text="Íå çíàþ, ÷òî è ñêàçàòü âàì, ñýð. ß ïî öåííûì ïðåäìåòàì êàê-òî íå î÷åíü… ß áîëüøå ïî êàðòîøêå. Âàì ëó÷øå ñ òîðãîâöàìè ïîãîâîðèòü.  ß òóò êàê ðàç íåäàâíî ó îäíîãî êàðòîôåëüíûé êîìáàéí ïîêóïàë."
+		text="ÏÈÉú£¬ÕâÎÒ¾Í²»ÖªµÀËµÊ²Ã´ºÃÁË¡£|¹ÅÎïÎÒ²»ÔÚÐÐ¡­¡­ÎÒÊÇÍÁ¶¹×¨¼Ò¡£|Äú»¹ÊÇÈ¥¸úÉÌÈËÁÄÁÄ°É¡£|Ç°Õó×Ó¾ÍÓÐ¸öÉÌÈË°ÑÎÒµÄÍÁ|¶¹ÊÕ¸î»úÂò×ßÁË¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000344 Dlg_pl_000345" />
 
 	<Reply
 		name="Dlg_pl_000345"
-		text="Äà íàïëåâàòü ìíå, ÿäðåí áåíçèí, íà âàøèõ  ÷îêíóòûõ òîðãîâöåâ!"
+		text="Ê¥ÓÍ°¡£¡ÄãÄÇÐ©Éñ¾­²¡ÉÌ|ÈËÎÒ²ÅÀÁµÃÀí»á£¡"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000346" />
 
 	<Reply
 		name="Dlg_pl_000344"
-		text="Íà ñàìîì äåëå ìåíÿ èíòåðåñóåò íå ñîâñåì êàðòîøêà."
+		text="ËµÊµ»°£¬ÍÁ¶¹ÎÒÒ²²»¸ÐÐËÈ¤¡£"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000346" />
 
 	<Reply
 		name="Dlg_npc_000346"
-		text="Âû ìåíÿ íåïðàâèëüíî ïîíÿëè. Åñòü ó íàñ áðîäÿ÷èé òîðãîâåö. Íàøè ïàðíè åãî Ñòàðüåâùèêîì ïðîçâàëè, äëÿ ñìåõó. Îí âìåñòî òîãî, ÷òîáû êàê âñå íîðìàëüíûå òîðãîâöû, êàðòîøêó ïîêóïàòü èëè äðîâà, ñêóïàåò âñÿêîå äðåâíåå áàðàõëî. Ìîòàåòñÿ ìåæäó ãîðîäîâ, äà ïî ñâàëêàì. Ïðàâäà, èíîãäà ó íåãî è ïîëåçíûé ìåõàíèçì êóïèòü ìîæíî. Òàê ÷òî ïî äðåâíèì öåííîñòÿì ëó÷øå íåãî âàì íèêòî íå ñãîäèòñÿ."
+		text="ÄúÎó»áÎÒÁË¡£ÎÒÃÇÕâ¶ùÓÐ¸ö|ÅÜ½­ºþµÄÉÌ··£¬´ó¼ÒË³¿Ú|½ÐËûÆÆ²¼¿Í¡£ÈË¼Ò²»ÊÕÍÁ¶¹|²»ÊÕÄ¾²ñ£¬×¨µ¹ÌÚÐ©ÀÏÎï¼þ¡£|Ëû³ÉÌìÔÚ³ÇºÍÀ¬»ø³¡Ö®¼äÀ´»Ø´ò×ª¡£|²»¹ýÊ±²»Ê±µÄ£¬»¹ÕæÄÜÌÔµ½ÓÐ|ÓÃµÄ¶«Î÷¡£ÒªËµ¹ÅÎïÐÐ¼Ò£¬|Äú×îºÃÈ¥ÕÒËûÁÄ¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000347" />
 
 	<Reply
 		name="Dlg_pl_000347"
-		text="Ãîâîðèøü, Ñòàðüåâùèê? Ëàäíî, ïîèùó."
+		text="ÆÆ²¼¿Í£¿ÐÐ£¬ÎÒÈ¥ÕÒÕÒËû¡£"
 		role="PLAYER"
 		scriptResult="TActivate('trCreateWowHumans'); CompleteQuest('r5m2_FHTalkWithCitizens_Quest'); EndConversation()" />
 
 	<Reply
 		name="r5m2_Pervomaika_Charli_N04"
-		text="Ñðåäè îáëîìêîâ ÿ íàøåë âîò ýòó êîðîáêó. Áûëî áû èíòåðåñíî óçíàòü, ÷òî ýòî òàêîå."
+		text="ÎÒÔÚ²Ðº¡¶ÑÀïÕÒµ½ÁËÕâ¸öºÐ×Ó¡£|ÎÒÏëÅªÇå³þËüµ½µ×ÊÇÊ²Ã´¡£"
 		role="PLAYER"
 		nextReplies="r5m2_Pervomaika_Charli_N05" />
 
 	<Reply
 		name="r5m2_Pervomaika_Charli_N05"
-		text="Áîþñü, ÷òî íè÷åì íå ñìîãó âàì ïîìî÷ü, ñýð."
+		text="¿ÖÅÂÎÒ°ï²»ÉÏÃ¦£¬ÏÈÉú¡£"
 		role="NPC"
 		nextReplies="r5m2_Pervomaika_Charli_N06 Dlg_pl_000337" />
 
 	<Reply
 		name="Dlg_pl_000337"
-		text="Ìîæåò áûòü, ïàðà äîëëàðîâ îñâåæèòü òâîþ ïàìÿòü? "
+		text="Òª²»ÕâµãÇ®ÄÜ°ïÄú°Ñ¼ÇÒäÞÛÇå³þ£¿"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000339" />
 
 	<Reply
 		name="Dlg_npc_000339"
-		text="Ñýð? Âàì áû ñíà÷àëà ñâîþ ìàøèíó îñâåæèòü! À òî îíà ó âàñ, óâàæàåìûé, ñêîðî îò âåòõîñòè ðàçâàëèòñÿ. Ñàìîå òî - â êîëëåêöèþ Ñòàðüåâùèêà. Îí âñÿêèé äðåâíèé õëàì ñîáèðàåò. Ãëÿäèøü, åùå è êóïèò ýòó ðàçâàëþõó."
+		text="ÏÈÉú£¿Äú»¹ÊÇÏÈ°ÑÄúÄÇÁ¾³µÐÞÐÞ°É£¡|¶¼¿ìÉ¢¼ÜÁË£¬Ç×°®µÄ¡£|Õâ³µÕýºÃ¹»¸ñ½øÆÆ²¼¿ÍµÄÊÕ²Ø¡£|Ëû×¨ÊÕÕâÀàÀÏ¹Å¶­£¬|Ëµ²»¶¨»á°ÑÕâÁ¾ÀÏÒ¯³µÊÕÁË¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000340" />
 
 	<Reply
 		name="Dlg_pl_000340"
-		text="Ãîâîðèøü, äðåâíèé õëàì ñîáèðàåò?  Ãäå íàõîäèòñÿ åãî ìàãàçèí?"
+		text="ÀÏ¹Å¶­£¬ÓÐÒâË¼¡­¡­|ËûÄÇÆÌ×Ó¿ªÔÚÄÄ¶ù£¿"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000341" />
 
 	<Reply
 		name="Dlg_npc_000341"
-		text="Ñòàðüåâùèê íå ñèäèò íà îäíîì ìåñòå. Îí âå÷íî ìîòàåòñÿ òóäà-ñþäà. Ïîèùèòå åãî âîêðóã ãîðîäà. Åñëè âàø ðûäâàí íå ðàçâàëèòñÿ, òî Ñòàðüåâùèê íàâåðíÿêà ïðåäëîæèò âàì çà íåãî õîðîøóþ öåíó. Äåðæèòå-êà, ñýð, ïàðó äîëëàðîâ, ïî÷èíèòåñü ñëåãêà."
+		text="ÆÆ²¼¿Í´Ó²»ÔÚÒ»¸öµØ·½Âä½Å£¬|³ÉÌìÀ´À´»Ø»ØµØÅÜ¡£|ÄúÔÚ³ÇËÄÖÜÕÒÕÒ°É¡£|Ö»ÒªÄúÄÇÁ¾ÆÆ³µ±ð°ëµÀÉ¢¼Ü£¬|ËûÐËÐí»¹ÄÜ¸øÄú¸ö²»´íµÄ¼Û¡£|ÄÃ×ÅÕâµãÇ®£¬ÏÈÉú£¬|°Ñ³µÉÔÎ¢Ê°¶ÞÊ°¶Þ¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000342" />
 
 	<Reply
 		name="Dlg_pl_000342"
-		text="Ðûäâàí, ãîâîðèøü? Íó-íó. Ó ñàìîãî-òî!"
+		text="Äãµ¹»áËµ'ÆÆ³µ'£¬|Ò²²»¿´¿´Äã×Ô¼ºÄÇÁ¾£¡"
 		role="PLAYER"
 		scriptResult="TActivate('trCreateWowHumans'); CompleteQuest('r5m2_FHTalkWithCitizens_Quest'); AddPlayerMoney(100); EndConversation()" />
 
 	<Reply
 		name="r5m2_Pervomaika_Charli_N06"
-		text="Äâà ïàðíÿ èç-çà ýòîé êîðîáêè ãðîõíóëè äðóã äðóãà, à òû äàæå íå ìîæåøü ïðåäïîëîæèòü, ÷òî ýòî? "
+		text="Á½¸öÈËÎªÁËÕâºÐ×Ó°ÑÃü¶¼´îÉÏÁË£¬|Äã¾ÍÁ¬²Â¶¼²Â²»³öËüÊÇÊ²Ã´£¿"
 		role="PLAYER"
 		nextReplies="r5m2_Pervomaika_Charli_N07" />
 
 	<Reply
 		name="r5m2_Pervomaika_Charli_N07"
-		text="Äàæå íå çíàþ… Ïîïðîáóéòå íàéòè Ñòàðüåâùèêà. Îí - áðîäÿ÷èé òîðãîâåö, åçäèò ïî ãîðîäàì, ïîêóïàåò è ïðîäàåò ðàçíûå âåùè, îñòàâøèåñÿ ñ äàâíèõ âðåìåí. Âîçìîæíî, îí ïîìîæåò âàì."
+		text="ÎÒÕæÊÇ²»ÖªµÀ¡­¡­|È¥ÕÒÆÆ²¼¿Í°É¡£ËûÊÇ¸öÅÜ½­|ºþµÄÉÌ··£¬ÔÚ³ÇÓë³ÇÖ®¼äÀ´»ØÅÜ£¬|µ¹ÌÚ¹Å´úÆ÷Îï¡£Ëµ²»¶¨ËûÄÜ°ïÉÏÄú¡£"
 		role="NPC"
 		nextReplies="r5m2_Pervomaika_Charli_N08 Dlg_pl_000338" />
 
 	<Reply
 		name="Dlg_pl_000338"
-		text="Ïîíÿòíî! Ëàäíî, ãóëÿé, äåðåâíÿ, òðè öèëèíäðà òåáå â ãëîòêó."
+		text="ÐÐ£¡×£ÄúÓä¿ì£¬ÍÁÀÏÃ±¡ª¡ª|Èý¸öÆø¸×¿¨ÄúÉ¤×ÓÑÛ¶ùÀï£¡"
 		role="PLAYER"
 		scriptResult="TActivate('trCreateWowHumans'); CompleteQuest('r5m2_FHTalkWithCitizens_Quest'); EndConversation()" />
 
 	<Reply
 		name="r5m2_Pervomaika_Charli_N08"
-		text="Ñïàñèáî, äðóæèùå!"
+		text="¶àÐ»£¬ÀÏ»ï¼Æ£¡"
 		role="PLAYER"
 		scriptResult="TActivate('trCreateWowHumans'); CompleteQuest('r5m2_FHTalkWithCitizens_Quest'); EndConversation()" />
 
 	<Reply
 		name="r5m2_Pervomaika_Charli_3_N01"
-		text="Î, ýòî âû, óâàæàåìûé ñýð! Íó ÷òî, íàøëè Ñòàðüåâùèêà?"
+		text="Å¶£¬ÊÇÄú°¡£¬×ð¾´µÄÏÈÉú£¡|ÕÒµ½ÆÆ²¼¿ÍÁËÂð£¿"
 		role="NPC"
 		scriptCondition="QuestStatus('r5m2_FHTalkWithAnticwar_Quest')==Q_COMPLETED"
 		nextReplies="r5m2_Pervomaika_Charli_2_N02a r5m2_Pervomaika_Charli_2_N02b" />
 
 	<Reply
 		name="r5m2_Pervomaika_Charli_2_N02b"
-		text="Ýòîò âàø Ñòàðüåâùèê åùå òîò áàðûãà."
+		text="ÄãÄÇÎ»ÆÆ²¼¿Í¿ÉÕæÊÇ¸ö¼éÉÌ¡£"
 		role="PLAYER"
 		scriptCondition="GetVar('StarievshikDie').AsInt~=1"
 		scriptResult="EndConversation()" />
 
 	<Reply
 		name="r5m2_Pervomaika_Charli_2_N02a"
-		text="Íàøåë. Ïóñòü çåìëÿ åìó áóäåò ïóõîì."
+		text="ÕÒµ½ÁË¡£Ô¸Ëû°²Ï¢¡£"
 		role="PLAYER"
 		scriptCondition="GetVar('StarievshikDie').AsInt==1"
 		scriptResult="EndConversation()" />
 
 	<Reply
 		name="r5m2_Pervomaika_Charli_2_N01"
-		text="Êàê âàøè ïîèñêè, ñýð?"
+		text="ÏÈÉú£¬ÊÂÇé°ìµÃÈçºÎ£¿"
 		role="NPC"
 		scriptCondition="QuestStatus('r5m2_FHTalkWithAnticwar_Quest')==Q_TAKEN"
 		nextReplies="r5m2_Pervomaika_Charli_2_N02" />
 
 	<Reply
 		name="r5m2_Pervomaika_Charli_2_N02"
-		text="Èäóò ïîòèõîíüêó."
+		text="ÊÂÇéÂï£¬ÓÐµã²»µÃ¾¢¡£"
 		role="PLAYER"
 		nextReplies="r5m2_Pervomaika_Charli_2_N03" />
 
 	<Reply
 		name="r5m2_Pervomaika_Charli_2_N03"
-		text="Ïî âàøåìó âçãëÿäó ÿ ïîíèìàþ, ÷òî âû åùå äàëåêè îò öåëè?"
+		text="¿´ÄúÕâÑÛÉñ£¬ÀëÄ¿±ê»¹Ô¶×ÅÄØ°É£¿"
 		role="NPC"
 		nextReplies="r5m2_Pervomaika_Charli_2_N04" />
 
 	<Reply
 		name="r5m2_Pervomaika_Charli_2_N04"
-		text="Àãà."
+		text="°¦£¬¿É²»ÊÇ¡£"
 		role="PLAYER"
 		scriptResult="EndConversation()" />
 <!--Root/r5m2/Îïöèîíàëüíûå/Uncle-->
 	<Reply
 		name="r5m2_Plemannik_1_N01"
-		text="Ñëóøàé, ïóòíèê, ó ìåíÿ åñòü äëÿ  òåáÿ ïðèáûëüíîå äåëüöå."
+		text="Ìý×Å£¬ÍâÏçÈË£¬ÎÒÕâ¶ùÓÐ±Ê|×¬Ç®µÄÂòÂô¸øÄã¡£"
 		role="NPC"
 		scriptCondition="(QuestStatus('r5m2_KillUncle') == Q_CANBEGIVEN)  and  (not(QuestStatus('r5m2_KillUncle') == Q_TAKEN))  and  (GetVar('PlemmanikStat').AsInt == 0)"
 		nextReplies="r5m2_Plemannik_1_N02a r5m2_Plemannik_1_N02b" />
 
 	<Reply
 		name="r5m2_Plemannik_1_N02b"
-		text="Ìíå íåêîãäà."
+		text="ÎÒÃ¦×ÅÄØ¡£"
 		role="PLAYER"
 		scriptResult="TActivate('trPlemannikQuestTimer'); EndConversation()" />
 
 	<Reply
 		name="r5m2_Plemannik_1_N02a"
-		text="×òî, ó êîãî-òî íàäî ñëèòü áåíçîáàê?"
+		text="Õâ»ØÒª·Å¸ÉË­µÄÓÍÏä£¿"
 		role="PLAYER"
 		nextReplies="r5m2_Plemannik_1_N03a" />
 
 	<Reply
 		name="r5m2_Plemannik_1_N03a"
-		text="Âñå ñåðüåçíåå. Ó ìåíÿ åñòü äÿäÿ, çàæèòî÷íûé ÷åëîâåê, áðîñèâøèé â ñâîå âðåìÿ íàøó ñåìüþ ïðîçÿáàòü â áåäíîñòè."
+		text="ÊÂÇé»¹Í¦Õý¾­µÄ¡£|ÎÒÓÐ¸öÊåÊå£¬¼Òµ×·Ç³£ÒóÊµ¡£|ËûÈ´ÈÓÏÂÎÒÃÇÈ«¼ÒÔÚÇî¿ÓÀï|×ÔÉú×ÔÃð¡£"
 		role="NPC"
 		nextReplies="r5m2_Plemannik_1_N04a" />
 
 	<Reply
 		name="r5m2_Plemannik_1_N04a"
-		text="Êàêàÿ æàëîñòëèâàÿ èñòîðèÿ!"
+		text="ÕæÊÇ¸ö´ßÈËÀáÏÂµÄ¹ÊÊÂ£¡"
 		role="PLAYER"
 		nextReplies="r5m2_Plemannik_1_N05a" />
 
 	<Reply
 		name="r5m2_Plemannik_1_N05a"
-		text="Ïîìîãè ìíå èçáàâèòüñÿ îò ýòîãî áåçæàëîñòíîãî êðîâîïèéöû! Íå áåñïîêîéñÿ, çàïëàòèòü ÿ ñìîãó."
+		text="°ïÎÒ°ÚÍÑÕâ¸öºÝÐÄµÄÎüÑª¹í£¡|ÎÒ»á¸¶ÄãÇ®£¬±ðÅÂ¡£"
 		role="NPC"
 		nextReplies="r5m2_Plemannik_1_N06aa r5m2_Plemannik_1_N06ab" />
 
 	<Reply
 		name="r5m2_Plemannik_1_N06ab"
-		text="Øåë áû îòñþäà. Òîæå ìíå - æåðòâà íèùåòû. "
+		text="Äã»¹ÊÇÄÄ¶ùÁ¹¿ìÄÄ¶ù´ý×ÅÈ¥°É¡£|ÇÆÄã£¬×°µÃ¸ú¸öÇî¿àÊÜº¦ÕßËÆµÄ¡£"
 		role="PLAYER"
 		scriptResult="TActivate('trPlemannikQuestTimer'); EndConversation()" />
 
 	<Reply
 		name="r5m2_Plemannik_1_N06aa"
-		text="Ìåðçàâåö òû, ëîïíè åãî êàðáþðàòîð, íî òàê è áûòü. Îäíàêî èìåé â âèäó: ìîè óñëóãè îáõîäÿòñÿ äîðîãî."
+		text="Ó´£¬ÄãÕæÊÇ¸öºÝ½ÇÉ«£¬|Õ¨ÁËÄãµÄ»¯ÓÍÆ÷°É¡£|ÎÒµÄÊÕ·Ñ¿ÉÊÇºÜ¹óµÄ£¬¸øÎÒ¼Ç×¡ÁË¡£"
 		role="PLAYER"
 		nextReplies="r5m2_Plemannik_1_N07aa" />
 
 	<Reply
 		name="r5m2_Plemannik_1_N07aa"
-		text="Öåíà íå èìååò çíà÷åíèÿ, íî áóäü îñòîðîæíåå, ó äÿäè õîðîøàÿ îõðàíà."
+		text="µ¹²»ÊÇ¼ÛÇ®µÄÎÊÌâ¡ª¡ª|²»¹ýÄãµÃµ±ÐÄ£¬ÎÒÊåÊåµÄ»¤|ÎÀ¿É²»ÊÇ³ÔËØµÄ¡£"
 		role="NPC"
 		nextReplies="r5m2_Plemannik_1_N08aa" />
 
 	<Reply
 		name="r5m2_Plemannik_1_N08aa"
-		text="Ïðè íàëè÷èè òàêèõ ðîäñòâåííèêîâ, îá ýòîì ìîæíî äîãàäàòüñÿ."
+		text="Ì¯ÉÏÕâÖÖÇ×ÆÝ£¬ÔçÍíÄÜÏëÍ¨¡£"
 		role="PLAYER"
 		scriptResult="TActivate('trCreateUncleDefenders'); TakeQuest('r5m2_KillUncle'); EndConversation()" />
 
 	<Reply
 		name="r5m2_Plemannik_2_N01"
-		text="Ñïàñèáî çà ïîìîùü."
+		text="¶àÐ»Äã°ïÁË´óÃ¦¡£"
 		role="NPC"
 		scriptCondition="QuestStatus('r5m2_KillUncle')==Q_COMPLETED"
 		nextReplies="r5m2_Plemannik_2_N02" />
 
 	<Reply
 		name="r5m2_Plemannik_2_N02"
-		text="Íåò ïðîáëåì."
+		text="Ð¡ÒâË¼¡£"
 		role="PLAYER"
 		scriptResult="EndConversation()" />
 
 	<Reply
 		name="r5m2_Plemannik_3_N01"
-		text="Ìíå óæå íè÷åãî íå íóæíî. ß ñäåëàë äåëî áåç òâîåé ïîìîùè."
+		text="ÎÒÊ²Ã´¶¼²»ÐèÒªÁË¡£|Ã»Äã°ïÃ¦£¬ÎÒ×Ô¼ºÒ²°ÑÊÂ¶ù°ìÍêÁË¡£"
 		role="NPC"
 		scriptCondition="GetVar('PlemmanikStat').AsInt==1"
 		nextReplies="r5m2_Plemannik_3_N02" />
 
 	<Reply
 		name="r5m2_Plemannik_3_N02"
-		text="Äà ïîæàëóéñòà."
+		text="¶àÐ»¡£"
 		role="PLAYER"
 		scriptResult="EndConversation()" />
 
 	<Reply
 		name="r5m2_Plemannik_4_N01"
-		text="Êîãäà æå òû, íàêîíåö, âûïîëíèøü çàäàíèå?"
+		text="Äãµ½µ×Ê²Ã´Ê±ºò²Å°ÑÊÂ°ìÍê£¿"
 		role="NPC"
 		scriptCondition="QuestStatus('r5m2_KillUncle')==Q_TAKEN"
 		nextReplies="r5m2_Plemannik_4_N02" />
 
 	<Reply
 		name="r5m2_Plemannik_4_N02"
-		text="Íå âîëíóéñÿ, âñå ïîä êîíòðîëåì."
+		text="±ðµ£ÐÄ£¬Ò»ÇÐ¾¡ÔÚÕÆÎÕ¡£"
 		role="PLAYER"
 		nextReplies="r5m2_Plemannik_4_N03" />
 
 	<Reply
 		name="r5m2_Plemannik_4_N03"
-		text="ß íå ìîãó äîæäàòüñÿ, ïîêà ìîé äÿäÿ äâèíåò ïîêðûøêè."
+		text="ÎÒ°Í²»µÃÎÒÊåÊåÕâ»á¶ù¾ÍÒÑ|¾­²»ÔÚÕâÊÀÉÏÁË¡£"
 		role="NPC"
 		nextReplies="r5m2_Plemannik_4_N04" />
 
 	<Reply
 		name="r5m2_Plemannik_4_N04"
-		text="Ïîòåðïè åùå íåìíîãî, è âñå áóäåò."
+		text="ÔÙµÈµÈ£¬ºÜ¿ì¾Í»á°ìÍ×µÄ¡£"
 		role="PLAYER"
 		scriptResult="EndConversation()" />
 <!--Root/r5m2/Îïöèîíàëüíûå/Áàíäèò-->
 	<Reply
 		name="r5m2_Zamucheniy_1_N01"
-		text="Ïîñëóøàé, ÿ çíàþ - òû óáèéöà áàíäèòîâ. ß âèäåë, êàê òû ëèõî ðàñïðàâèëñÿ ñ Èòàíîì íà äîðîãå. Õî÷åøü çàðàáîòàòü?"
+		text="Ìý×Å£¬ÎÒÖªµÀÄãÊÇ×¨É±ÍÁ·ËµÄºÝÈË¡£|Â·ÉÏµÄÍÁ·ËÈÃÄãÅ¡×ÅÆ¨¹É½Ì|ÑµµÃÄÇ½ÐÒ»¸ö²Ò¡£Ïë×¬µãÇ®Âð£¿"
 		role="NPC"
 		scriptCondition="QuestStatus('r5m2_KillBantits')==Q_CANBEGIVEN  and  QuestStatus('r5m2_KillWantedBandit_Quest')==Q_COMPLETED"
 		nextReplies="r5m2_Zamucheniy_1_N02" />
 
 	<Reply
 		name="r5m2_Zamucheniy_1_N02"
-		text="À â ÷åì ïðîáëåìà?"
+		text="Ê²Ã´Âé·³ÊÂ£¿"
 		role="PLAYER"
 		nextReplies="r5m2_Zamucheniy_1_N03" />
 
 	<Reply
 		name="r5m2_Zamucheniy_1_N03"
-		text="Ïðîáëåìà â ìîåì áðàòå Ìàêñâåëå. Ìû ñ íèì áëèçíåöû, ïîíèìàåøü? Ñ ðàííåãî äåòñòâà îí ñëåäèò çà ìíîé. Êóäà áû ÿ íè øåë èëè íè åõàë, ñòîèò ìíå ïðèñìîòðåòüñÿ, è ïî÷òè â êàæäîé çåðêàëüíîé ïîâåðõíîñòè ÿ âèæó åãî. Ìíå ýòî íàäîåëî. Èçáàâü ìåíÿ îò åãî ïðèñóòñòâèÿ."
+		text="Âé·³ÊÇÎÒÐÖµÜÂó¿ËË¹Î¤¡£|ÎÒÃÇÊÇË«°ûÌ¥£¬¶®Âð£¿|´òÐ¡Ëû¾Í¸úÎÒÐÎÓ°²»Àë¡£|ÎÒ×ßµ½ÄÄ¶ù£¬Ã¿Ãæ¾µ×ÓÀï¶¼ÄÜ|¿´¼ûËû¡£ÎÒÊÜ¹»ÁË¡£|°ïÎÒ°ÑËû´ÓÎÒµÄÊÀ½çÀï³ýµô¡£"
 		role="NPC"
 		nextReplies="r5m2_Zamucheniy_1_N04 r5m2_Zamucheniy_1_N05" />
 
 	<Reply
 		name="r5m2_Zamucheniy_1_N05"
-		text="Íåò, íå ñåé÷àñ."
+		text="²»£¬ÏÖÔÚ²»ÐÐ¡£"
 		role="PLAYER"
 		scriptResult="EndConversation()" />
 
 	<Reply
 		name="r5m2_Zamucheniy_1_N04"
-		text="Íàäåþñü, òû íå ïîæàëååøü îá ýòîì, êîãäà ÿ âñå âûïîëíþ."
+		text="µÈÎÒ×öÍêÕâµ¥£¬Ï£ÍûÄã±ðºó»Ú¡£"
 		role="PLAYER"
 		scriptResult="TakeQuest('r5m2_KillBantits'); TActivate('trCreateOptBandit'); EndConversation()" />
 <!--Root/r5m2/Îïöèîíàëüíûå/Êëàä-->
 	<Reply
 		name="r5m2_Klader_1_N01"
-		text="Õî÷åøü, ðàññêàæó òåáå îäèí ñåêðåò?"
+		text="ÏëÌý¸öÃØÃÜÂð£¿"
 		role="NPC"
 		scriptCondition="QuestStatus('r5m2_FindKlad')==Q_CANBEGIVEN"
 		nextReplies="r5m2_Klader_1_N02" />
 
 	<Reply
 		name="r5m2_Klader_1_N02"
-		text="Ðàññêàçûâàé, ëþáëþ ÷óæèå ñåêðåòû."
+		text="Ïë£¬ÎÒ×î°®ÌýÃØÃÜÁË¡£"
 		role="PLAYER"
 		nextReplies="r5m2_Klader_1_N03" />
 
 	<Reply
 		name="r5m2_Klader_1_N03"
-		text="Ýòîò ñåêðåò îáîéäåòñÿ òåáå â 500 äîëëàðîâ."
+		text="Õâ¸öÃØÃÜÖµ500½ð±Ò¡£"
 		role="NPC"
 		nextReplies="r5m2_Klader_1_N04a r5m2_Klader_1_N04b r5m2_Klader_1_N04c" />
 
 	<Reply
 		name="r5m2_Klader_1_N04c"
-		text="Äåíåã íåò."
+		text="ÎÒÃ»Ç®¡£"
 		role="PLAYER"
 		scriptCondition="500>GetPlayerMoney()"
 		scriptResult="EndConversation()" />
 
 	<Reply
 		name="r5m2_Klader_1_N04b"
-		text="Ñïàñèáî, îáîéäóñü."
+		text="²»ÓÃÁË£¬Ð»Ð»¡£"
 		role="PLAYER"
 		scriptCondition="GetPlayerMoney()>=500"
 		scriptResult="EndConversation()" />
 
 	<Reply
 		name="r5m2_Klader_1_N04a"
-		text="Âàëÿé."
+		text="³É½»£¡"
 		role="PLAYER"
 		scriptCondition="GetPlayerMoney()>=500"
 		nextReplies="r5m2_Klader_1_N05a" />
 
 	<Reply
 		name="r5m2_Klader_1_N05a"
-		text="Ñïàñèáî. Ñåêðåò - ïðîñò. Íà òâîåé êàðòå ÿ îòìå÷ó ìåñòî, ãäå ìåñòíûå áàíäèòû ñïðÿòàëè ñâîþ äîáû÷ó. Òû ìîæåøü åãî íàéòè, åñëè ïîñòàðàåøüñÿ. Òîëüêî íå ñïðàøèâàé ìåíÿ, êàê ÿ áûë ñâÿçàí ñ ýòèìè áàíäèòàìè."
+		text="¶àÐ»¡£ÃØÃÜºÜ¼òµ¥¡£|ÎÒ»áÔÚÄãµØÍ¼ÉÏ±ê³öÒ»¸öµØ·½¡ª¡ª|ÍÁ·Ë°ÑÔßÎï²ØÔÚÄÇ¶ù¡£|Ö»ÒªÄã¿ÏÏÂ¹¦·ò£¬¾ÍÄÜÕÒµ½¡£|²»¹ý£¬ÎÒ¸úÄÇ°ïÍÁ·ËµÄ½»Çé£¬|Äã¾Í±ð´òÌýÁË¡£"
 		role="NPC"
 		scriptResult="AddPlayerMoney(-500)"
 		nextReplies="r5m2_Klader_1_N06a Dlg_pl_000419" />
 
 	<Reply
 		name="Dlg_pl_000419"
-		text="Çâó÷èò íå î÷åíü èíòåðåñíî."
+		text="ÎÒÃ»ÐËÈ¤¡£"
 		role="PLAYER"
 		scriptResult="EndConversation()" />
 
 	<Reply
 		name="r5m2_Klader_1_N06a"
-		text="Èíòåðåñíî, ÷òî ýòî çà êëàä - çà 500 äîëëàðîâ. Ëàäíî, ïîåäó è ïîñìîòðþ."
+		text="Õâ±¦±´¾ÍÖµ100½ð±Ò£¿|ÐÐ°É£¬ÎÒµ¹ÒªÈ¥ÇÆÇÆ¡£"
 		role="PLAYER"
 		scriptResult="TakeQuest('r5m2_FindKlad'); EndConversation()" />
 <!--Root/r5m2/Îïöèîíàëüíûå/Ãîíêà-->
 	<Reply
 		name="r5m2_Shumaher_1_N01"
-		text="Çäîðîâî, ïóòåøåñòâåííèê. Òû ïðèåõàë ïðèíÿòü ó÷àñòèå â ãîíêàõ? Âçíîñ çà ó÷àñòèå  - 100 äîëëàðîâ."
+		text="ÄãºÃ£¬ÍâÏçÈË¡£Ïë²Î¼ÓÈü³µÂð£¿|±¨Ãû·Ñ100½ð±Ò¡£"
 		role="NPC"
 		scriptCondition="QuestStatus('r5m2_MoveFirstToVillage') == Q_CANBEGIVEN"
 		nextReplies="r5m2_Shumaher_1_N02a r5m2_Shumaher_1_N02b r5m2_Shumaher_1_N02c" />
 
 	<Reply
 		name="r5m2_Shumaher_1_N02c"
-		text="Ó ìåíÿ íåò âðåìåíè äëÿ òàêîé åðóíäû. Ìîæåò áûòü, â äðóãîé ðàç."
+		text="Ã»ÕâÏÐ¹¤·ò¡£¸ÄÌì°É¡£"
 		role="PLAYER"
 		scriptCondition="GetPlayerMoney()>=100"
 		scriptResult="EndConversation()" />
 
 	<Reply
 		name="r5m2_Shumaher_1_N02b"
-		text="Íåò äåíåã."
+		text="ÎÒÃ»Ç®¡£"
 		role="PLAYER"
 		scriptCondition="100>GetPlayerMoney()"
 		scriptResult="EndConversation()" />
 
 	<Reply
 		name="r5m2_Shumaher_1_N02a"
-		text="Ý-ý... Âñå âåðíî. Êàêîé ìàðøðóò?"
+		text="àÅ¡­¡­ÐÐ°É¡£Èü³ÌÔõÃ´×ß£¿"
 		role="PLAYER"
 		scriptCondition="GetPlayerMoney()>=100"
 		nextReplies="r5m2_Shumaher_1_N03a" />
 
 	<Reply
 		name="r5m2_Shumaher_1_N03a"
-		text="Ñòàðò íà ýòîì ìåñòå. Ôèíèø - â äåðåâíå Ìåõèêî. Ïðèç, ðàçóìååòñÿ, òîëüêî äëÿ ïåðâîãî ìåñòà.  "
+		text="ÆðµãÔÚÕâ¶ù£¬ÖÕµãÔÚÄ«Î÷¸ç´å¡£|Ó®¼ÒÍ¨³Ô¡£"
 		role="NPC"
 		nextReplies="r5m2_Shumaher_1_N04a Dlg_pl_000428" />
 
 	<Reply
 		name="Dlg_pl_000428"
-		text="Ñëèøêîì äàëåêî, íå ïîåäó."
+		text="Ì«Ô¶ÁË£¬ÎÒ²»È¥¡£"
 		role="PLAYER"
 		scriptResult="EndConversation()" />
 
 	<Reply
 		name="r5m2_Shumaher_1_N04a"
-		text="Ñîãëàñåí. Êîãäà íà÷àëî?"
+		text="ÐÐ¡£±ÈÈüÊ²Ã´Ê±ºò¿ªÊ¼£¿"
 		role="PLAYER"
 		nextReplies="r5m2_Shumaher_1_N05a" />
 
 	<Reply
 		name="r5m2_Shumaher_1_N05a"
-		text="Âðåìÿ ïîøëî!"
+		text="Ê±¼äµ½£¬×ßÄã£¡"
 		role="NPC"
 		nextReplies="r5m2_Shumaher_1_N06a" />
 
 	<Reply
 		name="r5m2_Shumaher_1_N06a"
-		text="Ïîãíàëè!!!"
+		text="³å£¡£¡£¡"
 		role="PLAYER"
 		scriptResult="AddPlayerMoney(-100); TakeQuest('r5m2_MoveFirstToVillage'); EndConversation()" />
 
 	<Reply
 		name="r5m2_Shumaher_2_N01"
-		text="À âîò è òû."
+		text="Äã×ÜËãµ½ÁË¡£"
 		role="NPC"
 		scriptCondition="QuestStatus('r5m2_MoveFirstToVillage') == Q_TAKEN"
 		scriptResult="CompleteQuest('r5m2_MoveFirstToVillage')"
@@ -1651,26 +1651,26 @@
 
 	<Reply
 		name="r5m2_Shumaher_2_N02"
-		text="Íó, êàêîå ìåñòî ÿ çàíÿë?"
+		text="ÎÒÄÃÁËµÚ¼¸£¿"
 		role="PLAYER"
 		nextReplies="r5m2_Shumaher_2_N03a r5m2_Shumaher_2_N03b" />
 
 	<Reply
 		name="r5m2_Shumaher_2_N03b"
-		text="Òû ïðîèãðàë."
+		text="ÄãÊäÁË¡£"
 		role="NPC"
 		scriptCondition="GetVar('GonkaPlace').AsInt>1"
 		nextReplies="r5m2_Shumaher_2_N04b" />
 
 	<Reply
 		name="r5m2_Shumaher_2_N04b"
-		text="Ëîïíè ìîè ïîêðûøêè! Âîò íåïðóõà! Ëàäíî, ìíå ïðîñòî íå ïîâåçëî."
+		text="±¬ÎÒµÄÂÖÌ¥£¡Õæµ¹Ã¹£¡|ÐÐ°É£¬½ñÌì²»ËãÎÒµÄÈÕ×Ó¡£"
 		role="PLAYER"
 		scriptResult="EndConversation()" />
 
 	<Reply
 		name="r5m2_Shumaher_2_N03a"
-		text="Ïåðâîå. Âîò òâîé ïðèç."
+		text="µÚÒ»Ãû¡£½±½ð¹éÄãÁË¡£"
 		role="NPC"
 		scriptCondition="GetVar('GonkaPlace').AsInt==1"
 		scriptResult="AddPlayerMoney(1000)"
@@ -1678,136 +1678,136 @@
 
 	<Reply
 		name="r5m2_Shumaher_2_N04a"
-		text="Îòëè÷íî!!!"
+		text="ºÃ¼«ÁË£¡£¡£¡"
 		role="PLAYER"
 		scriptResult="EndConversation()" />
 <!--Root/r5m1/Îïöèîíàëüíûå--><!--Root/r5m1/ñþæåòíûå--><!--Root/r5m1/ñþæåòíûå/Æèòåëü ïåðâîé äåðåâíè-->
 	<Reply
 		name="r5m1_Aplle_Bar_Ralf_1_N01"
-		text="Ëó÷ ñîëíöà îçàðÿåò ìîå ëèöî, âîò óæå ìíîãî ëåò ÿ íå ñëûøàë ïåíèÿ ïòèö. ×òî ïðèâåëî òåáÿ ê íàì, íåçíàêîìåö?"
+		text="Ñô¹âÈ÷ÔÚÎÒÁ³ÉÏ£¬|¶àÉÙÄêÃ»Ìý¹ýÄñ½ÐÁË¡£|Ê²Ã´·ç°ÑÄã´µµ½ÎÒÃÇµÄµØ½çÀ´ÁË£¬|ÍâÏçÈË£¿"
 		role="NPC"
 		scriptCondition="QuestStatus('r5m1_WTBWTalkWithAborigens_Quest')==Q_TAKEN"
 		nextReplies="r5m1_Aplle_Bar_Ralf_1_N02" />
 
 	<Reply
 		name="r5m1_Aplle_Bar_Ralf_1_N02"
-		text="Ïðèâåò, âîæäü! Ñêàæè, òû íå ñëûøàë íè÷åãî î ãîðîäå Ýäìîíòîí?"
+		text="ÄãºÃ£¬Çõ³¤£¡ÌýËµ¹ý°£µÂÃÉ¶ÙÂð£¿"
 		role="PLAYER"
 		nextReplies="r5m1_Aplle_Bar_Ralf_1_N03" />
 
 	<Reply
 		name="r5m1_Aplle_Bar_Ralf_1_N03"
-		text="Óìíàÿ ïòèöà íå èùåò ñ÷àñòüÿ â ÷óæèõ çåìëÿõ. ß íå ñëûøàë î ãîðîäå, ïðî êîòîðûé òû ãîâîðèøü."
+		text="´ÏÃ÷µÄÄñ¶ù²»»áÅÜµ½Âù»ÄÖ®|µØÅöÔËÆø¡£Õâ³ÇÎÒÌýËµ¹ý¡£"
 		role="NPC"
 		nextReplies="r5m1_Aplle_Bar_Ralf_1_N04" />
 
 	<Reply
 		name="r5m1_Aplle_Bar_Ralf_1_N04"
-		text="À íå ïîäñêàæåøü, êòî áû ìîã çíàòü ÷òî-íèáóäü ïðî ýòîò ãîðîä? Ïðî êàðòó ÿ óæå è íå ñïðàøèâàþ."
+		text="ÄãÖªµÀÓÐË­ÄÜ°ïÎÒÂð£¿|×îºÃ»¹ÄÜ¸ãµ½ÕÅµØÍ¼¡£"
 		role="PLAYER"
 		nextReplies="r5m1_Aplle_Bar_Ralf_1_N05" />
 
 	<Reply
 		name="r5m1_Aplle_Bar_Ralf_1_N05"
-		text="Íå âñÿêàÿ êàðòà âåäåò ê çàäàííîé öåëè. Òóò íåïîäàëåêó æèâåò ÷åëîâåê ïî ïðîçâèùó Óìíèê. Îí, ïî ñëóõàì, çäîðîâî â êàðòàõ ðàçáèðàåòñÿ, íî òîæå íèêîìó íè÷åãî ïðî íèõ íå ãîâîðèò."
+		text="²»ÊÇÃ¿ÕÅµØÍ¼¶¼ÄÜÍ¨ÏòÄãÒª|È¥µÄµØ·½¡£ÀëÕâ¶ù²»Ô¶×¡×Å¸öÈË£¬|ÈË³ÆÍòÊÂÍ¨¡£´«ÑÔËûÊÇµØÍ¼|·½ÃæµÄÐÐ¼Ò£¬²»¹ýËû×Ô¼ºËÀ²»³ÐÈÏ¡£"
 		role="NPC"
 		nextReplies="r5m1_Aplle_Bar_Ralf_1_N06" />
 
 	<Reply
 		name="r5m1_Aplle_Bar_Ralf_1_N06"
-		text="×òî çà Óìíèê? Ãäå åãî íàéòè?"
+		text="ÍòÊÂÍ¨ÊÇË­£¿ÎÒÉÏÄÄ¶ùÕÒËû£¿"
 		role="PLAYER"
 		nextReplies="r5m1_Aplle_Bar_Ralf_1_N07" />
 
 	<Reply
 		name="r5m1_Aplle_Bar_Ralf_1_N07"
-		text="Â çíàíèÿõ ïðåäêîâ ñêðûòà îãðîìíàÿ ñèëà. Îí æèâåò íåïîäàëåêó, â çàáðîøåííîì äîìå. Ïî-íàñòîÿùåìó åãî çîâóò Äæåê Íîâàë."
+		text="Î°´óµÄÁ¦Á¿¾Í²ØÔÚ¾ÉÊ±µÄÖªÊ¶Àï¡£|Ëû×¡µÃÀëÕâ¶ù²»Ô¶£¬|ÔÚÒ»¶°»Ä·ÏµÄÎÝ×ÓÀï¡£|ËûµÄÕæÃû½Ð½Ü¿Ë¡¤ÅµÍß¶û¡£"
 		role="NPC"
 		nextReplies="r5m1_Aplle_Bar_Ralf_1_N08" />
 
 	<Reply
 		name="r5m1_Aplle_Bar_Ralf_1_N08"
-		text="Ñïàñèáî, ïðèÿòåëü."
+		text="¶àÐ»£¬ÀÏ¸ç¡£"
 		role="PLAYER"
 		scriptResult="CompleteQuest('r5m1_WTBWTalkWithAborigens_Quest') EndConversation()" />
 <!--Root/r5m1/ñþæåòíûå/Ãîíùèê â äåðåâíå-->
 	<Reply
 		name="r5m1_Konneks_Gonchik_1_N01"
-		text="Íè÷åãî ó âàñ, ðåáÿòà, íå âûéäåò, äàæå è íå äóìàéòå."
+		text="ÄãÃÇÕâÐ©¼Ò»ï£¬´ð¸´¾ÍÁ©×Ö¡ª¡ª|Ã»ÃÅ£¬Ïë¶¼±ðÏë¡£"
 		role="NPC"
 		scriptCondition="QuestStatus('r5m1_FirstQofSam_Quest')==Q_TAKEN"
 		nextReplies="r5m1_Konneks_Gonchik_1_N02" />
 
 	<Reply
 		name="r5m1_Konneks_Gonchik_1_N02"
-		text="Ó êîãî ýòî - 'ó íàñ'?"
+		text="ÄãÖ¸Ë­£¿"
 		role="PLAYER"
 		nextReplies="r5m1_Konneks_Gonchik_1_N03" />
 
 	<Reply
 		name="r5m1_Konneks_Gonchik_1_N03"
-		text="Ó âàñ ñ Ñýìîì! Ïîíÿë?!"
+		text="Äã£¬»¹ÓÐÈøÄ·£¡Ã÷°×Âð£¿£¡"
 		role="NPC"
 		nextReplies="r5m1_Konneks_Gonchik_1_N04" />
 
 	<Reply
 		name="r5m1_Konneks_Gonchik_1_N04"
-		text="Ïîíÿë - íå ïîíÿë, îðàòü-òî ÷åãî, åäðåí áåíçèí?"
+		text="Ê¥ÓÍ±£ÓÓ£¡ÄãÈÂÈÂÊ²Ã´£¿"
 		role="PLAYER"
 		nextReplies="r5m1_Konneks_Gonchik_1_N05" />
 
 	<Reply
 		name="r5m1_Konneks_Gonchik_1_N05"
-		text="Äà ïîòîìó ÷òî ñ òàêèìè, êàê òû, òîëüêî òàê è ìîæíî ãîâîðèòü. À íó, óìàòûâàé îòñþäà!"
+		text="¸úÄãÃÇÕâÖÖ¼Ò»ïËµ»°£¬|¾ÍµÃÕâ¸±Ç»µ÷¡£¹ö°É£¡"
 		role="NPC"
 		nextReplies="r5m1_Konneks_Gonchik_1_N06" />
 
 	<Reply
 		name="r5m1_Konneks_Gonchik_1_N06"
-		text="Ïî ìîåìó, òû íå ìíîãî íå â ñåáå, à ÿ íà áîëüíûõ íå îáèæàþñü. Òàê ÷òî ìíå ïåðåäàòü Ñýìó?"
+		text="ÎÒ¿´ÄãÄÔ×ÓÓÐµãÃ«²¡¡£|ÎÒ¸ÃÔõÃ´¸úÈøÄ·»Ø»°£¿"
 		role="PLAYER"
 		nextReplies="r5m1_Konneks_Gonchik_1_N07" />
 
 	<Reply
 		name="r5m1_Konneks_Gonchik_1_N07"
-		text="Ïåðåäàé åìó, ÷òîá çàáèë ñåáå êàðòîôåëèíó â ... âûõëîïíóþ òðóáó!"
+		text="ÈÃËûÍù×Ô¼ºÅÅÆø¹ÜÀïÈû¸ö´ó|ÍÁ¶¹È¥°É£¡"
 		role="NPC"
 		nextReplies="r5m1_Konneks_Gonchik_1_N09" />
 
 	<Reply
 		name="r5m1_Konneks_Gonchik_1_N09"
-		text="Ý, êàê ñêàæåøü."
+		text="ËæÄãµÄ±ã¡£"
 		role="PLAYER"
 		scriptResult="CompleteQuest('r5m1_FirstQofSam_Quest');  EndConversation ()" />
 <!--Root/r5m1/Îïöèîíàëüíûå/Ëîòåðåÿ-->
 	<Reply
 		name="r5m1_LotteryMan_1_N01"
-		text="Ïðèâåò. Õî÷åøü ñûãðàòü â êàðòî÷íóþ èãðó íà äåíüãè?"
+		text="ÄãºÃ¡£ÏëÍæÁ½°Ñ´ø²ÊÍ·µÄÅÆÂð£¿"
 		role="NPC"
 		nextReplies="r5m1_LotteryMan_1_N02a r5m1_LotteryMan_1_N02b" />
 
 	<Reply
 		name="r5m1_LotteryMan_1_N02b"
-		text="ß íå èãðîê."
+		text="ÎÒ²»¶ÄÇ®¡£"
 		role="PLAYER"
 		scriptResult="EndConversation()" />
 
 	<Reply
 		name="r5m1_LotteryMan_1_N02a"
-		text="Äàâàé."
+		text="ºÃ¡£"
 		role="PLAYER"
 		scriptCondition="GetPlayerMoney()>=50"
 		nextReplies="r5m1_LotteryMan_1_N03a" />
 
 	<Reply
 		name="r5m1_LotteryMan_1_N03a"
-		text="Ñíà÷àëà ñäåëàé ñòàâêó. Åñëè âûèãðàåøü, òî ïîëó÷èøü ñóììó â òðè ðàçà áîëüøå, ÷åì ñòàâêà."
+		text="ÏÈÏÂ×¢¡£Ó®ÁË£¬²Ê½ð·­Èý±¶¡£"
 		role="NPC"
 		nextReplies="r5m1_LotteryMan_1_N04a r5m1_LotteryMan_1_N04b r5m1_LotteryMan_1_N04c" />
 
 	<Reply
 		name="r5m1_LotteryMan_1_N04c"
-		text="450 äîëëàðîâ."
+		text="450¿é¡£"
 		role="PLAYER"
 		scriptCondition="GetPlayerMoney()>=450"
 		scriptResult="AddPlayerMoney(-450);  SetVar('stavka',450)"
@@ -1815,7 +1815,7 @@
 
 	<Reply
 		name="r5m1_LotteryMan_1_N04b"
-		text="150 äîëëàðîâ."
+		text="150¿é¡£"
 		role="PLAYER"
 		scriptCondition="GetPlayerMoney()>=150"
 		scriptResult="AddPlayerMoney(-150);  SetVar('stavka',150)"
@@ -1823,7 +1823,7 @@
 
 	<Reply
 		name="r5m1_LotteryMan_1_N04a"
-		text="50 äîëëàðîâ."
+		text="50¿é¡£"
 		role="PLAYER"
 		scriptCondition="GetPlayerMoney()>=50"
 		scriptResult="AddPlayerMoney(-50);  SetVar('stavka',50)"
@@ -1831,55 +1831,55 @@
 
 	<Reply
 		name="r5m1_LotteryMan_1_N05a"
-		text="Òàê êàê èç êîëîäû êàðò ó ìåíÿ îñòàëîñü âñåãî òîëüêî ÷åòûðå øòóêè, òî ïðàâèëà èãðû áóäóò ïðîñòû. Õîðîøî õîòü êàðòû ðàçíîé ìàñòè. Õà-õà. ß âûòÿíóë èç ýòèõ ÷åòûðåõ êàðò îäíó. Òåáå íàäî óãàäàòü, ÷òî ýòî çà êàðòà."
+		text="Õû¸±ÅÆÎÒ¾ÍÁôÁËËÄÕÅ£¬|ËùÒÔ¹æ¾ØÌØ±ð¼òµ¥¡£|Ãî¾ÍÃîÔÚÕâËÄÕÅ»¨É«¸÷²»ÏàÍ¬¡£|¹þ¹þ¡£ÎÒ´ÓÖÐ³éÒ»ÕÅ£¬|ÄãµÄÈÎÎñ¾ÍÊÇ²Â³öËüÊÇÄÄÕÅ¡£"
 		role="NPC"
 		scriptResult="SetVar('rndnum',random(4));  println(GetVar('rndnum').AsInt)"
 		nextReplies="r5m1_LotteryMan_1_N06a_1 r5m1_LotteryMan_1_N06a_2 r5m1_LotteryMan_1_N06a_3 r5m1_LotteryMan_1_N06a_4" />
 
 	<Reply
 		name="r5m1_LotteryMan_1_N06a_4"
-		text="Òðåôîâûé Âàëåò."
+		text="Ã·»¨J¡£"
 		role="PLAYER"
 		scriptResult="SetVar('plnum',4)"
 		nextReplies="r5m1_LotteryMan_1_N07aa r5m1_LotteryMan_1_N07ab" />
 
 	<Reply
 		name="r5m1_LotteryMan_1_N06a_3"
-		text="Øåñòåðêà Áóáåé."
+		text="·½¿é6¡£"
 		role="PLAYER"
 		scriptResult="SetVar('plnum',3)"
 		nextReplies="r5m1_LotteryMan_1_N07aa r5m1_LotteryMan_1_N07ab" />
 
 	<Reply
 		name="r5m1_LotteryMan_1_N06a_2"
-		text="Ïèêîâûé Òóç."
+		text="ºÚÌÒA¡£"
 		role="PLAYER"
 		scriptResult="SetVar('plnum',2)"
 		nextReplies="r5m1_LotteryMan_1_N07aa r5m1_LotteryMan_1_N07ab" />
 
 	<Reply
 		name="r5m1_LotteryMan_1_N06a_1"
-		text="Äåñÿòêà ×åðâåé."
+		text="ºìÌÒ10¡£"
 		role="PLAYER"
 		scriptResult="SetVar('plnum',1)"
 		nextReplies="r5m1_LotteryMan_1_N07aa r5m1_LotteryMan_1_N07ab" />
 
 	<Reply
 		name="r5m1_LotteryMan_1_N07ab"
-		text="Íå óãàäàë! Ýòî áûëà äðóãàÿ êàðòà!"
+		text="²Â´íÁË£¡²»ÊÇÕâÕÅ£¡"
 		role="NPC"
 		scriptCondition="GetVar('rndnum').AsInt~=GetVar('plnum').AsNum"
 		nextReplies="r5m1_LotteryMan_1_N08ab" />
 
 	<Reply
 		name="r5m1_LotteryMan_1_N08ab"
-		text="Ýõ, à ÿ ýòî ÷óâñòâîâàë."
+		text="°¦£¬ÎÒÓÐÔ¤¸Ð¡£"
 		role="PLAYER"
 		scriptResult="EndConversation()" />
 
 	<Reply
 		name="r5m1_LotteryMan_1_N07aa"
-		text="Î, íè÷åãî ñåáå! Òû óãàäàë! Âîò òâîé âûèãðûø."
+		text="°¥Ñ½£¬¼û¹íÁË£¡£¡Äã²Â¶ÔÁË£¡|²Ê½ðÄÃÈ¥¡£"
 		role="NPC"
 		scriptCondition="GetVar('rndnum').AsInt==GetVar('plnum').AsInt"
 		scriptResult="local stavka = GetVar('stavka').AsInt;  stavka = stavka * 3;  AddPlayerMoney(stavka);"
@@ -1887,338 +1887,338 @@
 
 	<Reply
 		name="r5m1_LotteryMan_1_N08aa"
-		text="Ñïàñèáî! ß ñ÷àñòëèâ÷èê."
+		text="¶àÐ»£¡ÎÒÕæÊÇ×ßÔË¡£"
 		role="PLAYER"
 		scriptResult="EndConversation()" />
 <!--Root/r5m1/Îïöèîíàëüíûå/Êëàäîèñêàòåëü-->
 	<Reply
 		name="r5m1_TreasureMan_1_N01"
-		text="Ïðèâåòñòâóþ òåáÿ, ïóòíèê. ß âèæó, òû äîâîëüíî ñèëåí è íàõîä÷èâ. Íå ìîã áû òû ïîìî÷ü ìíå ñ ðàñêîïêàìè?"
+		text="»¶Ó­Äã£¬ÍâÏçÈË¡£|¿´ÄãÉíÇ¿Á¦×³£¬ÄÔ×ÓÒ²Áé¹â¡£|ÄÜ°ïÎÒÍÚµã¶«Î÷Âð£¿"
 		role="NPC"
 		scriptCondition="QuestStatus('r5m1_FindTreasure') == Q_CANBEGIVEN"
 		nextReplies="r5m1_TreasureMan_1_N02 Dlg_pl_000422" />
 
 	<Reply
 		name="Dlg_pl_000422"
-		text="Íåò, ÿäðåí áåíçèí. Ó ìåíÿ è ñâîèõ äåë õâàòàåò."
+		text="Ê¥ÓÍ±£ÓÓ£¡²»¸É£¡ÎÒÃ¦µÃºÜ¡£"
 		role="PLAYER"
 		scriptResult=" EndConversation()" />
 
 	<Reply
 		name="r5m1_TreasureMan_1_N02"
-		text="Ïîñìîòðèì, ðàññêàæè ïîïîäðîáíåå."
+		text="¿´¿´ÔÙËµ¡£°ÑÒª×öµÄÊÂÏêÏ¸ËµËµ¡£"
 		role="PLAYER"
 		nextReplies="r5m1_TreasureMan_1_N03" />
 
 	<Reply
 		name="r5m1_TreasureMan_1_N03"
-		text="Â çäåøíèõ çåìëÿõ çàðûòî ìíîãî äðåâíèõ ñîêðîâèù. Îäíî èç íèõ - Çàïðåòíûå êíèãè.  Åñëè òåáå ïîâåçåò è òû ñìîæåøü èõ íàéòè, ÿ ùåäðî òåáÿ âîçíàãðàæó."
+		text="ÕâÒ»´ø´å×ÓÀïÂñ×Å²»ÉÙ±¦±´¡£|ÆäÖÐÒ»ÑùÊÇ½ûÊé¡£|ÄãÒªÊÇ×ßÔËÄÜÍÚµ½£¬|ÎÒ¾ø²»»á¿÷´ýÄã¡£"
 		role="NPC"
 		nextReplies="r5m1_TreasureMan_1_N05 Dlg_pl_000423" />
 
 	<Reply
 		name="Dlg_pl_000423"
-		text="Ýòî êàê-òî ïîäîçðèòåëüíî âûãëÿäèò. Èùè äðóãîãî äóðàêà."
+		text="Ìý×Å¾Í¿ÉÒÉ¡£ÄãÁíÇë¸ßÃ÷°É¡£"
 		role="PLAYER"
 		scriptResult=" EndConversation()" />
 
 	<Reply
 		name="r5m1_TreasureMan_1_N05"
-		text="Íå âèæó çäåñü íè÷åãî ñëîæíîãî."
+		text="ÕâÓÐÊ²Ã´ÄÑµÄ¡£"
 		role="PLAYER"
 		nextReplies="r5m1_TreasureMan_1_N06" />
 
 	<Reply
 		name="r5m1_TreasureMan_1_N06"
-		text="Ýòîò êëàä óæå ëåò ñòî èùóò. À ïðî òî, ÷òî îí çàðûò ãäå-òî íåäàëåêî îò ïåðåïëåòåíèÿ òðóá, òåáå ëþáîé ìåñòíûé æèòåëü ðàññêàæåò.  Ýòè òðóáû óæå âñå íà ñòî ðàç îáíþõàëè, áåç âñÿêîãî òîëêó."
+		text="¶àÉÙÈËÍÚ¹ýÕâÅú½Ñ²Ø¡£|Ëæ±ãÄÄ¸ö±¾µØÈË¶¼»á¸æËßÄã£¬|Ëü¾ÍÂñÔÚ¹ÜµÀ½»´íµÄÊ²Ã´µØ·½¡£|ÕâÆ¬¹ÜµÀÀïÀïÍâÍâ¶¼±»·­ÁË¸ö±é£¬|È«¶¼°×Ã¦»î¡£"
 		role="NPC"
 		nextReplies="r5m1_TreasureMan_1_N07" />
 
 	<Reply
 		name="r5m1_TreasureMan_1_N07"
-		text="Ïîñìîòðèì, ìîæåò áûòü, ìíå áîëüøå ïîâåçåò."
+		text="×ß×ÅÇÆ°É£¬Ëµ²»¶¨ÎÒµÄÔËÆø¸üÍú¡£"
 		role="PLAYER"
 		scriptResult="TakeQuest('r5m1_FindTreasure');  EndConversation()" />
 
 	<Reply
 		name="r5m1_TreasureMan_2_N01"
-		text="Îòëè÷íî! Ýòî òå ñàìûå êíèãè! Íàäåþñü, òû èõ íå ÷èòàë, èíà÷å... Õîòÿ ÷òî ýòî ÿ - âîò, äåðæè. Òû ÷åñòíî çàñëóæèë ïðàâî âëàäåòü ýòîé âåùüþ."
+		text="Ì«ºÃÁË£¡ÕýÊÇÄÇ¼¸±¾Êé£¡|µ«Ô¸ÄãÃ»Íµ¿´¡ª¡ª²»È»µÄ»°¡­¡­|µÈµÈ£¬ÄÃ×Å°É¡£ÄãÆ¾±¾ÊÂÕõ|À´ÁËÓµÓÐËüµÄÈ¨Àû¡£"
 		role="NPC"
 		scriptCondition="QuestStatus('r5m1_FT_Return') == Q_TAKEN"
 		nextReplies="r5m1_TreasureMan_2_N02" />
 
 	<Reply
 		name="r5m1_TreasureMan_2_N02"
-		text="Ñïàñèáî, êîíå÷íî, íî ÷òî ýòî?"
+		text="¶àÐ»£¬¿ÉÕâÊÇÊ²Ã´ÍæÒâ¶ù£¿"
 		role="PLAYER"
 		nextReplies="r5m1_TreasureMan_2_N03" />
 
 	<Reply
 		name="r5m1_TreasureMan_2_N03"
-		text="Ýòî - Êëàäîèñêàòåëü! Â ðóêàõ îáû÷íîãî ÷åëîâåêà îí íå áîëåå ÷åì èãðóøêà, çàòî äëÿ îõîòíèêà çà äðåâíèìè ñîêðîâèùàìè - ïðîñòî íåçàìåíèìàÿ âåùü."
+		text="ÕâÊÇÑ°±¦Ì½²âÆ÷£¡|ÔÚÆÕÍ¨ÈËÊÖÀïËü¾ÍÊÇ¸öÍæ¾ß£¬|µ«¶ÔÑ°±¦ÁÔÈËÀ´Ëµ£¬|Õâ¿ÉÊÇ¶ÀÒ»ÎÞ¶þµÄ±¦±´¡£"
 		role="NPC"
 		nextReplies="r5m1_TreasureMan_2_N04" />
 
 	<Reply
 		name="r5m1_TreasureMan_2_N04"
-		text="Îòëè÷íî, ëîïíè òâîè ïîêðûøêè."
+		text="Ì«ºÃÁË£¬±¬ÄãµÄÂÖÌ¥£¡"
 		role="PLAYER"
 		scriptResult="CompleteQuest('r5m1_FT_Return');  EndConversation()" />
 <!--Root/r5m1/Îïöèîíàëüíûå/Ïîñûëêà-->
 	<Reply
 		name="TheKonneks_Bar_Posilka_NPC_N01"
-		text="Çäîðîâî, áðàòàí. Åñòü äåëî."
+		text="ÄãºÃ£¬ÀÏµÜ¡£ÎÒÕâ¶ùÓÐ·Ý»î¶ù¸øÄã¡£"
 		role="NPC"
 		scriptCondition="QuestStatus('r5m1_Posilka') == Q_CANBEGIVEN"
 		nextReplies="Dlg_pl_000296" />
 
 	<Reply
 		name="Dlg_pl_000296"
-		text="Ñëóøàþ."
+		text="ÐÐ£¬ÄãËµ¡£"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000297" />
 
 	<Reply
 		name="Dlg_npc_000297"
-		text="Íàäî äîñòàâèòü ïîñûëêó Ñýìó áûñòðåå íàøèõ êîíêóðåíòîâ. Íî èìåé â âèäó - ïðåìèÿ ïîëàãàåòñÿ òîëüêî çà ïåðâîå ìåñòî."
+		text="ÐèÒªÇÀÔÚ¶ÔÊÖÇ°Í·£¬|°Ñ°ü¹üËÍµ½ÈøÄ·ÊÖÀï¡£|¼Ç×¡£¬Ó®¼ÒÍ¨³Ô¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000298 Dlg_pl_000421" />
 
 	<Reply
 		name="Dlg_pl_000421"
-		text="Íå èíòåðåñóåò."
+		text="²»¸ÐÐËÈ¤¡£"
 		role="PLAYER"
 		scriptResult=" EndConversation()" />
 
 	<Reply
 		name="Dlg_pl_000298"
-		text="Íåò ïðîáëåì. Äàâàé ïîñûëêó."
+		text="Ã»ÎÊÌâ¡£°ü¹üÄÃÀ´¡£"
 		role="PLAYER"
 		scriptResult="TActivate('trStartPosilka');  TakeQuest('r5m1_Posilka');  EndConversation()" />
 <!--Root/r5m1/Îïöèîíàëüíûå/Êîíòðàáàíäà1-->
 	<Reply
 		name="r5m1_MisterEko_1_N01"
-		text="Ïðèâåò. Åñòü äåëîâîå ïðåäëîæåíèå."
+		text="ÄãºÃ¡£ÎÒÕâ¶ùÓÐ±ÊÎÈµ±µÄÂò|ÂôÏë¸úÄã×ö¡£"
 		role="NPC"
 		scriptCondition="QuestStatus('r5m1_Kontrabanda')==Q_CANBEGIVEN"
 		nextReplies="r5m1_MisterEko_1_N02 Dlg_pl_000424" />
 
 	<Reply
 		name="Dlg_pl_000424"
-		text="Áîþñü, ÷òî ýòî ïðåäëîæåíèå ïëîõî ïàõíåò."
+		text="ÎÒ¿´Ã»ÄÇÃ´ÎÈµ±¡£"
 		role="PLAYER"
 		scriptResult=" EndConversation()" />
 
 	<Reply
 		name="r5m1_MisterEko_1_N02"
-		text="Íàñêîëüêî äåëîâîå?"
+		text="±¨³ê¶àÉÙ£¿"
 		role="PLAYER"
 		nextReplies="r5m1_MisterEko_1_N03" />
 
 	<Reply
 		name="r5m1_MisterEko_1_N03"
-		text="Íà íîâûé ìîòîð õâàòèò."
+		text="¹»ÂòÒ»Ì¨ÐÂ·¢¶¯»úµÄ¡£"
 		role="NPC"
 		nextReplies="r5m1_MisterEko_1_N04" />
 
 	<Reply
 		name="r5m1_MisterEko_1_N04"
-		text="Ñîãëàñåí. ×òî íàäî äåëàòü?"
+		text="ÐÐ¡£ÒªÎÒ×öÊ²Ã´£¿"
 		role="PLAYER"
 		nextReplies="r5m1_MisterEko_1_N05" />
 
 	<Reply
 		name="r5m1_MisterEko_1_N05"
-		text="Äà äåëî-òî ïëåâîå. Íàäî ïðèâåçòè ïîñûëêó îò ìîåãî ïðèÿòåëÿ èç Ïåíñèëüâàíñêà."
+		text="·Ç³£ÇáËÉµÄ»î¶ù¡£|°Ñ°ü¹üËÍµ½±öÏ¦ÍòË¹¿ËÎÒÅó|ÓÑÄÇ¶ù¾ÍÐÐ¡£"
 		role="NPC"
 		nextReplies="r5m1_MisterEko_1_N06 Dlg_pl_000425" />
 
 	<Reply
 		name="Dlg_pl_000425"
-		text="Ñòîëü ñîìíèòåëüíûå äåëà ìåíÿ íå èíòåðåñóþò."
+		text="ÕâÖÖ¹í¹íËîËîµÄÂòÂô£¬ÎÒÃ»ÐËÈ¤¡£"
 		role="PLAYER"
 		scriptResult=" EndConversation()" />
 
 	<Reply
 		name="r5m1_MisterEko_1_N06"
-		text="ß ñäåëàþ, äåëî, ïîõîæå, è âïðàâäó ïëåâîå. "
+		text="ÐÐ£¬ÎÒ½ÓÁË¡£Õâ»î¶ùÈ·ÊµÇáËÉ¡£"
 		role="PLAYER"
 		scriptResult="TakeQuest('r5m1_Kontrabanda');  FailQuest('r5m1_KK_Spy');  FailQuest('r5m1_KK_KillThem');  FailQuest('r5m1_KillKontrabondist');  EndConversation()" />
 
 	<Reply
 		name="r5m1_Bratello_1_N01"
-		text="Ñëóøàþ!"
+		text="Ìý×Å£¡"
 		role="NPC"
 		scriptCondition="QuestStatus('r5m1_K_FindBtotherMan')==Q_TAKEN"
 		nextReplies="r5m1_Bratello_1_N02" />
 
 	<Reply
 		name="r5m1_Bratello_1_N02"
-		text="Òóò òåáå îäèí ÷åëîâåê ïîñûëî÷êó ïðîñèë ïåðåâåçòè."
+		text="Õâ¶ùÓÐÎ»ÀÏÐÖÍÐÄã°Ñ°ü¹üËÍ³öÈ¥¡£"
 		role="PLAYER"
 		nextReplies="r5m1_Bratello_1_N03" />
 
 	<Reply
 		name="r5m1_Bratello_1_N03"
-		text="Êàêóþ - òàêóþ ïîñûëî÷êó? Íå çíàþ ÿ íè÷åãî íè î êàêèõ ïîñûëî÷êàõ."
+		text="Ê²Ã´°ü¹ü£¿ÎÒÊ²Ã´¶¼²»ÖªµÀ¡£"
 		role="NPC"
 		nextReplies="r5m1_Bratello_1_N04a r5m1_Bratello_1_N04b" />
 
 	<Reply
 		name="r5m1_Bratello_1_N04b"
-		text="Ïàðåíü, åñëè òû ìíå ñêàæåøü, ÷òî ÿ íàïðàñíî òóò âðåìÿ òðà÷ó, òî ÿ ñèëüíî ðàññòðîþñü, ïîíÿë?"
+		text="ºÙ£¬ÀÏÐÖ£¬ÄãÒªÊÇÏë¸æËßÎÒ£¬|ÎÒÔÚÕâ¶ù´¿ÊôÀË·ÑÊ±¼ä£¬|ÄÇÎÒ»á·Ç³£Ê§ÍûµÄ¡£Ã÷°×Âð£¿"
 		role="PLAYER"
 		nextReplies="r5m1_Bratello_1_N05b" />
 
 	<Reply
 		name="r5m1_Bratello_1_N05b"
-		text="À òû ðåçêèé ïàðåíü. Ïîæàëóé, ìû ñ òîáîé ñëàäèì äåëüöå. Ãîâîðè."
+		text="ÄãÊÇ¸öÃ÷°×ÈË¡£ÎÒ¿´ÔÛÃÇÄÜ|×ö³ÉÕâµ¥ÂòÂô¡£Ëµ°É¡£"
 		role="NPC"
 		nextReplies="r5m1_Bratello_1_N06b" />
 
 	<Reply
 		name="r5m1_Bratello_1_N06b"
-		text="À ÷åãî ãîâîðèòü? Ìèñòåð Ýêî ñêàçàë, ÷òî òû äàøü ãðóç è ñêàæåøü, êóäà åãî âåçòè."
+		text="ÎÒ»¹ËµÊ²Ã´£¿°£¿ÆÏÈÉú¸æËßÎÒ£¬|Äã»á°Ñ»õ¸øÎÒ£¬È»ºó¸æ|ËßÎÒËÍµ½ÄÄ¶ù¡£"
 		role="PLAYER"
 		nextReplies="r5m1_Bratello_1_N07b" />
 
 	<Reply
 		name="r5m1_Bratello_1_N07b"
-		text="Äà, âñå âåðíî. ß ïîãðóæó êîíòåéíåð òåáå â êóçîâ. Âåçè åãî â Ìàëîå ßáëîêî. Áóäü îñòîðîæíåå."
+		text="¶Ô£¬¶¼Ã»´í¡£ÎÒ°Ñ»õ×°Äã³µÉÏ¡£|ËÍµ½Ð¡Æ»¹û³ÇÈ¥¡£Â·ÉÏµ±ÐÄ£¡"
 		role="NPC"
 		nextReplies="r5m1_Bratello_1_N08b" />
 
 	<Reply
 		name="r5m1_Bratello_1_N08b"
-		text="Îê."
+		text="ºÃ¡£"
 		role="PLAYER"
 		scriptResult="CompleteQuest('r5m1_K_FindBtotherMan'); EndConversation()" />
 
 	<Reply
 		name="r5m1_Bratello_1_N04a"
-		text="×òî çíà÷èò - 'íå çíàþ'? ×òî çà âûäóìêè?"
+		text="'ÎÒ²»ÖªµÀ'ÊÇÊ²Ã´ÒâË¼£¿|Äã¸úÎÒ±àÊ²Ã´¹í»°ÄØ£¿"
 		role="PLAYER"
 		nextReplies="r5m1_Bratello_1_N05a" />
 
 	<Reply
 		name="r5m1_Bratello_1_N05a"
-		text="Êàêèå 'âûäóìêè'? Ýòî òû ó íàñ ñî÷èíèòåëü, à íå ÿ."
+		text="Ê²Ã´ÒâË¼£¿±à¹ÊÊÂµÄÊÇÄã£¬|¿É²»ÊÇÎÒ¡£"
 		role="NPC"
 		nextReplies="r5m1_Bratello_1_N06a" />
 
 	<Reply
 		name="r5m1_Bratello_1_N06a"
-		text="Íè÷åãî ÿ íå ñî÷èíÿþ!!!"
+		text="ÎÒÃ»±à¹ÊÊÂ£¡£¡£¡"
 		role="PLAYER"
 		nextReplies="r5m1_Bratello_1_N07a" />
 
 	<Reply
 		name="r5m1_Bratello_1_N07a"
-		text="Øåë áû òû îòñþäà, ïàðåíü, ïî-õîðîøåìó. Ïîêà íè÷åãî íå ñëó÷èëîñü."
+		text="ºÙ£¬ÀÏÐÖ£¬³Ã»¹Ã»³öÊÂ£¬|Äã×îºÃ¸Ï½ô×ß¡£"
 		role="NPC"
 		nextReplies="r5m1_Bratello_1_N08a" />
 
 	<Reply
 		name="r5m1_Bratello_1_N08a"
-		text="Îé-îé, êàêîé òû ñòðàøíûé, ÿ ñåé÷àñ èñïóãàþñü!"
+		text="ÍÛ£¬Äã¿ÉÕæÏÅÈË£¬ÎÒºÃÅÂÅÂÅ¶£¡"
 		role="PLAYER"
 		scriptResult="FailQuest('r5m1_K_TravelLetter');  FailQuest('r5m1_K_FindBtotherMan');  EndConversation()" />
 
 	<Reply
 		name="r5m1_BuyerNarkota_1_N01"
-		text="×åãî íàäî?"
+		text="ÓÐÊ²Ã´ÊÂ£¿"
 		role="NPC"
 		scriptCondition="QuestStatus('r5m1_K_TravelLetter')==Q_TAKEN"
 		nextReplies="r5m1_BuyerNarkota_1_N02" />
 
 	<Reply
 		name="r5m1_BuyerNarkota_1_N02"
-		text="Ïîñûëêà åñòü äëÿ òåáÿ."
+		text="ÓÐ¸ö°ü¹üÒª½»¸øÄã¡£"
 		role="PLAYER"
 		nextReplies="r5m1_BuyerNarkota_1_N03" />
 
 	<Reply
 		name="r5m1_BuyerNarkota_1_N03"
-		text="Ïî÷åìó íå ïî÷òîé?"
+		text="ÔõÃ´²»ÓÊ¼Ä£¿"
 		role="NPC"
 		nextReplies="r5m1_BuyerNarkota_1_N04" />
 
 	<Reply
 		name="r5m1_BuyerNarkota_1_N04"
-		text="Ïîòîìó ÷òî ïî÷òà óæå ëåò äâåñòè, êàê íå ðàáîòàåò. Î÷åíü ñðî÷íûé è âàæíûé ãðóç."
+		text="ÒòÎªÓÊÕþ¶¼¿ìÌ±ÁË200ÄêÁË¡£|Õâ¿ÉÊÇÊ®Íò»ð¼±µÄÖØÒª»õ¡£"
 		role="PLAYER"
 		nextReplies="r5m1_BuyerNarkota_1_N05" />
 
 	<Reply
 		name="r5m1_BuyerNarkota_1_N05"
-		text="Íàäåþñü, õâîñòà íå áûëî?! Õîðîøî, ñêîëüêî çà äîñòàâêó?"
+		text="Ï£ÍûÃ»ÓÐÎ²°Í¸ú×ÅÄã°É£¿£¡|ÐÐ£¬ÔË·ÑÎÒ¸Ã¸¶Äã¶àÉÙ£¿"
 		role="NPC"
 		nextReplies="r5m1_BuyerNarkota_1_N06" />
 
 	<Reply
 		name="r5m1_BuyerNarkota_1_N06"
-		text="Ñòàíäàðòíî. "
+		text="ÀÏ¹æ¾Ø¡£"
 		role="PLAYER"
 		nextReplies="r5m1_BuyerNarkota_1_N07" />
 
 	<Reply
 		name="r5m1_BuyerNarkota_1_N07"
-		text="Äåðæè. Óäà÷è."
+		text="ÄÃÈ¥°É¡£×£ÄãºÃÔË¡£"
 		role="NPC"
 		nextReplies="r5m1_BuyerNarkota_1_N08" />
 
 	<Reply
 		name="r5m1_BuyerNarkota_1_N08"
-		text="Ïîêà."
+		text="»Ø¼û¡£"
 		role="PLAYER"
 		scriptResult="CompleteQuest('r5m1_K_TravelLetter');  EndConversation()" />
 <!--Root/r5m1/Îïöèîíàëüíûå/ÓáèòüÊîíòðàáàíäèñòîâ-->
 	<Reply
 		name="r5m1_KillContra_1_N01"
-		text="ß èùó ÷åñòíîãî ÷åëîâåêà, óìåþùåãî îáðàùàòüñÿ ñ îðóæèåì."
+		text="ÎÒÔÚÕÒÒ»¸ö»áÊ¹Ç¹µÄÕýÅÉÈË¡£"
 		role="NPC"
 		scriptCondition="QuestStatus('r5m1_KillKontrabondist')==Q_CANBEGIVEN"
 		nextReplies="Dlg_pl_000329" />
 
 	<Reply
 		name="Dlg_pl_000329"
-		text="Äëÿ ÷åãî?"
+		text="¸ÉÊ²Ã´£¿"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000330" />
 
 	<Reply
 		name="Dlg_npc_000330"
-		text="Òû ñìîæåøü èçáàâèòü íàøå ñåëåíèå îò îäíîãî áàíäèòñòâóþùåãî êîíòðàáàíäèñòà? "
+		text="ÄÜ°ïÎÒÃÇµÄ¾ÛÂä³ýµôÒ»¸öÍÁ|·Ë×ßË½·¸Âð£¿"
 		role="NPC"
 		nextReplies="Dlg_pl_000331" />
 
 	<Reply
 		name="Dlg_pl_000331"
-		text="Ïðè ñîîòâåòñòâóþùåé îïëàòå, ïî÷åìó áû è íåò?"
+		text="±¨³ê¸ø×ã£¬ÎªÊ²Ã´²»ÐÐ£¿"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000332" />
 
 	<Reply
 		name="Dlg_npc_000332"
-		text="Îòëè÷íî, òîãäà ìû âñå ðàññ÷èòûâàåì íà òåáÿ."
+		text="Ì«ºÃÁË£¬¾ÍÖ¸ÍûÄãÁË¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000333 Dlg_pl_000418" />
 
 	<Reply
 		name="Dlg_pl_000418"
-		text="Âñå æå, ëó÷øå ðàññ÷èòûâàéòå íà êîãî-íèáóäü äðóãîãî."
+		text="²»¹ý£¬Äã»¹ÊÇÁíÇë¸ßÃ÷°É¡£"
 		role="PLAYER"
 		scriptResult=" EndConversation()" />
 
 	<Reply
 		name="Dlg_pl_000333"
-		text="Ëó÷øå ðàññ÷èòûâàéòå, ñêîëüêî âû ñìîæåòå ìíå çàïëàòèòü. Áàíäèò îí èëè íåò, à áîåïðèïàñû äåíåã ñòîÿò."
+		text="×îºÃÏÈ°ÑÎÒµÄ±¨³ê¶¨ºÃ¡£|²»¹ÜËûÊÇ²»ÊÇÍÁ·Ë£¬|µ¯Ò©¿É¶¼ÊÇÒªÇ®µÄ¡£"
 		role="PLAYER"
 		scriptResult=" TActivate ('trCreateKontr');  FailQuest('r5m1_K_TravelLetter');  FailQuest('r5m1_K_FindBtotherMan');  FailQuest('r5m1_Kontrabanda');  EndConversation()" />
 <!--Root/Sin/Çíàêîìñòâî ñ Äæî-->
 	<Reply
 		name="Sin_Joe_dlg"
-		text="Òðåõõïîëîñíîé äîðîãè, Ïóòíèê."
+		text="×£ÄãÒ»Â·Æ½°²£¬ÂÃÐÐÕß£¡"
 		role="NPC"
 		scriptCondition="QuestStatus('Sin_FedEx_qst')==Q_TAKEN"
 		scriptResult="CompleteQuest('Sin_FedEx_qst'); CompleteQuest('Sin_Arlekin_Find_qst'); TActivate('Arlekin_ctr')"
@@ -2226,99 +2226,99 @@
 
 	<Reply
 		name="Dlg_pl_000353"
-		text="Ó ìåíÿ åñòü ïîñûëêà äëÿ Äæî, çíàåøü òàêîãî."
+		text="ÎÒÕâ¶ùÓÐ¸ö°ü¹üÒª½»¸øÇÇ¡£|ÈÏÊ¶ËûÂð£¿"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000354" />
 
 	<Reply
 		name="Dlg_npc_000354"
-		text="Âñå çíàþò Ñòàðèíó Äæî. Ñòàðèíà Äæî - ýòî ÿ."
+		text="ÀÏÇÇË­²»ÈÏÊ¶¡£ÇÉÁË£¬ÕýÊÇÔÚÏÂ¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000355" />
 
 	<Reply
 		name="Dlg_pl_000355"
-		text="Òû äîëæåí çàïëàòèòü ìíå çà äîñòàâêó."
+		text="ÔË·ÑÄúµÃ¸¶¡£"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000356" />
 
 	<Reply
 		name="Dlg_npc_000356"
-		text="Äæî âñåãäà ïëàòèò ñâîè äîëãè. Âîò òâîè 500 äîëëàðîâ."
+		text="ÇÇµÄÕË´ÓÀ´²»Ç·¡£|ÕâÊÇÄãµÄ500¿é¡£"
 		role="NPC"
 		scriptResult="AddPlayerMoney( 500 )"
 		nextReplies="Dlg_pl_000357" />
 
 	<Reply
 		name="Dlg_pl_000357"
-		text="Ñêàæè, Äæî, ãäå ìíå íàéòè Àðëåêèíà?"
+		text="¸úÎÒËµËµ£¬ÇÇ£¬ÉÏÄÄ¶ùÄÜÕÒµ½³ó½Ç£¿"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000358" />
 
 	<Reply
 		name="Dlg_npc_000358"
-		text="Äæî ñêàæåò, ãäå åãî íàéòè. Ýòà ÷àñòü ãîðîäà ïðèíàäëåæèò ïñàì. Äîñòàòî÷íî çàãëóøèòü äâèãàòåëü è ñðàçó óñëûøèøü ñìåõ Àðëåêèíà."
+		text="ÇÇÕâ¾Í¸æËßÄã¡£³ÇµÄÕâÒ»Æ¬¹é¹·°ï¡£|°Ñ³µÍ£ÏÂ£¬Äã×ÔÈ»ÄÜÌý¼û³ó|½ÇµÄÐ¦Éù¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000359" />
 
 	<Reply
 		name="Dlg_pl_000359"
-		text="Ñïàñèáî, Äæî."
+		text="¶àÐ»£¬ÇÇ¡£"
 		role="PLAYER"
 		scriptResult="EndConversation()" />
 <!--Root/Sin/Çíàêîìñòâî ñ Êèòòè-->
 	<Reply
 		name="Sin_Kitty_dlg"
-		text="Ïðèâåò, êðàñàâ÷èê."
+		text="ÄãºÃÑ½£¬Ð¡Ë§¸ç¡£"
 		role="NPC"
 		scriptCondition="QuestStatus('Sin_Cat_Garfield_qst')==Q_TAKEN"
 		nextReplies="Dlg_pl_000361" />
 
 	<Reply
 		name="Dlg_pl_000361"
-		text="Òóò åñòü ìåõàíèêè?"
+		text="ÓÐ»úÐµÊ¦Âð£¿"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000362" />
 
 	<Reply
 		name="Dlg_npc_000362"
-		text="Òåïåðü òåáå â íàøèõ êðàÿõ è çàïðàâèòüñÿ-òî íå ïîëó÷èòñÿ."
+		text="ÔÚÕâ¶ùÄãµÄ¿¨³µ¿É¼Ó²»ÁËÓÍ¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000363" />
 
 	<Reply
 		name="Dlg_pl_000363"
-		text="Àðëåêèí?"
+		text="³ó½Ç£¿"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000364" />
 
 	<Reply
 		name="Dlg_npc_000364"
-		text="Îí áûë ïðàâîé ðóêîé Áóëüäîãà, Áîññà Ïñîâ. Ïîêà òû âðàã Ïñîâ - íåò äóðàêîâ, ÷òîáû òåáå ïîìîãàòü."
+		text="ËûÔø¾­ÊÇ¹·°ïÀÏ´ó¶·Å£È®µÄ×óÓÒÊÖ¡£|Õâ¶ùÃ»ÈË»á°ï¹·°ïµÄµÐÈË¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000365" />
 
 	<Reply
 		name="Dlg_pl_000365"
-		text="Îñòàåòñÿ âîðîâàòü çàï÷àñòè è ñëèâàòü áåíçèí ïî íî÷àì."
+		text="¿´À´Ã»±ðµÄÕÞÁË£¬|Ö»ÄÜÒ¹ÀïÈ¥Íµ¿¨³µµÄÁã¼þºÍÆûÓÍ¡£"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000366" />
 
 	<Reply
 		name="Dlg_npc_000366"
-		text="Êàê âàðèàíò. Âàðèàíò íîìåð äâà - ðàáîòàòü íà Êîòîâ Ãàðôèëäà. Åñëè òû áóäåøü ðàáîòàòü íà Ãàðôèëäà, ó òåáÿ áóäóò è äåíüãè è áåíçèí. Íàéòè åãî ìîæíî íà åãî Âèëëå. Ñêàæè, ÷òî òû îò Êèòòè. Óäà÷è, Êðàñàâ÷èê."
+		text="ÒªÃ´£¬Äã¾ÍÈ¥¸ø¼Ó·Æ¶ûµÂµÄÃ¨|°ï¸É»î¡£¸ø¼Ó·Æ¶ûµÂÂôÃü£¬|Äã¾ÍÓÐÇ®ÓÐÓÍ¡£¼Ó·Æ¶û|µÂ¾ÍÔÚ±ðÊûÀï¡£¸æËßËû£¬|ÊÇ¿­µÙ½éÉÜÀ´µÄ¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000367" />
 
 	<Reply
 		name="Dlg_pl_000367"
-		text="Ñïàñèáî."
+		text="¶àÐ»¡£"
 		role="PLAYER"
 		scriptResult="SetTolerance(1194,1100,RS_ENEMY) EndConversation()" />
 <!--Root/Sin/Çíàêîìñòâî ñ Ãàðôèëäîì-->
 	<Reply
 		name="Sin_Garfield_dlg"
-		text="Äîáðî ïîæàëîâàòü. Íå âîëíóéñÿ î ñâîåé ìàøèíå. Å¸ ïîìîþò è çàïðàâÿò. ×óâñòâóé ñåáÿ êàê äîìà."
+		text="²»¿ÍÆø¡£ÄãµÄ¿¨³µ±ðµ£ÐÄ£¬|»á±»Ï´µÃ¸É¸É¾»¾»¡¢ÓÍ¼ÓµÃÂúÂúµÄ¡£|¾Íµ±×Ô¼º¼Ò£¬±ð¾ÐÊø¡£"
 		role="NPC"
 		scriptCondition="QuestStatus('Sin_Cat_Garfield_qst')==Q_TAKEN"
 		scriptResult="CompleteQuest('Sin_Cat_Garfield_qst') SetTolerance(1194,1100,RS_NEUTRAL)"
@@ -2326,37 +2326,37 @@
 
 	<Reply
 		name="Dlg_pl_000369"
-		text="Ñïàñèáî, Ñýð. ß ïðèøåë ïî ïîâîäó ðàáîòû. Êèòòè ñêàçàëà, âàì íóæíû ëþäè."
+		text="¶àÐ»£¬ÀÏ°å¡£ÎÒÊÇÀ´Ì¸»î¶ùµÄ¡£|¿­µÙËµÄúÕâ¶ùÕýÕÐÈË¡£"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000370" />
 
 	<Reply
 		name="Dlg_npc_000370"
-		text="Äà, äà, ÿ â êóðñå. Òû òîò, êòî óáèë Àðëåêèíà â ÷åñòíîì ïîåäèíêå. Ýòî ïîõâàëüíî è ÿ âîçüìó òåáÿ íà ðàáîòó."
+		text="Ã»´í¡£ÌýËµÄã¾ÍÊÇÔÚÕýÃæ¾ö|¶·ÖÐ¸Éµô³ó½ÇµÄÄÇÎ»¡£|ÄãµÄÉíÊÖ¿Ï¶¨Ã»µÃËµ£¬ÎÒ¹ÍÄãÁË¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000371" />
 
 	<Reply
 		name="Dlg_pl_000371"
-		text="Ñïàñèáî, Ñýð."
+		text="¶àÐ»£¬ÀÏ°å¡£"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000372" />
 
 	<Reply
 		name="Dlg_npc_000372"
-		text="ß äàì òåáå çàäàíèå. Êàðàâàí äîñòàâëÿåò ãðóç äëÿ Ïñîâ. Ìû ïîäêóïèëè ÷àñòü îõðàíû, íî âñåõ ïîäêóïèòü íå óäàëîñü. Òû äîëæåí âñòðåòèòü êàðàâàí è óáèòü Îõðàííèêà. Óäà÷è."
+		text="¸øÄãÅÉ¸ö»î¶ù¡£ÓÐÒ»Ö§³µ¶Ó|Õý¸ø¹·°ïÔË»õ¡£»¤ÎÀÀïÎÒÃÇÂò|Í¨ÁËÒ»Ð©£¬µ«Ã»È«ÂòÍ¨¡£|ÄãµÃ¸Ï¹ýÈ¥£¬°Ñ»¤ÎÀ¶Ó³¤¸Éµô¡£|×£ÄãºÃÔË£¡"
 		role="NPC"
 		nextReplies="Dlg_pl_000373" />
 
 	<Reply
 		name="Dlg_pl_000373"
-		text="ß âñå ñäåëàþ, Ñýð."
+		text="ÎÒÕâ¾ÍÈ¥°ì£¬ÀÏ°å¡£"
 		role="PLAYER"
 		scriptResult="TActivate('Egoist_ctr'); EndConversation()" />
 <!--Root/Sin/Îò÷åò äëÿ Êèòòè-->
 	<Reply
 		name="Sin_Kitty2_dlg"
-		text="×òî òû çäåñü çàáûë?!"
+		text="ÓÐºÎ¹ó¸É£¬Ï®»÷Õß£¿"
 		role="NPC"
 		scriptCondition="QuestStatus('Sin_Cat_Kitty_qst')==Q_TAKEN"
 		scriptResult="CompleteQuest('Sin_Cat_Kitty_qst') SetTolerance(1192,1100,RS_NEUTRAL)"
@@ -2364,37 +2364,37 @@
 
 	<Reply
 		name="Dlg_pl_000375"
-		text="Âñå â ïîðÿäêå? ×òî ñëó÷èëîñü?"
+		text="³öÊ²Ã´ÊÂÁË£¿ÕâÊÇÔõÃ´ÁË£¿"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000376" />
 
 	<Reply
 		name="Dlg_npc_000376"
-		text="Ýòà ñâèíüÿ Ýãîèñò îòûãðàëñÿ íà ìîåé ìàøèíå êîãäà òû óåõàë. Íå îñòàâèë æèâîãî ìåñòà."
+		text="Äã×ßÖ®ºó£¬Àû¼ºÕßÄÇÍ·Öí¶ÔÀÏ|ÄïµÄ¿¨³µÏÂÁËºÚÊÖ¡£|ÏÖÔÚ³µ³ÉÁËÒ»¶Ñ·ÏÌú¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000377" />
 
 	<Reply
 		name="Dlg_pl_000377"
-		text="Îí çàïëàòèò çà êàæäóþ öàðàïèíó. Ãäå îí ñåé÷àñ?"
+		text="Ã¿Ò»µÀ¹ÎºÛËû¶¼µÃ»¹ÕË¡£|ËûÏÖÔÚÔÚÄÄ¶ù£¿"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000378" />
 
 	<Reply
 		name="Dlg_npc_000378"
-		text="Îí ïîåõàë ðàçâëåêàòüñÿ çà õðåáåò â Ñàí Ðàôàýëü. Õî÷åøü åãî óáèòü?"
+		text="Ëû¹ýÇÅÈ¥Ê¥À­ì³¶ûÈöÒ°È¥ÁË¡£|Ïë²»ÏëÈ¥Ô×ÁËËû£¿"
 		role="NPC"
 		nextReplies="Dlg_pl_000379" />
 
 	<Reply
 		name="Dlg_pl_000379"
-		text="Ó ìåíÿ åñòü ïëàí ïîèíòåðåñíåå."
+		text="ÎÒÓÐ¸ö¸üºÃµÄÖ÷Òâ¡£"
 		role="PLAYER"
 		scriptResult="EndConversation()" />
 <!--Root/Sin/Çíàêîìñòâî ñ Áîðíîì-->
 	<Reply
 		name="Sin_Bulldog_dlg"
-		text="Òû ÷òî ñ óìà ñîø¸ë? Çà÷åì ÿâèëñÿ?"
+		text="Äã·èÁËÂð£¿À´Õâ¶ù¸ÉÊ²Ã´£¿"
 		role="NPC"
 		scriptCondition="QuestStatus('Sin_Egoist_Trap_qst')==Q_TAKEN"
 		scriptResult="CompleteQuest('Sin_Egoist_Trap_qst')"
@@ -2402,49 +2402,49 @@
 
 	<Reply
 		name="Dlg_pl_000381"
-		text="Ìíå íå íðàâèòñÿ ðàáîòàòü íà Êîòîâ. Õî÷ó ïåðåéòè ê âàì."
+		text="ÎÒ²»Ïë¸øÃ¨°ïÂôÃü¡£|ÎÒÏëÈëÄãÕâÒ»»ï¡£"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000382" />
 
 	<Reply
 		name="Dlg_npc_000382"
-		text="Äóìàåøü ýòî òàê ïðîñòî?! Òû óáèë ìîåãî ëó÷øåãî ÷åëîâåêà."
+		text="ÄãÒÔÎª¾ÍÕâÃ´¼òµ¥£¿|Äã¿ÉÉ±ÁËÎÒ×îµÃÁ¦µÄÈË¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000383" />
 
 	<Reply
 		name="Dlg_pl_000383"
-		text="Îí íå áûë ëó÷øèì, ðàç ÿ åãî óáèë."
+		text="ÎÒÒªÄÜÉ±ÁËËû£¬¾ÍËµÃ÷Ëû²»|ÊÇ×îÇ¿µÄ¡£"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000384" />
 
 	<Reply
 		name="Dlg_npc_000384"
-		text="È âñå òàêè ìíå íóæíû äîêàçàòåëüñòâà òâîåé ëîÿëüíîñòè."
+		text="²»¹ÜÔõÃ´Ëµ£¬ÎÒµÃ¿´µ½µãÄãµÄÍ¶|Ãû×´¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000385" />
 
 	<Reply
 		name="Dlg_pl_000385"
-		text="ß çíàþ ãäå ñåé÷àñ Ýãîèñò. Îí â ÑàíÐàôàýëå, ïî÷òè áåç îõðàíû."
+		text="ÎÒÖªµÀÀû¼ºÕßÏÖÔÚÔÚÄÄ¶ù¡£|ËûÔÚÊ¥À­ì³¶û£¬Éí±ß¾Í´ø¼¸¸ö»¤ÎÀ¡£"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000386" />
 
 	<Reply
 		name="Dlg_npc_000386"
-		text="Àãà. È ÿ ñåé÷àñ ïîåäó òóäà, ïðÿìî â ëîâóøêó. Òû - äóðàê, åñëè äóìàåøü ÷òî ÿ ñîãëàøóñü."
+		text="¹í²ÅÐÅ£¡ÄãÏëÈÃÎÒ¹ýÈ¥×ÔÍ¶ÂÞÍø£¿|ÄãÒª¾õµÃÎÒ»áÐÅ£¬ÄÇÄã¾ÍÌ«´ÀÁË¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000387" />
 
 	<Reply
 		name="Dlg_pl_000387"
-		text="ß ñàì åãî ïðèâåçó."
+		text="ÎÒÈ¥°ÑËûÌáÀ´¡£"
 		role="PLAYER"
 		scriptResult="EndConversation()" />
 <!--Root/Sin/Ïîìîùü Îòöà-->
 	<Reply
 		name="Sin_Father_dlg"
-		text="Ñíîâà òåáÿ ÿ âèæó, ñòðàííèê."
+		text="ºÜ¸ßÐËÓÖ¼ûµ½Äã£¬ÂÃÐÐÕß¡£"
 		role="NPC"
 		scriptCondition="QuestStatus('Sin_Egoist_Father_qst')==Q_TAKEN"
 		scriptResult="CompleteQuest('Sin_Egoist_Father_qst')"
@@ -2452,49 +2452,49 @@
 
 	<Reply
 		name="Dlg_pl_000389"
-		text="Ìíå íóæíà ïîìîùü"
+		text="ÎÒÐèÒª°ïÖú¡£"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000390" />
 
 	<Reply
 		name="Dlg_npc_000390"
-		text="Â ïðàâèëüíîå ìåñòî ïðèø¸ë òû."
+		text="Äã¿ÉÀ´¶ÔµØ·½ÁË¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000391" />
 
 	<Reply
 		name="Dlg_pl_000391"
-		text="Ìíå íóæíî ïîïàñòü çà õðåáåò."
+		text="ÎÒµÃ·­¹ýÕâµÀÉ½Áë¡£"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000392" />
 
 	<Reply
 		name="Dlg_npc_000392"
-		text="Òóííåëü, ÷òî ñêâîçü ãîðó ïðîõîäèò, ñóùåñòâóåò. Ëèøü îáðàòèñü ê ãîðå ñ óâàæåíèåì - è îíà ïðîïóñòèò òåáÿ."
+		text="ÓÐÒ»ÌõËíµÀÍ¨µ½É½ÄÇÍ·¡£|Ö»Òª¶ÔÕâ×ùÉ½ÐÄ´æ¾´Òâ£¬|Ëü×Ô»á·ÅÄã¹ýÈ¥¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000393" />
 
 	<Reply
 		name="Dlg_pl_000393"
-		text="Ýòî è åñòü ïîìîùü?"
+		text="¾ÍÕâÃ´¶à£¿"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000394" />
 
 	<Reply
 		name="Dlg_npc_000394"
-		text="Ýòîãî áîëåå ÷åì äîñòàòî÷íî."
+		text="ÕâÒÑ¾­×ã¹»ÁË¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000395" />
 
 	<Reply
 		name="Dlg_pl_000395"
-		text="Ñïàñèáî, Îòåö."
+		text="¶àÐ»£¬ÄÁÊ¦¡£"
 		role="PLAYER"
 		scriptResult="EndConversation()" />
 <!--Root/Sin/Çíàêîìñòâî ñ Ýãîèñòîì-->
 	<Reply
 		name="Sin_Egoist_dlg"
-		text="Ïðîøó, òîëüêî íå óáèâàé..."
+		text="ÇóÄã±ðÉ±ÎÒ¡£"
 		role="NPC"
 		scriptCondition="QuestStatus('Sin_Egoist_Take_qst')==Q_TAKEN"
 		scriptResult="CompleteQuest('Sin_Egoist_Take_qst'); TDeactivate('CustomOff_tr'); TActivate('CustomOn_tr')"
@@ -2502,25 +2502,25 @@
 
 	<Reply
 		name="Dlg_pl_000397"
-		text="Æèâîé òû äîðîæå. Ïîåäåøü ñî ìíîé ê Áîðíó."
+		text="Äã»î×Å¸üÖµÇ®¡£¸úÎÒÈ¥¼û²¨¶÷¡£"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000398" />
 
 	<Reply
 		name="Dlg_npc_000398"
-		text="Òîëüêî íå óáèâàé..."
+		text="Ö»ÒªÁôÎÒÒ»ÌõÃü¡­¡­"
 		role="NPC"
 		nextReplies="Dlg_pl_000399" />
 
 	<Reply
 		name="Dlg_pl_000399"
-		text="Ó òåáÿ äîëæåí áûòü ïðîïóñê äëÿ òàìîæíè, äàâàé åãî ñþäà."
+		text="ÄãÊÖÀïÓ¦¸ÃÓÐÍ¨¹ØÖ¤¡£½»³öÀ´¡£"
 		role="PLAYER"
 		scriptResult="EndConversation()" />
 <!--Root/Sin/Îò÷åò äëÿ Áîðíà-->
 	<Reply
 		name="Sin_Bulldog2_dlg"
-		text="Íó, êàê óñïåõè?"
+		text="ÊÂÇé°ìµÃÔõÃ´ÑùÁË£¿"
 		role="NPC"
 		scriptCondition="QuestStatus('Sin_Egoist_Home_qst')==Q_TAKEN"
 		scriptResult="CompleteQuest('Sin_Egoist_Home_qst'); TActivate('Cross_ctr')"
@@ -2528,25 +2528,25 @@
 
 	<Reply
 		name="Dlg_pl_000401"
-		text="Îí ñâÿçàí, ñèäèò â ìàøèíå."
+		text="ËûÀ¦½áÊµÁË£¬¾ÍÔÚ¿¨³µÀï¡£"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000402" />
 
 	<Reply
 		name="Dlg_npc_000402"
-		text="ß íàçíà÷èë âñòðå÷ó Êîòàì íà Ïåðåêðåñòêå - âåçè åãî òóäà."
+		text="ÎÒ¸úÃ¨°ïÔ¼ºÃÔÚÀÏÂ·¿Ú¼ûÃæ¡£|°ÑÈË´øµ½ÄÇ¶ùÈ¥¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000406" />
 
 	<Reply
 		name="Dlg_pl_000406"
-		text="Îê."
+		text="ºÃ¡£"
 		role="PLAYER"
 		scriptResult="EndConversation()" />
 <!--Root/Sin/Îñâîáîæäåíèå Êèòòè-->
 	<Reply
 		name="Sin_Kitty3_dlg"
-		text="Íå ïîäõîäè, à òî îò òâîåé ìàñêè îñòàíóòñÿ òîëüêî ìåëêèå êóñî÷êè."
+		text="Î¹£¬ÀëÔ¶µã¡£ÐÅ²»ÐÅÀÏ|Äï°ÑÄãÑÛÖé×ÓÄÓ³öÀ´£¬ñ®¸òó¡¡£"
 		role="NPC"
 		scriptCondition="QuestStatus('Sin_Cross_Kitty_qst')==Q_TAKEN"
 		scriptResult="TActivate ('OldFarm_Leave_tr'); CompleteQuest('Sin_Cross_Kitty_qst')"
@@ -2554,25 +2554,25 @@
 
 	<Reply
 		name="Dlg_pl_000404"
-		text="Óñïîêîéñÿ - ýòî ÿ. ß ïðèåõàë òåáÿ îñâîáîäèòü."
+		text="±ð¼¤¶¯£¬±ð¼¤¶¯¡£|ÎÒÊÇÀ´·ÅÄã³öÈ¥µÄ¡£"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000405" />
 
 	<Reply
 		name="Dlg_npc_000405"
-		text="Ó ìåíÿ íåò ñëîâ, ñïàñèáî."
+		text="¶àÐ»£¡"
 		role="NPC"
 		nextReplies="Dlg_pl_000407" />
 
 	<Reply
 		name="Dlg_pl_000407"
-		text="Òåïåðü òåáå ëó÷øå óåõàòü, ìíå ïðèäåòñÿ äîæäàòüñÿ Ïñîâ."
+		text="ÄãÏÖÔÚ¾Í×ß°É¡£ÎÒÀ´µÈ¹·°ï¡£"
 		role="PLAYER"
 		scriptResult="EndConversation()" />
 <!--Root/Sin/Îñâîáîæäåíèå Äæî-->
 	<Reply
 		name="Sin_Joe2_dlg"
-		text="Ýòî òû? Äæî î÷åíü áëàãîäàðåí. Òû ñïàñ Äæî æèçíü."
+		text="ÊÇÄãÂð£¿ÇÇ¶àÐ»Äã¾ÈÁËËûÕâÌõÃü¡£"
 		role="NPC"
 		scriptCondition="QuestStatus('Sin_JoeSaving_qst')==Q_TAKEN"
 		scriptResult="CompleteQuest('Sin_JoeSaving_qst')"
@@ -2580,26 +2580,26 @@
 
 	<Reply
 		name="Dlg_pl_000409"
-		text="ß äîëæåí áûë. ß õîòåë óáèòü Áîðíà, íî êàæåòñÿ ó ìåíÿ íåò øàíñîâ åãî íàéòè, ÿ óåçæàþ. Ïîåäó ïîïðîùàþñü ñ Îòöîì."
+		text="Ë³ÊÖ¶øÒÑ¡£ÎÒ±¾ÊÇÀ´ÕÒ²¨¶÷ËãÕËµÄ£¬|¿ÉÏ§Ã»ÕÒ×Å¡£ËùÒÔÎÒÒª×ßÁË¡£|×ßÖ®Ç°È¥¸úÄÁÊ¦µÀ¸ö±ð¡£"
 		role="PLAYER"
 		scriptResult="EndConversation()"
 		nextReplies="Dlg_npc_000416" />
 
 	<Reply
 		name="Dlg_npc_000416"
-		text="Äæî æåëàåò òåáå ÷èñòîãî áåíçèíà"
+		text="ÇÇ×£ÄãÆûÓÍÓÀÔ¶´¿¾»£¡"
 		role="NPC"
 		nextReplies="Dlg_pl_000417" />
 
 	<Reply
 		name="Dlg_pl_000417"
-		text="×èñòîãî áåíçèíà, Äæî"
+		text="ÄãÒ²Ò»Ñù£¬ÇÇ£¡"
 		role="PLAYER"
 		scriptResult="EndConversation()" />
 <!--Root/Sin/Ôèíàëüíûé ðàçãîâîð ñ Îòöîì-->
 	<Reply
 		name="Sin_Father2_dlg"
-		text="Äîø¸ë äî êîíöà ïóòè òû, Ñòðàííèê."
+		text="ÄãÒÑ¾­×ßµ½'Â·'µÄ¾¡Í·ÁË£¬|ÂÃÐÐÕß¡£"
 		role="NPC"
 		scriptCondition="QuestStatus('Sin_Final_Way_qst')==Q_TAKEN"
 		scriptResult="TActivate ('MapEnd') CompleteQuest('Sin_Final_Way_qst')"
@@ -2607,68 +2607,68 @@
 
 	<Reply
 		name="Dlg_pl_000411"
-		text="×òî òåïåðü, Îòåö?"
+		text="½ÓÏÂÀ´ÎÒ¸ÃÔõÃ´°ì£¬ÄÁÊ¦£¿"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000412" />
 
 	<Reply
 		name="Dlg_npc_000412"
-		text="Îò òåáÿ çàâèñèò ïóòü òâîé äàëüíåéøèé. Öåëü ñâîþ âûáðàòü âðåìÿ íàñòóïèëî. Ïóñòü Âðàã óêàæåò åñëè íåò íàäåæäû íà Äðóãà."
+		text="ÕâµÃÓÉÄã×Ô¼º¾ö¶¨¡£|¶¨ÏÂÄãµÄÄ¿±ê°É¡£|ÅóÓÑÈôÊÇ°ï²»ÉÏÄã£¬|ÐËÐíµÐÈË»áÎªÄãÖ¸Â·¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000413" />
 
 	<Reply
 		name="Dlg_pl_000413"
-		text="Òû çíàåøü ãäå ìíå åãî èñêàòü."
+		text="ÄãÖªµÀÉÏÄÄ¶ùÄÜÕÒµ½ËûÂð£¿"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000414" />
 
 	<Reply
 		name="Dlg_npc_000414"
-		text="Òàì ãäå âñå íà÷àëîñü, òàì âñå è êîí÷èòñÿ äîëæíî."
+		text="Ò»ÇÐ»áÔÚËü¿ªÊ¼µÄµØ·½½áÊø¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000415" />
 
 	<Reply
 		name="Dlg_pl_000415"
-		text="Ñïàñèáî, Îòåö."
+		text="¶àÐ»£¬ÄÁÊ¦¡£"
 		role="PLAYER"
 		scriptResult="EndConversation()" />
 <!--Root/Sin/Êðàæà Êèòòè-->
 	<Reply
 		name="Sin_Bulldog3_dlg"
-		text="Òû ìîëîäåö, áåç òåáÿ ìû áû íå ñïðàâèëèñü."
+		text="¸ÉµÃÆ¯ÁÁ£¡Ã»ÓÐÄã£¬ÎÒÃÇ³É²»ÁËÊÂ¡£"
 		role="NPC"
 		scriptCondition="QuestStatus('Sin_Cross_Kitty_qst')==Q_TAKEN"
 		nextReplies="Dlg_pl_000432" />
 
 	<Reply
 		name="Dlg_pl_000432"
-		text="ß âèäåë ìàøèíó Êèòòè âî âðåìÿ áîÿ - ÷òî  ñ íåé?"
+		text="Õ½¶·ÀïÎÒ¿´¼û¿­µÙµÄ¿¨³µÁË¡£|ËýÔõÃ´Ñù£¿"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000420" />
 
 	<Reply
 		name="Dlg_npc_000420"
-		text="Î-î-î! Ñ íåé âñå â ïîðÿäêå. Ìîè ðåáÿòà âûêðàëè å¸, è òåïåðü îíà â áåçîïàñíîñòè íà ñòàðîé ôåðìå. Ñòàðîìó Êîòó ïðèäåòñÿ çàïëàòèòü çà åå ñâîáîäó, ïîêà ìû áóäåì ïî êóñî÷êàì ñëàòü å¸ ìàñêó åìó."
+		text="·ÅÐÄ£¬Ëý°²È»ÎÞí¦¡£|ÎÒµÄÈË°ÑËýÑºµ½ÀÏÅ©³¡È¥ÁË¡£|ÀÏ¼Ó·Æ¶ûµÂµÃÎªËýµÄ×ÔÓÉÌÍÑü°ü¡£|ÕâÆÚ¼ä£¬ÎÒÃÇ»á°ÑËýÃæÕÖÒ»|Æ¬Æ¬¼ôÏÂÀ´¼Ä¸øËû¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000429" />
 
 	<Reply
 		name="Dlg_pl_000429"
-		text="ß áû ïîâåðèë ñïðàâÿòñÿ ëè ðåáÿòà ñ îõðàíîé. Êîòû äîëæíî áûòü âçáåøåíû."
+		text="ÎÒ»¹ÊÇÈ¥¼ì²éÒ»ÏÂÄãµÄÈË¿´|Ã»¿´ºÃËý°É¡£Ã¨°ï¿Ï¶¨¶¼Æø·èÁË£¡"
 		role="PLAYER"
 		nextReplies="Dlg_npc_000430" />
 
 	<Reply
 		name="Dlg_npc_000430"
-		text="×òîæ äåëî ãîâîðèøü - ñúåçäè ïðîâåðü."
+		text="²éÒ»²éÒ²ÎÞ·Á¡£È¥°É¡£"
 		role="NPC"
 		nextReplies="Dlg_pl_000431" />
 
 	<Reply
 		name="Dlg_pl_000431"
-		text="Îê, Áîññ."
+		text="ºÃµÄ£¬ÀÏ´ó¡£"
 		role="PLAYER"
 		scriptResult="EndConversation()" />
 </DialogsResource>
