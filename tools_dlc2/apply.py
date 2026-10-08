@@ -179,10 +179,21 @@ class Applier:
         errs = []
         raw = xlit.read_bytes(path)
         # 混合编码：汉字段是 GBK，俄文段是 cp1251。用 latin-1 做结构解析不影响标签结构。
-        try:
-            ET.fromstring(raw.decode('latin-1'))
-        except Exception as ex:
-            errs.append('XML 解析失败: %s' % ex)
+        # 判据是"不比原件更差"：原件 dynamicdialogsglobal.xml 第 269 行
+        # scriptCondition 属性里含裸 '<'，标准解析器本来就不接受。
+        def perr(data):
+            try:
+                ET.fromstring(data)
+                return None
+            except ET.ParseError as ex:
+                return (ex.position[0], ex.position[1])
+
+        our = perr(raw.decode('latin-1'))
+        base_err = perr(xlit.read_bytes(os.path.join(xlit.SRC, *rel.split('/'))).decode('latin-1'))
+        if our and not base_err:
+            errs.append('XML 解析失败(原件合法): line %d col %d' % our)
+        elif our and base_err and our != base_err:
+            errs.append('XML 解析错误位置变化 %s -> %s' % (base_err, our))
         src_n = len(xlit.Doc(rel).elements(cfg['tag']))
         out_n = len(xlit.find_elements(raw.decode('latin-1'), cfg['tag']))
         if src_n != out_n:
