@@ -1,9 +1,12 @@
 // pathd.cpp —— 路径 D：让单字节渲染引擎显示 GBK 双字节汉字
-// ★ DLC1 版（目标进程 = Meridian113.exe）★
-//   本源文件由 HardTruckApocalypse_CHINESE_DLL/pathd.cpp 移植而来。
-//   两个 exe 的字体/文本代码同源，但**地址不同、绘制函数多 0x60 字节、
-//   预扫循环的索引寄存器从 edi 换成 esi**。下面所有 0x……地址常量都已
-//   逐字节用 IDA 核对为 113 的值（本体值写在旁边的注释里便于对照）。
+// ★ DLC2 版（目标进程 = emarcade.exe）★
+//   本源文件由 HardTruckApocalypse_CHINESE_DLL_DLC1/pathd.cpp 移植而来
+//   （而 DLC1 又源自本体 hta.exe 工程的 HardTruckApocalypse_CHINESE_DLL/）。
+//   三个 exe 的字体/文本代码同源，但**地址不同、绘制函数长度不同**。
+//   下面所有 0x……地址常量都已逐字节用 IDA 核对为 emarcade 的值
+//   （113 / 本体的值写在旁边的注释里便于对照）。
+//   emarcade 的编译器把绘制函数稍微加大了一点（栈帧/寄存器分配不同），
+//   因此覆盖长度与 P8 循环头/退出地址都要按 emarcade 实测值来。
 //
 // ═══════════════════════════════════════════════════════════════════════════
 // 为什么必须这么做
@@ -45,18 +48,18 @@
 //   改为 g_cjkSlots[]（最多 16 槽，每槽 64K 项）懒分配，一字体一表。
 //
 // ═══════════════════════════════════════════════════════════════════════════
-// 补丁点（IDA 逐字节核实，hta.exe；运行时不改 exe 文件）
+// 补丁点（IDA 逐字节核实，emarcade.exe；运行时不改 exe 文件）
 // ═══════════════════════════════════════════════════════════════════════════
-//   sub_685CA0 文本绘制（0x685CA0..0x686B07）：
-//     P4  0x6865A6  18 字节  主查表   原 8B 57 40 0F B6 EB 03 ED 03 ED 8B 04 2A 85 C0 8D 0C 2A
-//     P4b 0x686A26  10 字节  第二处查表（原 8B 44 24 34 8B 48 40 8B 04 29）
-//     P5  0x686A52   9 字节  主遍历   原 0F 57 C0 83 C6 01 83 C7 01
-//   另有 4 处跳转目标需同步重定位 0x686A55 -> 0x686A52：
-//     0x6864ED / 0x686507 / 0x68658B / 0x68659C
-//   sub_685CA0 预扫循环（P2/P3）：
-//     0x68620D / 0x686221  各 5 字节，call 条件推进助手
-//   sub_685990 文本度量：
-//     P7 0x0044ED34  ★ 故意不补丁 ★（3 字节放不下条件判断，硬补会破坏 ASCII）
+//   sub_82E0A0 文本绘制（emarcade；本体是 sub_685CA0，113 是 sub_690D20）：
+//     P4  0x82EA06  18 字节  主查表   原 8B 57 40 0F B6 EB 03 ED 03 ED 8B 04 2A 85 C0 8D 0C 2A
+//     P4b 0x82EE86  10 字节  第二处查表（原 8B 44 24 34 8B 48 40 8B 04 29）
+//     P5  0x82EEB2   9 字节  主遍历   原 0F 57 C0 83 C6 01 83 C7 01
+//   另有 4 处跳转目标需同步重定位 0x82EEB5 -> 0x82EEB2：
+//     0x82E94D / 0x82E967 / 0x82E9EB / 0x82E9FC
+//   预扫循环（P2/P3）：
+//     0x82E672 / 0x82E686  各 5 字节，call 条件推进助手
+//   sub_82DD90 文本度量（emarcade）：
+//     P7/P8 度量补丁点见 InstallPatches 内的 ScanUnique 签名
 //
 // ═══════════════════════════════════════════════════════════════════════════
 // ★★★ 引擎契约（P4/P4b/P5 全部适用，违反即崩）★★★
@@ -137,14 +140,16 @@ extern "C" { SeenFont g_seenFonts[MAX_SEEN_FONTS]; volatile LONG g_seenCount; }
 //     这是「字形尺寸错乱」的真凶，与 P4b 无关。
 //
 //   ★ 代价 ★
-//     MAX_CJK_TABLES × 256KB。取 16 槽 = 4MB；实际只有约 10 个字号
-//     真正用得上，其余留空不分配（懒分配），实测占用约 2.5MB。
-//     游戏地址空间 2GB，4MB 可忽略。
+//     每张表 = 65536 项 × 4B = 256KB；MAX_CJK_TABLES 张。
+//     32 槽 = 8MB 上限；实际用不到那么多（懒分配，空槽不占），
+//     实测 16/16 槽时占用 4096KB，emarcade 实测需要 19 槽。
+//     8MB 对开了 LAA 的进程（用户区 4095MB）可忽略 —— 这也是"提高槽位"
+//     比"去重共享表"更划算的原因：去重要动分配逻辑，抬高只是改个常量。
 //
 //   ★ 为什么不用 map/vector ★
-//     P4 是裸汇编助手，要按 Font* O(1)~O(16) 找到表。线性扫 16 项
+//     P4 是裸汇编助手，要按 Font* O(1)~O(32) 找到表。线性扫 32 项
 //     只是几条指令，且**绝不分配内存**，绝不会在绘制途中失败。
-#define MAX_CJK_TABLES 16
+#define MAX_CJK_TABLES 32
 struct CjkSlot {
     void*     font;      // 该槽归属的 Font*
     uint32_t* table;     // 65536 项；未分配时为 0
@@ -170,7 +175,9 @@ extern "C" void __cdecl PathD_MsrAdvanceW();   // P7 宽度
 extern "C" void __cdecl PathD_MsrAdvanceB();   // P8 双字节推进
 
 // 度量循环的两个绝对回跳目标 + P7 落点（P7/P8 助手要跳回去）
-//   循环头 0x685A80 / 退出 0x685C12 / P7 落点 0x685B2B（相对基址在 InstallPatches 里算）
+//   emarcade：循环头 0x82DE80 / 退出 0x82E012 / P7 落点 0x82DF2B
+//   （三者都由 InstallPatches 在运行时按 g_modBase + RVA 算出后填入；
+//     113 对应 0x690B00 / 0x690C92 / 0x690BA1+10）
 //   ★ x86 不允许 `jmp dword ptr [标号]`（内存间接到控制转移），必须经寄存器中转。
 extern "C" uint32_t g_msrLoopHead = 0;
 extern "C" uint32_t g_msrLoopExit = 0;
@@ -191,6 +198,12 @@ extern "C" uint32_t g_msrFailNotReady = 0;
 extern "C" uint32_t g_msrFailNoTable  = 0;
 extern "C" uint32_t g_msrFailNoGlyph  = 0;
 extern "C" uint32_t g_msrFailNoSlot   = 0;
+
+// ★ 缺字诊断：记录 P4 查表时"表里该格为空"的 GBK 码（最多 64 个）★
+//   用于定位「某些字缺字」到底缺的是哪些字 —— 字库有 2183 字，
+//   若缺的字在字库里，那问题就是别的（比如文本没走我们的路径）。
+extern "C" uint32_t g_plMissCount     = 0;
+extern "C" uint32_t g_plMissCodes[64] = {0};
 // ★ 成功/失败分支的**总**计数（自进程启动累计）★
 //   只有"装配完成后"的差值才有意义 —— 装配本身要跑好几秒，
 //   期间槽还没填完，失败计数必然很大（实测"未就绪=352"）。
@@ -351,19 +364,34 @@ bool        g_vecResizeOk = false;   // 自检通过才敢用
 typedef void* (__fastcall *EngineAllocFn)(uint32_t size, void* a2, int a3);
 static EngineAllocFn g_engineAlloc = nullptr;
 // 0x589410 的特征码（a0a880 与 call 目标用 ?? 通配）
-//   ★ 通用签名在 113 上有 3 处命中（0x5C0CE0 / 0x614B90 / 0x83F980），
-//     本体只有 2 处、取首个恰好正确 —— 那是运气。这里把**它读的全局
-//     地址**写进签名，唯一化。
-//   113 正确项 = 0x5C0CE0：`8B 0D 00 BA C7 00` 读 dword_C7BA00，
-//     而 uiCore 全局 dword_C7BA0C 正好在它 +0xC —— 与本体
-//     dword_A0A880 / dword_A0A88C 的关系完全一致（结构不变式）。
-#define SIG_ENGINE_ALLOC "8B 44 24 04 50 52 51 8B 0D 00 BA C7 00 E8 ?? ?? ?? ?? C2 04 00"
+//   ★ 通用签名在 emarcade 上也有 3 处命中（0x695270 / 0x7B6C70 / 0x932740），
+//     与 113 完全同样的歧义。这里把**它读的全局地址**写进签名，唯一化。
+//   emarcade 正确项 = 0x932740：`8B 0D B8 66 C0 00` 读 dword_C066B8，
+//     而 uiCore 全局 dword_C066C4 正好在它 +0xC —— 与本体
+//     dword_A0A880 / dword_A0A88C、113 的 dword_C7BA00 / dword_C7BA0C
+//     的关系完全一致（结构不变式）。
+#define SIG_ENGINE_ALLOC "8B 44 24 04 50 52 51 8B 0D B8 66 C0 00 E8 ?? ?? ?? ?? C2 04 00"
 bool        g_skipPatch  = false;    // HTA_CHS_NO_PATCH=1  时跳过补丁（二分定位用）
 bool        g_skipExpand = false;    // HTA_CHS_NO_EXPAND=1 时跳过扩表（二分定位用）
 bool        g_skipP5     = false;    // HTA_CHS_NO_P5=1   跳过 P5 主遍历助手
 bool        g_skipP4b    = false;    // HTA_CHS_NO_P4B=1  跳过 P4b 第二处查表助手
 bool        g_skipP7     = false;    // HTA_CHS_NO_P7=1   跳过 P7/P8 度量补丁（二分定位用）
 bool        g_skipScan   = false;    // HTA_CHS_NO_SCAN=1 跳过堆扫描（对照实验用）
+// ★ 汉字度量/位图是否按「目标字号 ÷ 采纳档」的比例缩放 ★
+//   HTA_CHS_CJK_NOSCALE=1 时恒用 1.0（即直接用采纳档图集的固有尺寸）。
+//   这是排查「汉字整体往右偏」的 A/B 开关 —— 见 FillCjk 里的说明。
+//   默认关（保持按比例缩放，这是原本的正确做法）。
+bool        g_noCjkScale = false;
+
+// ★ 借用档 advance 倍率（排查大字号右偏用）★
+//   HTA_CHS_ADV_MUL=0.5 / 2.0 / ... ，默认 1.0（不改行为）。
+//   只影响借用档（ratio≠1.0），精确档完全不受影响。
+float       g_advMul     = 1.0f;
+
+// ★ 借用档 advance 再乘一个 ratio（即 cw*ratio²）—— 已证伪，保留变量以免牵连 ★
+//   2026-10-09：实测 font+0x1C/font+0x18 的「系数×ratio」在**不偏的精确档**
+//   上也各不相同（0.64 ~ 1.28），说明那个条件与偏移无关 ⇒ 假设错误，已停用。
+bool        g_advSquare  = false;
 bool        g_hookFont   = false;    // 是否安装 Font::CreateFromXmlNode 钩子
                                        // ★ 默认关：实测该钩子破坏 esi 导致崩溃，
                                        //   而且它从未成功找到过 CJK 图集页。
@@ -372,10 +400,10 @@ bool        g_hookFont   = false;    // 是否安装 Font::CreateFromXmlNode 钩
 // ★ 字体管理器 = dword_A0A88C 的**内容**（见 FontArrayOf 上方的实证链）。
 //   IDA 地址 0xA0A88C，本 exe 无 ASLR / ImageBase 固定 0x400000，
 //   但仍然在运行时按模块基址 + RVA 计算，不写死绝对地址。
-#define RVA_EngineCore   0x0087BA0Cu         // ★RVA★ = 0xC7BA0C − 0x400000（本体 = 0x60A88C）
-//   113 实证：sub_61E9C0 = Application::init，首指令 `A1 0C BA C7 00`；
-//   它同时被 ?LoadMainMenuLevel@CMiracle3d@@QAEHXZ(sub_401D50) 等引用，
-//   与本体 dword_A0A88C 的角色一一对应。
+#define RVA_EngineCore   0x008066C4u         // ★RVA★ = 0xC066C4 − 0x400000（本体 = 0x60A88C）
+//   emarcade 实证：sub_7BFF80 = Application::init，首指令 `A1 C4 66 C0 00`；
+//   它同时被 ?LoadMainMenuLevel@CMiracle3d@@QAEHXZ 等引用，
+//   与本体 dword_A0A88C、113 dword_C7BA0C 的角色一一对应。
 static void* g_fontMgr   = nullptr;          // 初始化时 = *(base + RVA_EngineCore)
 uintptr_t g_getFontByH  = 0;    // sub_679700(manager, int index) -> Font*
 uintptr_t g_getCurFont  = 0;    // sub_679710(manager) -> Font*
@@ -582,7 +610,7 @@ static void ProgOpen() {
     if (!slash) return;
     *slash = '\0';
     char path[MAX_PATH];
-    _snprintf_s(path, sizeof(path), _TRUNCATE, "%s\\hta_chs_dlc1_progress.txt", dir);
+    _snprintf_s(path, sizeof(path), _TRUNCATE, "%s\\hta_chs_dlc2_progress.txt", dir);
     g_progFile = CreateFileA(path, GENERIC_WRITE, FILE_SHARE_READ,
                              NULL, CREATE_ALWAYS, FILE_ATTRIBUTE_NORMAL, NULL);
 }
@@ -1191,14 +1219,15 @@ static void* AllocGlyph() {
     //
     //   ★ 改法：按"每个槽需要多少"成组预留，一次到位 ★
     //     每字形 48 字节，每槽 2207 个 → ≈103KB / 槽。
-    //     槽的硬上限是 MAX_CJK_TABLES = 16（见 CjkSlotFor / FillCjk），
+    //     槽的硬上限是 MAX_CJK_TABLES = 32（见 CjkSlotFor / FillCjk），
     //     **不是字号的种类数**。补装配会为"同一字号的新 Font*"再开槽：
     //     实测 07:40 那次基础 10 槽 + 补装配 2 槽 = 12 槽，已超出我上次
     //     按 10 配的 kInit → 触发了第二次分配（又漏 1034KB）。
-    //     → 教训：容量必须按**槽上限 16** 配，不能按"字号种类"。
-    //   16 槽 × 103KB ≈ 1.6MB，一次 VirtualAlloc 到位，永不扩容。
+    //     → 教训：容量必须按**槽上限 32** 配，不能按"字号种类"。
+    //   emarcade 实测会为同一字号开多个槽（15.000 占 3 个、18.750 占 3 个），
+    //     16 槽不够（缺 3 个 → 那 3 个字号全空白）。32 槽 × 103KB ≈ 3.3MB。
     const size_t kPerFont = 2207u * kGlyphSize;        // ≈103 KB / 槽
-    const size_t kInit    = kPerFont * MAX_CJK_TABLES;  // 16 槽 ≈1.6MB，封顶
+    const size_t kInit    = kPerFont * MAX_CJK_TABLES;  // 32 槽 ≈3.3MB，封顶
     if (used + kGlyphSize > cap) {
         // ★ 兜底增量（正常不会走到）★
         //   万一将来 MAX_CJK_TABLES 调大或字体数超 16，再 +4 槽，不翻倍。
@@ -1329,10 +1358,23 @@ struct SizePick {
     int   si;      // 采纳的包内字号序号；-1 = 没有可接受的档位
     float ratio;   // 目标高度 / 采纳档高度；1.0 = 精确命中
 };
-// 相对偏差上限。实测最大偏差 9.8%（16.922 借 18.750），留一倍余量。
-// 超出就不采纳：那种档位位图糊到没法看，宁可让它降级为英文，
-// 也不要让用户对着一坨马赛克。
-static const float kAdoptTol = 0.20f;
+// 相对偏差上限。
+//
+//   原值 0.20：本体 hta.exe 上实测最大偏差只有 9.8%（16.922 借 18.750），
+//     留一倍余量足够，超出就宁可显示英文也不给马赛克 —— 当时是对的。
+//
+//   ★ emarcade 实测把它撑破了 ★（2026-10-08）
+//     原始字体只有 11 档（7.813..18.750 + 39.000），但运行期派生出一批
+//     大字号：25.000 / 28.125 / 31.250 / 34.375 / 39.063 / 46.875。
+//     这些是 emarcade 相对 18.750 的整数倍缩放（×4/3、×1.5、×5/3…），
+//     与最接近档 18.750 的相对差 25%~60%，**全部**卡在 0.20 之外，
+//     于是日志里刷「包文件里没有这个字号，跳过」→ 大标题区域空白。
+//
+//   放宽到 0.60：覆盖到 46.875（60.0%），正好卡在边界。
+//   代价是**大字号会糊**：46.875 = 把 31×31 的位图放大 2.5 倍。
+//   这是用户选定的取舍 —— 宁可字大且略糊，也不要整块空白。
+//   后续补烘 39.000 档可让 39.000/39.063 两档变清晰，其余仍需借用。
+static const float kAdoptTol = 0.60f;
 
 static SizePick PickSize(float h) {
     SizePick r; r.si = -1; r.ratio = 1.0f;
@@ -1370,6 +1412,9 @@ static const float  kCjkBase = 500.0f;
 static const int    kCjkStep = 50;
 static const float  kCjkMax  = 999.0f;         // 页字体 height 上界
 
+// FontHeight 定义在下方；CjkSlotKeyOf 要用它，故前置声明。
+static float FontHeight(void* font);
+
 // ── 每字体汉字表的登记与查询 ──────────────────────────────────────────
 //
 // ★ 查得到已有槽就返回，槽满则返回 -1（调用方放弃填表，汉字就不显示，
@@ -1382,8 +1427,54 @@ static LONG CjkSlotFor(void* font) {
     return -1;
 }
 
+// ── 按字号去重：同字号的所有 Font 共用一张表 ──────────────────────────
+//
+// ★★ 为什么必须有这个（2026-10-09 修「汉字整体往右偏」）★★
+//   原本每个 Font* 都独占一个槽。但 emarcade 会为**同一个字号**造出多个
+//   Font 对象（实测 18.750 有 3 个、25.000 有 2 个、21.875 有 2 个）。
+//   于是同一个字号被填了多张表，而每张表各自按自己的 PickSize(h) 算 ratio：
+//     · 度量（P7）从 FontA 的表读 advance
+//     · 绘制（P4）可能从 FontB 的表取 pxW
+//   两者 ratio 一旦不同（例如 21.875 的 1.167），度量与绘制就对不上，
+//   行内**累积**偏移 —— 越往右偏得越多。
+//
+//   证据：把 kAdoptTol 从 0.20 放宽到 0.60 后才出现右偏。放宽后
+//   25/28.125/31.25/34.375/39/46.875 这些 ratio≠1 的字号开始建表，
+//   重复建表的问题才暴露出来（之前它们被跳过、没有汉字，看不出偏）。
+//
+// ★ 判据用 (height, ratio) 而不只是 height ★
+//   借用档位（如 21.875 借 18.750）与精确档（18.750）的图集虽然同源，
+//   但缩放比例不同 ⇒ pxW/pxH/advance 不同 ⇒ 不能共用。
+float CjkSlotKeyOf(void* font) {
+    if (!font) return -1.0f;
+    float h = FontHeight(font);
+    if (h >= kCjkBase || h <= 0.0f) return -1.0f;      // CJK 页 / 非法
+    SizePick pk = PickSize(h);
+    if (pk.si < 0) return -1.0f;                       // 没有可采纳档位
+    // 用 (si, ratio) 合成唯一键：si 决定图集，ratio 决定缩放
+    return (float)pk.si + pk.ratio * 0.001f;
+}
+
+// 找「同字号」已存在的槽；没有则返回 -1。
+// ★ 只用于装配期复用，不改变 CjkSlotFor 的按 Font* 语义 ★
+static LONG CjkSlotForShared(void* font) {
+    float key = CjkSlotKeyOf(font);
+    if (key < 0.0f) return -1;                          // 不可共享（页字体/非法/无档位）
+    for (LONG i = 0; i < g_cjkSlotCount && i < MAX_CJK_TABLES; ++i) {
+        if (g_cjkSlots[i].font && CjkSlotKeyOf(g_cjkSlots[i].font) == key) return i;
+    }
+    return -1;
+}
+
 // 取得（必要时分配）该字体的表。**只在后台装配线程里调用**，
 // 绘制线程只读，绝不会在渲染途中触发 VirtualAlloc。
+//
+// ★ 同字号共用**表指针**，但每个 Font 仍独占一个槽 ★
+//   为什么不能让多个 Font 共用一个槽：P4/P7 的裸汇编是按
+//   `g_cjkSlots[i].font == Font*` 线性匹配来找表的（见 PathD_GlyphLookup /
+//   PathD_MsrAdvanceW 里的 mw_gate 循环）。若某字体没有自己的槽项，
+//   绘制期就查不到表 —— 汉字会**全部消失**。
+//   所以：槽项（font 指针）必须一一对应，只让 table 指针指向同一块内存。
 static uint32_t* CjkTableEnsure(void* font) {
     LONG i = CjkSlotFor(font);
     if (i < 0) {
@@ -1393,6 +1484,16 @@ static uint32_t* CjkTableEnsure(void* font) {
         g_cjkSlots[i].font  = font;
         g_cjkSlots[i].table = nullptr;
         g_cjkSlots[i].ready = 0;
+
+        // ★ 同字号复用已有表：内容本来就是逐字节相同的（同 height ⇒
+        //   同 PickSize ⇒ 同 si/ratio），共用只是省内存，语义不变。
+        LONG share = CjkSlotForShared(font);
+        if (share >= 0 && g_cjkSlots[share].table) {
+            g_cjkSlots[i].table = g_cjkSlots[share].table;
+            Logf("pathd: [共用表] %p(%.3f) -> 复用槽 %d 的表（同字号，省 %u KB）",
+                 font, FontHeight(font), (int)share,
+                 (unsigned)((size_t)kTableEntries * 4 / 1024));
+        }
     }
     if (!g_cjkSlots[i].table) {
         size_t bytes = (size_t)kTableEntries * 4;
@@ -1592,6 +1693,21 @@ static int FillCjk(void* font, float h, int basePage) {
     uint32_t* table = CjkTableEnsure(font);
     if (!table) { Logf("pathd: [%7.3f] 本字体汉字表不可用，跳过填充", h); return 0; }
     LONG slot = CjkSlotFor(font);
+
+    // ★ 共用表：内容已由同字号的第一个字体填好，这里不能重填 ★
+    //   重填既浪费（2183 个字形 × 每张表），又会在填的过程中把 ready 清 0，
+    //   让正在绘制的线程读到半成品。直接沿用即可 —— 同 height ⇒ 同 PickSize
+    //   ⇒ 表内容逐字节相同（这一点由 CjkSlotKeyOf 的判据保证）。
+    {
+        LONG share = CjkSlotForShared(font);
+        if (share >= 0 && share != slot && g_cjkSlots[share].ready) {
+            g_cjkSlots[slot].table = g_cjkSlots[share].table;
+            g_cjkSlots[slot].ready = 1;
+            Logf("pathd: [%7.3f] 沿用同字号已填表（槽 %d）", h, (int)share);
+            return (int)g_pkg.glyphCount;
+        }
+    }
+
     g_cjkSlots[slot].ready = 0;              // 正在填，先别让绘制线程读半成品
 
     // 找匹配的字号记录。
@@ -1616,7 +1732,44 @@ static int FillCjk(void* font, float h, int basePage) {
     //   不该被目标字号影响。乘了会导致采样窗口错位、串到相邻格。
     //
     //   而 adv 是"画完这个字光标前进多少" ⇒ **必须**按目标字号缩放。
-    float adv = (float)cw * pk.ratio;   // 汉字等宽推进：按目标字号缩放
+    //
+    //   ★ 排查「大字号往右偏」的 A/B 开关 ★
+    //     观察：精确档（ratio=1.0，即包里真实烘出来的字号）不偏，
+    //     偏的全是**借用档且 ratio>1 的放大档**（21.875/23.438/25/28.125/
+    //     31.25/34.375/39/39.063/46.875）。所以怀疑 advance 与绘制宽度
+    //     在放大档上有系统性偏差 —— 用一个倍率做二分定位。
+    //
+    //     HTA_CHS_ADV_MUL  : 只把 **advance** 乘这个倍率（位图尺寸不变）
+    //       =1.0  默认
+    //       =0.5  若偏右消失 ⇒ advance 偏大
+    //       =2.0  若偏右消失 ⇒ advance 偏小
+    //       中间值可继续二分，找出正确的倍率后我再写成公式。
+    //   ★ 只对借用档生效（fabs(ratio-1)>0.005），不影响精确档 ★
+    float scale = g_noCjkScale ? 1.0f : pk.ratio;
+    float adv = (float)cw * scale;
+
+    // ★★★ 大字号右偏的定量假设（2026-10-09）★★★
+    //   measure 的返回值（IDA 反编译 sub_82DD90 末行）：
+    //       *a2 = v13 / (float)(*(float*)(font+0x18) / *(float*)(font+0x1C));
+    //   即「累加 advance」× font[0x1C] / font[0x18]。
+    //   精确档下 font[0x1C] == font[0x18] ⇒ 换算系数 1.0 ⇒ 不偏。
+    //   借用档下若 font[0x1C] 仍是**采纳档**的 height(18.750)，而 font[0x18]
+    //   是目标 height ⇒ 系数 = 18.750/h = 1/ratio ⇒ advance 被缩小 ratio 倍
+    //   ⇒ measure 报的宽度偏小 ⇒ 居中/右对齐时起点右移 ⇒ 大字号往右偏。
+    //   补偿：advance 再乘一个 ratio（即 cw*ratio²），刚好抵消 1/ratio。
+    //
+    //   下面两行把它做成可验证的：先打印 font[0x18]/font[0x1C] 证实假设，
+    //   再用 HTA_CHS_ADV_SQUARE=1 打开补偿做 A/B。
+    {
+        float fh  = *(float*)((uint8_t*)font + 0x18);
+        float f1c = *(float*)((uint8_t*)font + 0x1C);
+        Logf("pathd: [%7.3f] ★换算诊断★ font+0x18=%.3f font+0x1C=%.3f "
+             "系数=%.4f ratio=%.4f（系数×ratio 应为 1.0 才不偏）",
+             h, fh, f1c, (fh != 0.0f ? f1c / fh : 0.0f), pk.ratio);
+    }
+    if (g_advMul != 1.0f && fabsf(pk.ratio - 1.0f) > 0.005f) {
+        adv *= g_advMul;
+    }
 
     int n = 0;
     // ★ 丢弃分类计数（2026-10-07）：解释"填充数 < 包内字形数"的差额
@@ -1656,9 +1809,10 @@ static int FillCjk(void* font, float h, int basePage) {
         float u0 = (col * cw) / PW,          v0 = (row * chh) / PH;
         float u1 = ((col + 1) * cw) / PW,    v1 = ((row + 1) * chh) / PH;
         // uv 用图集固有格尺寸 cw/chh（未缩放），因为要精确框住那一格；
-        // pxW/pxH/adv 才是"这个字画多大"，按 pk.ratio 缩放到目标字号。
-        float pxW = (float)cw  * pk.ratio;
-        float pxH = (float)chh * pk.ratio;
+        // pxW/pxH/adv 才是"这个字画多大"，按 scale 缩放到目标字号
+        // （scale 默认 = pk.ratio，受 HTA_CHS_CJK_NOSCALE 开关影响）。
+        float pxW = (float)cw  * scale;
+        float pxH = (float)chh * scale;
 
         void* g = AllocGlyph();
         if (!g) { ++nAllocFail; continue; }   // ★ 不再静默丢字（见下方汇总日志）
@@ -2066,6 +2220,9 @@ static DWORD WINAPI SetupThread(LPVOID) {
 //   两条路径都调这个函数，靠 g_assembled 保证只装一次。
 //   （g_assembled 的定义在上方 SetupThread 之前）
 
+// 诊断：还允许 dump 几轮完整字体清单（前 2 轮足够）
+static volatile LONG g_dumpFontsLeft = 2;
+
 // 从 FontManager 的 vector 直接枚举字体（**不依赖绘制期登记**）
 //   这是新路径的关键：加载器返回时引擎还没画过，g_seenFonts 是空的。
 //
@@ -2111,9 +2268,9 @@ static int CollectFontsFromManager(std::vector<FontRec>& out) {
     void* gfx = nullptr;
     // 直读引擎全局（g_modBase 非 0 才是可信基址）
     if (g_modBase)
-        gfx = *(void**)((uint8_t*)g_modBase + (0xC9BA10 - 0x400000));
+        gfx = *(void**)((uint8_t*)g_modBase + (0xBF3298 - 0x400000));
     if (!gfx) gfx = gfxHook;                 // 全局为空才退回 hook
-    Logf("pathd: [装配] GfxServer 全局 dword_C9BA10=%p，hook=%p%s",
+    Logf("pathd: [装配] GfxServer 全局 dword_BF3298=%p，hook=%p%s",
          gfx, gfxHook,
          (gfx && gfxHook && gfx != gfxHook) ? "（★不一致，以全局为准★）" : "");
 
@@ -2155,6 +2312,33 @@ static int CollectFontsFromManager(std::vector<FontRec>& out) {
     }
     Logf("pathd: [装配] FontManager=%p 直接枚举：vector 有 %u 项，新增 %d 个字体",
          mgr, (unsigned)n, added);
+
+    // ★★★ 完整字体清单 dump（2026-10-09，只在前 2 轮）★★★
+    //   为什么需要这个：HUD 用 `valFontSize=24` / `tipFontSize=15`，
+    //   而引擎按 **(名字, height, heightVirtual)** 三元匹配字体
+    //   （sub_8F0DE0 反编译实证：v21 = fontSize × 1024/1000，再拿
+    //    height≈v21 且 heightVirtual≈fontSize 去找）。
+    //   fonts.xml 里 SM_Impact 只有 heightVirtual=39.000 一档，
+    //   所以 24/15 必然走"运行期现烘"—— 烘出来的字体必须被我们
+    //   登记并填表，否则 HUD 那两处就是空白。
+    //   dump 出全部字体（含 heightVirtual），就能确认：
+    //     · 24×1024/1000 = 24.576、15×1024/1000 = 15.360 是否出现
+    //     · 它们有没有被登记进槽（CjkSlotFor）
+    if (g_dumpFontsLeft > 0) {
+        --g_dumpFontsLeft;
+        for (size_t i = 0; i < out.size(); ++i) {
+            void* fp = out[i].font;
+            float hv = 0.0f;
+            __try { hv = *(float*)((uint8_t*)fp + 0x1C); }
+            __except (EXCEPTION_EXECUTE_HANDLER) { hv = -1.0f; }
+            const bool named = (CjkSlotFor(fp) >= 0);
+            Logf("pathd: [字体清单] #%u %p height=%.3f heightVirtual=%.3f 槽=%s",
+                 (unsigned)i, fp, out[i].height, hv,
+                 named ? "已登记" : "★未登记★");
+        }
+        Logf("pathd: [字体清单] 共 %u 项（剩余 dump 轮次 %d）",
+             (unsigned)out.size(), (int)g_dumpFontsLeft);
+    }
     return added;
 }
 
@@ -2306,8 +2490,8 @@ static int PathD_AssembleAll(const char* why) {
 //
 // ★ 关键防坑（每条都对应一个具体的失败模式）★
 //   1. 幂等：CjkSlotFor 已登记的直接跳过，绝不重复填表。
-//   2. 槽满保护：MAX_CJK_TABLES=16，已用 10，余 6。满了就放弃并记日志，
-//      不会越界写。
+//   2. 槽满保护：MAX_CJK_TABLES=32。满了就放弃并记日志，不会越界写。
+//      （emarcade 实测需 19 槽：16 槽时最后 3 个字号会拿不到表 → 空白。）
 //   3. 首字节闸门：FillCjk 内部已有 ready=0 → 填 → ready=1，
 //      渲染线程绝不会读到半成品表。
 //   4. 不用锁碰渲染路径：本线程只写 g_cjkSlots，渲染线程只读。
@@ -2316,6 +2500,8 @@ static int PathD_AssembleAll(const char* why) {
 //   5. 不在首次装配完成前跑：那时 g_pkg / pagesBySize 还不完整。
 static volatile LONG g_rescanStop = 0;
 static volatile LONG g_rescanRuns = 0;
+// 诊断：已打印过多少条「跳过字体」记录（上限 40，防刷屏）
+static volatile LONG g_skipLogMissing = 0;
 
 static void PathD_RescanOnce(const char* why) {
     // 依赖未就绪就不跑（首次装配前、或包文件没载入）
@@ -2355,8 +2541,29 @@ static void PathD_RescanOnce(const char* why) {
 
         SizePick pk = PickSize(fr.height);
         int si = pk.si;
-        if (si < 0) continue;                       // 没有可接受档位 → 不处理
-        if (si >= (int)pagesBySize.size() || pagesBySize[si].empty()) continue;
+        if (si < 0) {
+            // ★ 关键诊断（2026-10-09）：这个字体没被填汉字，为什么？★
+            //   PickSize 返回 si<0 只有两种情况：比值超过 kAdoptTol 被拒。
+            //   记录 height（真实字号）与 heightVirtual（font+0x1C，引擎的
+            //   逻辑字号）—— 两者一起才能对上 XML 里的 Font/FontSize 属性。
+            //   只记前 40 条，避免刷屏。
+            if (g_skipLogMissing < 40) {
+                ++g_skipLogMissing;
+                float hv = *(float*)((uint8_t*)fr.font + 0x1C);
+                Logf("pathd: [跳过字体%u] height=%.3f heightVirtual=%.3f @%p "
+                     "（PickSize 拒绝：比值超阈值）",
+                     (unsigned)g_skipLogMissing, fr.height, hv, fr.font);
+            }
+            continue;
+        }
+        if (si >= (int)pagesBySize.size() || pagesBySize[si].empty()) {
+            if (g_skipLogMissing < 40) {
+                ++g_skipLogMissing;
+                Logf("pathd: [跳过字体%u] height=%.3f 档位 %d 没有 CJK 页 @%p",
+                     (unsigned)g_skipLogMissing, fr.height, si, fr.font);
+            }
+            continue;
+        }
         if (g_cjkSlotCount >= MAX_CJK_TABLES) {
             Logf("pathd: [补装配%u] 槽已满(%d/%d)，放弃剩下的新字体",
                  (unsigned)InterlockedIncrement(&g_rescanRuns), (int)g_cjkSlotCount, MAX_CJK_TABLES);
@@ -2377,14 +2584,80 @@ static void PathD_RescanOnce(const char* why) {
 }
 
 static DWORD WINAPI PathD_RescanThread(LPVOID) {
-    const DWORD kFirstDelayMs = 5000;    // 给首次装配留足时间
+    // ★ 首次延迟：给首次装配留时间，但不能太长 ★
+    //   原值 5000ms 会让"运行期很早就新建"的字体错过，而那些字体恰恰是
+    //   按钮/对话框用的大字号 —— 它们 measure 出来的宽度会退回缺字默认值
+    //   （原来是 0.125，现已改成按字号估算，但仍是近似值）。
+    //   改成 500ms：既避开首次装配的临界区，又能尽早接住新字体。
+    const DWORD kFirstDelayMs = 500;
     const DWORD kIntervalMs   = 2000;
     Sleep(kFirstDelayMs);
-    for (int round = 1; round <= 180 && !InterlockedCompareExchange(&g_rescanStop, 1, 1); ++round) {
+    // ★ 轮次上限：原 180 轮 × 2 秒 ≈ 6 分钟就退出 ★
+    //   但引擎可能在**很晚**才新建字体（切换分辨率、进新地图、打开某界面）。
+    //   6 分钟之后新建的字体就永远拿不到汉字 —— 表现就是"某些界面缺字体"。
+    //   这里改成**不设轮次上限**，只靠 g_rescanStop 停止（DLL 卸载时置位）。
+    //   代价：一个 2 秒一次的空转线程常驻。它每轮只做一次字体枚举，
+    //   且"已登记就跳过"，稳定后开销极小 —— 换来的是任何时候新建的
+    //   字体都能在 2 秒内拿到汉字。
+    for (int round = 1; !InterlockedCompareExchange(&g_rescanStop, 1, 1); ++round) {
         __try {
             PathD_RescanOnce("周期补装配");
         } __except (EXCEPTION_EXECUTE_HANDLER) {
             Logf("pathd: [补装配异常] 0x%08X", (unsigned)GetExceptionCode());
+        }
+
+        // ── 缺字诊断输出（每轮一次，直到有数据为止）──────────────────
+        //
+        //   ★ 为什么必须放在**常驻线程里每轮打印** ★
+        //     原来的 [P7诊断]/[P4诊断] 放在装配收尾处，那时游戏还没画过
+        //      任何中文 ⇒ 所有计数必然是 0 ⇒ 那几行**从来没打印过**，
+        //      等于完全没有诊断。教训：诊断要放在"数据已经产生之后"。
+        //
+        //   这里输出三类关键数据，一次运行就能定性缺字原因：
+        //     (a) P4 查询命中数 / 表为空数  —— 判断绘制路径是否真的在查表
+        //     (b) 缺字的 GBK 码            —— 判断缺的是哪些字
+        //     (c) 未登记槽的 Font*         —— 判断是否有字体没被装配
+        {
+            static uint32_t lastMiss = 0xFFFFFFFFu;
+            static uint32_t lastHit  = 0xFFFFFFFFu;
+            if (g_plMissCount != lastMiss || g_msrHitCjk != lastHit) {
+                bool first = (lastMiss == 0xFFFFFFFFu);
+                lastMiss = g_plMissCount;
+                lastHit  = g_msrHitCjk;
+
+                // (a) 绘制路径统计
+                Logf("pathd: [缺字诊断] P4: 汉字命中=%u 表为空=%u 无槽=%u 未就绪=%u | "
+                     "P7: 汉字命中=%u ASCII命中=%u 缺字=%u",
+                     (unsigned)g_msrHitCjk, (unsigned)g_plMissCount,
+                     (unsigned)g_plNoSlot, (unsigned)g_plNotReady,
+                     (unsigned)g_msrHitCjk, (unsigned)g_msrHitAscii,
+                     (unsigned)g_msrHitNoDef);
+
+                // (b) 缺字码（首次出现时打印）
+                if (first && g_plMissCount > 0) {
+                    char buf[600];
+                    int  off = 0;
+                    off += _snprintf_s(buf + off, sizeof(buf) - off, _TRUNCATE,
+                                       "pathd: [缺字诊断] 表为空的 GBK 码:");
+                    for (uint32_t k = 0; k < g_plMissCount && k < 64; ++k) {
+                        uint32_t code = g_plMissCodes[k];
+                        if (!code) continue;
+                        off += _snprintf_s(buf + off, sizeof(buf) - off, _TRUNCATE,
+                                           " %04X", code);
+                    }
+                    Logf("%s", buf);
+
+                    char show[400];
+                    int  so = 0;
+                    for (uint32_t k = 0; k < g_plMissCount && k < 60; ++k) {
+                        uint32_t code = g_plMissCodes[k];
+                        if (!code) continue;
+                        char ch[3] = { (char)((code >> 8) & 0xFF), (char)(code & 0xFF), 0 };
+                        so += _snprintf_s(show + so, sizeof(show) - so, _TRUNCATE, "%s", ch);
+                    }
+                    if (so > 0) Logf("pathd: [缺字诊断] 对应字符(GBK): %s", show);
+                }
+            }
         }
 
         // ── 内存变化哨兵（2026-10-07）────────────────────────────────
@@ -2405,7 +2678,14 @@ static DWORD WINAPI PathD_RescanThread(LPVOID) {
                                  : (lastAvailMB  > availMB  ? lastAvailMB  - availMB  : 0u);
                 const DWORD dCommit = (lastCommitMB == 0xFFFFFFFFu) ? 0u
                                   : (lastCommitMB > commitMB ? lastCommitMB - commitMB : 0u);
-                if (lastAvailMB == 0xFFFFFFFFu || dAvail >= 16 || dCommit >= 16) {
+                // ★ 补装配线程改成常驻后，这里必须加次数上限 ★
+                //   否则游戏跑几小时就会记下上千行"内存哨兵"，把真正的
+                //   错误淹没（v23 那次刷了 500+ 行的教训不能重演）。
+                //   前 60 轮（≈2 分钟）覆盖启动期，之后只在"新增了字体"
+                //   这种真正值得关注的事件旁才顺带记一次。
+                static DWORD sentinelLines = 0;
+                if (sentinelLines < 60 && (lastAvailMB == 0xFFFFFFFFu || dAvail >= 16 || dCommit >= 16)) {
+                    ++sentinelLines;
                     Logf("pathd: [内存哨兵] 第 %d 轮：可用 %u MB（较上次 -%u）提交 %u MB（较上次 -%u）",
                          round, availMB, dAvail, commitMB, dCommit);
                 }
@@ -2641,7 +2921,7 @@ extern "C" void __cdecl PathD_InitExitGate() {
     }
     if (!g_pkg.loaded) {
         Logf("pathd: [冻结门] ★包文件未载入，放弃★（会导致无汉字）");
-        FatalInstallFailure("未能载入汉化字库包文件（hta_chs_cjk_dlc1.bin）");
+        FatalInstallFailure("未能载入汉化字库包文件（hta_chs_cjk_dlc2.bin）");
         return;
     }
 
@@ -2673,6 +2953,41 @@ extern "C" void __cdecl PathD_InitExitGate() {
     __except (EXCEPTION_EXECUTE_HANDLER) {
         Logf("pathd: [冻结门] ★装配异常 0x%08X★", (unsigned)GetExceptionCode());
     }
+
+    // ── 第 3 步：启动周期补装配线程 ★★★ 2026-10-09 新增 ★★★ ──────────
+    //
+    //   ★ 为什么必须有这一步（这是「某些标题缺字」的真正根因）★
+    //
+    //   补装配线程原本挂在 SetupThread 里，而 SetupThread 的创建代码
+    //   在 2026-10-07 被 `#if 0` 关掉了（方案 F 改成冻结门同步装配）。
+    //   于是：**补装配线程从来没有启动过**，一次都没有。
+    //
+    //   后果：引擎在**运行期**才创建的字体永远拿不到汉字。
+    //   实证（本次 dump 的 111 个字体里没有 HUD 要的那两档）：
+    //     data\if_dv\dialogs\hud.xml：
+    //         valFont = "SM_Impact"  valFontSize = "24"
+    //         tipFont = "SM_Impact"  tipFontSize = "15"
+    //     而 fonts.xml 里 SM_Impact 只有 heightVirtual=39.000 一档。
+    //     引擎于是用 sub_8EFAF0 现造缩放字体（height=24.576 / 15.360）——
+    //     它们在首次装配之后才出现，没人管 ⇒ 「金币」「任务」等 HUD 空白。
+    //
+    //   现在在冻结门放行**之前**启动它：冻结门此时已装完补丁、填完表，
+    //   补装配线程起来就能接着接住后续新建的字体。
+    //
+    //   ★ 为什么用独立线程而不是在本线程里跑 ★
+    //     本线程是**引擎主线程**（Application::init 还没返回）。
+    //     PathD_RescanThread 是 `for(;;)` 常驻循环，在这里跑=永久卡死游戏。
+    {
+        HANDLE th = CreateThread(nullptr, 128 * 1024, PathD_RescanThread, nullptr, 0, nullptr);
+        if (th) {
+            CloseHandle(th);
+            Logf("pathd: [冻结门] 补装配线程已启动（接住运行期新建的字体）");
+        } else {
+            Logf("pathd: [冻结门] ★补装配线程创建失败（错误 %lu）—— "
+                 "运行期新建的字体将没有汉字★", GetLastError());
+        }
+    }
+
     Logf("pathd: ╚═════════ [冻结门] 放行（总耗时 %u ms）═════════",
          (unsigned)(GetTickCount() - t0));
 }
@@ -2713,7 +3028,7 @@ extern "C" void __cdecl PathD_InitExitGate() {
 //     不够放）。所以改用 DLL 内自建的可执行内存 —— 用 VirtualAlloc 申请
 //     PAGE_EXECUTE_READWRITE，把上述机器码写进去。
 //     （DLL 自己的 .text 是只读的，运行时改属性也行，但新建一块更干净。）
-// ★ DLC1：字体加载器 hook（BuildFontLoaderCave / InstallFontLoaderHook /
+// ★ DLC1/DLC2：字体加载器 hook（BuildFontLoaderCave / InstallFontLoaderHook /
 //   InstallFontLoaderHookEarly）在本体工程里**已经是死代码** —— 无任何调用点，
 //   装配时机早已改由 Application::init 出口的冻结门接管。
 //   本工程直接删除，不再携带本体 sub_8BA480 / sub_8B9B60 的地址常量。
@@ -2769,11 +3084,13 @@ static void* g_gfxCave = nullptr;
 //   保留它有两个用处：1) 与全局对照，能立刻暴露偏移/版本错配；
 //   2) 万一全局被意外清零，还有一条后路。
 static bool InstallGfxServerHook(uintptr_t modBase) {
-    //   ★ 113：sub_688C50（本体 sub_6843F0）★ 唯一 xref 在 sub_602BB4，
-    //   即 `mov ecx, dword_C9BA10 ; push edx ; call sub_688C50`；
-    //   入口 `81 EC 8C 00 00 00 | 53 55 56 57 | 8B BC 24 A0 00 00 00`，
-    //   首条仍是 6 字节 sub esp,8Ch，且入口处 ecx = this = GfxServer。
-    const uintptr_t at = modBase + (0x688C50 - 0x400000);
+    //   ★ emarcade：sub_825F60（本体 sub_6843F0 / 113 sub_688C50）★
+    //   唯一 xref 在 sub_7A6A90，即
+    //   `mov ecx, dword_BF3298 ; push edx ; call sub_825F60`；
+    //   入口 `81 EC 8C 00 00 00 | 53 55 56 57 | 8B BC 24 A0 00 00 00`
+    //   （已用 IDA 逐字节核对），首条仍是 6 字节 sub esp,8Ch，
+    //   且入口处 ecx = this = GfxServer。
+    const uintptr_t at = modBase + (0x825F60 - 0x400000);
     const uintptr_t back = at + 6;               // 重放 6 字节后继续的位置
 
     // ★ 逐字节校验：必须是 `81 EC 8C 00 00 00` ★
@@ -2907,10 +3224,10 @@ static void* BuildGateCave(uintptr_t backTo) {
 
 // 在 Application::init 的成功出口安装冻结门。
 static bool InstallInitExitHook(uintptr_t modBase) {
-    //   ★ 113：0x6208C1（本体 0x5AA388）★ 字节完全相同，签名
-    //   `B8 01 00 00 00 5B 81 C4 F0 00 00 00 C2 14 00` 唯一命中，落在
-    //   sub_61E9C0 = Application::init 内。
-    const uintptr_t at = modBase + (0x6208C1 - 0x400000);   // mov eax, 1
+    //   ★ emarcade：0x7C18BB（本体 0x5AA388 / 113 0x6208C1）★ 字节完全相同，
+    //   签名 `B8 01 00 00 00 5B 81 C4 F0 00 00 00 C2 14 00` 唯一命中，
+    //   落在 sub_7BFF80 = Application::init 内（首指令 `A1 C4 66 C0 00`）。
+    const uintptr_t at = modBase + (0x7C18BB - 0x400000);   // mov eax, 1
 
     // ★ 逐字节校验：`B8 01 00 00 00` ★
     //   只认这一条指令。万一引擎小版本把它挪了或改了，立即拒绝安装，
@@ -3107,7 +3424,7 @@ static void FatalInstallFailure(const char* reason) {
         "《Hard Truck Apocalypse》(2006) 的引擎代码年代久远，"
         "而现代 Windows 的内存保护机制让“运行时热补丁”很难稳定写入。\n\n"
         "请尝试重新启动游戏 —— 多数情况下重试即可成功。\n"
-        "若多次重试仍失败，请把 update 目录下的 hta_chs_dlc1*.log 一并反馈。";
+        "若多次重试仍失败，请把 update 目录下的 hta_chs_dlc2*.log 一并反馈。";
 
     size_t need = strlen(head) + strlen(reason ? reason : "(未知)") + strlen(tail) + 1;
     if (need > sizeof(msg)) need = sizeof(msg);
@@ -3118,7 +3435,7 @@ static void FatalInstallFailure(const char* reason) {
 
     Logf("pathd: ═════ 汉化安装失败，提示玩家并退出 ═════");
     Logf("pathd:   原因: %s", reason ? reason : "(未知)");
-    Logf("pathd:   提示用户重新启动游戏；日志见 update\\hta_chs_dlc1*.log");
+    Logf("pathd:   提示用户重新启动游戏；日志见 update\\hta_chs_dlc2*.log");
 
     // ★ 顺序很关键：先弹框，等玩家点掉，再退出 ★
     //   （不能在弹框前 ExitProcess，那样玩家什么都看不到。）
@@ -3200,12 +3517,12 @@ bool InstallPatches() {
     uintptr_t pMainWalk   = ScanUnique("0F 57 C0 83 C6 01 83 C7 01 3B 74 24", "P5 主遍历");
     // P5 落点的预期绝对地址（ImageBase 0x400000，无 ASLR）。
     // 只用于「4 条短跳转重定位」的前置校验：落点不是这个值就说明特征码
-    // 在别的版本/别处命中，此时绝不能去改 0x6864ED 等硬编码地址。
-    const uintptr_t kP5WalkOld = 0x00691B32;   // 113（本体 0x686A52）
+    // 在别的版本/别处命中，此时绝不能去改 0x82E94D 等硬编码地址。
+    const uintptr_t kP5WalkOld = 0x0082EEB2;   // emarcade（113 是 0x691B32，本体 0x686A52）
     // 第二处查表：mov eax,[esp+34h] / mov ecx,[eax+40h] / mov eax,[ecx+ebp]
     uintptr_t pLookup2    = ScanUnique("8B 44 24 34 8B 48 40 8B 04 29 85 C0 74 07 F3 0F 10 40 2C",
                                        "P4b 第二处查表");
-    //   113 的预扫索引是 `movzx ecx,byte[esi+edx]`（本体是 [edi+edx]）
+    //   emarcade 的预扫索引是 `movzx ecx,byte[esi+edx]`（emarcade 与 113 同，本体是 [edi+edx]）
     uintptr_t pPreIdx     = ScanUnique("0F B6 0C 16 8B 44 24 34 8B 40 40 8B 04 88", "P1 预扫索引");
     // 特征码必须够长：短版在 hta.exe 里 P8 有 2 处、P9 有 3 处命中，
     // 取第一个会补到无关函数。用「取到 glyph 之后的独有后续指令」区分。
@@ -3216,7 +3533,7 @@ bool InstallPatches() {
     // P2/P3：预扫循环的两个分支。位移 EB B5 / EB A1 跨 exe 会变，用通配。
     uintptr_t pPreWalkA = 0, pPreWalkB = 0;
     {
-        //   113 的预扫推进用 esi（本体用 edi）：0x6912F2 / 0x691306
+        //   emarcade 的预扫推进用 esi（本体用 edi）：P2 @0x82E672 / P3 @0x82E686
         uintptr_t a = ScanUnique("83 C6 01 EB ?? 0F 28 C8", "P2 预扫遍历A", false);
         uintptr_t b = ScanUnique("83 C6 01 EB ?? 8B BC 24", "P3 预扫遍历B", false);
         pPreWalkA = a; pPreWalkB = b;
@@ -3374,13 +3691,16 @@ bool InstallPatches() {
             Logf("pathd: [警告] P5 落点 0x%08X 与预期 0x%08X 不符，跳过跳转重定位",
                  (unsigned)pMainWalk, (unsigned)kP5WalkOld);
         } else {
+            // ★ 用 g_modBase + RVA 而不是绝对 VA ★
+            //   虽然 emarcade 无 ASLR、ImageBase 固定 0x400000，但其余 6 处
+            //   硬编码都走 g_modBase，这里保持一致才不会在将来出问题。
             struct { uintptr_t at; int len; const char* name; } reloc[] = {
-                { 0x6915CD, 5, "jmp  (控制符 <0x20)" },
-                { 0x6915E7, 6, "jle  ('@' 未到截断)" },
-                { 0x69166B, 5, "jmp  ('#' 已处理)"    },
-                { 0x69167C, 6, "jz   ('$'/'&' 无下标)" },
+                { g_modBase + (0x82E94D - 0x400000), 5, "jmp  (控制符 <0x20)" },
+                { g_modBase + (0x82E967 - 0x400000), 6, "jle  ('@' 未到截断)" },
+                { g_modBase + (0x82E9EB - 0x400000), 5, "jmp  ('#' 已处理)"    },
+                { g_modBase + (0x82E9FC - 0x400000), 6, "jz   ('$'/'&' 无下标)" },
             };
-            const uintptr_t kNewTgt = pMainWalk;          // 0x686A52
+            const uintptr_t kNewTgt = pMainWalk;          // 0x82EEB2
             for (auto& r : reloc) {
                 uint8_t op0 = rd8(r.at);
                 uint8_t op1 = rd8(r.at + 1);
@@ -3417,7 +3737,7 @@ bool InstallPatches() {
     } else ++fail;
 
     // ── P7 度量遍历：**故意不补** ────────────────────────────────────
-    //   0x685BD1 处只有 3 字节（83 C7 01），后面紧跟 4 字节 cmp + 6 字节 jl。
+    //   `add edi,1` 处只有 3 字节（83 C7 01），后面紧跟 4 字节 cmp + 6 字节 jl。
     //   放不下条件判断；用 call 需要吃掉 cmp 的前 2 字节并让助手重做 cmp+jl，
     //   还要知道度量循环里「串基址」在哪个寄存器 —— 这些没验证过，
     //   硬补的风险是**破坏 ASCII 度量**（那会让整个 UI 布局崩掉）。
@@ -3438,11 +3758,11 @@ bool InstallPatches() {
     //     它们**只收一个字节**，拿不到 GBK 后继字节 b2，函数内部无法判断
     //     "这个 0x81 后面还有没有第二个字节"。⇒ hook 必须在循环内。
     //
-    //   P7 = 宽度：jmp 挂在 0x685B21，覆盖 mov esi,[esp+4C] / push esi /
+    //   P7 = 宽度：jmp 挂在 emarcade 0x82DF21，覆盖 mov esi,[esp+4C] / push esi /
     //        call sub_66FEA0 共 10 字节，助手返回 st(0)=advance 后 jmp 回
-    //        0x685B2B（引擎的 fadd 继续执行）。
-    //   P8 = 推进：jmp 挂在 0x685BD1，覆盖 add edi,1 / cmp / jl 共 13 字节，
-    //        助手自己推进并**自己完成 cmp + 回跳循环头**（0x685A80）。
+    //        0x82DF2B（引擎的 fadd 继续执行）。
+    //   P8 = 推进：jmp 挂在 emarcade 0x82DFD1，覆盖 add edi,1 / cmp / jl 共 13 字节，
+    //        助手自己推进并**自己完成 cmp + 回跳循环头**（0x82DE80）。
     //
     //   ★★ 为什么用 jmp 而不是 call ★★
     //     jmp 进来的助手栈上**没有返回地址**，绝不能 ret；出口也必须是 jmp。
@@ -3502,12 +3822,12 @@ bool InstallPatches() {
             || rd8(pMsrB+3) != 0x3B || rd8(pMsrB+4) != 0x7C || rd8(pMsrB+5) != 0x24 || rd8(pMsrB+6) != 0x1C
             || rd8(pMsrB+7) != 0x0F || rd8(pMsrB+8) != 0x8C) {
             Logf("pathd:   ★原字节与预期不符（%s），拒绝安装 P8★", HexDump(pMsrB, 9).c_str());
-        } else if (loopHead != g_modBase + (0x690B00 - 0x400000)) {
+        } else if (loopHead != g_modBase + (0x82DE80 - 0x400000)) {
             Logf("pathd:   ★引擎 jl 目标 0x%08X 与预期循环头 0x%08X 不符，拒绝安装 P8★",
-                 (unsigned)loopHead, (unsigned)(g_modBase + (0x690B00 - 0x400000)));
-        } else if (g_msrLoopExit != g_modBase + (0x690C92 - 0x400000)) {
+                 (unsigned)loopHead, (unsigned)(g_modBase + (0x82DE80 - 0x400000)));
+        } else if (g_msrLoopExit != g_modBase + (0x82E012 - 0x400000)) {
             Logf("pathd:   ★退出地址 0x%08X 与预期 0x%08X 不符，拒绝安装 P8★",
-                 g_msrLoopExit, (unsigned)(g_modBase + (0x690C92 - 0x400000)));
+                 g_msrLoopExit, (unsigned)(g_modBase + (0x82E012 - 0x400000)));
         } else {
             if (WriteJmpBlock(pMsrB, 13, (void*)&PathD_MsrAdvanceB, "P8 度量推进")) ++done; else ++fail;
             Logf("pathd:   循环头 g_msrLoopHead=0x%08X  退出 g_msrLoopExit=0x%08X",
@@ -3736,6 +4056,22 @@ bool Init(HMODULE game, const char* pkgPath) {
         g_skipP4b    = GetEnvironmentVariableA("HTA_CHS_NO_P4B",    v, sizeof(v)) > 0;
         g_skipP7     = GetEnvironmentVariableA("HTA_CHS_NO_P7",     v, sizeof(v)) > 0;
         g_skipScan   = GetEnvironmentVariableA("HTA_CHS_NO_SCAN",   v, sizeof(v)) > 0;
+        g_noCjkScale = GetEnvironmentVariableA("HTA_CHS_CJK_NOSCALE", v, sizeof(v)) > 0;
+        if (g_noCjkScale)
+            Logf("pathd: [调试] HTA_CHS_CJK_NOSCALE 已设 —— 汉字不按字号比缩放（排查右偏用）");
+        g_advSquare = GetEnvironmentVariableA("HTA_CHS_ADV_SQUARE", v, sizeof(v)) > 0;
+        if (g_advSquare)
+            Logf("pathd: [调试] HTA_CHS_ADV_SQUARE 已设 —— 借用档 advance 再乘 ratio（cw*ratio²）");
+        {
+            char am[32];
+            if (GetEnvironmentVariableA("HTA_CHS_ADV_MUL", am, sizeof(am)) > 0) {
+                float v = (float)atof(am);
+                if (v > 0.01f && v < 100.0f) {
+                    g_advMul = v;
+                    Logf("pathd: [调试] HTA_CHS_ADV_MUL=%.3f —— 借用档 advance 乘此倍率（排查右偏用）", v);
+                }
+            }
+        }
         Logf("pathd: 调试开关 跳过补丁=%d 跳过扩表=%d 跳过P5=%d 跳过P4b=%d 跳过P7=%d 跳过扫描=%d",
              (int)g_skipPatch, (int)g_skipExpand, (int)g_skipP5, (int)g_skipP4b,
              (int)g_skipP7, (int)g_skipScan);
@@ -3801,7 +4137,7 @@ bool Init(HMODULE game, const char* pkgPath) {
     if (!LoadPackage(pkgPath)) {
         // ★ 2026-10-07：包文件缺失/损坏同样属于"装不上"，
         //   以前只写日志就回退，玩家看到的是原版俄文且毫无提示。
-        FatalInstallFailure("找不到或无法读取汉化字库文件 hta_chs_cjk_dlc1.bin"
+        FatalInstallFailure("找不到或无法读取汉化字库文件 hta_chs_cjk_dlc2.bin"
                             "（请确认它位于游戏 update 目录下）");
         Logf("pathd: 未启用路径 D（回退路径 C）");
         return false;
@@ -4292,6 +4628,24 @@ __declspec(naked) void __cdecl PathD_GlyphLookup() {
         // ★ 表里这一格为空时让引擎跳过（eax=0）★
         //   去掉 pop eax 之后 eax=0 能真正传到引擎，
         //   0x6865BD jnz 与 0x686606 jz 都会走"无字形"分支，安全。
+        //
+        //   ★ 缺字诊断（2026-10-09）★
+        //     记录「表里有槽但该 GBK 没字形」的码，用于定位"某些字缺字"。
+        //     只记前 64 个，避免刷屏（热路径，每帧可能几千次）。
+        test  eax, eax
+        jnz   pl_have
+        mov   edx, dword ptr [g_plMissCount]
+        cmp   edx, 64
+        jae   pl_have
+        inc   edx
+        mov   dword ptr [g_plMissCount], edx
+        mov   ecx, edx
+        dec   ecx
+        shl   ecx, 2
+        add   ecx, offset g_plMissCodes
+        mov   dword ptr [ecx], ebp          ; 缺的 GBK 码（b1<<8|b2）
+        jmp   pl_have
+    pl_have:
         test  eax, eax
         jz    pl_null
         lea   ecx, [edi+ebp*4]             // 槽地址（与 eax 同址，保持一致）
@@ -4575,7 +4929,7 @@ __declspec(naked) void __cdecl PathD_MsrAdvanceW() {
         mov   edx, dword ptr [g_cjkSlotCount]
         test  edx, edx
         jz    mw_nodef
-        ; ★ 硬边界护栏：g_cjkSlots 是 MAX_CJK_TABLES(16) 项 × 12 字节 = 192 字节。
+        ; ★ 硬边界护栏：g_cjkSlots 是 MAX_CJK_TABLES(32) 项 × 12 字节 = 384 字节。
         ;   循环**不能只靠计数器终止** —— 实测崩溃 hta.exe0102 就是这么来的：
         ;   edx 用 dec 递减，dec 不置 CF，于是无条件回跳；一旦这个 Font*
         ;   压根没被登记进 g_cjkSlots（tips 用的字体就没登记），
@@ -4678,10 +5032,35 @@ __declspec(naked) void __cdecl PathD_MsrAdvanceW() {
     mw_nodef:
         inc   dword ptr [g_msrHitNoDef]    ; ★ 诊断：缺字出口次数 ★
         inc   dword ptr [g_msrPostNoDef]   ; ★ 诊断：装配后计数（见下方说明）
-        // ★ 不是 0 ★：引擎缺字分支 fld 的是 xmmword_9E6A74+8，
-        //   实测字节 00 00 00 3E = 0.125。误判成 0 会得出
-        //   「宽度永不累加所以永不折行」的错误结论。
+
+        ; ★★★ 大字号右偏的真正原因（2026-10-09 实测定位）★★★
+        ;   按钮/对话框用的大字号是**运行期新建**的 Font，补装配线程
+        ;   5 秒后才开始扫它们。布局 measure 若发生在装配完成之前，
+        ;   就会走到这里 —— 而这里原本**固定返回 0.125**（引擎"缺字"值）。
+        ;   真实汉字宽度约等于字号（如 25.0 号字 ≈ 25），0.125 差了 200 倍！
+        ;   ⇒ measure 报的宽度严重偏小 ⇒ 居中/右对齐时起点右移
+        ;   ⇒ 用户看到的「空格空格空格空格 新建游戏」。
+        ;
+        ;   修法：缺字时不再返回 0.125，而是按**当前字号估算**一个接近
+        ;   真实汉字宽度的近似值（汉字是等宽方块字，宽度 ≈ 字号本身）。
+        ;   估算值只在"还没装配"的那几秒内生效，装配完成后走真实表。
+        ;   这样即使时序没赶上，布局也不会崩坏 —— 只是字形尺寸略有出入。
+        mov   eax, dword ptr [esp+10h]     ; Font*
+        test  eax, eax
+        jz    mw_nodef_fixed
+        cmp   eax, 10000h
+        jb    mw_nodef_fixed
+        cmp   eax, 7FFFFFFFh
+        jae   mw_nodef_fixed
+        fld   dword ptr [eax+18h]          ; ★ font+0x18 = 字号 height ★
+        ; 方块字宽度 ≈ height（而不是 0.125）
+        jmp   mw_nodef_exit
+    mw_nodef_fixed:
+        ; ★ 不是 0 ★：引擎缺字分支 fld 的是 xmmword_9E6A74+8，
+        ;   实测字节 00 00 00 3E = 0.125。误判成 0 会得出
+        ;   「宽度永不累加所以永不折行」的错误结论。
         fld   dword ptr [g_msrNoGlyphW]     ; 0.125f，与引擎缺字行为一致
+    mw_nodef_exit:
         mov   ecx, dword ptr [g_msrAfterW]
         jmp   ecx
     }
@@ -4745,10 +5124,14 @@ __declspec(naked) void __cdecl PathD_MsrAdvanceB() {
 //      而 edi 是不是文本游标已经不重要 —— 我们只需要「跳 2 还是跳 1」，
 //      判据用 [edi] 的首字节。若 edi 不可读，用 P5 同样的 bl 不可得
 //      （预扫里没有 bl），故保留范围校验。
-//   ★ DLC1（113）实测差异：预扫循环的**索引寄存器是 esi**，不是 edi ★
-//     113 循环头 0x6912B0：`movzx ecx, byte ptr [esi+edx]`（edx = 串基址），
-//     循环尾 `add esi,1 ; jmp short 0x6912B0`（P2 @0x6912F2 / P3 @0x691306）。
-//     下面是按 113 改写的版本（本体是 [edi+edx] / add edi,1）。
+//   ★ DLC1(113) / DLC2(emarcade) 实测共同点：预扫循环的**索引寄存器是 esi**，
+//     不是本体 hta.exe 的 edi ★
+//     113 循环头 0x6912B0 ；emarcade 循环头 **0x82E630**（`85 D2` test edx,edx 起），
+//     查表指令 `0F B6 0C 16` = movzx ecx, byte ptr [esi+edx]（edx = 串基址）。
+//     循环尾 `83 C6 01 EB xx`（add esi,1 / jmp rel8）：
+//       P2 @0x82E672  EB B9 (= -71) → 0x82E630
+//       P3 @0x82E686  EB A5 (= -91) → 0x82E630
+//     下面是按 113/emarcade 的共同形态改写的版本（本体是 [edi+edx] / add edi,1）。
 __declspec(naked) void __cdecl PathD_PrepassAdvanceA() {
     __asm {
         // ★★ 寄存器语义（IDA 反汇编实证，0x6861C7 起的循环）★★
@@ -4761,7 +5144,7 @@ __declspec(naked) void __cdecl PathD_PrepassAdvanceA() {
         //   我一度改成 [edi]（以为 edi 是游标），那是错的：
         //   edi 是索引，直接当指针读会读到 0x0000xxxx 这种未提交页。
         push  eax
-        movzx eax, byte ptr [esi+edx]   // ★ 113：esi=索引 + edx=串基址 ★
+        movzx eax, byte ptr [esi+edx]   // ★ emarcade/113：esi=索引 + edx=串基址 ★
         cmp   eax, 81h
         jb    pa_ascii
         add   esi, 2                    // GBK 双字节

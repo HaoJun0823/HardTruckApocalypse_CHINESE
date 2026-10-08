@@ -1,18 +1,20 @@
 # -*- coding: utf-8 -*-
 """断行范围白名单。
 
-只处理「玩家会看到的长段文字」：
+只处理「玩家会看到、需要多行排版的长段文字」：
   · 剧情对话流      maps/dv*/strings.xml（一条一个 string）
   · 关卡开场介绍    levelinfo/levelinfo.xml 的 diz0..dizN
   · 动态对话        diz/dynamicdialogsglobal.xml 的 text
-  · 过场提示        strings/truxx.xml、loadtips.xml、fadingmsgs.xml
-  · 对话框长文本    dialogs/*wnd.xml 的 caption 等（DLC1 已断的同款不算）
+  · 多人车辆说明    strings/truxx.xml
 
 明确不处理：
-  · perksdiz / clansdiz / objectdiz  —— 称号/势力/物品的描述短句，
+  · loadtips.xml    加载场景时轮播的提示，UI 里一行一条
+  · fadingmsgs.xml  游戏内滚动的系统提示，含颜色码与计时器
+  · perksdiz / clansdiz / objectdiz  称号/势力/物品的描述短句，
     DLC1 同款也没断行，UI 本就单行显示
-  · credits.xml     —— 用户要求不翻译
-  · uieditstrings / bindnames / gamestrings —— 零碎 UI 字符串
+  · credits.xml     用户要求不翻译
+  · uieditstrings / bindnames / gamestrings  零碎 UI 字符串
+  · dialogs/*wnd.xml 的 caption  全部是 ^LocalKey^ 本地化键引用
 """
 
 # 只断这些文件里的这些属性
@@ -30,12 +32,8 @@ WRAP_FILES = {
     'data/if/levelinfo/levelinfo.xml': ('LevelInfo', None),      # None = 全部 diz* 属性
     # 动态对话
     'data/if/diz/dynamicdialogsglobal.xml': ('Reply', 'text'),
-    # 过场/提示
+    # 多人模式车辆说明
     'data/if/strings/truxx.xml': ('string', 'value'),
-    'data/if/strings/loadtips.xml': ('string', 'value'),
-    'data/if/strings/fadingmsgs.xml': ('string', 'value'),
-    # 注意：dialogs/*wnd.xml 的 caption 全部是 ^LocalKey^ 本地化键引用，
-    # 断行会破坏查表，已确认排除（见 _istext.has_hazard）。
 }
 
 # levelinfo 里的 diz 系列

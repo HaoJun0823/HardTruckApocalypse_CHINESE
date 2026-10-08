@@ -34,6 +34,7 @@ import os
 import re
 import sys
 import glob
+import shlex
 import struct
 import argparse
 import subprocess
@@ -48,6 +49,24 @@ except ImportError:
 HERE = os.path.dirname(os.path.abspath(__file__))
 TEXCONV = os.path.join(HERE, 'texconv.exe')
 DEFAULT_TTF = os.path.join(HERE, 'SourceHanSansHWSC-VF.ttf')
+
+
+def texconv_cmd(*args):
+    """返回调用 texconv 的完整命令（list）。
+
+    ★ 为什么要有这个 ★
+      本仓库里 `texconv.exe` 是 **Windows 程序**（imports MSVCP140 / VCOMP140），
+      本机与 Windows CI 直接执行即可。而 ubuntu-latest 上要跑同一份二进制，
+      必须套一层 wine。为此提供环境变量 **`HTA_TEXCONV`**：给出命令前缀
+      （例：`wine /abs/path/fontgen/texconv.exe`），本函数把它前置到参数前。
+
+      不设该变量时行为与历史版本**逐字节一致**（就是 [TEXCONV] + args），
+      因此本机既有的烘焙产物不受影响。
+    """
+    override = os.environ.get('HTA_TEXCONV', '').strip()
+    if override:
+        return shlex.split(override) + list(args)
+    return [TEXCONV] + list(args)
 
 PAGE_W, PAGE_H = 512, 256      # 引擎已知能加载的图集尺寸
 # height 编码：height = CJK_HEIGHT_BASE + sizeIndex*CJK_HEIGHT_STEP + pageIndex
@@ -125,8 +144,8 @@ def decode_dds(p):
     shutil.rmtree(td, ignore_errors=True)
     os.makedirs(td, exist_ok=True)
     try:
-        subprocess.run([TEXCONV, p, '-f', 'R8G8B8A8_UNORM', '-ft', 'png', '-o', td,
-                        '-y', '-nologo'], check=True,
+        subprocess.run(texconv_cmd(p, '-f', 'R8G8B8A8_UNORM', '-ft', 'png', '-o', td,
+                                   '-y', '-nologo'), check=True,
                        stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         f = next(os.path.join(td, x) for x in os.listdir(td) if x.lower().endswith('.png'))
         return Image.open(f).convert('RGBA')
@@ -143,12 +162,20 @@ def encode_dds(img, p):
     os.makedirs(td, exist_ok=True)
     try:
         stem = os.path.splitext(os.path.basename(p))[0]
-        png = os.path.join(td, stem + '.png')
-        img.save(png, 'PNG')
-        subprocess.run([TEXCONV, png, '-f', 'BC3_UNORM', '-ft', 'dds', '-o', td,
-                        '-y', '-nologo'], check=True,
+        # ★★ 输入用 Pillow 写的**未压缩 RGBA8 DDS**，而不是 PNG ★★
+        #   texconv 读 PNG 走 Windows 自带的 WIC 编解码器；在 wine 下 WIC 的
+        #   可用性随发行版/版本而变（历史上多次出现「能跑但读不了 PNG」），
+        #   是 CI 上最脆的一环。未压缩 DDS 由 texconv 自己解析，不依赖 WIC。
+        #
+        #   等价性已实测（本机 10 张真实 cjk 图集页）：
+        #     PNG  -> BC3  与  DDS(RGBA8) -> BC3   产物**逐字节相同**。
+        #   所以这不改变任何像素结果，只是把输入容器换成更稳的一种。
+        raw = os.path.join(td, stem + '_raw.dds')
+        img.save(raw, format='DDS')
+        subprocess.run(texconv_cmd(raw, '-f', 'BC3_UNORM', '-ft', 'dds', '-o', td,
+                                   '-y', '-nologo'), check=True,
                        stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-        os.replace(os.path.join(td, stem + '.dds'), p)
+        os.replace(os.path.join(td, stem + '_raw.dds'), p)
     finally:
         shutil.rmtree(td, ignore_errors=True)
 
@@ -203,6 +230,37 @@ def parse_items(latin1):
                       'file': fl.group(1) if fl else '',
                       'header': hdr, 'symbols': syms})
     return items
+
+
+def normalize_eol(raw):
+    """把源 fonts.xml 统一成 **CRLF** 行尾后返回。
+
+    ★ 为什么必须做这一步（CI 可复现性的关键）★
+      本函数的下游（parse_items → main 的 '\n'.join）是按**二进制**读源、
+      再按行拼写产物的：`it['header']` 里保留着源文件里的 `\\r\\n`，所以
+      **产物的换行分布继承自源文件**。
+
+      而 git 里同一个 fonts.xml 在不同工作区可能是不同字节：
+        · 本机 core.autocrlf=true      → 工作区 **CRLF**（221821 B）
+        · ubuntu-latest 的 checkout
+          （actions/checkout 默认 autocrlf=false）→ **LF**（210559 B）
+      实测两者烘出的产物：
+        CRLF 源 → 1980514 B；LF 源 → 1980134 B（差 380 个 CRLF）。
+      即「CI 产物 ≠ 本机验证过的产物」，这正是要避免的。
+
+      统一到 CRLF 之后，烘焙结果**与输入行尾无关**：
+        · 本机 CRLF 源   → 规范化不变 → 与历史产物逐字节相同（已实测）
+        · CI 的 LF 源    → 规范化补回 CRLF → 同样得到那份产物
+      这样就不必依赖 .gitattributes/core.autocrlf 的配置，也不会因为
+      谁在哪个平台上 checkout 而改变发布包字节。
+
+    ★ 为什么选 CRLF 而不是 LF ★
+      发布包里的参考产物是 CRLF 源烘出来的；选 CRLF 才能与已实机验证、
+      已发布的那一版**逐字节一致**（DLC1/DLC2 实测 100% 相同）。
+    """
+    # 先全部折成 LF（同时干掉可能存在的孤立 CR），再无差别地展开成 CRLF
+    lf = raw.replace(b'\r\n', b'\n').replace(b'\r', b'\n')
+    return lf.replace(b'\n', b'\r\n')
 
 
 def main():
@@ -273,7 +331,7 @@ def main():
         print('[!] 没有汉字可烘 —— 请用 --charset 指定，或先准备译文')
         return 1
 
-    raw = open(src, 'rb').read()
+    raw = normalize_eol(open(src, 'rb').read())
     latin1 = raw.decode('latin-1')
     items = parse_items(latin1)
     # ★ 幂等性：剔掉源文件里**上一次生成时自己追加的** CJK Item ★

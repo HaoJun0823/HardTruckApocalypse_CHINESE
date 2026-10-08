@@ -1,0 +1,22 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.37530.8
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HardTruckApocalypse_CHINESE_DLL_DLC2", "HardTruckApocalypse_CHINESE_DLL_DLC2.vcxproj", "{2A6D3F21-8C74-4E19-9B35-7D4C1E8A5F02}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2A6D3F21-8C74-4E19-9B35-7D4C1E8A5F02}.Release|x86.ActiveCfg = Release|Win32
+		{2A6D3F21-8C74-4E19-9B35-7D4C1E8A5F02}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9C1E7B44-3D68-4A05-B7F2-1E9D3C60A8B7}
+	EndGlobalSection
+EndGlobal

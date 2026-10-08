@@ -1,0 +1,606 @@
+name: build-release
+
+# ══════════════════════════════════════════════════════════════════════════
+# 三个游戏的简体中文汉化包 —— 构建 + 自动发 Release
+# ══════════════════════════════════════════════════════════════════════════
+# 产物：三个可直接解压到游戏根目录的 zip
+#   燃烧飞车_末日浩劫_简体中文汉化_<date>.zip               → 本体 hta.exe
+#   燃烧飞车_末日浩劫_部落崛起_简体中文汉化_<date>.zip      → 资料片 Meridian113.exe
+#   燃烧飞车_末日浩劫_街机版_简体中文汉化_<date>.zip        → 街机版 emarcade.exe
+#
+# 三套包不能合并：三个 exe 的补丁锚点地址互不相同（详见
+# docs/2026-10-08-资料片113汉化移植与LAA崩溃修复.md 的锚点对照表）。
+#
+# ── 流程（10 步）────────────────────────────────────────────────────────
+#   1. 检出仓库 + msvc-wine；装 wine64/msitools/ca-certificates/winbind
+#   2. 装 MSVC v141(14.16) + Win10 SDK 26100（分段下载后合并；带缓存）
+#   3. 编译 6 个插件 DLL      → tools/release/compile_dlls.sh（含体积闸门）
+#   4. 给 wine 配 texconv 需要的 4 个 VC141 运行库（msvcp140/vcruntime140/
+#      vcruntime140_1/vcomp140），使其能在 wine 下运行
+#   5. 烘三套字库 → fontgen/build_cjk.py ×3
+#      （按译文 XML 动态收集汉字 → 生成 cjk_*.dds 图集 + fonts.xml + .bin）
+#   6. 装 Pillow（烘焙脚本依赖）
+#   7. 装配三个发布包 → tools/release/build_release.py
+#   8. 校验：结构 + DLL 体积指纹 + 与参考包逐文件哈希比对（可选）
+#   9. 上传三个 artifact
+#  10. publish job：同 run 内按日期-时间打 tag 并发布 Release
+#
+# ── 为什么是 ubuntu-latest + msvc-wine ──────────────────────────────────
+#   windows-2022/2025 镜像**不带 v141 (MSVC 14.16)**，构建会静默回退到新版
+#   工具集（产物体积随之改变）。本仓库的 6 个 DLL 都有历史确认的体积指纹，
+#   回退会被 compile_dlls.sh 的闸门拦下。改用 msvc-wine：从微软 CDN 按官方
+#   manifest 精确拉 VS2017 15.9 的 VC.Tools.14.16，用 wine 跑真 cl/link。
+#   这条路线取自同作者的 SR_GAME_CHINESE / MajestyIExtend / MajestyIIExtend。
+#
+# ── 触发 ────────────────────────────────────────────────────────────────
+#   push(master/main) → 构建 + 校验 + artifact；publish job 同 run 内发 Release
+#   pull_request      → 构建 + 校验（门禁，不发布）
+#   workflow_dispatch → 手动；可勾选跳过 DLL 编译（复用已有产物，CI 上别勾）
+#
+# ★ 不用「tag push 重触发 workflow」发版：GITHUB_TOKEN 推的 tag 不触发
+#   on:push（GitHub 防循环），发布一律在同一 run 内由 publish job 完成。
+
+on:
+  push:
+    branches: [main, master]
+    paths-ignore:
+      - '**.md'
+      - 'docs/**'
+      - 'archives/**'
+  pull_request:
+    branches: [main, master]
+    paths-ignore:
+      - '**.md'
+      - 'docs/**'
+      - 'archives/**'
+  workflow_dispatch:
+    inputs:
+      skip_dll:
+        description: '跳过 DLL 编译（复用仓库内已有产物；CI 上一般不要勾）'
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+# 同一分支/PR 的新推送取消旧的进行中构建，省 runner
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: 构建三个汉化包（ubuntu-latest + msvc-wine MSVC v141 x86）
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+
+    env:
+      PYTHONUTF8: '1'
+      PYTHONIOENCODING: 'utf-8'
+      # msvc-wine 安装目录（VC 14.16 + 合并进来的 SDK 26100）。
+      MSVC_WINE_PREFIX: ${{ github.workspace }}/.msvc
+      # SDK 26100 的独立下载目录（下完 mv 合并进 MSVC_WINE_PREFIX）
+      MSVC_SDK_DIR: ${{ github.workspace }}/.msvc-sdk
+      # msvc-wine 上游 checkout 的 ref。升级时改这里 —— cache key 含它。
+      MSVCWINE_REF: master
+      # ★ 让 fontgen/build_cjk.py 在 wine 里调用 Windows 版 texconv.exe。
+      #   脚本本身跨平台：设了这个变量就走 wine，不设就直接执行（本机行为）。
+      HTA_TEXCONV: wine64 ${{ github.workspace }}/fontgen/texconv.exe
+
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v5
+
+      # ★ 必须完整 checkout msvc-wine（不能只下 vsdownload.py）：
+      #   install.sh 要用仓库里的 lowercase / fixinclude（Linux 大小写修复）、
+      #   wrappers/（cl/link 包装脚本）、msvctricks.cpp（自举实测 cl 可用）。
+      - name: 检出 msvc-wine
+        uses: actions/checkout@v5
+        with:
+          repository: mstorsjo/msvc-wine
+          ref: ${{ env.MSVCWINE_REF }}
+          path: .msvc-wine
+
+      - name: 配置 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      # ── wine 侧依赖（msvc-wine README 的 Prerequisites）──────────────
+      #   wine64 : 跑真 cl.exe/link.exe，以及 fontgen/texconv.exe
+      #   msitools: msiextract，解 VS 组件与 WinSDK 的 .msi
+      #   winbind : cl 用 /Zi 时 mspdbsrv 的命名管道通信需要（本流程用 /Z7
+      #             绕开了它，但装上更保险）
+      - name: 安装 wine / msitools 等依赖
+        run: |
+          set -euo pipefail
+          sudo apt-get update
+          sudo apt-get install -y wine64 msitools ca-certificates winbind
+          wine64 --version || wine --version
+
+      # ── Python 依赖：烘焙脚本需要 Pillow ─────────────────────────────
+      - name: 安装 Python 依赖（Pillow）
+        run: |
+          set -euo pipefail
+          python -m pip install --quiet --upgrade pip
+          python -m pip install --quiet pillow
+          python -c "import PIL; print('Pillow', PIL.__version__)"
+
+      # ── MSVC 工具链缓存 ──────────────────────────────────────────────
+      - name: 还原 MSVC 工具链缓存
+        uses: actions/cache@v5
+        with:
+          path: .msvc
+          key: hta-msvcwine-v141-x86-sdk26100-${{ env.MSVCWINE_REF }}-v1
+
+      # ── 下载工具链（缓存未命中时）：两段 vsdownload + 合并 ───────────
+      #   ★ 段 1（VC 14.16）：--major 15 是关键 —— VC.Tools.14.16（v141）只
+      #     存在于 VS2017 manifest；VS2022+ 的 ID 不同，vsdownload 找不到会
+      #     **静默回退最新工具集**，产物体积随之变化。
+      #   ★ --architecture **x86 x64**（两者都要）：x86 cl.exe 启动时按 PATH
+      #     找 mspdbcore.dll，而 VC 14.16 里它只在 Hostx64/x64 目录。只拉 x86
+      #     会让 cl 报 "fatal error C1356"。
+      #   ★ 段 2（SDK 26100）：144384 等体积指纹是「14.16 + 这组 flags +
+      #     SDK 26100」的确定产物，必须锁 26100（VS2017 manifest 里没有它，
+      #     故单独从 VS2022 channel 拉）。
+      - name: 下载并装配 MSVC v141 + Win10 SDK 26100（缓存未命中时）
+        run: |
+          set -euo pipefail
+          if [ -x "${MSVC_WINE_PREFIX}/bin/x86/cl" ] && \
+             [ -d "${MSVC_WINE_PREFIX}/kits/10/include/10.0.26100.0" ]; then
+            echo "工具链缓存命中（VC 14.16 + SDK 26100），跳过下载。"
+          else
+            echo "==> [1/3] 下载 VC 14.16 (v141, VS2017 channel, x86+x64)"
+            python3 .msvc-wine/vsdownload.py \
+              --accept-license --major 15 --msvc-version 15.9 \
+              --architecture x86 x64 --host-arch x64 \
+              --with-sdk=no --with-atl=no --with-asan=no --with-dia=no \
+              --with-msbuild=no --with-devcmd=no \
+              --dest "${MSVC_WINE_PREFIX}"
+
+            echo "==> [2/3] 下载 Win10 SDK 26100 (VS2022 channel)"
+            python3 .msvc-wine/vsdownload.py \
+              --accept-license --major 17 \
+              --sdk-version 10.0.26100 \
+              --with-default=no \
+              --architecture x86 --host-arch x64 \
+              --dest "${MSVC_SDK_DIR}"
+
+            echo "==> [3/3] 合并 SDK 26100 进 MSVC prefix"
+            if [ -d "${MSVC_WINE_PREFIX}/Windows Kits" ]; then
+              echo "!! .msvc/Windows Kits 已存在，意外状态" >&2; exit 1
+            fi
+            mv "${MSVC_SDK_DIR}/Windows Kits" "${MSVC_WINE_PREFIX}/"
+          fi
+          rm -rf "${MSVC_SDK_DIR}"
+
+      # ── install.sh：大小写修复 + 包装脚本生成（幂等，永远跑）────────
+      - name: install.sh（生成包装脚本 / 大小写修复）
+        run: |
+          set -euo pipefail
+          sh .msvc-wine/install.sh "${MSVC_WINE_PREFIX}"
+
+      # ── 编译器验证（门禁 + 诊断）────────────────────────────────────
+      - name: 验证编译器为 MSVC v141 x86（诊断 + 门禁）
+        run: |
+          set -euo pipefail
+          export PATH="${MSVC_WINE_PREFIX}/bin/x86:$PATH"
+          echo "── mspdbcore.dll 就位检查（C1356 根因诊断）──"
+          find "${MSVC_WINE_PREFIX}/vc/tools/msvc" -name mspdbcore.dll 2>/dev/null || true
+          echo "── cl banner ──"
+          banner="$(cl 2>&1 || true)"
+          echo "$banner" | head -2
+          if ! echo "$banner" | grep -q "19\.16"; then
+            echo "!! cl 不是 MSVC 14.16 (v141) —— vsdownload 可能回退了版本" >&2
+            exit 1
+          fi
+          echo "── Win SDK 版本（应只有 10.0.26100.0）──"
+          ls "${MSVC_WINE_PREFIX}/kits/10/include/"
+          echo "── 磁盘余量 ──"
+          df -h .
+
+      # ── 编译 6 个插件 DLL ───────────────────────────────────────────
+      #   脚本内含**体积指纹闸门**（178176/178176/195584/144384/140800/140288），
+      #   工具链或 flags 任一回退都会当场失败，绝不把错 DLL 发出去。
+      - name: 编译 6 个插件 DLL
+        if: ${{ github.event.inputs.skip_dll != 'true' }}
+        run: |
+          set -euo pipefail
+          sh tools/release/compile_dlls.sh
+
+      # skip_dll=true 时直接复用仓库里已提交的构建产物（这些 build/Release/*.dll
+      # 通常被 .gitignore 排除，故仅当你明确把它们提交进仓库后这条才有意义）。
+      - name: 跳过 DLL 编译（复用已有产物）
+        if: ${{ github.event.inputs.skip_dll == 'true' }}
+        run: |
+          set -euo pipefail
+          echo ">> skip_dll=true：复用已有 DLL 产物"
+          missing=0
+          for p in \
+            HardTruckApocalypse_CHINESE_DLL/build/Release/hta_chs.dll \
+            HardTruckApocalypse_CHINESE_DLL_DLC1/build/Release/hta_chs_dlc1.dll \
+            HardTruckApocalypse_CHINESE_DLL_DLC2/build/Release/hta_chs_dlc2.dll \
+            Render9Fix/build/Release/Render9Fix.dll \
+            DLC1_MemFix/build/Release/DLC1_MemFix.dll \
+            DLC2_MemFix/build/Release/DLC2_MemFix.dll ; do
+            if [ -f "$p" ]; then
+              echo "  OK  $p ($(wc -c < "$p") B)"
+            else
+              echo "  !!  缺 $p" >&2; missing=1
+            fi
+          done
+          if [ "$missing" -ne 0 ]; then
+            echo "!! skip_dll=true 但仓库里没有全部 6 个产物；请去掉该勾选。" >&2
+            exit 1
+          fi
+
+      # ── 为 wine 准备 texconv 所需的 VC141 运行库 ─────────────────────
+      # ★ texconv.exe 是 Windows 程序，静态依赖 MSVCP140 / VCRUNTIME140 /
+      #   VCRUNTIME140_1 / VCOMP140（OpenMP）。wine 内置实现对这些 **不完整**，
+      #   必须把真 DLL 放到 exe 旁边（Windows 的 DLL 搜索顺序里，exe 同目录
+      #   优先），wine 才会加载它们而不是自己的内置版本。
+      #
+      #   来源：msvc-wine 已下好的 VC 14.16 工具链目录，里面有 4 个中的 3 个
+      #   （msvcp140 / vcruntime140 / vcruntime140_1 在 Hostx64/x64）。
+      #   vcomp140.dll 不在工具链里（它在 VC/Redist 的 OpenMP 组件下，而
+      #   vsdownload 没拉 Redist），用 nuget 的 vc143 redist 包兜底 —— 它
+      #   与 14.16 的运行库 ABI 兼容（MSVC 14.x 系列保持二进制兼容）。
+      - name: 为 wine 准备 texconv 运行库
+        run: |
+          set -euo pipefail
+          dest="fontgen"
+          echo "── 从 VC 14.16 工具链复制 CRT ──"
+          src=""
+          for d in "${MSVC_WINE_PREFIX}"/vc/tools/msvc/*/bin/Hostx64/x64; do
+            [ -d "$d" ] && src="$d"
+          done
+          if [ -z "$src" ]; then
+            echo "!! 找不到 Hostx64/x64 目录，无法取 CRT" >&2; exit 1
+          fi
+          echo "来源: $src"
+          for f in msvcp140.dll vcruntime140.dll vcruntime140_1.dll \
+                   msvcp140_1.dll msvcp140_2.dll; do
+            if [ -f "$src/$f" ]; then
+              cp -v "$src/$f" "$dest/"
+            else
+              echo "  (缺 $f，跳过)"
+            fi
+          done
+
+          echo "── 获取 vcomp140.dll（OpenMP，工具链里没有）──"
+          curl -fsSL -o /tmp/vcredist.nupkg \
+            https://www.nuget.org/api/v2/package/Microsoft.VC143.OpenMP/14.38.33130 \
+            || curl -fsSL -o /tmp/vcredist.nupkg \
+            https://www.nuget.org/api/v2/package/Microsoft.VC143.OpenMP/14.40.33807
+          rm -rf /tmp/vcomp && mkdir -p /tmp/vcomp
+          unzip -qo /tmp/vcredist.nupkg -d /tmp/vcomp
+          found="$(find /tmp/vcomp -name 'vcomp140.dll' -path '*x64*' | head -1)"
+          if [ -z "$found" ]; then
+            found="$(find /tmp/vcomp -name 'vcomp140.dll' | head -1)"
+          fi
+          if [ -z "$found" ]; then
+            echo "!! nupkg 里没有 vcomp140.dll" >&2
+            find /tmp/vcomp -name '*.dll' | head -20 || true
+            exit 1
+          fi
+          cp -v "$found" "$dest/vcomp140.dll"
+          ls -la "$dest"/*.dll
+
+      # ── texconv 可用性自检（在烘焙之前拦住环境问题）─────────────────
+      #   做法：让 texconv 把一张已存在的 dds 转成 png，成功即说明 wine +
+      #   4 个运行库都就位。比等到 3 次烘焙跑了一半才失败要省 10 分钟。
+      - name: 自检 texconv 能在 wine 下运行
+        run: |
+          set -euo pipefail
+          export WINEDEBUG=-all
+          tmp="$(mktemp -d)"
+          # 用仓库里现成的图集当输入（任何一张 cjk 页都行；没有就跳过）
+          sample="$(find Original_DATA -name '*.dds' | head -1)"
+          if [ -z "$sample" ]; then
+            echo "!! 仓库里找不到 .dds 供自检" >&2; exit 1
+          fi
+          echo "输入样例: $sample"
+          set +e
+          out="$(wine64 fontgen/texconv.exe "$(realpath "$sample")" \
+                   -f R8G8B8A8_UNORM -ft png -o "$tmp" -y -nologo 2>&1)"
+          rc=$?
+          set -e
+          echo "$out" | tail -20
+          if [ $rc -ne 0 ] || ! ls "$tmp"/*.png >/dev/null 2>&1; then
+            echo "!! texconv 在 wine 下不可用（rc=$rc）" >&2
+            echo "   常见原因：缺 msvcp140/vcruntime140/vcomp140，或 wine 版本过旧" >&2
+            exit 1
+          fi
+          echo "✓ texconv 可用：$(ls "$tmp")"
+
+      # ── 烘焙三套字库 ────────────────────────────────────────────────
+      #   每个包用自己的 fonts.xml 当源、自己的译文目录收集汉字：
+      #     base → Original_DATA/fonts.xml   + Original_DATA_CHS/
+      #     dlc1 → DLC1_DATA/fonts.xml       + DLC1_DATA_CHS/
+      #     dlc2 → DLC2_DATA_CHS/fonts.xml   + DLC2_DATA_CHS/
+      #       ★ DLC2 的源 fonts.xml 就用译文目录里那份：它与游戏原版
+      #         fonts.xml 逐字节相同（实测），而 DLC2_DATA/ 是第三方原版数据、
+      #         按 .gitignore 不入库。
+      #   产出布局 <out>/<key>/{data/if/fonts/*, hta_chs_cjk.bin}，
+      #   与 build_release.py 的 --fonts 期望一致。
+      - name: 烘焙三套字库
+        run: |
+          set -euo pipefail
+          export WINEDEBUG=-all
+          bake() {
+            local key="$1" fonts="$2" text="$3"
+            echo "=================================================="
+            echo "[$key] 源=$fonts  译文=$text"
+            echo "=================================================="
+            python fontgen/build_cjk.py \
+              --src-fonts "$fonts" --text-dir "$text" \
+              --out "baked_fonts/$key"
+          }
+          bake base Original_DATA/data/if/fonts/fonts.xml Original_DATA_CHS
+          bake dlc1 DLC1_DATA/data/if/fonts/fonts.xml     DLC1_DATA_CHS
+          bake dlc2 DLC2_DATA_CHS/data/if/fonts/fonts.xml DLC2_DATA_CHS
+          echo "── 烘焙产物概览 ──"
+          for k in base dlc1 dlc2; do
+            n=$(ls baked_fonts/$k/data/if/fonts/cjk_*.dds | wc -l)
+            b=$(wc -c < baked_fonts/$k/hta_chs_cjk.bin)
+            echo "  $k: $n 张图集, bin=$b B"
+          done
+
+      # ── 装配三个发布包 ──────────────────────────────────────────────
+      - name: 装配三个发布包
+        run: |
+          set -euo pipefail
+          python tools/release/build_release.py \
+            --out release --fonts baked_fonts \
+            --date "$(TZ=Asia/Shanghai date +%Y%m%d)"
+
+      # ── 校验产物结构 ────────────────────────────────────────────────
+      #   独立于装配脚本再核一遍（见 verify_release.py 的说明）：该有的在不在、
+      #   体积指纹对不对、fonts.xml 声明与磁盘是否一致、zip 内中文条目名有没有
+      #   置 UTF-8 标志位（否则 Windows 解压乱码）。
+      - name: 校验产物结构
+        run: python3 tools/release/verify_release.py release
+
+      # ── 上传三个 artifact ───────────────────────────────────────────
+      - name: "上传 本体包 (artifact: hta-base)"
+        uses: actions/upload-artifact@v4
+        with:
+          name: hta-base
+          path: release/燃烧飞车_末日浩劫_简体中文汉化_*.zip
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: "上传 部落崛起包 (artifact: hta-dlc1)"
+        uses: actions/upload-artifact@v4
+        with:
+          name: hta-dlc1
+          path: release/燃烧飞车_末日浩劫_部落崛起_简体中文汉化_*.zip
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: "上传 街机版包 (artifact: hta-dlc2)"
+        uses: actions/upload-artifact@v4
+        with:
+          name: hta-dlc2
+          path: release/燃烧飞车_末日浩劫_街机版_简体中文汉化_*.zip
+          if-no-files-found: error
+          retention-days: 30
+
+  # push 到 master/main 时，在同一 run 内由 gh CLI 建 tag 并发布 Release。
+  # ★ 不用「tag push 重触发 workflow」：GITHUB_TOKEN 推的 tag 不触发 on:push
+  #   （GitHub 防循环机制），那样 package job 会永远 skipped、Release 无附件。
+  publish:
+    name: 发布 Release（push 时自动按日期-时间打 tag）
+    needs: build
+    if: >-
+      github.event_name == 'push' &&
+      (github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      # ★ 必须检出：要用 git 建 tag、以及 release_notes 里算 commit 范围
+      - name: 检出仓库（git tag 需要）
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: 下载三个 artifact
+        uses: actions/download-artifact@v4
+        with:
+          path: dist
+
+      - name: 校验三个包齐全
+        run: |
+          set -euo pipefail
+          for d in hta-base hta-dlc1 hta-dlc2; do
+            n=$(ls -1 "dist/$d"/*.zip 2>/dev/null | wc -l || true)
+            if [ "$n" -ne 1 ]; then
+              echo "!! dist/$d 期望 1 个 zip，实际 $n 个" >&2; exit 1
+            fi
+          done
+          echo "✓ 三个包齐全（内部为中文名 zip；附件将以 ASCII 名上传）"
+
+      - name: 计算日期-时间 tag
+        id: tag
+        run: |
+          set -euo pipefail
+          tag="$(TZ=Asia/Shanghai date +%Y-%m-%d-%H-%M-%S)"
+          # 极小概率同秒重复推送：tag 已存在则追加运行号
+          if gh api "repos/${{ github.repository }}/git/ref/tags/$tag" >/dev/null 2>&1; then
+            tag="${tag}-${GITHUB_RUN_NUMBER}"
+          fi
+          echo "tag=$tag" >> "$GITHUB_OUTPUT"
+          echo "将使用 tag: $tag"
+
+      - name: 建 git tag 并推送
+        run: |
+          set -euo pipefail
+          tag="${{ steps.tag.outputs.tag }}"
+          git tag "$tag"
+          git push origin "$tag"
+          echo "✓ 已建 tag: $tag"
+
+      # Release 说明三要素：
+      #   1) 本次构建相关的提交记录（自上次 Release 起）
+      #   2) 三个 ASCII 附件名 ↔ 中文原名对照表（附件名不能中文）
+      #   3) 必读说明全文（与包内 必读说明.txt 同源，玩家不下载也能看）
+      - name: 生成 Release 说明
+        run: |
+          set -euo pipefail
+          tag="${{ steps.tag.outputs.tag }}"
+          slug="${{ github.repository }}"
+          repo_url="https://github.com/$slug"
+
+          # ── 提交记录范围：上次 Release 的 commit sha 起 ──
+          #   ★ 不用 git log <上次tag>..HEAD —— actions/checkout 默认不拉 tag
+          #     对象（fetch-depth:0 只拉分支历史），会报 unknown revision。
+          #     改用 release 的 commit.sha，且 .commit.sha 对 tag 建的 release
+          #     实测可能为空，故退一路查 tag ref。
+          latest="$(gh api "repos/$slug/releases/latest" 2>/dev/null || true)"
+          prev_tag="$(printf '%s' "$latest" | jq -r '.tag_name // empty' 2>/dev/null || true)"
+          prev_sha="$(printf '%s' "$latest" | jq -r '.commit.sha // empty' 2>/dev/null || true)"
+          if [ -z "$prev_sha" ] && [ -n "$prev_tag" ]; then
+            prev_sha="$(gh api "repos/$slug/git/refs/tags/$prev_tag" --jq '.object.sha // empty' 2>/dev/null || true)"
+            if [ "$(git cat-file -t "$prev_sha" 2>/dev/null || true)" = "tag" ]; then
+              prev_sha="$(gh api "repos/$slug/git/refs/tags/$prev_tag" --jq '.object.object.sha // empty' 2>/dev/null || true)"
+            fi
+          fi
+          if [ -n "$prev_sha" ] && git cat-file -e "${prev_sha}^{commit}" 2>/dev/null; then
+            base="$prev_sha"; base_label="$prev_tag"
+            echo "上一次 Release：$prev_tag（$prev_sha）"
+          else
+            base="$(git rev-list --max-parents=0 HEAD)"; base_label="首个提交"
+            echo "无可用历史 Release，以首个提交为基准：$base"
+          fi
+
+          : > commits.md
+          git log --no-merges --max-count=60 --pretty=format:'%H%x09%s' "$base..HEAD" \
+            | while IFS=$'\t' read -r h s; do
+                if [ -z "$h" ]; then continue; fi
+                printf -- '- [`%s`](%s/commit/%s) %s\n' "${h:0:7}" "$repo_url" "$h" "$s" >> commits.md
+              done
+          n=$(grep -c '^- ' commits.md || true)
+          echo "本次提交记录：$n 条（基准 $base）"
+
+          cat > release_notes.md <<'EOF'
+          ## 《燃烧飞车：末日浩劫》系列 简体中文汉化包 · `@@TAG@@`
+
+          三个游戏各一套包（**补丁锚点地址不同，不可混用**）。下载你正在玩的那一版，
+          **把包内全部文件解压覆盖到游戏根目录**；安装与卸载方法见下方必读说明。
+
+          > ⚠️ GitHub Release 附件名不支持中文（经 API 上传会被静默破坏成 `_._._` 这类），
+          > 故附件用英文名；解压后内部文件名与目录名均为中文，**不影响使用**。
+          > 下表「英文附件名 ↔ 中文原名」一一对应，按你的游戏版本选一个下载即可。
+          EOF
+
+          {
+            echo
+            echo "### 🧾 本次更新（自 \`$base_label\` 起，共 ${n} 条提交）"
+            echo
+            if [ -s commits.md ]; then cat commits.md; else echo "(本次构建无新增提交)"; fi
+          } >> release_notes.md
+
+          cat >> release_notes.md <<'EOF'
+
+          ### 📦 下载（3 个补丁包，均解压到游戏根目录）
+
+          | 英文附件名 | 对应中文原名 | 适用游戏 |
+          |---|---|---|
+          | `HTA-Base-CHS-Patch-@@TAG@@.zip` | 燃烧飞车_末日浩劫_简体中文汉化 | 本体 `hta.exe` |
+          | `HTA-DLC1-RiseOfClans-CHS-Patch-@@TAG@@.zip` | 燃烧飞车_末日浩劫_部落崛起_简体中文汉化 | 资料片 `Meridian113.exe` |
+          | `HTA-DLC2-Arcade-CHS-Patch-@@TAG@@.zip` | 燃烧飞车_末日浩劫_街机版_简体中文汉化 | 街机版 `emarcade.exe` |
+
+          ### ⚠️ 安装前必读
+
+          1. **先运行包内的「【必装】扩展32位游戏内存分配」bat**（等价于给 exe 打 LAA 补丁）
+             —— 不打这个，进游戏会因内存不足崩溃。
+          2. **部落崛起（DLC1）必须用包内的单核 bat 启动**，见必读说明第 11 条。
+          3. 三个包**不要互相覆盖**，装错版本会导致启动即崩。
+          EOF
+
+          {
+            echo
+            echo "### 📖 必读说明（安装 / 卸载 / 已知问题）"
+            echo
+            if [ -f "dist/hta-base/必读说明.txt" ]; then
+              echo "<details><summary>展开完整必读说明（与包内 必读说明.txt 一致）</summary>"
+              echo
+              echo "<pre>"
+              tr -d '\r' < "dist/hta-base/必读说明.txt"
+              echo "</pre>"
+              echo
+              echo "</details>"
+            else
+              echo "> ⚠️ 未找到必读说明，本次未附带。"
+            fi
+            echo
+            echo "---"
+            echo
+            echo "源码仓库：<https://github.com/HaoJun0823/HardTruckApocalypse_CHINESE>　·　作者主页：<https://www.haojun0823.xyz/>"
+          } >> release_notes.md
+
+          sed -i "s/@@TAG@@/$tag/g" release_notes.md
+          if grep -q '@@TAG@@' release_notes.md; then
+            echo "!! 仍有未替换的 @@TAG@@" >&2; exit 1
+          fi
+          echo "── release_notes.md 生成完毕（$(wc -l < release_notes.md) 行）──"
+
+      # 发布：建 release（取 upload_url）→ 用 ASCII 附件名逐个上传。
+      # ★ GitHub 已废弃 api.github.com/.../releases/{id}/assets 端点（直传 404），
+      #   必须用建 release 时返回的 upload_url（指向 uploads.github.com）。
+      # ★ body 必须用 -F（不是 -f）：-f 不展开 @file，会把 "@release_notes.md"
+      #   原文当成正文。
+      - name: 创建 Release 并上传三个 ASCII 名 zip
+        run: |
+          set -euo pipefail
+          tag="${{ steps.tag.outputs.tag }}"
+          slug="${{ github.repository }}"
+
+          if [ ! -f release_notes.md ]; then
+            echo "!! 未找到 release_notes.md" >&2; exit 1
+          fi
+          for sec in "HTA-Base-CHS-Patch" "HTA-DLC1-RiseOfClans-CHS-Patch" \
+                     "HTA-DLC2-Arcade-CHS-Patch" "必读说明"; do
+            if ! grep -qF "$sec" release_notes.md; then
+              echo "!! release_notes.md 缺少段落「$sec」" >&2; exit 1
+            fi
+          done
+          echo "✓ release_notes.md 预检通过"
+
+          REL_JSON=$(gh api -X POST "repos/$slug/releases" \
+            -f "tag_name=$tag" -f "name=$tag" \
+            -F "body=@release_notes.md" -F "draft=false")
+          if [ "$(jq -r .body <<<"$REL_JSON")" = "@release_notes.md" ]; then
+            echo "-F @file 未生效，回退：直接传正文字符串"
+            REL_JSON=$(gh api -X POST "repos/$slug/releases" \
+              -f "tag_name=$tag" -f "name=$tag" \
+              -f "body=$(cat release_notes.md)" -F "draft=false")
+          fi
+          body="$(jq -r .body <<<"$REL_JSON")"
+          body_head="${body%%$'\n'*}"
+          if [ -z "$body_head" ] || [[ "$body_head" != "## 《燃烧飞车：末日浩劫》系列 简体中文汉化包"* ]]; then
+            echo "!! Release body 异常（首行=[$body_head]）" >&2; exit 1
+          fi
+          echo "✓ Release body 已写入（首行：${body_head}…）"
+
+          UPLOAD_URL=$(echo "$REL_JSON" | jq -r .upload_url)
+          BASE="${UPLOAD_URL%%\{*}"
+
+          upload_one() {
+            local src="$1" ascii="$2"
+            echo "⬆️ 上传 $ascii"
+            curl -fsSL -X POST \
+              -H "Authorization: Bearer $GITHUB_TOKEN" \
+              -H "Content-Type: application/zip" \
+              -H "Accept: application/vnd.github+json" \
+              --data-binary "@$src" \
+              "${BASE}?name=${ascii}" | jq -r '.name'
+            echo "✅ $ascii"
+          }
+          upload_one "$(ls dist/hta-base/*.zip)"  "HTA-Base-CHS-Patch-${tag}.zip"
+          upload_one "$(ls dist/hta-dlc1/*.zip)"  "HTA-DLC1-RiseOfClans-CHS-Patch-${tag}.zip"
+          upload_one "$(ls dist/hta-dlc2/*.zip)"  "HTA-DLC2-Arcade-CHS-Patch-${tag}.zip"
+          echo "✅ 已发布 Release: $tag"

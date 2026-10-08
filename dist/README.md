@@ -1,11 +1,43 @@
-# dist —— 放到**游戏根目录**使用的工具（存档）
+# dist —— 发布流水线的**静态原料库**
 
-这 5 个文件原本直接躺在游戏根目录里（`I:\LocalGames\Hard Truck Apocalypse STEAM\`）。
-放在这里是为了**留存与复用**：它们对本体 `hta.exe` 与资料片 `Meridian113.exe` 同样适用，
-而本体/资料片的部署目录是分开的，工具本身却是通用的。
+这里放的是**不参与构建、直接随包分发**的静态资源。发布流水线
+（`.github/workflows/build-release.yml` → `tools/release/build_release.py`）
+把本目录的资源 + 编译出的 DLL + 烘好的字库 + 译文 XML 装配成三个发布包。
 
-> 使用方式：把需要的文件复制回游戏根目录（或资料片目录），然后双击对应的 `.bat`。
+> 使用方式（玩家侧）：解压发布包到游戏根目录，双击对应的 `.bat`。
 > `X86Game4gb.exe` 与 `清除俄语输入法布局.exe` 是**独立小工具**，不依赖任何 ASI 插件。
+
+## 目录结构
+
+| 路径 | 用途 | 目标位置（包内） |
+|---|---|---|
+| `winmm.dll` | Ultimate-ASI-Loader（三个游戏同一份，哈希一致） | 游戏根目录 |
+| `X86Game4gb.exe` | LAA 补丁器；源码在 [X86Game4gb/](../X86Game4gb/) | 游戏根目录 |
+| `清除俄语输入法布局.exe` / `.ps1` | 卸载俄语键盘布局 KLID `00000419` | 游戏根目录 |
+| `bat/` | 6 个启动/补丁 bat（按游戏前缀区分，装配时取该游戏的 2 个） | 游戏根目录 |
+| `config/base.cfg` `dlc1.cfg` `dlc2.cfg` | 三份**中文 profile 名**的配置（各游戏一份） | `data/config.cfg` |
+| `必读说明/base.txt` `dlc.txt` | 安装/卸载/已知问题（本体一份、两个资料片共用一份） | `必读说明.txt` |
+
+> `X86Game4gb.exe` 与 [X86Game4gb/Release/X86Game4gb.exe](../X86Game4gb/) 哈希一致
+> （`3E1DA3B1…`）；`清除俄语输入法布局.exe` 与
+> [Clean_RUS_Layout/Release/Clean_RUS_Layout.exe](../Clean_RUS_Layout/) 哈希一致。
+> 本目录的副本是**发布的唯一来源**，改源码后要同步更新这里。
+
+### 为什么 winmm.dll 直接存在仓库里
+
+它是第三方 Ultimate-ASI-Loader（5.4 MB），**不构建、直接分发**：
+与其在 CI 里下载（外网依赖 + 可能失效），不如存一份。三个游戏用的是同一份
+（已核对哈希一致），所以只存一个。
+
+## 6 个 bat 的对应关系
+
+| 游戏 | bat 前缀 | 包内文件 |
+|---|---|---|
+| 本体 `hta.exe` | `hta_` | `hta_【必装】…bat`、`hta_单核…bat` |
+| 部落崛起 `Meridian113.exe` | `Meridian113_` | `Meridian113_【从这里进入游戏】单核…bat`、`Meridian113_【必装】…bat` |
+| 街机版 `emarcade.exe` | `emarcade_` | `emarcade_【会卡】单核…bat`、`emarcade_【必装】…bat` |
+
+> `build_release.py` 按前缀筛选（每个游戏恰好 2 个），筛选不到就报错退出。
 
 ---
 

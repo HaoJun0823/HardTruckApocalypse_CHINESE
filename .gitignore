@@ -326,3 +326,48 @@ DLC2_DATA/
 DLC2_DATA_CHS_PREVIEW/
 _DLC2_corrupted_snapshot_*/
 _DLC2_DATA_CHS_backup/
+
+# ---- project additions (2026-10-09)：CI 流水线 ----
+# 发布流水线的中间产物与输出。产物一律由 CI 重新生成并挂到 Release，
+# 不入库（否则每次构建都会把几十 MB 的二进制塞进历史）。
+#
+# ★ 必须用「/」锚定根目录：写成 `release/` 会匹配任意层级的同名目录，
+#   把 `tools/release/`（装配脚本所在处，必须入库）一起挡掉 —— 实测踩到过。
+/baked_fonts/
+/release/
+# 建包用的工具链缓存（msvc-wine 下载的 VC/SDK，约 4GB）
+/.msvc/
+/.msvc-sdk/
+/.msvc-wine/
+# 同一原因：锚定根目录，避免挡掉源码里的 build/ 子目录
+/__pycache__/
+
+# 归档目录：放历史快照/过期交付包/一次性脚手架。
+# ★ 归档**保留在工作区**供查阅，但不入库 —— 里面都是可再生的重复内容
+#   （dist_dlc1 是旧交付快照，事故备份与 DLC2_DATA 高度重复）。
+archives/
+
+# 上一轮的本机烘焙产物（CI 会在 baked_fonts/ 里重建）
+update_chs_dlc1/
+update_chs_dlc2/
+update_pathd/
+update_chs/
+
+# DLC2 插件与内存修复的构建产物
+HardTruckApocalypse_CHINESE_DLL_DLC2/build/
+HardTruckApocalypse_CHINESE_DLL_DLC2/tools/*.exe
+DLC2_MemFix/build/
+
+# 根目录一次性分析脚手架（已全部移入 archives/_scratch/，这里拦住回归）
+/_*.py
+/_*.txt
+/_*.pkl
+/_*.log
+
+# ★ 例外：tools/release/ 是发布流水线的脚本目录，必须入库。
+#   上面的 `[Rr]elease/`（VS 模板自带的构建输出规则）会匹配任意层级的
+#   `release/`，把 tools/release/ 一起挡掉 —— 实测踩到过。
+#   注意：git 不能对「已被父目录排除」的内容做反排除，所以这里必须用
+#   `!tools/release/` 先把目录本身捞回来，再逐个捞回脚本文件。
+!tools/release/
+!tools/release/**

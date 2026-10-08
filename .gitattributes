@@ -17,7 +17,7 @@
 #
 # Merging from the command prompt will add diff markers to the files if there
 # are conflicts (Merging from VS is not affected by the settings below, in VS
-# the diff markers are never inserted). Diff markers may cause the following 
+# the diff markers are never inserted). Diff markers may cause the following
 # file extensions to fail to load in VS. An alternative would be to treat
 # these files as binary and thus will always conflict and require user
 # intervention with every merge. To do so, just uncomment the entries below
@@ -45,11 +45,11 @@
 #*.gif   binary
 
 ###############################################################################
-# byte-sensitive game data: never normalize
+# 字节敏感的游戏数据：绝不做行尾归一化
 #
-# 上面第 4 行的 `* text=auto` 会对未列出的文件做行尾转换（LF->CRLF）。
-# 汉化资源是 GBK 汉字与 cp1251 俄文混排的**字节流**，任何文本归一化都会
-# 改变字节、破坏游戏加载，所以这里显式标为 -text，并关闭文本 diff。
+# 上面第 4 行的 `* text=auto` 会对未列出的文件做行尾转换。汉化资源是 GBK
+# 汉字与 cp1251 俄文混排的**字节流**，任何文本归一化都会改变字节、破坏游戏
+# 加载，所以这里显式标 -text，并关闭文本 diff。
 ###############################################################################
 DLC2_DATA_CHS/**      -text -diff
 DLC1_DATA_CHS/**      -text -diff
@@ -57,10 +57,47 @@ Original_DATA_CHS/**  -text -diff
 tools_dlc2/reuse_pool.json -text
 
 ###############################################################################
+# ★ 2026-10-09：CI 可复现性 —— 换行必须逐字节固定
+#
+# 问题：`* text=auto` + 本机 core.autocrlf=true 时，blob 里存 LF、工作区是
+#       CRLF；而 ubuntu-latest 的 actions/checkout 默认 autocrlf=false，拿到
+#       **LF 版**。凡这些字节会进入发布包的，CI 产物就与本机验证过的版本
+#       不一致。
+#
+# 实测（`git ls-files --eol` + `git hash-object --path`）确认两类受影响：
+#
+# 1) 烘焙源 fonts.xml（Original_DATA/、DLC1_DATA/）
+#    修复方式**不在这里**，而在 fontgen/build_cjk.py 的 normalize_eol()：
+#    烘焙脚本在解析前把源统一成 CRLF，于是「CI 的 LF 源」和「本机的 CRLF
+#    源」烘出**同一份产物**（不再依赖 git 配置，更稳）。
+#    这里仍然标 -text，是为了不让 checkout 悄悄改写这些原始资料的字节 ——
+#    它们也是 cjk 图集烘焙以外用途的对照基准。
+#
+# 2) dist/ 下的交付用静态资源
+#    · *.bat  是 cmd.exe 脚本，**必须 CRLF**（变 LF 后批处理可能解析异常）。
+#      修改前实测：`dist/bat/*.bat` 是 `w/crlf` + `attr/text=auto`，
+#      即在 Linux 上会被 checkout 成 LF —— 直接破坏交付包。
+#    · config/*.cfg  游戏配置，换行是内容的一部分。
+#    · 读我/说明类 txt 与已固定的二进制（winmm.dll / *.exe / *.ps1）。
+#
+# 3) 原版俄文资料 Original_DATA/、DLC1_DATA/（含根目录 .fx）
+#    属于字节敏感的对照数据，统一锁死。
+#
+# ★ 用 `-text`（不是 `text eol=crlf`）：语义是"完全不要碰这些字节"，
+#   在 Linux 与 Windows 上 checkout 结果都等于 blob 内容。
+###############################################################################
+Original_DATA/**      -text -diff
+DLC1_DATA/**          -text -diff
+Original_DATA/*.fx    -text
+DLC1_DATA/*.fx        -text
+dist/**               -text -diff
+fontgen/**            -text
+
+###############################################################################
 # diff behavior for common document formats
-# 
+#
 # Convert binary document formats to text before diffing them. This feature
-# is only available from the command line. Turn it on by uncommenting the 
+# is only available from the command line. Turn it on by uncommenting the
 # entries below.
 ###############################################################################
 #*.doc   diff=astextplain
