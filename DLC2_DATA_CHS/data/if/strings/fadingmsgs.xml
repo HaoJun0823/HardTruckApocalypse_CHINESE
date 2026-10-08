@@ -30,19 +30,19 @@
 
 	<string
 		id="fm_perk_given"
-		value="You received the rank of '%1s'" />
+		value="Äã»ñµÃÁË¡¸%1s¡¹¾üÏÎ" />
 
 	<string
 		id="fm_perk_lost"
-		value="You've lost the rank of '%1s'" />
+		value="ÄãÊ§È¥ÁË¡¸%1s¡¹¾üÏÎ" />
 
 	<string
 		id="fm_quest_item_given"
-		value="You received an item: %1s" />
+		value="Äã»ñµÃÁËÒ»¼þÎïÆ·£º%1s" />
 
 	<string
 		id="fm_quest_item_lost"
-		value="You've given away an item: %1s" />
+		value="Äã½»³öÁËÒ»¼þÎïÆ·£º%1s" />
 
 	<string
 		id="fm_history_got"
@@ -58,11 +58,11 @@
 
 	<string
 		id="fm_complete_quest"
-		value="Journal updated." />
+		value="ÈÎÎñÈÕÖ¾ÒÑ¸üÐÂ¡£" />
 
 	<string
 		id="fm_take_quest"
-		value="Journal updated." />
+		value="ÈÎÎñÈÕÖ¾ÒÑ¸üÐÂ¡£" />
 
 	<string
 		id="fm_cant_move"
@@ -70,11 +70,11 @@
 
 	<string
 		id="fm_not_suzet"
-		value="The place looks weird. We’d better get away from here." />
+		value="Õâ¸öµØ·½¿´×Å²»¶Ô¾¢¡£ÎÒÃÇ×îºÃÀë¿ª¡£" />
 
 	<string
 		id="fm_race_start_1"
-		value="Countdownò:  ...%1d…" />
+		value="µ¹¼ÆÊ±£º¡­¡­%1d¡­¡­" />
 
 	<string
 		id="fm_race_start_0"
@@ -86,7 +86,7 @@
 
 	<string
 		id="fm_race_chekpoint"
-		value="Checkpoint!" />
+		value="´æµµµã£¡" />
 
 	<string
 		id="fm_race_chekpoint_notright"
@@ -130,7 +130,7 @@
 
 	<string
 		id="fm_town_cant_enter_enemy"
-		value="You can not enter the city because it is hostile camp" />
+		value="¸Ã³ÇÊÐÊÇµÐ¶ÔÕóÓª£¬ÄãÎÞ·¨½øÈë¡£" />
 
 	<string
 		id="fm_town_cant_enter_locked"
@@ -166,15 +166,15 @@
 
 	<string
 		id="fm_save_is_not_allowed"
-		value="You can't save game right now" />
+		value="ÏÖÔÚÎÞ·¨±£´æÓÎÏ·" />
 
 	<string
 		id="fm_player_add_money"
-		value="You received %1d dollars!" />
+		value="Äã»ñµÃÁË %1d ÃÀÔª£¡" />
 
 	<string
 		id="fm_player_give_money"
-		value="You've given away %1d dollars." />
+		value="Äã»¨µôÁË %1d ÃÀÔª¡£" />
 
 	<string
 		id="fm_player_add_thing"
@@ -182,15 +182,15 @@
 
 	<string
 		id="fm_cheat_is_not_allowed"
-		value="@FF22FF22using of cheats @FF2222FFÇÀÏÐÅÙÅÍÎ@FFFFFFFF" />
+		value="@FF22FF22Ê¹ÓÃ×÷±×@FF2222FFÒÑ±»½ûÖ¹@FFFFFFFF" />
 
 	<string
 		id="fm_cheat_is_allowed"
-		value="@FF22FF22on game test, @FF2222FFusing of cheats can cause errors!@FFFFFFFF" />
+		value="@FF22FF22ÔÚÓÎÏ·²âÊÔÖÐ£¬@FF2222FFÊ¹ÓÃ×÷±×¿ÉÄÜµ¼ÖÂÒì³££¡@FFFFFFFF" />
 
 	<string
 		id="fm_items_remained_on_ground"
-		value="There is not enough space in the body. To see the equipment window push %1m" />
+		value="Ê¬ÌåÄÚ¿Õ¼ä²»×ã¡£°´ %1m ´ò¿ª×°±¸´°¿Ú¡£" />
 
 	<string
 		id="fm_mp_player_killed_player"
@@ -202,37 +202,37 @@
 
 	<string
 		id="fm_conguration"
-		value="CONGRATULATIONS !!!" />
+		value="¹§Ï²£¡£¡£¡" />
 
 	<string
 		id="fm_complete_mission"
-		value="You've completed the demo version!" />
+		value="ÄãÒÑÍê³ÉÊÔÍæ°æÄÚÈÝ£¡" />
 
 	<string
 		id="fm_failed_mission"
-		value="You've failed to pass the demo version!" />
+		value="ÄãÎ´ÄÜÍ¨¹ýÊÔÍæ°æÄÚÈÝ£¡" />
 
 	<string
 		id="fm_start_demo_mission1"
-		value="Don't forget the time for the mission is limited. The fate of people is in your hands!" />
+		value="±ðÍüÁË£¬±¾ÈÎÎñÓÐÑÏ¸ñµÄÊ±¼äÏÞÖÆ¡£ÈËÀàµÄÃüÔËÕÆÎÕÔÚÄãÊÖÖÐ£¡" />
 
 	<string
 		id="fm_start_demo_mission2"
-		value="Check your objectives @FF2222FF(q)@FFFFFFFF" />
+		value="²é¿´ÄãµÄÈÎÎñÄ¿±ê @FF2222FF(q)@FFFFFFFF" />
 
 	<string
 		id="fm_time"
-		value="Remaining: @FFFF4444  %1d : %2d : %3d @FFFFFFFF" />
+		value="Ê£Óà£º@FFFF4444  %1d : %2d : %3d @FFFFFFFF" />
 
 	<string
 		id="fm_n"
-		value="You've completed the demo version!" />
+		value="ÄãÒÑÍê³ÉÊÔÍæ°æÄÚÈÝ£¡" />
 
 	<string
 		id="fm_test"
-		value="p1: %1s; p2: %2d; p3: %3p" />
+		value="p1£º%1s£»p2£º%2d£»p3£º%3p" />
 
 	<string
 		id="fm_player_add_bonus"
-		value="You received %1d bonus points" />
+		value="Äã»ñµÃÁË %1d ½±Àøµã" />
 </resource>
