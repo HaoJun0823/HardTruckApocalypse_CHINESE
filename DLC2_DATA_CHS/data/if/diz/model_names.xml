@@ -18,17 +18,17 @@
 	<Item
 		id="collectionbook4"
 		locForm="0"
-		value="《 先驱报 》报" />
+		value="《先驱日报》" />
 
 	<Item
 		id="collectionbook5"
 		locForm="0"
-		value="《 司机汽车杂志 》杂志" />
+		value="《车迷杂志》" />
 
 	<Item
 		id="collectionbook6"
 		locForm="0"
-		value="《 女资本家 》杂志" />
+		value="《女资本家》杂志" />
 
 	<Item
 		id="collectionbook7"
@@ -723,152 +723,152 @@
 	<Item
 		id="scoutCab01"
 		locForm="0"
-		value="闪电（一级）" />
+		value="闪电（1级）" />
 
 	<Item
 		id="scoutCab02"
 		locForm="0"
-		value="螺旋桨（二级）" />
+		value="螺旋桨（2级）" />
 
 	<Item
 		id="scoutCab03"
 		locForm="0"
-		value="冲浪者（三级）" />
+		value="冲浪者（3级）" />
 
 	<Item
 		id="fighterCab01"
 		locForm="0"
-		value="比特犬（一级）" />
+		value="比特犬（1级）" />
 
 	<Item
 		id="fighterCab02"
 		locForm="0"
-		value="杜宾犬（二级）" />
+		value="杜宾犬（2级）" />
 
 	<Item
 		id="fighterCab03"
 		locForm="0"
-		value="警犬（三级）" />
+		value="警犬（3级）" />
 
 	<Item
 		id="molokovozCab01"
 		locForm="0"
-		value="螺栓（一级）" />
+		value="螺栓（1级）" />
 
 	<Item
 		id="molokovozCab02"
 		locForm="0"
-		value="旋涡（二级）" />
+		value="旋涡（2级）" />
 
 	<Item
 		id="molokovozCab03"
 		locForm="0"
-		value="倒刺（三级）" />
+		value="倒刺（3级）" />
 
 	<Item
 		id="molokovozCargo01"
 		locForm="0"
-		value="顶篷（一级）" />
+		value="顶篷（1级）" />
 
 	<Item
 		id="molokovozCargo02"
 		locForm="0"
-		value="发电机（二级）" />
+		value="发电机（2级）" />
 
 	<Item
 		id="molokovozCargo03"
 		locForm="0"
-		value="货箱（三级）" />
+		value="货箱（3级）" />
 
 	<Item
 		id="belazCab01"
 		locForm="0"
-		value="佐德（一级）" />
+		value="佐德（1级）" />
 
 	<Item
 		id="belazCab02"
 		locForm="0"
-		value="玻利瓦尔（二级）" />
+		value="玻利瓦尔（2级）" />
 
 	<Item
 		id="belazCab03"
 		locForm="0"
-		value="洛克（三级）" />
+		value="洛克（3级）" />
 
 	<Item
 		id="belazCab04"
 		locForm="0"
-		value="终结者（四级）" />
+		value="终结者（4级）" />
 
 	<Item
 		id="belazCab05"
 		locForm="0"
-		value="盾牌（五级）" />
+		value="盾牌（5级）" />
 
 	<Item
 		id="belazCargo01"
 		locForm="0"
-		value="宿主（一级）" />
+		value="宿主（1级）" />
 
 	<Item
 		id="belazCargo02"
 		locForm="0"
-		value="组装者（二级）" />
+		value="组装者（2级）" />
 
 	<Item
 		id="belazCargo03"
 		locForm="0"
-		value="巨人（三级）" />
+		value="巨人（3级）" />
 
 	<Item
 		id="belazCargo04"
 		locForm="0"
-		value="雷霆（四级）" />
+		value="雷霆（4级）" />
 
 	<Item
 		id="belazCargo05"
 		locForm="0"
-		value="气缸（五级）" />
+		value="气缸（5级）" />
 
 	<Item
 		id="bugCab01"
 		locForm="0"
-		value="甲虫（一级）" />
+		value="甲虫（1级）" />
 
 	<Item
 		id="bugCab02"
 		locForm="0"
-		value="劳力（二级）" />
+		value="劳力（2级）" />
 
 	<Item
 		id="bugCab03"
 		locForm="0"
-		value="蝎子（三级）" />
+		value="蝎子（3级）" />
 
 	<Item
 		id="bugCab04"
 		locForm="0"
-		value="蜜蜂（四级）" />
+		value="蜜蜂（4级）" />
 
 	<Item
 		id="bugCab05"
 		locForm="0"
-		value="螳螂（五级）" />
+		value="螳螂（5级）" />
 
 	<Item
 		id="bugCargo01"
 		locForm="0"
-		value="气罐（一级）" />
+		value="气罐（1级）" />
 
 	<Item
 		id="bugCargo02"
 		locForm="0"
-		value="瀑布（二级）" />
+		value="瀑布（2级）" />
 
 	<Item
 		id="bugCargo03"
 		locForm="0"
-		value="博格（三级）" />
+		value="博格（3级）" />
 
 	<Item
 		id="uralCab01"
@@ -898,27 +898,27 @@
 	<Item
 		id="uralCargo01"
 		locForm="0"
-		value="寒冷（一级）" />
+		value="寒冷（1级）" />
 
 	<Item
 		id="uralCargo02"
 		locForm="0"
-		value="货运（三级）" />
+		value="货运（3级）" />
 
 	<Item
 		id="uralCargo03"
 		locForm="0"
-		value="巡洋舰（四级）" />
+		value="巡洋舰（4级）" />
 
 	<Item
 		id="uralCargo04"
 		locForm="0"
-		value="铠甲（二级）" />
+		value="铠甲（2级）" />
 
 	<Item
 		id="uralCargo05"
 		locForm="0"
-		value="老虎（五级）" />
+		value="老虎（5级）" />
 
 	<Item
 		id="FighterForSale"
@@ -958,52 +958,52 @@
 	<Item
 		id="mirotvorecCab01"
 		locForm="0"
-		value="格兰（一级）" />
+		value="格兰（1级）" />
 
 	<Item
 		id="mirotvorecCab02"
 		locForm="0"
-		value="骷髅（二级）" />
+		value="骷髅（2级）" />
 
 	<Item
 		id="mirotvorecCab03"
 		locForm="0"
-		value="流星（三级）" />
+		value="流星（3级）" />
 
 	<Item
 		id="mirotvorecCab04"
 		locForm="0"
-		value="布拉特（四级）" />
+		value="布拉特（4级）" />
 
 	<Item
 		id="mirotvorecCab05"
 		locForm="0"
-		value="幻影（五级）" />
+		value="幻影（5级）" />
 
 	<Item
 		id="mirotvorecCargo01"
 		locForm="0"
-		value="獠牙（一级）" />
+		value="獠牙（1级）" />
 
 	<Item
 		id="mirotvorecCargo02"
 		locForm="0"
-		value="百夫长（二级）" />
+		value="百夫长（2级）" />
 
 	<Item
 		id="mirotvorecCargo03"
 		locForm="0"
-		value="五月（三级）" />
+		value="五月（3级）" />
 
 	<Item
 		id="mirotvorecCargo04"
 		locForm="0"
-		value="正宗（三级）" />
+		value="正宗（3级）" />
 
 	<Item
 		id="mirotvorecCargo05"
 		locForm="0"
-		value="王者之剑（五级）" />
+		value="王者之剑（5级）" />
 
 	<Item
 		id="MirotvorecForSale"
