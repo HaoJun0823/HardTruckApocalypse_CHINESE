@@ -46,7 +46,7 @@
   "dv4": {
    "fullName": "机密档案",
    "diz0": "我们的首要目标，是查清三角洲小队究竟出了什么事。这或许能给我们一些关于 Z-120 集装箱下落的线索。",
-   "diz1": "情况十分危急。在废墟实验室工作的专家和研究员们给出了第一批推测。同时，我们还从几名幸存者那里拿到了审讯记录。你也知道，31 号基地一直在研究那艘外星飞船，帕帕斯教授是该领域的主要专家。就在灾难前不久，他的研究似乎取得了重大突破。我们怀疑，教授的发现与基地遭袭之间存在关联。至于这份绝密情报究竟如何泄露、又是被谁利用的，目前仍不清楚。但这并不是关键。我们对帕帕斯教授和他的发现所遭遇的一切一无所知。无论付出什么代价，我们都必须找到教授。我已经直接联系了总统，他授权我采取一切手段，包括非常手段。"
+   "diz1": "情况十分危急。在废墟实验室工作的专家和研究员们给出了第一批推测。同时，我们还从几名幸存者那里拿到了审讯记录。你也知道，31 号基地一直在研究那艘外星飞船，帕帕斯教授是该领域的主要专家。就在灾难前不久，他的研究似乎取得了重大突破。我们怀疑，教授的发现与基地遭袭之间存在关联。至于这份绝密情报究竟如何泄露、又是被谁利用的，目前仍不清楚。但这并不是关键。我们对帕帕斯教授和他的发现所遭遇的一切一无所知。无论付出什么代价，我们必须找到教授。我已经直接联系了总统，他授权我采取一切手段，包括非常手段。"
   },
   "dv5": {
    "fullName": "诡异丛林",
@@ -73,5 +73,41 @@
    "diz0": "我们低估了这种病毒的威力，正因如此，我们也低估了帕帕斯教授的新能力。他逃了，还杀光了整个宪兵护卫队。收拾干净，杀了那个杂种。",
    "diz1": "抱歉，特工，我又要给你带来坏消息了。我们低估了这种病毒的威力，正因如此，我们也低估了帕帕斯教授的新能力。他逃了，还杀光了整个宪兵护卫队。所幸，他不知道自己用来逃跑的那辆车装有隐藏信标。此刻你比任何人都更接近这个疯狂科学家。无论付出什么代价，都要拦住他。我们绝不能让那场噩梦重演。"
   }
+ },
+
+ "gamestrings.xml": {
+  "GameWasSaved":    {"value": "存档完成！"},
+  "GameWasLoaded":   {"value": "读取存档"},
+  "GameSaving":      {"value": "保存"},
+  "GameSaving...":   {"value": "保存中…"},
+  "Start Game From Begin": {"value": "从头开始游戏"},
+  "ThornForce":      {"value": "穿刺力提升"},
+  "AccelerationTime":{"value": "持续时间"},
+  "Blast":           {"value": "爆炸"},
+  "CabinDurability": {"value": "驾驶室装甲"},
+  "NumUnitsToBuy":   {"value": "购买数量"},
+  "Recharge":        {"value": "装填"},
+  "RechargeNotNeed": {"value": "无须装填"},
+  "MapUnavailable":  {"value": "当前无法获取详细本地地图。"},
+  "Statistic":       {"value": "统计"},
+  "TabBtn_Characteristic": {"value": "载具信息"},
+  "NetGameOverFooter": {"value": "按 ESC 返回主菜单。"},
+  "NumberSymbol":    {"value": "№"},
+  "AppliedPerks":    {"value": "获得军衔"},
+  "Score":           {"value": "得分"},
+  "RestartGame":     {"value": "重玩本关"},
+  "YouDead":         {"value": "你阵亡了！"},
+  "QuestLog":        {"value": "任务列表"},
+  "ReturnToBase":    {"value": "返回基地"},
+  "VehiclesKilled":  {"value": "摧毁载具"},
+  "HumanoidsKilled": {"value": "击杀人形敌人"},
+  "ItemsDestroyed":  {"value": "破坏物件"},
+  "ItemsCollected":  {"value": "拾取物品"},
+  "QuestsCompleted": {"value": "完成任务"},
+  "WalkthroughTime": {"value": "通关用时"},
+  "LevelBonuses":    {"value": "本关奖励"},
+  "TotalBonuses":    {"value": "全局奖励"},
+  "MissionResults":  {"value": "任务结算"},
+  "percent":         {"value": "%"}
  }
 }

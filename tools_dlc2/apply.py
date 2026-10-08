@@ -29,6 +29,16 @@ def fmt_specs(s):
     return sorted(m.group(0) for m in _FMT.finditer(s) if m.group(0) != '%%')
 
 
+# 无需翻译：剥掉格式占位符后只剩数字/标点（如 "640 x 480"、"0/5"）。
+_NO_TEXT = re.compile(r'^[\d\sx×X/:.,#%\-()+<>|=*_]*$')
+
+
+def no_translate(cur):
+    """原文不含字母（分辨率、计数等）时判定为无需翻译。"""
+    stripped = _FMT.sub('', cur).strip()
+    return bool(stripped) and bool(_NO_TEXT.fullmatch(stripped))
+
+
 # ---------------------------------------------------------------- 文件定义
 FILES = {
     'data/if/strings/setupstrings.xml':     {'tag': 'string', 'key': 'id', 'attrs': ['value']},
@@ -105,6 +115,8 @@ class Applier:
                     continue
                 cur = xlit.unesc(el.get(attr))
                 if not cur.strip():
+                    continue
+                if no_translate(cur):
                     continue
                 cn, why = self.lookup(base, key, attr, cur)
                 if not cn:

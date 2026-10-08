@@ -110,19 +110,19 @@
 
 	<string
 		id="GameWasSaved"
-		value="Checkpoint!" />
+		value="´æµµÍê³É£¡" />
 
 	<string
 		id="GameWasLoaded"
-		value="Game loaded" />
+		value="¶ÁÈ¡´æµµ" />
 
 	<string
 		id="GameSaving"
-		value="Save" />
+		value="±£´æ" />
 
 	<string
 		id="GameSaving..."
-		value="Saving…" />
+		value="±£´æÖÐ¡­" />
 
 	<string
 		id="SaveGame"
@@ -234,7 +234,7 @@
 
 	<string
 		id="Start Game From Begin"
-		value="Start game from the beginning" />
+		value="´ÓÍ·¿ªÊ¼ÓÎÏ·" />
 
 	<string
 		id="quitGameWithSaveWarn"
@@ -310,11 +310,11 @@
 
 	<string
 		id="ThornForce"
-		value="Hit power increase" />
+		value="´©´ÌÁ¦ÌáÉý" />
 
 	<string
 		id="AccelerationTime"
-		value="Active for" />
+		value="³ÖÐøÊ±¼ä" />
 
 	<string
 		id="Armor"
@@ -370,7 +370,7 @@
 
 	<string
 		id="Blast"
-		value="explosive" />
+		value="±¬Õ¨" />
 
 	<string
 		id="Energy"
@@ -414,7 +414,7 @@
 
 	<string
 		id="CabinDurability"
-		value="Cabin armor" />
+		value="¼ÝÊ»ÊÒ×°¼×" />
 
 	<string
 		id="BasketDurability"
@@ -578,7 +578,7 @@
 
 	<string
 		id="NumUnitsToBuy"
-		value="Purchase number" />
+		value="¹ºÂòÊýÁ¿" />
 
 	<string
 		id="Refuel"
@@ -590,7 +590,7 @@
 
 	<string
 		id="Recharge"
-		value="Reload" />
+		value="×°Ìî" />
 
 	<string
 		id="ToAdvancedMode"
@@ -614,7 +614,7 @@
 
 	<string
 		id="NumUnitsToBuy"
-		value="Êîëè÷åñòâî äëÿ ïîêóïêè" />
+		value="¹ºÂòÊýÁ¿" />
 
 	<string
 		id="SummaryPrice"
@@ -654,7 +654,7 @@
 
 	<string
 		id="RechargeNotNeed"
-		value="Reload in not necessary" />
+		value="ÎÞÐë×°Ìî" />
 
 	<string
 		id="RechargeUnavailable"
@@ -766,7 +766,7 @@
 
 	<string
 		id="MapUnavailable"
-		value="Detailed local map is not available now." />
+		value="µ±Ç°ÎÞ·¨»ñÈ¡ÏêÏ¸±¾µØµØÍ¼¡£" />
 
 	<string
 		id="TradeMode"
@@ -818,7 +818,7 @@
 
 	<string
 		id="Statistic"
-		value="Statistics" />
+		value="Í³¼Æ" />
 
 	<string
 		id="Relations"
@@ -890,7 +890,7 @@
 
 	<string
 		id="TabBtn_Characteristic"
-		value="Vehicle info" />
+		value="ÔØ¾ßÐÅÏ¢" />
 <!-- Îêíî ïîìîùè -->
 	<string
 		id="DontShowAutoHelp"
@@ -938,11 +938,11 @@
 
 	<string
 		id="NetGameOverFooter"
-		value="Press ESC to return to main menu." />
+		value="°´ ESC ·µ»ØÖ÷²Ëµ¥¡£" />
 <!-- Îêíî ñòàòèñòèêè â ìóëüòèïëýåðå -->
 	<string
 		id="NumberSymbol"
-		value="¹" />
+		value="¡í" />
 
 	<string
 		id="Color"
@@ -994,7 +994,7 @@
 
 	<string
 		id="AppliedPerks"
-		value="Received ranks" />
+		value="»ñµÃ¾üÏÎ" />
 
 	<string
 		id="CancelQuest"
@@ -1022,57 +1022,57 @@
 
 	<string
 		id="Score"
-		value="Score" />
+		value="µÃ·Ö" />
 
 	<string
 		id="RestartGame"
-		value="Replay level" />
+		value="ÖØÍæ±¾¹Ø" />
 
 	<string
 		id="YouDead"
-		value="You died!" />
+		value="ÄãÕóÍöÁË£¡" />
 
 	<string
 		id="QuestLog"
-		value="Task list" />
+		value="ÈÎÎñÁÐ±í" />
 
 	<string
 		id="ReturnToBase"
-		value="Return to base" />
+		value="·µ»Ø»ùµØ" />
 
 	<string
 		id="VehiclesKilled"
-		value="Vehicles destroyed" />
+		value="´Ý»ÙÔØ¾ß" />
 
 	<string
 		id="HumanoidsKilled"
-		value="Humanoids destroyed" />
+		value="»÷É±ÈËÐÎµÐÈË" />
 
 	<string
 		id="ItemsDestroyed"
-		value="Items broken" />
+		value="ÆÆ»µÎï¼þ" />
 
 	<string
 		id="ItemsCollected"
-		value="Items collected" />
+		value="Ê°È¡ÎïÆ·" />
 
 	<string
 		id="QuestsCompleted"
-		value="Tasks completed" />
+		value="Íê³ÉÈÎÎñ" />
 
 	<string
 		id="WalkthroughTime"
-		value="Completion time" />
+		value="Í¨¹ØÓÃÊ±" />
 
 	<string
 		id="LevelBonuses"
-		value="Bonuses per level" />
+		value="±¾¹Ø½±Àø" />
 
 	<string
 		id="TotalBonuses"
-		value="Bonuses per game" />
+		value="È«¾Ö½±Àø" />
 
 	<string
 		id="MissionResults"
-		value="Mission summary" />
+		value="ÈÎÎñ½áËã" />
 </resource>
