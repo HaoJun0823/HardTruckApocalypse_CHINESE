@@ -30,13 +30,52 @@ def fmt_specs(s):
 
 
 # 无需翻译：剥掉格式占位符后只剩数字/标点（如 "640 x 480"、"0/5"）。
-_NO_TEXT = re.compile(r'^[\d\sx×X/:.,#%\-()+<>|=*_]*$')
+_NO_TEXT = re.compile(r'^[\d\sx×X/:.,#%\-()+<>|=*_~\\]*$')
 
 
 def no_translate(cur):
     """原文不含字母（分辨率、计数等）时判定为无需翻译。"""
     stripped = _FMT.sub('', cur).strip()
     return bool(stripped) and bool(_NO_TEXT.fullmatch(stripped))
+
+
+# 键位名在 DLC2 原件里本来就是英文（'Pause'、'Ctrl'、'Правый Ctrl' 混排），
+# 任何语言下都保持原样：DLC1_CHS 也同样保留英文，不译。
+# 覆盖单字母、F1-F24、Esc/Tab/Enter/Home/End/PgUp/PgDn/Insert/Delete/Ctrl/Alt/
+# Shift/Menu/Space/PrintScreen/ScrollLock/NumLock/CapsLock/Backspace/Pause。
+# 纯符号（~ \ ( ) , . / : _ 数字）已被上面的 _NO_TEXT 覆盖。
+KEYNAME_OK = re.compile(
+    r'^(?:[A-Za-z]|F(?:[1-9]|1[0-9]|2[0-4])|'
+    r'Esc(?:ape)?|TAB|Enter|Return|Home|End|PgUp|PgDn|PageUp|PageDown|'
+    r'Insert|Ins|Delete|Del|Ctrl|Control|Alt|Shift|Menu|Space|Pause|'
+    r'PrintScreen|ScrollLock|NumLock|CapsLock|Backspace)$',
+    re.I)
+# 俄文版键位名（DLC2 原件里俄英混排）：
+#   'Правый Ctrl' = 右Ctrl，与 DLC1_CHS 的 '右Ctrl' 同义
+_RU_KEYNAME = {
+    'Правый Ctrl': '右Ctrl',
+    'Левый Ctrl': '左Ctrl',
+}
+
+
+def ru_keyname(cur):
+    return _RU_KEYNAME.get(cur.strip())
+
+
+def skip_translation(base, key, cur):
+    """该条目是否不需要人工翻译。返回 True 表示跳过（不算待翻）。"""
+    stripped = cur.strip()
+    if not stripped:
+        return True
+    if no_translate(cur):
+        return True
+    # bindnames.xml 的 KEY_* 是键位名而非文案
+    if base == 'bindnames.xml' and key and key.startswith('KEY_'):
+        # 俄文键位名（'Правый Ctrl'）要译；纯英文键位名（Q/F1/PgUp/Esc）不译
+        if ru_keyname(stripped):
+            return False
+        return bool(KEYNAME_OK.fullmatch(stripped))
+    return False
 
 
 # ---------------------------------------------------------------- 文件定义
@@ -116,7 +155,7 @@ class Applier:
                 cur = xlit.unesc(el.get(attr))
                 if not cur.strip():
                     continue
-                if no_translate(cur):
+                if skip_translation(base, key, cur):
                     continue
                 cn, why = self.lookup(base, key, attr, cur)
                 if not cn:

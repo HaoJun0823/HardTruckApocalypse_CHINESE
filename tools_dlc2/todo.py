@@ -13,7 +13,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import xlit
-from apply import FILES, Applier, fmt_specs, no_translate
+from apply import FILES, Applier, fmt_specs, skip_translation
 
 
 def pending_for(rel, applier):
@@ -32,7 +32,7 @@ def pending_for(rel, applier):
             cur = xlit.unesc(el.get(attr))
             if not cur.strip():
                 continue
-            if no_translate(cur):
+            if skip_translation(base, key, cur):
                 continue
             cn, why = applier.lookup(base, key, attr, cur)
             if cn:

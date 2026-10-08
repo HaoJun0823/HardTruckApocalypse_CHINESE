@@ -2,7 +2,7 @@
 <resource><!--Impulses-->
 	<string
 		id="IM_MODE_GAME_MENU"
-		value="Menu" />
+		value="菜单" />
 
 	<string
 		id="IM_FWD"
@@ -78,7 +78,7 @@
 
 	<string
 		id="IM_CAR_ACC"
-		value="Acceleration" />
+		value="加速" />
 
 	<string
 		id="IM_CAR_BREAK"
@@ -126,15 +126,15 @@
 
 	<string
 		id="IM_CAR_FIRE_4"
-		value="Mines" />
+		value="地雷" />
 
 	<string
 		id="IM_CAR_FIRE_5"
-		value="Jump" />
+		value="跳跃" />
 
 	<string
 		id="IM_CAR_FIRE_6"
-		value="Acceleration" />
+		value="加速" />
 
 	<string
 		id="IM_CAR_FIRE_ALL"
@@ -234,11 +234,11 @@
 
 	<string
 		id="IM_GAME_LOOK_BACK"
-		value="Look back" />
+		value="向后看" />
 
 	<string
 		id="IM_EXIT_APP"
-		value="Exit" />
+		value="退出" />
 <!--Keys-->
 	<string
 		id="KEY_ESCAPE"
@@ -294,7 +294,7 @@
 
 	<string
 		id="KEY_BACKSPACE"
-		value="退格键" />
+		value="Backspace" />
 
 	<string
 		id="KEY_TAB"
@@ -350,7 +350,7 @@
 
 	<string
 		id="KEY_RETURN"
-		value="回车" />
+		value="Enter" />
 
 	<string
 		id="KEY_LCONTROL"
@@ -466,11 +466,11 @@
 
 	<string
 		id="KEY_SPACE"
-		value="空格" />
+		value="Space" />
 
 	<string
 		id="KEY_CAPSLOCK"
-		value="大写锁定" />
+		value="CapsLock" />
 
 	<string
 		id="KEY_F1"
@@ -514,7 +514,7 @@
 
 	<string
 		id="KEY_NUMLOCK"
-		value="数字锁定" />
+		value="NumLock" />
 
 	<string
 		id="KEY_SCROLL"
@@ -666,7 +666,7 @@
 
 	<string
 		id="KEY_RCONTROL"
-		value="橡噔 Ctrl" />
+		value="右Ctrl" />
 
 	<string
 		id="KEY_MUTE"

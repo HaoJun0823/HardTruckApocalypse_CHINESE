@@ -109,5 +109,16 @@
   "TotalBonuses":    {"value": "全局奖励"},
   "MissionResults":  {"value": "任务结算"},
   "percent":         {"value": "%"}
+ },
+
+ "bindnames.xml": {
+  "IM_MODE_GAME_MENU":  {"value": "菜单"},
+  "IM_CAR_ACC":         {"value": "加速"},
+  "IM_CAR_FIRE_4":      {"value": "地雷"},
+  "IM_CAR_FIRE_5":      {"value": "跳跃"},
+  "IM_CAR_FIRE_6":      {"value": "加速"},
+  "IM_GAME_LOOK_BACK":  {"value": "向后看"},
+  "IM_EXIT_APP":        {"value": "退出"},
+  "KEY_RCONTROL":       {"value": "右Ctrl"}
  }
 }
