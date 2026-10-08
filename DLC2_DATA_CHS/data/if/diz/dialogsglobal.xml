@@ -1579,7 +1579,7 @@
 
 	<Reply
 		name="r5m2_Klader_1_N06a"
-		text="Õâ±¦±´¾ÍÖµ100½ð±Ò£¿|ÐÐ°É£¬ÎÒµ¹ÒªÈ¥ÇÆÇÆ¡£"
+		text="Õâ±¦±´¾ÍÖµ500½ð±Ò£¿|ÐÐ°É£¬ÎÒµ¹ÒªÈ¥ÇÆÇÆ¡£"
 		role="PLAYER"
 		scriptResult="TakeQuest('r5m2_FindKlad'); EndConversation()" />
 <!--Root/r5m2/Îïöèîíàëüíûå/Ãîíêà-->
