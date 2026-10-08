@@ -6,7 +6,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="We left with few things to do. As soon as the alien spaceship will reach the hit point, we'll launch the missiles and the invasion will be over."
+		value="ÎÒÃÇÕâ±ßÊ£ÏÂµÄÊÂ²»¶àÁË¡£Ò»µ©ÍâÐÇ·É´¬µÖ´ïÃüÖÐµã£¬ÎÒÃÇ¾Í·¢Éäµ¼µ¯£¬ÈëÇÖ¾Í½áÊøÁË¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv9_7.wav"
 		time="10" />
 
@@ -16,7 +16,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="Your mission is to neutralize Pappers. Be extremely careful, we know he has some neurostimulator packs in disposal."
+		value="ÄãµÄÈÎÎñÊÇ³ýµôÅÁÅÁË¹¡£Îñ±Ø¸ñÍâÐ¡ÐÄ£¬ÎÒÃÇÖªµÀËûÊÖÉÏÓÐ¼¸Ö§Éñ¾­´Ì¼¤¼Á¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv9_8.wav"
 		time="10" />
 
@@ -26,7 +26,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="We don't know what this drug does, but the professor developed it together with the Z-120 virus, and he came back for it to the place there the MPs arrested him."
+		value="ÎÒÃÇ²»ÖªµÀÕâÒ©µÄÔ­Àí£¬µ«½ÌÊÚÊÇÁ¬Í¬ Z-120 ²¡¶¾Ò»ÆðÑÐ·¢ËüµÄ£¬ËûÎªÁËËü»Øµ½ÁËÏÜ±ø×¥×¡ËûµÄÄÇ¸öµØ·½¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv9_9.wav"
 		time="10" />
 
@@ -36,7 +36,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="We presume he finds this neurostimulator very important, because his return was a high risk."
+		value="ÎÒÃÇÍÆ²âËû¾õµÃÕâÖÖÉñ¾­´Ì¼¤¼Á¼«ÎªÖØÒª£¬ÒòÎªËûÕâ´Î»ØÈ¥·çÏÕ¼«¸ß¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv9_10.wav"
 		time="8" />
 
@@ -46,7 +46,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="Destroy Pappers as soon as possible, he is more dangerous then a tank division even without his drug; what happens if he uses the neurostimulator is beyond my imagination."
+		value="¾¡¿ì³ýµôÅÁÅÁË¹¡£¾ÍËãÃ»ÓÐÄÇÒ©£¬ËûÒ²±ÈÒ»¸öÌ¹¿ËÊ¦Î£ÏÕ£»Ò»µ©ËûÓÃÉÏÉñ¾­´Ì¼¤¼Á»áÔõÑù£¬ÎÒÁ¬Ïë¶¼²»¸ÒÏë¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv9_11.wav"
 		time="11" />
 
@@ -56,7 +56,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="Pappers have shown he has some supernatural skills. Be extremely careful and attack first."
+		value="ÅÁÅÁË¹ÒÑ¾­ÏÔÂ¶ÁËÄ³ÖÖ³¬×ÔÈ»ÄÜÁ¦¡£Îñ±Ø¸ñÍâÐ¡ÐÄ£¬ÏÈ·¢ÖÆÈË¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv9_12.wav"
 		time="8" />
 
@@ -66,7 +66,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="You need to chase down professor Pappers. Do not waste a second."
+		value="Äã±ØÐë×·ÉÏÅÁÅÁË¹½ÌÊÚ¡£Ò»ÃëÖÓ¶¼±ðÀË·Ñ¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv9_13.wav"
 		time="4" />
 
@@ -76,7 +76,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="According to the data from the beacon wired in the vehicle Pappers stole, he's nearby. Be careful."
+		value="¸ù¾Ý×°ÔÚÅÁÅÁË¹Íµ×ßµÄÄÇÁ¾³µÀïµÄÐÅ±êÊý¾Ý£¬Ëû¾ÍÔÚ¸½½ü¡£Ð¡ÐÄ¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv9_14.wav"
 		time="7" />
 
@@ -86,7 +86,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="You must destroy the professor, or this thing he became, before he turns into something you can't destroy at all."
+		value="Äã±ØÐë³ýµôÄÇÎ»½ÌÊÚ¡ª¡ª»òÕßËµËûÒÑ¾­±ä³ÉµÄÄÇ¶«Î÷¡ª¡ª³ÃËû»¹Ã»±ä³ÉÄã¸ù±¾É±²»ËÀµÄ¶«Î÷¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv9_15.wav"
 		time="10" />
 
@@ -96,7 +96,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="Oh, it's you again, agent! You don't get a clue at all, do you? I already gave you a number of chances to die as a hero, yes I did."
+		value="Å¶£¬ÓÖÊÇÄã°¡£¬Ì½Ô±£¡Äã»¹ÊÇÒ»µã¶¼Ã»Ã÷°×£¬¶Ô°É£¿ÎÒÔç¾Í¸ø¹ýÄãÈô¸É´Îµ±Ó¢ÐÛ¸°ËÀµÄ»ú»áÁË£¬ÎÒ¸ø¹ý¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv9_16.wav"
 		time="8" />
 
@@ -106,7 +106,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="But you think you can stand in the way of the progress I represent, yes you do. "
+		value="¿ÉÄãÒÔÎª×Ô¼ºÄÜµ²ÔÚÎÒËù´ú±íµÄ½ø²½Ç°Ãæ£¬Äã»¹ÕâÃ´ÒÔÎª¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv9_17.wav"
 		time="4" />
 
@@ -116,7 +116,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="You are just a sneaky harmful person, yes you are. So I have to destroy you."
+		value="Äã²»¹ýÊÇ¸ö¹í¹íËîËîµÄ ¼Ò»ï£¬Ã»´í¡£ËùÒÔÎÒ±ØÐë³ýµôÄã¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv9_18.wav"
 		time="3" />
 
@@ -126,7 +126,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="You can be proud to be removed from the Earth by Pappers the Great himself."
+		value="Äã¿ÉÒÔÎª×Ô¼º¸Ðµ½ÈÙÐÒ£¬ÊÇÎ°´óµÄÅÁÅÁË¹Ç××Ô°ÑÄã´ÓµØÇòÉÏÄ¨È¥µÄ¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv9_19.wav"
 		time="3" />
 
@@ -136,7 +136,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="However, you may as well kill yourself, yes you do. You have a couple of minutes before I finish my neurostimulation session."
+		value="²»¹ýÄãÒ²¿ÉÒÔ×ÔÐÐÁË¶Ï£¬Äã»áµÄ¡£ÔÚÎÒµÄÉñ¾­´Ì¼¤ÁÆ³Ì½áÊøÖ®Ç°£¬Äã»¹ÓÐ¼¸·ÖÖÓ¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv9_20.wav"
 		time="7" />
 
@@ -146,7 +146,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="Kill this monster while you still can."
+		value="³ÃÄã»¹ÄÜ¶¯ÊÖ£¬É±ÁËÕâÖ»¹ÖÎï¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv9_21.wav"
 		time="3" />
 
@@ -156,7 +156,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="Congratulations, agent! Thanks to your efforts, the Earth is safe."
+		value="¹§Ï²Äã£¬Ì½Ô±£¡¶à¿÷ÁËÄãµÄÅ¬Á¦£¬µØÇò°²È«ÁË¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv9_22.wav"
 		time="4" />
 
@@ -166,7 +166,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="We launched the missiles five minutes ago, and now they are only a few miles away from the alien mothership."
+		value="ÎÒÃÇÎå·ÖÖÓÇ°¾Í·¢ÉäÁËµ¼µ¯£¬ÏÖÔÚËüÃÇÀëÍâÐÇÄ¸½¢Ö»ÓÐ¼¸Ó¢ÀïÁË¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv9_23.wav"
 		time="8" />
 
@@ -176,7 +176,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="You brainless critters. You deficient failure! You have no idea what you're doing!! It was our key to the highest state of…"
+		value="ÄãÃÇÕâÐ©Ã»ÄÔ×ÓµÄÐóÉú¡£ÄãÃÇÕâÐ©²ÐÈ±µÄÊ§°ÜÆ·£¡ÄãÃÇ¸ù±¾²»ÖªµÀ×Ô¼ºÔÚ¸ÉÊ²Ã´£¡£¡ÄÇÊÇÎÒÃÇÍ¨Íù×î¸ß¾³½çµÄÔ¿³×¡­¡­"
 		sound="data\sounds\dv_sounds\dialogs\dv9_24.wav"
 		time="7" />
 </resource>

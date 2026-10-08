@@ -6,7 +6,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="I don't understand. I have photos here on my desk, which are a month old. There wasn't any jungle there, not even a trace."
+		value="ÎÒ²»Ã÷°×¡£ÎÒ×ÀÉÏ¾ÍÓÐÕÕÆ¬£¬ÊÇÒ»¸öÔÂÇ°ÅÄµÄ¡£ÄÇÀïµ±Ê±¸ù±¾Ã»ÓÐ´ÔÁÖ£¬Á¬Ò»µãºÛ¼£¶¼Ã»ÓÐ¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv5_9.wav"
 		time="8" />
 
@@ -16,7 +16,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="We know where professor Pappers is, so it's just about getting him out alive and well."
+		value="ÎÒÃÇÖªµÀÅÁÅÁË¹½ÌÊÚÔÚÄÄÀï£¬ËùÒÔÏÖÔÚÖ»Ê£ÏÂ°ÑËûÍêºÃÎÞËðµØ´ø³öÀ´ÕâÒ»¼þÊÂ¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv5_10.wav"
 		time="5" />
 
@@ -26,7 +26,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="Agent, can you hear me? Do you copy? Switch to the extra range! Copy? Agent, do you copy?"
+		value="Ì½Ô±£¬ÌýµÃµ½ÎÒÂð£¿ÊÕµ½Çë»Ø´ð¡£ÇÐ»»µ½¼Ó³¤²¨¶Î£¡ÊÕµ½Âð£¿Ì½Ô±£¬Ìýµ½Çë»Ø´ð¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv5_11.wav"
 		time="4" />
 
@@ -36,7 +36,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="Agent, if you can hear me, press the receive button twice. Aha, great! It seems this place is a dead zone…"
+		value="Ì½Ô±£¬Èç¹ûÄãÄÜÌýµ½£¬¾Í°´Á½´Î½ÓÊÕ¼ü¡£°¡£¬Ì«ºÃÁË£¡¿´À´ÕâµØ·½ÊÇÐÅºÅÃ¤Çø¡­¡­"
 		sound="data\sounds\dv_sounds\dialogs\dv5_12.wav"
 		time="6" />
 
@@ -46,7 +46,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="As soon as you get the professor out… (static)… On exit from the canyon, you will meet… (static) Do you copy?.. (static)"
+		value="Ò»µ©Äã°Ñ½ÌÊÚ´ø³öÀ´¡­¡­£¨ÔÓÒô£©¡­¡­³öÁËÏ¿¹ÈÖ®ºó£¬Äã»áÓöµ½¡­¡­£¨ÔÓÒô£©ÊÕµ½Âð£¿¡­¡­£¨ÔÓÒô£©"
 		sound="data\sounds\dv_sounds\dialogs\dv5_13.wav"
 		time="7" />
 
@@ -56,7 +56,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="Just don't get under fire from Delta, while you rescuing the professor from the smugglers."
+		value="´Ó×ßË½··ÊÖÀïÓª¾È½ÌÊÚÊ±£¬Ç§Íò±ðÔâµ½Èý½ÇÖÞÐ¡¶ÓµÄ»ðÁ¦¸²¸Ç¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv5_14.wav"
 		time="4" />
 
@@ -66,7 +66,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="You came to save me? Oh, perfect thing, perfect thing! So, my government finally decided to save me from bandits."
+		value="ÄãÊÇÀ´¾ÈÎÒµÄ£¿Å¶£¬ÕæÊÇÌ«ºÃÁË£¬Ì«ºÃÁË£¡ÕâÃ´Ëµ£¬ÎÒÃÇÕþ¸®ÖÕÓÚ¾ö¶¨´Ó·ËÍ½ÊÖÀï¾ÈÎÒÁË¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv5_15.wav"
 		time="5" />
 
@@ -76,7 +76,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="However, I already escaped from bandits myself, oh yes I did! Military men were chasing them, so they all had no time to care about me. And I got out without your help, really."
+		value="²»¹ýÎÒ×Ô¼ºÒÑ¾­´Ó·ËÍ½ÊÖÀïÌÓ³öÀ´ÁË£¬Å¶¶Ô£¬ÎÒÌÓ³öÀ´ÁË£¡¾üÈËÔÚºóÃæ×·ËûÃÇ£¬ËûÃÇ¸ù±¾¹Ë²»ÉÏÎÒ¡£ËùÒÔÎÒÃ»¿¿Äã°ïÃ¦¾ÍÍÑÉíÁË£¬ÕæµÄ¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv5_16.wav"
 		time="7" />
 
@@ -86,7 +86,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="We have managed to activate the surveillance satellite"
+		value="ÎÒÃÇÒÑ¾­³É¹¦Æô¶¯ÁËÕì²ìÎÀÐÇ"
 		sound="data\sounds\dv_sounds\dialogs\dv5_17.wav"
 		time="3" />
 
@@ -96,7 +96,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="It looks like the bandit camp is near to you. There's some big hut-shaped tents, and there's a possibility the professor is being kept in one of them."
+		value="·ËÍ½ÓªµØ¾ÍÔÚÄã¸½½ü¡£ÄÇÀïÓÐÒ»Ð©ÅïÎÝÐÎ×´µÄ´óÕÊÅñ£¬½ÌÊÚºÜ¿ÉÄÜ¾Í±»¹ØÔÚÆäÖÐÒ»¼äÀï¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv5_18.wav"
 		time="7" />
 
@@ -106,7 +106,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="We didn't notice any traces of combat nearby. In any case, you need to examine the place."
+		value="ÎÒÃÇÔÚ¸½½üÃ»ÓÐ·¢ÏÖÈÎºÎÕ½¶·ºÛ¼£¡£²»¹ÜÔõÑù£¬ÄãµÃÈ¥¿±²ìÒ»ÏÂÄÇµØ·½¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv5_19.wav"
 		time="6" />
 
@@ -116,7 +116,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="Don't think I'm coming with you, though! The smugglers have my samples and research materials, yes they do."
+		value="²»¹ý±ðÒÔÎªÎÒ»á¸úÄã×ß£¡×ßË½·¸¿Û×ÅÎÒµÄÑù±¾ºÍÑÐ¾¿×ÊÁÏ£¬µ±È»ÁË¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv5_20.wav"
 		time="6" />
 
@@ -126,7 +126,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="I ain't going nowhere without them. It's many years of work, all right? Take my papers back from the bandits and I'm coming with you, and not otherwise!"
+		value="Ã»ÓÐÄÇÐ©¶«Î÷ÎÒÄÄ¶ùÒ²²»È¥¡£ÄÇÊÇ¶àÄêµÄ¹¤×÷£¬Ã÷°×Âð£¿°ïÎÒ°Ñ×ÊÁÏ´Ó·ËÍ½ÊÖÀïÄÃ»ØÀ´£¬ÎÒ¾Í¸úÄã×ß£¬·ñÔòÃâÌ¸£¡"
 		sound="data\sounds\dv_sounds\dialogs\dv5_21.wav"
 		time="7" />
 
@@ -136,7 +136,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="The bandits retreat from the military, heading to the swamps. You are still able to get them."
+		value="·ËÍ½Õý´Ó¾ü·½ÑÛÆ¤µ×ÏÂ³·ÍË£¬ÍùÕÓÔó·½ÏòÌÓ¡£Äã»¹×·µÃÉÏËûÃÇ¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv5_22.wav"
 		time="4" />
 
@@ -146,7 +146,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="Your truck is well protected from radiation, which is a very bad thing."
+		value="ÄãµÄ¿¨³µ·À·øÉäÐÔÄÜºÜºÃ£¬Õâ¿ÉÕæÊÇ¼þ»µÊÂ¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv5_23.wav"
 		time="3" />
 
@@ -156,7 +156,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="I mean it's good, but it's bad because the armor is heavy, and the place is swampy, yes it is. That's because of the swamp."
+		value="ÎÒÊÇËµËüÈ·ÊµºÜºÃ£¬¿ÉÕýÒòÎª×°¼×Ì«ÖØ£¬¶øÄÇµØ·½ÓÖÊÇÕÓÔó¡ª¡ªÃ»´í£¬¾ÍÊÇÕÓÔó¡£Õâ²Å½ÐÂé·³¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv5_24.wav"
 		time="6" />
 
@@ -166,7 +166,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="ON-BOARD COMPUTER|Scanning..."
+		value="³µÔØµçÄÔ|É¨ÃèÖÐ¡­¡­"
 		sound=""
 		time="2" />
 
@@ -176,7 +176,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="ON-BOARD COMPUTER|The object images from surveillance satellite camera are not tents. They are giant eggs. Presumably bird eggs."
+		value="³µÔØµçÄÔ|Õì²ìÎÀÐÇ´«»ØµÄÎïÌåÍ¼Ïñ²»ÊÇÕÊÅñ¡£ÊÇ¾Þ´óµÄµ°¡£¿´Ñù×ÓÊÇÄñµ°¡£"
 		sound=""
 		time="6" />
 </resource>

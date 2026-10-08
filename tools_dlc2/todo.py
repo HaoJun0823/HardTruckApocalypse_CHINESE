@@ -18,7 +18,8 @@ from apply import FILES, Applier, fmt_specs, skip_translation
 
 def pending_for(rel, applier):
     cfg = FILES[rel]
-    base = os.path.basename(rel)
+    # maps/dv1..dv9 的文件名都叫 strings.xml，必须带上相对路径来定位译文。
+    base = {'rel': rel, 'name': os.path.basename(rel)}
     doc = xlit.Doc(rel)
     loc = doc.elements(cfg['tag'])
     rows = []

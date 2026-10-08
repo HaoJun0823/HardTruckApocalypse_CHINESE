@@ -6,7 +6,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="A huge number of bearers of the Z-120 virus intend to leave the area right now."
+		value="´óÁ¿ Z-120 ²¡¶¾Ð¯´øÕßÕý×¼±¸Á¢¿ÌÀë¿ªÕâÒ»´ø¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv8_10.wav"
 		time="6" />
 
@@ -16,7 +16,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="These are marauders, infected military patrols and even local civilians that were hiding during the evacuation."
+		value="ÓÐ½Ù·Ë¡¢ÊÜ¸ÐÈ¾µÄ¾ü¶ÓÑ²Âß¶Ó£¬ÉõÖÁ»¹ÓÐÊèÉ¢Ê±¶ãÆðÀ´µÄµ±µØÆ½Ãñ¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv8_11.wav"
 		time="6" />
 
@@ -26,7 +26,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="You are the only person close enough to the place to react to changes in the situation in time."
+		value="ÄãÊÇÀëÄÇÀï×ã¹»½ü¡¢ÄÜ¼°Ê±Ó¦¶ÔÇé¿ö±ä»¯µÄÎ¨Ò»Ò»¸öÈË¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv8_12.wav"
 		time="6" />
 
@@ -36,7 +36,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="A big number of military vehicles is moving towards the area limit on high speed without answering on our radio calls."
+		value="´óÅú¾ü³µÕýÒÔ¸ßËÙÊ»ÏòÇøÓò±ß½ç£¬ÎÞÊÓÎÒÃÇµÄÎÞÏßµçºô½Ð¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv8_13.wav"
 		time="7" />
 
@@ -46,7 +46,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="We have data they are affected by the infestation. They will leave the limits of the area they were supposed to guard in five minutes."
+		value="ÎÒÃÇÓÐÊý¾Ý±íÃ÷ËûÃÇÒÑÊÜ¸ÐÈ¾¡£ËûÃÇ½«ÔÚÎå·ÖÖÓÄÚÀë¿ª±¾Ó¦ÊØÎÀµÄÇøÓò¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv8_14.wav"
 		time="7" />
 
@@ -56,7 +56,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="You must intercept them before they will carry the infection to the world."
+		value="Äã±ØÐëÔÚËûÃÇ°Ñ¸ÐÈ¾´øÏòÊÀ½çÖ®Ç°À¹×¡ËûÃÇ¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv8_15.wav"
 		time="3" />
 
@@ -66,7 +66,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="Yes, they are the vehicles. Attack them, agent!"
+		value="Ã»´í£¬¾ÍÊÇÄÇÐ©³µ¡£¶¯ÊÖ£¬Ì½Ô±£¡"
 		sound="data\sounds\dv_sounds\dialogs\dv8_16.wav"
 		time="3" />
 
@@ -76,7 +76,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="Ok, this problem is no more, but stay online. The infestation prevention operation is at high point."
+		value="ºÃ£¬Õâ¸öÎÊÌâ½â¾öÁË£¬²»¹ý±£³ÖÁªÂç¡£·À¿Ø¸ÐÈ¾µÄÐÐ¶¯Õý´¦ÓÚ×î¹Ø¼ü½×¶Î¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv8_17.wav"
 		time="7" />
 
@@ -86,7 +86,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="By the way, the MP squad has the hiding place of Pappers surrounded. I'm expecting the report of his arrest in a minute."
+		value="Ë³±ãËµÒ»¾ä£¬ÏÜ±ø¶ÓÒÑ¾­°üÎ§ÁËÅÁÅÁË¹µÄ²ØÉí´¦¡£ÎÒÔ¤¼ÆÒ»·ÖÖÓÄÚ¾Í»áÊÕµ½×¥²¶±¨¸æ¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv8_18.wav"
 		time="8" />
 
@@ -96,7 +96,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="A gang of well-armed marauders have attacked the town of Fly Hill."
+		value="Ò»»ïÈ«¸±Îä×°µÄ½Ù·ËÏ®»÷ÁË·ÉÉ½Õò¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv8_19.wav"
 		time="3" />
 
@@ -106,7 +106,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="We found out that the town hall has a helicopter in disposal."
+		value="ÎÒÃÇµÃÖªÕò¹«ËùÀïÓÐÒ»¼ÜÖ±Éý»ú¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv8_20.wav"
 		time="4" />
 
@@ -116,7 +116,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="This craft is very small, it's all plastic, so it will be very difficult to track it with radars."
+		value="ÕâÍæÒâ¶ù·Ç³£Ð¡£¬È«ÊÇËÜÁÏÔìµÄ£¬ËùÒÔÀ×´ïºÜÄÑ×·×ÙËü¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv8_21.wav"
 		time="5" />
 
@@ -126,7 +126,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="If the infected will use this chopper to escape, it will hardly be possible to bring them down, so the world will face the catastrophe."
+		value="Èç¹û¸ÐÈ¾ÕßÓÃÕâ¼ÜÖ±Éý»úÌÓ×ß£¬¼¸ºõ²»¿ÉÄÜ°ÑËü´òÏÂÀ´£¬ÄÇÊÀ½ç¾ÍÒªÃæ¶ÔÔÖÄÑÁË¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv8_22.wav"
 		time="8" />
 
@@ -136,7 +136,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="Our experts say you have about 10 minutes to stop them."
+		value="ÎÒÃÇµÄ×¨¼ÒËµÄã´óÔ¼ÓÐ 10 ·ÖÖÓÊ±¼ä×èÖ¹ËûÃÇ¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv8_23.wav"
 		time="5" />
 
@@ -146,7 +146,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="Make it quick. You must exterminate all bandits before one of them reaches the helicopter hangar."
+		value="¶¯×÷¿ìµã¡£±ØÐëÔÚÆäÖÐÒ»¸ö³åµ½»ú¿âÖ®Ç°ÏûÃðËùÓÐ·ËÍ½¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv8_24.wav"
 		time="7" />
 
@@ -156,7 +156,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="Not a single bastard left, well done!"
+		value="Ò»¸ö»ìµ°¶¼Ã»Ê££¬¸ÉµÃÆ¯ÁÁ£¡"
 		sound="data\sounds\dv_sounds\dialogs\dv8_25.wav"
 		time="2" />
 
@@ -166,7 +166,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="The MPs have arrested Pappers. Be aware that the information about infected people being under his control is at least partially true."
+		value="ÏÜ±øÒÑ¾­×¥×¡ÅÁÅÁË¹ÁË¡£Òª×¢Òâ£¬¹ØÓÚÊÜ¸ÐÈ¾ÕßÊÜËû¿ØÖÆµÄÏûÏ¢£¬ÖÁÉÙÓÐÒ»²¿·ÖÊÇÕæµÄ¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv8_26.wav"
 		time="10" />
 
@@ -176,7 +176,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="A group of infected people hide amongst poisonous mushrooms near the Road river, we are about to transfer you the exact coordinates."
+		value="¹«Â·ºÓ±ßµÄ¶¾Ä¢¹½¸½½ü²Ø×ÅÒ»ÈºÊÜ¸ÐÈ¾Õß£¬ÎÒÃÇÂíÉÏ°Ñ¾«È·×ø±ê´«¸øÄã¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv8_27.wav"
 		time="9" />
 
@@ -186,7 +186,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="These mutants collect mushroom spores, which share the nature with everything in the area."
+		value="ÕâÐ©±äÒìÌåÔÚÊÕ¼¯Ä¢¹½æß×Ó£¬¶øæß×Ó»áÓëÕâÒ»´øµÄÒ»ÇÐ·¢ÉúÍ¬»¯¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv8_28.wav"
 		time="8" />
 
@@ -196,7 +196,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="If a big amount of spores gets in the river, all territories downstream will be infested."
+		value="Èç¹û´óÁ¿æß×Ó½øÈëºÓÀï£¬ÏÂÓÎËùÓÐµØÇø¶¼»á±»¸ÐÈ¾¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv8_29.wav"
 		time="6" />
 
@@ -206,7 +206,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="You have to destroy these mutants in no more then 15 minutes."
+		value="Äã±ØÐëÔÚ²»³¬¹ý 15 ·ÖÖÓÄÚÏûÃðÕâÐ©±äÒìÌå¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv8_30.wav"
 		time="4" />
 
@@ -216,7 +216,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="The place meets the air recon description. Begin your mission."
+		value="¸ÃµØµãÓë¿ÕÖÐÕì²ìÃèÊöÏà·û¡£¿ªÊ¼ÄãµÄÈÎÎñ¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv8_31.wav"
 		time="4" />
 
@@ -226,7 +226,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="It seems you did the job in time. Of course, we'll have the experts to check the water cleanness downstream, but I think it will be clean."
+		value="¿´À´Äã¼°Ê±Íê³ÉÁË¡£µ±È»£¬ÎÒÃÇ»¹ÊÇ»áÈÃ×¨¼Ò¼ì²éÏÂÓÎµÄË®ÖÊ£¬µ«ÎÒÏë»áÊÇ¸É¾»µÄ¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv8_32.wav"
 		time="6" />
 
@@ -236,7 +236,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="I want to inform you proudly, that at the moment our country received the approval of the whole world to destroy the alien aggressor with surface-to-space class missiles."
+		value="ÎÒÒª×ÔºÀµØÍ¨ÖªÄã£ºÎÒ¹ú¸Õ¸ÕµÃµ½È«ÊÀ½çµÄÒ»ÖÂÅú×¼£¬½«ÓÃµØ¿ÕÖÞ¼Êµ¼µ¯´Ý»ÙÄÇ¸öÍâÐÇÇÖÂÔÕß¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv8_33.wav"
 		time="11" />
 
@@ -246,7 +246,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="It seems that the Earth salvation operation is in the final stage. Return to the base."
+		value="¿´À´Õü¾ÈµØÇòµÄÐÐ¶¯ÒÑ½øÈë×îºó½×¶Î¡£·µ»Ø»ùµØ¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv8_34.wav"
 		time="5" />
 
@@ -256,7 +256,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="Infested people are leaving, you were unable to find and destroy them… We'll have to secure the area using air support."
+		value="ÊÜ¸ÐÈ¾ÕßÌÓ×ßÁË£¬ÄãÃ»ÄÜÕÒµ½²¢ÏûÃðËûÃÇ¡­¡­ÎÒÃÇÖ»ºÃ¶¯ÓÃ¿ÕÖÐÖ§Ô®·âËø¸ÃÇøÓò¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv8_.wav"
 		time="8" />
 </resource>

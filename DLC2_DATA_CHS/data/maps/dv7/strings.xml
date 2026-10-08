@@ -6,7 +6,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="As I understand, you were unable to find the works of Pappers? To hell with that. Living professor is more important than his papers."
+		value="¾ÝÎÒËùÖª£¬ÄãÃ»ÄÜÕÒµ½ÅÁÅÁË¹µÄ×ÊÁÏ£¿È¥ËûµÄ°É¡£»î×ÅµÄ½ÌÊÚ±ÈËûµÄÎÄ¼þÖØÒª¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv7_1.wav"
 		time="8" />
 
@@ -16,7 +16,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="Pick the egghead and bring him to the base. Use force if he resists."
+		value="°ÑÄÇ¸öÊé´ô×Ó×¥ÆðÀ´´ø»Ø»ùµØ¡£ËûÒªÊÇ²»¿Ï£¬¾ÍÓÃÇ¿µÄ¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv7_2.wav"
 		time="5" />
 
@@ -26,7 +26,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="Stop, agent."
+		value="×¡ÊÖ£¬Ì½Ô±¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv7_3.wav"
 		time="1" />
 
@@ -36,7 +36,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="You are on infested territory."
+		value="ÄãÒÑ¾­½øÈëÒßÇøÁË¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv7_4.wav"
 		time="2" />
 
@@ -46,7 +46,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="No-one has the right to take the toxin out of the place and poison the rest of the world."
+		value="Ã»ÈËÓÐÈ¨°Ñ¶¾ËØ´ø³öÈ¥£¬¶¾º¦ÊÀ½çÉÏÆäËûËùÓÐÈË¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv7_5.wav"
 		time="5" />
 
@@ -56,7 +56,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="Your truck is covered in infection from wheels to top."
+		value="ÄãµÄ¿¨³µ´ÓÂÖÌ¥µ½³µ¶¥¶¼±»¸ÐÈ¾ÁË¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv7_6.wav"
 		time="3" />
 
@@ -66,7 +66,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="Sorry, but I have to kill you."
+		value="±§Ç¸£¬ÎÒ±ØÐëÉ±ÁËÄã¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv7_7.wav"
 		time="2" />
 
@@ -76,7 +76,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="Our astronomers detected a huge UFO on geostationary orbit."
+		value="ÎÒÃÇµÄÌìÎÄÑ§¼ÒÔÚµØÇòÍ¬²½¹ìµÀÉÏ·¢ÏÖÁËÒ»¸ö¾Þ´óµÄ²»Ã÷·ÉÐÐÎï¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv7_8.wav"
 		time="5" />
 
@@ -86,7 +86,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="Pappers is a leading specialist of Base 31, and it was the base researching alien technologies. We need to hear his opinion."
+		value="ÅÁÅÁË¹ÊÇ 31 ºÅ»ùµØµÄ¶¥¼â×¨¼Ò£¬µ±ÄêÕýÊÇ»ùµØÔÚÑÐ¾¿ÒìÐÇ¼¼Êõ¡£ÎÒÃÇÐèÒªÌýÌýËûµÄÒâ¼û¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv7_9.wav"
 		time="6" />
 
@@ -96,7 +96,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="So here is your new mission: return to professor Pappers, pick him up whatever he says, use force if needed, and leave the infected area immediately."
+		value="Õâ¾ÍÊÇÄãµÄÐÂÈÎÎñ£º»ØÈ¥ÕÒµ½ÅÁÅÁË¹½ÌÊÚ£¬²»¹ÜËûËµÊ²Ã´¶¼°ÑËû´ø×ß£¬±ØÒªÊ±ÓÃÇ¿ÖÆµÄ£¬È»ºóÁ¢¿ÌÀë¿ªÒßÇø¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv7_10.wav"
 		time="9" />
 
@@ -106,7 +106,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="Start the evacuation of the professor. As both air survey and land detectors show, the infestation cloud moves fast in your direction. Hurry, agent."
+		value="¿ªÊ¼³·Àë½ÌÊÚ¡£¿ÕÖÐ¿±²âºÍµØÃæÌ½²âÆ÷¶¼ÏÔÊ¾£¬¸ÐÈ¾ÔÆÕý¿ìËÙÏòÄãÕâ±ßÒÆ¶¯¡£¿ìµã£¬Ì½Ô±¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv7_11.wav"
 		time="8" />
 
@@ -116,7 +116,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="Don't run, agent. Trust me, you wouldn't defeat me lately, and now you can't, either..."
+		value="±ðÅÜ£¬Ì½Ô±¡£ÐÅÎÒ£¬Äã×î½üÓ®²»ÁËÎÒ£¬ÏÖÔÚ¸ü²»¿ÉÄÜ¡­¡­"
 		sound="data\sounds\dv_sounds\dialogs\dv7_12.wav"
 		time="7" />
 
@@ -126,7 +126,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="I'm a subject of the mutation, and it changed me, it gave me great strength and power."
+		value="ÎÒÊÇÍ»±äµÄ²úÎï£¬Ëü¸Ä±äÁËÎÒ£¬¸øÁËÎÒ¾Þ´óµÄÁ¦Á¿ºÍÄÜÁ¿¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv7_13.wav"
 		time="4" />
 
@@ -136,7 +136,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="But the price was too high. And I'm not letting you drag this Z-120 infection in the world that doesn't suspect anything."
+		value="µ«´ú¼ÛÌ«¸ßÁË¡£¶øÇÒÎÒ²»»áÈÃÄã°ÑÕâ Z-120 ¸ÐÈ¾ÍÏ½øÄÇ¸öºÁÎÞ½ä±¸µÄÊÀ½ç¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv7_14.wav"
 		time="5" />
 
@@ -146,7 +146,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="Prepare to die. I hope you see my point, as a patriot to a patriot, because it's our blood that fertilizes the tree of liberty."
+		value="×¼±¸È¥ËÀ°É¡£Ï£ÍûÄãÄÜÀí½âÎÒµÄÒâË¼¡ª¡ªÒÔ°®¹úÕßµÄÉí·Ý¶ÔÒ»¸ö°®¹úÕßËµ£¬ÒòÎª×ÌÑø×ÔÓÉÖ®Ê÷µÄÕýÊÇÎÒÃÇµÄÏÊÑª¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv7_15.wav"
 		time="8" />
 
@@ -156,7 +156,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="You managed… But what is that?.. I'm starting to see everything different."
+		value="Äã×öµ½ÁË¡­¡­¿ÉÄÇÊÇÊ²Ã´£¿¡­¡­ÎÒ¿ªÊ¼¿´Ò»ÇÐ¶¼²»Í¬ÁË¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv7_16.wav"
 		time="3" />
 
@@ -166,7 +166,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="Damn, I've nearly condemned myself to death! Thanks, agent, your bullets helped me great."
+		value="¸ÃËÀ£¬ÎÒ²îµã°Ñ×Ô¼ºÅÐÁËËÀÐÌ£¡Ð»Ð»Äã£¬Ì½Ô±£¬ÄãµÄ×Óµ¯°ïÁË´óÃ¦¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv7_17.wav"
 		time="4" />
 
@@ -176,7 +176,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="Not that I would ever dared to… I would never even figure it out..."
+		value="µ¹²»ÊÇÎÒÕæ¸ÒÈ¥×öÊ²Ã´¡­¡­ÎÒÁ¬Ïë¶¼²»»áÏëµ½¡­¡­"
 		sound="data\sounds\dv_sounds\dialogs\dv7_18.wav"
 		time="2" />
 
@@ -186,7 +186,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="But it doesn't matter, stop the professor, he got it all wrong. He will destroy everyone, every nation, the whole world. He driven the things to a verge of a catastrophe already…"
+		value="µ«ÕâÒÑ¾­²»ÖØÒªÁË£¬×èÖ¹½ÌÊÚ°É£¬Ëû°ÑÒ»ÇÐ¶¼¸ã´íÁË¡£Ëû»á»ÙµôËùÓÐÈË¡¢ËùÓÐ¹ú¼Ò¡¢Õû¸öÊÀ½ç¡£ËûÒÑ¾­°ÑÕâÐ©¶«Î÷±Æµ½ÁËÔÖÄÑµÄ±ßÔµ¡­¡­"
 		sound="data\sounds\dv_sounds\dialogs\dv7_19.wav"
 		time="7" />
 
@@ -196,7 +196,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="I would stop him if I knew before, but now, when I know, I have no power on it."
+		value="ÒªÊÇÔçÖªµÀ£¬ÎÒ¾ÍÈ¥×èÖ¹Ëû£»¿ÉÏÖÔÚÎÒÖªµÀÁË£¬È´ÒÑ¾­ÎÞÄÜÎªÁ¦¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv7_20.wav"
 		time="4" />
 
@@ -206,7 +206,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="Only  humans can save the humankind. Kill him before it's too late."
+		value="Ö»ÓÐÈËÀà²ÅÄÜÕü¾ÈÈËÀà¡£³ÃÒ»ÇÐ»¹À´µÃ¼°£¬É±ÁËËû¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv7_21.wav"
 		time="2" />
 
@@ -216,7 +216,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="I didn't even think it was possible! One captain was worth a whole company."
+		value="ÎÒÕæÃ»Ïëµ½»áÓÐÕâÖÖÊÂ£¡Ò»¸öÉÏÎ¾¶¥µÃÉÏÕûÕûÒ»¸öÁ¬¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv7_22.wav"
 		time="3" />
 
@@ -226,7 +226,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="Anyway, I'm glad you are victorious. Captain was a patriot you don't meet every day. It's a pity he got the situation wrong."
+		value="×ÜÖ®£¬ÄãÓ®ÁËÈÃÎÒºÜ¸ßÐË¡£ÕâÎ»ÉÏÎ¾ÊÇ¸öÄÑµÃÒ»ÓöµÄ°®¹úÕß¡£¿ÉÏ§ËûÅÐ¶Ï´íÁËÐÎÊÆ¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv7_23.wav"
 		time="6" />
 
@@ -236,7 +236,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="I propose a minute of silence in his honor."
+		value="ÎÒÌáÒéÎªËûµÄÓ¢ÁéÄ¬°§Ò»·ÖÖÓ¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv7_24.wav"
 		time="3" />
 </resource>

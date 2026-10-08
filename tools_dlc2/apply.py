@@ -73,14 +73,18 @@ def ru_keyname(cur):
 
 
 def skip_translation(base, key, cur):
-    """该条目是否不需要人工翻译。返回 True 表示跳过（不算待翻）。"""
+    """该条目是否不需要人工翻译。返回 True 表示跳过（不算待翻）。
+
+    base 可以是 str（文件名）或 dict{'rel','name'}。
+    """
+    name = base['name'] if isinstance(base, dict) else base
     stripped = cur.strip()
     if not stripped:
         return True
     if no_translate(cur):
         return True
     # bindnames.xml 的 KEY_* 是键位名而非文案
-    if base == 'bindnames.xml' and key and key.startswith('KEY_'):
+    if name == 'bindnames.xml' and key and key.startswith('KEY_'):
         # 俄文键位名（'Правый Ctrl'）要译；纯英文键位名（Q/F1/PgUp/Esc）不译
         if ru_keyname(stripped):
             return False
@@ -132,12 +136,26 @@ class Applier:
         self.manual = manual if manual is not None else load_manual()
         self.strict_src = strict_src
 
+    def manual_hit(self, base, key, attr):
+        """查 manual.json。先按相对路径查，再按文件名查。
+
+        maps/dv1..dv9 的 strings.xml 文件名相同，必须用相对路径区分。
+        """
+        for scope in (base.get('rel'), base.get('name')):
+            if not scope:
+                continue
+            m = self.manual.get(scope, {}).get(key)
+            if m and m.get(attr):
+                return m[attr]
+        return None
+
     def lookup(self, base, key, attr, cur):
         """返回 (译文, 来源标记) 或 (None, 原因)。来源标记：manual/reuse/... """
-        m = self.manual.get(base, {}).get(key)
-        if m and m.get(attr):
-            return m[attr], 'manual'
-        e = self.pool.get(base, {}).get(key)
+        hit = self.manual_hit(base, key, attr)
+        if hit is not None:
+            return hit, 'manual'
+        name = base['name']
+        e = self.pool.get(name, {}).get(key)
         if not e or attr not in e:
             return None, '无既有译文'
         rec = e[attr]
@@ -150,7 +168,8 @@ class Applier:
 
     def run_file(self, rel, dry=False, allow_partial=True):
         cfg = FILES[rel]
-        base = os.path.basename(rel)
+        # maps/dv1..dv9 的文件名都叫 strings.xml，必须带上相对路径来定位译文。
+        base = {'rel': rel, 'name': os.path.basename(rel)}
         doc = xlit.Doc(rel)
         loc = doc.elements(cfg['tag'])
         stat = {'applied': 0, 'manual': 0, 'reuse': 0, 'fmt_reject': 0}

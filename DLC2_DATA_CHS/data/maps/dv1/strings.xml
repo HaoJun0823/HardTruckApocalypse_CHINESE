@@ -6,7 +6,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="I think you'll like the truck. First, because you won't get another one anyway."
+		value="ÎÒ¾õµÃÄã»áÏ²»¶ÕâÁ¾¿¨³µ¡£Ê×ÏÈ£¬·´ÕýÄãÒ²²»¿ÉÄÜÔÙÅªµ½µÚ¶þÁ¾¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv1_5.wav"
 		time="7" />
 
@@ -16,7 +16,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="Second, because this truck is a killer. Even your Bureau doesn't own a truck like this."
+		value="Æä´Î£¬ÕâÁ¾¿¨³µ¿ÉÊÇÃÍÊÞ¡£¾ÍËãÄãÃÇµÄ¾ÖÀïÒ²Åª²»µ½ÕâÖÖ³µ¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv1_6.wav"
 		time="6" />
 
@@ -26,7 +26,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="What you have to do is get used to the vehicle. By the way, remember that the area is not too safe."
+		value="ÄãÒª×öµÄÊÇÊìÏ¤ÕâÁ¾³µ¡£Ë³±ãÌáÐÑÒ»¾ä£¬ÕâÒ»´ø¿É²»Ì«Æ½¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv1_9.wav"
 		time="6" />
 
@@ -36,7 +36,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="Some armed bastards keep racing around, completely ignoring governmental emergency order."
+		value="ÓÐÒ»»ï³ÖÇ¹µÄ»ìµ°µ½´¦ÂÒ´Ü£¬ÍêÈ«ÎÞÊÓÕþ¸®µÄ½ô¼±ÃüÁî¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv1_10.wav"
 		time="6" />
 
@@ -46,7 +46,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="They will be happy to spend some ammo on you. I recommend attacking first and not giving them a chance."
+		value="ËûÃÇ»áºÜÀÖÒâÔÚÄãÉíÉÏÀË·Ñ¼¸·¢×Óµ¯¡£ÎÒ½¨ÒéÏÈ·¢ÖÆÈË£¬±ð¸øËûÃÇ»ú»á¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv1_11.wav"
 		time="6" />
 
@@ -56,7 +56,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="So, how it feels? Did you ever drive a vehicle like this one? I'm sure you didn't."
+		value="¸Ð¾õÔõÃ´Ñù£¿ÄãÒÔÇ°¿ª¹ýÕâÑùµÄ³µÂð£¿ÎÒ¸Ò¿Ï¶¨Ã»ÓÐ¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv1_12.wav"
 		time="6" />
 
@@ -66,7 +66,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="Any catastrophe, even the smallest, wakes up all bad things in people. "
+		value="ÈÎºÎÔÖÄÑ£¬ÄÄÅÂÊÇ×îÐ¡µÄÔÖÄÑ£¬¶¼»á»½ÐÑÈËÐÄÀïËùÓÐÒõ°µµÄ¶«Î÷¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv1_13.wav"
 		time="6" />
 
@@ -76,7 +76,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="Evacuation measures were just initiated, and hordes of marauders started rushing from every den. They carry the loot in truckloads."
+		value="³·ÀëÐÐ¶¯¸Õ¸Õ¿ªÊ¼£¬´óÈº½Ù·Ë¾Í´Ó¸÷¸ö³²Ñ¨Àï³åÁË³öÀ´£¬ÔßÎï×°ÁËÒ»¿¨³µÓÖÒ»¿¨³µ¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv1_14.wav"
 		time="6" />
 
@@ -86,7 +86,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="One of such motorcades is going to pass right nearby. You know what I mean?"
+		value="ÆäÖÐÒ»Ö§³µ¶ÓÕýºÃÒª´Ó¸½½ü¾­¹ý¡£Äã¶®ÎÒµÄÒâË¼°É£¿"
 		sound="data\sounds\dv_sounds\dialogs\dv1_15.wav"
 		time="6" />
 
@@ -96,7 +96,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="That's right, it's a great occasion to try your new truck's weapons on them. Don't let these robbers get away."
+		value="Ã»´í£¬ÕâÕýÊÇ¸ö¾øºÃµÄ»ú»á£¬¿ÉÒÔÓÃÄãµÄÐÂ¿¨³µµÄÎäÆ÷ÔÚËûÃÇÉíÉÏÊÔÊÔÊÖ¡£±ðÈÃÕâ°ï½Ù·ËÅÜÁË¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv1_16.wav"
 		time="6" />
 
@@ -106,7 +106,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="Agent, the local sheriff's office refuses to accept our cooperation directive. It seems, the sheriff went completely crazy, and thinks he's a local king."
+		value="Ì½Ô±£¬µ±µØ¾¯³¤°ì¹«ÊÒ¾Ü¾ø½ÓÊÜÎÒÃÇµÄÐ­×÷Ö¸Áî¡£¿´À´¾¯³¤³¹µ×·èÁË£¬ÒÔÎª×Ô¼ºÊÇÕâ¶ùµÄÍÁ»ÊµÛ¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv1_7.wav"
 		time="6" />
 
@@ -116,7 +116,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="Be aware, that if the local cops will stand between you and completion of this mission, you have the right to use  emergency, and by that I mean extremely aggressive, measures."
+		value="ÒªÇå³þ£¬Èç¹ûµ±µØ¾¯²ìµ²ÔÚÄãºÍÍê³ÉÈÎÎñÖ®¼ä£¬ÄãÓÐÈ¨²ÉÈ¡¡°½ô¼±¡±´ëÊ©¡ª¡ªÎÒµÄÒâË¼ÊÇ¼«Æä¼¤½øµÄ´ëÊ©¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv1_8.wav"
 		time="6" />
 
@@ -126,7 +126,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="You have a firm hand and sharp eye, agent."
+		value="ÄãÊÖ·¨ÎÈ½¡£¬Ä¿¹âÈñÀû£¬Ì½Ô±¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv1_17.wav"
 		time="5" />
 
@@ -136,7 +136,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="So, I guess, the drill is finished."
+		value="ÄÇÃ´£¬ÎÒÏëÑµÁ·½áÊøÁË¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv1_27.wav"
 		time="5" />
 
@@ -146,7 +146,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="You got used to the car, the weapons, the area, and the way the things are. It's time for your primary mission."
+		value="ÄãÒÑ¾­ÊìÏ¤ÁË³µÁ¾¡¢ÎäÆ÷¡¢ÕâÒ»´øµØÐÎºÍÕâÀï×öÊÂµÄ·½Ê½¡£¸ÃÖ´ÐÐÄãµÄÖ÷ÒªÈÎÎñÁË¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv1_28.wav"
 		time="5" />
 
@@ -156,7 +156,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="Yes, now I'm really sure you will be able to go through the place where a whole squad of my boys perished."
+		value="ÊÇµÄ£¬ÎÒÏÖÔÚÕæÈ·ÐÅÄãÄÜ»î×ÅÍ¨¹ýÄÇµØ·½¡ª¡ªÎÒÊÖÏÂÕûÕûÒ»°àÈË¶¼ËÀÔÚÁËÄÇÀï¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv1_29.wav"
 		time="5" />
 
@@ -166,7 +166,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="The world is really cleaner now."
+		value="ÕâÊÀ½çÏÖÔÚ¸É¾»¶àÁË¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv1_21.wav"
 		time="5" />
 
@@ -176,7 +176,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="As I told you before, there is a number of asocial subjects robbing and looting the area."
+		value="ÎÒÖ®Ç°Ëµ¹ý£¬ÕâÒ»´øÓÐÒ»»ïÉç»áÔü×ÓÔÚÇÀ½ÙºÍ½ÙÂÓ¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv1_18.wav"
 		time="5" />
 
@@ -186,7 +186,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="The order was to stop such actions by all possible means. Absolutely by all means. Do you understand me, agent?"
+		value="ÃüÁîÊÇ²»Ï§Ò»ÇÐ´ú¼ÛÖÆÖ¹´ËÀàÐÐÎª¡£¾ø¶ÔÊÇ²»Ï§Ò»ÇÐ´ú¼Û¡£ÄãÃ÷°×ÎÒµÄÒâË¼Âð£¬Ì½Ô±£¿"
 		sound="data\sounds\dv_sounds\dialogs\dv1_19.wav"
 		time="5" />
 
@@ -196,7 +196,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="We just have sent a scout chopper and spotted one of marauders camp. Your objective is to destroy the bandits."
+		value="ÎÒÃÇ¸ÕÅÉ³öÕì²ìÖ±Éý»ú£¬·¢ÏÖÁËÒ»´¦½Ù·ËÓªµØ¡£ÄãµÄÄ¿±êÊÇ´Ý»ÙÕâ°ï·ËÍ½¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv1_20.wav"
 		time="5" />
 
@@ -206,7 +206,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="Impossible! Did these soldiers left their post without permission?!"
+		value="²»¿ÉÄÜ£¡ÕâÐ©Ê¿±øÊÇ²»ÊÇÉÃ×ÔÀëÖ°ÁË£¿£¡"
 		sound="data\sounds\dv_sounds\dialogs\dv1_24.wav"
 		time="9" />
 
@@ -216,7 +216,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="There is nothing as disgusting as desertion! Mutants, zombies and stuff are not an excuse."
+		value="Ã»ÓÐÊ²Ã´±ÈÌÓ±ø¸üÈÃÈËÑá¶ñÁË£¡±äÒìÌå¡¢½©Ê¬Ö®ÀàµÄ¶¼²»ÊÇ½è¿Ú¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv1_25.wav"
 		time="7" />
 
@@ -226,7 +226,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="Whet American army soldiers must be afraid is their sergeant, not a brainless zombie!"
+		value="ÃÀ¹ú´ó±øÓ¦¸ÃÅÂµÄÊÇËûÃÇµÄÖÐÊ¿£¬¶ø²»ÊÇÃ»ÄÔ×ÓµÄ½©Ê¬£¡"
 		sound="data\sounds\dv_sounds\dialogs\dv1_26.wav"
 		time="8" />
 
@@ -236,7 +236,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="Frankly, it escapes me why there is so many armed outsiders inside such a strong cordon? How do they get in here?"
+		value="Ì¹°×Ëµ£¬ÎÒ²»Ã÷°×ÕâÃ´ÑÏÃÜµÄ·âËøÏßÀïÔõÃ´»áÓÐÕâÃ´¶àÎä×°ÍâÈË£¿ËûÃÇÊÇÔõÃ´½øÀ´µÄ£¿"
 		sound="data\sounds\dv_sounds\dialogs\dv1_22.wav"
 		time="7" />
 
@@ -246,7 +246,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="We need to find out, as soon as possible."
+		value="ÎÒÃÇ±ØÐë¾¡¿ì²éÇå¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv1_23.wav"
 		time="8" />
 
@@ -256,7 +256,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="So, you are the federal agent the Bureau sent to do the job that our task force failed to accomplish? All right, we'll see. Before giving you the basic tasks, I want you to get used to the truck, which you will drive for a long time."
+		value="Ô­À´Äã¾ÍÊÇ¾ÖÀïÅÉÀ´µÄÁª°îÌ½Ô±£¬À´½ÓÊÖÎÒÃÇÌØÇ²¶ÓÃ»ÄÜÍê³ÉµÄÈÎÎñ£¿ºÃ°É£¬ÎÒÃÇ×ß×ÅÇÆ¡£ÔÚ¸øÄãÅÉ»ù±¾ÈÎÎñÖ®Ç°£¬ÎÒÒªÄãÏÈÊìÏ¤ÕâÁ¾¿¨³µ¡ª¡ªÄã»¹Òª¿ªËüºÜ¾Ã¡£"
 		time="13"
 		numButtons="1" />
 
@@ -266,7 +266,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="I know you're an excellent driver, but every vehicle has its own features, and it's better to learn them in relatively peaceful environment, near the base. Get used to the controls, feel the grip, try the brakes. Learn how to use the equipment to take environmental samples."
+		value="ÎÒÖªµÀÄãÊÇ¸ö³öÉ«µÄË¾»ú£¬µ«Ã¿Á¾³µ¶¼ÓÐ×Ô¼ºµÄÆ¢Æø£¬ÔÚÏà¶ÔÌ«Æ½µÄ»·¾³Àï¡¢»ùµØ¸½½üÑ§ÕâÐ©¶«Î÷¸üºÃ¡£ÊìÏ¤²Ù¿Ø£¬¸ÐÊÜ×ªÏò£¬ÊÔÒ»ÊÔÉ²³µ£¬Ñ§»áÊ¹ÓÃÉè±¸²É¼¯»·¾³Ñù±¾¡£"
 		time="12"
 		numButtons="1" />
 
@@ -276,7 +276,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="Remember, the car is equipped with automatic navigation device - this is a complex gadget in the left part of the panel. Guys uploaded your mission route to this thing, so it always lets you know where to turn."
+		value="¼Ç×¡£¬ÕâÁ¾³µ×°ÓÐ×Ô¶¯µ¼º½×°ÖÃ¡ª¡ª¾ÍÊÇÒÇ±í°å×ó²àÄÇÌ¨¸´ÔÓµÄÍæÒâ¶ù¡£»ï¼ÆÃÇÒÑ¾­°ÑÄãµÄÈÎÎñÂ·ÏßÉÏ´«½øÈ¥ÁË£¬Ëü»áËæÊ±ÌáÐÑÄãÔÚÄÄÀï×ªÍä¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv0_2.wav"
 		time="7" />
 
@@ -286,7 +286,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="It seems that the weather went crazy here, not just the people. Some roaming tornadoes were spotted in range - avoid them if you don't want a ride on hell's merry-go-round."
+		value="¿´À´ÕâÀïµÄÌìÆøÒ²·èÁËÒ»Ñù£¬²»Ö»ÊÇÈË¡£ÎÒÃÇ·¢ÏÖ¸½½üÓÐËÄ´¦ÓÎ×ßµÄÁú¾í·ç¡ª¡ª²»ÏëÌåÑéµØÓüÐý×ªÄ¾ÂíµÄ»°£¬¾Í¶ã¿ªËüÃÇ¡£"
 		sound="data\sounds\dv_sounds\dialogs\dv0_1.wav"
 		time="11" />
 
@@ -296,17 +296,17 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="There's a settlement of the base civilian staff in front of you. Our scouts report it's an outpost of some unknown gang. Get rid of the bastards…"
+		value="ÄãÇ°ÃæÊÇ»ùµØºóÇÚÈËÔ±½¨µÄ¾ÓÃñµã¡£ÎÒÃÇµÄÕì²ì±¨¸æËµÄÇÊÇÄ³¸ö²»Ã÷ÊÆÁ¦µÄÇ°ÉÚ¡£°ÑÕâ°ï»ìµ°Çå³ýµô¡­¡­"
 		sound="data\sounds\dv_sounds\dialogs\dv0_3.wav"
 		time="9" />
 
 	<string
 		id="1050"
-		value="So, you are the federal agent the Bureau sent to do the job that our task force failed to accomplish? All right, we'll see. Before giving you the basic tasks, I want you to get used to the truck, which you will drive for a long time. I know you're an excellent driver, but every vehicle has its own features, and it's better to learn them in relatively peaceful environment, near the base. Get used to the controls, feel the grip, try the brakes. Learn how to use the equipment to take environmental samples.|  Extra task:|                Take samples of ground and air (at least 100)"
+		value="Ô­À´Äã¾ÍÊÇ¾ÖÀïÅÉÀ´µÄÁª°îÌ½Ô±£¬À´½ÓÊÖÎÒÃÇÌØÇ²¶ÓÃ»ÄÜÍê³ÉµÄÈÎÎñ£¿ºÃ°É£¬ÎÒÃÇ×ß×ÅÇÆ¡£ÔÚ¸øÄãÅÉ»ù±¾ÈÎÎñÖ®Ç°£¬ÎÒÒªÄãÏÈÊìÏ¤ÕâÁ¾¿¨³µ¡ª¡ªÄã»¹Òª¿ªËüºÜ¾Ã¡£ÎÒÖªµÀÄãÊÇ¸ö³öÉ«µÄË¾»ú£¬µ«Ã¿Á¾³µ¶¼ÓÐ×Ô¼ºµÄÆ¢Æø£¬ÔÚÏà¶ÔÌ«Æ½µÄ»·¾³Àï¡¢»ùµØ¸½½üÑ§ÕâÐ©¶«Î÷¸üºÃ¡£ÊìÏ¤²Ù¿Ø£¬¸ÐÊÜ×ªÏò£¬ÊÔÒ»ÊÔÉ²³µ£¬Ñ§»áÊ¹ÓÃÉè±¸²É¼¯»·¾³Ñù±¾¡£|  ¶îÍâÈÎÎñ£º|                ²É¼¯µØÃæºÍ¿ÕÆøÑù±¾£¨ÖÁÉÙ 100 ·Ý£©"
 		numButtons="1" />
 
 	<string
 		id="1051"
-		value="So, I guess, the drill is finished. You got used to the car, the weapons, the area, and the way the things are. It's time for your primary mission."
+		value="ÄÇÃ´£¬ÎÒÏëÑµÁ·½áÊøÁË¡£ÄãÒÑ¾­ÊìÏ¤ÁË³µÁ¾¡¢ÎäÆ÷¡¢ÕâÒ»´øµØÐÎºÍÕâÀï×öÊÂµÄ·½Ê½¡£¸ÃÖ´ÐÐÄãµÄÖ÷ÒªÈÎÎñÁË¡£"
 		numButtons="1" />
 </resource>
