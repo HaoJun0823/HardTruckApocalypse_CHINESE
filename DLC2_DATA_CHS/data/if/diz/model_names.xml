@@ -3,2670 +3,2670 @@
 	<Item
 		id="collectionbook1"
 		locForm="0"
-		value="''Òóðèñòè÷åñêèé ïðîñïåêò''" />
+		value="¡¶ÂÃÓÎÊÖ²á¡·" />
 
 	<Item
 		id="collectionbook2"
 		locForm="0"
-		value="Ðóêîâîäñòâî ê òàíêó" />
+		value="Ì¹¿ËÊ¹ÓÃÊÖ²á" />
 
 	<Item
 		id="collectionbook3"
 		locForm="0"
-		value="Æóðíàë êîìèêñîâ" />
+		value="Âþ»­ÔÓÖ¾" />
 
 	<Item
 		id="collectionbook4"
 		locForm="0"
-		value="Ãàçåòà ''ÂåñòíèêÚ''" />
+		value="¡¶ §£§Ö§ã§ä§ß§Ú§Ü§¼ ¡·±¨" />
 
 	<Item
 		id="collectionbook5"
 		locForm="0"
-		value="Æóðíàë ''Åçäåö''" />
+		value="¡¶ §¦§Ù§Õ§Ö§è ¡·ÔÓÖ¾" />
 
 	<Item
 		id="collectionbook6"
 		locForm="0"
-		value="Æóðíàë ''Êàïèòàëèñòêà''" />
+		value="¡¶ Å®×Ê±¾¼Ò ¡·ÔÓÖ¾" />
 
 	<Item
 		id="collectionbook7"
 		locForm="0"
-		value="Çàïèñíàÿ êíèæêà Äåíðè Äåéëà" />
+		value="ºàÀû¡¤´ú¶û±Ê¼Ç±¾" />
 
 	<Item
 		id="collectionbook8"
 		locForm="0"
-		value="Ñòðàíèöà èç æóðíàëà" />
+		value="ÔÓÖ¾ÉÏËºÏÂµÄÒ»Ò³" />
 
 	<Item
 		id="collectionbook9"
 		locForm="0"
-		value="Ñáîðíèê íàðîäíûõ ïðåäàíèé" />
+		value="Ãñ¼ä´«Ëµ¼¯" />
 
 	<Item
 		id="collectionbook10"
 		locForm="0"
-		value="Áèáëèÿ Âîäèòåëÿ" />
+		value="Ë¾»úÊ¥¾­" />
 
 	<Item
 		id="thorn1"
 		locForm="0"
-		value="Øèïû" />
+		value="¼â´Ì" />
 
 	<Item
 		id="thorn2"
 		locForm="0"
-		value="Ëåçâèÿ" />
+		value="µ¶ÈÐ" />
 
 	<Item
 		id="thorn3"
 		locForm="0"
-		value="Ñâåðëà" />
+		value="×êÍ·" />
 
 	<Item
 		id="cooling_system_guns"
 		locForm="0"
-		value="Âîäÿíàÿ ñèñòåìà îõëàæäåíèÿ  äëÿ îãíåñòðåëüíîãî îðóæèÿ" />
+		value="Ç¹ÐµË®ÀäÏµÍ³" />
 
 	<Item
 		id="cooling_system_energy"
 		locForm="0"
-		value="Âîäÿíàÿ ñèñòåìà îõëàæäåíèÿ äëÿ ýíåðãåòè÷åñêîãî îðóæèÿ" />
+		value="ÄÜÁ¿ÎäÆ÷Ë®ÀäÏµÍ³" />
 
 	<Item
 		id="cooling_system_explosion"
 		locForm="0"
-		value="Âîäÿíàÿ ñèñòåìà îõëàæäåíèÿ äëÿ àðòèëëåðèè" />
+		value="»ðÅÚË®ÀäÏµÍ³" />
 
 	<Item
 		id="firing_rate_guns"
 		locForm="0"
-		value="Îïòèìèçèðîâàííûé ìåõàíè÷åñêèé ñïóñê" />
+		value="ÓÅ»¯»úÐµ°â»ú" />
 
         <Item
 		id="firing_range_guns"
 		locForm="0"
-		value="Ìàãíèòíûé óñêîðèòåëü" />
+		value="´ÅÁ¦¼ÓËÙÆ÷" />
 
         <Item
 		id="firing_rate_energy"
 		locForm="0"
-		value="Êàáåëü íèçêîãî ñîïðîòèâëåíèÿ" />
+		value="µÍ×èµçÀÂ" />
 
 	<Item
 		id="add_damage_guns"
 		locForm="0"
-		value="Ïîëóñâîáîäíûé çàòâîð" />
+		value="°ë×ÔÓÉÇ¹»ú" />
 
 	<Item
 		id="add_damage_energy"
 		locForm="0"
-		value="Çåðêàëüíî-ñåðåáðåííûé ñâåòîâîé ðåçîíàòîð" />
+		value="¾µÃæ¶ÆÒø¹âÐ³ÕñÆ÷" />
 
 	<Item
 		id="add_damage_explosion"
 		locForm="0"
-		value="Ìàãíèòíàÿ êàòàïóëüòà" />
+		value="´ÅÁ¦µ¯ÉäÆ÷" />
 
 	<Item
 		id="grouping_angle_guns"
 		locForm="0"
-		value="Îïòè÷åñêèé ïðèöåë" />
+		value="¹âÑ§Ãé×¼¾µ" />
 
 	<Item
 		id="cooling_system_guns2"
 		locForm="0"
-		value="Âîçäóøíàÿ ñèñòåìà îõëàæäåíèÿ ïóëåìåòà" />
+		value="»úÇ¹·çÀäÏµÍ³" />
 
 	<Item
 		id="cooling_system_energy2"
 		locForm="0"
-		value="Âîçäóøíàÿ ñèñòåìà îõëàæäåíèÿ ëàçåðà" />
+		value="¼¤¹â·çÀäÏµÍ³" />
 
 	<Item
 		id="cooling_system_explosion2"
 		locForm="0"
-		value="Âîçäóøíàÿ ñèñòåìà îõëàæäåíèÿ àðòèëëåðèè" />
+		value="»ðÅÚ·çÀäÏµÍ³" />
 
 	<Item
 		id="firing_rate_guns2"
 		locForm="0"
-		value="Ýëåêòðîñïóñê" />
+		value="µç¶¯°â»ú" />
 
 	<Item
 		id="firing_rate_energy2"
 		locForm="0"
-		value="Ñâåðõïðîâîäÿùèé êàáåëü" />
+		value="³¬µ¼µçÀÂ" />
 
 	<Item
 		id="grouping_angle_guns2"
 		locForm="0"
-		value="Îïòè÷åñêèé ïðèöåë ñ ïðîñâåòëåííîé îïòèêîé è àíòèáëèêîâîé çàùèòîé" />
+		value="ÔöÍ¸·ÀÑ£¹âÑ§Ãé×¼¾µ" />
 
 	<Item
 		id="add_damage_guns2"
 		locForm="0"
-		value="Ñâîáîäíûé çàòâîð ñ ïëàâàþùåé ìóôòîé" />
+		value="¸¡¶¯ÀëºÏ×ÔÓÉÇ¹»ú" />
 
 	<Item
 		id="add_damage_energy2"
 		locForm="0"
-		value="Êâàðöåâûé ðåçîíàòîð" />
+		value="Ê¯Ó¢Ð³ÕñÆ÷" />
 
 	<Item
 		id="add_damage_explosion2"
 		locForm="0"
-		value="Ìàãíèòíàÿ êàòàïóëüòà íà áàçå ãåíåðàòîðà âèõðåâûõ ïîëåé" />
+		value="»ùÓÚÎÐÐý³¡·¢ÉúÆ÷µÄ´ÅÁ¦µ¯ÉäÆ÷" />
 
 	<Item
 		id="cooling_system_guns_and_firing_rate_guns"
 		locForm="0"
-		value="Ñèñòåìà 'Ãíîìîí'" />
+		value="¡¸Gnomon¡¹ÏµÍ³" />
 
 	<Item
 		id="cooling_system_energy_and_firing_rate_energy"
 		locForm="0"
-		value="Êîìïëåêñ 'Àëãîð'" />
+		value="¡¸Algor¡¹×é¼þ" />
 
 	<Item
 		id="cooling_system_explosion_and_firing_rate_explosion"
 		locForm="0"
-		value="Ñèñòåìà 'Ñàìóì'" />
+		value="¡¸Samum¡¹ÏµÍ³" />
 
 	<Item
 		id="firing_rate_guns_and_add_damage_guns"
 		locForm="0"
-		value="Ýëåêòðîìåõàíè÷åñêèé êîìïëåêñ 'Ñôåíî'  " />
+		value="¡¸Spheno¡¹»úµç×é¼þ" />
 
 	<Item
 		id="firing_rate_energy_and_add_damage_energy"
 		locForm="0"
-		value="Ìàãíèòíî-îïòè÷åñêàÿ ñèñòåìà 'Êâàçàð'" />
+		value="¡¸Quasar¡¹´Å¹âÏµÍ³" />
 
 	<Item
 		id="firing_rate_explosion_and_add_damage_explosion"
 		locForm="0"
-		value="Ýëåêòðîìåõàíè÷åñêèé êîìïëåêñ 'Îãíåííûé øòîðì'" />
+		value="¡¸Fire Storm¡¹»úµç×é¼þ" />
 
 	<Item
 		id="add_damage_guns_and_grouping_angle_guns"
 		locForm="0"
-		value="Êîìïëåêñ 'FireEye'" />
+		value="¡¸FireEye¡¹×é¼þ" />
 
 	<Item
 		id="add_damage_energy_and_firing_rate_energy"
 		locForm="0"
-		value="Ñèñòåìà 'Doom-4'" />
+		value="¡¸Doom-4¡¹ÏµÍ³" />
 
 	<Item
 		id="add_damage_explosion_firing_rate_explosion"
 		locForm="0"
-		value="Ýëåêòðîìåõàíè÷åñêèé êîìïëåêñ 'Äàâèä'" />
+		value="¡¸David¡¹»úµç×é¼þ" />
 
 	<Item
 		id="additional_fuel_tank"
 		locForm="0"
-		value="Îáû÷íàÿ êàíèñòðà" />
+		value="ÆÕÍ¨ÓÍÍ°" />
 
 	<Item
 		id="additional_torque"
 		locForm="0"
-		value="Äîïîëíèòåëüíàÿ âûõëîïíàÿ òðóáà" />
+		value="¼Ó×°ÅÅÆø¹Ü" />
 
 	<Item
 		id="additional_durability"
 		locForm="0"
-		value="Êàòàííûå áðîíåâûå ëèñòû íà êîðïóñ êàáèíû" />
+		value="ÔþÖÆ×°¼×°å£¨¼ÝÊ»ÊÒ¼Ó×°£©" />
 
 	<Item
 		id="additional_stability"
 		locForm="0"
-		value="Ãèäðîóñèëèòåëü ðóëÿ" />
+		value="×ªÏòÒºÑ¹ÖúÁ¦" />
 
 	<Item
 		id="additional_fuel_tank2"
 		locForm="0"
-		value="Áîëüøàÿ êàíèñòðà" />
+		value="´óÓÍÍ°" />
 
 	<Item
 		id="additional_torque2"
 		locForm="0"
-		value="Òóðáîíàääóâ" />
+		value="ÎÐÂÖÔöÑ¹" />
 
 	<Item
 		id="additional_durability2"
 		locForm="0"
-		value="Êàòàííûå áðîíåâûå ëèñòû ñ äîïîëíèòåëüíûì öåìåíòèðîâàíèåì" />
+		value="¸½¼Ó½ººÏÔþÖÆ×°¼×°å" />
 
 	<Item
 		id="add_speed_and_torque"
 		locForm="0"
-		value="Ýëåêòðîííàÿ èíæåêòîðíàÿ ñèñòåìà" />
+		value="µç×ÓÅçÉäÏµÍ³" />
 
 	<Item
 		id="add_stability_and_speed"
 		locForm="0"
-		value="Ñèñòåìà 'Sagitta'  " />
+		value="¡¸Sagitta¡¹ÏµÍ³" />
 
 	<Item
 		id="add_torque_and_stability"
 		locForm="0"
-		value="Ñèñòåìà 'Àëüáàòðîñ'" />
+		value="¡¸Albatross¡¹ÏµÍ³" />
 
 	<Item
 		id="additional_fuel_tank2_add_damage_guns"
 		locForm="0"
-		value="Ñèñòåìà 'Ñàòî'" />
+		value="¡¸Sato¡¹ÏµÍ³" />
 
 	<Item
 		id="add_damage_energy_sub_damage_guns"
 		locForm="0"
-		value="Ýíåðãåòè÷åñêèé óñèëèòåëü" />
+		value="ÄÜÁ¿Ôö·ùÆ÷" />
 
 	<Item
 		id="add_damage_guns_sub_damage_energy"
 		locForm="0"
-		value="Áîåïðèïàñû ñ ïëàçìåííûì ñåðäå÷íèêîì" />
+		value="µÈÀë×Óµ¯Ð¾µ¯Ò©" />
 
 	<Item
 		id="add_damage_explosion_sub_damage_guns"
 		locForm="0"
-		value="Áîåãîëîâêè ñ ïëàñòèäîì" />
+		value="¸ßËÜÐÔÕ¨Ò©µ¯Í·" />
 
 	<Item
 		id="add_fueltank_sub_maxspeed"
 		locForm="0"
-		value="Óâåëè÷åííûé òÿæåëûé áåíçîáàê" />
+		value="¼Ó´óÐÍÖØÐÍÓÍÏä" />
 
 	<Item
 		id="add_maxspeed_sub_fueltank"
 		locForm="0"
-		value="Áåíçîíàñîñ, çàíèìàþùèé ÷àñòü áåíçîáàêà" />
+		value="Õ¼ÓÃ²¿·ÖÓÍÏä¿Õ¼äµÄÆûÓÍ±Ã" />
 
 	<Item
 		id="add_armour_sub_max_speed"
 		locForm="0"
-		value="Òÿæåëîå òèòàíîâîå ïîêðûòèå" />
+		value="ÖØÐÍîÑºÏ½ð¸²²ã" />
 
 	<Item
 		id="add_maxspeed_sub_armour"
 		locForm="0"
-		value="Ñêâîçíàÿ àýðîäèíàìè÷åñêàÿ ïðîøèâêà" />
+		value="¹á´©Ê½¿ÕÆø¶¯Á¦Ñ§·ìÏß" />
 
 	<Item
 		id="add_damage_energy_sub_damage_guns2"
 		locForm="0"
-		value="Ýíåðãåòè÷åñêèé ïåðåðàñïðåäåëèòåëü" />
+		value="ÄÜÁ¿ÔÙ·ÖÅäÆ÷" />
 
 	<Item
 		id="add_damage_guns_sub_damage_energy2"
 		locForm="0"
-		value="Áîåïðèïàñû ñ ÿäåðíûì ñåðäå÷íèêîì" />
+		value="ºËÐ¾µ¯Ò©" />
 
 	<Item
 		id="add_damage_explosion_sub_damage_guns2"
 		locForm="0"
-		value="ßäåðíûå áîåãîëîâêè" />
+		value="ºËµ¯Í·" />
 
 	<Item
 		id="add_damage_energy_sub_damage_guns22"
 		locForm="0"
-		value="Äâîéíîé ýíåðãåòè÷åñêèé ïåðåðàñïðåäåëèòåëü" />
+		value="Ë«ÖØÄÜÁ¿ÔÙ·ÖÅäÆ÷" />
 
 	<Item
 		id="add_damage_guns_sub_damage_energy22"
 		locForm="0"
-		value="Áîåïðèïàñû ñ äâîéíûì ÿäåðíûì ñåðäå÷íèêîì" />
+		value="Ë«ºËÐ¾µ¯Ò©" />
 
 	<Item
 		id="add_damage_explosion_sub_damage_guns22"
 		locForm="0"
-		value="ßäåðíûå áîåãîëîâêè ñ ýëåêòðîííûì íàâåäåíèåì" />
+		value="µç×ÓÖÆµ¼ºËµ¯Í·" />
 
 	<Item
 		id="add_maxspeed_sub_armour2"
 		locForm="0"
-		value="Äâîéíàÿ àýðîäèíàìè÷åñêàÿ ïðîøèâêà" />
+		value="Ë«ÖØ¿ÕÆø¶¯Á¦Ñ§·ìÏß" />
 
 	<Item
 		id="add_fueltank_sub_maxspeed2"
 		locForm="0"
-		value="Óäâîåííûé ñâåðõ-òÿæåëûé áåíçîáàê" />
+		value="¼Ó±¶µÄÌØÖØÓÍÏä" />
 
 	<Item
 		id="add_maxspeed_sub_fueltank2"
 		locForm="0"
-		value="Äâîéíîé áåíçîíàñîñ, çàíèìàþùèé ÷àñòü áåíçîáàêà" />
+		value="Õ¼ÓÃ²¿·ÖÓÍÏä¿Õ¼äµÄË«ÆûÓÍ±Ã" />
 
 	<Item
 		id="add_armour_sub_max_speed2"
 		locForm="0"
-		value="Äâîéíîå òèòàíîâîå ïîêðûòèå" />
+		value="Ë«²ãîÑºÏ½ð¸²²ã" />
 
 	<Item
 		id="add_damage_energy_sub_damage_guns23"
 		locForm="0"
-		value="Òðîéíîé ýíåðãåòè÷åñêèé ïåðåðàñïðåäåëèòåëü" />
+		value="ÈýÖØÄÜÁ¿ÔÙ·ÖÅäÆ÷" />
 
 	<Item
 		id="add_damage_guns_sub_damage_energy23"
 		locForm="0"
-		value="Áîåïðèïàñû ñ òðîéíûì ÿäåðíûì ñåðäå÷íèêîì" />
+		value="ÈýºËÐ¾µ¯Ò©" />
 
 	<Item
 		id="add_damage_explosion_sub_damage_guns23"
 		locForm="0"
-		value="ßäåðíûå áîåãîëîâêè ñ äîïîëíåííûì ýëåêòðîííûì íàâåäåíèåì" />
+		value="ÔöÇ¿µç×ÓÖÆµ¼ºËµ¯Í·" />
 
 	<Item
 		id="add_maxspeed_sub_armour3"
 		locForm="0"
-		value="Òðîéíàÿ àýðîäèíàìè÷åñêàÿ ïðîøèâêà" />
+		value="ÈýÖØ¿ÕÆø¶¯Á¦Ñ§·ìÏß" />
 
 	<Item
 		id="add_fueltank_sub_maxspeed3"
 		locForm="0"
-		value="Óòðîåííûé ñâåðõòÿæåëûé áåíçîáàê" />
+		value="Èý±¶ÌØÖØÓÍÏä" />
 
 	<Item
 		id="add_maxspeed_sub_fueltank3"
 		locForm="0"
-		value="Òðîéíîé áåíçîíàñîñ, çàíèìàþùèé ÷àñòü áåíçîáàêà" />
+		value="Õ¼ÓÃ²¿·ÖÓÍÏä¿Õ¼äµÄÈýÖØÆûÓÍ±Ã" />
 
 	<Item
 		id="add_armour_sub_max_speed3"
 		locForm="0"
-		value="Òðîéíîå òèòàíîâîå ïîêðûòèå" />
+		value="Èý²ãîÑºÏ½ð¸²²ã" />
 
 	<Item
 		id="add_damage_energy_sub_damage_guns24"
 		locForm="0"
-		value="Êâàäðà-ýíåðãåòè÷åñêèé ïåðåðàñïðåäåëèòåëü" />
+		value="ËÄÖØÄÜÁ¿ÔÙ·ÖÅäÆ÷" />
 
 	<Item
 		id="add_damage_guns_sub_damage_energy24"
 		locForm="0"
-		value="Áîåïðèïàñû ñ êâàäðà-ÿäåðíûì ñåðäå÷íèêîì" />
+		value="ËÄºËÐ¾µ¯Ò©" />
 
 	<Item
 		id="add_damage_explosion_sub_damage_guns24"
 		locForm="0"
-		value="ßäåðíûå áîåãîëîâêè ñ äóáëèðóþùèì ýëåêòðîííûì íàâåäåíèåì" />
+		value="ÈßÓàµç×ÓÖÆµ¼ºËµ¯Í·" />
 
 	<Item
 		id="add_maxspeed_sub_armour4"
 		locForm="0"
-		value="Êâàäðà-àýðîäèíàìè÷åñêàÿ ïðîøèâêà" />
+		value="ËÄÖØ¿ÕÆø¶¯Á¦Ñ§·ìÏß" />
 
 	<Item
 		id="add_fueltank_sub_maxspeed4"
 		locForm="0"
-		value="Êâàäðà-áåíçîáàê" />
+		value="ËÄ±¶ÓÍÏä" />
 
 	<Item
 		id="add_maxspeed_sub_fueltank4"
 		locForm="0"
-		value="Êâàäðà-÷èï, çàíèìàþùèé ÷àñòü áåíçîáàêà" />
+		value="Õ¼ÓÃ²¿·ÖÓÍÏä¿Õ¼äµÄËÄÖØÓÍ±ÃÐ¾Æ¬" />
 
 	<Item
 		id="add_armour_sub_max_speed4"
 		locForm="0"
-		value="Êâàäðà-òèòàíîâîå ïîêðûòèå" />
+		value="ËÄ²ãîÑºÏ½ð¸²²ã" />
 
 	<Item
 		id="wine"
 		locForm="0"
-		value="Âèíî" />
+		value="ÆÏÌÑ¾Æ" />
 
 	<Item
 		id="cannedfood"
 		locForm="0"
-		value="Êîíñåðâû" />
+		value="¹ÞÍ·Ê³Æ·" />
 
 	<Item
 		id="potato"
 		locForm="0"
-		value="Êàðòîôåëü" />
+		value="ÍÁ¶¹" />
 
 	<Item
 		id="scrap_metal"
 		locForm="0"
-		value="Ìåòàëëîëîì" />
+		value="·Ï½ðÊô" />
 
 	<Item
 		id="firewood"
 		locForm="0"
-		value="Äðîâà" />
+		value="²ñ»ð" />
 
 	<Item
 		id="info_stone"
 		locForm="0"
-		value="Êàìåíü ñ ðóíàìè" />
+		value="¿Ì×Å·ûÎÄµÄÊ¯Í·" />
 
 	<Item
 		id="oil"
 		locForm="0"
-		value="Íåôòü" />
+		value="Ê¯ÓÍ" />
 
 	<Item
 		id="bottle"
 		locForm="0"
-		value="Áóòûëêè" />
+		value="Æ¿×Ó" />
 
 	<Item
 		id="fuel"
 		locForm="0"
-		value="Ãîðþ÷åå" />
+		value="È¼ÁÏ" />
 
 	<Item
 		id="machinery"
 		locForm="0"
-		value="Çàï÷àñòè" />
+		value="Áã¼þ" />
 
 	<Item
 		id="tobacco"
 		locForm="0"
-		value="Òàáàê" />
+		value="ÑÌ²Ý" />
 
 	<Item
 		id="book"
 		locForm="0"
-		value="Êíèãè" />
+		value="Êé¼®" />
 
 	<Item
 		id="electronics"
 		locForm="0"
-		value="Ýëåêòðîíèêà" />
+		value="µç×ÓÔª¼þ" />
 
 	<Item
 		id="quest_start_father_letter"
 		locForm="0"
-		value="Ïèñüìî" />
+		value="ÐÅ¼þ" />
 
 	<Item
 		id="quest_potato"
 		locForm="0"
-		value="Ïàêåò" />
+		value="°ü¹ü" />
 
 	<Item
 		id="quest_medicine_box"
 		locForm="0"
-		value="Ìåäèêàìåíòû" />
+		value="Ò©Æ·" />
 
 	<Item
 		id="quest_explosive"
 		locForm="0"
-		value="Âçðûâ÷àòêà" />
+		value="Õ¨Ò©" />
 
 	<Item
 		id="quest_wine_barrels"
 		locForm="0"
-		value="Áî÷êè ñ âèíîì" />
+		value="ÆÏÌÑ¾ÆÍ°" />
 
 	<Item
 		id="quest_komp_splav"
 		locForm="0"
-		value="Ðåäêèé ñïëàâ" />
+		value="Ï¡ÓÐºÏ½ð" />
 
 	<Item
 		id="quest_shaman_head1"
 		locForm="0"
-		value="Ãîëîâà ñåêòàíòà" />
+		value="½ÌÅÉ½ÌÍ½µÄÍ·Â­" />
 
 	<Item
 		id="quest_shaman_head2"
 		locForm="0"
-		value="Ãîëîâà ÿçû÷íèêà" />
+		value="Òì½ÌÍ½µÄÍ·Â­" />
 
 	<Item
 		id="quest_old_digital"
 		locForm="0"
-		value="Ñòàðûé äâèãàòåëü" />
+		value="ÀÏÊ½ÒýÇæ" />
 
 	<Item
 		id="quest_art_masterpice"
 		locForm="0"
-		value="Ïðîèçâåäåíèå èñêóññòâà" />
+		value="ÒÕÊõÆ·" />
 
 	<Item
 		id="quest_mafia_narcotik"
 		locForm="0"
-		value="Íàðêîòèêè" />
+		value="¶¾Æ·" />
 
 	<Item
 		id="quest_first_canistra"
 		locForm="0"
-		value="Êàíèñòðà íåôòè" />
+		value="Ò»Í°Ê¯ÓÍ" />
 
 	<Item
 		id="quest_disk_1"
 		locForm="0"
-		value="Äèñê" />
+		value="¹âÅÌ" />
 
 	<Item
 		id="quest_disk_2"
 		locForm="0"
-		value="Âòîðîé äèñê" />
+		value="µÚ¶þÕÅ¹âÅÌ" />
 
 	<Item
 		id="quest_key_for_submarine"
 		locForm="0"
-		value="Êëþ÷ îò ìîðñêèõ âðàò" />
+		value="º£ÉÏÖ®ÃÅÔ¿³×" />
 
 	<Item
 		id="quest_key_for_tunnel"
 		locForm="0"
-		value="Êëþ÷ ê òîííåëþ" />
+		value="ËíµÀÔ¿³×" />
 
 	<Item
 		id="quest_repair_robot3"
 		locForm="0"
-		value="Ðîáîò-íàñòðîéùèê" />
+		value="µ÷ÊÔ»úÆ÷ÈË" />
 
 	<Item
 		id="quest_repair_robot1"
 		locForm="0"
-		value="Ðîáîò-ïîìîùíèê" />
+		value="ÖúÊÖ»úÆ÷ÈË" />
 
 	<Item
 		id="quest_repair_robot2"
 		locForm="0"
-		value="Ðîáîò-ðåìîíòíèê" />
+		value="Î¬ÐÞ»úÆ÷ÈË" />
 
 	<Item
 		id="quest_explosion_stone"
 		locForm="0"
-		value="Êàìåíü ñ ðóíàìè" />
+		value="¿Ì×Å·ûÎÄµÄÊ¯Í·" />
 
 	<Item
 		id="quest_magic_thing2"
 		locForm="0"
-		value="Ñëîìàííûé ïðèáîð" />
+		value="Ëð»µµÄÒÇÆ÷" />
 
 	<Item
 		id="quest_magic_thing1"
 		locForm="0"
-		value="Ñòàðèííûé àðòåôàêò" />
+		value="¹Å¶­ÉñÆ÷" />
 
 	<Item
 		id="quest_monster_head"
 		locForm="0"
-		value="Ãîëîâà ìîíñòðà" />
+		value="¹ÖÎïÍ·Â­" />
 
 	<Item
 		id="quest_baseball_bat"
 		locForm="0"
-		value="Áåéñáîëüíàÿ áèòà" />
+		value="°ôÇò¹÷" />
 
 	<Item
 		id="quest_grand_prix"
 		locForm="0"
-		value="Êóáîê" />
+		value="½±±­" />
 
 	<Item
 		id="quest_movie_reel_1"
 		locForm="0"
-		value="Äðåâíèé ñâèòîê" />
+		value="¹ÅÀÏ¾íÖá" />
 
 	<Item
 		id="quest_movie_reel_2"
 		locForm="0"
-		value="Îòîáðàííûé ñâèòîê" />
+		value="½É»ñµÄ¾íÖá" />
 
 	<Item
 		id="quest_robot_part_1"
 		locForm="0"
-		value="Êàìåðû îïòè÷åñêîé ñèñòåìû" />
+		value="¹âÑ§ÏµÍ³ÉãÏñÍ·" />
 
 	<Item
 		id="quest_robot_part_2"
 		locForm="0"
-		value="Àêêóìóëÿòîð" />
+		value="Ðîµç³Ø" />
 
 	<Item
 		id="quest_robot_part_3"
 		locForm="0"
-		value="Øëàíã äëÿ ãèäðàâëè÷åñêîé ñèñòåìû" />
+		value="ÒºÑ¹ÏµÍ³Èí¹Ü" />
 
 	<Item
 		id="quest_emissary_trophies"
 		locForm="0"
-		value="Òðîôåè" />
+		value="Õ½ÀûÆ·" />
 
 	<Item
 		id="quest_airplane_part"
 		locForm="0"
-		value="Äâèãàòåëü" />
+		value="·¢¶¯»ú" />
 
 	<Item
 		id="quest_goldsellector"
 		locForm="0"
-		value="Êëàäîèñêàòåëü" />
+		value="ÌÔ½ðÕß" />
 
 	<Item
 		id="quest_drugs"
 		locForm="0"
-		value="Êîíòðàáàíäíûé òîâàð" />
+		value="Î¥½ûÆ·" />
 
 	<Item
 		id="quest_special_drugs"
 		locForm="0"
-		value="Êîíòðàáàíäà" />
+		value="×ßË½Æ·" />
 
 	<Item
 		id="quest_reach"
 		locForm="0"
-		value="Ïîñûëêà" />
+		value="°ü¹ü" />
 
 	<Item
 		id="quest_forbidden_books"
 		locForm="0"
-		value="Çàïðåòíûå êíèãè" />
+		value="½ûÊé" />
 
 	<Item
 		id="quest_wanted"
 		locForm="0"
-		value="Ëèñòîâêà ''Ðàçûñêèâàåòñÿ!''" />
+		value="¡¸Í¨¼©£¡¡¹´«µ¥" />
 
 	<Item
 		id="someTurboAccelerationPusher"
 		locForm="0"
-		value="Òóðáî-óñêîðåíèå" />
+		value="ÎÐÂÖ¼ÓËÙ" />
 
 	<Item
 		id="Jumper"
 		locForm="0"
-		value="Äæàìï-ïóøêà" />
+		value="Jumper ÅÚ" />
 
 	<Item
 		id="engineOilPusher"
 		locForm="0"
-		value="Ìàøèííîå ìàñëî" />
+		value="»úÓÍ" />
 
 	<Item
 		id="nailsPusher"
 		locForm="0"
-		value="Ãâîçäè" />
+		value="¶¤×Ó" />
 
 	<Item
 		id="minePusher"
 		locForm="0"
-		value="Åæ-1" />
+		value="Hedgehog-1" />
 
 	<Item
 		id="cyclops01"
 		locForm="0"
-		value="Öèêëîï" />
+		value="¶ÀÑÛ¾ÞÈË" />
 
 	<Item
 		id="big_swingfire01"
 		locForm="0"
-		value="Ñâèíãôàéð" />
+		value="Swingfire" />
 
 	<Item
 		id="rocketLauncher"
 		locForm="0"
-		value="Äðàêîí" />
+		value="Dragon" />
 
 	<Item
 		id="storm01"
 		locForm="0"
-		value="Øòîðì" />
+		value="·ç±©" />
 
 	<Item
 		id="dozerCab01"
 		locForm="0"
-		value="Òðýø" />
+		value="À¬»ø³µ" />
 
 	<Item
 		id="scoutCab01"
 		locForm="0"
-		value="Áëèö (óðîâåíü 1)" />
+		value="ÉÁµç£¨Ò»¼¶£©" />
 
 	<Item
 		id="scoutCab02"
 		locForm="0"
-		value="Âèíò (óðîâåíü 2)" />
+		value="ÂÝÐý½°£¨¶þ¼¶£©" />
 
 	<Item
 		id="scoutCab03"
 		locForm="0"
-		value="Ñåðôåð (óðîâåíü 3)" />
+		value="³åÀËÕß£¨Èý¼¶£©" />
 
 	<Item
 		id="fighterCab01"
 		locForm="0"
-		value="Ïèòáóëü (óðîâåíü 1)" />
+		value="±ÈÌØÈ®£¨Ò»¼¶£©" />
 
 	<Item
 		id="fighterCab02"
 		locForm="0"
-		value="Äîáåðìàí (óðîâåíü 2)" />
+		value="¶Å±öÈ®£¨¶þ¼¶£©" />
 
 	<Item
 		id="fighterCab03"
 		locForm="0"
-		value="Ïîëèñ (óðîâåíü 3)" />
+		value="¾¯È®£¨Èý¼¶£©" />
 
 	<Item
 		id="molokovozCab01"
 		locForm="0"
-		value="Áîëò (óðîâåíü 1)" />
+		value="ÂÝË¨£¨Ò»¼¶£©" />
 
 	<Item
 		id="molokovozCab02"
 		locForm="0"
-		value="Âèõðü (óðîâåíü 2)" />
+		value="ÐýÎÐ£¨¶þ¼¶£©" />
 
 	<Item
 		id="molokovozCab03"
 		locForm="0"
-		value="Øèï (óðîâåíü 3)" />
+		value="µ¹´Ì£¨Èý¼¶£©" />
 
 	<Item
 		id="molokovozCargo01"
 		locForm="0"
-		value="Òåíò (óðîâåíü 1)" />
+		value="¶¥Åñ£¨Ò»¼¶£©" />
 
 	<Item
 		id="molokovozCargo02"
 		locForm="0"
-		value="Ãåíåðàòîð (óðîâåíü 2)" />
+		value="·¢µç»ú£¨¶þ¼¶£©" />
 
 	<Item
 		id="molokovozCargo03"
 		locForm="0"
-		value="Áîêñ (óðîâåíü 3)" />
+		value="»õÏä£¨Èý¼¶£©" />
 
 	<Item
 		id="belazCab01"
 		locForm="0"
-		value="Çîä (óðîâåíü 1)" />
+		value="×ôµÂ£¨Ò»¼¶£©" />
 
 	<Item
 		id="belazCab02"
 		locForm="0"
-		value="Áîëèâàð (óðîâåíü 2)" />
+		value="²£ÀûÍß¶û£¨¶þ¼¶£©" />
 
 	<Item
 		id="belazCab03"
 		locForm="0"
-		value="Ðîê (óðîâåíü 3)" />
+		value="Âå¿Ë£¨Èý¼¶£©" />
 
 	<Item
 		id="belazCab04"
 		locForm="0"
-		value="Òåðìèíàòîð (óðîâåíü 4)" />
+		value="ÖÕ½áÕß£¨ËÄ¼¶£©" />
 
 	<Item
 		id="belazCab05"
 		locForm="0"
-		value="Ùèò (óðîâåíü 5)" />
+		value="¶ÜÅÆ£¨Îå¼¶£©" />
 
 	<Item
 		id="belazCargo01"
 		locForm="0"
-		value="Õîñò (óðîâåíü 1)" />
+		value="ËÞÖ÷£¨Ò»¼¶£©" />
 
 	<Item
 		id="belazCargo02"
 		locForm="0"
-		value="Êîíñòðóêòîð (óðîâåíü 2)" />
+		value="×é×°Õß£¨¶þ¼¶£©" />
 
 	<Item
 		id="belazCargo03"
 		locForm="0"
-		value="Êîëîññ (óðîâåíü 3)" />
+		value="¾ÞÈË£¨Èý¼¶£©" />
 
 	<Item
 		id="belazCargo04"
 		locForm="0"
-		value="Ãðîì (óðîâåíü 4)" />
+		value="À×öª£¨ËÄ¼¶£©" />
 
 	<Item
 		id="belazCargo05"
 		locForm="0"
-		value="Öèëèíäð (óðîâåíü 5)" />
+		value="Æø¸×£¨Îå¼¶£©" />
 
 	<Item
 		id="bugCab01"
 		locForm="0"
-		value="Æóê (óðîâåíü 1)" />
+		value="¼×³æ£¨Ò»¼¶£©" />
 
 	<Item
 		id="bugCab02"
 		locForm="0"
-		value="Ðàáîòÿãà (óðîâåíü 2)" />
+		value="ÀÍÁ¦£¨¶þ¼¶£©" />
 
 	<Item
 		id="bugCab03"
 		locForm="0"
-		value="Ñêîðïèîí (óðîâåíü 3)" />
+		value="Ð«×Ó£¨Èý¼¶£©" />
 
 	<Item
 		id="bugCab04"
 		locForm="0"
-		value="Ï÷åëà  (óðîâåíü 4)" />
+		value="ÃÛ·ä£¨ËÄ¼¶£©" />
 
 	<Item
 		id="bugCab05"
 		locForm="0"
-		value="Áîãîìîë  (óðîâåíü 5)" />
+		value="ó«òë£¨Îå¼¶£©" />
 
 	<Item
 		id="bugCargo01"
 		locForm="0"
-		value="Ãàç (óðîâåíü 1)" />
+		value="Æø¹Þ£¨Ò»¼¶£©" />
 
 	<Item
 		id="bugCargo02"
 		locForm="0"
-		value="Êàñêàä (óðîâåíü 2)" />
+		value="ÆÙ²¼£¨¶þ¼¶£©" />
 
 	<Item
 		id="bugCargo03"
 		locForm="0"
-		value="Áîðã (óðîâåíü 3)" />
+		value="²©¸ñ£¨Èý¼¶£©" />
 
 	<Item
 		id="uralCab01"
 		locForm="0"
-		value="Õðîì (óðîâåíü 1)" />
+		value="¸õ£¨Ò»¼¶£©" />
 
 	<Item
 		id="uralCab02"
 		locForm="0"
-		value="Øòàíäàðò (óðîâåíü 2)" />
+		value="¾üÆì£¨¶þ¼¶£©" />
 
 	<Item
 		id="uralCab03"
 		locForm="0"
-		value="Ëîðä (óðîâåíü 4)" />
+		value="ÁìÖ÷£¨ËÄ¼¶£©" />
 
 	<Item
 		id="uralCab04"
 		locForm="0"
-		value="Ìîðèîí (óðîâåíü 3)" />
+		value="ÂíÂÔ£¨M§à§â§Ú§à§ß£¬Èý¼¶£©" />
 
 	<Item
 		id="uralCab05"
 		locForm="0"
-		value="Âèòÿçü (óðîâåíü 5)" />
+		value="ÓÂÊ¿£¨Îå¼¶£©" />
 
 	<Item
 		id="uralCargo01"
 		locForm="0"
-		value="Õîëîä (óðîâåíü 1)" />
+		value="º®Àä£¨Ò»¼¶£©" />
 
 	<Item
 		id="uralCargo02"
 		locForm="0"
-		value="Ôðàõò (óðîâåíü 3)" />
+		value="»õÔË£¨Èý¼¶£©" />
 
 	<Item
 		id="uralCargo03"
 		locForm="0"
-		value="Êðåéñåð (óðîâåíü 4)" />
+		value="Ñ²Ñó½¢£¨ËÄ¼¶£©" />
 
 	<Item
 		id="uralCargo04"
 		locForm="0"
-		value="Ïàíöèðü (óðîâåíü 2)" />
+		value="îø¼×£¨¶þ¼¶£©" />
 
 	<Item
 		id="uralCargo05"
 		locForm="0"
-		value="Òèãð (óðîâåíü 5)" />
+		value="ÀÏ»¢£¨Îå¼¶£©" />
 
 	<Item
 		id="FighterForSale"
 		locForm="0"
-		value="Áîåö" />
+		value="¶·Ê¿" />
 
 	<Item
 		id="ScoutForSale"
 		locForm="0"
-		value="Ñêàóò" />
+		value="Õì²ì±ø" />
 
 	<Item
 		id="BelazForSale"
 		locForm="0"
-		value="Áåëàç" />
+		value="±ðÀ­Ë¹" />
 
 	<Item
 		id="UralForSale"
 		locForm="0"
-		value="Óðàë" />
+		value="ÎÚÀ­¶û" />
 
 	<Item
 		id="BugForSale"
 		locForm="0"
-		value="Âýí" />
+		value="»õ³µ" />
 
 	<Item
 		id="MolokovozForSale"
 		locForm="0"
-		value="Ìîëîêîâîç" />
+		value="ÄÌ³µ" />
 
         <Item
 		id="MolokovozCargo04"
 		locForm="0"
-		value="Áîëò ñ ïðèöåïîì" />
+		value="´ø¹Ò³µµÄÂÝË¨" />
 	
 	<Item
 		id="mirotvorecCab01"
 		locForm="0"
-		value="Ãðàí (óðîâåíü 1)" />
+		value="¸ñÀ¼£¨Ò»¼¶£©" />
 
 	<Item
 		id="mirotvorecCab02"
 		locForm="0"
-		value="×åðåï (óðîâåíü 2)" />
+		value="÷¼÷Ã£¨¶þ¼¶£©" />
 
 	<Item
 		id="mirotvorecCab03"
 		locForm="0"
-		value="Ìåòåîð (óðîâåíü 3)" />
+		value="Á÷ÐÇ£¨Èý¼¶£©" />
 
 	<Item
 		id="mirotvorecCab04"
 		locForm="0"
-		value="Áóëàò (óðîâåíü 4)" />
+		value="²¼À­ÌØ£¨ËÄ¼¶£©" />
 
 	<Item
 		id="mirotvorecCab05"
 		locForm="0"
-		value="Ôàíòîì (óðîâåíü 5)" />
+		value="»ÃÓ°£¨Îå¼¶£©" />
 
 	<Item
 		id="mirotvorecCargo01"
 		locForm="0"
-		value="Êëûê (óðîâåíü 1)" />
+		value="â²ÑÀ£¨Ò»¼¶£©" />
 
 	<Item
 		id="mirotvorecCargo02"
 		locForm="0"
-		value="Öåíòóðèîí (óðîâåíü 2)" />
+		value="°Ù·ò³¤£¨¶þ¼¶£©" />
 
 	<Item
 		id="mirotvorecCargo03"
 		locForm="0"
-		value="Ìàé (óðîâåíü 3)" />
+		value="ÎåÔÂ£¨Èý¼¶£©" />
 
 	<Item
 		id="mirotvorecCargo04"
 		locForm="0"
-		value="Ìàñàìóíý (óðîâåíü 4)" />
+		value="Õý×Ú£¨Èý¼¶£©" />
 
 	<Item
 		id="mirotvorecCargo05"
 		locForm="0"
-		value="Ýêñêàëèáóð (óðîâåíü 5)" />
+		value="ÍõÕßÖ®½££¨Îå¼¶£©" />
 
 	<Item
 		id="MirotvorecForSale"
 		locForm="0"
-		value="Ìèðîòâîðåö" />
+		value="ºÍÆ½Ê¹Õß" />
 
 	<Item
 		id="sml1Cab01"
 		locForm="1"
-		value="Êàáèíà Êëîïà" />
+		value="³ô³æ¼ÝÊ»ÊÒ" />
 
 	<Item
 		id="sml2Cab01"
 		locForm="1"
-		value="Êàáèíà Òàðàêàíà" />
+		value="ó¯òë¼ÝÊ»ÊÒ" />
 
 	<Item
 		id="sml3Cab01"
 		locForm="1"
-		value="Êàáèíà Ìóðàâüÿ" />
+		value="ÂìÒÏ¼ÝÊ»ÊÒ" />
 
 	<Item
 		id="sml4Cab01"
 		locForm="1"
-		value="Êàáèíà Êóçíå÷èêà" />
+		value="òÆòì¼ÝÊ»ÊÒ" />
 
 	<Item
 		id="denscoutCab"
 		locForm="1"
-		value="Êàáèíà Ëèñû" />
+		value="ºüÀê¼ÝÊ»ÊÒ" />
 
 	<Item
 		id="tank01"
 		locForm="0"
-		value="Òàíê" />
+		value="Ì¹¿Ë" />
 
 	<Item
 		id="tankCab01"
 		locForm="0"
-		value="Áàøíÿ" />
+		value="ÅÚËþ" />
 
 	<Item
 		id="tankCargo01"
 		locForm="0"
-		value="Êîðïóñ" />
+		value="³µÌå" />
 
 	<Item
 		id="robotplayer01Cab01"
 		locForm="0"
-		value="Öåíòðàëüíûé Ïðîöåññîð" />
+		value="ÖÐÑë´¦ÀíÆ÷" />
 
 	<Item
 		id="robot01Cab01"
 		locForm="0"
-		value="Öåíòðàëüíûé Ïðîöåññîð" />
+		value="ÖÐÑë´¦ÀíÆ÷" />
 
 	<Item
 		id="robotCargo01"
 		locForm="0"
-		value="Àêêóìóëÿòîð" />
+		value="Ðîµç³Ø" />
 
 	<Item
 		id="scoutCargo01"
 		locForm="1"
-		value="Êîíòåéíåð äëÿ ãðóçà" />
+		value="»õÏä" />
 
 	<Item
 		id="scoutCargo02"
 		locForm="1"
-		value="Êîíòåéíåð äëÿ ãðóçà" />
+		value="»õÏä" />
 
 	<Item
 		id="fighterCargo01"
 		locForm="1"
-		value="Êîíòåéíåð äëÿ ãðóçà" />
+		value="»õÏä" />
 
 	<Item
 		id="fighterCargo02"
 		locForm="1"
-		value="Êîíòåéíåð äëÿ ãðóçà" />
+		value="»õÏä" />
 
 	<Item
 		id="ElectroShockMed"
 		locForm="0"
-		value="Àâòî-Ñòîï" />
+		value="µç»÷Ç¹" />
 
 	<Item
 		id="FlameThrowerMed"
 		locForm="0"
-		value="Îãíåìåò" />
+		value="»ðÑæÅçÉäÆ÷" />
 
 	<Item
 		id="FlameThrowerGiant"
 		locForm="0"
-		value="Èñïåïåëèòåëü" />
+		value="·Ù»¯Õß" />
 
 	<Item
 		id="robotgun01"
 		locForm="0"
-		value="Îêî Îðàêóëà, âåðñèÿ 2.7" />
+		value="ÉñÚÍÖ®ÑÛ 2.7 °æ" />
 
 	<Item
 		id="robotgun04small_01"
 		locForm="0"
-		value="Îêî Îðàêóëà, âåðñèÿ 3.2" />
+		value="ÉñÚÍÖ®ÑÛ 3.2 °æ" />
 
 	<Item
 		id="robotgun04small_02"
 		locForm="0"
-		value="Îêî Îðàêóëà, âåðñèÿ 3.5" />
+		value="ÉñÚÍÖ®ÑÛ 3.5 °æ" />
 
 	<Item
 		id="hornet01"
 		locForm="0"
-		value="Øåðøåíü" />
+		value="´ó»Æ·ä" />
 
 	<Item
 		id="specter01"
 		locForm="0"
-		value="Ñïåêòð" />
+		value="ÓÄ»ê" />
 
 	<Item
 		id="specterS01"
 		locForm="0"
-		value="Óíèêàëüíûé Ñïåêòð" />
+		value="¶ÀÌØÓÄ»ê" />
 
 
 	<Item
 		id="pkt01"
 		locForm="0"
-		value="ÏÊÒ" />
+		value="PKT" />
 
 	<Item
 		id="pktS01"
 		locForm="0"
-		value="Óíèêàëüíûé ÏÊÒ" />
+		value="¶ÀÌØ PKT" />
 
 	<Item
 		id="kord01"
 		locForm="0"
-		value="Êîðä" />
+		value="¿ÆµÂ" />
 
 	<Item
 		id="vector01"
 		locForm="0"
-		value="Âåêòîð" />
+		value="Ê¸Á¿" />
 
 	<Item
 		id="vulcan01"
 		locForm="0"
-		value="Âóëêàí" />
+		value="»ðÉñ" />
 
 	<Item
 		id="maxim01"
 		locForm="0"
-		value="Ìàêñèì" />
+		value="Maxim" />
 
 	<Item
 		id="rapier01"
 		locForm="1"
-		value="Ðàïèðà" />
+		value="»¨½£" />
 
 	<Item
 		id="fagot01"
 		locForm="0"
-		value="Ôàãîò" />
+		value="°ÍËÉ" />
 
 	<Item
 		id="fagotS01"
 		locForm="0"
-		value="Óíèêàëüíûé Ôàãîò" />
+		value="¶ÀÌØ°ÍËÉ" />
 
 	<Item
 		id="kpvt01"
 		locForm="0"
-		value="ÊÏÂÒ" />
+		value="KPVT" />
 
 	<Item
 		id="kpvtS01"
 		locForm="0"
-		value="Óíèêàëüíûé ÊÏÂÒ" />
+		value="¶ÀÌØ KPVT" />
 
 	<Item
 		id="rainmetal01"
 		locForm="0"
-		value="Ðåéíìåòàëë" />
+		value="Rainmetal" />
 
 	<Item
 		id="octopus01"
 		locForm="0"
-		value="Ñïðóò" />
+		value="Ë¹ÆÕÂ³ÌØ" />
 
 	<Item
 		id="octopusS01"
 		locForm="0"
-		value="Óíèêàëüíûé Ñïðóò" />
+		value="¶ÀÌØË¹ÆÕÂ³ÌØ" />
 
 	<Item
 		id="elephant01"
 		locForm="0"
-		value="Ñëîí" />
+		value="¾ÞÏó" />
 
 	<Item
 		id="elephantS01"
 		locForm="0"
-		value="Óíèêàëüíûé Ñëîí" />
+		value="¶ÀÌØ¾ÞÏó" />
 
 	<Item
 		id="flag01"
 		locForm="0"
-		value="Ôëàã" />
+		value="ÆìÖÄ" />
 
 	<Item
 		id="flagS01"
 		locForm="0"
-		value="Óíèêàëüíûé Ôëàã" />
+		value="¶ÀÌØÆìÖÄ" />
 
 	<Item
 		id="hurricane01"
 		locForm="0"
-		value="Óðàãàí" />
+		value="ì«·ç" />
 
 	<Item
 		id="hailSideGun"
 		locForm="0"
-		value="Ãðàä" />
+		value="±ù±¢" />
 
 	<Item
 		id="odin01"
 		locForm="0"
-		value="Îäèí" />
+		value="°Â¶¡" />
 
 	<Item
 		id="hammer01"
 		locForm="0"
-		value="Ìîëîò Òîðà" />
+		value="À×ÉñÖ®´¸" />
 
 	<Item
 		id="hammerS01"
 		locForm="0"
-		value="Óíèêàëüíûé Ìîëîò Òîðà" />
+		value="¶ÀÌØÀ×ÉñÖ®´¸" />
 
 	<Item
 		id="bumblebee01"
 		locForm="0"
-		value="Øìåëü" />
+		value="ÐÜ·ä" />
 
 	<Item
 		id="omega01"
 		locForm="1"
-		value="Îìåãà" />
+		value="Å·Ã×Ù¤" />
 
 	<Item
 		id="mrakSideGun"
 		locForm="0"
-		value="Ìðàê" />
+		value="ÓÄ°µ" />
 
 	<Item
 		id="hunterSideGun"
 		locForm="0"
-		value="Îõîòíèê" />
+		value="ÁÔÊÖ" />
 
 	<Item
 		id="zeusSideGun"
 		locForm="0"
-		value="Çåâñ" />
+		value="ÖæË¹" />
 
 	<Item
 		id="zeusSideGunS"
 		locForm="0"
-		value="Óíèêàëüíûé Çåâñ" />
+		value="¶ÀÌØÖæË¹" />
 
 	<Item
 		id="marsSideGun"
 		locForm="0"
-		value="Ìàðñ" />
+		value="»ðÐÇ" />
 
 	<Item
 		id="marsSideGunS"
 		locForm="0"
-		value="Óíèêàëüíûé Ìàðñ" />
+		value="¶ÀÌØ»ðÐÇ" />
 
 	<Item
 		id="minePusher_1"
 		locForm="0"
-		value="Åæ-2" />
+		value="Hedgehog-2" />
 
 	<Item
 		id="minePusher_2"
 		locForm="0"
-		value="Âèõðü" />
+		value="ÐýÎÐ" />
 
 	<Item
 		id="Sml301"
 		locForm="0"
-		value="Ìóðàâåé" />
+		value="ÂìÒÏ" />
 
 	<Item
 		id="Sml3"
 		locForm="0"
-		value="Ìóðàâåé" />
+		value="ÂìÒÏ" />
 
 	<Item
 		id="r1m1_sml01"
 		locForm="0"
-		value="Êëîï" />
+		value="³ô³æ" />
 
 	<Item
 		id="r1m1_sml02"
 		locForm="0"
-		value="Òàðàêàí" />
+		value="ó¯òë" />
 
 	<Item
 		id="r1m1_sml03"
 		locForm="0"
-		value="Ìóðàâåé" />
+		value="ÂìÒÏ" />
 
 	<Item
 		id="r1m1_sml04"
 		locForm="0"
-		value="Êóçíå÷èê" />
+		value="òÆòì" />
 
 	<Item
 		id="r1m1_scout01"
 		locForm="0"
-		value="Ñêàóò" />
+		value="Õì²ì±ø" />
 
 	<Item
 		id="r1m1_scout02"
 		locForm="0"
-		value="Ñêàóò" />
+		value="Õì²ì±ø" />
 
 	<Item
 		id="r1m1_scout03"
 		locForm="0"
-		value="Ñêàóò" />
+		value="Õì²ì±ø" />
 
 	<Item
 		id="r1m1_molokovoz01"
 		locForm="0"
-		value="Ìîëîêîâîç" />
+		value="ÄÌ³µ" />
 
 	<Item
 		id="r1m1_molokovoz02"
 		locForm="0"
-		value="Ìîëîêîâîç" />
+		value="ÄÌ³µ" />
 
 	<Item
 		id="r1m1_molokovoz03"
 		locForm="0"
-		value="Ìîëîêîâîç" />
+		value="ÄÌ³µ" />
 
 	<Item
 		id="r5m1_sumo01"
 		locForm="0"
-		value="Ãëàäèàòîð" />
+		value="½Ç¶·Ê¿" />
 
 	<Item
 		id="r5m1_sumo02"
 		locForm="0"
-		value="Ãëàäèàòîð" />
+		value="½Ç¶·Ê¿" />
 
 	<Item
 		id="r1m1_bug01"
 		locForm="0"
-		value="Âýí" />
+		value="»õ³µ" />
 
 	<Item
 		id="r1m1_bug02"
 		locForm="0"
-		value="Âýí" />
+		value="»õ³µ" />
 
 	<Item
 		id="r1m1_bug03"
 		locForm="0"
-		value="Âýí" />
+		value="»õ³µ" />
 
 	<Item
 		id="r1m2_hunter02"
 		locForm="0"
-		value="Îõîòíèê" />
+		value="ÁÔÊÖ" />
 
 	<Item
 		id="Scout01"
 		locForm="0"
-		value="Ñêàóò" />
+		value="Õì²ì±ø" />
 
 	<Item
 		id="Scout02"
 		locForm="0"
-		value="Ñêàóò" />
+		value="Õì²ì±ø" />
 
 	<Item
 		id="Scout03"
 		locForm="0"
-		value="Ñêàóò" />
+		value="Õì²ì±ø" />
 
 	<Item
 		id="Scout"
 		locForm="0"
-		value="Ñêàóò" />
+		value="Õì²ì±ø" />
 
 	<Item
 		id="ArcadeScout01"
 		locForm="0"
-		value="Ñêàóò GT" />
+		value="GT Õì²ì±ø" />
 
 	<Item
 		id="Fighter"
 		locForm="0"
-		value="Áîåö" />
+		value="¶·Ê¿" />
 
 	<Item
 		id="Fighter01"
 		locForm="0"
-		value="Áîåö" />
+		value="¶·Ê¿" />
 
 	<Item
 		id="Fighter02"
 		locForm="0"
-		value="Áîåö" />
+		value="¶·Ê¿" />
 
 	<Item
 		id="Hunter"
 		locForm="0"
-		value="Îõîòíèê" />
+		value="ÁÔÊÖ" />
 
 	<Item
 		id="Hunter01"
 		locForm="0"
-		value="Îõîòíèê" />
+		value="ÁÔÊÖ" />
 
 	<Item
 		id="HunterMech"
 		locForm="0"
-		value="Ìåõàíèê" />
+		value="»úÐµÊ¦" />
 
 	<Item
 		id="Hunter02"
 		locForm="0"
-		value="Îõîòíèê" />
+		value="ÁÔÊÖ" />
 
 	<Item
 		id="Cruiser"
 		locForm="0"
-		value="Êðåéñåð" />
+		value="Ñ²Ñó½¢" />
 
 	<Item
 		id="Cruiser01"
 		locForm="0"
-		value="Êðåéñåð" />
+		value="Ñ²Ñó½¢" />
 
 	<Item
 		id="CruiserTest02"
 		locForm="0"
-		value="Êðåéñåð" />
+		value="Ñ²Ñó½¢" />
 
 	<Item
 		id="Dozer"
 		locForm="0"
-		value="Áóëüäîçåð" />
+		value="ÍÆÍÁ»ú" />
 
 	<Item
 		id="Dozer01"
 		locForm="0"
-		value="Áóëüäîçåð" />
+		value="ÍÆÍÁ»ú" />
 
 	<Item
 		id="DozerRace"
 		locForm="0"
-		value="Áóëüäîçåð" />
+		value="ÍÆÍÁ»ú" />
 
 	<Item
 		id="DozerRace1"
 		locForm="0"
-		value="Ïðîòèâíèê" />
+		value="¶ÔÊÖ" />
 
 	<Item
 		id="DozerRace2"
 		locForm="0"
-		value="Ñîïåðíèê" />
+		value="¶ÔÊÖ" />
 
 	<Item
 		id="DozerRace3"
 		locForm="0"
-		value="Êîíêóðåíò" />
+		value="¾ºÕùÕß" />
 
 	<Item
 		id="Traktor01"
 		locForm="0"
-		value="Òðàêòîð"/>
+		value="ÍÏÀ­»ú"/>
 
 	<Item
 		id="Tank01"
 		locForm="0"
-		value="Òàíê" />
+		value="Ì¹¿Ë" />
 
 	<Item
 		id="Bug"
 		locForm="0"
-		value="Âýí" />
+		value="»õ³µ" />
 
 	<Item
 		id="Bug01"
 		locForm="0"
-		value="Âýí" />
+		value="»õ³µ" />
 
 	<Item
 		id="Molokovoz"
 		locForm="0"
-		value="Ìîëîêîâîç" />
+		value="ÄÌ³µ" />
 
 	<Item
 		id="Molokovoz01"
 		locForm="0"
-		value="Ìîëîêîâîç" />
+		value="ÄÌ³µ" />
 
 	<Item
 		id="Molokovoz02"
 		locForm="0"
-		value="Ìîëîêîâîç"/>
+		value="ÄÌ³µ"/>
 
 	<Item
 		id="Ural"
 		locForm="0"
-		value="Óðàë" />
+		value="ÎÚÀ­¶û" />
 
 	<Item
 		id="Ural01"
 		locForm="0"
-		value="Óðàë" />
+		value="ÎÚÀ­¶û" />
 
 	<Item
 		id="Belaz"
 		locForm="0"
-		value="Áåëàç" />
+		value="±ðÀ­Ë¹" />
 
 	<Item
 		id="Belaz01"
 		locForm="0"
-		value="Áåëàç" />
+		value="±ðÀ­Ë¹" />
 
 	<Item
 		id="CoolBelaz"
 		locForm="0"
-		value="Áåëàç" />
+		value="±ðÀ­Ë¹" />
 
 	<Item
 		id="Mirotvorec"
 		locForm="0"
-		value="Ìèðîòâîðåö" />
+		value="ºÍÆ½Ê¹Õß" />
 
 	<Item
 		id="Mirotvorec01"
 		locForm="0"
-		value="Ìèðîòâîðåö" />
+		value="ºÍÆ½Ê¹Õß" />
 
 	<Item
 		id="ArcadeBelaz"
 		locForm="0"
-		value="Áåëàç Ñïðèíò" />
+		value="Sprint ±ðÀ­Ë¹" />
 
 	<Item
 		id="DemoBandit"
 		locForm="0"
-		value="Ñêàóò" />
+		value="Õì²ì±ø" />
 
 	<Item
 		id="LisaCar"
 		locForm="1"
-		value="Ëèñà" />
+		value="ºüÀê" />
 
 	<Item
 		id="DemoFighter1"
 		locForm="0"
-		value="Áîåö" />
+		value="¶·Ê¿" />
 
 	<Item
 		id="DemoHunter1"
 		locForm="0"
-		value="Îõîòíèê" />
+		value="ÁÔÊÖ" />
 
 	<Item
 		id="DemoHunter2"
 		locForm="0"
-		value="Îõîòíèê" />
+		value="ÁÔÊÖ" />
 
 	<Item
 		id="DemoBug1"
 		locForm="0"
-		value="Âýí" />
+		value="»õ³µ" />
 
 	<Item
 		id="DemoBug2"
 		locForm="0"
-		value="Âýí" />
+		value="»õ³µ" />
 
 	<Item
 		id="DemoBug3"
 		locForm="0"
-		value="Âýí" />
+		value="»õ³µ" />
 
 	<Item
 		id="DemoMolokovoz1"
 		locForm="0"
-		value="Ìîëîêîâîç" />
+		value="ÄÌ³µ" />
 
 	<Item
 		id="DemoMolokovoz2"
 		locForm="0"
-		value="Ìîëîêîâîç" />
+		value="ÄÌ³µ" />
 
 	<Item
 		id="DemoMolokovoz3"
 		locForm="0"
-		value="Ìîëîêîâîç" />
+		value="ÄÌ³µ" />
 
 	<Item
 		id="DemoUral1"
 		locForm="0"
-		value="Óðàë" />
+		value="ÎÚÀ­¶û" />
 
 	<Item
 		id="DemoUral2"
 		locForm="0"
-		value="Óðàë" />
+		value="ÎÚÀ­¶û" />
 
 	<Item
 		id="DemoUral3"
 		locForm="0"
-		value="Óðàë" />
+		value="ÎÚÀ­¶û" />
 
 	<Item
 		id="DemoBelaz1"
 		locForm="0"
-		value="Áåëàç" />
+		value="±ðÀ­Ë¹" />
 
 	<Item
 		id="DemoBelaz2"
 		locForm="0"
-		value="Áåëàç" />
+		value="±ðÀ­Ë¹" />
 
 	<Item
 		id="DemoBelaz3"
 		locForm="0"
-		value="Áåëàç" />
+		value="±ðÀ­Ë¹" />
 
 	<Item
 		id="DemoMirotvorec1"
 		locForm="0"
-		value="Ìèðîòâîðåö" />
+		value="ºÍÆ½Ê¹Õß" />
 
 	<Item
 		id="DemoMirotvorec2"
 		locForm="0"
-		value="Ìèðîòâîðåö" />
+		value="ºÍÆ½Ê¹Õß" />
 
 	<Item
 		id="DemoMirotvorec3"
 		locForm="0"
-		value="Ìèðîòâîðåö" />
+		value="ºÍÆ½Ê¹Õß" />
 
 	<Item
 		id="Revolutioner1"
 		locForm="0"
-		value="Ðåâîëþöèîíåð" />
+		value="¸ïÃüÕß" />
 
 	<Item
 		id="Revolutioner2"
 		locForm="0"
-		value="Ðåâîëþöèîíåð" />
+		value="¸ïÃüÕß" />
 
 	<Item
 		id="BelazTest"
 		locForm="0"
-		value="Áåëàç" />
+		value="±ðÀ­Ë¹" />
 
 	<Item
 		id="MolokovozTest"
 		locForm="0"
-		value="Ìîëîêîâîç" />
+		value="ÄÌ³µ" />
 
 	<Item
 		id="Sml1"
 		locForm="0"
-		value="Êëîï" />
+		value="³ô³æ" />
 
 	<Item
 		id="Sml2"
 		locForm="0"
-		value="Òàðàêàí" />
+		value="ó¯òë" />
 
 	<Item
 		id="Sml4"
 		locForm="0"
-		value="Êóçíå÷èê" />
+		value="òÆòì" />
 
 	<Item
 		id="Sml101"
 		locForm="0"
-		value="Êëîï" />
+		value="³ô³æ" />
 
 	<Item
 		id="Sml201"
 		locForm="0"
-		value="Òàðàêàí" />
+		value="ó¯òë" />
 
 	<Item
 		id="Sml401"
 		locForm="0"
-		value="Êóçíå÷èê" />
+		value="òÆòì" />
 
 	<Item
 		id="mirotvorecTest"
 		locForm="0"
-		value="Ìèðîòâîðåö" />
+		value="ºÍÆ½Ê¹Õß" />
 
 	<Item
 		id="mirotvorecTest1"
 		locForm="0"
-		value="Ìèðîòâîðåö" />
+		value="ºÍÆ½Ê¹Õß" />
 
 	<Item
 		id="BugTest1"
 		locForm="0"
-		value="Âýí" />
+		value="»õ³µ" />
 
 	<Item
 		id="BelazTest01"
 		locForm="0"
-		value="Áåëàç" />
+		value="±ðÀ­Ë¹" />
 
 	<Item
 		id="BelazTest02"
 		locForm="0"
-		value="Áåëàç" />
+		value="±ðÀ­Ë¹" />
 
 	<Item
 		id="BelazTest03"
 		locForm="0"
-		value="Áåëàç" />
+		value="±ðÀ­Ë¹" />
 
 	<Item
 		id="BelazTest04"
 		locForm="0"
-		value="Áåëàç" />
+		value="±ðÀ­Ë¹" />
 
 	<Item
 		id="BelazTest05"
 		locForm="0"
-		value="Áåëàç" />
+		value="±ðÀ­Ë¹" />
 
 	<Item
 		id="BelazShot"
 		locForm="0"
-		value="Áåëàç" />
+		value="±ðÀ­Ë¹" />
 
 	<Item
 		id="UralShot"
 		locForm="0"
-		value="Óðàë" />
+		value="ÎÚÀ­¶û" />
 
 	<Item
 		id="MirotvorecShot"
 		locForm="0"
-		value="Ìèðîòâîðåö" />
+		value="ºÍÆ½Ê¹Õß" />
 
 	<Item
 		id="Formula01"
 		locForm="0"
-		value="Òóðáî GT" />
+		value="GT ÎÐÂÖ" />
 
 	<Item
 		id="FormulaCab"
 		locForm="0"
-		value="Áîëèä GT" />
+		value="GT Èü³µ" />
 
 	<Item
 		id="r1m3_Fighter01"
 		locForm="0"
-		value="Áîåö" />
+		value="¶·Ê¿" />
 
 	<Item
 		id="r1m3_Fighter02"
 		locForm="0"
-		value="Áîåö" />
+		value="¶·Ê¿" />
 
 	<Item
 		id="r1m3_Sml101"
 		locForm="0"
-		value="Êëîï" />
+		value="³ô³æ" />
 
 	<Item
 		id="r1m3_molokovoz03"
 		locForm="0"
-		value="Ìîëîêîâîç" />
+		value="ÄÌ³µ" />
 
 	<Item
 		id="staticAutoGun01"
 		locForm="0"
-		value="Äîò" />
+		value="»ðÁ¦µã" />
 
 	<Item
 		id="staticAutoGun02"
 		locForm="0"
-		value="Äîò" />
+		value="»ðÁ¦µã" />
 
 	<Item
 		id="staticAutoGun03"
 		locForm="0"
-		value="Äîò" />
+		value="»ðÁ¦µã" />
 
 	<Item
 		id="staticAutoGun04"
 		locForm="0"
-		value="Äîò" />
+		value="»ðÁ¦µã" />
 
 	<Item
 		id="staticAutoGun05"
 		locForm="0"
-		value="Äîò" />
+		value="»ðÁ¦µã" />
 
 	<Item
 		id="staticAutoGun06"
 		locForm="0"
-		value="Äîò" />
+		value="»ðÁ¦µã" />
 
 	<Item
 		id="staticAutoGun07"
 		locForm="0"
-		value="Áàððèêàäà" />
+		value="Â·ÕÏ" />
 
 	<Item
 		id="staticAutoGun08"
 		locForm="0"
-		value="Çàñàäà" />
+		value="·ü»÷" />
 
 	<Item
 		id="Dot01"
 		locForm="0"
-		value="Äîò" />
+		value="»ðÁ¦µã" />
 
 	<Item
 		id="druid_dot_01"
 		locForm="0"
-		value="Äîò" />
+		value="»ðÁ¦µã" />
 
 	<Item
 		id="druid_dot_02"
 		locForm="0"
-		value="Äîò" />
+		value="»ðÁ¦µã" />
 
 	<Item
 		id="oracle_generator"
 		locForm="0"
-		value="Ãåíåðàòîð" />
+		value="·¢µç»ú" />
 
 	<Item
 		id="OracleDot1_hunterLauncher"
 		locForm="0"
-		value="Äîò" />
+		value="»ðÁ¦µã" />
 
 	<Item
 		id="OracleDot1_vulcan"
 		locForm="0"
-		value="Äîò" />
+		value="»ðÁ¦µã" />
 
 	<Item
 		id="OracleDot1_kpvt"
 		locForm="0"
-		value="Äîò" />
+		value="»ðÁ¦µã" />
 
 	<Item
 		id="OracleDot2_hunterLauncher"
 		locForm="0"
-		value="Äîò" />
+		value="»ðÁ¦µã" />
 
 	<Item
 		id="OracleDot2_vulcan"
 		locForm="0"
-		value="Äîò" />
+		value="»ðÁ¦µã" />
 
 	<Item
 		id="OracleDot_Generator"
 		locForm="0"
-		value="Ãåíåðàòîð" />
+		value="·¢µç»ú" />
 
 	<Item
 		id="heavy_dot4_FLAGSHTOK"
 		locForm="0"
-		value="Ôëàã" />
+		value="ÆìÖÄ" />
 
 	<Item
 		id="druid_dot2_FLAGSHTOK"
 		locForm="0"
-		value="Ôëàã" />
+		value="ÆìÖÄ" />
 
 	<Item
 		id="sack_dot2_kord"
 		locForm="0"
-		value="Äîò" />
+		value="»ðÁ¦µã" />
 
 	<Item
 		id="heavy_dot4_flag01"
 		locForm="0"
-		value="Äîò" />
+		value="»ðÁ¦µã" />
 
 	<Item
 		id="heavy_dot4_big_kpvt_smallrad"
 		locForm="0"
-		value="Äîò" />
+		value="»ðÁ¦µã" />
 
 	<Item
 		id="heavy_dot4_big_kpvt"
 		locForm="0"
-		value="Äîò" />
+		value="»ðÁ¦µã" />
 
 	<Item
 		id="heavy_dot4_big_rainmetal"
 		locForm="0"
-		value="Äîò" />
+		value="»ðÁ¦µã" />
 
 	<Item
 		id="brick_dot1_vulcan"
 		locForm="0"
-		value="Äîò" />
+		value="»ðÁ¦µã" />
 
 	<Item
 		id="druid_dot2_omega01"
 		locForm="0"
-		value="Äîò" />
+		value="»ðÁ¦µã" />
 
 	<Item
 		id="druid_dot1_kord01"
 		locForm="0"
-		value="Äîò" />
+		value="»ðÁ¦µã" />
 
 	<Item
 		id="sack_dot2_omega"
 		locForm="0"
-		value="Äîò" />
+		value="»ðÁ¦µã" />
 
 	<Item
 		id="sack_dot2_omega"
 		locForm="0"
-		value="Äîò" />
+		value="»ðÁ¦µã" />
 
 	<Item
 		id="sack_dot2_flag"
 		locForm="0"
-		value="Äîò" />
+		value="»ðÁ¦µã" />
 
 	<Item
 		id="sack_dot1_hunterLauncher"
 		locForm="0"
-		value="Äîò" />
+		value="»ðÁ¦µã" />
 
 	<Item
 		id="sack_dot2_vulcan"
 		locForm="0"
-		value="Äîò" />
+		value="»ðÁ¦µã" />
 
 	<Item
 		id="sack_dot1_vulcan"
 		locForm="0"
-		value="Äîò" />
+		value="»ðÁ¦µã" />
 
 	<Item
 		id="heavy_dot4_big_hornet"
 		locForm="0"
-		value="Äîò" />
+		value="»ðÁ¦µã" />
 
 	<Item
 		id="heavy_dot4_big_vector"
 		locForm="0"
-		value="Äîò" />
+		value="»ðÁ¦µã" />
 
 	<Item
 		id="heavy_dot4_big_hurricane"
 		locForm="0"
-		value="Äîò" />
+		value="»ðÁ¦µã" />
 
 	<Item
 		id="heavy_dot4_big_hunterLauncher"
 		locForm="0"
-		value="Äîò" />
+		value="»ðÁ¦µã" />
 
 	<Item
 		id="heavy_dot4_big_swingfire"
 		locForm="0"
-		value="Äîò" />
+		value="»ðÁ¦µã" />
 
 	<Item
 		id="heavy_dot4_rapier"
 		locForm="0"
-		value="Äîò" />
+		value="»ðÁ¦µã" />
 
 	<Item
 		id="heavy_dot4_octopus"
 		locForm="0"
-		value="Äîò" />
+		value="»ðÁ¦µã" />
 
 	<Item
 		id="heavy_dot4_vulcan"
 		locForm="0"
-		value="Äîò" />
+		value="»ðÁ¦µã" />
 
 	<Item
 		id="heavy_dot3_rainmetal"
 		locForm="0"
-		value="Äîò" />
+		value="»ðÁ¦µã" />
 
 	<Item
 		id="heavy_dot3_vulcan"
 		locForm="0"
-		value="Äîò" />
+		value="»ðÁ¦µã" />
 
 	<Item
 		id="heavy_dot2_rainmetal"
 		locForm="0"
-		value="Äîò" />
+		value="»ðÁ¦µã" />
 
 	<Item
 		id="heavy_dot2_vector"
 		locForm="0"
-		value="Äîò" />
+		value="»ðÁ¦µã" />
 
 	<Item
 		id="heavy_dot2_vulcan"
 		locForm="0"
-		value="Äîò" />
+		value="»ðÁ¦µã" />
 
 	<Item
 		id="heavy_dot1_vulcan"
 		locForm="0"
-		value="Äîò" />
+		value="»ðÁ¦µã" />
 
 	<Item
 		id="brick_dot2_vulcan"
 		locForm="0"
-		value="Äîò" />
+		value="»ðÁ¦µã" />
 
 	<Item
 		id="PublicDemoBug01"
 		locForm="0"
-		value="Ìàøèíà Ñòàðèêà" />
+		value="ÀÏÈË³µ" />
 
 	<Item
 		id="PublicDemoSinks"
 		locForm="0"
-		value="Áðîäÿãà Ñèíêñ" />
+		value="Á÷ÀËÕßÐÁ¿ËË¹" />
 
 	<Item
 		id="PublicDemoBandit1"
 		locForm="0"
-		value="Óáèéöà" />
+		value="É±ÊÖ" />
 
 	<Item
 		id="PublicDemoBandit2"
 		locForm="0"
-		value="Ìàðîäåð" />
+		value="ÂÓ¶áÕß" />
 
 	<Item
 		id="PublicDemoFighter"
 		locForm="0"
-		value="Ãëàâàðü áàíäû" />
+		value="·Ë°ïÍ·Ä¿" />
 
 	<Item
 		id="PublicDemoIeriBand1"
 		locForm="0"
-		value="Çàùèòíèê Èåðè" />
+		value="Ò®ÀïÊØÎÀ" />
 
 	<Item
 		id="PublicDemoIeriBand2"
 		locForm="0"
-		value="Çàùèòíèê Èåðè" />
+		value="Ò®ÀïÊØÎÀ" />
 
 	<Item
 		id="PublicDemoIeriCar"
 		locForm="0"
-		value="Èåðè" />
+		value="Ò®Àï" />
 
 	<Item
 		id="r1m2_CaravanBug01"
 		locForm="0"
-		value="Òðàíñïîðò" />
+		value="ÔËÊä³µ" />
 
 	<Item
 		id="r1m1_CaravanBug04"
 		locForm="0"
-		value="Òðàíñïîðò" />
+		value="ÔËÊä³µ" />
 
 	<Item
 		id="r1m2_CaravanBug02"
 		locForm="0"
-		value="Òðàíñïîðò" />
+		value="ÔËÊä³µ" />
 
 	<Item
 		id="r1m3_CaravanMolokovoz01"
 		locForm="0"
-		value="Òðàíñïîðò" />
+		value="ÔËÊä³µ" />
 
 	<Item
 		id="r1m3_CaravanMolokovoz02"
 		locForm="0"
-		value="Òðàíñïîðò" />
+		value="ÔËÊä³µ" />
 
 	<Item
 		id="r2m1_CaravanUral01"
 		locForm="0"
-		value="Òðàíñïîðò" />
+		value="ÔËÊä³µ" />
 
 	<Item
 		id="r1m3_CaravanGuardianSml401"
 		locForm="0"
-		value="Îõðàííèê" />
+		value="¾¯ÎÀ" />
 
 	<Item
 		id="r2m1_CaravanGuardianSml401"
 		locForm="0"
-		value="Îõðàííèê" />
+		value="¾¯ÎÀ" />
 
 	<Item
 		id="r2m1_CaravanGuardianScout201"
 		locForm="0"
-		value="Îõðàííèê" />
+		value="¾¯ÎÀ" />
 
 	<Item
 		id="r2m2_CaravanGuardianScout301"
 		locForm="0"
-		value="Îõðàííèê" />
+		value="¾¯ÎÀ" />
 
 	<Item
 		id="r1m1_CaravanGuardianSml201"
 		locForm="0"
-		value="Îõðàííèê" />
+		value="¾¯ÎÀ" />
 
 	<Item
 		id="r1m1_CaravanGuardianSml101"
 		locForm="0"
-		value="Îõðàííèê" />
+		value="¾¯ÎÀ" />
 
 	<Item
 		id="r1m2_CaravanGuardianSml301"
 		locForm="0"
-		value="Îõðàííèê" />
+		value="¾¯ÎÀ" />
 
 	<Item
 		id="ScoutMenu"
 		locForm="0"
-		value="Ñêàóò" />
+		value="Õì²ì±ø" />
 
 	<Item
 		id="FighterMenu"
 		locForm="0"
-		value="Áîåö" />
+		value="¶·Ê¿" />
 
 	<Item
 		id="MolokovozMenu"
 		locForm="0"
-		value="Ìîëîêîâîç" />
+		value="ÄÌ³µ" />
 
 	<Item
 		id="BelazMenu"
 		locForm="0"
-		value="Áåëàç" />
+		value="±ðÀ­Ë¹" />
 
 	<Item
 		id="UralMenu"
 		locForm="0"
-		value="Óðàë" />
+		value="ÎÚÀ­¶û" />
 
 	<Item
 		id="r2m2_CaravanUral01"
 		locForm="0"
-		value="Òðàíñïîðò" />
+		value="ÔËÊä³µ" />
 
 	<Item
 		id="r2m2_CaravanUral02"
 		locForm="0"
-		value="Òðàíñïîðò" />
+		value="ÔËÊä³µ" />
 
 	<Item
 		id="r2m1_CaravanUral02"
 		locForm="0"
-		value="Òðàíñïîðò" />
+		value="ÔËÊä³µ" />
 
 	<Item
 		id="r2m1_CaravanMolokovoz02"
 		locForm="0"
-		value="Òðàíñïîðò" />
+		value="ÔËÊä³µ" />
 
 	<Item
 		id="r2m1_CaravanMolokovoz01"
 		locForm="0"
-		value="Òðàíñïîðò" />
+		value="ÔËÊä³µ" />
 
 	<Item
 		id="r1m1_CaravanBug03"
 		locForm="0"
-		value="Òðàíñïîðò" />
+		value="ÔËÊä³µ" />
 
 	<Item
 		id="r1m1_CaravanBug02"
 		locForm="0"
-		value="Òðàíñïîðò" />
+		value="ÔËÊä³µ" />
 
 	<Item
 		id="r1m1_CaravanBug01"
 		locForm="0"
-		value="Òðàíñïîðò" />
+		value="ÔËÊä³µ" />
 
 	<Item
 		id="r2m2_ShamanHunter02"
 		locForm="0"
-		value="Ñåêòàíò" />
+		value="½ÌÍ½" />
 
 	<Item
 		id="r2m2_ShamanHunter01"
 		locForm="0"
-		value="Ñåêòàíò" />
+		value="½ÌÍ½" />
 
 	<Item
 		id="r2m2_Ural01"
 		locForm="0"
-		value="Óðàë" />
+		value="ÎÚÀ­¶û" />
 
 	<Item
 		id="r2m2_scout01"
 		locForm="0"
-		value="Ñêàóò" />
+		value="Õì²ì±ø" />
 
 	<Item
 		id="r2m2_Hunter01"
 		locForm="0"
-		value="Îõîòíèê" />
+		value="ÁÔÊÖ" />
 
 	<Item
 		id="r2m2_Fighter02"
 		locForm="0"
-		value="Áîåö" />
+		value="¶·Ê¿" />
 
 	<Item
 		id="r2m2_Fighter01"
 		locForm="0"
-		value="Áîåö" />
+		value="¶·Ê¿" />
 
 	<Item
 		id="r2m2_Molokovoz01"
 		locForm="0"
-		value="Ìîëîêîâîç" />
+		value="ÄÌ³µ" />
 
 	<Item
 		id="r2m1_scout03"
 		locForm="0"
-		value="Ñêàóò" />
+		value="Õì²ì±ø" />
 
 	<Item
 		id="r2m1_scout02"
 		locForm="0"
-		value="Ñêàóò" />
+		value="Õì²ì±ø" />
 
 	<Item
 		id="r2m1_scout01"
 		locForm="0"
-		value="Ñêàóò" />
+		value="Õì²ì±ø" />
 
 	<Item
 		id="r2m1_Molokovoz01"
 		locForm="0"
-		value="Ìîëîêîâîç" />
+		value="ÄÌ³µ" />
 
 	<Item
 		id="r2m1_Belaz01"
 		locForm="0"
-		value="Áåëàç" />
+		value="±ðÀ­Ë¹" />
 
 	<Item
 		id="r2m1_Ural01"
 		locForm="0"
-		value="Óðàë" />
+		value="ÎÚÀ­¶û" />
 
 	<Item
 		id="bossMetalArm"
 		locForm="0"
-		value="Ðîáîò-Êëåøíÿ" />
+		value="Ç¯ÐÎ»úÆ÷ÈË" />
 
 	<Item
 		id="boss02"
 		locForm="0"
-		value="Ôàáðè÷íûé Ïîãðóç÷èê" />
+		value="¹¤³§×°ÔØ»ú" />
 
 	<Item
 		id="boss03"
 		locForm="0"
-		value="Ýìèññàð Îðàêóëà" />
+		value="ÉñÚÍÊ¹Õß" />
 
 	<Item
 		id="boss04"
 		locForm="0"
-		value="Áàçà Íüåðè" />
+		value="ÄùÀï»ùµØ" />
 
 	<Item
 		id="boss05"
 		locForm="0"
-		value="Êîìáàéí Ñýìà" />
+		value="ÈøÄ·µÄÁªºÏÊÕ¸î»ú" />
 
 	<Item
 		id="FlagCar1"
 		locForm="0"
-		value="Îõðàííèê Áèáëèîòåêè" />
+		value="Í¼Êé¹Ý¾¯ÎÀ" />
 
 	<Item
 		id="FlagCar2"
 		locForm="0"
-		value="Çíàìåíîñåö" />
+		value="ÆìÊÖ" />
 
 	<Item
 		id="FlagCar3"
 		locForm="0"
-		value="Çíàìåíîñåö" />
+		value="ÆìÊÖ" />
 
 	<Item
 		id="boss04drone"
 		locForm="0"
-		value="Äðîí" />
+		value="ÎÞÈË»ú" />
 
 	<Item
 		id="r2m1_HunterNarcBoss"
 		locForm="0"
-		value="Áîññ ìàôèè" />
+		value="ºÚÊÖµ³Ê×Áì" />
 
 	<Item
 		id="r2m1_HunterNarcCaravan"
 		locForm="0"
-		value="Êóðüåð" />
+		value="ÐÅÊ¹" />
 
 	<Item
 		id="r2m1_FighterNarcCaravan"
 		locForm="0"
-		value="Êóðüåð" />
+		value="ÐÅÊ¹" />
 
 	<Item
 		id="r2m1_Hunter02"
 		locForm="0"
-		value="Îõîòíèê" />
+		value="ÁÔÊÖ" />
 
 	<Item
 		id="r2m1_Hunter01"
 		locForm="0"
-		value="Îõîòíèê" />
+		value="ÁÔÊÖ" />
 
 	<Item
 		id="r2m1_FighterGulik"
 		locForm="0"
-		value="Æóëèê" />
+		value="ÎÞÀµ" />
 
 	<Item
 		id="r2m1_Fighter02"
 		locForm="0"
-		value="Áîåö" />
+		value="¶·Ê¿" />
 
 	<Item
 		id="r2m1_Fighter01"
 		locForm="0"
-		value="Áîåö" />
+		value="¶·Ê¿" />
 
 	<Item
 		id="r2m1_Bug1"
 		locForm="0"
-		value="Âýí" />
+		value="»õ³µ" />
 
 	<Item
 		id="r1m3_molokovozInOldCity"
 		locForm="0"
-		value="Áåãëåö" />
+		value="ÌÓÍöÕß" />
 
 	<Item
 		id="DemoShot1"
 		locForm="0"
-		value="Âðàã" />
+		value="µÐÈË" />
 
 	<Item
 		id="AxelVehicle"
 		locForm="0"
-		value="Àêñåëü" />
+		value="°¢¿ËÈû¶û" />
 
 	<Item
 		id="FelixVehicle2"
 		locForm="0"
-		value="Ôåëèêñ" />
+		value="·ÑÀû¿ËË¹" />
 
 	<Item
 		id="FelixVehicle"
 		locForm="0"
-		value="Ôåëèêñ" />
+		value="·ÑÀû¿ËË¹" />
 
 	<Item
 		id="CoolBelaz_2"
 		locForm="0"
-		value="Áåëàç" />
+		value="±ðÀ­Ë¹" />
 
 	<Item
 		id="Ural00"
 		locForm="0"
-		value="Óðàë" />
+		value="ÎÚÀ­¶û" />
 
 	<Item
 		id="Cruiser02"
 		locForm="0"
-		value="Êðåéñåð" />
+		value="Ñ²Ñó½¢" />
 
 	<Item
 		id="Fighter03"
 		locForm="0"
-		value="Áîåö" />
+		value="¶·Ê¿" />
 
 	<Item
 		id="r1m3_hunter02"
 		locForm="0"
-		value="Îõîòíèê" />
+		value="ÁÔÊÖ" />
 
 	<Item
 		id="r1m2_bug04"
 		locForm="0"
-		value="Âýí" />
+		value="»õ³µ" />
 
 	<Item
 		id="r1m3_MerScout"
 		locForm="0"
-		value="Ìýð" />
+		value="ÊÐ³¤" />
 
 	<Item
 		id="NoDrop_Robot4SMALL"
 		locForm="0"
-		value="Ðîáîò-ðàçâåä÷èê" />
+		value="Õì²ì»úÆ÷ÈË" />
 
 	<Item
 		id="NoDrop_Robot4_2SMALL"
 		locForm="0"
-		value="Ðîáîò-ðàçâåä÷èê" />
+		value="Õì²ì»úÆ÷ÈË" />
 
 	<Item
 		id="NoDrop_Robot3BIG"
 		locForm="0"
-		value="Ïåðåäâèæíàÿ áàçà" />
+		value="ÒÆ¶¯»ùµØ" />
 	<Item
 		id="Robot04_SMALL"
 		locForm="0"
-		value="Ðîáîò-ðàçâåä÷èê" />
+		value="Õì²ì»úÆ÷ÈË" />
 
 	<Item
 		id="Robot4SMALL"
 		locForm="0"
-		value="Ðîáîò-ðàçâåä÷èê" />
+		value="Õì²ì»úÆ÷ÈË" />
 
 	<Item
 		id="Robot4_2SMALL"
 		locForm="0"
-		value="Ðîáîò-ðàçâåä÷èê" />
+		value="Õì²ì»úÆ÷ÈË" />
 
 	<Item
 		id="Robot03_Big"
 		locForm="0"
-		value="Ïåðåäâèæíàÿ áàçà" />
+		value="ÒÆ¶¯»ùµØ" />
 
 	<Item
 		id="Robot3BIG"
 		locForm="0"
-		value="Ïåðåäâèæíàÿ áàçà" />
+		value="ÒÆ¶¯»ùµØ" />
 
 	<Item
 		id="Robot3_2BIG"
 		locForm="0"
-		value="Ïåðåäâèæíàÿ áàçà" />
+		value="ÒÆ¶¯»ùµØ" />
 
 	<Item
 		id="RobotPlayer01"
 		locForm="0"
-		value="Ðîáîò, ñîáðàííûé Ìåõàíèêîì" />
+		value="»úÐµÊ¦×é×°µÄ»úÆ÷ÈË" />
 
 	<Item
 		id="Robot01"
 		locForm="0"
-		value="Áîåâîé ðîáîò" />
+		value="Õ½¶·»úÆ÷ÈË" />
 
 	<Item
 		id="RobotBobot01"
 		locForm="0"
-		value="Áîåâîé ðîáîò" />
+		value="Õ½¶·»úÆ÷ÈË" />
 
 	<Item
 		id="NoDrop_RobotBobot01"
 		locForm="0"
-		value="Áîåâîé ðîáîò" />
+		value="Õ½¶·»úÆ÷ÈË" />
 
 	<Item
 		id="Robot02"
 		locForm="0"
-		value="Ðîáîò-ðàáî÷èé" />
+		value="ÀÍ¶¯»úÆ÷ÈË" />
 
 	<Item
 		id="RobotBobot02"
 		locForm="0"
-		value="Ðîáîò-ðàáî÷èé" />
+		value="ÀÍ¶¯»úÆ÷ÈË" />
 
 	<Item
 		id="RobotTron"
 		locForm="0"
-		value="Áîåâîé ðîáîò" />
+		value="Õ½¶·»úÆ÷ÈË" />
 
 	<Item
 		id="RobotMetatron"
 		locForm="0"
-		value="Áîåâîé ðîáîò" />
+		value="Õ½¶·»úÆ÷ÈË" />
 
 	<Item
 		id="hunterCab01"
 		locForm="0"
-		value="Êàáèíà Îõîòíèêà" />
+		value="ÁÔÊÖ¼ÝÊ»ÊÒ" />
 
 	<Item
 		id="hunterCab02"
 		locForm="0"
-		value="Êàáèíà Îõîòíèêà" />
+		value="ÁÔÊÖ¼ÝÊ»ÊÒ" />
 
 	<Item
 		id="hunterCab03"
 		locForm="0"
-		value="Êàáèíà Îõîòíèêà" /> 
+		value="ÁÔÊÖ¼ÝÊ»ÊÒ" /> 
 
 	<Item
 		id="arcadescoutCab"
 		locForm="0"
-		value="Êàáèíà Âåçäåõîäíîãî ñêàóòà" />
+		value="È«µØÐÎÕì²ì±ø¼ÝÊ»ÊÒ" />
 
 	<Item
 		id="fakeCargo"
 		locForm="0"
-		value="Êóçîâ" />
+		value="»õÏä" />
 
 	<Item
 		id="cruiserCab01"
 		locForm="0"
-		value="Êàáèíà Êðåéñåðà" />
+		value="Ñ²Ñó½¢¼ÝÊ»ÊÒ" />
 
 	<Item
 		id="cruiserCab02"
 		locForm="0"
-		value="Êàáèíà Êðåéñåðà" />
+		value="Ñ²Ñó½¢¼ÝÊ»ÊÒ" />
 
 	<Item
 		id="cruiserCab03"
 		locForm="0"
-		value="Êàáèíà Êðåéñåðà" />
+		value="Ñ²Ñó½¢¼ÝÊ»ÊÒ" />
 
 	<Item
 		id="SmokeGun"
 		locForm="0"
-		value="Äûìîâàÿ çàâåñà" />
+		value="ÑÌÄ»" />
 
 	<Item
 		id="anti_missile_system"
 		locForm="0"
-		value="Ïðîòèâîðàêåòíàÿ çàùèòà" />
+		value="·´µ¼·ÀÓù" />
 
 	<Item
 		id="Bug"
 		locForm="0"
-		value="Òðàíñïîðò" />
+		value="»õ³µ" />
 
 	<Item
 		id="Bug_02"
 		locForm="0"
-		value="Òðàíñïîðò" />
+		value="ÔËÊä³µ" />
 
 	<Item
 		id="Ural02"
 		locForm="0"
-		value="Óðàë" />
+		value="ÎÚÀ­¶û" />
 
 	<Item
 		id="Scout"
 		locForm="0"
-		value="Ñêàóò" />
+		value="Õì²ì±ø" />
 
 	<Item
 		id="Molokovoz"
 		locForm="0"
-		value="Ìîëîêîâîç"/>
+		value="ÄÌ³µ"/>
 
 	<Item
 		id="Gladiator02"
 		locForm="0"
-		value="Ãëàäèàòîð" />
+		value="½Ç¶·Ê¿" />
 
 	<Item
 		id="VeterCar01"
 		locForm="0"
-		value="Âåòåð" />
+		value="Î¬½Ý¶û" />
 
 	<Item
 		id="Iten_car"
 		locForm="0"
-		value="Èòàí" />
+		value="ÒÁÌ¹" />
 
 	<Item
 		id="Star_car"
 		locForm="0"
-		value="Ñòàðüåâùèê" />
+		value="ÊÕ·ÏÆ·µÄÀÏÍ·" />
 
 	<Item
 		id="Patr_car"
 		locForm="0"
-		value="Ïàòðóëü" />
+		value="Ñ²Âß³µ" />
 
 	<Item
 		id="Amerigo_car"
 		locForm="0"
-		value="Êàïèòàí Àìåðèãî" />
+		value="ÑÇÃÀÀû¼Ó´¬³¤" />
 
 	<Item
 		id="ScoutMul01"
 		locForm="0"
-		value="Ñêàóò" />
+		value="Õì²ì±ø" />
 
 	<Item
 		id="FighterMul01"
 		locForm="0"
-		value="Áîåö" />
+		value="¶·Ê¿" />
 
 	<Item
 		id="HunterMul01"
 		locForm="0"
-		value="Îõîòíèê " />
+		value="ÁÔÊÖ" />
 
 	<Item
 		id="CruiserMul01"
 		locForm="0"
-		value="Êðåéñåð" />
+		value="Ñ²Ñó½¢" />
 
 	<Item
 		id="BugMul01"
 		locForm="0"
-		value="Âýí" />
+		value="»õ³µ" />
 
 	<Item
 		id="MolokovozMul01"
 		locForm="0"
-		value="Ìîëîêîâîç" />
+		value="ÄÌ³µ" />
 
 	<Item
 		id="UralMul01"
 		locForm="0"
-		value="Óðàë" />
+		value="ÎÚÀ­¶û" />
 
 	<Item
 		id="BelazMul01"
 		locForm="0"
-		value="Áåëàç" />
+		value="±ðÀ­Ë¹" />
 
 	<Item
 		id="MirotvorecMul01"
 		locForm="0"
-		value="Ìèðîòâîðåö" />
+		value="ºÍÆ½Ê¹Õß" />
 </ModelNames>
