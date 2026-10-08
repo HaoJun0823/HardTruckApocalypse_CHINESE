@@ -264,7 +264,7 @@
 
 	<Reply
 		name="Dynamic00_DrugsNoMoney"
-		text="Ýõõ... Ïîïðèäåðæè ýòî äëÿ ìåíÿ - ÿ åùå âåðíóñü, êîãäà äåíüãè áóäóò."
+		text="°¦¡­¡­Õâ¸öÏÈÁôÔÚÎÒÕâ¶ù°É£¬µÈÎÒÔÜ¹»Ç®ÔÙ»ØÀ´ÕÒÄã¡£"
 		role="PLAYER"
 		scriptCondition="GetPlayerMoney() < ConversationWnd:GetCurrentDynamicQuest():GetReward()"
 		scriptResult="ConversationWnd:EndConversation()" />

@@ -98,9 +98,57 @@ _ATTR_RE = re.compile(
     r'([^"]*)"'                     # 2 值本体（后面紧跟闭引号）
 )
 
-# 开标签：<tag 后面不允许出现 '>'，保证属性值里的 '>' 不会提前截断
-def _open_tag_re(tag):
-    return re.compile(r'<%s(?=[\s/>])([^<>]*?)(/?)>' % re.escape(tag))
+# 开标签扫描：不能简单用 [^<>]*?，因为 DLC2 原件里存在属性值含裸 '<' 的情况
+#   （dynamicdialogsglobal.xml:269  scriptCondition="GetPlayerMoney() < ConversationWnd:..."）
+#   简单的 [^<>]*? 会在那里提前截断，导致该元素被整体漏掉。
+# 正确做法：从 '<' 之后手工扫描成对的双引号，值内部的 < > ' 全部当作普通字符。
+_TAGNAME_RE = re.compile(r'<\s*([A-Za-z_][\w:.\-]*)')
+
+
+def _scan_open_tag(text, i):
+    """text[i] == '<'。返回该开标签的结束位置（不含），失败返回 -1。
+
+    规则：跳到标签名后，逐字符前进；引号外遇到 '>' 即结束（可带 '/'），
+    引号内一切字符（含 '<' '>'）都跳过，直到配对的 '"'。
+    """
+    n = len(text)
+    m = _TAGNAME_RE.match(text, i)
+    if not m:
+        return -1
+    j = m.end()
+    while j < n:
+        c = text[j]
+        if c == '"':
+            k = text.find('"', j + 1)
+            if k < 0:
+                return -1
+            j = k + 1
+            continue
+        if c == "'":
+            k = text.find("'", j + 1)
+            if k < 0:
+                return -1
+            j = k + 1
+            continue
+        if c == '>':
+            return j + 1
+        if c == '<':
+            return -1          # 未闭合的标签，后面的 '<' 属于别的标签
+        j += 1
+    return -1
+
+
+def _iter_open_tags(text, tag):
+    """产出 (start, end) —— 所有 <tag ...> 开标签的区间（end 不含）。"""
+    name = re.escape(tag)
+    pat = re.compile(r'<\s*' + name + r'(?=[\s/>])')
+    for m in pat.finditer(text):
+        i = m.start()
+        # 用扫描定位结束；失败则退回"引号感知的 '>' 搜索"
+        end = _scan_open_tag(text, i)
+        if end < 0:
+            continue
+        yield i, end
 
 
 class Element:
@@ -197,7 +245,7 @@ def unesc(s):
 
 def find_elements(text, tag):
     """取出所有 <tag ...> 开标签，返回 Element 列表（顺序即文件顺序）。"""
-    return [Element(m.group(0)) for m in _open_tag_re(tag).finditer(text)]
+    return [Element(text[s:e]) for (s, e) in _iter_open_tags(text, tag)]
 
 
 def _bpos(buf, char_index):
@@ -225,11 +273,7 @@ class Doc:
 
     def elements(self, tag):
         """返回 [(start, end, Element)]，位置为开标签在全文中的区间。"""
-        pat = _open_tag_re(tag)
-        out = []
-        for m in pat.finditer(self.text):
-            out.append((m.start(), m.end(), Element(m.group(0))))
-        return out
+        return [(s, e, Element(self.text[s:e])) for (s, e) in _iter_open_tags(self.text, tag)]
 
     def write(self, located):
         """located: 与 elements() 同序的 Element 列表。

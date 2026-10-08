@@ -216,7 +216,11 @@
   "Weapon":            {"value": "武器"},
   "Gadgets":           {"value": "装置"},
   "Results":           {"value": "总计"},
-  "max":               {"value": "max"}
+  "max":               {"value": "max"},
+  "Teams settings":    {"value": "创建联机游戏 > 队伍设置"},
+  "Client Add settings": {"value": "连接联机游戏 > 附加选项"},
+  "View Map settings": {"value": "创建联机游戏 > 地图预览"},
+  "View Car settings": {"value": "创建联机游戏 > 载具预览"}
  },
 
  "dynamicdialogsglobal.xml": {
@@ -273,6 +277,7 @@
   "Dynamic00_SellDrugs00_try_no": {"text": "什么？！你到底要多少？！算了，这东西我直接没收了！至于你要是敢说一个字，我就告诉卫兵你在这儿倒腾什么。走吧，滚。"},
   "Dynamic00_SellDrugs00_ok": {"text": "再见。"},
   "Dynamic00_Treasure00": {"text": "我对这一带埋藏的各类古代文物很感兴趣。"},
-  "Dynamic00_Treasure00_npc0": {"text": "关于这个，我正好有点消息。我自己不去冒险，城里的事就够我忙的了。再说我的车上也没装寻宝仪。不过，我觉得你该去调查一下附近的一个地方。既然你愿意接这活，我可以在地图上给你标出来。"}
+  "Dynamic00_Treasure00_npc0": {"text": "关于这个，我正好有点消息。我自己不去冒险，城里的事就够我忙的了。再说我的车上也没装寻宝仪。不过，我觉得你该去调查一下附近的一个地方。既然你愿意接这活，我可以在地图上给你标出来。"},
+  "Dynamic00_DrugsNoMoney": {"text": "唉……这个先留在我这儿吧，等我攒够钱再回来找你。"}
  }
 }

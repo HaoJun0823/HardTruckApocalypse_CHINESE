@@ -850,7 +850,7 @@
 <!-- Teams settings -->
 	<string
 		id="Teams settings"
-		value="Network game creation > Team settings" />
+		value="创建联机游戏 &gt; 队伍设置" />
 
 	<string
 		id="Team1"
@@ -1102,7 +1102,7 @@
 <!-- Client Add settings -->
 	<string
 		id="Client Add settings"
-		value="Connection to network game > Extras" />
+		value="连接联机游戏 &gt; 附加选项" />
 
 	<string
 		id="ClientAddDefault"
@@ -1122,11 +1122,11 @@
 <!-- View Map&amp;Car settings -->
 	<string
 		id="View Map settings"
-		value="Network game creation > Map review" />
+		value="创建联机游戏 &gt; 地图预览" />
 
 	<string
 		id="View Car settings"
-		value="Network game creation > Vehicle review" />
+		value="创建联机游戏 &gt; 载具预览" />
 
 	<string
 		id="ViewMapBack"
