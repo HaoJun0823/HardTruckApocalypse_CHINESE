@@ -83,6 +83,11 @@ tools_dlc2/reuse_pool.json -text
 # 3) 原版俄文资料 Original_DATA/、DLC1_DATA/（含根目录 .fx）
 #    属于字节敏感的对照数据，统一锁死。
 #
+# 4) 三个随包分发的 .ini（Render9Fix / DLC1_MemFix / DLC2_MemFix）
+#    参考包里它们是 **LF**。blob 已是 LF 且内容一致，但只要 attr 还是
+#    text=auto，在 core.autocrlf=true 的机器上就会 checkout 成 CRLF，
+#    于是同一份提交在不同平台产出不同字节的包。标 -text 固定为 blob 字节。
+#
 # ★ 用 `-text`（不是 `text eol=crlf`）：语义是"完全不要碰这些字节"，
 #   在 Linux 与 Windows 上 checkout 结果都等于 blob 内容。
 ###############################################################################
@@ -92,6 +97,9 @@ Original_DATA/*.fx    -text
 DLC1_DATA/*.fx        -text
 dist/**               -text -diff
 fontgen/**            -text
+Render9Fix/*.ini      -text
+DLC1_MemFix/*.ini     -text
+DLC2_MemFix/*.ini     -text
 
 ###############################################################################
 # diff behavior for common document formats
