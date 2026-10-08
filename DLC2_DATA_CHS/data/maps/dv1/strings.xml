@@ -6,7 +6,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="我觉得你会喜欢这辆卡车。首先，反正你也不可能再弄到第二辆。"
+		value="我觉得你会喜欢这辆卡车。首先，|反正你也不可能再弄到第二辆。"
 		sound="data\sounds\dv_sounds\dialogs\dv1_5.wav"
 		time="7" />
 
@@ -16,7 +16,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="其次，这辆卡车可是猛兽。就算你们的局里也弄不到这种车。"
+		value="其次，这辆卡车可是猛兽。|就算你们的局里也弄不到这种车。"
 		sound="data\sounds\dv_sounds\dialogs\dv1_6.wav"
 		time="6" />
 
@@ -26,7 +26,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="你要做的是熟悉这辆车。顺便提醒一句，这一带可不太平。"
+		value="你要做的是熟悉这辆车。|顺便提醒一句，这一带可不太平。"
 		sound="data\sounds\dv_sounds\dialogs\dv1_9.wav"
 		time="6" />
 
@@ -36,7 +36,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="有一伙持枪的混蛋到处乱窜，完全无视政府的紧急命令。"
+		value="有一伙持枪的混蛋到处乱窜，|完全无视政府的紧急命令。"
 		sound="data\sounds\dv_sounds\dialogs\dv1_10.wav"
 		time="6" />
 
@@ -46,7 +46,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="他们会很乐意在你身上浪费几发子弹。我建议先发制人，别给他们机会。"
+		value="他们会很乐意在你身上|浪费几发子弹。我建议先|发制人，别给他们机会。"
 		sound="data\sounds\dv_sounds\dialogs\dv1_11.wav"
 		time="6" />
 
@@ -56,7 +56,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="感觉怎么样？你以前开过这样的车吗？我敢肯定没有。"
+		value="感觉怎么样？你以前开过这|样的车吗？我敢肯定没有。"
 		sound="data\sounds\dv_sounds\dialogs\dv1_12.wav"
 		time="6" />
 
@@ -66,7 +66,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="任何灾难，哪怕是最小的灾难，都会唤醒人心里所有阴暗的东西。"
+		value="任何灾难，哪怕是最小的灾难，|都会唤醒人心里所有阴暗的东西。"
 		sound="data\sounds\dv_sounds\dialogs\dv1_13.wav"
 		time="6" />
 
@@ -76,7 +76,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="撤离行动刚刚开始，大群劫匪就从各个巢穴里冲了出来，赃物装了一卡车又一卡车。"
+		value="撤离行动刚刚开始，大群劫|匪就从各个巢穴里冲了出来，|赃物装了一卡车又一卡车。"
 		sound="data\sounds\dv_sounds\dialogs\dv1_14.wav"
 		time="6" />
 
@@ -86,7 +86,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="其中一支车队正好要从附近经过。你懂我的意思吧？"
+		value="其中一支车队正好要从附|近经过。你懂我的意思吧？"
 		sound="data\sounds\dv_sounds\dialogs\dv1_15.wav"
 		time="6" />
 
@@ -96,7 +96,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="没错，这正是个绝好的机会，可以用你的新卡车的武器在他们身上试试手。别让这帮劫匪跑了。"
+		value="没错，这正是个绝好的机会，|可以用你的新卡车的武|器在他们身上试试手。|别让这帮劫匪跑了。"
 		sound="data\sounds\dv_sounds\dialogs\dv1_16.wav"
 		time="6" />
 
@@ -106,7 +106,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="探员，当地警长办公室拒绝接受我们的协作指令。看来警长彻底疯了，以为自己是这儿的土皇帝。"
+		value="探员，当地警长办公室拒|绝接受我们的协作指令。|看来警长彻底疯了，以|为自己是这儿的土皇帝。"
 		sound="data\sounds\dv_sounds\dialogs\dv1_7.wav"
 		time="6" />
 
@@ -116,7 +116,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="要清楚，如果当地警察挡在你和完成任务之间，你有权采取“紧急”措施——我的意思是极其激进的措施。"
+		value="要清楚，如果当地警察|挡在你和完成任务之间，|你有权采取“紧急”措施——|我的意思是极其激进的措施。"
 		sound="data\sounds\dv_sounds\dialogs\dv1_8.wav"
 		time="6" />
 
@@ -146,7 +146,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="你已经熟悉了车辆、武器、这一带地形和这里做事的方式。该执行你的主要任务了。"
+		value="你已经熟悉了车辆、武器、|这一带地形和这里做事的方式。|该执行你的主要任务了。"
 		sound="data\sounds\dv_sounds\dialogs\dv1_28.wav"
 		time="5" />
 
@@ -156,7 +156,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="是的，我现在真确信你能活着通过那地方——我手下整整一班人都死在了那里。"
+		value="是的，我现在真确信你能|活着通过那地方——我手下|整整一班人都死在了那里。"
 		sound="data\sounds\dv_sounds\dialogs\dv1_29.wav"
 		time="5" />
 
@@ -176,7 +176,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="我之前说过，这一带有一伙社会渣子在抢劫和劫掠。"
+		value="我之前说过，这一带有一|伙社会渣子在抢劫和劫掠。"
 		sound="data\sounds\dv_sounds\dialogs\dv1_18.wav"
 		time="5" />
 
@@ -186,7 +186,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="命令是不惜一切代价制止此类行为。绝对是不惜一切代价。你明白我的意思吗，探员？"
+		value="命令是不惜一切代价制止此类行为。|绝对是不惜一切代价。|你明白我的意思吗，探员？"
 		sound="data\sounds\dv_sounds\dialogs\dv1_19.wav"
 		time="5" />
 
@@ -196,7 +196,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="我们刚派出侦察直升机，发现了一处劫匪营地。你的目标是摧毁这帮匪徒。"
+		value="我们刚派出侦察直升机，|发现了一处劫匪营地。|你的目标是摧毁这帮匪徒。"
 		sound="data\sounds\dv_sounds\dialogs\dv1_20.wav"
 		time="5" />
 
@@ -206,7 +206,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="不可能！这些士兵是不是擅自离职了？！"
+		value="不可能！这些士兵是不|是擅自离职了？！"
 		sound="data\sounds\dv_sounds\dialogs\dv1_24.wav"
 		time="9" />
 
@@ -216,7 +216,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="没有什么比逃兵更让人厌恶了！变异体、僵尸之类的都不是借口。"
+		value="没有什么比逃兵更让人厌恶了！|变异体、僵尸之类的都不是借口。"
 		sound="data\sounds\dv_sounds\dialogs\dv1_25.wav"
 		time="7" />
 
@@ -226,7 +226,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="美国大兵应该怕的是他们的中士，而不是没脑子的僵尸！"
+		value="美国大兵应该怕的是他们的中士，|而不是没脑子的僵尸！"
 		sound="data\sounds\dv_sounds\dialogs\dv1_26.wav"
 		time="8" />
 
@@ -236,7 +236,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="坦白说，我不明白这么严密的封锁线里怎么会有这么多武装外人？他们是怎么进来的？"
+		value="坦白说，我不明白这么严密|的封锁线里怎么会有这么多武|装外人？他们是怎么进来的？"
 		sound="data\sounds\dv_sounds\dialogs\dv1_22.wav"
 		time="7" />
 
@@ -256,7 +256,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="原来你就是局里派来的联邦探员，来接手我们特遣队没能完成的任务？好吧，我们走着瞧。在给你派基本任务之前，我要你先熟悉这辆卡车——你还要开它很久。"
+		value="原来你就是局里派来的联邦探员，|来接手我们特遣队没能完成|的任务？好吧，我们走着瞧。|在给你派基本任务之前，|我要你先熟悉这辆卡车|——你还要开它很久。"
 		time="13"
 		numButtons="1" />
 
@@ -266,7 +266,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="我知道你是个出色的司机，但每辆车都有自己的脾气，在相对太平的环境里、基地附近学这些东西更好。熟悉操控，感受转向，试一试刹车，学会使用设备采集环境样本。"
+		value="我知道你是个出色的司机，|但每辆车都有自己的脾气，|在相对太平的环境里、|基地附近学这些东西更好。|熟悉操控，感受转向，试一试刹车，|学会使用设备采集环境样本。"
 		time="12"
 		numButtons="1" />
 
@@ -276,7 +276,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="记住，这辆车装有自动导航装置——就是仪表板左侧那台复杂的玩意儿。伙计们已经把你的任务路线上传进去了，它会随时提醒你在哪里转弯。"
+		value="记住，这辆车装有自动导航|装置——就是仪表板左侧那台|复杂的玩意儿。伙计们已经把|你的任务路线上传进去了，|它会随时提醒你在哪里转弯。"
 		sound="data\sounds\dv_sounds\dialogs\dv0_2.wav"
 		time="7" />
 
@@ -286,7 +286,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="看来这里的天气也疯了一样，不只是人。我们发现附近有四处游走的龙卷风——不想体验地狱旋转木马的话，就躲开它们。"
+		value="看来这里的天气也疯了一样，|不只是人。我们发现附近有四|处游走的龙卷风——不想体验地|狱旋转木马的话，就躲开它们。"
 		sound="data\sounds\dv_sounds\dialogs\dv0_1.wav"
 		time="11" />
 
@@ -296,17 +296,17 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="你前面是基地后勤人员建的居民点。我们的侦察报告说那是某个不明势力的前哨。把这帮混蛋清除掉……"
+		value="你前面是基地后勤人员建的|居民点。我们的侦察报告说|那是某个不明势力的前哨。|把这帮混蛋清除掉……"
 		sound="data\sounds\dv_sounds\dialogs\dv0_3.wav"
 		time="9" />
 
 	<string
 		id="1050"
-		value="原来你就是局里派来的联邦探员，来接手我们特遣队没能完成的任务？好吧，我们走着瞧。在给你派基本任务之前，我要你先熟悉这辆卡车——你还要开它很久。我知道你是个出色的司机，但每辆车都有自己的脾气，在相对太平的环境里、基地附近学这些东西更好。熟悉操控，感受转向，试一试刹车，学会使用设备采集环境样本。|  额外任务：|                采集地面和空气样本（至少 100 份）"
+		value="原来你就是局里派来的联邦探员，|来接手我们特遣队没能完成|的任务？好吧，我们走着瞧。|在给你派基本任务之前，|我要你先熟悉这辆卡车|——你还要开它很久。|我知道你是个出色的司机，|但每辆车都有自己的脾气，|在相对太平的环境里、|基地附近学这些东西更好。|熟悉操控，感受转向，试一试刹车，|学会使用设备采集环境样本。|  额外任务：|           |     采集地面和空气|样本（至少 100 份）"
 		numButtons="1" />
 
 	<string
 		id="1051"
-		value="那么，我想训练结束了。你已经熟悉了车辆、武器、这一带地形和这里做事的方式。该执行你的主要任务了。"
+		value="那么，我想训练结束了。|你已经熟悉了车辆、武器、|这一带地形和这里做事的方式。|该执行你的主要任务了。"
 		numButtons="1" />
 </resource>

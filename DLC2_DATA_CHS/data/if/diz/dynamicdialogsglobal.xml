@@ -28,7 +28,7 @@
 
 	<Reply
 		name="Dynamic00_Destroy00"
-		text="我在找活干，不知道您这儿有没有适合我的？"
+		text="我在找活干，不知道您|这儿有没有适合我的？"
 		role="PLAYER"
 		nextReplies="Dynamic00_Destroy00_npc0" />
 
@@ -40,7 +40,7 @@
 
 	<Reply
 		name="Dynamic00_Destroy00_npc0"
-		text="附近有个屡教不改的惯犯在活动。他的脑袋值 %3d。你接这活吗？"
+		text="附近有个屡教不改的惯犯在活动。|他的脑袋值 %3d。你接这活吗？"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 
@@ -58,7 +58,7 @@
 
 	<Reply
 		name="Dynamic00_Destroy01_npc0"
-		text="有人在烧毁我们的庄稼、往井里投毒。多半是敌方的间谍。杀了他，你能拿到 %3d。怎么样？"
+		text="有人在烧毁我们的庄稼、|往井里投毒。多半是敌|方的间谍。杀了他，你能|拿到 %3d。怎么样？"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 
@@ -76,7 +76,7 @@
 
 	<Reply
 		name="Dynamic00_Destroy02_npc0"
-		text="附近有个疯子四处设伏，惊扰村庄居民。他本身并不怎么危险，但人们都在抱怨。你去解决掉他，%3d 就是你的。怎么样，帮个忙？"
+		text="附近有个疯子四处设伏，|惊扰村庄居民。他本身并不|怎么危险，但人们都在抱怨。|你去解决掉他，%3d 就|是你的。怎么样，帮个忙？"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 
@@ -88,13 +88,13 @@
 
 	<Reply
 		name="Dynamic00_ReachTimelimited00"
-		text="我想问问有没有报酬丰厚的简单活儿。"
+		text="我想问问有没有报酬丰|厚的简单活儿。"
 		role="PLAYER"
 		nextReplies="Dynamic00_Reach00_npc0" />
 
 	<Reply
 		name="Dynamic00_Reach00_npc0"
-		text="需要把一些研究资料和样品送到 %2n 聚居地。到了那边会有人跟你结账。%3d 对这点小事来说算是不错的报酬。送一趟？"
+		text="需要把一些研究资料和样|品送到 %2n 聚居地。|到了那边会有人跟你结账。|%3d 对这点小事来说|算是不错的报酬。送一趟？"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 
@@ -112,7 +112,7 @@
 
 	<Reply
 		name="Dynamic00_Reach01_npc0"
-		text="我们这儿攒了一批货要送到 %2n 村。送到了给你 %3d。我能指望你吗？"
+		text="我们这儿攒了一批货要送到| %2n 村。送到了给你| %3d。我能指望你吗？"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 
@@ -142,7 +142,7 @@
 
 	<Reply
 		name="Dynamic00_Convoy00_npc0"
-		text="毫无疑问。最近路上不太平，我有个朋友急着要赶到 %2n 聚居地。护送他一程，到地方给你 %3d。你去吗？"
+		text="毫无疑问。最近路上不太平，|我有个朋友急着要赶到| %2n 聚居地。护送他一程，|到地方给你 %3d。你去吗？"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 
@@ -160,13 +160,13 @@
 
 	<Reply
 		name="Dynamic00_Convoy01_npc0"
-		text="有人正跟邻城做起生意，把样品运过去。护送他们到 %2n 村，并确保没人跟踪。对了，报酬是 %3d。愿意护送吗？"
+		text="有人正跟邻城做起生意，把样品运|过去。护送他们到 %2n 村，|并确保没人跟踪。对了，|报酬是 %3d。愿意护送吗？"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 
 	<Reply
 		name="EndDlg1"
-		text="我想挣点钱。你们这儿最近有什么活吗？"
+		text="我想挣点钱。你们这儿|最近有什么活吗？"
 		role="PLAYER"
 		scriptResult="ConversationWnd:EndConversation()"
 		nextReplies="Dlg_npc_000017" />
@@ -180,7 +180,7 @@
 
 	<Reply
 		name="Dlg_npc_000017"
-		text="总的来说没什么，连续好几天都挺平静的。"
+		text="总的来说没什么，连续|好几天都挺平静的。"
 		role="NPC"
 		nextReplies="Dlg_pl_000018" />
 
@@ -192,25 +192,25 @@
 
 	<Reply
 		name="Dynamic00_Peace00"
-		text="我遇到个麻烦：我跟 %2b 帮派吵起来了……"
+		text="我遇到个麻烦：我跟 %2b |帮派吵起来了……"
 		role="PLAYER"
 		nextReplies="Dynamic00_Peace00_npc0" />
 
 	<Reply
 		name="Dynamic00_Peace00_npc0"
-		text="看来你费了不少工夫，让 %2b 把你当成死敌……我有些门路。拿出你 %3d 百分比的积蓄，我可以在市议会上替你说几句好话。钱带了吗？"
+		text="看来你费了不少工夫，|让 %2b 把你当成|死敌……我有些门路。|拿出你 %3d 百分比的积蓄，|我可以在市议会上替你|说几句好话。钱带了吗？"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 
 	<Reply
 		name="Dynamic00_Peace01"
-		text="这次我需要帮忙。我和 %2b 在一件事上没谈拢，现在……"
+		text="这次我需要帮忙。我和 %2b |在一件事上没谈拢，现在……"
 		role="PLAYER"
 		nextReplies="Dynamic00_Peace01_npc0" />
 
 	<Reply
 		name="Dynamic00_Peace01_npc0"
-		text="我知道 %2b 不愿意跟你有任何瓜葛。只要你拿出 %3d 百分比的积蓄，我可以帮你在他们那里挣到一点地位。钱准备好了吗？"
+		text="我知道 %2b 不愿意跟|你有任何瓜葛。只要你拿出| %3d 百分比的积蓄，|我可以帮你在他们那里挣到|一点地位。钱准备好了吗？"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 
@@ -228,7 +228,7 @@
 
 	<Reply
 		name="Dynamic00_Hunt00_npc0"
-		text="匪徒清剿季开始了。每摧毁一辆敌对载具给你 %3d，猎期结束后统一结算。要报名吗？"
+		text="匪徒清剿季开始了。每摧毁|一辆敌对载具给你 %3d，|猎期结束后统一结算。要报名吗？"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 
@@ -240,31 +240,31 @@
 
 	<Reply
 		name="Dynamic00_HuntTimelimited01"
-		text="这么大的城里，总该有我这样赚钱的活儿吧？"
+		text="这么大的城里，总该有|我这样赚钱的活儿吧？"
 		role="PLAYER"
 		nextReplies="Dynamic00_Hunt01_npc0" />
 
 	<Reply
 		name="Dynamic00_Hunt01_npc0"
-		text="那帮匪徒简直无法无天！袭击我们的地盘，就像回自己家仓库一样。得好好教训他们一顿。打掉几个，让他们长点记性。在规定时间内完成，每人大约 %3d。敢不敢赌一把？"
+		text="那帮匪徒简直无法无天！|袭击我们的地盘，就像回自己家|仓库一样。得好好教训他们一顿。|打掉几个，让他们长点记性。|在规定时间内完成，每人大|约 %3d。敢不敢赌一把？"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 
 	<Reply
 		name="Dynamic00_Drugs00"
-		text="不知您这儿有没有……嗯，那种货。您懂的，对吧？"
+		text="不知您这儿有没有……嗯，|那种货。您懂的，对吧？"
 		role="PLAYER"
 		nextReplies="Dynamic00_Drugs00_npc0" />
 
 	<Reply
 		name="Dynamic00_Drugs00_npc0"
-		text="好，但得悄悄进行。给你这个包裹。我想你已经明白，里面不是普通货色，而是上等违禁品。它会花掉你 %3d，但你能卖到高得多的价钱……前提是你还活着。买吗？"
+		text="好，但得悄悄进行。给你这个包裹。|我想你已经明白，里面不是|普通货色，而是上等违禁品。|它会花掉你 %3d，|但你能卖到高得多的价钱…|…前提是你还活着。买吗？"
 		role="NPC"
 		nextReplies="Dynamic00_DrugsTake Dynamic00_DrugsNoMoney Dynamic00_plNo0" />
 
 	<Reply
 		name="Dynamic00_DrugsNoMoney"
-		text="唉……这个先留在我这儿吧，等我攒够钱再回来找你。"
+		text="唉……这个先留在我这儿吧，|等我攒够钱再回来找你。"
 		role="PLAYER"
 		scriptCondition="GetPlayerMoney() < ConversationWnd:GetCurrentDynamicQuest():GetReward()"
 		scriptResult="ConversationWnd:EndConversation()" />
@@ -278,13 +278,13 @@
 
 	<Reply
 		name="Dynamic00_SellDrugs00"
-		text="我想把一个有意思的包裹卖给懂行的人。"
+		text="我想把一个有意思的包|裹卖给懂行的人。"
 		role="PLAYER"
 		nextReplies="Dynamic00_SellDrugs00_npc0" />
 
 	<Reply
 		name="Dynamic00_SellDrugs00_npc0"
-		text="别嚷嚷，你这样太招人注意了。你要多少？"
+		text="别嚷嚷，你这样太招人|注意了。你要多少？"
 		role="NPC"
 		nextReplies="Dynamic00_SellDrugs00_1x Dynamic00_SellDrugs00_1.5x Dynamic00_SellDrugs00_2x" />
 
@@ -311,14 +311,14 @@
 
 	<Reply
 		name="Dynamic00_SellDrugs00_try_yes"
-		text="很好，我完全满意！拿好，这是你应得的 %3d！"
+		text="很好，我完全满意！拿好，|这是你应得的 %3d！"
 		role="NPC"
 		scriptCondition="not ConversationWnd:GetCurrentDynamicQuest():IsStatusFailed()"
 		nextReplies="Dynamic00_SellDrugs00_ok" />
 
 	<Reply
 		name="Dynamic00_SellDrugs00_try_no"
-		text="什么？！你到底要多少？！算了，这东西我直接没收了！至于你要是敢说一个字，我就告诉卫兵你在这儿倒腾什么。走吧，滚。"
+		text="什么？！你到底要多少？！|算了，这东西我直接没收了！|至于你要是敢说一个字，|我就告诉卫兵你在这儿|倒腾什么。走吧，滚。"
 		role="NPC"
 		scriptCondition="ConversationWnd:GetCurrentDynamicQuest():IsStatusFailed()"
 		nextReplies="Dynamic00_SellDrugs00_ok" />
@@ -331,13 +331,13 @@
 
 	<Reply
 		name="Dynamic00_Treasure00"
-		text="我对这一带埋藏的各类古代文物很感兴趣。"
+		text="我对这一带埋藏的各类|古代文物很感兴趣。"
 		role="PLAYER"
 		nextReplies="Dynamic00_Treasure00_npc0" />
 
 	<Reply
 		name="Dynamic00_Treasure00_npc0"
-		text="关于这个，我正好有点消息。我自己不去冒险，城里的事就够我忙的了。再说我的车上也没装寻宝仪。不过，我觉得你该去调查一下附近的一个地方。既然你愿意接这活，我可以在地图上给你标出来。"
+		text="关于这个，我正好有点|消息。我自己不去冒险，|城里的事就够我忙的了。|再说我的车上也没装寻宝仪。|不过，我觉得你该去调查|一下附近的一个地方。|既然你愿意接这活，我可|以在地图上给你标出来。"
 		role="NPC"
 		nextReplies="Dynamic00_plYes0 Dynamic00_plNo0" />
 </DialogsResource>

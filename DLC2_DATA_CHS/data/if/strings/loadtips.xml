@@ -6,7 +6,7 @@
 
 	<string
 		id="LoadTip_01"
-		value="远离水源——它摧毁载具的速度比最强大的敌人还快。" />
+		value="远离水源——它摧毁载具的|速度比最强大的敌人还快。" />
 
 	<string
 		id="LoadTip_02"
@@ -14,15 +14,15 @@
 
 	<string
 		id="LoadTip_03"
-		value="GPS 导航系统是载具的基本设备，它始终显示正确的行驶方向。" />
+		value="GPS 导航系统是载具的基本设|备，它始终显示正确的行驶方向。" />
 
 	<string
 		id="LoadTip_04"
-		value="寻找并拾取奖励能让你迅速积累财富。" />
+		value="寻找并拾取奖励能让你|迅速积累财富。" />
 
 	<string
 		id="LoadTip_05"
-		value="记住，静止的目标最容易下手。多机动。" />
+		value="记住，静止的目标最容|易下手。多机动。" />
 
 	<string
 		id="LoadTip_06"
@@ -34,7 +34,7 @@
 
 	<string
 		id="LoadTip_08"
-		value="每摧毁一个敌人，政府都会给你奖励。" />
+		value="每摧毁一个敌人，政府|都会给你奖励。" />
 
 	<string
 		id="LoadTip_09"

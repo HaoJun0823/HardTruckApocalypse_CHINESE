@@ -18,15 +18,15 @@
 
 	<string
 		id="fm_dynamic_quest_timelimit"
-		value="任务「%1s」时间已到。任务失败。" />
+		value="任务「%1s」时间已|到。任务失败。" />
 
 	<string
 		id="fm_dynamic_quest_failed_because_hirer_becames_enemy"
-		value="任务「%1s」失败，因为你与委托方派系的关系恶化了。" />
+		value="任务「%1s」失败，因为你|与委托方派系的关系恶化了。" />
 
 	<string
 		id="fm_convoy_failed"
-		value="你未能保护卡车。别指望拿到报酬了。" />
+		value="你未能保护卡车。别指|望拿到报酬了。" />
 
 	<string
 		id="fm_perk_given"
@@ -46,7 +46,7 @@
 
 	<string
 		id="fm_history_got"
-		value="日志的「剧情」栏目新增了一条记录。" />
+		value="日志的「剧情」栏目新|增了一条记录。" />
 
 	<string
 		id="fm_book_got"
@@ -70,7 +70,7 @@
 
 	<string
 		id="fm_not_suzet"
-		value="这个地方看着不对劲。我们最好离开。" />
+		value="这个地方看着不对劲。|我们最好离开。" />
 
 	<string
 		id="fm_race_start_1"
@@ -114,7 +114,7 @@
 
 	<string
 		id="fm_race_finish_less"
-		value="你的名次：第 %1d 名（共 %2d 名）" />
+		value="你的名次：第 %1d |名（共 %2d 名）" />
 
 	<string
 		id="fm_race_finish_lose"
@@ -182,15 +182,15 @@
 
 	<string
 		id="fm_cheat_is_not_allowed"
-		value="@FF22FF22使用作弊@FF2222FF已被禁止@FFFFFFFF" />
+		value="@FF22FF22使用|作弊@FF2222FF已|被禁止@FFFFFFFF" />
 
 	<string
 		id="fm_cheat_is_allowed"
-		value="@FF22FF22在游戏测试中，@FF2222FF使用作弊可能导致异常！@FFFFFFFF" />
+		value="@FF22FF22在游戏测|试中，@FF2222FF使|用作弊可能导致异常！|@FFFFFFFF" />
 
 	<string
 		id="fm_items_remained_on_ground"
-		value="尸体内空间不足。按 %1m 打开装备窗口。" />
+		value="尸体内空间不足。按 %1m |打开装备窗口。" />
 
 	<string
 		id="fm_mp_player_killed_player"
@@ -214,7 +214,7 @@
 
 	<string
 		id="fm_start_demo_mission1"
-		value="别忘了，本任务有严格的时间限制。人类的命运掌握在你手中！" />
+		value="别忘了，本任务有严格的时间限制。|人类的命运掌握在你手中！" />
 
 	<string
 		id="fm_start_demo_mission2"
@@ -222,7 +222,7 @@
 
 	<string
 		id="fm_time"
-		value="剩余：@FFFF4444  %1d : %2d : %3d @FFFFFFFF" />
+		value="剩余：@FFFF4444  %1d |: %2d : %3d @|FFFFFFFF" />
 
 	<string
 		id="fm_n"
@@ -230,7 +230,7 @@
 
 	<string
 		id="fm_test"
-		value="p1：%1s；p2：%2d；p3：%3p" />
+		value="p1：%1s；p2：|%2d；p3：%3p" />
 
 	<string
 		id="fm_player_add_bonus"

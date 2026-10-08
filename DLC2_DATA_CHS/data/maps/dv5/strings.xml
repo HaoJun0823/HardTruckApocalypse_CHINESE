@@ -6,7 +6,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="我不明白。我桌上就有照片，是一个月前拍的。那里当时根本没有丛林，连一点痕迹都没有。"
+		value="我不明白。我桌上就有|照片，是一个月前拍的。|那里当时根本没有丛林，|连一点痕迹都没有。"
 		sound="data\sounds\dv_sounds\dialogs\dv5_9.wav"
 		time="8" />
 
@@ -16,7 +16,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="我们知道帕帕斯教授在哪里，所以现在只剩下把他完好无损地带出来这一件事。"
+		value="我们知道帕帕斯教授在哪里，|所以现在只剩下把他完好|无损地带出来这一件事。"
 		sound="data\sounds\dv_sounds\dialogs\dv5_10.wav"
 		time="5" />
 
@@ -26,7 +26,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="探员，听得到我吗？收到请回答。切换到加长波段！收到吗？探员，听到请回答。"
+		value="探员，听得到我吗？收到请回答。|切换到加长波段！收到吗？|探员，听到请回答。"
 		sound="data\sounds\dv_sounds\dialogs\dv5_11.wav"
 		time="4" />
 
@@ -36,7 +36,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="探员，如果你能听到，就按两次接收键。啊，太好了！看来这地方是信号盲区……"
+		value="探员，如果你能听到，|就按两次接收键。啊，太好了！|看来这地方是信号盲区……"
 		sound="data\sounds\dv_sounds\dialogs\dv5_12.wav"
 		time="6" />
 
@@ -46,7 +46,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="一旦你把教授带出来……（杂音）……出了峡谷之后，你会遇到……（杂音）收到吗？……（杂音）"
+		value="一旦你把教授带出来……（|杂音）……出了峡谷之后，|你会遇到……（杂音）|收到吗？……（杂音）"
 		sound="data\sounds\dv_sounds\dialogs\dv5_13.wav"
 		time="7" />
 
@@ -56,7 +56,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="从走私贩手里营救教授时，千万别遭到三角洲小队的火力覆盖。"
+		value="从走私贩手里营救教授时，|千万别遭到三角洲小队的火力覆盖。"
 		sound="data\sounds\dv_sounds\dialogs\dv5_14.wav"
 		time="4" />
 
@@ -66,7 +66,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="你是来救我的？哦，真是太好了，太好了！这么说，我们政府终于决定从匪徒手里救我了。"
+		value="你是来救我的？哦，真是太好了，|太好了！这么说，我们政府|终于决定从匪徒手里救我了。"
 		sound="data\sounds\dv_sounds\dialogs\dv5_15.wav"
 		time="5" />
 
@@ -76,7 +76,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="不过我自己已经从匪徒手里逃出来了，哦对，我逃出来了！军人在后面追他们，他们根本顾不上我。所以我没靠你帮忙就脱身了，真的。"
+		value="不过我自己已经从匪徒手里逃|出来了，哦对，我逃出来了！|军人在后面追他们，他们|根本顾不上我。所以我没|靠你帮忙就脱身了，真的。"
 		sound="data\sounds\dv_sounds\dialogs\dv5_16.wav"
 		time="7" />
 
@@ -96,7 +96,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="匪徒营地就在你附近。那里有一些棚屋形状的大帐篷，教授很可能就被关在其中一间里。"
+		value="匪徒营地就在你附近。|那里有一些棚屋形状的大帐篷，|教授很可能就被关在其中一间里。"
 		sound="data\sounds\dv_sounds\dialogs\dv5_18.wav"
 		time="7" />
 
@@ -106,7 +106,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="我们在附近没有发现任何战斗痕迹。不管怎样，你得去勘察一下那地方。"
+		value="我们在附近没有发现任|何战斗痕迹。不管怎样，|你得去勘察一下那地方。"
 		sound="data\sounds\dv_sounds\dialogs\dv5_19.wav"
 		time="6" />
 
@@ -116,7 +116,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="不过别以为我会跟你走！走私犯扣着我的样本和研究资料，当然了。"
+		value="不过别以为我会跟你走！|走私犯扣着我的样本和|研究资料，当然了。"
 		sound="data\sounds\dv_sounds\dialogs\dv5_20.wav"
 		time="6" />
 
@@ -126,7 +126,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="没有那些东西我哪儿也不去。那是多年的工作，明白吗？帮我把资料从匪徒手里拿回来，我就跟你走，否则免谈！"
+		value="没有那些东西我哪儿也不去。|那是多年的工作，明白吗？|帮我把资料从匪徒手里拿回来，|我就跟你走，否则免谈！"
 		sound="data\sounds\dv_sounds\dialogs\dv5_21.wav"
 		time="7" />
 
@@ -136,7 +136,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="匪徒正从军方眼皮底下撤退，往沼泽方向逃。你还追得上他们。"
+		value="匪徒正从军方眼皮底下撤退，|往沼泽方向逃。你还追得上他们。"
 		sound="data\sounds\dv_sounds\dialogs\dv5_22.wav"
 		time="4" />
 
@@ -146,7 +146,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="你的卡车防辐射性能很好，这可真是件坏事。"
+		value="你的卡车防辐射性能很好，|这可真是件坏事。"
 		sound="data\sounds\dv_sounds\dialogs\dv5_23.wav"
 		time="3" />
 
@@ -156,7 +156,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="我是说它确实很好，可正因为装甲太重，而那地方又是沼泽——没错，就是沼泽。这才叫麻烦。"
+		value="我是说它确实很好，可|正因为装甲太重，而那地|方又是沼泽——没错，|就是沼泽。这才叫麻烦。"
 		sound="data\sounds\dv_sounds\dialogs\dv5_24.wav"
 		time="6" />
 
@@ -176,7 +176,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="车载电脑|侦察卫星传回的物体图像不是帐篷。是巨大的蛋。看样子是鸟蛋。"
+		value="车载电脑|侦察卫星传回的物体图像不是帐篷。|是巨大的蛋。看样子是鸟蛋。"
 		sound=""
 		time="6" />
 </resource>

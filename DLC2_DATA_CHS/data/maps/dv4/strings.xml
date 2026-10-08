@@ -6,7 +6,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="我们派往 31 号基地的一支特别行动小队——三角洲小队——就在这一带失踪了。"
+		value="我们派往 31 号基地的|一支特别行动小队——三角洲|小队——就在这一带失踪了。"
 		sound="data\sounds\dv_sounds\dialogs\dv4_8.wav"
 		time="7" />
 
@@ -16,7 +16,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="我们收到的最后一条讯息因为干扰太重，只能听清几个词：「一支没有标识的车队……」「开火！……」「三角洲四号，掩护三角洲七号！」「五号，撑住，我来了！」"
+		value="我们收到的最后一条讯息因为|干扰太重，只能听清几个词：|「一支没有标识的车队……」|「开火！……」「三角洲四号，|掩护三角洲七号！」「五号，|撑住，我来了！」"
 		sound="data\sounds\dv_sounds\dialogs\dv4_9.wav"
 		time="12" />
 
@@ -26,7 +26,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="之后所有试图恢复联络的努力都失败了。极可能是我的人撞上了运走 Z-120 集装箱的走私车队，然后遭到射击。"
+		value="之后所有试图恢复联络的努力|都失败了。极可能是我的人撞|上了运走 Z-120 集装|箱的走私车队，然后遭到射击。"
 		sound="data\sounds\dv_sounds\dialogs\dv4_10.wav"
 		time="8" />
 
@@ -46,7 +46,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="另外，政府希望得到装着 Z-120 异种样本的集装箱的确切位置。"
+		value="另外，政府希望得到装|着 Z-120 异种样|本的集装箱的确切位置。"
 		sound="data\sounds\dv_sounds\dialogs\dv4_12.wav"
 		time="7" />
 
@@ -56,7 +56,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="就算三角洲小队全员阵亡，那些走私团伙也很难跑掉一个。这一点你可以信我，探员。"
+		value="就算三角洲小队全员阵亡，|那些走私团伙也很难跑掉一个。|这一点你可以信我，探员。"
 		sound="data\sounds\dv_sounds\dialogs\dv4_13.wav"
 		time="8" />
 
@@ -76,7 +76,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="不管他们和谁交过手，对方一定死伤惨重，周围地形也必然被打得一片狼藉。也就是说，我的人大概留下了明显的痕迹。你只要去找就行。"
+		value="不管他们和谁交过手，|对方一定死伤惨重，周围地|形也必然被打得一片狼藉。|也就是说，我的人大概留下了|明显的痕迹。你只要去找就行。"
 		sound="data\sounds\dv_sounds\dialogs\dv4_15.wav"
 		time="11" />
 
@@ -86,7 +86,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="注意，探员。我们的无线电组截获了一条以军用频率播发的加密讯息。"
+		value="注意，探员。我们的无|线电组截获了一条以军用|频率播发的加密讯息。"
 		sound="data\sounds\dv_sounds\dialogs\dv4_16.wav"
 		time="3" />
 
@@ -96,7 +96,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="信号很弱，夹杂大量杂音，但三角洲小队似乎正在恶魔足高原勉强守住阵地。快点，探员！"
+		value="信号很弱，夹杂大量杂音，|但三角洲小队似乎正在恶魔足高|原勉强守住阵地。快点，探员！"
 		sound="data\sounds\dv_sounds\dialogs\dv4_17.wav"
 		time="6" />
 
@@ -106,7 +106,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="这些该死的变异体到处都是。你跟这些怪物交手已经很有经验了，让它们见识见识你的本事。"
+		value="这些该死的变异体到处都是。|你跟这些怪物交手已经很有经验了，|让它们见识见识你的本事。"
 		sound="data\sounds\dv_sounds\dialogs\dv4_18.wav"
 		time="6" />
 
@@ -116,7 +116,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="探员，有两个消息，一好一坏。好消息是：你来得正是时候。"
+		value="探员，有两个消息，一好一坏。|好消息是：你来得正是时候。"
 		sound="data\sounds\dv_sounds\dialogs\dv4_19.wav"
 		time="3" />
 
@@ -126,7 +126,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="现在说坏消息：很抱歉，这里根本没有三角洲小队。"
+		value="现在说坏消息：很抱歉，|这里根本没有三角洲小队。"
 		sound="data\sounds\dv_sounds\dialogs\dv4_20.wav"
 		time="3" />
 
@@ -136,7 +136,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="这里只剩一名重伤的无线电操作员麦考伊中士。怪物袭击小镇时是他接管了当地民兵。"
+		value="这里只剩一名重伤的无线电|操作员麦考伊中士。怪物袭击|小镇时是他接管了当地民兵。"
 		sound="data\sounds\dv_sounds\dialogs\dv4_21.wav"
 		time="6" />
 
@@ -146,7 +146,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="我们截获了一封加密电报。这位无线电工程师没有使用任何标准军用代码，所以显然他不是三角洲的人。"
+		value="我们截获了一封加密电报。|这位无线电工程师没有使|用任何标准军用代码，|所以显然他不是三角洲的人。"
 		sound="data\sounds\dv_sounds\dialogs\dv4_22.wav"
 		time="7" />
 
@@ -156,7 +156,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="你必须查清是谁在播报、播给谁、目的是什么。也许这能帮我们找到那支小队。"
+		value="你必须查清是谁在播报、|播给谁、目的是什么。|也许这能帮我们找到那支小队。"
 		sound="data\sounds\dv_sounds\dialogs\dv4_23.wav"
 		time="6" />
 
@@ -176,7 +176,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="是走私团伙发出的，他们遭遇三角洲小队，损失惨重。"
+		value="是走私团伙发出的，他们遭|遇三角洲小队，损失惨重。"
 		sound="data\sounds\dv_sounds\dialogs\dv4_25.wav"
 		time="7" />
 
@@ -186,7 +186,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="他们的通讯让我们拿到了那片区域的坐标，所以把遭遇战的大致位置发给你。"
+		value="他们的通讯让我们拿到了|那片区域的坐标，所以把|遭遇战的大致位置发给你。"
 		sound="data\sounds\dv_sounds\dialogs\dv4_26.wav"
 		time="7" />
 
@@ -196,7 +196,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="军用无线电截获系统让我们得知三角洲小队与匪徒遭遇的地点。勘察战场能帮我们找到我方士兵的踪迹。"
+		value="军用无线电截获系统让我|们得知三角洲小队与匪徒|遭遇的地点。勘察战场能帮|我们找到我方士兵的踪迹。"
 		sound="data\sounds\dv_sounds\dialogs\dv4_27.wav"
 		time="9" />
 
@@ -206,7 +206,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="这场战斗竟然一点痕迹都没留下，确实令人不安，不过眼下还算不得要紧。"
+		value="这场战斗竟然一点痕迹都|没留下，确实令人不安，|不过眼下还算不得要紧。"
 		sound="data\sounds\dv_sounds\dialogs\dv4_28.wav"
 		time="6" />
 
@@ -216,7 +216,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="我们的无线电组截获了一条以军用频率播发的加密讯息。信号很弱，夹杂大量杂音，但三角洲小队似乎正在恶魔足高原勉强守住阵地。快点，探员！"
+		value="我们的无线电组截获了一条|以军用频率播发的加密讯息。|信号很弱，夹杂大量杂音，|但三角洲小队似乎正在恶魔足高|原勉强守住阵地。快点，探员！"
 		sound="data\sounds\dv_sounds\dialogs\dv4_29.wav"
 		time="10" />
 
@@ -226,7 +226,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="据麦考伊中士报告，三角洲小队在赶往 31 号基地途中被迫与驾驶重型卡车、全副武装的人交战。"
+		value="据麦考伊中士报告，三角洲|小队在赶往 31 号基地|途中被迫与驾驶重型卡车、|全副武装的人交战。"
 		sound="data\sounds\dv_sounds\dialogs\dv4_30.wav"
 		time="7" />
 
@@ -236,7 +236,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="中士在其中一辆卡车上发现了一个标着「Z-120」的集装箱。中士在战斗中负伤，无线电也被打坏了。"
+		value="中士在其中一辆卡车上发现|了一个标着「Z-120」的|集装箱。中士在战斗中负伤，|无线电也被打坏了。"
 		sound="data\sounds\dv_sounds\dialogs\dv4_31.wav"
 		time="7" />
 
@@ -246,7 +246,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="小队其余成员开始追击撤退的敌人。你必须加入三角洲小队，警告他们 Z-120 集装箱里封着什么危险。"
+		value="小队其余成员开始追击撤退的敌人。|你必须加入三角洲小队，|警告他们 Z-120 |集装箱里封着什么危险。"
 		sound="data\sounds\dv_sounds\dialogs\dv4_32.wav"
 		time="9" />
 

@@ -6,7 +6,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="我们这边剩下的事不多了。一旦外星飞船抵达命中点，我们就发射导弹，入侵就结束了。"
+		value="我们这边剩下的事不多了。|一旦外星飞船抵达命中点，|我们就发射导弹，入侵就结束了。"
 		sound="data\sounds\dv_sounds\dialogs\dv9_7.wav"
 		time="10" />
 
@@ -16,7 +16,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="你的任务是除掉帕帕斯。务必格外小心，我们知道他手上有几支神经刺激剂。"
+		value="你的任务是除掉帕帕斯。|务必格外小心，我们知道|他手上有几支神经刺激剂。"
 		sound="data\sounds\dv_sounds\dialogs\dv9_8.wav"
 		time="10" />
 
@@ -26,7 +26,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="我们不知道这药的原理，但教授是连同 Z-120 病毒一起研发它的，他为了它回到了宪兵抓住他的那个地方。"
+		value="我们不知道这药的原理，|但教授是连同 Z-120 |病毒一起研发它的，他为了它|回到了宪兵抓住他的那个地方。"
 		sound="data\sounds\dv_sounds\dialogs\dv9_9.wav"
 		time="10" />
 
@@ -36,7 +36,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="我们推测他觉得这种神经刺激剂极为重要，因为他这次回去风险极高。"
+		value="我们推测他觉得这种神|经刺激剂极为重要，因为|他这次回去风险极高。"
 		sound="data\sounds\dv_sounds\dialogs\dv9_10.wav"
 		time="8" />
 
@@ -46,7 +46,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="尽快除掉帕帕斯。就算没有那药，他也比一个坦克师危险；一旦他用上神经刺激剂会怎样，我连想都不敢想。"
+		value="尽快除掉帕帕斯。就算没有那药，|他也比一个坦克师危险；|一旦他用上神经刺激剂会|怎样，我连想都不敢想。"
 		sound="data\sounds\dv_sounds\dialogs\dv9_11.wav"
 		time="11" />
 
@@ -56,7 +56,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="帕帕斯已经显露了某种超自然能力。务必格外小心，先发制人。"
+		value="帕帕斯已经显露了某种超自然能力。|务必格外小心，先发制人。"
 		sound="data\sounds\dv_sounds\dialogs\dv9_12.wav"
 		time="8" />
 
@@ -66,7 +66,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="你必须追上帕帕斯教授。一秒钟都别浪费。"
+		value="你必须追上帕帕斯教授。|一秒钟都别浪费。"
 		sound="data\sounds\dv_sounds\dialogs\dv9_13.wav"
 		time="4" />
 
@@ -76,7 +76,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="根据装在帕帕斯偷走的那辆车里的信标数据，他就在附近。小心。"
+		value="根据装在帕帕斯偷走的|那辆车里的信标数据，|他就在附近。小心。"
 		sound="data\sounds\dv_sounds\dialogs\dv9_14.wav"
 		time="7" />
 
@@ -86,7 +86,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="你必须除掉那位教授——或者说他已经变成的那东西——趁他还没变成你根本杀不死的东西。"
+		value="你必须除掉那位教授——或者|说他已经变成的那东西——趁他|还没变成你根本杀不死的东西。"
 		sound="data\sounds\dv_sounds\dialogs\dv9_15.wav"
 		time="10" />
 
@@ -96,7 +96,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="哦，又是你啊，探员！你还是一点都没明白，对吧？我早就给过你若干次当英雄赴死的机会了，我给过。"
+		value="哦，又是你啊，探员！|你还是一点都没明白，对吧？|我早就给过你若干次当英|雄赴死的机会了，我给过。"
 		sound="data\sounds\dv_sounds\dialogs\dv9_16.wav"
 		time="8" />
 
@@ -106,7 +106,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="可你以为自己能挡在我所代表的进步前面，你还这么以为。"
+		value="可你以为自己能挡在我所代表|的进步前面，你还这么以为。"
 		sound="data\sounds\dv_sounds\dialogs\dv9_17.wav"
 		time="4" />
 
@@ -116,7 +116,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="你不过是个鬼鬼祟祟的 家伙，没错。所以我必须除掉你。"
+		value="你不过是个鬼鬼祟祟的 家伙，|没错。所以我必须除掉你。"
 		sound="data\sounds\dv_sounds\dialogs\dv9_18.wav"
 		time="3" />
 
@@ -126,7 +126,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="你可以为自己感到荣幸，是伟大的帕帕斯亲自把你从地球上抹去的。"
+		value="你可以为自己感到荣幸，|是伟大的帕帕斯亲自把|你从地球上抹去的。"
 		sound="data\sounds\dv_sounds\dialogs\dv9_19.wav"
 		time="3" />
 
@@ -136,7 +136,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="不过你也可以自行了断，你会的。在我的神经刺激疗程结束之前，你还有几分钟。"
+		value="不过你也可以自行了断，|你会的。在我的神经刺激疗|程结束之前，你还有几分钟。"
 		sound="data\sounds\dv_sounds\dialogs\dv9_20.wav"
 		time="7" />
 
@@ -156,7 +156,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="恭喜你，探员！多亏了你的努力，地球安全了。"
+		value="恭喜你，探员！多亏了|你的努力，地球安全了。"
 		sound="data\sounds\dv_sounds\dialogs\dv9_22.wav"
 		time="4" />
 
@@ -166,7 +166,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="我们五分钟前就发射了导弹，现在它们离外星母舰只有几英里了。"
+		value="我们五分钟前就发射了导弹，|现在它们离外星母舰只有几英里了。"
 		sound="data\sounds\dv_sounds\dialogs\dv9_23.wav"
 		time="8" />
 
@@ -176,7 +176,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="你们这些没脑子的畜生。你们这些残缺的失败品！你们根本不知道自己在干什么！！那是我们通往最高境界的钥匙……"
+		value="你们这些没脑子的畜生。|你们这些残缺的失败品！|你们根本不知道自己在干什么！！|那是我们通往最高境界的钥匙……"
 		sound="data\sounds\dv_sounds\dialogs\dv9_24.wav"
 		time="7" />
 </resource>

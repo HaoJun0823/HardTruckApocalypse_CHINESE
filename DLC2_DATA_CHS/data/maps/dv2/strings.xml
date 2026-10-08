@@ -6,7 +6,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="在这片沙漠里的某个地方，我们特遣小队外出执行侦察任务，然后失踪了。"
+		value="在这片沙漠里的某个地方，|我们特遣小队外出执行|侦察任务，然后失踪了。"
 		sound="data\sounds\dv_sounds\dialogs\dv2_7.wav"
 		time="4" />
 
@@ -16,7 +16,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="我不相信他们全都死了——他们是训练有素的专业人员，不是国民警卫队那种周末只在军营里待两天的业余兵。"
+		value="我不相信他们全都死了——|他们是训练有素的专业人员，|不是国民警卫队那种周末只|在军营里待两天的业余兵。"
 		sound="data\sounds\dv_sounds\dialogs\dv2_8.wav"
 		time="5" />
 
@@ -26,7 +26,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="如果你运气好找到了他们，立刻通知大本营。"
+		value="如果你运气好找到了他们，|立刻通知大本营。"
 		sound="data\sounds\dv_sounds\dialogs\dv2_9.wav"
 		time="2" />
 
@@ -36,7 +36,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="沙漠城（Deserthole）是个小矿业镇。"
+		value="沙漠城（Deserthole）|是个小矿业镇。"
 		sound="data\sounds\dv_sounds\dialogs\dv2_10.wav"
 		time="2" />
 
@@ -46,7 +46,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="矿场关闭之后，居民们没了工作，从那以后他们的主要营生就是酿造、贩卖和私喝一些仙人掌私酒。"
+		value="矿场关闭之后，居民们没了工作，|从那以后他们的主要营生就是酿造、|贩卖和私喝一些仙人掌私酒。"
 		sound="data\sounds\dv_sounds\dialogs\dv2_11.wav"
 		time="7" />
 
@@ -56,7 +56,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="不管怎样，我们国家不会对自己的子民袖手旁观，所以疏散沙漠城也是你的职责之一！"
+		value="不管怎样，我们国家不会|对自己的子民袖手旁观，|所以疏散沙漠城也是你的职责之一！"
 		sound="data\sounds\dv_sounds\dialogs\dv2_12.wav"
 		time="6" />
 
@@ -66,7 +66,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="你必须替沙漠城的可敬市民们清除那些劫匪。"
+		value="你必须替沙漠城的可敬|市民们清除那些劫匪。"
 		sound="data\sounds\dv_sounds\dialogs\dv2_13.wav"
 		time="2" />
 
@@ -76,7 +76,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="活儿干了一半，所有幸存者很快就会撤离。继续执行你的任务吧。"
+		value="活儿干了一半，所有幸存者很快就|会撤离。继续执行你的任务吧。"
 		sound="data\sounds\dv_sounds\dialogs\dv2_14.wav"
 		time="6" />
 
@@ -96,7 +96,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="那座秘密实验室被废弃的反应堆正在不受控制地排放毒气。"
+		value="那座秘密实验室被废弃的反应|堆正在不受控制地排放毒气。"
 		sound="data\sounds\dv_sounds\dialogs\dv2_16.wav"
 		time="8" />
 
@@ -106,7 +106,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="如果我们直接摧毁实验室，会造成更严重的污染；但如果我们摧毁当地发电站，问题就能得到彻底的解决。"
+		value="如果我们直接摧毁实验室，|会造成更严重的污染；|但如果我们摧毁当地发电站，|问题就能得到彻底的解决。"
 		sound="data\sounds\dv_sounds\dialogs\dv2_17.wav"
 		time="9" />
 
@@ -116,7 +116,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="太晚了！看来废物回收装置失灵了，实验室爆炸了。毒气云笼罩了整个区域。我想没人能活下来。"
+		value="太晚了！看来废物回收装|置失灵了，实验室爆炸了。|毒气云笼罩了整个区域。|我想没人能活下来。"
 		sound="data\sounds\dv_sounds\dialogs\dv2_18.wav"
 		time="6" />
 
@@ -126,7 +126,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="关于 Z-120 物质导致瞬间突变的报告被证实是真的。"
+		value="关于 Z-120 物质导致|瞬间突变的报告被证实是真的。"
 		sound="data\sounds\dv_sounds\dialogs\dv2_19.wav"
 		time="3" />
 
@@ -136,7 +136,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="不管这些人以前是什么人，现在他们已经不是人了！以民主和我国人民安全的名义，立即消灭他们。"
+		value="不管这些人以前是什么人，|现在他们已经不是人了！|以民主和我国人民安全|的名义，立即消灭他们。"
 		sound="data\sounds\dv_sounds\dialogs\dv2_20.wav"
 		time="7" />
 
@@ -146,7 +146,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="好吧，你在这里的工作结束了。该继续你的主要任务了。"
+		value="好吧，你在这里的工作结束了。|该继续你的主要任务了。"
 		sound="data\sounds\dv_sounds\dialogs\dv2_21.wav"
 		time="3" />
 
@@ -156,7 +156,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="开始执行你的主要目标。你必须不惜一切代价找到帕帕斯教授并把他撤离基地。"
+		value="开始执行你的主要目标。|你必须不惜一切代价找到帕|帕斯教授并把他撤离基地。"
 		sound="data\sounds\dv_sounds\dialogs\dv2_22.wav"
 		time="7" />
 
@@ -166,7 +166,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="营救帕帕斯教授的任务优先级最高。记住这一点！"
+		value="营救帕帕斯教授的任务优|先级最高。记住这一点！"
 		sound="data\sounds\dv_sounds\dialogs\dv2_23.wav"
 		time="4" />
 
@@ -186,7 +186,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="在我看来这不像事故，更像是一次蓄意破坏。基地似乎被彻底摧毁了，而 Z-120 的泄漏源就在这里。"
+		value="在我看来这不像事故，|更像是一次蓄意破坏。|基地似乎被彻底摧毁了，而| Z-120 的泄漏源就在这里。"
 		sound="data\sounds\dv_sounds\dialogs\dv2_25.wav"
 		time="6" />
 
@@ -196,7 +196,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="我们需要查清有多少人幸存，以及帕帕斯怎么了。搜索废墟。"
+		value="我们需要查清有多少人幸存，|以及帕帕斯怎么了。搜索废墟。"
 		sound="data\sounds\dv_sounds\dialogs\dv2_26.wav"
 		time="3" />
 
@@ -206,7 +206,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="这些书呆子把命令全当耳旁风了。他们根本没等撤离，反而四散跑了！"
+		value="这些书呆子把命令全当耳旁风了。|他们根本没等撤离，反而四散跑了！"
 		sound="data\sounds\dv_sounds\dialogs\dv2_27.wav"
 		time="8" />
 
@@ -216,7 +216,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="现在几乎不可能确定确切的幸存人数了。头号任务是查清帕帕斯教授的下落。"
+		value="现在几乎不可能确定确切|的幸存人数了。头号任务|是查清帕帕斯教授的下落。"
 		sound="data\sounds\dv_sounds\dialogs\dv2_28.wav"
 		time="10" />
 

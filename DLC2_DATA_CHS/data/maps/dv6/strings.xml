@@ -6,7 +6,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="话说回来，你的车辆气密性怎么样？不怎么样？太好了……我是说，糟了。"
+		value="话说回来，你的车辆气|密性怎么样？不怎么样？|太好了……我是说，糟了。"
 		sound="data\sounds\dv_sounds\dialogs\dv6_6.wav"
 		time="4" />
 
@@ -16,7 +16,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="问题在于，如果士兵已经打破了 Z-120 集装箱，你最多还有半个小时，毒素就会诱导 DNA 还原酶复制，然后……算了，不说了。"
+		value="问题在于，如果士兵已经打|破了 Z-120 集装箱，|你最多还有半个小时，毒素就|会诱导 DNA 还原酶复制，|然后……算了，不说了。"
 		sound="data\sounds\dv_sounds\dialogs\dv6_7.wav"
 		time="10" />
 
@@ -26,7 +26,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="我的意思是，半小时之内毒素要么杀死你，要么把你变成一只丑陋的怪物，一定会！"
+		value="我的意思是，半小时之内毒|素要么杀死你，要么把你变|成一只丑陋的怪物，一定会！"
 		sound="data\sounds\dv_sounds\dialogs\dv6_8.wav"
 		time="7" />
 
@@ -36,7 +36,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="好吧。这儿是沼泽。几乎到处都是。有些地方更泥泞，有些地方好一些。你看到路的地方，就是路。"
+		value="好吧。这儿是沼泽。几乎到处都是。|有些地方更泥泞，有些地方好一些。|你看到路的地方，就是路。"
 		sound="data\sounds\dv_sounds\dialogs\dv6_9.wav"
 		time="8" />
 
@@ -46,7 +46,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="这些沼泽嘛，都是这样，是啊。我读过大量相关资料。"
+		value="这些沼泽嘛，都是这样，|是啊。我读过大量相关资料。"
 		sound="data\sounds\dv_sounds\dialogs\dv6_10.wav"
 		time="3" />
 
@@ -56,7 +56,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="我那箱资料的案子肯定被人看到过，是的。除非他们把它沉下去了。当然，他们也可能沉。我的意思是，匪徒会。士兵也会。"
+		value="我那箱资料的案子肯定被人看到过，|是的。除非他们把它沉下去了。|当然，他们也可能沉。|我的意思是，匪徒会。士兵也会。"
 		sound="data\sounds\dv_sounds\dialogs\dv6_11.wav"
 		time="7" />
 
@@ -76,7 +76,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="怎么样，找到地方了吗？士兵们怎么说？什么叫全都死了？！好啊，真好！"
+		value="怎么样，找到地方了吗？|士兵们怎么说？什么叫全|都死了？！好啊，真好！"
 		sound="data\sounds\dv_sounds\dialogs\dv6_13.wav"
 		time="4" />
 
@@ -86,7 +86,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="咳，我这是反讽，没错，我就是在说反话。我的意思是，真可惜，对吧！"
+		value="咳，我这是反讽，没错，|我就是在说反话。我的|意思是，真可惜，对吧！"
 		sound="data\sounds\dv_sounds\dialogs\dv6_14.wav"
 		time="5" />
 
@@ -96,7 +96,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="不过无论如何，把我的资料找回来！我相信你能做到，我真相信。仔细找就是了。"
+		value="不过无论如何，把我的资料|找回来！我相信你能做到，|我真相信。仔细找就是了。"
 		sound="data\sounds\dv_sounds\dialogs\dv6_15.wav"
 		time="4" />
 
@@ -106,7 +106,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="注意，探员，听到请回答！收到吗？收到吗？三角洲小队指挥官联系上了我们。"
+		value="注意，探员，听到请回答！|收到吗？收到吗？三角洲|小队指挥官联系上了我们。"
 		sound="data\sounds\dv_sounds\dialogs\dv6_16.wav"
 		time="5" />
 
@@ -116,7 +116,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="他的人试着用白蚁式炸药炸掉装有这该死 Z-120 的卡车，但没成功。"
+		value="他的人试着用白蚁式炸药炸|掉装有这该死 Z-120 |的卡车，但没成功。"
 		sound="data\sounds\dv_sounds\dialogs\dv6_17.wav"
 		time="6" />
 
@@ -126,7 +126,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="数百只怪物活活把它们碾死了。小队只烧掉了一辆卡车，就这一辆，代价是所有士兵的性命。"
+		value="数百只怪物活活把它们碾死了。|小队只烧掉了一辆卡车，|就这一辆，代价是所有士兵的性命。"
 		sound="data\sounds\dv_sounds\dialogs\dv6_18.wav"
 		time="6" />
 
@@ -136,7 +136,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="找到那些没用掉的炸药，用它们烧掉装有这些该死集装箱的卡车。"
+		value="找到那些没用掉的炸药，用它们烧|掉装有这些该死集装箱的卡车。"
 		sound="data\sounds\dv_sounds\dialogs\dv6_19.wav"
 		time="5" />
 
@@ -146,7 +146,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="现在你手上有白蚁式炸药了。它们产生的高温会让任何化学、生物或什么别的感染，都再也没有活下去的机会——就像地狱里的雪人一样。"
+		value="现在你手上有白蚁式炸药了。|它们产生的高温会让任何化学、|生物或什么别的感染，|都再也没有活下去的机会—|—就像地狱里的雪人一样。"
 		sound="data\sounds\dv_sounds\dialogs\dv6_20.wav"
 		time="9" />
 
@@ -156,7 +156,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="看在上帝的份上，看在我们死去弟兄的份上，把他们没做完的事做完。烧掉这些该死的集装箱！"
+		value="看在上帝的份上，看在|我们死去弟兄的份上，|把他们没做完的事做完。|烧掉这些该死的集装箱！"
 		sound="data\sounds\dv_sounds\dialogs\dv6_21.wav"
 		time="8" />
 
@@ -166,7 +166,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="我们修正了现有数据。你得烧掉两辆装有 Z-120 集装箱的卡车。"
+		value="我们修正了现有数据。|你得烧掉两辆装有 Z-120 |集装箱的卡车。"
 		sound="data\sounds\dv_sounds\dialogs\dv6_22.wav"
 		time="6" />
 
@@ -176,7 +176,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="另外，试着找到并取回帕帕斯教授的异种样本和资料。"
+		value="另外，试着找到并取回帕帕|斯教授的异种样本和资料。"
 		sound="data\sounds\dv_sounds\dialogs\dv6_23.wav"
 		time="5" />
 
@@ -186,7 +186,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="看来烧掉卡车只能算完成了一半。真正的问题，是四处蜂拥而至的怪物群。"
+		value="看来烧掉卡车只能算完|成了一半。真正的问题，|是四处蜂拥而至的怪物群。"
 		sound="data\sounds\dv_sounds\dialogs\dv6_24.wav"
 		time="6" />
 
@@ -196,7 +196,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="那看起来像是躲避疏散、藏进沼泽的人群营地。"
+		value="那看起来像是躲避疏散、|藏进沼泽的人群营地。"
 		sound="data\sounds\dv_sounds\dialogs\dv6_25.wav"
 		time="4" />
 
@@ -206,7 +206,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="集装箱里的感染影响他们之后，他们就变成了怪物，杀掉每一个和他们不一样的人。"
+		value="集装箱里的感染影响他们|之后，他们就变成了怪物，|杀掉每一个和他们不一样的人。"
 		sound="data\sounds\dv_sounds\dialogs\dv6_26.wav"
 		time="6" />
 
@@ -216,7 +216,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="除了那辆装着 Z-120 的卡车，你还必须消灭附近发现的所有怪物。"
+		value="除了那辆装着 Z-120 |的卡车，你还必须消灭|附近发现的所有怪物。"
 		sound="data\sounds\dv_sounds\dialogs\dv6_27.wav"
 		time="5" />
 
@@ -226,7 +226,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="果然，你又一次处理得完美无缺。我希望世界这下不会再大规模突变了。"
+		value="果然，你又一次处理得|完美无缺。我希望世界这|下不会再大规模突变了。"
 		sound="data\sounds\dv_sounds\dialogs\dv6_28.wav"
 		time="6" />
 
@@ -236,7 +236,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="你的任务快完成了，可帕帕斯教授不肯空手回去，让事情变得棘手。"
+		value="你的任务快完成了，可帕|帕斯教授不肯空手回去，|让事情变得棘手。"
 		sound="data\sounds\dv_sounds\dialogs\dv6_29.wav"
 		time="7" />
 
@@ -246,7 +246,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="我完全不知道他的资料会藏在哪儿！不过，我确实有条线索。"
+		value="我完全不知道他的资料会藏在哪儿！|不过，我确实有条线索。"
 		sound="data\sounds\dv_sounds\dialogs\dv6_30.wav"
 		time="4" />
 
@@ -256,7 +256,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="三角洲小队指挥官报告说他的小队全死了，可他本人究竟怎么了还不清楚。"
+		value="三角洲小队指挥官报告说|他的小队全死了，可他本|人究竟怎么了还不清楚。"
 		sound="data\sounds\dv_sounds\dialogs\dv6_31.wav"
 		time="5" />
 
@@ -266,7 +266,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="也许你找到他，就能找到帕帕斯的记录"
+		value="也许你找到他，就能找|到帕帕斯的记录"
 		sound="data\sounds\dv_sounds\dialogs\dv6_32.wav"
 		time="3" />
 </resource>

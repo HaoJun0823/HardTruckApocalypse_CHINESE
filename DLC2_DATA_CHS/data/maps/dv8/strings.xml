@@ -6,7 +6,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="大量 Z-120 病毒携带者正准备立刻离开这一带。"
+		value="大量 Z-120 病毒携|带者正准备立刻离开这一带。"
 		sound="data\sounds\dv_sounds\dialogs\dv8_10.wav"
 		time="6" />
 
@@ -16,7 +16,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="有劫匪、受感染的军队巡逻队，甚至还有疏散时躲起来的当地平民。"
+		value="有劫匪、受感染的军队巡逻队，|甚至还有疏散时躲起来的当地平民。"
 		sound="data\sounds\dv_sounds\dialogs\dv8_11.wav"
 		time="6" />
 
@@ -26,7 +26,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="你是离那里足够近、能及时应对情况变化的唯一一个人。"
+		value="你是离那里足够近、能及时|应对情况变化的唯一一个人。"
 		sound="data\sounds\dv_sounds\dialogs\dv8_12.wav"
 		time="6" />
 
@@ -36,7 +36,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="大批军车正以高速驶向区域边界，无视我们的无线电呼叫。"
+		value="大批军车正以高速驶向区域边界，|无视我们的无线电呼叫。"
 		sound="data\sounds\dv_sounds\dialogs\dv8_13.wav"
 		time="7" />
 
@@ -46,7 +46,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="我们有数据表明他们已受感染。他们将在五分钟内离开本应守卫的区域。"
+		value="我们有数据表明他们已受感染。|他们将在五分钟内离开|本应守卫的区域。"
 		sound="data\sounds\dv_sounds\dialogs\dv8_14.wav"
 		time="7" />
 
@@ -56,7 +56,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="你必须在他们把感染带向世界之前拦住他们。"
+		value="你必须在他们把感染带|向世界之前拦住他们。"
 		sound="data\sounds\dv_sounds\dialogs\dv8_15.wav"
 		time="3" />
 
@@ -76,7 +76,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="好，这个问题解决了，不过保持联络。防控感染的行动正处于最关键阶段。"
+		value="好，这个问题解决了，|不过保持联络。防控感染|的行动正处于最关键阶段。"
 		sound="data\sounds\dv_sounds\dialogs\dv8_17.wav"
 		time="7" />
 
@@ -86,7 +86,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="顺便说一句，宪兵队已经包围了帕帕斯的藏身处。我预计一分钟内就会收到抓捕报告。"
+		value="顺便说一句，宪兵队已经|包围了帕帕斯的藏身处。|我预计一分钟内就会收到抓捕报告。"
 		sound="data\sounds\dv_sounds\dialogs\dv8_18.wav"
 		time="8" />
 
@@ -116,7 +116,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="这玩意儿非常小，全是塑料造的，所以雷达很难追踪它。"
+		value="这玩意儿非常小，全是塑料造的，|所以雷达很难追踪它。"
 		sound="data\sounds\dv_sounds\dialogs\dv8_21.wav"
 		time="5" />
 
@@ -126,7 +126,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="如果感染者用这架直升机逃走，几乎不可能把它打下来，那世界就要面对灾难了。"
+		value="如果感染者用这架直升机逃走，|几乎不可能把它打下来，|那世界就要面对灾难了。"
 		sound="data\sounds\dv_sounds\dialogs\dv8_22.wav"
 		time="8" />
 
@@ -136,7 +136,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="我们的专家说你大约有 10 分钟时间阻止他们。"
+		value="我们的专家说你大约有| 10 分钟时间阻止他们。"
 		sound="data\sounds\dv_sounds\dialogs\dv8_23.wav"
 		time="5" />
 
@@ -146,7 +146,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="动作快点。必须在其中一个冲到机库之前消灭所有匪徒。"
+		value="动作快点。必须在其中一个|冲到机库之前消灭所有匪徒。"
 		sound="data\sounds\dv_sounds\dialogs\dv8_24.wav"
 		time="7" />
 
@@ -166,7 +166,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="宪兵已经抓住帕帕斯了。要注意，关于受感染者受他控制的消息，至少有一部分是真的。"
+		value="宪兵已经抓住帕帕斯了。要注意，|关于受感染者受他控制的消息，|至少有一部分是真的。"
 		sound="data\sounds\dv_sounds\dialogs\dv8_26.wav"
 		time="10" />
 
@@ -176,7 +176,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="公路河边的毒蘑菇附近藏着一群受感染者，我们马上把精确坐标传给你。"
+		value="公路河边的毒蘑菇附近|藏着一群受感染者，我们|马上把精确坐标传给你。"
 		sound="data\sounds\dv_sounds\dialogs\dv8_27.wav"
 		time="9" />
 
@@ -186,7 +186,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="这些变异体在收集蘑菇孢子，而孢子会与这一带的一切发生同化。"
+		value="这些变异体在收集蘑菇孢子，|而孢子会与这一带的一切发生同化。"
 		sound="data\sounds\dv_sounds\dialogs\dv8_28.wav"
 		time="8" />
 
@@ -196,7 +196,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="如果大量孢子进入河里，下游所有地区都会被感染。"
+		value="如果大量孢子进入河里，|下游所有地区都会被感染。"
 		sound="data\sounds\dv_sounds\dialogs\dv8_29.wav"
 		time="6" />
 
@@ -206,7 +206,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="你必须在不超过 15 分钟内消灭这些变异体。"
+		value="你必须在不超过 15 |分钟内消灭这些变异体。"
 		sound="data\sounds\dv_sounds\dialogs\dv8_30.wav"
 		time="4" />
 
@@ -216,7 +216,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="该地点与空中侦察描述相符。开始你的任务。"
+		value="该地点与空中侦察描述相符。|开始你的任务。"
 		sound="data\sounds\dv_sounds\dialogs\dv8_31.wav"
 		time="4" />
 
@@ -226,7 +226,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="看来你及时完成了。当然，我们还是会让专家检查下游的水质，但我想会是干净的。"
+		value="看来你及时完成了。当然，|我们还是会让专家检查下游|的水质，但我想会是干净的。"
 		sound="data\sounds\dv_sounds\dialogs\dv8_32.wav"
 		time="6" />
 
@@ -236,7 +236,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="我要自豪地通知你：我国刚刚得到全世界的一致批准，将用地空洲际导弹摧毁那个外星侵略者。"
+		value="我要自豪地通知你：我国刚刚得|到全世界的一致批准，将用地空|洲际导弹摧毁那个外星侵略者。"
 		sound="data\sounds\dv_sounds\dialogs\dv8_33.wav"
 		time="11" />
 
@@ -246,7 +246,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="看来拯救地球的行动已进入最后阶段。返回基地。"
+		value="看来拯救地球的行动已进|入最后阶段。返回基地。"
 		sound="data\sounds\dv_sounds\dialogs\dv8_34.wav"
 		time="5" />
 
@@ -256,7 +256,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="受感染者逃走了，你没能找到并消灭他们……我们只好动用空中支援封锁该区域。"
+		value="受感染者逃走了，你没能找|到并消灭他们……我们只好|动用空中支援封锁该区域。"
 		sound="data\sounds\dv_sounds\dialogs\dv8_.wav"
 		time="8" />
 </resource>

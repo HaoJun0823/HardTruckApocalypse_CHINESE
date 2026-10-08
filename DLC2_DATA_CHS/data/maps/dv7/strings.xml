@@ -6,7 +6,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="据我所知，你没能找到帕帕斯的资料？去他的吧。活着的教授比他的文件重要。"
+		value="据我所知，你没能找到帕|帕斯的资料？去他的吧。|活着的教授比他的文件重要。"
 		sound="data\sounds\dv_sounds\dialogs\dv7_1.wav"
 		time="8" />
 
@@ -16,7 +16,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="把那个书呆子抓起来带回基地。他要是不肯，就用强的。"
+		value="把那个书呆子抓起来带回基地。|他要是不肯，就用强的。"
 		sound="data\sounds\dv_sounds\dialogs\dv7_2.wav"
 		time="5" />
 
@@ -46,7 +46,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="没人有权把毒素带出去，毒害世界上其他所有人。"
+		value="没人有权把毒素带出去，|毒害世界上其他所有人。"
 		sound="data\sounds\dv_sounds\dialogs\dv7_5.wav"
 		time="5" />
 
@@ -76,7 +76,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="我们的天文学家在地球同步轨道上发现了一个巨大的不明飞行物。"
+		value="我们的天文学家在地球同步轨道上|发现了一个巨大的不明飞行物。"
 		sound="data\sounds\dv_sounds\dialogs\dv7_8.wav"
 		time="5" />
 
@@ -86,7 +86,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="帕帕斯是 31 号基地的顶尖专家，当年正是基地在研究异星技术。我们需要听听他的意见。"
+		value="帕帕斯是 31 号基|地的顶尖专家，当年正是|基地在研究异星技术。|我们需要听听他的意见。"
 		sound="data\sounds\dv_sounds\dialogs\dv7_9.wav"
 		time="6" />
 
@@ -96,7 +96,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="这就是你的新任务：回去找到帕帕斯教授，不管他说什么都把他带走，必要时用强制的，然后立刻离开疫区。"
+		value="这就是你的新任务：回去找到|帕帕斯教授，不管他说什么都|把他带走，必要时用强制的，|然后立刻离开疫区。"
 		sound="data\sounds\dv_sounds\dialogs\dv7_10.wav"
 		time="9" />
 
@@ -106,7 +106,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="开始撤离教授。空中勘测和地面探测器都显示，感染云正快速向你这边移动。快点，探员。"
+		value="开始撤离教授。空中勘测和地|面探测器都显示，感染云正快|速向你这边移动。快点，探员。"
 		sound="data\sounds\dv_sounds\dialogs\dv7_11.wav"
 		time="8" />
 
@@ -116,7 +116,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="别跑，探员。信我，你最近赢不了我，现在更不可能……"
+		value="别跑，探员。信我，你最近|赢不了我，现在更不可能……"
 		sound="data\sounds\dv_sounds\dialogs\dv7_12.wav"
 		time="7" />
 
@@ -126,7 +126,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="我是突变的产物，它改变了我，给了我巨大的力量和能量。"
+		value="我是突变的产物，它改变了我，|给了我巨大的力量和能量。"
 		sound="data\sounds\dv_sounds\dialogs\dv7_13.wav"
 		time="4" />
 
@@ -136,7 +136,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="但代价太高了。而且我不会让你把这 Z-120 感染拖进那个毫无戒备的世界。"
+		value="但代价太高了。而且我不会|让你把这 Z-120 感|染拖进那个毫无戒备的世界。"
 		sound="data\sounds\dv_sounds\dialogs\dv7_14.wav"
 		time="5" />
 
@@ -146,7 +146,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="准备去死吧。希望你能理解我的意思——以爱国者的身份对一个爱国者说，因为滋养自由之树的正是我们的鲜血。"
+		value="准备去死吧。希望你能理解|我的意思——以爱国者的身份|对一个爱国者说，因为滋养自|由之树的正是我们的鲜血。"
 		sound="data\sounds\dv_sounds\dialogs\dv7_15.wav"
 		time="8" />
 
@@ -156,7 +156,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="你做到了……可那是什么？……我开始看一切都不同了。"
+		value="你做到了……可那是什么？|……我开始看一切都不同了。"
 		sound="data\sounds\dv_sounds\dialogs\dv7_16.wav"
 		time="3" />
 
@@ -166,7 +166,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="该死，我差点把自己判了死刑！谢谢你，探员，你的子弹帮了大忙。"
+		value="该死，我差点把自己判了死刑！|谢谢你，探员，你的子弹帮了大忙。"
 		sound="data\sounds\dv_sounds\dialogs\dv7_17.wav"
 		time="4" />
 
@@ -176,7 +176,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="倒不是我真敢去做什么……我连想都不会想到……"
+		value="倒不是我真敢去做什么…|…我连想都不会想到……"
 		sound="data\sounds\dv_sounds\dialogs\dv7_18.wav"
 		time="2" />
 
@@ -186,7 +186,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="但这已经不重要了，阻止教授吧，他把一切都搞错了。他会毁掉所有人、所有国家、整个世界。他已经把这些东西逼到了灾难的边缘……"
+		value="但这已经不重要了，阻止教|授吧，他把一切都搞错了。|他会毁掉所有人、所有国家、|整个世界。他已经把这些|东西逼到了灾难的边缘……"
 		sound="data\sounds\dv_sounds\dialogs\dv7_19.wav"
 		time="7" />
 
@@ -196,7 +196,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="要是早知道，我就去阻止他；可现在我知道了，却已经无能为力。"
+		value="要是早知道，我就去阻止他；|可现在我知道了，却已经无能为力。"
 		sound="data\sounds\dv_sounds\dialogs\dv7_20.wav"
 		time="4" />
 
@@ -206,7 +206,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="只有人类才能拯救人类。趁一切还来得及，杀了他。"
+		value="只有人类才能拯救人类。|趁一切还来得及，杀了他。"
 		sound="data\sounds\dv_sounds\dialogs\dv7_21.wav"
 		time="2" />
 
@@ -216,7 +216,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="我真没想到会有这种事！一个上尉顶得上整整一个连。"
+		value="我真没想到会有这种事！|一个上尉顶得上整整一个连。"
 		sound="data\sounds\dv_sounds\dialogs\dv7_22.wav"
 		time="3" />
 
@@ -226,7 +226,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="总之，你赢了让我很高兴。这位上尉是个难得一遇的爱国者。可惜他判断错了形势。"
+		value="总之，你赢了让我很高兴。|这位上尉是个难得一遇的爱国者。|可惜他判断错了形势。"
 		sound="data\sounds\dv_sounds\dialogs\dv7_23.wav"
 		time="6" />
 
