@@ -1,37 +1,89 @@
 {
  "loadtips.xml": {
-  "LoadTip_00": {"value": "拾取额外武器能大幅提升你的火力。"},
-  "LoadTip_01": {"value": "远离水源——它摧毁载具的速度比最强大的敌人还快。"},
-  "LoadTip_02": {"value": "按住鼠标中键可以环视四周。"},
-  "LoadTip_03": {"value": "GPS 导航系统是载具的基本设备，它始终显示正确的行驶方向。"},
-  "LoadTip_04": {"value": "寻找并拾取奖励能让你迅速积累财富。"},
-  "LoadTip_05": {"value": "记住，静止的目标最容易下手。多机动。"},
-  "LoadTip_06": {"value": "善用地形特点消灭敌人。"},
-  "LoadTip_07": {"value": "撞击是对付汽车类敌人的老牌手段。"},
-  "LoadTip_08": {"value": "每摧毁一个敌人，政府都会给你奖励。"},
-  "LoadTip_09": {"value": "变异蘑菇对一切生命都构成威胁。"}
+  "LoadTip_00": {
+   "value": "拾取额外武器能大幅提升你的火力。"
+  },
+  "LoadTip_01": {
+   "value": "远离水源——它摧毁载具的速度比最强大的敌人还快。"
+  },
+  "LoadTip_02": {
+   "value": "按住鼠标中键可以环视四周。"
+  },
+  "LoadTip_03": {
+   "value": "GPS 导航系统是载具的基本设备，它始终显示正确的行驶方向。"
+  },
+  "LoadTip_04": {
+   "value": "寻找并拾取奖励能让你迅速积累财富。"
+  },
+  "LoadTip_05": {
+   "value": "记住，静止的目标最容易下手。多机动。"
+  },
+  "LoadTip_06": {
+   "value": "善用地形特点消灭敌人。"
+  },
+  "LoadTip_07": {
+   "value": "撞击是对付汽车类敌人的老牌手段。"
+  },
+  "LoadTip_08": {
+   "value": "每摧毁一个敌人，政府都会给你奖励。"
+  },
+  "LoadTip_09": {
+   "value": "变异蘑菇对一切生命都构成威胁。"
+  }
  },
-
  "checkpointinfo.xml": {
-  "dv1_AfterSwamp":  {"fullName": "前不着村后不着店的高速公路"},
-  "dv1_AfterSwamp2": {"fullName": "60 号州际公路"},
-  "dv1_BeforeCaravan": {"fullName": "掠夺者"},
-  "dv2_AfterJump":   {"fullName": "偏远实验室"},
-  "dv2_AfterTown2":  {"fullName": "寻找帕帕斯教授"},
-  "dv4_After3item":  {"fullName": "搜寻仍在继续"},
-  "dv4_AfterAloneTown": {"fullName": "循迹追踪"},
-  "dv5_AfterFall":   {"fullName": "蛮荒丛林"},
-  "dv5_DarkSwamp":   {"fullName": "沼泽"},
-  "dv6_AfterProf":   {"fullName": "枪声逼近"},
-  "dv6_startRun":    {"fullName": "追猎 Z-120"},
-  "dv6_AfterFirstTrck": {"fullName": "最后的坦克"},
-  "dv7_AfterRun":    {"fullName": "阻止这场疯狂"},
-  "dv8_BeforeZombie": {"fullName": "收藏家"},
-  "dv8_BeforeAngar": {"fullName": "飞山"},
-  "dv9_Before1Swamp": {"fullName": "追击"},
-  "dv9_BeforeBoss":  {"fullName": "帕帕斯必须死"}
+  "dv1_AfterSwamp": {
+   "fullName": "前不着村后不着店的高速公路"
+  },
+  "dv1_AfterSwamp2": {
+   "fullName": "60 号州际公路"
+  },
+  "dv1_BeforeCaravan": {
+   "fullName": "掠夺者"
+  },
+  "dv2_AfterJump": {
+   "fullName": "偏远实验室"
+  },
+  "dv2_AfterTown2": {
+   "fullName": "寻找帕帕斯教授"
+  },
+  "dv4_After3item": {
+   "fullName": "搜寻仍在继续"
+  },
+  "dv4_AfterAloneTown": {
+   "fullName": "循迹追踪"
+  },
+  "dv5_AfterFall": {
+   "fullName": "蛮荒丛林"
+  },
+  "dv5_DarkSwamp": {
+   "fullName": "沼泽"
+  },
+  "dv6_AfterProf": {
+   "fullName": "枪声逼近"
+  },
+  "dv6_startRun": {
+   "fullName": "追猎 Z-120"
+  },
+  "dv6_AfterFirstTrck": {
+   "fullName": "最后的坦克"
+  },
+  "dv7_AfterRun": {
+   "fullName": "阻止这场疯狂"
+  },
+  "dv8_BeforeZombie": {
+   "fullName": "收藏家"
+  },
+  "dv8_BeforeAngar": {
+   "fullName": "飞山"
+  },
+  "dv9_Before1Swamp": {
+   "fullName": "追击"
+  },
+  "dv9_BeforeBoss": {
+   "fullName": "帕帕斯必须死"
+  }
  },
-
  "levelinfo.xml": {
   "dv1": {
    "fullName": "围城之下",
@@ -74,213 +126,589 @@
    "diz1": "抱歉，特工，我又要给你带来坏消息了。我们低估了这种病毒的威力，正因如此，我们也低估了帕帕斯教授的新能力。他逃了，还杀光了整个宪兵护卫队。所幸，他不知道自己用来逃跑的那辆车装有隐藏信标。此刻你比任何人都更接近这个疯狂科学家。无论付出什么代价，都要拦住他。我们绝不能让那场噩梦重演。"
   }
  },
-
  "gamestrings.xml": {
-  "GameWasSaved":    {"value": "存档完成！"},
-  "GameWasLoaded":   {"value": "读取存档"},
-  "GameSaving":      {"value": "保存"},
-  "GameSaving...":   {"value": "保存中…"},
-  "Start Game From Begin": {"value": "从头开始游戏"},
-  "ThornForce":      {"value": "穿刺力提升"},
-  "AccelerationTime":{"value": "持续时间"},
-  "Blast":           {"value": "爆炸"},
-  "CabinDurability": {"value": "驾驶室装甲"},
-  "NumUnitsToBuy":   {"value": "购买数量"},
-  "Recharge":        {"value": "装填"},
-  "RechargeNotNeed": {"value": "无须装填"},
-  "MapUnavailable":  {"value": "当前无法获取详细本地地图。"},
-  "Statistic":       {"value": "统计"},
-  "TabBtn_Characteristic": {"value": "载具信息"},
-  "NetGameOverFooter": {"value": "按 ESC 返回主菜单。"},
-  "NumberSymbol":    {"value": "№"},
-  "AppliedPerks":    {"value": "获得军衔"},
-  "Score":           {"value": "得分"},
-  "RestartGame":     {"value": "重玩本关"},
-  "YouDead":         {"value": "你阵亡了！"},
-  "QuestLog":        {"value": "任务列表"},
-  "ReturnToBase":    {"value": "返回基地"},
-  "VehiclesKilled":  {"value": "摧毁载具"},
-  "HumanoidsKilled": {"value": "击杀人形敌人"},
-  "ItemsDestroyed":  {"value": "破坏物件"},
-  "ItemsCollected":  {"value": "拾取物品"},
-  "QuestsCompleted": {"value": "完成任务"},
-  "WalkthroughTime": {"value": "通关用时"},
-  "LevelBonuses":    {"value": "本关奖励"},
-  "TotalBonuses":    {"value": "全局奖励"},
-  "MissionResults":  {"value": "任务结算"},
-  "percent":         {"value": "%"}
+  "GameWasSaved": {
+   "value": "存档完成！"
+  },
+  "GameWasLoaded": {
+   "value": "读取存档"
+  },
+  "GameSaving": {
+   "value": "保存"
+  },
+  "GameSaving...": {
+   "value": "保存中…"
+  },
+  "Start Game From Begin": {
+   "value": "从头开始游戏"
+  },
+  "ThornForce": {
+   "value": "穿刺力提升"
+  },
+  "AccelerationTime": {
+   "value": "持续时间"
+  },
+  "Blast": {
+   "value": "爆炸"
+  },
+  "CabinDurability": {
+   "value": "驾驶室装甲"
+  },
+  "NumUnitsToBuy": {
+   "value": "购买数量"
+  },
+  "Recharge": {
+   "value": "装填"
+  },
+  "RechargeNotNeed": {
+   "value": "无须装填"
+  },
+  "MapUnavailable": {
+   "value": "当前无法获取详细本地地图。"
+  },
+  "Statistic": {
+   "value": "统计"
+  },
+  "TabBtn_Characteristic": {
+   "value": "载具信息"
+  },
+  "NetGameOverFooter": {
+   "value": "按 ESC 返回主菜单。"
+  },
+  "NumberSymbol": {
+   "value": "№"
+  },
+  "AppliedPerks": {
+   "value": "获得军衔"
+  },
+  "Score": {
+   "value": "得分"
+  },
+  "RestartGame": {
+   "value": "重玩本关"
+  },
+  "YouDead": {
+   "value": "你阵亡了！"
+  },
+  "QuestLog": {
+   "value": "任务列表"
+  },
+  "ReturnToBase": {
+   "value": "返回基地"
+  },
+  "VehiclesKilled": {
+   "value": "摧毁载具"
+  },
+  "HumanoidsKilled": {
+   "value": "击杀人形敌人"
+  },
+  "ItemsDestroyed": {
+   "value": "破坏物件"
+  },
+  "ItemsCollected": {
+   "value": "拾取物品"
+  },
+  "QuestsCompleted": {
+   "value": "完成任务"
+  },
+  "WalkthroughTime": {
+   "value": "通关用时"
+  },
+  "LevelBonuses": {
+   "value": "本关奖励"
+  },
+  "TotalBonuses": {
+   "value": "全局奖励"
+  },
+  "MissionResults": {
+   "value": "任务结算"
+  },
+  "percent": {
+   "value": "%"
+  }
  },
-
  "bindnames.xml": {
-  "IM_MODE_GAME_MENU":  {"value": "菜单"},
-  "IM_CAR_ACC":         {"value": "加速"},
-  "IM_CAR_FIRE_4":      {"value": "地雷"},
-  "IM_CAR_FIRE_5":      {"value": "跳跃"},
-  "IM_CAR_FIRE_6":      {"value": "加速"},
-  "IM_GAME_LOOK_BACK":  {"value": "向后看"},
-  "IM_EXIT_APP":        {"value": "退出"},
-  "KEY_RCONTROL":       {"value": "右Ctrl"}
+  "IM_MODE_GAME_MENU": {
+   "value": "菜单"
+  },
+  "IM_CAR_ACC": {
+   "value": "加速"
+  },
+  "IM_CAR_FIRE_4": {
+   "value": "地雷"
+  },
+  "IM_CAR_FIRE_5": {
+   "value": "跳跃"
+  },
+  "IM_CAR_FIRE_6": {
+   "value": "加速"
+  },
+  "IM_GAME_LOOK_BACK": {
+   "value": "向后看"
+  },
+  "IM_EXIT_APP": {
+   "value": "退出"
+  },
+  "KEY_RCONTROL": {
+   "value": "右Ctrl"
+  }
  },
-
  "fadingmsgs.xml": {
-  "fm_perk_given":    {"value": "你获得了「%1s」军衔"},
-  "fm_perk_lost":     {"value": "你失去了「%1s」军衔"},
-  "fm_quest_item_given": {"value": "你获得了一件物品：%1s"},
-  "fm_quest_item_lost":  {"value": "你交出了一件物品：%1s"},
-  "fm_complete_quest":    {"value": "任务日志已更新。"},
-  "fm_take_quest":       {"value": "任务日志已更新。"},
-  "fm_not_suzet":        {"value": "这个地方看着不对劲。我们最好离开。"},
-  "fm_race_start_1":     {"value": "倒计时：……%1d……"},
-  "fm_race_chekpoint":   {"value": "存档点！"},
-  "fm_town_cant_enter_enemy": {"value": "该城市是敌对阵营，你无法进入。"},
-  "fm_save_is_not_allowed":  {"value": "现在无法保存游戏"},
-  "fm_player_add_money":     {"value": "你获得了 %1d 美元！"},
-  "fm_player_give_money":    {"value": "你花掉了 %1d 美元。"},
-  "fm_cheat_is_not_allowed": {"value": "@FF22FF22使用作弊@FF2222FF已被禁止@FFFFFFFF"},
-  "fm_cheat_is_allowed":     {"value": "@FF22FF22在游戏测试中，@FF2222FF使用作弊可能导致异常！@FFFFFFFF"},
-  "fm_items_remained_on_ground": {"value": "尸体内空间不足。按 %1m 打开装备窗口。"},
-  "fm_conguration":     {"value": "恭喜！！！"},
-  "fm_complete_mission": {"value": "你已完成试玩版内容！"},
-  "fm_failed_mission":   {"value": "你未能通过试玩版内容！"},
-  "fm_start_demo_mission1": {"value": "别忘了，本任务有严格的时间限制。人类的命运掌握在你手中！"},
-  "fm_start_demo_mission2": {"value": "查看你的任务目标 @FF2222FF(q)@FFFFFFFF"},
-  "fm_time":             {"value": "剩余：@FFFF4444  %1d : %2d : %3d @FFFFFFFF"},
-  "fm_n":                {"value": "你已完成试玩版内容！"},
-  "fm_test":             {"value": "p1：%1s；p2：%2d；p3：%3p"},
-  "fm_player_add_bonus": {"value": "你获得了 %1d 奖励点"}
+  "fm_perk_given": {
+   "value": "你获得了「%1s」军衔"
+  },
+  "fm_perk_lost": {
+   "value": "你失去了「%1s」军衔"
+  },
+  "fm_quest_item_given": {
+   "value": "你获得了一件物品：%1s"
+  },
+  "fm_quest_item_lost": {
+   "value": "你交出了一件物品：%1s"
+  },
+  "fm_complete_quest": {
+   "value": "任务日志已更新。"
+  },
+  "fm_take_quest": {
+   "value": "任务日志已更新。"
+  },
+  "fm_not_suzet": {
+   "value": "这个地方看着不对劲。我们最好离开。"
+  },
+  "fm_race_start_1": {
+   "value": "倒计时：……%1d……"
+  },
+  "fm_race_chekpoint": {
+   "value": "存档点！"
+  },
+  "fm_town_cant_enter_enemy": {
+   "value": "该城市是敌对阵营，你无法进入。"
+  },
+  "fm_save_is_not_allowed": {
+   "value": "现在无法保存游戏"
+  },
+  "fm_player_add_money": {
+   "value": "你获得了 %1d 美元！"
+  },
+  "fm_player_give_money": {
+   "value": "你花掉了 %1d 美元。"
+  },
+  "fm_cheat_is_not_allowed": {
+   "value": "@FF22FF22使用作弊@FF2222FF已被禁止@FFFFFFFF"
+  },
+  "fm_cheat_is_allowed": {
+   "value": "@FF22FF22在游戏测试中，@FF2222FF使用作弊可能导致异常！@FFFFFFFF"
+  },
+  "fm_items_remained_on_ground": {
+   "value": "尸体内空间不足。按 %1m 打开装备窗口。"
+  },
+  "fm_conguration": {
+   "value": "恭喜！！！"
+  },
+  "fm_complete_mission": {
+   "value": "你已完成试玩版内容！"
+  },
+  "fm_failed_mission": {
+   "value": "你未能通过试玩版内容！"
+  },
+  "fm_start_demo_mission1": {
+   "value": "别忘了，本任务有严格的时间限制。人类的命运掌握在你手中！"
+  },
+  "fm_start_demo_mission2": {
+   "value": "查看你的任务目标 @FF2222FF(q)@FFFFFFFF"
+  },
+  "fm_time": {
+   "value": "剩余：@FFFF4444  %1d : %2d : %3d @FFFFFFFF"
+  },
+  "fm_n": {
+   "value": "你已完成试玩版内容！"
+  },
+  "fm_test": {
+   "value": "p1：%1s；p2：%2d；p3：%3p"
+  },
+  "fm_player_add_bonus": {
+   "value": "你获得了 %1d 奖励点"
+  }
  },
-
  "uieditstrings.xml": {
-  "ProfileExists":   {"value": "该名称的存档已存在。|请输入其他名称"},
-  "Loading":         {"value": "读取中"},
-  "LoadingDots":     {"value": "读取中…"},
-  "MainMenuLoading": {"value": "读取中"},
-  "BloomQuality":    {"value": "泛光质量"},
-  "OptionsChanged":  {"value": "设置已更改。是否保存？"},
-  "BindingsChanged": {"value": "按键已重新定义。是否保存？"},
-  "Targem Link Tip": {"value": "Targem"},
-  "Buka Link Tip":   {"value": "Buka"},
-  "ExMachina URL":   {"value": "http://www.targem.ru"},
-  "Buka URL":        {"value": "http://www.buka.ru"},
-  "Nival URL":       {"value": "http://www.nival.com"},
-  "ServerCaptionTip":   {"value": "配置并启动联机游戏服务器"},
-  "ClientCaptionTip":   {"value": "查找并加入联机游戏"},
-  "OptionsCaptionTip":  {"value": "配置玩家的联机游戏设置"},
-  "FragLimit":          {"value": "击杀上限"},
-  "TimeLimit":          {"value": "时限"},
-  "MoreAbbrevCarTip":   {"value": "车辆详细信息"},
-  "MoreAbbrevMapTip":   {"value": "地图详细信息"},
-  "MediumMultiplayerLevel": {"value": "中等"},
-  "ClientAdditionalTip": {"value": "使用指定的服务器地址和端口连接联机游戏"},
-  "Sheme_Peace":        {"value": "和平（+1）"},
-  "Sheme_Combat_MP":    {"value": "军事"},
-  "Sheme_Peace_MP":     {"value": "和平"},
-  "LogoName_21":        {"value": "苏联"},
-  "ServerHasNewerProtocolVersion": {"value": "无法连接 —— 服务器使用了更新的协议版本。"},
-  "ServerHasOlderProtocolVersion": {"value": "无法连接 —— 服务器使用了更旧的协议版本。"},
-  "TooManyPlayersOnServer": {"value": "无法连接 —— 服务器已满员。"},
-  "ServerHasLeftTheGame":    {"value": "主机已离开游戏。"},
-  "ServerDied":               {"value": "与服务器的连接已断开。"},
-  "NetworkErrorOnServer":     {"value": "网络错误。服务器正在关闭。"},
-  "NetworkErrorOnClientPreUpdateThread": {"value": "网络错误。无法维持与服务器的连接。"},
-  "ServerMapDoesntExistOnClient": {"value": "主机使用的地图不存在。"},
-  "ServerNotReady":    {"value": "服务器未就绪。"},
-  "PressAnyKey":       {"value": "请按任意键。"},
-  "Play":              {"value": "游戏"},
-  "Player":            {"value": "玩家"},
-  "Mission":           {"value": "任务"},
-  "Unknown":           {"value": "未知"},
-  "Back":              {"value": "返回"},
-  "Keyboard":          {"value": "键盘"},
-  "Mouse":             {"value": "鼠标"},
-  "Audio":             {"value": "音效"},
-  "Briefing":          {"value": "任务简报"},
-  "Garage":            {"value": "车库"},
-  "StartMission":      {"value": "开始任务"},
-  "MainMenu":          {"value": "主菜单"},
-  "lev":               {"value": "mk"},
-  "Structure":         {"value": "载具"},
-  "Upgrade_Health":    {"value": "装甲"},
-  "Upgrade_Speed":     {"value": "速度"},
-  "Upgrade_Thorns":    {"value": "撞角装置"},
-  "Upgrade_Mines":     {"value": "布雷装置"},
-  "Upgrade_Jumper":    {"value": "跳跃装置"},
-  "Upgrade_Nitro":     {"value": "加速装置"},
-  "Upgrade_BaseGun":   {"value": "机枪"},
-  "Upgrade_RocketGun": {"value": "火箭发射器"},
-  "Upgrade_FireThower": {"value": "火焰喷射器"},
-  "Upgrade_ZenithGun": {"value": "高射炮"},
-  "UninstallAll":      {"value": "全部拆除"},
-  "TipUninstallAll":   {"value": "拆除全部载具装备"},
-  "RequestUninstallAll": {"value": "确定要拆除装在该载具上的全部装备吗？"},
-  "Weapon":            {"value": "武器"},
-  "Gadgets":           {"value": "装置"},
-  "Results":           {"value": "总计"},
-  "max":               {"value": "max"},
-  "Teams settings":    {"value": "创建联机游戏 > 队伍设置"},
-  "Client Add settings": {"value": "连接联机游戏 > 附加选项"},
-  "View Map settings": {"value": "创建联机游戏 > 地图预览"},
-  "View Car settings": {"value": "创建联机游戏 > 载具预览"}
+  "ProfileExists": {
+   "value": "该名称的存档已存在。|请输入其他名称"
+  },
+  "Loading": {
+   "value": "读取中"
+  },
+  "LoadingDots": {
+   "value": "读取中…"
+  },
+  "MainMenuLoading": {
+   "value": "读取中"
+  },
+  "BloomQuality": {
+   "value": "泛光质量"
+  },
+  "OptionsChanged": {
+   "value": "设置已更改。是否保存？"
+  },
+  "BindingsChanged": {
+   "value": "按键已重新定义。是否保存？"
+  },
+  "Targem Link Tip": {
+   "value": "Targem"
+  },
+  "Buka Link Tip": {
+   "value": "Buka"
+  },
+  "ExMachina URL": {
+   "value": "http://www.targem.ru"
+  },
+  "Buka URL": {
+   "value": "http://www.buka.ru"
+  },
+  "Nival URL": {
+   "value": "http://www.nival.com"
+  },
+  "ServerCaptionTip": {
+   "value": "配置并启动联机游戏服务器"
+  },
+  "ClientCaptionTip": {
+   "value": "查找并加入联机游戏"
+  },
+  "OptionsCaptionTip": {
+   "value": "配置玩家的联机游戏设置"
+  },
+  "FragLimit": {
+   "value": "击杀上限"
+  },
+  "TimeLimit": {
+   "value": "时限"
+  },
+  "MoreAbbrevCarTip": {
+   "value": "车辆详细信息"
+  },
+  "MoreAbbrevMapTip": {
+   "value": "地图详细信息"
+  },
+  "MediumMultiplayerLevel": {
+   "value": "中等"
+  },
+  "ClientAdditionalTip": {
+   "value": "使用指定的服务器地址和端口连接联机游戏"
+  },
+  "Sheme_Peace": {
+   "value": "和平（+1）"
+  },
+  "Sheme_Combat_MP": {
+   "value": "军事"
+  },
+  "Sheme_Peace_MP": {
+   "value": "和平"
+  },
+  "LogoName_21": {
+   "value": "苏联"
+  },
+  "ServerHasNewerProtocolVersion": {
+   "value": "无法连接 —— 服务器使用了更新的协议版本。"
+  },
+  "ServerHasOlderProtocolVersion": {
+   "value": "无法连接 —— 服务器使用了更旧的协议版本。"
+  },
+  "TooManyPlayersOnServer": {
+   "value": "无法连接 —— 服务器已满员。"
+  },
+  "ServerHasLeftTheGame": {
+   "value": "主机已离开游戏。"
+  },
+  "ServerDied": {
+   "value": "与服务器的连接已断开。"
+  },
+  "NetworkErrorOnServer": {
+   "value": "网络错误。服务器正在关闭。"
+  },
+  "NetworkErrorOnClientPreUpdateThread": {
+   "value": "网络错误。无法维持与服务器的连接。"
+  },
+  "ServerMapDoesntExistOnClient": {
+   "value": "主机使用的地图不存在。"
+  },
+  "ServerNotReady": {
+   "value": "服务器未就绪。"
+  },
+  "PressAnyKey": {
+   "value": "请按任意键。"
+  },
+  "Play": {
+   "value": "游戏"
+  },
+  "Player": {
+   "value": "玩家"
+  },
+  "Mission": {
+   "value": "任务"
+  },
+  "Unknown": {
+   "value": "未知"
+  },
+  "Back": {
+   "value": "返回"
+  },
+  "Keyboard": {
+   "value": "键盘"
+  },
+  "Mouse": {
+   "value": "鼠标"
+  },
+  "Audio": {
+   "value": "音效"
+  },
+  "Briefing": {
+   "value": "任务简报"
+  },
+  "Garage": {
+   "value": "车库"
+  },
+  "StartMission": {
+   "value": "开始任务"
+  },
+  "MainMenu": {
+   "value": "主菜单"
+  },
+  "lev": {
+   "value": "mk"
+  },
+  "Structure": {
+   "value": "载具"
+  },
+  "Upgrade_Health": {
+   "value": "装甲"
+  },
+  "Upgrade_Speed": {
+   "value": "速度"
+  },
+  "Upgrade_Thorns": {
+   "value": "撞角装置"
+  },
+  "Upgrade_Mines": {
+   "value": "布雷装置"
+  },
+  "Upgrade_Jumper": {
+   "value": "跳跃装置"
+  },
+  "Upgrade_Nitro": {
+   "value": "加速装置"
+  },
+  "Upgrade_BaseGun": {
+   "value": "机枪"
+  },
+  "Upgrade_RocketGun": {
+   "value": "火箭发射器"
+  },
+  "Upgrade_FireThower": {
+   "value": "火焰喷射器"
+  },
+  "Upgrade_ZenithGun": {
+   "value": "高射炮"
+  },
+  "UninstallAll": {
+   "value": "全部拆除"
+  },
+  "TipUninstallAll": {
+   "value": "拆除全部载具装备"
+  },
+  "RequestUninstallAll": {
+   "value": "确定要拆除装在该载具上的全部装备吗？"
+  },
+  "Weapon": {
+   "value": "武器"
+  },
+  "Gadgets": {
+   "value": "装置"
+  },
+  "Results": {
+   "value": "总计"
+  },
+  "max": {
+   "value": "max"
+  },
+  "Teams settings": {
+   "value": "创建联机游戏 > 队伍设置"
+  },
+  "Client Add settings": {
+   "value": "连接联机游戏 > 附加选项"
+  },
+  "View Map settings": {
+   "value": "创建联机游戏 > 地图预览"
+  },
+  "View Car settings": {
+   "value": "创建联机游戏 > 载具预览"
+  }
  },
-
  "dynamicdialogsglobal.xml": {
-  "Dynamic00":    {"text": "你好啊，流浪汉。"},
-  "Dlg_pl_000020": {"text": "抱歉，我好像搞错了。"},
-  "Dynamic00_plYes0": {"text": "好的。"},
-  "Dynamic00_plNo0":  {"text": "不了。"},
-  "Dynamic00_Destroy00": {"text": "我在找活干，不知道您这儿有没有适合我的？"},
-  "Dynamic00_DestroyTimelimited00": {"text": "任何能快点做完的活我都接。"},
-  "Dynamic00_Destroy00_npc0": {"text": "附近有个屡教不改的惯犯在活动。他的脑袋值 %3d。你接这活吗？"},
-  "Dynamic00_Destroy01": {"text": "有没有活可以给我做？"},
-  "Dynamic00_DestroyTimelimited01": {"text": "您这儿有没有短期的工作？"},
-  "Dynamic00_Destroy01_npc0": {"text": "有人在烧毁我们的庄稼、往井里投毒。多半是敌方的间谍。杀了他，你能拿到 %3d。怎么样？"},
-  "Dynamic00_Destroy02": {"text": "有活给我做吗？"},
-  "Dynamic00_DestroyTimelimited02": {"text": "有没有什么小活儿？"},
-  "Dynamic00_Destroy02_npc0": {"text": "附近有个疯子四处设伏，惊扰村庄居民。他本身并不怎么危险，但人们都在抱怨。你去解决掉他，%3d 就是你的。怎么样，帮个忙？"},
-  "Dynamic00_Reach00": {"text": "我想问问有没有工作。"},
-  "Dynamic00_ReachTimelimited00": {"text": "我想问问有没有报酬丰厚的简单活儿。"},
-  "Dynamic00_Reach00_npc0": {"text": "需要把一些研究资料和样品送到 %2n 聚居地。到了那边会有人跟你结账。%3d 对这点小事来说算是不错的报酬。送一趟？"},
-  "Dynamic00_Reach01": {"text": "听说您这儿能找工作？"},
-  "Dynamic00_ReachTimelimited01": {"text": "听说您这儿有适合聪明人的快活？"},
-  "Dynamic00_Reach01_npc0": {"text": "我们这儿攒了一批货要送到 %2n 村。送到了给你 %3d。我能指望你吗？"},
-  "Dynamic00_ReachComplete00": {"text": "这就是我要送的货？"},
-  "Dynamic00_ReachComplete00_npc0": {"text": "对，就这儿。东西都在吗？"},
-  "Dynamic00_Convoy00": {"text": "不知道我在这儿能派上什么用场？"},
-  "Dynamic00_ConvoyTimelimited00": {"text": "我急需用钱，所以什么活都接。"},
-  "Dynamic00_Convoy00_npc0": {"text": "毫无疑问。最近路上不太平，我有个朋友急着要赶到 %2n 聚居地。护送他一程，到地方给你 %3d。你去吗？"},
-  "Dynamic00_Convoy01": {"text": "能打听一下工作的事吗？"},
-  "Dynamic00_ConvoyTimelimited01": {"text": "能打听一下跑腿的活吗？"},
-  "Dynamic00_Convoy01_npc0": {"text": "有人正跟邻城做起生意，把样品运过去。护送他们到 %2n 村，并确保没人跟踪。对了，报酬是 %3d。愿意护送吗？"},
-  "EndDlg1": {"text": "我想挣点钱。你们这儿最近有什么活吗？"},
-  "EndDlg2": {"text": "有什么新消息？"},
-  "Dlg_npc_000017": {"text": "总的来说没什么，连续好几天都挺平静的。"},
-  "Dlg_pl_000018": {"text": "明白，下次再来。"},
-  "Dynamic00_Peace00": {"text": "我遇到个麻烦：我跟 %2b 帮派吵起来了……"},
-  "Dynamic00_Peace00_npc0": {"text": "看来你费了不少工夫，让 %2b 把你当成死敌……我有些门路。拿出你 %3d 百分比的积蓄，我可以在市议会上替你说几句好话。钱带了吗？"},
-  "Dynamic00_Peace01": {"text": "这次我需要帮忙。我和 %2b 在一件事上没谈拢，现在……"},
-  "Dynamic00_Peace01_npc0": {"text": "我知道 %2b 不愿意跟你有任何瓜葛。只要你拿出 %3d 百分比的积蓄，我可以帮你在他们那里挣到一点地位。钱准备好了吗？"},
-  "Dynamic00_Hunt00": {"text": "我记得这里有人说要找人干活？"},
-  "Dynamic00_HuntTimelimited00": {"text": "我记得这里有人说有轻松的活？"},
-  "Dynamic00_Hunt00_npc0": {"text": "匪徒清剿季开始了。每摧毁一辆敌对载具给你 %3d，猎期结束后统一结算。要报名吗？"},
-  "Dynamic00_Hunt01": {"text": "这么大的城里，总该有我的活儿吧？"},
-  "Dynamic00_HuntTimelimited01": {"text": "这么大的城里，总该有我这样赚钱的活儿吧？"},
-  "Dynamic00_Hunt01_npc0": {"text": "那帮匪徒简直无法无天！袭击我们的地盘，就像回自己家仓库一样。得好好教训他们一顿。打掉几个，让他们长点记性。在规定时间内完成，每人大约 %3d。敢不敢赌一把？"},
-  "Dynamic00_Drugs00": {"text": "不知您这儿有没有……嗯，那种货。您懂的，对吧？"},
-  "Dynamic00_Drugs00_npc0": {"text": "好，但得悄悄进行。给你这个包裹。我想你已经明白，里面不是普通货色，而是上等 contraband。它会花掉你 %3d，但你能卖到高得多的价钱……前提是你还活着。买吗？"},
-  "Dynamic00_DrugsTake": {"text": "给我吧，我知道哪儿能卖掉。"},
-  "Dynamic00_SellDrugs00": {"text": "我想把一个有意思的包裹卖给懂行的人。"},
-  "Dynamic00_SellDrugs00_npc0": {"text": "别嚷嚷，你这样太招人注意了。你要多少？"},
-  "Dynamic00_SellDrugs00_1x": {"text": "卖，我不给自己留好处。"},
-  "Dynamic00_SellDrugs00_1.5x": {"text": "这桩买卖我大概能赚一点。"},
-  "Dynamic00_SellDrugs00_2x": {"text": "双倍价钱。"},
-  "Dynamic00_SellDrugs00_try_yes": {"text": "很好，我完全满意！拿好，这是你应得的 %3d！"},
-  "Dynamic00_SellDrugs00_try_no": {"text": "什么？！你到底要多少？！算了，这东西我直接没收了！至于你要是敢说一个字，我就告诉卫兵你在这儿倒腾什么。走吧，滚。"},
-  "Dynamic00_SellDrugs00_ok": {"text": "再见。"},
-  "Dynamic00_Treasure00": {"text": "我对这一带埋藏的各类古代文物很感兴趣。"},
-  "Dynamic00_Treasure00_npc0": {"text": "关于这个，我正好有点消息。我自己不去冒险，城里的事就够我忙的了。再说我的车上也没装寻宝仪。不过，我觉得你该去调查一下附近的一个地方。既然你愿意接这活，我可以在地图上给你标出来。"},
-  "Dynamic00_DrugsNoMoney": {"text": "唉……这个先留在我这儿吧，等我攒够钱再回来找你。"}
+  "Dynamic00": {
+   "text": "你好啊，流浪汉。"
+  },
+  "Dlg_pl_000020": {
+   "text": "抱歉，我好像搞错了。"
+  },
+  "Dynamic00_plYes0": {
+   "text": "好的。"
+  },
+  "Dynamic00_plNo0": {
+   "text": "不了。"
+  },
+  "Dynamic00_Destroy00": {
+   "text": "我在找活干，不知道您这儿有没有适合我的？"
+  },
+  "Dynamic00_DestroyTimelimited00": {
+   "text": "任何能快点做完的活我都接。"
+  },
+  "Dynamic00_Destroy00_npc0": {
+   "text": "附近有个屡教不改的惯犯在活动。他的脑袋值 %3d。你接这活吗？"
+  },
+  "Dynamic00_Destroy01": {
+   "text": "有没有活可以给我做？"
+  },
+  "Dynamic00_DestroyTimelimited01": {
+   "text": "您这儿有没有短期的工作？"
+  },
+  "Dynamic00_Destroy01_npc0": {
+   "text": "有人在烧毁我们的庄稼、往井里投毒。多半是敌方的间谍。杀了他，你能拿到 %3d。怎么样？"
+  },
+  "Dynamic00_Destroy02": {
+   "text": "有活给我做吗？"
+  },
+  "Dynamic00_DestroyTimelimited02": {
+   "text": "有没有什么小活儿？"
+  },
+  "Dynamic00_Destroy02_npc0": {
+   "text": "附近有个疯子四处设伏，惊扰村庄居民。他本身并不怎么危险，但人们都在抱怨。你去解决掉他，%3d 就是你的。怎么样，帮个忙？"
+  },
+  "Dynamic00_Reach00": {
+   "text": "我想问问有没有工作。"
+  },
+  "Dynamic00_ReachTimelimited00": {
+   "text": "我想问问有没有报酬丰厚的简单活儿。"
+  },
+  "Dynamic00_Reach00_npc0": {
+   "text": "需要把一些研究资料和样品送到 %2n 聚居地。到了那边会有人跟你结账。%3d 对这点小事来说算是不错的报酬。送一趟？"
+  },
+  "Dynamic00_Reach01": {
+   "text": "听说您这儿能找工作？"
+  },
+  "Dynamic00_ReachTimelimited01": {
+   "text": "听说您这儿有适合聪明人的快活？"
+  },
+  "Dynamic00_Reach01_npc0": {
+   "text": "我们这儿攒了一批货要送到 %2n 村。送到了给你 %3d。我能指望你吗？"
+  },
+  "Dynamic00_ReachComplete00": {
+   "text": "这就是我要送的货？"
+  },
+  "Dynamic00_ReachComplete00_npc0": {
+   "text": "对，就这儿。东西都在吗？"
+  },
+  "Dynamic00_Convoy00": {
+   "text": "不知道我在这儿能派上什么用场？"
+  },
+  "Dynamic00_ConvoyTimelimited00": {
+   "text": "我急需用钱，所以什么活都接。"
+  },
+  "Dynamic00_Convoy00_npc0": {
+   "text": "毫无疑问。最近路上不太平，我有个朋友急着要赶到 %2n 聚居地。护送他一程，到地方给你 %3d。你去吗？"
+  },
+  "Dynamic00_Convoy01": {
+   "text": "能打听一下工作的事吗？"
+  },
+  "Dynamic00_ConvoyTimelimited01": {
+   "text": "能打听一下跑腿的活吗？"
+  },
+  "Dynamic00_Convoy01_npc0": {
+   "text": "有人正跟邻城做起生意，把样品运过去。护送他们到 %2n 村，并确保没人跟踪。对了，报酬是 %3d。愿意护送吗？"
+  },
+  "EndDlg1": {
+   "text": "我想挣点钱。你们这儿最近有什么活吗？"
+  },
+  "EndDlg2": {
+   "text": "有什么新消息？"
+  },
+  "Dlg_npc_000017": {
+   "text": "总的来说没什么，连续好几天都挺平静的。"
+  },
+  "Dlg_pl_000018": {
+   "text": "明白，下次再来。"
+  },
+  "Dynamic00_Peace00": {
+   "text": "我遇到个麻烦：我跟 %2b 帮派吵起来了……"
+  },
+  "Dynamic00_Peace00_npc0": {
+   "text": "看来你费了不少工夫，让 %2b 把你当成死敌……我有些门路。拿出你 %3d 百分比的积蓄，我可以在市议会上替你说几句好话。钱带了吗？"
+  },
+  "Dynamic00_Peace01": {
+   "text": "这次我需要帮忙。我和 %2b 在一件事上没谈拢，现在……"
+  },
+  "Dynamic00_Peace01_npc0": {
+   "text": "我知道 %2b 不愿意跟你有任何瓜葛。只要你拿出 %3d 百分比的积蓄，我可以帮你在他们那里挣到一点地位。钱准备好了吗？"
+  },
+  "Dynamic00_Hunt00": {
+   "text": "我记得这里有人说要找人干活？"
+  },
+  "Dynamic00_HuntTimelimited00": {
+   "text": "我记得这里有人说有轻松的活？"
+  },
+  "Dynamic00_Hunt00_npc0": {
+   "text": "匪徒清剿季开始了。每摧毁一辆敌对载具给你 %3d，猎期结束后统一结算。要报名吗？"
+  },
+  "Dynamic00_Hunt01": {
+   "text": "这么大的城里，总该有我的活儿吧？"
+  },
+  "Dynamic00_HuntTimelimited01": {
+   "text": "这么大的城里，总该有我这样赚钱的活儿吧？"
+  },
+  "Dynamic00_Hunt01_npc0": {
+   "text": "那帮匪徒简直无法无天！袭击我们的地盘，就像回自己家仓库一样。得好好教训他们一顿。打掉几个，让他们长点记性。在规定时间内完成，每人大约 %3d。敢不敢赌一把？"
+  },
+  "Dynamic00_Drugs00": {
+   "text": "不知您这儿有没有……嗯，那种货。您懂的，对吧？"
+  },
+  "Dynamic00_Drugs00_npc0": {
+   "text": "好，但得悄悄进行。给你这个包裹。我想你已经明白，里面不是普通货色，而是上等 contraband。它会花掉你 %3d，但你能卖到高得多的价钱……前提是你还活着。买吗？"
+  },
+  "Dynamic00_DrugsTake": {
+   "text": "给我吧，我知道哪儿能卖掉。"
+  },
+  "Dynamic00_SellDrugs00": {
+   "text": "我想把一个有意思的包裹卖给懂行的人。"
+  },
+  "Dynamic00_SellDrugs00_npc0": {
+   "text": "别嚷嚷，你这样太招人注意了。你要多少？"
+  },
+  "Dynamic00_SellDrugs00_1x": {
+   "text": "卖，我不给自己留好处。"
+  },
+  "Dynamic00_SellDrugs00_1.5x": {
+   "text": "这桩买卖我大概能赚一点。"
+  },
+  "Dynamic00_SellDrugs00_2x": {
+   "text": "双倍价钱。"
+  },
+  "Dynamic00_SellDrugs00_try_yes": {
+   "text": "很好，我完全满意！拿好，这是你应得的 %3d！"
+  },
+  "Dynamic00_SellDrugs00_try_no": {
+   "text": "什么？！你到底要多少？！算了，这东西我直接没收了！至于你要是敢说一个字，我就告诉卫兵你在这儿倒腾什么。走吧，滚。"
+  },
+  "Dynamic00_SellDrugs00_ok": {
+   "text": "再见。"
+  },
+  "Dynamic00_Treasure00": {
+   "text": "我对这一带埋藏的各类古代文物很感兴趣。"
+  },
+  "Dynamic00_Treasure00_npc0": {
+   "text": "关于这个，我正好有点消息。我自己不去冒险，城里的事就够我忙的了。再说我的车上也没装寻宝仪。不过，我觉得你该去调查一下附近的一个地方。既然你愿意接这活，我可以在地图上给你标出来。"
+  },
+  "Dynamic00_DrugsNoMoney": {
+   "text": "唉……这个先留在我这儿吧，等我攒够钱再回来找你。"
+  }
  },
-
  "questinfoglobal.xml": {
   "dv1_q1": {
    "briefDiz": "沙漠拉力赛",
@@ -481,6 +909,248 @@
   "boss_2": {
    "briefDiz": "来自总部的消息",
    "fullDiz": "特工，我们有一条紧急情报。我们成功审问了帕帕斯护卫队中幸存的成员。为了脱身，他使用了某种类似心灵感应的能力，把重装车辆像羽毛一样从一边甩到另一边。务必万分小心。"
+  }
+ },
+ "help.xml": {
+  "HELP_ID_INVENTORY_title": {
+   "value": "装备"
+  },
+  "HELP_ID_INVENTORY": {
+   "value": "窗口左半边显示你卡车的货箱内容、已安装的武器，以及各种改装装置和相应的插槽。|右半边是「地面」窗口，显示附近箱子里的物品、光标所指物品的三维图像，以及「全部拾取」按钮。|你可以把武器图标从货箱或地面箱子拖到武器插槽里，反之亦然。如果把插槽里的武器和「货物」窗口里的物品放进地面窗口，那么主游戏画面中你车辆旁边就会出现箱子，里面装的正是你搬到地面窗口里的那些物品。"
+  },
+  "HELP_ID_VEHICLE_CHARACTERISTICS_title": {
+   "value": "车辆属性"
+  },
+  "HELP_ID_VEHICLE_CHARACTERISTICS": {
+   "value": "窗口右半边可以看到你车辆的详细参数、配装了武器的三维图像、驾驶室与货箱的属性，以及当前的魅力值。图像下方的按钮用来切换显示的信息：车辆、货箱与驾驶室、武器。在这个窗口里你可以重新分配武器组。|窗口左半边显示你卡车的货箱内容、已安装的武器和武器插槽，以及各种改装装置。这样你就能给卡车装上新装置，并看到它的属性随之变化。"
+  },
+  "HELP_ID_QUESTLOG_QUESTS_title": {
+   "value": "任务列表"
+  },
+  "HELP_ID_QUESTLOG_QUESTS": {
+   "value": "这个窗口里是你答应执行或已经完成的所有任务。它们分为两组：主线任务（必须完成）和支线任务（可选完成）。可以用下拉列表按起点或终点所在的地图筛选任务。还可以切换成只看全部任务或只看进行中的任务。|每个任务都有一段说明，告诉你需要做哪些事才能完成它。说明旁边可能有一个按钮，能在地图和雷达上标出任务的目标点。|一个任务可能有若干个子目标，必须全部达成才能成功完成。它们排列在任务说明下方，每个子目标都可能有自己的目标点标记。|此外这里还有一个按钮，可以打开特殊物品清单。"
+  },
+  "HELP_ID_QUESTLOG_QUEST_ITEMS_title": {
+   "value": "行李中的物品"
+  },
+  "HELP_ID_QUESTLOG_QUEST_ITEMS": {
+   "value": "点击「行李中的物品」按钮，就能看到游戏过程中获得的物品清单（其中一些是完成任务所必需的），以及它们的说明和三维图像。"
+  },
+  "HELP_ID_LOCAL_MAP_title": {
+   "value": "局部地图"
+  },
+  "HELP_ID_LOCAL_MAP": {
+   "value": "地图是重要的工具，能让你更容易辨认方向。在地图上你能找到所有重要地点：城市、地图出口、特别值得关注的位置。|地图有两种模式：信息模式和交易模式，按窗口右上角对应的按键即可切换。|在信息模式下用鼠标左键点击地图上的物体，可以看到它的文字说明。而在交易模式下选中一个聚居地，则会显示你上次造访时该地所有商品的价格。价格清单可以记下来以后再慢慢看（比如为了从别的地图快速比对价格）。"
+  },
+  "HELP_ID_GLOBAL_MAP_title": {
+   "value": "全局地图"
+  },
+  "HELP_ID_GLOBAL_MAP": {
+   "value": "在全局地图上你可以看到所有已访问过的地区、地区之间的通路，并能在已开放的地区之间切换。"
+  },
+  "HELP_ID_HISTORY_title": {
+   "value": "大事记"
+  },
+  "HELP_ID_HISTORY": {
+   "value": "大事记里记录着你经历的所有最重要事件。"
+  },
+  "HELP_ID_BOOKS_title": {
+   "value": "书籍（文档）"
+  },
+  "HELP_ID_BOOKS": {
+   "value": "书籍里存放着各种各样的资料——旧报纸、杂志和书籍。"
+  },
+  "HELP_ID_RELATIONS_title": {
+   "value": "人际关系"
+  },
+  "HELP_ID_RELATIONS": {
+   "value": "与各个势力维持良好关系是在乱世生存的重要一环。在这个板块里你能看出谁对你抱有善意，谁又恨不得割断你的喉咙。"
+  },
+  "HELP_ID_STATS_title": {
+   "value": "统计"
+  },
+  "HELP_ID_STATS": {
+   "value": "这里汇总了关于你的一切信息。你随时可以查看自己摧毁了多少敌方车辆、撞倒了多少行人、赚了多少钱、命中率如何、常用哪把武器、总共行驶了多少公里。此外这里还会始终显示你当前的魅力值、已获得的称号列表及其动作。|用光标选中某个称号，随时都能看到它是因何获得、又能执行哪些动作。称号能启用哪些动作取决于魅力值——从 0 到当前魅力值之间的全部动作都会激活。|在城市里改变车漆涂法和气动喷绘，可以改变魅力值，从而激活称号所需的相应动作。"
+  },
+  "HELP_ID_ENCYCLOPAEDIA_title": {
+   "value": "旅途见闻"
+  },
+  "HELP_ID_ENCYCLOPAEDIA": {
+   "value": "你在游戏过程中积累的所有知识都汇集在这里，无论是路上遇到的车、武器还是某个势力。"
+  },
+  "HELP_ID_SHOP_GUNS_title": {
+   "value": "商店／购买武器"
+  },
+  "HELP_ID_SHOP_GUNS": {
+   "value": "在这里你可以买枪和改装装置，并立即把它们装到相应的插槽或货箱里。|要买东西，把商店窗口（屏幕右侧）里的物品图标拖到你货箱的窗口（左侧），或者直接拖到合适的插槽里。也可以在商店里用鼠标右键点击商品来购买，此时商品会出现在你卡车的货箱中，相应金额则从你的钱里扣除。|要卖东西，把货箱（屏幕左侧）里的货物图标拖到商店窗口（右侧）即可；也可以用鼠标右键点击商品将其卖出。|商品的价格和属性显示在浮动提示里。如果你的钱不够，或者卡车上没有相应的插槽，物品图标和浮动提示上都会标出来。"
+  },
+  "HELP_ID_SHOP_GOODS_title": {
+   "value": "商店／购买货物"
+  },
+  "HELP_ID_SHOP_GOODS": {
+   "value": "选择「购买货物」模式后，你会看到所有可买货物的清单、买卖价格和数量。这个城市不出售的货物会显示为灰色。还可以开启专门的筛选，只显示在售商品。|每件商品都是实时交易的。每个城市备有固定数量的货物，随着时间推移会逐渐补满。|通常城市会收购任何货物，但价格可能相差很大。因此在进购大批昂贵货物之前，先打听清楚贸易路线是明智之举。"
+  },
+  "HELP_ID_WORKSHOP_title": {
+   "value": "维修厂"
+  },
+  "HELP_ID_WORKSHOP": {
+   "value": "你进入了维修厂。|在这里你可以修理和加油车辆、增强装甲，也可以更换货箱或驾驶室。|只要钱够，你还可以换一辆别的型号的车。|这个窗口左半边是你的卡车信息，右半边是维修厂的服务清单。"
+  },
+  "HELP_ID_WORKSHOP_CABINS_title": {
+   "value": "更换驾驶室"
+  },
+  "HELP_ID_WORKSHOP_CABINS": {
+   "value": "要更换驾驶室，只需按下「更换驾驶室」按钮，然后用鼠标点击列表中想要的驾驶室。改动会立刻反映在卡车的三维图像和说明里。确认选好之后，按下其图标上的「购买」按钮，就会弹出购买确认窗口。"
+  },
+  "HELP_ID_WORKSHOP_BASKETS_title": {
+   "value": "更换货箱"
+  },
+  "HELP_ID_WORKSHOP_BASKETS": {
+   "value": "要更换货箱，只需按下「更换货箱」按钮，然后用鼠标点击列表中想要的货箱。改动会立刻反映在卡车的三维图像和说明里。确认选好之后，按下其图标上的「购买」按钮，就会弹出购买确认窗口。"
+  },
+  "HELP_ID_WORKSHOP_VEHICLE_title": {
+   "value": "购买新车"
+  },
+  "HELP_ID_WORKSHOP_VEHICLE": {
+   "value": "要买新车，按下「购车」按钮。会弹出一个窗口，你可以在其中从可选车型里挑选中意的车辆。确定之后按下「选定」按钮。"
+  },
+  "HELP_ID_WORKSHOP_SKIN_title": {
+   "value": "重新喷涂"
+  },
+  "HELP_ID_WORKSHOP_SKIN": {
+   "value": "挑选想要的气动喷绘、涂装类型和颜色，然后按下「购买」按钮更改车辆外观。|别忘了，改变气动喷绘或涂装类型会改变魅力值。"
+  },
+  "HELP_ID_WORKSHOP_REFUEL_title": {
+   "value": "加油"
+  },
+  "HELP_ID_WORKSHOP_REFUEL": {
+   "value": "按下「加满油箱」按钮加满油箱，或者加到钱够买的量为止。|如果你想自己控制购买多少燃料，按「手动加油」按钮。用滑块设定需要的数量，然后确认购买。"
+  },
+  "HELP_ID_WORKSHOP_REPAIR_title": {
+   "value": "修理"
+  },
+  "HELP_ID_WORKSHOP_REPAIR": {
+   "value": "按下「全部修理」按钮，把车上所有零件彻底修好或者修到钱够为止。如果你想自己决定修哪些零件，按「手动修理」按钮。你会看到可修零件的清单和各自的价格，点击零件名称即可修理。|如果你需要确定某个零件要修到什么程度，可以点它名称旁边的微调按钮。用滑块设定所需的修理质量，然后点击零件名称确认购买。|浮动提示里会显示关于修理的详细信息。"
+  },
+  "HELP_ID_WORKSHOP_RECHARGE_title": {
+   "value": "购买弹药"
+  },
+  "HELP_ID_WORKSHOP_RECHARGE": {
+   "value": "只有弹容量有限的车载炮才能补弹，这主要是重型武器和火箭。|按下「全部补弹」按钮，把车上所有火炮彻底补满或者补到钱够为止。|如果你想自己决定给哪些武器补弹，按「手动补弹」按钮。你会看到可补弹武器的清单和各自的价格，点击武器名称即可补弹。|如果你需要确定某门炮要买多少发弹药，可以点它名称旁边的微调按钮。用滑块设定所需弹药数量，然后点击武器名称确认购买。|浮动提示里会显示关于补弹的详细信息。"
+  },
+  "HELP_ID_BUY_CABIN_title": {
+   "value": "确认购买驾驶室"
+  },
+  "HELP_ID_BUY_CABIN": {
+   "value": "系统会请你把旧驾驶室（左侧）所有插槽里的东西搬到新驾驶室（右侧）的插槽里。可以手动搬运，也可以按「全部移动」按钮。这个窗口里还能查看新驾驶室的武器和各种装置插槽数量，以及最终成交价。如果哪里不满意，按「取消」键；确定要买就按「购买」|此时留在屏幕左半边插槽里的所有物品，会随旧驾驶室一起被卖掉。"
+  },
+  "HELP_ID_BUY_BASKET_title": {
+   "value": "确认购买货箱"
+  },
+  "HELP_ID_BUY_BASKET": {
+   "value": "系统会请你把旧货箱（左侧）所有插槽里的东西搬到新货箱（右侧）的插槽里。可以手动搬运，也可以按「全部移动」按钮。这个窗口里还能查看新货箱的武器和各种装置插槽数量，以及最终成交价。如果哪里不满意，按「取消」键；确定要买就按「购买」|此时留在屏幕左半边插槽里的所有物品，会随旧货箱一起被卖掉。"
+  },
+  "HELP_ID_BUY_VEHICLE_title": {
+   "value": "确认购买车辆"
+  },
+  "HELP_ID_BUY_VEHICLE": {
+   "value": "系统会请你把旧卡车（左侧）所有插槽里的东西搬到新卡车（右侧）的插槽里。可以手动搬运，也可以按「全部移动」按钮。这个窗口里还能查看新卡车的武器和各种装置插槽数量，以及最终成交价。如果哪里不满意，按「取消」键；确定要买就按「购买」。|此时留在屏幕左半边插槽里的所有物品，会随旧卡车一起被卖掉。"
+  },
+  "HELP_ID_TOWN_title": {
+   "value": "城镇"
+  },
+  "HELP_ID_TOWN": {
+   "value": "城市和村镇在机械世界（ExMachina）里占据着最重要的位置：这里是贸易、科研，以及最重要的——生活的中心。你可以在这里修理和给车辆加油、补充武器装备、靠做生意赚钱，更不用说和当地居民闲聊了。 |点击右上角的某个按钮，就能进入酒吧、商店或维修厂。"
+  },
+  "HELP_ID_BAR_title": {
+   "value": "酒吧"
+  },
+  "HELP_ID_BAR": {
+   "value": "你会经常需要光顾酒吧接取和完成任务。|屏幕右半边是此刻酒吧里所有人的图标。其中至少有一个人随时愿意给你一件简单的差事。要开始对话，点击角色姓名对应的按钮即可。"
+  },
+  "HELP_ID_TALK_WITH_NPC_title": {
+   "value": "对话"
+  },
+  "HELP_ID_TALK_WITH_NPC": {
+   "value": "在这个窗口里你会看到交谈对象的大幅图像、他的台词，以及你可以选择的回答。|要说出某句台词，用鼠标或对应的数字键选中它。只有选择了一个对话选项才能关闭这个窗口。"
+  },
+  "HELP_ID_RADAR": {
+   "value": "屏幕左上角是雷达。在上面你可以看到敌人（红点）、自己的车辆（正中央）、摄像机的朝向（扇形区），以及地标标记。到地标的距离以数字显示在雷达右侧（数字颜色与标记颜色相对应）。"
+  },
+  "HELP_ID_RADAR_title": {
+   "value": "雷达"
+  },
+  "HELP_ID_SPEEDOMETER": {
+   "value": "速度表以数字和指针两种方式显示卡车当前速度。挂上倒挡时数字会变成红色。"
+  },
+  "HELP_ID_SPEEDOMETER_title": {
+   "value": "速度表"
+  },
+  "HELP_ID_HP": {
+   "value": "车况就是你这辆车的完好程度。不注意它的数值，角色就可能丧命。车况降到危险水平时，红色警示灯会亮起。可以在维修厂修理——城镇里有，荒野各处也散落着不少。"
+  },
+  "HELP_ID_HP_title": {
+   "value": "车况"
+  },
+  "HELP_ID_FUEL": {
+   "value": "一定要留意燃料水平，否则可能陷入困境。油箱空了以后，卡车只能靠备用电池以极低的速度移动。燃料降到危险水平时，红色警示灯会亮起。可以在维修厂加油——城镇里有，荒野各处也散落着不少。"
+  },
+  "HELP_ID_FUEL_title": {
+   "value": "燃料"
+  },
+  "HELP_ID_DURABILITY": {
+   "value": "屏幕上方有一幅货箱和驾驶室的示意图，用颜色变化表示这两部分的装甲状态（绿色＝完好，红色＝严重受损）；"
+  },
+  "HELP_ID_DURABILITY_title": {
+   "value": "装甲"
+  },
+  "HELP_ID_TIMER": {
+   "value": "当你接到需要在限定时间内完成的任务时，计时器就会出现。"
+  },
+  "HELP_ID_TIMER_title": {
+   "value": "计时器"
+  },
+  "HELP_ID_WEAPON": {
+   "value": "右边的图标显示武器图像、它所属的组号、弹药数量和弹匣装填情况。每开一枪，绿色条（弹匣内的弹数）就会缩短一格。弹匣打空后会自动开始装弹，装填期间无法射击。你也可以在任何想装弹的时候按「R」键装弹——这时进度条会改变颜色并被填满。"
+  },
+  "HELP_ID_WEAPON_title": {
+   "value": "武器"
+  },
+  "HELP_ID_FADING_MESSAGES": {
+   "value": "各种文字消息和敌人的台词显示在这一带。"
+  },
+  "HELP_ID_FADING_MESSAGES_title": {
+   "value": "消息"
+  },
+  "HELP_ID_IMPORTANT_FADING_MESSAGES": {
+   "value": "与接取和完成任务有关的重要消息显示在这里。"
+  },
+  "HELP_ID_IMPORTANT_FADING_MESSAGES_title": {
+   "value": "重要消息"
+  },
+  "HELP_ID_TARGET_INFO": {
+   "value": "屏幕中央是准星。准星上方是准星所指车辆的名字及其所属势力，名字的颜色反映该车与你的关系：红色＝敌对，绿色＝友好。准星上方还有一条粗横条表示对方的结构值，下面一条表示装甲值。准星下方是与敌人的距离。"
+  },
+  "HELP_ID_TARGET_INFO_title": {
+   "value": "目标信息"
+  },
+  "HELP_ID_TARGET_CAPTURE": {
+   "value": "只要卡车上装了至少一枚自导导弹，瞄准敌人时就会自动开始制导锁定。红圈填满时，导弹就锁定了。"
+  },
+  "HELP_ID_TARGET_CAPTURE_title": {
+   "value": "锁定目标"
+  },
+  "HELP_ID_ACTION_ICONS": {
+   "value": "出现货物图标表示可以按 I 键拾取箱子里的物品。出现喇叭图标表示你已经进入城镇范围，可以按 H 键开进去。"
+  },
+  "HELP_ID_ACTION_ICONS_title": {
+   "value": "操作"
+  },
+  "HELP_ID_HOW_TO_USE_MAIN_GAME_INTERFACE_HELP": {
+   "value": "把鼠标光标移到某个要素的名称上，就能看到关于它的说明。"
+  },
+  "HELP_ID_HOW_TO_USE_MAIN_GAME_INTERFACE_HELP_title": {
+   "value": "界面说明屏"
   }
  }
 }
