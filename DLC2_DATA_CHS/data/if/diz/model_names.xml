@@ -3,7 +3,7 @@
 	<Item
 		id="collectionbook1"
 		locForm="0"
-		value="《旅游手册》" />
+		value="旧版旅行指南小册子" />
 
 	<Item
 		id="collectionbook2"
@@ -23,37 +23,37 @@
 	<Item
 		id="collectionbook5"
 		locForm="0"
-		value="《车迷杂志》" />
+		value="《车手》汽车杂志" />
 
 	<Item
 		id="collectionbook6"
 		locForm="0"
-		value="《女资本家》杂志" />
+		value="《资本主义家庭主妇》杂志" />
 
 	<Item
 		id="collectionbook7"
 		locForm="0"
-		value="亨利·代尔笔记本" />
+		value="丹瑞·戴尔的日记" />
 
 	<Item
 		id="collectionbook8"
 		locForm="0"
-		value="杂志上撕下的一页" />
+		value="杂志内页" />
 
 	<Item
 		id="collectionbook9"
 		locForm="0"
-		value="民间传说集" />
+		value="民间故事书" />
 
 	<Item
 		id="collectionbook10"
 		locForm="0"
-		value="司机圣经" />
+		value="《车手圣经》" />
 
 	<Item
 		id="thorn1"
 		locForm="0"
-		value="尖刺" />
+		value="排钉" />
 
 	<Item
 		id="thorn2"
@@ -68,7 +68,7 @@
 	<Item
 		id="cooling_system_guns"
 		locForm="0"
-		value="枪械水冷系统" />
+		value="机枪水冷系统" />
 
 	<Item
 		id="cooling_system_energy"
@@ -83,27 +83,27 @@
 	<Item
 		id="firing_rate_guns"
 		locForm="0"
-		value="优化机械扳机" />
+		value="优化手动射击机构" />
 
         <Item
 		id="firing_range_guns"
 		locForm="0"
-		value="磁力加速器" />
+		value="磁性助推器" />
 
         <Item
 		id="firing_rate_energy"
 		locForm="0"
-		value="低阻电缆" />
+		value="低阻线缆" />
 
 	<Item
 		id="add_damage_guns"
 		locForm="0"
-		value="半自由枪机" />
+		value="延迟后坐式枪机" />
 
 	<Item
 		id="add_damage_energy"
 		locForm="0"
-		value="镜面镀银光谐振器" />
+		value="镜银光共振器" />
 
 	<Item
 		id="add_damage_explosion"
@@ -113,7 +113,7 @@
 	<Item
 		id="grouping_angle_guns"
 		locForm="0"
-		value="光学瞄准镜" />
+		value="瞄准镜" />
 
 	<Item
 		id="cooling_system_guns2"
@@ -133,112 +133,112 @@
 	<Item
 		id="firing_rate_guns2"
 		locForm="0"
-		value="电动扳机" />
+		value="电击发机构" />
 
 	<Item
 		id="firing_rate_energy2"
 		locForm="0"
-		value="超导电缆" />
+		value="超导线缆" />
 
 	<Item
 		id="grouping_angle_guns2"
 		locForm="0"
-		value="增透防眩光学瞄准镜" />
+		value="增亮防眩瞄准镜" />
 
 	<Item
 		id="add_damage_guns2"
 		locForm="0"
-		value="浮动离合自由枪机" />
+		value="双滑块后坐枪机" />
 
 	<Item
 		id="add_damage_energy2"
 		locForm="0"
-		value="石英谐振器" />
+		value="晶体共振器" />
 
 	<Item
 		id="add_damage_explosion2"
 		locForm="0"
-		value="基于涡旋场发生器的磁力弹射器" />
+		value="涡流场发生器式磁力弹射器" />
 
 	<Item
 		id="cooling_system_guns_and_firing_rate_guns"
 		locForm="0"
-		value="「Gnomon」系统" />
+		value="格诺蒙系统" />
 
 	<Item
 		id="cooling_system_energy_and_firing_rate_energy"
 		locForm="0"
-		value="「Algor」组件" />
+		value="阿尔戈综合装置" />
 
 	<Item
 		id="cooling_system_explosion_and_firing_rate_explosion"
 		locForm="0"
-		value="「Samum」系统" />
+		value="萨穆姆系统" />
 
 	<Item
 		id="firing_rate_guns_and_add_damage_guns"
 		locForm="0"
-		value="「Spheno」机电组件" />
+		value="斯芬诺机电综合装置" />
 
 	<Item
 		id="firing_rate_energy_and_add_damage_energy"
 		locForm="0"
-		value="「Quasar」磁光系统" />
+		value="类星体磁光系统" />
 
 	<Item
 		id="firing_rate_explosion_and_add_damage_explosion"
 		locForm="0"
-		value="「Fire Storm」机电组件" />
+		value="火风暴机电综合装置" />
 
 	<Item
 		id="add_damage_guns_and_grouping_angle_guns"
 		locForm="0"
-		value="「FireEye」组件" />
+		value="火眼综合装置" />
 
 	<Item
 		id="add_damage_energy_and_firing_rate_energy"
 		locForm="0"
-		value="「Doom-4」系统" />
+		value="毁灭-4系统" />
 
 	<Item
 		id="add_damage_explosion_firing_rate_explosion"
 		locForm="0"
-		value="「David」机电组件" />
+		value="大卫机电综合装置" />
 
 	<Item
 		id="additional_fuel_tank"
 		locForm="0"
-		value="普通油桶" />
+		value="普通油箱" />
 
 	<Item
 		id="additional_torque"
 		locForm="0"
-		value="加装排气管" />
+		value="附加排气管" />
 
 	<Item
 		id="additional_durability"
 		locForm="0"
-		value="轧制装甲板（驾驶室加装）" />
+		value="驾驶室辊压装甲板" />
 
 	<Item
 		id="additional_stability"
 		locForm="0"
-		value="转向液压助力" />
+		value="转向助力器" />
 
 	<Item
 		id="additional_fuel_tank2"
 		locForm="0"
-		value="大油桶" />
+		value="大型油箱" />
 
 	<Item
 		id="additional_torque2"
 		locForm="0"
-		value="涡轮增压" />
+		value="涡轮增压器" />
 
 	<Item
 		id="additional_durability2"
 		locForm="0"
-		value="附加胶合轧制装甲板" />
+		value="附加渗碳辊压装甲板" />
 
 	<Item
 		id="add_speed_and_torque"
@@ -248,17 +248,17 @@
 	<Item
 		id="add_stability_and_speed"
 		locForm="0"
-		value="「Sagitta」系统" />
+		value="萨吉塔系统" />
 
 	<Item
 		id="add_torque_and_stability"
 		locForm="0"
-		value="「Albatross」系统" />
+		value="信天翁系统" />
 
 	<Item
 		id="additional_fuel_tank2_add_damage_guns"
 		locForm="0"
-		value="「Sato」系统" />
+		value="佐藤系统" />
 
 	<Item
 		id="add_damage_energy_sub_damage_guns"
@@ -273,7 +273,7 @@
 	<Item
 		id="add_damage_explosion_sub_damage_guns"
 		locForm="0"
-		value="高塑性炸药弹头" />
+		value="塑性炸药弹头" />
 
 	<Item
 		id="add_fueltank_sub_maxspeed"
@@ -283,17 +283,17 @@
 	<Item
 		id="add_maxspeed_sub_fueltank"
 		locForm="0"
-		value="占用部分油箱空间的汽油泵" />
+		value="运动芯片（占用部分油箱）" />
 
 	<Item
 		id="add_armour_sub_max_speed"
 		locForm="0"
-		value="重型钛合金覆层" />
+		value="重型钛装甲护板" />
 
 	<Item
 		id="add_maxspeed_sub_armour"
 		locForm="0"
-		value="贯穿式空气动力学缝线" />
+		value="嵌入式气动套件" />
 
 	<Item
 		id="add_damage_energy_sub_damage_guns2"
@@ -303,7 +303,7 @@
 	<Item
 		id="add_damage_guns_sub_damage_energy2"
 		locForm="0"
-		value="核芯弹药" />
+		value="核弹芯弹药" />
 
 	<Item
 		id="add_damage_explosion_sub_damage_guns2"
@@ -318,7 +318,7 @@
 	<Item
 		id="add_damage_guns_sub_damage_energy22"
 		locForm="0"
-		value="双核芯弹药" />
+		value="双核弹芯弹药" />
 
 	<Item
 		id="add_damage_explosion_sub_damage_guns22"
@@ -328,22 +328,22 @@
 	<Item
 		id="add_maxspeed_sub_armour2"
 		locForm="0"
-		value="双重空气动力学缝线" />
+		value="双重气动套件" />
 
 	<Item
 		id="add_fueltank_sub_maxspeed2"
 		locForm="0"
-		value="加倍的特重油箱" />
+		value="双重超重型油箱" />
 
 	<Item
 		id="add_maxspeed_sub_fueltank2"
 		locForm="0"
-		value="占用部分油箱空间的双汽油泵" />
+		value="双重芯片（占用部分油箱）" />
 
 	<Item
 		id="add_armour_sub_max_speed2"
 		locForm="0"
-		value="双层钛合金覆层" />
+		value="双重钛装甲护板" />
 
 	<Item
 		id="add_damage_energy_sub_damage_guns23"
@@ -353,32 +353,32 @@
 	<Item
 		id="add_damage_guns_sub_damage_energy23"
 		locForm="0"
-		value="三核芯弹药" />
+		value="三核弹芯弹药" />
 
 	<Item
 		id="add_damage_explosion_sub_damage_guns23"
 		locForm="0"
-		value="增强电子制导核弹头" />
+		value="电子锁定核弹头" />
 
 	<Item
 		id="add_maxspeed_sub_armour3"
 		locForm="0"
-		value="三重空气动力学缝线" />
+		value="三重气动套件" />
 
 	<Item
 		id="add_fueltank_sub_maxspeed3"
 		locForm="0"
-		value="三倍特重油箱" />
+		value="三重超重型油箱" />
 
 	<Item
 		id="add_maxspeed_sub_fueltank3"
 		locForm="0"
-		value="占用部分油箱空间的三重汽油泵" />
+		value="三重芯片（占用部分油箱）" />
 
 	<Item
 		id="add_armour_sub_max_speed3"
 		locForm="0"
-		value="三层钛合金覆层" />
+		value="三重钛装甲护板" />
 
 	<Item
 		id="add_damage_energy_sub_damage_guns24"
@@ -388,32 +388,32 @@
 	<Item
 		id="add_damage_guns_sub_damage_energy24"
 		locForm="0"
-		value="四核芯弹药" />
+		value="四核弹芯弹药" />
 
 	<Item
 		id="add_damage_explosion_sub_damage_guns24"
 		locForm="0"
-		value="冗余电子制导核弹头" />
+		value="双重电子制导核弹头" />
 
 	<Item
 		id="add_maxspeed_sub_armour4"
 		locForm="0"
-		value="四重空气动力学缝线" />
+		value="四重气动套件" />
 
 	<Item
 		id="add_fueltank_sub_maxspeed4"
 		locForm="0"
-		value="四倍油箱" />
+		value="四重油箱" />
 
 	<Item
 		id="add_maxspeed_sub_fueltank4"
 		locForm="0"
-		value="占用部分油箱空间的四重油泵芯片" />
+		value="四重芯片（占用部分油箱）" />
 
 	<Item
 		id="add_armour_sub_max_speed4"
 		locForm="0"
-		value="四层钛合金覆层" />
+		value="四重钛装甲护板" />
 
 	<Item
 		id="wine"
@@ -438,12 +438,12 @@
 	<Item
 		id="firewood"
 		locForm="0"
-		value="柴火" />
+		value="木柴" />
 
 	<Item
 		id="info_stone"
 		locForm="0"
-		value="刻着符文的石头" />
+		value="符文石" />
 
 	<Item
 		id="oil"
@@ -453,7 +453,7 @@
 	<Item
 		id="bottle"
 		locForm="0"
-		value="瓶子" />
+		value="酒瓶" />
 
 	<Item
 		id="fuel"
@@ -463,7 +463,7 @@
 	<Item
 		id="machinery"
 		locForm="0"
-		value="零件" />
+		value="零配件" />
 
 	<Item
 		id="tobacco"
@@ -478,7 +478,7 @@
 	<Item
 		id="electronics"
 		locForm="0"
-		value="电子元件" />
+		value="电子产品" />
 
 	<Item
 		id="quest_start_father_letter"
@@ -498,7 +498,7 @@
 	<Item
 		id="quest_explosive"
 		locForm="0"
-		value="炸药" />
+		value="爆破炸药" />
 
 	<Item
 		id="quest_wine_barrels"
@@ -513,7 +513,7 @@
 	<Item
 		id="quest_shaman_head1"
 		locForm="0"
-		value="教派教徒的头颅" />
+		value="教徒的头颅" />
 
 	<Item
 		id="quest_shaman_head2"
@@ -523,7 +523,7 @@
 	<Item
 		id="quest_old_digital"
 		locForm="0"
-		value="老式引擎" />
+		value="旧发动机" />
 
 	<Item
 		id="quest_art_masterpice"
@@ -538,7 +538,7 @@
 	<Item
 		id="quest_first_canistra"
 		locForm="0"
-		value="一桶石油" />
+		value="罐装石油" />
 
 	<Item
 		id="quest_disk_1"
@@ -553,7 +553,7 @@
 	<Item
 		id="quest_key_for_submarine"
 		locForm="0"
-		value="海上之门钥匙" />
+		value="海军闸门钥匙" />
 
 	<Item
 		id="quest_key_for_tunnel"
@@ -563,12 +563,12 @@
 	<Item
 		id="quest_repair_robot3"
 		locForm="0"
-		value="调试机器人" />
+		value="机器人调谐器" />
 
 	<Item
 		id="quest_repair_robot1"
 		locForm="0"
-		value="助手机器人" />
+		value="机器人助手" />
 
 	<Item
 		id="quest_repair_robot2"
@@ -578,27 +578,27 @@
 	<Item
 		id="quest_explosion_stone"
 		locForm="0"
-		value="刻着符文的石头" />
+		value="符文石块" />
 
 	<Item
 		id="quest_magic_thing2"
 		locForm="0"
-		value="损坏的仪器" />
+		value="损坏的装置" />
 
 	<Item
 		id="quest_magic_thing1"
 		locForm="0"
-		value="古董神器" />
+		value="古代器物" />
 
 	<Item
 		id="quest_monster_head"
 		locForm="0"
-		value="怪物头颅" />
+		value="怪物的头颅" />
 
 	<Item
 		id="quest_baseball_bat"
 		locForm="0"
-		value="棒球棍" />
+		value="训练球棒" />
 
 	<Item
 		id="quest_grand_prix"
@@ -608,17 +608,17 @@
 	<Item
 		id="quest_movie_reel_1"
 		locForm="0"
-		value="古老卷轴" />
+		value="古老胶卷" />
 
 	<Item
 		id="quest_movie_reel_2"
 		locForm="0"
-		value="缴获的卷轴" />
+		value="取回的胶卷" />
 
 	<Item
 		id="quest_robot_part_1"
 		locForm="0"
-		value="光学系统摄像头" />
+		value="光学系统摄像机" />
 
 	<Item
 		id="quest_robot_part_2"
@@ -628,7 +628,7 @@
 	<Item
 		id="quest_robot_part_3"
 		locForm="0"
-		value="液压系统软管" />
+		value="液冷系统软管" />
 
 	<Item
 		id="quest_emissary_trophies"
@@ -643,17 +643,17 @@
 	<Item
 		id="quest_goldsellector"
 		locForm="0"
-		value="淘金者" />
+		value="寻宝探测器" />
 
 	<Item
 		id="quest_drugs"
 		locForm="0"
-		value="违禁品" />
+		value="走私货" />
 
 	<Item
 		id="quest_special_drugs"
 		locForm="0"
-		value="走私品" />
+		value="走私货" />
 
 	<Item
 		id="quest_reach"
@@ -668,17 +668,17 @@
 	<Item
 		id="quest_wanted"
 		locForm="0"
-		value="「通缉！」传单" />
+		value="通缉！" />
 
 	<Item
 		id="someTurboAccelerationPusher"
 		locForm="0"
-		value="涡轮加速" />
+		value="涡轮助推器" />
 
 	<Item
 		id="Jumper"
 		locForm="0"
-		value="Jumper 炮" />
+		value="弹跳炮" />
 
 	<Item
 		id="engineOilPusher"
@@ -688,12 +688,12 @@
 	<Item
 		id="nailsPusher"
 		locForm="0"
-		value="钉子" />
+		value="销钉" />
 
 	<Item
 		id="minePusher"
 		locForm="0"
-		value="Hedgehog-1" />
+		value="刺猬-1" />
 
 	<Item
 		id="cyclops01"
@@ -703,12 +703,12 @@
 	<Item
 		id="big_swingfire01"
 		locForm="0"
-		value="Swingfire" />
+		value="旋火" />
 
 	<Item
 		id="rocketLauncher"
 		locForm="0"
-		value="Dragon" />
+		value="巨龙" />
 
 	<Item
 		id="storm01"
@@ -718,7 +718,7 @@
 	<Item
 		id="dozerCab01"
 		locForm="0"
-		value="垃圾车" />
+		value="垃圾" />
 
 	<Item
 		id="scoutCab01"
@@ -728,7 +728,7 @@
 	<Item
 		id="scoutCab02"
 		locForm="0"
-		value="螺旋桨（2级）" />
+		value="螺旋（2级）" />
 
 	<Item
 		id="scoutCab03"
@@ -748,7 +748,7 @@
 	<Item
 		id="fighterCab03"
 		locForm="0"
-		value="警犬（3级）" />
+		value="波利斯（3级）" />
 
 	<Item
 		id="molokovozCab01"
@@ -763,12 +763,12 @@
 	<Item
 		id="molokovozCab03"
 		locForm="0"
-		value="倒刺（3级）" />
+		value="销钉（3级）" />
 
 	<Item
 		id="molokovozCargo01"
 		locForm="0"
-		value="顶篷（1级）" />
+		value="帐篷（1级）" />
 
 	<Item
 		id="molokovozCargo02"
@@ -793,7 +793,7 @@
 	<Item
 		id="belazCab03"
 		locForm="0"
-		value="洛克（3级）" />
+		value="磐石（3级）" />
 
 	<Item
 		id="belazCab04"
@@ -808,17 +808,17 @@
 	<Item
 		id="belazCargo01"
 		locForm="0"
-		value="宿主（1级）" />
+		value="霍斯特（1级）" />
 
 	<Item
 		id="belazCargo02"
 		locForm="0"
-		value="组装者（2级）" />
+		value="建造者（2级）" />
 
 	<Item
 		id="belazCargo03"
 		locForm="0"
-		value="巨人（3级）" />
+		value="巨像（3级）" />
 
 	<Item
 		id="belazCargo04"
@@ -828,7 +828,7 @@
 	<Item
 		id="belazCargo05"
 		locForm="0"
-		value="气缸（5级）" />
+		value="圆筒（5级）" />
 
 	<Item
 		id="bugCab01"
@@ -838,12 +838,12 @@
 	<Item
 		id="bugCab02"
 		locForm="0"
-		value="劳力（2级）" />
+		value="苦力（2级）" />
 
 	<Item
 		id="bugCab03"
 		locForm="0"
-		value="蝎子（3级）" />
+		value="天蝎（3级）" />
 
 	<Item
 		id="bugCab04"
@@ -858,17 +858,17 @@
 	<Item
 		id="bugCargo01"
 		locForm="0"
-		value="气罐（1级）" />
+		value="瓦斯（1级）" />
 
 	<Item
 		id="bugCargo02"
 		locForm="0"
-		value="瀑布（2级）" />
+		value="飞瀑（2级）" />
 
 	<Item
 		id="bugCargo03"
 		locForm="0"
-		value="博格（3级）" />
+		value="桁架（3级）" />
 
 	<Item
 		id="uralCab01"
@@ -878,7 +878,7 @@
 	<Item
 		id="uralCab02"
 		locForm="0"
-		value="标准（2级）" />
+		value="标准型（2级）" />
 
 	<Item
 		id="uralCab03"
@@ -888,17 +888,17 @@
 	<Item
 		id="uralCab04"
 		locForm="0"
-		value="马略（3级）" />
+		value="墨晶（3级）" />
 
 	<Item
 		id="uralCab05"
 		locForm="0"
-		value="勇士（5级）" />
+		value="骑士（5级）" />
 
 	<Item
 		id="uralCargo01"
 		locForm="0"
-		value="寒冷（1级）" />
+		value="寒冰（1级）" />
 
 	<Item
 		id="uralCargo02"
@@ -913,12 +913,12 @@
 	<Item
 		id="uralCargo04"
 		locForm="0"
-		value="铠甲（2级）" />
+		value="装甲（2级）" />
 
 	<Item
 		id="uralCargo05"
 		locForm="0"
-		value="老虎（5级）" />
+		value="猛虎（5级）" />
 
 	<Item
 		id="FighterForSale"
@@ -933,7 +933,7 @@
 	<Item
 		id="BelazForSale"
 		locForm="0"
-		value="别拉斯" />
+		value="贝拉斯" />
 
 	<Item
 		id="UralForSale"
@@ -943,17 +943,17 @@
 	<Item
 		id="BugForSale"
 		locForm="0"
-		value="货车" />
+		value="厢货车" />
 
 	<Item
 		id="MolokovozForSale"
 		locForm="0"
-		value="奶车" />
+		value="奶罐车" />
 
         <Item
 		id="MolokovozCargo04"
 		locForm="0"
-		value="带挂车的螺栓" />
+		value="带拖车的螺栓" />
 	
 	<Item
 		id="mirotvorecCab01"
@@ -993,7 +993,7 @@
 	<Item
 		id="mirotvorecCargo03"
 		locForm="0"
-		value="五月（3级）" />
+		value="玛雅（3级）" />
 
 	<Item
 		id="mirotvorecCargo04"
@@ -1008,7 +1008,7 @@
 	<Item
 		id="MirotvorecForSale"
 		locForm="0"
-		value="和平使者" />
+		value="和平缔造者" />
 
 	<Item
 		id="sml1Cab01"
@@ -1068,52 +1068,52 @@
 	<Item
 		id="scoutCargo01"
 		locForm="1"
-		value="货箱" />
+		value="货柜" />
 
 	<Item
 		id="scoutCargo02"
 		locForm="1"
-		value="货箱" />
+		value="货柜" />
 
 	<Item
 		id="fighterCargo01"
 		locForm="1"
-		value="货箱" />
+		value="货柜" />
 
 	<Item
 		id="fighterCargo02"
 		locForm="1"
-		value="货箱" />
+		value="货柜" />
 
 	<Item
 		id="ElectroShockMed"
 		locForm="0"
-		value="电击枪" />
+		value="自动锁停" />
 
 	<Item
 		id="FlameThrowerMed"
 		locForm="0"
-		value="火焰喷射器" />
+		value="烈焰" />
 
 	<Item
 		id="FlameThrowerGiant"
 		locForm="0"
-		value="焚化者" />
+		value="余烬" />
 
 	<Item
 		id="robotgun01"
 		locForm="0"
-		value="神谕之眼 2.7 版" />
+		value="神谕之眼，2.7版" />
 
 	<Item
 		id="robotgun04small_01"
 		locForm="0"
-		value="神谕之眼 3.2 版" />
+		value="神谕之眼，3.2版" />
 
 	<Item
 		id="robotgun04small_02"
 		locForm="0"
-		value="神谕之眼 3.5 版" />
+		value="神谕之眼，3.5版" />
 
 	<Item
 		id="hornet01"
@@ -1123,28 +1123,28 @@
 	<Item
 		id="specter01"
 		locForm="0"
-		value="幽魂" />
+		value="光谱" />
 
 	<Item
 		id="specterS01"
 		locForm="0"
-		value="独特幽魂" />
+		value="特制光谱" />
 
 
 	<Item
 		id="pkt01"
 		locForm="0"
-		value="PKT" />
+		value="机枪" />
 
 	<Item
 		id="pktS01"
 		locForm="0"
-		value="独特 PKT" />
+		value="特制机枪" />
 
 	<Item
 		id="kord01"
 		locForm="0"
-		value="科德" />
+		value="科尔德" />
 
 	<Item
 		id="vector01"
@@ -1154,52 +1154,52 @@
 	<Item
 		id="vulcan01"
 		locForm="0"
-		value="火神" />
+		value="火山" />
 
 	<Item
 		id="maxim01"
 		locForm="0"
-		value="Maxim" />
+		value="马克沁" />
 
 	<Item
 		id="rapier01"
 		locForm="1"
-		value="花剑" />
+		value="细剑" />
 
 	<Item
 		id="fagot01"
 		locForm="0"
-		value="巴松" />
+		value="法戈托" />
 
 	<Item
 		id="fagotS01"
 		locForm="0"
-		value="独特巴松" />
+		value="特制法戈托" />
 
 	<Item
 		id="kpvt01"
 		locForm="0"
-		value="KPVT" />
+		value="重机枪" />
 
 	<Item
 		id="kpvtS01"
 		locForm="0"
-		value="独特 KPVT" />
+		value="特制重机枪" />
 
 	<Item
 		id="rainmetal01"
 		locForm="0"
-		value="Rainmetal" />
+		value="铁雨" />
 
 	<Item
 		id="octopus01"
 		locForm="0"
-		value="斯普鲁特" />
+		value="章鱼" />
 
 	<Item
 		id="octopusS01"
 		locForm="0"
-		value="独特斯普鲁特" />
+		value="特制章鱼" />
 
 	<Item
 		id="elephant01"
@@ -1209,7 +1209,7 @@
 	<Item
 		id="elephantS01"
 		locForm="0"
-		value="独特巨象" />
+		value="特制巨象" />
 
 	<Item
 		id="flag01"
@@ -1219,7 +1219,7 @@
 	<Item
 		id="flagS01"
 		locForm="0"
-		value="独特旗帜" />
+		value="特制旗帜" />
 
 	<Item
 		id="hurricane01"
@@ -1244,7 +1244,7 @@
 	<Item
 		id="hammerS01"
 		locForm="0"
-		value="独特雷神之锤" />
+		value="特制雷神之锤" />
 
 	<Item
 		id="bumblebee01"
@@ -1274,22 +1274,22 @@
 	<Item
 		id="zeusSideGunS"
 		locForm="0"
-		value="独特宙斯" />
+		value="特制宙斯" />
 
 	<Item
 		id="marsSideGun"
 		locForm="0"
-		value="火星" />
+		value="玛尔斯" />
 
 	<Item
 		id="marsSideGunS"
 		locForm="0"
-		value="独特火星" />
+		value="特制玛尔斯" />
 
 	<Item
 		id="minePusher_1"
 		locForm="0"
-		value="Hedgehog-2" />
+		value="刺猬-2" />
 
 	<Item
 		id="minePusher_2"
@@ -1344,17 +1344,17 @@
 	<Item
 		id="r1m1_molokovoz01"
 		locForm="0"
-		value="奶车" />
+		value="奶罐车" />
 
 	<Item
 		id="r1m1_molokovoz02"
 		locForm="0"
-		value="奶车" />
+		value="奶罐车" />
 
 	<Item
 		id="r1m1_molokovoz03"
 		locForm="0"
-		value="奶车" />
+		value="奶罐车" />
 
 	<Item
 		id="r5m1_sumo01"
@@ -1369,17 +1369,17 @@
 	<Item
 		id="r1m1_bug01"
 		locForm="0"
-		value="货车" />
+		value="厢货车" />
 
 	<Item
 		id="r1m1_bug02"
 		locForm="0"
-		value="货车" />
+		value="厢货车" />
 
 	<Item
 		id="r1m1_bug03"
 		locForm="0"
-		value="货车" />
+		value="厢货车" />
 
 	<Item
 		id="r1m2_hunter02"
@@ -1409,7 +1409,7 @@
 	<Item
 		id="ArcadeScout01"
 		locForm="0"
-		value="GT 侦察兵" />
+		value="侦察兵GT" />
 
 	<Item
 		id="Fighter"
@@ -1504,27 +1504,27 @@
 	<Item
 		id="Bug"
 		locForm="0"
-		value="货车" />
+		value="运输车" />
 
 	<Item
 		id="Bug01"
 		locForm="0"
-		value="货车" />
+		value="厢货车" />
 
 	<Item
 		id="Molokovoz"
 		locForm="0"
-		value="奶车" />
+		value="奶罐车" />
 
 	<Item
 		id="Molokovoz01"
 		locForm="0"
-		value="奶车" />
+		value="奶罐车" />
 
 	<Item
 		id="Molokovoz02"
 		locForm="0"
-		value="奶车"/>
+		value="奶罐车"/>
 
 	<Item
 		id="Ural"
@@ -1539,32 +1539,32 @@
 	<Item
 		id="Belaz"
 		locForm="0"
-		value="别拉斯" />
+		value="贝拉斯" />
 
 	<Item
 		id="Belaz01"
 		locForm="0"
-		value="别拉斯" />
+		value="贝拉斯" />
 
 	<Item
 		id="CoolBelaz"
 		locForm="0"
-		value="别拉斯" />
+		value="贝拉斯" />
 
 	<Item
 		id="Mirotvorec"
 		locForm="0"
-		value="和平使者" />
+		value="和平缔造者" />
 
 	<Item
 		id="Mirotvorec01"
 		locForm="0"
-		value="和平使者" />
+		value="和平缔造者" />
 
 	<Item
 		id="ArcadeBelaz"
 		locForm="0"
-		value="Sprint 别拉斯" />
+		value="贝拉斯冲刺" />
 
 	<Item
 		id="DemoBandit"
@@ -1594,32 +1594,32 @@
 	<Item
 		id="DemoBug1"
 		locForm="0"
-		value="货车" />
+		value="厢货车" />
 
 	<Item
 		id="DemoBug2"
 		locForm="0"
-		value="货车" />
+		value="厢货车" />
 
 	<Item
 		id="DemoBug3"
 		locForm="0"
-		value="货车" />
+		value="厢货车" />
 
 	<Item
 		id="DemoMolokovoz1"
 		locForm="0"
-		value="奶车" />
+		value="奶罐车" />
 
 	<Item
 		id="DemoMolokovoz2"
 		locForm="0"
-		value="奶车" />
+		value="奶罐车" />
 
 	<Item
 		id="DemoMolokovoz3"
 		locForm="0"
-		value="奶车" />
+		value="奶罐车" />
 
 	<Item
 		id="DemoUral1"
@@ -1639,32 +1639,32 @@
 	<Item
 		id="DemoBelaz1"
 		locForm="0"
-		value="别拉斯" />
+		value="贝拉斯" />
 
 	<Item
 		id="DemoBelaz2"
 		locForm="0"
-		value="别拉斯" />
+		value="贝拉斯" />
 
 	<Item
 		id="DemoBelaz3"
 		locForm="0"
-		value="别拉斯" />
+		value="贝拉斯" />
 
 	<Item
 		id="DemoMirotvorec1"
 		locForm="0"
-		value="和平使者" />
+		value="和平缔造者" />
 
 	<Item
 		id="DemoMirotvorec2"
 		locForm="0"
-		value="和平使者" />
+		value="和平缔造者" />
 
 	<Item
 		id="DemoMirotvorec3"
 		locForm="0"
-		value="和平使者" />
+		value="和平缔造者" />
 
 	<Item
 		id="Revolutioner1"
@@ -1679,12 +1679,12 @@
 	<Item
 		id="BelazTest"
 		locForm="0"
-		value="别拉斯" />
+		value="贝拉斯" />
 
 	<Item
 		id="MolokovozTest"
 		locForm="0"
-		value="奶车" />
+		value="奶罐车" />
 
 	<Item
 		id="Sml1"
@@ -1719,47 +1719,47 @@
 	<Item
 		id="mirotvorecTest"
 		locForm="0"
-		value="和平使者" />
+		value="和平缔造者" />
 
 	<Item
 		id="mirotvorecTest1"
 		locForm="0"
-		value="和平使者" />
+		value="和平缔造者" />
 
 	<Item
 		id="BugTest1"
 		locForm="0"
-		value="货车" />
+		value="厢货车" />
 
 	<Item
 		id="BelazTest01"
 		locForm="0"
-		value="别拉斯" />
+		value="贝拉斯" />
 
 	<Item
 		id="BelazTest02"
 		locForm="0"
-		value="别拉斯" />
+		value="贝拉斯" />
 
 	<Item
 		id="BelazTest03"
 		locForm="0"
-		value="别拉斯" />
+		value="贝拉斯" />
 
 	<Item
 		id="BelazTest04"
 		locForm="0"
-		value="别拉斯" />
+		value="贝拉斯" />
 
 	<Item
 		id="BelazTest05"
 		locForm="0"
-		value="别拉斯" />
+		value="贝拉斯" />
 
 	<Item
 		id="BelazShot"
 		locForm="0"
-		value="别拉斯" />
+		value="贝拉斯" />
 
 	<Item
 		id="UralShot"
@@ -1769,17 +1769,17 @@
 	<Item
 		id="MirotvorecShot"
 		locForm="0"
-		value="和平使者" />
+		value="和平缔造者" />
 
 	<Item
 		id="Formula01"
 		locForm="0"
-		value="GT 涡轮" />
+		value="涡轮增压GT" />
 
 	<Item
 		id="FormulaCab"
 		locForm="0"
-		value="GT 赛车" />
+		value="流星GT" />
 
 	<Item
 		id="r1m3_Fighter01"
@@ -1799,42 +1799,42 @@
 	<Item
 		id="r1m3_molokovoz03"
 		locForm="0"
-		value="奶车" />
+		value="奶罐车" />
 
 	<Item
 		id="staticAutoGun01"
 		locForm="0"
-		value="火力点" />
+		value="碉堡" />
 
 	<Item
 		id="staticAutoGun02"
 		locForm="0"
-		value="火力点" />
+		value="碉堡" />
 
 	<Item
 		id="staticAutoGun03"
 		locForm="0"
-		value="火力点" />
+		value="碉堡" />
 
 	<Item
 		id="staticAutoGun04"
 		locForm="0"
-		value="火力点" />
+		value="碉堡" />
 
 	<Item
 		id="staticAutoGun05"
 		locForm="0"
-		value="火力点" />
+		value="碉堡" />
 
 	<Item
 		id="staticAutoGun06"
 		locForm="0"
-		value="火力点" />
+		value="碉堡" />
 
 	<Item
 		id="staticAutoGun07"
 		locForm="0"
-		value="路障" />
+		value="街垒" />
 
 	<Item
 		id="staticAutoGun08"
@@ -1844,17 +1844,17 @@
 	<Item
 		id="Dot01"
 		locForm="0"
-		value="火力点" />
+		value="碉堡" />
 
 	<Item
 		id="druid_dot_01"
 		locForm="0"
-		value="火力点" />
+		value="碉堡" />
 
 	<Item
 		id="druid_dot_02"
 		locForm="0"
-		value="火力点" />
+		value="碉堡" />
 
 	<Item
 		id="oracle_generator"
@@ -1864,27 +1864,27 @@
 	<Item
 		id="OracleDot1_hunterLauncher"
 		locForm="0"
-		value="火力点" />
+		value="碉堡" />
 
 	<Item
 		id="OracleDot1_vulcan"
 		locForm="0"
-		value="火力点" />
+		value="碉堡" />
 
 	<Item
 		id="OracleDot1_kpvt"
 		locForm="0"
-		value="火力点" />
+		value="碉堡" />
 
 	<Item
 		id="OracleDot2_hunterLauncher"
 		locForm="0"
-		value="火力点" />
+		value="碉堡" />
 
 	<Item
 		id="OracleDot2_vulcan"
 		locForm="0"
-		value="火力点" />
+		value="碉堡" />
 
 	<Item
 		id="OracleDot_Generator"
@@ -1904,152 +1904,152 @@
 	<Item
 		id="sack_dot2_kord"
 		locForm="0"
-		value="火力点" />
+		value="碉堡" />
 
 	<Item
 		id="heavy_dot4_flag01"
 		locForm="0"
-		value="火力点" />
+		value="碉堡" />
 
 	<Item
 		id="heavy_dot4_big_kpvt_smallrad"
 		locForm="0"
-		value="火力点" />
+		value="碉堡" />
 
 	<Item
 		id="heavy_dot4_big_kpvt"
 		locForm="0"
-		value="火力点" />
+		value="碉堡" />
 
 	<Item
 		id="heavy_dot4_big_rainmetal"
 		locForm="0"
-		value="火力点" />
+		value="碉堡" />
 
 	<Item
 		id="brick_dot1_vulcan"
 		locForm="0"
-		value="火力点" />
+		value="碉堡" />
 
 	<Item
 		id="druid_dot2_omega01"
 		locForm="0"
-		value="火力点" />
+		value="碉堡" />
 
 	<Item
 		id="druid_dot1_kord01"
 		locForm="0"
-		value="火力点" />
+		value="碉堡" />
 
 	<Item
 		id="sack_dot2_omega"
 		locForm="0"
-		value="火力点" />
+		value="碉堡" />
 
 	<Item
 		id="sack_dot2_omega"
 		locForm="0"
-		value="火力点" />
+		value="碉堡" />
 
 	<Item
 		id="sack_dot2_flag"
 		locForm="0"
-		value="火力点" />
+		value="碉堡" />
 
 	<Item
 		id="sack_dot1_hunterLauncher"
 		locForm="0"
-		value="火力点" />
+		value="碉堡" />
 
 	<Item
 		id="sack_dot2_vulcan"
 		locForm="0"
-		value="火力点" />
+		value="碉堡" />
 
 	<Item
 		id="sack_dot1_vulcan"
 		locForm="0"
-		value="火力点" />
+		value="碉堡" />
 
 	<Item
 		id="heavy_dot4_big_hornet"
 		locForm="0"
-		value="火力点" />
+		value="碉堡" />
 
 	<Item
 		id="heavy_dot4_big_vector"
 		locForm="0"
-		value="火力点" />
+		value="碉堡" />
 
 	<Item
 		id="heavy_dot4_big_hurricane"
 		locForm="0"
-		value="火力点" />
+		value="碉堡" />
 
 	<Item
 		id="heavy_dot4_big_hunterLauncher"
 		locForm="0"
-		value="火力点" />
+		value="碉堡" />
 
 	<Item
 		id="heavy_dot4_big_swingfire"
 		locForm="0"
-		value="火力点" />
+		value="碉堡" />
 
 	<Item
 		id="heavy_dot4_rapier"
 		locForm="0"
-		value="火力点" />
+		value="碉堡" />
 
 	<Item
 		id="heavy_dot4_octopus"
 		locForm="0"
-		value="火力点" />
+		value="碉堡" />
 
 	<Item
 		id="heavy_dot4_vulcan"
 		locForm="0"
-		value="火力点" />
+		value="碉堡" />
 
 	<Item
 		id="heavy_dot3_rainmetal"
 		locForm="0"
-		value="火力点" />
+		value="碉堡" />
 
 	<Item
 		id="heavy_dot3_vulcan"
 		locForm="0"
-		value="火力点" />
+		value="碉堡" />
 
 	<Item
 		id="heavy_dot2_rainmetal"
 		locForm="0"
-		value="火力点" />
+		value="碉堡" />
 
 	<Item
 		id="heavy_dot2_vector"
 		locForm="0"
-		value="火力点" />
+		value="碉堡" />
 
 	<Item
 		id="heavy_dot2_vulcan"
 		locForm="0"
-		value="火力点" />
+		value="碉堡" />
 
 	<Item
 		id="heavy_dot1_vulcan"
 		locForm="0"
-		value="火力点" />
+		value="碉堡" />
 
 	<Item
 		id="brick_dot2_vulcan"
 		locForm="0"
-		value="火力点" />
+		value="碉堡" />
 
 	<Item
 		id="PublicDemoBug01"
 		locForm="0"
-		value="老人车" />
+		value="老人的座驾" />
 
 	<Item
 		id="PublicDemoSinks"
@@ -2069,17 +2069,17 @@
 	<Item
 		id="PublicDemoFighter"
 		locForm="0"
-		value="匪帮头目" />
+		value="帮派头目" />
 
 	<Item
 		id="PublicDemoIeriBand1"
 		locForm="0"
-		value="耶里守卫" />
+		value="耶里的护卫" />
 
 	<Item
 		id="PublicDemoIeriBand2"
 		locForm="0"
-		value="耶里守卫" />
+		value="耶里的护卫" />
 
 	<Item
 		id="PublicDemoIeriCar"
@@ -2119,37 +2119,37 @@
 	<Item
 		id="r1m3_CaravanGuardianSml401"
 		locForm="0"
-		value="警卫" />
+		value="猎手" />
 
 	<Item
 		id="r2m1_CaravanGuardianSml401"
 		locForm="0"
-		value="警卫" />
+		value="猎手" />
 
 	<Item
 		id="r2m1_CaravanGuardianScout201"
 		locForm="0"
-		value="警卫" />
+		value="猎手" />
 
 	<Item
 		id="r2m2_CaravanGuardianScout301"
 		locForm="0"
-		value="警卫" />
+		value="猎手" />
 
 	<Item
 		id="r1m1_CaravanGuardianSml201"
 		locForm="0"
-		value="警卫" />
+		value="猎手" />
 
 	<Item
 		id="r1m1_CaravanGuardianSml101"
 		locForm="0"
-		value="警卫" />
+		value="猎手" />
 
 	<Item
 		id="r1m2_CaravanGuardianSml301"
 		locForm="0"
-		value="警卫" />
+		value="猎手" />
 
 	<Item
 		id="ScoutMenu"
@@ -2164,12 +2164,12 @@
 	<Item
 		id="MolokovozMenu"
 		locForm="0"
-		value="奶车" />
+		value="奶罐车" />
 
 	<Item
 		id="BelazMenu"
 		locForm="0"
-		value="别拉斯" />
+		value="贝拉斯" />
 
 	<Item
 		id="UralMenu"
@@ -2254,7 +2254,7 @@
 	<Item
 		id="r2m2_Molokovoz01"
 		locForm="0"
-		value="奶车" />
+		value="奶罐车" />
 
 	<Item
 		id="r2m1_scout03"
@@ -2274,12 +2274,12 @@
 	<Item
 		id="r2m1_Molokovoz01"
 		locForm="0"
-		value="奶车" />
+		value="奶罐车" />
 
 	<Item
 		id="r2m1_Belaz01"
 		locForm="0"
-		value="别拉斯" />
+		value="贝拉斯" />
 
 	<Item
 		id="r2m1_Ural01"
@@ -2289,12 +2289,12 @@
 	<Item
 		id="bossMetalArm"
 		locForm="0"
-		value="钳形机器人" />
+		value="机器爪" />
 
 	<Item
 		id="boss02"
 		locForm="0"
-		value="工厂装载机" />
+		value="工厂机器" />
 
 	<Item
 		id="boss03"
@@ -2304,7 +2304,7 @@
 	<Item
 		id="boss04"
 		locForm="0"
-		value="涅里基地" />
+		value="内里基地" />
 
 	<Item
 		id="boss05"
@@ -2314,7 +2314,7 @@
 	<Item
 		id="FlagCar1"
 		locForm="0"
-		value="图书馆警卫" />
+		value="旗手" />
 
 	<Item
 		id="FlagCar2"
@@ -2334,7 +2334,7 @@
 	<Item
 		id="r2m1_HunterNarcBoss"
 		locForm="0"
-		value="黑手党首领" />
+		value="黑帮老大" />
 
 	<Item
 		id="r2m1_HunterNarcCaravan"
@@ -2359,7 +2359,7 @@
 	<Item
 		id="r2m1_FighterGulik"
 		locForm="0"
-		value="无赖" />
+		value="骗子" />
 
 	<Item
 		id="r2m1_Fighter02"
@@ -2374,7 +2374,7 @@
 	<Item
 		id="r2m1_Bug1"
 		locForm="0"
-		value="货车" />
+		value="厢货车" />
 
 	<Item
 		id="r1m3_molokovozInOldCity"
@@ -2404,7 +2404,7 @@
 	<Item
 		id="CoolBelaz_2"
 		locForm="0"
-		value="别拉斯" />
+		value="贝拉斯" />
 
 	<Item
 		id="Ural00"
@@ -2429,31 +2429,31 @@
 	<Item
 		id="r1m2_bug04"
 		locForm="0"
-		value="货车" />
+		value="厢货车" />
 
 	<Item
 		id="r1m3_MerScout"
 		locForm="0"
-		value="市长" />
+		value="镇长" />
 
 	<Item
 		id="NoDrop_Robot4SMALL"
 		locForm="0"
-		value="侦察机器人" />
+		value="机器侦察兵" />
 
 	<Item
 		id="NoDrop_Robot4_2SMALL"
 		locForm="0"
-		value="侦察机器人" />
+		value="机器侦察兵" />
 
 	<Item
 		id="NoDrop_Robot3BIG"
 		locForm="0"
-		value="移动基地" />
+		value="机动基地" />
 	<Item
 		id="Robot04_SMALL"
 		locForm="0"
-		value="侦察机器人" />
+		value="机器侦察兵" />
 
 	<Item
 		id="Robot4SMALL"
@@ -2468,27 +2468,27 @@
 	<Item
 		id="Robot03_Big"
 		locForm="0"
-		value="移动基地" />
+		value="机动基地" />
 
 	<Item
 		id="Robot3BIG"
 		locForm="0"
-		value="移动基地" />
+		value="可运输基地" />
 
 	<Item
 		id="Robot3_2BIG"
 		locForm="0"
-		value="移动基地" />
+		value="可运输基地" />
 
 	<Item
 		id="RobotPlayer01"
 		locForm="0"
-		value="机械师组装的机器人" />
+		value="机械师机器人" />
 
 	<Item
 		id="Robot01"
 		locForm="0"
-		value="战斗机器人" />
+		value="军用机器人" />
 
 	<Item
 		id="RobotBobot01"
@@ -2498,17 +2498,17 @@
 	<Item
 		id="NoDrop_RobotBobot01"
 		locForm="0"
-		value="战斗机器人" />
+		value="军用机器人" />
 
 	<Item
 		id="Robot02"
 		locForm="0"
-		value="劳动机器人" />
+		value="工人" />
 
 	<Item
 		id="RobotBobot02"
 		locForm="0"
-		value="劳动机器人" />
+		value="蓝领机器人" />
 
 	<Item
 		id="RobotTron"
@@ -2538,12 +2538,12 @@
 	<Item
 		id="arcadescoutCab"
 		locForm="0"
-		value="全地形侦察兵驾驶室" />
+		value="越野侦察兵驾驶室" />
 
 	<Item
 		id="fakeCargo"
 		locForm="0"
-		value="货箱" />
+		value="车体" />
 
 	<Item
 		id="cruiserCab01"
@@ -2568,12 +2568,12 @@
 	<Item
 		id="anti_missile_system"
 		locForm="0"
-		value="反导防御" />
+		value="导弹防御" />
 
 	<Item
 		id="Bug"
 		locForm="0"
-		value="货车" />
+		value="运输车" />
 
 	<Item
 		id="Bug_02"
@@ -2593,7 +2593,7 @@
 	<Item
 		id="Molokovoz"
 		locForm="0"
-		value="奶车"/>
+		value="奶罐车"/>
 
 	<Item
 		id="Gladiator02"
@@ -2603,17 +2603,17 @@
 	<Item
 		id="VeterCar01"
 		locForm="0"
-		value="维捷尔" />
+		value="风行者" />
 
 	<Item
 		id="Iten_car"
 		locForm="0"
-		value="伊坦" />
+		value="伊森" />
 
 	<Item
 		id="Star_car"
 		locForm="0"
-		value="收废品的老头" />
+		value="破布客" />
 
 	<Item
 		id="Patr_car"
@@ -2623,7 +2623,7 @@
 	<Item
 		id="Amerigo_car"
 		locForm="0"
-		value="亚美利加船长" />
+		value="阿梅里戈队长" />
 
 	<Item
 		id="ScoutMul01"
@@ -2648,12 +2648,12 @@
 	<Item
 		id="BugMul01"
 		locForm="0"
-		value="货车" />
+		value="甲虫" />
 
 	<Item
 		id="MolokovozMul01"
 		locForm="0"
-		value="奶车" />
+		value="奶罐车" />
 
 	<Item
 		id="UralMul01"
@@ -2663,10 +2663,10 @@
 	<Item
 		id="BelazMul01"
 		locForm="0"
-		value="别拉斯" />
+		value="贝拉斯" />
 
 	<Item
 		id="MirotvorecMul01"
 		locForm="0"
-		value="和平使者" />
+		value="和平缔造者" />
 </ModelNames>

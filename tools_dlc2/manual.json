@@ -1753,7 +1753,7 @@
  },
  "model_names.xml": {
   "collectionbook1": {
-   "value": "《旅游手册》"
+   "value": "旧版旅行指南小册子"
   },
   "collectionbook2": {
    "value": "坦克使用手册"
@@ -1765,25 +1765,25 @@
    "value": "《先驱日报》"
   },
   "collectionbook5": {
-   "value": "《车迷杂志》"
+   "value": "《车手》汽车杂志"
   },
   "collectionbook6": {
-   "value": "《女资本家》杂志"
+   "value": "《资本主义家庭主妇》杂志"
   },
   "collectionbook7": {
-   "value": "亨利·代尔笔记本"
+   "value": "丹瑞·戴尔的日记"
   },
   "collectionbook8": {
-   "value": "杂志上撕下的一页"
+   "value": "杂志内页"
   },
   "collectionbook9": {
-   "value": "民间传说集"
+   "value": "民间故事书"
   },
   "collectionbook10": {
-   "value": "司机圣经"
+   "value": "《车手圣经》"
   },
   "thorn1": {
-   "value": "尖刺"
+   "value": "排钉"
   },
   "thorn2": {
    "value": "刀刃"
@@ -1792,7 +1792,7 @@
    "value": "钻头"
   },
   "cooling_system_guns": {
-   "value": "枪械水冷系统"
+   "value": "机枪水冷系统"
   },
   "cooling_system_energy": {
    "value": "能量武器水冷系统"
@@ -1801,25 +1801,25 @@
    "value": "火炮水冷系统"
   },
   "firing_rate_guns": {
-   "value": "优化机械扳机"
+   "value": "优化手动射击机构"
   },
   "firing_range_guns": {
-   "value": "磁力加速器"
+   "value": "磁性助推器"
   },
   "firing_rate_energy": {
-   "value": "低阻电缆"
+   "value": "低阻线缆"
   },
   "add_damage_guns": {
-   "value": "半自由枪机"
+   "value": "延迟后坐式枪机"
   },
   "add_damage_energy": {
-   "value": "镜面镀银光谐振器"
+   "value": "镜银光共振器"
   },
   "add_damage_explosion": {
    "value": "磁力弹射器"
   },
   "grouping_angle_guns": {
-   "value": "光学瞄准镜"
+   "value": "瞄准镜"
   },
   "cooling_system_guns2": {
    "value": "机枪风冷系统"
@@ -1831,82 +1831,82 @@
    "value": "火炮风冷系统"
   },
   "firing_rate_guns2": {
-   "value": "电动扳机"
+   "value": "电击发机构"
   },
   "firing_rate_energy2": {
-   "value": "超导电缆"
+   "value": "超导线缆"
   },
   "grouping_angle_guns2": {
-   "value": "增透防眩光学瞄准镜"
+   "value": "增亮防眩瞄准镜"
   },
   "add_damage_guns2": {
-   "value": "浮动离合自由枪机"
+   "value": "双滑块后坐枪机"
   },
   "add_damage_energy2": {
-   "value": "石英谐振器"
+   "value": "晶体共振器"
   },
   "add_damage_explosion2": {
-   "value": "基于涡旋场发生器的磁力弹射器"
+   "value": "涡流场发生器式磁力弹射器"
   },
   "cooling_system_guns_and_firing_rate_guns": {
-   "value": "「Gnomon」系统"
+   "value": "格诺蒙系统"
   },
   "cooling_system_energy_and_firing_rate_energy": {
-   "value": "「Algor」组件"
+   "value": "阿尔戈综合装置"
   },
   "cooling_system_explosion_and_firing_rate_explosion": {
-   "value": "「Samum」系统"
+   "value": "萨穆姆系统"
   },
   "firing_rate_guns_and_add_damage_guns": {
-   "value": "「Spheno」机电组件"
+   "value": "斯芬诺机电综合装置"
   },
   "firing_rate_energy_and_add_damage_energy": {
-   "value": "「Quasar」磁光系统"
+   "value": "类星体磁光系统"
   },
   "firing_rate_explosion_and_add_damage_explosion": {
-   "value": "「Fire Storm」机电组件"
+   "value": "火风暴机电综合装置"
   },
   "add_damage_guns_and_grouping_angle_guns": {
-   "value": "「FireEye」组件"
+   "value": "火眼综合装置"
   },
   "add_damage_energy_and_firing_rate_energy": {
-   "value": "「Doom-4」系统"
+   "value": "毁灭-4系统"
   },
   "add_damage_explosion_firing_rate_explosion": {
-   "value": "「David」机电组件"
+   "value": "大卫机电综合装置"
   },
   "additional_fuel_tank": {
-   "value": "普通油桶"
+   "value": "普通油箱"
   },
   "additional_torque": {
-   "value": "加装排气管"
+   "value": "附加排气管"
   },
   "additional_durability": {
-   "value": "轧制装甲板（驾驶室加装）"
+   "value": "驾驶室辊压装甲板"
   },
   "additional_stability": {
-   "value": "转向液压助力"
+   "value": "转向助力器"
   },
   "additional_fuel_tank2": {
-   "value": "大油桶"
+   "value": "大型油箱"
   },
   "additional_torque2": {
-   "value": "涡轮增压"
+   "value": "涡轮增压器"
   },
   "additional_durability2": {
-   "value": "附加胶合轧制装甲板"
+   "value": "附加渗碳辊压装甲板"
   },
   "add_speed_and_torque": {
    "value": "电子喷射系统"
   },
   "add_stability_and_speed": {
-   "value": "「Sagitta」系统"
+   "value": "萨吉塔系统"
   },
   "add_torque_and_stability": {
-   "value": "「Albatross」系统"
+   "value": "信天翁系统"
   },
   "additional_fuel_tank2_add_damage_guns": {
-   "value": "「Sato」系统"
+   "value": "佐藤系统"
   },
   "add_damage_energy_sub_damage_guns": {
    "value": "能量增幅器"
@@ -1915,25 +1915,25 @@
    "value": "等离子弹芯弹药"
   },
   "add_damage_explosion_sub_damage_guns": {
-   "value": "高塑性炸药弹头"
+   "value": "塑性炸药弹头"
   },
   "add_fueltank_sub_maxspeed": {
    "value": "加大型重型油箱"
   },
   "add_maxspeed_sub_fueltank": {
-   "value": "占用部分油箱空间的汽油泵"
+   "value": "运动芯片（占用部分油箱）"
   },
   "add_armour_sub_max_speed": {
-   "value": "重型钛合金覆层"
+   "value": "重型钛装甲护板"
   },
   "add_maxspeed_sub_armour": {
-   "value": "贯穿式空气动力学缝线"
+   "value": "嵌入式气动套件"
   },
   "add_damage_energy_sub_damage_guns2": {
    "value": "能量再分配器"
   },
   "add_damage_guns_sub_damage_energy2": {
-   "value": "核芯弹药"
+   "value": "核弹芯弹药"
   },
   "add_damage_explosion_sub_damage_guns2": {
    "value": "核弹头"
@@ -1942,64 +1942,64 @@
    "value": "双重能量再分配器"
   },
   "add_damage_guns_sub_damage_energy22": {
-   "value": "双核芯弹药"
+   "value": "双核弹芯弹药"
   },
   "add_damage_explosion_sub_damage_guns22": {
    "value": "电子制导核弹头"
   },
   "add_maxspeed_sub_armour2": {
-   "value": "双重空气动力学缝线"
+   "value": "双重气动套件"
   },
   "add_fueltank_sub_maxspeed2": {
-   "value": "加倍的特重油箱"
+   "value": "双重超重型油箱"
   },
   "add_maxspeed_sub_fueltank2": {
-   "value": "占用部分油箱空间的双汽油泵"
+   "value": "双重芯片（占用部分油箱）"
   },
   "add_armour_sub_max_speed2": {
-   "value": "双层钛合金覆层"
+   "value": "双重钛装甲护板"
   },
   "add_damage_energy_sub_damage_guns23": {
    "value": "三重能量再分配器"
   },
   "add_damage_guns_sub_damage_energy23": {
-   "value": "三核芯弹药"
+   "value": "三核弹芯弹药"
   },
   "add_damage_explosion_sub_damage_guns23": {
-   "value": "增强电子制导核弹头"
+   "value": "电子锁定核弹头"
   },
   "add_maxspeed_sub_armour3": {
-   "value": "三重空气动力学缝线"
+   "value": "三重气动套件"
   },
   "add_fueltank_sub_maxspeed3": {
-   "value": "三倍特重油箱"
+   "value": "三重超重型油箱"
   },
   "add_maxspeed_sub_fueltank3": {
-   "value": "占用部分油箱空间的三重汽油泵"
+   "value": "三重芯片（占用部分油箱）"
   },
   "add_armour_sub_max_speed3": {
-   "value": "三层钛合金覆层"
+   "value": "三重钛装甲护板"
   },
   "add_damage_energy_sub_damage_guns24": {
    "value": "四重能量再分配器"
   },
   "add_damage_guns_sub_damage_energy24": {
-   "value": "四核芯弹药"
+   "value": "四核弹芯弹药"
   },
   "add_damage_explosion_sub_damage_guns24": {
-   "value": "冗余电子制导核弹头"
+   "value": "双重电子制导核弹头"
   },
   "add_maxspeed_sub_armour4": {
-   "value": "四重空气动力学缝线"
+   "value": "四重气动套件"
   },
   "add_fueltank_sub_maxspeed4": {
-   "value": "四倍油箱"
+   "value": "四重油箱"
   },
   "add_maxspeed_sub_fueltank4": {
-   "value": "占用部分油箱空间的四重油泵芯片"
+   "value": "四重芯片（占用部分油箱）"
   },
   "add_armour_sub_max_speed4": {
-   "value": "四层钛合金覆层"
+   "value": "四重钛装甲护板"
   },
   "wine": {
    "value": "葡萄酒"
@@ -2014,22 +2014,22 @@
    "value": "废金属"
   },
   "firewood": {
-   "value": "柴火"
+   "value": "木柴"
   },
   "info_stone": {
-   "value": "刻着符文的石头"
+   "value": "符文石"
   },
   "oil": {
    "value": "石油"
   },
   "bottle": {
-   "value": "瓶子"
+   "value": "酒瓶"
   },
   "fuel": {
    "value": "燃料"
   },
   "machinery": {
-   "value": "零件"
+   "value": "零配件"
   },
   "tobacco": {
    "value": "烟草"
@@ -2038,7 +2038,7 @@
    "value": "书籍"
   },
   "electronics": {
-   "value": "电子元件"
+   "value": "电子产品"
   },
   "quest_start_father_letter": {
    "value": "信件"
@@ -2050,7 +2050,7 @@
    "value": "药品"
   },
   "quest_explosive": {
-   "value": "炸药"
+   "value": "爆破炸药"
   },
   "quest_wine_barrels": {
    "value": "葡萄酒桶"
@@ -2059,13 +2059,13 @@
    "value": "稀有合金"
   },
   "quest_shaman_head1": {
-   "value": "教派教徒的头颅"
+   "value": "教徒的头颅"
   },
   "quest_shaman_head2": {
    "value": "异教徒的头颅"
   },
   "quest_old_digital": {
-   "value": "老式引擎"
+   "value": "旧发动机"
   },
   "quest_art_masterpice": {
    "value": "艺术品"
@@ -2074,7 +2074,7 @@
    "value": "毒品"
   },
   "quest_first_canistra": {
-   "value": "一桶石油"
+   "value": "罐装石油"
   },
   "quest_disk_1": {
    "value": "光盘"
@@ -2083,52 +2083,52 @@
    "value": "第二张光盘"
   },
   "quest_key_for_submarine": {
-   "value": "海上之门钥匙"
+   "value": "海军闸门钥匙"
   },
   "quest_key_for_tunnel": {
    "value": "隧道钥匙"
   },
   "quest_repair_robot3": {
-   "value": "调试机器人"
+   "value": "机器人调谐器"
   },
   "quest_repair_robot1": {
-   "value": "助手机器人"
+   "value": "机器人助手"
   },
   "quest_repair_robot2": {
    "value": "维修机器人"
   },
   "quest_explosion_stone": {
-   "value": "刻着符文的石头"
+   "value": "符文石块"
   },
   "quest_magic_thing2": {
-   "value": "损坏的仪器"
+   "value": "损坏的装置"
   },
   "quest_magic_thing1": {
-   "value": "古董神器"
+   "value": "古代器物"
   },
   "quest_monster_head": {
-   "value": "怪物头颅"
+   "value": "怪物的头颅"
   },
   "quest_baseball_bat": {
-   "value": "棒球棍"
+   "value": "训练球棒"
   },
   "quest_grand_prix": {
    "value": "奖杯"
   },
   "quest_movie_reel_1": {
-   "value": "古老卷轴"
+   "value": "古老胶卷"
   },
   "quest_movie_reel_2": {
-   "value": "缴获的卷轴"
+   "value": "取回的胶卷"
   },
   "quest_robot_part_1": {
-   "value": "光学系统摄像头"
+   "value": "光学系统摄像机"
   },
   "quest_robot_part_2": {
    "value": "蓄电池"
   },
   "quest_robot_part_3": {
-   "value": "液压系统软管"
+   "value": "液冷系统软管"
   },
   "quest_emissary_trophies": {
    "value": "战利品"
@@ -2137,13 +2137,13 @@
    "value": "发动机"
   },
   "quest_goldsellector": {
-   "value": "淘金者"
+   "value": "寻宝探测器"
   },
   "quest_drugs": {
-   "value": "违禁品"
+   "value": "走私货"
   },
   "quest_special_drugs": {
-   "value": "走私品"
+   "value": "走私货"
   },
   "quest_reach": {
    "value": "包裹"
@@ -2152,43 +2152,43 @@
    "value": "禁书"
   },
   "quest_wanted": {
-   "value": "「通缉！」传单"
+   "value": "通缉！"
   },
   "someTurboAccelerationPusher": {
-   "value": "涡轮加速"
+   "value": "涡轮助推器"
   },
   "Jumper": {
-   "value": "Jumper 炮"
+   "value": "弹跳炮"
   },
   "engineOilPusher": {
    "value": "机油"
   },
   "nailsPusher": {
-   "value": "钉子"
+   "value": "销钉"
   },
   "minePusher": {
-   "value": "Hedgehog-1"
+   "value": "刺猬-1"
   },
   "cyclops01": {
    "value": "独眼巨人"
   },
   "big_swingfire01": {
-   "value": "Swingfire"
+   "value": "旋火"
   },
   "rocketLauncher": {
-   "value": "Dragon"
+   "value": "巨龙"
   },
   "storm01": {
    "value": "风暴"
   },
   "dozerCab01": {
-   "value": "垃圾车"
+   "value": "垃圾"
   },
   "scoutCab01": {
    "value": "闪电（1级）"
   },
   "scoutCab02": {
-   "value": "螺旋桨（2级）"
+   "value": "螺旋（2级）"
   },
   "scoutCab03": {
    "value": "冲浪者（3级）"
@@ -2200,7 +2200,7 @@
    "value": "杜宾犬（2级）"
   },
   "fighterCab03": {
-   "value": "警犬（3级）"
+   "value": "波利斯（3级）"
   },
   "molokovozCab01": {
    "value": "螺栓（1级）"
@@ -2209,10 +2209,10 @@
    "value": "旋涡（2级）"
   },
   "molokovozCab03": {
-   "value": "倒刺（3级）"
+   "value": "销钉（3级）"
   },
   "molokovozCargo01": {
-   "value": "顶篷（1级）"
+   "value": "帐篷（1级）"
   },
   "molokovozCargo02": {
    "value": "发电机（2级）"
@@ -2227,7 +2227,7 @@
    "value": "玻利瓦尔（2级）"
   },
   "belazCab03": {
-   "value": "洛克（3级）"
+   "value": "磐石（3级）"
   },
   "belazCab04": {
    "value": "终结者（4级）"
@@ -2236,28 +2236,28 @@
    "value": "盾牌（5级）"
   },
   "belazCargo01": {
-   "value": "宿主（1级）"
+   "value": "霍斯特（1级）"
   },
   "belazCargo02": {
-   "value": "组装者（2级）"
+   "value": "建造者（2级）"
   },
   "belazCargo03": {
-   "value": "巨人（3级）"
+   "value": "巨像（3级）"
   },
   "belazCargo04": {
    "value": "雷霆（4级）"
   },
   "belazCargo05": {
-   "value": "气缸（5级）"
+   "value": "圆筒（5级）"
   },
   "bugCab01": {
    "value": "甲虫（1级）"
   },
   "bugCab02": {
-   "value": "劳力（2级）"
+   "value": "苦力（2级）"
   },
   "bugCab03": {
-   "value": "蝎子（3级）"
+   "value": "天蝎（3级）"
   },
   "bugCab04": {
    "value": "蜜蜂（4级）"
@@ -2266,31 +2266,31 @@
    "value": "螳螂（5级）"
   },
   "bugCargo01": {
-   "value": "气罐（1级）"
+   "value": "瓦斯（1级）"
   },
   "bugCargo02": {
-   "value": "瀑布（2级）"
+   "value": "飞瀑（2级）"
   },
   "bugCargo03": {
-   "value": "博格（3级）"
+   "value": "桁架（3级）"
   },
   "uralCab01": {
    "value": "铬（1级）"
   },
   "uralCab02": {
-   "value": "标准（2级）"
+   "value": "标准型（2级）"
   },
   "uralCab03": {
    "value": "领主（4级）"
   },
   "uralCab04": {
-   "value": "马略（3级）"
+   "value": "墨晶（3级）"
   },
   "uralCab05": {
-   "value": "勇士（5级）"
+   "value": "骑士（5级）"
   },
   "uralCargo01": {
-   "value": "寒冷（1级）"
+   "value": "寒冰（1级）"
   },
   "uralCargo02": {
    "value": "货运（3级）"
@@ -2299,10 +2299,10 @@
    "value": "巡洋舰（4级）"
   },
   "uralCargo04": {
-   "value": "铠甲（2级）"
+   "value": "装甲（2级）"
   },
   "uralCargo05": {
-   "value": "老虎（5级）"
+   "value": "猛虎（5级）"
   },
   "FighterForSale": {
    "value": "斗士"
@@ -2311,19 +2311,19 @@
    "value": "侦察兵"
   },
   "BelazForSale": {
-   "value": "别拉斯"
+   "value": "贝拉斯"
   },
   "UralForSale": {
    "value": "乌拉尔"
   },
   "BugForSale": {
-   "value": "货车"
+   "value": "厢货车"
   },
   "MolokovozForSale": {
-   "value": "奶车"
+   "value": "奶罐车"
   },
   "MolokovozCargo04": {
-   "value": "带挂车的螺栓"
+   "value": "带拖车的螺栓"
   },
   "mirotvorecCab01": {
    "value": "格兰（1级）"
@@ -2347,7 +2347,7 @@
    "value": "百夫长（2级）"
   },
   "mirotvorecCargo03": {
-   "value": "五月（3级）"
+   "value": "玛雅（3级）"
   },
   "mirotvorecCargo04": {
    "value": "正宗（3级）"
@@ -2356,7 +2356,7 @@
    "value": "王者之剑（5级）"
   },
   "MirotvorecForSale": {
-   "value": "和平使者"
+   "value": "和平缔造者"
   },
   "sml1Cab01": {
    "value": "臭虫驾驶室"
@@ -2392,97 +2392,97 @@
    "value": "蓄电池"
   },
   "scoutCargo01": {
-   "value": "货箱"
+   "value": "货柜"
   },
   "scoutCargo02": {
-   "value": "货箱"
+   "value": "货柜"
   },
   "fighterCargo01": {
-   "value": "货箱"
+   "value": "货柜"
   },
   "fighterCargo02": {
-   "value": "货箱"
+   "value": "货柜"
   },
   "ElectroShockMed": {
-   "value": "电击枪"
+   "value": "自动锁停"
   },
   "FlameThrowerMed": {
-   "value": "火焰喷射器"
+   "value": "烈焰"
   },
   "FlameThrowerGiant": {
-   "value": "焚化者"
+   "value": "余烬"
   },
   "robotgun01": {
-   "value": "神谕之眼 2.7 版"
+   "value": "神谕之眼，2.7版"
   },
   "robotgun04small_01": {
-   "value": "神谕之眼 3.2 版"
+   "value": "神谕之眼，3.2版"
   },
   "robotgun04small_02": {
-   "value": "神谕之眼 3.5 版"
+   "value": "神谕之眼，3.5版"
   },
   "hornet01": {
    "value": "大黄蜂"
   },
   "specter01": {
-   "value": "幽魂"
+   "value": "光谱"
   },
   "specterS01": {
-   "value": "独特幽魂"
+   "value": "特制光谱"
   },
   "pkt01": {
-   "value": "PKT"
+   "value": "机枪"
   },
   "pktS01": {
-   "value": "独特 PKT"
+   "value": "特制机枪"
   },
   "kord01": {
-   "value": "科德"
+   "value": "科尔德"
   },
   "vector01": {
    "value": "矢量"
   },
   "vulcan01": {
-   "value": "火神"
+   "value": "火山"
   },
   "maxim01": {
-   "value": "Maxim"
+   "value": "马克沁"
   },
   "rapier01": {
-   "value": "花剑"
+   "value": "细剑"
   },
   "fagot01": {
-   "value": "巴松"
+   "value": "法戈托"
   },
   "fagotS01": {
-   "value": "独特巴松"
+   "value": "特制法戈托"
   },
   "kpvt01": {
-   "value": "KPVT"
+   "value": "重机枪"
   },
   "kpvtS01": {
-   "value": "独特 KPVT"
+   "value": "特制重机枪"
   },
   "rainmetal01": {
-   "value": "Rainmetal"
+   "value": "铁雨"
   },
   "octopus01": {
-   "value": "斯普鲁特"
+   "value": "章鱼"
   },
   "octopusS01": {
-   "value": "独特斯普鲁特"
+   "value": "特制章鱼"
   },
   "elephant01": {
    "value": "巨象"
   },
   "elephantS01": {
-   "value": "独特巨象"
+   "value": "特制巨象"
   },
   "flag01": {
    "value": "旗帜"
   },
   "flagS01": {
-   "value": "独特旗帜"
+   "value": "特制旗帜"
   },
   "hurricane01": {
    "value": "飓风"
@@ -2497,7 +2497,7 @@
    "value": "雷神之锤"
   },
   "hammerS01": {
-   "value": "独特雷神之锤"
+   "value": "特制雷神之锤"
   },
   "bumblebee01": {
    "value": "熊蜂"
@@ -2515,16 +2515,16 @@
    "value": "宙斯"
   },
   "zeusSideGunS": {
-   "value": "独特宙斯"
+   "value": "特制宙斯"
   },
   "marsSideGun": {
-   "value": "火星"
+   "value": "玛尔斯"
   },
   "marsSideGunS": {
-   "value": "独特火星"
+   "value": "特制玛尔斯"
   },
   "minePusher_1": {
-   "value": "Hedgehog-2"
+   "value": "刺猬-2"
   },
   "minePusher_2": {
    "value": "旋涡"
@@ -2557,13 +2557,13 @@
    "value": "侦察兵"
   },
   "r1m1_molokovoz01": {
-   "value": "奶车"
+   "value": "奶罐车"
   },
   "r1m1_molokovoz02": {
-   "value": "奶车"
+   "value": "奶罐车"
   },
   "r1m1_molokovoz03": {
-   "value": "奶车"
+   "value": "奶罐车"
   },
   "r5m1_sumo01": {
    "value": "角斗士"
@@ -2572,13 +2572,13 @@
    "value": "角斗士"
   },
   "r1m1_bug01": {
-   "value": "货车"
+   "value": "厢货车"
   },
   "r1m1_bug02": {
-   "value": "货车"
+   "value": "厢货车"
   },
   "r1m1_bug03": {
-   "value": "货车"
+   "value": "厢货车"
   },
   "r1m2_hunter02": {
    "value": "猎手"
@@ -2596,7 +2596,7 @@
    "value": "侦察兵"
   },
   "ArcadeScout01": {
-   "value": "GT 侦察兵"
+   "value": "侦察兵GT"
   },
   "Fighter": {
    "value": "斗士"
@@ -2653,19 +2653,19 @@
    "value": "坦克"
   },
   "Bug": {
-   "value": "货车"
+   "value": "运输车"
   },
   "Bug01": {
-   "value": "货车"
+   "value": "厢货车"
   },
   "Molokovoz": {
-   "value": "奶车"
+   "value": "奶罐车"
   },
   "Molokovoz01": {
-   "value": "奶车"
+   "value": "奶罐车"
   },
   "Molokovoz02": {
-   "value": "奶车"
+   "value": "奶罐车"
   },
   "Ural": {
    "value": "乌拉尔"
@@ -2674,22 +2674,22 @@
    "value": "乌拉尔"
   },
   "Belaz": {
-   "value": "别拉斯"
+   "value": "贝拉斯"
   },
   "Belaz01": {
-   "value": "别拉斯"
+   "value": "贝拉斯"
   },
   "CoolBelaz": {
-   "value": "别拉斯"
+   "value": "贝拉斯"
   },
   "Mirotvorec": {
-   "value": "和平使者"
+   "value": "和平缔造者"
   },
   "Mirotvorec01": {
-   "value": "和平使者"
+   "value": "和平缔造者"
   },
   "ArcadeBelaz": {
-   "value": "Sprint 别拉斯"
+   "value": "贝拉斯冲刺"
   },
   "DemoBandit": {
    "value": "侦察兵"
@@ -2707,22 +2707,22 @@
    "value": "猎手"
   },
   "DemoBug1": {
-   "value": "货车"
+   "value": "厢货车"
   },
   "DemoBug2": {
-   "value": "货车"
+   "value": "厢货车"
   },
   "DemoBug3": {
-   "value": "货车"
+   "value": "厢货车"
   },
   "DemoMolokovoz1": {
-   "value": "奶车"
+   "value": "奶罐车"
   },
   "DemoMolokovoz2": {
-   "value": "奶车"
+   "value": "奶罐车"
   },
   "DemoMolokovoz3": {
-   "value": "奶车"
+   "value": "奶罐车"
   },
   "DemoUral1": {
    "value": "乌拉尔"
@@ -2734,22 +2734,22 @@
    "value": "乌拉尔"
   },
   "DemoBelaz1": {
-   "value": "别拉斯"
+   "value": "贝拉斯"
   },
   "DemoBelaz2": {
-   "value": "别拉斯"
+   "value": "贝拉斯"
   },
   "DemoBelaz3": {
-   "value": "别拉斯"
+   "value": "贝拉斯"
   },
   "DemoMirotvorec1": {
-   "value": "和平使者"
+   "value": "和平缔造者"
   },
   "DemoMirotvorec2": {
-   "value": "和平使者"
+   "value": "和平缔造者"
   },
   "DemoMirotvorec3": {
-   "value": "和平使者"
+   "value": "和平缔造者"
   },
   "Revolutioner1": {
    "value": "革命者"
@@ -2758,10 +2758,10 @@
    "value": "革命者"
   },
   "BelazTest": {
-   "value": "别拉斯"
+   "value": "贝拉斯"
   },
   "MolokovozTest": {
-   "value": "奶车"
+   "value": "奶罐车"
   },
   "Sml1": {
    "value": "臭虫"
@@ -2782,43 +2782,43 @@
    "value": "蚱蜢"
   },
   "mirotvorecTest": {
-   "value": "和平使者"
+   "value": "和平缔造者"
   },
   "mirotvorecTest1": {
-   "value": "和平使者"
+   "value": "和平缔造者"
   },
   "BugTest1": {
-   "value": "货车"
+   "value": "厢货车"
   },
   "BelazTest01": {
-   "value": "别拉斯"
+   "value": "贝拉斯"
   },
   "BelazTest02": {
-   "value": "别拉斯"
+   "value": "贝拉斯"
   },
   "BelazTest03": {
-   "value": "别拉斯"
+   "value": "贝拉斯"
   },
   "BelazTest04": {
-   "value": "别拉斯"
+   "value": "贝拉斯"
   },
   "BelazTest05": {
-   "value": "别拉斯"
+   "value": "贝拉斯"
   },
   "BelazShot": {
-   "value": "别拉斯"
+   "value": "贝拉斯"
   },
   "UralShot": {
    "value": "乌拉尔"
   },
   "MirotvorecShot": {
-   "value": "和平使者"
+   "value": "和平缔造者"
   },
   "Formula01": {
-   "value": "GT 涡轮"
+   "value": "涡轮增压GT"
   },
   "FormulaCab": {
-   "value": "GT 赛车"
+   "value": "流星GT"
   },
   "r1m3_Fighter01": {
    "value": "斗士"
@@ -2830,58 +2830,58 @@
    "value": "臭虫"
   },
   "r1m3_molokovoz03": {
-   "value": "奶车"
+   "value": "奶罐车"
   },
   "staticAutoGun01": {
-   "value": "火力点"
+   "value": "碉堡"
   },
   "staticAutoGun02": {
-   "value": "火力点"
+   "value": "碉堡"
   },
   "staticAutoGun03": {
-   "value": "火力点"
+   "value": "碉堡"
   },
   "staticAutoGun04": {
-   "value": "火力点"
+   "value": "碉堡"
   },
   "staticAutoGun05": {
-   "value": "火力点"
+   "value": "碉堡"
   },
   "staticAutoGun06": {
-   "value": "火力点"
+   "value": "碉堡"
   },
   "staticAutoGun07": {
-   "value": "路障"
+   "value": "街垒"
   },
   "staticAutoGun08": {
    "value": "伏击"
   },
   "Dot01": {
-   "value": "火力点"
+   "value": "碉堡"
   },
   "druid_dot_01": {
-   "value": "火力点"
+   "value": "碉堡"
   },
   "druid_dot_02": {
-   "value": "火力点"
+   "value": "碉堡"
   },
   "oracle_generator": {
    "value": "发电机"
   },
   "OracleDot1_hunterLauncher": {
-   "value": "火力点"
+   "value": "碉堡"
   },
   "OracleDot1_vulcan": {
-   "value": "火力点"
+   "value": "碉堡"
   },
   "OracleDot1_kpvt": {
-   "value": "火力点"
+   "value": "碉堡"
   },
   "OracleDot2_hunterLauncher": {
-   "value": "火力点"
+   "value": "碉堡"
   },
   "OracleDot2_vulcan": {
-   "value": "火力点"
+   "value": "碉堡"
   },
   "OracleDot_Generator": {
    "value": "发电机"
@@ -2893,91 +2893,91 @@
    "value": "旗帜"
   },
   "sack_dot2_kord": {
-   "value": "火力点"
+   "value": "碉堡"
   },
   "heavy_dot4_flag01": {
-   "value": "火力点"
+   "value": "碉堡"
   },
   "heavy_dot4_big_kpvt_smallrad": {
-   "value": "火力点"
+   "value": "碉堡"
   },
   "heavy_dot4_big_kpvt": {
-   "value": "火力点"
+   "value": "碉堡"
   },
   "heavy_dot4_big_rainmetal": {
-   "value": "火力点"
+   "value": "碉堡"
   },
   "brick_dot1_vulcan": {
-   "value": "火力点"
+   "value": "碉堡"
   },
   "druid_dot2_omega01": {
-   "value": "火力点"
+   "value": "碉堡"
   },
   "druid_dot1_kord01": {
-   "value": "火力点"
+   "value": "碉堡"
   },
   "sack_dot2_omega": {
-   "value": "火力点"
+   "value": "碉堡"
   },
   "sack_dot2_flag": {
-   "value": "火力点"
+   "value": "碉堡"
   },
   "sack_dot1_hunterLauncher": {
-   "value": "火力点"
+   "value": "碉堡"
   },
   "sack_dot2_vulcan": {
-   "value": "火力点"
+   "value": "碉堡"
   },
   "sack_dot1_vulcan": {
-   "value": "火力点"
+   "value": "碉堡"
   },
   "heavy_dot4_big_hornet": {
-   "value": "火力点"
+   "value": "碉堡"
   },
   "heavy_dot4_big_vector": {
-   "value": "火力点"
+   "value": "碉堡"
   },
   "heavy_dot4_big_hurricane": {
-   "value": "火力点"
+   "value": "碉堡"
   },
   "heavy_dot4_big_hunterLauncher": {
-   "value": "火力点"
+   "value": "碉堡"
   },
   "heavy_dot4_big_swingfire": {
-   "value": "火力点"
+   "value": "碉堡"
   },
   "heavy_dot4_rapier": {
-   "value": "火力点"
+   "value": "碉堡"
   },
   "heavy_dot4_octopus": {
-   "value": "火力点"
+   "value": "碉堡"
   },
   "heavy_dot4_vulcan": {
-   "value": "火力点"
+   "value": "碉堡"
   },
   "heavy_dot3_rainmetal": {
-   "value": "火力点"
+   "value": "碉堡"
   },
   "heavy_dot3_vulcan": {
-   "value": "火力点"
+   "value": "碉堡"
   },
   "heavy_dot2_rainmetal": {
-   "value": "火力点"
+   "value": "碉堡"
   },
   "heavy_dot2_vector": {
-   "value": "火力点"
+   "value": "碉堡"
   },
   "heavy_dot2_vulcan": {
-   "value": "火力点"
+   "value": "碉堡"
   },
   "heavy_dot1_vulcan": {
-   "value": "火力点"
+   "value": "碉堡"
   },
   "brick_dot2_vulcan": {
-   "value": "火力点"
+   "value": "碉堡"
   },
   "PublicDemoBug01": {
-   "value": "老人车"
+   "value": "老人的座驾"
   },
   "PublicDemoSinks": {
    "value": "流浪者辛克斯"
@@ -2989,13 +2989,13 @@
    "value": "掠夺者"
   },
   "PublicDemoFighter": {
-   "value": "匪帮头目"
+   "value": "帮派头目"
   },
   "PublicDemoIeriBand1": {
-   "value": "耶里守卫"
+   "value": "耶里的护卫"
   },
   "PublicDemoIeriBand2": {
-   "value": "耶里守卫"
+   "value": "耶里的护卫"
   },
   "PublicDemoIeriCar": {
    "value": "耶里"
@@ -3019,25 +3019,25 @@
    "value": "运输车"
   },
   "r1m3_CaravanGuardianSml401": {
-   "value": "警卫"
+   "value": "猎手"
   },
   "r2m1_CaravanGuardianSml401": {
-   "value": "警卫"
+   "value": "猎手"
   },
   "r2m1_CaravanGuardianScout201": {
-   "value": "警卫"
+   "value": "猎手"
   },
   "r2m2_CaravanGuardianScout301": {
-   "value": "警卫"
+   "value": "猎手"
   },
   "r1m1_CaravanGuardianSml201": {
-   "value": "警卫"
+   "value": "猎手"
   },
   "r1m1_CaravanGuardianSml101": {
-   "value": "警卫"
+   "value": "猎手"
   },
   "r1m2_CaravanGuardianSml301": {
-   "value": "警卫"
+   "value": "猎手"
   },
   "ScoutMenu": {
    "value": "侦察兵"
@@ -3046,10 +3046,10 @@
    "value": "斗士"
   },
   "MolokovozMenu": {
-   "value": "奶车"
+   "value": "奶罐车"
   },
   "BelazMenu": {
-   "value": "别拉斯"
+   "value": "贝拉斯"
   },
   "UralMenu": {
    "value": "乌拉尔"
@@ -3100,7 +3100,7 @@
    "value": "斗士"
   },
   "r2m2_Molokovoz01": {
-   "value": "奶车"
+   "value": "奶罐车"
   },
   "r2m1_scout03": {
    "value": "侦察兵"
@@ -3112,31 +3112,31 @@
    "value": "侦察兵"
   },
   "r2m1_Molokovoz01": {
-   "value": "奶车"
+   "value": "奶罐车"
   },
   "r2m1_Belaz01": {
-   "value": "别拉斯"
+   "value": "贝拉斯"
   },
   "r2m1_Ural01": {
    "value": "乌拉尔"
   },
   "bossMetalArm": {
-   "value": "钳形机器人"
+   "value": "机器爪"
   },
   "boss02": {
-   "value": "工厂装载机"
+   "value": "工厂机器"
   },
   "boss03": {
    "value": "神谕使者"
   },
   "boss04": {
-   "value": "涅里基地"
+   "value": "内里基地"
   },
   "boss05": {
    "value": "萨姆的联合收割机"
   },
   "FlagCar1": {
-   "value": "图书馆警卫"
+   "value": "旗手"
   },
   "FlagCar2": {
    "value": "旗手"
@@ -3148,7 +3148,7 @@
    "value": "无人机"
   },
   "r2m1_HunterNarcBoss": {
-   "value": "黑手党首领"
+   "value": "黑帮老大"
   },
   "r2m1_HunterNarcCaravan": {
    "value": "信使"
@@ -3163,7 +3163,7 @@
    "value": "猎手"
   },
   "r2m1_FighterGulik": {
-   "value": "无赖"
+   "value": "骗子"
   },
   "r2m1_Fighter02": {
    "value": "斗士"
@@ -3172,7 +3172,7 @@
    "value": "斗士"
   },
   "r2m1_Bug1": {
-   "value": "货车"
+   "value": "厢货车"
   },
   "r1m3_molokovozInOldCity": {
    "value": "逃亡者"
@@ -3190,7 +3190,7 @@
    "value": "费利克斯"
   },
   "CoolBelaz_2": {
-   "value": "别拉斯"
+   "value": "贝拉斯"
   },
   "Ural00": {
    "value": "乌拉尔"
@@ -3205,22 +3205,22 @@
    "value": "猎手"
   },
   "r1m2_bug04": {
-   "value": "货车"
+   "value": "厢货车"
   },
   "r1m3_MerScout": {
-   "value": "市长"
+   "value": "镇长"
   },
   "NoDrop_Robot4SMALL": {
-   "value": "侦察机器人"
+   "value": "机器侦察兵"
   },
   "NoDrop_Robot4_2SMALL": {
-   "value": "侦察机器人"
+   "value": "机器侦察兵"
   },
   "NoDrop_Robot3BIG": {
-   "value": "移动基地"
+   "value": "机动基地"
   },
   "Robot04_SMALL": {
-   "value": "侦察机器人"
+   "value": "机器侦察兵"
   },
   "Robot4SMALL": {
    "value": "侦察机器人"
@@ -3229,28 +3229,28 @@
    "value": "侦察机器人"
   },
   "Robot03_Big": {
-   "value": "移动基地"
+   "value": "机动基地"
   },
   "Robot3BIG": {
-   "value": "移动基地"
+   "value": "可运输基地"
   },
   "Robot3_2BIG": {
-   "value": "移动基地"
+   "value": "可运输基地"
   },
   "RobotPlayer01": {
-   "value": "机械师组装的机器人"
+   "value": "机械师机器人"
   },
   "Robot01": {
-   "value": "战斗机器人"
+   "value": "军用机器人"
   },
   "RobotBobot01": {
    "value": "战斗机器人"
   },
   "Robot02": {
-   "value": "劳动机器人"
+   "value": "工人"
   },
   "RobotBobot02": {
-   "value": "劳动机器人"
+   "value": "蓝领机器人"
   },
   "RobotTron": {
    "value": "战斗机器人"
@@ -3268,10 +3268,10 @@
    "value": "猎手驾驶室"
   },
   "arcadescoutCab": {
-   "value": "全地形侦察兵驾驶室"
+   "value": "越野侦察兵驾驶室"
   },
   "fakeCargo": {
-   "value": "货箱"
+   "value": "车体"
   },
   "cruiserCab01": {
    "value": "巡洋舰驾驶室"
@@ -3286,7 +3286,7 @@
    "value": "烟幕"
   },
   "anti_missile_system": {
-   "value": "反导防御"
+   "value": "导弹防御"
   },
   "Bug_02": {
    "value": "运输车"
@@ -3298,19 +3298,19 @@
    "value": "角斗士"
   },
   "VeterCar01": {
-   "value": "维捷尔"
+   "value": "风行者"
   },
   "Iten_car": {
-   "value": "伊坦"
+   "value": "伊森"
   },
   "Star_car": {
-   "value": "收废品的老头"
+   "value": "破布客"
   },
   "Patr_car": {
    "value": "巡逻车"
   },
   "Amerigo_car": {
-   "value": "亚美利加船长"
+   "value": "阿梅里戈队长"
   },
   "ScoutMul01": {
    "value": "侦察兵"
@@ -3325,22 +3325,22 @@
    "value": "巡洋舰"
   },
   "BugMul01": {
-   "value": "货车"
+   "value": "甲虫"
   },
   "MolokovozMul01": {
-   "value": "奶车"
+   "value": "奶罐车"
   },
   "UralMul01": {
    "value": "乌拉尔"
   },
   "BelazMul01": {
-   "value": "别拉斯"
+   "value": "贝拉斯"
   },
   "MirotvorecMul01": {
-   "value": "和平使者"
+   "value": "和平缔造者"
   },
   "NoDrop_RobotBobot01": {
-   "value": "战斗机器人"
+   "value": "军用机器人"
   }
  },
  "uidescription.xml": {
