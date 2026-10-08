@@ -258,7 +258,7 @@
 
 	<Reply
 		name="Dynamic00_Drugs00_npc0"
-		text="好，但得悄悄进行。给你这个包裹。我想你已经明白，里面不是普通货色，而是上等 contraband。它会花掉你 %3d，但你能卖到高得多的价钱……前提是你还活着。买吗？"
+		text="好，但得悄悄进行。给你这个包裹。我想你已经明白，里面不是普通货色，而是上等违禁品。它会花掉你 %3d，但你能卖到高得多的价钱……前提是你还活着。买吗？"
 		role="NPC"
 		nextReplies="Dynamic00_DrugsTake Dynamic00_DrugsNoMoney Dynamic00_plNo0" />
 

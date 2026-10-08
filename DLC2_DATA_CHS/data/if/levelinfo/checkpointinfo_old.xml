@@ -4,107 +4,107 @@
 	<CheckpointInfo
 		id			= "dv1_AfterSwamp"
 		levelName	= "dv1"
-		fullName	= "Îêðåñòíîñòè áàçû"
-		diz			= "Âïåðåäè ìíîãî ìàðîäåðîâ."
+		fullName	= "»ùµØÖÜ±ß"
+		diz			= "Ç°·½ÅÌ¾á×Å´óÁ¿ÂÓ¶áÕß¡£"
 	/>
 	<CheckpointInfo
 		id			= "dv1_AfterSwamp2"
 		levelName	= "dv1"
-		fullName	= "Øîññå â íèêóäà"
-		diz			= "Çàáðîøåíîå êàôå."
+		fullName	= "Í¨ÍùÐéÎÞµÄ¹«Â·"
+		diz			= "·ÏÆúµÄ¿§·È¹Ý¡£"
 	/>
 	<CheckpointInfo
 		id			= "dv1_BeforeCaravan"
 		levelName	= "dv1"
-		fullName	= "Ìàðîäåðû"
-		diz			= "Ìû ó öåëè ïóòåøåñòâèÿ!"
+		fullName	= "ÂÓ¶áÕß"
+		diz			= "ÎÒÃÇÖÕÓÚµ½Ä¿µÄµØÁË£¡"
 	/>
 
 	<CheckpointInfo
 		id			= "dv2_AfterJump"
 		levelName	= "dv2"
-		fullName	= "Äàëåêàÿ ëàáîðàòîðèÿ"
-		diz			= "Ãäå òî ñïðàâà îò îñíîâíîé äîðîãè ëàáîðàòîðèÿ..."
+		fullName	= "Ò£Ô¶µÄÊµÑéÊÒ"
+		diz			= "ÊµÑéÊÒºÃÏñ¾ÍÔÚÖ÷Â·ÓÒ±ß²»Ô¶´¦¡­¡­"
 	/>
 	<CheckpointInfo
 		id			= "dv2_AfterTown2"
 		levelName	= "dv2"
-		fullName	= "Â ïîèñêàõ ïðîôåññîðà"
-		diz			= "Ëàáîðàòîðèÿ âèäèìî áûëà íåáåçîïàñíà..."
+		fullName	= "Ñ°ÕÒ½ÌÊÚ"
+		diz			= "ÄÇ×ùÊµÑéÊÒ¿´ÆðÀ´²»°²È«¡­¡­"
 	/>
 
 	<CheckpointInfo
 		id			= "dv4_After3item"
 		levelName	= "dv4"
-		fullName	= "Ïîèñê ïðîäîëæàåòñÿ"
-		diz			= "Ïàðíè äîëæíû áûòü íå äàëåêî..."
+		fullName	= "ËÑÑ°¼ÌÐø"
+		diz			= "ÄÇ°ïÈËÓ¦¸Ã¾ÍÔÚ²»Ô¶´¦¡­¡­"
 	/>
 	<CheckpointInfo
 		id			= "dv4_AfterAloneTown"
 		levelName	= "dv4"
-		fullName	= "Äàëüøå ïî ñëåäàì"
-		diz			= "Ñèãíàë áûë ãäå òî ðÿäîì, âîçìîæíî ñêîðî ïîèñêè çàêîí÷àòñÿ."
+		fullName	= "Ñ­¼£×·×Ù"
+		diz			= "ÐÅºÅ¾ÍÔÚ¸½½ü£¬ËÑÑ°¿ÖÅÂºÜ¿ì¾ÍÒª½áÊøÁË¡£"
 	/>
 
 
 	<CheckpointInfo
 		id			= "dv5_AfterFall"
 		levelName	= "dv5"
-		fullName	= "Äèêèå äæóíãëè"
-		diz			= "Ñòðàííûå äæóíãëè ïîëíûå ãðèáîâ."
+		fullName	= "Âù»Ä´ÔÁÖ"
+		diz			= "Ò»Æ¬ÆæÒìµÄ´ÔÁÖ£¬³¤ÂúÁËÄ¢¹½¡£"
 	/>
 	<CheckpointInfo
 		id			= "dv5_DarkSwamp"
 		levelName	= "dv5"
-		fullName	= "Áîëîòî"
-		diz			= "Êîãäà òî ýòî áûëî ìèëîå óùåëüå ñ ãîðíîé ðå÷êîé"
+		fullName	= "ÕÓÔó"
+		diz			= "ÕâÀïÔø¾­ÊÇÌõÒËÈËµÄÉ½½§£¬É½¼ä»¹ÓÐÒ»ÌõÐ¡Ïª¡£"
 	/>
 
 	<CheckpointInfo
 		id			= "dv6_startRun"
 		levelName	= "dv6"
-		fullName	= "Â ïîãîíå çà &quot;Z-120&quot;"
-		diz			= "Ñ ïîìîùüþ òåðìîçàðÿäîâ íåîáõîäèìî óíè÷òîæèòü îñòàòêè îïàñíîãî âåùåñòâà"
+		fullName	= "×·»÷¡¸Z-120¡¹"
+		diz			= "±ØÐëÓÃÈÈÈÛµ¯´Ý»ÙÕâÖÖÎ£ÏÕÎïÖÊµÄ²ÐÁô¡£"
 	/>
 	<CheckpointInfo
 		id			= "dv6_AfterFirstTrck"
 		levelName	= "dv6"
-		fullName	= "Ïîñëåäíÿÿ öèñòåðíà"
-		diz			= "Ãäå òî â áîëîòàõ çàòåðÿíà åùå îäíà öèñòåðíà"
+		fullName	= "×îºóÒ»½ÚÓÍ¹Þ"
+		diz			= "ÕÓÔóÀï²»ÖªºÎ´¦»¹²Ø×ÅÒ»½ÚÓÍ¹Þ¡£"
 	/>
 
 	<CheckpointInfo
 		id			= "dv7_AfterRun"
 		levelName	= "dv7"
-		fullName	= "Îñòàíîâèòü áåçóìèå"
-		diz			= "Ñåðæàíò òîêñî õî÷åò êðîâè..."
+		fullName	= "ÖÆÖ¹·è¿ñ"
+		diz			= "ÍÐ¿ËË÷ÖÐÊ¿ÏëÒªÑª¡­¡­"
 	/>
 
 	<CheckpointInfo
 		id			= "dv8_BeforeZombie"
 		levelName	= "dv8"
-		fullName	= "Ñáîðùèêè"
-		diz			= "Âðåìåíè íå ìíîãî, à íàì íàäî îòûñêàòü âñåõ ìóòàíòîâ."
+		fullName	= "²É¼¯Õß"
+		diz			= "Ê±¼ä²»¶àÁË£¬¶øÎÒÃÇ±ØÐëÕÒµ½ËùÓÐµÄ±äÖÖÈË¡£"
 	/>
 	<CheckpointInfo
 		id			= "dv8_BeforeAngar"
 		levelName	= "dv8"
-		fullName	= "Ôëàé-Õèëë"
-		diz			= "Òîëïû ìóòàíòîâ àòàêóþò."
+		fullName	= "¸¥À³É½"
+		diz			= "´óÈº±äÖÖÈËÕýÔÚ½ø¹¥¡£"
 	/>
 
 
 	<CheckpointInfo
 		id			= "dv9_Before1Swamp"
 		levelName	= "dv9"
-		fullName	= "Ïîãîíÿ"
-		diz			= "Ïðîôåññîð óõîäèò, íàäî ïîòîðîïèòñÿ."
+		fullName	= "ÌÓÍö"
+		diz			= "½ÌÊÚÒª×ßÁË£¬ÎÒÃÇµÃ×¥½ô¡£"
 	/>
 	<CheckpointInfo
 		id			= "dv9_BeforeBoss"
 		levelName	= "dv9"
-		fullName	= "Ïàïåðñ äîëæåí óìåðåòü"
-		diz			= "Êàæåòñÿ íàñòàëî âðåìÿ ïîñëåäíåé áèòâû"
+		fullName	= "ÅÁÅåË¹±ØÐëËÀ"
+		diz			= "¿´À´×îºóÒ»Õ½µÄÊ±¿Ìµ½ÁË¡£"
 	/>
 
 

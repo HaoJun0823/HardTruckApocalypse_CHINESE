@@ -2,45 +2,45 @@
 <resource><!--Default buttons-->
 	<string
 		id="stat_Wares"
-		value="Òîâàðîâ ïåðåâåçåíî (øò.)" />
+		value="ÔËÊä»õÎï£¨¼þ£©" />
 
 	<string
 		id="stat_RealTime"
-		value="Âðåìÿ èãðû (÷ : ìèí)" />
+		value="ÓÎÏ·Ê±¼ä£¨Ê± : ·Ö£©" />
 
 	<string
 		id="stat_GameTime"
-		value="Âíóòðèèãðîâîå âðåìÿ (äíè)" />
+		value="ÓÎÏ·ÄÚÊ±¼ä£¨Ìì£©" />
 
 	<string
 		id="stat_PeoplesKilled"
-		value="Æèòåëåé óáèòî" />
+		value="»÷É±¾ÓÃñ" />
 
 	<string
 		id="stat_PathElapsed"
-		value="Ïðîéäåííûé ïóòü (êì)" />
+		value="ÐÐÊ»Àï³Ì£¨¹«Àï£©" />
 
 	<string
 		id="stat_GDP"
-		value="Äåíåã çàðàáîòàíî" />
+		value="×¬µ½µÄÇ®" />
 
 	<string
 		id="stat_DeathCounter"
-		value="Êîëè÷åñòâî ñìåðòåé èãðîêà" />
+		value="Íæ¼ÒËÀÍö´ÎÊý" />
 
 	<string
 		id="stat_VehiclesKilled"
-		value="Ìàøèí óíè÷òîæåíî" />
+		value="´Ý»Ù³µÁ¾" />
 
 	<string
 		id="stat_ShellsEmitted"
-		value="Çàðÿäîâ âûïóùåíî" />
+		value="·¢Éäµ¯Íè" />
 
 	<string
 		id="stat_FavoriteGun"
-		value="Ëþáèìîå îðóæèå" />
+		value="³£ÓÃÎäÆ÷" />
 
 	<string
 		id="stat_HitRatio"
-		value="Òî÷íîñòü ïîïàäàíèÿ (%)" />
+		value="ÃüÖÐÂÊ£¨%£©" />
 </resource>
