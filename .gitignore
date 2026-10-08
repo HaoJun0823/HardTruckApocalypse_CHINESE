@@ -371,3 +371,7 @@ DLC2_MemFix/build/
 #   `!tools/release/` å…ˆæŠŠç›®å½•æœ¬èº«æå›æ¥ï¼Œå†é€ä¸ªæå›è„šæœ¬æ–‡ä»¶ã€‚
 !tools/release/
 !tools/release/**
+# ±¾µØÑéÖ¤ÓÃµÄÁÙÊ±¿ËÂ¡£¨Ä£Äâ CI checkout£©
+/_fresh*/
+/_cisim*/
+
