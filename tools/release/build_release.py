@@ -77,7 +77,8 @@ PKGS = {
         'exe': 'hta.exe',
         'bat_prefix': 'hta',
         'config': 'base',            # dist/config/base.cfg
-        'readme': 'base',            # dist/必读说明/base.txt
+        # ★ 三个包统一用 dlc.txt（系列通用版，覆盖三个游戏的差异，见步骤 3 说明）
+        'readme': 'dlc',
         'fonts_src': 'Original_DATA/data/if/fonts/fonts.xml',
         'text_dir': 'Original_DATA_CHS',
         'cjk_bin_src': None,         # base 的 bin 由烘焙产出，改名 hta_chs_cjk.bin
@@ -209,11 +210,38 @@ def build_one(key, spec, fonts_out_dir, out_root, date, do_zip):
     stats['bat'] = len(bats)
 
     # ── 3) 静态资源：必读说明 + config.cfg ──────────────────────────────
+    #    ★ 三个包用**同一份**必读说明（`dist/必读说明/dlc.txt`）：
+    #      它是"系列通用"版，覆盖三个游戏的差异（街机版/部落崛起各自的
+    #      注意事项都写在里面）；本体专用的那份信息量更少且只提 hta.exe，
+    #      对两个资料片是错的。故 spec['readme'] 一律指 dlc.txt。
     shutil.copy2(os.path.join(ROOT, 'dist', '必读说明', spec['readme'] + '.txt'),
                  os.path.join(dst, '必读说明.txt'))
     os.makedirs(os.path.join(dst, 'data'), exist_ok=True)
     shutil.copy2(os.path.join(ROOT, 'dist', 'config', spec['config'] + '.cfg'),
                  os.path.join(dst, 'data', 'config.cfg'))
+
+    # ── 3b) License/License.txt ────────────────────────────────────────
+    #    把 License/ 下的第三方许可原文按**文件名排序**拼成单个 License.txt
+    #    放进包根（与 MajestyIIExtend 的做法一致）。顺序固定 → 产物可复现。
+    #    内容为该包真正分发的组件：ASI Loader（winmm.dll）+ 思源黑体（字形
+    #    烘进了 cjk 图集）+ texconv（仅构建期用，一并列明以免疑义）。
+    lic_dir = os.path.join(ROOT, 'License')
+    must(os.path.isdir(lic_dir), '缺少 License/ 目录')
+    lic_files = sorted(f for f in os.listdir(lic_dir) if f.lower().endswith('.txt'))
+    must(lic_files, 'License/ 目录里没有任何 .txt')
+    parts = []
+    for i, f in enumerate(lic_files):
+        # 用 UTF-8 读、CRLF 写（Windows 记事本对 LF 兼容不佳）
+        txt = open(os.path.join(lic_dir, f), encoding='utf-8').read()
+        if i:
+            parts.append('\n\n' + '=' * 78 + '\n\n')
+        parts.append(txt)
+    lic_out = os.path.join(dst, 'License.txt')
+    with open(lic_out, 'wb') as fh:
+        fh.write(''.join(parts).replace('\r\n', '\n').replace('\n', '\r\n')
+                 .encode('utf-8'))
+    stats['license_files'] = lic_files
+    log('  License.txt: 合并 %d 份（%s）' % (len(lic_files), ', '.join(lic_files)))
 
     # ── 4) 字库（烘焙产物）→ data/if/fonts ─────────────────────────────
     #   烘焙输出目录布局：<fonts_out>/<key>/{data/if/fonts/*, hta_chs_cjk.bin}

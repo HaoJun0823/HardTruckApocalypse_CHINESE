@@ -16,12 +16,21 @@
 | `清除俄语输入法布局.exe` / `.ps1` | 卸载俄语键盘布局 KLID `00000419` | 游戏根目录 |
 | `bat/` | 6 个启动/补丁 bat（按游戏前缀区分，装配时取该游戏的 2 个） | 游戏根目录 |
 | `config/base.cfg` `dlc1.cfg` `dlc2.cfg` | 三份**中文 profile 名**的配置（各游戏一份） | `data/config.cfg` |
-| `必读说明/base.txt` `dlc.txt` | 安装/卸载/已知问题（本体一份、两个资料片共用一份） | `必读说明.txt` |
+| `必读说明/dlc.txt` | 安装/卸载/已知问题 —— **系列通用版，三个包共用** | `必读说明.txt` |
+
+> 第三方许可原文在 [License/](../License/)，装配时按文件名排序合并成包内
+> `License.txt`（做法与 [MajestyIIExtend](../../MajestyIIExtend/) 一致）。
 
 > `X86Game4gb.exe` 与 [X86Game4gb/Release/X86Game4gb.exe](../X86Game4gb/) 哈希一致
 > （`3E1DA3B1…`）；`清除俄语输入法布局.exe` 与
 > [Clean_RUS_Layout/Release/Clean_RUS_Layout.exe](../Clean_RUS_Layout/) 哈希一致。
 > 本目录的副本是**发布的唯一来源**，改源码后要同步更新这里。
+
+### 为什么必读说明只有一份（dlc.txt）
+
+`dlc.txt` 是「系列通用」版，明确覆盖三个游戏的差异（部落崛起必须单核启动、
+街机版不能单核、`游戏名称.exe.bak` 的还原方式等）。本体专用版信息量更少，
+且只提 `hta.exe`，对两个资料片是错的。故三个包统一用这一份。
 
 ### 为什么 winmm.dll 直接存在仓库里
 
@@ -115,7 +124,7 @@ start /AFFINITY 0x2 Meridian113
 :: 3) 俄语布局清理：与本体完全相同
 ```
 
-两点差异要知道（详见 [PATH_D_DESIGN.md §10](../PATH_D_DESIGN.md)）：
+两点差异要知道（详见 [PATH_D_DESIGN.md §10](../docs/PATH_D_DESIGN.md)）：
 
 | 项 | 本体 `hta.exe` | 资料片 `Meridian113.exe` |
 |---|---|---|

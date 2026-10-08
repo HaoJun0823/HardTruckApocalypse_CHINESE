@@ -4,8 +4,8 @@
 > 游戏菜单与状态栏汉字渲染正确，60 秒运行零崩溃。
 > 实现见 `HardTruckApocalypse_CHINESE_DLL/pathd.cpp`，补丁全部在运行时打，**不改 hta.exe 文件**。
 >
-> 截图：[docs/screenshots/milestone-20261006-cjk-render.png](docs/screenshots/milestone-20261006-cjk-render.png)
-> （对照：[修复前](docs/screenshots/before-perfont-tables-20261006.png)）
+> 截图：[screenshots/milestone-20261006-cjk-render.png](screenshots/milestone-20261006-cjk-render.png)
+> （对照：[修复前](screenshots/before-perfont-tables-20261006.png)）
 
 ---
 

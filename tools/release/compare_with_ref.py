@@ -20,6 +20,11 @@ EXPECTED_MISSING = {
     # 翻译过程的备份文件，无用途；BASE 参考包误打包了 5 个，DLC1/DLC2 都没打
     '.bak',
 }
+# 我们**有意新增**、参考包里没有的文件（不算差异）
+#   License.txt 是本次新增的第三方许可合并文件（参考包没有）
+EXPECTED_ADDED = {
+    'License.txt',
+}
 # 仅为占位判断用的孤儿图集条件
 ORPHAN_PREFIX = 'cjk_'
 
@@ -121,7 +126,10 @@ def main():
                 else:
                     unknown.append(('REF-ONLY', rel))
             else:
-                only_mine.append(rel)
+                if os.path.basename(rel) in EXPECTED_ADDED:
+                    expected.append(('ADDED(ok)', rel))
+                else:
+                    only_mine.append(rel)
 
         print('=' * 72)
         print('[%s] 相同 %d | 有意差异 %d | 只在我方 %d | 计划外差异 %d'

@@ -54,7 +54,8 @@ PKG_SPEC = {
 }
 
 # 每个包都必须有的根目录静态资源
-ROOT_REQ = ['winmm.dll', 'X86Game4gb.exe', '必读说明.txt',
+#   License.txt 是 License/ 下第三方许可原文合并而成（见 build_release.py 3b）
+ROOT_REQ = ['winmm.dll', 'X86Game4gb.exe', '必读说明.txt', 'License.txt',
             '清除俄语输入法布局.exe', '清除俄语输入法布局.ps1']
 
 # 预期之外的扩展名（打包事故的典型信号）
@@ -92,6 +93,37 @@ def main():
         if not os.path.isfile(os.path.join(d, 'data', 'config.cfg')):
             print('!! [%s] 缺 data/config.cfg' % key)
             ok = False
+
+        # 3b) License.txt：必须是多份许可合并（含 ASI Loader 与思源黑体）
+        lic = os.path.join(d, 'License.txt')
+        if not os.path.isfile(lic):
+            print('!! [%s] 缺 License.txt' % key)
+            ok = False
+        else:
+            ltxt = open(lic, encoding='utf-8', errors='replace').read()
+            for must_have in ('Ultimate ASI Loader', 'ThirteenAG',
+                              'SIL OPEN FONT LICENSE', 'MIT License'):
+                if must_have not in ltxt:
+                    print('!! [%s] License.txt 缺少「%s」' % (key, must_have))
+                    ok = False
+            if ltxt.count('==========') < 2:
+                print('!! [%s] License.txt 疑似只有 1 份许可（缺分隔）' % key)
+                ok = False
+
+        # 3c) 必读说明：三个包统一用系列通用版，应覆盖 DLC 相关说明
+        rd = os.path.join(d, '必读说明.txt')
+        if not os.path.isfile(rd):
+            print('!! [%s] 缺 必读说明.txt' % key)
+            ok = False
+        else:
+            rtxt = open(rd, encoding='utf-8', errors='replace').read()
+            #    ★ 底包/资料片统一使用系列通用版，该版含 DLC 段落；
+            #      若误用本体专用版，这两条会缺失。
+            for must_have in ('DLC1', '系列'):
+                if must_have not in rtxt:
+                    print('!! [%s] 必读说明.txt 缺少「%s」（像是用错了版本）'
+                          % (key, must_have))
+                    ok = False
 
         # 4) 字库：fonts.xml + 图集页，且声明与磁盘一致（防孤儿 / 防漏发）
         fdir = os.path.join(d, 'data', 'if', 'fonts')

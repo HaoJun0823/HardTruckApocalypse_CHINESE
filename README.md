@@ -105,9 +105,33 @@ python tools/release/verify_release.py release
 | `Original_DATA_CHS/` `DLC1_DATA_CHS/` `DLC2_DATA_CHS/` | **译文 XML**（update 覆盖层的内容） |
 | `Original_DATA/` `DLC1_DATA/` | 原版俄文资料（烘焙源的 `fonts.xml` 在这里） |
 | `dist/` | 静态原料库（winmm、工具 exe、bat、config、必读说明） |
+| `License/` | 第三方组件许可原文（装配时合并为包内 `License.txt`） |
 | `tools/release/` | 发布流水线脚本 |
-| `docs/` | 根因分析与移植记录 |
+| `docs/` | 根因分析、移植记录、[路径 D 总设计](docs/PATH_D_DESIGN.md) |
 | `archives/` | 历史快照与一次性脚手架（**不入库**，见 `.gitignore`） |
+
+---
+
+## 发布包内布局（三个包同构）
+
+```
+<包根>/
+  winmm.dll            Ultimate ASI Loader（MIT）
+  X86Game4gb.exe       LAA 补丁器
+  清除俄语输入法布局.exe / .ps1
+  <游戏名>_【必装】…bat  一键打 LAA 补丁
+  <游戏名>_单核…bat      单核启动
+  必读说明.txt          安装/卸载/已知问题（三包同一份，系列通用版）
+  License.txt          第三方许可合并（ASI Loader + 思源黑体 + texconv）
+  data/
+    config.cfg         中文 profile 名
+    if/fonts/          fonts.xml + cjk_*.dds（烘焙产物）
+  update/
+    hta_chs*.asi       汉化插件
+    <MemFix>.asi/.ini  崩溃修复插件
+    hta_chs_cjk*.bin   字形包
+    data/…             译文 XML（引擎的覆盖层）
+```
 
 ---
 
@@ -115,11 +139,23 @@ python tools/release/verify_release.py release
 
 | 文档 | 内容 |
 |---|---|
-| [PATH_D_DESIGN.md](PATH_D_DESIGN.md) | 路径 D 总设计：让单字节渲染引擎显示 GBK 双字节汉字 |
+| [docs/PATH_D_DESIGN.md](docs/PATH_D_DESIGN.md) | 路径 D 总设计：让单字节渲染引擎显示 GBK 双字节汉字 |
 | [docs/2026-10-08-…LAA崩溃修复.md](docs/2026-10-08-资料片113汉化移植与LAA崩溃修复.md) | 113 移植的锚点差异 + LAA 崩溃取证 + MemFix 实现陷阱 |
 | [docs/2026-10-07-LAA内存扩展崩溃-根因与Render9Fix.md](docs/2026-10-07-LAA内存扩展崩溃-根因与Render9Fix.md) | 本体 LAA 崩溃的完整取证链 |
 | [docs/2026-10-07-汉化冻结门时序失败-根因与修复.md](docs/2026-10-07-汉化冻结门时序失败-根因与修复.md) | 冷启动/热重启两个时序竞态 |
 | [docs/README.md](docs/README.md) | 文档索引 |
+
+---
+
+## 第三方组件与许可
+
+| 组件 | 版权 | 许可 | 是否随包分发 |
+|---|---|---|---|
+| `winmm.dll`（Ultimate ASI Loader 9.7.4） | ThirteenAG | MIT | ✅ 是 |
+| `fontgen/SourceHanSansHWSC-VF.ttf`（思源黑体） | Adobe | SIL OFL 1.1 | ✅ 字形烘进 `cjk_*.dds` |
+| `fontgen/texconv.exe`（DirectXTex） | Microsoft | MIT | ❌ 仅构建期用 |
+
+许可原文见 [License/](License/)。发布包内合并为单个 `License.txt`。
 
 ---
 
