@@ -182,7 +182,7 @@
 
 	<string
 		id="ProfileExists"
-		value="Profile with this name is already existed.|Enter another name" />
+		value="¸ÃÃû³ÆµÄ´æµµÒÑ´æÔÚ¡£|ÇëÊäÈëÆäËûÃû³Æ" />
 
 	<string
 		id="EmptyProfileName"
@@ -230,11 +230,11 @@
 <!-- Òåêñò ñïëýøåé -->
 	<string
 		id="Loading"
-		value="Load" />
+		value="¶ÁÈ¡ÖÐ" />
 
 	<string
 		id="LoadingDots"
-		value="LOADING…" />
+		value="¶ÁÈ¡ÖÐ¡­" />
 
 	<string
 		id="LoadWorld"
@@ -246,7 +246,7 @@
 
 	<string
 		id="MainMenuLoading"
-		value="Load" />
+		value="¶ÁÈ¡ÖÐ" />
 
 	<string
 		id="AnimatedModelsServer"
@@ -338,7 +338,7 @@
 
 	<string
 		id="BloomQuality"
-		value="Bloom quality" />
+		value="·º¹âÖÊÁ¿" />
 
 	<string
 		id="WaterQuality"
@@ -482,7 +482,7 @@
 
 	<string
 		id="OptionsChanged"
-		value="Settings were changed. Save changes?" />
+		value="ÉèÖÃÒÑ¸ü¸Ä¡£ÊÇ·ñ±£´æ£¿" />
 
 	<string
 		id="ShadowsQuality"
@@ -498,7 +498,7 @@
 
 	<string
 		id="BindingsChanged"
-		value="Controls were changed. Save changes?" />
+		value="°´¼üÒÑÖØÐÂ¶¨Òå¡£ÊÇ·ñ±£´æ£¿" />
 
 	<string
 		id="GameDifficulty"
@@ -550,7 +550,7 @@
 
 	<string
 		id="ServerCaptionTip"
-		value="Configure and launch a network game server" />
+		value="ÅäÖÃ²¢Æô¶¯Áª»úÓÎÏ··þÎñÆ÷" />
 
 	<string
 		id="ClientCaption"
@@ -558,7 +558,7 @@
 
 	<string
 		id="ClientCaptionTip"
-		value="Find a network game and join it" />
+		value="²éÕÒ²¢¼ÓÈëÁª»úÓÎÏ·" />
 
 	<string
 		id="OptionsCaption"
@@ -566,7 +566,7 @@
 
 	<string
 		id="OptionsCaptionTip"
-		value="Configure the player network game settings" />
+		value="ÅäÖÃÍæ¼ÒµÄÁª»úÓÎÏ·ÉèÖÃ" />
 <!-- Server settings -->
 	<string
 		id="Server settings"
@@ -598,11 +598,11 @@
 
 	<string
 		id="FragLimit"
-		value="Body count" />
+		value="»÷É±ÉÏÏÞ" />
 
 	<string
 		id="TimeLimit"
-		value="Time" />
+		value="Ê±ÏÞ" />
 
 	<string
 		id="PlayersLimit"
@@ -614,11 +614,11 @@
 
 	<string
 		id="MoreAbbrevCarTip"
-		value="Detailed info on vehicles" />
+		value="³µÁ¾ÏêÏ¸ÐÅÏ¢" />
 
 	<string
 		id="MoreAbbrevMapTip"
-		value="Detailed info on maps" />
+		value="µØÍ¼ÏêÏ¸ÐÅÏ¢" />
 
 	<string
 		id="TeamOptions"
@@ -742,7 +742,7 @@
 
 	<string
 		id="MediumMultiplayerLevel"
-		value="Middle" />
+		value="ÖÐµÈ" />
 
 	<string
 		id="HeavyMultiplayerLevel"
@@ -762,7 +762,7 @@
 
 	<string
 		id="ClientAdditionalTip"
-		value="Connect to the network game with specified server address and port" />
+		value="Ê¹ÓÃÖ¸¶¨µÄ·þÎñÆ÷µØÖ·ºÍ¶Ë¿ÚÁ¬½ÓÁª»úÓÎÏ·" />
 
 	<string
 		id="ClientConnect"
@@ -838,15 +838,15 @@
 
 	<string
 		id="Sheme_Peace"
-		value="Peaceful (+1)" />
+		value="ºÍÆ½£¨+1£©" />
 
 	<string
 		id="Sheme_Combat_MP"
-		value="Military" />
+		value="¾üÊÂ" />
 
 	<string
 		id="Sheme_Peace_MP"
-		value="Peaceful" />
+		value="ºÍÆ½" />
 <!-- Teams settings -->
 	<string
 		id="Teams settings"
@@ -1050,7 +1050,7 @@
 
 	<string
 		id="LogoName_21"
-		value="USSSR" />
+		value="ËÕÁª" />
 
 	<string
 		id="LogoName_22"
@@ -1138,91 +1138,91 @@
 <!-- Multiplayer messages -->
 	<string
 		id="ServerHasNewerProtocolVersion"
-		value="Unable to connect - the server uses a newer protocol version." />
+		value="ÎÞ·¨Á¬½Ó ¡ª¡ª ·þÎñÆ÷Ê¹ÓÃÁË¸üÐÂµÄÐ­Òé°æ±¾¡£" />
 
 	<string
 		id="ServerHasOlderProtocolVersion"
-		value="Unable to connect - the server uses an older protocol version." />
+		value="ÎÞ·¨Á¬½Ó ¡ª¡ª ·þÎñÆ÷Ê¹ÓÃÁË¸ü¾ÉµÄÐ­Òé°æ±¾¡£" />
 
 	<string
 		id="TooManyPlayersOnServer"
-		value="Unable to connect - the server is full." />
+		value="ÎÞ·¨Á¬½Ó ¡ª¡ª ·þÎñÆ÷ÒÑÂúÔ±¡£" />
 
 	<string
 		id="ServerHasLeftTheGame"
-		value="Host left the game." />
+		value="Ö÷»úÒÑÀë¿ªÓÎÏ·¡£" />
 
 	<string
 		id="ServerDied"
-		value="Connection to server lost." />
+		value="Óë·þÎñÆ÷µÄÁ¬½ÓÒÑ¶Ï¿ª¡£" />
 
 	<string
 		id="NetworkErrorOnServer"
-		value="Net error. The server is shutting down." />
+		value="ÍøÂç´íÎó¡£·þÎñÆ÷ÕýÔÚ¹Ø±Õ¡£" />
 
 	<string
 		id="NetworkErrorOnClientPreUpdateThread"
-		value="Net error. Unable to maintain connection with server." />
+		value="ÍøÂç´íÎó¡£ÎÞ·¨Î¬³ÖÓë·þÎñÆ÷µÄÁ¬½Ó¡£" />
 
 	<string
 		id="ServerMapDoesntExistOnClient"
-		value="The map used by the host is missing." />
+		value="Ö÷»úÊ¹ÓÃµÄµØÍ¼²»´æÔÚ¡£" />
 
 	<string
 		id="ServerNotReady"
-		value="Server not ready." />
+		value="·þÎñÆ÷Î´¾ÍÐ÷¡£" />
 
 	<string
 		id="PressAnyKey"
-		value="Press any key." />
+		value="Çë°´ÈÎÒâ¼ü¡£" />
 
 	<string
 		id="Play"
-		value="Game" />
+		value="ÓÎÏ·" />
 
 	<string
 		id="Player"
-		value="Player" />
+		value="Íæ¼Ò" />
 
 	<string
 		id="Mission"
-		value="Mission" />
+		value="ÈÎÎñ" />
 
 	<string
 		id="Unknown"
-		value="Unknown" />
+		value="Î´Öª" />
 
 	<string
 		id="Back"
-		value="Back" />
+		value="·µ»Ø" />
 
 	<string
 		id="Keyboard"
-		value="Keyboard" />
+		value="¼üÅÌ" />
 
 	<string
 		id="Mouse"
-		value="Mouse" />
+		value="Êó±ê" />
 
 	<string
 		id="Audio"
-		value="Sound" />
+		value="ÒôÐ§" />
 
 	<string
 		id="Briefing"
-		value="Briefing" />
+		value="ÈÎÎñ¼ò±¨" />
 
 	<string
 		id="Garage"
-		value="Garage" />
+		value="³µ¿â" />
 
 	<string
 		id="StartMission"
-		value="Begin mission" />
+		value="¿ªÊ¼ÈÎÎñ" />
 
 	<string
 		id="MainMenu"
-		value="Main menu" />
+		value="Ö÷²Ëµ¥" />
 
 	<string
 		id="lev"
@@ -1230,71 +1230,71 @@
 
 	<string
 		id="Structure"
-		value="Vehicle" />
+		value="ÔØ¾ß" />
 
 	<string
 		id="Upgrade_Health"
-		value="Armor" />
+		value="×°¼×" />
 
 	<string
 		id="Upgrade_Speed"
-		value="Speed" />
+		value="ËÙ¶È" />
 
 	<string
 		id="Upgrade_Thorns"
-		value="Ram device" />
+		value="×²½Ç×°ÖÃ" />
 
 	<string
 		id="Upgrade_Mines"
-		value="Mine layer" />
+		value="²¼À××°ÖÃ" />
 
 	<string
 		id="Upgrade_Jumper"
-		value="Jumping device" />
+		value="ÌøÔ¾×°ÖÃ" />
 
 	<string
 		id="Upgrade_Nitro"
-		value="Accelerator" />
+		value="¼ÓËÙ×°ÖÃ" />
 
 	<string
 		id="Upgrade_BaseGun"
-		value="Machine-gun" />
+		value="»úÇ¹" />
 
 	<string
 		id="Upgrade_RocketGun"
-		value="Rocket launcher" />
+		value="»ð¼ý·¢ÉäÆ÷" />
 
 	<string
 		id="Upgrade_FireThower"
-		value="Flamethrower" />
+		value="»ðÑæÅçÉäÆ÷" />
 
 	<string
 		id="Upgrade_ZenithGun"
-		value="Flak cannon" />
+		value="¸ßÉäÅÚ" />
 
 	<string
 		id="UninstallAll"
-		value="Remove all" />
+		value="È«²¿²ð³ý" />
 
 	<string
 		id="TipUninstallAll"
-		value="Remove all vehicle equipment" />
+		value="²ð³ýÈ«²¿ÔØ¾ß×°±¸" />
 
 	<string
 		id="RequestUninstallAll"
-		value="Are you sure you want to remove all equipment installed on the vehicle?" />
+		value="È·¶¨Òª²ð³ý×°ÔÚ¸ÃÔØ¾ßÉÏµÄÈ«²¿×°±¸Âð£¿" />
 
 	<string
 		id="Weapon"
-		value="Weapons" />
+		value="ÎäÆ÷" />
 
 	<string
 		id="Gadgets"
-		value="Devices" />
+		value="×°ÖÃ" />
 
 	<string
 		id="Results"
-		value="Total" />
+		value="×Ü¼Æ" />
 
 	<string
 		id="max"
