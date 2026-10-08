@@ -2,41 +2,41 @@
 <resource>
 	<string
 		id="LoadTip_00"
-		value="You can greatly increase your firepower by collecting extra weapons." />
+		value="拾取额外武器能大幅提升你的火力。" />
 
 	<string
 		id="LoadTip_01"
-		value="Keep away from water - it can destroy your vehicle faster than the mightiest foe." />
+		value="远离水源——它摧毁载具的速度比最强大的敌人还快。" />
 
 	<string
 		id="LoadTip_02"
-		value="You can look around by holding the middle mouse button." />
+		value="按住鼠标中键可以环视四周。" />
 
 	<string
 		id="LoadTip_03"
-		value="GPS navigation system is a basic device of your vehicle, it always shows the correct movement direction." />
+		value="GPS 导航系统是载具的基本设备，它始终显示正确的行驶方向。" />
 
 	<string
 		id="LoadTip_04"
-		value="You can greatly improve your wealth by finding and collecting bonuses." />
+		value="寻找并拾取奖励能让你迅速积累财富。" />
 
 	<string
 		id="LoadTip_05"
-		value="Remember that a static target is an easy prey. Maneuver more." />
+		value="记住，静止的目标最容易下手。多机动。" />
 
 	<string
 		id="LoadTip_06"
-		value="Use level features to vanquish your enemies." />
+		value="善用地形特点消灭敌人。" />
 
 	<string
 		id="LoadTip_07"
-		value="Ram is a good old device against the enemies who drive cars." />
+		value="撞击是对付汽车类敌人的老牌手段。" />
 
 	<string
 		id="LoadTip_08"
-		value="Government rewards you for every destroyed enemy." />
+		value="每摧毁一个敌人，政府都会给你奖励。" />
 
 	<string
 		id="LoadTip_09"
-		value="Mutant mushrooms are dangerous for all life forms." />
+		value="变异蘑菇对一切生命都构成威胁。" />
 </resource>
