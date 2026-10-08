@@ -873,27 +873,27 @@
 	<Item
 		id="uralCab01"
 		locForm="0"
-		value="铬（一级）" />
+		value="铬（1级）" />
 
 	<Item
 		id="uralCab02"
 		locForm="0"
-		value="军旗（二级）" />
+		value="标准（2级）" />
 
 	<Item
 		id="uralCab03"
 		locForm="0"
-		value="领主（四级）" />
+		value="领主（4级）" />
 
 	<Item
 		id="uralCab04"
 		locForm="0"
-		value="马略（Mорион，三级）" />
+		value="马略（3级）" />
 
 	<Item
 		id="uralCab05"
 		locForm="0"
-		value="勇士（五级）" />
+		value="勇士（5级）" />
 
 	<Item
 		id="uralCargo01"
