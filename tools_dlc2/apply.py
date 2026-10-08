@@ -22,11 +22,21 @@ import xlit
 ROOT = xlit.ROOT
 
 _FMT = re.compile(r'%(\d+\$)?[-+ #0]*[\d.]*[a-zA-Z%]')
+# 需保留的字面量：@%# 是原版脏话遮罩（dv4_t3），% h 是 "|°" 的温度写法（dv4_t1）。
+# 先把它们替换成哨兵，抽完占位符再还原。
+_LITERAL_PCT = re.compile(r'@%#|%(?=\s)')
 
 
 def fmt_specs(s):
-    """抽取格式占位符集合，%% 视作字面量不计。"""
-    return sorted(m.group(0) for m in _FMT.finditer(s) if m.group(0) != '%%')
+    """抽取格式占位符集合。
+
+    - `%%` 视作字面量不计。
+    - `@%#` 是原版用来遮蔽脏话的写法（questinfoglobal dv4_t3 "this @%# SWAT"），
+      不是格式符，必须保留。
+    - `%` 后跟空白也不是格式符（dv4_t1 天气预报道数 "85-95%" 被 _FMT 误吃成 "% h"）。
+    """
+    s2 = _LITERAL_PCT.sub('\x00', s)
+    return sorted(m.group(0) for m in _FMT.finditer(s2) if m.group(0) != '%%')
 
 
 # 无需翻译：剥掉格式占位符后只剩数字/标点（如 "640 x 480"、"0/5"）。
