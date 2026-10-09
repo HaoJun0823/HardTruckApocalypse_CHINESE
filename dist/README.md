@@ -17,6 +17,7 @@
 | `bat/` | 6 个启动/补丁 bat（按游戏前缀区分，装配时取该游戏的 2 个） | 游戏根目录 |
 | `config/base.cfg` `dlc1.cfg` `dlc2.cfg` | 三份**中文 profile 名**的配置（各游戏一份） | `data/config.cfg` |
 | `必读说明/dlc.txt` | 安装/卸载/已知问题 —— **系列通用版，三个包共用** | `必读说明.txt` |
+| `runtime-x64/` | texconv 在 wine 下运行所需的 4 个 x64 VC 运行库（**仅 CI 构建期用，不进包**） | — |
 
 > 第三方许可原文在 [License/](../License/)，装配时按文件名排序合并成包内
 > `License.txt`（做法与 [MajestyIIExtend](../../MajestyIIExtend/) 一致）。
@@ -25,6 +26,23 @@
 > （`3E1DA3B1…`）；`清除俄语输入法布局.exe` 与
 > [Clean_RUS_Layout/Release/Clean_RUS_Layout.exe](../Clean_RUS_Layout/) 哈希一致。
 > 本目录的副本是**发布的唯一来源**，改源码后要同步更新这里。
+
+### `runtime-x64/` 是什么
+
+[fontgen/texconv.exe](../fontgen/) 是 Windows 程序，导入
+`MSVCP140` / `VCRUNTIME140` / `VCRUNTIME140_1` / `VCOMP140`。在 CI 的 wine 里
+运行它必须把这 4 个真 DLL 放到 exe 同目录（wine 内置实现不完整；Windows 的
+DLL 搜索顺序里 exe 同目录优先）。
+
+它们**不在** msvc-wine 下载的 VC 14.16 工具链里：该工具链的 `Hostx64/x64`
+只有 `msvcp140 / vcruntime140 / msvcp140_1 / msvcp140_2`，**没有
+`vcruntime140_1.dll`**（VS2019/14.20 才引入）也没有 `vcomp140.dll`（在
+VC/Redist 的 OpenMP 组件下，而 vsdownload 不拉 Redist）。
+
+所以把 4 个 x64 DLL 直接入库（共 865 KB），与 `winmm.dll` 同样处理：
+不构建、直接用，消除外网下载与 nuget 包 ID 失效的风险。版本是
+`14.29.30157`（VC142）—— MSVC 14.x 系列保持二进制向后兼容，可给 VS2017
+(14.16) 编出的 texconv.exe 用（本地实测加载成功）。
 
 ### 为什么必读说明只有一份（dlc.txt）
 

@@ -1,12 +1,26 @@
 #!/usr/bin/env bash
 # 在指定目录跑完整流水线（烘焙 + 装配 + 校验），供本地验证用。
 # 用法：bash tools/release/run_local_pipeline.sh [仓库根]
+if [ -z "${BASH_VERSION:-}" ]; then
+  echo "!! 本脚本需要 bash（不要用 sh 调用）" >&2; exit 1
+fi
 set -euo pipefail
 ROOT="${1:-$(cd "$(dirname "$0")/../.." && pwd)}"
 cd "$ROOT"
 echo "仓库根: $ROOT"
 
 : > /tmp/hta_pipeline.log
+
+# ── 与 CI 对齐：把 texconv 的运行库复制到它旁边 ────────────────────────
+#   仅在用 wine 跑 texconv（设了 HTA_TEXCONV）时才需要 —— Windows 本机跑
+#   texconv 时这些 DLL 由系统提供。CI 上有同样的一步。
+if [ -n "${HTA_TEXCONV:-}" ]; then
+  for f in msvcp140.dll vcruntime140.dll vcruntime140_1.dll vcomp140.dll; do
+    [ -f "dist/runtime-x64/$f" ] || { echo "!! 缺 dist/runtime-x64/$f" >&2; exit 1; }
+    cp -f "dist/runtime-x64/$f" fontgen/
+  done
+  echo "已为 wine 复制 texconv 运行库（4 个）"
+fi
 
 bake() {
   local key="$1" fonts="$2" text="$3"

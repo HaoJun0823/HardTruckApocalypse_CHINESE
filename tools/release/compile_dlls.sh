@@ -40,8 +40,19 @@
 #   ★ /SAFESEH：vcxproj 未显式写，但 x86 链接默认开启，历史产物同此。
 #   ★ 所有开关用 '-' 前缀而非 '/'：wine 会把 "/xxx" 当 Unix 路径。
 #
-# 用法：MSVC_WINE_PREFIX=/path/to/.msvc sh tools/release/compile_dlls.sh
+# 用法：MSVC_WINE_PREFIX=/path/to/.msvc bash tools/release/compile_dlls.sh
+#       ★ 必须用 **bash**（不要用 sh）—— 本脚本用了 bash 数组与 pipefail；
+#         Ubuntu 的 /bin/sh 是 dash，显式 `sh 脚本` 会忽略下面的 shebang。
 # ===========================================================================
+#
+# 自检：必须在 bash 下运行。dash 不支持下面的 set -o pipefail，会先报
+# "set: Illegal option -o pipefail" 而看不到真正原因（实测踩到过）。
+if [ -z "${BASH_VERSION:-}" ]; then
+  echo "!! 本脚本需要 bash（当前不是 bash，可能是 dash/sh）" >&2
+  echo "   请用：bash $0" >&2
+  exit 1
+fi
+
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")/../.." && pwd)"

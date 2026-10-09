@@ -83,9 +83,10 @@ jobs:
       MSVC_SDK_DIR: ${{ github.workspace }}/.msvc-sdk
       # msvc-wine 上游 checkout 的 ref。升级时改这里 —— cache key 含它。
       MSVCWINE_REF: master
-      # ★ 让 fontgen/build_cjk.py 在 wine 里调用 Windows 版 texconv.exe。
-      #   脚本本身跨平台：设了这个变量就走 wine，不设就直接执行（本机行为）。
-      HTA_TEXCONV: wine64 ${{ github.workspace }}/fontgen/texconv.exe
+      # ★ HTA_TEXCONV（给 fontgen/build_cjk.py 指定 wine 命令前缀）**不在这里设**：
+      #   wine 的可执行名随发行版而异（wine64 / wine），必须在「安装 wine」那一步
+      #   探测出来再写进 $GITHUB_ENV。job 级 env 在这之前就求值了，没法引用。
+      #   详见「安装 wine / 解析 wine 可执行名」步骤。
 
     steps:
       - name: 检出仓库
@@ -115,8 +116,25 @@ jobs:
         run: |
           set -euo pipefail
           sudo apt-get update
-          sudo apt-get install -y wine64 msitools ca-certificates winbind
-          wine64 --version || wine --version
+          sudo apt-get install -y wine msitools ca-certificates winbind
+
+          # ── 解析 wine 可执行名并导出 HTA_TEXCONV ──────────────────────
+          #   wine / wine64 的可用性随发行版与版本而变，统一探测一次，
+          #   后面所有步骤（含 build_cjk.py 的子进程）都用这个结果。
+          #   ★ 写进 $GITHUB_ENV，后续步骤才看得到。
+          if command -v wine >/dev/null 2>&1; then
+            WINE_BIN=wine
+          elif command -v wine64 >/dev/null 2>&1; then
+            WINE_BIN=wine64
+          else
+            echo "!! 既没有 wine 也没有 wine64" >&2; exit 1
+          fi
+          echo "使用 wine 可执行: $WINE_BIN"
+          "$WINE_BIN" --version
+          # 让 build_cjk.py 用该 wine 跑 Windows 版 texconv.exe
+          # （不设此变量时脚本直接执行 texconv，即本机 Windows 的行为）
+          echo "HTA_TEXCONV=$WINE_BIN ${GITHUB_WORKSPACE}/fontgen/texconv.exe" >> "$GITHUB_ENV"
+          echo "WINEDEBUG=-all" >> "$GITHUB_ENV"
 
       # ── Python 依赖：烘焙脚本需要 Pillow ─────────────────────────────
       - name: 安装 Python 依赖（Pillow）
@@ -202,11 +220,15 @@ jobs:
       # ── 编译 6 个插件 DLL ───────────────────────────────────────────
       #   脚本内含**体积指纹闸门**（178176/178176/195584/144384/140800/140288），
       #   工具链或 flags 任一回退都会当场失败，绝不把错 DLL 发出去。
+      #   ★ 必须用 `bash` 而不是 `sh` 调用：Ubuntu 上 /bin/sh 是 dash，它会
+      #     **忽略脚本的 shebang**，于是 `set -o pipefail`（dash 不支持）和
+      #     bash 数组语法都会失败。实测：`sh ...` 报
+      #     "set: Illegal option -o pipefail"。
       - name: 编译 6 个插件 DLL
         if: ${{ github.event.inputs.skip_dll != 'true' }}
         run: |
           set -euo pipefail
-          sh tools/release/compile_dlls.sh
+          bash tools/release/compile_dlls.sh
 
       # skip_dll=true 时直接复用仓库里已提交的构建产物（这些 build/Release/*.dll
       # 通常被 .gitignore 排除，故仅当你明确把它们提交进仓库后这条才有意义）。
@@ -234,57 +256,36 @@ jobs:
             exit 1
           fi
 
-      # ── 为 wine 准备 texconv 所需的 VC141 运行库 ─────────────────────
-      # ★ texconv.exe 是 Windows 程序，静态依赖 MSVCP140 / VCRUNTIME140 /
-      #   VCRUNTIME140_1 / VCOMP140（OpenMP）。wine 内置实现对这些 **不完整**，
-      #   必须把真 DLL 放到 exe 旁边（Windows 的 DLL 搜索顺序里，exe 同目录
-      #   优先），wine 才会加载它们而不是自己的内置版本。
+      # ── 为 wine 准备 texconv 所需的 VC 运行库 ───────────────────────
+      # ★ texconv.exe 是 Windows 程序，导入 MSVCP140 / VCRUNTIME140 /
+      #   VCRUNTIME140_1 / VCOMP140（OpenMP）。wine 对这些的**内置实现不完整**，
+      #   必须把真 DLL 放到 exe 同一目录 —— Windows 的 DLL 搜索顺序里 exe
+      #   同目录优先，wine 也遵循该顺序，于是会加载它们而不是内置版本。
       #
-      #   来源：msvc-wine 已下好的 VC 14.16 工具链目录，里面有 4 个中的 3 个
-      #   （msvcp140 / vcruntime140 / vcruntime140_1 在 Hostx64/x64）。
-      #   vcomp140.dll 不在工具链里（它在 VC/Redist 的 OpenMP 组件下，而
-      #   vsdownload 没拉 Redist），用 nuget 的 vc143 redist 包兜底 —— 它
-      #   与 14.16 的运行库 ABI 兼容（MSVC 14.x 系列保持二进制兼容）。
+      # ★ 为什么把 DLL 存进仓库（dist/runtime-x64/），而不是 CI 里现下：
+      #   这些 DLL 并不在 msvc-wine 下载的 VC 14.16 工具链里 —— 工具链的
+      #   Hostx64/x64 只有 msvcp140 / vcruntime140 / msvcp140_1 / msvcp140_2，
+      #   **没有 vcruntime140_1.dll**（它是 VS2019/14.20 才引入的）也没有
+      #   vcomp140.dll（在 VC/Redist 的 OpenMP 组件里，而 vsdownload 不拉
+      #   Redist）。先前版本想从 nuget 下 vc143 包补齐，但 nuget 上
+      #   Microsoft.VC143.CRT / .OpenMP 这些包 ID 实际不存在（实测 404）。
+      #   改为把 4 个 x64 DLL 直接入库（共 865 KB），与 winmm.dll 同样处理：
+      #   不构建、直接分发，消除外网与包 ID 失效的风险。
+      #
+      # ★ 版本：14.29.30157（VC142）。MSVC 14.x 系列保持二进制向后兼容，
+      #   14.29 运行库可以给 VS2017(14.16) 编出来的 texconv.exe 用 —— 本地
+      #   用同一组 DLL 实测加载成功。
       - name: 为 wine 准备 texconv 运行库
         run: |
           set -euo pipefail
-          dest="fontgen"
-          echo "── 从 VC 14.16 工具链复制 CRT ──"
-          src=""
-          for d in "${MSVC_WINE_PREFIX}"/vc/tools/msvc/*/bin/Hostx64/x64; do
-            [ -d "$d" ] && src="$d"
-          done
-          if [ -z "$src" ]; then
-            echo "!! 找不到 Hostx64/x64 目录，无法取 CRT" >&2; exit 1
-          fi
-          echo "来源: $src"
-          for f in msvcp140.dll vcruntime140.dll vcruntime140_1.dll \
-                   msvcp140_1.dll msvcp140_2.dll; do
-            if [ -f "$src/$f" ]; then
-              cp -v "$src/$f" "$dest/"
-            else
-              echo "  (缺 $f，跳过)"
+          for f in msvcp140.dll vcruntime140.dll vcruntime140_1.dll vcomp140.dll; do
+            if [ ! -f "dist/runtime-x64/$f" ]; then
+              echo "!! 缺少 dist/runtime-x64/$f" >&2; exit 1
             fi
+            cp -v "dist/runtime-x64/$f" fontgen/
           done
-
-          echo "── 获取 vcomp140.dll（OpenMP，工具链里没有）──"
-          curl -fsSL -o /tmp/vcredist.nupkg \
-            https://www.nuget.org/api/v2/package/Microsoft.VC143.OpenMP/14.38.33130 \
-            || curl -fsSL -o /tmp/vcredist.nupkg \
-            https://www.nuget.org/api/v2/package/Microsoft.VC143.OpenMP/14.40.33807
-          rm -rf /tmp/vcomp && mkdir -p /tmp/vcomp
-          unzip -qo /tmp/vcredist.nupkg -d /tmp/vcomp
-          found="$(find /tmp/vcomp -name 'vcomp140.dll' -path '*x64*' | head -1)"
-          if [ -z "$found" ]; then
-            found="$(find /tmp/vcomp -name 'vcomp140.dll' | head -1)"
-          fi
-          if [ -z "$found" ]; then
-            echo "!! nupkg 里没有 vcomp140.dll" >&2
-            find /tmp/vcomp -name '*.dll' | head -20 || true
-            exit 1
-          fi
-          cp -v "$found" "$dest/vcomp140.dll"
-          ls -la "$dest"/*.dll
+          echo "── fontgen/ 下的运行库 ──"
+          ls -la fontgen/*.dll
 
       # ── texconv 可用性自检（在烘焙之前拦住环境问题）─────────────────
       #   做法：让 texconv 把一张已存在的 dds 转成 png，成功即说明 wine +
@@ -292,7 +293,6 @@ jobs:
       - name: 自检 texconv 能在 wine 下运行
         run: |
           set -euo pipefail
-          export WINEDEBUG=-all
           tmp="$(mktemp -d)"
           # 用仓库里现成的图集当输入（任何一张 cjk 页都行；没有就跳过）
           sample="$(find Original_DATA -name '*.dds' | head -1)"
@@ -300,15 +300,19 @@ jobs:
             echo "!! 仓库里找不到 .dds 供自检" >&2; exit 1
           fi
           echo "输入样例: $sample"
+          echo "HTA_TEXCONV = ${HTA_TEXCONV:-<未设置>}"
           set +e
-          out="$(wine64 fontgen/texconv.exe "$(realpath "$sample")" \
+          # 这里直接用 HTA_TEXCONV 的前半段（wine 可执行名由前一步解析）
+          wine_bin="${HTA_TEXCONV%% *}"
+          out="$("$wine_bin" fontgen/texconv.exe "$(realpath "$sample")" \
                    -f R8G8B8A8_UNORM -ft png -o "$tmp" -y -nologo 2>&1)"
           rc=$?
           set -e
           echo "$out" | tail -20
           if [ $rc -ne 0 ] || ! ls "$tmp"/*.png >/dev/null 2>&1; then
             echo "!! texconv 在 wine 下不可用（rc=$rc）" >&2
-            echo "   常见原因：缺 msvcp140/vcruntime140/vcomp140，或 wine 版本过旧" >&2
+            echo "   常见原因：缺 msvcp140/vcruntime140/vcruntime140_1/vcomp140，" >&2
+            echo "            或 dist/runtime-x64/ 里的 DLL 没复制到 fontgen/" >&2
             exit 1
           fi
           echo "✓ texconv 可用：$(ls "$tmp")"
@@ -326,7 +330,8 @@ jobs:
       - name: 烘焙三套字库
         run: |
           set -euo pipefail
-          export WINEDEBUG=-all
+          # WINEDEBUG 与 HTA_TEXCONV 已在「安装 wine」那步写进 $GITHUB_ENV，
+          # 这里不必再 export（build_cjk.py 通过 HTA_TEXCONV 调 wine 跑 texconv）
           bake() {
             local key="$1" fonts="$2" text="$3"
             echo "=================================================="
