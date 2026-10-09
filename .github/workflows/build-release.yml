@@ -293,7 +293,6 @@ jobs:
       - name: 自检 texconv 能在 wine 下运行
         run: |
           set -euo pipefail
-          tmp="$(mktemp -d)"
           # 用仓库里现成的图集当输入（任何一张 cjk 页都行；没有就跳过）
           sample="$(find Original_DATA -name '*.dds' | head -1)"
           if [ -z "$sample" ]; then
@@ -301,21 +300,25 @@ jobs:
           fi
           echo "输入样例: $sample"
           echo "HTA_TEXCONV = ${HTA_TEXCONV:-<未设置>}"
+          # 直接用 HTA_TEXCONV（含 wine 可执行名 + 绝对 exe 路径，不引号让 shell
+          # 拆成 `wine /abs/texconv.exe` 两段）。输入/输出都用**相对路径**——wine
+          # 下的 Windows 程序会把 Unix 绝对路径（/ 开头）当成命令行选项开关，
+          # 表现为 `Unknown option: home/runner/...`（开头 / 被吞），而非找不到文件。
+          rm -rf hta_texconv_selftest && mkdir -p hta_texconv_selftest
           set +e
-          # 这里直接用 HTA_TEXCONV 的前半段（wine 可执行名由前一步解析）
-          wine_bin="${HTA_TEXCONV%% *}"
-          out="$("$wine_bin" fontgen/texconv.exe "$(realpath "$sample")" \
-                   -f R8G8B8A8_UNORM -ft png -o "$tmp" -y -nologo 2>&1)"
+          out="$($HTA_TEXCONV "$sample" \
+                   -f R8G8B8A8_UNORM -ft png -o hta_texconv_selftest -y -nologo 2>&1)"
           rc=$?
           set -e
           echo "$out" | tail -20
-          if [ $rc -ne 0 ] || ! ls "$tmp"/*.png >/dev/null 2>&1; then
+          if [ $rc -ne 0 ] || ! ls hta_texconv_selftest/*.png >/dev/null 2>&1; then
             echo "!! texconv 在 wine 下不可用（rc=$rc）" >&2
             echo "   常见原因：缺 msvcp140/vcruntime140/vcruntime140_1/vcomp140，" >&2
             echo "            或 dist/runtime-x64/ 里的 DLL 没复制到 fontgen/" >&2
             exit 1
           fi
-          echo "✓ texconv 可用：$(ls "$tmp")"
+          echo "✓ texconv 可用：$(ls hta_texconv_selftest)"
+          rm -rf hta_texconv_selftest
 
       # ── 烘焙三套字库 ────────────────────────────────────────────────
       #   每个包用自己的 fonts.xml 当源、自己的译文目录收集汉字：

@@ -51,6 +51,19 @@ TEXCONV = os.path.join(HERE, 'texconv.exe')
 DEFAULT_TTF = os.path.join(HERE, 'SourceHanSansHWSC-VF.ttf')
 
 
+def _wine_path(p):
+    """wine 模式下，把 Unix 绝对路径转成 wine 的 `Z:` 盘符 + 反斜杠形式。
+
+    ★ 为什么 ★
+      texconv.exe 是 Windows 程序，在 wine 下会把**以 `/` 开头的 Unix 绝对路径**
+      当成命令行选项开关（如 `Unknown option: home/runner/...`，开头 `/` 被吞），
+      而不是当成输入/输出文件。换成 `Z:/abs/path`（wine 把宿主文件系统挂到
+      Z: 盘）它才认得是文件。仅对绝对路径做映射；选项/格式名（如
+      `-f R8G8B8A8_UNORM`、`-y`、`-nologo`）与相对路径保持原样。
+    """
+    return 'Z:' + os.path.abspath(p).replace('/', '\\')
+
+
 def texconv_cmd(*args):
     """返回调用 texconv 的完整命令（list）。
 
@@ -62,10 +75,14 @@ def texconv_cmd(*args):
 
       不设该变量时行为与历史版本**逐字节一致**（就是 [TEXCONV] + args），
       因此本机既有的烘焙产物不受影响。
+
+      ★ 设了该变量（wine 模式）时，参数里的绝对路径会被映射成 wine 的 `Z:`
+        形式——否则 wine 下的 Windows 程序会把 Unix 绝对路径当选项开关。
     """
     override = os.environ.get('HTA_TEXCONV', '').strip()
     if override:
-        return shlex.split(override) + list(args)
+        mapped = [_wine_path(a) if os.path.isabs(a) else a for a in args]
+        return shlex.split(override) + mapped
     return [TEXCONV] + list(args)
 
 PAGE_W, PAGE_H = 512, 256      # 引擎已知能加载的图集尺寸
