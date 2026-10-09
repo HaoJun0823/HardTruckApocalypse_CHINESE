@@ -601,7 +601,7 @@ jobs:
             local src="$1" ascii="$2"
             echo "⬆️ 上传 $ascii"
             curl -fsSL -X POST \
-              -H "Authorization: Bearer $GITHUB_TOKEN" \
+              -H "Authorization: Bearer $GH_TOKEN" \
               -H "Content-Type: application/zip" \
               -H "Accept: application/vnd.github+json" \
               --data-binary "@$src" \
