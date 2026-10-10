@@ -106,7 +106,7 @@ python tools/release/verify_release.py release
 | `Original_DATA/` `DLC1_DATA/` `DLC2_DATA/` | 原版俄文资料（烘焙源的 `fonts.xml` 在这里） |
 | `dist/` | 静态原料库（winmm、工具 exe、bat、config、必读说明） |
 | `X86Game4gb/` / `Clean_RUS_Layout/` | 两个独立小工具（LAA 补丁器、卸载俄语键盘布局）的源码 |
-| `License/` | 第三方组件许可原文（装配时合并为包内 `License.txt`） |
+| `Licenses/` | 第三方组件许可原文与 GPLv3 全文（装配时合并为包内 `License.txt`） |
 | `tools/release/` | 发布流水线脚本 |
 | `tools_dlc2/` | 街机版翻译流水线脚本（`apply.py` 等 + `manual.json` 词表） |
 | `glossy.csv` | 英文→中文术语表（214 条，翻译时统一用语） |
@@ -159,7 +159,7 @@ python tools/release/verify_release.py release
 | `fontgen/SourceHanSansHWSC-VF.ttf`（思源黑体） | Adobe | SIL OFL 1.1 | ✅ 字形烘进 `cjk_*.dds` |
 | `fontgen/texconv.exe`（DirectXTex） | Microsoft | MIT | ❌ 仅构建期用 |
 
-许可原文见 [License/](License/)。发布包内合并为单个 `License.txt`。
+许可原文见 [Licenses/](Licenses/)。发布包内合并为单个 `License.txt`。
 
 ---
 

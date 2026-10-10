@@ -51,7 +51,7 @@ PKG_SPEC = {
 }
 
 # 每个包都必须有的根目录静态资源
-#   License.txt 是 License/ 下第三方许可原文合并而成（见 build_release.py 3b）
+#   License.txt 是 Licenses/ 下许可原文合并而成（见 build_release.py 3b）
 ROOT_REQ = ['winmm.dll', 'X86Game4gb.exe', '必读说明.txt', 'License.txt',
             '清除俄语输入法布局.exe', '清除俄语输入法布局.ps1']
 

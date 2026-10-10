@@ -19,7 +19,7 @@
 | `必读说明/dlc.txt` | 安装/卸载/已知问题 —— **系列通用版，三个包共用** | `必读说明.txt` |
 | `runtime-x64/` | texconv 在 wine 下运行所需的 4 个 x64 VC 运行库（**仅 CI 构建期用，不进包**） | — |
 
-> 第三方许可原文在 [License/](../License/)，装配时按文件名排序合并成包内
+> 第三方许可原文在 [Licenses/](../Licenses/)，装配时按文件名排序合并成包内
 > `License.txt`（做法与 [MajestyIIExtend](../../MajestyIIExtend/) 一致）。
 
 > `X86Game4gb.exe` 与 [X86Game4gb/Release/X86Game4gb.exe](../X86Game4gb/) 哈希一致

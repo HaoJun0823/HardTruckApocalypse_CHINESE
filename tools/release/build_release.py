@@ -206,15 +206,15 @@ def build_one(key, spec, fonts_out_dir, out_root, date, do_zip):
     shutil.copy2(os.path.join(ROOT, 'dist', 'config', spec['config'] + '.cfg'),
                  os.path.join(dst, 'data', 'config.cfg'))
 
-    # ── 3b) License/License.txt ────────────────────────────────────────
-    #    把 License/ 下的第三方许可原文按**文件名排序**拼成单个 License.txt
+    # ── 3b) Licenses/License.txt ───────────────────────────────────────
+    #    把 Licenses/ 下的许可原文按**文件名排序**拼成单个 License.txt
     #    放进包根（与 MajestyIIExtend 的做法一致）。顺序固定 → 产物可复现。
     #    内容为该包真正分发的组件：ASI Loader（winmm.dll）+ 思源黑体（字形
     #    烘进了 cjk 图集）+ texconv（仅构建期用，一并列明以免疑义）。
-    lic_dir = os.path.join(ROOT, 'License')
-    must(os.path.isdir(lic_dir), '缺少 License/ 目录')
+    lic_dir = os.path.join(ROOT, 'Licenses')
+    must(os.path.isdir(lic_dir), '缺少 Licenses/ 目录')
     lic_files = sorted(f for f in os.listdir(lic_dir) if f.lower().endswith('.txt'))
-    must(lic_files, 'License/ 目录里没有任何 .txt')
+    must(lic_files, 'Licenses/ 目录里没有任何 .txt')
     parts = []
     for i, f in enumerate(lic_files):
         # 用 UTF-8 读、CRLF 写（Windows 记事本对 LF 兼容不佳）

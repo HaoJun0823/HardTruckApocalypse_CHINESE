@@ -1,0 +1,111 @@
+HaoJun0823 Project License
+Copyright (c) 2026 Haojun (HaoJun0823) (Randerion). All rights reserved.
+Homepage: https://www.haojun0823.xyz
+Github: https://github.com/HaoJun0823
+ORCID: https://orcid.org/0000-0002-2285-0503
+
+----------------------------------------------------------------------
+Main License
+----------------------------------------------------------------------
+
+This project (the Chinese translation data, documentation, build scripts
+and tools authored for it) is licensed under:
+
+    GNU General Public License v3.0 or later
+
+SPDX-License-Identifier: GPL-3.0-or-later
+
+The full license text is available at:
+    ./Licenses/GPLv3.txt
+
+----------------------------------------------------------------------
+Game Copyright Notice (Hard Truck Apocalypse series)
+----------------------------------------------------------------------
+
+This project is an independent, fan-made Chinese localization ("translation
+patch") plus engine-compatibility fixes for the Hard Truck Apocalypse /
+Ex Machina video game series (including the "Rise of Clans" / "Tribe Rising"
+expansion). It is not affiliated with, endorsed by, or sponsored by the
+copyright holders of those games.
+
+Hard Truck Apocalypse and all related titles, characters, artwork, music, and
+trademarks are the property of their respective copyright holders, including
+but not limited to:
+
+    - Targem Games (original developer)
+    - Nival Interactive (EU publisher)
+    - CDV Software (NA publisher)
+    - Buka Entertainment (worldwide publisher on Steam)
+
+Copyright (c) their respective owners. All rights reserved.
+
+This project distributes NO copyrighted game assets. It provides only
+translation text, font atlases, and runtime compatibility patches that users
+must apply to their own legally acquired copies of the games. The games
+themselves are not redistributed by this project and remain governed by their
+own licenses and copyright. None of the patches modify the game executables;
+they are all applied at runtime.
+
+----------------------------------------------------------------------
+Additional Terms
+----------------------------------------------------------------------
+
+None.
+
+----------------------------------------------------------------------
+Other Copyright Notices
+----------------------------------------------------------------------
+
+Copyright (c) 2026 Randerion (HaoJun0823). All rights reserved.
+
+Portions of this project are Copyright (c) their respective authors.
+
+Third-party components retain their original copyright notices, including:
+
+    - Ultimate ASI Loader: Copyright (c) 2023 ThirteenAG
+    - Source Han Sans: Copyright 2014-2021 Adobe
+    - DirectXTex (texconv): Copyright (c) Microsoft Corporation
+
+----------------------------------------------------------------------
+Third-Party Components
+----------------------------------------------------------------------
+
+The following third-party components are distributed under their own licenses
+and are not covered by the main license of this project:
+
+- winmm.dll (Ultimate ASI Loader) - MIT License - Copyright (c) 2023 ThirteenAG
+  See ./Licenses/ASILoader.txt
+
+- Source Han Sans HW SC (SourceHanSansHWSC-VF.ttf) - SIL Open Font License 1.1
+  Copyright 2014-2021 Adobe
+  See ./Licenses/source-han-sans.txt
+
+- texconv.exe (DirectXTex) - MIT License - Copyright (c) Microsoft Corporation
+  (build-time only; not redistributed in the released patches)
+  See ./Licenses/texconv.txt
+
+----------------------------------------------------------------------
+Disclaimer
+----------------------------------------------------------------------
+
+The main license of this project, GNU General Public License v3.0 or later,
+includes its own warranty disclaimer and limitation of liability. The
+following disclaimer is a project-specific summary and does not replace,
+modify, or override the main license. The main license controls in case of
+any conflict.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+----------------------------------------------------------------------
+Notes
+----------------------------------------------------------------------
+
+This file describes the main license, additional terms, copyright notices,
+third-party components, and disclaimer of this project.
+The full license texts are located in the ./Licenses/ directory.
