@@ -15,9 +15,11 @@
 | [PATH_D_DESIGN.md](PATH_D_DESIGN.md) | 路径 D 总设计：让单字节渲染引擎显示 GBK 双字节汉字（字形索引拓宽到 16 位） | ✅ 已实机验证 |
 | [HardTruckApocalypse_CHINESE_DLL/README.md](../HardTruckApocalypse_CHINESE_DLL/README.md) | 汉化插件（`hta_chs.asi`）实现细节 —— 本体 hta.exe |
 | [HardTruckApocalypse_CHINESE_DLL_DLC1/README.md](../HardTruckApocalypse_CHINESE_DLL_DLC1/README.md) | 汉化插件（`hta_chs_dlc1.asi`）实现细节 —— 资料片 Meridian113.exe |
+| [HardTruckApocalypse_CHINESE_DLL_DLC2/README.md](../HardTruckApocalypse_CHINESE_DLL_DLC2/README.md) | 汉化插件（`hta_chs_dlc2.asi`）实现细节 —— 街机版 emarcade.exe |
 | [DLC1_MemFix/](../DLC1_MemFix/) | 资料片的内存修复插件（`DLC1_MemFix.asi`）源码 |
+| [DLC2_MemFix/](../DLC2_MemFix/) | 街机版的内存修复插件（`DLC2_MemFix.asi`）源码 |
 | [Render9Fix/README.md](../Render9Fix/README.md) | 崩溃修复插件（`Render9Fix.asi`）设计、安全设计、配置、日志判读 |
-| [dist_dlc1/README.md](../dist_dlc1/README.md) | （已归档）资料片汉化的旧交付包 —— 见 `archives/dist_dlc1/` |
+| [dist_dlc1/README.md](../archives/dist_dlc1/README.md) | （已归档）资料片汉化的旧交付包 —— 见 `archives/dist_dlc1/` |
 | [README.md](../README.md) | 仓库总览：三个游戏的对应关系、CI 流水线、本地构建步骤 |
 
 截图在 [screenshots/](screenshots/)。

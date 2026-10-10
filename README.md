@@ -103,10 +103,14 @@ python tools/release/verify_release.py release
 | `DLC1_MemFix/` / `DLC2_MemFix/` | 两个资料片的等价修复插件 |
 | `fontgen/` | 字库烘焙（`build_cjk.py`、`texconv.exe`、思源黑体） |
 | `Original_DATA_CHS/` `DLC1_DATA_CHS/` `DLC2_DATA_CHS/` | **译文 XML**（update 覆盖层的内容） |
-| `Original_DATA/` `DLC1_DATA/` | 原版俄文资料（烘焙源的 `fonts.xml` 在这里） |
+| `Original_DATA/` `DLC1_DATA/` `DLC2_DATA/` | 原版俄文资料（烘焙源的 `fonts.xml` 在这里） |
 | `dist/` | 静态原料库（winmm、工具 exe、bat、config、必读说明） |
+| `X86Game4gb/` / `Clean_RUS_Layout/` | 两个独立小工具（LAA 补丁器、卸载俄语键盘布局）的源码 |
 | `License/` | 第三方组件许可原文（装配时合并为包内 `License.txt`） |
 | `tools/release/` | 发布流水线脚本 |
+| `tools_dlc2/` | 街机版翻译流水线脚本（`apply.py` 等 + `manual.json` 词表） |
+| `glossy.csv` | 英文→中文术语表（214 条，翻译时统一用语） |
+| `retruxx/` | 第三方子模块：游戏的逆向工程参考（见 `.gitmodules`） |
 | `docs/` | 根因分析、移植记录、[路径 D 总设计](docs/PATH_D_DESIGN.md) |
 | `archives/` | 历史快照与一次性脚手架（**不入库**，见 `.gitignore`） |
 
