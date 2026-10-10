@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<resource>
+	<string
+		id="LoadTip_00"
+		value="You can greatly increase your firepower by collecting extra weapons." />
+
+	<string
+		id="LoadTip_01"
+		value="Keep away from water - it can destroy your vehicle faster than the mightiest foe." />
+
+	<string
+		id="LoadTip_02"
+		value="You can look around by holding the middle mouse button." />
+
+	<string
+		id="LoadTip_03"
+		value="GPS navigation system is a basic device of your vehicle, it always shows the correct movement direction." />
+
+	<string
+		id="LoadTip_04"
+		value="You can greatly improve your wealth by finding and collecting bonuses." />
+
+	<string
+		id="LoadTip_05"
+		value="Remember that a static target is an easy prey. Maneuver more." />
+
+	<string
+		id="LoadTip_06"
+		value="Use level features to vanquish your enemies." />
+
+	<string
+		id="LoadTip_07"
+		value="Ram is a good old device against the enemies who drive cars." />
+
+	<string
+		id="LoadTip_08"
+		value="Government rewards you for every destroyed enemy." />
+
+	<string
+		id="LoadTip_09"
+		value="Mutant mushrooms are dangerous for all life forms." />
+</resource>

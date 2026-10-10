@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes"?>
+<CheckpointInfoResource>
+
+	<CheckpointInfo
+		id			= "dv1_AfterSwamp"
+		levelName	= "dv1"
+		fullName	= "Окрестности базы"
+		diz			= "Впереди много мародеров."
+	/>
+	<CheckpointInfo
+		id			= "dv1_AfterSwamp2"
+		levelName	= "dv1"
+		fullName	= "Шоссе в никуда"
+		diz			= "Заброшеное кафе."
+	/>
+	<CheckpointInfo
+		id			= "dv1_BeforeCaravan"
+		levelName	= "dv1"
+		fullName	= "Мародеры"
+		diz			= "Мы у цели путешествия!"
+	/>
+
+	<CheckpointInfo
+		id			= "dv2_AfterJump"
+		levelName	= "dv2"
+		fullName	= "Далекая лаборатория"
+		diz			= "Где то справа от основной дороги лаборатория..."
+	/>
+	<CheckpointInfo
+		id			= "dv2_AfterTown2"
+		levelName	= "dv2"
+		fullName	= "В поисках профессора"
+		diz			= "Лаборатория видимо была небезопасна..."
+	/>
+
+	<CheckpointInfo
+		id			= "dv4_After3item"
+		levelName	= "dv4"
+		fullName	= "Поиск продолжается"
+		diz			= "Парни должны быть не далеко..."
+	/>
+	<CheckpointInfo
+		id			= "dv4_AfterAloneTown"
+		levelName	= "dv4"
+		fullName	= "Дальше по следам"
+		diz			= "Сигнал был где то рядом, возможно скоро поиски закончатся."
+	/>
+
+
+	<CheckpointInfo
+		id			= "dv5_AfterFall"
+		levelName	= "dv5"
+		fullName	= "Дикие джунгли"
+		diz			= "Странные джунгли полные грибов."
+	/>
+	<CheckpointInfo
+		id			= "dv5_DarkSwamp"
+		levelName	= "dv5"
+		fullName	= "Болото"
+		diz			= "Когда то это было милое ущелье с горной речкой"
+	/>
+
+	<CheckpointInfo
+		id			= "dv6_startRun"
+		levelName	= "dv6"
+		fullName	= "В погоне за &quot;Z-120&quot;"
+		diz			= "С помощью термозарядов необходимо уничтожить остатки опасного вещества"
+	/>
+	<CheckpointInfo
+		id			= "dv6_AfterFirstTrck"
+		levelName	= "dv6"
+		fullName	= "Последняя цистерна"
+		diz			= "Где то в болотах затеряна еще одна цистерна"
+	/>
+
+	<CheckpointInfo
+		id			= "dv7_AfterRun"
+		levelName	= "dv7"
+		fullName	= "Остановить безумие"
+		diz			= "Сержант токсо хочет крови..."
+	/>
+
+	<CheckpointInfo
+		id			= "dv8_BeforeZombie"
+		levelName	= "dv8"
+		fullName	= "Сборщики"
+		diz			= "Времени не много, а нам надо отыскать всех мутантов."
+	/>
+	<CheckpointInfo
+		id			= "dv8_BeforeAngar"
+		levelName	= "dv8"
+		fullName	= "Флай-Хилл"
+		diz			= "Толпы мутантов атакуют."
+	/>
+
+
+	<CheckpointInfo
+		id			= "dv9_Before1Swamp"
+		levelName	= "dv9"
+		fullName	= "Погоня"
+		diz			= "Профессор уходит, надо поторопится."
+	/>
+	<CheckpointInfo
+		id			= "dv9_BeforeBoss"
+		levelName	= "dv9"
+		fullName	= "Паперс должен умереть"
+		diz			= "Кажется настало время последней битвы"
+	/>
+
+
+</CheckpointInfoResource>

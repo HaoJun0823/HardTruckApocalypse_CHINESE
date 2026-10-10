@@ -319,10 +319,11 @@ dist_dlc1/update/hta_chs_cjk_dlc1.bin
 _shots_dlc1/
 
 # ---- project additions (2026-10-08c) ----
-# DLC2 汉化流水线：仓库只跟踪 DLC2_DATA_CHS/（成品）与 tools_dlc2/（脚本 + 译文表）。
-# DLC2_DATA/ 是第三方原版数据；DLC2_DATA_CHS_PREVIEW/ 与 _DLC2_corrupted_snapshot_*/
-# 是事故现场备份 —— 体积大、可再生、且与 DLC2_DATA 高度重复，不入库。
-DLC2_DATA/
+# DLC2 汉化流水线：仓库跟踪 DLC2_DATA/（原版基准，与 Original_DATA/、DLC1_DATA/
+# 同一约定；本包烘焙源 fonts.xml 取自它）、DLC2_DATA_CHS/（译文成品）与
+# tools_dlc2/（脚本 + 译文表）。
+# DLC2_DATA_CHS_PREVIEW/ 与 _DLC2_corrupted_snapshot_*/ 是事故现场备份，
+# 可再生、体积大，不入库。
 DLC2_DATA_CHS_PREVIEW/
 _DLC2_corrupted_snapshot_*/
 _DLC2_DATA_CHS_backup/
@@ -348,9 +349,8 @@ _DLC2_DATA_CHS_backup/
 archives/
 
 # 上一轮的本机烘焙产物（CI 会在 baked_fonts/ 里重建）
-update_chs_dlc1/
+# 注：update_chs_dlc1/ 与 update_pathd/ 已在上方条目里列过，这里不重复
 update_chs_dlc2/
-update_pathd/
 update_chs/
 
 # DLC2 插件与内存修复的构建产物
@@ -371,6 +371,8 @@ DLC2_MemFix/build/
 #   `!tools/release/` 先把目录本身捞回来，再逐个捞回脚本文件。
 !tools/release/
 !tools/release/**
+# 例外：上面的反向规则会把 __pycache__ 一并放行
+tools/release/__pycache__/
 # ������֤�õ���ʱ��¡��ģ�� CI checkout��
 /_fresh*/
 /_cisim*/

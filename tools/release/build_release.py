@@ -30,7 +30,6 @@ build_release.py —— 把「翻译 XML + 烘好的字库 + 编译出的 DLL + 
       <MemFix>.asi / .ini          ← 编译产物 + 仓库内 ini
       hta_chs_cjk*.bin             ← 烘焙产物
       data/…                       ← ★ 译文 XML 原样复制（update\ 是引擎覆盖层）
-    ★ DLC2 额外：update/data/if/fonts/ 下要放**原版字体全集**（见 DLC2_NATIVE_FONTS）
 
 ═══════════════════════════════════════════════════════════════════════════
 为什么译文 XML 放 update\ 而字库放 data\（实测结论，勿改）
@@ -59,14 +58,6 @@ ROOT = os.path.dirname(os.path.dirname(HERE))       # 仓库根
 # ───────────────────────────────────────────────────────────────────────────
 # 三个包的规格
 # ───────────────────────────────────────────────────────────────────────────
-# native_fonts: 需要从原版数据目录**整份复制**进包的原版字体文件（仅 DLC2 需要）
-#   原因：DLC2 的参考包在 update\data\if\fonts\ 下同时放了原版那一整套
-#   （fonts.xml + sm_*.dds + languagetable.txt），并且**故意用原版 fonts.xml
-#   覆盖引擎的字体表**。实测证据：该 fonts.xml 与游戏的 fonts.xml.orig.bak
-#   逐字节相同；而烘焙产物（含 CJK Item）放在 data\if\fonts\。
-#   emarcade 的字体是运行期由 FontManager 枚举建立的，与 base/dlc1 的
-#   「fonts.xml 里多加 Item」机制不同，两者搭配才是实机验证过的组合。
-#
 # zip 名（ASCII，供 Release 附件用）与内部中文名（玩家看到的）分开：
 #   GitHub Release 附件名不支持中文（会被破坏成 _._._），故附件用 ASCII。
 PKGS = {
@@ -87,7 +78,6 @@ PKGS = {
             ('Render9Fix', 'Render9Fix', 'Render9Fix.asi', 'build/Release/Render9Fix.dll'),
         ],
         'ini': [('Render9Fix/Render9Fix.ini', 'Render9Fix.ini')],
-        'native_fonts': None,
     },
     'dlc1': {
         'title': '燃烧飞车：末日浩劫 部落崛起 简体中文汉化包',
@@ -106,7 +96,6 @@ PKGS = {
             ('DLC1_MemFix', 'DLC1_MemFix', 'DLC1_MemFix.asi', 'build/Release/DLC1_MemFix.dll'),
         ],
         'ini': [('DLC1_MemFix/DLC1_MemFix.ini', 'DLC1_MemFix.ini')],
-        'native_fonts': None,
         # ★ 中文主菜单图标：参考包里 DLC1 也带它（实测与 BASE 包同一份哈希）。
         'extra': ['Original_DATA_CHS/data/if/ico/mainmenu/mainmenu_down.dds'],
     },
@@ -118,10 +107,9 @@ PKGS = {
         'bat_prefix': 'emarcade',
         'config': 'dlc2',
         'readme': 'dlc',
-        # ★ DLC2 的烘焙源 fonts.xml 不在 DLC2_DATA/（那是第三方原版数据、不入库），
-        #   而正好等于 DLC2_DATA_CHS/data/if/fonts/fonts.xml（实测与
-        #   游戏 fonts.xml.orig.bak 逐字节相同）。用后者即可，无需额外源。
-        'fonts_src': 'DLC2_DATA_CHS/data/if/fonts/fonts.xml',
+        # ★ 烘焙源 fonts.xml 取自原版基准 DLC2_DATA/（与 Original_DATA/、
+        #   DLC1_DATA/ 同一约定，该目录已入库）。
+        'fonts_src': 'DLC2_DATA/data/if/fonts/fonts.xml',
         'text_dir': 'DLC2_DATA_CHS',
         'cjk_bin_src': None,
         'asi': [
@@ -130,8 +118,6 @@ PKGS = {
             ('DLC2_MemFix', 'DLC2_MemFix', 'DLC2_MemFix.asi', 'build/Release/DLC2_MemFix.dll'),
         ],
         'ini': [('DLC2_MemFix/DLC2_MemFix.ini', 'DLC2_MemFix.ini')],
-        # 从 DLC2_DATA_CHS/data/if/fonts 复制的**非 cjk** 原版字体文件
-        'native_fonts': 'DLC2_DATA_CHS/data/if/fonts',
         'extra': ['Original_DATA_CHS/data/if/ico/mainmenu/mainmenu_down.dds'],
     },
 }
@@ -261,35 +247,22 @@ def build_one(key, spec, fonts_out_dir, out_root, date, do_zip):
     stats['cjk_pages'] = n - 1        # 去掉 fonts.xml
     log('  字库: fonts.xml + %d 张 cjk 图集' % stats['cjk_pages'])
 
-    # ── 5) DLC2 额外的原版字体全集 → update/data/if/fonts ──────────────
-    if spec['native_fonts']:
-        nf_src = os.path.join(ROOT, spec['native_fonts'])
-        must(os.path.isdir(nf_src), '缺少 %s' % spec['native_fonts'])
-        nf_dst = os.path.join(dst, 'update', 'data', 'if', 'fonts')
-        os.makedirs(nf_dst, exist_ok=True)
-        n = copy_tree(nf_src, nf_dst,
-                      only=lambda rel: not os.path.basename(rel).startswith('cjk_'))
-        stats['native_fonts'] = n
-        log('  原版字体全集: %d 个（update/data/if/fonts）' % n)
-
-    # ── 6) 译文资源 → update/data（原样复制）────────────────────────────
+    # ── 5) 译文资源 → update/data（原样复制）────────────────────────────
     #    ★ 不只收 .xml：译文目录里还带图形资源（如中文主菜单图标
     #      data/if/ico/mainmenu/mainmenu_down.dds），参考包里在 update\data\
-    #      下原样分发。唯一要排除的是 .BAK（历史备份，参考包不分发）。
+    #      下原样分发。唯一要排除的是 .BAK（历史备份，参考包不分发）与
+    #      DLC2 的 if/fonts/（见下方 keep_text）。
     txt_src = os.path.join(ROOT, spec['text_dir'], 'data')
     must(os.path.isdir(txt_src), '缺少译文目录 %s' % spec['text_dir'])
     txt_dst = os.path.join(dst, 'update', 'data')
-    #    DLC2 的译文目录里同时含原版字体（fonts.xml + sm_*.dds），那部分由
-    #    上面的 native_fonts 专门负责，这里跳过以免重复处理。
-    nf_rel = None
-    if spec['native_fonts']:
-        nf_rel = os.path.relpath(os.path.join(ROOT, spec['native_fonts']),
-                                 txt_src).replace('\\', '/') + '/'
 
     def keep_text(rel):
         if os.path.splitext(rel)[1].upper() == '.BAK':
             return False
-        if nf_rel and rel.startswith(nf_rel):
+        #    ★ DLC2：译文目录里若混入 if/fonts/，一律不进包 —— 字库只由
+        #      data/if/fonts/ 下的烘焙产物负责。update/data/if/fonts/ 会覆盖
+        #      游戏 data，实测是错误做法（原版字体应走烘焙，不进 update 层）。
+        if key == 'dlc2' and rel.startswith('if/fonts/'):
             return False
         return True
 
@@ -297,7 +270,7 @@ def build_one(key, spec, fonts_out_dir, out_root, date, do_zip):
     stats['text_files'] = n
     log('  译文资源: %d 个' % n)
 
-    # ── 6b) 跨游戏共享的补充资源 ───────────────────────────────────────
+    # ── 5b) 跨游戏共享的补充资源 ───────────────────────────────────────
     #    中文主菜单图标只有本体那份（Original_DATA_CHS），但资料片/街机版
     #    的参考包里同样分发了它 —— 属于「同一个中文 UI 资源三包共用」。
     for rel in spec.get('extra', []):
@@ -312,7 +285,7 @@ def build_one(key, spec, fonts_out_dir, out_root, date, do_zip):
         stats.setdefault('extra', []).append(m[1])
         log('  补充资源: %s' % m[1])
 
-    # ── 7) 编译产物 asi + ini → update\ ────────────────────────────────
+    # ── 6) 编译产物 asi + ini → update\ ────────────────────────────────
     upd = os.path.join(dst, 'update')
     os.makedirs(upd, exist_ok=True)
     sizes = {}
@@ -329,7 +302,7 @@ def build_one(key, spec, fonts_out_dir, out_root, date, do_zip):
     for k, v in sizes.items():
         log('  %-22s %8d B' % (k, v))
 
-    # ── 8) 字库包 → update\ ────────────────────────────────────────────
+    # ── 7) 字库包 → update\ ────────────────────────────────────────────
     bin_src = os.path.join(baked, CJK_BIN_NAME)
     must(os.path.isfile(bin_src), '%s 烘破产物缺 %s' % (key, CJK_BIN_NAME))
     #    ★ bin 在包内的名字按游戏区分（与 asi 里写死的文件名一致）：
@@ -340,7 +313,7 @@ def build_one(key, spec, fonts_out_dir, out_root, date, do_zip):
     shutil.copy2(bin_src, os.path.join(upd, bin_dst_name))
     log('  %-22s %8d B' % (bin_dst_name, os.path.getsize(bin_src)))
 
-    # ── 9) 打包 ────────────────────────────────────────────────────────
+    # ── 8) 打包 ────────────────────────────────────────────────────────
     zip_path = None
     if do_zip:
         zip_path = os.path.join(out_root, '%s_%s.zip' % (spec['zip_cn'], date))

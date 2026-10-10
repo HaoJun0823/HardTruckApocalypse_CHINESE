@@ -93,6 +93,7 @@ tools_dlc2/reuse_pool.json -text
 ###############################################################################
 Original_DATA/**      -text -diff
 DLC1_DATA/**          -text -diff
+DLC2_DATA/**          -text -diff
 Original_DATA/*.fx    -text
 DLC1_DATA/*.fx        -text
 dist/**               -text -diff

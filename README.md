@@ -82,7 +82,7 @@ python fontgen/build_cjk.py \
   --src-fonts DLC1_DATA/data/if/fonts/fonts.xml \
   --text-dir DLC1_DATA_CHS --out baked_fonts/dlc1
 python fontgen/build_cjk.py \
-  --src-fonts DLC2_DATA_CHS/data/if/fonts/fonts.xml \
+  --src-fonts DLC2_DATA/data/if/fonts/fonts.xml \
   --text-dir DLC2_DATA_CHS --out baked_fonts/dlc2
 
 # 3) 装配 + 校验

@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+
+<GuiResourceInfo>
+
+	<Item
+		class="BindKeysWnd"
+		id="IW_DLG_BINDKEYS"
+		file="data\if\dialogs\bindkeysdlg.xml"
+		showImmediate="0"
+		loadType="AT_APP_START"
+	/>
+
+	<Item
+		class="CinemaPanel"
+		id="IW_WND_CINEMA_PANEL"
+		file="data\if\dialogs\CinemaPanel.xml"
+		showImmediate="0"
+		loadType="AT_FIRST_LEVEL_START"
+	/>     
+
+
+	<Item
+		class="CinemaFadePanel"
+		id="IW_WND_CINEMA_FADE_PANEL"
+		file=""
+		showImmediate="0"
+		loadType="AT_APP_START"
+	/>     
+
+	<Item
+		class="NewProfileWnd"
+		id="IW_WND_NEW_PROFILE"
+		file="data\if_dv\dialogs\NewProfileWnd.xml"
+		showImmediate="0"
+		loadType="AT_APP_START"
+	/>   
+
+<!--
+	<Item
+		class="NewProfileWnd"
+		id="IW_WND_NEW_PROFILE_ALONE"
+		file="data\if\dialogs\NewProfileWndAlone.xml"
+		showImmediate="0"
+		loadType="AT_APP_START"
+	/>   
+-->
+
+	<Item
+		class="ChangeProfileWnd"
+		id="IW_WND_CHANGE_PROFILE"
+		file="data\if_dv\dialogs\ChangeProfileWnd.xml"
+		showImmediate="0"
+		loadType="AT_APP_START"
+	/>   
+
+<!--
+	<Item
+		class="LoadWnd"
+		id="IW_WND_LOAD"
+		file="data\if\dialogs\LoadWnd.xml"
+		showImmediate="0"
+		loadType="AT_APP_START"
+	/>   
+
+	<Item
+		class="SaveWnd"
+		id="IW_WND_SAVE"
+		file="data\if\dialogs\SaveWnd.xml"
+		showImmediate="0"
+		loadType="AT_FIRST_LEVEL_START"
+	/>   
+-->
+	<Item
+		class="FadingMsgList"
+		id="IW_WND_FADING_MSG_LIST"
+		file="data\if\dialogs\FadingMsgList.xml"
+		showImmediate="0"
+		loadType="AT_FIRST_LEVEL_START"
+	/>              
+
+	<Item
+		class="FadingMsgList"
+		id="IW_WND_IMPORTANT_FADING_MSG_LIST"
+		file="data\if\dialogs\ImportantFadingMsgList.xml"
+		showImmediate="0"
+		loadType="AT_FIRST_LEVEL_START"
+	/>              
+
+	<Item
+		class="IgrokaMochatWnd"
+		id="IW_WND_IGROKA_MOCHAT"
+		file="data\if\dialogs\IgrokaMochatWnd.xml"
+		showImmediate="0"
+		loadType="AT_FIRST_LEVEL_START"
+	/>                                                            
+
+	<Item
+		class="VideoOptionsWnd"
+		id="IW_WND_OPTIONS_VIDEO"
+		file="data\if\dialogs\VideoOptionsWnd.xml"
+		showImmediate="0"
+		loadType="AT_APP_START"
+	/> 
+
+	<Item
+		class="SoundOptionsWnd"
+		id="IW_WND_OPTIONS_SOUND"
+		file="data\if\dialogs\SoundOptionsWnd.xml"
+		showImmediate="0"
+		loadType="AT_APP_START"
+	/>                         
+
+	<Item
+		class="GameOptionsWnd"
+		id="IW_WND_OPTIONS_GAME"
+		file="data\if\dialogs\GameOptionsWnd.xml"
+		showImmediate="0"
+		loadType="AT_APP_START"
+	/>                         
+
+	<Item
+		class="ControlOptionsWnd"
+		id="IW_WND_OPTIONS_CONTROL"
+		file="data\if\dialogs\ControlOptionsWnd.xml"
+		showImmediate="0"
+		loadType="AT_APP_START"
+	/>                         
+
+	<Item
+		class="OptionsWnd"
+		id="IW_WND_OPTIONS"
+		file="data\if\dialogs\OptionsWnd.xml"
+		showImmediate="0"
+		loadType="AT_APP_START"
+	/> 
+
+	<Item
+		class="FadePanelBeforeNextMap"
+		id="IW_WND_FADE_PANEL_BEFORE_NEXT_MAP"
+		file="data\if\dialogs\FadePanelBeforeNextMap.xml"
+		showImmediate="0"
+		loadType="AT_FIRST_LEVEL_START"
+	/> 
+
+	<Item
+		class="HelpSimpleMsgWnd"
+		id="IW_WND_HELP_SIMPLE_MSG"
+		file="data\if\dialogs\HelpSimpleMsgWnd.xml"
+		showImmediate="0"
+		loadType="AT_FIRST_LEVEL_START"
+	/> 
+
+	<Item
+		class="HelpInMainGameInterfaceWnd"
+		id="IW_WND_HELP_MAIN_GAME_INTERFACE"
+		file="data\if\dialogs\HelpMainGameInterfaceWnd.xml"
+		showImmediate="0"
+		loadType="AT_FIRST_LEVEL_START"
+	/> 
+
+	<Item
+		class="MsgBox"
+		id="IW_WND_MSG_BOX"
+		file="data\if\dialogs\MsgBox.xml"
+		showImmediate="0"
+		loadType="AT_APP_START"
+	/> 
+
+	<Item
+		class="RequestDifficultyWnd"
+		id="IW_WND_REQUEST_DIFFICULTY_LEVEL"
+		file="data\if\dialogs\RequestDifficultyWnd.xml"
+		showImmediate="0"
+		loadType="AT_APP_START"
+	/> 
+	
+	<Item
+		class="ServerOptionsWnd"
+		id="IW_WND_MULTIPLAYER_OPTIONS_SERVER"
+		file="data\if\dialogs\ServerOptionsWnd.xml"
+		showImmediate="0"
+		loadType="AT_APP_START"
+	/>  
+	
+	<Item
+		class="ClientOptionsWnd"
+		id="IW_WND_MULTIPLAYER_OPTIONS_CLIENT"
+		file="data\if\dialogs\ClientOptionsWnd.xml"
+		showImmediate="0"
+		loadType="AT_APP_START"
+	/>
+	
+	<Item
+		class="PlayerOptionsWnd"
+		id="IW_WND_MULTIPLAYER_OPTIONS_OPTIONS"
+		file="data\if\dialogs\PlayerOptionsWnd.xml"
+		showImmediate="0"
+		loadType="AT_APP_START"
+	/>
+	
+	<Item
+		class="TeamsOptionsWnd"
+		id="IW_WND_MULTIPLAYER_OPTIONS_TEAMS"
+		file="data\if\dialogs\TeamsOptionsWnd.xml"
+		showImmediate="0"
+		loadType="AT_APP_START"
+	/>
+	
+	<Item
+		class="ViewMapWnd"
+		id="IW_WND_MULTIPLAYER_VIEW_MAP"
+		file="data\if\dialogs\ViewMapWnd.xml"
+		showImmediate="0"
+		loadType="AT_APP_START"
+	/>
+	
+	<Item
+		class="ViewCarWnd"
+		id="IW_WND_MULTIPLAYER_VIEW_CAR"
+		file="data\if\dialogs\ViewCarWnd.xml"
+		showImmediate="0"
+		loadType="AT_APP_START"
+	/>
+	
+	<Item
+		class="ClientAddOptionsWnd"
+		id="IW_WND_MULTIPLAYER_OPTIONS_CLIENT_ADD"
+		file="data\if\dialogs\ClientAddOptionsWnd.xml"
+		showImmediate="0"
+		loadType="AT_APP_START"
+	/>
+	
+	<Item
+		class="MultiplayerOptionsWnd"
+		id="IW_WND_MULTIPLAYER_OPTIONS"
+		file="data\if\dialogs\MultiplayerOptionsWnd.xml"
+		showImmediate="0"
+		loadType="AT_APP_START"
+	/> 
+           
+
+	<Item
+		class="DeathMatchStatsWnd"
+		id="IW_WND_DEATH_MATCH_STATS"
+		file="data\if\dialogs\DeathMatchStatsWnd.xml"
+		showImmediate="0"
+		loadType="AT_FIRST_LEVEL_START"
+	/> 
+	
+	<Item
+		class="TeamForJoinWnd"
+		id="IW_WND_TEAM_FOR_JOIN"
+		file="data\if\dialogs\TeamForJoinWnd.xml"
+		showImmediate="0"
+		loadType="AT_FIRST_LEVEL_START"
+	/>
+
+        <Item
+		class="TeamDeathMatchStatsWnd"
+		id="IW_WND_TEAM_DEATH_MATCH_STATS"
+		file="data\if\dialogs\TeamDeathMatchStatsWnd.xml"
+		showImmediate="0"
+		loadType="AT_FIRST_LEVEL_START"
+	/>  
+
+	<Item
+		class="MusicPlayerWnd"
+		id="IW_WND_MUSIC_PLAYER"
+		file="data\if\dialogs\MusicPlayerWnd.xml"
+		showImmediate="0"
+		loadType="AT_FIRST_LEVEL_START"
+	/> 
+
+	<Item
+		class			= "HUD"
+		id				= "IW_HUD"
+		file			= "data\if_dv\dialogs\HUD.xml"
+		showImmediate	= "false"
+		loadType		= "AT_FIRST_LEVEL_START"
+	/>                                
+
+	<Item
+		class			= "LoadingScreen"
+		id				= "IW_LOADING_SCREEN"
+		file			= "data\if_dv\dialogs\LoadingScreen.xml"
+		showImmediate	= "false"
+		loadType		= "AT_APP_START"
+	/>                                
+
+	<Item
+		class			= "MainMenu"
+		id				= "IW_MAIN_MENU"
+		file			= "data\if_dv\dialogs\MainMenu.xml"
+		showImmediate	= "false"
+		loadType		= "AT_APP_START"
+	/>                                
+
+	<Item
+		class			= "PlayScreen"
+		id				= "IW_PLAY_SCREEN"
+		file			= "data\if_dv\dialogs\PlayScreen.xml"
+		showImmediate	= "false"
+		loadType		= "AT_APP_START"
+	/>                                
+
+	<Item
+		class			= "EscMenu"
+		id				= "IW_ESC_MENU"
+		file			= "data\if_dv\dialogs\EscMenu.xml"
+		showImmediate	= "false"
+		loadType		= "AT_FIRST_LEVEL_START"
+	/>                                
+
+	<Item
+		class			= "DeathMenu"
+		id				= "IW_DEATH_MENU"
+		file			= "data\if_dv\dialogs\DeathMenu.xml"
+		showImmediate	= "false"
+		loadType		= "AT_FIRST_LEVEL_START"
+	/>                                
+
+	<Item
+		class			= "KeyTips"
+		id				= "IW_KEY_TIPS"
+		file			= "data\if_dv\dialogs\KeyTips.xml"
+		showImmediate	= "false"
+		loadType		= "AT_FIRST_LEVEL_START"
+	/>                                
+
+	<Item
+		class			= "OptionsDV"
+		id				= "IW_OPTIONS"
+		file			= "data\if_dv\dialogs\OptionsDV.xml"
+		showImmediate	= "false"
+		loadType		= "AT_APP_START"
+	/>                                
+
+	<Item
+		class			= "QuestLog"
+		id				= "IW_QUESTLOG"
+		file			= "data\if_dv\dialogs\QuestLog.xml"
+		showImmediate	= "false"
+		loadType		= "AT_FIRST_LEVEL_START"
+	/>                                
+
+	<Item
+		class			= "Garage"
+		id				= "IW_GARAGE"
+		file			= "data\if_dv\dialogs\Garage.xml"
+		showImmediate	= "false"
+		loadType		= "AT_APP_START"
+	/>                                
+
+	<Item
+		class			= "Intermission"
+		id				= "IW_INTERMISSION"
+		file			= "data\if_dv\dialogs\Intermission.xml"
+		showImmediate	= "false"
+		loadType		= "AT_APP_START"
+	/>                                
+
+	<Item
+		class			= "Briefing"
+		id				= "IW_BRIEFING"
+		file			= "data\if_dv\dialogs\Briefing.xml"
+		showImmediate	= "false"
+		loadType		= "AT_APP_START"
+	/>                                
+
+	<Item
+		class			= "Results"
+		id				= "IW_RESULTS"
+		file			= "data\if_dv\dialogs\Results.xml"
+		showImmediate	= "false"
+		loadType		= "AT_FIRST_LEVEL_START"
+	/>                                
+
+	<Item
+		class			= "Credits"
+		id				= "IW_CREDITS"
+		file			= "data\if_dv\dialogs\Credits.xml"
+		showImmediate	= "false"
+		loadType		= "AT_APP_START"
+	/>                                
+
+</GuiResourceInfo>

@@ -324,10 +324,9 @@ jobs:
       #   每个包用自己的 fonts.xml 当源、自己的译文目录收集汉字：
       #     base → Original_DATA/fonts.xml   + Original_DATA_CHS/
       #     dlc1 → DLC1_DATA/fonts.xml       + DLC1_DATA_CHS/
-      #     dlc2 → DLC2_DATA_CHS/fonts.xml   + DLC2_DATA_CHS/
-      #       ★ DLC2 的源 fonts.xml 就用译文目录里那份：它与游戏原版
-      #         fonts.xml 逐字节相同（实测），而 DLC2_DATA/ 是第三方原版数据、
-      #         按 .gitignore 不入库。
+      #     dlc2 → DLC2_DATA/fonts.xml      + DLC2_DATA_CHS/
+      #       （三套一律取自原版基准目录 Original_DATA/、DLC1_DATA/、
+      #         DLC2_DATA/，三者均已入库）
       #   产出布局 <out>/<key>/{data/if/fonts/*, hta_chs_cjk.bin}，
       #   与 build_release.py 的 --fonts 期望一致。
       - name: 烘焙三套字库
@@ -346,7 +345,7 @@ jobs:
           }
           bake base Original_DATA/data/if/fonts/fonts.xml Original_DATA_CHS
           bake dlc1 DLC1_DATA/data/if/fonts/fonts.xml     DLC1_DATA_CHS
-          bake dlc2 DLC2_DATA_CHS/data/if/fonts/fonts.xml DLC2_DATA_CHS
+          bake dlc2 DLC2_DATA/data/if/fonts/fonts.xml     DLC2_DATA_CHS
           echo "── 烘焙产物概览 ──"
           for k in base dlc1 dlc2; do
             n=$(ls baked_fonts/$k/data/if/fonts/cjk_*.dds | wc -l)

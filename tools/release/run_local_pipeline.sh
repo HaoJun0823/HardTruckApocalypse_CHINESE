@@ -32,7 +32,7 @@ bake() {
 rm -rf baked_fonts release
 bake base Original_DATA/data/if/fonts/fonts.xml Original_DATA_CHS
 bake dlc1 DLC1_DATA/data/if/fonts/fonts.xml     DLC1_DATA_CHS
-bake dlc2 DLC2_DATA_CHS/data/if/fonts/fonts.xml DLC2_DATA_CHS
+bake dlc2 DLC2_DATA/data/if/fonts/fonts.xml     DLC2_DATA_CHS
 
 echo "==> 装配"
 python tools/release/build_release.py --out release --fonts baked_fonts \

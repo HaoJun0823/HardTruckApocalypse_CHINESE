@@ -37,20 +37,17 @@ PKG_SPEC = {
         exe='hta.exe', bat_prefix='hta',
         asi=['hta_chs.asi', 'Render9Fix.asi'],
         ini=['Render9Fix.ini'],
-        bin='hta_chs_cjk.bin', pages=85, text_min=130,
-        native_fonts=False),
+        bin='hta_chs_cjk.bin', pages=85, text_min=130),
     'dlc1': dict(
         exe='Meridian113.exe', bat_prefix='Meridian113',
         asi=['hta_chs_dlc1.asi', 'DLC1_MemFix.asi'],
         ini=['DLC1_MemFix.ini'],
-        bin='hta_chs_cjk_dlc1.bin', pages=81, text_min=128,
-        native_fonts=False),
+        bin='hta_chs_cjk_dlc1.bin', pages=81, text_min=128),
     'dlc2': dict(
         exe='emarcade.exe', bat_prefix='emarcade',
         asi=['hta_chs_dlc2.asi', 'DLC2_MemFix.asi'],
         ini=['DLC2_MemFix.ini'],
-        bin='hta_chs_cjk_dlc2.bin', pages=88, text_min=64,
-        native_fonts=True),
+        bin='hta_chs_cjk_dlc2.bin', pages=88, text_min=64),
 }
 
 # 每个包都必须有的根目录静态资源
@@ -177,17 +174,14 @@ def main():
                   % (key, ntxt, sp['text_min']))
             ok = False
 
-        # 8) DLC2 的原版字体全集（该包特有的实机验证组合）
-        if sp['native_fonts']:
-            nf = os.path.join(d, 'update', 'data', 'if', 'fonts')
-            if not os.path.isfile(os.path.join(nf, 'fonts.xml')):
-                print('!! [%s] 缺 update/data/if/fonts/fonts.xml（原版字体表）' % key)
-                ok = False
-            nsm = len(glob.glob(os.path.join(nf, 'sm_*.dds')))
-            #    sm_tahoma_* 十个字号 + sm_impact_39.000 = 11 个（与参考包一致）
-            if nsm != 11:
-                print('!! [%s] update/data/if/fonts 原版字形 %d 个（期望 11）'
-                      % (key, nsm))
+        # 8) DLC2 的 update/data/if/fonts 必须**不存在**：
+        #    该路径会覆盖游戏 data 的原版字体，实测是错误做法（见
+        #    build_release.py 的 keep_text）。字库只走 data/if/fonts。
+        if key == 'dlc2':
+            bogus = os.path.join(d, 'update', 'data', 'if', 'fonts')
+            if os.path.exists(bogus):
+                print('!! [%s] 不该出现 update/data/if/fonts（会覆盖游戏 data）'
+                      % key)
                 ok = False
 
         # 9) 不该出现的构建产物 / 备份

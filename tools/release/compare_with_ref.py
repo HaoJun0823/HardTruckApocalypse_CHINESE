@@ -20,6 +20,23 @@ EXPECTED_MISSING = {
     # 翻译过程的备份文件，无用途；BASE 参考包误打包了 5 个，DLC1/DLC2 都没打
     '.bak',
 }
+# 参考包里有、我们**有意**不产出的**目录前缀**（按包内相对路径，'/' 分隔）
+#   · DLC2 update/data/if/fonts/：参考包把原版字体全集放在这里，实测该路径
+#     会**覆盖游戏 data 的原版字体**，是错误做法。字库一律只走
+#     data/if/fonts/ 的烘焙产物（见 build_release.py 的 keep_text 与
+#     verify_release.py 的第 8 项断言）。
+EXPECTED_MISSING_PREFIX = {
+    'update/data/if/fonts/',
+}
+# 我们**有意**与参考包不同、且差异已确认过语义的文件
+#   · 必读说明.txt：三包统一用「系列通用版」dist/必读说明/dlc.txt（参考包各包
+#     自带旧版），见 build_release.py 步骤 3 的说明。
+#   · update/data/if/strings/truxx.xml：DLC1 长文本按 '|' 切分换行后的版本
+#     （参考包是未切分的旧版），见 commit 58ca349。
+EXPECTED_DIFFER_EXACT = {
+    '必读说明.txt',
+    'update/data/if/strings/truxx.xml',
+}
 # 我们**有意新增**、参考包里没有的文件（不算差异）
 #   License.txt 是本次新增的第三方许可合并文件（参考包没有）
 EXPECTED_ADDED = {
@@ -74,10 +91,14 @@ def tree(base):
 
 
 def is_expected_missing(ref_rel, ref_dir):
-    """参考包里有、我们不产出的文件：只接受 .BAK，且必须是备份语义。"""
+    """参考包里有、我们不产出的文件：.BAK、孤儿 cjk 图集、已声明的目录前缀。"""
     low = ref_rel.lower()
     if low.endswith('.bak'):
         return True
+    # 我们有意整目录不分发的路径（如 DLC2 的 update/data/if/fonts/）
+    for pre in EXPECTED_MISSING_PREFIX:
+        if ref_rel.startswith(pre):
+            return True
     # 孤儿 cjk 图集：参考包磁盘上有，但参考包自己的 fonts.xml 并未声明它
     if os.path.basename(ref_rel).startswith(ORPHAN_PREFIX):
         fxml = os.path.join(ref_dir, 'data', 'if', 'fonts', 'fonts.xml')
@@ -90,6 +111,9 @@ def is_expected_missing(ref_rel, ref_dir):
 
 def is_expected_differ(rel, mine, ref):
     """已知且有意为之的**内容**差异。"""
+    # 已确认语义、刻意与参考包不同的文件（见 EXPECTED_DIFFER_EXACT 说明）
+    if rel in EXPECTED_DIFFER_EXACT:
+        return True
     # fonts.xml 只允许空白差异（见 norm_xml 的说明）
     if rel.endswith('/fonts/fonts.xml') or rel == 'data/if/fonts/fonts.xml':
         return norm_xml(mine) == norm_xml(ref)

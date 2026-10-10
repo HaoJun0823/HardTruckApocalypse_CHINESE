@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<resource>
+	<string
+		id="40001"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="A special task force - team Delta - that we send to Base #31, disappeared in this very area."
+		sound="data\sounds\dv_sounds\dialogs\dv4_8.wav"
+		time="7" />
+
+	<string
+		id="40002"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="In the last message we received from them, we could make out only a few words because of heavy static: 'An motorcade without identification…' 'Open fire!..' 'Delta-4, cover Delta-7!'. 'Five, hold, I'm coming!'."
+		sound="data\sounds\dv_sounds\dialogs\dv4_9.wav"
+		time="12" />
+
+	<string
+		id="40003"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="All further attempts to restore the contact were unsuccessful. Most probably, my guys met the smugglers' motorcade that stole the container with Z-120, and got under fire."
+		sound="data\sounds\dv_sounds\dialogs\dv4_10.wav"
+		time="8" />
+
+	<string
+		id="40004"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Try to find out what happened to team Delta."
+		sound="data\sounds\dv_sounds\dialogs\dv4_11.wav"
+		time="2" />
+
+	<string
+		id="40005"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Also, the government would like to have full details on location of Z-120 alien specimens container."
+		sound="data\sounds\dv_sounds\dialogs\dv4_12.wav"
+		time="7" />
+
+	<string
+		id="4001"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Even if all soldiers from team Delta are dead, it's unlikely that any of smuggler bandits had escaped. You can trust me on that, agent."
+		sound="data\sounds\dv_sounds\dialogs\dv4_13.wav"
+		time="8" />
+
+	<string
+		id="40011"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Boys from Delta team couldn't have disappeared without a trace."
+		sound="data\sounds\dv_sounds\dialogs\dv4_14.wav"
+		time="2" />
+
+	<string
+		id="40012"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Whoever they fought with, this someone must have suffered serious casualties and the surrounding terrain must be pretty damaged. I mean, my guys probably left a good trace. All you need is to look for it."
+		sound="data\sounds\dv_sounds\dialogs\dv4_15.wav"
+		time="11" />
+
+	<string
+		id="4002"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Attention, agent. Our radio team have intercepted a coded message broadcasted in military frequency."
+		sound="data\sounds\dv_sounds\dialogs\dv4_16.wav"
+		time="3" />
+
+	<string
+		id="4003"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="The signal is weak, mixed with lots of static, but it seems that Delta team barely holds the ground at Devil Foot plateau. Hurry, agent!"
+		sound="data\sounds\dv_sounds\dialogs\dv4_17.wav"
+		time="6" />
+
+	<string
+		id="40031"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="These damn mutants are everywhere. You are already well experienced in fighting these monsters, so show them what you've got."
+		sound="data\sounds\dv_sounds\dialogs\dv4_18.wav"
+		time="6" />
+
+	<string
+		id="4004"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Two news, agent. A good and a bad one. The good one: you are right on time."
+		sound="data\sounds\dv_sounds\dialogs\dv4_19.wav"
+		time="3" />
+
+	<string
+		id="4005"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Now the bad one: there isn't a team Delta at this location, sorry. "
+		sound="data\sounds\dv_sounds\dialogs\dv4_20.wav"
+		time="3" />
+
+	<string
+		id="40051"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="There's only a heavily wounded radio operator Sergeant McCoy, who taken the command over local militia forces when monsters attacked the town."
+		sound="data\sounds\dv_sounds\dialogs\dv4_21.wav"
+		time="6" />
+
+	<string
+		id="40052"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="We have intercepted a coded radiogram. The radio engineer doesn't use any of standard military codes, so it's obvious he's not Delta."
+		sound="data\sounds\dv_sounds\dialogs\dv4_22.wav"
+		time="7" />
+
+	<string
+		id="40053"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="You have to find out who is broadcasting this, to whom and for what purpose. Possibly, it will lead us to the team."
+		sound="data\sounds\dv_sounds\dialogs\dv4_23.wav"
+		time="6" />
+
+	<string
+		id="4006"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="We finally managed to decipher the message."
+		sound="data\sounds\dv_sounds\dialogs\dv4_24.wav"
+		time="2" />
+
+	<string
+		id="4007"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="It was sent by the smugglers, who encountered team Delta and suffered extreme losses."
+		sound="data\sounds\dv_sounds\dialogs\dv4_25.wav"
+		time="7" />
+
+	<string
+		id="40071"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Their communications allowed us to get the area coordinates, so we're sending you an approximate place of the encounter."
+		sound="data\sounds\dv_sounds\dialogs\dv4_26.wav"
+		time="7" />
+
+	<string
+		id="40072"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Military radio interception system let us learn where the encounter of team Delta with the bandits took place. Examination of the battlefield can get us on track of our soldiers."
+		sound="data\sounds\dv_sounds\dialogs\dv4_27.wav"
+		time="9" />
+
+	<string
+		id="4008"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="This total lack of signs of the fight is quite alarming, of course, but it isn't quite important at the moment."
+		sound="data\sounds\dv_sounds\dialogs\dv4_28.wav"
+		time="6" />
+
+	<string
+		id="4009"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Our radio team have intercepted a coded message broadcasted in military frequency. The signal is weak, mixed with lots of static, but it seems that Delta team barely holds the ground at Devil Foot plateau. Hurry, agent!"
+		sound="data\sounds\dv_sounds\dialogs\dv4_29.wav"
+		time="10" />
+
+	<string
+		id="4010"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="According to the report of Sergeant McCoy, while heading to Base #31 team Delta was forced to engage well-armed men driving heavy trucks."
+		sound="data\sounds\dv_sounds\dialogs\dv4_30.wav"
+		time="7" />
+
+	<string
+		id="4011"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="In one of the trucks, the sergeant noticed a container marked 'Z-120'. The sergeant was wounded in combat, and his radio was destroyed."
+		sound="data\sounds\dv_sounds\dialogs\dv4_31.wav"
+		time="7" />
+
+	<string
+		id="4012"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="The rest of the team started pursuit of retreating enemy. You must join team Delta and warn them of the danger sealed inside the Z-120 container."
+		sound="data\sounds\dv_sounds\dialogs\dv4_32.wav"
+		time="9" />
+
+	<string
+		id="4061"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="It seems the guys need help."
+		sound=""
+		time="2" />
+</resource>

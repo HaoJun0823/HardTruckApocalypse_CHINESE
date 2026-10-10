@@ -1,0 +1,373 @@
+<?xml version="1.0"	encoding="windows-1251"	standalone="yes" ?>
+<Prefabs>
+	<Node
+		name="DeathMatchStatsWnd"
+		class="Wnd"
+		org="0 0 1024 768"
+		style="768"
+		order="-1"
+		id="0"
+		caption=""
+		tip=""
+		wndColor="33ffffff"
+		paneName="Wnd3VeryAlpha"
+		paneFlags="0"
+		wrap="2"
+		font="0">
+
+		<Node
+			name="wndGameOverHeader"
+			class="Wnd"
+			org="0 0 1024 96"
+			style="3840"
+			order="-1"
+			id="0"
+			caption="^NetGameOverHeader^"
+			tip=""
+			wndColor="80ffffff"
+			textColor="ffffffff"
+			paneName="Wnd3VeryAlpha"
+			paneFlags="0"
+			wrap="0"
+			font="0" />
+
+		<Node
+			name="wndGameOverFooter"
+			class="Wnd"
+			org="0 671 1024	96"
+			style="3840"
+			order="-1"
+			id="0"
+			caption="^NetGameOverFooter^"
+			tip=""
+			wndColor="80ffffff"
+			textColor="ffddaa66"
+			paneName="Wnd3VeryAlpha"
+			paneFlags="0"
+			wrap="0"
+			font="0" />
+
+		<Node
+			name="mainPanel"
+			class="Wnd"
+			org="276.000 96.000	494.000	548.000"
+			style="768"
+			order="-1"
+			id="0"
+			caption=""
+			tip=""
+			backimage="data\if\ico\DeathMatchStatsWnd\px_black.tga"
+			wndColor="33ffffff"
+			paneName="Wnd3VeryAlpha"
+			paneFlags="0"
+			wrap="2"
+			font="0">
+
+				<Node
+					name="wndHeaderNumber"
+					class="Wnd"
+					org="2.000 2.000 30.000	30.000"
+					style="3840"
+					order="-1"
+					id="0"
+					caption="^NumberSymbol^"
+					tip=""
+					backimage="data\if\ico\DeathMatchStatsWnd\px_black.tga"
+					wndColor="80ffffff"
+					textColor="ffcccccc"
+					paneName="Wnd3VeryAlpha"
+					paneFlags="0"
+					wrap="0"
+					font="1" />
+
+				<Node
+					name="wndHeaderColor"
+					class="Wnd"
+					org="34.000	2.000 70.000 30.000"
+					style="3840"
+					order="-1"
+					id="0"
+					caption="^Color^"
+					tip=""
+					backimage="data\if\ico\DeathMatchStatsWnd\px_black.tga"
+					wndColor="80ffffff"
+					textColor="ffcccccc"
+					paneName="Wnd3VeryAlpha"
+					paneFlags="0"
+					wrap="0"
+					font="1" />
+
+				<Node
+					name="wndHeaderPlayerName"
+					class="Wnd"
+					org="106.000 2.000 200.000 30.000"
+					style="2816"
+					order="-1"
+					id="0"
+					caption="^PlayerName^"
+					tip=""
+					backimage="data\if\ico\DeathMatchStatsWnd\px_black.tga"
+					wndColor="80ffffff"
+					textColor="ffcccccc"
+					paneName="Wnd3VeryAlpha"
+					paneFlags="0"
+					wrap="0"
+					font="1"
+					clientEdges="10.000	0.000 0.000	0.000"/>
+
+				<Node
+					name="wndHeaderKills"
+					class="Wnd"
+					org="308.000 2.000 60.000 30.000"
+					style="3840"
+					order="-1"
+					id="0"
+					caption="^Kills^"
+					tip=""
+					backimage="data\if\ico\DeathMatchStatsWnd\px_black.tga"
+					wndColor="80ffffff"
+					textColor="ffcccccc"
+					paneName="Wnd3VeryAlpha"
+					paneFlags="0"
+					wrap="0"
+					font="1" />
+
+				<Node
+					name="wndHeaderDeaths"
+					class="Wnd"
+					org="370.000 2.000 60.000 30.000"
+					style="3840"
+					order="-1"
+					id="0"
+					caption="^Deaths^"
+					tip=""
+					backimage="data\if\ico\DeathMatchStatsWnd\px_black.tga"
+					wndColor="80ffffff"
+					textColor="ffcccccc"
+					paneName="Wnd3VeryAlpha"
+					paneFlags="0"
+					wrap="0"
+					font="1" />	
+
+				<Node
+					name="wndHeaderPing"
+					class="Wnd"
+					org="432.000 2.000 60.000 30.000"
+					style="3840"
+					order="-1"
+					id="0"
+					caption="^Ping^"
+					tip=""
+					backimage="data\if\ico\DeathMatchStatsWnd\px_black.tga"
+					wndColor="80ffffff"
+					textColor="ffcccccc"
+					paneName="Wnd3VeryAlpha"
+					paneFlags="0"
+					wrap="0"
+					font="1" />	
+
+				<Node
+					name="wndPlayerRecord"
+					class="Wnd"
+					org="2.000 36.000 490.000 30.000"
+					style="768"
+					order="-1"
+					id="0"
+					caption=""
+					tip=""
+					backimage=""
+					paneName="Wnd3VeryAlpha"
+					paneFlags="0"
+					wrap="0"
+					font="0" />
+
+				<Node
+					name="wndNumber"
+					class="Wnd"
+					org="2.000 36.000 30.000 30.000"
+					style="3840"
+					order="-1"
+					id="666"
+					caption=""
+					tip=""
+					backimage="data\if\ico\DeathMatchStatsWnd\px_black.tga"
+					paneName="Wnd3VeryAlpha"
+					paneFlags="0"
+					wrap="0"
+					font="1" />
+
+
+				<Node
+					name="wndColorBg"
+					class="Wnd"
+					org="34.000	36.000 70.000 30.000"
+					style="768"
+					order="-1"
+					id="666"
+					caption=""
+					tip=""
+					backimage="data\if\ico\DeathMatchStatsWnd\px_black.tga"
+					paneName="Wnd3VeryAlpha"
+					paneFlags="0"
+					wrap="0"
+					font="0" />
+
+				<Node
+					name="wndColorBg_0"
+					class="Wnd"
+					org="41.000	42.000 18.000 18.000"
+					style="768"
+					order="-1"
+					id="0"
+					caption=""
+					tip=""
+					backimage="data\if\ico\DeathMatchStatsWnd\px_black.tga"
+					paneName="Wnd3VeryAlpha"
+					paneFlags="0"
+					wrap="0"
+					font="0" />
+
+				<Node
+					name="wndColorBg_1"
+					class="Wnd"
+					org="61.000	42.000 18.000 18.000"
+					style="768"
+					order="-1"
+					id="0"
+					caption=""
+					tip=""
+					backimage="data\if\ico\DeathMatchStatsWnd\px_black.tga"
+					paneName="Wnd3VeryAlpha"
+					paneFlags="0"
+					wrap="0"
+					font="0" />
+
+
+				<Node
+					name="wndColorBg_2"
+					class="Wnd"
+					org="81.000	42.000 18.000 18.000"
+					style="768"
+					order="-1"
+					id="0"
+					caption=""
+					tip=""
+					backimage="data\if\ico\DeathMatchStatsWnd\px_black.tga"
+					paneName="Wnd3VeryAlpha"
+					paneFlags="0"
+					wrap="0"
+					font="0" />
+
+				<Node
+					name="wndColor_0"
+					class="ImageWnd"
+					org="42.000	43.000 16.000 16.000"
+					style="768"
+					order="-1"
+					id="0"
+					caption=""
+					tip=""
+					backimage=""
+					paneName="Wnd3VeryAlpha"
+					paneFlags="0"
+					wrap="0"
+					font="0" />
+
+				<Node
+					name="wndColor_1"
+					class="ImageWnd"
+					org="62.000	43.000 16.000 16.000"
+					style="768"
+					order="-1"
+					id="0"
+					caption=""
+					tip=""
+					backimage=""
+					paneName="Wnd3VeryAlpha"
+					paneFlags="0"
+					wrap="0"
+					font="0" />
+
+				<Node
+					name="wndColor_2"
+					class="ImageWnd"
+					org="82.000	43.000 16.000 16.000"
+					style="768"
+					order="-1"
+					id="0"
+					caption=""
+					tip=""
+					backimage=""
+					paneName="Wnd3VeryAlpha"
+					paneFlags="0"
+					wrap="0"
+					font="0" />	
+
+
+				<Node
+					name="wndPlayerName"
+					class="Wnd"
+					org="106.000 36.000	200.000	30.000"
+					style="2816"
+					order="-1"
+					id="666"
+					caption=""
+					tip=""
+					backimage="data\if\ico\DeathMatchStatsWnd\px_black.tga"
+					paneName="Wnd3VeryAlpha"
+					paneFlags="0"
+					wrap="0"
+					font="1"
+					clientEdges="10.000	0.000 0.000	0.000"/>
+
+				<Node
+					name="wndKills"
+					class="Wnd"
+					org="308.000 36.000	60.000 30.000"
+					style="3840"
+					order="-1"
+					id="666"
+					caption=""
+					tip=""
+					backimage="data\if\ico\DeathMatchStatsWnd\px_black.tga"
+					paneName="Wnd3VeryAlpha"
+					paneFlags="0"
+					wrap="0"
+					font="1" />
+
+				<Node
+					name="wndDeaths"
+					class="Wnd"
+					org="370.000 36.000	60.000 30.000"
+					style="3840"
+					order="-1"
+					id="666"
+					caption=""
+					tip=""
+					backimage="data\if\ico\DeathMatchStatsWnd\px_black.tga"
+					paneName="Wnd3VeryAlpha"
+					paneFlags="0"
+					wrap="0"
+					font="1" />
+
+
+				<Node
+					name="wndPing"
+					class="Wnd"
+					org="432.000 36.000	60.000 30.000"
+					style="3840"
+					order="-1"
+					id="666"
+					caption=""
+					tip=""
+					backimage="data\if\ico\DeathMatchStatsWnd\px_black.tga"
+					paneName="Wnd3VeryAlpha"
+					paneFlags="0"
+					wrap="0"
+					font="1" />
+
+		</Node>
+		
+	</Node>
+	
+</Prefabs>

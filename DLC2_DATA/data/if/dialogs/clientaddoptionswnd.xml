@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<Prefabs>
+	<Node
+		name="wndClientAddOptions"
+		class="Wnd"
+		org="0.000 0.000 1024.000 768.000"
+		style="768"
+		order="-1"
+		id="0"
+		caption=""
+		tip=""
+		backimage=""
+		paneName="PaneGray3"
+		scrollPaneName="Scroll1"
+		paneFlags="0"
+		wrap="2"
+		format="1"
+		font="0"
+		clientEdges="0.000 0.000 0.000 0.000"
+		wndColor="00000000"
+		textColor="ffffffff"
+		textColorDisabled="ff7f7f7f">
+		<Node
+			name="wndTitle"
+			class="Wnd"
+			org="137.000 137.000 586.000 50.000"
+			style="3904"
+			order="1"
+			id="0"
+			caption="^Client Add settings^"
+			tip=""
+			backimage=""
+			paneName="defaultWnd"
+			scrollPaneName="Scroll1"
+			paneFlags="7"
+			wrap="2"
+			format="1"
+			font="0"
+			clientEdges="0.000 0.000 0.000 0.000"
+			wndColor="00000000"
+			textColor="fF404040"
+			textColorDisabled="ff7f7f7f">
+			<Animations />
+		</Node> 
+		
+		<Node
+			name="lblServer"
+			class="Wnd"
+			org="137.000 199.000 283.000 32.000"
+			style="2880"
+			order="6"
+			id="0"
+			caption="^ClientAddServer^"
+			tip=""
+			backimage=""
+			paneName="defaultWnd"
+			scrollPaneName="Scroll1"
+			paneFlags="7"
+			wrap="2"
+			format="2"
+			font="0"
+			clientEdges="0.000 0.000 0.000 0.000"
+			wndColor="00000000"
+			textColor="fF404040"
+			textColorDisabled="ff7f7f7f">
+			<Animations />
+		</Node>
+		
+		<Node
+			name="lblPort"
+			class="Wnd"
+			org="137.000 239.000 283.000 32.000"
+			style="2880"
+			order="6"
+			id="0"
+			caption="^ClientAddPort^"
+			tip=""
+			backimage=""
+			paneName="defaultWnd"
+			scrollPaneName="Scroll1"
+			paneFlags="7"
+			wrap="2"
+			format="2"
+			font="0"
+			clientEdges="0.000 0.000 0.000 0.000"
+			wndColor="00000000"
+			textColor="fF404040"
+			textColorDisabled="ff7f7f7f">
+			<Animations />
+		</Node>
+		
+		<Node
+			name="editServer"
+			class="EditWnd"
+			org="440.000 199.000 222.000 36.000"
+			style="2390560"
+			order="0"
+			id="10860"
+			caption=""
+			tip=""
+			backimage=""
+			paneName="PaneFrameC"
+			scrollPaneName="Scroll1"
+			paneFlags="6"
+			wrap="0"
+			format="1"
+			font="0"
+			clientEdges="0.000 0.000 0.000 0.000"
+			wndColor="00000000"
+			textColor="ff404040"
+			textColorDisabled="ff8f8f8f"
+			cursorColor="00000001">
+			<Animations />
+		</Node>
+<!--		
+		<Node
+			name="emboss_editServer"
+			class="Wnd"
+			org="137.000 199.000 283.000 32.000"
+			style="768"
+			order="1"
+			id=""
+			caption=""
+			tip=""
+			backimage=""
+			paneName="PaneEmboss"
+			scrollPaneName="Scroll1"
+			paneFlags="6"
+			wrap="2"
+			format="1"
+			font="0"
+			textColor="ff404040"
+			clientEdges="0.000 0.000 0.000 0.000" />
+-->			
+		<Node
+			name="editPort"
+			class="EditWnd"
+			org="440.000 239.000 222.000 36.000"
+			style="2390560"
+			order="0"
+			id="10861"
+			caption=""
+			tip=""
+			backimage=""
+			paneName="PaneFrameC"
+			scrollPaneName="Scroll1"
+			paneFlags="6"
+			wrap="0"
+			format="1"
+			font="0"
+			clientEdges="0.000 0.000 0.000 0.000"
+			wndColor="00000000"
+			textColor="ff404040"
+			textColorDisabled="ff8f8f8f"
+			cursorColor="00000001">
+			<Animations />
+		</Node>
+<!--		
+		<Node
+			name="emboss_editPort"
+			class="Wnd"
+			org="137.000 235.000 283.000 32.000"
+			style="768"
+			order="1"
+			id=""
+			caption=""
+			tip=""
+			backimage=""
+			paneName="PaneEmboss"
+			scrollPaneName="Scroll1"
+			paneFlags="6"
+			wrap="2"
+			format="1"
+			font="0"
+			textColor="ff404040"
+			clientEdges="0.000 0.000 0.000 0.000" />
+-->			
+		<Node
+			name="btnDefault"
+			org="155.000 590.000 200.000 32.000"
+			style="265728"
+			order="24"
+			id="10863"
+			caption="^ClientAddDefault^"
+			tip=""
+			backimage=""
+			paneName="PaneBtnGray1"
+			scrollPaneName="Scroll1"
+			paneFlags="7"
+			wrap="0"
+			format="0"
+			font="0"
+			clientEdges="0.000 0.000 0.000 0.000"
+			wndColor="00000000"
+			textColor="fF404040"
+			textColorDisabled="ff7f7f7f"
+			btnIsImaged="0"
+			class="ButtonWnd">
+			<Animations />
+		</Node>
+
+		<Node
+			name="emboss_btnDefault"
+			class="Wnd"
+			org="153.000 588.000 204.000 36.000"
+			style="768"
+			order="1"
+			id=""
+			caption=""
+			tip=""
+			backimage=""
+			paneName="PaneEmboss"
+			scrollPaneName="Scroll1"
+			paneFlags="6"
+			wrap="2"
+			format="1"
+			font="0"
+			textColor="ff404040"
+			clientEdges="0.000 0.000 0.000 0.000" />
+			
+		<Node
+			name="btnMaplist"
+			org="442.000 285.000 218.000 32.000"
+			style="265728"
+			order="24"
+			id="10862"
+			caption="^ClientConnect^"
+			tip=""
+			backimage=""
+			paneName="PaneBtnGray1"
+			scrollPaneName="Scroll1"
+			paneFlags="7"
+			wrap="0"
+			format="0"
+			font="0"
+			clientEdges="0.000 0.000 0.000 0.000"
+			wndColor="00000000"
+			textColor="fF404040"
+			textColorDisabled="ff7f7f7f"
+			btnIsImaged="0"
+			class="ButtonWnd">
+			<Animations />
+		</Node>
+
+		<Node
+			name="emboss_btnMaplist"
+			class="Wnd"
+			org="440.000 284.000 222.000 36.000"
+			style="768"
+			order="1"
+			id=""
+			caption=""
+			tip=""
+			backimage=""
+			paneName="PaneEmboss"
+			scrollPaneName="Scroll1"
+			paneFlags="6"
+			wrap="2"
+			format="1"
+			font="0"
+			textColor="ff404040"
+			clientEdges="0.000 0.000 0.000 0.000" />
+			
+		<Node
+			name="btnClientAddBack"
+			org="505.000 590.000 200.000 32.000"
+			style="265728"
+			order="24"
+			id="10864"
+			caption="^ClientAddBack^"
+			tip=""
+			backimage=""
+			paneName="PaneBtnGray1"
+			scrollPaneName="Scroll1"
+			paneFlags="7"
+			wrap="0"
+			format="0"
+			font="0"
+			clientEdges="0.000 0.000 0.000 0.000"
+			wndColor="00000000"
+			textColor="fF404040"
+			textColorDisabled="ff7f7f7f"
+			btnIsImaged="0"
+			class="ButtonWnd">
+			<Animations />
+		</Node>
+
+		<Node
+			name="emboss_btnClientAddBack"
+			class="Wnd"
+			org="503.000 588.000 204.000 36.000"
+			style="768"
+			order="1"
+			id=""
+			caption=""
+			tip=""
+			backimage=""
+			paneName="PaneEmboss"
+			scrollPaneName="Scroll1"
+			paneFlags="6"
+			wrap="2"
+			format="1"
+			font="0"
+			textColor="ff404040"
+			clientEdges="0.000 0.000 0.000 0.000" />
+		
+		<Animations />
+		
+		<Node
+			name="wndLine1"
+			class="LineWnd"
+			org="137.000 187.000 586.000 2.000"
+			style="768"
+			order="0"
+			id="0"
+			caption=""
+			tip=""
+			backimage=""
+			paneName="PaneLineMenu"
+			scrollPaneName="Scroll1"
+			paneFlags="1"
+			wrap="2"
+			format="1"
+			font="0"
+			clientEdges="0.000 0.000 0.000 0.000"
+			wndColor="00000000"
+			textColor="ffffffff"
+			textColorDisabled="ff7f7f7f"
+			lineDirection="0">
+			<Animations />
+		</Node>
+		
+		<Node
+			name="wndLine2"
+			class="LineWnd"
+			org="137.000 579.000 586.000 2.000"
+			style="768"
+			order="0"
+			id="0"
+			caption=""
+			tip=""
+			backimage=""
+			paneName="PaneLineMenu"
+			scrollPaneName="Scroll1"
+			paneFlags="1"
+			wrap="2"
+			format="1"
+			font="0"
+			clientEdges="0.000 0.000 0.000 0.000"
+			wndColor="00000000"
+			textColor="ffffffff"
+			textColorDisabled="ff7f7f7f"
+			lineDirection="0">
+			<Animations />
+		</Node>
+	</Node>
+</Prefabs>

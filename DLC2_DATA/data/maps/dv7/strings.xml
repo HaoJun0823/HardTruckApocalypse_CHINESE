@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<resource>
+	<string
+		id="7000"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="As I understand, you were unable to find the works of Pappers? To hell with that. Living professor is more important than his papers."
+		sound="data\sounds\dv_sounds\dialogs\dv7_1.wav"
+		time="8" />
+
+	<string
+		id="70001"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Pick the egghead and bring him to the base. Use force if he resists."
+		sound="data\sounds\dv_sounds\dialogs\dv7_2.wav"
+		time="5" />
+
+	<string
+		id="7001"
+		modelName="mask_commander"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Stop, agent."
+		sound="data\sounds\dv_sounds\dialogs\dv7_3.wav"
+		time="1" />
+
+	<string
+		id="7002"
+		modelName="mask_commander"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="You are on infested territory."
+		sound="data\sounds\dv_sounds\dialogs\dv7_4.wav"
+		time="2" />
+
+	<string
+		id="70021"
+		modelName="mask_commander"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="No-one has the right to take the toxin out of the place and poison the rest of the world."
+		sound="data\sounds\dv_sounds\dialogs\dv7_5.wav"
+		time="5" />
+
+	<string
+		id="70022"
+		modelName="mask_commander"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Your truck is covered in infection from wheels to top."
+		sound="data\sounds\dv_sounds\dialogs\dv7_6.wav"
+		time="3" />
+
+	<string
+		id="70023"
+		modelName="mask_commander"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Sorry, but I have to kill you."
+		sound="data\sounds\dv_sounds\dialogs\dv7_7.wav"
+		time="2" />
+
+	<string
+		id="70025"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Our astronomers detected a huge UFO on geostationary orbit."
+		sound="data\sounds\dv_sounds\dialogs\dv7_8.wav"
+		time="5" />
+
+	<string
+		id="70026"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Pappers is a leading specialist of Base 31, and it was the base researching alien technologies. We need to hear his opinion."
+		sound="data\sounds\dv_sounds\dialogs\dv7_9.wav"
+		time="6" />
+
+	<string
+		id="70027"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="So here is your new mission: return to professor Pappers, pick him up whatever he says, use force if needed, and leave the infected area immediately."
+		sound="data\sounds\dv_sounds\dialogs\dv7_10.wav"
+		time="9" />
+
+	<string
+		id="7003"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Start the evacuation of the professor. As both air survey and land detectors show, the infestation cloud moves fast in your direction. Hurry, agent."
+		sound="data\sounds\dv_sounds\dialogs\dv7_11.wav"
+		time="8" />
+
+	<string
+		id="70031"
+		modelName="mask_commander"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Don't run, agent. Trust me, you wouldn't defeat me lately, and now you can't, either..."
+		sound="data\sounds\dv_sounds\dialogs\dv7_12.wav"
+		time="7" />
+
+	<string
+		id="70032"
+		modelName="mask_commander"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="I'm a subject of the mutation, and it changed me, it gave me great strength and power."
+		sound="data\sounds\dv_sounds\dialogs\dv7_13.wav"
+		time="4" />
+
+	<string
+		id="70033"
+		modelName="mask_commander"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="But the price was too high. And I'm not letting you drag this Z-120 infection in the world that doesn't suspect anything."
+		sound="data\sounds\dv_sounds\dialogs\dv7_14.wav"
+		time="5" />
+
+	<string
+		id="70034"
+		modelName="mask_commander"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Prepare to die. I hope you see my point, as a patriot to a patriot, because it's our blood that fertilizes the tree of liberty."
+		sound="data\sounds\dv_sounds\dialogs\dv7_15.wav"
+		time="8" />
+
+	<string
+		id="7004"
+		modelName="mask_commander"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="You managed… But what is that?.. I'm starting to see everything different."
+		sound="data\sounds\dv_sounds\dialogs\dv7_16.wav"
+		time="3" />
+
+	<string
+		id="7005"
+		modelName="mask_commander"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Damn, I've nearly condemned myself to death! Thanks, agent, your bullets helped me great."
+		sound="data\sounds\dv_sounds\dialogs\dv7_17.wav"
+		time="4" />
+
+	<string
+		id="7006"
+		modelName="mask_commander"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Not that I would ever dared to… I would never even figure it out..."
+		sound="data\sounds\dv_sounds\dialogs\dv7_18.wav"
+		time="2" />
+
+	<string
+		id="7007"
+		modelName="mask_commander"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="But it doesn't matter, stop the professor, he got it all wrong. He will destroy everyone, every nation, the whole world. He driven the things to a verge of a catastrophe already…"
+		sound="data\sounds\dv_sounds\dialogs\dv7_19.wav"
+		time="7" />
+
+	<string
+		id="7008"
+		modelName="mask_commander"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="I would stop him if I knew before, but now, when I know, I have no power on it."
+		sound="data\sounds\dv_sounds\dialogs\dv7_20.wav"
+		time="4" />
+
+	<string
+		id="7009"
+		modelName="mask_commander"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Only  humans can save the humankind. Kill him before it's too late."
+		sound="data\sounds\dv_sounds\dialogs\dv7_21.wav"
+		time="2" />
+
+	<string
+		id="7010"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="I didn't even think it was possible! One captain was worth a whole company."
+		sound="data\sounds\dv_sounds\dialogs\dv7_22.wav"
+		time="3" />
+
+	<string
+		id="7011"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Anyway, I'm glad you are victorious. Captain was a patriot you don't meet every day. It's a pity he got the situation wrong."
+		sound="data\sounds\dv_sounds\dialogs\dv7_23.wav"
+		time="6" />
+
+	<string
+		id="7012"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="I propose a minute of silence in his honor."
+		sound="data\sounds\dv_sounds\dialogs\dv7_24.wav"
+		time="3" />
+</resource>
