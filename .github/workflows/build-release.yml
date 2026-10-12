@@ -430,17 +430,22 @@ jobs:
           done
           echo "✓ 三个包齐全（内部为中文名 zip；附件将以 ASCII 名上传）"
 
-      - name: 计算日期-时间 tag
+      - name: 计算日期-时间 tag（含 汉化补丁- 前缀）+ 拆分 ASCII 附件戳
         id: tag
         run: |
           set -euo pipefail
-          tag="$(TZ=Asia/Shanghai date +%Y-%m-%d-%H-%M-%S)"
+          # stamp：纯 ASCII 时间戳，仅供 Release 附件名（API 上传不支持中文名，
+          #   非 ASCII 会被静默破坏成 _._._）。
+          stamp="$(TZ=Asia/Shanghai date +%Y-%m-%d-%H-%M-%S)"
+          # tag：面向玩家的 CJK 前缀标签（统一标准 §5 汉化补丁-YYYY-MM-DD-HH-MM-SS）。
+          tag="汉化补丁-${stamp}"
           # 极小概率同秒重复推送：tag 已存在则追加运行号
           if gh api "repos/${{ github.repository }}/git/ref/tags/$tag" >/dev/null 2>&1; then
             tag="${tag}-${GITHUB_RUN_NUMBER}"
           fi
+          echo "stamp=$stamp" >> "$GITHUB_OUTPUT"
           echo "tag=$tag" >> "$GITHUB_OUTPUT"
-          echo "将使用 tag: $tag"
+          echo "将使用 tag: $tag （附件戳 stamp: $stamp）"
 
       - name: 建 git tag 并推送
         run: |
@@ -458,6 +463,7 @@ jobs:
         run: |
           set -euo pipefail
           tag="${{ steps.tag.outputs.tag }}"
+          stamp="${{ steps.tag.outputs.stamp }}"
           slug="${{ github.repository }}"
           repo_url="https://github.com/$slug"
 
@@ -516,9 +522,9 @@ jobs:
 
           | 英文附件名 | 对应中文原名 | 适用游戏 |
           |---|---|---|
-          | `HTA-Base-CHS-Patch-@@TAG@@.zip` | 燃烧飞车_末日浩劫_简体中文汉化 | 本体 `hta.exe` |
-          | `HTA-DLC1-RiseOfClans-CHS-Patch-@@TAG@@.zip` | 燃烧飞车_末日浩劫_部落崛起_简体中文汉化 | 资料片 `Meridian113.exe` |
-          | `HTA-DLC2-Arcade-CHS-Patch-@@TAG@@.zip` | 燃烧飞车_末日浩劫_街机版_简体中文汉化 | 街机版 `emarcade.exe` |
+          | `HTA-Base-CHS-Patch-@@STAMP@@.zip` | 燃烧飞车_末日浩劫_简体中文汉化 | 本体 `hta.exe` |
+          | `HTA-DLC1-RiseOfClans-CHS-Patch-@@STAMP@@.zip` | 燃烧飞车_末日浩劫_部落崛起_简体中文汉化 | 资料片 `Meridian113.exe` |
+          | `HTA-DLC2-Arcade-CHS-Patch-@@STAMP@@.zip` | 燃烧飞车_末日浩劫_街机版_简体中文汉化 | 街机版 `emarcade.exe` |
 
           ### ⚠️ 安装前必读
 
@@ -549,7 +555,7 @@ jobs:
             echo "源码仓库：<https://github.com/HaoJun0823/HardTruckApocalypse_CHINESE>　·　作者主页：<https://www.haojun0823.xyz/>"
           } >> release_notes.md
 
-          sed -i "s/@@TAG@@/$tag/g" release_notes.md
+          sed -i "s/@@TAG@@/$tag/g; s/@@STAMP@@/$stamp/g" release_notes.md
           if grep -q '@@TAG@@' release_notes.md; then
             echo "!! 仍有未替换的 @@TAG@@" >&2; exit 1
           fi
@@ -564,6 +570,7 @@ jobs:
         run: |
           set -euo pipefail
           tag="${{ steps.tag.outputs.tag }}"
+          stamp="${{ steps.tag.outputs.stamp }}"
           slug="${{ github.repository }}"
 
           if [ ! -f release_notes.md ]; then
@@ -607,7 +614,7 @@ jobs:
               "${BASE}?name=${ascii}" | jq -r '.name'
             echo "✅ $ascii"
           }
-          upload_one "$(ls dist/hta-base/*.zip)"  "HTA-Base-CHS-Patch-${tag}.zip"
-          upload_one "$(ls dist/hta-dlc1/*.zip)"  "HTA-DLC1-RiseOfClans-CHS-Patch-${tag}.zip"
-          upload_one "$(ls dist/hta-dlc2/*.zip)"  "HTA-DLC2-Arcade-CHS-Patch-${tag}.zip"
+          upload_one "$(ls dist/hta-base/*.zip)"  "HTA-Base-CHS-Patch-${stamp}.zip"
+          upload_one "$(ls dist/hta-dlc1/*.zip)"  "HTA-DLC1-RiseOfClans-CHS-Patch-${stamp}.zip"
+          upload_one "$(ls dist/hta-dlc2/*.zip)"  "HTA-DLC2-Arcade-CHS-Patch-${stamp}.zip"
           echo "✅ 已发布 Release: $tag"
