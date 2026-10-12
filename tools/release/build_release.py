@@ -247,6 +247,16 @@ def build_one(key, spec, fonts_out_dir, out_root, date, do_zip):
     stats['license_files'] = lic_files
     log('  License.txt: 合并 %d 份（%s）' % (len(lic_files), ', '.join(lic_files)))
 
+    # ── 3c) 根 LICENSE → 包根 LICENSE（统一标准 S10）────────────────────
+    #    License.txt 是"第三方许可原文合并"，LICENSE 才是**项目主许可**
+    #    （含游戏版权声明 + 指向 ./Licenses/GPLv3.txt）。两者用途不同，
+    #    均须随包分发 —— 其余 4 个仓库（SR/MJ1/MJ2/ArmyMen）都这么做，
+    #    HTA 此前漏了，导致包内只有 License.txt、玩家看不到项目主许可声明。
+    root_lic = os.path.join(ROOT, 'LICENSE')
+    must(os.path.isfile(root_lic), '缺少仓库根 LICENSE')
+    shutil.copy2(root_lic, os.path.join(dst, 'LICENSE'))
+    log('  LICENSE: 复制自仓库根')
+
     # ── 4) 字库（烘焙产物）→ data/if/fonts ─────────────────────────────
     #   烘焙输出目录布局：<fonts_out>/<key>/{data/if/fonts/*, hta_chs_cjk.bin}
     baked = os.path.join(fonts_out_dir, key)
@@ -379,6 +389,10 @@ def main():
         spec = PKGS[key]
         for f in STATIC_ROOT_FILES:
             must(os.path.isfile(os.path.join(ROOT, 'dist', f)), '缺少 dist/%s' % f)
+        # S10/S12：许可与 AI 辅助文件也必须先齐，避免产出半套包
+        must(os.path.isfile(os.path.join(ROOT, 'LICENSE')), '缺少仓库根 LICENSE')
+        must(os.path.isdir(os.path.join(ROOT, 'Licenses')), '缺少 Licenses/ 目录')
+        must(os.path.isdir(os.path.join(ROOT, 'dist', 'AI辅助')), '缺少 dist/AI辅助/ 目录')
         must(os.path.isfile(os.path.join(ROOT, 'dist', 'config', spec['config'] + '.cfg')),
              '缺少 dist/config/%s.cfg' % spec['config'])
         must(os.path.isfile(os.path.join(ROOT, 'dist', '必读说明', spec['readme'] + '.txt')),
