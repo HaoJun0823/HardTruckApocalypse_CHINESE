@@ -206,6 +206,24 @@ def build_one(key, spec, fonts_out_dir, out_root, date, do_zip):
     shutil.copy2(os.path.join(ROOT, 'dist', 'config', spec['config'] + '.cfg'),
                  os.path.join(dst, 'data', 'config.cfg'))
 
+    # ── 3c) 两份 AI 辅助文件（统一标准 S12/S13）────────────────────────
+    #    放包根，玩家可直接把 .txt 拖进任意 AI 聊天工具：
+    #      · 如果不会安装…  给玩家的安装求助入口（需连同必读说明一起发）
+    #      · 将此文件交给AI… 给贡献者的反馈/PR 草稿入口
+    #    两个文件名含中文 → zipfile 写时自动置 UTF-8 标志位（见 pack_zip）。
+    ai_dir = os.path.join(ROOT, 'dist', 'AI辅助')
+    must(os.path.isdir(ai_dir), '缺少 dist/AI辅助/ 目录')
+    ai_files = [
+        '如果不会安装，请把该文件发给AI，让AI教你.txt',
+        '将此文件交给AI，让AI协助完善本项目.txt',
+    ]
+    for f in ai_files:
+        src = os.path.join(ai_dir, f)
+        must(os.path.isfile(src), '缺少 dist/AI辅助/%s' % f)
+        shutil.copy2(src, os.path.join(dst, f))
+    stats['ai_files'] = ai_files
+    log('  AI 辅助文件: %d 份' % len(ai_files))
+
     # ── 3b) Licenses/License.txt ───────────────────────────────────────
     #    把 Licenses/ 下的许可原文按**文件名排序**拼成单个 License.txt
     #    放进包根（与 MajestyIIExtend 的做法一致）。顺序固定 → 产物可复现。
