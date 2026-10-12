@@ -90,20 +90,20 @@ jobs:
 
     steps:
       - name: 检出仓库
-        uses: actions/checkout@v5
+        uses: actions/checkout@v7.0.1
 
       # ★ 必须完整 checkout msvc-wine（不能只下 vsdownload.py）：
       #   install.sh 要用仓库里的 lowercase / fixinclude（Linux 大小写修复）、
       #   wrappers/（cl/link 包装脚本）、msvctricks.cpp（自举实测 cl 可用）。
       - name: 检出 msvc-wine
-        uses: actions/checkout@v5
+        uses: actions/checkout@v7.0.1
         with:
           repository: mstorsjo/msvc-wine
           ref: ${{ env.MSVCWINE_REF }}
           path: .msvc-wine
 
       - name: 配置 Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7.0.0
         with:
           python-version: '3.12'
 
@@ -146,7 +146,7 @@ jobs:
 
       # ── MSVC 工具链缓存 ──────────────────────────────────────────────
       - name: 还原 MSVC 工具链缓存
-        uses: actions/cache@v5
+        uses: actions/cache@v6.1.0
         with:
           path: .msvc
           key: hta-msvcwine-v141-x86-sdk26100-${{ env.MSVCWINE_REF }}-v1
@@ -224,6 +224,15 @@ jobs:
       #     **忽略脚本的 shebang**，于是 `set -o pipefail`（dash 不支持）和
       #     bash 数组语法都会失败。实测：`sh ...` 报
       #     "set: Illegal option -o pipefail"。
+      # ── S8 体积指纹（硬断言位置：tools/release/compile_dlls.sh 的 check_size）──
+      #   值 = MSVC v141 (14.16) + Win10 SDK 10.0.26100 + 本仓库固定 flags 的确定产物。
+      #   回退到 v142 会改变体积并被拦下。此处列出以便在本 workflow 文件内直接 grep：
+      #     hta_chs.dll       178176 B
+      #     hta_chs_dlc1.dll  178176 B
+      #     hta_chs_dlc2.dll  195584 B
+      #     Render9Fix.dll    144384 B
+      #     DLC1_MemFix.dll   140800 B
+      #     DLC2_MemFix.dll   140288 B
       - name: 编译 6 个插件 DLL
         if: ${{ github.event.inputs.skip_dll != 'true' }}
         run: |
@@ -370,7 +379,7 @@ jobs:
 
       # ── 上传三个 artifact ───────────────────────────────────────────
       - name: "上传 本体包 (artifact: hta-base)"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7.0.2
         with:
           name: hta-base
           path: release/燃烧飞车_末日浩劫_简体中文汉化_*.zip
@@ -378,7 +387,7 @@ jobs:
           retention-days: 30
 
       - name: "上传 部落崛起包 (artifact: hta-dlc1)"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7.0.2
         with:
           name: hta-dlc1
           path: release/燃烧飞车_末日浩劫_部落崛起_简体中文汉化_*.zip
@@ -386,7 +395,7 @@ jobs:
           retention-days: 30
 
       - name: "上传 街机版包 (artifact: hta-dlc2)"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7.0.2
         with:
           name: hta-dlc2
           path: release/燃烧飞车_末日浩劫_街机版_简体中文汉化_*.zip
@@ -410,12 +419,12 @@ jobs:
     steps:
       # ★ 必须检出：要用 git 建 tag、以及 release_notes 里算 commit 范围
       - name: 检出仓库（git tag 需要）
-        uses: actions/checkout@v5
+        uses: actions/checkout@v7.0.1
         with:
           fetch-depth: 0
 
       - name: 下载三个 artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8.0.2
         with:
           path: dist
 
