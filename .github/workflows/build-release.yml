@@ -550,7 +550,10 @@ jobs:
             # ★ 必读说明在 zip 内部（artifact 只上传 zip，不含独立的说明文件），
             #   故从 zip 里取 —— 保证 Release 正文与玩家实际拿到的包内说明逐字一致。
             #   三个包共用同一份系列通用说明，取本体包即可。
-            base_zip="$(find dist -name 'HTA-Base-CHS-Patch-*.zip' -print -quit 2>/dev/null || true)"
+            # ★ 注意：artifact 里的 zip 用的是**中文原名**（ASCII 附件名是上传时才由
+            #   curl ?name= 赋的），所以这里不能按 HTA-Base-CHS-Patch-*.zip 去找。
+            #   三个包共用同一份系列通用必读说明，任取一个 zip 即可。
+            base_zip="$(find dist -name '*.zip' -print -quit 2>/dev/null || true)"
             unzip -p "$base_zip" '必读说明.txt' 2>/dev/null | tr -d '\r' > readme_embed.txt || true
             if [ -s readme_embed.txt ]; then
               echo "<details><summary>展开完整必读说明（与包内 必读说明.txt 一致）</summary>"
