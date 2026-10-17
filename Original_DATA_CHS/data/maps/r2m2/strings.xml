@@ -34,7 +34,7 @@
 		modelCfg="172"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m2\r2m2_4_felix.ogg"
-		value="费利克斯|我们总算又碰上了！|我就知道我们还会再见。|这回我可做好了战斗准备，|你别想活着离开这儿。"
+		value="费利克斯|我们总算又碰上了！我就知道我|们还会再见。这回我可做好了战|斗准备，你别想活着离开这儿。"
 		time="8" />
 
 	<string
@@ -60,7 +60,7 @@
 		modelName="gadget_12"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m2\r2m2_7_cd_officer_radio.ogg"
-		value="电台|你已经证明了对我们理想的忠诚。|现在说你的任务。|我们抓住了一名叛军，|从他口中得知，他们正准|备和独立城镇联邦的特务接头。"
+		value="电台|你已经证明了对我们理想的忠诚。现在说你的|任务。我们抓住了一名叛军，从他口中得知，|他们正准备和独立城镇联邦的特务接头。"
 		time="8" />
 
 	<string
@@ -69,7 +69,7 @@
 		modelName="gadget_12"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m2\r2m2_8_cd_officer_radio.ogg"
-		value="电台|你要假扮成那名叛军去和特务接头。|从他嘴里能套多少就套多少。|接头地点在托斯卡纳酒吧。|暗号是：'长夜漫漫'，回答是：|'但黎明将至'。"
+		value="电台|你要假扮成那名叛军去和特务接头。|从他嘴里能套多少就套多少。接头|地点在托斯卡纳酒吧。暗号是：'长|夜漫漫'，回答是：'但黎明将至'。"
 		time="8" />
 
 	<string
@@ -85,7 +85,7 @@
 		modelName="gadget_12"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m2\r2m2_10_cd_officer_radio.ogg"
-		value="电台|胜利属于我们！群龙无首的独|立城镇联邦不足为惧。|你让我们的梦想成真，|你会得到奖赏！锡安——|阿克塞尔的隐秘之城——|将为你敞开大门。|去见我们的领袖吧，英雄！"
+		value="电台|胜利属于我们！群龙无首的独立城镇联邦|不足为惧。你让我们的梦想成真，你会得到|奖赏！锡安——阿克塞尔的隐秘之城——将为|你敞开大门。去见我们的领袖吧，英雄！"
 		time="8" />
 
 	<string
@@ -145,7 +145,7 @@
 		modelName="mask_axel"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m2\r2m2_17_axel.ogg"
-		value="阿克塞尔|爱丽丝，我太了解她了。|她就是一条人形的毒蛇。|她的谎言已经毁了我的生活，|也毁了许多其他人的。|欢迎加入受害者俱乐部。"
+		value="阿克塞尔|爱丽丝，我太了解她了。她就是一条人形|的毒蛇。她的谎言已经毁了我的生活，也毁|了许多其他人的。欢迎加入受害者俱乐部。"
 		time="8" />
 
 	<string
@@ -160,7 +160,7 @@
 		modelName="mask_axel"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m2\r2m2_19_axel.ogg"
-		value="阿克塞尔|她来找我，哀求我保护她不|受敌人伤害——她是这么说的。|我以绅士之道收留了她。|可她洗劫了我一笔，然后跑了。|我那么信任她！"
+		value="阿克塞尔|她来找我，哀求我保护她不受敌人伤害——|她是这么说的。我以绅士之道收留了她。可|她洗劫了我一笔，然后跑了。我那么信任她！"
 		time="8" />
 
 	<string
@@ -175,7 +175,7 @@
 		modelName="mask_axel"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m2\r2m2_21_axel.ogg"
-		value="阿克塞尔|相信我，我自己国内已经够|焦头烂额了。这几个月我们寸|步未离阵地。我们从来没袭|击过你的家！"
+		value="阿克塞尔|相信我，我自己国内已经够焦头烂额了。|这几个月我们寸步未离阵地。我们从来没|袭击过你的家！"
 		time="8" />
 
 	<string
@@ -190,7 +190,7 @@
 		modelName="mask_axel"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m2\r2m2_23_axel.ogg"
-		value="阿克塞尔|我把我的子民从饥荒中拯救了出来！|只有强有力的政权才能拯|救这个世界免于堕落。|这场战争中死去的每一个人，|都记在我的账上。|我记住他们每个人的名字。|我只遗憾，如今这一切都成了徒劳。"
+		value="阿克塞尔|我把我的子民从饥荒中拯救了出来！只|有强有力的政权才能拯救这个世界免于|堕落。这场战争中死去的每一个人，都|记在我的账上。我记住他们每个人的名|字。我只遗憾，如今这一切都成了徒劳。"
 		time="12" />
 
 	<string
@@ -228,7 +228,7 @@
 		modelName="mask_axel"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m2\r2m2_29_axel.ogg"
-		value="阿克塞尔|她来找我，哀求我保护她不|受敌人伤害——她是这么说的。|我以绅士之道收留了她。|可她利用了我和我的资源，|然后跑了。我差点就爱上了她……"
+		value="阿克塞尔|她来找我，哀求我保护她不受敌人|伤害——她是这么说的。我以绅士之道|收留了她。可她利用了我和我的资|源，然后跑了。我差点就爱上了她……"
 		time="12" />
 
 	<string
@@ -243,7 +243,7 @@
 		modelName="mask_axel"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m2\r2m2_31_axel.ogg"
-		value="阿克塞尔|没错。我也得到消息|说她回到了这里。|最后一次有人见到她是在修|道院附近。你插手的当口，|我正打算去拜访她呢。"
+		value="阿克塞尔|没错。我也得到消息说她回到了这里。最|后一次有人见到她是在修道院附近。你插|手的当口，我正打算去拜访她呢。"
 		time="8" />
 
 	<string
@@ -295,7 +295,7 @@
 		modelName="mask_lisa"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m2\r2m2_39_alice.ogg"
-		value="爱丽丝|你说了算。给你……|但先听我说。我不是大|家以为的那种恶人。|我只是太想找到伊万·戈了！"
+		value="爱丽丝|你说了算。给你……但先听我说。我不是大家|以为的那种恶人。我只|是太想找到伊万·戈了！"
 		time="8" />
 
 	<string
@@ -310,7 +310,7 @@
 		modelName="mask_lisa"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m2\r2m2_41_alice.ogg"
-		value="爱丽丝|他是人类的象征。|谁能找到他，或他的遗骸，|谁就会成为英雄，|就能把全世界团结在进步的大旗下。|我必须做到！"
+		value="爱丽丝|他是人类的象征。谁能找到他，或他的遗|骸，谁就会成为英雄，就能把全世界团结|在进步的大旗下。我必须做到！"
 		time="12" />
 
 	<string
@@ -325,7 +325,7 @@
 		modelName="mask_lisa"
 		modelSlot="1"
 		sound="data\sounds\Speech\r2m2\r2m2_43_alice.ogg"
-		value="爱丽丝|艰难时世需要狠心的决断。|我这辈子都在解他失踪之谜。|终于，经过多年研究，|我弄到了伊万的日记。|偏偏这时候你冒出来了！"
+		value="爱丽丝|艰难时世需要狠心的决断。我这辈子都在|解他失踪之谜。终于，经过多年研究，我弄|到了伊万的日记。偏偏这时候你冒出来了！"
 		time="12" />
 
 	<string

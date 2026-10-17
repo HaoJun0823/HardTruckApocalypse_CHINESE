@@ -82,7 +82,7 @@
 
 	<string
 		id="adventurer_-1_diz"
-		value="[-1] - 击毁敌方车辆后的战利品中，金钱比货物出现得更频繁。" />
+		value="[-1] - 击毁敌方车辆后的战利品中，金钱比货物|出现得更频繁。" />
 
 	<string
 		id="adventurer_0_diz"
@@ -90,7 +90,7 @@
 
 	<string
 		id="adventurer_1_diz"
-		value="[+1] - 击毁敌方车辆后的战利品中，货物比金钱出现得更频繁。" />
+		value="[+1] - 击毁敌方车辆后的战利品中，货物比金钱|出现得更频繁。" />
 
 	<string
 		id="lawyer_-3_diz"
@@ -106,7 +106,7 @@
 
 	<string
 		id="lucky_-2_diz"
-		value="[-2] - 城市修理厂中武器配件的种类总是比车辆配件更丰富。" />
+		value="[-2] - 城市修理厂中武器配件的种类总是比车辆|配件更丰富。" />
 
 	<string
 		id="lucky_0_diz"
@@ -114,7 +114,7 @@
 
 	<string
 		id="lucky_2_diz"
-		value="[+2] - 城市修理厂中车辆配件的种类总是比武器配件更丰富。" />
+		value="[+2] - 城市修理厂中车辆配件的种类总是比武器|配件更丰富。" />
 
 	<string
 		id="millionaire_0_diz"
@@ -122,7 +122,7 @@
 
 	<string
 		id="professional_-3_diz"
-		value="[-3] - 城市中武器装弹更便宜。城市中车辆加油更贵。" />
+		value="[-3] - 城市中武器装弹更便宜。城市中车辆加|油更贵。" />
 
 	<string
 		id="professional_0_diz"
@@ -130,7 +130,7 @@
 
 	<string
 		id="professional_3_diz"
-		value="[+3] - 城市中车辆加油更便宜。城市中武器装弹更贵。" />
+		value="[+3] - 城市中车辆加油更便宜。城市中武器装|弹更贵。" />
 
 	<string
 		id="butcher_0_diz"
@@ -138,7 +138,7 @@
 
 	<string
 		id="aggressor_-2_diz"
-		value="[-2] - 当你无意或有意碾过路人时，能在其口袋里找到几枚金币。" />
+		value="[-2] - 当你无意或有意碾过路人时，能在其口|袋里找到几枚金币。" />
 
 	<string
 		id="aggressor_0_diz"
@@ -146,7 +146,7 @@
 
 	<string
 		id="rogue_-1_diz"
-		value="[-1] - 城市酒吧中你的任务清单受限，只能接到战斗任务。" />
+		value="[-1] - 城市酒吧中你的任务清单受限，只能接|到战斗任务。" />
 
 	<string
 		id="rogue_0_diz"
@@ -154,11 +154,11 @@
 
 	<string
 		id="rogue_1_diz"
-		value="[+1]  - 城市酒吧中你的任务清单受限，只能接到贸易任务。" />
+		value="[+1]  - 城市酒吧中你的任务清单受限，只能|接到贸易任务。" />
 
 	<string
 		id="smuggler_-2_diz"
-		value="[-2] - 城市修理厂中你只能购买走私武器，因此花费更少。" />
+		value="[-2] - 城市修理厂中你只能购买走私武器，因此|花费更少。" />
 
 	<string
 		id="smuggler_0_diz"

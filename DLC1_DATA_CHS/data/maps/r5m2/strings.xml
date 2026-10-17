@@ -3,7 +3,7 @@
 	<string
 		id="1701"
 		modelName="NewHero_mask"
-		value="瓦根特|  是啊，这儿可不是加拿大。|跟萨姆的地界没什么两样，|让他化油器堵死去吧。|且看接下来还会出什么幺蛾子。"
+		value="瓦根特|  是啊，这儿可不是加拿大。跟萨姆的|地界没什么两样，让他化油器堵死去吧。|且看接下来还会出什么幺蛾子。"
 		sound="data\sounds\Speech\r5m2\r5m2_1701_nomad.ogg"
 		time="9" />
 
@@ -30,14 +30,14 @@
 		modelSkin="1"
 		modelCfg="58"
 		modelSlot="1"
-		value="伊森|  我叫伊森。不知怎么的，|我觉得你有意把你的货和钱|分给我们。作为交换，|我就不伤你一根毫毛。"
+		value="伊森|  我叫伊森。不知怎么的，我觉得你有|意把你的货和钱分给我们。作为交换，我|就不伤你一根毫毛。"
 		sound="data\sounds\Speech\r5m2\r5m2_2003_itan.ogg"
 		time="13" />
 
 	<string
 		id="2004"
 		modelName="NewHero_mask"
-		value="瓦根特|  听好了！你，|化油器堵死鬼，要是现在就踩|油门滚，顶多车身上吃颗子弹。|要是不滚，子弹可就钻你脑门了。|猜猜哪种更疼？"
+		value="瓦根特|  听好了！你，化油器堵死鬼，要是现在就|踩油门滚，顶多车身上吃颗子弹。要是不滚，|子弹可就钻你脑门了。猜猜哪种更疼？"
 		sound="data\sounds\Speech\r5m2\r5m2_2004_nomad.ogg"
 		time="15" />
 
@@ -138,7 +138,7 @@
 	<string
 		id="2403"
 		modelName="NewHero_mask"
-		value="瓦根特|  这么说吧，你那位阿|梅里戈队长——愿他在那边|轮胎全爆——为了送我上路，|可是什么都试过了。"
+		value="瓦根特|  这么说吧，你那位阿梅里戈队长——|愿他在那边轮胎全爆——为了送我上路，|可是什么都试过了。"
 		sound="data\sounds\Speech\r5m2\r5m2_2403_nomad.ogg"
 		time="8" />
 
@@ -241,7 +241,7 @@
 	<string
 		id="2508"
 		modelName="NewHero_mask"
-		value="瓦根特|  这么说你原本是奔加拿大去的？|那我可得让你失望了：|反正我也过不去。|通往加拿大的大桥走不通了。"
+		value="瓦根特|  这么说你原本是奔加拿大去的？那我|可得让你失望了：反正我也过不去。通往|加拿大的大桥走不通了。"
 		sound="data\sounds\Speech\r5m2\r5m2_2508_nomad.ogg"
 		time="10" />
 
@@ -282,14 +282,14 @@
 		modelName="mask_father"
 		modelSkin="1"
 		modelSlot="1"
-		value="风行者|  普普通通的灯塔。|把灯点亮，然后等上一阵子。|过不了多久，渡船就会从大|河对岸开过来，把想去加拿|大的人都接上。"
+		value="风行者|  普普通通的灯塔。把灯点亮，然后等|上一阵子。过不了多久，渡船就会从大河|对岸开过来，把想去加拿大的人都接上。"
 		sound="data\sounds\Speech\r5m2\r5m2_2513_veter.ogg"
 		time="15" />
 
 	<string
 		id="2514"
 		modelName="NewHero_mask"
-		value="瓦根特|  砸了我的缸盖！|要是这是真的，那我还在这儿|耗什么劲？还要这些萨姆啊、|独眼啊什么的干什么？给我指路！"
+		value="瓦根特|  砸了我的缸盖！要是这是真的，那我|还在这儿耗什么劲？还要这些萨姆啊、独|眼啊什么的干什么？给我指路！"
 		sound="data\sounds\Speech\r5m2\r5m2_2514_nomad.ogg"
 		time="11" />
 
@@ -328,7 +328,7 @@
 	<string
 		id="2605"
 		modelName="NewHero_mask"
-		value="瓦根特|  我的汽油老天爷！|你是说我们在这儿待多久都无所谓？|关键是找到灯塔就成？|难不成你还指望加拿大自己|找上门来？"
+		value="瓦根特|  我的汽油老天爷！你是说我们在这儿|待多久都无所谓？关键是找到灯塔就成？|难不成你还指望加拿大自己找上门来？"
 		sound="data\sounds\Speech\r5m2\r5m2_2605_nomad.ogg"
 		time="12" />
 
@@ -337,7 +337,7 @@
 		modelName="mask_father"
 		modelSkin="1"
 		modelSlot="1"
-		value="风行者|  不是。每个人都得自己|找到自己的加拿大；|而加拿大，也只降临到寻|找它的人身上。"
+		value="风行者|  不是。每个人都得自己找到自己的加拿|大；而加拿大，也只降临到寻找它的人身上。"
 		sound="data\sounds\Speech\r5m2\r5m2_2606_veter.ogg"
 		time="10" />
 
@@ -351,7 +351,7 @@
 	<string
 		id="2608"
 		modelName="NewHero_mask"
-		value="瓦根特|  喂，风行者！你在哪儿？|真搞不懂他能跑去哪儿？|总不能就这么走掉了吧。|或者，还真能？"
+		value="瓦根特|  喂，风行者！你在哪儿？真搞不懂他能跑去|哪儿？总不能就这么走掉|了吧。或者，还真能？"
 		sound="data\sounds\Speech\r5m2\r5m2_2608_nomad.ogg"
 		time="8" />
 
@@ -413,7 +413,7 @@
 	<string
 		id="2801"
 		modelName="NewHero_mask"
-		value="瓦根特|  那玩意儿还不动弹的时候，|我怎么就没开火呢？|看来没打是因为——|它那会儿确实还没动。"
+		value="瓦根特|  那玩意儿还不动弹的时候，我怎么就没开火|呢？看来没打是因为——它那会儿确实还没动。"
 		sound="data\sounds\Speech\r5m2\r5m2_2801_nomad.ogg"
 		time="8" />
 
@@ -421,7 +421,7 @@
 		id="2901"
 		modelName="mask_lisa"
 		modelSlot="1"
-		value="独眼|  你来得正好。|据点是守不住了。|铁疙瘩太多。我担|心它们在路上也会袭击我们。"
+		value="独眼|  你来得正好。据点是守不住了。铁疙|瘩太多。我担心它们在路上也会袭击我们。"
 		sound="data\sounds\Speech\r5m2\r5m2_2901_oneeyed.ogg"
 		time="8" />
 
@@ -443,7 +443,7 @@
 	<string
 		id="2904"
 		modelName="NewHero_mask"
-		value="瓦根特|  死不了的你瞧着吧，|让他的油路堵到腰子上！|这玩意儿我以前就打过，|用不着替我哭丧。"
+		value="瓦根特|  死不了的你瞧着吧，让他的油路堵到腰子|上！这玩意儿我以前就打|过，用不着替我哭丧。"
 		sound="data\sounds\Speech\r5m2\r5m2_2904_nomad.ogg"
 		time="10" />
 
@@ -473,7 +473,7 @@
 	<string
 		id="3001"
 		modelName="NewHero_mask"
-		value="瓦根特|  这都什么人啊，|往他们化油器里灌糖水！|他们怎么可能不把整个金库都搬走！|这下我只得追上车队，|把胶卷夺回来。"
+		value="瓦根特|  这都什么人啊，往他们化油器里灌糖|水！他们怎么可能不把整个金库都搬走！|这下我只得追上车队，把胶卷夺回来。"
 		sound="data\sounds\Speech\r5m2\r5m2_3001_nomad.ogg"
 		time="11" />
 
@@ -526,7 +526,7 @@
 		id="3107"
 		modelName="mask_lisa"
 		modelSlot="1"
-		value="独眼|  你是我这辈子见过最可|恨的叛徒！比阿梅里戈还坏！|箱子休想给你！滚，|不然我这就叫手下把你轰成渣！"
+		value="独眼|  你是我这辈子见过最可恨的叛徒！比|阿梅里戈还坏！箱子休想给你！滚，不然|我这就叫手下把你轰成渣！"
 		sound="data\sounds\Speech\r5m2\r5m2_3107_oneeyed.ogg"
 		time="9" />
 

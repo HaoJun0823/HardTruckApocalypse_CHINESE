@@ -16,7 +16,7 @@
 		modelSkin="2"
 		modelCfg="1915"
 		modelSlot="1"
-		value="德鲁伊|你终究还是背叛了我……|我不怪你，无知的孩子。|但一切恶行终将受罚，|这是生命的法则。我为你叹息……"
+		value="德鲁伊|你终究还是背叛了我……我不怪你，无知|的孩子。但一切恶行终将受罚，这是生命|的法则。我为你叹息……"
 		sound="data\sounds\Speech\r3m1\r3m1_1002_druid.ogg"
 		time="5" />
 
@@ -63,7 +63,7 @@
 		id="1023"
 		modelName="mask_lisa"
 		modelSlot="1"
-		value="爱丽丝|我的一些老朋友，|过去都有些见不得光。|他们不喜欢生人，|没人引荐的话你最好别去见他们。"
+		value="爱丽丝|我的一些老朋友，过去都有些见不得光。他们|不喜欢生人，没人引荐的|话你最好别去见他们。"
 		sound="data\sounds\Speech\r3m1\r3m1_1023_alice.ogg"
 		time="4" />
 

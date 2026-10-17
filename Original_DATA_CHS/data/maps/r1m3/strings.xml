@@ -35,7 +35,7 @@
 		modelAutosized="true"
 		modelName="gadget_12"
 		modelSlot="1"
-		value="电台|让我想想……对了，我知道了！|这是海门的钥匙！|真想知道你父亲是怎么弄到它的。|现在仔细听好："
+		value="电台|让我想想……对了，我知道了！这是海门|的钥匙！真想知道你父亲是怎么弄到它的。|现在仔细听好："
 		sound="data\sounds\Speech\r1m3\r1m3_403_ben_radio.ogg"
 		time="8" />
 
@@ -44,7 +44,7 @@
 		modelAutosized="true"
 		modelName="gadget_12"
 		modelSlot="1"
-		value="电台|传说神谕就住在远方的一座|小岛上……谁能克服千难万|险见到它，任何问题都能得到解答！|当然，这多半是无稽之谈……"
+		value="电台|传说神谕就住在远方的一座小岛上……谁|能克服千难万险见到它，任何问题都能得到|解答！当然，这多半是无稽之谈……"
 		sound="data\sounds\Speech\r1m3\r1m3_404_ben_radio.ogg"
 		time="12" />
 
@@ -60,7 +60,7 @@
 		modelAutosized="true"
 		modelName="gadget_12"
 		modelSlot="1"
-		value="电台|先让我把话说完。|不过有些古老文献提到，|那座远岛上有一处绝密设施。|里面还提到了你的护符。|这传说背后没准真有点东西。|你一定要去查个明白。"
+		value="电台|先让我把话说完。不过有些古老文献|提到，那座远岛上有一处绝密设施。|里面还提到了你的护符。这传说背后没|准真有点东西。你一定要去查个明白。"
 		sound="data\sounds\Speech\r1m3\r1m3_406_ben_radio.ogg"
 		time="8" />
 
@@ -70,7 +70,7 @@
 		modelName="gadget_12"
 		modelSlot="1"
 		sound="data\sounds\Speech\r1m3\r1m3_407_ben_radio.ogg"
-		value="电台|一直往北走。海门就在世|界的尽头某处。再多的我也不|知道了。四处打听打听吧。|这该死的发报机……"
+		value="电台|一直往北走。海门就在世界的尽头某处。|再多的我也不知道了。四处打听打听吧。|这该死的发报机……"
 		time="12" />
 
 	<string
@@ -146,7 +146,7 @@
 		modelCfg="118"
 		modelSlot="1"
 		sound="data\sounds\Speech\r1m3\r1m3_13_bob.ogg"
-		value="鲍勃|可你这不是已经在跟我们打|交道了嘛，哈哈。|是这样，爱丽丝几天前来过，|带着她老板的信儿。|她急匆匆的，很快就走了。"
+		value="鲍勃|可你这不是已经在跟我们打交道了嘛，哈哈。|是这样，爱丽丝几天前来过，带着她老板|的信儿。她急匆匆的，很快就走了。"
 		time="8" />
 
 	<string
@@ -264,7 +264,7 @@
 		modelName="mask_oracul"
 		modelSlot="1"
 		sound="data\sounds\Speech\r1m3\r1m3_361_oracle.ogg"
-		value="神谕|先听我说。你已经赢得了我的完|全信任，现在我要与你分|享我的知识。许多年前，|外星入侵者用死亡射线照|射我们的星球，几乎将地|表的生命赶尽杀绝。"
+		value="神谕|先听我说。你已经赢得了我的完全信|任，现在我要与你分享我的知识。许多|年前，外星入侵者用死亡射线照射我们|的星球，几乎将地表的生命赶尽杀绝。"
 		time="22" />
 
 	<string
@@ -361,7 +361,7 @@
 		modelName="mask_oracul"
 		modelSlot="1"
 		sound="data\sounds\Speech\r1m3\r1m3_3002_oracle.ogg"
-		value="神谕|人类，多亏你的帮助，|我恢复了昔日的力量。|为此我感谢你。但现在，|你在插手你根本理解不了的事情。"
+		value="神谕|人类，多亏你的帮助，我恢复了昔日的力量。|为此我感谢你。但现在，你在插手你根本|理解不了的事情。"
 		time="8" />
 
 	<string
@@ -391,7 +391,7 @@
 		modelName="mask_oracul"
 		modelSlot="1"
 		sound="data\sounds\Speech\r1m3\r1m3_3006_oracle.ogg"
-		value="神谕|蠢货！外星人正利用你去完|成他们的地球化改造计划！|装置一启动，我们星球上的生|命就会被彻底抹除！"
+		value="神谕|蠢货！外星人正利用你去完成他们的地球|化改造计划！装置一启动，我们星球上的|生命就会被彻底抹除！"
 		time="8" />
 
 	<string

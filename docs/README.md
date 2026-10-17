@@ -9,6 +9,8 @@
 
 | 文档 | 内容 | 状态 |
 |---|---|---|
+| [剧情与任务日志](剧情日志.md) | 三个游戏的关卡清单、主线/支线任务、派系、城镇地点、剧情日志条目（由 `tools/gen_storylog.py` 从游戏数据直接导出） | ✅ 已生成 |
+| [断行修复：百科派系与过场文本溢出](2026-10-17-断行修复-百科派系与过场文本溢出.md) | 行容量推导（CJK cellW=20px + 控件宽度实测）、派系/城镇描述不换行、过场只显示五行的根因与断行器设计 | ✅ 已修复并验证 |
 | [资料片 113 汉化移植与 LAA 崩溃修复](2026-10-08-资料片113汉化移植与LAA崩溃修复.md) | Meridian113.exe 与 hta.exe 的全部锚点差异（多 0x60 字节 / 预扫寄存器 edi→esi / Kernel 偏移 +0x18→+0x30）、LAA 崩溃的 dump 栈回溯取证、`DLC1_MemFix` 的**两个实现陷阱**（池太小 + 泄漏原块） | ✅ 已实机验证 |
 | [LAA 内存扩展崩溃：根因与 Render9Fix](2026-10-07-LAA内存扩展崩溃-根因与Render9Fix.md) | hta.exe 开 LAA 后进世界崩在 `dxrender9+0x416D6` 的完整取证链、排除的假设、静态验证（IDA）、修复与实机验证 | ✅ 已修复并验证 |
 | [汉化冻结门：时序失败根因与修复](2026-10-07-汉化冻结门时序失败-根因与修复.md) | 失败对话框乱码 + "冷启动正常/热重启失效"的两个时序竞态（F1/F2）、三处修复、3 次连续验证 | ✅ 已修复并验证 |
@@ -51,6 +53,10 @@
 
 | 工具 | 用途 |
 |---|---|
+| [tools/fixwrap.py](../tools/fixwrap.py) | 译文断行器：按控件行容量重排 `|` 分隔（默认干跑，`--apply` 才写盘） |
+| [tools/verify_wrap.py](../tools/verify_wrap.py) | 断行验收：独立量测写盘结果（行宽/段数/占位符/字面/编码/元素数） |
+| [tools/review_translation.py](../tools/review_translation.py) | 提交前译文体检：字面丢失、占位符损坏、行首禁头标点、乱码、XML 损坏 |
+| [tools/gen_storylog.py](../tools/gen_storylog.py) | 从游戏数据生成 `docs/剧情日志.md` |
 | [tools/null_dbg.ps1](../tools/null_dbg.ps1) | 透明调试器：复刻 x32dbg 的"延迟治百病"现象，可精确注入每事件 N 毫秒延迟，并在崩溃瞬间抓 `[FX]` 取证 |
 | [tools/null_dbg_check.ps1](../tools/null_dbg_check.ps1) | 上面那个调试器内嵌 C# 的秒级编译自检（不启动游戏；已自动处理 32 位/UTF-8 BOM 两个坑） |
 | [tools/deploy_render9fix.ps1](../tools/deploy_render9fix.ps1) | Render9Fix 安装/卸载 |

@@ -27,7 +27,7 @@
 		id="31"
 		modelName="mask_father"
 		modelSlot="1"
-		value="父亲|当然，你最好还是征得父亲的许可。|就说你这种情况——|得征得我的许可。|看见这辆卡车了吗？|从现在起它是你的了。"
+		value="父亲|当然，你最好还是征得父亲的许可。就说|你这种情况——得征得我的许可。看见这|辆卡车了吗？从现在起它是你的了。"
 		sound="data\sounds\Speech\r1m1\r1m1_31_father.ogg"
 		time="12" />
 
@@ -64,7 +64,7 @@
 		id="7"
 		modelName="mask_father"
 		modelSlot="1"
-		value="父亲|嗯，行啊，只要你不怕摔进沟里。|不过头一件，你得先去索斯，|把这个包裹送给我朋友谢尔戈。|正好练练车技，完事立刻回来。"
+		value="父亲|嗯，行啊，只要你不怕摔进沟里。不过头一|件，你得先去索斯，把这个包裹送给我朋友|谢尔戈。正好练练车技，完事立刻回来。"
 		sound="data\sounds\Speech\r1m1\r1m1_7_father.ogg"
 		time="12" />
 
@@ -356,7 +356,7 @@
 		id="33332"
 		modelName="mask_father"
 		modelSlot="1"
-		value="父亲|仔细听着。这些年一直|是我在照顾你……|可你终究是收养的孩子。|这些东西是你亲生父亲的遗物，|拿去吧。去找本·斯罗特尔……|他和你父亲一样，是个探险家。|他会帮你的……去吧……孩子……"
+		value="父亲|仔细听着。这些年一直是我在照顾你|……可你终究是收养的孩子。这些东西|是你亲生父亲的遗物，拿去吧。去找|本·斯罗特尔……他和你父亲一样，是个|探险家。他会帮你的……去吧……孩子……"
 		sound="data\sounds\Speech\r1m1\r1m1_33332_father.ogg"
 		time="30" />
 
@@ -372,7 +372,7 @@
 		modelAutosized="true"
 		modelName="quest_letter"
 		modelSlot="1"
-		value="信件|''如果你读到这封信，|说明我没能回来。|很遗憾，但事实如此。|我很了解彼得，你的教养完|全不用担心……''"
+		value="信件|''如果你读到这封信，说明我没能回来。|很遗憾，但事实如此。我很了解彼得，你|的教养完全不用担心……''"
 		sound="data\sounds\Speech\r1m1\r1m1_33334_letter.ogg"
 		time="16" />
 
@@ -381,7 +381,7 @@
 		modelAutosized="true"
 		modelName="quest_letter"
 		modelSlot="1"
-		value="信件|''……一想到我在远方，|而你正长成大人，我就心痛难当。|这真是煎熬。但你必须知道，|我别无选择，只能离开。|事关重大，不容有失……——''"
+		value="信件|''……一想到我在远方，而你正长成大|人，我就心痛难当。这真是煎熬。|但你必须知道，我别无选择，只能|离开。事关重大，不容有失……——''"
 		sound="data\sounds\Speech\r1m1\r1m1_33335_letter.ogg"
 		time="12" />
 
@@ -390,7 +390,7 @@
 		modelAutosized="true"
 		modelName="quest_letter"
 		modelSlot="1"
-		value="信件|''……我必须纠正这个错误。|只有达成目标，我才能证明|自己配得上『父亲』……|和『丈夫』这个称呼。|对不起，儿子。若你能原谅，|请原谅我。——''"
+		value="信件|''……我必须纠正这个错误。只有达成|目标，我才能证明自己配得上『父亲』|……和『丈夫』这个称呼。对不起，|儿子。若你能原谅，请原谅我。——''"
 		sound="data\sounds\Speech\r1m1\r1m1_33336_letter.ogg"
 		time="16" />
 

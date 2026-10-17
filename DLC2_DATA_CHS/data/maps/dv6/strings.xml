@@ -16,7 +16,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="问题在于，如果士兵已经打|破了 Z-120 集装箱，|你最多还有半个小时，毒素就|会诱导 DNA 还原酶复制，|然后……算了，不说了。"
+		value="问题在于，如果士兵已经打|破了 Z-120 集装箱，你最多还有|半个小时，毒素就会诱导 DNA 还原|酶复制，然后……算了，不说了。"
 		sound="data\sounds\dv_sounds\dialogs\dv6_7.wav"
 		time="10" />
 
@@ -146,7 +146,7 @@
 		modelSkin="0"
 		modelCfg="58"
 		modelSlot="1"
-		value="现在你手上有白蚁式炸药了。|它们产生的高温会让任何化学、|生物或什么别的感染，|都再也没有活下去的机会—|—就像地狱里的雪人一样。"
+		value="现在你手上有白蚁式炸药了。它们产生的高温|会让任何化学、生物或什|么别的感染，都再也没|有活下去的机会——就像地狱里的雪人一样。"
 		sound="data\sounds\dv_sounds\dialogs\dv6_20.wav"
 		time="9" />
 

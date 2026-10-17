@@ -2,15 +2,15 @@
 <resource>
 	<string
 		id="r5m1_TheTownBigHead_diz"
-		value="靠盗匪活动、赌博和与邻近村庄的贸易维生的大城市。" />
+		value="靠盗匪活动、赌博和与邻近|村庄的贸易维生的大城市。" />
 
 	<string
 		id="r5m1_TheKonneks_diz"
-		value="除了那个难念的名字，这座城市再没什么值得一提的特色。" />
+		value="除了那个难念的名字，这座|城市再没什么值得一提的特色。" />
 
 	<string
 		id="r5m1_TheTownMichikar_diz"
-		value="城附近有赛车场，时常举办比赛。" />
+		value="城附近有赛车场，|时常举办比赛。" />
 
 	<string
 		id="r5m1_ThePensilvansk_diz"
@@ -22,11 +22,11 @@
 
 	<string
 		id="r5m2_r5m2_Pervomayka_diz"
-		value="靠与过往流浪者贸易为生的村庄。" />
+		value="靠与过往流浪者贸|易为生的村庄。" />
 
 	<string
 		id="r5m2_r5m2_Sagevsal_diz"
-		value="人口稀少，村庄大部分区域被货物仓库占据。" />
+		value="人口稀少，村庄大部分区域|被货物仓库占据。" />
 
 	<string
 		id="r5m2_r5m2_Cvetograd_diz"
@@ -34,19 +34,19 @@
 
 	<string
 		id="r5m2_r5m2_Mexico_diz"
-		value="又一个不起眼的小村庄，以农业为生。" />
+		value="又一个不起眼的小村庄，以|农业为生。" />
 
 	<string
 		id="r5m2_r5m2_Vraska_diz"
-		value="由富裕农夫的住宅群组成的村庄。" />
+		value="由富裕农夫的住宅|群组成的村庄。" />
 
 	<string
 		id="r5m2_TheOneEyeBase_diz"
-		value="一座大型且能有效抵御外部侵略军的城市。" />
+		value="一座大型且能有效抵御外部|侵略军的城市。" />
 
 	<string
 		id="r6m1_r6m1_Lost_diz"
-		value="坠毁飞行器旁的一处奇异聚居地。" />
+		value="坠毁飞行器旁的一|处奇异聚居地。" />
 
 	<string
 		id="r6m1_r6m1_Real_diz"
@@ -62,15 +62,15 @@
 
 	<string
 		id="r6m1_theTownMapleSheet_diz"
-		value="中等规模的城市，迷失在丛林之中。" />
+		value="中等规模的城市，迷失在丛|林之中。" />
 
 	<string
 		id="r6m2_r6m1_Vaypeg_diz"
-		value="设防坚固的城镇，能够在下一波机器人进攻中顶住。" />
+		value="设防坚固的城镇，能够在下|一波机器人进攻中顶住。" />
 
 	<string
 		id="r6m2_r6m1_Tander_diz"
-		value="优越的地理位置，是这座城市免遭机器人彻底毁灭的唯一原因。" />
+		value="优越的地理位置，是这座城市免|遭机器人彻底毁灭的唯一原因。" />
 
 	<string
 		id="r6m2_r6m1_Gradofaks_diz"
@@ -82,15 +82,15 @@
 
 	<string
 		id="r6m2_r6m1_Kanata_diz"
-		value="难以穿越的丛林将这座小镇藏在外人视线之外。" />
+		value="难以穿越的丛林将这座小镇|藏在外人视线之外。" />
 
 	<string
 		id="r5m1_PetrolStationTown1_diz"
-		value="加油站。在这里可以加油和修理。" />
+		value="加油站。在这里可|以加油和修理。" />
 
 	<string
 		id="r5m1_PetrolStationTown2_diz"
-		value="加油站。在这里可以加油和修理。" />
+		value="加油站。在这里可|以加油和修理。" />
 
 	<string
 		id="r5m1_ToR5M2_diz"
@@ -102,7 +102,7 @@
 
 	<string
 		id="r5m2_r5m2_PetrolStation1_diz"
-		value="加油站。在这里可以加油和修理。" />
+		value="加油站。在这里可|以加油和修理。" />
 
 	<string
 		id="r5m2_ToR5M1_diz"
@@ -114,19 +114,19 @@
 
 	<string
 		id="r6m1_PetrolStationTown2_diz"
-		value="加油站。在这里可以加油和修理。" />
+		value="加油站。在这里可|以加油和修理。" />
 
 	<string
 		id="r6m1_PetrolStationTown7_diz"
-		value="加油站。在这里可以加油和修理。" />
+		value="加油站。在这里可|以加油和修理。" />
 
 	<string
 		id="r6m1_PetrolStationTown9_diz"
-		value="加油站。在这里可以加油和修理。" />
+		value="加油站。在这里可|以加油和修理。" />
 
 	<string
 		id="r6m1_PetrolStationTown10_diz"
-		value="加油站。在这里可以加油和修理。" />
+		value="加油站。在这里可|以加油和修理。" />
 
 	<string
 		id="r6m1_ToR5M1_diz"
@@ -138,11 +138,11 @@
 
 	<string
 		id="r6m2_PetrolStationTown1_diz"
-		value="加油站。在这里可以加油和修理。" />
+		value="加油站。在这里可|以加油和修理。" />
 
 	<string
 		id="r6m2_PetrolStationTown2_diz"
-		value="加油站。在这里可以加油和修理。" />
+		value="加油站。在这里可|以加油和修理。" />
 
 	<string
 		id="r6m2_ToR5M2_diz"
@@ -154,7 +154,7 @@
 
 	<string
 		id="sin_PetrolStation_diz"
-		value="加油站。在这里可以加油和修理。" />
+		value="加油站。在这里可|以加油和修理。" />
 
 
 
@@ -162,7 +162,7 @@
 
 	<string
 		id="sin_PetrolStation_diz"
-		value="加油站。在这里可以加油和修理。" />
+		value="加油站。在这里可|以加油和修理。" />
 
 	<string
 		id="sin_Sin_SanRafael_diz"
